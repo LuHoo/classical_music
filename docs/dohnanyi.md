@@ -1,151 +1,145 @@
-\chapter{Dohn\'{a}nyi, Ernst von} % (fold)
-\label{cha:dohnanyi}
+---
+title: Ernst von Dohnányi
+nav_order: 1
+---
 
-\href{https://en.wikipedia.org/wiki/Ernst_von_Dohn%C3%A1nyi}{Wikipedia}
+# Stage
 
+**Der Schleier der Pierrette (The Veil of Pierrette), Mime in three parts, Op. 18 (Libretto after Arthur Schnitzler) (1909)** *ORF Vienna RSO, Ariane Matiakh*
 
+**Tante Simona (Aunt Simona), Comic Opera in one act, Op. 20 (Libretto by Victor Heindl) (1912)** *Overture: ORF Vienna RSO, Roberto Paternostro* (10/2021)
 
-\section{Stage}
+**A vajda tornya (The Tower of the Voivod), Romantic Opera in three acts, Op. 30 (Libretto by Viktor Lányi, after Hans Heinz Ewers and Marc Henry) (1922)** 
 
-\noindent{Der Schleier der Pierrette (The Veil of Pierrette), Mime in three parts (Libretto after Arthur Schnitzler) (1909), Op. 18} \textit{ORF Vienna RSO, Ariane Matiakh}\marginnote{high}
+**A tenor (The Tenor), Comic Opera in three acts, Op. 34 (Libretto by Ernő Góth and Carl Sternheim, after Bürger Schippel by Carl Sternheim) (1927)** 
 
-\noindent{Tante Simona (Aunt Simona), Comic Opera in one act (Libretto by Victor Heindl) (1912), Op. 20} \textit{Overture: ORF Vienna RSO, Roberto Paternostro}\marginnote{Overture: 10/2021, high}
 
-\noindent{A vajda tornya (The Tower of the Voivod), Romantic Opera in three acts (Libretto by Viktor Lányi, after Hans Heinz Ewers and Marc Henry) (1922), Op. 30} 
+# Choral
 
-\noindent{A tenor (The Tenor), Comic Opera in three acts (Libretto by Ernő Góth and Carl Sternheim, after Bürger Schippel by Carl Sternheim) (1927), Op. 34} 
+**Szegedi mise, Op. 35 (Szeged Mass, also Missa in Dedicatione Ecclesiae) (1930)** 
 
+**Cantus vitae, Symphonic Cantata, Op. 38 (1941)** 
 
-\section{Choral}
+**Stabat mater, Op. 46 (1953)** 
 
-\noindent{Szegedi mise (Szeged Mass, also Missa in Dedicatione Ecclesiae) (1930), Op. 35} 
+# Orchestral
 
-\noindent{Cantus vitae, Symphonic Cantata (1941), Op. 38} 
+**Symphony in F major (1896, unpublished)** *Miskolc SO, L\'{a}szlo Kov\'{a}cs} \href{https://www.gramophone.co.uk/reviews/review?slug=dohn%C3%A1nyi-symphony-in-f-zrinyi-overture-no-2}
+(12/2011)
 
-\noindent{Stabat mater (1953), Op. 46} 
+**Zrinyi Overture** *Miskolc SO, L\'{a}szlo Kov\'{a}cs} \href{https://www.gramophone.co.uk/reviews/review?slug=dohn%C3%A1nyi-symphony-in-f-zrinyi-overture-no-2}
+(12/2011) 
 
-\section{Orchestral}
+**Symphony No. 1 in D minor, Op. 9 (1901)** *Deutsche Staatsphilharmonie Rheinland-Pfalz, Roberto Paternostro*
 
-\noindent{Symphony in F major (1896, unpublished)} \textit{Miskolc SO, L\'{a}szlo Kov\'{a}cs} \href{https://www.gramophone.co.uk/reviews/review?slug=dohn%C3%A1nyi-symphony-in-f-zrinyi-overture-no-2}
-{12/2011}\marginnote{high}
+**Suite in F-sharp minor, Op. 19 (1909)** *Overture: ORF Vienna RSO, Roberto Paternostro* (10/2021)
 
-\noindent{Zrinyi Overture} \textit{Miskolc SO, L\'{a}szlo Kov\'{a}cs} \href{https://www.gramophone.co.uk/reviews/review?slug=dohn%C3%A1nyi-symphony-in-f-zrinyi-overture-no-2}
-{12/2011} \marginnote{high}
+**Festival Overture, Op. 31 (1923)** 
 
-\noindent{Symphony No. 1 in D minor (1901), Op. 9} \textit{Deutsche Staatsphilharmonie Rheinland-Pfalz, Roberto Paternostro}\marginnote{high}
+**Ruralia hungarica, Op. 32b (based on Hungarian folk tunes) (1924)** 
 
-\noindent{Suite in F-sharp minor (1909), Op. 19} \textit{Overture: ORF Vienna RSO, Roberto Paternostro}\marginnote{10/2021, high}
+**Symphonic Minutes, Op. 36 (1933)** *BBC PO, Matthias Bamert*
 
-\noindent{Festival Overture (1923), Op. 31} 
+**Waltz Suite, Op. 39** *Miskolc SO, L\'{a}szlo Kov\'{a}cs*
+\href{https://www.gramophone.co.uk/reviews/review?slug=dohn%C3%A1nyi-symphony-in-f-zrinyi-overture-no-2} (12/2011)
 
-\noindent{Ruralia hungarica (based on Hungarian folk tunes) (1924), Op. 32b} 
+**Symphony No. 2 in E major, Op. 40 (1945, revised 1954-7)** *BBC PO, Matthias Bamert*
 
-\noindent{Symphonic Minutes (1933), Op. 36} \textit{BBC PO, Matthias Bamert}\marginnote{max}
+**American Rhapsody, Op. 47 (1953)** *Overture: ORF Vienna RSO, Roberto Paternostro*(10/2021)
 
-\noindent{Waltz Suite, Op. 39} \textit{Miskolc SO, L\'{a}szlo Kov\'{a}cs}\marginnote{high}
-\href{https://www.gramophone.co.uk/reviews/review?slug=dohn%C3%A1nyi-symphony-in-f-zrinyi-overture-no-2}
-{12/2011}
+# Solo instrument and orchestra
 
+**Piano Concerto No. 1 in E minor, Op. 5 (1898)** *Howard Shelley, BBC PO, Matthias Bamert*
 
-\noindent{Symphony No. 2 in E major (1945, revised 1954-7), Op. 40} \textit{BBC PO, Matthias Bamert}\marginnote{max}
+**Konzertstück (Concertpiece) in D major for cello and orchestra, Op. 12 (1904)** *Tim Posner, Berner SO, Katharina M\"{u}llner* (06/2024)
 
-\noindent{American Rhapsody (1953), Op. 47} \textit{Overture: ORF Vienna RSO, Roberto Paternostro}\marginnote{10/2021, high}
+**Variations on a Nursery Tune (Variationen über ein Kinderlied) for piano and orchestra, Op. 25 (1914)** *Sofja G\"{u}lbadamova, Deutsche Staatsphilharmonie Rheinland-Pfalz, Modestas Pitrenas* (03/2022)
 
-\section{Solo instrument and orchestra}
+**Violin Concerto No. 1 in D minor, Op. 27 (1915)** *Ulf Wallin, hr-Sinfonieorchester, Alun Francis*
 
-\noindent{Piano Concerto No. 1 in E minor (1898), Op. 5} \textit{Howard Shelley, BBC PO, Matthias Bamert}\marginnote{high}
+**Piano Concerto No. 2 in B minor, Op. 42 (1947)** *Howard Shelley, BBC PO, Matthias Bamert*
 
-\noindent{Konzertstück (Concertpiece) in D major for cello and orchestra (1904), Op. 12} \textit{Tim Posner, Berner SO, Katharina M\"{u}llner}\marginnote{06/2024, max} 
+**Violin Concerto No. 2 in C minor, Op. 43 (1950)** *James Ehnes, BBC PO, Matthias Bamert*
+**Concertino for harp and chamber orchestra, Op. 45 (1952)** *Silke Aichhorn, Deutsche Staatsphilharmonie Rheinland-Pfalz, Modestas Pitrenas* (03/2022)
 
-\noindent{Variations on a Nursery Tune (Variationen über ein Kinderlied) for piano and orchestra (1914), Op. 25} \textit{Sofja G\"{u}lbadamova, Deutsche Staatsphilharmonie Rheinland-Pfalz, Modestas Pitrenas}\marginnote{03/2022, high}
+# Chamber and instrumental
 
-\noindent{Violin Concerto No. 1 in D minor (1915), Op. 27} \textit{Ulf Wallin, hr-Sinfonieorchester, Alun Francis}\marginnote{high}
+**String Quartet in D minor (unpublished, manuscript at British Library)** 
 
-\noindent{Piano Concerto No. 2 in B minor (1947), Op. 42} \textit{Howard Shelley, BBC PO, Matthias Bamert}\marginnote{high}
+**String Sextet in B$\flat$ major (1893, revised 1896, revised and premiered 1898)** 
 
-\noindent{Violin Concerto No. 2 in C minor (1950), Op. 43} \textit{James Ehnes, BBC PO, Matthias Bamert}\marginnote{high}
+**Minuet for String Quartet (1894)** 
 
-\noindent{Concertino for harp and chamber orchestra (1952), Op. 45} \textit{
-Silke Aichhorn, Deutsche Staatsphilharmonie Rheinland-Pfalz, Modestas Pitrenas}\marginnote{03/2022, high}
+**Piano Quartet in F$\sharp$ minor (1894)** 
 
-\section{Chamber and instrumental}
+**Piano Quintet No. 1 in C minor, Op. 1 (1895)** *Andr\'{a}s Schiff, Tak\'{a}cs Quartet*
 
-\noindent{String Quartet in D minor (unpublished, manuscript at British Library)} 
+**String Quartet No. 1 in A major, Op. 7 (1899)** *Fine Arts Quartet*
 
-\noindent{String Sextet in B$\flat$ major (1893, revised 1896, revised and premiered 1898)} 
+**Sonata in B$\flat$ minor for cello and piano, Op. 8 (1899)** 
 
-\noindent{Minuet for String Quartet (1894)} 
+**Serenade in C major for string trio, Op. 10 (1902)** *The Nash Ensemble*
 
-\noindent{Piano Quartet in F$\sharp$ minor (1894)} 
+**String Quartet No. 2 in D$\flat$ major, Op. 15 (1906)** *Fine Arts Quartet*
 
-\noindent{Piano Quintet No. 1 in C minor (1895), Op. 1} \textit{Andr\'{a}s Schiff, Tak\'{a}cs Quartet}\marginnote{high}
+**Sonata in C$\sharp$ minor for violin and piano, Op. 21 (1912)** *Elizabeth Chang, Steven Beck*
 
-\noindent{String Quartet No. 1 in A major (1899), Op. 7} \textit{Fine Arts Quartet}\marginnote{high}
+**Piano Quintet No. 2 in E$\flat$ minor, Op. 26 (1914)** *Martin Roscoe, The Vanbrugh Quartet*
 
-\noindent{Sonata in B$\flat$ minor for cello and piano (1899), Op. 8} 
+**String Quartet No. 3 in A minor, Op. 33 (1926)** *The Nash Ensemble*
 
-\noindent{Serenade in C major for string trio (1902), Op. 10} \textit{The Nash Ensemble}\marginnote{max}
+**Sextet in C major for piano, strings and winds, Op. 37 (1935)** *The Nash Ensemble*
 
-\noindent{String Quartet No. 2 in D$\flat$ major (1906), Op. 15} \textit{Fine Arts Quartet}\marginnote{high}
+**Aria for flute and piano, Op. 48-1 (1958)** 
 
-\noindent{Sonata in C$\sharp$ minor for violin and piano (1912), Op. 21} \textit{Elizabeth Chang, Steven Beck}\marginnote{max}
+**Passacaglia for solo flute, Op. 48-2 (1959)** 
 
-\noindent{Piano Quintet No. 2 in E$\flat$ minor (1914), Op. 26} \textit{Martin Roscoe, The Vanbrugh Quartet}\marginnote{high}
+# Piano
 
-\noindent{String Quartet No. 3 in A minor (1926), Op. 33} \textit{The Nash Ensemble}\marginnote{max}
+**Four Pieces, Op. 2 (1897, pub. 1905)** *Sofja G\"{u}lbadamova*
 
-\noindent{Sextet in C major for piano, strings and winds (1935), Op. 37} \textit{The Nash Ensemble}\marginnote{max}
+**Waltzes in F$\sharp$ minor for four hands, Op. 3 (1897)** *Duo Egri \& Pertis*
 
-\noindent{Aria for flute and piano (1958), Op. 48-1} 
+**Variations and Fugue on a Theme of E[mma].G[ruber]., Op. 4 (1897)** *Martin Roscoe*
 
-\noindent{Passacaglia for solo flute (1959), Op. 48-2} 
+**Gavotte and Musette, WoO (1898)** *Sofja G\"{u}lbadamova*
 
-\section{Piano}
+**Albumblatt, WoO (1899)** *Sofja G\"{u}lbadamova*
 
-\noindent{Four Pieces (1897, pub. 1905), Op. 2} \textit{Sofja G\"{u}lbadamova}\marginnote{high}
+**Passacaglia in E$\flat$ minor, Op. 6 (1899)** *Martin Roscoe*
 
-\noindent{Waltzes in F$\sharp$ minor for four hands (1897), Op. 3} \textit{Duo Egri \& Pertis}\marginnote{high}
+**Four Rhapsodies, Op. 11 (1903)** *Sofja G\"{u}lbadamova*
 
-\noindent{Variations and Fugue on a Theme of E[mma].G[ruber]. (1897), Op. 4} \textit{Martin Roscoe}\marginnote{high}
+**Winterreigen, Op. 13 (1905)** *Sofja G\"{u}lbadamova*
 
-\noindent{Gavotte and Musette (1898), WoO} \textit{Sofja G\"{u}lbadamova}\marginnote{high}
+**Humoresque in the form of a Suite, Op. 17 (1907)** *Sofja G\"{u}lbadamova*
 
-\noindent{Albumblatt (1899), WoO} \textit{Sofja G\"{u}lbadamova}\marginnote{high}
+**Three Pieces, Op. 23 (1912)** *Sofja G\"{u}lbadamova*
 
-\noindent{Passacaglia in E$\flat$ minor (1899), Op. 6} \textit{Martin Roscoe}\marginnote{high}
+**Fugue in D minor for left hand, WoO (1913)** 
 
-\noindent{Four Rhapsodies (1903), Op. 11} \textit{Sofja G\"{u}lbadamova}\marginnote{high}
+**Suite in A minor "Suite in the Old Style", Op. 24 (1913)** *Sofja G\"{u}lbadamova*
 
-\noindent{Winterreigen (1905), Op. 13} \textit{Sofja G\"{u}lbadamova}\marginnote{high}
+**Six Concert Etudes, Op. 28 (1916)** *Martin Roscoe*
 
-\noindent{Humoresque in the form of a Suite (1907), Op. 17} \textit{Sofja G\"{u}lbadamova}\marginnote{high}
+**Variations on a Hungarian Folksong, Op. 29 (1917)** *Sofja G\"{u}lbadamova*
 
-\noindent{Three Pieces (1912), Op. 23} \textit{Sofja G\"{u}lbadamova}\marginnote{max}
+**Pastorale on a Hungarian Christmas Song, WoO (1920)** *Sofja G\"{u}lbadamova*
 
-\noindent{Fugue in D minor for left hand (1913), WoO} 
+**Valses nobles, concert arrangement for piano (after Schubert, D. 969) (1920), 1920** *Martin Roscoe*
 
-\noindent{Suite in A minor "Suite in the Old Style" (1913), Op. 24} \textit{Sofja G\"{u}lbadamova}\marginnote{max}
+**Ruralia hungarica, Op. 32a (1923)** *Martin Roscoe*
 
-\noindent{Six Concert Etudes (1916), Op. 28} \textit{Martin Roscoe}\marginnote{high}
+**Waltz for Piano from Delibes' "Coppelia", WoO (1925)** *Sofja G\"{u}lbadamova*
 
-\noindent{Variations on a Hungarian Folksong (1917), Op. 29} \textit{Sofja G\"{u}lbadamova}\marginnote{max}
+**Six Pieces, Op. 41 (1945)** *Sofja G\"{u}lbadamova*
 
-\noindent{Pastorale on a Hungarian Christmas Song (1920), WoO} \textit{Sofja G\"{u}lbadamova}\marginnote{max}
+**Waltz Suite, for two pianos, Op. 39a (1945)** *Duo Egri \& Pertis*
 
-\noindent{Valses nobles, concert arrangement for piano (after Schubert, D. 969) (1920), 1920} \textit{Martin Roscoe}\marginnote{high}
+**Limping Waltz for solo piano, Op. 39b (1947)** 
 
-\noindent{Ruralia hungarica (1923), Op. 32a} \textit{Martin Roscoe}\marginnote{high}
+**Three Singular Pieces, Op. 44 (1951)** *Martin Roscoe*
 
-\noindent{Waltz for Piano from Delibes' "Coppelia" (1925), WoO} \textit{Sofja G\"{u}lbadamova}\marginnote{max}
+**Twelve Short Studies for the Advanced Pianist (1951)**
 
-\noindent{Six Pieces (1945), Op. 41} \textit{Sofja G\"{u}lbadamova}\marginnote{high}
-
-\noindent{Waltz Suite, for two pianos (1945), Op. 39a} \textit{Duo Egri \& Pertis}\marginnote{high}
-
-\noindent{Limping Waltz for solo piano (1947), Op. 39b} 
-
-\noindent{Three Singular Pieces (1951), Op. 44} \textit{Martin Roscoe}\marginnote{high}
-
-\noindent{Twelve Short Studies for the Advanced Pianist (1951)}
-
-\noindent{Schatz-Walzer, Op. 418 (Johann Strauss II)} \textit{Sofja G\"{u}lbadamova}\marginnote{max}
+**Schatz-Walzer, Op. 418 (Johann Strauss II)** *Sofja G\"{u}lbadamova*
