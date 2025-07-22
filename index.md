@@ -15,8 +15,8 @@ Everything here reflects my personal taste, not any kind of critical consensus. 
 
 ## 🔍 Browse by Composer
 
-- [Samuel Barber](barber.md)
-- [Ernst von Dohnányi](dohnanyi.md)
+- [Samuel Barber](docs/barber.md)
+- [Ernst von Dohnányi](docs/dohnanyi.md)
 - [Johann Sebastian Bach](bach.md)
 - [Claude Debussy](debussy.md)
 - [Ludwig van Beethoven](beethoven.md)
