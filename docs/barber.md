@@ -10,7 +10,7 @@ nav_order: 1
 - **Vanessa**, Op. 32 (1956-57, 1964)
 - **A Hand of Bridge**, Op. 35 (1959) *Royal SNO, Marin Alsop*
 
-- **Antony and Cleopatra** (1966, 1975), Op. 40 
+- **Antony and Cleopatra**, Op. 40 (1966, 1975) 
 
 ## Ballet
 
