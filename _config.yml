@@ -2,7 +2,7 @@ title: "Classical Music"
 description: "Favorite classical recordings by composer"
 remote_theme: just-the-docs/just-the-docs
 
-url: https://LuHoo.github.io/classical_music
+# url: https://LuHoo.github.io/classical_music
 
 # Enable navigation
 nav_sort: case_insensitive

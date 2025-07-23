@@ -10,7 +10,7 @@ nav_order: 1
 - **Vanessa**, Op. 32 (1956-57, 1964)
 - **A Hand of Bridge**, Op. 35 (1959) *Royal SNO, Marin Alsop*
 
-- **Antony and Cleopatra** (1966, 1975), Op. 40 
+- **Antony and Cleopatra**, Op. 40 (1966, 1975) 
 
 ## Ballet
 
@@ -24,19 +24,19 @@ nav_order: 1
 
 - **Serenade (str-orch)**, Op. 1 (1944) *Royal SNO, Marin Alsop*
 
-- **Overture to "The School for Scandal"**, Op. 5 (1931) *New Zealand SO, Andrew Schenck*
+- **Overture to "The School for Scandal"**, Op. 5 (1931) [*New Zealand SO, Andrew Schenck*](https://tidal.com/album/313229002)
 
-- **Music for a Scene from Shelley**, Op. 7 (1933) *New Zealand SO, Andrew Schenck*
+- **Music for a Scene from Shelley**, Op. 7 (1933) [*New Zealand SO, Andrew Schenck*](https://tidal.com/album/313229002)
 
 - **First Symphony (in One Movement)**, Op. 9 (1935-1936, 1942-1943) *Baltimore SO, David Zinman*
 
-- **Adagio for Strings**, Op. 11a (1936) *New Zealand SO, Andrew Schenck*
+- **Adagio for Strings**, Op. 11a (1936) [*New Zealand SO, Andrew Schenck*](https://tidal.com/album/313229002)
 
-- **(First) Essay for Orchestra**, Op. 12 (1938) *New Zealand SO, Andrew Schenck*
+- **(First) Essay for Orchestra**, Op. 12 (1938) [*New Zealand SO, Andrew Schenck*](https://tidal.com/album/313229002)
 
 - **Second Essay for Orchestra**, Op. 17 (1942) *Royal SNO, Marin Alsop*
 
-- **Symphony No. 2**, Op. 19 (1944, 1947) *New Zealand SO, Andrew Schenck*
+- **Symphony No. 2**, Op. 19 (1944, 1947) [*New Zealand SO, Andrew Schenck*](https://tidal.com/album/313229002)
 
 - **Night Flight, Tone Poem**, Op. 19a (1964)
 
