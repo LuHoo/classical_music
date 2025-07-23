@@ -31,7 +31,7 @@ nav_order: 1
 
 **Symphony No. 1 in D minor, Op. 9** (1901) *Deutsche Staatsphilharmonie Rheinland-Pfalz, Roberto Paternostro*
 
-**Suite in F-sharp minor, Op. 19** (1909) *Overture: ORF Vienna RSO, Roberto Paternostro* (10/2021)
+**Suite in F♯ minor, Op. 19** (1909) *Overture: ORF Vienna RSO, Roberto Paternostro* (10/2021)
 
 **Festival Overture, Op. 31** (1923)
 
@@ -39,7 +39,7 @@ nav_order: 1
 
 **Symphonic Minutes, Op. 36** (1933) *BBC PO, Matthias Bamert*
 
-**Waltz Suite, Op. 39** *Miskolc SO, Lászlo Kovács*[(12/2011)](https://www.gramophone.co.uk/reviews/review?slug=dohn%C3%A1nyi-symphony-in-f-zrinyi-overture-no-2)
+**Waltz Suite, Op. 39** *Miskolc SO, Lászlo Kovács* [(12/2011)](https://www.gramophone.co.uk/reviews/review?slug=dohn%C3%A1nyi-symphony-in-f-zrinyi-overture-no-2)
 
 **Symphony No. 2 in E major, Op. 40** (1945, revised 1954-7) *BBC PO, Matthias Bamert*
 
@@ -65,25 +65,25 @@ nav_order: 1
 
 **String Quartet in D minor** (unpublished, manuscript at British Library)
 
-**String Sextet in B$\flat$ major** (1893, revised 1896, revised and premiered 1898)
+**String Sextet in B♭ major** (1893, revised 1896, revised and premiered 1898)
 
 **Minuet for String Quartet** (1894)
 
-**Piano Quartet in F$\sharp$ minor** (1894)
+**Piano Quartet in F♯ minor** (1894)
 
 **Piano Quintet No. 1 in C minor, Op. 1** (1895) *Andr\'{a}s Schiff, Tak\'{a}cs Quartet*
 
 **String Quartet No. 1 in A major, Op. 7** (1899) *Fine Arts Quartet*
 
-**Sonata in B$\flat$ minor for cello and piano, Op. 8** (1899)
+**Sonata in B♭ minor for cello and piano, Op. 8** (1899)
 
 **Serenade in C major for string trio, Op. 10** (1902) *The Nash Ensemble*
 
-**String Quartet No. 2 in D$\flat$ major, Op. 15** (1906) *Fine Arts Quartet*
+**String Quartet No. 2 in D♭ major, Op. 15** (1906) *Fine Arts Quartet*
 
-**Sonata in C$\sharp$ minor for violin and piano, Op. 21** (1912) *Elizabeth Chang, Steven Beck*
+**Sonata in C♯ minor for violin and piano, Op. 21** (1912) *Elizabeth Chang, Steven Beck*
 
-**Piano Quintet No. 2 in E$\flat$ minor, Op. 26** (1914) *Martin Roscoe, The Vanbrugh Quartet*
+**Piano Quintet No. 2 in E♭ minor, Op. 26** (1914) *Martin Roscoe, The Vanbrugh Quartet*
 
 **String Quartet No. 3 in A minor, Op. 33** (1926) *The Nash Ensemble*
 
@@ -97,7 +97,7 @@ nav_order: 1
 
 **Four Pieces, Op. 2** (1897, pub. 1905) *Sofja Gülbadamova*
 
-**Waltzes in F$\sharp$ minor for four hands, Op. 3** (1897) *Duo Egri \& Pertis*
+**Waltzes in F♯ minor for four hands, Op. 3** (1897) *Duo Egri \& Pertis*
 
 **Variations and Fugue on a Theme of E[mma].G[ruber]., Op. 4** (1897) *Martin Roscoe*
 
@@ -105,7 +105,7 @@ nav_order: 1
 
 **Albumblatt, WoO** (1899) *Sofja G\"{u}lbadamova*
 
-**Passacaglia in E$\flat$ minor, Op. 6** (1899) *Martin Roscoe*
+**Passacaglia in E♭ minor, Op. 6** (1899) *Martin Roscoe*
 
 **Four Rhapsodies, Op. 11** (1903) *Sofja G\"{u}lbadamova*
 
