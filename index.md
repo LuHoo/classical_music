@@ -17,11 +17,7 @@ Everything here reflects my personal taste, not any kind of critical consensus. 
 
 - [Samuel Barber](docs/barber.md)
 - [Ernst von Dohnányi](docs/dohnanyi.md)
-- [Johann Sebastian Bach](bach.md)
-- [Claude Debussy](debussy.md)
-- [Ludwig van Beethoven](beethoven.md)
-- [Igor Stravinsky](stravinsky.md)
-- [More…](#)
+- [Franz Schreker](docs/schreker.md)
 
 ---
 
