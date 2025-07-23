@@ -24,9 +24,9 @@ nav_order: 1
 
 # Orchestral
 
-**Symphony in F major** (1896, unpublished) *Miskolc SO, L\'{a}szlo Kov\'{a}cs} [(12/2011)](https://www.gramophone.co.uk/reviews/review?slug=dohn%C3%A1nyi-symphony-in-f-zrinyi-overture-no-2)
+**Symphony in F major** (1896, unpublished) *Miskolc SO, Lászlo Kovács* [(12/2011)](https://www.gramophone.co.uk/reviews/review?slug=dohn%C3%A1nyi-symphony-in-f-zrinyi-overture-no-2)
 
-**Zrinyi Overture** *Miskolc SO, L\'{a}szlo Kov\'{a}cs} [(12/2011)](https://www.gramophone.co.uk/reviews/review?slug=dohn%C3%A1nyi-symphony-in-f-zrinyi-overture-no-2)
+**Zrinyi Overture** *Miskolc SO, Lászlo Kovács* [(12/2011)](https://www.gramophone.co.uk/reviews/review?slug=dohn%C3%A1nyi-symphony-in-f-zrinyi-overture-no-2)
 
 
 **Symphony No. 1 in D minor, Op. 9** (1901) *Deutsche Staatsphilharmonie Rheinland-Pfalz, Roberto Paternostro*
@@ -39,7 +39,7 @@ nav_order: 1
 
 **Symphonic Minutes, Op. 36** (1933) *BBC PO, Matthias Bamert*
 
-**Waltz Suite, Op. 39** *Miskolc SO, L\'{a}szlo Kov\'{a}cs* [(12/2011)](https://www.gramophone.co.uk/reviews/review?slug=dohn%C3%A1nyi-symphony-in-f-zrinyi-overture-no-2)
+**Waltz Suite, Op. 39** *Miskolc SO, Lászlo Kovács*[(12/2011)](https://www.gramophone.co.uk/reviews/review?slug=dohn%C3%A1nyi-symphony-in-f-zrinyi-overture-no-2)
 
 **Symphony No. 2 in E major, Op. 40** (1945, revised 1954-7) *BBC PO, Matthias Bamert*
 
@@ -51,7 +51,7 @@ nav_order: 1
 
 **Konzertstück (Concertpiece) in D major for cello and orchestra, Op. 12** (1904) *Tim Posner, Berner SO, Katharina M\"{u}llner* (06/2024)
 
-**Variations on a Nursery Tune (Variationen über ein Kinderlied) for piano and orchestra, Op. 25** (1914) *Sofja G\"{u}lbadamova, Deutsche Staatsphilharmonie Rheinland-Pfalz, Modestas Pitrenas* (03/2022)
+**Variations on a Nursery Tune (Variationen über ein Kinderlied) for piano and orchestra, Op. 25** (1914) *Sofja Gülbadamova, Deutsche Staatsphilharmonie Rheinland-Pfalz, Modestas Pitrenas* (03/2022)
 
 **Violin Concerto No. 1 in D minor, Op. 27** (1915) *Ulf Wallin, hr-Sinfonieorchester, Alun Francis*
 
@@ -95,13 +95,13 @@ nav_order: 1
 
 # Piano
 
-**Four Pieces, Op. 2** (1897, pub. 1905) *Sofja G\"{u}lbadamova*
+**Four Pieces, Op. 2** (1897, pub. 1905) *Sofja Gülbadamova*
 
 **Waltzes in F$\sharp$ minor for four hands, Op. 3** (1897) *Duo Egri \& Pertis*
 
 **Variations and Fugue on a Theme of E[mma].G[ruber]., Op. 4** (1897) *Martin Roscoe*
 
-**Gavotte and Musette, WoO** (1898) *Sofja G\"{u}lbadamova*
+**Gavotte and Musette, WoO** (1898) *Sofja Gülbadamova*
 
 **Albumblatt, WoO** (1899) *Sofja G\"{u}lbadamova*
 
@@ -111,27 +111,27 @@ nav_order: 1
 
 **Winterreigen, Op. 13** (1905) *Sofja G\"{u}lbadamova*
 
-**Humoresque in the form of a Suite, Op. 17** (1907) *Sofja G\"{u}lbadamova*
+**Humoresque in the form of a Suite, Op. 17** (1907) *Sofja Gülbadamova*
 
 **Three Pieces, Op. 23** (1912) *Sofja G\"{u}lbadamova*
 
 **Fugue in D minor for left hand, WoO** (1913)
 
-**Suite in A minor "Suite in the Old Style", Op. 24** (1913) *Sofja G\"{u}lbadamova*
+**Suite in A minor "Suite in the Old Style", Op. 24** (1913) *Sofja Gülbadamova*
 
 **Six Concert Etudes, Op. 28** (1916) *Martin Roscoe*
 
-**Variations on a Hungarian Folksong, Op. 29** (1917) *Sofja G\"{u}lbadamova*
+**Variations on a Hungarian Folksong, Op. 29** (1917) *Sofja Gülbadamova*
 
-**Pastorale on a Hungarian Christmas Song, WoO** (1920) *Sofja G\"{u}lbadamova*
+**Pastorale on a Hungarian Christmas Song, WoO** (1920) *Sofja Gülbadamova*
 
 **Valses nobles, concert arrangement for piano (after Schubert, D. 969)** (1920), 1920 *Martin Roscoe*
 
 **Ruralia hungarica, Op. 32a** (1923) *Martin Roscoe*
 
-**Waltz for Piano from Delibes' "Coppelia", WoO** (1925) *Sofja G\"{u}lbadamova*
+**Waltz for Piano from Delibes' "Coppelia", WoO** (1925) *Sofja Gülbadamova*
 
-**Six Pieces, Op. 41** (1945) *Sofja G\"{u}lbadamova*
+**Six Pieces, Op. 41** (1945) *Sofja Gülbadamova*
 
 **Waltz Suite, for two pianos, Op. 39a** (1945) *Duo Egri \& Pertis*
 
@@ -141,4 +141,4 @@ nav_order: 1
 
 **Twelve Short Studies for the Advanced Pianist** (1951)
 
-**Schatz-Walzer, Op. 418 (Johann Strauss II)** *Sofja G\"{u}lbadamova*
+**Schatz-Walzer, Op. 418 (Johann Strauss II)** *Sofja Gülbadamova*
