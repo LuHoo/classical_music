@@ -3,7 +3,9 @@ title: Ernst von Dohnányi
 nav_order: 1
 ---
 
-# Stage
+# Ernst von Dohnányi
+
+## Stage
 
 **Der Schleier der Pierrette (The Veil of Pierrette), Mime in three parts, Op. 18 (Libretto after Arthur Schnitzler)** (1909) *ORF Vienna RSO, Ariane Matiakh*
 
@@ -14,7 +16,7 @@ nav_order: 1
 **A tenor (The Tenor), Comic Opera in three acts, Op. 34 (Libretto by Ernő Góth and Carl Sternheim, after Bürger Schippel by Carl Sternheim)** (1927)
 
 
-# Choral
+## Choral
 
 **Szegedi mise, Op. 35 (Szeged Mass, also Missa in Dedicatione Ecclesiae)** (1930)
 
@@ -22,7 +24,7 @@ nav_order: 1
 
 **Stabat mater, Op. 46** (1953)
 
-# Orchestral
+## Orchestral
 
 **Symphony in F major** (1896, unpublished) *Miskolc SO, Lászlo Kovács* [(12/2011)](https://www.gramophone.co.uk/reviews/review?slug=dohn%C3%A1nyi-symphony-in-f-zrinyi-overture-no-2)
 
@@ -45,7 +47,7 @@ nav_order: 1
 
 **American Rhapsody, Op. 47** (1953) *Overture: ORF Vienna RSO, Roberto Paternostro* (10/2021)
 
-# Solo instrument and orchestra
+## Solo instrument and orchestra
 
 **Piano Concerto No. 1 in E minor, Op. 5** (1898) *Howard Shelley, BBC PO, Matthias Bamert*
 
@@ -61,7 +63,7 @@ nav_order: 1
 
 **Concertino for harp and chamber orchestra, Op. 45** (1952) *Silke Aichhorn, Deutsche Staatsphilharmonie Rheinland-Pfalz, Modestas Pitrenas* (03/2022)
 
-# Chamber and instrumental
+## Chamber and instrumental
 
 **String Quartet in D minor** (unpublished, manuscript at British Library)
 
@@ -93,7 +95,7 @@ nav_order: 1
 
 **Passacaglia for solo flute, Op. 48-2** (1959)
 
-# Piano
+## Piano
 
 **Four Pieces, Op. 2** (1897, pub. 1905) *Sofja Gülbadamova*
 
