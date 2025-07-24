@@ -38,7 +38,7 @@ nav_order: 1
 
 **Evocations, for orchestra, mezzo-soprano, tenor, baritone, and chorus, Op. 15** (1910–11) [*BBC PO, Yan Pascal Tortelier*](https://tidal.com/album/376443862)
 
-**Padmâvatî Suites (No 1 & 2), Op. 18** (1918)
+**Padmâvatî Suites (No 1 & 2), Op. 18** (1918) [*Royal Scottish National Orchestra, Stéphane Denève*](https://tidal.com/album/284372110)
 
 **Pour une fête de printemps, symphonic poem, Op. 22** (1920)} [*BBC PO, Yan Pascal Tortelier*](https://tidal.com/album/376443862)
 
@@ -119,7 +119,7 @@ nav_order: 1
 
 **Piano Trio in E-flat, Op. 2** (1902, rev. 1927)
 
-**Divertissement, Op. 6** for piano and wind quintet (1906)
+**Divertissement, Op. 6** for piano and wind quintet (1906) [*Jean-Pierre Rampal, Jacques Lancelot, Paul Hongne, Gilbert Coursier, Robert Veyron-Lacroix, Pierre Pierlot*](https://tidal.com/album/54297839/track/54297847)
 
 **Violin Sonata No. 1 in D minor, Op. 11** (1907–1908)
 
