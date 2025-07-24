@@ -28,7 +28,7 @@ nav_order: 1
 
 **Prelude to Act 2 of Le Quatorze juillet** by Romain Rolland, Paris (1936)
 
-**Elpénor, Op. 59**, for chamber ensemble, radio score (1947) (1937) [*Michel Moragues*](https://tidal.com/album/12733647/track/12733661)
+**Elpénor, Op. 59**, for chamber ensemble, radio score (1947) [*Michel Moragues*](https://tidal.com/album/12733647/track/12733661)
 
 ## Orchestral
 
