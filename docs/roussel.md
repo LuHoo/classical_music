@@ -10,7 +10,7 @@ nav_order: 1
 ## Stage}
 **Le marchand de sable qui passe, Op. 13** (The Sandman), incidental music for a verse play by Jean-Aubry, Le Havre (1908),  [*Royal Scottish National Orchestra, Stéphane Denève*](https://tidal.com/browse/track/12602666)
 
-**Le festin de l'araignée,Op. 17** ballet in one act (1913), *BBC PO, Yan Pascal Tortelier*
+**Le festin de l'araignée,Op. 17** ballet in one act (1913), [*BBC PO, Yan Pascal Tortelier*](https://tidal.com/album/377163547)
 
 **Padmâvatî, Op. 18**, opera in 2 acts (1913–18, Louis Laloy, after T.-M. Pavie), f.p. Paris Opéra (1923)
 
@@ -18,7 +18,7 @@ nav_order: 1
 
 **Sarabande** (1927; for the children's ballet \emph{L'éventail de Jeanne}, to which ten French composers each contributed a dance)
 
-**Bacchus and Ariadne, Op. 43** ballet in two acts, f.p. Paris Opéra (1931) *BBC PO, Yan Pascal Tortelier*
+**Bacchus and Ariadne, Op. 43** ballet in two acts, f.p. Paris Opéra (1931) [*BBC PO, Yan Pascal Tortelier*](https://tidal.com/album/377163547)
 
 **Aeneas, Op. 54**, ballet for chorus and orchestra (1935)
 
@@ -34,33 +34,33 @@ nav_order: 1
 
 **Symphony No. 1 in D minor 'The Poem of the Forest', Op. 7** (1904–1906)} [*Royal Scottish National Orchestra, Stéphane Denève*](\href{https://tidal.com/browse/track/12602666)
 
-**Evocations, for orchestra, mezzo-soprano, tenor, baritone, and chorus, Op. 15** (1910–11) [*BBC PO, Yan Pascal Tortelier*]
+**Evocations, for orchestra, mezzo-soprano, tenor, baritone, and chorus, Op. 15** (1910–11) [*BBC PO, Yan Pascal Tortelier*](https://tidal.com/album/376443862)
 
 **Padmâvatî Suites (No 1 & 2), Op. 18** (1918)
 
-**Pour une fête de printemps, symphonic poem, Op. 22** (1920)} [*BBC PO, Yan Pascal Tortelier*]
+**Pour une fête de printemps, symphonic poem, Op. 22** (1920)} [*BBC PO, Yan Pascal Tortelier*](https://tidal.com/album/376443862)
 
-**Symphony No. 2 in B-flat major, Op. 23** (1919–1921) [*Orchestre National de France, Charles Dutoit*]
+**Symphony No. 2 in B-flat major, Op. 23** (1919–1921) [*Orchestre National de France, Charles Dutoit*](https://tidal.com/album/535142)
 
-**Suite for Orchestra in F major, Op. 33** (1926) [*BBC PO, Yan Pascal Tortelier*]
+**Suite for Orchestra in F major, Op. 33** (1926) [*BBC PO, Yan Pascal Tortelier*](https://tidal.com/album/376443862)
 
-**Concert for small orchestra, Op. 34** (1926–1927) [*Royal Scottish National Orchestra, Stéphane Denève*]
+**Concert for small orchestra, Op. 34** (1926–1927) [*Royal Scottish National Orchestra, Stéphane Denève*](https://tidal.com/album/12616862)
 
-**Petite Suite, Op. 39** (1929) [*Royal Scottish National Orchestra, Stéphane Denève*]
+**Petite Suite, Op. 39** (1929) [*Royal Scottish National Orchestra, Stéphane Denève*](https://tidal.com/album/12616862)
 
-**Symphony No. 3 in G minor, Op. 42** (1929–30), commissioned by the Boston Symphony for its 50th anniversary [*Orchestre National de France, Charles Dutoit*]
+**Symphony No. 3 in G minor, Op. 42** (1929–30), commissioned by the Boston Symphony for its 50th anniversary [*Orchestre National de France, Charles Dutoit*](https://tidal.com/album/535142)
 
-**Sinfonietta for String Orchestra, Op. 52** (1934) [*Orchestre de la Société des Concerts du Conservatoire, André Cluytens*]
+**Sinfonietta for String Orchestra, Op. 52** (1934) [*Orchestre de la Société des Concerts du Conservatoire, André Cluytens*](https://tidal.com/album/184078976)
 
-**Symphony No. 4 in A major, Op. 53** (1934) *Orchestre National de France, Charles Dutoit*
+**Symphony No. 4 in A major, Op. 53** (1934) [*Orchestre National de France, Charles Dutoit*](https://tidal.com/album/535142)
 
-**Rapsodie flamande, Op. 56** (1936) *Royal Scottish National Orchestra, Stéphane Denève*
+**Rapsodie flamande, Op. 56** (1936) [*Royal Scottish National Orchestra, Stéphane Denève*](https://tidal.com/album/12616862)
 
 ## Concertante
 
-**Piano Concerto in G major, Op. 36** (1927) *Danielle Laval, Orchestre de Paris, Jean-Pierre Jacquillat*
+**Piano Concerto in G major, Op. 36** (1927) [*Danielle Laval, Orchestre de Paris, Jean-Pierre Jacquillat*](https://tidal.com/album/3277650)
 
-**Cello Concertino, Op. 57** (1936) *Jean-Guihen Queras, Ensemble Orchestral de Paris, David Stern*
+**Cello Concertino, Op. 57** (1936) [*Jean-Guihen Queras, Ensemble Orchestral de Paris, David Stern*](https://tidal.com/album/69600745)
 
 ## Choral
 
