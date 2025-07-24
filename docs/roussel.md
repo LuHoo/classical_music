@@ -28,7 +28,7 @@ nav_order: 1
 
 **Prelude to Act 2 of Le Quatorze juillet** by Romain Rolland, Paris (1936)
 
-**Elpénor, Op. 59**, for chamber ensemble, radio score (1947) (1937)
+**Elpénor, Op. 59**, for chamber ensemble, radio score (1947) (1937) [*Michel Moragues*](https://tidal.com/album/12733647/track/12733661)
 
 ## Orchestral
 
@@ -125,7 +125,7 @@ nav_order: 1
 
 **Impromptu, Op. 21**, for harp (1919)
 
-**Joueurs de flûte, Op. 27**, for flute and piano (1924)
+**Joueurs de flûte, Op. 27**, for flute and piano (1924) [*Mathieu Dufour*](https://tidal.com/album/12733647/track/12733661)
 
 **Violin Sonata No. 2 in A major, Op. 28** (1924)
 
@@ -135,17 +135,19 @@ nav_order: 1
 
 **Serenade, Op. 30** for flute, string trio, and harp (1925)
 
-**Trio, Op. 40** for flute, viola, and cello (1929)
+**Trio, Op. 40** for flute, viola, and cello (1929) [*Mathieu Dufour*](https://tidal.com/album/12733647/track/12733661)
 
 **String Quartet, Op. 45** (1931–1932)
 
-**Andante and Scherzo, Op. 51**, for flute and piano (1934)
+**Andante and Scherzo, Op. 51**, for flute and piano (1934) [*Mathieu Dufour*](https://tidal.com/album/12733647/track/12733661)
 
 **Pipe** for piccolo and piano (1934)
 
 **String Trio, Op. 58** (1937)
 
 **Andante** from an unfinished wind trio, for oboe, clarinet, and bassoon (1937)
+
+**Aria**, for flute and piano (1924) [*Mathieu Dufour*](https://tidal.com/album/12733647/track/12733661)
 
 
 ## Piano Solo
