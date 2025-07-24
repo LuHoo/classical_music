@@ -32,9 +32,9 @@ nav_order: 1
 
 ## Orchestral
 
-**Résurrection, Op. 4**, Prelude for orchestra (1903) [*Royal Scottish National Orchestra, Stéphane Denève*](\href{https://tidal.com/browse/track/12602666)
+**Résurrection, Op. 4**, Prelude for orchestra (1903) [*Royal Scottish National Orchestra, Stéphane Denève*](https://tidal.com/browse/track/12602666)
 
-**Symphony No. 1 in D minor 'The Poem of the Forest', Op. 7** (1904–1906)} [*Royal Scottish National Orchestra, Stéphane Denève*](\href{https://tidal.com/browse/track/12602666)
+**Symphony No. 1 in D minor 'The Poem of the Forest', Op. 7** (1904–1906)} [*Royal Scottish National Orchestra, Stéphane Denève*](https://tidal.com/browse/track/12602666)
 
 **Evocations, for orchestra, mezzo-soprano, tenor, baritone, and chorus, Op. 15** (1910–11) [*BBC PO, Yan Pascal Tortelier*](https://tidal.com/album/376443862)
 
