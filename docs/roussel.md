@@ -20,7 +20,9 @@ nav_order: 1
 
 **Bacchus and Ariadne, Op. 43** ballet in two acts, f.p. Paris Opéra (1931) [*BBC PO, Yan Pascal Tortelier*](https://tidal.com/album/377163547)
 
-**Aeneas, Op. 54**, ballet for chorus and orchestra (1935)
+**Aeneas, Op. 54**, ballet for chorus and orchestra (1935) [*Orchestre Philharmonique du Luxemburg, Europa Chor Akademie, Bramwell Toby*](https://tidal.com/album/19480810)
+
+
 
 **Le testament de la tante Caroline**, opera in 3 acts (1936)
 
@@ -41,6 +43,8 @@ nav_order: 1
 **Pour une fête de printemps, symphonic poem, Op. 22** (1920)} [*BBC PO, Yan Pascal Tortelier*](https://tidal.com/album/376443862)
 
 **Symphony No. 2 in B-flat major, Op. 23** (1919–1921) [*Orchestre National de France, Charles Dutoit*](https://tidal.com/album/535142)
+
+**Fanfare pur un sacre paien** (1921) [*Orchestre Philharmonique du Luxemburg, Europa Chor Akademie, Bramwell Toby*](https://tidal.com/album/19480810)
 
 **Suite for Orchestra in F major, Op. 33** (1926) [*BBC PO, Yan Pascal Tortelier*](https://tidal.com/album/376443862)
 
@@ -64,7 +68,11 @@ nav_order: 1
 
 ## Choral
 
-**Psalm 80 for tenor, choir, and orchestra, Op. 37** (1928)
+**Le bardit des francs** (1926) [*Orchestre Philharmonique du Luxemburg, Europa Chor Akademie, Bramwell Toby*](https://tidal.com/album/19480810)
+
+
+
+**Psalm 80 for tenor, choir, and orchestra, Op. 37** (1928) [*Orchestre Philharmonique du Luxemburg, Europa Chor Akademie, Bramwell Toby*](https://tidal.com/album/19480810)
 
 ## Solo Vocal Works
 
