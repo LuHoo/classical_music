@@ -15,7 +15,7 @@ nav_order: 1
 
 **Intermezzo for string orchestra, Op. 8** (1900) (later incorporated into the Romantische Suite)
 
-**Scherzo for string orchestra** (1900)  *Festival Strings Lucerne, Daniel Dodds* (06/2024)
+**Scherzo for string orchestra** (1900)  [https://tidal.com/album/339643955](*Festival Strings Lucerne, Daniel Dodds*) (06/2024)
 
 **Ekkehard: Symphonic Overture, Op. 12** (1902–1903)
 
