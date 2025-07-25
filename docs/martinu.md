@@ -9,7 +9,7 @@ nav_order: 1
 
 [Composer page on Wikipedia](https://en.wikipedia.org/wiki/List_of_compositions_by_Bohuslav_Martinů)
 
-## Ballets}
+## Ballets 
 
 **Noc** (Night), ballet in 1 act, H 89 (1914)
 
@@ -42,7 +42,7 @@ nav_order: 1
 **The Strangler**, ballet for three dancers, H 317 (1948)
 
 
-## Orchestral}
+## Orchestral 
 
 **Concerto for Violin and Piano**, H 13 (1910)
 
@@ -148,5 +148,5 @@ nav_order: 1
 
 **The Parables**, H 367 (1958)
 
-**Estampes for Orchestra**, H 369 (1958)}
+**Estampes for Orchestra**, H 369 (1958) 
 
