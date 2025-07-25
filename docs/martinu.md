@@ -27,15 +27,15 @@ nav_order: 1
 
 **Motýl, který dupal** (The Butterfly that Stamped), ballet in 1 act, H 153 (1926)
 
-**Le Raid merveilleux** (The Amazing Flight), mechanical ballet, H 159 (1927) *Czech Philharmonic, Christopher Hogwood*
+**Le Raid merveilleux** (The Amazing Flight), mechanical ballet, H 159 (1927) [*Czech Philharmonic, Christopher Hogwood*](https://tidal.com/album/95281094)
 
-**La Revue de cuisine** (The Kitchen Revue), jazz-ballet in 1 act, H 161 (1927) *Czech Philharmonic, Christopher Hogwood*
+**La Revue de cuisine** (The Kitchen Revue), jazz-ballet in 1 act, H 161 (1927) [*Czech Philharmonic, Christopher Hogwood*](https://tidal.com/album/95281094)
 
-**On Tourne**, ballet in 1 act, H 163 (1927) *Daniel Wiesner, Czech Philharmonic, Christopher Hogwood*
+**On Tourne**, ballet in 1 act, H 163 (1927) [*Daniel Wiesner, Czech Philharmonic, Christopher Hogwood*](https://tidal.com/album/95281094)
 
 **Check to the King**, jazz-ballet in 2 acts, H 186 (1930)
 
-**Špalíček** (The Chap-Book), ballet with singing in 3 acts, H 214 (1932)
+**Špalíček** (The Chap-Book), ballet with singing in 3 acts, H 214 (1932) [**Suites, H 214a and H214b** *Estonian National Symphony Orchestra, Neeme Järvi*](https://tidal.com/album/376326703)
 
 **Le jugement de** (The Judgment of), ballet in 1 act, H 245 (1935)
 
@@ -44,23 +44,21 @@ nav_order: 1
 
 ## Orchestral 
 
-**Concerto for Violin and Piano**, H 13 (1910)
+**Half-time**, rondo for large orchestra, H 142 (1924) [*Brno PO, Peter Vronsky*](https://tidal.com/album/104574662)
 
-**Half-time**, rondo for large orchestra, H 142 (1924)
+**Concertino** for Cello, Winds, Percussion and Piano in C minor, H 143 (1924) [*Raphael Wallfisch, Czech PO, Jiri Belohlavek*](https://tidal.com/album/12417082)
 
-**Concertino** for Cello, Winds, Percussion and Piano in C minor, H 143 (1924)
+**Piano Concerto No. 1 in D**, H 149 (1925) [*Emil Leichner, Czech PO, Jiri Belohlavek*](https://tidal.com/album/95730537)
 
-**Piano Concerto No. 1 in D**, H 149 (1925)
-
-**La Bagarre**, Allegro for large orchestra, H 155 (1926)
+**La Bagarre**, Allegro for large orchestra, H 155 (1926) [*Brno PO, Peter Vronsky*](https://tidal.com/album/104574662)
 
 **Divertimento** (Concertino) in G for left-hand piano and small orchestra, H 173 (1926–1928)
 
 **Rhapsody** (Allegro Symphonique), for large orchestra, H 171 (1928)
 
-**Cello Concerto No. 1 in D**, H 196 I (1930), H 196 II (1939), H 196 III (1955) *Victor Julien-Laferrière, Orchestre Philharmonique Royal de Liège, Gergely Madaras*
+**Cello Concerto No. 1 in D**, H 196 I (1930), H 196 II (1939), H 196 III (1955) [*Victor Julien-Laferrière, Orchestre Philharmonique Royal de Liège, Gergely Madaras*](https://tidal.com/album/179047254)
 
-**Serenade for Chamber Orchestra** (1930), H 199 *Prague Chamber Orchestra, Oldrich Vlcek*
+**Serenade for Chamber Orchestra** (1930), H 199 [*Prague Chamber Orchestra, Oldrich Vlcek*](https://tidal.com/album/121806477)
 
 **Concerto for String Quartet and Orchestra**, H 207 (1931)
 
@@ -70,11 +68,11 @@ nav_order: 1
 
 **Sinfonia Concertante for Two Orchestras**, H 219 (1932)
 
-**Violin Concerto No. 1**, H 226 (1933) *Frank Peter Zimmermann, Bamberg SO, Jakob Hrusa*
+**Violin Concerto No. 1**, H 226 (1933) [*Frank Peter Zimmermann, Bamberg SO, Jakob Hrusa*](https://tidal.com/album/341658732)
 
 **Concertino** for Piano Trio (Violin, Cello and Piano) and String Orchestra, H 231 (1933)
 
-**Piano Concerto No. 2**, H 237 (1934)
+**Piano Concerto No. 2**, H 237 (1934) [*Emil Leichner, Czech PO, Jiri Belohlavek*](https://tidal.com/album/95730537)
 
 **Concerto for harpsichord and small orchestra**, H 246 (1935) *Mahan Esfahani, Prague RSO, Alexander Liebreich*
 
@@ -86,67 +84,81 @@ nav_order: 1
 
 **Tri Ricercari for chamber orchestra**, H 267
 
-**Concertino for Piano and Orchestra**, H 269 (1938)
+**Concertino for Piano and Orchestra**, H 269 (1938) [*Emil Leichner, Czech PO, Jiri Belohlavek*](https://tidal.com/album/95730537)
 
-**Double Concerto for Two String Orchestras, Piano, and Timpani**, H 271 (1938) *Malmö SO, James DePriest*
+**Double Concerto for Two String Orchestras, Piano, and Timpani**, H 271 (1938) [*Isolde Suslak, Malmö SO, James DePriest*](https://tidal.com/album/12107349)
 
-**Suite Concertante for Violin and Orchestra in D major**, H 276 I (1939), H 276 II (1944) *Frank Peter Zimmermann, Bamberg SO, Jakob Hrusa*
+**Suite Concertante for Violin and Orchestra in D major**, H 276 I (1939), H 276 II (1944) [*Frank Peter Zimmermann, Bamberg SO, Jakob Hrusa*](https://tidal.com/album/343201672)
 
 **Sinfonietta Giocosa for piano and chamber orchestra**, H 282 (1940)
 
 **Concerto da Camera, for violin and string orchestra with piano and percussion**, H 285 (1941)
 
-**Symphony No. 1**, H 289 (1942) *Bamberg SO, Neeme Järvi*
+**Symphony No. 1**, H 289 (1942) [*Bamberg SO, Neeme Järvi*](https://tidal.com/album/12123310)
 
 **Concerto for Two Pianos and Orchestra**, H 292 (1943)
 
-**Violin Concerto No. 2**, H 293 (1943) *Frank Peter Zimmermann, Bamberg SO, Jakob Hrusa*
+**Violin Concerto No. 2**, H 293 (1943) [*Frank Peter Zimmermann, Bamberg SO, Jakob Hrusa*](https://tidal.com/album/341658732)
 
-**Symphony No. 2**, H 295 (1943) *Bamberg SO, Neeme Järvi*
+**Symphony No. 2**, H 295 (1943) [*Bamberg SO, Neeme Järvi*](https://tidal.com/album/12123310)
 
 **Memorial to Lidice**, H 296 (1943)
 
-**Symphony No. 3**, H 299 (1944) *Bamberg SO, Neeme Järvi*
+**Symphony No. 3**, H 299 (1944) [*Bamberg SO, Neeme Järvi*](https://tidal.com/album/341729418)
 
-**Cello Concerto No. 2**, H 304 (1945)
+**Cello Concerto No. 2**, H 304 (1945) [*Raphael Wallfisch, Czech PO, Jiri Belohlavek*](https://tidal.com/album/12417082)
 
-**Symphony No. 4**, H 305 (1945) *Bamberg SO, Neeme Järvi*
+**Symphony No. 4**, H 305 (1945) [*Bamberg SO, Neeme Järvi*](https://tidal.com/album/341729418)
 
 **Czech Rhapsody for violin and orchestra**, H 307 A (1945)
 
-**Thunderbolt P-47, scherzo for orchestra**, H 309 (1945)
+**Thunderbolt P-47, scherzo for orchestra**, H 309 (1945) [*Brno PO, Peter Vronsky*](https://tidal.com/album/104574662)
 
-**Symphony No. 5**, H 310 (1946) *Bamberg SO, Neeme Järvi*
+**Symphony No. 5**, H 310 (1946) [*Bamberg SO, Neeme Järvi*](https://tidal.com/album/22486407)
 
-**Toccata e Due Canzoni**, H 311 (1946) *Prague Chamber Orchestra, Peter Skvor*
+**Toccata e Due Canzoni**, H 311 (1946) [*Prague Chamber Orchestra, Peter Skvor*](https://tidal.com/album/92549056)
 
-**Piano Concerto No. 3**, H 316 (1948) *Olli Mustonen, Lahti SO, Dalia Stasevska*
+**Piano Concerto No. 3**, H 316 (1948) [*Olli Mustonen, Lahti SO, Dalia Stasevska*](https://tidal.com/album/339835159)
 
 **Sinfonia Concertante No. 2 in B-flat major (Violin, Cello, Oboe, Bassoon and Orchestra with Piano)**, H 322 (1949)
 
-**Symphonietta La Jolla for piano and chamber orchestra in A major**, H 328 (1950) *Libor Hlavácek, Prague Chamber Orchestra, Zdenek Hnát*
+**Symphonietta La Jolla for piano and chamber orchestra in A major**, H 328 (1950) [*Libor Hlavácek, Prague Chamber Orchestra, Zdenek Hnát*](https://tidal.com/album/92549056)
 
 **Concerto for Two Violins and Orchestra No. 2 in D major**, H 329 (1950)
 
-**Concerto for Violin, Piano, and Orchestra**, H 342 (1953) *Josef Spacek, Miroslav Sekera, Prague RSO, Petr Popelka*
+**Intermezzo for Orchestra**, H 330 [*Brno PO, Peter Vronsky*](https://tidal.com/album/104574662)
 
-**Symphony No. 6 Fantaisies symphoniques**, H 343 (1953) *Bamberg SO, Neeme Järvi*
+**Concerto for Violin, Piano, and Orchestra**, H 342 (1953) [*Josef Spacek, Miroslav Sekera, Prague RSO, Petr Popelka*](https://tidal.com/album/310460423)
+
+**Symphony No. 6 Fantaisies symphoniques**, H 343 (1953) [*Bamberg SO, Neeme Järvi*](https://tidal.com/album/22486407)
 
 **Overture for Orchestra**, H 345 (1953)
 
-**Rhapsody Concerto, for viola and orchestra**, H 337 (1952) *Nobuko Imai, Malmö SO, James DePriest*
+**Rhapsody Concerto, for viola and orchestra**, H 337 (1952) [*Nobuko Imai, Malmö SO, James DePriest*](https://tidal.com/album/12107349)
 
-**Concerto for Oboe and Small Orchestra**, H 353 (1955)
+**Concerto for Oboe and Small Orchestra**, H 353 (1955) [*Marion Gibson, The Louisville Orchestra, Sidney Harth*](https://tidal.com/album/29089881)
 
-**The Frescoes of Piero della Francesca**, H 352 (1955) *Malmö SO, James DePriest*
+**The Frescoes of Piero della Francesca**, H 352 (1955) [*Malmö SO, James DePriest*](https://tidal.com/album/12107349)
 
-**The Rock, Symphonic Prelude for Large Orchestra**, H 363 (1957)
+**The Rock, Symphonic Prelude for Large Orchestra**, H 363 (1957) [*Brno PO, Peter Vronsky*](https://tidal.com/album/104574662)
 
-**Piano Concerto No. 4 "Incantations"**, H 358 (1956)
+**Piano Concerto No. 4 "Incantations"**, H 358 (1956) [*Emil Leichner, Czech PO, Jiri Belohlavek*](https://tidal.com/album/95730537)
 
-**Piano Concerto No. 5 "Fantasia concertante" in B flat major**, H 366 (1958)
+**Piano Concerto No. 5 "Fantasia concertante" in B flat major**, H 366 (1958) [*Emil Leichner, Czech PO, Jiri Belohlavek*](https://tidal.com/album/95730537)
 
 **The Parables**, H 367 (1958)
 
 **Estampes for Orchestra**, H 369 (1958) 
+
+# Chamber
+
+**Concerto for Violin and Piano**, H 13 (1910) [*Stephen Shipps, Dmitri Vorobiev*](https://tidal.com/album/12621237)
+
+**Violin Sonata in C Major**, H 120 [*Stephen Shipps, Dmitri Vorobiev*](https://tidal.com/album/12621237)
+
+**Violin Sonatina**, H 262 [*Stephen Shipps, Dmitri Vorobiev*](https://tidal.com/album/12621237)
+
+# Choral
+
+**The Epic of Gilgamesh** [*Crowe, Staples, Welton, Martinik, Callow, Prague Philhrmonic Choir, Czech PO, Manfred Honeck*](https://tidal.com/album/92803606)
 
