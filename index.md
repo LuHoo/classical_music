@@ -18,6 +18,7 @@ Everything here reflects my personal taste, not any kind of critical consensus. 
 - [Samuel Barber](docs/barber.md)
 - [Ernst von Dohnányi](docs/dohnanyi.md)
 - [Bohuslav Martinů](docs/martinu.md)
+- [Sergei Prokofiev](docs/prokofiev.md)
 - [Albert Roussel](doc/roussel.md)
 - [Franz Schreker](docs/schreker.md)
 
