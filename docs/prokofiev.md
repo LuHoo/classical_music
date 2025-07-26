@@ -66,7 +66,9 @@ nav_order: 1
 
 **Suite from Le pas d'acier**, Op. 41bis (1926) [*Royal Scottish National Orchestra, Neeme Järvi*](https://tidal.com/album/376435085)
 
-**American Overture**, Op. 42 (1926) for 17 instruments; American Overture**, Op. 42bis (1928) for full orchestra 
+**American Overture**, Op. 42 (1926) for 17 instruments
+
+**American Overture**, Op. 42bis (1928) for full orchestra 
 
 **Divertissement**, Op. 43 (1925–29) [*Royal Scottish National Orchestra, Neeme Järvi*](https://tidal.com/album/376436518)
 
