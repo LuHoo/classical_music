@@ -21,7 +21,7 @@ nav_order: 1
 
 **Autumnal**, Op. 8 (1910) [*Royal Scottish National Orchestra, Neeme Järvi*] 
 
-% 10
+<!-- % 10 -->
 
 **Piano Concerto No. 1 in D$\flat$**, Op. 10 (1911–12) [*Jean-Efflam Bavouzet, BBC PO, Gianandrea Noseda*] 
 
@@ -31,7 +31,7 @@ nav_order: 1
 
 **Violin Concerto No. 1 in D**, Op. 19 (1916–17) [*Janine Jansen, Oslo PO, Klaus Mäkelä*]  \\
 
-% 20
+<!-- % 20 -->
 **Scythian Suite**, Op. 20 (from Ala i Lolli) (1914–15) [*Royal Scottish National Orchestra, Neeme Järvi*] 
 
 **Chout / Tale of the Jester**, Op. 21 (1915, rev. 1920) [*Royal Scottish National Orchestra, Neeme Järvi*] 
@@ -46,7 +46,7 @@ nav_order: 1
 
 **Trapeze** (1924, abandoned and rewritten as the Quintet for Oboe, Clarinet, Violin, Viola, and Double Bass) 
 
-% 30
+<!-- % 30 -->
 
 **Seven, They Are Seven**, Op. 30 (1917–18, rev. 1933) 
 
@@ -58,7 +58,7 @@ nav_order: 1
 
 **Vocal Suite from The Fiery Angel**, Op. 37bis (1923, incomplete) 
 
-% 40
+<!-- % 40 -->
 
 **Symphony No. 2 in D minor**, Op. 40 (1924–25) [*Gürzenich-Orchester Köln, Dmitri Kitayenko*] 
 
@@ -81,7 +81,7 @@ nav_order: 1
 
 **Suite from The Gambler ("Four Portraits and Denouement")**, Op. 49 (1931) 
 
-% 50
+<!-- % 50 -->
 **Andante from String Quartet No. 1, arranged for string orchestra**, Op. 50bis (1930) [*Royal Scottish National Orchestra, Neeme Järvi*] 
 
 **On the Dnieper**, Op. 51 (1931) 
@@ -96,7 +96,7 @@ nav_order: 1
 
 **Cello Concerto in E minor**, Op. 58 (1933–38) 
 
-% 60
+<!-- % 60 -->
 
 **Lieutenant Kijé**, Op. 60 (1934), also arranged as an orchestral suite 
 
@@ -114,7 +114,7 @@ nav_order: 1
 
 **Peter and the Wolf**, Op. 67 (1936), a children's story for narrator and orchestra 
 
-% 70
+<!-- % 70 -->
 
 **The Queen of Spades**, Op. 70a (1936), after Pushkin 
 
@@ -144,7 +144,7 @@ nav_order: 1
 
 
 
-% 80
+<!-- % 80 -->
 
 **Suite from Semyon Kotko**, Op. 81bis (1941) 
 
@@ -154,7 +154,7 @@ nav_order: 1
 
 **Symphonic March**, Op. 88 (1941) 
 
-% 90
+<!-- % 90 -->
 
 **The Year 1941**, Op. 90 (1941) 
 
@@ -162,7 +162,7 @@ nav_order: 1
 
 **Ballad of an Unknown Boy**, Op. 93 (1942–43), for soloists, chorus, and orchestra 
 
-% 100
+<!-- % 100 -->
 
 **Symphony No. 5 in B$\flat$**, Op. 100 (1944) [*Gürzenich-Orchester Köln, Dmitri Kitayenko*] 
 
@@ -178,7 +178,7 @@ nav_order: 1
 
 
 
-% 110
+<!-- % 110 -->
 
 **Waltz Suite**, Op. 110 (1946) [*Royal Scottish National Orchestra, Neeme Järvi*] 
 
@@ -190,13 +190,13 @@ nav_order: 1
 
 **Flourish, Mighty Land**, Op. 114 (1947), cantata for chorus and orchestra 
 
-% 110
+<!-- % 110 -->
 
 **Ivan the Terrible**, Op. 116 (1942–45), film directed by Sergei Eisenstein (also exists in various concert forms) 
 
 **Tale of the Stone Flower**, Op. 118 (1953) [*Royal Scottish National Orchestra, Neeme Järvi*] 
 
-% 120
+<!-- % 120 -->
 
 **Pushkin Waltzes**, Op. 120 (1949) 
 
@@ -217,7 +217,7 @@ nav_order: 1
 **The Mistress of Copper Mountain from The Tale of the Stone Flower**, Op. 129 (1951); unfinished) 
 
 
-% 130
+<!-- % 130 -->
 
 **The Meeting of the Volga and the Don**, Op. 130 (1951) 
 
