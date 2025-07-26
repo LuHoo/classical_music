@@ -15,9 +15,9 @@ nav_order: 1
 
 **Sinfonietta in A (original version)**, Op. 5 (1909) [*Royal Scottish National Orchestra, Neeme Järvi*](https://tidal.com/album/376399461)
 
-**Dreams**, Op. 6 (1910) 
+**Dreams**, Op. 6 (1910) [*Royal Scottish National Orchestra, Neeme Järvi*](https://tidal.com/album/377158952)
 
-**Two Poems for Female Chorus and Orchestra**, Op. 7 (1909–10) 
+**Two Poems for Female Chorus and Orchestra**, Op. 7 (1909–10) [*Bournemouth Symphony Orchestra, Kirill Karabits*](https://tidal.com/album/51997314)
 
 **Autumnal**, Op. 8 (1910) [*Royal Scottish National Orchestra, Neeme Järvi*](https://tidal.com/album/376317101)
 
@@ -27,14 +27,14 @@ nav_order: 1
 
 **Piano Concerto No. 2 in G minor**, Op. 16 (1912–13, lost, re-written in 1923) [*Jean-Efflam Bavouzet, BBC PO, Gianandrea Noseda*](https://tidal.com/album/376307111) 
 
-**The Ugly Duckling**, Op. 18 (1914) 
+**The Ugly Duckling**, Op. 18 (1914)  [*New London Orchestra, Ronald Corp*](https://tidal.com/browse/album/340800600)
 
 **Violin Concerto No. 1 in D**, Op. 19 (1916–17) [*Janine Jansen, Oslo PO, Klaus Mäkelä*](https://tidal.com/album/366555415)
 
 <!-- % 20 -->
 **Scythian Suite**, Op. 20 (from Ala i Lolli) (1914–15) [*Royal Scottish National Orchestra, Neeme Järvi*](https://tidal.com/album/376435085)
 
-**Chout / Tale of the Jester**, Op. 21 (1915, rev. 1920)
+**Chout / Tale of the Jester**, Op. 21 (1915, rev. 1920) [*WDR Sinfonieorchester Köln, Michail Jurowski*](https://tidal.com/album/104727564)
 
 **Suite from Chout**, Op. 21bis (1920) [*Royal Scottish National Orchestra, Neeme Järvi*](https://tidal.com/album/376276191)
 
@@ -72,20 +72,20 @@ nav_order: 1
 
 **Symphony No. 3 in C minor**, Op. 44 (1928) [*Gürzenich-Orchester Köln, Dmitri Kitayenko*](https://tidal.com/album/285264999) 
 
-**Le fils prodigue / The Prodigal Son**, Op. 46 (1929) [*Royal Scottish National Orchestra, Neeme Järvi*](https://tidal.com/album/376436518)
+**Le fils prodigue / The Prodigal Son**, Op. 46 (1929)
 
-**Suite from The Prodigal Son**, Op. 46bis (1929) 
+**Suite from The Prodigal Son**, Op. 46bis (1929) [*Royal Scottish National Orchestra, Neeme Järvi*](https://tidal.com/album/376436518)
 
 **Symphony No. 4 in C (original version)**, Op. 47 (1929–30) [*Gürzenich-Orchester Köln, Dmitri Kitayenko*](https://tidal.com/album/285264999) 
 
 **Sinfonietta in A (revised version of Op. 5)**, Op. 48 (1929) [*Lahti Symphony Orchestra, Dima Slobodeniuk*] (02/2022)
 
-**Suite from The Gambler ("Four Portraits and Denouement")**, Op. 49 (1931) 
+**Suite from The Gambler ("Four Portraits and Denouement")**, Op. 49 (1931) [*Royal Scottish National Orchestra, Neeme Järvi*](https://tidal.com/browse/album/376375444)
 
 <!-- % 50 -->
 **Andante from String Quartet No. 1, arranged for string orchestra**, Op. 50bis (1930) [*Royal Scottish National Orchestra, Neeme Järvi*](https://tidal.com/album/376317101)
 
-**On the Dnieper**, Op. 51 (1931) 
+**On the Dnieper**, Op. 51 (1931) [*WDR Sinfonieorchester Köln, Michail Jurowski*](https://tidal.com/browse/album/284169959)
 
 **Suite from On the Dnieper**, Op. 51bis (1933) 
 
@@ -95,7 +95,7 @@ nav_order: 1
 
 **Symphonic Song**, Op. 57 (1933) [*Royal Scottish National Orchestra, Neeme Järvi*](https://tidal.com/album/376436518)
 
-**Cello Concerto in E minor**, Op. 58 (1933–38) 
+**Cello Concerto in E minor**, Op. 58 (1933–38) [Steven Isserlis, Frankfurt Radio Symphony Orchestra, Paavo Järvi](https://tidal.com/browse/album/306164901?u)
 
 <!-- % 60 -->
 
@@ -103,7 +103,7 @@ nav_order: 1
 
 **Suite from Lieutenant Kijé**, Op. 60 (1934) [*Royal Scottish National Orchestra, Neeme Järvi*](https://tidal.com/album/376317101)
 
-**Suite from Egyptian Nights**, Op. 61 (1938) 
+**Suite from Egyptian Nights**, Op. 61 (1938) [*USSR State SO, Valeri Polyansky*](https://tidal.com/browse/album/377109596)
 
 **Violin Concerto No. 2 in G minor**, Op. 63 (1935) [*Lisa Batiashvili, Chamber Orchestra of Europe, Yannick Nézet-Séguin*](https://tidal.com/album/84165949)
 
@@ -113,15 +113,17 @@ nav_order: 1
 
 **Suite 2 from Romeo and Juliet**, Op. 64ter (1936) 
 
-**Peter and the Wolf**, Op. 67 (1936), a children's story for narrator and orchestra 
+**Summer Day**, Op. 65a [*New London Orchestra, Ronald Corp*](https://tidal.com/browse/album/340800600)
+
+**Peter and the Wolf**, Op. 67 (1936), a children's story for narrator and orchestra  [*New London Orchestra, Ronald Corp*](https://tidal.com/browse/album/340800600)
 
 <!-- % 70 -->
 
 **The Queen of Spades**, Op. 70a (1936), after Pushkin 
 
-**Boris Godunov**, Op. 70bis (1936) 
+**Boris Godunov**, Op. 70bis (1936) [*Royal Scottish National Orchestra, Neeme Järvi*](https://tidal.com/album/377158952)
 
-**Eugene Onegin**, Op. 71 (1936) 
+**Eugene Onegin**, Op. 71 (1936) [*Royal Scottish National Orchestra, Neeme Järvi*](https://tidal.com/album/377158952)
 
 **Russian Overture**, Op. 72 (1936) [*Philharmonia Orchestra, Neeme Järvi*](https://tidal.com/album/376440234)
 
@@ -129,7 +131,7 @@ nav_order: 1
 
 **Songs of Our Days**, Op. 76 (1937), for chorus and orchestra 
 
-**Hamlet**, Op. 77 (1937–38) 
+**Hamlet**, Op. 77 (1937–38) [*USSR State SO, Valeri Polyansky*](https://tidal.com/browse/album/377109596)
 
 **Alexander Nevsky**, Op. 78 (1939), cantata for mezzo-soprano, chorus, and orchestra [*Olga Borodina, Kirov Chorus St Petersburg, Mariinsky Orchestra, Valery Gergiev*](https://tidal.com/album/7232589)
 
@@ -147,9 +149,9 @@ nav_order: 1
 
 <!-- % 80 -->
 
-**Suite from Semyon Kotko**, Op. 81bis (1941) 
+**Suite from Semyon Kotko**, Op. 81bis (1941) [*Royal Scottish National Orchestra, Neeme Järvi*](https://tidal.com/browse/album/376375444)
 
-**Zdravitsa**, Op. 85 (1939), cantata for chorus and orchestra (also known as "Hail to Stalin") 
+**Zdravitsa**, Op. 85 (1939), cantata for chorus and orchestra (also known as "Hail to Stalin") [*USSR State SO, Valeri Polyansky*](https://tidal.com/browse/album/377109596)
 
 **Cinderella**, Op. 87 (1944) 
 
@@ -189,7 +191,7 @@ nav_order: 1
 
 **Thirty Years**, Op. 113 (1947) 
 
-**Flourish, Mighty Land**, Op. 114 (1947), cantata for chorus and orchestra 
+**Flourish, Mighty Land**, Op. 114 (1947), cantata for chorus and orchestra [*USSR State SO, Valeri Polyansky*](https://tidal.com/browse/album/377109596)
 
 <!-- % 110 -->
 
@@ -199,9 +201,9 @@ nav_order: 1
 
 <!-- % 120 -->
 
-**Pushkin Waltzes**, Op. 120 (1949) 
+**Pushkin Waltzes**, Op. 120 (1949) [*Royal Scottish National Orchestra, Neeme Järvi*](https://tidal.com/album/377158952)
 
-**Winter Bonfire**, Op. 122 (1949–50), for boy's choir and small orchestra 
+**Winter Bonfire**, Op. 122 (1949–50), for boy's choir and small orchestra [*New London Orchestra, Ronald Corp*](https://tidal.com/browse/album/340800600)
 
 **Summer Night, suite from Betrothal in a Monastery**, Op. 123 (1950) [*Philharmonia Orchestra, Neeme Järvi*](https://tidal.com/album/376440234)
 
@@ -209,7 +211,7 @@ nav_order: 1
 
 **Symphony-Concerto for Cello and Orchestra in E minor**, Op. 125 (1950–52) [*Christian Poltéra, Lahti SO, Anja Bihlmaier*](https://tidal.com/album/364535071/) (07/2024) 
 
-**Wedding Suite from The Tale of the Stone Flower**, Op. 126 (1951) [*Royal Scottish National Orchestra, Neeme Järvi*]
+**Wedding Suite from The Tale of the Stone Flower**, Op. 126 (1951) [*Royal Scottish National Orchestra, Neeme Järvi*](https://tidal.com/album/376317101)
 
 **Gypsy Fantasy from The Tale of the Stone Flower**, Op. 127 (1951) 
 
