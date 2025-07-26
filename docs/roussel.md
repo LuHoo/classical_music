@@ -3,7 +3,7 @@ title: Albert Roussel
 nav_order: 1
 ---
 
-# Roussel
+# Albert Roussel
 
 [Composer page on Wikipedia](https://en.wikipedia.org/wiki/Albert_Roussel#Works)
 
