@@ -17,7 +17,7 @@ Everything here reflects my personal taste, not any kind of critical consensus. 
 
 - [Samuel Barber](docs/barber.md)
 - [Ernst von Dohnányi](docs/dohnanyi.md)
-- [Paul Hndemith](docs/hindemith.md)
+- [Paul Hindemith](docs/hindemith.md)
 - [Bohuslav Martinů](docs/martinu.md)
 - [Sergei Prokofiev](docs/prokofiev.md)
 - [Albert Roussel](doc/roussel.md)
