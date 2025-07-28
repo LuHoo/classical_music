@@ -48,9 +48,9 @@ nav_order: 1
 
 **The Four Temperaments** (scored for piano and strings) (1940) [*Emanuel Ax, Los Angeles Philharmonic, Esa-Pekka Salonen*](http://www.tidal.com/track/87478092)
 
-**Hérodiade**, with Martha Graham (1944) [(version without words) *Frankfurt RSO, Werner Andreas Albert*](http://www.tidal.com/track/74080286)
+**Hérodiade**, with Martha Graham (1944) (version without words) [*Frankfurt RSO, Werner Andreas Albert*](http://www.tidal.com/track/74080286)
 
-**Hérodiade**, with Martha Graham (1944) [(version with recitation of the text) *Annie Gicquel, Frankfurt RSO, Werner Andreas Albert*]
+**Hérodiade**, with Martha Graham (1944) (version with recitation of the text) [*Annie Gicquel, Frankfurt RSO, Werner Andreas Albert*](http://www.tidal.com/track/74080286)
 
 
 ## Orchestral
