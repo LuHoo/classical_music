@@ -11,7 +11,7 @@ nav_order: 1
 
 **Mörder, Hoffnung der Frauen**, in one act, on a libretto by Oskar Kokoschka (1919; premiered 1921)
 
-**Das Nusch-Nuschi**, in one act, on a libretto by Franz Blei (1920; premiered 1921) *Queensland SO, Werner Andreas Albert*
+**Das Nusch-Nuschi**, in one act, on a libretto by Franz Blei (1920; premiered 1921) [*Queensland SO, Werner Andreas Albert*](https://tidal.com/album/19318109/track/19318110)
 
 **Sancta Susanna**, in one act, on a libretto by August Stramm (1921; premiered 1922)
 
@@ -40,76 +40,76 @@ nav_order: 1
 
 ## Ballet
 
-**Der Dämon**, Op. 28 (1922) [*Siegfried Mauser, Frankfurt RSO, Werner Andreas Albert*]
+**Der Dämon**, Op. 28 (1922) [*Siegfried Mauser, Frankfurt RSO, Werner Andreas Albert*](http://www.tidal.com/track/74080286)
 
 **Triadisches Ballett**, with Oskar Schlemmer (1923) 
 
-**Nobilissima Visione**, with Léonide Massine (1938) [*Seattle Symphony, Gerard Schwarz*]
+**Nobilissima Visione**, with Léonide Massine (1938) [*Seattle Symphony, Gerard Schwarz*](https://tidal.com/album/30592036/track/30592037)
 
-**The Four Temperaments** (scored for piano and strings) (1940) [*Emanuel Ax, Los Angeles Philharmonic, Esa-Pekka Salonen*]
+**The Four Temperaments** (scored for piano and strings) (1940) [*Emanuel Ax, Los Angeles Philharmonic, Esa-Pekka Salonen*](http://www.tidal.com/track/87478092)
 
-**Hérodiade**, with Martha Graham (1944) [*Siegfried Mauser, Frankfurt RSO, Werner Andreas Albert*]
+**Hérodiade**, with Martha Graham (1944) [(version without words) *Frankfurt RSO, Werner Andreas Albert*](http://www.tidal.com/track/74080286)
 
-**Hérodiade**, with Martha Graham (1944) [*Annie Gicquel, Frankfurt RSO, Werner Andreas Albert*]
+**Hérodiade**, with Martha Graham (1944) [(version with recitation of the text) *Annie Gicquel, Frankfurt RSO, Werner Andreas Albert*]
 
 
 ## Orchestral
 
-**Lustige Sinfonietta** (1916), Op. 4*Queensland SO, Werner Andreas Albert*
+**Lustige Sinfonietta** (1916), Op. 4[*Queensland SO, Werner Andreas Albert*](http://www.tidal.com/track/284340818)
 
-**Ragtime** (wohltemperiert)  (1921) *BBC PO, Yan Pascal Tortelier* 
+**Ragtime** (wohltemperiert)  (1921) [*BBC PO, Yan Pascal Tortelier*](https://tidal.com/album/12444399/track/12444400)
 
-**Concerto for Orchestra** (1925), Op. 38*Queensland SO, Werner Andreas Albert*
+**Concerto for Orchestra** (1925), Op. 38[*Queensland SO, Werner Andreas Albert*](http://www.tidal.com/track/284340870)
 
 **Konzertmusik for wind orchestra** (1926), Op. 41
 
 **Fünf Stücke für Streichorchester** (Five Pieces for String Orchestra) (1927)
 
-**Konzertmusik for brass and string orchestra** (1930), Op. 50 *BBC Scottish SO, Martyn Brabbins*
+**Konzertmusik for brass and string orchestra** (1930), Op. 50 [*BBC Scottish SO, Martyn Brabbins*](https://tidal.com/album/340823857)
 
-**Philharmonic Concerto** (Variations for Orchestra) (1932) *Queensland SO, Werner Andreas Albert*
+**Philharmonic Concerto** (Variations for Orchestra) (1932) [*Queensland SO, Werner Andreas Albert*](https://tidal.com/album/284466409)
 
-**Symphony: Mathis der Maler** (1933-1934) *BBC Scottish SO, Martyn Brabbins*
+**Symphony: Mathis der Maler** (1933-1934) [*BBC Scottish SO, Martyn Brabbins*](https://tidal.com/album/340823857)
 
-**Symphonic Dances** (1937) *BBC PO, Yan Pascal Tortelier*
+**Symphonic Dances** (1937) [*BBC PO, Yan Pascal Tortelier*](https://tidal.com/album/12444399/track/12444400)
 
-**Nobilissima Visione**, suite drawn from the ballet Saint Francis (1938) *WDR SO, Marek Janowski*
+**Nobilissima Visione**, suite drawn from the ballet Saint Francis (1938) [*WDR SO, Marek Janowski*](http://www.tidal.com/track/83931281)
 
 **Symphony in E-flat** (1940)
 
-**Amor und Psyche** (Overture to a ballet) (1943) *Queensland SO, Werner Andreas Albert*
+**Amor und Psyche** (Overture to a ballet) (1943) [*Queensland SO, Werner Andreas Albert*](https://tidal.com/album/284466409)
 
-**Symphonic Metamorphosis of Themes by Carl Maria von Weber** (1943) *BBC Scottish SO, Martyn Brabbins*
+**Symphonic Metamorphosis of Themes by Carl Maria von Weber** (1943) [*BBC Scottish SO, Martyn Brabbins*](https://tidal.com/album/340823857)
 
-**Symphonia Serena** (1946) *Queensland SO, Werner Andreas Albert*
+**Symphonia Serena** (1946) [*Queensland SO, Werner Andreas Albert*](http://www.tidal.com/track/284607327)
 
-**Sinfonietta in E major** (1946) *Queensland SO, Werner Andreas Albert*
+**Sinfonietta in E major** (1946) [*Queensland SO, Werner Andreas Albert*](http://www.tidal.com/track/284340870)
 
-**Die Harmonie der Welt Symphony** (1951) *Queensland SO, Werner Andreas Albert*
+**Die Harmonie der Welt Symphony** (1951) [*Queensland SO, Werner Andreas Albert*](https://tidal.com/album/19318109/track/19318110)
 
 **Symphony in B-flat** for concert band (1951)
 
-**Pittsburgh Symphony** (1958) *BBC PO, Yan Pascal Tortelier*
+**Pittsburgh Symphony** (1958) [*BBC PO, Yan Pascal Tortelier*](https://tidal.com/album/12444399/track/12444400)
 
-**Marsch über den alten "Schweizerton"** (1960) *Queensland SO, Werner Andreas Albert*
+**Marsch über den alten "Schweizerton"** (1960) [*Queensland SO, Werner Andreas Albert*](http://www.tidal.com/track/284340870)
 
 ## Concertante
 
 **Cello Concerto**, Op. 3 (1916)
 
-**Kammermusik No. 1** for 12 instruments, Op. 24/1 (1921) [*Kronberg Academy Soloists, Schleswig-Holstein Festival Orchestra, Christoph Eschenbach*]
+**Kammermusik No. 1** for 12 instruments, Op. 24/1 (1921) [*Kronberg Academy Soloists, Schleswig-Holstein Festival Orchestra, Christoph Eschenbach*](http://www.tidal.com/track/284454595)
 
-**Kammermusik No. 2** for piano and 12 instruments, Op. 36/1 (1925) [*Kronberg Academy Soloists, Schleswig-Holstein Festival Orchestra, Christoph Eschenbach*]
+**Kammermusik No. 2** for piano and 12 instruments, Op. 36/1 (1925) [*Kronberg Academy Soloists, Schleswig-Holstein Festival Orchestra, Christoph Eschenbach*](http://www.tidal.com/track/284454595)
 
-**Kammermusik No. 3** for cello and 10 instruments, Op. 36/2 (1925) [*Kronberg Academy Soloists, Schleswig-Holstein Festival Orchestra, Christoph Eschenbach*]
+**Kammermusik No. 3** for cello and 10 instruments, Op. 36/2 (1925) [*Kronberg Academy Soloists, Schleswig-Holstein Festival Orchestra, Christoph Eschenbach*](http://www.tidal.com/track/284454595)
 
-**Kammermusik No. 4** for violin and large chamber orchestra, Op. 36/3 (1925) [*Kronberg Academy Soloists, Schleswig-Holstein Festival Orchestra, Christoph Eschenbach*]
+**Kammermusik No. 4** for violin and large chamber orchestra, Op. 36/3 (1925) [*Kronberg Academy Soloists, Schleswig-Holstein Festival Orchestra, Christoph Eschenbach*](http://www.tidal.com/track/151740135)
 
-**Kammermusik No. 5** for viola and large chamber orchestra, Op. 36/4 (1927) [*Kronberg Academy Soloists, Schleswig-Holstein Festival Orchestra, Christoph Eschenbach*]
+**Kammermusik No. 5** for viola and large chamber orchestra, Op. 36/4 (1927) [*Kronberg Academy Soloists, Schleswig-Holstein Festival Orchestra, Christoph Eschenbach*](http://www.tidal.com/track/151740135)
 
-**Kammermusik No. 6** for viola d'amore and 13 instruments, Op. 46/1 (1927) [*Kronberg Academy Soloists, Schleswig-Holstein Festival Orchestra, Christoph Eschenbach*]
+**Kammermusik No. 6** for viola d'amore and 13 instruments, Op. 46/1 (1927) [*Kronberg Academy Soloists, Schleswig-Holstein Festival Orchestra, Christoph Eschenbach*](http://www.tidal.com/track/151740135)
 
-**Kammermusik No. 7** for organ and 15 instruments, Op. 46/2 (1927) [*Kronberg Academy Soloists, Schleswig-Holstein Festival Orchestra, Christoph Eschenbach*]
+**Kammermusik No. 7** for organ and 15 instruments, Op. 46/2 (1927) [*Kronberg Academy Soloists, Schleswig-Holstein Festival Orchestra, Christoph Eschenbach*](http://www.tidal.com/track/151740135)
 
 **Klaviermusik mit Orchester** for left-hand piano and orchestra, Op. 29 (1923)
 
@@ -121,15 +121,15 @@ nav_order: 1
 
 **Der Schwanendreher** for viola and small orchestra (1935)
 
-**Trauermusik** for viola and string orchestra (1936) [*Geraldine Walther, San Francisco Symphnoy, Herbert Blomstedt*]
+**Trauermusik** for viola and string orchestra (1936) [*Geraldine Walther, San Francisco Symphnoy, Herbert Blomstedt*](https://tidal.com/album/4328135/track/4328139)
 
 **Violin Concerto** (1939)
 
 **Cello Concerto** (1940)
 
-**Piano Concerto** (1945) [*Siegfried Mauser, Frankfurt RSO, Werner Andreas Albert*]
+**Piano Concerto** (1945) [*Siegfried Mauser, Frankfurt RSO, Werner Andreas Albert*](http://www.tidal.com/track/21647838)
 
-**Clarinet Concerto** (1947) [*Sharon Kam, Frankfurt Radio Symphony, Daniel Cohen*]
+**Clarinet Concerto** (1947) [*Sharon Kam, Frankfurt Radio Symphony, Daniel Cohen*](https://tidal.com/album/201678139/track/201678141)
 
 **Horn Concerto** (1949)
 
@@ -194,7 +194,7 @@ nav_order: 1
 
 ## Chamber
 
-**Kleine Kammermusik**, Op. 24/2 for wind quintet (1922), Op. 24/2
+**Kleine Kammermusik**, Op. 24/2 for wind quintet (1922), Op. 24/2 [*Kronberg Academy Soloists*](http://www.tidal.com/track/284454595)
 
 **Ouvertüre zum "Fliegenden Holländer", wie sie eine schlechte Kurkapelle morgens um 7 am Brunnen vom Blatt spielt**, for string quartet (c. 1925)
 
@@ -210,7 +210,7 @@ nav_order: 1
 
 **Quintet**, Op. 30 for clarinet and string quartet (1923, rev. 1954)
 
-**Quartet** for clarinet, violin, cello and piano (1938)
+**Quartet** for clarinet, violin, cello and piano (1938) [*Sharon Kam, Antje Weithaas, Julian Steckel, Enrico Pace*](https://tidal.com/album/201678139/track/201678141)
 
 **String Quartet No. 1 in C**, Op. 2 (1915)
 
@@ -301,21 +301,21 @@ nav_order: 1
 
 **Eight Pieces** for Solo Flute (1927)
 
-**Sonata** for Flute and Piano (1936)
+**Sonata** for Flute and Piano (1936) [*Emmanuel Pahud, Eric Le Sage*](https://tidal.com/album/179722104)
 
-**Sonata** for Oboe and Piano (1938)
+**Sonata** for Oboe and Piano (1938) [*François Leleux, Eric Le Sage*](https://tidal.com/album/179722104)
 
 **Sonata** for English Horn and Piano (1941)
 
-**Sonata** for Clarinet and Piano (1939)
+**Sonata** for Clarinet and Piano (1939) [*Paul Meyer, Eric Le Sage*](https://tidal.com/album/179722104)
 
-**Sonata** for Bassoon and Piano (1938)
+**Sonata** for Bassoon and Piano (1938) [*Gilbert Audin, Eric Le Sage*](https://tidal.com/album/179722104)
 
 **Sonata** for French Horn and Piano (1939)
 
 **Sonata** for Four Horns (1952)
 
-**Alto Horn Sonata** (also for Horn or Alto Saxophone) (1943)
+**Alto Horn Sonata** (also for Horn or Alto Saxophone) (1943) [*Radovan Vlatkovic, Eric Le Sage*](https://tidal.com/album/179722104)
 
 **Sonata** for Trumpet and Piano (1939)
 
