@@ -22,6 +22,7 @@ Everything here reflects my personal taste, not any kind of critical consensus. 
 - [Sergei Prokofiev](docs/prokofiev.md)
 - [Albert Roussel](doc/roussel.md)
 - [Franz Schreker](docs/schreker.md)
+- [Dmitri Shostakovich](docs/shostakovich.md)
 
 ---
 
