@@ -11,7 +11,7 @@ nav_order: 1
 
 **Two Portraits** for string orchestra (1930) [*BBC Symphony Orchestra, Edward Gardner*](http://www.tidal.com/track/215060741)
 
-**Sinfonietta**, Op. 1, for five winds and five strings, revised for chamber orchestra (1932, rev 1936) [*Lahti Symphony Orchestra, Dima Slobodeniuk*] (02/2022)
+**Sinfonietta**, Op. 1, for five winds and five strings, revised for chamber orchestra (1932, rev 1936) [*Lahti Symphony Orchestra, Dima Slobodeniuk*](https://tidal.com/browse/album/242294528) (02/2022)
 
 **Simple Symphony**, Op. 4 for string orchestra (1934)
 
