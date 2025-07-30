@@ -69,7 +69,7 @@ nav_order: 1
 
 **In memoriam Dennis Brain** (c. 1958), unfinished sketch for four horns and orchestra
 
-**Cello Symphony**, Op. 68, (1963) [*Daniël Müller-Schott, WDR Sinfonieorchester Köln, Jukka-Pekka Sarasta*] 
+**Cello Symphony**, Op. 68, (1963) [*Daniël Müller-Schott, WDR Sinfonieorchester Köln, Jukka-Pekka Sarasta*](https://tidal.com/browse/album/282958176)
 
 ## Vocal/choral Orchestral
 
