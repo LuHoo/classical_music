@@ -16,6 +16,7 @@ Everything here reflects my personal taste, not any kind of critical consensus. 
 ## 🔍 Browse by Composer
 
 - [Samuel Barber](docs/barber.md)
+- [Benjamin Britten](docs/britten.md)
 - [Ernst von Dohnányi](docs/dohnanyi.md)
 - [Paul Hindemith](docs/hindemith.md)
 - [Bohuslav Martinů](docs/martinu.md)
