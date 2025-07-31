@@ -15,9 +15,9 @@ nav_order: 1
 
 **Narcissus and Echo**, F. 7 (1931; based on Rhapsody)
 
-**Checkmate**, F. 2 (1937) [*Ulster Orchestra, Vernon Handley*]
+**Checkmate**, F. 2 (1937) [*Ulster Orchestra, Vernon Handley*](http://www.tidal.com/track/12423573)
 
-**Miracle in the Gorbals**, F. 6 (1944) [*Philharmonia Orchestra, Arthur Bliss*]
+**Miracle in the Gorbals**, F. 6 (1944) [*Philharmonia Orchestra, Arthur Bliss*](http://www.tidal.com/track/12609063)
 
 **Adam Zero**, F. 1 (1946)
 
@@ -36,7 +36,7 @@ nav_order: 1
 
 **Two Studies**, F. 133 (1920)
 
-**A Colour Symphony**, F. 106 (1921/1932) [*BBC National Orchestra of Wales, Richard Hickox*]
+**A Colour Symphony**, F. 106 (1921/1932) [*BBC National Orchestra of Wales, Richard Hickox*](http://www.tidal.com/track/12415262)
 
 **Concerto for Piano, Strings, Tenor and Percussion**, F. 109 (1920/1923)
 
@@ -50,15 +50,15 @@ nav_order: 1
 
 **Polonaise**, F. 124 (1925)
 
-**Hymn to Apollo**, F. 116 (1926/1965) [*Ulster Orchestra, Vernon Handley*]
+**Hymn to Apollo**, F. 116 (1926/1965) [*Ulster Orchestra, Vernon Handley*](http://www.tidal.com/track/12423583)
 
 **Introduction and Allegro**, F. 117 (1926/1937)
 
-**Pastoral 'Lie strewn the white flocks'**, F. 33 (1928) [*Ulster Orchestra, Vernon Handley*]
+**Pastoral 'Lie strewn the white flocks'**, F. 33 (1928) [*Ulster Orchestra, Vernon Handley*](http://www.tidal.com/track/12423587)
 
 **Morning Heroes**, F. 32 (1930)
 
-**Music for Strings**, F. 123 (1935) [*Northern Sinfonia, Vernon Handley*]
+**Music for Strings**, F. 123 (1935) [*Northern Sinfonia, Vernon Handley*](http://www.tidal.com/track/376371176)
 
 **Concerto for Piano in B-flat major**, F. 108 (1938; premiered by Solomon)
 
@@ -70,7 +70,7 @@ nav_order: 1
 
 **Processional**, F. 126 (1953)
 
-**Violin Concerto**, F. 111 (1953; premiered by Alfredo Campoli in 1955) [*Lydia Mordkovich, BBC National Orchestra of Wales, Richard Hickox*]
+**Violin Concerto**, F. 111 (1953; premiered by Alfredo Campoli in 1955) [*Lydia Mordkovich, BBC National Orchestra of Wales, Richard Hickox*](http://www.tidal.com/track/12415266)
 
 **Songs of Welcome**, F. 34 (1954)
 
