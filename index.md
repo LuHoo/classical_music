@@ -16,6 +16,7 @@ Everything here reflects my personal taste, not any kind of critical consensus. 
 ## 🔍 Browse by Composer
 
 - [Samuel Barber](docs/barber.md)
+- [Bela Bartok](docs/bartok.md)
 - [Arthur Bliss](docs/bliss.md)
 - [Benjamin Britten](docs/britten.md)
 - [Ernst von Dohnányi](docs/dohnanyi.md)
