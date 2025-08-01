@@ -7,7 +7,7 @@ nav_order: 1
 
 [List of works on Wikipedia](https://en.wikipedia.org/wiki/List_of_compositions_by_B%C3%A9la_Bart%C3%B3k)
 
-## Stage}
+## Stage
 
 **Bluebeard's Castle** (1911, 1912, 1917-1918), BB 62
 
@@ -15,7 +15,7 @@ nav_order: 1
 
 **The Miraculous Mandarin** (1918-1919, orchd 1924, rev 1926-1931), BB 82
 
-## Orchestral}
+## Orchestral
 
 **Valcer** (c1900), BB 19/3
 
@@ -45,7 +45,7 @@ nav_order: 1
 
 **The Wooden Prince**, shorter orchestral suite (c1925), BB 74
 
-**The Wooden Prince**, longer orchestral suite (1932), BB 74 [*WDR SO, Cristian Macelaru*]
+**The Wooden Prince**, longer orchestral suite (1932), BB 74 [*WDR SO, Cristian Macelaru*](http://www.tidal.com/track/267871131)
 
 **Romanian Folk Dances** (1917), BB 76
 
@@ -53,7 +53,7 @@ nav_order: 1
 
 **The Miraculous Mandarin**, suite (1927), BB 82 [*BBC Scottish SO, Thomas Dausgaard*](http://www.tidal.com/track/173274820) (05/2021)
 
-**Dance Suite** (1923), 86a [*WDR SO, Cristian Macelaru*]
+**Dance Suite** (1923), 86a [*WDR SO, Cristian Macelaru*](http://www.tidal.com/track/267871144)
 
 **Piano Concerto no. 1** (1926), BB 91 [*Pierre-Laurent Aimard, San Francesco Symphony, Esa-Pekka Salonen*](http://www.tidal.com/track/315704881)
 
@@ -83,7 +83,7 @@ nav_order: 1
 
 **Viola Concerto** (1945, inc.), BB 128 [*Amihai Gross, Orchestre Nationale de Lille, Alexandre Bloch*](https://tidal.com/browse/album/309518267) (01/2001)
 
-## Vocal-Orchestral (selection)}
+## Vocal-Orchestral (selection)
 
 **Cantata profana**, 'The Nine Enchanted Stags' (1930), BB 100 [*John Aler, John Tomlinson, Chicago SO, Pierre Boulez*](http://www.tidal.com/track/4486543)
 
