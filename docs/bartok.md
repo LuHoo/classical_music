@@ -45,7 +45,7 @@ nav_order: 1
 
 **The Wooden Prince**, shorter orchestral suite (c1925), BB 74
 
-**The Wooden Prince**, longer orchestral suite (1932), BB 74 [*WDR SO, Cristian Macelaru*](http://www.tidal.com/track/267871131)
+:gem: **The Wooden Prince**, longer orchestral suite (1932), BB 74 [*WDR SO, Cristian Macelaru*](http://www.tidal.com/track/267871131)
 
 **Romanian Folk Dances** (1917), BB 76
 
@@ -79,7 +79,7 @@ nav_order: 1
 
 **Concerto for Orchestra** (1943, rev. 1945), BB 123 [*Orchestre Nationale de Lille, Alexandre Bloch*](https://tidal.com/browse/album/309518267) (A/2023)
 
-**Piano Concerto no. 3** (1945), BB 127 [*Pierre-Laurent Aimard, San Francesco Symphony, Esa-Pekka Salonen*](http://www.tidal.com/track/315704881)
+:gem: **Piano Concerto no. 3** (1945), BB 127 [*Pierre-Laurent Aimard, San Francesco Symphony, Esa-Pekka Salonen*](http://www.tidal.com/track/315704881)
 
 **Viola Concerto** (1945, inc.), BB 128 [*Amihai Gross, Orchestre Nationale de Lille, Alexandre Bloch*](https://tidal.com/browse/album/309518267) (01/2001)
 
