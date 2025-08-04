@@ -21,6 +21,7 @@ Everything here reflects my personal taste, not any kind of critical consensus. 
 - [Benjamin Britten](docs/britten.md)
 - [Ernst von Dohnányi](docs/dohnanyi.md)
 - [Paul Hindemith](docs/hindemith.md)
+- [Frank Martin](docs/martin.md)
 - [Bohuslav Martinů](docs/martinu.md)
 - [Sergei Prokofiev](docs/prokofiev.md)
 - [Albert Roussel](doc/roussel.md)
