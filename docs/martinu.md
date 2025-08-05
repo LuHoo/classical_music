@@ -29,7 +29,7 @@ nav_order: 1
 
 **Le Raid merveilleux** (The Amazing Flight), mechanical ballet, H 159 (1927) [*Czech Philharmonic, Christopher Hogwood*](https://tidal.com/album/95281094)
 
-**La Revue de cuisine** (The Kitchen Revue), jazz-ballet in 1 act, H 161 (1927) [*Czech Philharmonic, Christopher Hogwood*](https://tidal.com/album/95281094)
+💎 **La Revue de cuisine** (The Kitchen Revue), jazz-ballet in 1 act, H 161 (1927) [*Czech Philharmonic, Christopher Hogwood*](https://tidal.com/album/95281094)
 
 **On Tourne**, ballet in 1 act, H 163 (1927) [*Daniel Wiesner, Czech Philharmonic, Christopher Hogwood*](https://tidal.com/album/95281094)
 
@@ -104,11 +104,11 @@ nav_order: 1
 
 **Memorial to Lidice**, H 296 (1943)
 
-**Symphony No. 3**, H 299 (1944) [*Bamberg SO, Neeme Järvi*](https://tidal.com/album/341729418)
+💎 **Symphony No. 3**, H 299 (1944) [*Bamberg SO, Neeme Järvi*](https://tidal.com/album/341729418)
 
 **Cello Concerto No. 2**, H 304 (1945) [*Raphael Wallfisch, Czech PO, Jiri Belohlavek*](https://tidal.com/album/12417082)
 
-**Symphony No. 4**, H 305 (1945) [*Bamberg SO, Neeme Järvi*](https://tidal.com/album/341729418)
+💎 **Symphony No. 4**, H 305 (1945) [*Bamberg SO, Neeme Järvi*](https://tidal.com/album/341729418)
 
 **Czech Rhapsody for violin and orchestra**, H 307 A (1945)
 

@@ -36,7 +36,7 @@ nav_order: 1
 
 **Two Studies**, F. 133 (1920)
 
-:gem: **A Colour Symphony**, F. 106 (1921/1932) [*BBC National Orchestra of Wales, Richard Hickox*](http://www.tidal.com/track/12415262)
+💎 **A Colour Symphony**, F. 106 (1921/1932) [*BBC National Orchestra of Wales, Richard Hickox*](http://www.tidal.com/track/12415262)
 
 **Concerto for Piano, Strings, Tenor and Percussion**, F. 109 (1920/1923)
 

@@ -19,7 +19,7 @@ nav_order: 1
 
 **Prince Potemkin**, Op. 51, Incidental music to act 5 of the 1906 play by Tadeusz Miciński (1925)
 
-:gem: **Harnasie**, Op. 55, for tenor, mixed chorus and orchestra. Ballet-Pantomime in 2 acts, 3 scenes with prologue and epilogue (1923-1931)  [BBC Symphony Orchestra, Edward Gardner](https://tidal.com/browse/track/376399005)
+💎 **Harnasie**, Op. 55, for tenor, mixed chorus and orchestra. Ballet-Pantomime in 2 acts, 3 scenes with prologue and epilogue (1923-1931)  [BBC Symphony Orchestra, Edward Gardner](https://tidal.com/browse/track/376399005)
 
 
 ## Orchestral
@@ -40,7 +40,7 @@ nav_order: 1
 
 **Symphony No. 4 (Symphonie Concertante)**, Op. 60 for piano and orchestra (1932) [BBC Symphony Orchestra, Edward Gardner](https://tidal.com/browse/album/380562795)
 
-:gem: **Concerto No. 2**, Op. 61 for violin and orchestra (1932-33) [Thomas Zehetmair, City of Birmingham Symphony Orchestra, Simon Rattle](https://tidal.com/browse/album/1354526)
+💎 **Concerto No. 2**, Op. 61 for violin and orchestra (1932-33) [Thomas Zehetmair, City of Birmingham Symphony Orchestra, Simon Rattle](https://tidal.com/browse/album/1354526)
 
 
 ## Chamber
@@ -115,7 +115,7 @@ nav_order: 1
 
 **Agave**, Cantata for soprano, mixed chorus and orchestra (1917)
 
-:gem: **Stabat Mater**, Op. 53 for soprano, alto, baritone, mixed chorus and orchestra (1925-26) [BBC Symphony Orchestra, Edward Gardner](https://tidal.com/browse/track/376399005)
+💎 **Stabat Mater**, Op. 53 for soprano, alto, baritone, mixed chorus and orchestra (1925-26) [BBC Symphony Orchestra, Edward Gardner](https://tidal.com/browse/track/376399005)
 
 **6 Songs from Kurpie** for mixed chorus a cappella	(1928–1929)
 

@@ -29,7 +29,7 @@ nav_order: 1
 
 **The Ugly Duckling**, Op. 18 (1914)  [*New London Orchestra, Ronald Corp*](https://tidal.com/browse/album/340800600)
 
-**Violin Concerto No. 1 in D**, Op. 19 (1916–17) [*Janine Jansen, Oslo PO, Klaus Mäkelä*](https://tidal.com/album/366555415)
+💎 **Violin Concerto No. 1 in D**, Op. 19 (1916–17) [*Janine Jansen, Oslo PO, Klaus Mäkelä*](https://tidal.com/album/366555415)
 
 <!-- % 20 -->
 **Scythian Suite**, Op. 20 (from Ala i Lolli) (1914–15) [*Royal Scottish National Orchestra, Neeme Järvi*](https://tidal.com/album/376435085)
@@ -38,7 +38,7 @@ nav_order: 1
 
 **Suite from Chout**, Op. 21bis (1920) [*Royal Scottish National Orchestra, Neeme Järvi*](https://tidal.com/album/376276191)
 
-**Symphony No. 1 in D, Classical**, Op. 25 (1916–17) [*Gürzenich-Orchester Köln, Dmitri Kitayenko*](https://tidal.com/album/285264999)
+💎 **Symphony No. 1 in D, Classical**, Op. 25 (1916–17) [*Gürzenich-Orchester Köln, Dmitri Kitayenko*](https://tidal.com/album/285264999)
 
 **Piano Concerto No. 3 in C**, Op. 26 (1917–21) [*Jean-Efflam Bavouzet, BBC PO, Gianandrea Noseda*](https://tidal.com/album/376307111) 
 
@@ -60,7 +60,7 @@ nav_order: 1
 
 <!-- % 40 -->
 
-**Symphony No. 2 in D minor**, Op. 40 (1924–25) [*Gürzenich-Orchester Köln, Dmitri Kitayenko*](https://tidal.com/album/285264999) 
+💎 **Symphony No. 2 in D minor**, Op. 40 (1924–25) [*Gürzenich-Orchester Köln, Dmitri Kitayenko*](https://tidal.com/album/285264999) 
 
 **Le pas d'acier / The Steel Step**, Op. 41 (1926) 
 
@@ -76,7 +76,7 @@ nav_order: 1
 
 **Le fils prodigue / The Prodigal Son**, Op. 46 (1929)
 
-**Suite from The Prodigal Son**, Op. 46bis (1929) [*Royal Scottish National Orchestra, Neeme Järvi*](https://tidal.com/album/376436518)
+💎 **Suite from The Prodigal Son**, Op. 46bis (1929) [*Royal Scottish National Orchestra, Neeme Järvi*](https://tidal.com/album/376436518)
 
 **Symphony No. 4 in C (original version)**, Op. 47 (1929–30) [*Gürzenich-Orchester Köln, Dmitri Kitayenko*](https://tidal.com/album/285264999) 
 
@@ -107,7 +107,7 @@ nav_order: 1
 
 **Suite from Egyptian Nights**, Op. 61 (1938) [*USSR State SO, Valeri Polyansky*](https://tidal.com/browse/album/377109596)
 
-**Violin Concerto No. 2 in G minor**, Op. 63 (1935) [*Lisa Batiashvili, Chamber Orchestra of Europe, Yannick Nézet-Séguin*](https://tidal.com/album/84165949)
+💎 **Violin Concerto No. 2 in G minor**, Op. 63 (1935) [*Lisa Batiashvili, Chamber Orchestra of Europe, Yannick Nézet-Séguin*](https://tidal.com/album/84165949)
 
 **Romeo and Juliet**, Op. 64 (1935, classified as a Soviet choreodrama, or drambalet) [*LSO, Valery Gergiev*](https://tidal.com/album/89297520)
 
@@ -135,7 +135,7 @@ nav_order: 1
 
 **Hamlet**, Op. 77 (1937–38) [*USSR State SO, Valeri Polyansky*](https://tidal.com/browse/album/377109596)
 
-**Alexander Nevsky**, Op. 78 (1939), cantata for mezzo-soprano, chorus, and orchestra [*Olga Borodina, Kirov Chorus St Petersburg, Mariinsky Orchestra, Valery Gergiev*](https://tidal.com/album/7232589)
+💎 **Alexander Nevsky**, Op. 78 (1939), cantata for mezzo-soprano, chorus, and orchestra [*Olga Borodina, Kirov Chorus St Petersburg, Mariinsky Orchestra, Valery Gergiev*](https://tidal.com/album/7232589)
 
 **Alexander Nevsky**, Op. 78 (1938), film directed by Sergei Eisenstein (also exists in the form of a cantata) 
 

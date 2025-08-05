@@ -10,7 +10,7 @@ nav_order: 1
 ## Stage}
 **Le marchand de sable qui passe, Op. 13** (The Sandman), incidental music for a verse play by Jean-Aubry, Le Havre (1908),  [*Royal Scottish National Orchestra, Stéphane Denève*](https://tidal.com/browse/track/12602666)
 
-**Le festin de l'araignée,Op. 17** ballet in one act (1913), [*BBC PO, Yan Pascal Tortelier*](https://tidal.com/album/377163547)
+💎 **Le festin de l'araignée,Op. 17** ballet in one act (1913), [*BBC PO, Yan Pascal Tortelier*](https://tidal.com/album/377163547)
 
 **Padmâvatî, Op. 18**, opera in 2 acts (1913–18, Louis Laloy, after T.-M. Pavie), f.p. Paris Opéra (1923)
 
@@ -18,7 +18,7 @@ nav_order: 1
 
 **Sarabande** (1927; for the children's ballet \emph{L'éventail de Jeanne}, to which ten French composers each contributed a dance)
 
-**Bacchus and Ariadne, Op. 43** ballet in two acts, f.p. Paris Opéra (1931) [*BBC PO, Yan Pascal Tortelier*](https://tidal.com/album/377163547)
+💎 **Bacchus and Ariadne, Op. 43** ballet in two acts, f.p. Paris Opéra (1931) [*BBC PO, Yan Pascal Tortelier*](https://tidal.com/album/377163547)
 
 **Aeneas, Op. 54**, ballet for chorus and orchestra (1935) [*Orchestre Philharmonique du Luxemburg, Europa Chor Akademie, Bramwell Toby*](https://tidal.com/album/19480810)
 
@@ -32,7 +32,7 @@ nav_order: 1
 
 ## Orchestral
 
-**Résurrection, Op. 4**, Prelude for orchestra (1903) [*Royal Scottish National Orchestra, Stéphane Denève*](https://tidal.com/browse/track/12602666)
+💎 **Résurrection, Op. 4**, Prelude for orchestra (1903) [*Royal Scottish National Orchestra, Stéphane Denève*](https://tidal.com/browse/track/12602666)
 
 **Symphony No. 1 in D minor 'The Poem of the Forest', Op. 7** (1904–1906)} [*Royal Scottish National Orchestra, Stéphane Denève*](https://tidal.com/browse/track/12602666)
 

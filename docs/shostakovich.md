@@ -15,7 +15,7 @@ nav_order: 1
 
 **Scherzo in E-flat major**, for orchestra (1923–1924), Op. 7 [*Orchestre Philharmonique du Luxembourg, Gustavo Gimeno*](https://tidal.com/browse/album/366812312)
 
-**Symphony No. 1 in F minor** (1923–1925), Op. 10 [*Boston SO, Andris Nelsons*](http://www.tidal.com/track/188218278)
+💎 **Symphony No. 1 in F minor** (1923–1925), Op. 10 [*Boston SO, Andris Nelsons*](http://www.tidal.com/track/188218278)
 
 **Symphony No. 2 in B major, To October**, for mixed chorus and orchestra (1927), Op. 14 [*Boston SO, Andris Nelsons*](https://tidal.com/album/321521913/track/321521914)
 
@@ -49,7 +49,7 @@ nav_order: 1
 
 **Suite from Hamlet**, for small orchestra (1932), Op. 32a [*Boston SO, Andris Nelsons*](http://www.tidal.com/track/77611685)
 
-**Piano Concerto No. 1 in C minor** (1933), Op. 35 [*Alexander Melnikov, Mahler CO, Teodor Currentzis*](https://tidal.com/album/47633278)
+💎 **Piano Concerto No. 1 in C minor** (1933), Op. 35 [*Alexander Melnikov, Mahler CO, Teodor Currentzis*](https://tidal.com/album/47633278)
 
 **Suite for Jazz Orchestra No. 1** (1934)
 
@@ -63,11 +63,11 @@ nav_order: 1
 
 **Five Fragments**, for small orchestra (1935), Op. 42 [*Orchestre Philharmonique du Luxembourg, Gustavo Gimeno*](https://tidal.com/browse/album/366812312)
 
-**Symphony No. 4 in C minor** (1935–1936), Op. 43 [*Oslo PO, Klaus Mäkelä*](http://www.tidal.com/track/379721948) (A/2024) 
+💎 **Symphony No. 4 in C minor** (1935–1936), Op. 43 [*Oslo PO, Klaus Mäkelä*](http://www.tidal.com/track/379721948) (A/2024) 
 
 **Music to the play Hail, Spain by Afinogenov** (1936), Op. 44
 
-**Symphony No. 5 in D minor** (1937), Op. 47 [*Oslo PO, Klaus Mäkelä*](http://www.tidal.com/track/379721948) (A/2024) 
+💎 **Symphony No. 5 in D minor** (1937), Op. 47 [*Oslo PO, Klaus Mäkelä*](http://www.tidal.com/track/379721948) (A/2024) 
 
 **Suite from The Maxim Trilogy** for chorus and orchestra (1938), Op. 50a
 
@@ -105,7 +105,7 @@ nav_order: 1
 
 **Suite from The Unforgettable Year 1919**, for orchestra (1953, arranged by Levon Atovmyan), Op. 89a
 
-**Symphony No. 10 in E minor** (1953), Op. 93 [*Boston SO, Andris Nelsons*](https://tidal.com/album/59709611/track/59709612)
+💎 **Symphony No. 10 in E minor** (1953), Op. 93 [*Boston SO, Andris Nelsons*](https://tidal.com/album/59709611/track/59709612)
 
 **Ballet Suite No. 3**, for orchestra (1953, arranged by Levon Atovmyan) [*Royal Scottish National Orchestra, Neeme Järvi*](https://tidal.com/browse/album/376313892)
 
@@ -121,7 +121,7 @@ nav_order: 1
 
 **Piano Concerto No. 2 in F major** (1957), Op. 102 [*Alexander Melnikov, Mahler CO, Teodor Currentzis*](https://tidal.com/album/47633278)
 
-**Symphony No. 11 in G minor, The Year 1905** (1957), Op. 103 [*BBC PO, John Storgårds*](https://tidal.com/album/376314971/track/376314972)
+💎 **Symphony No. 11 in G minor, The Year 1905** (1957), Op. 103 [*BBC PO, John Storgårds*](https://tidal.com/album/376314971/track/376314972)
 
 **Cello Concerto No. 1 in E-flat major** (1959), Op. 107 [*Alisa Weilerstein, SO des Bayerischen Rundfunks, Pablo Heras-Casado*](http://www.tidal.com/track/77697909)
 
@@ -156,7 +156,7 @@ Jurowski*](http://www.tidal.com/track/306149648)
 
 **March of the Soviet Militia**, for military band/wind orchestra (1970), Op. 139
 
-**Symphony No. 15 in A major** (1971), Op. 141 [*Royal Concertgebouw Orchestra, Santtu-Matias Rouvali*](https://tidal.com/browse/album/427364233)
+💎 **Symphony No. 15 in A major** (1971), Op. 141 [*Royal Concertgebouw Orchestra, Santtu-Matias Rouvali*](https://tidal.com/browse/album/427364233)
 
 **Six Verses of Marina Tsvetayeva**, Op. 143a [*Elizabeth Atherton, Peter Rose, Jess, Dandy, BBC Philharmonic, John Storgårds*](https://tidal.com/album/376386463/track/376386467)
 

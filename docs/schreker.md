@@ -23,17 +23,17 @@ nav_order: 1
 
 **Phantastische Ouvertüre**, Op. 15 (1904) [*BBC Philharmonic Orchestra, Vassily Sinaisky*](https://tidal.com/album/376259072)
 
-**Nachtstück** (1906–1907) (from the opera Der ferne Klang) [*Konzerthausorchester Berlin, Christoph Eschenbach*](https://tidal.com/album/281043331)
+💎 **Nachtstück** (1906–1907) (from the opera Der ferne Klang) [*Konzerthausorchester Berlin, Christoph Eschenbach*](https://tidal.com/album/281043331)
 
 **Der Geburtstag der Infantin: Dance-pantomime for chamber orchestra** (1908–1910) (after Oscar Wilde's The Birthday of the Infanta) 
 
 **Festwalzer und Walzerintermezzo** (1908) [*WDR Rundfunkorchester Köln*](https://tidal.com/album/12217358)
 
-**Valse lente** (1908) [*Konzerthausorchester Berlin, Christoph Eschenbach*](https://tidal.com/album/281043331)
+💎 **Valse lente** (1908) [*Konzerthausorchester Berlin, Christoph Eschenbach*](https://tidal.com/album/281043331)
 
 **Ein Tanzspiel (Rokoko)** (1908–1909) [*WDR Rundfunkorchester Köln*](https://tidal.com/album/12217358)
 
-**Vorspiel zu einem Drama** (1913) [*BBC Philharmonic Orchestra, Vassily Sinaisky*](https://tidal.com/album/376259072)
+💎 **Vorspiel zu einem Drama** (1913) [*BBC Philharmonic Orchestra, Vassily Sinaisky*](https://tidal.com/album/376259072)
 
 **Chamber Symphony** (1916) [*Konzerthausorchester Berlin, Christoph Eschenbach*](https://tidal.com/album/281043331)
 
