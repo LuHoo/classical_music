@@ -27,6 +27,7 @@ Everything here reflects my personal taste, not any kind of critical consensus. 
 - [Albert Roussel](doc/roussel.md)
 - [Franz Schreker](docs/schreker.md)
 - [Dmitri Shostakovich](docs/shostakovich.md)
+- [Karol Szymanowski](docs/szymanowski.md)
 - [Alexander von Zemlinsky](docs/zemlinsky.md)
 
 ---
