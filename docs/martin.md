@@ -24,7 +24,7 @@ nav_order: 1
 
 **Das Märchen vom Aschenbrödel** (1941), ballet en 3 actes pour orchestre et voix solistes: soprano, mezzo-soprano, contralto, tenor [Orchestre de la Haute École de Musique de Genève, Gábor Takács-Nagy](https://tidal.com/browse/album/21250352)
 
-**La Voix des siècles | Marche des XXII cantons** (1942) The Voice of the Ages, stage and choral music and marches for the Bimillenary of Geneva
+**La Voix des siècles, Marche des XXII cantons** (1942) The Voice of the Ages, stage and choral music and marches for the Bimillenary of Geneva
 
 **Ein Totentanz zu Basel im Jahre 1943** (1943), spectacle dansé et mimé en plein air sur un scénario de Mariette von Meyenburg [Edith Habraken, Geoffrey Madge, Associação Recreativa Musical Amigos de Branca, Sakramentskoor Breda, Bastiaan Blomhert](https://tidal.com/browse/album/68506262)
 
