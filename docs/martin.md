@@ -91,7 +91,7 @@ nav_order: 1
 
 **Petite symphonie concertante** (1944-1945), for harp, harpsichord and piano and 2 string orchestras [Orchestre de Chambre de Genève, Armin Jordan](https://tidal.com/browse/album/89210725)
 
-**Petite symphonie concertante** (1944-1945), for harp, harpsichord and piano and full orchestra
+:gem: **Petite symphonie concertante** (1944-1945), for harp, harpsichord and piano and full orchestra
 
 **Athalie**, Musique pour la tragédie de Jean Racine pour 2 choeurs de jeunes filles, alto solo et orchestre
 
@@ -131,8 +131,11 @@ nav_order: 1
 
 **Polyptyque, six images de la Passion du Christ** (1973) pour violon solo et deux orchestres à cordes [Marieke Blankestijn, Chamber Orchestra of Europe, Thierry Fischer](https://tidal.com/browse/album/4616346)
 
-
+## Choir a capella
 
 **Mass** for double choir [The Choir of King's College London, Joseph Fort](https://tidal.com/browse/album/178240201)
 
+## Chamber
+
 **Preludes** for violoncello and piano  [Christian Poltéra, Kathryn Stott](https://tidal.com/browse/album/341681124)
+

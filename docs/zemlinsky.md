@@ -17,7 +17,7 @@ nav_order: 1
 
 **Der alte Garten** (T: Joseph von Eichendorff), for soprano and orchestra (1900-01, orchestrated by Antony Beaumont, 1999) [*Gürzenich-Orchester Köln, James Conlon*](https://tidal.com/browse/album/1444238)
 
-**Sechs Gesänge after poems by Maurice Maeterlinck**, Op. 13, for soprano and orchestra (1910/13, orchestrated 1913/21) [*Gürzenich-Orchester Köln, James Conlon*](https://tidal.com/browse/album/1444238)
+:gem: **Sechs Gesänge after poems by Maurice Maeterlinck**, Op. 13, for soprano and orchestra (1910/13, orchestrated 1913/21) [*Gürzenich-Orchester Köln, James Conlon*](https://tidal.com/browse/album/1444238)
 
 **Lyric Symphony, for soprano, baritone, and orchestra**, Op. 18 (after poems by Rabindranath Tagore) (1922–23) [*H\r{a}kan 
 Hageg\r{a}rd, Alessandra Marc, KCO, Riccardo Chailly*](https://tidal.com/browse/album/50609998)
@@ -54,7 +54,7 @@ Hageg\r{a}rd, Alessandra Marc, KCO, Riccardo Chailly*](https://tidal.com/browse/
 
 **Hochzeitsgesang** (T: Jewish liturgy) for Cantor (Tenor), chorus, and organ (1896), Text: Baruch Haba, Mi Adir [*Gürzenich-Orchester Köln, James Conlon*](https://tidal.com/browse/album/1443927)
 
-**Frühlingsbegräbnis** (Text: Paul Heyse), Cantata for soprano, baritone, mixed chorus and orchestra (1896/97, rev. c.1903) [*Gürzenich-Orchester Köln, James Conlon*](https://tidal.com/browse/album/1443927)
+:gem: **Frühlingsbegräbnis** (Text: Paul Heyse), Cantata for soprano, baritone, mixed chorus and orchestra (1896/97, rev. c.1903) [*Gürzenich-Orchester Köln, James Conlon*](https://tidal.com/browse/album/1443927)
 
 **Aurikelchen** (T: Richard Dehmel) for women's choir (1898) [*Gürzenich-Orchester Köln, James Conlon*](https://tidal.com/browse/album/1443927)
 

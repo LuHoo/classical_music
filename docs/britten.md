@@ -21,13 +21,13 @@ nav_order: 1
 
 **King Arthur** (suite for orchestra, arranged from incidental music for a BBC Radio production by Paul Hindmarsh, 1937/ 2005)
 
-**Variations on a Theme of Frank Bridge**, Op. 10 for string orchestra (1937) [*Sinfonia of London, John Wilson*](http://www.tidal.com/track/376371142) (02/2021)
+:gem: **Variations on a Theme of Frank Bridge**, Op. 10 for string orchestra (1937) [*Sinfonia of London, John Wilson*](http://www.tidal.com/track/376371142) (02/2021)
 
 **Mont Juic, a suite of Catalan Dances**, Op. 12 jointly composed with Lennox Berkeley (1937)
 
 **Canadian Carnival**, (1939), Op. 19
 
-**Sinfonia da Requiem**, (1940), Op. 20 [*City of Birmingham Symphony Orchestra, Mirga Gražinytė-Tyla*](http://www.tidal.com/track/158038543)
+:gem: **Sinfonia da Requiem**, (1940), Op. 20 [*City of Birmingham Symphony Orchestra, Mirga Gražinytė-Tyla*](http://www.tidal.com/track/158038543)
 
 **Matinées musicales**, Op. 24 after Rossini (1941)
 
@@ -35,7 +35,7 @@ nav_order: 1
 
 **Prelude and Fugue for 18 Strings**, Op. 29 (1943)
 
-**Four Sea Interludes and Passacaglia from Peter Grimes**, Op. 33a & 33b for orchestra (1945) [*BBC SO, Sir Andrew Davis*](http://www.tidal.com/track/19804298)
+:gem: **Four Sea Interludes and Passacaglia from Peter Grimes**, Op. 33a & 33b for orchestra (1945) [*BBC SO, Sir Andrew Davis*](http://www.tidal.com/track/19804298)
 
 **The Young Person's Guide to the Orchestra**, Op. 34 (1946)
 
