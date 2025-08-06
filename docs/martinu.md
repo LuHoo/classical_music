@@ -154,9 +154,29 @@ nav_order: 1
 
 **Concerto for Violin and Piano**, H 13 (1910) [*Stephen Shipps, Dmitri Vorobiev*](https://tidal.com/album/12621237)
 
-**Violin Sonata in C Major**, H 120 [*Stephen Shipps, Dmitri Vorobiev*](https://tidal.com/album/12621237)
+**Violin Sonata in C Major**, H 120 (1919) [*Stephen Shipps, Dmitri Vorobiev*](https://tidal.com/album/12621237)
 
-**Violin Sonatina**, H 262 [*Stephen Shipps, Dmitri Vorobiev*](https://tidal.com/album/12621237)
+**Ariette**, vc/pf H 188B (1930) [*Vilem Vlcek, Dennis Linnik*](https://tidal.com/browse/album/440529061)
+
+**Nocturnes**, vc/pf H 189 (1931) [*Vilem Vlcek, Dennis Linnik*](https://tidal.com/browse/album/440529061)
+
+**Pastorals**, vc/pf H 190 (1931) [*Vilem Vlcek, Dennis Linnik*](https://tidal.com/browse/album/440529061)
+
+**Miniature Suite**, vc/pf H 192 (1931) [*Vilem Vlcek, Dennis Linnik*](https://tidal.com/browse/album/440529061)
+
+**Seven Arabesques**, vc/pf H 201 (1931) [*Vilem Vlcek, Dennis Linnik*](https://tidal.com/browse/album/440529061)
+
+**Violin Sonatina**, H 262 (1937) [*Stephen Shipps, Dmitri Vorobiev*](https://tidal.com/album/12621237)
+
+**Cello Sonata No. 1**, H 277 (1939) [*Vilem Vlcek, Dennis Linnik*](https://tidal.com/browse/album/440529061)
+
+**Cello Sonata No. 2**, H 286 (1941) [*Vilem Vlcek, Dennis Linnik*](https://tidal.com/browse/album/440529061)
+
+**Variations on a Theme of Rossini**, vc/pf H 290 (1942) [*Vilem Vlcek, Dennis Linnik*](https://tidal.com/browse/album/440529061)
+
+**Cello Sonata No. 3**, H 340 (1952) [*Vilem Vlcek, Dennis Linnik*](https://tidal.com/browse/album/440529061)
+
+**Variations on a Slovak Folk Song**, vc/pf H 378 (1959) [*Vilem Vlcek, Dennis Linnik*](https://tidal.com/browse/album/440529061)
 
 # Choral
 
