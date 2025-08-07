@@ -156,6 +156,8 @@ nav_order: 1
 
 **Violin Sonata in C Major**, H 120 (1919) [*Stephen Shipps, Dmitri Vorobiev*](https://tidal.com/album/12621237)
 
+**Romance**, vc/pf H 186bis (1930) [*Vilem Vlcek, Dennis Linnik*](https://tidal.com/browse/album/440529061)
+
 **Ariette**, vc/pf H 188B (1930) [*Vilem Vlcek, Dennis Linnik*](https://tidal.com/browse/album/440529061)
 
 **Nocturnes**, vc/pf H 189 (1931) [*Vilem Vlcek, Dennis Linnik*](https://tidal.com/browse/album/440529061)
