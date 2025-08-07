@@ -39,15 +39,15 @@ nav_order: 1
 
 ### Concertante
 
-**Concert champêtre**, for harpsichord and orchestra, (1927–1928), FP 49 [*Mark Bebbington, Royal Philharmonic Orchestra, Jan Latham-Koenig*](https://tidal.com/browse/album/139837484)
+💎 **Concert champêtre**, for harpsichord and orchestra, (1927–1928), FP 49 [*Mark Bebbington, Royal Philharmonic Orchestra, Jan Latham-Koenig*](https://tidal.com/browse/album/139837484)
 
 **Aubade**, a "Concerto choréographique" for piano and 18 instruments, FP 51 (1929)
 
-**Concerto for two pianos and orchestra in D minor** (1932), FP 61 [*Mari Kodama, Momo Kodama, Orchestre de la Suisse Romande, Kent Nagano*](https://tidal.com/browse/track/362759029) (09/2024)
+💎 **Concerto for two pianos and orchestra in D minor** (1932), FP 61 [*Mari Kodama, Momo Kodama, Orchestre de la Suisse Romande, Kent Nagano*](https://tidal.com/browse/track/362759029) (09/2024)
 
-**Concerto for organ, strings and timpani in G minor** (1938), FP 93 [*Peter Hurford, Philharmonia Orchestra, Charles Dutoit*](https://tidal.com/browse/album/4556608)
+💎 **Concerto for organ, strings and timpani in G minor** (1938), FP 93 [*Peter Hurford, Philharmonia Orchestra, Charles Dutoit*](https://tidal.com/browse/album/4556608)
 
-**Concerto for piano and orchestra** (1949) FP 146 [*Mark Bebbington, Royal Philharmonic Orchestra, Jan Latham-Koenig*](https://tidal.com/browse/album/139837484)
+💎 **Concerto for piano and orchestra** (1949) FP 146 [*Mark Bebbington, Royal Philharmonic Orchestra, Jan Latham-Koenig*](https://tidal.com/browse/album/139837484)
 
 ## Vocal/choral orchestral
 
@@ -83,7 +83,7 @@ nav_order: 1
 
 **Villanelle** for pipe (pipeau) and piano, FP 74 (1934)
 
-**Suite française** for 2 oboes, 2 bassoons, 2 trumpets, 3 trombones, percussion and harpsichord, FP 80 (1935)
+**Suite française** for 2 oboes, 2 bassoons, 2 trumpets, 3 trombones, percussion and harpsichord, FP 80 (1935) [*Pascal Rogé*](https://tidal.com/browse/track/4442366)
 
 **Sextet** for piano and wind quintet, FP 100 (1932–9) [*Pascal Rogé, Patrick Gallois, Maurice Bourgue, Michel Portal, Amaury Wallez, André Cazalet*](https://tidal.com/browse/track/4471747)
 
@@ -97,11 +97,11 @@ nav_order: 1
 
 **Flute Sonata**, FP 164 (1956–7)
 
-**Élégie for horn and piano**, FP 168 (1957) In memory of Dennis Brain
+**Élégie for horn and piano**, FP 168 (1957) In memory of Dennis Brain [*André Cazalet, Pascal Rogé*](https://tidal.com/browse/track/4442366)
 
 **Sarabande for guitar**, FP 179 (1960)
 
-**Clarinet Sonata**, FP 184 (1962)
+**Clarinet Sonata**, FP 184 (1962) [*Michel Portal, Pascal Rogé*](https://tidal.com/browse/track/4442366)
 
 **Oboe Sonata**, FP 185 (1962) [*Mark Bebbington, John Roberts*](https://tidal.com/browse/album/139837484)
 
@@ -111,71 +111,71 @@ nav_order: 1
 
 [List of solo piano compositions by Francis Poulenc on Wikipedia](https://en.wikipedia.org/wiki/List_of_solo_piano_compositions_by_Francis_Poulenc)
 
-**Trois pastorales** (1917), FP 5
+**Trois pastorales** (1917), FP 5 [*Pascal Rogé*](https://tidal.com/browse/track/4442366)
 
-**Trois pièces** (1918, 1928), FP 48
+**Trois pièces** (1918, 1928), FP 48 [*Pascal Rogé*](https://tidal.com/browse/track/4442366)
 
-**Mouvements perpétuels** (1919), FP 14
+**Mouvements perpétuels** (1919), FP 14 [*Pascal Rogé*](https://tidal.com/browse/track/4442366)
 
-**Valse** (from L'Album des Six) (1919), FP 17
+**Valse** (from L'Album des Six) (1919), FP 17 [*Pascal Rogé*](https://tidal.com/browse/track/4442366)
 
-**Suite en ut** (1920), FP 19
+**Suite en ut** (1920), FP 19 [*Pascal Rogé*](https://tidal.com/browse/track/4442366)
 
-**Cinq Impromptus** (1920-1921, revised 1939), FP 21
+**Cinq Impromptus** (1920-1921, revised 1939), FP 21 [*Pascal Rogé*](https://tidal.com/browse/track/4442366)
 
-**Promenades** (1921), FP 24
+**Promenades** (1921), FP 24 [*Pascal Rogé*](https://tidal.com/browse/track/4442366)
 
-**Napoli** (1925), FP 40
+**Napoli** (1925), FP 40 [*Pascal Rogé*](https://tidal.com/browse/track/4442366)
 
-**Pastourelle** (extrait de L'éventail de Jeanne) (1927), FP 45
+**Pastourelle** (extrait de L'éventail de Jeanne) (1927), FP 45 [*Pascal Rogé*](https://tidal.com/browse/track/4442366)
 
-**Trois novelettes** (1927-1928, 1958), FP 47 (first two) and FP 173 (third)
+**Trois novelettes** (1927-1928, 1958), FP 47 (first two) and FP 173 (third) [*Pascal Rogé*](https://tidal.com/browse/track/4442366)
 
-**Huit Nocturnes** (1929-1938), FP 56
+**Huit Nocturnes** (1929-1938), FP 56 [*Pascal Rogé*](https://tidal.com/browse/track/4442366)
 
-**Pièce brève sur le nom d'Albert Roussel** (1929), FP 50
+**Pièce brève sur le nom d'Albert Roussel** (1929), FP 50 [*Pascal Rogé*](https://tidal.com/browse/track/4442366)
 
-**Soirées de Nazelles**, Suite pour piano (1930-1936), FP 84
+**Soirées de Nazelles**, Suite pour piano (1930-1936), FP 84 [*Pascal Rogé*](https://tidal.com/browse/track/4442366)
 
-**Valse-improvisation sur le nom de Bach** (1932), FP 62
+**Valse-improvisation sur le nom de Bach** (1932), FP 62 [*Pascal Rogé*](https://tidal.com/browse/track/4442366)
 
-**Quinze improvisations pour piano** (1932-1959), FP 63 (Nos. 1-10), FP 113 (Nos. 11-12), FP 170 (Nos. 13-14) and FP 176 (No. 15)
+**Quinze improvisations pour piano** (1932-1959), FP 63 (Nos. 1-10), FP 113 (Nos. 11-12), FP 170 (Nos. 13-14) and FP 176 (No. 15) [*Pascal Rogé*](https://tidal.com/browse/track/4442366)
 
-**Villageoises**, pièces enfantines pour piano (1933), FP 65
+**Villageoises**, pièces enfantines pour piano (1933), FP 65 [*Pascal Rogé*](https://tidal.com/browse/track/4442366)
 
-**Trois Feuillets d'album** (1933), FP 68
+**Trois Feuillets d'album** (1933), FP 68 [*Pascal Rogé*](https://tidal.com/browse/track/4442366)
 
-**Presto en si bémol majeur** (B-flat major) - (1934), FP 70
+**Presto en si bémol majeur** (B-flat major) - (1934), FP 70 [*Pascal Rogé*](https://tidal.com/browse/track/4442366)
 
-**Humoresque** (1934), FP 72
+**Humoresque** (1934), FP 72 [*Pascal Rogé*](https://tidal.com/browse/track/4442366)
 
-**Badinage** (1934), FP 73
+**Badinage** (1934), FP 73 [*Pascal Rogé*](https://tidal.com/browse/track/4442366)
 
-**Trois intermezzi** (1934, 1943), FP 71 (Nos. 1 & 2) and FP 118 (No. 3)
+**Trois intermezzi** (1934, 1943), FP 71 (Nos. 1 & 2) and FP 118 (No. 3)  [*Pascal Rogé*](https://tidal.com/browse/track/4442366)
 
 **Suite française**, d'après Claude Gervaise (1935), FP 80
 
-**Bourrée, au pavillon d'Auvergne** (1937), FP 87
+**Bourrée, au pavillon d'Auvergne** (1937), FP 87 [*Pascal Rogé*](https://tidal.com/browse/track/4442366)
 
-**Française**, d'après Claude Gervaise (1939), FP 103
+**Française**, d'après Claude Gervaise (1939), FP 103 [*Pascal Rogé*](https://tidal.com/browse/track/4442366)
 
-**Mélancolie** (1940), FP 105
+**Mélancolie** (1940), FP 105 [*Pascal Rogé*](https://tidal.com/browse/track/4442366)
 
-**Thème varié** (1951), FP 151
+**Thème varié** (1951), FP 151 [*Pascal Rogé*](https://tidal.com/browse/track/4442366)
 
 ### Piano four hands
 
-**Sonata for piano, 4 hands**, FP 8
+**Sonata for piano, 4 hands**, FP 8 [*Pascal Rogé, Jean-Philippe Collard*](https://tidal.com/browse/track/4442366)
 
 ### Two pianos
 
 **Sonata for 2 pianos**, FP 156 [*Bracha Eden, Alexander Tamir*](https://tidal.com/browse/track/4471750)
 
-**L'embarquement pour Cythère**, valse-musette for 2 pianos (from film, Le voyage en Amérique), FP 150
+**L'embarquement pour Cythère**, valse-musette for 2 pianos (from film, Le voyage en Amérique), FP 150 [*Pascal Rogé, Jean-Philippe Collard*](https://tidal.com/browse/track/4442366)
 
-**Élégie (en accords alternés)**, for 2 pianos, FP 175
+**Élégie (en accords alternés)**, for 2 pianos, FP 175 [*Pascal Rogé, Jean-Philippe Collard*](https://tidal.com/browse/track/4442366)
 
-**Capriccio for 2 pianos** (after Le bal Masqué), FP 155
+**Capriccio for 2 pianos** (after Le bal Masqué), FP 155 [*Pascal Rogé, Jean-Philippe Collard*](https://tidal.com/browse/track/4442366)
 
 ## Choral
 
