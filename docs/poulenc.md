@@ -13,11 +13,11 @@ nav_order: 1
 
 **Les mariés de la tour Eiffel**, ballet (1921; a collaborative work by all the members of Les Six except Louis Durey); Poulenc's contributions, Discours du General (Polka) and La Baigneuse de Trouville are listed as FP 23 in Schmidt's Poulenc catalog.
 
-💎 **Les biches**, ballet (1922/23), FP 36
+💎 **Les biches**, ballet (1922/23), FP 36 [*Orchestre National de France, Charles Dutoit*](https://tidal.com/browse/album/4556608)
 
 **Pastourelle** (1927; for the children's ballet L'éventail de Jeanne, to which ten French composers each contributed a dance; this excerpt became better known in its piano transcription), FP 45
 
-**Les animaux modèles**, ballet (1941), FP 111
+**Les animaux modèles**, ballet (1941), FP 111 [*Orchestre National de France, Charles Dutoit*](https://tidal.com/browse/album/4556608)
 
 ### Opera
 
@@ -29,7 +29,9 @@ nav_order: 1
 
 ## Orchestral
 
-**Sinfonietta**, FP 141 (1947)
+**Deux marches et un intermède**, FP 88 (1937) [*Orchestre National de France, Charles Dutoit*](https://tidal.com/browse/album/4556608)
+
+**Sinfonietta**, FP 141 (1947) [*Orchestre National de France, Charles Dutoit*](https://tidal.com/browse/album/4556608)
 
 **"Matelote provençale"**, variation for La guirlande de Campra, FP 153 (1952)
 
@@ -37,15 +39,15 @@ nav_order: 1
 
 ### Concertante
 
-**Concert champêtre**, for harpsichord and orchestra, (1927–1928), FP 49
+**Concert champêtre**, for harpsichord and orchestra, (1927–1928), FP 49 [*Mark Bebbington, Royal Philharmonic Orchestra, Jan Latham-Koenig*](https://tidal.com/browse/album/139837484)
 
 **Aubade**, a "Concerto choréographique" for piano and 18 instruments, FP 51 (1929)
 
 **Concerto for two pianos and orchestra in D minor** (1932), FP 61 [*Mari Kodama, Momo Kodama, Orchestre de la Suisse Romande, Kent Nagano*](https://tidal.com/browse/track/362759029) (09/2024)
 
-**Concerto for organ, strings and timpani in G minor** (1938), FP 93
+**Concerto for organ, strings and timpani in G minor** (1938), FP 93 [*Peter Hurford, Philharmonia Orchestra, Charles Dutoit*](https://tidal.com/browse/album/4556608)
 
-**Concerto for piano and orchestra** (1949) FP 146 [*Pascal Rogé, Philharmonia Orchestra, Charles Dutoit*](https://tidal.com/browse/album/4556608)
+**Concerto for piano and orchestra** (1949) FP 146 [*Mark Bebbington, Royal Philharmonic Orchestra, Jan Latham-Koenig*](https://tidal.com/browse/album/139837484)
 
 ## Vocal/choral orchestral
 
@@ -57,7 +59,7 @@ nav_order: 1
 
 **Stabat Mater** (Soprano solo, SATB divisi, orchestra) (1950), FP 148
 
-**Gloria** (Soprano solo, SATB divisi, orchestra) (1959), FP 177
+**Gloria** (Soprano solo, SATB divisi, orchestra) (1959), FP 177 [*Françoise Pollet, Choeur de Radio France, Orchestre National de France, Charles Dutoit*](https://tidal.com/browse/album/4556608)
 
 **La dame de Monte-Carlo** (Soprano solo, orchestra) (1961), FP 180
 
@@ -65,7 +67,7 @@ nav_order: 1
 
 ## Chamber/Instrumental
 
-**Rapsodie nègre**, for flute, clarinet, string quartet, baritone and piano, FP 3 (1917)
+**Rapsodie nègre**, for flute, clarinet, string quartet, baritone and piano, FP 3 (1917) [*Pascal Rogé, Soloistes de l'Orchestre National de France*](https://tidal.com/browse/track/4556681)
 
 **Sonata for two clarinets**, FP 7 (1918/1945)
 
@@ -75,7 +77,7 @@ nav_order: 1
 
 **Sonata for horn, trumpet and trombone**, FP 33 (1922/1945)
 
-**Trio for oboe, bassoon and piano**, FP 43 (1926)
+**Trio for oboe, bassoon and piano**, FP 43 (1926) [*Mark Bebbington, Jonathan Davies, John Roberts*](https://tidal.com/browse/album/139837484)
 
 *Bagatelle in D minor* for violin and piano, FP 60c (1932)
 
@@ -83,15 +85,15 @@ nav_order: 1
 
 **Suite française** for 2 oboes, 2 bassoons, 2 trumpets, 3 trombones, percussion and harpsichord, FP 80 (1935)
 
-**Sextet** for piano and wind quintet, FP 100 (1932–9)
+**Sextet** for piano and wind quintet, FP 100 (1932–9) [*Pascal Rogé, Patrick Gallois, Maurice Bourgue, Michel Portal, Amaury Wallez, André Cazalet*](https://tidal.com/browse/track/4471747)
 
 **Un joueur de flûte berce les ruines**, for flute (1942)
 
-**Violin Sonata**, FP 119 (1942–3/1949)
+**Violin Sonata**, FP 119 (1942–3/1949) [*Benjamin Baker, Daniel Lebhart*](https://tidal.com/browse/track/175068346)
 
 **L'Invitation au Chateau**, FP 138 (1947)
 
-**Cello Sonata**, FP 143 (1940–48)
+**Cello Sonata**, FP 143 (1940–48) [*Bruno Philippe, Tanguy de Willencourt*](https://tidal.com/browse/track/327003713)
 
 **Flute Sonata**, FP 164 (1956–7)
 
@@ -101,7 +103,7 @@ nav_order: 1
 
 **Clarinet Sonata**, FP 184 (1962)
 
-**Oboe Sonata**, FP 185 (1962)
+**Oboe Sonata**, FP 185 (1962) [*Mark Bebbington, John Roberts*](https://tidal.com/browse/album/139837484)
 
 ## Piano
 
@@ -167,7 +169,7 @@ nav_order: 1
 
 ### Two pianos
 
-**Sonata for 2 pianos**, FP 156
+**Sonata for 2 pianos**, FP 156 [*Bracha Eden, Alexander Tamir*](https://tidal.com/browse/track/4471750)
 
 **L'embarquement pour Cythère**, valse-musette for 2 pianos (from film, Le voyage en Amérique), FP 150
 
