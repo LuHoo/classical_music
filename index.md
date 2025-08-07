@@ -11,7 +11,7 @@ This site is the opposite of Apple Music Classical, which tries to list every ex
 
 I usually prefer modern, high-resolution studio recordings over historic public performances. I’m not generally drawn to period instruments, though there are exceptions. Where possible, I’ve included links to the albums on Tidal (sorry, no Spotify).
 
-Everything here reflects my personal taste, not any kind of critical consensus. If a piece is listed without a recording, I’m open to suggestions — feel free to share your favorites.
+Everything here reflects my personal taste (listen to my 💎 gems!), not any kind of critical consensus. If a piece is listed without a recording, I’m open to suggestions — feel free to share your favorites.
 
 ## 🔍 Browse by Composer
 
@@ -23,6 +23,7 @@ Everything here reflects my personal taste, not any kind of critical consensus. 
 - [Paul Hindemith](docs/hindemith.md)
 - [Frank Martin](docs/martin.md)
 - [Bohuslav Martinů](docs/martinu.md)
+- [Francis Poulenc](docs/poulenc.md)
 - [Sergei Prokofiev](docs/prokofiev.md)
 - [Albert Roussel](doc/roussel.md)
 - [Franz Schreker](docs/schreker.md)
