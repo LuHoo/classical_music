@@ -45,7 +45,7 @@ nav_order: 1
 
 **Medea, Suite**, Op. 23 (1947) [*Royal SNO, Marin Alsop*](https://tidal.com/browse/track/12020006)
 
-**Medea's Dance of Vengeance**, Op. 23a (1955) *Royal SNO, Marin Alsop*
+**Medea's Dance of Vengeance**, Op. 23a (1955) [*Royal SNO, Marin Alsop*](https://tidal.com/browse/track/12020251)
 
 **Intermezzo from the Opera Vanessa** (1958)	
 
