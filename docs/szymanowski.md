@@ -28,7 +28,7 @@ nav_order: 1
 
 **Symphony No. 1 in F minor**, Op. 15 (1906–1907) [BBC Symphony Orchestra, Edward Gardner](https://tidal.com/browse/track/376338202)
 
-:gem: **Concerto No. 1**, Op. 35 for violin and orchestra	in 1 movement (1916) [Thomas Zehetmair, City of Birmingham Symphony Orchestra, Simon Rattle](https://tidal.com/browse/album/1354526)
+💎 **Concerto No. 1**, Op. 35 for violin and orchestra	in 1 movement (1916) [Thomas Zehetmair, City of Birmingham Symphony Orchestra, Simon Rattle](https://tidal.com/browse/album/1354526)
 
 **Symphony No. 2 in B♭ major**, Op. 19 [BBC Symphony Orchestra, Edward Gardner](https://tidal.com/browse/album/380562795)
 
