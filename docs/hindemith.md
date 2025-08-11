@@ -69,7 +69,7 @@ nav_order: 1
 
 **Philharmonic Concerto** (Variations for Orchestra) (1932) [*Queensland SO, Werner Andreas Albert*](https://tidal.com/album/284466409)
 
-:gem: **Symphony: Mathis der Maler** (1933-1934) [*BBC Scottish SO, Martyn Brabbins*](https://tidal.com/album/340823857)
+💎 **Symphony: Mathis der Maler** (1933-1934) [*BBC Scottish SO, Martyn Brabbins*](https://tidal.com/album/340823857)
 
 **Symphonic Dances** (1937) [*BBC PO, Yan Pascal Tortelier*](https://tidal.com/album/12444399/track/12444400)
 
@@ -194,7 +194,7 @@ nav_order: 1
 
 ## Chamber
 
-:gem: **Kleine Kammermusik**, Op. 24/2 for wind quintet (1922), Op. 24/2 [*Kronberg Academy Soloists*](http://www.tidal.com/track/284454595)
+💎 **Kleine Kammermusik**, Op. 24/2 for wind quintet (1922), Op. 24/2 [*Kronberg Academy Soloists*](http://www.tidal.com/track/284454595)
 
 **Ouvertüre zum "Fliegenden Holländer", wie sie eine schlechte Kurkapelle morgens um 7 am Brunnen vom Blatt spielt**, for string quartet (c. 1925)
 
