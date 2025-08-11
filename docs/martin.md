@@ -91,7 +91,7 @@ nav_order: 1
 
 **Petite symphonie concertante** (1944-1945), for harp, harpsichord and piano and 2 string orchestras [Orchestre de Chambre de Genève, Armin Jordan](https://tidal.com/browse/album/89210725)
 
-:gem: **Petite symphonie concertante** (1944-1945), for harp, harpsichord and piano and full orchestra
+💎 **Petite symphonie concertante** (1944-1945), for harp, harpsichord and piano and full orchestra
 
 **Athalie**, Musique pour la tragédie de Jean Racine pour 2 choeurs de jeunes filles, alto solo et orchestre
 
