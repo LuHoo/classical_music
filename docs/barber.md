@@ -85,7 +85,7 @@ nav_order: 1
 
 **Cello Sonata**, Op. 6 (1932) 
 
-**String Quartet**, Op. 11 (1936) 
+**String Quartet**, Op. 11 (1936) [*Escher String Quartet*](https://tidal.com/browse/track/190698277)
 
 **Commemorative March**, vn/vc/pf (1941) 
 
@@ -93,7 +93,7 @@ nav_order: 1
 
 **Adventure** (1954) 
 
-**Summer Music for Wind Quintet**, Op. 31 (1956) *Bergen Wind Quintet*
+**Summer Music for Wind Quintet**, Op. 31 (1956) [*Bergen Wind Quintet*](https://tidal.com/browse/track/12103255)
 
 **Chorale for Washington Cathedral** (1960s) 
 
