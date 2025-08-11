@@ -43,11 +43,11 @@ nav_order: 1
 
 **Triple Concerto for Violin, Cello, and Piano in C major**, Op. 56 (1804–1808) [*Isabelle Faust, Jean-Guihen Queyras, Alexander Melnikov, Freiburger Barockorchester, Pablo Heras-Casado*]()
 
-**Piano Concerto No. 4 in G major**, Op. 58 (1804-1808) [*Leif Ove Andsnes, Mahler CO*]() (11/2012, 06/2014)
+💎 **Piano Concerto No. 4 in G major**, Op. 58 (1804-1808) [*Leif Ove Andsnes, Mahler CO*]() (11/2012, 06/2014)
 
 **Introduction to Act 2 of "Leonore"**, WoO 2b (1805, discarded)
 
-**Symphony No. 4 in B♭ major**, Op. 60 (1806–1807) [*Le Concert des Nations, Jordi Savall*]()
+💎 **Symphony No. 4 in B♭ major**, Op. 60 (1806–1807) [*Le Concert des Nations, Jordi Savall*]()
 
 **Violin Concerto in D major**, Op. 61 (1806) [*Veronika Eberle, LSO, Sir Simon Rattle*]()
 
@@ -57,7 +57,7 @@ nav_order: 1
 
 **Symphony No. 5 "Fate" in C minor**, Op. 67 (1807–1808) [*Le Concert des Nations, Jordi Savall*]()
 
-**Symphony No. 6 "Pastoral" in F major**, Op. 68 (1808) [*Le Concert des Nations, Jordi Savall*]()
+💎 **Symphony No. 6 "Pastoral" in F major**, Op. 68 (1808) [*Le Concert des Nations, Jordi Savall*]()
 
 **"Leonore" Overture No. 2 in C major**, Op. 72a (1804–1805)
 
@@ -91,7 +91,7 @@ nav_order: 1
 
 **"Wo sich die Pulse" chorus for "The Consecration of the House"**, WoO 98 (1822)
 
-**Symphony No. 9 "Choral" in D minor**, Op. 125 (1822–1824) [*Le Concert des Nations, Jordi Savall*]()
+💎 **Symphony No. 9 "Choral" in D minor**, Op. 125 (1822–1824) [*Le Concert des Nations, Jordi Savall*]()
 
 ## Chamber
 
@@ -187,7 +187,7 @@ nav_order: 1
 
 **Violin Sonata No. 4 in A minor**, Op. 23 (1800) [*Leonidas Kavakos, Enrico Pace*]()
 
-**Violin Sonata No. 5 in F major, "Spring"**, Op. 24 (1800–1801) [*Antje Weithaas, Dénes Várjon*]() (06/2024)
+💎 **Violin Sonata No. 5 in F major, "Spring"**, Op. 24 (1800–1801) [*Antje Weithaas, Dénes Várjon*]() (06/2024)
 
 **Serenade for flute, violin, and viola in D major**, Op. 25 (1801)
 
@@ -237,7 +237,7 @@ nav_order: 1
 
 **Sextet for clarinets, horns, and bassoons in E♭ major**, Op. 71 (1796)
 
-**String Quartet No. 10 "Harp" in E♭ major**, Op. 74 (1809) [*Calidore String Quartet*]() (10/2024)
+💎 **String Quartet No. 10 "Harp" in E♭ major**, Op. 74 (1809) [*Calidore String Quartet*]() (10/2024)
 
 **Sextet for Horns and String Quartet in E♭ major**, Op. 81b (1795)
 
@@ -251,7 +251,7 @@ nav_order: 1
 
 **Violin Sonata No. 10 in G major**, Op. 96 (1812, rev. 1814–1815) [*Antje Weithaas, Dénes Várjon*]() (06/2024) 
 
-**Piano Trio No. 7 in B♭ major, "Archduke"**, Op. 97 (1810–11 April 1814) [*Leonidas Kavakos, Yo-Yo Ma, Emanuel Ax*]()
+💎 **Piano Trio No. 7 in B♭ major, "Archduke"**, Op. 97 (1810–11 April 1814) [*Leonidas Kavakos, Yo-Yo Ma, Emanuel Ax*]()
 
 **Cello Sonata No. 4 in C major**, Op. 102/1 (1815)
 
@@ -275,15 +275,15 @@ nav_order: 1
 
 **Canon for two violins in A major**, WoO 35 (August 1825)
 
-**String Quartet No. 13 in B♭ major**, Op. 130 (1825–22 April 1827) [*Chiaroscuro Quartet*]() (01/2024)
+💎 **String Quartet No. 13 in B♭ major**, Op. 130 (1825–22 April 1827) [*Chiaroscuro Quartet*]() (01/2024)
 
-**String Quartet No. 14 in C♯ minor**, Op. 131 (1825–1826) [*Danish String Quartet*]()
+💎 **String Quartet No. 14 in C♯ minor**, Op. 131 (1825–1826) [*Danish String Quartet*]()
 
-**String Quartet No. 15 in A minor**, Op. 132 (6 November 1825) [*Danish String Quartet*]()
+💎 **String Quartet No. 15 in A minor**, Op. 132 (6 November 1825) [*Danish String Quartet*]()
 
 **Große Fuge in B♭ major**, Op. 133 (1825–21 March 1826)
 
-**String Quartet No. 16 in F major**, Op. 135 (1826–23 March 1828) [*Danish String Quartet*]()
+💎 **String Quartet No. 16 in F major**, Op. 135 (1826–23 March 1828) [*Danish String Quartet*]()
 
 **Fugue for String Quintet in D major**, Op. 137 (November 1817)
 
@@ -325,7 +325,7 @@ nav_order: 1
 
 **Piano Sonata in C major, (fragment)**, WoO 51 (1797–1798)
 
-**Piano Sonata No. 8 "Pathétique" in C minor**, Op. 13 (1797–1798)
+💎 **Piano Sonata No. 8 "Pathétique" in C minor**, Op. 13 (1797–1798)
 
 **Piano Sonata No. 9 in E major**, Op. 14/1 (1798)
 
@@ -335,7 +335,7 @@ nav_order: 1
 
 **Piano Sonata No. 12 in A♭ major**, Op. 26 (1800–1801)
 
-**Piano Sonata No. 13 "Quasi una fantasia" in E♭ major**, Op. 27/1 (1801)
+💎 **Piano Sonata No. 13 "Quasi una fantasia" in E♭ major**, Op. 27/1 (1801)
 
 **Piano Sonata No. 14 "Moonlight" in C♯ minor**, Op. 27/2 (1801)
 
@@ -347,7 +347,7 @@ nav_order: 1
 
 **Piano Sonata No. 18 ("The Hunt"), E♭**, Op. 31/3 (1802)
 
-**Piano Sonata No. 21 ("Waldstein"), C**, Op. 53 (1803–04)
+💎 **Piano Sonata No. 21 ("Waldstein"), C**, Op. 53 (1803–04)
 
 **Piano Sonata No. 22, F**, Op. 54 (1804)
 
@@ -355,7 +355,7 @@ nav_order: 1
 
 **Piano Sonata No. 24 ("À Thérèse"), F♯**, Op. 78 (1809)
 
-**Piano Sonata No. 25 in G**, Op. 79 (1809)
+💎 **Piano Sonata No. 25 in G**, Op. 79 (1809)
 
 **Piano Sonata No. 26 ("Les Adieux"), E♭**, Op. 81a (1809–10)
 
@@ -365,7 +365,7 @@ nav_order: 1
 
 **Piano Sonata No. 29 ("Hammerklavier"), B♭**, Op. 106 (1817–18)
 
-**Piano Sonata No. 30, in E**, Op. 109 (1820)
+💎 **Piano Sonata No. 30, in E**, Op. 109 (1820)
 
 **Piano Sonata No. 31, in A♭**, Op. 110 (1821–22)
 
