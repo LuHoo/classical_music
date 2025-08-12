@@ -7,7 +7,8 @@ nav_order: 1
 
 [Composer page on Wikipedia](https://en.wikipedia.org/wiki/Albert_Roussel#Works)
 
-## Stage}
+## Stage
+
 **Le marchand de sable qui passe, Op. 13** (The Sandman), incidental music for a verse play by Jean-Aubry, Le Havre (1908),  [*Royal Scottish National Orchestra, Stéphane Denève*](https://tidal.com/browse/track/12602666)
 
 💎 **Le festin de l'araignée,Op. 17** ballet in one act (1913), [*BBC PO, Yan Pascal Tortelier*](https://tidal.com/album/377163547)
@@ -16,7 +17,7 @@ nav_order: 1
 
 **La naissance de la lyre, Op. 24**, opera in 1 act, Paris Opéra (1925)
 
-**Sarabande** (1927; for the children's ballet \emph{L'éventail de Jeanne}, to which ten French composers each contributed a dance)
+**Sarabande** (1927; for the children's ballet *L'éventail de Jeanne*, to which ten French composers each contributed a dance)
 
 💎 **Bacchus and Ariadne, Op. 43** ballet in two acts, f.p. Paris Opéra (1931) [*BBC PO, Yan Pascal Tortelier*](https://tidal.com/album/377163547)
 
@@ -34,13 +35,13 @@ nav_order: 1
 
 💎 **Résurrection, Op. 4**, Prelude for orchestra (1903) [*Royal Scottish National Orchestra, Stéphane Denève*](https://tidal.com/browse/track/12602666)
 
-**Symphony No. 1 in D minor 'The Poem of the Forest', Op. 7** (1904–1906)} [*Royal Scottish National Orchestra, Stéphane Denève*](https://tidal.com/browse/track/12602666)
+**Symphony No. 1 in D minor 'The Poem of the Forest', Op. 7** (1904–1906) [*Royal Scottish National Orchestra, Stéphane Denève*](https://tidal.com/browse/track/12602666)
 
 **Evocations, for orchestra, mezzo-soprano, tenor, baritone, and chorus, Op. 15** (1910–11) [*BBC PO, Yan Pascal Tortelier*](https://tidal.com/album/376443862)
 
 **Padmâvatî Suites (No 1 & 2), Op. 18** (1918) [*Royal Scottish National Orchestra, Stéphane Denève*](https://tidal.com/album/284372110)
 
-**Pour une fête de printemps, symphonic poem, Op. 22** (1920)} [*BBC PO, Yan Pascal Tortelier*](https://tidal.com/album/376443862)
+**Pour une fête de printemps, symphonic poem, Op. 22** (1920) [*BBC PO, Yan Pascal Tortelier*](https://tidal.com/album/376443862)
 
 **Symphony No. 2 in B-flat major, Op. 23** (1919–1921) [*Orchestre National de France, Charles Dutoit*](https://tidal.com/album/535142)
 
