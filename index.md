@@ -20,6 +20,7 @@ Everything here reflects my personal taste (listen to my 💎 gems!), not any ki
 - [Ludwig van Beethoven](docs/beethoven.md)
 - [Arthur Bliss](docs/bliss.md)
 - [Benjamin Britten](docs/britten.md)
+- [Anton Bruckner](docs/bruckner.md)
 - [Ernst von Dohnányi](docs/dohnanyi.md)
 - [Paul Hindemith](docs/hindemith.md)
 - [Frank Martin](docs/martin.md)
