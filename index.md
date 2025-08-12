@@ -26,7 +26,7 @@ Everything here reflects my personal taste (listen to my 💎 gems!), not any ki
 - [Bohuslav Martinů](docs/martinu.md)
 - [Francis Poulenc](docs/poulenc.md)
 - [Sergei Prokofiev](docs/prokofiev.md)
-- [Albert Roussel](doc/roussel.md)
+- [Albert Roussel](docs/roussel.md)
 - [Franz Schreker](docs/schreker.md)
 - [Dmitri Shostakovich](docs/shostakovich.md)
 - [Karol Szymanowski](docs/szymanowski.md)
