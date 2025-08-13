@@ -23,6 +23,7 @@ Everything here reflects my personal taste (listen to my 💎 gems!), not any ki
 - [Anton Bruckner](docs/bruckner.md)
 - [Ernst von Dohnányi](docs/dohnanyi.md)
 - [Paul Hindemith](docs/hindemith.md)
+- [Gustav Mahler](docs/mahler.md)
 - [Frank Martin](docs/martin.md)
 - [Bohuslav Martinů](docs/martinu.md)
 - [Francis Poulenc](docs/poulenc.md)
