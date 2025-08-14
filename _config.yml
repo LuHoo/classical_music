@@ -2,10 +2,8 @@ title: "Classical Music"
 description: "Favorite classical recordings by composer"
 remote_theme: just-the-docs/just-the-docs
 
-# url: https://LuHoo.github.io/classical_music
+url: "https://luhoo.github.io"   # your GitHub Pages root URL
+baseurl: "/classical_music"      # the repository name
 
 # Enable navigation
 nav_sort: case_insensitive
-
-
-baseurl: "/classical_music"
