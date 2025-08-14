@@ -23,8 +23,6 @@ nav_order: 1
 
 **Piano Concerto No. 2 in B♭ major**, Op. 19 (begun c. 1788, rev. 1794–1829) [*Leif Ove Andsnes, Mahler CO*](http://www.tidal.com/track/36274149)
 
-**Violin Concerto in C major**, WoO 5 (1790–1792)
-
 **Rondo for Piano and Orchestra in B♭ major**, WoO 6 (1793)
 
 **Symphony No. 1 in C major**, Op. 21 (1799–1800) [*Le Concert des Nations, Jordi Savall*](http://www.tidal.com/track/147062218)
