@@ -19,6 +19,7 @@ Everything here reflects my personal taste (listen to my 💎 gems!), not any ki
 - [Bela Bartok](docs/bartok.md)
 - [Ludwig van Beethoven](docs/beethoven.md)
 - [Arthur Bliss](docs/bliss.md)
+- [Johannes Brahms](docs/brahms.md)
 - [Benjamin Britten](docs/britten.md)
 - [Anton Bruckner](docs/bruckner.md)
 - [Ernst von Dohnányi](docs/dohnanyi.md)
