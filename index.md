@@ -18,6 +18,7 @@ Everything here reflects my personal taste (listen to my 💎 gems!), not any ki
 - [Samuel Barber](docs/barber.md)
 - [Bela Bartok](docs/bartok.md)
 - [Ludwig van Beethoven](docs/beethoven.md)
+- [Boris Blacher](docs/blacher.md)
 - [Arthur Bliss](docs/bliss.md)
 - [Johannes Brahms](docs/brahms.md)
 - [Benjamin Britten](docs/britten.md)
