@@ -28,6 +28,7 @@ Everything here reflects my personal taste (listen to my 💎 gems!), not any ki
 - [Gustav Mahler](docs/mahler.md)
 - [Frank Martin](docs/martin.md)
 - [Bohuslav Martinů](docs/martinu.md)
+- [Wolfgang Amadeus Mozart](docs/mozart.md)
 - [Francis Poulenc](docs/poulenc.md)
 - [Sergei Prokofiev](docs/prokofiev.md)
 - [Albert Roussel](docs/roussel.md)
