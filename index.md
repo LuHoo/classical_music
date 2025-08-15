@@ -31,6 +31,7 @@ Everything here reflects my personal taste (listen to my 💎 gems!), not any ki
 - [Wolfgang Amadeus Mozart](docs/mozart.md)
 - [Francis Poulenc](docs/poulenc.md)
 - [Sergei Prokofiev](docs/prokofiev.md)
+- [Sergej Rachmaninov](docs/rachmaninov.md)
 - [Albert Roussel](docs/roussel.md)
 - [Franz Schreker](docs/schreker.md)
 - [Dmitri Shostakovich](docs/shostakovich.md)
