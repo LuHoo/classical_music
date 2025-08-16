@@ -32,7 +32,7 @@ nav_order: 1
 
 **Petrushka** (1911, rev. 1947), K012 [1911 version: *London Philharmonic Orchestra, Vladimir Jurowski*](https://tidal.com/browse/track/205310046?u) [1947 version: *Orchestre de Paris, Klaus Mäkelä*](http://www.tidal.com/track/348355808) (01/2001)
 
-**The Rite of Spring** (Le sacre du printemps) (1913; rev. 1947, 1967), K015 [*Orchestre de Paris, Klaus Mäkelä*](https://tidal.com/browse/track/282335376?u)
+💎 **The Rite of Spring** (Le sacre du printemps) (1913; rev. 1947, 1967), K015 [*Orchestre de Paris, Klaus Mäkelä*](https://tidal.com/browse/track/282335376?u)
 
 **Les Noces** (The Wedding), for soloists, choir, four pianos and percussion (1914–17 and 1919–23), K040
 
@@ -108,13 +108,13 @@ nav_order: 1
 
 **Piano Concerto No. 1 in E-flat major**, Op. 6 (1911–12), K010
 
-**Violin Concerto in D major** (1931), K053 [*Frank Peter Zimmermann, Bamberger Symphoniker, Jakob Hrusa*](http://www.tidal.com/track/343201673) (02/2024)
+💎 **Violin Concerto in D major** (1931), K053 [*Frank Peter Zimmermann, Bamberger Symphoniker, Jakob Hrusa*](http://www.tidal.com/track/343201673) (02/2024)
 
 **Capriccio for Piano and Orchestra** (1929), K050
 
 **Concerto for Two Solo Pianos** (1935), K057
 
-**Ebony Concerto** for Clarinet and Jazz Band (1945), K072 [*Chris Richards, London Symphony Orchestra, Sir Simon Rattle*](https://tidal.com/browse/track/227961775?u)
+💎 **Ebony Concerto** for Clarinet and Jazz Band (1945), K072 [*Chris Richards, London Symphony Orchestra, Sir Simon Rattle*](https://tidal.com/browse/track/227961775?u)
 
 **Canticum Sacrum ad honorem Sancti Marci Nominis** (1955), K088
 
@@ -128,7 +128,7 @@ nav_order: 1
 
 **Rag-time** for eleven instruments, K030 [*Juilliard School Ensemble, Royal Academy of Music, Barbara Hannigan*](https://tidal.com/browse/track/378000329?u)
 
-**Octet**, K041 [*Juilliard School Ensemble, Royal Academy of Music, Barbara Hannigan*](https://tidal.com/browse/track/378000325?u)
+💎 **Octet**, K041 [*Juilliard School Ensemble, Royal Academy of Music, Barbara Hannigan*](https://tidal.com/browse/track/378000325?u)
 
 **Suite Italienne** for Violin and Piano (1932–33), K048
 
