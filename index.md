@@ -35,6 +35,7 @@ Everything here reflects my personal taste (listen to my 💎 gems!), not any ki
 - [Albert Roussel](docs/roussel.md)
 - [Franz Schreker](docs/schreker.md)
 - [Dmitri Shostakovich](docs/shostakovich.md)
+- [Igor Stravinsky](docs/stravinsky.md)
 - [Karol Szymanowski](docs/szymanowski.md)
 - [Alexander von Zemlinsky](docs/zemlinsky.md)
 
