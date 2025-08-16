@@ -7,3 +7,6 @@ baseurl: "/classical_music"      # the repository name
 
 # Enable navigation
 nav_sort: case_insensitive
+
+just_the_docs:
+  head_custom: _includes/head_custom.html
