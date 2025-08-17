@@ -32,13 +32,13 @@ Everything here reflects my personal taste (listen to my 💎 gems!), not any ki
 - [Francis Poulenc]({{ '/docs/poulenc' | relative_url }})
 - [Sergei Prokofiev]({{ '/docs/prokofiev' | relative_url }})
 - [Sergej Rachmaninov]({{ '/docs/rachmaninov' | relative_url }})
+- [Einojuhani Rautavaara]({{ '/docs/rautavaara' | relative_url }})
 - [Albert Roussel]({{ '/docs/roussel' | relative_url }})
 - [Franz Schreker]({{ '/docs/schreker' | relative_url }})
 - [Dmitri Shostakovich]({{ '/docs/shostakovich' | relative_url }})
 - [Igor Stravinsky]({{ '/docs/stravinsky' | relative_url }})
 - [Karol Szymanowski]({{ '/docs/szymanowski' | relative_url }})
 - [Alexander von Zemlinsky]({{ '/docs/zemlinsky' | relative_url }})
-- [...] 
 
 ---
 
