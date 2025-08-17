@@ -55,7 +55,7 @@ nav_order: 1
 
 💎 **Phaéton in C major**, Op. 39, R. 170 (1873) [*Les Siècles, François-Xavier Roth*](http://www.tidal.com/track/328375834) (12/2023)
 
-**Romance in F major**, Op. 36, R. 195 for horn (or cello) and orchestra (1874)
+**Romance in F major**, Op. 36, R. 195 for horn (or cello) and orchestra (1874) [*Daniel Müller-Schott, Deutsches Symphonie-Orchester Berlin, Alexandre Bloch*](http://www.tidal.com/track/192705195)
 
 **Danse macabre, Symphonic Poem in G minor**, Op. 40, R. 171 (1874) [*Les Siècles, François-Xavier Roth*](http://www.tidal.com/track/328375837) (12/2023)
 
@@ -69,7 +69,7 @@ nav_order: 1
 
 **Suite algérienne**, Op. 60, R. 173 (1880)
 
-**Violin Concerto No. 3 in B minor**, Op. 61, R. 198 (1880) [*Rudolf Koelman, Sinfonietta Schaffhausen, Paul K. Haug*]()
+**Violin Concerto No. 3 in B minor**, Op. 61, R. 198 (1880) [*Rudolf Koelman, Sinfonietta Schaffhausen, Paul K. Haug*](http://www.tidal.com/track/299462704)
 
 **Concert Piece in E minor**, Op. 62 for violin and orchestra (1880)
 

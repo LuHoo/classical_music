@@ -34,7 +34,7 @@ Everything here reflects my personal taste (listen to my 💎 gems!), not any ki
 - [Sergej Rachmaninov]({{ '/docs/rachmaninov' | relative_url }})
 - [Einojuhani Rautavaara]({{ '/docs/rautavaara' | relative_url }})
 - [Albert Roussel]({{ '/docs/roussel' | relative_url }})
-- [Camille Saint-Saëns]({{ '/docs/sainsaens' | relative_url }})
+- [Camille Saint-Saëns]({{ '/docs/saintsaens' | relative_url }})
 - [Franz Schreker]({{ '/docs/schreker' | relative_url }})
 - [Dmitri Shostakovich]({{ '/docs/shostakovich' | relative_url }})
 - [Igor Stravinsky]({{ '/docs/stravinsky' | relative_url }})
