@@ -512,7 +512,7 @@
   },"73": {
     "doc": "Home",
     "title": "🔍 Browse by Composer",
-    "content": ". | John Adams | Samuel Barber | Bela Bartok | Ludwig van Beethoven | Hector Berlioz | Boris Blacher | Arthur Bliss | Johannes Brahms | Benjamin Britten | Anton Bruckner | Ferruccio Busoni | Ernst von Dohnányi | Paul Hindemith | Gustav Mahler | Frank Martin | Bohuslav Martinů | Wolfgang Amadeus Mozart | Francis Poulenc | Sergei Prokofiev | Sergej Rachmaninov | Einojuhani Rautavaara | Albert Roussel | Camille Saint-Saëns | Franz Schreker | Dmitri Shostakovich | Igor Stravinsky | Karol Szymanowski | Alexander von Zemlinsky | . This site is built with Just the Docs and published using GitHub Pages. ",
+    "content": ". | John Adams | Samuel Barber | Bela Bartok | Ludwig van Beethoven | Hector Berlioz | Boris Blacher | Arthur Bliss | Johannes Brahms | Benjamin Britten | Anton Bruckner | Ferruccio Busoni | Ernst von Dohnányi | Paul Hindemith | Gustav Mahler | Frank Martin | Bohuslav Martinů | Wolfgang Amadeus Mozart | Francis Poulenc | Sergei Prokofiev | Sergej Rachmaninov | Einojuhani Rautavaara | Albert Roussel | Camille Saint-Saëns | Franz Schreker | Dmitri Shostakovich | Jean Sibelius | Igor Stravinsky | Karol Szymanowski | Alexander von Zemlinsky | . This site is built with Just the Docs and published using GitHub Pages. ",
     "url": "/classical_music/#-browse-by-composer",
     
     "relUrl": "/#-browse-by-composer"
@@ -972,139 +972,153 @@
     
     "relUrl": "/docs/shostakovich.html#orchestral"
   },"139": {
+    "doc": "Jean Sibelius",
+    "title": "Jean Sibelius",
+    "content": "List of works on Wikipedia . ",
+    "url": "/classical_music/docs/sibelius.html",
+    
+    "relUrl": "/docs/sibelius.html"
+  },"140": {
+    "doc": "Jean Sibelius",
+    "title": "Orchestral",
+    "content": "Kullervo (1891–1892, withdrawn 1893), Op. 7 . En saga (1890–1892, rev. 1902), Op. 9 Gothenburg SO, Neeme Järvi . Rakastava (1894, arr. 1911, rev. 1912), Op. 14 Bergen PO, Edward Gardner (09/2021) . The Wood Nymph (1894–1895), Op. 15 Gothenburg SO, Santtu-Matias Rouvali . Spring Song (Vårsång) (1894, rev. 1895), Op. 16 Bergen PO, Edward Gardner (09/2021) . Lemminkäinen and the Maidens of the Island (1895, rev. 1897 &amp; 1939), Op. 22/1 . The Swan of Tuonela (1893–1895, rev. 1897 &amp; 1900), Op. 22/2 . Lemminkäinen in Tuonela (1895), Op. 22/3 . Lemminkäinen’s Return (1895, rev. 1897 &amp; 1900), Op. 22/4 . Finlandia, from the Press Celebrations Music (1899, arr. 1900), Op. 26 . King Christian II, play in 5 acts (1898, rev. 1898), Op. 27 Gothenburg SO, Neeme Järvi . Symphony No. 1 in E minor (1898–1899, rev. 1900), Op. 39 Oslo PO, Klaus Mäkelä (04/2022) . Symphony No. 2 in D major (1901–1902), Op. 43 Oslo PO, Klaus Mäkelä (04/2022) . Valse Triste (1903, arr. 1904), Op. 44/1 Gothenburg SO, Neeme Järvi . Scene with Cranes (1903, arr. 1906), Op. 44/2 Gothenburg SO, Neeme Järvi . The Dryad (1910), Op. 45/1 . Violin Concerto in D minor (1903–1904, rev. 1905), Op. 47 Janine Jansen, Oslo PO, Klaus Mäkelä . Pohjola’s Daughter (1903–1906), Op. 49 . Symphony No. 3 in C major (1904–1907), Op. 52 Oslo PO, Klaus Mäkelä (04/2022) . Nightride and Sunrise (1908), Op. 55 Gothenburg SO, Neeme Järvi . Canzonetta (1906, rev. 1911), Op. 62/1 Gothenburg SO, Neeme Järvi . Valse Romantique (1911), Op. 62/2 Gothenburg SO, Neeme Järvi . Symphony No. 4 in A minor (1909–1911), Op. 63 Oslo PO, Klaus Mäkelä (04/2022) . Serenade No. 1 in D major (1912), Op. 69a . Serenade No. 2 in G minor (1912–1913), Op. 69b . The Bard (1913, rev. 1913), Op. 64 Gothenburg SO, Neeme Järvi . Luonnotar (1913), Op. 70 Lise Davidsen, Bergen PO, Edward Gardner (09/2021) . The Oceanides (1913–1914, rev. 1914), Op. 73 Gothenburg SO, Neeme Järvi . Serious Melody No. 1: Cantique (1914, arr. 1916), Op. 77/1 . Serious Melody No. 2: Devotion (1915, arr. 1916), Op. 77/2 . Symphony No. 5 in E-flat major (1914–1915, rev. 1916 &amp; 1917–1919), Op. 82 Oslo PO, Klaus Mäkelä (04/2022) . Humoresque No. 1 in D minor (1917, rev. 1940), Op. 87/1 . Humoresque No. 2 in D major (1917), Op. 87/2 . Humoresque No. 3 in G minor (1917), Op. 89a . Humoresque No. 4 in G minor (1917), Op. 89b . Humoresque No. 5 in E-flat major (1917), Op. 89c . Humoresque No. 6 in G minor (1918), Op. 89d . The Moon Goddess (1919–early 1920s, abandoned) . Symphony No. 6 in D minor (1914–1923), Op. 104 Oslo PO, Klaus Mäkelä (04/2022) . Symphony No. 7 in C major, in one movement (1914–1924), Op. 105 Oslo PO, Klaus Mäkelä (04/2022) . Suite for Violin and String Orchestra in D minor (1929), JS 185 . Tapiola (1926), Op. 112 Oslo PO, Klaus Mäkelä (04/2022) . Symphony No. 8 (1924–c.~late 1930s–1945, abandoned), JS 190. Recorded as “Three Late Fragments” (Compl. Virtanen) Oslo PO, Klaus Mäkelä (04/2022) . ",
+    "url": "/classical_music/docs/sibelius.html#orchestral",
+    
+    "relUrl": "/docs/sibelius.html#orchestral"
+  },"141": {
     "doc": "Igor Stravinsky",
     "title": "Igor Stravinsky",
     "content": "List of works (Kirchmeyer-Verzeichnis) . ",
     "url": "/classical_music/docs/stravinsky.html",
     
     "relUrl": "/docs/stravinsky.html"
-  },"140": {
+  },"142": {
     "doc": "Igor Stravinsky",
     "title": "Opera/Theatre",
     "content": "The Nightingale (Le Rossignol), 3-act opera (1914), K018 . Renard, a burlesque for 4 pantomimes and chamber orchestra (1916), K023 . L’Histoire du soldat (The Soldier’s Tale), for chamber ensemble and three speakers (1918), K029 . Mavra, one-act opera (1922), K039 . Oedipus rex, 2-act opera-oratorio (1927), K047 . Perséphone, mélodrame for speaker, soloists, chorus, and orchestra (1933), K056 . The Rake’s Progress, 3-act opera (1951), K078 . The Flood, television opera (1962), K098 . ",
     "url": "/classical_music/docs/stravinsky.html#operatheatre",
     
     "relUrl": "/docs/stravinsky.html#operatheatre"
-  },"141": {
+  },"143": {
     "doc": "Igor Stravinsky",
     "title": "Ballet",
     "content": "The Firebird (L’oiseau de feu) (1910; rev. 1919, 1945), K010 Orchestre de Paris, Klaus Mäkelä . Petrushka (1911, rev. 1947), K012 1911 version: London Philharmonic Orchestra, Vladimir Jurowski 1947 version: Orchestre de Paris, Klaus Mäkelä (01/2001) . 💎 The Rite of Spring (Le sacre du printemps) (1913; rev. 1947, 1967), K015 Orchestre de Paris, Klaus Mäkelä . Les Noces (The Wedding), for soloists, choir, four pianos and percussion (1914–17 and 1919–23), K040 . Pulcinella, for chamber orchestra and soloists (1920), K034 Toronto Symphony Orchestra, Gustavo Gimeno . Apollo (Apollon musagète), for string orchestra (1928; rev. 1947), K048 Nieuw Sinfonietta Amsterdam, Lev Markiz . Le Baiser de la fée (The Fairy’s Kiss) (1928; rev. 1950), K049 London PO, Vladimir Jurowski . Jeu de cartes (Card Game) (1936), K059 Orchestre Philharmonique du Luxembourg, Gustavo Gimeno . Danses concertantes for chamber orchestra (1941–42), K063 Orpheus Chamber Orchestra . Ode (1943), K066 London Philharmonic Orchestra, Vladimir Jurowski . Scènes de ballet (1944), K069 . Orpheus, for chamber orchestra (1947), K076 London Philharmonic Orchestra, Vladimir Jurowski . Agon (1957), K088 . ",
     "url": "/classical_music/docs/stravinsky.html#ballet",
     
     "relUrl": "/docs/stravinsky.html#ballet"
-  },"142": {
+  },"144": {
     "doc": "Igor Stravinsky",
     "title": "Orchestral",
     "content": "Symphony in E-flat major, Op. 1 (1907), K003 . Scherzo fantastique, Op. 3 (1908), K005 . Feu d’artifice (Fireworks), Op. 4 (1908), K007 . Funeral Song (Chant funèbre), Op. 5 (1908), K008 Orchestre Philharmonique du Luxembourg, Gustavo Gimeno . Le chant du rossignol (Song of the Nightingale) (1917), K026 . Suite from Pulcinella (1920; rev. 1947), K034 Mahler Chamber Orchestra, Pablo Heras-Casado . Symphonies of Wind Instruments (1920), K036 London Philharmonic Orchestra, Vladimir Jurowski . 8 Instrumental Miniatures for 15 Players (1963, orchestration of Les cinq doigts), K037 Orpheus Chamber Orchestra . Suite No. 2 for chamber orchestra (1921, arrangement of Trois pièces faciles and Cinq pièces faciles No. 5), K038 BBC Philharmonic, Andrew Davis . Suite No. 1 for chamber orchestra (1925, arrangement of Cinq pièces faciles Nos. 1–4), K045 BBC Philharmonic, Andrew Davis . Divertimento (Suite from Le Baiser de la fée, 1934), K049 BBC PO, Andrew Davis . Quatre études for orchestra (1928, arrangement of Three Pieces for String Quartet and Étude pour pianola), K051 . 💎 Concerto in E-flat Dumbarton Oaks for chamber orchestra (1938), K060 Nieuw Sinfonietta Amsterdam, Lev Markiz . Symphony in C (1940), K061 BBC PO, Andrew Davis . Tango for chamber orchestra (1953, arrangement of 1940 work for piano), K062 . Circus Polka (1944), K064 BBC PO, Andrew Davis . Four Norwegian Moods (1942), K065 . Scherzo à la russe for orchestra (1944, also a version for Paul Whiteman’s band), K070 BBC Philharmonic, Andrew Davis . 💎 Symphony in Three Movements (1945), K073 BBC PO, Andrew Davis . Concerto in D “Basle” for string orchestra (1946), K075 Nieuw Sinfonietta Amsterdam, Lev Markiz . Greeting Prelude for orchestra (1955), for the 80th birthday of Pierre Monteux, K085 BBC PO, Andrew Davis . Variations (Aldous Huxley in Memoriam) (1963/1964), K103 . Canon on a Popular Russian Tune (1965), K105 . ",
     "url": "/classical_music/docs/stravinsky.html#orchestral",
     
     "relUrl": "/docs/stravinsky.html#orchestral"
-  },"143": {
+  },"145": {
     "doc": "Igor Stravinsky",
     "title": "Concertante",
     "content": "Scherzo for Violin and Orchestra (1882), K001 . Piano Concerto No. 1 in E-flat major, Op. 6 (1911–12), K010 . 💎 Violin Concerto in D major (1931), K053 Frank Peter Zimmermann, Bamberger Symphoniker, Jakob Hrusa (02/2024) . Capriccio for Piano and Orchestra (1929), K050 . Concerto for Two Solo Pianos (1935), K057 . 💎 Ebony Concerto for Clarinet and Jazz Band (1945), K072 Chris Richards, London Symphony Orchestra, Sir Simon Rattle . Canticum Sacrum ad honorem Sancti Marci Nominis (1955), K088 . Movements for Piano and Orchestra (1959), K094 . ",
     "url": "/classical_music/docs/stravinsky.html#concertante",
     
     "relUrl": "/docs/stravinsky.html#concertante"
-  },"144": {
+  },"146": {
     "doc": "Igor Stravinsky",
     "title": "Chamber",
     "content": "Pastorale for Violin, Clarinet, and Piano (1907), K004 . Three Pieces for String Quartet (1914), K019 . Rag-time for eleven instruments, K030 Juilliard School Ensemble, Royal Academy of Music, Barbara Hannigan . 💎 Octet, K041 Juilliard School Ensemble, Royal Academy of Music, Barbara Hannigan . Suite Italienne for Violin and Piano (1932–33), K048 . Duo Concertant for Violin and Piano (1932), K052 . Septet (1953), K083 . Elegy for Solo Viola (1944), K067 . Concertino for Twelve Instruments (1952), K035 Juilliard School Ensemble, Royal Academy of Music, Barbara Hannigan . Double Canon for String Quartet (1959), K096 . Septet for Mixed Instruments (1953), K080 Juilliard School Ensemble, Royal Academy of Music, Barbara Hannigan . Epitaphium for Flute, Clarinet, and Harp (1959), K095 . Introitus for Solo Violin (1965), K106 . ",
     "url": "/classical_music/docs/stravinsky.html#chamber",
     
     "relUrl": "/docs/stravinsky.html#chamber"
-  },"145": {
+  },"147": {
     "doc": "Igor Stravinsky",
     "title": "Choral",
     "content": "Four Russian Peasant Songs for Women’s Chorus and Four Horns (1914–17), K020 . Les Noces (Svadebka), ballet-cantata for Soloists, Chorus, 4 Pianos, and Percussion (1914–17; rev. 1923), K024 . Pater Noster, for Chorus (1926), K039 . Symphony of Psalms, for Chorus and Orchestra (1930), K052 Tenebrae, BBC SO, Nigel Short . Credo, for Chorus (1932), K053 . Ave Maria, for Chorus (1934), K054 . Cantata: Babel, for Narrator, Chorus, and Orchestra (1944), K068 . Mass, for Mixed Chorus and Double Wind Quintet (1944–48), K077 . Cantata: The King of the Stars (1948), K078 . Threni: Lamentations of the Prophet Jeremiah, for Soloists, Chorus, and Orchestra (1957–58), K091 . The Flood, Biblical Story with Narrator, Chorus, and Orchestra (1962), K099 . Requiem Canticles, for Alto, Bass, Chorus, and Orchestra (1966), K109 . ",
     "url": "/classical_music/docs/stravinsky.html#choral",
     
     "relUrl": "/docs/stravinsky.html#choral"
-  },"146": {
+  },"148": {
     "doc": "Igor Stravinsky",
     "title": "Vocal",
     "content": "Pastorale, for Voice and Piano (1907) K001 . Two Poems of Paul Verlaine, for Voice and Piano (1907–08), K002 . Pastorale, for Voice and Small Orchestra (1907, arr. 1933), K001a . Four Songs, for Voice and Piano (1906–09), K004 . Two Poems of Konstantin Balmont, for Voice and Piano (1908), K006 . Three Japanese Lyrics, for Voice and Chamber Orchestra (1912–13), K014 Alexandra Heath, Juilliard School Ensemble, Royal Academy of Music, Barbara Hannigan . Pribaoutki, for Voice and 8 Instruments (1914), K019 . Berceuses du chat (Cat’s Cradle Songs), for Voice and 3 Clarinets (1915–16), K021 . Four Russian Songs, for Voice and Piano (1918–19), K030 . Three Little Songs, for Voice and Piano (1919), K017 Alexandra Heath, Juilliard School Ensemble, Royal Academy of Music, Barbara Hannigan . Two Balmont Songs, for Voice and Piano (1911), K015 . Four Russian Peasant Songs, for Voice and Piano (1917), K020a . Four Russian Songs, for Voice and 8 Instruments (1919), K032 . Three Songs from William Shakespeare, for Voice and Flute, Clarinet, and Viola (1953), K083 . Elegy for J.F.K., for Baritone and 3 Clarinets (1964), K104 . ",
     "url": "/classical_music/docs/stravinsky.html#vocal",
     
     "relUrl": "/docs/stravinsky.html#vocal"
-  },"147": {
+  },"149": {
     "doc": "Igor Stravinsky",
     "title": "Keyboard",
     "content": "Scherzo, for Piano (1902) K001 . Piano Sonata in F-sharp minor (1903–04) K001 . Four Etudes, for Piano (1908) K004 . Piano Sonata in D minor (1907) K006 . Eight Easy Pieces, for Piano (1914) K010 . Piano-Rag-Music (1919) K035 . Serenade en la, for Piano (1925) K040 . Piano Sonata in F-sharp (1924) K048 . Tango, for Piano (1940) K062 . Sonata, for Two Pianos (1943–44) K072 . Circus Polka, for Piano (1942) K066 . ",
     "url": "/classical_music/docs/stravinsky.html#keyboard",
     
     "relUrl": "/docs/stravinsky.html#keyboard"
-  },"148": {
+  },"150": {
     "doc": "Karol Szymanowski",
     "title": "Karol Szymanowski",
     "content": "List of works on Wikipedia . ",
     "url": "/classical_music/docs/szymanowski.html",
     
     "relUrl": "/docs/szymanowski.html"
-  },"149": {
+  },"151": {
     "doc": "Karol Szymanowski",
     "title": "Stage",
     "content": "Lottery for Husbands or Fiancé No. 69, Operetta in 3 acts (1908-09) . Hagith, Op. 25, Opera in 1 act (1912-13) . Mandragora, Op. 43, Pantomime in 3 scenes (1920) Kazimierz Pustelak, Jan Harazim, Polish Radio Orchestra of Krakow, Antoni Wit . King Roger, Op. 46, Opera in 3 acts (1918-24) . Prince Potemkin, Op. 51, Incidental music to act 5 of the 1906 play by Tadeusz Miciński (1925) . 💎 Harnasie, Op. 55, for tenor, mixed chorus and orchestra. Ballet-Pantomime in 2 acts, 3 scenes with prologue and epilogue (1923-1931) BBC Symphony Orchestra, Edward Gardner . ",
     "url": "/classical_music/docs/szymanowski.html#stage",
     
     "relUrl": "/docs/szymanowski.html#stage"
-  },"150": {
+  },"152": {
     "doc": "Karol Szymanowski",
     "title": "Orchestral",
     "content": "Concert Overture in E major, Op. 12 for orchestra (1904–1905) BBC Symphony Orchestra, Edward Gardner . Symphony No. 1 in F minor, Op. 15 (1906–1907) BBC Symphony Orchestra, Edward Gardner . 💎 Concerto No. 1, Op. 35 for violin and orchestra in 1 movement (1916) Thomas Zehetmair, City of Birmingham Symphony Orchestra, Simon Rattle . Symphony No. 2 in B♭ major, Op. 19 BBC Symphony Orchestra, Edward Gardner . Symphony No. 3 “Song of the Night”, Op. 27 for tenor (or soprano), mixed chorus and orchestra (1914–1916) BBC Symphony Orchestra, Edward Gardner . March of the Third Regiment of Uhlans for wind orchestra (lost) . Ceremonial March (1920) . Symphony No. 4 (Symphonie Concertante), Op. 60 for piano and orchestra (1932) BBC Symphony Orchestra, Edward Gardner . 💎 Concerto No. 2, Op. 61 for violin and orchestra (1932-33) Thomas Zehetmair, City of Birmingham Symphony Orchestra, Simon Rattle . ",
     "url": "/classical_music/docs/szymanowski.html#orchestral",
     
     "relUrl": "/docs/szymanowski.html#orchestral"
-  },"151": {
+  },"153": {
     "doc": "Karol Szymanowski",
     "title": "Chamber",
     "content": "Sonata in D minor, Op. 9 for violin and piano (1904) . Piano Trio, Op.16 for violin, cello and piano (1907) . Romance in D major, Op. 23 for violin and piano (1910) Thomas Zehetmair, Silke Avenhaus . Nocturne and Tarantella, Op. 28 for violin and piano (1915) . Mythes, Op. 30 for violin and piano (1915) . String Quartet No. 1 in C major, Op. 37 (1917) . 3 Caprices de Paganini, Op. 40 for violin and piano (1918) Thomas Zehetmair, Silke Avenhaus . Berceuse for violin and piano (1921–1922) . Dance sauvage for violin and piano (1921–1922) . Lullaby (La berceuse d’Aitacho Enia) for violin and piano (1925) . L’aube for violin and piano (1925) . String Quartet No. 2 (1927) . Roxana’s Song for violin and piano (1931) . Dance from “Harnasie” for violin and piano (1931) . Zarżyjzę kuniu for violin and piano . ",
     "url": "/classical_music/docs/szymanowski.html#chamber",
     
     "relUrl": "/docs/szymanowski.html#chamber"
-  },"152": {
+  },"154": {
     "doc": "Karol Szymanowski",
     "title": "Piano",
     "content": "9 Preludes, Op. 1 (1906-07) Martin Jones . Variations in B♭ minor, Op. 3 (1901-03)Martin Jones . 4 Études, Op. 4 (1900-02) Martin Jones . Sonata No. 1 in C minor, Op. 8 (1903-04) Martin Jones . Variations on a Polish Folk Theme in B minor, Op. 10 (1900-04) Martin Jones . Fantasy in C major, Op. 14 (1905) Martin Jones . Prelude and Fugue in C♯ minor (1905, 1909) Martin Jones . Sonata No. 2 in A major, Op. 21 (1910-11) Martin Jones . Métopes, 3 Poèms, Op. 29 (1915) Martin Jones . 12 Études, Op. 33 (1916) Martin Jones . Masques, Op. 34 (1915-16) Martin Jones . Sonata No. 3, Op. 36 (1917) Martin Jones . 20 Mazurkas, Op. 50 (1924-25) Martin Jones . Romantic Waltz (1925) Martin Jones . 4 Polish Dances (1926) Martin Jones . 2 Mazurkas, Op. 62 (1933-34) Martin Jones . ",
     "url": "/classical_music/docs/szymanowski.html#piano",
     
     "relUrl": "/docs/szymanowski.html#piano"
-  },"153": {
+  },"155": {
     "doc": "Karol Szymanowski",
     "title": "Choral",
     "content": "Demeter, Op. 37b Cantata for alto, female chorus and orchestra (1917) Jadwiga Rappé, Polish Radio Choir, Antoni Wit . Agave, Cantata for soprano, mixed chorus and orchestra (1917) . 💎 Stabat Mater, Op. 53 for soprano, alto, baritone, mixed chorus and orchestra (1925-26) BBC Symphony Orchestra, Edward Gardner . 6 Songs from Kurpie for mixed chorus a cappella (1928–1929) . Veni Creator, Op. 57 for soprano, mixed chorus, organ and orchestra . Litany to the Virgin Mary, Op. 59, 2 Fragments for soprano, female chorus and orchestra (1930–1933) Jadwiga Gadulanka, Polish Radio National Symphony Orchestra, Antoni Wit . ",
     "url": "/classical_music/docs/szymanowski.html#choral",
     
     "relUrl": "/docs/szymanowski.html#choral"
-  },"154": {
+  },"156": {
     "doc": "Karol Szymanowski",
     "title": "Vocal",
     "content": "6 Songs, Op. 2, for voice and piano (1900-02) . 3 Fragments from Poems by Jan Kasprowicz, Op. 5 (1902) . Salome, Op. 6, for soprano and orchestra (lost) (1904, 1912) . The Swan, Op. 7, for voice and piano (1904) . 4 Songs, Op. 11, for voice and piano (1904-05) . 5 Songs, Op. 13, for voice and piano (1905-07) . 12 Songs, Op. 17, for voice and piano (1907) . Penthesilea, Op. 18, for soprano and orchestra (1908, 1912) . 6 Songs, Op. 20, for voice and piano (1909) . Colourful Songs, Op. 22, for voice and piano (1910) . Love Songs of Hafiz, Op. 24, 6 Songs for voice and piano (1911) . Love Songs of Hafiz, Op. 26, 8 Songs for voice and orchestra (1911, 1914) BBC Symphony Orchestra, Edward Gardner . Songs of a Fairy-Tale Princess, Op. 31, for voice and piano (or orchestra) (1915) . 3 Songs on Words by Dmitri Davydov, Op. 32, for voice and piano (1915) . 4 Songs to Lyrics by Rabindranath Tagore, Op. 41, for voice and piano (1918) . Songs of the Infatuated Muezzin, Op. 42, for soprano and piano or orchestra (1918, orchestrated in 1934) . 2 Basque Songs, Op. 44, for voice and piano (lost) (1920) . 3 Soldier’s Songs, for voice and piano (1920) . Haller Is Leading Us, for voice and piano (1921) . Słopiewnie, Op. 46b, 5 Songs for voice and piano or chamber orchestra (1921, orchestrated in 1923–1924) . 3 Lullabies, Op. 48, for voice and piano (1922) . Children’s Rhymes, Op. 49, 20 Children’s Songs for voice and piano (1922-23) . 7 Songs on Words by James Joyce, Op. 54, for voice and piano (1926) . Siuhaje Are Coming Down Singing… (Song of Siuhaje) for voice and piano, Highlander Song from Harnasie, Op. 55 (1924) . 9 Polish Songs for voice and piano (1925-1926) . Vocalise-Étude for voice and piano (1928) . 12 Songs from Kurpie, Op. 58, for voice and piano (1930-32) . ",
     "url": "/classical_music/docs/szymanowski.html#vocal",
     
     "relUrl": "/docs/szymanowski.html#vocal"
-  },"155": {
+  },"157": {
     "doc": "Alexander von Zemlinsky",
     "title": "Alexander von Zemlinsky",
     "content": "List of works on Wikipedia . ",
     "url": "/classical_music/docs/zemlinsky.html",
     
     "relUrl": "/docs/zemlinsky.html"
-  },"156": {
+  },"158": {
     "doc": "Alexander von Zemlinsky",
     "title": "Voice and Orchestra",
     "content": "Waldgespräch (T: Joseph von Eichendorff), for soprano, two horns, harp, and strings (1896) Gürzenich-Orchester Köln, James Conlon . Maiblumen blühten überall (T: Richard Dehmel), for soprano and string sextet (1899) Gürzenich-Orchester Köln, James Conlon . Erdeinsamkeit (T: unknown), for soprano and orchestra (1900-01, orchestrated by Antony Beaumont, 1999) Gürzenich-Orchester Köln, James Conlon . Der alte Garten (T: Joseph von Eichendorff), for soprano and orchestra (1900-01, orchestrated by Antony Beaumont, 1999) Gürzenich-Orchester Köln, James Conlon . 💎 Sechs Gesänge after poems by Maurice Maeterlinck, Op. 13, for soprano and orchestra (1910/13, orchestrated 1913/21) Gürzenich-Orchester Köln, James Conlon . Lyric Symphony, for soprano, baritone, and orchestra, Op. 18 (after poems by Rabindranath Tagore) (1922–23) H\\r{a}kan Hageg\\r{a}rd, Alessandra Marc, KCO, Riccardo Chailly . Symphonische Gesänge, Op. 20, for baritone or alto and orchestra (T: from Afrika singt. Eine Auslese neuer afro-amerikanischer Lyrik) (1929) Willard White, KCO, Riccardo Chailly . ",
     "url": "/classical_music/docs/zemlinsky.html#voice-and-orchestra",
     
     "relUrl": "/docs/zemlinsky.html#voice-and-orchestra"
-  },"157": {
+  },"159": {
     "doc": "Alexander von Zemlinsky",
     "title": "Orchestral Works",
     "content": "Symphony in E minor (1891) – two surviving movements only . Symphony No. 1 in D minor (1892–93) Gürzenich-Orchester Köln, James Conlon . Eine Lustspielouvertüre (1894–95) . Symphony No. 2 in B-flat major (1897) Gürzenich-Orchester Köln, James Conlon . Drei Ballettstücke. Suite from Der Triumph der Zeit (1902) . Die Seejungfrau (The Mermaid), fantasy after Hans Christian Andersen’s “The Little Mermaid” (1902–03, premiered in Vienna in 1905) [Gürzenich-Orchester Köln, James Conlon] Gürzenich-Orchester Köln, James Conlon . Sinfonietta, Op. 23 (1934, first performance, Prague 1935) [Gürzenich-Orchester Köln, James Conlon] Gürzenich-Orchester Köln, James Conlon . Suite from the Incidental Music for Shakespeare’s Cymbeline Gürzenich-Orchester Köln, James Conlon . Der gläserne Herz, Act II “Ein Tanzpoem” Gürzenich-Orchester Köln, James Conlon . ",
     "url": "/classical_music/docs/zemlinsky.html#orchestral-works",
     
     "relUrl": "/docs/zemlinsky.html#orchestral-works"
-  },"158": {
+  },"160": {
     "doc": "Alexander von Zemlinsky",
     "title": "Choral Works",
     "content": "Minnelied (T: Heinrich Heine) for men’s choir and chamber ensemble (c.1895) Gürzenich-Orchester Köln, James Conlon . Frühlingsglaube for mixed chorus and string orchestra (T: Ludwig Uhland) (1896) Gürzenich-Orchester Köln, James Conlon . Geheimnis for mixed chorus and string orchestra (1896) Gürzenich-Orchester Köln, James Conlon . Hochzeitsgesang (T: Jewish liturgy) for Cantor (Tenor), chorus, and organ (1896), Text: Baruch Haba, Mi Adir Gürzenich-Orchester Köln, James Conlon . 💎 Frühlingsbegräbnis (Text: Paul Heyse), Cantata for soprano, baritone, mixed chorus and orchestra (1896/97, rev. c.1903) Gürzenich-Orchester Köln, James Conlon . Aurikelchen (T: Richard Dehmel) for women’s choir (1898) Gürzenich-Orchester Köln, James Conlon . Psalm 83 for mixed chorus and orchestra (1900) Slovak Philharmonic Choir, Wiener Philharmoniker, Riccardo Chailly . Psalm 23 for chorus and orchestra, Op. 14 (1910, first performance, Vienna 1910) Gürzenich-Orchester Köln, James Conlon . Psalm 13 for chorus and orchestra, Op. 24 (1935) Gürzenich-Orchester Köln, James Conlon . ",
