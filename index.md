@@ -40,6 +40,7 @@ Everything here reflects my personal taste (listen to my 💎 gems!), not any ki
 - [Camille Saint-Saëns]({{ '/docs/saintsaens' | relative_url }})
 - [Franz Schreker]({{ '/docs/schreker' | relative_url }})
 - [Dmitri Shostakovich]({{ '/docs/shostakovich' | relative_url }})
+- [Jean Sibelius]({{ '/docs/sibelius' | relative_url }})
 - [Igor Stravinsky]({{ '/docs/stravinsky' | relative_url }})
 - [Karol Szymanowski]({{ '/docs/szymanowski' | relative_url }})
 - [Alexander von Zemlinsky]({{ '/docs/zemlinsky' | relative_url }})
