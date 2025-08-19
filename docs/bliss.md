@@ -127,7 +127,7 @@ nav_order: 1
 
 **Quintet**, F. 21 for oboe and strings (1927)
 
-**Quintet**, F. 20 for Clarinet and String Quartet (1932) [*Wigmore Soloists*] (01/2024)
+**Quintet**, F. 20 for Clarinet and String Quartet (1932) [*Wigmore Soloists*](https://tidal.com/browse/track/338572173?u) (01/2024)
 
 **Sonata**, F. 91 for Viola and Piano (1933)
 
