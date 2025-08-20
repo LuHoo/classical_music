@@ -9,7 +9,7 @@ Welcome to my personal guide to classical music — a curated collection of the 
 
 This site is the opposite of Apple Music Classical, which tries to list every existing recording of every classical work. I take a different approach: for each piece I love, I’ve chosen just one recording that I believe stands out — the version I recommend you actually listen to.
 
-I usually prefer modern, high-resolution studio recordings over historic public performances. I’m not generally drawn to period instruments, though there are exceptions. Where possible, I’ve included links to the albums on Tidal (sorry, no Spotify).
+I usually prefer modern, high-resolution studio recordings over historic public performances. I’m not generally drawn to period instruments, though there are exceptions. Where possible, I’ve included links to the albums on Tidal (your browser may give you the choice to open the link in another streaming platform like Spotify).
 
 Everything here reflects my personal taste (listen to my 💎 gems!), not any kind of critical consensus. If a piece is listed without a recording, I’m open to suggestions — feel free to share your favorites.
 
@@ -43,6 +43,7 @@ Everything here reflects my personal taste (listen to my 💎 gems!), not any ki
 - [Jean Sibelius]({{ '/docs/sibelius' | relative_url }})
 - [Igor Stravinsky]({{ '/docs/stravinsky' | relative_url }})
 - [Karol Szymanowski]({{ '/docs/szymanowski' | relative_url }})
+- [Ralph Vaughan Williams]({{ '/docs/vaughanwilliams' | relative_url }})
 - [Alexander von Zemlinsky]({{ '/docs/zemlinsky' | relative_url }})
 
 ---
