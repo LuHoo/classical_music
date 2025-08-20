@@ -38,6 +38,7 @@ Everything here reflects my personal taste (listen to my 💎 gems!), not any ki
 - [Einojuhani Rautavaara]({{ '/docs/rautavaara' | relative_url }})
 - [Albert Roussel]({{ '/docs/roussel' | relative_url }})
 - [Camille Saint-Saëns]({{ '/docs/saintsaens' | relative_url }})
+- [Robert Schumann]({{ '/docs/schumann' | relative_url }})
 - [Franz Schreker]({{ '/docs/schreker' | relative_url }})
 - [Dmitri Shostakovich]({{ '/docs/shostakovich' | relative_url }})
 - [Jean Sibelius]({{ '/docs/sibelius' | relative_url }})
