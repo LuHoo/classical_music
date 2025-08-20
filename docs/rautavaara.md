@@ -63,7 +63,7 @@ nav_order: 1
 
 ### Other orchestral
 
-**Modificata** (1957/2003)
+**Modificata** (1957/2003) [*Helsinki Philharmonic Orchestra, John Storgårds*](https://tidal.com/browse/track/13402412?u)
 
 **Canto II** (1960)
 
@@ -127,9 +127,9 @@ nav_order: 1
 
 **Lost Landscapes**, version for violin and orchestra (2005) [*Simone Lamsma, Malmö Symphony Orchestra, Robert Trevino*](http://www.tidal.com/track/284315238)
 
-**Percussion Concerto "Incantations"** (2008)
+**Percussion Concerto "Incantations"** (2008) [*Colin Currie, Helsinki Philharmonic Orchestra, John Storgårds*](https://tidal.com/browse/track/13402415?u)
 
-**Cello Concerto No. 2 "Towards the Horizon"** (2008/2009)
+**Cello Concerto No. 2 "Towards the Horizon"** (2008/2009) [*Truls Mørk, Helsinki Philharmonic Orchestra, John Storgårds*](https://tidal.com/browse/track/13402409?u)
 
 **Fantasia**, for solo violin and orchestra (2015) [*Simone Lamsma, Malmö Symphony Orchestra, Robert Trevino*](http://www.tidal.com/track/284315240)
 
