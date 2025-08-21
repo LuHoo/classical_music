@@ -37,12 +37,12 @@ nav_order: 1
 
 **Sinfonia in B minor** for 2 violins, viola, double bass, RV 169 [*Concerto Köln, Shunske Sato*](http://www.tidal.com/track/64126591)
 
-**Concerto in C major** for violin, strings, RV 179a [*Fabio Biodi, Europa Galante*](http://www.tidal.com/track/304319795)
+**Concerto in C major** for violin, strings, RV 179a [*Fabio Biondi, Europa Galante*](http://www.tidal.com/track/304319795)
 
-**Concerto in D major** for violin, strings, RV 229 [*Fabio Biodi, Europa Galante*](http://www.tidal.com/track/304319781)
+**Concerto in D major** for violin, strings, RV 229 [*Fabio Biondi, Europa Galante*](http://www.tidal.com/track/304319781)
 
-**Concerto in E-flat major (Dresden concerto)** for violin, strings, RV 260 [*Fabio Biodi, Europa Galante*](http://www.tidal.com/track/304319792)
+**Concerto in E-flat major (Dresden concerto)** for violin, strings, RV 260 [*Fabio Biondi, Europa Galante*](http://www.tidal.com/track/304319792)
 
-**Concerto in E-flat major** for violin, strings, RV 261 [*Fabio Biodi, Europa Galante*](http://www.tidal.com/track/304319798)
+**Concerto in E-flat major** for violin, strings, RV 261 [*Fabio Biondi, Europa Galante*](http://www.tidal.com/track/304319798)
 
-**Concerto in B-flat major (Il cornetto da posta, Dresden concerto)** for violin, strings, RV 363 [*Fabio Biodi, Europa Galante*](http://www.tidal.com/track/304319784)
+**Concerto in B-flat major (Il cornetto da posta, Dresden concerto)** for violin, strings, RV 363 [*Fabio Biondi, Europa Galante*](http://www.tidal.com/track/304319784)
