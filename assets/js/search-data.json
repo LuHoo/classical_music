@@ -512,7 +512,7 @@
   },"73": {
     "doc": "Home",
     "title": "🔍 Browse by Composer",
-    "content": ". | John Adams | Samuel Barber | Bela Bartok | Ludwig van Beethoven | Hector Berlioz | Boris Blacher | Arthur Bliss | Johannes Brahms | Benjamin Britten | Anton Bruckner | Ferruccio Busoni | Ernst von Dohnányi | Paul Hindemith | Gustav Mahler | Frank Martin | Bohuslav Martinů | Wolfgang Amadeus Mozart | Francis Poulenc | Sergei Prokofiev | Sergej Rachmaninov | Einojuhani Rautavaara | Albert Roussel | Camille Saint-Saëns | Robert Schumann | Franz Schreker | Dmitri Shostakovich | Jean Sibelius | Igor Stravinsky | Karol Szymanowski | Ralph Vaughan Williams | Alexander von Zemlinsky | . This site is built with Just the Docs and published using GitHub Pages. ",
+    "content": ". | John Adams | Samuel Barber | Bela Bartok | Ludwig van Beethoven | Hector Berlioz | Boris Blacher | Arthur Bliss | Johannes Brahms | Benjamin Britten | Anton Bruckner | Ferruccio Busoni | Ernst von Dohnányi | Paul Hindemith | Gustav Mahler | Frank Martin | Bohuslav Martinů | Wolfgang Amadeus Mozart | Francis Poulenc | Sergei Prokofiev | Sergej Rachmaninov | Einojuhani Rautavaara | Albert Roussel | Camille Saint-Saëns | Robert Schumann | Franz Schreker | Dmitri Shostakovich | Jean Sibelius | Igor Stravinsky | Karol Szymanowski | Ralph Vaughan Williams | Antonio Vivaldi | Alexander von Zemlinsky | . This site is built with Just the Docs and published using GitHub Pages. ",
     "url": "/classical_music/#-browse-by-composer",
     
     "relUrl": "/#-browse-by-composer"
@@ -1140,27 +1140,48 @@
     
     "relUrl": "/docs/vaughanwilliams.html#orchestral"
   },"163": {
+    "doc": "Antonio Vivaldi",
+    "title": "Antonio Vivaldi",
+    "content": "List of compositions on Wikipedia . ",
+    "url": "/classical_music/docs/vivaldi.html",
+    
+    "relUrl": "/docs/vivaldi.html"
+  },"164": {
+    "doc": "Antonio Vivaldi",
+    "title": "Works with opus number",
+    "content": "12 sonatas for two violins and basso continuo, Op. 1 (1705) RV73, 67, 61, 66, 69, 62, 65, 64, 75, 78, 79, 63 . 12 sonatas for violin and basso continuo, Op. 2 (1709) RV27, 31, 14, 20, 36, 1, 8, 23, 16, 21, 9, 32 . L’estro armonico (The Harmonic Inspiration), 12 concertos for various combinations, of which the best known are No. 6 in A minor for violin, No. 8 in A minor for two violins and No. 10 in B minor for four violins, Op. 3 (1711) RV549, 578, 310, 550, 519, 356, 567, 522, 230, 580, 565, 265 Brecon Baroque, Rachel Podger, Bojan Čičić, Johannes Pramsohler, Sabine Stoffer, Alison McGillivray . La stravaganza (The Eccentricity), 12 violin concertos, Op. 4 (c. 1714) RV383a, 279, 301, 357, 347, 316a, 185, 249, 284, 196, 204, 298 Rachel Podger, Arte dei Suonatori . Six sonatas, four violin sonatas and two sonatas for two violins and basso continuo, Op. 5 (1716) RV18, 30, 33, 35, 76, 72 . Six violin concertos, Op. 6 (1716–1721) RV324, 259, 318, 216, 280, 239 . 12 concertos (two for oboe and 10 for violin), of which three are considered inauthentic: Nos. 1 and 7 (both in B-flat major) for oboe, and No. 9 (in the same key) for violin, Op. 7 (1716–1717) RV465, 188, 326, 354, 285a, 374, 464, 299, 373, 294a, 208a, 214 . Il cimento dell’armonia e dell’inventione (The Contest between Harmony and Invention), 12 violin concertos, which include the first four concertos known as Le quattro stagioni (The Four Seasons), Op. 8 (1723) RV269, 315, 293, 297, 253, 180, 242, 332, 236/454, 362, 210, 178/449 Four Seasons: Anne-Sophie Mutter, Trondheim Soloists . La cetra (The Lyre), 12 violin concertos, all for solo violin except for No. 9 in B-flat major which is for two violins, Op. 9 (1727) RV181a, 345, 334, 263a, 358, 348, 359, 238, 530, 300, 198a, 391 . Six flute concertos (a second version for recorder was printed in Venice), Op. 10 (c. 1728) RV433, 439, 428, 435, 434, 437 . Five violin concertos, one oboe concerto, the second in E minor, RV 277, being known as Il favorito (The Favorite), Op. 11 (1729) RV207, 277, 336, 308, 202, 460 RV207: Fabio Biondi, Europa Galante . Five violin concertos and one without solo, Op. 12 (1729) RV317, 244, 124, 173, 379, 361 . ",
+    "url": "/classical_music/docs/vivaldi.html#works-with-opus-number",
+    
+    "relUrl": "/docs/vivaldi.html#works-with-opus-number"
+  },"165": {
+    "doc": "Antonio Vivaldi",
+    "title": "Works without opus number (selection)",
+    "content": "Sinfonia in B minor for 2 violins, viola, double bass, RV 169 Concerto Köln, Shunske Sato . Concerto in C major for violin, strings, RV 179a Fabio Biodi, Europa Galante . Concerto in D major for violin, strings, RV 229 Fabio Biodi, Europa Galante . Concerto in E-flat major (Dresden concerto) for violin, strings, RV 260 Fabio Biodi, Europa Galante . Concerto in E-flat major for violin, strings, RV 261 Fabio Biodi, Europa Galante . Concerto in B-flat major (Il cornetto da posta, Dresden concerto) for violin, strings, RV 363 Fabio Biodi, Europa Galante . ",
+    "url": "/classical_music/docs/vivaldi.html#works-without-opus-number-selection",
+    
+    "relUrl": "/docs/vivaldi.html#works-without-opus-number-selection"
+  },"166": {
     "doc": "Alexander von Zemlinsky",
     "title": "Alexander von Zemlinsky",
     "content": "List of works on Wikipedia . ",
     "url": "/classical_music/docs/zemlinsky.html",
     
     "relUrl": "/docs/zemlinsky.html"
-  },"164": {
+  },"167": {
     "doc": "Alexander von Zemlinsky",
     "title": "Voice and Orchestra",
     "content": "Waldgespräch (T: Joseph von Eichendorff), for soprano, two horns, harp, and strings (1896) Gürzenich-Orchester Köln, James Conlon . Maiblumen blühten überall (T: Richard Dehmel), for soprano and string sextet (1899) Gürzenich-Orchester Köln, James Conlon . Erdeinsamkeit (T: unknown), for soprano and orchestra (1900-01, orchestrated by Antony Beaumont, 1999) Gürzenich-Orchester Köln, James Conlon . Der alte Garten (T: Joseph von Eichendorff), for soprano and orchestra (1900-01, orchestrated by Antony Beaumont, 1999) Gürzenich-Orchester Köln, James Conlon . 💎 Sechs Gesänge after poems by Maurice Maeterlinck, Op. 13, for soprano and orchestra (1910/13, orchestrated 1913/21) Gürzenich-Orchester Köln, James Conlon . Lyric Symphony, for soprano, baritone, and orchestra, Op. 18 (after poems by Rabindranath Tagore) (1922–23) H\\r{a}kan Hageg\\r{a}rd, Alessandra Marc, KCO, Riccardo Chailly . Symphonische Gesänge, Op. 20, for baritone or alto and orchestra (T: from Afrika singt. Eine Auslese neuer afro-amerikanischer Lyrik) (1929) Willard White, KCO, Riccardo Chailly . ",
     "url": "/classical_music/docs/zemlinsky.html#voice-and-orchestra",
     
     "relUrl": "/docs/zemlinsky.html#voice-and-orchestra"
-  },"165": {
+  },"168": {
     "doc": "Alexander von Zemlinsky",
     "title": "Orchestral Works",
     "content": "Symphony in E minor (1891) – two surviving movements only . Symphony No. 1 in D minor (1892–93) Gürzenich-Orchester Köln, James Conlon . Eine Lustspielouvertüre (1894–95) . Symphony No. 2 in B-flat major (1897) Gürzenich-Orchester Köln, James Conlon . Drei Ballettstücke. Suite from Der Triumph der Zeit (1902) . Die Seejungfrau (The Mermaid), fantasy after Hans Christian Andersen’s “The Little Mermaid” (1902–03, premiered in Vienna in 1905) [Gürzenich-Orchester Köln, James Conlon] Gürzenich-Orchester Köln, James Conlon . Sinfonietta, Op. 23 (1934, first performance, Prague 1935) [Gürzenich-Orchester Köln, James Conlon] Gürzenich-Orchester Köln, James Conlon . Suite from the Incidental Music for Shakespeare’s Cymbeline Gürzenich-Orchester Köln, James Conlon . Der gläserne Herz, Act II “Ein Tanzpoem” Gürzenich-Orchester Köln, James Conlon . ",
     "url": "/classical_music/docs/zemlinsky.html#orchestral-works",
     
     "relUrl": "/docs/zemlinsky.html#orchestral-works"
-  },"166": {
+  },"169": {
     "doc": "Alexander von Zemlinsky",
     "title": "Choral Works",
     "content": "Minnelied (T: Heinrich Heine) for men’s choir and chamber ensemble (c.1895) Gürzenich-Orchester Köln, James Conlon . Frühlingsglaube for mixed chorus and string orchestra (T: Ludwig Uhland) (1896) Gürzenich-Orchester Köln, James Conlon . Geheimnis for mixed chorus and string orchestra (1896) Gürzenich-Orchester Köln, James Conlon . Hochzeitsgesang (T: Jewish liturgy) for Cantor (Tenor), chorus, and organ (1896), Text: Baruch Haba, Mi Adir Gürzenich-Orchester Köln, James Conlon . 💎 Frühlingsbegräbnis (Text: Paul Heyse), Cantata for soprano, baritone, mixed chorus and orchestra (1896/97, rev. c.1903) Gürzenich-Orchester Köln, James Conlon . Aurikelchen (T: Richard Dehmel) for women’s choir (1898) Gürzenich-Orchester Köln, James Conlon . Psalm 83 for mixed chorus and orchestra (1900) Slovak Philharmonic Choir, Wiener Philharmoniker, Riccardo Chailly . Psalm 23 for chorus and orchestra, Op. 14 (1910, first performance, Vienna 1910) Gürzenich-Orchester Köln, James Conlon . Psalm 13 for chorus and orchestra, Op. 24 (1935) Gürzenich-Orchester Köln, James Conlon . ",
