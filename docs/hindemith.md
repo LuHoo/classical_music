@@ -119,7 +119,7 @@ nav_order: 1
 
 **Konzert für Trautonium in Begleitung des Streichorchesters** (1931)
 
-**Der Schwanendreher** for viola and small orchestra (1935)
+**Der Schwanendreher** for viola and small orchestra (1935) [*Lucas Ranieri, Orchestra Ico Suoni del Sud, Marco MOresco*](https://tidal.com/browse/track/441869689?u) (09/2025)
 
 **Trauermusik** for viola and string orchestra (1936) [*Geraldine Walther, San Francisco Symphnoy, Herbert Blomstedt*](https://tidal.com/album/4328135/track/4328139)
 
