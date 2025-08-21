@@ -63,7 +63,7 @@ nav_order: 1
 
 **Konzertmusik for wind orchestra** (1926), Op. 41
 
-**Fünf Stücke für Streichorchester** (Five Pieces for String Orchestra) (1927)
+**Fünf Stücke für Streichorchester** (Five Pieces for String Orchestra) (1927) [*Camerata Nordica, Terje Tønnesen*](https://tidal.com/browse/track/51625299?u)
 
 **Konzertmusik for brass and string orchestra** (1930), Op. 50 [*BBC Scottish SO, Martyn Brabbins*](https://tidal.com/album/340823857)
 
