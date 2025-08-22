@@ -118,7 +118,23 @@ nav_order: 1
 
 ## Piano
 
+**4 Ballades**, Op. 10 (1854) [*Jonathan Plowright*](http://www.tidal.com/track/341663077)
+
+**Variations and Fugue on a Theme by Handel in B♭ major**, Op. 24 (1861) [*Seong-Jin Cho*](http://www.tidal.com/track/273661953)
+
+**Etudes for Piano: Variations on a Theme of Paganini**, Op. 35 (1863) [*Jonathan Plowright*](http://www.tidal.com/track/341663057)
+
 **Variations on a Theme by Haydn ("Saint Anthony Variations")**, Op. 56b (1873) [*Gil Garburg, Sivan Silver*](https://tidal.com/browse/track/151961696?u) 
+
+**2 Rhapsodies**, Op. 79 (1879) [*Jonathan Plowright*](http://www.tidal.com/track/341663082)
+
+**7 Fantasies**, Op. 116 (1892) [*Paul Lewis*](http://www.tidal.com/track/212733442)
+
+**Capriccio in D minor**, Op. 117 (1892) [*Paul Lewis*](http://www.tidal.com/track/212733449)
+
+**Intermezzo in A minor**, Op. 118 (1893) [*Paul Lewis*](http://www.tidal.com/track/212733452)
+
+**Capriccio in G minor**, Op. 119 (1893) [*Paul Lewis*](http://www.tidal.com/track/212733458)
 
 ## Choral
 
