@@ -28,6 +28,7 @@ Everything here reflects my personal taste (listen to my 💎 gems!), not any ki
 - [Anton Bruckner]({{ '/docs/bruckner' | relative_url }})
 - [Ferruccio Busoni]({{ '/docs/busoni' | relative_url }})
 - [Ernst von Dohnányi]({{ '/docs/dohnanyi' | relative_url }})
+- [Edvard Grieg]({{ '/docs/grieg' | relative_url }})
 - [Paul Hindemith]({{ '/docs/hindemith' | relative_url }})
 - [Gustav Mahler]({{ '/docs/mahler' | relative_url }})
 - [Frank Martin]({{ '/docs/martin' | relative_url }})
@@ -56,3 +57,4 @@ _This site is built with [Just the Docs](https://just-the-docs.github.io/just-th
 
 <!-- ♭ -->
 <!-- ♯ -->
+<!-- 💎  -->
