@@ -63,9 +63,9 @@ nav_order: 1
 
 **Symphony No. 2 'A London Symphony'** (1911–13; revised 1918, 1920 and 1933) [*BBC SO, Martyn Brabbins*](http://www.tidal.com/track/340801031)
 
-**The Lark Ascending for Violin and Orchestra** (1914) [*Isabelle van Keulen, NDR Radiophilharmonie*](http://www.tidal.com/track/96330723)
+💎 **The Lark Ascending for Violin and Orchestra** (1914) [*Isabelle van Keulen, NDR Radiophilharmonie*](http://www.tidal.com/track/96330723)
 
-**Symphony No. 3 'Pastoral Symphony'** (1921) [*BBC SO, Martyn Brabbins*](http://www.tidal.com/track/340802968)
+💎 **Symphony No. 3 'Pastoral Symphony'** (1921) [*BBC SO, Martyn Brabbins*](http://www.tidal.com/track/340802968)
 
 **Concerto Accademico for Violin and String Orchestra** (1924–25)
 
@@ -101,7 +101,7 @@ nav_order: 1
 
 **Fantasia (quasi variazione) on the Old 104th Psalm Tune for Piano, Chorus, and Orchestra** (1949)
 
-**Symphony No. 7 'Sinfonia antartica'** (1949–52) (partly based on his music for the film *Scott of the Antarctic*) [*Elizabeth Watts, BBC SO, Martyn Brabbins*]()
+💎 **Symphony No. 7 'Sinfonia antartica'** (1949–52) (partly based on his music for the film *Scott of the Antarctic*) [*Elizabeth Watts, BBC SO, Martyn Brabbins*]()
 
 **Concerto Grosso, for three groups of strings, each requiring different levels of technical skill** (1950)
 
@@ -111,7 +111,7 @@ nav_order: 1
 
 **Tuba Concerto in F Minor** (1954)
 
-**Symphony No. 9 in E minor** (1956–57) [*BBC SO, Martyn Brabbins*]()
+**Symphony No. 9 in E minor** (1956–57) [*BBC SO, Martyn Brabbins*](http://www.tidal.com/track/306142157)
 
 **Flourish for Glorious John** (1957)
 
