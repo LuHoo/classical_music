@@ -16,6 +16,7 @@ Everything here reflects my personal taste (listen to my 💎 gems!), not any ki
 ## 🔍 Browse by Composer
 
 - [John Adams]({{ '/docs/adams' | relative_url }})
+- [Johann Sebastian Bach]({{ '/docs/bachJS' | relative_url }})
 - [Samuel Barber]({{ '/docs/barber' | relative_url }})
 - [Bela Bartok]({{ '/docs/bartok' | relative_url }})
 - [Ludwig van Beethoven]({{ '/docs/beethoven' | relative_url }})
