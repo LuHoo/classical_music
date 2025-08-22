@@ -15,7 +15,7 @@ nav_order: 1
 
 **Overture, Scherzo and Finale, E major** (1841), Op. 52 [*Swedish Chamber Orchestra, Thomas Dausgaard*](http://www.tidal.com/track/341644179) (05/2023)
 
-**Piano Concerto, A minor** (1841–45), Op. 54 [*Beatrice Rana, Chamber Orechestra of Europe, Yannick Nézet-Séguin*](http://www.tidal.com/track/265061165)
+💎 **Piano Concerto, A minor** (1841–45), Op. 54 [*Beatrice Rana, Chamber Orechestra of Europe, Yannick Nézet-Séguin*](http://www.tidal.com/track/265061165)
 
 **Symphony No. 2, C major** (1846), Op. 61 [*Swedish Chamber Orchestra, Thomas Dausgaard*](http://www.tidal.com/track/341644182) 05/2023
 

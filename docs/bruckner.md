@@ -47,9 +47,9 @@ nav_order: 1
 
 **Symphony No. 5 in B♭ major** (1876 first concept), WAB. 105
 
-**Symphony No. 5 in B♭ major** (revised in 1878), WAB. 105 [*ORF Vienna RSO, Markus Poschner*](https://tidal.com/browse/track/384348633?u) (01/2024)
+💎 **Symphony No. 5 in B♭ major** (revised in 1878), WAB. 105 [*ORF Vienna RSO, Markus Poschner*](https://tidal.com/browse/track/384348633?u) (01/2024)
 
-**Symphony No. 6 in A major** (1881), WAB. 106 [*Bruckner Orchester Linz, Markus Poschner*](https://tidal.com/browse/track/384348637?u) (11/2021)
+💎 **Symphony No. 6 in A major** (1881), WAB. 106 [*Bruckner Orchester Linz, Markus Poschner*](https://tidal.com/browse/track/384348637?u) (11/2021)
 
 **Symphony No. 7 in E major** (1883 first concept), WAB. 107
 
@@ -61,7 +61,7 @@ nav_order: 1
 
 **Symphony No. 8 in C minor "Die Apokalyptische"** (1890 version: 3rd woodwind in first three movements, fewer cymbal clashes in Adagio, harps in Trio), WAB. 108 [*Bruckner Orchester Linz, Markus Poschner*](https://tidal.com/browse/track/384348649?u) (01/2022)
 
-**Symphony No. 9 in D minor** (1894 first three movements, 1896 finale unfinished), WAB. 109 [*Bruckner Orchester Linz, Markus Poschner*](https://tidal.com/browse/track/384348653?u)
+💎 **Symphony No. 9 in D minor** (1894 first three movements, 1896 finale unfinished), WAB. 109 [*Bruckner Orchester Linz, Markus Poschner*](https://tidal.com/browse/track/384348653?u)
 
 ## Vocal
 

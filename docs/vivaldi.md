@@ -15,7 +15,7 @@ nav_order: 1
 
 **L'estro armonico (The Harmonic Inspiration), 12 concertos for various combinations, of which the best known are No. 6 in A minor for violin, No. 8 in A minor for two violins and No. 10 in B minor for four violins**, Op. 3 (1711) RV549, 578, 310, 550, 519, 356, 567, 522, 230, 580, 565, 265 [*Brecon Baroque, Rachel Podger, Bojan Čičić, Johannes Pramsohler, Sabine Stoffer, Alison McGillivray*](http://www.tidal.com/track/269505340)
 
-**La stravaganza (The Eccentricity), 12 violin concertos**, Op. 4 (c. 1714) RV383a, 279, 301, 357, 347, 316a, 185, 249, 284, 196, 204, 298 [*Rachel Podger, Arte dei Suonatori*](http://www.tidal.com/track/269505628)
+💎 **La stravaganza (The Eccentricity), 12 violin concertos**, Op. 4 (c. 1714) RV383a, 279, 301, 357, 347, 316a, 185, 249, 284, 196, 204, 298 [*Rachel Podger, Arte dei Suonatori*](http://www.tidal.com/track/269505628)
 
 **Six sonatas, four violin sonatas and two sonatas for two violins and basso continuo**, Op. 5 (1716) RV18, 30, 33, 35, 76, 72
 
@@ -23,7 +23,7 @@ nav_order: 1
 
 **12 concertos (two for oboe and 10 for violin), of which three are considered inauthentic: Nos. 1 and 7 (both in B-flat major) for oboe, and No. 9 (in the same key) for violin**, Op. 7 (1716–1717) RV465, 188, 326, 354, 285a, 374, 464, 299, 373, 294a, 208a, 214
 
-**Il cimento dell'armonia e dell'inventione (The Contest between Harmony and Invention), 12 violin concertos, which include the first four concertos known as Le quattro stagioni (The Four Seasons)**, Op. 8 (1723) RV269, 315, 293, 297, 253, 180, 242, 332, 236/454, 362, 210, 178/449 [Four Seasons: *Anne-Sophie Mutter, Trondheim Soloists*](http://www.tidal.com/track/77697108)
+💎 **Il cimento dell'armonia e dell'inventione (The Contest between Harmony and Invention), 12 violin concertos, which include the first four concertos known as Le quattro stagioni (The Four Seasons)**, Op. 8 (1723) RV269, 315, 293, 297, 253, 180, 242, 332, 236/454, 362, 210, 178/449 [Four Seasons: *Anne-Sophie Mutter, Trondheim Soloists*](http://www.tidal.com/track/77697108)
 
 **La cetra (The Lyre), 12 violin concertos, all for solo violin except for No. 9 in B-flat major which is for two violins**, Op. 9 (1727) RV181a, 345, 334, 263a, 358, 348, 359, 238, 530, 300, 198a, 391
 
