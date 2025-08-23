@@ -87,6 +87,8 @@ nav_order: 1
 
 **Fugue in G Minor**, BWV 578 [*Los Angeles Philharmonic, Esa-Pekka Salonen*](http://www.tidal.com/track/2924759)
 
+**Chorale setting "Herr Gott, nun schleuß den Himmel auf"**, BWV 617 (Orgelbüchlein No. 19) (c.1714–1716) [*Simone Dinnerstein, Baroklyn*](https://tidal.com/browse/track/430679524?u)
+
 **Suite for Organ, Harpsichord & Orchestra** (Selections from Bach's Orchestral Suites, BWV 1067 & BWV 1068) [*Los Angeles Philharmonic, Esa-Pekka Salonen*](http://www.tidal.com/track/2924761)
 
 **Musikalisches Opfer**, BWV 1079, [No. 2: Ricerar a 6 *Los Angeles Philharmonic, Esa-Pekka Salonen*](http://www.tidal.com/track/2924755)
