@@ -694,7 +694,7 @@
   },"99": {
     "doc": "Home",
     "title": "🔍 Browse by Composer",
-    "content": ". | John Adams | Johann Sebastian Bach | Samuel Barber | Bela Bartok | Ludwig van Beethoven | Hector Berlioz | Boris Blacher | Arthur Bliss | Johannes Brahms | Benjamin Britten | Anton Bruckner | Ferruccio Busoni | Claude Debussy | Ernst von Dohnányi | Edvard Grieg | Paul Hindemith | Erich Wolfgang Korngold | Gustav Mahler | Frank Martin | Bohuslav Martinů | Wolfgang Amadeus Mozart | Francis Poulenc | Sergei Prokofiev | Sergej Rachmaninov | Einojuhani Rautavaara | Max Reger | Albert Roussel | Camille Saint-Saëns | Robert Schumann | Franz Schreker | Dmitri Shostakovich | Jean Sibelius | Richard Strauss | Igor Stravinsky | Karol Szymanowski | Ralph Vaughan Williams | Antonio Vivaldi | Alexander von Zemlinsky | . This site is built with Just the Docs and published using GitHub Pages. ",
+    "content": ". | John Adams | Johann Sebastian Bach | Samuel Barber | Bela Bartok | Ludwig van Beethoven | Hector Berlioz | Boris Blacher | Arthur Bliss | Johannes Brahms | Benjamin Britten | Anton Bruckner | Ferruccio Busoni | Claude Debussy | Ernst von Dohnányi | Edvard Grieg | Paul Hindemith | Erich Wolfgang Korngold | Gustav Mahler | Frank Martin | Bohuslav Martinů | Wolfgang Amadeus Mozart | Francis Poulenc | Sergei Prokofiev | Sergej Rachmaninov | Einojuhani Rautavaara | Max Reger | Albert Roussel | Camille Saint-Saëns | Robert Schumann | Franz Schreker | Dmitri Shostakovich | Jean Sibelius | Richard Strauss | Igor Stravinsky | Karol Szymanowski | Pyotr Ilyich Tchaikovsky | Ralph Vaughan Williams | Antonio Vivaldi | Alexander von Zemlinsky | . This site is built with Just the Docs and published using GitHub Pages. ",
     "url": "/classical_music/#-browse-by-composer",
     
     "relUrl": "/#-browse-by-composer"
@@ -1448,76 +1448,160 @@
     
     "relUrl": "/docs/szymanowski.html#vocal"
   },"207": {
+    "doc": "Pyotr Ilyich Tchaikovsky",
+    "title": "Pyotr Ilyich Tchaikovsky",
+    "content": "List of compositions on Wikipedia . ",
+    "url": "/classical_music/docs/tchaikovsky.html",
+    
+    "relUrl": "/docs/tchaikovsky.html"
+  },"208": {
+    "doc": "Pyotr Ilyich Tchaikovsky",
+    "title": "Ballets",
+    "content": "Swan Lake, Op. 20 (1875–76) . The Sleeping Beauty, Op. 66 (1889) . The Nutcracker, Op. 71 (1892) . ",
+    "url": "/classical_music/docs/tchaikovsky.html#ballets",
+    
+    "relUrl": "/docs/tchaikovsky.html#ballets"
+  },"209": {
+    "doc": "Pyotr Ilyich Tchaikovsky",
+    "title": "Operas",
+    "content": "The Voyevoda, Op. 3/TH 1 (The Voivode, 1867–1868) . Undina, TH 2 (1869, not completed) . The Oprichnik, TH 3 (1870–1872) Dances: BBC Scottish Symphony Orchestra, Alpesh Chauhan . Vakula the Smith, Op. 14/TH 4 (Kuznets Vakula), (1874) . Eugene Onegin, Op. 24/TH 5 (Yevgeny Onegin), (1877–1878) . The Maid of Orleans, TH 6 (Orleanskaya deva), (1878–1879) . Mazepa, TH 7 (1881–1883) . Cherevichki, TH 8 (Vakula the Smith) (1885) Ouverture and Polonaise: BBC Scottish Symphony Orchestra, Alpesh Chauhan . The Enchantress, TH 9 (Charodeyka), (1885–1887) . The Queen of Spades, Op. 68/TH 10 (Pikovaya dama), (1890) Introduction: BBC Scottish Symphony Orchestra, Alpesh Chauhan . Iolanta, Op. 69/TH 11, (1891) . ",
+    "url": "/classical_music/docs/tchaikovsky.html#operas",
+    
+    "relUrl": "/docs/tchaikovsky.html#operas"
+  },"210": {
+    "doc": "Pyotr Ilyich Tchaikovsky",
+    "title": "Symphonies",
+    "content": "No. 1 in G minor, Op. 13, Winter Daydreams (1866) Czech Philharmonic, Semyon Bychkov . No. 2 in C minor, Op. 17, Little Russian (1872) Czech Philharmonic, Semyon Bychkov . No. 3 in D major, Op. 29, Polish (1875) Czech Philharmonic, Semyon Bychkov . No. 4 in F minor, Op. 36 (1877–1878) London Symphony Orchestra, Gianandrea Noseda . Manfred Symphony, B minor, Op. 58; inspired by Byron’s poem Manfred (1885) Czech Philharmonic, Semyon Bychkov . No. 5 in E minor, Op. 64 (1888) Orchestra della Svizzera Italiana, Marcus Poschner . Symphony in E♭ (sketched 1892 but abandoned; Tchaikovsky rescored its first movement as the Piano Concerto No. 3 in E♭; posthumously, Taneyev rescored two other movements for piano and orchestra as the Andante and Finale; the symphony was reconstructed during the 1950s and subsequently published as “Symphony No. 7”) . No. 6 in B minor, Op. 74, Pathétique (1893) Orchestra della Svizzera Italiana, Marcus Poschner . ",
+    "url": "/classical_music/docs/tchaikovsky.html#symphonies",
+    
+    "relUrl": "/docs/tchaikovsky.html#symphonies"
+  },"211": {
+    "doc": "Pyotr Ilyich Tchaikovsky",
+    "title": "Concertos and concertante pieces",
+    "content": "Piano Concerto No. 1 in B♭ minor, Op. 23 (1874–75) Kirill Gerstein, Czech Philharmonic, Semyon Bychkov . Sérénade mélancolique, Op. 26, for violin and orchestra (1875) . Variations on a Rococo Theme for cello and orchestra, Op. 33 (1876–77) Gautier Capuçon, Mariinsky Theatre Orchestra, St Petersburg, Valery Gergiev . Valse-Scherzo for violin and orchestra, Op. 34 . Violin Concerto in D major, Op. 35 (1878) Janine Jansen, Mahler Chamber Orchestra, Daniel Harding . Piano Concerto No. 2 in G major, Op. 44 (1879–80) Kirill Gerstein, Czech Philharmonic, Semyon Bychkov . Concert Fantasia in G for piano and orchestra, Op. 56 (1884) . Pezzo capriccioso, Op. 62, for cello and Orchestra (1888) . Piano Concerto No. 3 in E♭ major, Op. posth. 75 (1893) Kirill Gerstein, Czech Philharmonic, Semyon Bychkov . Andante and Finale for piano and orchestra, Op. posth. 79 (1893) . Cello Concerto (conjectural work based in part on a 60-bar fragment found on the back of the rough draft for the last movement of the composer’s Sixth Symphony). Concertstück for Flute and Strings, TH 247 Op. posth. (1893) . ",
+    "url": "/classical_music/docs/tchaikovsky.html#concertos-and-concertante-pieces",
+    
+    "relUrl": "/docs/tchaikovsky.html#concertos-and-concertante-pieces"
+  },"212": {
+    "doc": "Pyotr Ilyich Tchaikovsky",
+    "title": "Other orchestral works",
+    "content": "Ode an die Freude (Schiller), für SATB Solo, SATB und großes Orchester (1865) . ",
+    "url": "/classical_music/docs/tchaikovsky.html#other-orchestral-works",
+    
+    "relUrl": "/docs/tchaikovsky.html#other-orchestral-works"
+  },"213": {
+    "doc": "Pyotr Ilyich Tchaikovsky",
+    "title": "Program music and commissioned pieces",
+    "content": "The Storm, Op. posth. 76 (1864) . Festival Overture on the Danish National Anthem, Op. 15 (1866) . Fatum, Op. posth. 77 (1868) BBC Scottish Symphony Orchestra, Alpesh Chauhan . Romeo and Juliet (1870, revised 1880) Czech Philharmonic, Semyon Bychkov . The Tempest, Op. 18 (1873) BBC Scottish Symphony Orchestra, Alpesh Chauhan . Marche Slave, Op. 31 (1876) . Francesca da Rimini, Op. 32 (1876) Czech Philharmonic, Semyon Bychkov . Capriccio Italien, Op. 45 (1880) BBC Scottish Symphony Orchestra, Alpesh Chauhan . 1812 Overture, Op. 49 (1880) . Festival Coronation March (1883) . Hamlet, Op. 67a (1889) BBC Scottish Symphony Orchestra, Alpesh Chauhan . The Voyevoda, Op. posth. 78 (1891) BBC Scottish Symphony Orchestra, Alpesh Chauhan . ",
+    "url": "/classical_music/docs/tchaikovsky.html#program-music-and-commissioned-pieces",
+    
+    "relUrl": "/docs/tchaikovsky.html#program-music-and-commissioned-pieces"
+  },"214": {
+    "doc": "Pyotr Ilyich Tchaikovsky",
+    "title": "Orchestral suites and Serenade",
+    "content": "Orchestral Suite No. 1 in D minor, Op. 43 (1878–1879) . Orchestral Suite No. 2 in C major, Op. 53 (1883) . Orchestral Suite No. 3 in G major, Op. 55 (1884) . Orchestral Suite No. 4 in G major “Mozartiana”, Op. 61 (1887) . Serenade for Strings in C major, Op. 48 (1880) Czech Philharmonic, Semyon Bychkov . The Nutcracker Suite, Op. 71a/TH 35 (1892) . ",
+    "url": "/classical_music/docs/tchaikovsky.html#orchestral-suites-and-serenade",
+    
+    "relUrl": "/docs/tchaikovsky.html#orchestral-suites-and-serenade"
+  },"215": {
+    "doc": "Pyotr Ilyich Tchaikovsky",
+    "title": "Incidental music",
+    "content": "Dmitri the Pretender and Vassily Shuisky (1867), incidental music to Alexander Ostrovsky’s play Dmitri the Pretender . The Snow Maiden (Snegurochka), Op. 12 (1873), incidental music for Ostrovsky’s play of the same name. Prologue, Melodrama, and Dance of the Tumblers: BBC Scottish Symphony Orchestra, Alpesh Chauhan . Montenegrins Receiving News of Russia’s Declaration of War on Turkey (1880), music for a tableau. The Voyevoda (1886), incidental music for the Domovoy scene from Ostrovsky’s A Dream on the Volga . Hamlet, Op. 67b (1891), incidental music for Shakespeare’s play. ",
+    "url": "/classical_music/docs/tchaikovsky.html#incidental-music",
+    
+    "relUrl": "/docs/tchaikovsky.html#incidental-music"
+  },"216": {
+    "doc": "Pyotr Ilyich Tchaikovsky",
+    "title": "Piano",
+    "content": "Two Pieces, Op. 1 (1867) . Scherzo à la russe . Impromptu . Souvenir de Hapsal, Op. 2, 3 pieces (1867) . Valse-caprice in D major, Op. 4 (1868) . Romance in F minor, Op. 5 (1868) . Valse-scherzo in A, Op. 7 (1870) . Capriccio in G♭, Op. 8 (1870) . 3 Morceaux, Op. 9 (1870) . 2 Morceaux, Op. 10 (1871) . 6 Pieces, Op. 19 (1873) . 6 Morceaux, Op. 21 (1873) . The Seasons (Les saisons), Op. 37a (1876), 12 pieces . Piano Sonata in G major, Op. 37 (1878) . Album pour enfants, Op. 39, 24 pieces for piano (1878) . 12 Morceaux de difficulté moyenne, Op. 40 (1878) . Six Morceaux, Op. 51 (1882) . Dumka, Russian rustic scene in C minor for piano, Op. 59 (1886) . 18 Morceaux for piano, Op. 72 (1892). Some of these pieces were used in a cello concerto arrangement by Gaspar Cassadó. Piano Sonata No. 2 in C♯ minor, Op. posth. 80 (1865) . The Volunteer Fleet March in C major, TH 140; ČW 149 . ",
+    "url": "/classical_music/docs/tchaikovsky.html#piano",
+    
+    "relUrl": "/docs/tchaikovsky.html#piano"
+  },"217": {
+    "doc": "Pyotr Ilyich Tchaikovsky",
+    "title": "Chamber music",
+    "content": "Adagio molto in E♭ major for string quartet and harp (1863/64) . String Quartet in B♭ major, Op. posth. (1865) . String Quartet No. 1 in D major, Op. 11 (1871) . String Quartet No. 2 in F major, Op. 22 (1874) . String Quartet No. 3 in E♭ minor, Op. 30 (1876) . Souvenir d’un lieu cher (Memory of a Cherished Place) for violin and piano, Op. 42 (Meditation, Scherzo and Melody) (1878) Janine Jansen, Mahler Chamber Orchestra, Daniel Harding . Piano Trio in A minor, Op. 50 (1882) . String Sextet in D minor (Souvenir de Florence), Op. 70 (1890) Arr for str-orch United Strings of Europe, Julian Azkoul . ",
+    "url": "/classical_music/docs/tchaikovsky.html#chamber-music",
+    
+    "relUrl": "/docs/tchaikovsky.html#chamber-music"
+  },"218": {
+    "doc": "Pyotr Ilyich Tchaikovsky",
+    "title": "Choral music",
+    "content": "Cantata (Hymn) . A Hymn to the Trinity (1877) . Liturgy of St John Chrysostom, Op. 41 (1878) . All-Night Vigil, Op. 52 (1882) . Moscow (1883) . 9 Sacred Pieces (alternative name: 9 Church Pieces) (1884–85) . Legend (choral arrangement of song Op. 54 No. 5, written 1889, published 1890) . ",
+    "url": "/classical_music/docs/tchaikovsky.html#choral-music",
+    
+    "relUrl": "/docs/tchaikovsky.html#choral-music"
+  },"219": {
     "doc": "Ralph Vaughan Williams",
     "title": "Ralph Vaughan Williams",
     "content": "List of compositions on Wikipedia . ",
     "url": "/classical_music/docs/vaughanwilliams.html",
     
     "relUrl": "/docs/vaughanwilliams.html"
-  },"208": {
+  },"220": {
     "doc": "Ralph Vaughan Williams",
     "title": "Incidental",
     "content": "The Wasps (1909) . The Wasps, Aristophanic Suite (1912) . The Bacchae (1911) . The Death of Tintagiles (1913) . The First Nowell, nativity play adapted from medieval pageants by Simona Pakenham; score completed by Roy Douglas (1958) . ",
     "url": "/classical_music/docs/vaughanwilliams.html#incidental",
     
     "relUrl": "/docs/vaughanwilliams.html#incidental"
-  },"209": {
+  },"221": {
     "doc": "Ralph Vaughan Williams",
     "title": "Ballet",
     "content": "Old King Cole (1923) . On Christmas Night (1926) . Job: A Masque for Dancing (1930) . The Voice out of the Whirlwind, Motet for mixed choir and organ or orchestra; adapted from “Galliard of the Sons of the Morning” from Job . The Running Set (1933) . The Bridal Day (1938–39) . Epithalamion (1957), Cantata for baritone, chorus and small orchestra . ",
     "url": "/classical_music/docs/vaughanwilliams.html#ballet",
     
     "relUrl": "/docs/vaughanwilliams.html#ballet"
-  },"210": {
+  },"222": {
     "doc": "Ralph Vaughan Williams",
     "title": "Orchestral",
     "content": "Fantasia for Piano and Orchestra (1896) . Serenade in A minor (1898) . Heroic Elegy and Triumphal Epilogue (1900) . Bucolic Suite (1901) . Burley Heath, impression for orchestra (1902–03) . The Solent, impression for orchestra (1902–03) . Symphony No. 1 ‘A Sea Symphony’ (1903–1909) (with chorus, on texts by Whitman) BBC SO, Martyn Brabbins . In the Fen Country, for orchestra (1904) . Norfolk Rhapsody No. 1, for orchestra (1906, rev. 1914) . Norfolk Rhapsody No. 2, for orchestra (1906, subsequently withdrawn; reconstructed and recorded in 2002) . Harnham Down, impression for orchestra (1904–07) . Fantasia on a Theme by Thomas Tallis (1910, rev. 1913 and 1919) . Symphony No. 2 ‘A London Symphony’ (1911–13; revised 1918, 1920 and 1933) BBC SO, Martyn Brabbins . 💎 The Lark Ascending for Violin and Orchestra (1914) Isabelle van Keulen, NDR Radiophilharmonie . 💎 Symphony No. 3 ‘Pastoral Symphony’ (1921) BBC SO, Martyn Brabbins . Concerto Accademico for Violin and String Orchestra (1924–25) . Flos Campi for Viola, Wordless Chorus, and Small Orchestra (1925) . Piano Concerto in C Major (1926–31) . Fantasia on Sussex Folk Tunes for Cello and Orchestra (1929); withdrawn by the composer . Symphony No. 4 in F minor (1931–34) BBC SO, Martyn Brabbins . Fantasia on “Greensleeves” (1934) (for string orchestra and harp; arranged by Ralph Greaves from Vaughan Williams’s treatment of folk tunes in his opera Sir John in Love) . Suite for Viola and Small Orchestra (1934) . Two Hymn Tune Preludes (1936) for small orchestra: 1. Eventide; 2. Dominus regit me . Symphony No. 5 in D major (1938–43) BBC SO, Martyn Brabbins . Five Variants of Dives and Lazarus (1939) for strings and harp . Sketches for Cello Concerto (1942–43); incomplete, with 2nd movement completed by David Matthews (2009) as Dark Pastoral . Oboe Concerto in A Minor for Oboe and Strings (1944) . Symphony No. 6 in E minor (1944–47, rev. 1950) BBC SO, Martyn Brabbins (02/2022) . Concerto for Two Pianos and Orchestra (1946), arranged by Joseph Cooper in collaboration with the composer . Concerto for Two Pianos and Orchestra (1946) . Partita for Double String Orchestra (1948), rewritten from Double Trio for string sextet with new finale . Fantasia (quasi variazione) on the Old 104th Psalm Tune for Piano, Chorus, and Orchestra (1949) . 💎 Symphony No. 7 ‘Sinfonia antartica’ (1949–52) (partly based on his music for the film Scott of the Antarctic) Elizabeth Watts, BBC SO, Martyn Brabbins . Concerto Grosso, for three groups of strings, each requiring different levels of technical skill (1950) . Romance in D-flat Major for Harmonica and Orchestra (1951), written for Larry Adler . Symphony No. 8 in D minor (1953–55) BBC SO, Martyn Brabbins (02/2022) . Tuba Concerto in F Minor (1954) . Symphony No. 9 in E minor (1956–57) BBC SO, Martyn Brabbins . Flourish for Glorious John (1957) . ",
     "url": "/classical_music/docs/vaughanwilliams.html#orchestral",
     
     "relUrl": "/docs/vaughanwilliams.html#orchestral"
-  },"211": {
+  },"223": {
     "doc": "Antonio Vivaldi",
     "title": "Antonio Vivaldi",
     "content": "List of compositions on Wikipedia . ",
     "url": "/classical_music/docs/vivaldi.html",
     
     "relUrl": "/docs/vivaldi.html"
-  },"212": {
+  },"224": {
     "doc": "Antonio Vivaldi",
     "title": "Works with opus number",
     "content": "12 sonatas for two violins and basso continuo, Op. 1 (1705) RV73, 67, 61, 66, 69, 62, 65, 64, 75, 78, 79, 63 . 12 sonatas for violin and basso continuo, Op. 2 (1709) RV27, 31, 14, 20, 36, 1, 8, 23, 16, 21, 9, 32 . L’estro armonico (The Harmonic Inspiration), 12 concertos for various combinations, of which the best known are No. 6 in A minor for violin, No. 8 in A minor for two violins and No. 10 in B minor for four violins, Op. 3 (1711) RV549, 578, 310, 550, 519, 356, 567, 522, 230, 580, 565, 265 Brecon Baroque, Rachel Podger, Bojan Čičić, Johannes Pramsohler, Sabine Stoffer, Alison McGillivray . 💎 La stravaganza (The Eccentricity), 12 violin concertos, Op. 4 (c. 1714) RV383a, 279, 301, 357, 347, 316a, 185, 249, 284, 196, 204, 298 Rachel Podger, Arte dei Suonatori . Six sonatas, four violin sonatas and two sonatas for two violins and basso continuo, Op. 5 (1716) RV18, 30, 33, 35, 76, 72 . Six violin concertos, Op. 6 (1716–1721) RV324, 259, 318, 216, 280, 239 . 12 concertos (two for oboe and 10 for violin), of which three are considered inauthentic: Nos. 1 and 7 (both in B-flat major) for oboe, and No. 9 (in the same key) for violin, Op. 7 (1716–1717) RV465, 188, 326, 354, 285a, 374, 464, 299, 373, 294a, 208a, 214 . 💎 Il cimento dell’armonia e dell’inventione (The Contest between Harmony and Invention), 12 violin concertos, which include the first four concertos known as Le quattro stagioni (The Four Seasons), Op. 8 (1723) RV269, 315, 293, 297, 253, 180, 242, 332, 236/454, 362, 210, 178/449 Four Seasons: Anne-Sophie Mutter, Trondheim Soloists . La cetra (The Lyre), 12 violin concertos, all for solo violin except for No. 9 in B-flat major which is for two violins, Op. 9 (1727) RV181a, 345, 334, 263a, 358, 348, 359, 238, 530, 300, 198a, 391 . Six flute concertos (a second version for recorder was printed in Venice), Op. 10 (c. 1728) RV433, 439, 428, 435, 434, 437 . Five violin concertos, one oboe concerto, the second in E minor, RV 277, being known as Il favorito (The Favorite), Op. 11 (1729) RV207, 277, 336, 308, 202, 460 RV207: Fabio Biondi, Europa Galante . Five violin concertos and one without solo, Op. 12 (1729) RV317, 244, 124, 173, 379, 361 . ",
     "url": "/classical_music/docs/vivaldi.html#works-with-opus-number",
     
     "relUrl": "/docs/vivaldi.html#works-with-opus-number"
-  },"213": {
+  },"225": {
     "doc": "Antonio Vivaldi",
     "title": "Works without opus number (selection)",
     "content": "Sinfonia in B minor for 2 violins, viola, double bass, RV 169 Concerto Köln, Shunske Sato . Concerto in C major for violin, strings, RV 179a Fabio Biondi, Europa Galante . Concerto in D major for violin, strings, RV 229 Fabio Biondi, Europa Galante . Concerto in E-flat major (Dresden concerto) for violin, strings, RV 260 Fabio Biondi, Europa Galante . Concerto in E-flat major for violin, strings, RV 261 Fabio Biondi, Europa Galante . Concerto in B-flat major (Il cornetto da posta, Dresden concerto) for violin, strings, RV 363 Fabio Biondi, Europa Galante . ",
     "url": "/classical_music/docs/vivaldi.html#works-without-opus-number-selection",
     
     "relUrl": "/docs/vivaldi.html#works-without-opus-number-selection"
-  },"214": {
+  },"226": {
     "doc": "Alexander von Zemlinsky",
     "title": "Alexander von Zemlinsky",
     "content": "List of works on Wikipedia . ",
     "url": "/classical_music/docs/zemlinsky.html",
     
     "relUrl": "/docs/zemlinsky.html"
-  },"215": {
+  },"227": {
     "doc": "Alexander von Zemlinsky",
     "title": "Voice and Orchestra",
     "content": "Waldgespräch (T: Joseph von Eichendorff), for soprano, two horns, harp, and strings (1896) Gürzenich-Orchester Köln, James Conlon . Maiblumen blühten überall (T: Richard Dehmel), for soprano and string sextet (1899) Gürzenich-Orchester Köln, James Conlon . Erdeinsamkeit (T: unknown), for soprano and orchestra (1900-01, orchestrated by Antony Beaumont, 1999) Gürzenich-Orchester Köln, James Conlon . Der alte Garten (T: Joseph von Eichendorff), for soprano and orchestra (1900-01, orchestrated by Antony Beaumont, 1999) Gürzenich-Orchester Köln, James Conlon . 💎 Sechs Gesänge after poems by Maurice Maeterlinck, Op. 13, for soprano and orchestra (1910/13, orchestrated 1913/21) Gürzenich-Orchester Köln, James Conlon . Lyric Symphony, for soprano, baritone, and orchestra, Op. 18 (after poems by Rabindranath Tagore) (1922–23) H\\r{a}kan Hageg\\r{a}rd, Alessandra Marc, KCO, Riccardo Chailly . Symphonische Gesänge, Op. 20, for baritone or alto and orchestra (T: from Afrika singt. Eine Auslese neuer afro-amerikanischer Lyrik) (1929) Willard White, KCO, Riccardo Chailly . ",
     "url": "/classical_music/docs/zemlinsky.html#voice-and-orchestra",
     
     "relUrl": "/docs/zemlinsky.html#voice-and-orchestra"
-  },"216": {
+  },"228": {
     "doc": "Alexander von Zemlinsky",
     "title": "Orchestral Works",
     "content": "Symphony in E minor (1891) – two surviving movements only . Symphony No. 1 in D minor (1892–93) Gürzenich-Orchester Köln, James Conlon . Eine Lustspielouvertüre (1894–95) . Symphony No. 2 in B-flat major (1897) Gürzenich-Orchester Köln, James Conlon . Drei Ballettstücke. Suite from Der Triumph der Zeit (1902) . Die Seejungfrau (The Mermaid), fantasy after Hans Christian Andersen’s “The Little Mermaid” (1902–03, premiered in Vienna in 1905) [Gürzenich-Orchester Köln, James Conlon] Gürzenich-Orchester Köln, James Conlon . Sinfonietta, Op. 23 (1934, first performance, Prague 1935) [Gürzenich-Orchester Köln, James Conlon] Gürzenich-Orchester Köln, James Conlon . Suite from the Incidental Music for Shakespeare’s Cymbeline Gürzenich-Orchester Köln, James Conlon . Der gläserne Herz, Act II “Ein Tanzpoem” Gürzenich-Orchester Köln, James Conlon . ",
     "url": "/classical_music/docs/zemlinsky.html#orchestral-works",
     
     "relUrl": "/docs/zemlinsky.html#orchestral-works"
-  },"217": {
+  },"229": {
     "doc": "Alexander von Zemlinsky",
     "title": "Choral Works",
     "content": "Minnelied (T: Heinrich Heine) for men’s choir and chamber ensemble (c.1895) Gürzenich-Orchester Köln, James Conlon . Frühlingsglaube for mixed chorus and string orchestra (T: Ludwig Uhland) (1896) Gürzenich-Orchester Köln, James Conlon . Geheimnis for mixed chorus and string orchestra (1896) Gürzenich-Orchester Köln, James Conlon . Hochzeitsgesang (T: Jewish liturgy) for Cantor (Tenor), chorus, and organ (1896), Text: Baruch Haba, Mi Adir Gürzenich-Orchester Köln, James Conlon . 💎 Frühlingsbegräbnis (Text: Paul Heyse), Cantata for soprano, baritone, mixed chorus and orchestra (1896/97, rev. c.1903) Gürzenich-Orchester Köln, James Conlon . Aurikelchen (T: Richard Dehmel) for women’s choir (1898) Gürzenich-Orchester Köln, James Conlon . Psalm 83 for mixed chorus and orchestra (1900) Slovak Philharmonic Choir, Wiener Philharmoniker, Riccardo Chailly . Psalm 23 for chorus and orchestra, Op. 14 (1910, first performance, Vienna 1910) Gürzenich-Orchester Köln, James Conlon . Psalm 13 for chorus and orchestra, Op. 24 (1935) Gürzenich-Orchester Köln, James Conlon . ",
