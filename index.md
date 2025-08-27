@@ -40,6 +40,7 @@ Everything here reflects my personal taste (listen to my 💎 gems!), not any ki
 - [Sergei Prokofiev]({{ '/docs/prokofiev' | relative_url }})
 - [Sergej Rachmaninov]({{ '/docs/rachmaninov' | relative_url }})
 - [Einojuhani Rautavaara]({{ '/docs/rautavaara' | relative_url }})
+- [Maurice Ravel]({{ '/docs/ravel' | relative_url }})
 - [Max Reger]({{ '/docs/reger' | relative_url }})
 - [Albert Roussel]({{ '/docs/roussel' | relative_url }})
 - [Camille Saint-Saëns]({{ '/docs/saintsaens' | relative_url }})
