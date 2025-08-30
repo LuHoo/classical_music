@@ -44,6 +44,7 @@ Everything here reflects my personal taste (listen to my 💎 gems!), not any ki
 - [Einojuhani Rautavaara]({{ '/docs/rautavaara' | relative_url }})
 - [Maurice Ravel]({{ '/docs/ravel' | relative_url }})
 - [Max Reger]({{ '/docs/reger' | relative_url }})
+- [Ottorino Respighi]({{ '/docs/respighi' | relative_url }})
 - [Albert Roussel]({{ '/docs/roussel' | relative_url }})
 - [Camille Saint-Saëns]({{ '/docs/saintsaens' | relative_url }})
 - [Robert Schumann]({{ '/docs/schumann' | relative_url }})
