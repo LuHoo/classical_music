@@ -23,8 +23,6 @@ nav_order: 1
 
 **Aeneas, Op. 54**, ballet for chorus and orchestra (1935) [*Orchestre Philharmonique du Luxemburg, Europa Chor Akademie, Bramwell Toby*](https://tidal.com/album/19480810)
 
-
-
 **Le testament de la tante Caroline**, opera in 3 acts (1936)
 
 **Prelude to Act 2 of Le Quatorze juillet** by Romain Rolland, Paris (1936)
@@ -70,8 +68,6 @@ nav_order: 1
 ## Choral
 
 **Le bardit des francs** (1926) [*Orchestre Philharmonique du Luxemburg, Europa Chor Akademie, Bramwell Toby*](https://tidal.com/album/19480810)
-
-
 
 **Psalm 80 for tenor, choir, and orchestra, Op. 37** (1928) [*Orchestre Philharmonique du Luxemburg, Europa Chor Akademie, Bramwell Toby*](https://tidal.com/album/19480810)
 
@@ -167,7 +163,7 @@ nav_order: 1
 
 **Doute** (1919)
 
-**L'Accueil des Muses (in memoriam Debussy)** (1920)
+**L'Accueil des Muses (in memoriam Debussy)** (1920) [*Tomer Lev*](http://www.tidal.com/track/162848500)
 
 **Prelude and Fugue, Op. 46** (1932)
 
