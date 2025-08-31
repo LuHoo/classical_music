@@ -9,9 +9,11 @@ nav_order: 1
 
 ## Orchestra
 
-**Une Barque sur l'océan**, M. 43a (1906)
+**Miroirs**, M. 43 (1904–05) [V. La vallée des cloches (Orch. Grainger) *City of Birmingham Symphony Orchestra, Sir Simon Rattle*](http://www.tidal.com/track/2951955)
 
-**Rapsodie espagnole**, M. 54 (1907)
+**Une Barque sur l'océan**, M. 43a (1906) [*Orchestre Symphonique de Montréal, Charles Dutoit*](http://www.tidal.com/track/63466478)
+
+**Rapsodie espagnole**, M. 54 (1907) [*Sinfonia Of London, John Wilson*](http://www.tidal.com/track/196695895)
 
 **Nikolai Rimsky-Korsakov: Antar**, M. A15 (1909)
 
@@ -37,7 +39,7 @@ nav_order: 1
 
 **Emmanuel Chabrier: Menuet pompeux**, M. A23 (1917–18)
 
-**Le Tombeau de Couperin**, M. 68a (1919)
+**Le Tombeau de Couperin**, M. 68a (1919) [*Royal Stockholm Philharmonic Orchestra, Sakari Oramo*](http://www.tidal.com/track/212233250)
 
 **Modest Mussorgsky: Tableaux d'une exposition (Pictures at an Exhibition), suite**, M. A24 (1922)
 
@@ -47,7 +49,7 @@ nav_order: 1
 
 **Une Barque sur l'océan**, M. 43b (1926)
 
-**Menuet antique**, M. 7a (1929)
+**Menuet antique**, M. 7a (1929) [*Orchestre Symphonique de Montréal, Charles Dutoit*](http://www.tidal.com/track/63466476)
 
 ## Concertante
 
@@ -147,7 +149,7 @@ nav_order: 1
 
 **La Valse**, M. 72b (1920)
 
-**Fanfare for L'éventail de Jeanne, children's ballet**, M. 80b (1927)
+**Fanfare for L'éventail de Jeanne, children's ballet**, M. 80b (1927) [*Orchestre Symphonique de Montréal, Charles Dutoit*](http://www.tidal.com/track/63466479)
 
 **Boléro**, M. 81a (1929)
 
@@ -159,7 +161,7 @@ nav_order: 1
 
 **Entre cloches**, M. 13 (1897)
 
-**Shéhérazade**, M. 17a (1898)
+**Shéhérazade**, M. 17a (1898) [*Marie-Nicole Lemieux, Orchestre Philharmonique De Monte Carlo, Kazuki Yamada*](http://www.tidal.com/track/312537550)
 
 **Claude Debussy: Sirènes**, M. A2 (1902)
 
