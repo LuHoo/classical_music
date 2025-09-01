@@ -67,7 +67,7 @@ nav_order: 1
 
 **Prelude "Granada"** (1962)
 
-**Variations on a Theme by Hindemith** (1962–1963) [*London Philharmonic Orchestra, Jan Latham-Koenig*](http://www.tidal.com/track/376272464)
+💎 **Variations on a Theme by Hindemith** (1962–1963) [*London Philharmonic Orchestra, Jan Latham-Koenig*](http://www.tidal.com/track/376272464)
 
 **Capriccio burlesco** (1968)
 
@@ -81,11 +81,11 @@ nav_order: 1
 
 **Sinfonia Concertante**, for piano and orchestra (1926–1927)
 
-**Viola Concerto**, for viola and orchestra (1928–1929) [*Isabelle van Keulen, NDR Radiophilharmonie, Andrew Manze*](http://www.tidal.com/track/96330720)
+💎 **Viola Concerto**, for viola and orchestra (1928–1929) [*Isabelle van Keulen, NDR Radiophilharmonie, Andrew Manze*](http://www.tidal.com/track/96330720)
 
 **Violin Concerto**, for violin and orchestra (1938–1939) [*Lydia Mordkovitch, London Philharmonic Orchestra, Jan Latham-Koenig*](http://www.tidal.com/track/12439720)
 
-**Cello Concerto**, for cello and orchestra (1956) [*Gautier Capuçon, London Symphony Orchestra, Antonio Pappano*](http://www.tidal.com/track/389718048)
+💎 **Cello Concerto**, for cello and orchestra (1956) [*Gautier Capuçon, London Symphony Orchestra, Antonio Pappano*](http://www.tidal.com/track/389718048)
 
 ## Brass ensemble
 
