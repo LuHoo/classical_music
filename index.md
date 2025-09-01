@@ -31,6 +31,7 @@ Everything here reflects my personal taste (listen to my 💎 gems!), not any ki
 - [Arcangelo Corelli]({{ '/docs/corelli' | relative_url }})
 - [Claude Debussy]({{ '/docs/debussy' | relative_url }})
 - [Ernst von Dohnányi]({{ '/docs/dohnanyi' | relative_url }})
+- [Niels Gade]({{ '/docs/gade' | relative_url }})
 - [Edvard Grieg]({{ '/docs/grieg' | relative_url }})
 - [Paul Hindemith]({{ '/docs/hindemith' | relative_url }})
 - [Vincent d'Indy]({{ '/docs/dindy' | relative_url }})
