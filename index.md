@@ -61,6 +61,7 @@ Everything here reflects my personal taste (listen to my 💎 gems!), not any ki
 - [Pyotr Ilyich Tchaikovsky]({{ '/docs/tchaikovsky' | relative_url }})
 - [Ralph Vaughan Williams]({{ '/docs/vaughanwilliams' | relative_url }})
 - [Antonio Vivaldi]({{ '/docs/vivaldi' | relative_url }})
+- [William Walton]({{ '/docs/walton' | relative_url }})
 - [Alexander von Zemlinsky]({{ '/docs/zemlinsky' | relative_url }})
 
 ---
