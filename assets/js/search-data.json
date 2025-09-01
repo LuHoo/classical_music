@@ -778,7 +778,7 @@
   },"111": {
     "doc": "Home",
     "title": "🔍 Browse by Composer",
-    "content": ". | John Adams | Johann Sebastian Bach | Samuel Barber | Bela Bartok | Ludwig van Beethoven | Hector Berlioz | Boris Blacher | Arthur Bliss | Johannes Brahms | Benjamin Britten | Anton Bruckner | Ferruccio Busoni | Joseph Canteloube | Arcangelo Corelli | Claude Debussy | Ernst von Dohnányi | Edvard Grieg | Paul Hindemith | Vincent d’Indy | Aram Khachaturian | Erich Wolfgang Korngold | Gustav Mahler | Frank Martin | Bohuslav Martinů | Felix Mendelssohn Bartholdy | Wolfgang Amadeus Mozart | Francis Poulenc | Sergei Prokofiev | Sergej Rachmaninov | Einojuhani Rautavaara | Maurice Ravel | Max Reger | Ottorino Respighi | Max Richter | Albert Roussel | Camille Saint-Saëns | Robert Schumann | Franz Schreker | Dmitri Shostakovich | Jean Sibelius | Richard Strauss | Igor Stravinsky | Karol Szymanowski | Pyotr Ilyich Tchaikovsky | Ralph Vaughan Williams | Antonio Vivaldi | Alexander von Zemlinsky | . This site is built with Just the Docs and published using GitHub Pages. ",
+    "content": ". | John Adams | Johann Sebastian Bach | Samuel Barber | Bela Bartok | Ludwig van Beethoven | Hector Berlioz | Boris Blacher | Arthur Bliss | Johannes Brahms | Benjamin Britten | Anton Bruckner | Ferruccio Busoni | Joseph Canteloube | Arcangelo Corelli | Claude Debussy | Ernst von Dohnányi | Edvard Grieg | Paul Hindemith | Vincent d’Indy | Aram Khachaturian | Erich Wolfgang Korngold | Gustav Mahler | Frank Martin | Bohuslav Martinů | Felix Mendelssohn Bartholdy | Wolfgang Amadeus Mozart | Francis Poulenc | Sergei Prokofiev | Sergej Rachmaninov | Einojuhani Rautavaara | Maurice Ravel | Max Reger | Ottorino Respighi | Max Richter | Albert Roussel | Camille Saint-Saëns | Robert Schumann | Franz Schreker | Dmitri Shostakovich | Jean Sibelius | Richard Strauss | Igor Stravinsky | Karol Szymanowski | Pyotr Ilyich Tchaikovsky | Ralph Vaughan Williams | Antonio Vivaldi | William Walton | Alexander von Zemlinsky | . This site is built with Just the Docs and published using GitHub Pages. ",
     "url": "/classical_music/#-browse-by-composer",
     
     "relUrl": "/#-browse-by-composer"
@@ -1854,27 +1854,111 @@
     
     "relUrl": "/docs/vivaldi.html#works-without-opus-number-selection"
   },"265": {
+    "doc": "William Walton",
+    "title": "William Walton",
+    "content": "List of compositions on Wikipedia . ",
+    "url": "/classical_music/docs/walton.html",
+    
+    "relUrl": "/docs/walton.html"
+  },"266": {
+    "doc": "William Walton",
+    "title": "Orchestra",
+    "content": "Dr. Syntax, Pedagogic Overture (1921) . Façade, Suite No. 1 (1921–1926) . Façade, Suite No. 2 (1921–1926) . Portsmouth Point, Overture (1924–1925) . Siesta (1926) . Symphony No. 1 in B♭ minor (1932–1935) Bournemouth Symphony Orchestra, Kirill Karabits . Crown Imperial, A Coronation March (1937) . Music for Children, Suite (1940, 1941) . Scapino, A Comedy Overture (1940) . The Wise Virgins, Suite from the Ballet (1940) . Prelude and Fugue “The Spitfire” (1942) . The Quest, Suite from the Ballet (1943, 1961) . 2 Pieces from the Film Music Henry V (1944) . Suite from Henry V (1944, 1963) . Memorial Fanfare for Henry Wood (1945) . Sonata for string orchestra (1946, 1971) London Philharmonic Orchestra, Jan Latham-Koenig . Hamlet and Ophelia, Poem (1947, 1967) . Hamlet: Funeral March (1947, 1967) . The National Anthem (1953) . Orb and Sceptre, Coronation March (1953) . Variations on an Elizabethan Theme (1953) . God Save the Queen (1955) . The Star-Spangled Banner (1955) . A Winter Journey (1955) . Richard III: A Shakespeare Suite (1955, 1963) . Johannesburg Festival Overture (1956) . Partita for Orchestra (1957) London Philharmonic Orchestra, Bryden Thomson . Symphony No. 2 (1959–1960) Bournemouth Symphony Orchestra, Kirill Karabits . Prelude “Granada” (1962) . Variations on a Theme by Hindemith (1962–1963) London Philharmonic Orchestra, Jan Latham-Koenig . Capriccio burlesco (1968) . Improvisations on an Impromptu of Benjamin Britten (1969) London Philharmonic Orchestra, Bryden Thomson . Varii Capricci (1975–1976) . Prologo e Fantasia (1982) . ",
+    "url": "/classical_music/docs/walton.html#orchestra",
+    
+    "relUrl": "/docs/walton.html#orchestra"
+  },"267": {
+    "doc": "William Walton",
+    "title": "Concertante",
+    "content": "Sinfonia Concertante, for piano and orchestra (1926–1927) . Viola Concerto, for viola and orchestra (1928–1929) Isabelle van Keulen, NDR Radiophilharmonie, Andrew Manze . Violin Concerto, for violin and orchestra (1938–1939) Lydia Mordkovitch, London Philharmonic Orchestra, Jan Latham-Koenig . Cello Concerto, for cello and orchestra (1956) Gautier Capuçon, London Symphony Orchestra, Antonio Pappano . ",
+    "url": "/classical_music/docs/walton.html#concertante",
+    
+    "relUrl": "/docs/walton.html#concertante"
+  },"268": {
+    "doc": "William Walton",
+    "title": "Brass ensemble",
+    "content": "Fanfare for a Great Occasion, for brass and percussion (1947) . Introduction to the National Anthem, A Fanfare, for brass (3 trumpets, 3 trombones) and snare drum (1979) . A Queen’s Fanfare, for brass (8 trumpets, 4 trombones) (1959) . Anniversary Fanfare, for brass (9 trumpets, 7 trombones), timpani and percussion (1973) . Fanfare for the National, for brass, timpani and percussion (1974) . Roaring Fanfare, for brass (3 trumpets, 3 trombones, 2 bass trombones) and percussion (1975) . Medley, for brass band (1979) . Salute for Sir Robert Mayer on His 100th Anniversary, for brass (12 trumpets) and percussion (1979) . The First Shoot, for brass band (1935, 1981) . A Birthday Fanfare, for brass (3 trumpets, 4 horns) and percussion / brass (7 trumpets) and percussion (1981) . ",
+    "url": "/classical_music/docs/walton.html#brass-ensemble",
+    
+    "relUrl": "/docs/walton.html#brass-ensemble"
+  },"269": {
+    "doc": "William Walton",
+    "title": "Chamber",
+    "content": "Piano Quartet, for violin, viola, cello and piano (1919, 1921) Matthew Jones, Sarah-Jane Bradley, Tim Lowe, Annabel Thwaite . String Quartet No. 1, for 2 violins, viola and cello (1919–1922) . Toccata in A minor, for violin and piano (1922–1923) Matthew Jones, Annabel Thwaite . String Quartet in A minor, for 2 violins, viola and cello (1944–1947) . 2 Pieces, for violin and piano (1948–1950) Matthew Jones, Annabel Thwaite . Sonata, for violin and piano (1949) Matthew Jones, Annabel Thwaite . Tema (per variazioni), for cello (1970) . 5 Bagatelles, for guitar (1970–1971) . Passacaglia, for cello (1980) Raphael Wallfisch . Duettino, for oboe and violin (1982) . ",
+    "url": "/classical_music/docs/walton.html#chamber",
+    
+    "relUrl": "/docs/walton.html#chamber"
+  },"270": {
+    "doc": "William Walton",
+    "title": "Keyboard",
+    "content": "Chorale Prelude on Wheatley, for organ (1916) . Valse in C minor, for piano (1917) . Theme for Improvisation, for organ (1936) . Tunes for my Niece, for piano (1940) . Duets for Children, for piano 4-hands (1940) . Galop Final, for piano (1949) . Portsmouth Point, for piano 4-hands (1925) . Valse from Façade, for piano (1926) . Siesta, for piano 4-hands (1926, 1928) . Choral Prelude ‘Herzlich thut mich verlangen’, for piano (1931) . Ballet, for piano (1934) . Crown Imperial, for piano (1937) . Lai and Rondet de carol, for piano (1944) . 3 Pieces, for organ (1963) . ",
+    "url": "/classical_music/docs/walton.html#keyboard",
+    
+    "relUrl": "/docs/walton.html#keyboard"
+  },"271": {
+    "doc": "William Walton",
+    "title": "Vocal",
+    "content": "Tell Me Where Is Fancy Bred?, for soprano, tenor, 3 violins and piano / soprano, tenor and piano (1916) . 4 Songs, for voice and piano (1918) . Tritons, for voice and piano (1920) . The Passionate Shepherd, for tenor and 10 instruments (1920) . Façade: An Entertainment, for reciter and chamber ensemble (1921–1926) . Façade 2: A Further Entertainment, for reciter and chamber ensemble (1921–1929 ) . 3 Songs to Poems by Edith Sitwell, for voice and piano (1932) . Under the Greenwood Tree, for voice (or unison voices) and piano (1936) . Beatriz’s Song, for voice and string quartet (or piano) (1942) . Anon in Love, for tenor and guitar / tenor, string orchestra, harp and percussion (1960) . A Song for the Lord Mayor’s Table, Song Cycle, for soprano and piano (or orchestra) (1962) . ",
+    "url": "/classical_music/docs/walton.html#vocal",
+    
+    "relUrl": "/docs/walton.html#vocal"
+  },"272": {
+    "doc": "William Walton",
+    "title": "Choral",
+    "content": "The Forsaken Merman, Cantata, for soprano, tenor, double female chorus and orchestra (1916) . A Litany, Motet, for mixed chorus a cappella (1916) . Belshazzar’s Feast, for baritone, mixed chorus and orchestra (1931) . Make We Joy Now in This Fest, Old English Carol, for mixed chorus a cappella (1931) . Under the Greenwood Tree, for unison voices (or solo voice) and piano (1936) . In Honour of the City of London, for mixed chorus and orchestra (1937) . Set Me as a Seal upon Thine Heart, An Anthem, for mixed chorus a cappella (1938) . Where Does the Uttered Music Go?, for mixed chorus a cappella (1946) . Put Off the Serpent Girdle, Part-Song, for female chorus a cappella (1949–1950) . Coronation Te Deum, for mixed chorus, orchestra and organ (1952) . Gloria, for alto, tenor, bass, double mixed chorus and orchestra (1961) . What Cheer?, A Christmas Carol, for mixed chorus a cappella (1961) . The Twelve, An Anthem for the Feast of Any Apostle, for mixed chorus and organ (or orchestra) (1964–1965) . Missa Brevis, for double mixed chorus and organ (in “Gloria” only) (1966) . All This Time, Carol, for mixed chorus a cappella (1970) . Jubilate Deo, for double mixed chorus and organ (1971–1972) . Cantico del Sole, Motet, for mixed chorus a cappella (1974) . Magnificat and Nunc Dimittis, for soprano, alto, tenor, bass, mixed chorus and organ (1974, 1976) . Antiphon, for mixed chorus and organ (1977) . King Herod and the Cock, Carol, for mixed chorus a cappella (1977) . ",
+    "url": "/classical_music/docs/walton.html#choral",
+    
+    "relUrl": "/docs/walton.html#choral"
+  },"273": {
+    "doc": "William Walton",
+    "title": "Opera",
+    "content": "Troilus and Cressida, for soloists, chorus and orchestra (1947–1954) . The Bear, An Extravaganza, for soloists and small orchestra (1967) . ",
+    "url": "/classical_music/docs/walton.html#opera",
+    
+    "relUrl": "/docs/walton.html#opera"
+  },"274": {
+    "doc": "William Walton",
+    "title": "Ballet",
+    "content": "The First Shoot (1935) . The Wise Virgins (1940) . The Quest (1943) . Varii Capricci (1975–1976 ) . ",
+    "url": "/classical_music/docs/walton.html#ballet",
+    
+    "relUrl": "/docs/walton.html#ballet"
+  },"275": {
+    "doc": "William Walton",
+    "title": "Film score",
+    "content": "Escape Me Never (1935) . As You Like It (1936) . Dreaming Lips (1937) . Stolen Life (1939) . Major Barbara (1941) . The Next of Kin (1942) . The Foreman Went to France (1942) . The First of the Few (1942) . Went the Day Well? (1942) . Henry V (1944) . Hamlet (1948) . Richard III (1955) . Battle of Britain (1969) . Three Sisters (1970) . ",
+    "url": "/classical_music/docs/walton.html#film-score",
+    
+    "relUrl": "/docs/walton.html#film-score"
+  },"276": {
+    "doc": "William Walton",
+    "title": "Incidental music",
+    "content": "A Son of Heaven (1925) . The Boy David (1936) . Christopher Columbus (1942) . Macbeth (1942) . March for “A History of the English-Speaking Peoples” (1959) . Granada Prelude, Call Signs and End Music (1962) . Title Music for the BBC Television ShakespeareSeries (1977) . ",
+    "url": "/classical_music/docs/walton.html#incidental-music",
+    
+    "relUrl": "/docs/walton.html#incidental-music"
+  },"277": {
     "doc": "Alexander von Zemlinsky",
     "title": "Alexander von Zemlinsky",
     "content": "List of works on Wikipedia . ",
     "url": "/classical_music/docs/zemlinsky.html",
     
     "relUrl": "/docs/zemlinsky.html"
-  },"266": {
+  },"278": {
     "doc": "Alexander von Zemlinsky",
     "title": "Voice and Orchestra",
     "content": "Waldgespräch (T: Joseph von Eichendorff), for soprano, two horns, harp, and strings (1896) Gürzenich-Orchester Köln, James Conlon . Maiblumen blühten überall (T: Richard Dehmel), for soprano and string sextet (1899) Gürzenich-Orchester Köln, James Conlon . Erdeinsamkeit (T: unknown), for soprano and orchestra (1900-01, orchestrated by Antony Beaumont, 1999) Gürzenich-Orchester Köln, James Conlon . Der alte Garten (T: Joseph von Eichendorff), for soprano and orchestra (1900-01, orchestrated by Antony Beaumont, 1999) Gürzenich-Orchester Köln, James Conlon . 💎 Sechs Gesänge after poems by Maurice Maeterlinck, Op. 13, for soprano and orchestra (1910/13, orchestrated 1913/21) Gürzenich-Orchester Köln, James Conlon . Lyric Symphony, for soprano, baritone, and orchestra, Op. 18 (after poems by Rabindranath Tagore) (1922–23) H\\r{a}kan Hageg\\r{a}rd, Alessandra Marc, KCO, Riccardo Chailly . Symphonische Gesänge, Op. 20, for baritone or alto and orchestra (T: from Afrika singt. Eine Auslese neuer afro-amerikanischer Lyrik) (1929) Willard White, KCO, Riccardo Chailly . ",
     "url": "/classical_music/docs/zemlinsky.html#voice-and-orchestra",
     
     "relUrl": "/docs/zemlinsky.html#voice-and-orchestra"
-  },"267": {
+  },"279": {
     "doc": "Alexander von Zemlinsky",
     "title": "Orchestral Works",
     "content": "Symphony in E minor (1891) – two surviving movements only . Symphony No. 1 in D minor (1892–93) Gürzenich-Orchester Köln, James Conlon . Eine Lustspielouvertüre (1894–95) . Symphony No. 2 in B-flat major (1897) Gürzenich-Orchester Köln, James Conlon . Drei Ballettstücke. Suite from Der Triumph der Zeit (1902) . Die Seejungfrau (The Mermaid), fantasy after Hans Christian Andersen’s “The Little Mermaid” (1902–03, premiered in Vienna in 1905) [Gürzenich-Orchester Köln, James Conlon] Gürzenich-Orchester Köln, James Conlon . Sinfonietta, Op. 23 (1934, first performance, Prague 1935) [Gürzenich-Orchester Köln, James Conlon] Gürzenich-Orchester Köln, James Conlon . Suite from the Incidental Music for Shakespeare’s Cymbeline Gürzenich-Orchester Köln, James Conlon . Der gläserne Herz, Act II “Ein Tanzpoem” Gürzenich-Orchester Köln, James Conlon . ",
     "url": "/classical_music/docs/zemlinsky.html#orchestral-works",
     
     "relUrl": "/docs/zemlinsky.html#orchestral-works"
-  },"268": {
+  },"280": {
     "doc": "Alexander von Zemlinsky",
     "title": "Choral Works",
     "content": "Minnelied (T: Heinrich Heine) for men’s choir and chamber ensemble (c.1895) Gürzenich-Orchester Köln, James Conlon . Frühlingsglaube for mixed chorus and string orchestra (T: Ludwig Uhland) (1896) Gürzenich-Orchester Köln, James Conlon . Geheimnis for mixed chorus and string orchestra (1896) Gürzenich-Orchester Köln, James Conlon . Hochzeitsgesang (T: Jewish liturgy) for Cantor (Tenor), chorus, and organ (1896), Text: Baruch Haba, Mi Adir Gürzenich-Orchester Köln, James Conlon . 💎 Frühlingsbegräbnis (Text: Paul Heyse), Cantata for soprano, baritone, mixed chorus and orchestra (1896/97, rev. c.1903) Gürzenich-Orchester Köln, James Conlon . Aurikelchen (T: Richard Dehmel) for women’s choir (1898) Gürzenich-Orchester Köln, James Conlon . Psalm 83 for mixed chorus and orchestra (1900) Slovak Philharmonic Choir, Wiener Philharmoniker, Riccardo Chailly . Psalm 23 for chorus and orchestra, Op. 14 (1910, first performance, Vienna 1910) Gürzenich-Orchester Köln, James Conlon . Psalm 13 for chorus and orchestra, Op. 24 (1935) Gürzenich-Orchester Köln, James Conlon . ",
