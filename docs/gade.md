@@ -9,118 +9,238 @@ nav_order: 1
 
 
 **Overture, E** (1836)
+
 **Allegro, A minor, String quartet** (1836)
+
 **Andante & allegro molto, F minor String quintet (2 violins, viola and 2 cellos)** (1837)
+
 **Piano trio, B-flat major** (1839)
+
 **Seht', welch ein Mensch! Hymn. Choir a capella.** (1840)
-**Hilf uns, Gott, in unserm Streit. Gebeth. Choir a capella.** (1840)
-**Echoes of Ossian (Efterklange af Ossian), A minor Overture**  Op. 1,(1840)
-**Fædrelandets muser, ballet, Johannes Frederik Frølich** (1840)
-**Piano Sonata in E minor (revised 1854)**  Op. 28,(1840)
+
+**Hilf uns, Gott, in unserm Streit. Gebeth. Choir a capella.** (1840)
+
+**Echoes of Ossian (Efterklange af Ossian), A minor Overture**  Op. 1, (1840) [*Danish National Symphony Orchestra, Christopher Hogwood*](http://www.tidal.com/track/12444898)
+
+**Fædrelandets muser, ballet, Johannes Frederik Frølich** (1840)
+
+**Piano Sonata in E minor (revised 1854)**  Op. 28, (1840)
+
 **String quartet, F major** (1840)
+
 **Fem Fædrelandshistoriske Songs** (1840)
-**Spring Flowers (Foraarstoner), 3 Piano pieces. Revised Version 1873**  Op. 2b,(1841)
-**6 Songs. Christoph Ernst Friedrich Weyse** (1841)
-**Agnete og Havfruerne. Solo, female choir and orchestra. Text by H. C. Andersen**  Op. 3,(1842)
-**Nordiske Tonebilleder. Piano 4 hands**  Op. 4,(1842)
-**1st Symphony, C minor, Paa Sjølunds fagre Sletter**  Op. 5,(1842)
-**1st violin sonata, A major**  Op. 6,(1842)
-**Napoli. Ballet by August Bournonville. (H. S. Paulli & Edvard Helsted)** (1842)
-**3 Songs. Text by Christian Winther** (1842)
-**2nd Symphony, E major**  Op. 10,(1843)
-**In the Highlands (I Højlandet), D major. Overture**  Op. 7,(1844)
-**String quintet, E minor. 2 violins, 2 violas, cello**  Op. 8,(1845)
-**Nine folksongs. Soli and piano. Text by ?**  Op. 9,(1845)
-**6 Songs. Male choir**  Op. 11,(1845)
-**Comala. Cantata. Soli, choir and orchestra. Text after Ossian**  Op. 12,(1846)
-**5 Songs. Choir a capella. Text by Emanuel Geibel**  Op. 13,(1846)
-**Overture (No. 3), C major**  Op. 14,(1846)
-**O du, der du die Liebe bist. Choir and strings. Text by ?** (1846)
-**3rd Symphony, A minor**  Op. 15,(1847)
-**Horseman's Life (Ridderliv). 6 Songs. Male choir. Text by C. Schultes**  Op. 16,(1848)
-**Three character pieces, Piano 4 hands**  Op. 18,(1848)
-**Octet, F major, 4 violins, 2 violas and 2 cellos**  Op. 17,(1849)
-**2nd violin sonata, D minor**  Op. 21a,(1849)
-**Three digte. Text by Carsten Hauch**  Op. 21b,(1849)
-**Mariotta. Syngestykke. Text by Carl Borgaard efter Eugène Scribe** (1849)
-**Akvareller, Piano**  Op. 19,(1850)
-**4th Symphony, B-flat major**  Op. 20,(1850)
+
+**Spring Flowers (Foraarstoner), 3 Piano pieces. Revised Version 1873**  Op. 2b, (1841)
+
+**6 Songs. Christoph Ernst Friedrich Weyse** (1841)
+
+**Agnete og Havfruerne. Solo, female choir and orchestra. Text by H. C. Andersen**  Op. 3, (1842) [*Danish National Symphony Orchestra, Christopher Hogwood*](http://www.tidal.com/track/245885145)
+
+**Nordiske Tonebilleder. Piano 4 hands**  Op. 4, (1842)
+
+**1st Symphony, C minor, Paa Sjølunds fagre Sletter**  Op. 5, (1842) [*Danish National Symphony Orchestra, Christopher Hogwood*](http://www.tidal.com/track/221925345)
+
+**1st violin sonata, A major**  Op. 6, (1842)
+
+**Napoli. Ballet by August Bournonville. (H. S. Paulli & Edvard Helsted)** (1842)
+
+**3 Songs. Text by Christian Winther** (1842)
+
+**2nd Symphony, E major**  Op. 10, (1843) [*Danish National Symphony Orchestra, Christopher Hogwood*](http://www.tidal.com/track/12447311)
+
+**In the Highlands (I Højlandet), D major. Overture**  Op. 7, (1844) [*Danish National Symphony Orchestra, Christopher Hogwood*](http://www.tidal.com/track/12447321)
+
+**String quintet, E minor. 2 violins, 2 violas, cello**  Op. 8, (1845)
+
+**Nine folksongs. Soli and piano. Text by ?**  Op. 9, (1845)
+
+**6 Songs. Male choir**  Op. 11, (1845)
+
+**Comala. Cantata. Soli, choir and orchestra. Text after Ossian**  Op. 12, (1846)
+
+**5 Songs. Choir a capella. Text by Emanuel Geibel**  Op. 13, (1846)
+
+**Overture (No. 3), C major**  Op. 14, (1846)
+
+**O du, der du die Liebe bist. Choir and strings. Text by ?** (1846)
+
+**3rd Symphony, A minor**  Op. 15, (1847) [*Danish National Symphony Orchestra, Christopher Hogwood*](http://www.tidal.com/track/12444899)
+
+**Horseman's Life (Ridderliv). 6 Songs. Male choir. Text by C. Schultes**  Op. 16, (1848)
+
+**Three character pieces, Piano 4 hands**  Op. 18, (1848)
+
+**Octet, F major, 4 violins, 2 violas and 2 cellos**  Op. 17, (1849)
+
+**2nd violin sonata, D minor**  Op. 21a, (1849)
+
+**Three digte. Text by Carsten Hauch**  Op. 21b, (1849)
+
+**Mariotta. Syngestykke. Text by Carl Borgaard efter Eugène Scribe** (1849)
+
+**Akvareller, Piano**  Op. 19, (1850)
+
+**4th Symphony, B-flat major**  Op. 20, (1850) [*Danish National Symphony Orchestra, Christopher Hogwood*](http://www.tidal.com/track/245885150)
+
 **Nordisk Sæterrejse, F major. Lystspil Overture** (1850)
+
 **3 Songs. Text by H. C. Andersen** (1850)
-**3 tone pieces, Organ**  Op. 22,(1851)
+
+**3 tone pieces, Organ**  Op. 22, (1851)
+
 **String quartet, F minor** (1851)
-**Spring Fantasy (Foraarsfantasi). Cantata. Soli, piano and orchestra. Text by Edmund Lobedanz**  Op. 23,(1852)
-**Bilder des Orients. 5 songs. Text by Heinrich Stieglitz**  Op. 24,(1852)
-**5th Symphony, D minor, Piano**  Op. 25,(1852)
+
+**Spring Fantasy (Foraarsfantasi). Cantata. Soli, piano and orchestra. Text by Edmund Lobedanz**  Op. 23, (1852)
+
+**Bilder des Orients. 5 songs. Text by Heinrich Stieglitz**  Op. 24, (1852)
+
+**5th Symphony, D minor, Piano**  Op. 25, (1852) [*Danish National Symphony Orchestra, Christopher Hogwood*](http://www.tidal.com/track/221925349)
+
 **Albumsblade. Piano** (1852)
+
 **3 Songs** (1852)
-**Op thi Dagen nu frembryder. Text by Hans Adolph Brorson** (1852)
-**5 Songs. Male choir**  Op. 26,(1853)
-**Novelletter, Piano trio**  Op. 29,(1853)
-**Arabeske. Piano**  Op. 27,(1854)
-**Piano sonata, E minor. Revision of the 1840 sonata**  Op. 28,(1854)
-**Elverskud. Cantata. Soli, choir and orchestra. Text by Christian Molbech**  Op. 30,(1854)
+
+**Op thi Dagen nu frembryder. Text by Hans Adolph Brorson** (1852)
+
+**5 Songs. Male choir**  Op. 26, (1853)
+
+**Novelletter, Piano trio**  Op. 29, (1853)
+
+**Arabeske. Piano**  Op. 27, (1854)
+
+**Piano sonata, E minor. Revision of the 1840 sonata**  Op. 28, (1854)
+
+**Elverskud. Cantata. Soli, choir and orchestra. Text by Christian Molbech**  Op. 30, (1854)
+
 **Et folkesagn. Ballet by August Bournonville. (Acts I and III; J. P. E. Hartmann composed the music for Act II)** (1854)
-**Folkedanse. Piano**  Op. 31,(1855)
-**Udrust dig Helt fra Golgata. Text by Johannes Ewald** (1856)
-**O du, der du die Liebe bist. Choir a capella. Text by ? (Tidligere version 1846)** (1856)
+
+**Folkedanse. Piano**  Op. 31, (1855)
+
+**Udrust dig Helt fra Golgata. Text by Johannes Ewald** (1856)
+
+**O du, der du die Liebe bist. Choir a capella. Text by ? (Tidligere version 1846)** (1856)
+
 **Minde Cantata over Fru Anna Nielsen** (1856)
-**6th Symphony, G minor**  Op. 32,(1857)
-**Idyller. Piano**  Op. 34,(1857)
-**Baldurs drøm. Cantata. Soli, choir and orchestra. Text by Adolph Hertz** (1857)
+
+**6th Symphony, G minor**  Op. 32, (1857) [*Danish National Symphony Orchestra, Christopher Hogwood*](http://www.tidal.com/track/12444904)
+
+**Idyller. Piano**  Op. 34, (1857)
+
+**Baldurs drøm. Cantata. Soli, choir and orchestra. Text by Adolph Hertz** (1857)
+
 **Fra skitsebanden. Piano** (1857)
-**5 Songs. Male choir**  Op. 33,(1858)
-**Foraars-Budskab. Koncertstykke. Choir and orchestra. Text by Emanuel Geibel**  Op. 35,(1858)
-**Children's Christmas (Børnenes Jul), Piano**  Op. 36,(1859)
+
+**5 Songs. Male choir**  Op. 33, (1858)
+
+**Foraars-Budskab. Koncertstykke. Choir and orchestra. Text by Emanuel Geibel**  Op. 35, (1858)
+
+**Children's Christmas (Børnenes Jul), Piano**  Op. 36, (1859)
+
 **Barn Jesus i en Krybbe laa. Text by H. C. Andersen** (1859)
+
 **Minde Cantata for Overhofmarschal Chamberlain Levetzau** (1859)
+
 **Andantino, C-sharp minor. Piano** (1860)
+
 **Albumblad, C major. Piano** (1860)
+
 **Danserinden, F major. Piano** (1860)
+
 **Minde Cantata for Skuespiller Nielsen** (1860)
-**Hamlet, C minor. Overture**  Op. 37,(1861)
-**Michelangelo, F major. Overture**  Op. 39,(1861)
-**Die heilige Nacht. Cantata. Solo, choir and orchestra. Text after August von Platen-Hallermünde**  Op. 40,(1861)
-**Four Fantastic Pieces. Piano**  Op. 41,(1861)
+
+**Hamlet, C minor. Overture**  Op. 37, (1861)
+
+**Michelangelo, F major. Overture**  Op. 39, (1861)
+
+**Die heilige Nacht. Cantata. Solo, choir and orchestra. Text after August von Platen-Hallermünde**  Op. 40, (1861)
+
+**Four Fantastic Pieces. Piano**  Op. 41, (1861)
+
 **Piano piece, B-flat major. Oprindelig skitse til Fantasistykke op 41** (1861)
+
 **Scherzino Akvarel. Piano** (1861)
-**5 Songs. Male choir**  Op. 38,(1862)
-**Piano trio, F major**  Op. 42,(1863)
+
+**5 Songs. Male choir**  Op. 38, (1862)
+
+**Piano trio, F major**  Op. 42, (1863)
+
 **Sørgemarch ved Kong Frederik. d. 7.'s Død D minor.** (1863)
+
 **Holger Danskes Songs. Text by B. S. Ingemann** (1863)
-**4 Fantasi pieces, clarinet and piano**  Op. 43,(1864)
-**Sextet, E-flat major, 2 violins, 2 violas and 2 cellos**  Op. 44,(1864)
-**7th Symphony, F major**  Op. 45,(1864)
-**At Sunset (Ved solnedgang). Cantata. Choir and orchestra. Text by Andreas Munch**  Op. 46,(1865)
-**The Crusaders (Korsfarerne). Cantata. Soli, choir and orchestra. Text by Carl Andersen**  Op. 50,(1866)
-**Kalanus. Cantata. Soli, choir and orchestra. Text by Carl Andersen**  Op. 48,(1869)
-**Gefion. Cantata. Baritone, choir and orchestra. Text by Adam Oehlenschläger**  Op. 54,(1869)
-**Festsang i Rosenborg Have. Choir and piano. Text by Frederik Paludan-Müller (?)** (1869)
-**8th Symphony, B minor**  Op. 47,(1871)
-**Seasonal Pictures (Aarstidsbilleder). Soli, female choir and orchestra. Text by Carl Andersen**  Op. 51,(1871)
-**Festmusik til den nordiske Industriudstillings Aabningsfest. Choir. Text by Carl Ploug** (1872)
-**The Mountain Thrall (Den bjergtagne). Cantata. soli, male choir and orchestra. Text by Carsten Hauch**  Op. 52,(1873)
-**Spring Flowers (Foraarstoner), 3 piano pieces. (revised version of 1841 pieces)**  Op. 2b,(1873)
+
+**4 Fantasi pieces, clarinet and piano**  Op. 43, (1864)
+
+**Sextet, E-flat major, 2 violins, 2 violas and 2 cellos**  Op. 44, (1864)
+
+**7th Symphony, F major**  Op. 45, (1864) [*Danish National Symphony Orchestra, Christopher Hogwood*](http://www.tidal.com/track/245885146)
+
+**At Sunset (Ved solnedgang). Cantata. Choir and orchestra. Text by Andreas Munch**  Op. 46, (1865)
+
+**The Crusaders (Korsfarerne). Cantata. Soli, choir and orchestra. Text by Carl Andersen**  Op. 50, (1866)
+
+**Kalanus. Cantata. Soli, choir and orchestra. Text by Carl Andersen**  Op. 48, (1869)
+
+**Gefion. Cantata. Baritone, choir and orchestra. Text by Adam Oehlenschläger**  Op. 54, (1869)
+
+**Festsang i Rosenborg Have. Choir and piano. Text by Frederik Paludan-Müller (?)** (1869)
+
+**8th Symphony, B minor**  Op. 47, (1871) [*Danish National Symphony Orchestra, Christopher Hogwood*](http://www.tidal.com/track/12447315)
+
+**Allegretto, un poco lento** (Discarded slow movement from Symphony No. 8) [*Danish National Symphony Orchestra, Christopher Hogwood*](http://www.tidal.com/track/12447320)
+
+**Seasonal Pictures (Aarstidsbilleder). Soli, female choir and orchestra. Text by Carl Andersen**  Op. 51, (1871)
+
+**Festmusik til den nordiske Industriudstillings Aabningsfest. Choir. Text by Carl Ploug** (1872)
+
+**The Mountain Thrall (Den bjergtagne). Cantata. soli, male choir and orchestra. Text by Carsten Hauch**  Op. 52, (1873)
+
+**Spring Flowers (Foraarstoner), 3 piano pieces. (revised version of 1841 pieces)**  Op. 2b, (1873)
+
 **Festligt præludium over salmen "Lover den Herre". Organ** (1873)
-**Zion. Cantata. Baritone, choir and orchestra. Text by Carl Andersen**  Op. 49,(1874)
-**Novelletter, F major, Strings**  Op. 53,(1874)
-**Rebus, 3 piano pieces[2]**  Op. 2a,(1875)
+
+**Zion. Cantata. Baritone, choir and orchestra. Text by Carl Andersen**  Op. 49, (1874)
+
+**Novelletter, F major, Strings**  Op. 53, (1874)
+
+**Rebus, 3 piano pieces[2]**  Op. 2a, (1875)
+
 **Akvarel, A major, Piano** (1876)
+
 **String quartet, E minor.** (1877)
+
 **Capriccio, A minor. Violin and orchestra** (1878)
-**En Sommerdag paa Landet, Orchestral suite**  Op. 55,(1879)
+
+**En Sommerdag paa Landet, Orchestral suite**  Op. 55, (1879)
+
 **Festmusik i anledning by Universitetets 400 Aars Jubilæum** (1879)
-**Fiskerdrengen leger ved salten Vesterhav, Fiskerdrengen. Text by Chr. Richardt** (1879)
-**Violin concerto, D minor**  Op. 56,(1880)
-**Nye Akvareller. Piano**  Op. 57,(1881)
-**Psyche. Cantata. Soli, choir and orchestra. Text by Carl Andersen**  Op. 60,(1882)
+
+**Fiskerdrengen leger ved salten Vesterhav, Fiskerdrengen. Text by Chr. Richardt** (1879)
+
+**Violin concerto, D minor**  Op. 56, (1880)
+
+**Nye Akvareller. Piano**  Op. 57, (1881)
+
+**Psyche. Cantata. Soli, choir and orchestra. Text by Carl Andersen**  Op. 60, (1882)
+
 **Festmusik til nordisk Kunstnermøde** (1883)
-**Holbergiana, Orchestral suite**  Op. 61,(1884)
+
+**Holbergiana, Orchestral suite**  Op. 61, (1884)
+
 **Ulysses-March. Forspil til Holberg: Ulysses von Ithaca** (1884)
-**3rd violin sonata, B-flat major**  Op. 59,(1885)
+
+**3rd violin sonata, B-flat major**  Op. 59, (1885)
+
 **Benedictus and Amen. Choir and organ** (1885)
-**Novelletter, E major, Strings**  Op. 58,(1886)
-**Folkedanse, Violin and piano**  Op. 62,(1886)
-**String quartet, D major**  Op. 63,(1889)
-**Der Strom. Cantata. Soli, choir, piano and orchestra. Text after Goethe's translation of Voltaire's Mahomet**  Op. 64,(1889)
+
+**Novelletter, E major, Strings**  Op. 58, (1886)
+
+**Folkedanse, Violin and piano**  Op. 62, (1886)
+
+**String quartet, D major**  Op. 63, (1889)
+
+**Der Strom. Cantata. Soli, choir, piano and orchestra. Text after Goethe's translation of Voltaire's Mahomet**  Op. 64, (1889)
+
 **String quartet, E minor. Revision of the 1877 quartet** (1889)
+
+
+
