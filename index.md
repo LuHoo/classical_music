@@ -42,6 +42,7 @@ Everything here reflects my personal taste (listen to my 💎 gems!), not any ki
 - [Bohuslav Martinů]({{ '/docs/martinu' | relative_url }})
 - [Felix Mendelssohn Bartholdy]({{ '/docs/mendelssohn' | relative_url }})
 - [Wolfgang Amadeus Mozart]({{ '/docs/mozart' | relative_url }})
+- [Carl Nielsen]({{ '/docs/nielsen' | relative_url }})
 - [Francis Poulenc]({{ '/docs/poulenc' | relative_url }})
 - [Sergei Prokofiev]({{ '/docs/prokofiev' | relative_url }})
 - [Sergej Rachmaninov]({{ '/docs/rachmaninov' | relative_url }})
