@@ -1,9 +1,9 @@
 ---
-title: Cart Nielsen
+title: Carl Nielsen
 nav_order: 1
 ---
 
-# Cart Nielsen
+# Carl Nielsen
 
 [Composer page on Wikipedia](https://en.wikipedia.org/wiki/List_of_compositions_by_Carl_Nielsen)
 
