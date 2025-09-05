@@ -34,6 +34,7 @@ Everything here reflects my personal taste (listen to my 💎 gems!), not any ki
 - [Niels Gade]({{ '/docs/gade' | relative_url }})
 - [Edvard Grieg]({{ '/docs/grieg' | relative_url }})
 - [Paul Hindemith]({{ '/docs/hindemith' | relative_url }})
+- [Gustav Holst]({{ '/docs/holst' | relative_url }})
 - [Vincent d'Indy]({{ '/docs/dindy' | relative_url }})
 - [Aram Khachaturian]({{ '/docs/khachaturian' | relative_url }})
 - [Erich Wolfgang Korngold]({{ '/docs/korngold' | relative_url }})
