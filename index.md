@@ -20,6 +20,7 @@ Everything here reflects my personal taste (listen to my 💎 gems!), not any ki
 - [Samuel Barber]({{ '/docs/barber' | relative_url }})
 - [Bela Bartok]({{ '/docs/bartok' | relative_url }})
 - [Ludwig van Beethoven]({{ '/docs/beethoven' | relative_url }})
+- [Luciano Berio]({{ '/docs/berio' | relative_url }})
 - [Hector Berlioz]({{ '/docs/berlioz' | relative_url }})
 - [Boris Blacher]({{ '/docs/blacher' | relative_url }})
 - [Arthur Bliss]({{ '/docs/bliss' | relative_url }})
