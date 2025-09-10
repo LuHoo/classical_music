@@ -15,7 +15,7 @@ nav_order: 1
 
 **Façade, Suite No. 2** (1921–1926)
 
-**Portsmouth Point, Overture** (1924–1925)
+**Portsmouth Point, Overture** (1924–1925) [*Sinfonia of London, John Wilson*](https://tidal.com/browse/track/413175506/u)
 
 **Siesta** (1926)
 
@@ -229,7 +229,7 @@ nav_order: 1
 
 ## Opera
 
-**Troilus and Cressida**, for soloists, chorus and orchestra (1947–1954)
+**Troilus and Cressida**, for soloists, chorus and orchestra (1947–1954) [Symphonic Suite: *Charlie Lovell-Jones, Sinfonia of London, John Wilson*](https://tidal.com/browse/track/413175497/u)
 
 **The Bear, An Extravaganza**, for soloists and small orchestra (1967)
 
