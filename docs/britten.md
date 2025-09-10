@@ -7,6 +7,14 @@ nav_order: 1
 
 [List of works on Wikipedia](https://en.wikipedia.org/wiki/List_of_compositions_by_Benjamin_Britten)
 
+## Ballets
+
+**Plymouth Town** ballet for small orchestra (1931)
+
+**The Prince of the Pagodas**, Op. 57 (1956) [*The Hallé Orchestra, Kahchun Wong*](https://tidal.com/browse/album/382063728/u)
+
+**Les Sylphides** after Chopin (1940)
+
 ## Orchestral
 
 **Two Portraits** for string orchestra (1930) [*BBC Symphony Orchestra, Edward Gardner*](http://www.tidal.com/track/215060741)
