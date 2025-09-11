@@ -142,7 +142,7 @@ D 94, String Quartet No. 7, String Quartet in D major (1811 or 1812)
 
 D 103, Quartettsatz (D 103), String Quartet in C minor, (1814, fragment of the first movement is extant)
 
-D 112, String Quartet No. 8, String Quartet in B♭ major (1814, first published as Op. posth. 168)
+D 112, String Quartet No. 8, String Quartet in B♭ major (1814, first published as Op. posth. 168) [*Takács Quartet*](https://tidal.com/browse/track/365138244/u)
 
 D 173, String Quartet No. 9, String Quartet in G minor (1815)
 
@@ -154,7 +154,7 @@ D 804, String Quartet No. 13, String Quartet in A minor, Rosamunde (1824, first 
 
 D 810, String Quartet No. 14, String Quartet in D minor, Death and the Maiden (1824) [*Fitzwilliam String Quartet*](https://tidal.com/browse/track/284765982)
 
-D 887, String Quartet No. 15, String Quartet in G major, (1826, first published as Op. posth. 161)
+D 887, String Quartet No. 15, String Quartet in G major, (1826, first published as Op. posth. 161) [*Takács Quartet*](https://tidal.com/browse/track/365138240/u)
 
 D Anh. I,1, String Quartet in E♭ major [formerly D 40] (1813, lost or identical to D 87)
 
