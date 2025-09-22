@@ -29,7 +29,7 @@ nav_order: 1
 
 💎 **Fantastic Scherzo in G minor**, Op. 25 (1902–1903) [*Czech Philharmonic, Sir Charles Mackerras*](http://www.tidal.com/track/29780290)
 
-**Praga**, Op. 26 (1904) 
+**Praga**, Op. 26 (1904) [*Prague Symphony Orchestra, Tomás Brauner*](https://tidal.com/browse/track/347289267/u)
 
 **Asrael Symphony in C minor**, Op. 27 (1905–1906) [*Czech Philharmonic, Jiří Bělohlávek*](http://www.tidal.com/track/108016469)
 
