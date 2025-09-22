@@ -63,6 +63,7 @@ Everything here reflects my personal taste (listen to my 💎 gems!), not any ki
 - [Jean Sibelius]({{ '/docs/sibelius' | relative_url }})
 - [Richard Strauss]({{ '/docs/strauss' | relative_url }})
 - [Igor Stravinsky]({{ '/docs/stravinsky' | relative_url }})
+- [Josef Suk]({{ '/docs/suk' | relative_url }})
 - [Karol Szymanowski]({{ '/docs/szymanowski' | relative_url }})
 - [Pyotr Ilyich Tchaikovsky]({{ '/docs/tchaikovsky' | relative_url }})
 - [Ralph Vaughan Williams]({{ '/docs/vaughanwilliams' | relative_url }})
