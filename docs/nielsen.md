@@ -19,7 +19,7 @@ nav_order: 1
 
 **Symphony No. 2**, Op. 16, FS 29 (1901–1902) [*Danish National Symphony Orchestra, Fabio Luisi*](http://www.tidal.com/track/272467503)
 
-**Helios Overture**, Op. 17, FS 32 (1903)
+**Helios Overture**, Op. 17, FS 32 (1903) [*Bergen Philharmonic Orchestra, Edward Gardner*](https://tidal.com/track/449683858)
 
 **Symphony No. 3**, Op. 27, FS 60 (1910–1911) [*Danish National Symphony Orchestra, Fabio Luisi*](http://www.tidal.com/track/263917125)
 
@@ -43,4 +43,10 @@ nav_order: 1
 
 **Bøhmisk-dansk Folketone**, FS 130 (1928)
 
+## Concertante
 
+**Violin Concerto**, Op. 33, FS 61 (1911)
+
+**Flute Concerto**, FS 119 (1926)
+
+**Clarinet Concerto**, Op. 57, FS 129 (1928) [*Alessandro Carbonare, Bergen Philharmonic Orchestra, Edward Gardner*](https://tidal.com/track/449683859)
