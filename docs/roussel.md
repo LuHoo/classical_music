@@ -17,7 +17,7 @@ nav_order: 1
 
 **La naissance de la lyre, Op. 24**, opera in 1 act, Paris Opéra (1925)
 
-**Sarabande** (1927; for the children's ballet *L'éventail de Jeanne*, to which ten French composers each contributed a dance)
+**Sarabande** (1927; for the children's ballet *L'éventail de Jeanne*, to which ten French composers each contributed a dance) [*Philharmonia Orchestra, Geoffrey Simon*](https://tidal.com/track/376411784)
 
 💎 **Bacchus and Ariadne, Op. 43** ballet in two acts, f.p. Paris Opéra (1931) [*BBC PO, Yan Pascal Tortelier*](https://tidal.com/album/377163547)
 
