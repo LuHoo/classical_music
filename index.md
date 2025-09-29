@@ -24,6 +24,7 @@ Everything here reflects my personal taste (listen to my 💎 gems!), not any ki
 - [Hector Berlioz]({{ '/docs/berlioz' | relative_url }})
 - [Boris Blacher]({{ '/docs/blacher' | relative_url }})
 - [Arthur Bliss]({{ '/docs/bliss' | relative_url }})
+- [Henriëtte Bosmans]({{ '/docs/bosmans' | relative_url }})
 - [Johannes Brahms]({{ '/docs/brahms' | relative_url }})
 - [Benjamin Britten]({{ '/docs/britten' | relative_url }})
 - [Anton Bruckner]({{ '/docs/bruckner' | relative_url }})
