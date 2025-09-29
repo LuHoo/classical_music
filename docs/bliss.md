@@ -52,7 +52,7 @@ nav_order: 1
 
 **Hymn to Apollo**, F. 116 (1926/1965) [*Ulster Orchestra, Vernon Handley*](http://www.tidal.com/track/12423583)
 
-**Introduction and Allegro**, F. 117 (1926/1937)
+**Introduction and Allegro**, F. 117 (1926/1937) [*Royal Philharmonic Orchestra, Barry Wordsworth*](https://tidal.com/track/63262076/u)
 
 **Pastoral 'Lie strewn the white flocks'**, F. 33 (1928) [*Ulster Orchestra, Vernon Handley*](http://www.tidal.com/track/12423587)
 
@@ -76,7 +76,7 @@ nav_order: 1
 
 **A Birthday Greeting for Her Majesty**, F. 101 (1955)
 
-**Meditation on a Theme by John Blow**, F. 118 (1955)
+**Meditation on a Theme by John Blow**, F. 118 (1955) [*Royal Philharmonic Orchestra, Barry Wordsworth*](https://tidal.com/track/63262080)
 
 **Edinburgh Overture**, F. 114 (1956)
 
@@ -96,7 +96,7 @@ nav_order: 1
 
 **The World is charged with the Grandeur of God**, F. 36 (1969)
 
-**Cello Concerto**, F. 107 (1970; premiered by Mstislav Rostropovich)
+**Cello Concerto**, F. 107 (1970; premiered by Mstislav Rostropovich) [*Robert Cohen, Royal Philharmonic Orchestra, Barry Wordsworth*](https://tidal.com/track/63262077)
 
 **Two Ballads**, F. 35 (1971)
 
