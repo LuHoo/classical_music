@@ -5,7 +5,7 @@ nav_order: 1
 
 # Carl Nielsen
 
-[Composer page on Wikipedia](https://en.wikipedia.org/wiki/List_of_compositions_by_Carl_Nielsen)
+[List of works on Wikipedia](https://en.wikipedia.org/wiki/List_of_compositions_by_Carl_Nielsen)
 
 ## Orchestral
 
@@ -19,7 +19,7 @@ nav_order: 1
 
 **Symphony No. 2**, Op. 16, FS 29 (1901–1902) [*Danish National Symphony Orchestra, Fabio Luisi*](http://www.tidal.com/track/272467503)
 
-**Helios Overture**, Op. 17, FS 32 (1903) [*Bergen Philharmonic Orchestra, Edward Gardner*](https://tidal.com/track/449683858)
+**Helios Overture**, Op. 17, FS 32 (1903) [*Bergen Philharmonic Orchestra, Edward Gardner*](https://tidal.com/track/449683858) (10/2025)
 
 **Symphony No. 3**, Op. 27, FS 60 (1910–1911) [*Danish National Symphony Orchestra, Fabio Luisi*](http://www.tidal.com/track/263917125)
 
