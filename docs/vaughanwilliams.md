@@ -9,6 +9,8 @@ nav_order: 1
 
 ## Incidental
 
+**Scenes Adapted from Bunyan's Pilgrim's Progress** (1906) [*BBC Symphony Orchestra, Martyn Brabbins*](http://www.tidal.com/track/340821956)
+
 **The Wasps** (1909)
 
 **The Wasps, Aristophanic Suite** (1912)
@@ -101,7 +103,7 @@ nav_order: 1
 
 **Fantasia (quasi variazione) on the Old 104th Psalm Tune for Piano, Chorus, and Orchestra** (1949)
 
-💎 **Symphony No. 7 'Sinfonia antartica'** (1949–52) (partly based on his music for the film *Scott of the Antarctic*) [*Elizabeth Watts, BBC SO, Martyn Brabbins*]()
+💎 **Symphony No. 7 'Sinfonia antartica'** (1949–52) (partly based on his music for the film *Scott of the Antarctic*) [*Elizabeth Watts, BBC SO, Martyn Brabbins*](http://www.tidal.com/track/306142152)
 
 **Concerto Grosso, for three groups of strings, each requiring different levels of technical skill** (1950)
 
