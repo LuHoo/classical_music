@@ -64,6 +64,7 @@ Everything here reflects my personal taste (listen to my 💎 gems!), not any ki
 - [Franz Schreker]({{ '/docs/schreker' | relative_url }})
 - [Dmitri Shostakovich]({{ '/docs/shostakovich' | relative_url }})
 - [Jean Sibelius]({{ '/docs/sibelius' | relative_url }})
+- [Louis Spohr]({{ '/docs/spohr' | relative_url }})
 - [Richard Strauss]({{ '/docs/strauss' | relative_url }})
 - [Igor Stravinsky]({{ '/docs/stravinsky' | relative_url }})
 - [Josef Suk]({{ '/docs/suk' | relative_url }})
