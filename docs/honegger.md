@@ -13,7 +13,7 @@ nav_order: 1
 
 **Le chant de Nigamon**, H 16 (1917) 
 
-**Pastorale d'été**, H 31 (1920) [*Orchestre National du Capitole de Toulouse, Michel Plasson*](http://www.tidal.com/track/4616412)
+💎 **Pastorale d'été**, H 31 (1920) [*Orchestre National du Capitole de Toulouse, Michel Plasson*](http://www.tidal.com/track/4616412)
 
 **Orchestration of a Mussorgsky song**, lost, H 27 (1920) 
 
@@ -25,7 +25,7 @@ nav_order: 1
 
 **2 Chants d'Ariel** for voice and orchestra, adaptation of H 48, H 48b (1923) 
 
-**Pacific 231 (Symphonic Movement No. 1)**, H 53 (1924) [*Symphonieorchester des Bayerischen Rundfunks, Charles Dutoit*](https://tidal.com/track/483253/u)
+💎 **Pacific 231 (Symphonic Movement No. 1)**, H 53 (1924) [*Symphonieorchester des Bayerischen Rundfunks, Charles Dutoit*](https://tidal.com/track/483253/u)
 
 **Concertino for piano and orchestra**, H 55 (1924) 
 
