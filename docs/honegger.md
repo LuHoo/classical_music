@@ -243,7 +243,7 @@ nav_order: 1
 
 **Cinéma-fantaisie** for violin and piano, in collaboration with Darius Milhaud, H 36 (1921) 
 
-**Danse de la chèvre (The Goat Dance)**, H 39 (1921) 
+**Danse de la chèvre (The Goat Dance)**, H 39 (1921) [*Pro Arte Wind Quintet*](http://www.tidal.com/track/59657151)
 
 **Sonatina** for clarinet and piano, H 42 (1922) 
 
