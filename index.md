@@ -30,11 +30,11 @@ Everything here reflects my personal taste (listen to my 💎 gems!), not any ki
       <a href="{{ '/docs/bosmans' | relative_url }}">Henriëtte Bosmans</a><br>
       <a href="{{ '/docs/brahms' | relative_url }}">Johannes Brahms</a><br>
       <a href="{{ '/docs/britten' | relative_url }}">Benjamin Britten</a><br>
-      <a href="{{ '/docs/bruckner' | relative_url }}">Anton Bruckner</a>
+      <a href="{{ '/docs/bruckner' | relative_url }}">Anton Bruckner</a><br>
+<a href="{{ '/docs/busoni' | relative_url }}">Ferruccio Busoni</a><br>
+<a href="{{ '/docs/canteloube' | relative_url }}">Joseph Canteloube</a>
     </td>
     <td>
-<a href="{{ '/docs/busoni' | relative_url }}">Ferruccio Busoni</a><br>
-<a href="{{ '/docs/canteloube' | relative_url }}">Joseph Canteloube</a><br>
 <a href="{{ '/docs/corelli' | relative_url }}">Arcangelo Corelli</a><br>
 <a href="{{ '/docs/debussy' | relative_url }}">Claude Debussy</a><br>
 <a href="{{ '/docs/dohnanyi' | relative_url }}">Ernst von Dohnányi</a><br>
@@ -45,21 +45,19 @@ Everything here reflects my personal taste (listen to my 💎 gems!), not any ki
 <a href="{{ '/docs/holst' | relative_url }}">Gustav Holst</a><br>
 <a href="{{ '/docs/honegger' | relative_url }}">Arthur Honegger</a><br>
 <a href="{{ '/docs/ibert' | relative_url }}">Jacques Ibert</a><br>
-<a href="{{ '/docs/dindy' | relative_url }}">Vincent d'Indy</a>
-    </td>
-    <td>
+<a href="{{ '/docs/dindy' | relative_url }}">Vincent d'Indy</a><br>
 <a href="{{ '/docs/khachaturian' | relative_url }}">Aram Khachaturian</a><br>
 <a href="{{ '/docs/korngold' | relative_url }}">Erich Wolfgang Korngold</a><br>
 <a href="{{ '/docs/mahler' | relative_url }}">Gustav Mahler</a><br>
-<a href="{{ '/docs/martin' | relative_url }}">Frank Martin</a><br>
+<a href="{{ '/docs/martin' | relative_url }}">Frank Martin</a>
+    </td>
+    <td>
 <a href="{{ '/docs/martinu' | relative_url }}">Bohuslav Martinů</a><br>
 <a href="{{ '/docs/mendelssohn' | relative_url }}">Felix Mendelssohn Bartholdy</a><br>
 <a href="{{ '/docs/mozart' | relative_url }}">Wolfgang Amadeus Mozart</a><br>
 <a href="{{ '/docs/nielsen' | relative_url }}">Carl Nielsen</a><br>
 <a href="{{ '/docs/poulenc' | relative_url }}">Francis Poulenc</a><br>
-<a href="{{ '/docs/prokofiev' | relative_url }}">Sergei Prokofiev</a>
-    </td>
-    <td>
+<a href="{{ '/docs/prokofiev' | relative_url }}">Sergei Prokofiev</a><br>
 <a href="{{ '/docs/rachmaninov' | relative_url }}">Sergej Rachmaninov</a><br>
 <a href="{{ '/docs/rautavaara' | relative_url }}">Einojuhani Rautavaara</a><br>
 <a href="{{ '/docs/ravel' | relative_url }}">Maurice Ravel</a><br>
@@ -68,13 +66,13 @@ Everything here reflects my personal taste (listen to my 💎 gems!), not any ki
 <a href="{{ '/docs/richter' | relative_url }}">Max Richter</a><br>
 <a href="{{ '/docs/roussel' | relative_url }}">Albert Roussel</a><br>
 <a href="{{ '/docs/saintsaens' | relative_url }}">Camille Saint-Saëns</a><br>
-<a href="{{ '/docs/schubert' | relative_url }}">Franz Schubert</a><br>
+<a href="{{ '/docs/schubert' | relative_url }}">Franz Schubert</a>
+    </td>
+    <td>
 <a href="{{ '/docs/schumann' | relative_url }}">Robert Schumann</a><br>
 <a href="{{ '/docs/schreker' | relative_url }}">Franz Schreker</a><br>
 <a href="{{ '/docs/shostakovich' | relative_url }}">Dmitri Shostakovich</a><br>
-<a href="{{ '/docs/sibelius' | relative_url }}">Jean Sibelius</a>
-    </td>
-    <td>
+<a href="{{ '/docs/sibelius' | relative_url }}">Jean Sibelius</a><br>
 <a href="{{ '/docs/spohr' | relative_url }}">Louis Spohr</a><br>
 <a href="{{ '/docs/strauss' | relative_url }}">Richard Strauss</a><br>
 <a href="{{ '/docs/stravinsky' | relative_url }}">Igor Stravinsky</a><br>
