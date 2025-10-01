@@ -15,65 +15,79 @@ Everything here reflects my personal taste (listen to my 💎 gems!), not any ki
 
 ## 🔍 Browse by Composer
 
-- [John Adams]({{ '/docs/adams' | relative_url }})
-- [Johann Sebastian Bach]({{ '/docs/bachJS' | relative_url }})
-- [Samuel Barber]({{ '/docs/barber' | relative_url }})
-- [Bela Bartok]({{ '/docs/bartok' | relative_url }})
-- [Ludwig van Beethoven]({{ '/docs/beethoven' | relative_url }})
-- [Luciano Berio]({{ '/docs/berio' | relative_url }})
-- [Hector Berlioz]({{ '/docs/berlioz' | relative_url }})
-- [Boris Blacher]({{ '/docs/blacher' | relative_url }})
-- [Arthur Bliss]({{ '/docs/bliss' | relative_url }})
-- [Henriëtte Bosmans]({{ '/docs/bosmans' | relative_url }})
-- [Johannes Brahms]({{ '/docs/brahms' | relative_url }})
-- [Benjamin Britten]({{ '/docs/britten' | relative_url }})
-- [Anton Bruckner]({{ '/docs/bruckner' | relative_url }})
-- [Ferruccio Busoni]({{ '/docs/busoni' | relative_url }})
-- [Joseph Canteloube]({{ '/docs/canteloube' | relative_url }})
-- [Arcangelo Corelli]({{ '/docs/corelli' | relative_url }})
-- [Claude Debussy]({{ '/docs/debussy' | relative_url }})
-- [Ernst von Dohnányi]({{ '/docs/dohnanyi' | relative_url }})
-- [Antonin Dvorak]({{ '/docs/dvorak' | relative_url }})
-- [Niels Gade]({{ '/docs/gade' | relative_url }})
-- [Edvard Grieg]({{ '/docs/grieg' | relative_url }})
-- [Paul Hindemith]({{ '/docs/hindemith' | relative_url }})
-- [Gustav Holst]({{ '/docs/holst' | relative_url }})
-- [Arthur Honegger]({{ '/docs/honegger' | relative_url }})
-- [Jacques Ibert]({{ '/docs/ibert' | relative_url }})
-- [Vincent d'Indy]({{ '/docs/dindy' | relative_url }})
-- [Aram Khachaturian]({{ '/docs/khachaturian' | relative_url }})
-- [Erich Wolfgang Korngold]({{ '/docs/korngold' | relative_url }})
-- [Gustav Mahler]({{ '/docs/mahler' | relative_url }})
-- [Frank Martin]({{ '/docs/martin' | relative_url }})
-- [Bohuslav Martinů]({{ '/docs/martinu' | relative_url }})
-- [Felix Mendelssohn Bartholdy]({{ '/docs/mendelssohn' | relative_url }})
-- [Wolfgang Amadeus Mozart]({{ '/docs/mozart' | relative_url }})
-- [Carl Nielsen]({{ '/docs/nielsen' | relative_url }})
-- [Francis Poulenc]({{ '/docs/poulenc' | relative_url }})
-- [Sergei Prokofiev]({{ '/docs/prokofiev' | relative_url }})
-- [Sergej Rachmaninov]({{ '/docs/rachmaninov' | relative_url }})
-- [Einojuhani Rautavaara]({{ '/docs/rautavaara' | relative_url }})
-- [Maurice Ravel]({{ '/docs/ravel' | relative_url }})
-- [Max Reger]({{ '/docs/reger' | relative_url }})
-- [Ottorino Respighi]({{ '/docs/respighi' | relative_url }})
-- [Max Richter]({{ '/docs/richter' | relative_url }})
-- [Albert Roussel]({{ '/docs/roussel' | relative_url }})
-- [Camille Saint-Saëns]({{ '/docs/saintsaens' | relative_url }})
-- [Franz Schubert]({{ '/docs/schubert' | relative_url }})
-- [Robert Schumann]({{ '/docs/schumann' | relative_url }})
-- [Franz Schreker]({{ '/docs/schreker' | relative_url }})
-- [Dmitri Shostakovich]({{ '/docs/shostakovich' | relative_url }})
-- [Jean Sibelius]({{ '/docs/sibelius' | relative_url }})
-- [Louis Spohr]({{ '/docs/spohr' | relative_url }})
-- [Richard Strauss]({{ '/docs/strauss' | relative_url }})
-- [Igor Stravinsky]({{ '/docs/stravinsky' | relative_url }})
-- [Josef Suk]({{ '/docs/suk' | relative_url }})
-- [Karol Szymanowski]({{ '/docs/szymanowski' | relative_url }})
-- [Pyotr Ilyich Tchaikovsky]({{ '/docs/tchaikovsky' | relative_url }})
-- [Ralph Vaughan Williams]({{ '/docs/vaughanwilliams' | relative_url }})
-- [Antonio Vivaldi]({{ '/docs/vivaldi' | relative_url }})
-- [William Walton]({{ '/docs/walton' | relative_url }})
-- [Alexander von Zemlinsky]({{ '/docs/zemlinsky' | relative_url }})
+<table>
+  <tr>
+    <td>
+      <a href="{{ '/docs/adams' | relative_url }}">John Adams</a><br>
+      <a href="{{ '/docs/bachJS' | relative_url }}">Johann Sebastian Bach</a><br>
+      <a href="{{ '/docs/barber' | relative_url }}">Samuel Barber</a><br>
+      <a href="{{ '/docs/bartok' | relative_url }}">Bela Bartok</a><br>
+      <a href="{{ '/docs/beethoven' | relative_url }}">Ludwig van Beethoven</a><br>
+      <a href="{{ '/docs/berio' | relative_url }}">Luciano Berio</a><br>
+      <a href="{{ '/docs/berlioz' | relative_url }}">Hector Berlioz</a><br>
+      <a href="{{ '/docs/blacher' | relative_url }}">Boris Blacher</a><br>
+      <a href="{{ '/docs/bliss' | relative_url }}">Arthur Bliss</a><br>
+      <a href="{{ '/docs/bosmans' | relative_url }}">Henriëtte Bosmans</a><br>
+      <a href="{{ '/docs/brahms' | relative_url }}">Johannes Brahms</a><br>
+      <a href="{{ '/docs/britten' | relative_url }}">Benjamin Britten</a><br>
+      <a href="{{ '/docs/bruckner' | relative_url }}">Anton Bruckner</a>
+    </td>
+    <td>
+<a href="{{ '/docs/busoni' | relative_url }}">Ferruccio Busoni</a><br>
+<a href="{{ '/docs/canteloube' | relative_url }}">Joseph Canteloube</a><br>
+<a href="{{ '/docs/corelli' | relative_url }}">Arcangelo Corelli</a><br>
+<a href="{{ '/docs/debussy' | relative_url }}">Claude Debussy</a><br>
+<a href="{{ '/docs/dohnanyi' | relative_url }}">Ernst von Dohnányi</a><br>
+<a href="{{ '/docs/dvorak' | relative_url }}">Antonin Dvorak</a><br>
+<a href="{{ '/docs/gade' | relative_url }}">Niels Gade</a><br>
+<a href="{{ '/docs/grieg' | relative_url }}">Edvard Grieg</a><br>
+<a href="{{ '/docs/hindemith' | relative_url }}">Paul Hindemith</a><br>
+<a href="{{ '/docs/holst' | relative_url }}">Gustav Holst</a><br>
+<a href="{{ '/docs/honegger' | relative_url }}">Arthur Honegger</a><br>
+<a href="{{ '/docs/ibert' | relative_url }}">Jacques Ibert</a><br>
+<a href="{{ '/docs/dindy' | relative_url }}">Vincent d'Indy</a>
+    </td>
+    <td>
+<a href="{{ '/docs/khachaturian' | relative_url }}">Aram Khachaturian</a><br>
+<a href="{{ '/docs/korngold' | relative_url }}">Erich Wolfgang Korngold</a><br>
+<a href="{{ '/docs/mahler' | relative_url }}">Gustav Mahler</a><br>
+<a href="{{ '/docs/martin' | relative_url }}">Frank Martin</a><br>
+<a href="{{ '/docs/martinu' | relative_url }}">Bohuslav Martinů</a><br>
+<a href="{{ '/docs/mendelssohn' | relative_url }}">Felix Mendelssohn Bartholdy</a><br>
+<a href="{{ '/docs/mozart' | relative_url }}">Wolfgang Amadeus Mozart</a><br>
+<a href="{{ '/docs/nielsen' | relative_url }}">Carl Nielsen</a><br>
+<a href="{{ '/docs/poulenc' | relative_url }}">Francis Poulenc</a><br>
+<a href="{{ '/docs/prokofiev' | relative_url }}">Sergei Prokofiev</a>
+    </td>
+    <td>
+<a href="{{ '/docs/rachmaninov' | relative_url }}">Sergej Rachmaninov</a><br>
+<a href="{{ '/docs/rautavaara' | relative_url }}">Einojuhani Rautavaara</a><br>
+<a href="{{ '/docs/ravel' | relative_url }}">Maurice Ravel</a><br>
+<a href="{{ '/docs/reger' | relative_url }}">Max Reger</a><br>
+<a href="{{ '/docs/respighi' | relative_url }}">Ottorino Respighi</a><br>
+<a href="{{ '/docs/richter' | relative_url }}">Max Richter</a><br>
+<a href="{{ '/docs/roussel' | relative_url }}">Albert Roussel</a><br>
+<a href="{{ '/docs/saintsaens' | relative_url }}">Camille Saint-Saëns</a><br>
+<a href="{{ '/docs/schubert' | relative_url }}">Franz Schubert</a><br>
+<a href="{{ '/docs/schumann' | relative_url }}">Robert Schumann</a><br>
+<a href="{{ '/docs/schreker' | relative_url }}">Franz Schreker</a><br>
+<a href="{{ '/docs/shostakovich' | relative_url }}">Dmitri Shostakovich</a><br>
+<a href="{{ '/docs/sibelius' | relative_url }}">Jean Sibelius</a>
+    </td>
+    <td>
+<a href="{{ '/docs/spohr' | relative_url }}">Louis Spohr</a><br>
+<a href="{{ '/docs/strauss' | relative_url }}">Richard Strauss</a><br>
+<a href="{{ '/docs/stravinsky' | relative_url }}">Igor Stravinsky</a><br>
+<a href="{{ '/docs/suk' | relative_url }}">Josef Suk</a><br>
+<a href="{{ '/docs/szymanowski' | relative_url }}">Karol Szymanowski</a><br>
+<a href="{{ '/docs/tchaikovsky' | relative_url }}">Pyotr Ilyich Tchaikovsky</a><br>
+<a href="{{ '/docs/vaughanwilliams' | relative_url }}">Ralph Vaughan Williams</a><br>
+<a href="{{ '/docs/vivaldi' | relative_url }}">Antonio Vivaldi</a><br>
+<a href="{{ '/docs/walton' | relative_url }}">William Walton</a><br>
+<a href="{{ '/docs/zemlinsky' | relative_url }}">Alexander von Zemlinsky</a><br>
+    </td>
+  </tr>
+</table>
 
 ---
 
