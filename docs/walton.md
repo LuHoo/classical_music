@@ -19,13 +19,13 @@ nav_order: 1
 
 **Siesta** (1926)
 
-**Symphony No. 1 in B♭ minor** (1932–1935) [*Bournemouth Symphony Orchestra, Kirill Karabits*](http://www.tidal.com/track/78131683)
+**Symphony No. 1 in B♭ minor** (1932–1935) [*Sinfonia of London, John Wilson*](https://tidal.com/track/461743756)
 
 **Crown Imperial, A Coronation March** (1937)
 
 **Music for Children, Suite** (1940, 1941)
 
-**Scapino, A Comedy Overture** (1940)
+**Scapino, A Comedy Overture** (1940) [*Sinfonia of London, John Wilson*](https://tidal.com/track/461743752/u)
 
 **The Wise Virgins, Suite from the Ballet** (1940)
 
@@ -85,7 +85,7 @@ nav_order: 1
 
 **Violin Concerto**, for violin and orchestra (1938–1939) [*Lydia Mordkovitch, London Philharmonic Orchestra, Jan Latham-Koenig*](http://www.tidal.com/track/12439720)
 
-💎 **Cello Concerto**, for cello and orchestra (1956) [*Gautier Capuçon, London Symphony Orchestra, Antonio Pappano*](http://www.tidal.com/track/389718048)
+💎 **Cello Concerto**, for cello and orchestra (1956) [*Jonathan Aasgaard, Sinfonia of London, John Wilson*](https://tidal.com/track/461743753)
 
 ## Brass ensemble
 
