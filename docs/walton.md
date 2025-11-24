@@ -79,7 +79,7 @@ nav_order: 1
 
 ## Concertante
 
-**Sinfonia Concertante**, for piano and orchestra (1926–1927)
+**Sinfonia Concertante**, for piano and orchestra (1926–1927) [*Clare Hammond, BBC Symphony Orchestra, George Vass*](https://tidal.com/track/448411642)
 
 💎 **Viola Concerto**, for viola and orchestra (1928–1929) [*Isabelle van Keulen, NDR Radiophilharmonie, Andrew Manze*](http://www.tidal.com/track/96330720)
 

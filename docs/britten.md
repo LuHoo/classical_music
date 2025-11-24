@@ -69,7 +69,7 @@ nav_order: 1
 
 **Young Apollo**, Op. 16, for piano, string quartet and string orchestra (1939)  [*Steven Osborne, BBC Scottish Symphony Orchestra, Ilan Volkov*](https://tidal.com/browse/album/306149858)
 
-**Diversions for Piano Left Hand and Orchestra**, Op. 21 (1940; rev. 1954)  [*Steven Osborne, BBC Scottish Symphony Orchestra, Ilan Volkov*](https://tidal.com/browse/album/306149858)
+**Diversions for Piano Left Hand and Orchestra**, Op. 21 (1940; rev. 1954)  [*Clare Hammond, BBC Symphony Orchestra, George Vass*](https://tidal.com/track/448411645)
 
 **Scottish Ballad**, Op. 26 for two pianos and orchestra (1941)
 
