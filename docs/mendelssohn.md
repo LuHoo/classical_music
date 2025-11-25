@@ -159,11 +159,11 @@ Violin Sonata (No. 3) in F major (1838)
 
 Cello Sonata No. 1 in B flat major, Op. 45
 
-Piano Trio No. 1 in D minor, Op. 49
+Piano Trio No. 1 in D minor, Op. 49 [*Joshua Bell, Steven Isserlies, Jeremy Denk*](https://tidal.com/track/380129766)
 
 Cello Sonata No. 2 in D major, Op. 58
 
-Piano Trio No. 2 in C minor, Op. 66
+Piano Trio No. 2 in C minor, Op. 66 [*Joshua Bell, Steven Isserlies, Jeremy Denk*](https://tidal.com/track/380129770/u)
 
 String Quartet No. 6 in F minor, Op. Posth. 80
 
