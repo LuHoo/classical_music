@@ -60,7 +60,7 @@ nav_order: 1
 
 **Piano Quartet No. 1 in G minor**, Op. 25 (1856–61) [*Isaac Stern, Jaime Laredo, Yo-Yo Ma, Emanuel Ax*](http://www.tidal.com/track/1877174)
 
-**Piano Quartet No. 2 in A major**, Op. 26 (1861) [*Isaac Stern, Jaime Laredo, Yo-Yo Ma, Emanuel Ax*](http://www.tidal.com/track/1877910)
+**Piano Quartet No. 2 in A major**, Op. 26 (1861) [*Maria Nowak, Katarzyna Budnik, Yuya Okamoto, Krystian Zimerman*](https://tidal.com/track/426702633)
 
 **Piano Quintet in F minor**, Op. 34 (1864)
 
@@ -80,7 +80,7 @@ nav_order: 1
 
 **8 Songs**, Op. 57/3, 4 (vc/pf) [*Amy Norrington, Piet Kuijken*](http://www.tidal.com/track/392902636)
 
-**Piano Quartet No. 3 in C minor ("Werther Quartet")**, Op. 60 (1875) [*Isaac Stern, Jaime Laredo, Yo-Yo Ma, Emanuel Ax*](http://www.tidal.com/track/1877909)
+**Piano Quartet No. 3 in C minor ("Werther Quartet")**, Op. 60 (1875) [*Maria Nowak, Katarzyna Budnik, Yuya Okamoto, Krystian Zimerman*](https://tidal.com/track/426702629)
 
 **String Quartet No. 3 in B♭ major**, Op. 67 (1875) [*Quatuor Agate*](http://www.tidal.com/track/362513738)
 
