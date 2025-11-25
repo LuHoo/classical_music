@@ -91,7 +91,11 @@ nav_order: 1
 
 **String Quartet no. 1** (1908-1909), BB 52 [*Danish SQ*](https://tidal.com/track/175948597)
 
+**String Quartet no. 2** (1915-1917), BB 75 [*Benyounes Quartet*](https://tidal.com/track/103745021)
+
 **String Quartet no. 3** (1927), BB 93 [*Ragazze Qt*](https://tidal.com/track/269504019)
+
+**String Quartet no. 4** (1928), BB 95 [*Marmen Quartet*](https://tidal.com/track/400325934)
 
 **String Quartet no. 5** (1934), BB 110 [*Ragazze Qt*](https://tidal.com/track/269504023)
 
