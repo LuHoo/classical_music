@@ -1,9 +1,9 @@
 ---
-title: Ludwig van Beethoven
+title: Wolfgang Amadeus Mozart
 nav_order: 1
 ---
 
-# Ludwig van Beethoven
+# Wolfgang Amadeus Mozart
 
 [List of works on Wikipedia](https://en.wikipedia.org/wiki/List_of_compositions_by_Wolfgang_Amadeus_Mozart)
 
