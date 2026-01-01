@@ -13,7 +13,7 @@ nav_order: 1
 
 **Gavotte and Musette in G Major** for Strings (ibid.)
 
-**Pelleas und Melisande**, Op. 5 (1902/03) [*Frankfurt Radio Sinfonie Orchester, Paavo Järvi](https://tidal.com/track/362832445)
+**Pelleas und Melisande**, Op. 5 (1902/03) [*Frankfurt Radio Sinfonie Orchester, Paavo Järvi*](https://tidal.com/track/362832445)
 
 **Kammersymphonie** [Chamber Symphony] No. 1, E major, Op. 9 (1906) [*Berliner Philharmoniker, Kirill Petrenko*](https://tidal.com/track/464922318) [chamber ensemble: *Het Collectief*](http://www.tidal.com/track/266496931)
 
