@@ -68,6 +68,7 @@ Everything here reflects my personal taste (listen to my 💎 gems!), not any ki
 <a href="{{ '/docs/richter' | relative_url }}">Max Richter</a><br>
 <a href="{{ '/docs/roussel' | relative_url }}">Albert Roussel</a><br>
 <a href="{{ '/docs/saintsaens' | relative_url }}">Camille Saint-Saëns</a><br>
+<a href="{{ '/docs/schmitt' | relative_url }}">Florent Schmitt</a>
 <a href="{{ '/docs/schoenberg' | relative_url }}">Arnold Schoenberg</a>
 <a href="{{ '/docs/schubert' | relative_url }}">Franz Schubert</a>
     </td>
