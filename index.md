@@ -86,6 +86,7 @@ Everything here reflects my personal taste (listen to my 💎 gems!), not any ki
 <a href="{{ '/docs/vaughanwilliams' | relative_url }}">Ralph Vaughan Williams</a><br>
 <a href="{{ '/docs/vivaldi' | relative_url }}">Antonio Vivaldi</a><br>
 <a href="{{ '/docs/walton' | relative_url }}">William Walton</a><br>
+<a href="{{ '/docs/weber' | relative_url }}">Carl Maria von Weber</a><br>
 <a href="{{ '/docs/zemlinsky' | relative_url }}">Alexander von Zemlinsky</a><br>
     </td>
   </tr>

@@ -9,13 +9,13 @@ nav_order: 1
 
 ## Orchestral
 
-**Frühlings Tod**, in A minor, symphonic poem (Source: Malcolm McDonald, Schoenberg, "Master Musicians Series", J.M. Dent London)
+**Frühlings Tod**, in A minor, symphonic poem
 
 **Gavotte and Musette in G Major** for Strings (ibid.)
 
 **Pelleas und Melisande**, Op. 5 (1902/03) [*Frankfurt Radio Sinfonie Orchester, Paavo Järvi*](https://tidal.com/track/362832445)
 
-**Kammersymphonie** [Chamber Symphony] No. 1, E major, Op. 9 (1906) [*Berliner Philharmoniker, Kirill Petrenko*](https://tidal.com/track/464922318) [chamber ensemble: *Het Collectief*](http://www.tidal.com/track/266496931)
+💎 **Kammersymphonie** [Chamber Symphony] No. 1, E major, Op. 9 (1906) [*Berliner Philharmoniker, Kirill Petrenko*](https://tidal.com/track/464922318) [chamber ensemble: *Het Collectief*](http://www.tidal.com/track/266496931)
 
 **Fünf Orchesterstücke** [5 Pieces for Orchestra], Op. 16 (1909)
 
@@ -81,7 +81,7 @@ nav_order: 1
 
 **untitled work** in D minor for violin and piano (unknown year)
 
-**Verklärte Nacht**, Op. 4 (1899) [string sextet: *Janine Jansen, Boris Brovtsyn, Amihai Grosz, Maxim Rysanov, Torleif Thedéen, Jens-Peter Maintz*](http://www.tidal.com/track/17938825) [piano trio: *Linos Piano Trio*](http://www.tidal.com/track/280629653) [chamber ensemble: *Het Collectief*](http://www.tidal.com/track/266496924)
+💎 **Verklärte Nacht**, Op. 4 (1899) [string sextet: *Janine Jansen, Boris Brovtsyn, Amihai Grosz, Maxim Rysanov, Torleif Thedéen, Jens-Peter Maintz*](http://www.tidal.com/track/17938825) [piano trio: *Linos Piano Trio*](http://www.tidal.com/track/280629653) [chamber ensemble: *Het Collectief*](http://www.tidal.com/track/266496924)
 
 **Ein Stelldichein** [A Rendezvous] for Mixed Quintet (1905), fragment
 
