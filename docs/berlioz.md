@@ -23,7 +23,7 @@ nav_order: 1
 
 **Symphonie fantastique**, Op. 14 (1830) [*Anima Eterna, Jos van Immerseel*](http://www.tidal.com/track/187313911)
 
-**Grande symphonie funèbre et triomphale**, Op. 15 (1840)} \\
+**Grande symphonie funèbre et triomphale**, Op. 15 (1840) [*Royal Northern College of Music Wind Orchestra, Timothy Reynish*](https://tidal.com/track/376347172)
 
 **Harold en Italie**, Op. 16 (1834) [*James Ehnes, Melbourne SO, Andrew Davis*](http://www.tidal.com/track/376423779)
 

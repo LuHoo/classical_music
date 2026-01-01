@@ -127,6 +127,10 @@ nav_order: 1
 
 **Odelette in D major**, Op. 162, R. 212 for flute and orchestra (1920)
 
+## Band
+
+**Orient et Occident**, Op. 25 (1869) [*Royal Northern College of Music Wind Orchestra, Timothy Reynish*](https://tidal.com/track/376347162)
+
 ## Chamber
 
 **Le carnaval des animaux, grande fantaisie zoologique**, R. 125 (1886) [*Les Siècles, François-Xavier Roth*](http://www.tidal.com/track/328375839) (12/2023) 
