@@ -49,7 +49,7 @@ nav_order: 1
 
 **Suite from Hamlet**, for small orchestra (1932), Op. 32a [*Boston SO, Andris Nelsons*](http://www.tidal.com/track/77611685)
 
-💎 **Piano Concerto No. 1 in C minor** (1933), Op. 35 [*Alexander Melnikov, Mahler CO, Teodor Currentzis*](https://tidal.com/album/47633278)
+💎 **Piano Concerto No. 1 in C minor** (1933), Op. 35 [*Saskia Giorgini, Trondheim Soloists, Per Ivarsson*](https://tidal.com/track/476120345) (12/2025)
 
 **Suite for Jazz Orchestra No. 1** (1934)
 
@@ -163,3 +163,7 @@ Jurowski*](http://www.tidal.com/track/306149648)
 **Suite on Verses of Michelangelo Buonarroti**, Op. 145a [*Matthias Goerne, Orchestre Philharmonique de Radio France, Mikko Franck*](https://tidal.com/browse/album/409492660)
 
 **Intervision**, for orchestra (1971)
+
+## Piano
+
+**Piano Sonata No. 2 in B minor**, Op. 61 [*Saskia Giorgini*](https://tidal.com/track/476120350) (12/2025)
