@@ -23,7 +23,7 @@ nav_order: 1
 
 **12 concertos (two for oboe and 10 for violin), of which three are considered inauthentic: Nos. 1 and 7 (both in B-flat major) for oboe, and No. 9 (in the same key) for violin**, Op. 7 (1716–1717) RV465, 188, 326, 354, 285a, 374, 464, 299, 373, 294a, 208a, 214
 
-💎 **Il cimento dell'armonia e dell'inventione (The Contest between Harmony and Invention), 12 violin concertos, which include the first four concertos known as Le quattro stagioni (The Four Seasons)**, Op. 8 (1723) RV269, 315, 293, 297, 253, 180, 242, 332, 236/454, 362, 210, 178/449 [Four Seasons: *Anne-Sophie Mutter, Trondheim Soloists*](http://www.tidal.com/track/77697108)
+💎 **Il cimento dell'armonia e dell'inventione (The Contest between Harmony and Invention), 12 violin concertos, which include the first four concertos known as Le quattro stagioni (The Four Seasons)**, Op. 8 (1723) RV269, 315, 293, 297 [Four Seasons: *Anne-Sophie Mutter, Trondheim Soloists*](http://www.tidal.com/track/77697108), 253, 180 [*La Serenissima, Adrian Chandler*](https://tidal.com/track/401810398), 242, 332, 236/454, 362, 210, 178/449 [*La Serenissima, Adrian Chandler*](https://tidal.com/track/458197178) (12/2025)
 
 **La cetra (The Lyre), 12 violin concertos, all for solo violin except for No. 9 in B-flat major which is for two violins**, Op. 9 (1727) RV181a, 345, 334, 263a, 358, 348, 359, 238, 530, 300, 198a, 391
 
@@ -35,14 +35,22 @@ nav_order: 1
 
 ## Works without opus number (selection)
 
+**Concerto in G Minor** for strings, RV 155 [*La Serenissima, Adrian Chandler*](https://tidal.com/track/458197196) (12/2025)
+
 **Sinfonia in B minor** for 2 violins, viola, double bass, RV 169 [*Concerto Köln, Shunske Sato*](http://www.tidal.com/track/64126591)
+
+**Concerto in C major** fir violin, strings, RV 170 [*La Serenissima, Adrian Chandler*](https://tidal.com/track/401810404)
 
 **Concerto in C major** for violin, strings, RV 179a [*Fabio Biondi, Europa Galante*](http://www.tidal.com/track/304319795)
 
 **Concerto in D major** for violin, strings, RV 229 [*Fabio Biondi, Europa Galante*](http://www.tidal.com/track/304319781)
 
-**Concerto in E-flat major (Dresden concerto)** for violin, strings, RV 260 [*Fabio Biondi, Europa Galante*](http://www.tidal.com/track/304319792)
+**Concerto in E♭ major (Dresden concerto)** for violin, strings, RV 260 [*Fabio Biondi, Europa Galante*](http://www.tidal.com/track/304319792)
 
-**Concerto in E-flat major** for violin, strings, RV 261 [*Fabio Biondi, Europa Galante*](http://www.tidal.com/track/304319798)
+**Concerto in E♭ major** for violin, strings, RV 261 [*Fabio Biondi, Europa Galante*](http://www.tidal.com/track/304319798)
 
-**Concerto in B-flat major (Il cornetto da posta, Dresden concerto)** for violin, strings, RV 363 [*Fabio Biondi, Europa Galante*](http://www.tidal.com/track/304319784)
+**Concerto in B♭ major (Il cornetto da posta, Dresden concerto)** for violin, strings, RV 363 [*Fabio Biondi, Europa Galante*](http://www.tidal.com/track/304319784)
+
+**Concerto in D major** for 2 violins, strings, RV 512 [*La Serenissima, Adrian Chandler*](https://tidal.com/track/458197200) (12/2025)
+
+**Concerto in E♭ major** for 2 violins, strings, RV 515 [*La Serenissima, Adrian Chandler*](https://tidal.com/track/401810407)

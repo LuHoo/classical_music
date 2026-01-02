@@ -65,11 +65,11 @@ nav_order: 1
 
 **Sonate (No. 1)**, M. 12 (1897)
 
-**String Quartet in F major**, M. 35 (1902–03)
+**String Quartet in F major**, M. 35 (1902–03) [*Nash Ensemble*](https://tidal.com/track/472093910) (12/2025)
 
-**Introduction et Allegro**, M. 46 (1905)
+**Introduction et Allegro**, M. 46 (1905) [*Nash Ensemble*](https://tidal.com/track/472093904) (12/2025)
 
-**Trio in A minor**, M. 67 (1914)
+**Trio in A minor**, M. 67 (1914) [*Nash Ensemble*](https://tidal.com/track/472093905) (12/2025)
 
 **La Valse**, M. 72b (1920) (piano trio) [*Linos Piano Trio*](http://www.tidal.com/track/280629658)
 
@@ -177,7 +177,7 @@ nav_order: 1
 
 **Frontispice**, M. 70 (1918)
 
-**La Valse**, M. 72a (1920)
+**La Valse**, M. 72a (1920) [*Nash Ensemble*](https://tidal.com/track/472093909) (12/2025)
 
 **Fanfare**, M. 80a (1927)
 

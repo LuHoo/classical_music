@@ -19,7 +19,7 @@ nav_order: 1
 
 **Fünf Orchesterstücke** [5 Pieces for Orchestra], Op. 16 (1909)
 
-**Variations for Orchestra**, Op. 31 (1926/28)
+**Variations for Orchestra**, Op. 31 (1926/28) [*Berliner Philharmoniker, Kirill Petrenko*](https://tidal.com/track/469368609) (12/2025)
 
 **Suite in G major** for string orchestra ("In the Old Style") (1934)
 

@@ -92,7 +92,9 @@ Romande**, Kent Nagano*](http://www.tidal.com/track/362759023) (09/2024)
 
 **Piano concerto No. 10 for 2 pianos in E♭ major**, K. 365 [*Mari Kodama, Momo Kodama, Orchestre de la Suisse Romande, Kent Nagano*](http://www.tidal.com/track/362759026) (09/2024)
 
-**Piano Concerto No. 18 In B♭ major (year)**, K. 456 [*Kristian Bezuidenhout, Freiburger Barockorchester*](https://tidal.com/browse/track/245362672?u)
+**Piano Concerto No. 12 in A major**, K. 414 [*Saskia Giorgini, Trondheim Soloists, Per Ivarsson*](https://tidal.com/track/476120341) (12/2025)
+
+**Piano Concerto No. 18 in B♭ major**, K. 456 [*Kristian Bezuidenhout, Freiburger Barockorchester*](https://tidal.com/browse/track/245362672?u)
 
 **Piano Concerto No. 20 in D minor**, K. 466 [*Charles Richard-Hamelin, Les Violons du Roi, Jonathan Cohen*](http://www.tidal.com/track/313466200) (12/2023)
 
