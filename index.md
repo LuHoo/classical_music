@@ -47,7 +47,6 @@ Everything here reflects my personal taste (listen to my 💎 gems!), not any ki
 <a href="{{ '/docs/ibert' | relative_url }}">Jacques Ibert</a><br>
 <a href="{{ '/docs/dindy' | relative_url }}">Vincent d'Indy</a><br>
 <a href="{{ '/docs/ives' | relative_url }}">Charles Ives</a><br>
-<a href="{{ '/docs/janacek' | relative_url }}">Leos Janacek</a><br>
 <a href="{{ '/docs/khachaturian' | relative_url }}">Aram Khachaturian</a><br>
 <a href="{{ '/docs/korngold' | relative_url }}">Erich Wolfgang Korngold</a><br>
 <a href="{{ '/docs/mahler' | relative_url }}">Gustav Mahler</a><br>

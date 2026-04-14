@@ -1,0 +1,2697 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.8)  5 JAN 2025 18:31
+entering extended mode
+ \write18 enabled.
+ %&-line parsing enabled.
+**mozart.tex
+(./mozart.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-02-20>
+! Undefined control sequence.
+l.1 \chapter
+            {Mozart, Wolfgang Amadeus}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \chapter{M
+              ozart, Wolfgang Amadeus}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no M in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no W in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no s in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 1--3
+[]
+ []
+
+! Undefined control sequence.
+l.4 \href
+         {https://en.wikipedia.org/wiki/List_of_compositions_by_B%C3%A9la_Ba...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 \href{h
+           ttps://en.wikipedia.org/wiki/List_of_compositions_by_B%C3%A9la_Ba...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no h in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.4 \href{https://en.wikipedia.org/wiki/List_
+                                             of_compositions_by_B%C3%A9la_Ba...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 4.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 4.
+! Missing $ inserted.
+<inserted text> 
+                $
+l.5 
+    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (103.4511pt too wide) in paragraph at lines 4--5
+[]$[]\OML/cmm/m/it/10 f[]ompositions[]y[]$ 
+ []
+
+! Undefined control sequence.
+l.6 \section
+            {Sacred choral music} % (fold)
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 \section{S
+              acred choral music} % (fold)
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no S in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 6--8
+[]
+ []
+
+! Undefined control sequence.
+l.9 \paragraph
+              {Masses} _ \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 \paragraph{M
+                asses} _ \\
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no M in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.9 \paragraph{Masses} _
+                         \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing { inserted.
+<to be read again> 
+                   \let 
+l.9 \paragraph{Masses} _ \\
+                           
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.10 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.10 
+     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 9--10
+[]
+ []
+
+
+Overfull \hbox (0.5pt too wide) in paragraph at lines 9--10
+[]$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11 \noindent
+              {Missa brevis in G (1768), K. 47d} \\
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no M in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no G in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 7 in font nullfont!
+Missing character: There is no 6 in font nullfont!
+Missing character: There is no 8 in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no K in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no 7 in font nullfont!
+Missing character: There is no d in font nullfont!
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 \noindent
+              {Serenade Colloredo, K. 203} \textit{Mozarteumorchester Salzbu...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no S in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no K in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 3 in font nullfont!
+! Undefined control sequence.
+<recently read> \marginnote 
+                            
+l.15 ...g, Roberto Gonz\'{a}lez-Monjas}\marginnote
+                                                  {10/2023, max} \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no K in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 7 in font nullfont!
+! Undefined control sequence.
+<recently read> \marginnote 
+                            
+l.16 ...idon Kremer, Kremerata Baltica}\marginnote
+                                                  {high} \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no K in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+! Undefined control sequence.
+<recently read> \marginnote 
+                            
+l.17 ...idon Kremer, Kremerata Baltica}\marginnote
+                                                  {high} \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no K in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 6 in font nullfont!
+! Undefined control sequence.
+<recently read> \marginnote 
+                            
+l.18 ...idon Kremer, Kremerata Baltica}\marginnote
+                                                  {high} \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no K in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 8 in font nullfont!
+! Undefined control sequence.
+<recently read> \marginnote 
+                            
+l.19 ...idon Kremer, Kremerata Baltica}\marginnote
+                                                  {high} \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no K in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 9 in font nullfont!
+! Undefined control sequence.
+<recently read> \marginnote 
+                            
+l.20 ...idon Kremer, Kremerata Baltica}\marginnote
+                                                  {high} \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no j in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no K in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no 7 in font nullfont!
+! Undefined control sequence.
+<recently read> \marginnote 
+                            
+l.21 ...g, Roberto Gonz\'{a}lez-Monjas}\marginnote
+                                                  {10/2023, max} \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no K in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no 9 in font nullfont!
+! Undefined control sequence.
+<recently read> \marginnote 
+                            
+l.22 ...g, Roberto Gonz\'{a}lez-Monjas}\marginnote
+                                                  {10/2023, max} \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no x in font nullfont!
+
+Overfull \hbox (31.07202pt too wide) in paragraph at lines 15--23
+    \OT1/cmr/m/it/10 Mozar-
+ []
+
+
+Overfull \hbox (16.86653pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 teu-
+ []
+
+
+Overfull \hbox (30.28311pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 morch-
+ []
+
+
+Overfull \hbox (20.8276pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 ester
+ []
+
+
+Overfull \hbox (38.7164pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 Salzburg,
+ []
+
+
+Overfull \hbox (33.23306pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 Roberto
+ []
+
+
+Overfull \hbox (42.49141pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 Gonz^^Salez-
+ []
+
+
+Overfull \hbox (31.96649pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 Monjas
+ []
+
+
+Overfull \hbox (14.38046pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 Gi-
+ []
+
+
+Overfull \hbox (15.84436pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 don
+ []
+
+
+Overfull \hbox (19.57205pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 Kre-
+ []
+
+
+Overfull \hbox (20.06097pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 mer,
+ []
+
+
+Overfull \hbox (19.57205pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 Kre-
+ []
+
+
+Overfull \hbox (20.57207pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 mer-
+ []
+
+
+Overfull \hbox (13.54436pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 ata
+ []
+
+
+Overfull \hbox (31.06137pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 Baltica 
+ []
+
+
+Overfull \hbox (14.38046pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 Gi-
+ []
+
+
+Overfull \hbox (15.84436pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 don
+ []
+
+
+Overfull \hbox (19.57205pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 Kre-
+ []
+
+
+Overfull \hbox (20.06097pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 mer,
+ []
+
+
+Overfull \hbox (19.57205pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 Kre-
+ []
+
+
+Overfull \hbox (20.57207pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 mer-
+ []
+
+
+Overfull \hbox (13.54436pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 ata
+ []
+
+
+Overfull \hbox (31.06137pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 Baltica 
+ []
+
+
+Overfull \hbox (14.38046pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 Gi-
+ []
+
+
+Overfull \hbox (15.84436pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 don
+ []
+
+
+Overfull \hbox (19.57205pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 Kre-
+ []
+
+
+Overfull \hbox (20.06097pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 mer,
+ []
+
+
+Overfull \hbox (19.57205pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 Kre-
+ []
+
+
+Overfull \hbox (20.57207pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 mer-
+ []
+
+
+Overfull \hbox (13.54436pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 ata
+ []
+
+
+Overfull \hbox (31.06137pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 Baltica 
+ []
+
+
+Overfull \hbox (14.38046pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 Gi-
+ []
+
+
+Overfull \hbox (15.84436pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 don
+ []
+
+
+Overfull \hbox (19.57205pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 Kre-
+ []
+
+
+Overfull \hbox (20.06097pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 mer,
+ []
+
+
+Overfull \hbox (19.57205pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 Kre-
+ []
+
+
+Overfull \hbox (20.57207pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 mer-
+ []
+
+
+Overfull \hbox (13.54436pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 ata
+ []
+
+
+Overfull \hbox (31.06137pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 Baltica 
+ []
+
+
+Overfull \hbox (14.38046pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 Gi-
+ []
+
+
+Overfull \hbox (15.84436pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 don
+ []
+
+
+Overfull \hbox (19.57205pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 Kre-
+ []
+
+
+Overfull \hbox (20.06097pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 mer,
+ []
+
+
+Overfull \hbox (19.57205pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 Kre-
+ []
+
+
+Overfull \hbox (20.57207pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 mer-
+ []
+
+
+Overfull \hbox (13.54436pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 ata
+ []
+
+
+Overfull \hbox (31.06137pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 Baltica 
+ []
+
+
+Overfull \hbox (31.07202pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 Mozar-
+ []
+
+
+Overfull \hbox (16.86653pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 teu-
+ []
+
+
+Overfull \hbox (30.28311pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 morch-
+ []
+
+
+Overfull \hbox (20.8276pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 ester
+ []
+
+
+Overfull \hbox (38.7164pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 Salzburg,
+ []
+
+
+Overfull \hbox (33.23306pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 Roberto
+ []
+
+
+Overfull \hbox (42.49141pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 Gonz^^Salez-
+ []
+
+
+Overfull \hbox (31.96649pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 Monjas
+ []
+
+
+Overfull \hbox (31.07202pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 Mozar-
+ []
+
+
+Overfull \hbox (16.86653pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 teu-
+ []
+
+
+Overfull \hbox (30.28311pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 morch-
+ []
+
+
+Overfull \hbox (20.8276pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 ester
+ []
+
+
+Overfull \hbox (38.7164pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 Salzburg,
+ []
+
+
+Overfull \hbox (33.23306pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 Roberto
+ []
+
+
+Overfull \hbox (42.49141pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 Gonz^^Salez-
+ []
+
+
+Overfull \hbox (31.96649pt too wide) in paragraph at lines 15--23
+\OT1/cmr/m/it/10 Monjas
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 \noindent
+              {Piano concerto No. 7 for 3 pianos in F major "Lodron", K. 242...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no P in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 7 in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no F in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no j in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no K in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no 2 in font nullfont!
+! Undefined control sequence.
+<recently read> \marginnote 
+                            
+l.25 ...la Suisse Romande, Kent Nagano}\marginnote
+                                                  {09/2024, max} \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 9 in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no x in font nullfont!
+
+Overfull \hbox (25.7054pt too wide) in paragraph at lines 25--26
+             \OT1/cmr/m/it/10 Karin
+ []
+
+
+Overfull \hbox (15.35545pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/it/10 Kei
+ []
+
+
+Overfull \hbox (36.05534pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/it/10 Nagano,
+ []
+
+
+Overfull \hbox (21.36098pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/it/10 Mari
+ []
+
+
+Overfull \hbox (16.37767pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/it/10 Ko-
+ []
+
+
+Overfull \hbox (26.57764pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/it/10 dama,
+ []
+
+
+Overfull \hbox (27.36652pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/it/10 Momo
+ []
+
+
+Overfull \hbox (16.37767pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/it/10 Ko-
+ []
+
+
+Overfull \hbox (26.57764pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/it/10 dama,
+ []
+
+
+Overfull \hbox (15.461pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/it/10 Or-
+ []
+
+
+Overfull \hbox (30.02753pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/it/10 chestre
+ []
+
+
+Overfull \hbox (9.71104pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/it/10 de
+ []
+
+
+Overfull \hbox (7.66663pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/it/10 la
+ []
+
+
+Overfull \hbox (14.56657pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/it/10 Su-
+ []
+
+
+Overfull \hbox (15.84435pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/it/10 isse
+ []
+
+
+Overfull \hbox (15.4721pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/it/10 Ro-
+ []
+
+
+Overfull \hbox (31.6887pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/it/10 mande,
+ []
+
+
+Overfull \hbox (21.23318pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/it/10 Kent
+ []
+
+
+Overfull \hbox (32.9887pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/it/10 Nagano
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 \noindent
+              {Piano concerto No. 9 in E$\flat$ major "Lodron", K. 271} \tex...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no P in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 9 in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no j in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no K in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 7 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+! Undefined control sequence.
+<recently read> \marginnote 
+                            
+l.27 ... Orchestre de Chambre de Paris}\marginnote
+                                                  {max} \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no x in font nullfont!
+
+Overfull \hbox (3.8889pt too wide) in paragraph at lines 27--28
+     $\OML/cmm/m/it/10 [$
+ []
+
+
+Overfull \hbox (19.17763pt too wide) in paragraph at lines 27--28
+\OT1/cmr/m/it/10 Lars
+ []
+
+
+Overfull \hbox (22.25539pt too wide) in paragraph at lines 27--28
+\OT1/cmr/m/it/10 Vogt,
+ []
+
+
+Overfull \hbox (15.461pt too wide) in paragraph at lines 27--28
+\OT1/cmr/m/it/10 Or-
+ []
+
+
+Overfull \hbox (30.02753pt too wide) in paragraph at lines 27--28
+\OT1/cmr/m/it/10 chestre
+ []
+
+
+Overfull \hbox (9.71104pt too wide) in paragraph at lines 27--28
+\OT1/cmr/m/it/10 de
+ []
+
+
+Overfull \hbox (29.13315pt too wide) in paragraph at lines 27--28
+\OT1/cmr/m/it/10 Cham-
+ []
+
+
+Overfull \hbox (12.90543pt too wide) in paragraph at lines 27--28
+\OT1/cmr/m/it/10 bre
+ []
+
+
+Overfull \hbox (9.71104pt too wide) in paragraph at lines 27--28
+\OT1/cmr/m/it/10 de
+ []
+
+
+Overfull \hbox (24.08734pt too wide) in paragraph at lines 27--28
+\OT1/cmr/m/it/10 Paris 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 \noindent
+              {Serenade No. 10 'Gran Partita', K. 361} \textit{Mark Simpson,...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no S in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no G in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no K in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no 6 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+! Undefined control sequence.
+<recently read> \marginnote 
+                            
+l.30 ...e Geest (hn), David Stark (db)}\marginnote
+                                                  {high} \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no j in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no K in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no 6 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+! Undefined control sequence.
+<recently read> \marginnote 
+                            
+l.31 ...la Suisse Romande, Kent Nagano}\marginnote
+                                                  {09/2024, max} \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 9 in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no x in font nullfont!
+
+Overfull \hbox (22.89429pt too wide) in paragraph at lines 30--32
+       \OT1/cmr/m/it/10 Mark
+ []
+
+
+Overfull \hbox (25.5554pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 Simp-
+ []
+
+
+Overfull \hbox (17.8888pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 son,
+ []
+
+
+Overfull \hbox (27.48311pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 Fraser
+ []
+
+
+Overfull \hbox (24.67203pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 Lang-
+ []
+
+
+Overfull \hbox (14.05547pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 ton
+ []
+
+
+Overfull \hbox (18.39989pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 (cl),
+ []
+
+
+Overfull \hbox (37.07756pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 Nicholas
+ []
+
+
+Overfull \hbox (31.57202pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 Daniel,
+ []
+
+
+Overfull \hbox (28.24985pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 Emma
+ []
+
+
+Overfull \hbox (24.67204pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 Feild-
+ []
+
+
+Overfull \hbox (13.2888pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 ing
+ []
+
+
+Overfull \hbox (20.95543pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 (ob),
+ []
+
+
+Overfull \hbox (20.21097pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 Amy
+ []
+
+
+Overfull \hbox (20.33875pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 Har-
+ []
+
+
+Overfull \hbox (21.97766pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 man,
+ []
+
+
+Overfull \hbox (20.83876pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 Dom
+ []
+
+
+Overfull \hbox (22.61649pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 Tyler
+ []
+
+
+Overfull \hbox (21.46654pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 (bn),
+ []
+
+
+Overfull \hbox (26.70537pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 Oliver
+ []
+
+
+Overfull \hbox (24.67207pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 Pash-
+ []
+
+
+Overfull \hbox (15.07767pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 ley,
+ []
+
+
+Overfull \hbox (28.89983pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 Ausi^^Ras
+ []
+
+
+Overfull \hbox (20.64153pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 Gar-
+ []
+
+
+Overfull \hbox (21.08319pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 rig^^Sos
+ []
+
+
+Overfull \hbox (31.83867pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 Morant
+ []
+
+
+Overfull \hbox (20.9554pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 (bas-
+ []
+
+
+Overfull \hbox (12.01102pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 set
+ []
+
+
+Overfull \hbox (17.8888pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 hn),
+ []
+
+
+Overfull \hbox (17.261pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 Ben
+ []
+
+
+Overfull \hbox (24.09152pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 Gold-
+ []
+
+
+Overfull \hbox (25.04427pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 schei-
+ []
+
+
+Overfull \hbox (16.99432pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 der,
+ []
+
+
+Overfull \hbox (16.37766pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 An-
+ []
+
+
+Overfull \hbox (16.86655pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 gela
+ []
+
+
+Overfull \hbox (33.74423pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 Barnes,
+ []
+
+
+Overfull \hbox (27.2276pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 James
+ []
+
+
+Overfull \hbox (15.98323pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 Pil-
+ []
+
+
+Overfull \hbox (13.79993pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 lai,
+ []
+
+
+Overfull \hbox (29.27203pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 Fabian
+ []
+
+
+Overfull \hbox (15.33324pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 van
+ []
+
+
+Overfull \hbox (9.71104pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 de
+ []
+
+
+Overfull \hbox (23.83592pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 Geest
+ []
+
+
+Overfull \hbox (21.97766pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 (hn),
+ []
+
+
+Overfull \hbox (25.43872pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 David
+ []
+
+
+Overfull \hbox (22.87206pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 Stark
+ []
+
+
+Overfull \hbox (18.25821pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 (db) 
+ []
+
+
+Overfull \hbox (21.36098pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 Mari
+ []
+
+
+Overfull \hbox (16.37767pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 Ko-
+ []
+
+
+Overfull \hbox (26.57764pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 dama,
+ []
+
+
+Overfull \hbox (27.36652pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 Momo
+ []
+
+
+Overfull \hbox (16.37767pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 Ko-
+ []
+
+
+Overfull \hbox (26.57764pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 dama,
+ []
+
+
+Overfull \hbox (15.461pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 Or-
+ []
+
+
+Overfull \hbox (30.02753pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 chestre
+ []
+
+
+Overfull \hbox (9.71104pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 de
+ []
+
+
+Overfull \hbox (7.66663pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 la
+ []
+
+
+Overfull \hbox (14.56657pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 Su-
+ []
+
+
+Overfull \hbox (15.84435pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 isse
+ []
+
+
+Overfull \hbox (15.4721pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 Ro-
+ []
+
+
+Overfull \hbox (31.6887pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 mande,
+ []
+
+
+Overfull \hbox (21.23318pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 Kent
+ []
+
+
+Overfull \hbox (32.9887pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/it/10 Nagano
+ []
+
+
+! LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.32 
+     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[1
+! Undefined control sequence.
+<write> \newlabel{cha:mozart}{{}{\thepage 
+                                          }{}{}{}}
+l.32 
+     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\newlabel{cha:mozart}{{}{}{}{}{}}
+{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+! Undefined control sequence.
+<write> ...l{sec:sacred_choral_music}{{}{\thepage 
+                                                  }{}{}{}}
+l.32 
+     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\newlabel{sec:sacred_choral_music}{{}{}{}{}{}}
+]
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.33 \noindent
+              {Piano Concerto No. 20 in D minor, K. 466} \textit{Charles Ric...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no P in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no K in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no 6 in font nullfont!
+Missing character: There is no 6 in font nullfont!
+! Undefined control sequence.
+<recently read> \marginnote 
+                            
+l.33 ...Violons du Roi, Jonathan Cohen}\marginnote
+                                                  {12/2023, max} \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no x in font nullfont!
+
+Overfull \hbox (32.83867pt too wide) in paragraph at lines 33--34
+         \OT1/cmr/m/it/10 Charles
+ []
+
+
+Overfull \hbox (37.32195pt too wide) in paragraph at lines 33--34
+\OT1/cmr/m/it/10 Richard-
+ []
+
+
+Overfull \hbox (39.6331pt too wide) in paragraph at lines 33--34
+\OT1/cmr/m/it/10 Hamelin,
+ []
+
+
+Overfull \hbox (14.44987pt too wide) in paragraph at lines 33--34
+\OT1/cmr/m/it/10 Les
+ []
+
+
+Overfull \hbox (14.07768pt too wide) in paragraph at lines 33--34
+\OT1/cmr/m/it/10 Vi-
+ []
+
+
+Overfull \hbox (8.68883pt too wide) in paragraph at lines 33--34
+\OT1/cmr/m/it/10 o-
+ []
+
+
+Overfull \hbox (17.37769pt too wide) in paragraph at lines 33--34
+\OT1/cmr/m/it/10 lons
+ []
+
+
+Overfull \hbox (10.47772pt too wide) in paragraph at lines 33--34
+\OT1/cmr/m/it/10 du
+ []
+
+
+Overfull \hbox (18.02766pt too wide) in paragraph at lines 33--34
+\OT1/cmr/m/it/10 Roi,
+ []
+
+
+Overfull \hbox (40.26086pt too wide) in paragraph at lines 33--34
+\OT1/cmr/m/it/10 Jonathan
+ []
+
+
+Overfull \hbox (15.84433pt too wide) in paragraph at lines 33--34
+\OT1/cmr/m/it/10 Co-
+ []
+
+
+Overfull \hbox (15.33324pt too wide) in paragraph at lines 33--34
+\OT1/cmr/m/it/10 hen
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.35 \noindent
+              {Piano Concerto No. 23 in A major, K. 488} \textit{Charles Ric...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no P in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no j in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no K in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no 8 in font nullfont!
+Missing character: There is no 8 in font nullfont!
+! Undefined control sequence.
+<recently read> \marginnote 
+                            
+l.35 ...Violons du Roi, Jonathan Cohen}\marginnote
+                                                  {12/2023, max} \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no x in font nullfont!
+
+Overfull \hbox (32.83867pt too wide) in paragraph at lines 35--36
+         \OT1/cmr/m/it/10 Charles
+ []
+
+
+Overfull \hbox (37.32195pt too wide) in paragraph at lines 35--36
+\OT1/cmr/m/it/10 Richard-
+ []
+
+
+Overfull \hbox (39.6331pt too wide) in paragraph at lines 35--36
+\OT1/cmr/m/it/10 Hamelin,
+ []
+
+
+Overfull \hbox (14.44987pt too wide) in paragraph at lines 35--36
+\OT1/cmr/m/it/10 Les
+ []
+
+
+Overfull \hbox (14.07768pt too wide) in paragraph at lines 35--36
+\OT1/cmr/m/it/10 Vi-
+ []
+
+
+Overfull \hbox (8.68883pt too wide) in paragraph at lines 35--36
+\OT1/cmr/m/it/10 o-
+ []
+
+
+Overfull \hbox (17.37769pt too wide) in paragraph at lines 35--36
+\OT1/cmr/m/it/10 lons
+ []
+
+
+Overfull \hbox (10.47772pt too wide) in paragraph at lines 35--36
+\OT1/cmr/m/it/10 du
+ []
+
+
+Overfull \hbox (18.02766pt too wide) in paragraph at lines 35--36
+\OT1/cmr/m/it/10 Roi,
+ []
+
+
+Overfull \hbox (40.26086pt too wide) in paragraph at lines 35--36
+\OT1/cmr/m/it/10 Jonathan
+ []
+
+
+Overfull \hbox (15.84433pt too wide) in paragraph at lines 35--36
+\OT1/cmr/m/it/10 Co-
+ []
+
+
+Overfull \hbox (15.33324pt too wide) in paragraph at lines 35--36
+\OT1/cmr/m/it/10 hen
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 \noindent
+              {Piano Concerto No. 24 in C major, K. 491} \textit{Lars Vogt, ...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no P in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no j in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no K in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no 9 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+! Undefined control sequence.
+<recently read> \marginnote 
+                            
+l.37 ... Orchestre de Chambre de Paris}\marginnote
+                                                  {max} \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no x in font nullfont!
+
+Overfull \hbox (19.17763pt too wide) in paragraph at lines 37--38
+         \OT1/cmr/m/it/10 Lars
+ []
+
+
+Overfull \hbox (22.25539pt too wide) in paragraph at lines 37--38
+\OT1/cmr/m/it/10 Vogt,
+ []
+
+
+Overfull \hbox (15.461pt too wide) in paragraph at lines 37--38
+\OT1/cmr/m/it/10 Or-
+ []
+
+
+Overfull \hbox (30.02753pt too wide) in paragraph at lines 37--38
+\OT1/cmr/m/it/10 chestre
+ []
+
+
+Overfull \hbox (9.71104pt too wide) in paragraph at lines 37--38
+\OT1/cmr/m/it/10 de
+ []
+
+
+Overfull \hbox (29.13315pt too wide) in paragraph at lines 37--38
+\OT1/cmr/m/it/10 Cham-
+ []
+
+
+Overfull \hbox (12.90543pt too wide) in paragraph at lines 37--38
+\OT1/cmr/m/it/10 bre
+ []
+
+
+Overfull \hbox (9.71104pt too wide) in paragraph at lines 37--38
+\OT1/cmr/m/it/10 de
+ []
+
+
+Overfull \hbox (24.08734pt too wide) in paragraph at lines 37--38
+\OT1/cmr/m/it/10 Paris 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.39 \noindent
+              {Symphony No. 38 in D major "Prague", K. 504} \textit{Scottish...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no S in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no 8 in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no j in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no K in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 4 in font nullfont!
+! Undefined control sequence.
+<recently read> \marginnote 
+                            
+l.39 ...chestra, Sir Charles Mackerras}\marginnote
+                                                  {max} \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no x in font nullfont!
+
+Overfull \hbox (21.72205pt too wide) in paragraph at lines 39--40
+         \OT1/cmr/m/it/10 Scot-
+ []
+
+
+Overfull \hbox (15.58879pt too wide) in paragraph at lines 39--40
+\OT1/cmr/m/it/10 tish
+ []
+
+
+Overfull \hbox (29.13315pt too wide) in paragraph at lines 39--40
+\OT1/cmr/m/it/10 Cham-
+ []
+
+
+Overfull \hbox (12.90543pt too wide) in paragraph at lines 39--40
+\OT1/cmr/m/it/10 ber
+ []
+
+
+Overfull \hbox (15.461pt too wide) in paragraph at lines 39--40
+\OT1/cmr/m/it/10 Or-
+ []
+
+
+Overfull \hbox (21.97762pt too wide) in paragraph at lines 39--40
+\OT1/cmr/m/it/10 ches-
+ []
+
+
+Overfull \hbox (15.20543pt too wide) in paragraph at lines 39--40
+\OT1/cmr/m/it/10 tra,
+ []
+
+
+Overfull \hbox (12.90547pt too wide) in paragraph at lines 39--40
+\OT1/cmr/m/it/10 Sir
+ []
+
+
+Overfull \hbox (32.83867pt too wide) in paragraph at lines 39--40
+\OT1/cmr/m/it/10 Charles
+ []
+
+
+Overfull \hbox (26.85536pt too wide) in paragraph at lines 39--40
+\OT1/cmr/m/it/10 Mack-
+ []
+
+
+Overfull \hbox (12.39433pt too wide) in paragraph at lines 39--40
+\OT1/cmr/m/it/10 er-
+ []
+
+
+Overfull \hbox (13.72627pt too wide) in paragraph at lines 39--40
+\OT1/cmr/m/it/10 ras 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.41 \noindent
+              {Symphony No. 39 in E $\flat$ major, K. 543} \textit{Scottish ...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no S in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no 9 in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no j in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no K in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no 3 in font nullfont!
+! Undefined control sequence.
+<recently read> \marginnote 
+                            
+l.41 ...chestra, Sir Charles Mackerras}\marginnote
+                                                  {max} \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no x in font nullfont!
+
+Overfull \hbox (3.8889pt too wide) in paragraph at lines 41--42
+     $\OML/cmm/m/it/10 [$
+ []
+
+
+Overfull \hbox (21.72205pt too wide) in paragraph at lines 41--42
+\OT1/cmr/m/it/10 Scot-
+ []
+
+
+Overfull \hbox (15.58879pt too wide) in paragraph at lines 41--42
+\OT1/cmr/m/it/10 tish
+ []
+
+
+Overfull \hbox (29.13315pt too wide) in paragraph at lines 41--42
+\OT1/cmr/m/it/10 Cham-
+ []
+
+
+Overfull \hbox (12.90543pt too wide) in paragraph at lines 41--42
+\OT1/cmr/m/it/10 ber
+ []
+
+
+Overfull \hbox (15.461pt too wide) in paragraph at lines 41--42
+\OT1/cmr/m/it/10 Or-
+ []
+
+
+Overfull \hbox (21.97762pt too wide) in paragraph at lines 41--42
+\OT1/cmr/m/it/10 ches-
+ []
+
+
+Overfull \hbox (15.20543pt too wide) in paragraph at lines 41--42
+\OT1/cmr/m/it/10 tra,
+ []
+
+
+Overfull \hbox (12.90547pt too wide) in paragraph at lines 41--42
+\OT1/cmr/m/it/10 Sir
+ []
+
+
+Overfull \hbox (32.83867pt too wide) in paragraph at lines 41--42
+\OT1/cmr/m/it/10 Charles
+ []
+
+
+Overfull \hbox (26.85536pt too wide) in paragraph at lines 41--42
+\OT1/cmr/m/it/10 Mack-
+ []
+
+
+Overfull \hbox (12.39433pt too wide) in paragraph at lines 41--42
+\OT1/cmr/m/it/10 er-
+ []
+
+
+Overfull \hbox (13.72627pt too wide) in paragraph at lines 41--42
+\OT1/cmr/m/it/10 ras 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.43 \noindent
+              {Symphony No. 40 in G minor, K. 550} \textit{Scottish Chamber ...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no S in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no G in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no K in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+! Undefined control sequence.
+<recently read> \marginnote 
+                            
+l.43 ...chestra, Sir Charles Mackerras}\marginnote
+                                                  {max} \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no x in font nullfont!
+
+Overfull \hbox (21.72205pt too wide) in paragraph at lines 43--44
+        \OT1/cmr/m/it/10 Scot-
+ []
+
+
+Overfull \hbox (15.58879pt too wide) in paragraph at lines 43--44
+\OT1/cmr/m/it/10 tish
+ []
+
+
+Overfull \hbox (29.13315pt too wide) in paragraph at lines 43--44
+\OT1/cmr/m/it/10 Cham-
+ []
+
+
+Overfull \hbox (12.90543pt too wide) in paragraph at lines 43--44
+\OT1/cmr/m/it/10 ber
+ []
+
+
+Overfull \hbox (15.461pt too wide) in paragraph at lines 43--44
+\OT1/cmr/m/it/10 Or-
+ []
+
+
+Overfull \hbox (21.97762pt too wide) in paragraph at lines 43--44
+\OT1/cmr/m/it/10 ches-
+ []
+
+
+Overfull \hbox (15.20543pt too wide) in paragraph at lines 43--44
+\OT1/cmr/m/it/10 tra,
+ []
+
+
+Overfull \hbox (12.90547pt too wide) in paragraph at lines 43--44
+\OT1/cmr/m/it/10 Sir
+ []
+
+
+Overfull \hbox (32.83867pt too wide) in paragraph at lines 43--44
+\OT1/cmr/m/it/10 Charles
+ []
+
+
+Overfull \hbox (26.85536pt too wide) in paragraph at lines 43--44
+\OT1/cmr/m/it/10 Mack-
+ []
+
+
+Overfull \hbox (12.39433pt too wide) in paragraph at lines 43--44
+\OT1/cmr/m/it/10 er-
+ []
+
+
+Overfull \hbox (13.72627pt too wide) in paragraph at lines 43--44
+\OT1/cmr/m/it/10 ras 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.45 \noindent
+              {Symphony No. 41 in C major "Jupiter", K. 551} \textit{Scottis...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no S in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no j in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no J in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no K in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+! Undefined control sequence.
+<recently read> \marginnote 
+                            
+l.45 ...chestra, Sir Charles Mackerras}\marginnote
+                                                  {max} \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no x in font nullfont!
+
+Overfull \hbox (21.72205pt too wide) in paragraph at lines 45--46
+         \OT1/cmr/m/it/10 Scot-
+ []
+
+
+Overfull \hbox (15.58879pt too wide) in paragraph at lines 45--46
+\OT1/cmr/m/it/10 tish
+ []
+
+
+Overfull \hbox (29.13315pt too wide) in paragraph at lines 45--46
+\OT1/cmr/m/it/10 Cham-
+ []
+
+
+Overfull \hbox (12.90543pt too wide) in paragraph at lines 45--46
+\OT1/cmr/m/it/10 ber
+ []
+
+
+Overfull \hbox (15.461pt too wide) in paragraph at lines 45--46
+\OT1/cmr/m/it/10 Or-
+ []
+
+
+Overfull \hbox (21.97762pt too wide) in paragraph at lines 45--46
+\OT1/cmr/m/it/10 ches-
+ []
+
+
+Overfull \hbox (15.20543pt too wide) in paragraph at lines 45--46
+\OT1/cmr/m/it/10 tra,
+ []
+
+
+Overfull \hbox (12.90547pt too wide) in paragraph at lines 45--46
+\OT1/cmr/m/it/10 Sir
+ []
+
+
+Overfull \hbox (32.83867pt too wide) in paragraph at lines 45--46
+\OT1/cmr/m/it/10 Charles
+ []
+
+
+Overfull \hbox (26.85536pt too wide) in paragraph at lines 45--46
+\OT1/cmr/m/it/10 Mack-
+ []
+
+
+Overfull \hbox (12.39433pt too wide) in paragraph at lines 45--46
+\OT1/cmr/m/it/10 er-
+ []
+
+
+Overfull \hbox (13.72627pt too wide) in paragraph at lines 45--46
+\OT1/cmr/m/it/10 ras 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.47 \noindent
+              {Adagio and Fugue in C minor, K. 546}  \textit{Charles Richard...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no A in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no F in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no K in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no 6 in font nullfont!
+! Undefined control sequence.
+<recently read> \marginnote 
+                            
+l.47 ...Violons du Roi, Jonathan Cohen}\marginnote
+                                                  {max} \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no x in font nullfont!
+
+Overfull \hbox (32.83867pt too wide) in paragraph at lines 47--48
+        \OT1/cmr/m/it/10 Charles
+ []
+
+
+Overfull \hbox (37.32195pt too wide) in paragraph at lines 47--48
+\OT1/cmr/m/it/10 Richard-
+ []
+
+
+Overfull \hbox (39.6331pt too wide) in paragraph at lines 47--48
+\OT1/cmr/m/it/10 Hamelin,
+ []
+
+
+Overfull \hbox (14.44987pt too wide) in paragraph at lines 47--48
+\OT1/cmr/m/it/10 Les
+ []
+
+
+Overfull \hbox (14.07768pt too wide) in paragraph at lines 47--48
+\OT1/cmr/m/it/10 Vi-
+ []
+
+
+Overfull \hbox (8.68883pt too wide) in paragraph at lines 47--48
+\OT1/cmr/m/it/10 o-
+ []
+
+
+Overfull \hbox (17.37769pt too wide) in paragraph at lines 47--48
+\OT1/cmr/m/it/10 lons
+ []
+
+
+Overfull \hbox (10.47772pt too wide) in paragraph at lines 47--48
+\OT1/cmr/m/it/10 du
+ []
+
+
+Overfull \hbox (18.02766pt too wide) in paragraph at lines 47--48
+\OT1/cmr/m/it/10 Roi,
+ []
+
+
+Overfull \hbox (40.26086pt too wide) in paragraph at lines 47--48
+\OT1/cmr/m/it/10 Jonathan
+ []
+
+
+Overfull \hbox (15.84433pt too wide) in paragraph at lines 47--48
+\OT1/cmr/m/it/10 Co-
+ []
+
+
+Overfull \hbox (16.10037pt too wide) in paragraph at lines 47--48
+\OT1/cmr/m/it/10 hen 
+ []
+
+)
+! Emergency stop.
+<*> mozart.tex
+              
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 27 strings out of 474116
+ 486 string characters out of 5743683
+ 1933187 words of memory out of 5000000
+ 22484 multiletter control sequences out of 15000+600000
+ 558415 words of font info for 37 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 23i,5n,24p,368b,126s stack positions out of 10000i,1000n,20000p,200000b,200000s
+!  ==> Fatal error occurred, no output PDF file produced!
