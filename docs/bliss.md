@@ -17,7 +17,7 @@ nav_order: 1
 
 **Checkmate**, F. 2 (1937) [*Ulster Orchestra, Vernon Handley*](http://www.tidal.com/track/12423573)
 
-**Miracle in the Gorbals**, F. 6 (1944) [*Philharmonia Orchestra, Arthur Bliss*](http://www.tidal.com/track/12609063)
+**Miracle in the Gorbals**, F. 6 (1944) [*BBC Philharmonic Orchestra, Michael Seal*](https://tidal.com/track/451640256) (12/2025)
 
 **Adam Zero**, F. 1 (1946)
 
@@ -100,7 +100,7 @@ nav_order: 1
 
 **Two Ballads**, F. 35 (1971)
 
-**Metamorphic Variations**, F. 122 (1972)
+**Metamorphic Variations**, F. 122 (1972) [*BBC Philharmonic Orchestra, Michael Seal*](https://tidal.com/track/451640272) (12/2025)
 
 **Two Contrasts for String Orchestra**, F. 132 (1972)
 

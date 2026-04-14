@@ -74,9 +74,9 @@ nav_order: 1
 
 **Wiegenlied**, Op. 49/4 (vn/pf) [*Leonidas Kavakos, Yuja Wang*](http://www.tidal.com/track/27201221)
 
-**String Quartet No. 1 in C minor**, Op. 51/1 (1865) [*Quatuor Agate*](http://www.tidal.com/track/362513730)
+**String Quartet No. 1 in C minor**, Op. 51/1 (1865) [*Zehetmaier Quartett*](https://tidal.com/track/466011513) (12/2025)
 
-**String Quartet No. 2 in A minor**, Op. 51/2 (1873) [*Quatuor Agate*](http://www.tidal.com/track/362513734)
+**String Quartet No. 2 in A minor**, Op. 51/2 (1873) [*Zehetmaier Quartett*](https://tidal.com/track/466011517) (12/2025)
 
 **8 Songs**, Op. 57/3, 4 (vc/pf) [*Amy Norrington, Piet Kuijken*](http://www.tidal.com/track/392902636)
 
