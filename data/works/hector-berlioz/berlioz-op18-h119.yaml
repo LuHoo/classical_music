@@ -1,0 +1,20 @@
+id: berlioz-op18-h119
+composer_id: hector-berlioz
+canonical_title: Tristia
+localized_titles:
+  fr: Tristia
+  en: Tristia
+  nl: Tristia
+catalogue:
+  opus: Op. 18
+  holoman: H. 119
+aliases:
+  - Tristia, Op. 18
+  - Tristia, H. 119
+  - Op. 18
+  - H. 119
+authorities:
+  musicbrainz_work_id:
+  wikidata:
+notes: >-
+  Modelled as the grouped work identity used by the current Berlioz collection page.
