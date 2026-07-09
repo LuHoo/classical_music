@@ -1,0 +1,21 @@
+id: berlioz-op9
+composer_id: hector-berlioz
+canonical_title: Le Carnaval romain
+localized_titles:
+  fr: Le Carnaval romain
+  en: Roman Carnival Overture
+  nl: Romeins carnaval
+catalogue:
+  opus: Op. 9
+aliases:
+  - Le Carnaval romain, Op. 9
+  - Carnaval romain
+  - Roman Carnival
+  - Roman Carnival Overture
+  - Ouverture Le Carnaval romain
+  - Op. 9
+authorities:
+  musicbrainz_work_id:
+  wikidata:
+notes: >-
+  Modelled from the overture entry on the current Berlioz collection page.

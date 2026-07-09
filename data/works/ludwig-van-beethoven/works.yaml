@@ -1,0 +1,270 @@
+composer_id: ludwig-van-beethoven
+source_note: >-
+  Representative pilot set based on the existing docs/beethoven.md page. It covers opus,
+  WoO and Hess identifiers, nicknames, arrangements, symphonies, concertos, quartets,
+  sonatas and stage works.
+works:
+  - id: beethoven-op15
+    composer_id: ludwig-van-beethoven
+    canonical_title: Piano Concerto No. 1 in C major
+    localized_titles: { en: Piano Concerto No. 1 in C major, de: Klavierkonzert Nr. 1 C-Dur, nl: Pianoconcert nr. 1 in C groot }
+    category: orchestral
+    catalogue: { opus: Op. 15 }
+    aliases: [Piano Concerto No. 1, Klavierkonzert Nr. 1, Op. 15]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: beethoven-op19
+    composer_id: ludwig-van-beethoven
+    canonical_title: Piano Concerto No. 2 in B-flat major
+    localized_titles: { en: Piano Concerto No. 2 in B-flat major, de: Klavierkonzert Nr. 2 B-Dur, nl: Pianoconcert nr. 2 in Bes groot }
+    category: orchestral
+    catalogue: { opus: Op. 19 }
+    aliases: [Piano Concerto No. 2, Klavierkonzert Nr. 2, Op. 19]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: beethoven-op21
+    composer_id: ludwig-van-beethoven
+    canonical_title: Symphony No. 1 in C major
+    localized_titles: { en: Symphony No. 1 in C major, de: Sinfonie Nr. 1 C-Dur, nl: Symfonie nr. 1 in C groot }
+    category: orchestral
+    catalogue: { opus: Op. 21 }
+    aliases: [Symphony No. 1, First Symphony, Op. 21]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: beethoven-op36
+    composer_id: ludwig-van-beethoven
+    canonical_title: Symphony No. 2 in D major
+    localized_titles: { en: Symphony No. 2 in D major, de: Sinfonie Nr. 2 D-Dur, nl: Symfonie nr. 2 in D groot }
+    category: orchestral
+    catalogue: { opus: Op. 36 }
+    aliases: [Symphony No. 2, Second Symphony, Op. 36]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: beethoven-op37
+    composer_id: ludwig-van-beethoven
+    canonical_title: Piano Concerto No. 3 in C minor
+    localized_titles: { en: Piano Concerto No. 3 in C minor, de: Klavierkonzert Nr. 3 c-Moll, nl: Pianoconcert nr. 3 in c klein }
+    category: orchestral
+    catalogue: { opus: Op. 37 }
+    aliases: [Piano Concerto No. 3, Klavierkonzert Nr. 3, Op. 37]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: beethoven-op43
+    composer_id: ludwig-van-beethoven
+    canonical_title: The Creatures of Prometheus
+    localized_titles: { en: The Creatures of Prometheus, de: Die Geschöpfe des Prometheus, nl: De schepselen van Prometheus }
+    category: stage-orchestral
+    catalogue: { opus: Op. 43 }
+    aliases: [The Creatures of Prometheus, Die Geschöpfe des Prometheus, Prometheus, Op. 43]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: beethoven-op55
+    composer_id: ludwig-van-beethoven
+    canonical_title: Symphony No. 3 in E-flat major, Eroica
+    localized_titles: { en: Symphony No. 3 in E-flat major, Eroica, de: Sinfonie Nr. 3 Es-Dur, Eroica, nl: Symfonie nr. 3 in Es groot, Eroica }
+    category: orchestral
+    catalogue: { opus: Op. 55 }
+    aliases: [Symphony No. 3, Eroica, Third Symphony, Op. 55]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: beethoven-op56
+    composer_id: ludwig-van-beethoven
+    canonical_title: Triple Concerto in C major
+    localized_titles: { en: Triple Concerto in C major, de: Tripelkonzert C-Dur, nl: Tripelconcert in C groot }
+    category: orchestral
+    catalogue: { opus: Op. 56 }
+    aliases: [Triple Concerto, Concerto for violin, cello and piano, Op. 56]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: beethoven-op58
+    composer_id: ludwig-van-beethoven
+    canonical_title: Piano Concerto No. 4 in G major
+    localized_titles: { en: Piano Concerto No. 4 in G major, de: Klavierkonzert Nr. 4 G-Dur, nl: Pianoconcert nr. 4 in G groot }
+    category: orchestral
+    catalogue: { opus: Op. 58 }
+    aliases: [Piano Concerto No. 4, Klavierkonzert Nr. 4, Op. 58]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: beethoven-op60
+    composer_id: ludwig-van-beethoven
+    canonical_title: Symphony No. 4 in B-flat major
+    localized_titles: { en: Symphony No. 4 in B-flat major, de: Sinfonie Nr. 4 B-Dur, nl: Symfonie nr. 4 in Bes groot }
+    category: orchestral
+    catalogue: { opus: Op. 60 }
+    aliases: [Symphony No. 4, Fourth Symphony, Op. 60]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: beethoven-op61
+    composer_id: ludwig-van-beethoven
+    canonical_title: Violin Concerto in D major
+    localized_titles: { en: Violin Concerto in D major, de: Violinkonzert D-Dur, nl: Vioolconcert in D groot }
+    category: orchestral
+    catalogue: { opus: Op. 61 }
+    aliases: [Violin Concerto, Violinkonzert, Op. 61]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: beethoven-op61a
+    composer_id: ludwig-van-beethoven
+    canonical_title: Piano Concerto in D major after the Violin Concerto
+    localized_titles: { en: Piano Concerto in D major after the Violin Concerto, nl: Pianoversie van het vioolconcert }
+    category: orchestral
+    catalogue: { opus: Op. 61a }
+    aliases: [Arrangement of Op. 61 for Piano, Piano version of the Violin Concerto, Op. 61a]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: beethoven-op67
+    composer_id: ludwig-van-beethoven
+    canonical_title: Symphony No. 5 in C minor
+    localized_titles: { en: Symphony No. 5 in C minor, de: Sinfonie Nr. 5 c-Moll, nl: Symfonie nr. 5 in c klein }
+    category: orchestral
+    catalogue: { opus: Op. 67 }
+    aliases: [Symphony No. 5, Fifth Symphony, Fate Symphony, Schicksalssinfonie, Op. 67]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: beethoven-op68
+    composer_id: ludwig-van-beethoven
+    canonical_title: Symphony No. 6 in F major, Pastoral
+    localized_titles: { en: Symphony No. 6 in F major, Pastoral, de: Sinfonie Nr. 6 F-Dur, Pastorale, nl: Symfonie nr. 6 in F groot, Pastorale }
+    category: orchestral
+    catalogue: { opus: Op. 68 }
+    aliases: [Symphony No. 6, Pastoral Symphony, Pastorale, Op. 68]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: beethoven-op73
+    composer_id: ludwig-van-beethoven
+    canonical_title: Piano Concerto No. 5 in E-flat major, Emperor
+    localized_titles: { en: Piano Concerto No. 5 in E-flat major, Emperor, de: Klavierkonzert Nr. 5 Es-Dur, nl: Pianoconcert nr. 5 in Es groot }
+    category: orchestral
+    catalogue: { opus: Op. 73 }
+    aliases: [Piano Concerto No. 5, Emperor Concerto, Emperor, Op. 73]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: beethoven-op84
+    composer_id: ludwig-van-beethoven
+    canonical_title: Egmont
+    localized_titles: { en: Egmont, de: Egmont, nl: Egmont }
+    category: stage-orchestral
+    catalogue: { opus: Op. 84 }
+    aliases: [Egmont, Egmont Overture, Egmont-Ouverture, Op. 84]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: beethoven-op92
+    composer_id: ludwig-van-beethoven
+    canonical_title: Symphony No. 7 in A major
+    localized_titles: { en: Symphony No. 7 in A major, de: Sinfonie Nr. 7 A-Dur, nl: Symfonie nr. 7 in A groot }
+    category: orchestral
+    catalogue: { opus: Op. 92 }
+    aliases: [Symphony No. 7, Seventh Symphony, Op. 92]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: beethoven-op93
+    composer_id: ludwig-van-beethoven
+    canonical_title: Symphony No. 8 in F major
+    localized_titles: { en: Symphony No. 8 in F major, de: Sinfonie Nr. 8 F-Dur, nl: Symfonie nr. 8 in F groot }
+    category: orchestral
+    catalogue: { opus: Op. 93 }
+    aliases: [Symphony No. 8, Eighth Symphony, Op. 93]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: beethoven-op125
+    composer_id: ludwig-van-beethoven
+    canonical_title: Symphony No. 9 in D minor, Choral
+    localized_titles: { en: Symphony No. 9 in D minor, Choral, de: Sinfonie Nr. 9 d-Moll, nl: Symfonie nr. 9 in d klein }
+    category: orchestral
+    catalogue: { opus: Op. 125 }
+    aliases: [Symphony No. 9, Choral Symphony, Ninth Symphony, Ode to Joy, Op. 125]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: beethoven-op18
+    composer_id: ludwig-van-beethoven
+    canonical_title: Six String Quartets, Op. 18
+    localized_titles: { en: Six String Quartets, Op. 18, nl: Zes strijkkwartetten, Op. 18 }
+    category: chamber
+    catalogue: { opus: Op. 18 }
+    aliases: [String Quartets Op. 18, Six String Quartets, Op. 18]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: beethoven-op59
+    composer_id: ludwig-van-beethoven
+    canonical_title: Three Razumovsky String Quartets
+    localized_titles: { en: Three Razumovsky String Quartets, nl: Drie Razumovsky-strijkkwartetten }
+    category: chamber
+    catalogue: { opus: Op. 59 }
+    aliases: [Razumovsky Quartets, String Quartets Op. 59, Op. 59]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: beethoven-op95
+    composer_id: ludwig-van-beethoven
+    canonical_title: String Quartet No. 11 in F minor, Serioso
+    localized_titles: { en: String Quartet No. 11 in F minor, Serioso, nl: Strijkkwartet nr. 11 in f klein, Serioso }
+    category: chamber
+    catalogue: { opus: Op. 95 }
+    aliases: [String Quartet No. 11, Serioso, Op. 95]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: beethoven-op127
+    composer_id: ludwig-van-beethoven
+    canonical_title: String Quartet No. 12 in E-flat major
+    localized_titles: { en: String Quartet No. 12 in E-flat major, nl: Strijkkwartet nr. 12 in Es groot }
+    category: chamber
+    catalogue: { opus: Op. 127 }
+    aliases: [String Quartet No. 12, Late Quartets, Op. 127]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: beethoven-op130
+    composer_id: ludwig-van-beethoven
+    canonical_title: String Quartet No. 13 in B-flat major
+    localized_titles: { en: String Quartet No. 13 in B-flat major, nl: Strijkkwartet nr. 13 in Bes groot }
+    category: chamber
+    catalogue: { opus: Op. 130 }
+    aliases: [String Quartet No. 13, Late Quartets, Op. 130]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: beethoven-op131
+    composer_id: ludwig-van-beethoven
+    canonical_title: String Quartet No. 14 in C-sharp minor
+    localized_titles: { en: String Quartet No. 14 in C-sharp minor, nl: Strijkkwartet nr. 14 in cis klein }
+    category: chamber
+    catalogue: { opus: Op. 131 }
+    aliases: [String Quartet No. 14, Late Quartets, Op. 131]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: beethoven-op132
+    composer_id: ludwig-van-beethoven
+    canonical_title: String Quartet No. 15 in A minor
+    localized_titles: { en: String Quartet No. 15 in A minor, nl: Strijkkwartet nr. 15 in a klein }
+    category: chamber
+    catalogue: { opus: Op. 132 }
+    aliases: [String Quartet No. 15, Heiliger Dankgesang, Late Quartets, Op. 132]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: beethoven-op133
+    composer_id: ludwig-van-beethoven
+    canonical_title: Große Fuge
+    localized_titles: { en: Grosse Fuge, de: Große Fuge, nl: Grote fuga }
+    category: chamber
+    catalogue: { opus: Op. 133 }
+    aliases: [Große Fuge, Grosse Fuge, Great Fugue, Op. 133]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: beethoven-op135
+    composer_id: ludwig-van-beethoven
+    canonical_title: String Quartet No. 16 in F major
+    localized_titles: { en: String Quartet No. 16 in F major, nl: Strijkkwartet nr. 16 in F groot }
+    category: chamber
+    catalogue: { opus: Op. 135 }
+    aliases: [String Quartet No. 16, Late Quartets, Op. 135]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: beethoven-op13
+    composer_id: ludwig-van-beethoven
+    canonical_title: Piano Sonata No. 8 in C minor, Pathétique
+    localized_titles: { en: Piano Sonata No. 8 in C minor, Pathétique, nl: Pianosonate nr. 8 in c klein, Pathétique }
+    category: piano
+    catalogue: { opus: Op. 13 }
+    aliases: [Pathétique Sonata, Pathetique, Piano Sonata No. 8, Op. 13]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: beethoven-op27-2
+    composer_id: ludwig-van-beethoven
+    canonical_title: Piano Sonata No. 14 in C-sharp minor, Moonlight
+    localized_titles: { en: Piano Sonata No. 14 in C-sharp minor, Moonlight, de: Mondscheinsonate, nl: Mondscheinsonate }
+    category: piano
+    catalogue: { opus: Op. 27/2 }
+    aliases: [Moonlight Sonata, Mondscheinsonate, Piano Sonata No. 14, Op. 27 No. 2]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: beethoven-op53
+    composer_id: ludwig-van-beethoven
+    canonical_title: Piano Sonata No. 21 in C major, Waldstein
+    localized_titles: { en: Piano Sonata No. 21 in C major, Waldstein, nl: Pianosonate nr. 21 in C groot, Waldstein }
+    category: piano
+    catalogue: { opus: Op. 53 }
+    aliases: [Waldstein Sonata, Piano Sonata No. 21, Op. 53]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: beethoven-op57
+    composer_id: ludwig-van-beethoven
+    canonical_title: Piano Sonata No. 23 in F minor, Appassionata
+    localized_titles: { en: Piano Sonata No. 23 in F minor, Appassionata, nl: Pianosonate nr. 23 in f klein, Appassionata }
+    category: piano
+    catalogue: { opus: Op. 57 }
+    aliases: [Appassionata Sonata, Piano Sonata No. 23, Op. 57]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: beethoven-op106
+    composer_id: ludwig-van-beethoven
+    canonical_title: Piano Sonata No. 29 in B-flat major, Hammerklavier
+    localized_titles: { en: Piano Sonata No. 29 in B-flat major, Hammerklavier, nl: Hammerklavier-sonate }
+    category: piano
+    catalogue: { opus: Op. 106 }
+    aliases: [Hammerklavier Sonata, Piano Sonata No. 29, Op. 106]
+    authorities: { musicbrainz_work_id:, wikidata: }

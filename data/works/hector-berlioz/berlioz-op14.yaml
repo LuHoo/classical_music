@@ -1,0 +1,22 @@
+id: berlioz-op14
+composer_id: hector-berlioz
+canonical_title: Symphonie fantastique
+localized_titles:
+  fr: Symphonie fantastique
+  en: Fantastic Symphony
+  nl: Symphonie fantastique
+catalogue:
+  opus: Op. 14
+aliases:
+  - Symphonie fantastique, Op. 14
+  - Fantastic Symphony
+  - Épisode de la vie d'un artiste
+  - Episode in the Life of an Artist
+  - Episode de la vie d'un artiste
+  - Op. 14
+authorities:
+  musicbrainz_work_id:
+  wikidata:
+notes: >-
+  This is the motivating example from issue 59 and demonstrates translated titles,
+  programme subtitles, and catalogue aliases referring to the same work identity.

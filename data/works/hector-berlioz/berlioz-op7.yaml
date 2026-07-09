@@ -1,0 +1,20 @@
+id: berlioz-op7
+composer_id: hector-berlioz
+canonical_title: Les Nuits d'été
+localized_titles:
+  fr: Les Nuits d'été
+  en: Summer Nights
+  nl: Zomernachten
+catalogue:
+  opus: Op. 7
+aliases:
+  - Les Nuits d'été, Op. 7
+  - Nuits d'été
+  - Summer Nights
+  - Summer Nights, Op. 7
+  - Op. 7
+authorities:
+  musicbrainz_work_id:
+  wikidata:
+notes: >-
+  Modelled as the song cycle identity; individual songs can be modelled later if needed.

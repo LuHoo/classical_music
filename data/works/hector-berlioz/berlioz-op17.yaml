@@ -1,0 +1,22 @@
+id: berlioz-op17
+composer_id: hector-berlioz
+canonical_title: Roméo et Juliette
+localized_titles:
+  fr: Roméo et Juliette
+  en: Romeo and Juliet
+  nl: Romeo en Julia
+catalogue:
+  opus: Op. 17
+aliases:
+  - Roméo et Juliette, Op. 17
+  - Romeo et Juliette
+  - Romeo and Juliet
+  - Romeo and Juliet, Op. 17
+  - Dramatic Symphony
+  - Symphonie dramatique
+  - Op. 17
+authorities:
+  musicbrainz_work_id:
+  wikidata:
+notes: >-
+  Modelled as the complete dramatic symphony rather than individual movements.
