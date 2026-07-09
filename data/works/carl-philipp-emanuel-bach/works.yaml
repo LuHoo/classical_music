@@ -1,0 +1,128 @@
+composer_id: carl-philipp-emanuel-bach
+source_note: >-
+  Data-first representative pilot for a composer not yet represented by a markdown page.
+  This tests Wq/H catalogue identifiers, title translations, and work groups.
+works:
+  - id: cpebach-wq20-h186
+    composer_id: carl-philipp-emanuel-bach
+    canonical_title: Magnificat in D major
+    localized_titles:
+      en: Magnificat in D major
+      de: Magnificat D-Dur
+      nl: Magnificat in D groot
+    category: sacred-vocal
+    catalogue: { wq: Wq 215, h: H 772 }
+    aliases: [Magnificat, Magnificat in D major, Wq 215, H 772]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: cpebach-wq183
+    composer_id: carl-philipp-emanuel-bach
+    canonical_title: Four Orchestral Symphonies
+    localized_titles:
+      en: Four Orchestral Symphonies
+      de: Vier Orchestersinfonien
+      nl: Vier orkestsymfonieën
+    category: orchestral
+    catalogue: { wq: Wq 183 }
+    aliases: [Four Orchestral Symphonies, Hamburg Symphonies, Symphonies Wq 183, Wq 183]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: cpebach-wq182
+    composer_id: carl-philipp-emanuel-bach
+    canonical_title: Six String Symphonies
+    localized_titles:
+      en: Six String Symphonies
+      de: Sechs Streichersinfonien
+      nl: Zes strijkerssymfonieën
+    category: orchestral
+    catalogue: { wq: Wq 182 }
+    aliases: [Six String Symphonies, Hamburg String Symphonies, Symphonies Wq 182, Wq 182]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: cpebach-wq22
+    composer_id: carl-philipp-emanuel-bach
+    canonical_title: Keyboard Concerto in D minor
+    localized_titles:
+      en: Keyboard Concerto in D minor
+      de: Klavierkonzert d-Moll
+      nl: Klavierconcert in d klein
+    category: concertante
+    catalogue: { wq: Wq 22 }
+    aliases: [Keyboard Concerto in D minor, Harpsichord Concerto in D minor, Wq 22]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: cpebach-wq23
+    composer_id: carl-philipp-emanuel-bach
+    canonical_title: Keyboard Concerto in G major
+    localized_titles:
+      en: Keyboard Concerto in G major
+      de: Klavierkonzert G-Dur
+      nl: Klavierconcert in G groot
+    category: concertante
+    catalogue: { wq: Wq 23 }
+    aliases: [Keyboard Concerto in G major, Harpsichord Concerto in G major, Wq 23]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: cpebach-wq35
+    composer_id: carl-philipp-emanuel-bach
+    canonical_title: Flute Concerto in D minor
+    localized_titles:
+      en: Flute Concerto in D minor
+      de: Flötenkonzert d-Moll
+      nl: Fluitconcert in d klein
+    category: concertante
+    catalogue: { wq: Wq 22 }
+    aliases: [Flute Concerto in D minor, Flötenkonzert d-Moll, Wq 22]
+    authorities: { musicbrainz_work_id:, wikidata: }
+    notes: >-
+      Included to test cases where related concerto versions share source material and catalogue references.
+  - id: cpebach-wq170
+    composer_id: carl-philipp-emanuel-bach
+    canonical_title: Oboe Concerto in B-flat major
+    localized_titles:
+      en: Oboe Concerto in B-flat major
+      de: Oboenkonzert B-Dur
+      nl: Hoboconcert in Bes groot
+    category: concertante
+    catalogue: { wq: Wq 164 }
+    aliases: [Oboe Concerto in B-flat major, Oboenkonzert B-Dur, Wq 164]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: cpebach-wq49
+    composer_id: carl-philipp-emanuel-bach
+    canonical_title: Prussian Sonatas
+    localized_titles:
+      en: Prussian Sonatas
+      de: Preußische Sonaten
+      nl: Pruisische sonates
+    category: keyboard
+    catalogue: { wq: Wq 48 }
+    aliases: [Prussian Sonatas, Preußische Sonaten, Six Prussian Sonatas, Wq 48]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: cpebach-wq49-wuerttemberg
+    composer_id: carl-philipp-emanuel-bach
+    canonical_title: Württemberg Sonatas
+    localized_titles:
+      en: Württemberg Sonatas
+      de: Württembergische Sonaten
+      nl: Württembergse sonates
+    category: keyboard
+    catalogue: { wq: Wq 49 }
+    aliases: [Württemberg Sonatas, Württembergische Sonaten, Six Württemberg Sonatas, Wq 49]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: cpebach-wq55-clavier-fuer-kenner-und-liebhaber
+    composer_id: carl-philipp-emanuel-bach
+    canonical_title: Für Kenner und Liebhaber
+    localized_titles:
+      en: For Connoisseurs and Amateurs
+      de: Für Kenner und Liebhaber
+      nl: Voor kenners en liefhebbers
+    category: keyboard
+    catalogue: { wq: Wq 55-59, 61 }
+    aliases: [Für Kenner und Liebhaber, For Connoisseurs and Amateurs, Clavier-Sonaten und freie Fantasien, Wq 55-59, Wq 61]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: cpebach-wq67
+    composer_id: carl-philipp-emanuel-bach
+    canonical_title: Solfeggietto in C minor
+    localized_titles:
+      en: Solfeggietto in C minor
+      de: Solfeggietto c-Moll
+      nl: Solfeggietto in c klein
+    category: keyboard
+    catalogue: { wq: Wq 117/2, h: H 220 }
+    aliases: [Solfeggietto, Solfeggio in C minor, Solfeggietto in C minor, Wq 117/2, H 220]
+    authorities: { musicbrainz_work_id:, wikidata: }
