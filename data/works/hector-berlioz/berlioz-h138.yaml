@@ -1,0 +1,22 @@
+id: berlioz-h138
+composer_id: hector-berlioz
+canonical_title: Béatrice et Bénédict
+localized_titles:
+  fr: Béatrice et Bénédict
+  en: Beatrice and Benedict
+  nl: Béatrice et Bénédict
+catalogue:
+  holoman: H. 138
+aliases:
+  - Béatrice et Bénédict, H. 138
+  - Beatrice et Benedict
+  - Beatrice and Benedict
+  - Beatrice and Benedict Overture
+  - Ouverture Béatrice et Bénédict
+  - H. 138
+authorities:
+  musicbrainz_work_id:
+  wikidata:
+notes: >-
+  The current collection page links the overture. This record identifies the work title
+  used there; an overture-specific child work can be added later if needed.
