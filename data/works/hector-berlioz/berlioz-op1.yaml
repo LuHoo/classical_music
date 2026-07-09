@@ -1,0 +1,19 @@
+id: berlioz-op1
+composer_id: hector-berlioz
+canonical_title: Waverley
+localized_titles:
+  fr: Waverley
+  en: Waverley
+  nl: Waverley
+catalogue:
+  opus: Op. 1
+aliases:
+  - Waverley, Op. 1
+  - Waverley Overture
+  - Ouverture Waverley
+  - Op. 1
+authorities:
+  musicbrainz_work_id:
+  wikidata:
+notes: >-
+  Modelled from the current Berlioz collection page as an orchestral overture.
