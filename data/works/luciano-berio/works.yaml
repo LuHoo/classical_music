@@ -1,0 +1,236 @@
+composer_id: luciano-berio
+source_note: >-
+  Representative pilot set based on the existing docs/berio.md page. It tests modern
+  works without opus numbers, series identities, arrangements, withdrawn/reworked works,
+  and relationships between Sequenza and Chemins works.
+works:
+  - id: berio-folk-songs
+    composer_id: luciano-berio
+    canonical_title: Folk Songs
+    localized_titles: { en: Folk Songs, it: Folk Songs, nl: Folk Songs }
+    year: 1964
+    category: vocal-instrumental
+    aliases: [Folk Songs, Folk Songs for mezzo-soprano and seven instruments, Folk Songs for mezzo-soprano and orchestra]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: berio-sinfonia
+    composer_id: luciano-berio
+    canonical_title: Sinfonia
+    localized_titles: { en: Sinfonia, it: Sinfonia, nl: Sinfonia }
+    year: 1968-1969
+    category: orchestral-vocal
+    aliases: [Sinfonia, Sinfonia for eight voices and orchestra, O King]
+    authorities: { musicbrainz_work_id:, wikidata: }
+    notes: >-
+      Includes material from O King; the fifth movement was added after the original version.
+  - id: berio-laborintus-ii
+    composer_id: luciano-berio
+    canonical_title: Laborintus II
+    localized_titles: { en: Laborintus II, it: Laborintus II, nl: Laborintus II }
+    year: 1965
+    category: stage-vocal-instrumental
+    aliases: [Laborintus II, Laborintus 2]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: berio-sequenza-i
+    composer_id: luciano-berio
+    canonical_title: Sequenza I
+    localized_titles: { en: Sequenza I, it: Sequenza I, nl: Sequenza I }
+    year: 1958
+    category: solo
+    aliases: [Sequenza I, Sequenza 1, Sequenza I for flute]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: berio-sequenza-ii
+    composer_id: luciano-berio
+    canonical_title: Sequenza II
+    localized_titles: { en: Sequenza II, it: Sequenza II, nl: Sequenza II }
+    year: 1963
+    category: solo
+    aliases: [Sequenza II, Sequenza 2, Sequenza II for harp]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: berio-sequenza-iii
+    composer_id: luciano-berio
+    canonical_title: Sequenza III
+    localized_titles: { en: Sequenza III, it: Sequenza III, nl: Sequenza III }
+    year: 1966
+    category: solo
+    aliases: [Sequenza III, Sequenza 3, Sequenza III for solo voice]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: berio-sequenza-iv
+    composer_id: luciano-berio
+    canonical_title: Sequenza IV
+    localized_titles: { en: Sequenza IV, it: Sequenza IV, nl: Sequenza IV }
+    year: 1966
+    category: solo
+    aliases: [Sequenza IV, Sequenza 4, Sequenza IV for piano]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: berio-sequenza-v
+    composer_id: luciano-berio
+    canonical_title: Sequenza V
+    localized_titles: { en: Sequenza V, it: Sequenza V, nl: Sequenza V }
+    year: 1966
+    category: solo
+    aliases: [Sequenza V, Sequenza 5, Sequenza V for trombone]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: berio-sequenza-vi
+    composer_id: luciano-berio
+    canonical_title: Sequenza VI
+    localized_titles: { en: Sequenza VI, it: Sequenza VI, nl: Sequenza VI }
+    year: 1967
+    category: solo
+    aliases: [Sequenza VI, Sequenza 6, Sequenza VI for viola]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: berio-sequenza-vii-a
+    composer_id: luciano-berio
+    canonical_title: Sequenza VIIa
+    localized_titles: { en: Sequenza VIIa, it: Sequenza VIIa, nl: Sequenza VIIa }
+    year: 1969
+    category: solo
+    aliases: [Sequenza VIIa, Sequenza VII for oboe, Sequenza 7a]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: berio-sequenza-viii
+    composer_id: luciano-berio
+    canonical_title: Sequenza VIII
+    localized_titles: { en: Sequenza VIII, it: Sequenza VIII, nl: Sequenza VIII }
+    year: 1976
+    category: solo
+    aliases: [Sequenza VIII, Sequenza 8, Sequenza VIII for violin]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: berio-sequenza-ix-a
+    composer_id: luciano-berio
+    canonical_title: Sequenza IXa
+    localized_titles: { en: Sequenza IXa, it: Sequenza IXa, nl: Sequenza IXa }
+    year: 1980
+    category: solo
+    aliases: [Sequenza IXa, Sequenza IX for clarinet, Sequenza 9a]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: berio-sequenza-x
+    composer_id: luciano-berio
+    canonical_title: Sequenza X
+    localized_titles: { en: Sequenza X, it: Sequenza X, nl: Sequenza X }
+    year: 1984
+    category: solo
+    aliases: [Sequenza X, Sequenza 10, Sequenza X for trumpet]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: berio-sequenza-xi
+    composer_id: luciano-berio
+    canonical_title: Sequenza XI
+    localized_titles: { en: Sequenza XI, it: Sequenza XI, nl: Sequenza XI }
+    year: 1988
+    category: solo
+    aliases: [Sequenza XI, Sequenza 11, Sequenza XI for guitar]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: berio-sequenza-xii
+    composer_id: luciano-berio
+    canonical_title: Sequenza XII
+    localized_titles: { en: Sequenza XII, it: Sequenza XII, nl: Sequenza XII }
+    year: 1995
+    category: solo
+    aliases: [Sequenza XII, Sequenza 12, Sequenza XII for bassoon]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: berio-sequenza-xiii
+    composer_id: luciano-berio
+    canonical_title: Sequenza XIII
+    localized_titles: { en: Sequenza XIII, it: Sequenza XIII, nl: Sequenza XIII }
+    year: 1995
+    category: solo
+    aliases: [Sequenza XIII, Sequenza 13, Chanson for accordion]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: berio-sequenza-xiv
+    composer_id: luciano-berio
+    canonical_title: Sequenza XIV
+    localized_titles: { en: Sequenza XIV, it: Sequenza XIV, nl: Sequenza XIV }
+    year: 2002
+    category: solo
+    aliases: [Sequenza XIV, Sequenza 14, Sequenza XIV for cello]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: berio-chemins-i
+    composer_id: luciano-berio
+    canonical_title: Chemins I
+    localized_titles: { en: Chemins I, it: Chemins I, nl: Chemins I }
+    year: 1964
+    category: concertante
+    aliases: [Chemins I, Chemins 1, Chemins I for harp and orchestra]
+    authorities: { musicbrainz_work_id:, wikidata: }
+    notes: >-
+      Related to Sequenza II.
+  - id: berio-chemins-ii
+    composer_id: luciano-berio
+    canonical_title: Chemins II
+    localized_titles: { en: Chemins II, it: Chemins II, nl: Chemins II }
+    year: 1967
+    category: concertante
+    aliases: [Chemins II, Chemins 2, Chemins II for viola and nine instruments]
+    authorities: { musicbrainz_work_id:, wikidata: }
+    notes: >-
+      Related to Sequenza VI.
+  - id: berio-chemins-iii
+    composer_id: luciano-berio
+    canonical_title: Chemins III
+    localized_titles: { en: Chemins III, it: Chemins III, nl: Chemins III }
+    year: 1968
+    category: concertante
+    aliases: [Chemins III, Chemins 3]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: berio-chemins-iv
+    composer_id: luciano-berio
+    canonical_title: Chemins IV
+    localized_titles: { en: Chemins IV, it: Chemins IV, nl: Chemins IV }
+    year: 1975
+    category: concertante
+    aliases: [Chemins IV, Chemins 4, Chemins IV for oboe and strings]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: berio-coro
+    composer_id: luciano-berio
+    canonical_title: Coro
+    localized_titles: { en: Coro, it: Coro, nl: Coro }
+    year: 1976-1977
+    category: vocal-instrumental
+    aliases: [Coro, Coro for forty voices and instruments]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: berio-voci
+    composer_id: luciano-berio
+    canonical_title: Voci
+    localized_titles: { en: Voci, it: Voci, nl: Voci }
+    year: 1984
+    category: concertante
+    aliases: [Voci, Voci for viola and orchestra]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: berio-naturale
+    composer_id: luciano-berio
+    canonical_title: Naturale
+    localized_titles: { en: Naturale, it: Naturale, nl: Naturale }
+    year: 1985
+    category: chamber
+    aliases: [Naturale, Naturale for viola, percussion and recordings]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: berio-rendering
+    composer_id: luciano-berio
+    canonical_title: Rendering
+    localized_titles: { en: Rendering, it: Rendering, nl: Rendering }
+    year: 1990
+    category: orchestral
+    aliases: [Rendering, Rendering after Schubert, Schubert Tenth Symphony sketches]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: berio-six-encores
+    composer_id: luciano-berio
+    canonical_title: Six Encores
+    localized_titles: { en: Six Encores, it: Six Encores, nl: Six Encores }
+    year: 1990
+    category: piano
+    aliases: [Six Encores, Brin, Leaf, Wasserklavier, Erdenklavier, Luftklavier, Feuerklavier]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: berio-sonata-for-piano
+    composer_id: luciano-berio
+    canonical_title: Sonata for Piano
+    localized_titles: { en: Sonata for Piano, it: Sonata per pianoforte, nl: Pianosonate }
+    year: 2001
+    category: piano
+    aliases: [Sonata for piano, Sonata per pianoforte, Piano Sonata]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: berio-stanze
+    composer_id: luciano-berio
+    canonical_title: Stanze
+    localized_titles: { en: Stanze, it: Stanze, nl: Stanze }
+    year: 2003
+    category: vocal-orchestral
+    aliases: [Stanze, Stanze for baritone, chorus and orchestra]
+    authorities: { musicbrainz_work_id:, wikidata: }
