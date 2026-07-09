@@ -1,0 +1,23 @@
+id: berlioz-op5-h75
+composer_id: hector-berlioz
+canonical_title: Grande messe des morts
+localized_titles:
+  fr: Grande messe des morts
+  en: Requiem
+  nl: Requiem
+catalogue:
+  opus: Op. 5
+  holoman: H. 75
+aliases:
+  - Grande Messe des morts
+  - Grande messe des morts, Op. 5
+  - Grande messe des morts, H. 75
+  - Requiem
+  - Requiem, Op. 5
+  - Op. 5
+  - H. 75
+authorities:
+  musicbrainz_work_id:
+  wikidata:
+notes: >-
+  The common English title Requiem is included as an alias and localized title.
