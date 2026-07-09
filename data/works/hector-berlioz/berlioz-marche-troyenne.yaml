@@ -1,0 +1,17 @@
+id: berlioz-marche-troyenne
+composer_id: hector-berlioz
+canonical_title: Marche Troyenne
+localized_titles:
+  fr: Marche Troyenne
+  en: Trojan March
+  nl: Trojaanse mars
+catalogue: {}
+aliases:
+  - Marche troyenne
+  - Trojan March
+authorities:
+  musicbrainz_work_id:
+  wikidata:
+notes: >-
+  No catalogue number is shown on the current Berlioz collection page, so the ID uses
+  a normalized title rather than a catalogue-based identifier.
