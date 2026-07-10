@@ -26,31 +26,33 @@ recordings:
       Pilot example from issue 61. Release metadata and streaming URL should be populated only
       after the exact recording has been verified.
 
-  - id: sato-il-pomo-doro-bach-violin-concertos
-    title: Bach: Violin Concertos
+  - id: akamus-bach-brandenburg-concertos
+    title: Bach: Brandenburg Concertos
     label:
     catalog_number:
     year:
     release_year:
     artists:
-      violin:
-        - shunske-sato
       ensemble:
-        - il-pomo-doro
-      conductor:
-        - zefira-valova
+        - akademie-fuer-alte-musik-berlin
     works:
-      - work_id: bach-bwv1041
+      - work_id: bach-bwv1046-2
         status: recommended
-      - work_id: bach-bwv1042
+      - work_id: bach-bwv1047
         status: recommended
-      - work_id: bach-bwv1043
+      - work_id: bach-bwv1048
+        status: recommended
+      - work_id: bach-bwv1049
         status: candidate
         notes: Included on the recording but not automatically published as the recommendation.
+      - work_id: bach-bwv1050-1
+        status: candidate
+      - work_id: bach-bwv1051
+        status: candidate
     links:
       tidal:
         status: active
-        url: http://www.tidal.com/track/95609827
+        url: http://www.tidal.com/track/197388363
         last_checked: 2026-07-10
     identifiers:
       musicbrainz_release_id:
@@ -58,91 +60,39 @@ recordings:
     notes: >-
       Demonstrates one recording containing multiple works with different recommendation statuses.
 
-  - id: mackerras-sco-mozart-late-symphonies
-    title: Mozart: Symphonies Nos. 38-41
+  - id: dinnerstein-bach-goldberg-variations
+    title: Bach: Goldberg Variations
     label:
     catalog_number:
     year:
     release_year:
     artists:
-      conductor:
-        - charles-mackerras
-      orchestra:
-        - scottish-chamber-orchestra
+      piano:
+        - simone-dinnerstein
     works:
-      - work_id: mozart-k504
-        status: recommended
-      - work_id: mozart-k543
-        status: recommended
-      - work_id: mozart-k550
-        status: recommended
-      - work_id: mozart-k551
-        status: recommended
+      - work_id: bach-bwv988
+        status: candidate
+        notes: Candidate recording retained internally until selected as the public recommendation.
     links:
       tidal:
         status: active
-        url: http://www.tidal.com/track/156570988
+        url: http://www.tidal.com/track/24788065
         last_checked: 2026-07-10
     identifiers:
       musicbrainz_release_id:
       discogs_release_id:
-    notes: >-
-      Demonstrates a multi-work recording where all represented works are current recommendations.
 
-  - id: savall-concert-des-nations-beethoven-symphonies
-    title: Beethoven: Symphonies
+  - id: kremer-bach-sonatas-partitas
+    title: Bach: Sonatas and Partitas for Solo Violin
     label:
     catalog_number:
     year:
     release_year:
     artists:
-      conductor:
-        - jordi-savall
-      orchestra:
-        - le-concert-des-nations
+      violin:
+        - gidon-kremer
     works:
-      - work_id: beethoven-op21
-        status: candidate
-      - work_id: beethoven-op36
-        status: candidate
-      - work_id: beethoven-op55
-        status: recommended
-      - work_id: beethoven-op60
-        status: recommended
-      - work_id: beethoven-op67
-        status: recommended
-      - work_id: beethoven-op68
-        status: recommended
-      - work_id: beethoven-op92
-        status: recommended
-      - work_id: beethoven-op93
-        status: recommended
-      - work_id: beethoven-op125
-        status: recommended
-    links:
-      tidal:
-        status: active
-        url: http://www.tidal.com/track/147062218
-        last_checked: 2026-07-10
-    identifiers:
-      musicbrainz_release_id:
-      discogs_release_id:
-    notes: >-
-      Demonstrates a large recording set with selected works recommended and others retained as candidates.
-
-  - id: previous-candidate-berlioz-fantastique
-    title: Berlioz: Symphonie fantastique — previous candidate
-    label:
-    catalog_number:
-    year:
-    release_year:
-    artists:
-      conductor:
-        - michael-tilson-thomas
-      orchestra:
-        - san-francisco-symphony
-    works:
-      - work_id: berlioz-op14
+      - work_id: bach-bwv1001-1006
         status: previous_candidate
         notes: Retained internally for comparison; must not appear as the current public recommendation.
     links:
@@ -154,54 +104,94 @@ recordings:
       musicbrainz_release_id:
       discogs_release_id:
     notes: >-
-      Explicitly tests that previous candidates remain in the data without becoming public recommendations.
+      Explicitly tests that a previous candidate remains in the data without becoming public.
 
-  - id: superseded-mozart-clarinet-concerto
-    title: Mozart: Clarinet Concerto
+  - id: chiaroscuro-beethoven-op18
+    title: Beethoven: String Quartets, Op. 18
     label:
     catalog_number:
     year:
     release_year:
     artists:
-      clarinet:
-        - martin-frost
       ensemble:
-        - amsterdam-sinfonietta
-      conductor:
-        - peter-oundjian
+        - chiaroscuro-quartet
     works:
-      - work_id: mozart-k622
+      - work_id: beethoven-op18
+        status: recommended
+    links:
+      tidal:
+        status: active
+        url: http://www.tidal.com/track/341644410
+        last_checked: 2026-07-10
+    identifiers:
+      musicbrainz_release_id:
+      discogs_release_id:
+
+  - id: berberian-berio-folk-songs
+    title: Berio: Folk Songs
+    label:
+    catalog_number:
+    year:
+    release_year:
+    artists:
+      singer:
+        - cathy-berberian
+    works:
+      - work_id: berio-folk-songs
         status: superseded
         notes: Former recommendation retained for history after replacement.
     links:
       tidal:
         status: active
-        url: http://www.tidal.com/track/12128399
+        url: http://www.tidal.com/track/43365184
         last_checked: 2026-07-10
     identifiers:
       musicbrainz_release_id:
       discogs_release_id:
 
-  - id: unavailable-recording-example
-    title: Unavailable recording example
+  - id: gardiner-mozart-requiem
+    title: Mozart: Requiem
     label:
     catalog_number:
     year:
     release_year:
     artists:
       conductor:
-        - bernard-haitink
-      orchestra:
-        - royal-concertgebouw-orchestra
+        - john-eliot-gardiner
     works:
-      - work_id: berlioz-op14
+      - work_id: mozart-k626
         status: unavailable
-        notes: Recording or usable streaming source is no longer available.
+        notes: Recording retained internally, but no longer usable as the current recommendation.
     links:
       tidal:
         status: unavailable
-        url:
+        url: http://www.tidal.com/track/4322229
         last_checked: 2026-07-10
     identifiers:
       musicbrainz_release_id:
       discogs_release_id:
+
+  - id: san-francisco-symphony-adams-orchestral
+    title: John Adams: Orchestral Works
+    label:
+    catalog_number:
+    year:
+    release_year:
+    artists:
+      orchestra:
+        - san-francisco-symphony
+    works:
+      - work_id: adams-common-tones-in-simple-time
+        status: candidate
+      - work_id: adams-short-ride-in-a-fast-machine
+        status: recommended
+    links:
+      tidal:
+        status: redirected
+        url: http://www.tidal.com/track/145452184
+        last_checked: 2026-07-10
+    identifiers:
+      musicbrainz_release_id:
+      discogs_release_id:
+    notes: >-
+      Tests a redirected link and different statuses for works on the same recording.
