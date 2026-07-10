@@ -1,0 +1,207 @@
+recordings:
+  - id: haitink-rco-berlioz-fantastique
+    title: Berlioz: Symphonie fantastique
+    label: Philips
+    catalog_number:
+    year:
+    release_year:
+    artists:
+      conductor:
+        - bernard-haitink
+      orchestra:
+        - royal-concertgebouw-orchestra
+    works:
+      - work_id: berlioz-op14
+        status: recommended
+        notes: Current recommendation for Symphonie fantastique.
+    links:
+      tidal:
+        status: unverified
+        url:
+        last_checked:
+    identifiers:
+      musicbrainz_release_id:
+      discogs_release_id:
+    notes: >-
+      Pilot example from issue 61. Release metadata and streaming URL should be populated only
+      after the exact recording has been verified.
+
+  - id: sato-il-pomo-doro-bach-violin-concertos
+    title: Bach: Violin Concertos
+    label:
+    catalog_number:
+    year:
+    release_year:
+    artists:
+      violin:
+        - shunske-sato
+      ensemble:
+        - il-pomo-doro
+      conductor:
+        - zefira-valova
+    works:
+      - work_id: bach-bwv1041
+        status: recommended
+      - work_id: bach-bwv1042
+        status: recommended
+      - work_id: bach-bwv1043
+        status: candidate
+        notes: Included on the recording but not automatically published as the recommendation.
+    links:
+      tidal:
+        status: active
+        url: http://www.tidal.com/track/95609827
+        last_checked: 2026-07-10
+    identifiers:
+      musicbrainz_release_id:
+      discogs_release_id:
+    notes: >-
+      Demonstrates one recording containing multiple works with different recommendation statuses.
+
+  - id: mackerras-sco-mozart-late-symphonies
+    title: Mozart: Symphonies Nos. 38-41
+    label:
+    catalog_number:
+    year:
+    release_year:
+    artists:
+      conductor:
+        - charles-mackerras
+      orchestra:
+        - scottish-chamber-orchestra
+    works:
+      - work_id: mozart-k504
+        status: recommended
+      - work_id: mozart-k543
+        status: recommended
+      - work_id: mozart-k550
+        status: recommended
+      - work_id: mozart-k551
+        status: recommended
+    links:
+      tidal:
+        status: active
+        url: http://www.tidal.com/track/156570988
+        last_checked: 2026-07-10
+    identifiers:
+      musicbrainz_release_id:
+      discogs_release_id:
+    notes: >-
+      Demonstrates a multi-work recording where all represented works are current recommendations.
+
+  - id: savall-concert-des-nations-beethoven-symphonies
+    title: Beethoven: Symphonies
+    label:
+    catalog_number:
+    year:
+    release_year:
+    artists:
+      conductor:
+        - jordi-savall
+      orchestra:
+        - le-concert-des-nations
+    works:
+      - work_id: beethoven-op21
+        status: candidate
+      - work_id: beethoven-op36
+        status: candidate
+      - work_id: beethoven-op55
+        status: recommended
+      - work_id: beethoven-op60
+        status: recommended
+      - work_id: beethoven-op67
+        status: recommended
+      - work_id: beethoven-op68
+        status: recommended
+      - work_id: beethoven-op92
+        status: recommended
+      - work_id: beethoven-op93
+        status: recommended
+      - work_id: beethoven-op125
+        status: recommended
+    links:
+      tidal:
+        status: active
+        url: http://www.tidal.com/track/147062218
+        last_checked: 2026-07-10
+    identifiers:
+      musicbrainz_release_id:
+      discogs_release_id:
+    notes: >-
+      Demonstrates a large recording set with selected works recommended and others retained as candidates.
+
+  - id: previous-candidate-berlioz-fantastique
+    title: Berlioz: Symphonie fantastique — previous candidate
+    label:
+    catalog_number:
+    year:
+    release_year:
+    artists:
+      conductor:
+        - michael-tilson-thomas
+      orchestra:
+        - san-francisco-symphony
+    works:
+      - work_id: berlioz-op14
+        status: previous_candidate
+        notes: Retained internally for comparison; must not appear as the current public recommendation.
+    links:
+      tidal:
+        status: unavailable
+        url:
+        last_checked: 2026-07-10
+    identifiers:
+      musicbrainz_release_id:
+      discogs_release_id:
+    notes: >-
+      Explicitly tests that previous candidates remain in the data without becoming public recommendations.
+
+  - id: superseded-mozart-clarinet-concerto
+    title: Mozart: Clarinet Concerto
+    label:
+    catalog_number:
+    year:
+    release_year:
+    artists:
+      clarinet:
+        - martin-frost
+      ensemble:
+        - amsterdam-sinfonietta
+      conductor:
+        - peter-oundjian
+    works:
+      - work_id: mozart-k622
+        status: superseded
+        notes: Former recommendation retained for history after replacement.
+    links:
+      tidal:
+        status: active
+        url: http://www.tidal.com/track/12128399
+        last_checked: 2026-07-10
+    identifiers:
+      musicbrainz_release_id:
+      discogs_release_id:
+
+  - id: unavailable-recording-example
+    title: Unavailable recording example
+    label:
+    catalog_number:
+    year:
+    release_year:
+    artists:
+      conductor:
+        - bernard-haitink
+      orchestra:
+        - royal-concertgebouw-orchestra
+    works:
+      - work_id: berlioz-op14
+        status: unavailable
+        notes: Recording or usable streaming source is no longer available.
+    links:
+      tidal:
+        status: unavailable
+        url:
+        last_checked: 2026-07-10
+    identifiers:
+      musicbrainz_release_id:
+      discogs_release_id:
