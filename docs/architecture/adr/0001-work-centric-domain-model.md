@@ -29,7 +29,7 @@ The **work** becomes the central entity of the system.
 
 The repository is defined as:
 
-> A curated catalogue of classical works and their recommended performances.
+> A curated catalogue of classical musical works and their recommended performances, organised into work families where appropriate.
 
 The public website shall display all works that are included in the local catalogue, regardless of whether a recommendation already exists.
 
@@ -43,35 +43,62 @@ If present, it identifies:
 
 ## Domain model
 
-The conceptual model is:
+The conceptual model is relational rather than strictly hierarchical:
 
 ```text
 Composer
-    ↓
+    ↕ contributes to
+Work
+    ↕ belongs to
+Work Family (optional)
+
 Work
     ↓
-Recommended Performance (optional)
+Recommendation (optional)
+    ↓
+Performance
     ↓
 Preferred Release (optional)
     ↓
 Available Listening Links
 ```
 
+A composer contributes to one or more works, and a work may have contributions from one or more composers or arrangers.
+
+A work may optionally belong to a work family. A work family groups closely related works, such as revisions, orchestrations, transcriptions, completions, or reconstructions.
+
+Recommendations belong to individual works, not to work families.
+
 ### Composer
 
 Represents the musical author.
 
+### Work Family
+
+A work family groups together closely related musical works that share a common artistic origin.
+
+Typical examples include:
+
+- composer revisions;
+- orchestrations;
+- transcriptions;
+- reductions;
+- completions;
+- reconstructions.
+
+A work family is an organisational concept only.
+
+It never has performances, releases or recommendations.
+
 ### Work
 
-Represents the musical composition.
+A work is the smallest independently performable musical entity recognised by the catalogue.
 
-A work exists independently of any recommendation.
+Each work belongs to at most one work family.
 
-A work may therefore be:
+Different revisions, orchestrations or transcriptions are modelled as separate works rather than versions of a single work.
 
-- present in the catalogue without a recommendation;
-- under investigation;
-- associated with a current recommendation.
+A work may exist without a recommendation.
 
 ### Performance
 
@@ -136,6 +163,21 @@ Each work is shown as either:
 
 Works without recommendations remain visible because one of the goals of the project is to progressively complete the catalogue.
 
+## Multiple related works
+
+Closely related musical works may belong to the same work family.
+
+Examples include:
+
+- different composer revisions;
+- orchestrations by other composers;
+- piano reductions;
+- chamber arrangements.
+
+Each related work is treated as an independent catalogue entry and may have its own recommendation.
+
+The work family itself never has a recommendation.
+
 ## Architectural consequences
 
 This decision separates the project into independent layers.
@@ -145,6 +187,7 @@ This decision separates the project into independent layers.
 Defines:
 
 - composers;
+- work families;
 - works;
 - canonical identifiers.
 
@@ -178,6 +221,7 @@ Each layer may evolve independently.
 - Supports multiple streaming platforms.
 - Prevents streaming services from becoming the source of truth.
 - Simplifies future import workflows from MusicBrainz and Discogs.
+- Supports independent recommendations for revisions, orchestrations and arrangements of the same music material.
 
 ### Trade-offs
 
@@ -190,6 +234,7 @@ Each layer may evolve independently.
 This ADR deliberately leaves the following decisions for future ADRs:
 
 - canonical identifier strategy;
+- define the relationship model between work families and works (revision, orchestration, transcription, completion, arrangement, etc.).
 - recording/performance/release data model;
 - recommendation workflow;
 - import pipeline from MusicBrainz and Discogs;
