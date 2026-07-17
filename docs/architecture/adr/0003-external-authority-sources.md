@@ -1,3 +1,8 @@
+---
+title: "ADR 0003: External authority sources"
+nav_order: 4
+---
+
 # ADR 0003: External authority sources
 
 - Status: Accepted
