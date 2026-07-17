@@ -1,3 +1,8 @@
+---
+title: "ADR 0004: Listening availability and streaming abstraction"
+nav_order: 5
+---
+
 # ADR 0004: Listening availability and streaming abstraction
 
 - Status: Accepted
