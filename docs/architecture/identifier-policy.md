@@ -48,6 +48,19 @@ The identifier has no semantic meaning.
 
 Applications must never attempt to interpret any part of the identifier.
 
+Work Group is a permanently identified object type.
+
+Each Work Group receives:
+
+- its own permanent identifier;
+- its own preferred slug;
+- its own aliases;
+- the same merge, split and retirement treatment as other primary entities.
+
+The Work Group identifier is distinct from the identifiers of its member Works.
+Changing membership, enriching metadata or adding explicit Work Relationships does
+not change the Work Group's permanent identifier.
+
 ---
 
 # Identifier Generation
@@ -119,6 +132,42 @@ Avoid
 ```
 gustav-mahler-symphony-no-5-in-c-sharp-minor-1904
 ```
+
+---
+
+# Object-Specific Slug Rules
+
+## Release slugs
+
+Preferred Release slugs use release metadata when it is known:
+
+```text
+conductor-orchestra-releaseyear-label-cataloguenumber
+```
+
+When label or catalogue number is not yet known, a platform-specific fallback may
+be used:
+
+```text
+conductor-orchestra-releaseyear-tidal-<album-id>
+```
+
+The fallback slug may later be replaced when the Release is externally enriched or
+definitively identified. The old slug remains an alias, and the permanent
+identifier does not change.
+
+---
+
+# Provisional Objects
+
+Provisional status never affects permanent identity.
+
+Once assigned, an identifier remains stable even when the object is later
+enriched, reclassified or merged.
+
+If an object is later found to duplicate another object, the normal merge policy
+applies: one permanent identifier survives, and the deprecated identifier remains
+available as an alias or redirect.
 
 ---
 

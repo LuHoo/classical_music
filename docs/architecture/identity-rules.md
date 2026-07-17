@@ -36,9 +36,25 @@ A formally renamed ensemble is considered the same Ensemble if its organisationa
 
 ## Work
 
-Two records represent the same Work if they describe the same abstract musical composition, regardless of title variants, language, catalogue numbers or publication history.
+Two Work records represent the same Work when they denote the same performable musical object.
 
-Performances, recordings, arrangements and editions do not create new Works.
+Title variants, language, catalogue numbers, metadata corrections and publication history do not create new Works.
+
+A materially distinct version, revision, arrangement, orchestration or completion is a different Work when it can be meaningfully selected and performed as such.
+
+Different editions or metadata descriptions of the same performable musical object do not create a new Work.
+
+An arrangement receives its own Work identity once it is independently included in the collection, and always when a Recording or Recommendation refers to it.
+
+This is an operational identity rule for this collection, not a universal musicological claim.
+
+---
+
+## Work Group
+
+Two Work Group records represent the same Work Group when they group the same compositional source and the same family of versions or derivative Works.
+
+A Work Group must not be created for every incidental or accidental collection of arrangements. It exists only when the grouped Works represent a coherent family of versions, revisions, arrangements, orchestrations, completions or other derivative forms of the same compositional source.
 
 ---
 
@@ -56,6 +72,10 @@ Two records represent the same Recording if they originate from the same recorde
 
 Different mastering, remastering, audio formats or releases do not create new Recordings.
 
+Different releases, remasters and platform appearances do not create a new Recording when the underlying recorded performance is the same.
+
+Different edits or mixes may constitute different Recordings when they materially alter the recorded performance object.
+
 ---
 
 ## Release
@@ -63,6 +83,8 @@ Different mastering, remastering, audio formats or releases do not create new Re
 Two records represent the same Release if they describe the same published commercial or digital product.
 
 Differences in label, catalogue number, barcode, medium, release date, country, packaging or streaming platform constitute distinct Releases.
+
+A Tidal digital album is a Release in its own right and must not automatically be identified with an earlier LP, CD or other platform edition.
 
 ---
 
