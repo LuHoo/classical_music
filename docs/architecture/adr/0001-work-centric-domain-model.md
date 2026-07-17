@@ -34,7 +34,7 @@ The **work** becomes the central entity of the system.
 
 The repository is defined as:
 
-> A curated catalogue of classical musical works and their recommended performances, organised into work families where appropriate.
+> A curated catalogue of classical musical works and their recommended performances, supported by explicit work-to-work relationships and optional derived navigation groups.
 
 The public website shall display all works that are included in the local catalogue, regardless of whether a recommendation already exists.
 
@@ -54,8 +54,8 @@ The conceptual model is relational rather than strictly hierarchical:
 Composer
     ↕ contributes to
 Work
-    ↕ belongs to
-Work Family (optional)
+    ↕ has typed relationship to
+Work
 
 Work
     ↓
@@ -70,38 +70,29 @@ Available Listening Links
 
 A composer contributes to one or more works, and a work may have contributions from one or more composers or arrangers.
 
-A work may optionally belong to a work family. A work family groups closely related works, such as revisions, orchestrations, transcriptions, completions, or reconstructions.
+A work may have zero, one or many typed, directional relationships to other works. These relationships may form networks rather than a single tree. Related works may also be grouped for navigation or presentation, but such groups are derived or curated presentation helpers rather than primary domain entities.
 
-Recommendations belong to individual works, not to work families.
+Recommendations belong to individual works, not to derived navigation groups.
 
 ### Composer
 
 Represents the musical author.
 
-### Work Family
+### Derived navigation groups (optional)
 
-A work family groups together closely related musical works that share a common artistic origin.
+A derived navigation group may be used for presentation or website navigation.
 
-Typical examples include:
-
-- composer revisions;
-- orchestrations;
-- transcriptions;
-- reductions;
-- completions;
-- reconstructions.
-
-A work family is an organisational concept only.
-
-It never has performances, releases or recommendations.
+Such a group is not a primary domain entity. It does not own musical facts, relationships, recommendations, performances or releases. It may simply reflect a curated or computed view over explicit work-to-work relationships.
 
 ### Work
 
 A work is the smallest independently performable musical entity recognised by the catalogue.
 
-Each work belongs to at most one work family.
+A work may have zero, one or many typed, directional relationships to other works. These relationships are first-class domain facts and are not owned by a derived navigation group.
 
-Different revisions, orchestrations or transcriptions are modelled as separate works rather than versions of a single work.
+Different revisions, orchestrations or transcriptions are modelled as separate works when they are independently catalogued and may be linked explicitly.
+
+The relationship vocabulary is intentionally open-ended. The repository may retain the terminology used by the relevant contributor or authority source without forcing all relationships into a closed taxonomy.
 
 A work may exist without a recommendation.
 
@@ -170,18 +161,19 @@ Works without recommendations remain visible because one of the goals of the pro
 
 ## Multiple related works
 
-Closely related musical works may belong to the same work family.
+Closely related musical works are connected by explicit, directional work-to-work relationships.
 
 Examples include:
 
 - different composer revisions;
 - orchestrations by other composers;
 - piano reductions;
-- chamber arrangements.
+- chamber arrangements;
+- suites or excerpts derived from another work.
 
 Each related work is treated as an independent catalogue entry and may have its own recommendation.
 
-The work family itself never has a recommendation.
+Website displays may derive groups such as “works derived from Pulcinella” or “versions of Bruckner Symphony No. 4”, but these are presentation views rather than primary domain entities.
 
 ## Architectural consequences
 
@@ -192,9 +184,9 @@ This decision separates the project into independent layers.
 Defines:
 
 - composers;
-- work families;
 - works;
-- canonical identifiers.
+- canonical identifiers;
+- work-to-work relationship facts.
 
 ### Curation
 
@@ -239,7 +231,7 @@ Each layer may evolve independently.
 This ADR deliberately leaves the following decisions for future ADRs:
 
 - canonical identifier strategy;
-- define the relationship model between work families and works (revision, orchestration, transcription, completion, arrangement, etc.).
+- relationship vocabulary and validation rules for work-to-work relationships;
 - recording/performance/release data model;
 - recommendation workflow;
 - import pipeline from MusicBrainz and Discogs;

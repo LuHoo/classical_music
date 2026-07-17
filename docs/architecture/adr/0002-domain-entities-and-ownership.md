@@ -18,10 +18,9 @@ The goal is to avoid duplicated metadata and to establish a stable semantic mode
 
 ## Decision
 
-The domain consists of six primary entities:
+The domain consists of five primary entities:
 
 - Composer
-- Work Family
 - Work
 - Performance
 - Release
@@ -42,9 +41,9 @@ Composer
       ▼
 Work
       │
-      │ belongs to
+      │ has typed relationship to
       ▼
-Work Family (optional)
+Work
 
 Work
       │
@@ -81,28 +80,11 @@ The exact vocabulary will be defined later.
 
 A work may therefore reference multiple composers with different roles.
 
-## Work Family
+## Derived navigation groups (optional)
 
-A work family groups closely related musical works.
+A derived or curated navigation group may be used to present related works on the website.
 
-Typical examples include:
-
-- composer revisions;
-- orchestrations;
-- transcriptions;
-- reductions;
-- completions;
-- reconstructions.
-
-A work family is purely an organisational concept.
-
-It:
-
-- has no performances;
-- has no releases;
-- has no recommendations.
-
-Its purpose is navigation and grouping.
+Such a group is not a primary domain entity. It does not own musical facts, recommendations, performances or releases. It exists only as an optional presentation or navigation structure computed from explicit work-to-work relationships.
 
 ## Work
 
@@ -118,13 +100,15 @@ Examples include:
 
 Each work:
 
-- may belong to one work family;
+- may have zero, one or many typed, directional relationships to other works;
 - may have one or more contributing composers;
 - may exist without a recommendation.
 
 A recommendation always belongs to an individual work.
 
 The public website displays all works contained in the catalogue, regardless of whether a recommendation already exists.
+
+The relationship vocabulary is open-ended. The repository may preserve contributor- or source-specific terminology without reducing every relationship to a closed list.
 
 ## Recommendation
 
@@ -209,7 +193,7 @@ The following ownership rules apply.
 | Information | Owner |
 |-------------|-------|
 | Composer names | Composer |
-| Relationships between related works | Work Family |
+| Typed work-to-work relationship facts | Work-to-work relationship model |
 | Titles, catalogue numbers, instrumentation | Work |
 | Composer contributions | Work |
 | Artistic interpretation | Performance |
@@ -228,7 +212,8 @@ Information should not be duplicated between entities unless justified by perfor
 - Stable identifiers.
 - Independent evolution of catalogue, curation and distribution.
 - Support for multiple composers per work.
-- Support for arrangements, orchestrations and revisions.
+- Support for arrangements, orchestrations and revisions through explicit relationships.
+- Support for relationship networks rather than single-family trees.
 - Streaming services remain implementation details.
 
 ### Trade-offs
