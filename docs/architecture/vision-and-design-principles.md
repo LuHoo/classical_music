@@ -1,3 +1,8 @@
+---
+title: Vision & Design Principles
+nav_order: 1
+---
+
 # Vision & Design Principles
 
 ## Purpose
