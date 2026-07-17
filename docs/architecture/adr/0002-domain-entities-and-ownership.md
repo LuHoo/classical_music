@@ -1,3 +1,8 @@
+---
+title: "ADR 0002: Domain entities and ownership"
+nav_order: 3
+---
+
 # ADR 0002: Domain entities and ownership
 
 - Status: Accepted
