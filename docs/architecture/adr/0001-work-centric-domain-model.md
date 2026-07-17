@@ -1,3 +1,8 @@
+---
+title: "ADR 0001: Work-centric domain model"
+nav_order: 2
+---
+
 # ADR 0001: Work-centric domain model
 
 - Status: Accepted
