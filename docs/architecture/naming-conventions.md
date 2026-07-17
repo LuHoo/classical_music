@@ -462,9 +462,80 @@ bruckner-symphony-8-1890
 
 The shortest clear and stable form is preferred.
 
+Use the minimum distinguishing suffix needed to identify the concrete Work.
+
+Preferred order:
+
+1. fixed version year;
+2. stable editorial version name;
+3. functional distinguishing term.
+
+Examples:
+
+```text
+-1887
+-1890
+-original-version
+-revised-version
+-with-recitation
+-without-recitation
+```
+
+Arrangement, orchestration, completion and realisation slugs should name the
+distinguishing agent or form when that is the clearest identity cue.
+
+Examples:
+
+```text
+-ravel-orchestration
+-schoenberg-orchestration
+-sussmayr-completion
+-gamzou-realisation
+-string-orchestra
+-piano-version
+```
+
 ---
 
-# 16. Work Parts
+# 16. Work Groups
+
+A Work Group uses the unsuffixed conceptual slug when multiple concrete Works
+exist for versions, revisions, arrangements, orchestrations, completions or other
+derivative forms of the same compositional source.
+
+Examples:
+
+```text
+bruckner-symphony-8
+stravinsky-petrushka
+mahler-symphony-10
+```
+
+Concrete Works within the Work Group add the minimum distinguishing suffix.
+
+Examples:
+
+```text
+bruckner-symphony-8-1887
+bruckner-symphony-8-1890
+stravinsky-petrushka-1911
+stravinsky-petrushka-1947
+mahler-symphony-10-gamzou-realisation
+```
+
+The main slug without a version suffix belongs to the Work Group when multiple
+concrete Works exist.
+
+A single ordinary Work does not automatically receive a Work Group. In that case,
+the unsuffixed slug remains available for the Work itself.
+
+This replaces the pilot convention where a `conceptual_parent` could be modelled
+as a Work. The parent slug belongs to the Work Group once the collection needs a
+formal grouping entity.
+
+---
+
+# 17. Work Parts
 
 A Work Part uses the slug of its parent Work followed by `mvmt` and its Arabic movement number.
 
@@ -499,9 +570,42 @@ part-1
 
 ---
 
-# 17. Recordings and Releases
+# 18. Recordings
 
-Recording and release slugs use the principal artist as the leading element.
+Recording slugs identify the performed recording, not a commercial release.
+
+The preferred form uses the principal artist or artists and the performed Work:
+
+```text
+<principal-artist>-<ensemble-or-secondary-artist>-<work>
+```
+
+Example:
+
+```text
+dudamel-berlin-philharmonic-mahler-symphony-5
+```
+
+When required for disambiguation, add the recording year:
+
+```text
+dudamel-berlin-philharmonic-mahler-symphony-5-2021
+```
+
+For recordings without a conductor, the principal soloist, ensemble or other
+leading credited artist takes the first position.
+
+Where more than one soloist has equal prominence, the smallest recognisable
+combination of principal names is used.
+
+Recording slugs should not attempt to identify a label, catalogue number or
+platform edition. Those belong to Release slugs.
+
+---
+
+# 19. Releases
+
+Release slugs identify published editions or digital platform releases.
 
 For orchestral recordings, the preferred order is:
 
@@ -515,6 +619,18 @@ Example:
 haitink-concertgebouw-1985-philips-4162832
 ```
 
+Fallback when label or catalogue number is not yet known:
+
+```text
+<conductor>-<orchestra>-<release-year>-tidal-<album-id>
+```
+
+Example:
+
+```text
+dudamel-berlin-philharmonic-2022-tidal-123456789
+```
+
 The conductor is treated as the principal artist, followed by the orchestra.
 
 The following rules apply:
@@ -524,6 +640,7 @@ The following rules apply:
 * use the release year, not the recording year;
 * use the normalised label name;
 * include the catalogue number in compact normalised form;
+* use a platform fallback only while fuller release metadata is unavailable;
 * omit punctuation and spaces from the catalogue number unless needed for clarity.
 
 Examples:
@@ -534,7 +651,7 @@ haitink-concertgebouw-1985-philips-4162832
 rattle-london-symphony-2017-lso-live-lso0790
 ```
 
-For recordings without a conductor, the principal soloist, ensemble or other leading credited artist takes the first position.
+For releases without a conductor, the principal soloist, ensemble or other leading credited artist takes the first position.
 
 Examples:
 
