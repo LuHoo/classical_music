@@ -5,8 +5,15 @@ nav_order: 4
 
 # ADR 0003: External authority sources
 
-- Status: Accepted
+- Status: Superseded
 - Date: 2026-07-16
+- Superseded by: `../repository-architecture.md`,
+  `../recommendation-policy.md`
+
+> ADR 0003 overstates external authority ownership for local identity. The
+> current authoritative design treats external sources as aids for
+> identification, matching and validation; they do not determine canonical
+> repository identity or recommendations.
 
 ## Context
 

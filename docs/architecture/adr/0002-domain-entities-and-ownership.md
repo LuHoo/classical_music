@@ -5,8 +5,15 @@ nav_order: 3
 
 # ADR 0002: Domain entities and ownership
 
-- Status: Accepted
+- Status: Superseded
 - Date: 2026-07-16
+- Superseded by: `../repository-architecture.md`, `../work.md`,
+  `../performance.md`, `../recommendation-policy.md`
+
+> ADR 0002 records an earlier entity split that included Release and
+> Availability. The current authoritative design uses Person, Work Group, Work
+> and Performance as the core canonical entities and does not introduce separate
+> canonical Recording or Release entities.
 
 ## Context
 

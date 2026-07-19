@@ -1,5 +1,12 @@
 # Pilot Domain Model
 
+> Status: Superseded for entity design by `repository-architecture.md`, `work.md`,
+> `performance.md` and `recommendation-policy.md`.
+>
+> This pilot records earlier modelling experiments involving Recording and
+> Release. The current authoritative design does not introduce separate
+> canonical Recording or Release entities.
+
 ## Purpose
 
 This document models a pilot set of twenty deliberately difficult cases drawn from the existing composer files.

@@ -1,115 +1,145 @@
 # Workflow Design Notes
 
-## Status
+## Purpose
 
-This document captures the current design decisions regarding the curator workflows for the classical music repository. It is intentionally high-level and serves as input for a later, more detailed `workflow-architecture.md`.
+This document captures high-level curator workflows for migration and day-to-day maintenance.
+
+It is not a schema, automation or implementation specification. Canonical entity boundaries are defined in `repository-architecture.md`, `work.md`, `performance.md` and `recommendation-policy.md`.
 
 ## Guiding principle
 
-The workflows are centred around the activities of the curator rather than the implementation details of the software.
+Workflows are centred around the curator's decisions.
 
-## Primary workflows
+Automation may help identify, validate, report and prepare candidates, but it must not replace editorial judgement or write recommendations automatically.
 
-### 1. Migrate the existing collection
+## Migration workflow
 
-**Phase A – Existing Markdown collection**
+Migration from the existing Markdown collection should preserve durable editorial meaning:
 
-Preserve:
-- Persons (Composers)
-- Works
-- Gem markers
-- recommended Performances
-- Tidal links
-- Gramophone references such as `(10/2021)`
+- Persons in composer roles;
+- Works;
+- Work-level `gem` markers;
+- accepted Performance recommendations;
+- Tidal links;
+- Gramophone references such as `(10/2021)`.
 
-**Phase B – Existing Tidal playlists**
+The migration process should produce reviewable candidates before canonical data is written.
 
-Import the exported Excel playlists (orchestral, chamber and piano music).
+For every migrated entry, determine:
 
-For every playlist entry determine:
+1. the Person in the composer role;
+2. the Work;
+3. the Work Group;
+4. whether the Work already exists;
+5. whether the Performance already exists;
+6. whether the relevant comparison category already has a recommendation.
 
-1. Composer
-2. Work
-3. Whether the Work already exists
-4. Whether the Performance already exists
-5. Whether another recommended Performance already exists
+Multiple candidate Performances of the same Work should be retained in migration review artefacts, not silently promoted into canonical Performance data.
 
-Multiple Performances of the same Work should initially be retained as candidates.
+## Playlist import workflow
 
-### 2. Add a Performance
+Existing exported Tidal playlists may be used as source material.
 
-This is expected to become the primary day-to-day workflow.
+For every playlist entry, determine:
 
-If no recommended Performance exists:
+1. composer identity;
+2. Work identity;
+3. candidate Performance identity;
+4. whether the candidate duplicates an existing Performance;
+5. whether it belongs to an existing comparison category;
+6. whether a comparison issue is needed.
 
-1. Identify Composer
-2. Identify Work
-3. Verify Performance
-4. Add Performance
+Playlist imports must not create canonical Performances until the curator has listened and accepted them as recommendations.
 
-If a recommended Performance already exists:
+## Add a Performance
 
-- Register the candidate Performance
-- Create a GitHub issue requesting editorial comparison
+Adding a Performance is expected to be the primary day-to-day workflow.
+
+If no recommended Performance exists for the comparison category:
+
+1. Identify the Person in the composer role.
+2. Identify or create the Work.
+3. Determine whether a performance profile is relevant.
+4. Verify the Performance.
+5. Listen and accept it.
+6. Add it as the canonical Performance.
+
+If a recommendation already exists in the same comparison category:
+
+1. Register the new item as a candidate outside canonical data.
+2. Create one GitHub issue requesting editorial comparison, when the curator is actively considering it.
+3. Listen.
+4. Record the editorial decision.
 
 Possible outcomes:
 
-- Keep the existing recommendation
-- Replace it
-- Keep both temporarily
-- Conclude both entries are identical
-- Reject the candidate
+- keep the existing recommendation;
+- replace it;
+- conclude both entries are identical;
+- reject the candidate;
+- keep both only if they belong to different comparison categories.
 
-### 3. Extend the catalogue
+## Extend the catalogue
 
 Three scenarios are recognised.
 
-**A. Performance found for an unknown Work**
+### Performance found for an unknown Work
 
-Create the missing Work and attach the Performance.
+Create the missing Work and Work Group as needed, then attach the accepted Performance after listening.
 
-**B. Add a Work without a Performance**
+### Add a Work without a Performance
 
 Works may be added without an immediate recommendation so they appear on the website and can be completed later.
 
-**C. Add the complete catalogue of a Composer**
+### Add the important catalogue of a composer
 
-Populate all important Works of a favourite Composer, leaving recommended Performances for later if necessary.
+Populate important Works of a favourite composer, leaving recommended Performances for later where necessary.
 
-### 4. Add a new Composer
+## Add a Person in the composer role
 
-Typical triggers:
+Typical triggers include:
 
-- Gramophone
-- Radio
-- Newly discovered repertoire
+- Gramophone;
+- radio;
+- newly discovered repertoire;
+- curator interest.
 
 Steps:
 
-1. Check whether the Person already exists
-2. Establish canonical identity
-3. Create the Composer
-4. Add the first Work
-5. Optionally add a recommended Performance
+1. Check whether the Person already exists.
+2. Establish canonical identity.
+3. Create the Person if needed.
+4. Add the first Work.
+5. Optionally add an accepted Performance.
 
-### 5. Maintain Tidal links
+## Search for alternatives
 
-Manual:
+Searching for alternatives is always manually initiated by the curator, per Work.
 
-- Replace obsolete or broken links with updated links to the same Performance.
+A manual request may lead to:
 
-Periodic:
+1. external searching;
+2. a small set of candidate Performances;
+3. one GitHub issue for comparison;
+4. listening;
+5. an editorial decision.
 
-- Investigate automated monthly validation of stored Tidal links.
+`keep_looking: true` may appear on a canonical Performance, but it does not automatically create searches or GitHub Issues. A generated report may list these Performances.
 
-### 6. Add Gramophone references
+## Maintain Tidal links
 
-Low-priority enrichment.
+Replacing an obsolete or broken Tidal link with an updated link to the same interpretation does not create a new Performance.
+
+Periodic link validation may generate reports, but link status should not determine whether the Performance remains recommended.
+
+## Add Gramophone references
+
+Gramophone references are low-priority enrichment.
 
 Store:
 
-- issue (e.g. 2021-10)
-- optional review URL
+- issue, such as `2021-10`;
+- optional review URL.
 
 Review text is not copied into the repository.
 
@@ -117,26 +147,27 @@ Review text is not copied into the repository.
 
 Website publication is not a curator workflow.
 
-Accepted repository changes should automatically trigger:
+Accepted repository changes should trigger:
 
-Repository update
-→ validation
-→ website generation
-→ GitHub Pages publication
+```text
+repository update
+    ↓
+validation
+    ↓
+website generation
+    ↓
+GitHub Pages publication
+```
+
+The website should publish the current recommendation for each comparison category and omit internal workflow state unless a later explicit design decision changes that rule.
 
 ## Summary
 
-Primary editorial workflows:
+Primary editorial workflows are:
 
-1. Migrate the existing collection.
-2. Add or compare Performances.
-3. Extend the catalogue with Works and Composers.
-4. Maintain the collection.
+1. migrate the existing collection;
+2. add or compare Performances;
+3. extend the catalogue with Works and Persons;
+4. maintain links and references.
 
-Supporting processes:
-
-- Tidal link validation
-- Gramophone references
-- Automatic website publication
-
-A future `workflow-architecture.md` will describe the detailed identification and matching pipeline.
+Supporting processes may generate reports and candidates, but canonical recommendations remain the result of manual editorial judgement.

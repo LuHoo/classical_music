@@ -6,6 +6,15 @@ nav_order: 7
 
 # Information Architecture
 
+> Status: Superseded by `repository-architecture.md`, `work.md`, `performance.md`,
+> and `recommendation-policy.md`.
+>
+> This document records an earlier information model with Recommendation,
+> Release and Availability as separate information entities. The current
+> authoritative architecture keeps canonical data centred on Person, Work Group,
+> Work and Performance. Publication rules are defined in
+> `recommendation-policy.md`.
+
 ## Purpose
 
 This document describes the information architecture of the classical music catalogue.

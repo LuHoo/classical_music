@@ -2,21 +2,21 @@
 
 ## Purpose
 
-A `Performance` represents one curatorially accepted interpretation of one musical `Work`.
+A `Performance` represents one curatorially accepted interpretation of exactly one `Work`.
 
 It is the repository object that connects:
 
-- a single Work;
+- one Work;
 - the performers responsible for the interpretation;
-- the curator's recommendation;
-- one or more links through which the Performance may be accessed;
-- optional references such as a Gramophone review.
+- optional links through which the Performance may be accessed;
+- optional references such as a Gramophone review;
+- sparse metadata needed for recognition, matching, maintenance or presentation.
 
-The term `Performance` is used as a practical collection concept. It may correspond externally to what another source calls a recording, track, album item, release, or performance event.
+The term `Performance` is a practical collection concept. It may correspond externally to what another source calls a recording, track, album item, release or performance event.
 
-The repository does not maintain separate canonical entities for Recording and Release unless a future, demonstrated requirement makes that necessary.
+The repository does not maintain separate canonical Recording or Release entities.
 
-## Core principle
+## Core rule
 
 A Performance always refers to exactly one Work.
 
@@ -26,13 +26,13 @@ Performance
 exactly one Work
 ```
 
-A Tidal album may contain several Works, but each Work represented in that album is modelled as a separate Performance.
+A Tidal album may contain several Works. Each accepted interpretation of a Work is modelled as a separate Performance.
 
-A single canonical Performance must never contain multiple `work_id` values.
+A canonical Performance must never contain multiple `work_id` values and must never point only to a Work Group.
 
 ## Curatorial boundary
 
-A Performance enters canonical repository data only after it has been listened to and judged good enough to recommend.
+A Performance enters canonical data only after the curator has listened to it and judged it good enough to recommend.
 
 Candidate Performances that have not yet been heard or accepted do not belong in `data/performances/`.
 
@@ -43,7 +43,7 @@ They may temporarily exist in:
 - a migration review file;
 - an external matching result.
 
-The canonical repository contains accepted Performances, not listening queues.
+Canonical data contains accepted Performances, not listening queues.
 
 ## Identity
 
@@ -71,23 +71,9 @@ Typical indicators include:
 - a different performance event or studio interpretation;
 - a materially different recorded interpretation of the same Work.
 
-When identity remains uncertain, the repository should not silently create a duplicate. The case should be reported for review.
+When identity remains uncertain, the repository should report the case for review rather than silently creating a duplicate.
 
-## Relationship to Work
-
-Each Performance must contain one valid `work_id`.
-
-```yaml
-work_id: martin-symphonie-concertante
-```
-
-The referenced Work must already exist in `data/works/`.
-
-If a new Performance is discovered for a Work that does not yet exist, the Work must be created first.
-
-A Performance may refer to a version-specific Work. It must never point only to a Work Group.
-
-## Relationship to performers
+## Performers
 
 A Performance records the performers needed to identify and present the interpretation.
 
@@ -102,47 +88,36 @@ Possible roles include:
 - instrumentalist;
 - accompanist.
 
-The exact role structure should remain flexible enough to represent orchestral music, chamber music, piano music, vocal music, and unusual ensembles.
+The exact role structure should remain flexible enough to represent orchestral music, chamber music, piano music, vocal music and unusual ensembles.
 
-Performers that have stable canonical identities should refer to `Person` or ensemble identifiers rather than relying only on free text.
-
-Illustrative examples:
-
-```yaml
-performers:
-  conductor: bernard-haitink
-  orchestra: royal-concertgebouw-orchestra
-```
-
-```yaml
-performers:
-  ensemble: alban-berg-quartett
-```
-
-```yaml
-performers:
-  piano: alfred-brendel
-```
-
-The final schema may choose either role keys or an ordered list of role assignments. The architectural requirement is that performer identity remains clear and machine-readable.
+Performers with stable canonical identities should refer to Person or ensemble identifiers rather than relying only on free text.
 
 ## Recommendation semantics
 
 Every canonical Performance is recommended.
 
-The repository therefore does not need a field such as:
+Presence in `data/performances/` should therefore imply recommendation. A field such as:
 
 ```yaml
 recommended: true
 ```
 
-if presence in `data/performances/` already implies recommendation.
+is redundant and should be avoided unless a temporary migration requirement makes it necessary.
 
-A separate recommendation flag should only be retained if required for migration compatibility or future support of non-recommended historical Performances.
+Publication rules, comparison categories and replacement policy are defined in `recommendation-policy.md`.
 
-The preferred initial rule is:
+## Performance profiles
 
-> A Performance file in canonical data represents an accepted recommendation.
+A performance profile belongs to a Performance, not to a Work.
+
+It is used only when a musically meaningful distinction should preserve more than one public recommendation for the same Work.
+
+Example:
+
+- Bach keyboard concerto, piano;
+- Bach keyboard concerto, harpsichord.
+
+Profiles should remain sparse. The repository should not introduce a large predefined taxonomy.
 
 ## Keep looking
 
@@ -154,58 +129,13 @@ This is represented by a simple boolean:
 keep_looking: true
 ```
 
-Its meaning is:
+Its meaning is only:
 
-> This Performance is currently recommended, but the curator wishes to remain alert for a better alternative.
+> This Performance is currently recommended, but the curator remains open to finding a better recommendation.
 
-No explanation is required.
+No explanation, score, stars, reason code or artistic/technical assessment is required.
 
-The repository does not need to store:
-
-- a quality score;
-- stars;
-- separate artistic and technical assessments;
-- a justification;
-- a reason code.
-
-When `keep_looking` is absent or false, no active search is implied.
-
-A list of Performances marked `keep_looking: true` may be generated automatically.
-
-No GitHub issue should be created automatically from this flag.
-
-## Alternative search workflow
-
-Searching for alternatives is manually triggered per Work.
-
-Only then may the system:
-
-1. search external sources;
-2. suggest plausible alternatives;
-3. create a GitHub issue for comparison;
-4. wait for listening and editorial judgement.
-
-This pull-based model prevents the repository from generating a large backlog of inactive issues.
-
-Alternative candidates remain non-canonical until they have been heard and accepted.
-
-## Replacement and comparison
-
-When a new accepted Performance is added for a Work that already has a recommended Performance, the existing recommendation must not be overwritten automatically.
-
-A comparison issue should be created only when the curator is actively considering both.
-
-Possible outcomes include:
-
-- retain the existing Performance;
-- replace it with the new Performance;
-- temporarily retain both;
-- determine that both entries represent the same Performance;
-- reject the new candidate.
-
-The repository should not assume that each Work can permanently have only one Performance unless that editorial rule is established elsewhere.
-
-The public site may nevertheless choose to present one preferred Performance prominently.
+`keep_looking: true` must not automatically create searches or GitHub Issues. A generated report may list these Performances.
 
 ## Platform links
 
@@ -225,17 +155,7 @@ Therefore:
 - multiple platform links may refer to the same Performance;
 - a Performance may remain canonical even when no active platform link exists.
 
-Optional operational metadata may include:
-
-```yaml
-links:
-  tidal:
-    url: https://tidal.com/...
-    status: active
-    last_checked: 2026-07-19
-```
-
-Such operational fields are secondary and may be maintained by automated checks.
+Operational fields such as link status or last-checked dates may be maintained outside canonical data or stored only when later schema design finds them necessary.
 
 ## Gramophone references
 
@@ -247,17 +167,9 @@ Legacy notation such as:
 (10/2021)
 ```
 
-means that the Performance was reviewed in the October 2021 issue of *Gramophone*.
+means that the Performance was reviewed in the October 2021 issue of `Gramophone`.
 
-Preferred representation:
-
-```yaml
-reviews:
-  gramophone:
-    issue: 2021-10
-```
-
-When available:
+Preferred representation may later be:
 
 ```yaml
 reviews:
@@ -266,14 +178,7 @@ reviews:
     url: https://...
 ```
 
-The repository stores only the reference.
-
-It does not store:
-
-- the review text;
-- extracted ratings;
-- extended quotations;
-- a complete review ontology.
+The repository stores only the reference. It does not store review text, extracted ratings, extended quotations or a complete review ontology.
 
 ## Optional disambiguating metadata
 
@@ -286,69 +191,12 @@ Examples include:
 - recording location;
 - label;
 - catalogue number;
-- source album title.
+- source album title;
+- stable external identifiers.
 
-These fields are optional.
+These fields are optional and do not define canonical identity.
 
 They should not be added merely because an external source provides them.
-
-> Retain disambiguating metadata only when it materially helps recognition, matching, maintenance, or presentation.
-
-## External identifiers
-
-Stable external identifiers may be stored when useful.
-
-```yaml
-external_ids:
-  musicbrainz_recording: ...
-  musicbrainz_release: ...
-  discogs_release: ...
-```
-
-External identifiers are references, not identity authorities.
-
-A single Performance may legitimately point to identifiers from different external entity types because external databases model the same material differently.
-
-The repository remains authoritative for the Performance identity.
-
-## Suggested minimal structure
-
-```yaml
-id: example-performance
-work_id: example-work
-
-performers:
-  conductor: example-conductor
-  orchestra: example-orchestra
-
-keep_looking: false
-
-links:
-  tidal:
-    url: https://tidal.com/...
-
-reviews:
-  gramophone:
-    issue: 2021-10
-    url: https://...
-```
-
-For a Performance where a better alternative would be welcome:
-
-```yaml
-id: martin-symphonie-concertante-example
-work_id: martin-symphonie-concertante
-
-performers:
-  conductor: example-conductor
-  orchestra: example-orchestra
-
-keep_looking: true
-
-links:
-  tidal:
-    url: https://tidal.com/...
-```
 
 ## Required fields
 
@@ -358,44 +206,25 @@ The initial required fields are:
 - `work_id`;
 - `performers`.
 
-At least one performer relationship must be present.
+At least one performer relationship must be present. A platform link is not required.
 
-A platform link is not required.
+Exact YAML syntax is deferred to later schema design.
 
-`keep_looking` defaults to `false` when omitted.
+## Migration implications
 
-## Optional fields
+During migration:
 
-Possible optional fields include:
+- each legacy accepted Tidal-linked entry is interpreted as a Performance recommendation candidate;
+- the associated Work must be identified first;
+- performer names must be normalised;
+- existing Gramophone references must be preserved;
+- duplicate representations of the same interpretation must be detected;
+- migration must not infer quality scores or reasons;
+- `keep_looking` should be set only where explicitly decided by the curator.
 
-- `year`;
-- `links`;
-- `reviews`;
-- `external_ids`;
-- limited disambiguating release information;
-- `keep_looking`.
+Playlist imports may contain multiple Performances of the same Work. They should be retained in migration review artefacts or GitHub Issues until the curator decides which Performance becomes canonical for the relevant comparison category.
 
-Optional fields should remain sparse.
-
-## File location
-
-Each Performance is stored in a separate canonical file:
-
-```text
-data/performances/<performance-id>.yaml
-```
-
-Example:
-
-```text
-data/performances/haitink-rco-bruckner-8.yaml
-```
-
-The filename should match the stable repository identifier.
-
-Display names may change without requiring a new identifier.
-
-## Validation rules
+## Validation
 
 At minimum, validation should ensure that:
 
@@ -412,59 +241,19 @@ At minimum, validation should ensure that:
 
 Validation should detect uncertainty, not resolve it silently.
 
-## Migration implications
-
-During migration from the existing Markdown files:
-
-- each accepted Tidal-linked entry becomes a Performance candidate;
-- the associated Work must be identified;
-- performer names must be normalised;
-- existing Gramophone references must be preserved;
-- duplicate representations of the same interpretation must be detected;
-- migration must not infer quality scores or reasons;
-- `keep_looking` should only be set where explicitly decided by the curator.
-
-Playlist imports may contain multiple Performances of the same Work.
-
-These should be retained for review rather than automatically collapsed.
-
 ## Website presentation
 
 The website user should normally see only:
 
 - the Work;
 - the relevant performers;
-- the Tidal link, when available;
+- the streaming link, when available;
 - the Gramophone review link, when available.
 
-Internal fields such as external identifiers, link-check timestamps, migration notes, duplicate-detection data, and `keep_looking` do not need to be publicly visible.
-
-The public website may present a single preferred Performance or multiple Performances depending on later editorial policy.
-
-## Deferred questions
-
-The following choices may be finalised during schema design without changing this entity definition:
-
-- exact YAML syntax for performer roles;
-- whether ensembles are modelled as Persons or as a separate entity;
-- whether more than one current recommended Performance may be publicly shown for one Work;
-- whether historical superseded Performances remain canonical;
-- which operational link-status fields are committed to Git;
-- which external identifier types are supported initially.
-
-These are implementation and policy decisions, not reasons to split Performance into Recording and Release.
+Internal fields such as external identifiers, link-check timestamps, migration notes, duplicate-detection data and `keep_looking` do not need to be publicly visible.
 
 ## Summary
 
-A Performance is:
+A Performance is one accepted interpretation of exactly one Work.
 
-- one accepted interpretation;
-- of exactly one Work;
-- identified by its performers and limited disambiguating metadata;
-- optionally linked to Tidal and Gramophone;
-- optionally marked `keep_looking: true`;
-- canonical only after it has been heard and accepted.
-
-The repository stores durable curator knowledge.
-
-Unheard candidates, active searches, comparisons, and temporary alternatives remain outside canonical Performance data until an editorial decision has been made.
+It is canonical only after listening and editorial acceptance. Unheard candidates, active searches, comparisons and temporary alternatives remain outside canonical Performance data until an editorial decision has been made.

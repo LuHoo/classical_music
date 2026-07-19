@@ -1,5 +1,13 @@
 # Migration Rules
 
+> Status: Superseded for entity design by `repository-architecture.md`, `work.md`,
+> `performance.md`, `recommendation-policy.md` and `workflow-design-notes.md`.
+>
+> This document records an earlier migration design that created Recording,
+> Release and Recommendation entities. The current authoritative architecture
+> treats migrated Tidal-linked entries as Performance recommendation candidates
+> and promotes only curatorially accepted Performances into canonical data.
+
 ## Purpose
 
 This document defines how the existing composer Markdown files are migrated into the structured music-collection repository.

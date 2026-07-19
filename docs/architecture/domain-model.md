@@ -1,5 +1,12 @@
 # Domain Model
 
+> Status: Superseded by `repository-architecture.md`, `work.md`, `performance.md`,
+> and `recommendation-policy.md`.
+>
+> This document records an earlier conceptual model. The current authoritative
+> model has four core canonical entities: Person, Work Group, Work and
+> Performance. Recording and Release are not separate canonical entities.
+
 ## Purpose
 
 This document defines the conceptual domain model of the music collection.

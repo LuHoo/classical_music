@@ -4,94 +4,69 @@
 
 This document defines the editorial rules that determine how recommended Performances are selected, compared and published.
 
-It deliberately does **not** define the structure of a Work or a Performance. Those are specified elsewhere. This document describes the curator's decision process.
-
----
+It does not define Work or Performance structure. Those entity boundaries are defined in `work.md` and `performance.md`.
 
 ## Guiding principle
 
 The repository is not a catalogue of available recordings.
 
-It is a curated collection of recommendations.
+It is a curated collection of recommendations. The goal is to identify the Performance that is currently recommended for each comparison category.
 
-The goal is therefore not to identify every existing Performance, but to identify the Performance that is currently recommended.
-
----
-
-## One public recommendation
-
-For every comparison category there is exactly one published recommendation.
-
-Visitors come to the website for a recommendation, not for a list of options.
-
-Other music services already provide exhaustive catalogues.
-
----
+Recommendations must never be replaced automatically.
 
 ## Comparison categories
 
-Recommendations are compared only within the same comparison category.
+For every comparison category there is one public recommendation.
 
-A comparison category consists of:
+A comparison category consists conceptually of:
 
 - one Work;
-- one performance profile (when applicable).
+- one performance profile, when a performance profile is relevant.
 
-For most Works there is only one comparison category.
-
-Example:
-
-    Ravel – Boléro
-
-For some Works multiple performance traditions exist.
+For most Works no explicit performance profile is needed.
 
 Example:
 
-    Bach – Keyboard Concerto BWV 1052
-        Piano
-        Harpsichord
+```text
+Ravel - Bolero
+```
 
-Each performance profile has its own recommendation.
+Some Works may legitimately have more than one public recommendation because different performance traditions should not be treated as alternatives.
 
-The workflow must never compare Performances from different performance profiles.
+Example:
 
----
+```text
+Bach - Keyboard Concerto BWV 1052
+    piano
+    harpsichord
+```
+
+The harpsichord Performance must not automatically be treated as a replacement candidate for the piano Performance.
 
 ## Performance profiles
 
-A performance profile is introduced only when it represents a musically meaningful distinction that the curator wishes to preserve.
+A performance profile belongs to a Performance, not to a Work.
 
-Examples include piano and harpsichord.
+A profile may be proposed from available metadata, such as instrument credits, but not all curatorially relevant distinctions can reliably be inferred from metadata. The final profile is therefore an explicit canonical classification.
 
-Performance profiles should remain exceptional rather than becoming a general classification system.
+Performance profiles should remain sparse and should be introduced only when a musically meaningful distinction needs to be preserved.
 
----
+The repository should not create a large predefined taxonomy of performance profiles.
 
 ## Candidate Performances
 
 A newly discovered Performance is never accepted automatically.
 
-Workflow:
+The normal comparison workflow is:
 
 1. Identify the Work.
-2. Determine the performance profile (if any).
+2. Determine the performance profile, if any.
 3. Locate the current recommendation in that comparison category.
-4. Create a comparison issue if necessary.
+4. Create one comparison issue if necessary.
 5. Listen.
 6. Make an editorial decision.
 
----
-
-## Temporary dual recommendations
-
-During evaluation there may temporarily be:
-
-- current recommendation;
-- candidate recommendation.
-
-After the decision there is again exactly one published recommendation within that comparison category.
-
----
+Candidate Performances remain outside canonical data until accepted.
 
 ## Editorial decisions
 
@@ -100,65 +75,53 @@ After comparison the curator may:
 - retain the existing recommendation;
 - replace it with the candidate;
 - conclude both represent the same Performance;
-- reject the candidate.
+- reject the candidate;
+- keep both only when they belong to different comparison categories.
 
-The repository never replaces recommendations automatically.
-
----
+During comparison there may temporarily be a current recommendation and a candidate. After editorial judgement, only one recommendation remains public within that comparison category.
 
 ## Keep looking
 
 Some recommendations are satisfactory but not definitive.
 
-Example:
-
 ```yaml
 keep_looking: true
 ```
 
-This indicates only that the curator would welcome a better recommendation.
+This indicates only that the curator remains open to finding a better recommendation.
 
-It does not trigger automatic searches or GitHub issues.
+It does not require an explanation, score, stars, reason code or artistic/technical assessment.
 
----
+It does not trigger automatic searches or GitHub Issues.
 
-## Alternative searches
+A generated report may list Performances marked `keep_looking: true`.
 
-Searching for alternatives is always initiated manually.
+## Searching for alternatives
 
-The system may then:
+Searching for alternative Performances is always manually initiated by the curator, per Work.
 
-1. search external sources;
-2. propose candidate Performances;
-3. create a single GitHub issue for review.
+A manual request may lead to:
 
-This pull-based workflow prevents large backlogs.
+1. an external search;
+2. a small set of candidate Performances;
+3. one GitHub issue for comparison;
+4. listening;
+5. an editorial decision.
 
----
+Do not design automatic searches or automatic GitHub issue creation for every Work or Performance marked as improvable.
 
 ## Website policy
 
 The public website normally displays only the current recommendation for each comparison category.
 
-Candidates, workflow state and internal maintenance information are not shown.
+Visitors should receive a clear recommendation rather than a catalogue of all available Performances.
 
----
-
-## Design principles
-
-1. The repository stores durable editorial knowledge.
-2. Editorial judgement is never automated.
-3. Comparisons occur only within the same comparison category.
-4. Recommendations are replaced only after explicit review.
-5. Workflow state belongs in GitHub Issues, not canonical data.
-6. Simplicity takes precedence over exhaustive classification.
-
----
+Candidates, workflow state, matching evidence, migration state, link-check data and `keep_looking` are not normally shown.
 
 ## Summary
 
-The repository answers one question:
+The repository answers one editorial question:
 
-> Which Performance do I currently recommend?
+> Which Performance do I currently recommend for this Work and, where relevant, this performance profile?
 
-Everything else belongs to the editorial workflow rather than the canonical collection.
+Everything else belongs to the editorial workflow rather than the public recommendation.

@@ -5,6 +5,12 @@ nav_order: 6
 
 # Work Family Analysis
 
+> Status: Superseded by `repository-architecture.md` and `work.md`.
+>
+> This analysis records an earlier argument for demoting Work Family. The current
+> authoritative design uses Work Group as a canonical grouping entity and requires
+> every Work to belong to exactly one Work Group.
+
 ## Executive conclusion
 
 `Work Family` should not remain a primary standalone domain entity in the conceptual model.
