@@ -1,5 +1,11 @@
 # Naming Conventions
 
+> Status: Superseded for Recording and Release naming by
+> `repository-architecture.md` and `performance.md`.
+>
+> This document records earlier naming guidance. The current authoritative
+> canonical model uses Performance, not separate Recording or Release entities.
+
 ## Purpose
 
 This document defines the naming conventions used for human-readable slugs in the music collection.

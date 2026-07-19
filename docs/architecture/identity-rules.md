@@ -1,5 +1,12 @@
 # Identity Rules
 
+> Status: Superseded for Performance, Recording and Release identity by
+> `performance.md`.
+>
+> This document records earlier identity rules. The current authoritative design
+> uses Performance as the canonical interpretation entity and does not introduce
+> separate canonical Recording or Release entities.
+
 ## Purpose
 
 This document defines the identity rules for every primary entity in the music collection.

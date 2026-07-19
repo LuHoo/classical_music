@@ -1,5 +1,13 @@
 # Metadata Architecture
 
+> Status: Superseded by `repository-architecture.md`, `work.md`, `performance.md`,
+> and `recommendation-policy.md`.
+>
+> This document records an earlier metadata design that treated Recording and
+> Release as canonical entities. The current authoritative design uses Person,
+> Work Group, Work and Performance as the core canonical entities. Release-related
+> details may exist only as limited Performance metadata when useful.
+
 ## Purpose
 
 This document defines how metadata is represented, maintained, and enriched within the repository.

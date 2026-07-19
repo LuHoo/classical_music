@@ -1,5 +1,11 @@
 # Identifier Policy
 
+> Status: Superseded for Recording and Release identifiers by
+> `repository-architecture.md` and `performance.md`.
+>
+> This document records earlier identifier ideas. The current authoritative
+> canonical model does not create separate Recording or Release identifiers.
+
 ## Purpose
 
 This document defines the identifier strategy used throughout the music collection.

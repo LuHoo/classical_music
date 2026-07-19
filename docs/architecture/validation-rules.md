@@ -1,5 +1,12 @@
 # Validation Rules
 
+> Status: Superseded for entity design by `repository-architecture.md`, `work.md`,
+> `performance.md` and `recommendation-policy.md`.
+>
+> This document records earlier validation ideas for Recording, Release and
+> Recommendation entities. Current validation rules should be derived from the
+> four core canonical entities: Person, Work Group, Work and Performance.
+
 ## Purpose and scope
 
 This document defines repository validation rules for the classical music

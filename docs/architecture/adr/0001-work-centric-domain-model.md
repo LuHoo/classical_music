@@ -5,8 +5,16 @@ nav_order: 2
 
 # ADR 0001: Work-centric domain model
 
-- Status: Accepted
+- Status: Superseded
 - Date: 2026-07-16
+- Superseded by: `../repository-architecture.md`, `../work.md`,
+  `../performance.md`, `../recommendation-policy.md`
+
+> ADR 0001 established the work-centred direction, but some details below refer
+> to preferred releases and listening links as separate recommendation concerns.
+> The current authoritative design keeps canonical data centred on Person, Work
+> Group, Work and Performance, with release-related details stored only as limited
+> Performance metadata when useful.
 
 ## Context
 

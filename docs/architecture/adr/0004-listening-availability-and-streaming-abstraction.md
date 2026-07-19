@@ -5,8 +5,14 @@ nav_order: 5
 
 # ADR 0004: Listening availability and streaming abstraction
 
-- Status: Accepted
+- Status: Superseded
 - Date: 2026-07-16
+- Superseded by: `../repository-architecture.md`, `../performance.md`,
+  `../recommendation-policy.md`
+
+> ADR 0004 records an earlier Release and Availability abstraction. The current
+> authoritative design stores streaming links on Performance as limited metadata
+> and does not introduce separate canonical Release or Availability entities.
 
 ## Context
 
