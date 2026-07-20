@@ -1,0 +1,13 @@
+id: "igor-stravinsky-petrushka-k-012-1946-revision-work"
+work_group_id: "igor-stravinsky-petrushka-k-012-group"
+composer_id: "igor-stravinsky"
+title: "Petrushka"
+version: "1946 revision"
+source:
+  file: "docs/stravinsky.md"
+  line: "33"
+catalogue:
+  k: "K 012"
+date_text: "1910–1911; revised 1946, revised publication 1948"
+category: "Ballet"
+notes: "Grove evidence: original 1910–1911 work revised in 1946, with revised publication in 1948. Created to support source label \"1947 version\" as a version-assignment candidate."
