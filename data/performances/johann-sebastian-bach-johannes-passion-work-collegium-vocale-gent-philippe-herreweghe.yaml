@@ -1,0 +1,13 @@
+id: "johann-sebastian-bach-johannes-passion-work-collegium-vocale-gent-philippe-herreweghe"
+work_id: "johann-sebastian-bach-johannes-passion-work"
+source:
+  file: "docs/bachJS.md"
+  line: "122"
+recommendation:
+  source: "legacy_tidal_link"
+  status: "accepted"
+links:
+  - platform: "tidal"
+    url: "http://www.tidal.com/track/47053697"
+performers:
+  - name: "Collegium Vocale Gent, Philippe Herreweghe"

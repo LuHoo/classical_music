@@ -1,0 +1,8 @@
+id: "anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-group"
+composer_id: "anton-bruckner"
+title: "Symphony No. 3 in D minor \"Wagner Symphony\""
+source:
+  file: "docs/bruckner.md"
+  line: "34"
+catalogue:
+  wab: "WAB 103"

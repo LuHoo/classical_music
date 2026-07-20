@@ -1,0 +1,13 @@
+id: "gustav-mahler-symphony-no-2-work-czech-philharmonic-semyon-bychkov"
+work_id: "gustav-mahler-symphony-no-2-work"
+source:
+  file: "docs/mahler.md"
+  line: "34"
+recommendation:
+  source: "legacy_tidal_link"
+  status: "accepted"
+links:
+  - platform: "tidal"
+    url: "http://www.tidal.com/track/286816485"
+performers:
+  - name: "Czech Philharmonic, Semyon Bychkov"

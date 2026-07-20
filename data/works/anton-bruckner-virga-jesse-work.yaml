@@ -1,0 +1,11 @@
+id: "anton-bruckner-virga-jesse-work"
+work_group_id: "anton-bruckner-virga-jesse-group"
+composer_id: "anton-bruckner"
+title: "Virga Jesse"
+source:
+  file: "docs/bruckner.md"
+  line: "92"
+catalogue:
+  wab: "WAB 52"
+date_text: "1885"
+category: "Vocal"

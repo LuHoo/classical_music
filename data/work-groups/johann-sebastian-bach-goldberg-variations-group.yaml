@@ -1,0 +1,8 @@
+id: "johann-sebastian-bach-goldberg-variations-group"
+composer_id: "johann-sebastian-bach"
+title: "Goldberg Variations"
+source:
+  file: "docs/bachJS.md"
+  line: "118"
+catalogue:
+  bwv: "BWV 988"

@@ -1,0 +1,9 @@
+id: "gustav-mahler-das-lied-von-der-erde-work"
+work_group_id: "gustav-mahler-das-lied-von-der-erde-group"
+composer_id: "gustav-mahler"
+title: "Das Lied von der Erde"
+source:
+  file: "docs/mahler.md"
+  line: "60"
+date_text: "1908–09"
+category: "Late works"

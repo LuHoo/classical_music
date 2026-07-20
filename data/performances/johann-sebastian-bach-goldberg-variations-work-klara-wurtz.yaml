@@ -1,0 +1,13 @@
+id: "johann-sebastian-bach-goldberg-variations-work-klara-wurtz"
+work_id: "johann-sebastian-bach-goldberg-variations-work"
+source:
+  file: "docs/bachJS.md"
+  line: "118"
+recommendation:
+  source: "legacy_tidal_link"
+  status: "accepted"
+links:
+  - platform: "tidal"
+    url: "http://www.tidal.com/track/210117464"
+performers:
+  - name: "Klára Würtz"

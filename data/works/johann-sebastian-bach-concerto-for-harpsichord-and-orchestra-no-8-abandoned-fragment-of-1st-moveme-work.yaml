@@ -1,0 +1,11 @@
+id: "johann-sebastian-bach-concerto-for-harpsichord-and-orchestra-no-8-abandoned-fragment-of-1st-moveme-work"
+work_group_id: "johann-sebastian-bach-concerto-for-harpsichord-and-orchestra-no-8-abandoned-fragment-of-1st-moveme-group"
+composer_id: "johann-sebastian-bach"
+title: "Concerto for harpsichord and orchestra No. 8(abandoned fragment of 1st movement) in D min."
+source:
+  file: "docs/bachJS.md"
+  line: "56"
+catalogue:
+  bwv: "BWV 1059"
+date_text: "c.1738"
+category: "Orchestral"

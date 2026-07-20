@@ -1,0 +1,13 @@
+id: "gustav-mahler-das-klagende-lied-work-susan-dunn-brigitte-fassbaender-werner-hollw"
+work_id: "gustav-mahler-das-klagende-lied-work"
+source:
+  file: "docs/mahler.md"
+  line: "14"
+recommendation:
+  source: "legacy_tidal_link"
+  status: "accepted"
+links:
+  - platform: "tidal"
+    url: "http://www.tidal.com/track/65806801"
+performers:
+  - name: "Susan Dunn, Brigitte Fassbaender, Werner Hollweg, Markus Baur, Stadtischer Musikverein, Dusseldorf, Radio-Symphonie-Orchester Berlin, Riccardo Chailly"

@@ -1,0 +1,13 @@
+id: "johann-sebastian-bach-concerto-for-violin-and-orchestra-no-1-in-a-min-work-shunske-sato-il-pomo-d-oro-zefira-valova"
+work_id: "johann-sebastian-bach-concerto-for-violin-and-orchestra-no-1-in-a-min-work"
+source:
+  file: "docs/bachJS.md"
+  line: "12"
+recommendation:
+  source: "legacy_tidal_link"
+  status: "accepted"
+links:
+  - platform: "tidal"
+    url: "http://www.tidal.com/track/95609827"
+performers:
+  - name: "Shunske Sato, Il Pomo d'Oro, Zefira Valova"
