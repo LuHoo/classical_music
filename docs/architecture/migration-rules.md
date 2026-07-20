@@ -16,6 +16,7 @@ It does not create canonical Recording, Release, Recommendation, Track, Album or
 Availability entities.
 
 The minimal canonical YAML shapes are defined in `minimal-yaml-schemas.md`.
+Migration source classification is defined in `source-inventory.md`.
 
 ## Core principles
 
