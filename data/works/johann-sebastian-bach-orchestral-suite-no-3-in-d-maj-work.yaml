@@ -9,3 +9,6 @@ catalogue:
   bwv: "BWV 1068"
 date_text: "c.1730"
 category: "Orchestral"
+external_ids:
+  musicbrainz: "1767c8ae-5d3a-4a39-8921-d3e4ba0e75af"
+notes: "MusicBrainz supports this as an ordinary parent Work; the open migration item is a performance-candidate decision, not a Work Group ambiguity."

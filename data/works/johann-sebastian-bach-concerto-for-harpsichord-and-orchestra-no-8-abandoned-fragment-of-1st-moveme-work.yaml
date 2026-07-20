@@ -9,3 +9,6 @@ catalogue:
   bwv: "BWV 1059"
 date_text: "c.1738"
 category: "Orchestral"
+external_ids:
+  musicbrainz: "742373b3-093e-49fa-89df-b39878263a3b"
+notes: "MusicBrainz distinguishes the incomplete BWV 1059 fragment from BWV 1059R reconstructions; recordings should be reviewed before mapping to this Work."

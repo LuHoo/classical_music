@@ -9,3 +9,6 @@ catalogue:
   bwv: "BWV 1069"
 date_text: "before late 1727"
 category: "Orchestral"
+external_ids:
+  musicbrainz: "872109a2-b527-4029-b6bb-57319515f3c1"
+notes: "MusicBrainz supports this as an ordinary parent Work; the open migration item is a performance-candidate decision, not a Work Group ambiguity."

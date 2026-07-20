@@ -9,3 +9,6 @@ catalogue:
   bwv: "BWV 1044"
 date_text: "1727 or later"
 category: "Orchestral"
+external_ids:
+  musicbrainz: "e10360f3-bbfd-4483-ba0c-1baa47211d0e"
+notes: "MusicBrainz supports this as a single parent Work with three movements; no Work Group split is indicated by the review."
