@@ -1,0 +1,13 @@
+id: "gustav-mahler-symphony-no-9-work-minnesota-orchestra-osmo-vanska"
+work_id: "gustav-mahler-symphony-no-9-work"
+source:
+  file: "docs/mahler.md"
+  line: "62"
+recommendation:
+  source: "legacy_tidal_link"
+  status: "accepted"
+links:
+  - platform: "tidal"
+    url: "http://www.tidal.com/track/338562700"
+performers:
+  - name: "Minnesota Orchestra, Osmo Vänskä"

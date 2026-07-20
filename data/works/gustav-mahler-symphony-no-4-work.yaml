@@ -1,0 +1,10 @@
+id: "gustav-mahler-symphony-no-4-work"
+work_group_id: "gustav-mahler-symphony-no-4-group"
+composer_id: "gustav-mahler"
+title: "Symphony No. 4"
+source:
+  file: "docs/mahler.md"
+  line: "42"
+date_text: "1899–1901"
+category: "Wunderhorn period"
+gem: true

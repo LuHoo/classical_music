@@ -1,0 +1,13 @@
+id: "johann-sebastian-bach-inventions-and-sinfonias-work-simone-dinnerstein"
+work_id: "johann-sebastian-bach-inventions-and-sinfonias-work"
+source:
+  file: "docs/bachJS.md"
+  line: "112"
+recommendation:
+  source: "legacy_tidal_link"
+  status: "accepted"
+links:
+  - platform: "tidal"
+    url: "http://www.tidal.com/track/24788065"
+performers:
+  - name: "Simone Dinnerstein"

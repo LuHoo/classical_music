@@ -1,0 +1,13 @@
+id: "gustav-mahler-das-lied-von-der-erde-work-robert-dean-smith-sarah-connoly-radio-sympho"
+work_id: "gustav-mahler-das-lied-von-der-erde-work"
+source:
+  file: "docs/mahler.md"
+  line: "60"
+recommendation:
+  source: "legacy_tidal_link"
+  status: "accepted"
+links:
+  - platform: "tidal"
+    url: "http://www.tidal.com/track/150859124"
+performers:
+  - name: "Robert Dean Smith, Sarah Connoly, Radio-Symphonie-Orchester Berlin, Vladimir Jurowski"

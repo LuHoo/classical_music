@@ -1,0 +1,9 @@
+id: "gustav-mahler-lieder-und-gesange-vol-iii-work"
+work_group_id: "gustav-mahler-lieder-und-gesange-vol-iii-group"
+composer_id: "gustav-mahler"
+title: "Lieder und Gesänge Vol. III"
+source:
+  file: "docs/mahler.md"
+  line: "30"
+date_text: "1887–90"
+category: "Wunderhorn period"

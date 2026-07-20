@@ -1,0 +1,13 @@
+id: "gustav-mahler-symphony-no-1-in-d-work-czech-philharmonic-semyon-bychkov"
+work_id: "gustav-mahler-symphony-no-1-in-d-work"
+source:
+  file: "docs/mahler.md"
+  line: "32"
+recommendation:
+  source: "legacy_tidal_link"
+  status: "accepted"
+links:
+  - platform: "tidal"
+    url: "http://www.tidal.com/track/314323056"
+performers:
+  - name: "Czech Philharmonic, Semyon Bychkov"

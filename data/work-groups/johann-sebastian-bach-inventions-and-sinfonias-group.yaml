@@ -1,0 +1,8 @@
+id: "johann-sebastian-bach-inventions-and-sinfonias-group"
+composer_id: "johann-sebastian-bach"
+title: "Inventions and Sinfonias"
+source:
+  file: "docs/bachJS.md"
+  line: "112"
+catalogue:
+  bwv: "BWV 772"

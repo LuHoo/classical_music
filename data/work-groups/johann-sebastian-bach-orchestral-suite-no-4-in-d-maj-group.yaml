@@ -1,0 +1,8 @@
+id: "johann-sebastian-bach-orchestral-suite-no-4-in-d-maj-group"
+composer_id: "johann-sebastian-bach"
+title: "Orchestral Suite No. 4 in D maj."
+source:
+  file: "docs/bachJS.md"
+  line: "78"
+catalogue:
+  bwv: "BWV 1069"

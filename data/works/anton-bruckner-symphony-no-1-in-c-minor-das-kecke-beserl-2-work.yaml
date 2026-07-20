@@ -1,0 +1,11 @@
+id: "anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-2-work"
+work_group_id: "anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-2-group"
+composer_id: "anton-bruckner"
+title: "Symphony No. 1 in C minor \"Das kecke Beserl\""
+source:
+  file: "docs/bruckner.md"
+  line: "26"
+catalogue:
+  wab: "WAB 101"
+date_text: "1866 \"Linz version\", revised in 1877/1884"
+category: "Orchestral"

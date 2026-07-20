@@ -1,0 +1,11 @@
+id: "anton-bruckner-locus-iste-work"
+work_group_id: "anton-bruckner-locus-iste-group"
+composer_id: "anton-bruckner"
+title: "Locus iste"
+source:
+  file: "docs/bruckner.md"
+  line: "74"
+catalogue:
+  wab: "WAB 23"
+date_text: "1869"
+category: "Vocal"

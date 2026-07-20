@@ -1,0 +1,11 @@
+id: "anton-bruckner-symphony-no-8-in-c-minor-die-apokalyptische-2-work"
+work_group_id: "anton-bruckner-symphony-no-8-in-c-minor-die-apokalyptische-2-group"
+composer_id: "anton-bruckner"
+title: "Symphony No. 8 in C minor \"Die Apokalyptische\""
+source:
+  file: "docs/bruckner.md"
+  line: "60"
+catalogue:
+  wab: "WAB 108"
+date_text: "1888 Adagio"
+category: "Orchestral"

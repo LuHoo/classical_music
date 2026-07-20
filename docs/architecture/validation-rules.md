@@ -108,68 +108,23 @@ Rule identifiers should remain stable once reports depend on them.
 
 | Rule ID | Invariant | Severity | Profile | Automatable |
 | --- | --- | ---: | --- | --- |
-| SCH-001 | Canonical YAML or equivalent storage files MUST be syntactically valid. | error | repository | yes |
-| SCH-002 | Duplicate keys in a mapping MUST NOT occur. | error | repository | yes |
-| SCH-003 | Required fields for the entity type MUST be present and non-empty. | error | repository | yes |
-| SCH-004 | Empty optional values MAY exist only where the schema explicitly permits unresolved enrichment. | warning | repository | yes |
-| SCH-005 | Unknown fields SHOULD produce warnings unless the file declares a compatible schema version that permits them. | warning | repository | yes |
-| SCH-006 | Dates MUST use documented formats, normally `YYYY`, `YYYY-MM-DD` or explicitly textual source values with provenance. | error | repository | yes |
-| SCH-007 | URLs MUST be syntactically valid absolute URLs when stored as links. | error | repository | yes |
-| SCH-008 | Enumerated fields MUST use allowed values. | error | repository | yes |
-| SCH-009 | Versioned schemas MUST declare a schema version when multiple incompatible shapes are supported. | warning | repository | yes |
+| SCH-001 | Canonical YAML files MUST be syntactically valid. | error | repository | yes |
+| SCH-002 | Duplicate keys in a YAML mapping MUST NOT occur. | error | repository | yes |
+| SCH-003 | Required fields for each entity type MUST be present and non-empty. | error | repository | yes |
+| SCH-004 | Empty optional fields SHOULD be omitted unless the schema explicitly permits them. | warning | repository | yes |
+| SCH-005 | Unknown fields SHOULD produce warnings unless explicitly allowed by the current schema version. | warning | repository | yes |
+| SCH-006 | Stored URLs MUST be syntactically valid absolute URLs. | error | repository | yes |
+| SCH-007 | Gramophone issue values MUST use `YYYY-MM`. | error | repository | yes |
+| SCH-008 | `keep_looking`, when present, MUST be boolean. | error | repository | yes |
 
-Important entity-specific requirements:
+## Required fields
 
-| Entity | Required identity fields | Required relationship fields | Notes |
-| --- | --- | --- | --- |
-| Composer | `id`, preferred name or display name | none | Names may have aliases. |
-| Work Group | `id`, `slug` or preferred label | member Works where represented | Non-performable. |
-| Work | `id`, composer reference, title or title candidate | Work Group reference only when grouped | Pilot files may use `composer_id`, `canonical_title` or `preferred_title`. |
-| Work Part | `id`, parent Work, title or number | parent Work | Supported when stored by the current model. |
-| Person | `id`, preferred name | none | May be used for performers or contributors. |
-| Ensemble | `id`, preferred name | none | May be used for orchestras, choirs and groups. |
-| Recording | `id`, concrete Work or contents, principal credits, provenance | Work or Work Part reference | Provisional recordings may lack date and venue. |
-| Release | `id`, title or platform reference | contained Recording or tracks when known | Digital platform releases are allowed. |
-| Recommendation | `id`, `target_type`, `target_id`, `recommendation_type` | target entity | Recording recommendations and gems are separate. |
-| External reference | platform or authority, item type when applicable, identifier or URL | owning entity | Original URLs SHOULD be retained. |
-| Provenance | source file or authority, extraction/enrichment method | owning entity or field | Required for migrated data. |
-| Alias | alias value, alias type where needed | owning entity | Must not collide with another entity. |
-| Merge or retirement record | retired ID, surviving ID or retirement reason | target entity when merged | Retired IDs must remain reserved. |
-
-Allowed value examples:
-
-- `identification_status`: `provisional`, `identified`,
-  `externally_enriched`, `platform_confirmed`.
-- `recommendation_type`: `recommended_recording`, `gem`.
-- `target_type`: `recording`, `work`.
-- link `status`: `active`, `unavailable`, `broken`, `unknown`.
-- Tidal `item_type`: `track`, `album`, `unknown`.
-
-These enumerations MAY be extended by an ADR or schema update. Validators SHOULD
-report unrecognised values as warnings in candidate profiles and errors in
-repository profiles when the field is normative.
-
-## Identity validation
-
-Slugs are locators and editorial labels, not identity.
-
-Internal identity is established by permanent identifiers. Internal foreign keys
-MUST use permanent IDs, not slugs.
-
-| Rule ID | Invariant | Severity | Profile | Automatable |
-| --- | --- | ---: | --- | --- |
-| IDN-001 | Every canonical entity MUST have one globally unique permanent ID. | error | repository | yes |
-| IDN-002 | A permanent ID MUST NOT change because metadata, slug, title or relationships change. | error | repository | partial |
-| IDN-003 | A permanent ID MUST NOT be reused after deletion, merge or split. | error | repository | yes |
-| IDN-004 | Canonical slugs MUST be unique within the relevant entity namespace. | error | repository | yes |
-| IDN-005 | Slug aliases MUST NOT collide with active canonical slugs or aliases for another entity in the same namespace. | error | repository | yes |
-| IDN-006 | Previous slugs MUST remain aliases after slug changes. | error | repository | partial |
-| IDN-007 | Deprecated and merged IDs MUST resolve to a survivor or retirement record. | error | repository | yes |
-| IDN-008 | External identifiers SHOULD be unique within authority, entity type and item type where the authority defines unique objects. | warning | repository | yes |
-| IDN-009 | Confirmed duplicate external identifiers for two active entities of the same type are errors unless the external authority permits reuse. | error | repository | yes |
-| IDN-010 | Provisional status MUST NOT change permanent identity rules. | error | repository | yes |
-| IDN-011 | Fallback Performance slugs such as `<work-slug>-<profile-or-performer-label>` MAY change after enrichment, but the old slug MUST remain an alias. | error | repository | partial |
-| IDN-012 | Internal references MUST NOT use slugs where permanent IDs are required. | error | repository | yes |
+| Entity | Required fields |
+| --- | --- |
+| Person | `id`, `name` |
+| Work Group | `id`, `composer_id`, `title` |
+| Work | `id`, `work_group_id`, `composer_id`, `title` |
+| Performance | `id`, `work_id`, `performers` |
 
 At least one performer entry is required for every canonical Performance.
 

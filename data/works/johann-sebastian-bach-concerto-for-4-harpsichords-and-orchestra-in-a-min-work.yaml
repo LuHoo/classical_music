@@ -1,0 +1,11 @@
+id: "johann-sebastian-bach-concerto-for-4-harpsichords-and-orchestra-in-a-min-work"
+work_group_id: "johann-sebastian-bach-concerto-for-4-harpsichords-and-orchestra-in-a-min-group"
+composer_id: "johann-sebastian-bach"
+title: "Concerto for 4 harpsichords and orchestra in A min."
+source:
+  file: "docs/bachJS.md"
+  line: "70"
+catalogue:
+  bwv: "BWV 1065"
+date_text: "c.1730"
+category: "Orchestral"

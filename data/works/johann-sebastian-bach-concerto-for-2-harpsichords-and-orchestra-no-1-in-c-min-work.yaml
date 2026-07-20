@@ -1,0 +1,11 @@
+id: "johann-sebastian-bach-concerto-for-2-harpsichords-and-orchestra-no-1-in-c-min-work"
+work_group_id: "johann-sebastian-bach-concerto-for-2-harpsichords-and-orchestra-no-1-in-c-min-group"
+composer_id: "johann-sebastian-bach"
+title: "Concerto for 2 harpsichords and orchestra No. 1 in C min."
+source:
+  file: "docs/bachJS.md"
+  line: "58"
+catalogue:
+  bwv: "BWV 1060"
+date_text: "c.1736"
+category: "Orchestral"

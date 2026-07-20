@@ -1,0 +1,11 @@
+id: "johann-sebastian-bach-concerto-for-harpsichord-and-orchestra-no-1-revised-version-in-d-min-work"
+work_group_id: "johann-sebastian-bach-concerto-for-harpsichord-and-orchestra-no-1-revised-version-in-d-min-group"
+composer_id: "johann-sebastian-bach"
+title: "Concerto for harpsichord and orchestra No. 1(revised version) in D min."
+source:
+  file: "docs/bachJS.md"
+  line: "38"
+catalogue:
+  bwv: "BWV 1052.2"
+date_text: "c.1738"
+category: "Orchestral"

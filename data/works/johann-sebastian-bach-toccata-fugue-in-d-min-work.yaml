@@ -1,0 +1,11 @@
+id: "johann-sebastian-bach-toccata-fugue-in-d-min-work"
+work_group_id: "johann-sebastian-bach-toccata-fugue-in-d-min-group"
+composer_id: "johann-sebastian-bach"
+title: "Toccata & Fugue in D min."
+source:
+  file: "docs/bachJS.md"
+  line: "86"
+catalogue:
+  bwv: "BWV 565"
+date_text: "http://www.tidal.com/track/2924750"
+category: "Orchestral arrangements"

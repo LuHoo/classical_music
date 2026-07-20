@@ -1,0 +1,7 @@
+id: "gustav-mahler"
+name: "Gustav Mahler"
+sort_name: "Mahler, Gustav"
+roles:
+  - "composer"
+source:
+  file: "docs/mahler.md"

@@ -1,0 +1,13 @@
+id: "johann-sebastian-bach-concerto-for-2-harpsichords-and-orchestra-no-3-in-c-min-work-francesco-corti-andrea-buccarella-il-pomo-d"
+work_id: "johann-sebastian-bach-concerto-for-2-harpsichords-and-orchestra-no-3-in-c-min-work"
+source:
+  file: "docs/bachJS.md"
+  line: "64"
+recommendation:
+  source: "legacy_tidal_link"
+  status: "accepted"
+links:
+  - platform: "tidal"
+    url: "https://tidal.com/browse/track/305311219?u"
+performers:
+  - name: "Francesco Corti, Andrea Buccarella, Il Pomo d'Oro"

@@ -1,0 +1,13 @@
+id: "johann-sebastian-bach-musikalisches-opfer-work-no-2-ricerar-a-6-los-angeles-philharmonic-es"
+work_id: "johann-sebastian-bach-musikalisches-opfer-work"
+source:
+  file: "docs/bachJS.md"
+  line: "94"
+recommendation:
+  source: "legacy_tidal_link"
+  status: "accepted"
+links:
+  - platform: "tidal"
+    url: "http://www.tidal.com/track/2924755"
+performers:
+  - name: "No. 2: Ricerar a 6 Los Angeles Philharmonic, Esa-Pekka Salonen"

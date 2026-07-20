@@ -1,0 +1,9 @@
+id: "gustav-mahler-three-lieder-work"
+work_group_id: "gustav-mahler-three-lieder-group"
+composer_id: "gustav-mahler"
+title: "Three Lieder"
+source:
+  file: "docs/mahler.md"
+  line: "16"
+date_text: "1880"
+category: "Early works"

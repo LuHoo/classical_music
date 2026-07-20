@@ -1,0 +1,13 @@
+id: "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-3-sonata-no-2-in-a-min-work-leonidas-kavakos"
+work_id: "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-3-sonata-no-2-in-a-min-work"
+source:
+  file: "docs/bachJS.md"
+  line: "102"
+recommendation:
+  source: "legacy_tidal_link"
+  status: "accepted"
+links:
+  - platform: "tidal"
+    url: "http://www.tidal.com/track/203860883"
+performers:
+  - name: "Leonidas Kavakos"

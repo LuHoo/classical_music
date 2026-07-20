@@ -1,0 +1,11 @@
+id: "johann-sebastian-bach-brandenburg-concerto-no-5-early-version-in-d-maj-work"
+work_group_id: "johann-sebastian-bach-brandenburg-concerto-no-5-early-version-in-d-maj-group"
+composer_id: "johann-sebastian-bach"
+title: "Brandenburg Concerto No. 5 (early version) in D maj."
+source:
+  file: "docs/bachJS.md"
+  line: "32"
+catalogue:
+  bwv: "BWV 1050.2"
+date_text: "1721-03-24"
+category: "Orchestral"

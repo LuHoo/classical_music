@@ -1,0 +1,13 @@
+id: "johann-sebastian-bach-concerto-for-harpsichord-and-orchestra-no-6-in-f-maj-work-francesco-corti-il-pomo-d-oro"
+work_id: "johann-sebastian-bach-concerto-for-harpsichord-and-orchestra-no-6-in-f-maj-work"
+source:
+  file: "docs/bachJS.md"
+  line: "52"
+recommendation:
+  source: "legacy_tidal_link"
+  status: "accepted"
+links:
+  - platform: "tidal"
+    url: "https://tidal.com/browse/track/305308963?u"
+performers:
+  - name: "Francesco Corti, Il Pomo d'Oro"
