@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-march-and-chorus-for-the-consecration-of-the-house-op-114-work"
+work_group_id: "ludwig-van-beethoven-march-and-chorus-for-the-consecration-of-the-house-op-114-group"
+composer_id: "ludwig-van-beethoven"
+title: "March and Chorus for \"The Consecration of the House\""
+source:
+  file: "docs/beethoven.md"
+  line: "78"
+catalogue:
+  opus: "Op. 114"
+date_text: "1822"
+category: "Orchestral"

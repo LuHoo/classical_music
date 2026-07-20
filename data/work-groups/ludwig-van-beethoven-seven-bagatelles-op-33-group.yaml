@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-seven-bagatelles-op-33-group"
+composer_id: "ludwig-van-beethoven"
+title: "Seven Bagatelles"
+source:
+  file: "docs/beethoven.md"
+  line: "440"
+catalogue:
+  opus: "Op. 33"

@@ -1,0 +1,12 @@
+id: "igor-stravinsky-violin-concerto-in-d-major-k-053-work"
+work_group_id: "igor-stravinsky-violin-concerto-in-d-major-k-053-group"
+composer_id: "igor-stravinsky"
+title: "Violin Concerto in D major"
+source:
+  file: "docs/stravinsky.md"
+  line: "111"
+catalogue:
+  k: "K 053"
+date_text: "1931"
+category: "Concertante"
+gem: true

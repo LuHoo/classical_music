@@ -1,0 +1,16 @@
+id: "ludwig-van-beethoven-the-consecration-of-the-house-die-weihe-des-hauses-in-c-op-124-work-cappella-aquileia-marcus-bosch"
+work_id: "ludwig-van-beethoven-the-consecration-of-the-house-die-weihe-des-hauses-in-c-op-124-work"
+performers:
+  - name: "Cappella Aquileia"
+    role: "performer"
+  - name: "Marcus Bosch"
+    role: "conductor"
+links:
+  tidal:
+    url: "http://www.tidal.com/track/191149828"
+source:
+  file: "docs/beethoven.md"
+  line: "88"
+reviews:
+  gramophone:
+    issue: "2021-10"

@@ -1,0 +1,12 @@
+id: "ludwig-van-beethoven-allemande-a-woo-81-work"
+work_group_id: "ludwig-van-beethoven-allemande-a-woo-81-group"
+composer_id: "ludwig-van-beethoven"
+title: "Allemande, A"
+source:
+  file: "docs/beethoven.md"
+  line: "424"
+catalogue:
+  woo: "WoO 81"
+date_text: "c. 1793, rev. 1822"
+category: "Piano"
+notes: "Pilot migration: source text suggests a version, arrangement, revision, suite, or completion boundary that should be reviewed."

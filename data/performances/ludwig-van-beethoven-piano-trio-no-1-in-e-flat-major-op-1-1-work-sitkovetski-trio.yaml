@@ -1,0 +1,14 @@
+id: "ludwig-van-beethoven-piano-trio-no-1-in-e-flat-major-op-1-1-work-sitkovetski-trio"
+work_id: "ludwig-van-beethoven-piano-trio-no-1-in-e-flat-major-op-1-1-work"
+performers:
+  - name: "Sitkovetski Trio"
+    role: "ensemble"
+links:
+  tidal:
+    url: "http://www.tidal.com/track/376682549"
+source:
+  file: "docs/beethoven.md"
+  line: "122"
+reviews:
+  gramophone:
+    issue: "2024-09"

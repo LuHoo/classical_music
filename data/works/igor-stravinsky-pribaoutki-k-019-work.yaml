@@ -1,0 +1,11 @@
+id: "igor-stravinsky-pribaoutki-k-019-work"
+work_group_id: "igor-stravinsky-pribaoutki-k-019-group"
+composer_id: "igor-stravinsky"
+title: "Pribaoutki"
+source:
+  file: "docs/stravinsky.md"
+  line: "192"
+catalogue:
+  k: "K 019"
+date_text: "1914"
+category: "Vocal"

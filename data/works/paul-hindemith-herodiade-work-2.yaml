@@ -1,0 +1,10 @@
+id: "paul-hindemith-herodiade-work-2"
+work_group_id: "paul-hindemith-herodiade-group-2"
+composer_id: "paul-hindemith"
+title: "Hérodiade"
+source:
+  file: "docs/hindemith.md"
+  line: "53"
+date_text: "1944"
+category: "Ballet"
+notes: "Pilot migration: source text suggests a version, arrangement, revision, suite, or completion boundary that should be reviewed."

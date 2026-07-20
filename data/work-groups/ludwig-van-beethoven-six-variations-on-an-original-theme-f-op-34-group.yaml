@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-six-variations-on-an-original-theme-f-op-34-group"
+composer_id: "ludwig-van-beethoven"
+title: "Six variations on an original theme, F"
+source:
+  file: "docs/beethoven.md"
+  line: "402"
+catalogue:
+  opus: "Op. 34"

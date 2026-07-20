@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-concert-finale-c-hess-65-work"
+work_group_id: "ludwig-van-beethoven-concert-finale-c-hess-65-group"
+composer_id: "ludwig-van-beethoven"
+title: "\"Concert Finale\", C"
+source:
+  file: "docs/beethoven.md"
+  line: "460"
+catalogue:
+  hess: "Hess 65"
+date_text: "1820–21"
+category: "Piano"

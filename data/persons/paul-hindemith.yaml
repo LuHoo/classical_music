@@ -1,0 +1,7 @@
+id: "paul-hindemith"
+name: "Paul Hindemith"
+sort_name: "Hindemith, Paul"
+roles:
+  - "composer"
+source:
+  file: "docs/hindemith.md"

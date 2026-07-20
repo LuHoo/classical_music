@@ -1,0 +1,11 @@
+id: "igor-stravinsky-berceuses-du-chat-k-021-work"
+work_group_id: "igor-stravinsky-berceuses-du-chat-k-021-group"
+composer_id: "igor-stravinsky"
+title: "Berceuses du chat"
+source:
+  file: "docs/stravinsky.md"
+  line: "194"
+catalogue:
+  k: "K 021"
+date_text: "1915–16"
+category: "Vocal"

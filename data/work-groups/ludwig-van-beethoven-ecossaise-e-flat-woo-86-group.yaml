@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-ecossaise-e-flat-woo-86-group"
+composer_id: "ludwig-van-beethoven"
+title: "Ecossaise, E♭"
+source:
+  file: "docs/beethoven.md"
+  line: "474"
+catalogue:
+  woo: "WoO 86"

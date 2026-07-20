@@ -1,0 +1,13 @@
+id: "ludwig-van-beethoven-violin-sonata-no-9-in-a-major-kreutzer-op-47-work-leonidas-kavakos-enrico-pace"
+work_id: "ludwig-van-beethoven-violin-sonata-no-9-in-a-major-kreutzer-op-47-work"
+performers:
+  - name: "Leonidas Kavakos"
+    role: "performer"
+  - name: "Enrico Pace"
+    role: "orchestra"
+links:
+  tidal:
+    url: "http://www.tidal.com/track/141525100"
+source:
+  file: "docs/beethoven.md"
+  line: "216"

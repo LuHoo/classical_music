@@ -1,0 +1,8 @@
+id: "paul-hindemith-drei-gesange-op-9-group"
+composer_id: "paul-hindemith"
+title: "Drei Gesänge"
+source:
+  file: "docs/hindemith.md"
+  line: "148"
+catalogue:
+  opus: "Op. 9"

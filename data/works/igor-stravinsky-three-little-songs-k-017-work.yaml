@@ -1,0 +1,11 @@
+id: "igor-stravinsky-three-little-songs-k-017-work"
+work_group_id: "igor-stravinsky-three-little-songs-k-017-group"
+composer_id: "igor-stravinsky"
+title: "Three Little Songs"
+source:
+  file: "docs/stravinsky.md"
+  line: "198"
+catalogue:
+  k: "K 017"
+date_text: "1919"
+category: "Vocal"

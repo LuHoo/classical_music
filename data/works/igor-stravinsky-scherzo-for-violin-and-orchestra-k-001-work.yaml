@@ -1,0 +1,11 @@
+id: "igor-stravinsky-scherzo-for-violin-and-orchestra-k-001-work"
+work_group_id: "igor-stravinsky-scherzo-for-violin-and-orchestra-k-001-group"
+composer_id: "igor-stravinsky"
+title: "Scherzo for Violin and Orchestra"
+source:
+  file: "docs/stravinsky.md"
+  line: "107"
+catalogue:
+  k: "K 001"
+date_text: "1882"
+category: "Concertante"

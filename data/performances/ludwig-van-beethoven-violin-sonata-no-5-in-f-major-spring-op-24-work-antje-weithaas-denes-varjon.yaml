@@ -1,0 +1,16 @@
+id: "ludwig-van-beethoven-violin-sonata-no-5-in-f-major-spring-op-24-work-antje-weithaas-denes-varjon"
+work_id: "ludwig-van-beethoven-violin-sonata-no-5-in-f-major-spring-op-24-work"
+performers:
+  - name: "Antje Weithaas"
+    role: "performer"
+  - name: "Dénes Várjon"
+    role: "conductor"
+links:
+  tidal:
+    url: "http://www.tidal.com/track/352737398"
+source:
+  file: "docs/beethoven.md"
+  line: "188"
+reviews:
+  gramophone:
+    issue: "2024-06"

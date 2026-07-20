@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-piano-sonata-no-29-hammerklavier-b-flat-op-106-work-igor-levit"
+work_id: "ludwig-van-beethoven-piano-sonata-no-29-hammerklavier-b-flat-op-106-work"
+performers:
+  - name: "Igor Levit"
+    role: "performer"
+links:
+  tidal:
+    url: "https://tidal.com/browse/track/113297817"
+source:
+  file: "docs/beethoven.md"
+  line: "366"

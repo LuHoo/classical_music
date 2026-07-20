@@ -1,0 +1,12 @@
+id: "ludwig-van-beethoven-symphony-no-7-in-a-major-op-92-work-2"
+work_group_id: "ludwig-van-beethoven-symphony-no-7-in-a-major-op-92-group-2"
+composer_id: "ludwig-van-beethoven"
+title: "Symphony No. 7 in A major"
+source:
+  file: "docs/beethoven.md"
+  line: "244"
+catalogue:
+  opus: "Op. 92"
+date_text: "1811–1813"
+category: "Chamber"
+notes: "Pilot migration: source text suggests a version, arrangement, revision, suite, or completion boundary that should be reviewed."

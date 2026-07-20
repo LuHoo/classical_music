@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-violin-sonata-no-8-in-g-major-op-30-3-work"
+work_group_id: "ludwig-van-beethoven-violin-sonata-no-8-in-g-major-op-30-3-group"
+composer_id: "ludwig-van-beethoven"
+title: "Violin Sonata No. 8 in G major"
+source:
+  file: "docs/beethoven.md"
+  line: "202"
+catalogue:
+  opus: "Op. 30/3"
+date_text: "1801–1802"
+category: "Chamber"

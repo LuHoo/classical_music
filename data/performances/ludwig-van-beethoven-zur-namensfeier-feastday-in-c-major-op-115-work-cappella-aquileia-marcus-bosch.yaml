@@ -1,0 +1,16 @@
+id: "ludwig-van-beethoven-zur-namensfeier-feastday-in-c-major-op-115-work-cappella-aquileia-marcus-bosch"
+work_id: "ludwig-van-beethoven-zur-namensfeier-feastday-in-c-major-op-115-work"
+performers:
+  - name: "Cappella Aquileia"
+    role: "performer"
+  - name: "Marcus Bosch"
+    role: "conductor"
+links:
+  tidal:
+    url: "http://www.tidal.com/track/191149829"
+source:
+  file: "docs/beethoven.md"
+  line: "82"
+reviews:
+  gramophone:
+    issue: "2021-10"

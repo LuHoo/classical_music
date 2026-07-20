@@ -1,0 +1,11 @@
+id: "igor-stravinsky-persephone-k-056-work"
+work_group_id: "igor-stravinsky-persephone-k-056-group"
+composer_id: "igor-stravinsky"
+title: "Perséphone"
+source:
+  file: "docs/stravinsky.md"
+  line: "23"
+catalogue:
+  k: "K 056"
+date_text: "1933"
+category: "Opera/Theatre"

@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-prelude-f-minor-woo-55-work"
+work_group_id: "ludwig-van-beethoven-prelude-f-minor-woo-55-group"
+composer_id: "ludwig-van-beethoven"
+title: "Prelude, F minor"
+source:
+  file: "docs/beethoven.md"
+  line: "444"
+catalogue:
+  woo: "WoO 55"
+date_text: "c. 1803"
+category: "Piano"

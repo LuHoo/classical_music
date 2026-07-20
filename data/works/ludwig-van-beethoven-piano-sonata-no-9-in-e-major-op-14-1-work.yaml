@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-piano-sonata-no-9-in-e-major-op-14-1-work"
+work_group_id: "ludwig-van-beethoven-piano-sonata-no-9-in-e-major-op-14-1-group"
+composer_id: "ludwig-van-beethoven"
+title: "Piano Sonata No. 9 in E major"
+source:
+  file: "docs/beethoven.md"
+  line: "330"
+catalogue:
+  opus: "Op. 14/1"
+date_text: "1798"
+category: "Piano"

@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-piano-sonata-no-19-in-g-minor-op-49-1-group"
+composer_id: "ludwig-van-beethoven"
+title: "Piano Sonata No. 19 in G minor"
+source:
+  file: "docs/beethoven.md"
+  line: "314"
+catalogue:
+  opus: "Op. 49/1"

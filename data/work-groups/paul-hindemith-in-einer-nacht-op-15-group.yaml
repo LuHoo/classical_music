@@ -1,0 +1,8 @@
+id: "paul-hindemith-in-einer-nacht-op-15-group"
+composer_id: "paul-hindemith"
+title: "In einer Nacht..."
+source:
+  file: "docs/hindemith.md"
+  line: "333"
+catalogue:
+  opus: "Op. 15"

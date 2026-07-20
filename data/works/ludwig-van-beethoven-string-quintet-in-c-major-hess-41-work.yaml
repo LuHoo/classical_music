@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-string-quintet-in-c-major-hess-41-work"
+work_group_id: "ludwig-van-beethoven-string-quintet-in-c-major-hess-41-group"
+composer_id: "ludwig-van-beethoven"
+title: "String Quintet in C major"
+source:
+  file: "docs/beethoven.md"
+  line: "290"
+catalogue:
+  hess: "Hess 41"
+date_text: "1826–1827"
+category: "Chamber"

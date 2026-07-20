@@ -1,0 +1,11 @@
+id: "igor-stravinsky-le-chant-du-rossignol-k-026-work"
+work_group_id: "igor-stravinsky-le-chant-du-rossignol-k-026-group"
+composer_id: "igor-stravinsky"
+title: "Le chant du rossignol"
+source:
+  file: "docs/stravinsky.md"
+  line: "67"
+catalogue:
+  k: "K 026"
+date_text: "1917"
+category: "Orchestral"

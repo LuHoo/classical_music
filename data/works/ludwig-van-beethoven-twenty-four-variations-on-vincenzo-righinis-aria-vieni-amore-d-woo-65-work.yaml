@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-twenty-four-variations-on-vincenzo-righinis-aria-vieni-amore-d-woo-65-work"
+work_group_id: "ludwig-van-beethoven-twenty-four-variations-on-vincenzo-righinis-aria-vieni-amore-d-woo-65-group"
+composer_id: "ludwig-van-beethoven"
+title: "Twenty-four variations on Vincenzo Righini's aria \"Vieni amore\", D"
+source:
+  file: "docs/beethoven.md"
+  line: "378"
+catalogue:
+  woo: "WoO 65"
+date_text: "c. 1790–91"
+category: "Piano"

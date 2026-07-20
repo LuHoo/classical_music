@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-string-quartet-no-2-in-g-major-op-18-2-work"
+work_group_id: "ludwig-van-beethoven-string-quartet-no-2-in-g-major-op-18-2-group"
+composer_id: "ludwig-van-beethoven"
+title: "String Quartet No. 2 in G major"
+source:
+  file: "docs/beethoven.md"
+  line: "174"
+catalogue:
+  opus: "Op. 18/2"
+date_text: "1799"
+category: "Chamber"

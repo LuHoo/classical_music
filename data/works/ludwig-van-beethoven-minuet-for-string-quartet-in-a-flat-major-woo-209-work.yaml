@@ -1,0 +1,10 @@
+id: "ludwig-van-beethoven-minuet-for-string-quartet-in-a-flat-major-woo-209-work"
+work_group_id: "ludwig-van-beethoven-minuet-for-string-quartet-in-a-flat-major-woo-209-group"
+composer_id: "ludwig-van-beethoven"
+title: "Minuet for String Quartet in A♭ major"
+source:
+  file: "docs/beethoven.md"
+  line: "292"
+catalogue:
+  woo: "WoO 209"
+category: "Chamber"

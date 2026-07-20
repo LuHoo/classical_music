@@ -1,0 +1,11 @@
+id: "igor-stravinsky-jeu-de-cartes-k-059-work"
+work_group_id: "igor-stravinsky-jeu-de-cartes-k-059-group"
+composer_id: "igor-stravinsky"
+title: "Jeu de cartes"
+source:
+  file: "docs/stravinsky.md"
+  line: "45"
+catalogue:
+  k: "K 059"
+date_text: "1936"
+category: "Ballet"

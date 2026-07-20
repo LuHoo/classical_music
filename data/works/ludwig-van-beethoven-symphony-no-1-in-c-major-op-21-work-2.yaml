@@ -1,0 +1,12 @@
+id: "ludwig-van-beethoven-symphony-no-1-in-c-major-op-21-work-2"
+work_group_id: "ludwig-van-beethoven-symphony-no-1-in-c-major-op-21-group-2"
+composer_id: "ludwig-van-beethoven"
+title: "Symphony No. 1 in C major"
+source:
+  file: "docs/beethoven.md"
+  line: "484"
+catalogue:
+  opus: "Op. 21"
+date_text: "arr piano-4h Scharwenka"
+category: "Piano"
+notes: "Pilot migration: source text suggests a version, arrangement, revision, suite, or completion boundary that should be reviewed."

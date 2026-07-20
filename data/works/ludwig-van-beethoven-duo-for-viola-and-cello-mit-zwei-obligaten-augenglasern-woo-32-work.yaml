@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-duo-for-viola-and-cello-mit-zwei-obligaten-augenglasern-woo-32-work"
+work_group_id: "ludwig-van-beethoven-duo-for-viola-and-cello-mit-zwei-obligaten-augenglasern-woo-32-group"
+composer_id: "ludwig-van-beethoven"
+title: "Duo for Viola and Cello, \"mit zwei obligaten Augengläsern\""
+source:
+  file: "docs/beethoven.md"
+  line: "168"
+catalogue:
+  woo: "WoO 32"
+date_text: "1796–1797"
+category: "Chamber"

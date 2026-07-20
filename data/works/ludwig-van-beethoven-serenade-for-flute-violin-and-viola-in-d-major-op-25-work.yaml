@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-serenade-for-flute-violin-and-viola-in-d-major-op-25-work"
+work_group_id: "ludwig-van-beethoven-serenade-for-flute-violin-and-viola-in-d-major-op-25-group"
+composer_id: "ludwig-van-beethoven"
+title: "Serenade for flute, violin, and viola in D major"
+source:
+  file: "docs/beethoven.md"
+  line: "190"
+catalogue:
+  opus: "Op. 25"
+date_text: "1801"
+category: "Chamber"
