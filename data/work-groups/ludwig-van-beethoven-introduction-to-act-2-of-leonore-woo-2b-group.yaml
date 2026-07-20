@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-introduction-to-act-2-of-leonore-woo-2b-group"
+composer_id: "ludwig-van-beethoven"
+title: "Introduction to Act 2 of \"Leonore\""
+source:
+  file: "docs/beethoven.md"
+  line: "46"
+catalogue:
+  woo: "WoO 2b"

@@ -1,0 +1,8 @@
+id: "paul-hindemith-konzertmusik-op-48-group"
+composer_id: "paul-hindemith"
+title: "Konzertmusik"
+source:
+  file: "docs/hindemith.md"
+  line: "116"
+catalogue:
+  opus: "Op. 48"

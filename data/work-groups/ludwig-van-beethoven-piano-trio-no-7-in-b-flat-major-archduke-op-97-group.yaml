@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-piano-trio-no-7-in-b-flat-major-archduke-op-97-group"
+composer_id: "ludwig-van-beethoven"
+title: "Piano Trio No. 7 in B♭ major, \"Archduke\""
+source:
+  file: "docs/beethoven.md"
+  line: "254"
+catalogue:
+  opus: "Op. 97"

@@ -1,0 +1,8 @@
+id: "igor-stravinsky-the-firebird-k-010-group"
+composer_id: "igor-stravinsky"
+title: "The Firebird"
+source:
+  file: "docs/stravinsky.md"
+  line: "31"
+catalogue:
+  k: "K 010"

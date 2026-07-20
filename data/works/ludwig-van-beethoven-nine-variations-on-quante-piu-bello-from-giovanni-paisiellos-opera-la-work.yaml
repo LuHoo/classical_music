@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-nine-variations-on-quante-piu-bello-from-giovanni-paisiellos-opera-la-work"
+work_group_id: "ludwig-van-beethoven-nine-variations-on-quante-piu-bello-from-giovanni-paisiellos-opera-la-group"
+composer_id: "ludwig-van-beethoven"
+title: "Nine variations on \"Quant'è più bello\" from Giovanni Paisiello's opera La Molinara, A"
+source:
+  file: "docs/beethoven.md"
+  line: "386"
+catalogue:
+  woo: "WoO 69"
+date_text: "1795"
+category: "Piano"

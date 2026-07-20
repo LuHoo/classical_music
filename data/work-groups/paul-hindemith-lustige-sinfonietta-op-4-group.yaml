@@ -1,0 +1,8 @@
+id: "paul-hindemith-lustige-sinfonietta-op-4-group"
+composer_id: "paul-hindemith"
+title: "Lustige Sinfonietta"
+source:
+  file: "docs/hindemith.md"
+  line: "58"
+catalogue:
+  opus: "Op. 4"

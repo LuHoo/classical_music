@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-string-trio-no-3-in-g-major-op-9-1-group"
+composer_id: "ludwig-van-beethoven"
+title: "String Trio No. 3 in G major"
+source:
+  file: "docs/beethoven.md"
+  line: "150"
+catalogue:
+  opus: "Op. 9/1"

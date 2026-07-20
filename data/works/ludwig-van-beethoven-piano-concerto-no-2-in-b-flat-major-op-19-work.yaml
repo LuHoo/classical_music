@@ -1,0 +1,12 @@
+id: "ludwig-van-beethoven-piano-concerto-no-2-in-b-flat-major-op-19-work"
+work_group_id: "ludwig-van-beethoven-piano-concerto-no-2-in-b-flat-major-op-19-group"
+composer_id: "ludwig-van-beethoven"
+title: "Piano Concerto No. 2 in B♭ major"
+source:
+  file: "docs/beethoven.md"
+  line: "24"
+catalogue:
+  opus: "Op. 19"
+date_text: "begun c. 1788, rev. 1794–1829"
+category: "Orchestral"
+notes: "Pilot migration: source text suggests a version, arrangement, revision, suite, or completion boundary that should be reviewed."

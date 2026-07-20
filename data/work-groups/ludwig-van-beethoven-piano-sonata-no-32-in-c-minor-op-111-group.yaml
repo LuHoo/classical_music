@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-piano-sonata-no-32-in-c-minor-op-111-group"
+composer_id: "ludwig-van-beethoven"
+title: "Piano Sonata No. 32, in C minor"
+source:
+  file: "docs/beethoven.md"
+  line: "372"
+catalogue:
+  opus: "Op. 111"

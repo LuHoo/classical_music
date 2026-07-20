@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-three-equali-for-4-trombones-in-d-minor-woo-30-work"
+work_group_id: "ludwig-van-beethoven-three-equali-for-4-trombones-in-d-minor-woo-30-group"
+composer_id: "ludwig-van-beethoven"
+title: "Three Equali for 4 trombones in D minor"
+source:
+  file: "docs/beethoven.md"
+  line: "250"
+catalogue:
+  woo: "WoO 30"
+date_text: "November 1812"
+category: "Chamber"

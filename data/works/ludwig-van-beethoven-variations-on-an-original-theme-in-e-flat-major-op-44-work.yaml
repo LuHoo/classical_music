@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-variations-on-an-original-theme-in-e-flat-major-op-44-work"
+work_group_id: "ludwig-van-beethoven-variations-on-an-original-theme-in-e-flat-major-op-44-group"
+composer_id: "ludwig-van-beethoven"
+title: "Variations on an original theme in E♭ major"
+source:
+  file: "docs/beethoven.md"
+  line: "214"
+catalogue:
+  opus: "Op. 44"
+date_text: "1792"
+category: "Chamber"

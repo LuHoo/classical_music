@@ -1,0 +1,8 @@
+id: "paul-hindemith-klaviermusik-mit-orchester-op-29-group"
+composer_id: "paul-hindemith"
+title: "Klaviermusik mit Orchester"
+source:
+  file: "docs/hindemith.md"
+  line: "114"
+catalogue:
+  opus: "Op. 29"

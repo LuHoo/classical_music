@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-eight-variations-on-une-fievre-brulante-from-andre-gretrys-opera-rich-group"
+composer_id: "ludwig-van-beethoven"
+title: "Eight variations on \"Une fièvre brûlante\" from André Grétry's opera Richard Cœur-de-Lion, C"
+source:
+  file: "docs/beethoven.md"
+  line: "390"
+catalogue:
+  woo: "WoO 72"

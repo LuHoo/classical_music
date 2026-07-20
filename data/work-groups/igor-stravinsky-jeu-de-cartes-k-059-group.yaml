@@ -1,0 +1,8 @@
+id: "igor-stravinsky-jeu-de-cartes-k-059-group"
+composer_id: "igor-stravinsky"
+title: "Jeu de cartes"
+source:
+  file: "docs/stravinsky.md"
+  line: "45"
+catalogue:
+  k: "K 059"

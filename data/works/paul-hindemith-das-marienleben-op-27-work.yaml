@@ -1,0 +1,12 @@
+id: "paul-hindemith-das-marienleben-op-27-work"
+work_group_id: "paul-hindemith-das-marienleben-op-27-group"
+composer_id: "paul-hindemith"
+title: "Das Marienleben"
+source:
+  file: "docs/hindemith.md"
+  line: "162"
+catalogue:
+  opus: "Op. 27"
+date_text: "1923/48"
+category: "Vocal -- selection"
+notes: "Pilot migration: source text suggests a version, arrangement, revision, suite, or completion boundary that should be reviewed."

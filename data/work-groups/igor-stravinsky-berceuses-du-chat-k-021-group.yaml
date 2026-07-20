@@ -1,0 +1,8 @@
+id: "igor-stravinsky-berceuses-du-chat-k-021-group"
+composer_id: "igor-stravinsky"
+title: "Berceuses du chat"
+source:
+  file: "docs/stravinsky.md"
+  line: "194"
+catalogue:
+  k: "K 021"

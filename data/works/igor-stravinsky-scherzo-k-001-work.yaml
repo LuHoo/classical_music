@@ -1,0 +1,11 @@
+id: "igor-stravinsky-scherzo-k-001-work"
+work_group_id: "igor-stravinsky-scherzo-k-001-group"
+composer_id: "igor-stravinsky"
+title: "Scherzo"
+source:
+  file: "docs/stravinsky.md"
+  line: "212"
+catalogue:
+  k: "K 001"
+date_text: "1902"
+category: "Keyboard"

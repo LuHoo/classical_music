@@ -1,0 +1,12 @@
+id: "ludwig-van-beethoven-variations-for-violin-and-piano-on-se-vuol-ballare-woo-40-work"
+work_group_id: "ludwig-van-beethoven-variations-for-violin-and-piano-on-se-vuol-ballare-woo-40-group"
+composer_id: "ludwig-van-beethoven"
+title: "Variations for violin and piano on \"Se vuol ballare\""
+source:
+  file: "docs/beethoven.md"
+  line: "114"
+catalogue:
+  woo: "WoO 40"
+date_text: "1792–1793"
+category: "Chamber"
+notes: "Pilot migration: source text suggests a version, arrangement, revision, suite, or completion boundary that should be reviewed."

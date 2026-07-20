@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-fantasia-g-minor-op-77-group"
+composer_id: "ludwig-van-beethoven"
+title: "Fantasia, G minor"
+source:
+  file: "docs/beethoven.md"
+  line: "452"
+catalogue:
+  opus: "Op. 77"

@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-variations-for-cello-and-piano-on-ein-madchen-oder-weibchen-op-66-work"
+work_group_id: "ludwig-van-beethoven-variations-for-cello-and-piano-on-ein-madchen-oder-weibchen-op-66-group"
+composer_id: "ludwig-van-beethoven"
+title: "Variations for cello and piano on \"Ein Mädchen oder Weibchen\""
+source:
+  file: "docs/beethoven.md"
+  line: "226"
+catalogue:
+  opus: "Op. 66"
+date_text: "1796?"
+category: "Chamber"

@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-piano-sonata-no-5-in-c-minor-little-pathetique-op-10-1-work"
+work_group_id: "ludwig-van-beethoven-piano-sonata-no-5-in-c-minor-little-pathetique-op-10-1-group"
+composer_id: "ludwig-van-beethoven"
+title: "Piano Sonata No. 5 in C minor \"Little Pathétique\""
+source:
+  file: "docs/beethoven.md"
+  line: "320"
+catalogue:
+  opus: "Op. 10/1"
+date_text: "1795–1797"
+category: "Piano"

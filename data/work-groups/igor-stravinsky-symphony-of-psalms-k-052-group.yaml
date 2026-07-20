@@ -1,0 +1,8 @@
+id: "igor-stravinsky-symphony-of-psalms-k-052-group"
+composer_id: "igor-stravinsky"
+title: "Symphony of Psalms"
+source:
+  file: "docs/stravinsky.md"
+  line: "160"
+catalogue:
+  k: "K 052"

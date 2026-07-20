@@ -1,0 +1,12 @@
+id: "igor-stravinsky-petrushka-k-012-work"
+work_group_id: "igor-stravinsky-petrushka-k-012-group"
+composer_id: "igor-stravinsky"
+title: "Petrushka"
+source:
+  file: "docs/stravinsky.md"
+  line: "33"
+catalogue:
+  k: "K 012"
+date_text: "01/2001"
+category: "Ballet"
+notes: "Pilot migration: source text suggests a version, arrangement, revision, suite, or completion boundary that should be reviewed."

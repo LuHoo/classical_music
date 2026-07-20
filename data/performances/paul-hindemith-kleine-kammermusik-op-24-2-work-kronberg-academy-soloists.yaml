@@ -1,0 +1,11 @@
+id: "paul-hindemith-kleine-kammermusik-op-24-2-work-kronberg-academy-soloists"
+work_id: "paul-hindemith-kleine-kammermusik-op-24-2-work"
+performers:
+  - name: "Kronberg Academy Soloists"
+    role: "ensemble"
+links:
+  tidal:
+    url: "http://www.tidal.com/track/284454595"
+source:
+  file: "docs/hindemith.md"
+  line: "197"

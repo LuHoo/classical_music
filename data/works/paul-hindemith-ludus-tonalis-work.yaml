@@ -1,0 +1,9 @@
+id: "paul-hindemith-ludus-tonalis-work"
+work_group_id: "paul-hindemith-ludus-tonalis-group"
+composer_id: "paul-hindemith"
+title: "Ludus Tonalis"
+source:
+  file: "docs/hindemith.md"
+  line: "361"
+date_text: "1942"
+category: "Piano"

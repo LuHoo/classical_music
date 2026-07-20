@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-the-consecration-of-the-house-die-weihe-des-hauses-in-c-op-124-work"
+work_group_id: "ludwig-van-beethoven-the-consecration-of-the-house-die-weihe-des-hauses-in-c-op-124-group"
+composer_id: "ludwig-van-beethoven"
+title: "\"The Consecration of the House\" (Die Weihe des Hauses) in C"
+source:
+  file: "docs/beethoven.md"
+  line: "88"
+catalogue:
+  opus: "Op. 124"
+date_text: "1822"
+category: "Orchestral"

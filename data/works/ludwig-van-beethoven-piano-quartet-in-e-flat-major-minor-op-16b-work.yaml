@@ -1,0 +1,10 @@
+id: "ludwig-van-beethoven-piano-quartet-in-e-flat-major-minor-op-16b-work"
+work_group_id: "ludwig-van-beethoven-piano-quartet-in-e-flat-major-minor-op-16b-group"
+composer_id: "ludwig-van-beethoven"
+title: "Piano Quartet in E♭ major/minor"
+source:
+  file: "docs/beethoven.md"
+  line: "164"
+catalogue:
+  opus: "Op. 16b"
+category: "Chamber"

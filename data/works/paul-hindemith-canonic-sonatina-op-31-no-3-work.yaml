@@ -1,0 +1,11 @@
+id: "paul-hindemith-canonic-sonatina-op-31-no-3-work"
+work_group_id: "paul-hindemith-canonic-sonatina-op-31-no-3-group"
+composer_id: "paul-hindemith"
+title: "Canonic Sonatina"
+source:
+  file: "docs/hindemith.md"
+  line: "300"
+catalogue:
+  opus: "Op. 31, No. 3"
+date_text: "1923"
+category: "Instrumental"

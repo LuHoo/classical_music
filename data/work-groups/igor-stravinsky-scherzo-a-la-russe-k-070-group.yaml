@@ -1,0 +1,8 @@
+id: "igor-stravinsky-scherzo-a-la-russe-k-070-group"
+composer_id: "igor-stravinsky"
+title: "Scherzo à la russe"
+source:
+  file: "docs/stravinsky.md"
+  line: "93"
+catalogue:
+  k: "K 070"

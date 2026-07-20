@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-symphony-no-7-in-a-major-op-92-work"
+work_group_id: "ludwig-van-beethoven-symphony-no-7-in-a-major-op-92-group"
+composer_id: "ludwig-van-beethoven"
+title: "Symphony No. 7 in A major"
+source:
+  file: "docs/beethoven.md"
+  line: "70"
+catalogue:
+  opus: "Op. 92"
+date_text: "1811–1813"
+category: "Orchestral"

@@ -1,0 +1,12 @@
+id: "igor-stravinsky-suite-from-pulcinella-k-034-work"
+work_group_id: "igor-stravinsky-suite-from-pulcinella-k-034-group"
+composer_id: "igor-stravinsky"
+title: "Suite from Pulcinella"
+source:
+  file: "docs/stravinsky.md"
+  line: "69"
+catalogue:
+  k: "K 034"
+date_text: "1920; rev. 1947"
+category: "Orchestral"
+notes: "Pilot migration: source text suggests a version, arrangement, revision, suite, or completion boundary that should be reviewed."

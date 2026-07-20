@@ -1,0 +1,13 @@
+id: "paul-hindemith-nobilissima-visione-work-seattle-symphony-gerard-schwarz"
+work_id: "paul-hindemith-nobilissima-visione-work"
+performers:
+  - name: "Seattle Symphony"
+    role: "orchestra"
+  - name: "Gerard Schwarz"
+    role: "conductor"
+links:
+  tidal:
+    url: "https://tidal.com/album/30592036/track/30592037"
+source:
+  file: "docs/hindemith.md"
+  line: "47"

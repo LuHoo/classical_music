@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-flute-sonata-in-b-flat-major-anh-4-work"
+work_group_id: "ludwig-van-beethoven-flute-sonata-in-b-flat-major-anh-4-group"
+composer_id: "ludwig-van-beethoven"
+title: "Flute Sonata in B♭ major"
+source:
+  file: "docs/beethoven.md"
+  line: "104"
+catalogue:
+  anh: "Anh. 4"
+date_text: "c. 1790–1792?"
+category: "Chamber"

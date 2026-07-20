@@ -1,0 +1,11 @@
+id: "igor-stravinsky-piano-sonata-k-006-work"
+work_group_id: "igor-stravinsky-piano-sonata-k-006-group"
+composer_id: "igor-stravinsky"
+title: "Piano Sonata"
+source:
+  file: "docs/stravinsky.md"
+  line: "218"
+catalogue:
+  k: "K 006"
+date_text: "1907"
+category: "Keyboard"
