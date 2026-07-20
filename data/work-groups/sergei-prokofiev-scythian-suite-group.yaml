@@ -1,0 +1,8 @@
+id: sergei-prokofiev-scythian-suite-group
+composer_id: sergei-prokofiev
+title: Scythian Suite
+source:
+  file: docs/prokofiev.md
+  line: '35'
+catalogue:
+  op: Op. 20

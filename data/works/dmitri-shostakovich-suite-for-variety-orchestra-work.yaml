@@ -1,0 +1,9 @@
+id: dmitri-shostakovich-suite-for-variety-orchestra-work
+work_group_id: dmitri-shostakovich-suite-for-variety-orchestra-group
+composer_id: dmitri-shostakovich
+title: Suite for Variety Orchestra
+source:
+  file: docs/shostakovich.md
+  line: '120'
+date_text: post-1956
+category: Orchestral

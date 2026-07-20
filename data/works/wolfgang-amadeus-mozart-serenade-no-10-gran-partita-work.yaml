@@ -1,0 +1,11 @@
+id: wolfgang-amadeus-mozart-serenade-no-10-gran-partita-work
+work_group_id: wolfgang-amadeus-mozart-serenade-no-10-gran-partita-group
+composer_id: wolfgang-amadeus-mozart
+title: Serenade No. 10 'Gran Partita'
+source:
+  file: docs/mozart.md
+  line: '154'
+catalogue:
+  k: K. 361
+date_text: https://tidal.com/browse/track/160324011?u
+category: Serenades

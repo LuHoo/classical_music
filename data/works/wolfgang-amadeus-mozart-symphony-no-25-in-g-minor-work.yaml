@@ -1,0 +1,11 @@
+id: wolfgang-amadeus-mozart-symphony-no-25-in-g-minor-work
+work_group_id: wolfgang-amadeus-mozart-symphony-no-25-in-g-minor-group
+composer_id: wolfgang-amadeus-mozart
+title: Symphony No. 25 in G Minor
+source:
+  file: docs/mozart.md
+  line: '63'
+catalogue:
+  k: K. 183
+date_text: '1773'
+category: Symphonies

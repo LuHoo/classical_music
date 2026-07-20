@@ -1,0 +1,9 @@
+id: sergei-prokofiev-kotovsky-work
+work_group_id: sergei-prokofiev-kotovsky-group
+composer_id: sergei-prokofiev
+title: Kotovsky
+source:
+  file: docs/prokofiev.md
+  line: '144'
+date_text: '1942'
+category: Orchestral

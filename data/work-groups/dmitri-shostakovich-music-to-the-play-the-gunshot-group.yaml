@@ -1,0 +1,8 @@
+id: dmitri-shostakovich-music-to-the-play-the-gunshot-group
+composer_id: dmitri-shostakovich
+title: Music to the play The Gunshot
+source:
+  file: docs/shostakovich.md
+  line: '32'
+catalogue:
+  op: Op. 24

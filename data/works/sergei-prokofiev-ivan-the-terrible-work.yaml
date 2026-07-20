@@ -1,0 +1,11 @@
+id: sergei-prokofiev-ivan-the-terrible-work
+work_group_id: sergei-prokofiev-ivan-the-terrible-group
+composer_id: sergei-prokofiev
+title: Ivan the Terrible
+source:
+  file: docs/prokofiev.md
+  line: '200'
+catalogue:
+  op: Op. 116
+date_text: 1942–45
+category: Orchestral

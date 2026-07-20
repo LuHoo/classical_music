@@ -1,0 +1,11 @@
+id: sergei-prokofiev-the-meeting-of-the-volga-and-the-don-work
+work_group_id: sergei-prokofiev-the-meeting-of-the-volga-and-the-don-group
+composer_id: sergei-prokofiev
+title: The Meeting of the Volga and the Don
+source:
+  file: docs/prokofiev.md
+  line: '227'
+catalogue:
+  op: Op. 130
+date_text: '1951'
+category: Orchestral

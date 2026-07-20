@@ -1,0 +1,8 @@
+id: wolfgang-amadeus-mozart-il-sogno-di-scipione-group
+composer_id: wolfgang-amadeus-mozart
+title: Il sogno di Scipione
+source:
+  file: docs/mozart.md
+  line: '34'
+catalogue:
+  k: K. 126

@@ -1,0 +1,11 @@
+id: dmitri-shostakovich-lady-macbeth-of-mtsensk-district-work
+work_group_id: dmitri-shostakovich-lady-macbeth-of-mtsensk-district-group
+composer_id: dmitri-shostakovich
+title: Lady MacBeth of Mtsensk District
+source:
+  file: docs/shostakovich.md
+  line: '40'
+catalogue:
+  op: Op. 29
+date_text: https://tidal.com/album/59709611/track/59709612
+category: Orchestral

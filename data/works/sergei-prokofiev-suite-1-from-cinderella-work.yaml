@@ -1,0 +1,11 @@
+id: sergei-prokofiev-suite-1-from-cinderella-work
+work_group_id: sergei-prokofiev-suite-1-from-cinderella-group
+composer_id: sergei-prokofiev
+title: Suite 1 from Cinderella
+source:
+  file: docs/prokofiev.md
+  line: '178'
+catalogue:
+  op: Op. 107
+date_text: '1946'
+category: Orchestral

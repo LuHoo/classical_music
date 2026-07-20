@@ -1,0 +1,12 @@
+id: sergei-prokofiev-symphony-no-2-in-d-minor-work
+work_group_id: sergei-prokofiev-symphony-no-2-in-d-minor-group
+composer_id: sergei-prokofiev
+title: Symphony No. 2 in D minor
+source:
+  file: docs/prokofiev.md
+  line: '63'
+catalogue:
+  op: Op. 40
+date_text: 1924–25
+category: Orchestral
+gem: true

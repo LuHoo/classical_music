@@ -1,0 +1,11 @@
+id: dmitri-shostakovich-music-to-the-spectacle-native-country-suite-native-leningrad-work
+work_group_id: dmitri-shostakovich-music-to-the-spectacle-native-country-suite-native-leningrad-group
+composer_id: dmitri-shostakovich
+title: Music to the spectacle Native Country, suite Native Leningrad
+source:
+  file: docs/shostakovich.md
+  line: '84'
+catalogue:
+  op: Op. 63
+date_text: '1942'
+category: Orchestral

@@ -1,0 +1,11 @@
+id: sergei-prokofiev-summer-night-suite-from-betrothal-in-a-monastery-work
+work_group_id: sergei-prokofiev-summer-night-suite-from-betrothal-in-a-monastery-group
+composer_id: sergei-prokofiev
+title: Summer Night, suite from Betrothal in a Monastery
+source:
+  file: docs/prokofiev.md
+  line: '210'
+catalogue:
+  op: Op. 123
+date_text: '1950'
+category: Orchestral

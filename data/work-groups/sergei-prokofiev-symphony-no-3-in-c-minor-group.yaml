@@ -1,0 +1,8 @@
+id: sergei-prokofiev-symphony-no-3-in-c-minor-group
+composer_id: sergei-prokofiev
+title: Symphony No. 3 in C minor
+source:
+  file: docs/prokofiev.md
+  line: '75'
+catalogue:
+  op: Op. 44

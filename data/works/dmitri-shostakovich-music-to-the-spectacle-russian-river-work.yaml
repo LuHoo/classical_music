@@ -1,0 +1,11 @@
+id: dmitri-shostakovich-music-to-the-spectacle-russian-river-work
+work_group_id: dmitri-shostakovich-music-to-the-spectacle-russian-river-group
+composer_id: dmitri-shostakovich
+title: Music to the spectacle Russian River
+source:
+  file: docs/shostakovich.md
+  line: '90'
+catalogue:
+  op: Op. 66
+date_text: '1944'
+category: Orchestral
