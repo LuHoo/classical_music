@@ -309,7 +309,8 @@ Migration should resolve or create a Work candidate using:
 - title;
 - catalogue number;
 - version or revision label;
-- arrangement, orchestration, completion or suite information;
+- arrangement, orchestration, completion or suite information when it indicates
+  an independent artistic Work;
 - aliases;
 - external identifiers where verified;
 - local editorial context.
@@ -318,6 +319,17 @@ Composer revisions are separate Works within the same Work Group.
 
 Different performers, instruments used in performance, labels, releases,
 remasters, albums or Tidal links do not create new Works.
+
+Instrumental or practical performance arrangements should normally remain
+Performance evidence, not Work evidence. For example, a Mozart opera excerpt
+played by winds or a Bach keyboard concerto played on piano, harpsichord or
+organ remains the same Work unless the source identifies an independently
+recognised arrangement that the collection should present as its own repertoire
+object.
+
+Composite suites should be reviewed before assigning a Work Group. When a suite
+draws material from several different original Works, migration should not place
+it automatically inside the Work Group of just one source Work.
 
 ### Gem markers
 

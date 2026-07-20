@@ -175,10 +175,11 @@ The key migration-blocking rules are:
 | DOM-022 | A Work MAY exist without any recommended Performance. | info | repository | yes |
 | DOM-023 | Composer revisions MUST be modelled as separate Works within the same Work Group. | error | migration | partial |
 | DOM-024 | Different performers, recordings, releases, remasters, labels or streaming links MUST NOT create new Works. | error | migration | partial |
-| DOM-025 | Practical transcriptions SHOULD NOT automatically create separate Works. | warning | migration | partial |
+| DOM-025 | Practical transcriptions, instrumental substitutions and performance arrangements SHOULD NOT automatically create separate Works. | warning | migration | partial |
 | DOM-026 | Individual movements or arias SHOULD NOT automatically create separate Works merely because they can be performed separately. | warning | migration | partial |
 | DOM-027 | Duplicate-looking Works SHOULD be reported for manual review, not merged automatically. | warning | repository | partial |
 | DOM-028 | A general Work MAY receive Performances with unknown version/completion assignment when the composition identity is clear. | info | repository | partial |
+| DOM-029 | Composite suites drawing from multiple source Works SHOULD NOT automatically be assigned to a single source Work Group. | warning | migration | partial |
 
 ## Performance rules
 

@@ -272,6 +272,8 @@ notes: >
 
 `profile` is used only when a musically meaningful comparison category needs to
 be preserved, such as piano versus harpsichord for a Bach keyboard concerto.
+Instrumentation differences should normally be handled here or in Performance
+metadata, not by creating additional Works.
 
 `version_assignment: unspecified` may be used when a Performance is attached to
 a general Work because the recording metadata does not identify a specific

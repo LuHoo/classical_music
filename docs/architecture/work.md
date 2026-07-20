@@ -75,9 +75,39 @@ completions or editions.
 
 An arrangement, orchestration or transcription becomes a separate Work only when it represents a distinct artistic object recognised by the composer, by musical tradition or by the curator's presentation needs.
 
-A practical transcription does not automatically deserve a separate Work.
+A practical transcription, instrumental substitution or performance arrangement
+does not automatically deserve a separate Work.
+
+For example, a Work does not become a new Work merely because it is performed on:
+
+- piano instead of harpsichord;
+- organ instead of harpsichord;
+- modern instruments instead of historical instruments;
+- winds instead of strings or voices, when the recommendation is still for the
+  same musical Work rather than an independently recognised arrangement.
+
+These differences normally belong to Performance metadata or performance
+profiles.
+
+A separate Work is appropriate only when the arrangement has independent
+artistic identity: for example a composer-authorised orchestration, a published
+suite, a recognised completion, or an arrangement that the collection intends to
+present as its own repertoire object.
 
 The repository models repertoire, not every playable variant.
+
+## Composite suites
+
+Some suites are assembled from parts of several different source Works.
+
+Such a suite should not automatically be placed in the Work Group of any single
+source Work. It may need its own Work Group, with relationship evidence to the
+multiple source Works, because no one source composition supplies the whole
+artistic family.
+
+This is common in ballet, film and theatre suites. The Work Group decision
+should follow the suite's own artistic identity, not merely the first or most
+famous source work represented in it.
 
 ## Movements, arias and excerpts
 

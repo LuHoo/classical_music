@@ -94,6 +94,23 @@ Typical indicators include:
 
 When identity remains uncertain, the repository should report the case for review rather than silently creating a duplicate.
 
+## Instrumentation and Performance Profiles
+
+Differences in performed instrumentation usually belong to the Performance, not
+to Work identity.
+
+Examples include:
+
+- piano, harpsichord or organ performances of the same keyboard concerto;
+- wind or chamber scoring used as a practical performance arrangement;
+- historical versus modern instruments;
+- chamber-sized versus larger ensemble performance, when the underlying Work is
+  otherwise the same.
+
+Use a performance profile only when the distinction matters for comparison or
+public recommendation. Do not create separate Works merely to preserve these
+performance distinctions.
+
 ## Performers
 
 A Performance records the performers needed to identify and present the interpretation.
