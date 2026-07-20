@@ -237,7 +237,7 @@ MUST use permanent IDs, not slugs.
 | IDN-008 | External identifiers SHOULD be unique within authority, entity type and item type where the authority defines unique objects. | warning | repository | yes |
 | IDN-009 | Confirmed duplicate external identifiers for two active entities of the same type are errors unless the external authority permits reuse. | error | repository | yes |
 | IDN-010 | Provisional status MUST NOT change permanent identity rules. | error | repository | yes |
-| IDN-011 | Fallback Release slugs such as `...-tidal-<album-id>` MAY change after enrichment, but the old slug MUST remain an alias. | error | repository | partial |
+| IDN-011 | Fallback Performance slugs such as `<work-slug>-<profile-or-performer-label>` MAY change after enrichment, but the old slug MUST remain an alias. | error | repository | partial |
 | IDN-012 | Internal references MUST NOT use slugs where permanent IDs are required. | error | repository | yes |
 
 ## Referential integrity

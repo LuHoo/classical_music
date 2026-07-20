@@ -1,16 +1,10 @@
 # Naming Conventions
 
-> Status: Superseded for Recording and Release naming by
-> `repository-architecture.md` and `performance.md`.
->
-> This document records earlier naming guidance. The current authoritative
-> canonical model uses Performance, not separate Recording or Release entities.
+This document defines the naming conventions used for human-readable slugs in the
+music collection for the current canonical model.
 
-## Purpose
-
-This document defines the naming conventions used for human-readable slugs in the music collection.
-
-These conventions apply to composers, persons, ensembles, works, work parts, recordings and releases. They are intended to make slugs:
+The conventions apply to Person, Work Group, Work, Performance, work parts,
+ensembles and related public entities. They are intended to make slugs:
 
 * recognisable;
 * concise;
@@ -28,6 +22,10 @@ Slugs use English naming conventions, contain only ASCII characters and include 
 
 The preferred form is the shortest form that remains clear and unique within the relevant entity type.
 
+Canonical slugs should not be created for recordings, releases, albums or other
+non-canonical packaging objects. Those items are represented through metadata or
+links rather than through their own canonical slug namespace.
+
 Examples:
 
 ```text
@@ -38,6 +36,28 @@ berlioz-symphonie-fantastique
 ```
 
 ---
+
+# 1. Entity-specific guidance
+
+The same general rules apply across the canonical entity types, but their emphasis
+varies slightly:
+
+- Person slugs should use the most recognisable personal name form, typically the
+  family name or established common form.
+- Work Group slugs should use the shared title of the artistic family and avoid
+  version-specific or performance-specific labels.
+- Work slugs should reflect the specific artistic version or editorial form.
+- Performance slugs should add only the minimum profile or performer label needed
+  to distinguish one public recommendation from another.
+
+Examples:
+
+```text
+saint-saens
+mahler-symphony-10
+mahler-symphony-10-cooke-completion
+mahler-symphony-10-cooke-completion-berlin-philharmonic
+```
 
 # 1. Language
 
@@ -576,101 +596,65 @@ part-1
 
 ---
 
-# 18. Recordings
+# 18. Person, Work Group, Work and Performance
 
-Recording slugs identify the performed recording, not a commercial release.
+The current canonical model uses slugs for Person, Work Group, Work and
+Performance. These slugs should express the entity's public identity without
+depending on platform packaging or release metadata.
 
-The preferred form uses the principal artist or artists and the performed Work:
+## Person
 
-```text
-<principal-artist>-<ensemble-or-secondary-artist>-<work>
-```
-
-Example:
-
-```text
-dudamel-berlin-philharmonic-mahler-symphony-5
-```
-
-When required for disambiguation, add the recording year:
-
-```text
-dudamel-berlin-philharmonic-mahler-symphony-5-2021
-```
-
-For recordings without a conductor, the principal soloist, ensemble or other
-leading credited artist takes the first position.
-
-Where more than one soloist has equal prominence, the smallest recognisable
-combination of principal names is used.
-
-Recording slugs should not attempt to identify a label, catalogue number or
-platform edition. Those belong to Release slugs.
-
----
-
-# 19. Releases
-
-Release slugs identify published editions or digital platform releases.
-
-For orchestral recordings, the preferred order is:
-
-```text
-<conductor>-<orchestra>-<release-year>-<label>-<catalogue-number>
-```
-
-Example:
-
-```text
-haitink-concertgebouw-1985-philips-4162832
-```
-
-Fallback when label or catalogue number is not yet known:
-
-```text
-<conductor>-<orchestra>-<release-year>-tidal-<album-id>
-```
-
-Example:
-
-```text
-dudamel-berlin-philharmonic-2022-tidal-123456789
-```
-
-The conductor is treated as the principal artist, followed by the orchestra.
-
-The following rules apply:
-
-* use the recognisable family name of the conductor;
-* use a concise, established name for the orchestra;
-* use the release year, not the recording year;
-* use the normalised label name;
-* include the catalogue number in compact normalised form;
-* use a platform fallback only while fuller release metadata is unavailable;
-* omit punctuation and spaces from the catalogue number unless needed for clarity.
+Person slugs should use the most recognisable form of the person name in
+conventional English usage.
 
 Examples:
 
 ```text
-karajan-berlin-philharmonic-1963-deutsche-grammophon-138923
-haitink-concertgebouw-1985-philips-4162832
-rattle-london-symphony-2017-lso-live-lso0790
+beethoven
+saint-saens
+vaughan-williams
 ```
 
-For releases without a conductor, the principal soloist, ensemble or other leading credited artist takes the first position.
+## Work Group
+
+Work Group slugs should use the shared artistic title of the family of Works.
+They should remain concise and should not include performance-specific or
+version-specific labels.
 
 Examples:
 
 ```text
-pollini-1977-deutsche-grammophon-2530644
-amadeus-quartet-1962-deutsche-grammophon-138894
+mahler-symphony-10
+berlioz-symphonie-fantastique
 ```
 
-Where more than one soloist has equal prominence, the smallest recognisable combination of principal names is used.
+## Work
 
-Release slugs should not attempt to list all included works.
+Work slugs should reflect the specific artistic version or editorial form when
+that distinction matters for the public collection.
 
-Work relationships are maintained separately through permanent identifiers.
+Examples:
+
+```text
+mahler-symphony-10-cooke-completion
+berlioz-symphonie-fantastique-1873-version
+```
+
+## Performance
+
+Performance slugs should be derived from the underlying Work and use the minimum
+profile or performer label needed to distinguish one public recommendation from
+another.
+
+Examples:
+
+```text
+mahler-symphony-10-cooke-completion-berlin-philharmonic
+bach-keyboard-concerto-bwv1052-piano
+```
+
+Performance slugs should not depend on label, catalogue number or platform
+edition metadata.
 
 ---
 
@@ -751,12 +735,13 @@ stravinsky-firebird-suite-1919
 mussorgsky-pictures-at-an-exhibition-ravel-orchestration
 ```
 
-## Recordings and Releases
+## Person, Work Group, Work and Performance
 
 ```text
-haitink-concertgebouw-1985-philips-4162832
-karajan-berlin-philharmonic-1963-deutsche-grammophon-138923
-rattle-london-symphony-2017-lso-live-lso0790
+saint-saens
+mahler-symphony-10
+mahler-symphony-10-cooke-completion
+mahler-symphony-10-cooke-completion-berlin-philharmonic
 ```
 
 ---
