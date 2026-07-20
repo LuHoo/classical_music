@@ -13,6 +13,8 @@ Detailed entity boundaries are defined in:
 - `performance.md`;
 - `recommendation-policy.md`.
 
+The minimal canonical YAML shapes are defined in `minimal-yaml-schemas.md`.
+
 Operational workflows are described in `workflow-design-notes.md`.
 
 ## Architectural principles
@@ -147,7 +149,9 @@ data/
 └── performances/
 ```
 
-The exact YAML schema is deferred. The architectural requirement is that each canonical entity has one stable local identity and belongs to the correct directory.
+The formal validation schema is deferred. The architectural requirement is that each canonical entity has one stable local identity and belongs to the correct directory.
+
+The minimal YAML shape needed for migration is defined in `minimal-yaml-schemas.md`.
 
 ## `sources/`: retained source material
 
