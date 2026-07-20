@@ -1,10 +1,11 @@
 # Identifier Policy
 
-> Status: Superseded for Recording and Release identifiers by
-> `repository-architecture.md` and `performance.md`.
->
-> This document records earlier identifier ideas. The current authoritative
-> canonical model does not create separate Recording or Release identifiers.
+This document defines the identifier strategy used throughout the music collection
+for the current canonical model.
+
+The canonical entities with permanent internal identifiers are Person, Work Group,
+Work and Performance. The repository does not create separate canonical
+Recording or Release identifiers.
 
 ## Purpose
 
@@ -143,24 +144,60 @@ gustav-mahler-symphony-no-5-in-c-sharp-minor-1904
 
 # Object-Specific Slug Rules
 
-## Release slugs
+## Person slugs
 
-Preferred Release slugs use release metadata when it is known:
+Person slugs should use the most recognisable personal name form in conventional
+English usage.
 
-```text
-conductor-orchestra-releaseyear-label-cataloguenumber
-```
-
-When label or catalogue number is not yet known, a platform-specific fallback may
-be used:
+Examples:
 
 ```text
-conductor-orchestra-releaseyear-tidal-<album-id>
+beethoven
+saint-saens
+vaughan-williams
 ```
 
-The fallback slug may later be replaced when the Release is externally enriched or
-definitively identified. The old slug remains an alias, and the permanent
-identifier does not change.
+For ensembles or groups, the most recognisable collective name should be used.
+
+## Work Group slugs
+
+Work Group slugs should reflect the shared artistic title of the family of Works.
+They should be concise and should not include version-specific or performance-specific
+metadata.
+
+Examples:
+
+```text
+mahler-symphony-10
+berlioz-symphonie-fantastique
+```
+
+## Work slugs
+
+Work slugs should be more specific than the parent Work Group slug when the Work
+represents a distinct artistic version or editorial interpretation.
+
+Examples:
+
+```text
+mahler-symphony-10-cooke-completion
+berlioz-symphonie-fantastique-1873-version
+```
+
+## Performance slugs
+
+Performance slugs should be derived from the underlying Work and a short
+profile or performer label when that is needed for disambiguation.
+
+Examples:
+
+```text
+mahler-symphony-10-cooke-completion-berlin-philharmonic
+bach-keyboard-concerto-bwv1052-piano
+```
+
+Performance slugs must never include platform, label, catalogue or release
+metadata as their primary basis.
 
 ---
 
