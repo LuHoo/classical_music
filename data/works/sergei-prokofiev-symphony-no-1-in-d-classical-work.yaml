@@ -1,0 +1,12 @@
+id: sergei-prokofiev-symphony-no-1-in-d-classical-work
+work_group_id: sergei-prokofiev-symphony-no-1-in-d-classical-group
+composer_id: sergei-prokofiev
+title: Symphony No. 1 in D, Classical
+source:
+  file: docs/prokofiev.md
+  line: '41'
+catalogue:
+  op: Op. 25
+date_text: 1916–17
+category: Orchestral
+gem: true

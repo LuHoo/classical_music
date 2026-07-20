@@ -1,0 +1,11 @@
+id: wolfgang-amadeus-mozart-symphony-no-27-in-g-major-work
+work_group_id: wolfgang-amadeus-mozart-symphony-no-27-in-g-major-group
+composer_id: wolfgang-amadeus-mozart
+title: Symphony No. 27 in G Major
+source:
+  file: docs/mozart.md
+  line: '65'
+catalogue:
+  k: K. 199
+date_text: http://www.tidal.com/track/4514709
+category: Symphonies

@@ -1,0 +1,11 @@
+id: wolfgang-amadeus-mozart-missa-brevis-in-g-work
+work_group_id: wolfgang-amadeus-mozart-missa-brevis-in-g-group
+composer_id: wolfgang-amadeus-mozart
+title: Missa brevis in G
+source:
+  file: docs/mozart.md
+  line: '15'
+catalogue:
+  k: K. 47d
+date_text: '1768'
+category: Masses

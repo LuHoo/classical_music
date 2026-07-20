@@ -1,0 +1,11 @@
+id: sergei-prokofiev-suite-3-from-cinderella-work
+work_group_id: sergei-prokofiev-suite-3-from-cinderella-group
+composer_id: sergei-prokofiev
+title: Suite 3 from Cinderella
+source:
+  file: docs/prokofiev.md
+  line: '182'
+catalogue:
+  op: Op. 109
+date_text: '1946'
+category: Orchestral

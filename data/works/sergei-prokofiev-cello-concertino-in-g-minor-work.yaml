@@ -1,0 +1,11 @@
+id: sergei-prokofiev-cello-concertino-in-g-minor-work
+work_group_id: sergei-prokofiev-cello-concertino-in-g-minor-group
+composer_id: sergei-prokofiev
+title: Cello Concertino in G minor
+source:
+  file: docs/prokofiev.md
+  line: '231'
+catalogue:
+  op: Op. 132
+date_text: 1953–unfinished
+category: Orchestral

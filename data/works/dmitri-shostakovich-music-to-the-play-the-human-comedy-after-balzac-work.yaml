@@ -1,0 +1,11 @@
+id: dmitri-shostakovich-music-to-the-play-the-human-comedy-after-balzac-work
+work_group_id: dmitri-shostakovich-music-to-the-play-the-human-comedy-after-balzac-group
+composer_id: dmitri-shostakovich
+title: Music to the play The Human Comedy after Balzac
+source:
+  file: docs/shostakovich.md
+  line: '58'
+catalogue:
+  op: Op. 37
+date_text: 1933–1934
+category: Orchestral

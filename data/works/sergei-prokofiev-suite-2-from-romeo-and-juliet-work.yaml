@@ -1,0 +1,11 @@
+id: sergei-prokofiev-suite-2-from-romeo-and-juliet-work
+work_group_id: sergei-prokofiev-suite-2-from-romeo-and-juliet-group
+composer_id: sergei-prokofiev
+title: Suite 2 from Romeo and Juliet
+source:
+  file: docs/prokofiev.md
+  line: '116'
+catalogue:
+  op: Op. 64ter
+date_text: '1936'
+category: Orchestral

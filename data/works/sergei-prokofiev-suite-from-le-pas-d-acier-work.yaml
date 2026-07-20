@@ -1,0 +1,11 @@
+id: sergei-prokofiev-suite-from-le-pas-d-acier-work
+work_group_id: sergei-prokofiev-suite-from-le-pas-d-acier-group
+composer_id: sergei-prokofiev
+title: Suite from Le pas d'acier
+source:
+  file: docs/prokofiev.md
+  line: '67'
+catalogue:
+  op: Op. 41bis
+date_text: '1926'
+category: Orchestral

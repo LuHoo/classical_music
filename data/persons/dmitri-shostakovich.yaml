@@ -1,0 +1,7 @@
+id: dmitri-shostakovich
+name: Dmitri Shostakovich
+sort_name: Shostakovich, Dmitri
+roles:
+- composer
+source:
+  file: docs/shostakovich.md
