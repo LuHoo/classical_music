@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-cello-sonata-no-3-in-a-major-op-69-work"
+work_group_id: "ludwig-van-beethoven-cello-sonata-no-3-in-a-major-op-69-group"
+composer_id: "ludwig-van-beethoven"
+title: "Cello Sonata No. 3 in A major"
+source:
+  file: "docs/beethoven.md"
+  line: "230"
+catalogue:
+  opus: "Op. 69"
+date_text: "1807"
+category: "Chamber"

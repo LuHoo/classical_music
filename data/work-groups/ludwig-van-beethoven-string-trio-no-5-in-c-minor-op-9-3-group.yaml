@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-string-trio-no-5-in-c-minor-op-9-3-group"
+composer_id: "ludwig-van-beethoven"
+title: "String Trio No. 5 in C minor"
+source:
+  file: "docs/beethoven.md"
+  line: "154"
+catalogue:
+  opus: "Op. 9/3"

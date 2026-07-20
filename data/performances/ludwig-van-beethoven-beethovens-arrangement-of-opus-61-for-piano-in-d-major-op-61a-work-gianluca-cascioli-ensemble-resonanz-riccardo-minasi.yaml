@@ -1,0 +1,15 @@
+id: "ludwig-van-beethoven-beethovens-arrangement-of-opus-61-for-piano-in-d-major-op-61a-work-gianluca-cascioli-ensemble-resonanz-riccardo-minasi"
+work_id: "ludwig-van-beethoven-beethovens-arrangement-of-opus-61-for-piano-in-d-major-op-61a-work"
+performers:
+  - name: "Gianluca Cascioli"
+    role: "performer"
+  - name: "Ensemble Resonanz"
+    role: "ensemble"
+  - name: "Riccardo Minasi"
+    role: "conductor"
+links:
+  tidal:
+    url: "http://www.tidal.com/track/203081198"
+source:
+  file: "docs/beethoven.md"
+  line: "52"

@@ -1,0 +1,9 @@
+id: "paul-hindemith-sonata-for-two-pianos-work"
+work_group_id: "paul-hindemith-sonata-for-two-pianos-group"
+composer_id: "paul-hindemith"
+title: "Sonata for Two Pianos"
+source:
+  file: "docs/hindemith.md"
+  line: "359"
+date_text: "1942"
+category: "Piano"

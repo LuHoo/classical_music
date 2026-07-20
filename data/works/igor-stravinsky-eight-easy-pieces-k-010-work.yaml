@@ -1,0 +1,11 @@
+id: "igor-stravinsky-eight-easy-pieces-k-010-work"
+work_group_id: "igor-stravinsky-eight-easy-pieces-k-010-group"
+composer_id: "igor-stravinsky"
+title: "Eight Easy Pieces"
+source:
+  file: "docs/stravinsky.md"
+  line: "220"
+catalogue:
+  k: "K 010"
+date_text: "1914"
+category: "Keyboard"

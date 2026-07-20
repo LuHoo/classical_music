@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-string-quartet-no-14-in-c-sharp-minor-op-131-work-danish-string-quartet"
+work_id: "ludwig-van-beethoven-string-quartet-no-14-in-c-sharp-minor-op-131-work"
+performers:
+  - name: "Danish String Quartet"
+    role: "ensemble"
+links:
+  tidal:
+    url: "http://www.tidal.com/track/175948590"
+source:
+  file: "docs/beethoven.md"
+  line: "280"

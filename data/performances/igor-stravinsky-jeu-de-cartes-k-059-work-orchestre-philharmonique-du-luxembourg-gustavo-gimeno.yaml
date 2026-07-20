@@ -1,0 +1,13 @@
+id: "igor-stravinsky-jeu-de-cartes-k-059-work-orchestre-philharmonique-du-luxembourg-gustavo-gimeno"
+work_id: "igor-stravinsky-jeu-de-cartes-k-059-work"
+performers:
+  - name: "Orchestre Philharmonique du Luxembourg"
+    role: "performer"
+  - name: "Gustavo Gimeno"
+    role: "conductor"
+links:
+  tidal:
+    url: "https://tidal.com/browse/track/366820119?u"
+source:
+  file: "docs/stravinsky.md"
+  line: "45"

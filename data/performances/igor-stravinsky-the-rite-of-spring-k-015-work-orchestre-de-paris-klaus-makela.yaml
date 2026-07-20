@@ -1,0 +1,13 @@
+id: "igor-stravinsky-the-rite-of-spring-k-015-work-orchestre-de-paris-klaus-makela"
+work_id: "igor-stravinsky-the-rite-of-spring-k-015-work"
+performers:
+  - name: "Orchestre de Paris"
+    role: "performer"
+  - name: "Klaus Mäkelä"
+    role: "conductor"
+links:
+  tidal:
+    url: "https://tidal.com/browse/track/282335376?u"
+source:
+  file: "docs/stravinsky.md"
+  line: "35"

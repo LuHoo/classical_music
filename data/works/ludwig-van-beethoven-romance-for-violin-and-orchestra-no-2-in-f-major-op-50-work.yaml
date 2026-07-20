@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-romance-for-violin-and-orchestra-no-2-in-f-major-op-50-work"
+work_group_id: "ludwig-van-beethoven-romance-for-violin-and-orchestra-no-2-in-f-major-op-50-group"
+composer_id: "ludwig-van-beethoven"
+title: "Romance for Violin and Orchestra No. 2 in F major"
+source:
+  file: "docs/beethoven.md"
+  line: "38"
+catalogue:
+  opus: "Op. 50"
+date_text: "c. 1798"
+category: "Orchestral"

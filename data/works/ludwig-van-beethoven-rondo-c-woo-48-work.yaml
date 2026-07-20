@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-rondo-c-woo-48-work"
+work_group_id: "ludwig-van-beethoven-rondo-c-woo-48-group"
+composer_id: "ludwig-van-beethoven"
+title: "Rondo, C"
+source:
+  file: "docs/beethoven.md"
+  line: "418"
+catalogue:
+  woo: "WoO 48"
+date_text: "1783"
+category: "Piano"

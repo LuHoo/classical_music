@@ -1,0 +1,13 @@
+id: "igor-stravinsky-pulcinella-k-034-work-toronto-symphony-orchestra-gustavo-gimeno"
+work_id: "igor-stravinsky-pulcinella-k-034-work"
+performers:
+  - name: "Toronto Symphony Orchestra"
+    role: "orchestra"
+  - name: "Gustavo Gimeno"
+    role: "conductor"
+links:
+  tidal:
+    url: "https://tidal.com/browse/track/416839903?u"
+source:
+  file: "docs/stravinsky.md"
+  line: "39"

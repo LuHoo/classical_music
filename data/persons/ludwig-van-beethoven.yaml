@@ -1,0 +1,7 @@
+id: "ludwig-van-beethoven"
+name: "Ludwig van Beethoven"
+sort_name: "Beethoven, Ludwig van"
+roles:
+  - "composer"
+source:
+  file: "docs/beethoven.md"

@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-piano-sonata-no-23-appassionata-f-minor-op-57-work"
+work_group_id: "ludwig-van-beethoven-piano-sonata-no-23-appassionata-f-minor-op-57-group"
+composer_id: "ludwig-van-beethoven"
+title: "Piano Sonata No. 23 (\"Appassionata\"), F minor"
+source:
+  file: "docs/beethoven.md"
+  line: "354"
+catalogue:
+  opus: "Op. 57"
+date_text: "1804–05"
+category: "Piano"

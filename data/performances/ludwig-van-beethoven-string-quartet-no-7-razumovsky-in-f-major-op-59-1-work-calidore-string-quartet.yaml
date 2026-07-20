@@ -1,0 +1,14 @@
+id: "ludwig-van-beethoven-string-quartet-no-7-razumovsky-in-f-major-op-59-1-work-calidore-string-quartet"
+work_id: "ludwig-van-beethoven-string-quartet-no-7-razumovsky-in-f-major-op-59-1-work"
+performers:
+  - name: "Calidore String Quartet"
+    role: "ensemble"
+links:
+  tidal:
+    url: "http://www.tidal.com/track/369019684"
+source:
+  file: "docs/beethoven.md"
+  line: "218"
+reviews:
+  gramophone:
+    issue: "2024-10"

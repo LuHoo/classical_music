@@ -1,0 +1,9 @@
+id: "paul-hindemith-des-kleinen-elektromusikers-lieblinge-work"
+work_group_id: "paul-hindemith-des-kleinen-elektromusikers-lieblinge-group"
+composer_id: "paul-hindemith"
+title: "Des kleinen Elektromusikers Lieblinge"
+source:
+  file: "docs/hindemith.md"
+  line: "247"
+date_text: "1930"
+category: "Chamber"

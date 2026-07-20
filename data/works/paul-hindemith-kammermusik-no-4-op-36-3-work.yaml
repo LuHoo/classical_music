@@ -1,0 +1,11 @@
+id: "paul-hindemith-kammermusik-no-4-op-36-3-work"
+work_group_id: "paul-hindemith-kammermusik-no-4-op-36-3-group"
+composer_id: "paul-hindemith"
+title: "Kammermusik No. 4"
+source:
+  file: "docs/hindemith.md"
+  line: "106"
+catalogue:
+  opus: "Op. 36/3"
+date_text: "1925"
+category: "Concertante"

@@ -1,0 +1,13 @@
+id: "paul-hindemith-marsch-uber-den-alten-schweizerton-work-queensland-so-werner-andreas-albert"
+work_id: "paul-hindemith-marsch-uber-den-alten-schweizerton-work"
+performers:
+  - name: "Queensland SO"
+    role: "orchestra"
+  - name: "Werner Andreas Albert"
+    role: "conductor"
+links:
+  tidal:
+    url: "http://www.tidal.com/track/284340870"
+source:
+  file: "docs/hindemith.md"
+  line: "94"

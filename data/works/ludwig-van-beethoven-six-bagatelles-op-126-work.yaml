@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-six-bagatelles-op-126-work"
+work_group_id: "ludwig-van-beethoven-six-bagatelles-op-126-group"
+composer_id: "ludwig-van-beethoven"
+title: "Six Bagatelles"
+source:
+  file: "docs/beethoven.md"
+  line: "466"
+catalogue:
+  opus: "Op. 126"
+date_text: "1824"
+category: "Piano"

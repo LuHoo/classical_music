@@ -1,0 +1,12 @@
+id: "ludwig-van-beethoven-piano-concerto-no-1-in-c-major-op-15-work"
+work_group_id: "ludwig-van-beethoven-piano-concerto-no-1-in-c-major-op-15-group"
+composer_id: "ludwig-van-beethoven"
+title: "Piano Concerto No. 1 in C major"
+source:
+  file: "docs/beethoven.md"
+  line: "22"
+catalogue:
+  opus: "Op. 15"
+date_text: "1795, rev. 1800"
+category: "Orchestral"
+notes: "Pilot migration: source text suggests a version, arrangement, revision, suite, or completion boundary that should be reviewed."

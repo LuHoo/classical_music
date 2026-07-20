@@ -1,0 +1,10 @@
+id: "paul-hindemith-neues-vom-tage-work"
+work_group_id: "paul-hindemith-neues-vom-tage-group"
+composer_id: "paul-hindemith"
+title: "Neues vom Tage"
+source:
+  file: "docs/hindemith.md"
+  line: "22"
+date_text: "premiered 1929; revised version premiered 1954"
+category: "Opera"
+notes: "Pilot migration: source text suggests a version, arrangement, revision, suite, or completion boundary that should be reviewed."

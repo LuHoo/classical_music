@@ -1,0 +1,8 @@
+id: "igor-stravinsky-requiem-canticles-k-109-group"
+composer_id: "igor-stravinsky"
+title: "Requiem Canticles"
+source:
+  file: "docs/stravinsky.md"
+  line: "176"
+catalogue:
+  k: "K 109"

@@ -1,0 +1,8 @@
+id: "igor-stravinsky-danses-concertantes-k-063-group"
+composer_id: "igor-stravinsky"
+title: "Danses concertantes"
+source:
+  file: "docs/stravinsky.md"
+  line: "47"
+catalogue:
+  k: "K 063"

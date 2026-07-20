@@ -1,0 +1,12 @@
+id: "ludwig-van-beethoven-symphony-no-7-in-a-major-op-92-work-3"
+work_group_id: "ludwig-van-beethoven-symphony-no-7-in-a-major-op-92-group-3"
+composer_id: "ludwig-van-beethoven"
+title: "Symphony No. 7 in A major"
+source:
+  file: "docs/beethoven.md"
+  line: "496"
+catalogue:
+  opus: "Op. 92"
+date_text: "arr piano-4h Scharwenka"
+category: "Piano"
+notes: "Pilot migration: source text suggests a version, arrangement, revision, suite, or completion boundary that should be reviewed."

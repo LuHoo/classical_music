@@ -1,0 +1,12 @@
+id: "ludwig-van-beethoven-string-quartet-no-14-in-c-sharp-minor-op-131-work"
+work_group_id: "ludwig-van-beethoven-string-quartet-no-14-in-c-sharp-minor-op-131-group"
+composer_id: "ludwig-van-beethoven"
+title: "String Quartet No. 14 in C♯ minor"
+source:
+  file: "docs/beethoven.md"
+  line: "280"
+catalogue:
+  opus: "Op. 131"
+date_text: "1825–1826"
+category: "Chamber"
+gem: true

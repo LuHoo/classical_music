@@ -1,0 +1,12 @@
+id: "igor-stravinsky-suite-no-1-for-chamber-orchestra-k-045-work"
+work_group_id: "igor-stravinsky-suite-no-1-for-chamber-orchestra-k-045-group"
+composer_id: "igor-stravinsky"
+title: "Suite No. 1 for chamber orchestra"
+source:
+  file: "docs/stravinsky.md"
+  line: "77"
+catalogue:
+  k: "K 045"
+date_text: "1925, arrangement of Cinq pièces faciles Nos. 1–4"
+category: "Orchestral"
+notes: "Pilot migration: source text suggests a version, arrangement, revision, suite, or completion boundary that should be reviewed."

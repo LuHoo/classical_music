@@ -1,0 +1,14 @@
+id: "ludwig-van-beethoven-string-quartet-no-10-harp-in-e-flat-major-op-74-work-calidore-string-quartet"
+work_id: "ludwig-van-beethoven-string-quartet-no-10-harp-in-e-flat-major-op-74-work"
+performers:
+  - name: "Calidore String Quartet"
+    role: "ensemble"
+links:
+  tidal:
+    url: "http://www.tidal.com/track/369019698"
+source:
+  file: "docs/beethoven.md"
+  line: "238"
+reviews:
+  gramophone:
+    issue: "2024-10"

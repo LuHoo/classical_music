@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-symphony-no-8-in-f-major-op-93-work"
+work_group_id: "ludwig-van-beethoven-symphony-no-8-in-f-major-op-93-group"
+composer_id: "ludwig-van-beethoven"
+title: "Symphony No. 8 in F major"
+source:
+  file: "docs/beethoven.md"
+  line: "72"
+catalogue:
+  opus: "Op. 93"
+date_text: "1812–1814"
+category: "Orchestral"

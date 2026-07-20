@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-string-quartet-in-f-major-hess-34-work"
+work_group_id: "ludwig-van-beethoven-string-quartet-in-f-major-hess-34-group"
+composer_id: "ludwig-van-beethoven"
+title: "String Quartet in F major"
+source:
+  file: "docs/beethoven.md"
+  line: "196"
+catalogue:
+  hess: "Hess 34"
+date_text: "1801–1802"
+category: "Chamber"

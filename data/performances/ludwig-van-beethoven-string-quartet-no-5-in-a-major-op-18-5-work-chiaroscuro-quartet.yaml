@@ -1,0 +1,14 @@
+id: "ludwig-van-beethoven-string-quartet-no-5-in-a-major-op-18-5-work-chiaroscuro-quartet"
+work_id: "ludwig-van-beethoven-string-quartet-no-5-in-a-major-op-18-5-work"
+performers:
+  - name: "Chiaroscuro Quartet"
+    role: "ensemble"
+links:
+  tidal:
+    url: "http://www.tidal.com/track/339837635"
+source:
+  file: "docs/beethoven.md"
+  line: "180"
+reviews:
+  gramophone:
+    issue: "2022-06"

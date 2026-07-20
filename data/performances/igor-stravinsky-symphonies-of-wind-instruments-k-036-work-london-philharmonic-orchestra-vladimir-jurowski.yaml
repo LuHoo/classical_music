@@ -1,0 +1,13 @@
+id: "igor-stravinsky-symphonies-of-wind-instruments-k-036-work-london-philharmonic-orchestra-vladimir-jurowski"
+work_id: "igor-stravinsky-symphonies-of-wind-instruments-k-036-work"
+performers:
+  - name: "London Philharmonic Orchestra"
+    role: "orchestra"
+  - name: "Vladimir Jurowski"
+    role: "conductor"
+links:
+  tidal:
+    url: "https://tidal.com/browse/track/205310050?u"
+source:
+  file: "docs/stravinsky.md"
+  line: "71"

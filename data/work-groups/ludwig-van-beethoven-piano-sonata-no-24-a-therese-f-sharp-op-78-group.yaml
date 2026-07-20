@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-piano-sonata-no-24-a-therese-f-sharp-op-78-group"
+composer_id: "ludwig-van-beethoven"
+title: "Piano Sonata No. 24 (\"À Thérèse\"), F♯"
+source:
+  file: "docs/beethoven.md"
+  line: "356"
+catalogue:
+  opus: "Op. 78"

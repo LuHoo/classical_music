@@ -1,0 +1,15 @@
+id: "paul-hindemith-piano-concerto-work-siegfried-mauser-frankfurt-rso-werner-andreas-albert"
+work_id: "paul-hindemith-piano-concerto-work"
+performers:
+  - name: "Siegfried Mauser"
+    role: "performer"
+  - name: "Frankfurt RSO"
+    role: "orchestra"
+  - name: "Werner Andreas Albert"
+    role: "conductor"
+links:
+  tidal:
+    url: "http://www.tidal.com/track/21647838"
+source:
+  file: "docs/hindemith.md"
+  line: "130"

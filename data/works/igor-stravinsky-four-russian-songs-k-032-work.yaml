@@ -1,0 +1,11 @@
+id: "igor-stravinsky-four-russian-songs-k-032-work"
+work_group_id: "igor-stravinsky-four-russian-songs-k-032-group"
+composer_id: "igor-stravinsky"
+title: "Four Russian Songs"
+source:
+  file: "docs/stravinsky.md"
+  line: "204"
+catalogue:
+  k: "K 032"
+date_text: "1919"
+category: "Vocal"
