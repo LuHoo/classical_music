@@ -8,6 +8,7 @@ The repository is a curated recommendation collection, not an exhaustive catalog
 
 Detailed entity boundaries are defined in:
 
+- `work-group.md`;
 - `work.md`;
 - `performance.md`;
 - `recommendation-policy.md`.
