@@ -1,0 +1,7 @@
+id: "johann-sebastian-bach-brandenburg-concerto-no-5-in-d-maj-group"
+composer_id: "johann-sebastian-bach"
+title: "Brandenburg Concerto No. 5 in D maj."
+source:
+  file: "docs/bachJS.md"
+  line: "32"
+description: "Groups the early and revised versions of Brandenburg Concerto No. 5."

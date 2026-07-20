@@ -9,3 +9,6 @@ catalogue:
   bwv: "BWV 1067"
 date_text: "1738–1739"
 category: "Orchestral"
+external_ids:
+  musicbrainz: "179cc1f2-1135-4619-85f0-e42cd9d00979"
+notes: "MusicBrainz supports this as an ordinary parent Work; the open migration item is a performance-candidate decision, not a Work Group ambiguity."

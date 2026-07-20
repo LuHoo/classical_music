@@ -1,5 +1,5 @@
 id: "johann-sebastian-bach-concerto-for-harpsichord-and-orchestra-no-1-revised-version-in-d-min-work"
-work_group_id: "johann-sebastian-bach-concerto-for-harpsichord-and-orchestra-no-1-revised-version-in-d-min-group"
+work_group_id: "johann-sebastian-bach-keyboard-concerto-in-d-minor-bwv-1052-group"
 composer_id: "johann-sebastian-bach"
 title: "Concerto for harpsichord and orchestra No. 1(revised version) in D min."
 source:
@@ -9,3 +9,6 @@ catalogue:
   bwv: "BWV 1052.2"
 date_text: "c.1738"
 category: "Orchestral"
+external_ids:
+  musicbrainz: "e74a3a95-8008-43e3-939d-50d6bc9a221b"
+notes: "MusicBrainz identifies BWV 1052 as another version of BWV 1052a; group with the early D minor keyboard concerto Work."

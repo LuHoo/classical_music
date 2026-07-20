@@ -1,5 +1,5 @@
 id: "paul-hindemith-herodiade-work-2"
-work_group_id: "paul-hindemith-herodiade-group-2"
+work_group_id: "paul-hindemith-herodiade-group"
 composer_id: "paul-hindemith"
 title: "Hérodiade"
 source:
@@ -7,4 +7,4 @@ source:
   line: "53"
 date_text: "1944"
 category: "Ballet"
-notes: "Pilot migration: source text suggests a version, arrangement, revision, suite, or completion boundary that should be reviewed."
+notes: "Wikipedia evidence identifies Hérodiade as a ballet with Martha Graham. The source distinction between version without words and version with recitation is treated as performance/profile evidence inside one Work Group."
