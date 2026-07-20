@@ -42,6 +42,35 @@ The following normally create a separate Work:
 
 Composer revisions are always separate Works within the same Work Group.
 
+## General Works and Unknown Versions
+
+Some compositions have multiple recognised versions, completions, editions or
+reconstructions, while many recordings and streaming services identify only the
+general composition.
+
+The repository may therefore keep or create a general Work inside the relevant
+Work Group when:
+
+- the composition identity is clear;
+- the specific version, completion or edition is not identified by the source or
+  recording metadata;
+- assigning the Performance to the general Work would not misrepresent an
+  arrangement, reconstruction or different composition.
+
+This is a practical fallback, not a claim that the version is known.
+
+The rule is:
+
+```text
+unknown version is acceptable;
+wrong Work is not acceptable.
+```
+
+When a Performance is attached to such a general Work, the uncertainty belongs
+on the Performance, for example as `version_assignment: unspecified` or a short
+note. The Work Group may still contain more specific Works for known versions,
+completions or editions.
+
 ## Arrangements, transcriptions and versions
 
 An arrangement, orchestration or transcription becomes a separate Work only when it represents a distinct artistic object recognised by the composer, by musical tradition or by the curator's presentation needs.

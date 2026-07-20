@@ -245,6 +245,7 @@ be introduced later if validation pressure justifies it.
 
 ```yaml
 profile: piano
+version_assignment: unspecified
 year: 1981
 dates:
   recorded: 1981
@@ -271,6 +272,12 @@ notes: >
 
 `profile` is used only when a musically meaningful comparison category needs to
 be preserved, such as piano versus harpsichord for a Bach keyboard concerto.
+
+`version_assignment: unspecified` may be used when a Performance is attached to
+a general Work because the recording metadata does not identify a specific
+version, completion or edition. It records uncertainty; it does not make the
+Work Group performable and it must not be used when the recording might belong
+to a different Work.
 
 `release` is limited Performance metadata. It does not create a canonical
 Release entity and does not define Performance identity.

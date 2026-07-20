@@ -118,6 +118,11 @@ Visitors should receive a clear recommendation rather than a catalogue of all av
 
 Candidates, workflow state, matching evidence, migration state, link-check data and `keep_looking` are not normally shown.
 
+When a recommended Performance is attached to a general Work because the exact
+version, completion or edition is unknown, the website may omit that internal
+uncertainty unless it is useful to users. The recommendation remains valid as a
+recommendation for the general Work.
+
 ## Summary
 
 The repository answers one editorial question:
