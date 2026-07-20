@@ -17,9 +17,11 @@ Migration should use the following priority order.
 3. Local Grove side materials for identity support, Work-boundary review and
    version evidence.
 4. Composer-specific side materials for focused catalogue or boundary review.
-5. Wikipedia composition lists as fallback or supplementary authority evidence
+5. MusicBrainz as external identifier, relationship and recording/release
+   evidence.
+6. Wikipedia composition lists as fallback or supplementary authority evidence
    when local Grove or side materials are absent, incomplete or too narrow.
-6. Existing pilot YAML and architecture documents as design context only.
+7. Existing pilot YAML and architecture documents as design context only.
 
 When sources disagree, the canonical repository decision is made by curator
 review. External or side-material sources do not override the curated Markdown
@@ -146,6 +148,60 @@ Grove should be checked first when migration reports uncertainty about:
 If Grove confirms a structural relationship, migration may update canonical YAML
 after validation. If Grove does not cover the item, the item remains unresolved
 until another authority source or curator decision resolves it.
+
+### MusicBrainz
+
+Location:
+
+```text
+https://musicbrainz.org/
+```
+
+Reference documentation:
+
+- <https://musicbrainz.org/doc/Style/Classical/Works>
+- <https://musicbrainz.org/doc/MusicBrainz_Entity>
+
+Migration role:
+
+- external authority source for stable MusicBrainz identifiers;
+- relationship evidence for Persons, Works, Recordings, Releases and Artists;
+- cross-check for Tidal-linked recommendation candidates;
+- evidence for whether arrangements, revisions and derived Works are commonly
+  represented as distinct Works;
+- source for release and recording metadata attached to a Performance
+  candidate.
+
+Allowed extraction:
+
+- MusicBrainz identifiers for matched Persons and Works;
+- MusicBrainz Recording or Release identifiers as external evidence on
+  Performance candidates;
+- work-to-work relationship evidence;
+- recording-to-work relationship evidence;
+- credited performer, conductor, ensemble and release display metadata as
+  matching evidence.
+
+Not allowed:
+
+- importing MusicBrainz as the canonical data model;
+- creating canonical Recording, Release, Track, Album or Release Group entities;
+- accepting MusicBrainz Work boundaries automatically when they conflict with
+  curator decisions or better musicological evidence;
+- promoting Performance candidates solely because MusicBrainz has a matching
+  Recording or Release;
+- copying annotations, biographies or extensive prose into canonical data.
+
+Review workflow:
+
+MusicBrainz should be checked after local Grove and composer-specific side
+materials, or earlier when the open question is specifically about an external
+identifier, recording, release or performer relationship.
+
+If MusicBrainz confirms a stable external identifier or relationship, migration
+may record that evidence. If it only shows that a recording exists, the item
+remains a Performance recommendation candidate until the relevant Work and
+curatorial recommendation decisions are resolved.
 
 ### Wikipedia composition lists
 
@@ -431,6 +487,7 @@ Role:
 | `docs/*.md` composer pages | primary source | no, only after parsing, validation and review where needed |
 | Tidal exports and playlist spreadsheets | primary candidate source | no |
 | Grove files | secondary identity source | no |
+| MusicBrainz | external identifier and relationship source | no |
 | Legacy TeX files | secondary review source | no |
 | Compiled `music.pdf` | background/review source | no |
 | Building a Library spreadsheet | background candidate source | no |

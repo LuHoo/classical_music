@@ -29,6 +29,10 @@ The identifier system follows five principles.
 4. Slugs may change.
 5. External identifiers never determine internal identity.
 
+External identifiers include MusicBrainz identifiers, Wikidata identifiers,
+catalogue identifiers and platform identifiers. They are stored as evidence and
+links after matching, not as replacements for repository identity.
+
 ---
 
 # Permanent Identifiers

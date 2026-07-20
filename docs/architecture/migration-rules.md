@@ -110,13 +110,15 @@ The review order is:
 
 1. check local Grove side materials where available;
 2. check composer-specific side materials where available;
-3. check Wikipedia composition lists as a fallback or supplement;
-4. keep the item as a review candidate when authority evidence remains
+3. check MusicBrainz for external identifiers, Work relationships and
+   recording/release evidence;
+4. check Wikipedia composition lists as a fallback or supplement;
+5. keep the item as a review candidate when authority evidence remains
    insufficient.
 
-Grove and Wikipedia are evidence sources, not automatic canonical sources. They
-may confirm that a YAML change is safe, but they do not override the curated
-Markdown collection by themselves.
+Grove, MusicBrainz and Wikipedia are evidence sources, not automatic canonical
+sources. They may confirm that a YAML change is safe, but they do not override
+the curated Markdown collection by themselves.
 
 Authority review may directly update canonical YAML only when it resolves a
 structural uncertainty without inventing missing editorial intent. Examples
@@ -129,6 +131,20 @@ include:
   parent Work;
 - a source distinction being reclassified as performance-profile evidence rather
   than a separate Work Group.
+
+MusicBrainz is especially useful for:
+
+- stable external identifiers for Persons, Works, Recordings and Releases;
+- relationships between Works, Recordings, Releases and Artists;
+- confirming whether a Tidal-linked recommendation corresponds to an existing
+  Recording or Release;
+- checking whether a claimed arrangement, revision or derived Work is modelled
+  as a distinct Work elsewhere.
+
+MusicBrainz should not be used to reintroduce canonical Recording or Release
+entities into this repository. Recording and Release evidence may enrich
+Performance candidates, provenance and external links, but the canonical model
+remains Person, Work Group, Work and Performance.
 
 Authority review must not promote a Performance candidate to canonical data when
 the specific Work version of the recording remains unknown.
