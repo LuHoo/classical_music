@@ -17,10 +17,12 @@ Migration should use the following priority order.
 3. Local Grove side materials for identity support, Work-boundary review and
    version evidence.
 4. Composer-specific side materials for focused catalogue or boundary review.
-5. MusicBrainz as external identifier, relationship and recording/release
-   evidence.
+5. MusicBrainz as a required authority check for Work identities,
+   Work-to-Work relationships, external identifiers and recording/release
+   matching evidence.
 6. Wikipedia composition lists as fallback or supplementary authority evidence
-   when local Grove or side materials are absent, incomplete or too narrow.
+   when local Grove, side materials or MusicBrainz are absent, incomplete or too
+   narrow.
 7. Existing pilot YAML and architecture documents as design context only.
 
 When sources disagree, the canonical repository decision is made by curator
@@ -196,7 +198,16 @@ Review workflow:
 
 MusicBrainz should be checked after local Grove and composer-specific side
 materials, or earlier when the open question is specifically about an external
-identifier, recording, release or performer relationship.
+identifier, Work relationship, recording, release or performer relationship.
+
+MusicBrainz review is part of migration, not merely optional enrichment, when a
+report flags uncertainty about:
+
+- whether parsed rows are the same Work or separate Works;
+- whether early, revised, arranged, completed or reconstructed forms should be
+  grouped in one Work Group;
+- whether a Tidal-linked row can be matched to concrete recording or release
+  evidence.
 
 If MusicBrainz confirms a stable external identifier or relationship, migration
 may record that evidence. If it only shows that a recording exists, the item
@@ -487,7 +498,7 @@ Role:
 | `docs/*.md` composer pages | primary source | no, only after parsing, validation and review where needed |
 | Tidal exports and playlist spreadsheets | primary candidate source | no |
 | Grove files | secondary identity source | no |
-| MusicBrainz | external identifier and relationship source | no |
+| MusicBrainz | required external identifier and relationship review source | no |
 | Legacy TeX files | secondary review source | no |
 | Compiled `music.pdf` | background/review source | no |
 | Building a Library spreadsheet | background candidate source | no |
@@ -513,15 +524,16 @@ Before automated migration begins, the curator should confirm:
    automated matching result;
 5. whether Grove material should be converted into searchable text before
    migration review;
-6. how to treat ensembles before a canonical ensemble model is defined.
+6. how MusicBrainz lookups should be cached or recorded for reproducible review;
+7. how to treat ensembles before a canonical ensemble model is defined.
 
 ## Summary
 
 The migration should start from the current composer Markdown pages and Tidal
 exports.
 
-Grove, TeX and composer-specific side materials support identity review and
-boundary decisions.
+Grove, MusicBrainz, TeX and composer-specific side materials support identity
+review and boundary decisions.
 
 Existing pilot YAML and architecture materials are design context, not canonical
 migration input.

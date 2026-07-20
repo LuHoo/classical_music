@@ -110,9 +110,10 @@ The review order is:
 
 1. check local Grove side materials where available;
 2. check composer-specific side materials where available;
-3. check MusicBrainz for external identifiers, Work relationships and
-   recording/release evidence;
-4. check Wikipedia composition lists as a fallback or supplement;
+3. check MusicBrainz for Work identities, Work relationships, external
+   identifiers and recording/release evidence;
+4. check Wikipedia composition lists as a fallback or supplement when Grove,
+   side materials and MusicBrainz do not resolve the question;
 5. keep the item as a review candidate when authority evidence remains
    insufficient.
 
@@ -136,8 +137,23 @@ MusicBrainz is especially useful for:
 
 - stable external identifiers for Persons, Works, Recordings and Releases;
 - relationships between Works, Recordings, Releases and Artists;
+- deciding whether apparent versions, arrangements, completions or revisions are
+  separate Works inside one Work Group;
 - confirming whether a Tidal-linked recommendation corresponds to an existing
   Recording or Release;
+- distinguishing Work identity evidence from editorial recommendation evidence;
+
+MusicBrainz review is required before closing migration questions about:
+
+- whether two parsed rows are the same Work or separate Works;
+- whether separate version rows should share one Work Group;
+- whether an arrangement, completion or reconstruction is represented as a
+  related Work rather than a performance-profile variant;
+- whether a Tidal-linked candidate can be matched to a concrete Recording or
+  Release for evidence purposes.
+
+The absence of a clear MusicBrainz match does not block migration by itself, but
+it must be recorded in the GitHub Issue or review artefact for that item.
 - checking whether a claimed arrangement, revision or derived Work is modelled
   as a distinct Work elsewhere.
 
