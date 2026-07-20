@@ -14,8 +14,12 @@ Migration should use the following priority order.
 
 1. Current composer Markdown pages under `docs/`.
 2. Existing Tidal exports and playlist spreadsheets.
-3. Grove and other side materials for identity support and cross-checking.
-4. Existing pilot YAML and architecture documents as design context only.
+3. Local Grove side materials for identity support, Work-boundary review and
+   version evidence.
+4. Composer-specific side materials for focused catalogue or boundary review.
+5. Wikipedia composition lists as fallback or supplementary authority evidence
+   when local Grove or side materials are absent, incomplete or too narrow.
+6. Existing pilot YAML and architecture documents as design context only.
 
 When sources disagree, the canonical repository decision is made by curator
 review. External or side-material sources do not override the curated Markdown
@@ -129,6 +133,56 @@ Not allowed:
 - importing full biographies or complete work catalogues by default;
 - treating Grove coverage as a requirement to include every listed Work;
 - overriding curator decisions automatically.
+
+Review workflow:
+
+Grove should be checked first when migration reports uncertainty about:
+
+- Work Group boundaries;
+- version or revision identity;
+- arrangement, orchestration, suite or completion status;
+- whether a source distinction belongs to Work identity or Performance profile.
+
+If Grove confirms a structural relationship, migration may update canonical YAML
+after validation. If Grove does not cover the item, the item remains unresolved
+until another authority source or curator decision resolves it.
+
+### Wikipedia composition lists
+
+Location:
+
+```text
+https://en.wikipedia.org/wiki/List_of_compositions_by_<composer>
+```
+
+Migration role:
+
+- fallback or supplementary authority evidence;
+- useful when the local Grove export is missing, incomplete or too narrow;
+- useful for confirming common version, revision, arrangement and genre facts.
+
+Allowed extraction:
+
+- work title and genre evidence;
+- catalogue or opus evidence when present;
+- version and revision notes;
+- arrangement, suite, orchestration or completion context;
+- high-level dating evidence.
+
+Not allowed:
+
+- bulk-importing all listed works;
+- treating Wikipedia as more authoritative than the curated collection;
+- copying article prose into canonical data;
+- resolving controversial or ambiguous cases without curator review;
+- promoting Performance candidates when recording-version assignment remains
+  unclear.
+
+Review workflow:
+
+Wikipedia may support canonical YAML updates when it resolves a structural
+uncertainty already raised by migration. The change should be documented in a
+report or GitHub Issue comment, with unresolved cases left as review candidates.
 
 ## Secondary review inputs
 

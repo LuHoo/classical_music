@@ -100,6 +100,39 @@ It must not silently decide:
 - whether a candidate Performance should replace an existing recommendation;
 - whether a year is a composition, revision, recording or release year.
 
+### Authority review is part of migration
+
+When migration reports uncertainty about a Work Group, Work version,
+arrangement, completion or performance-profile boundary, the next step is an
+authority review pass.
+
+The review order is:
+
+1. check local Grove side materials where available;
+2. check composer-specific side materials where available;
+3. check Wikipedia composition lists as a fallback or supplement;
+4. keep the item as a review candidate when authority evidence remains
+   insufficient.
+
+Grove and Wikipedia are evidence sources, not automatic canonical sources. They
+may confirm that a YAML change is safe, but they do not override the curated
+Markdown collection by themselves.
+
+Authority review may directly update canonical YAML only when it resolves a
+structural uncertainty without inventing missing editorial intent. Examples
+include:
+
+- multiple version rows of the same composition sharing one Work Group;
+- a confirmed composer arrangement belonging to the same Work Group as its
+  source Work;
+- a suite or orchestral arrangement belonging to the same artistic family as the
+  parent Work;
+- a source distinction being reclassified as performance-profile evidence rather
+  than a separate Work Group.
+
+Authority review must not promote a Performance candidate to canonical data when
+the specific Work version of the recording remains unknown.
+
 ## Source units
 
 ### Composer file
@@ -372,6 +405,27 @@ Migration should create review items for:
 
 Manual review must resolve the editorial question before canonical data is
 written.
+
+## Authority review outputs
+
+Authority review should leave an audit trail.
+
+Allowed outputs include:
+
+- comments on the relevant GitHub Issues;
+- generated reports under `reports/`;
+- canonical YAML changes when the evidence supports a safe structural fix.
+
+Reports should record:
+
+- source checked;
+- issue or report lines considered;
+- changes applied;
+- cases deliberately left unresolved;
+- whether Performance recommendation candidates remain non-canonical.
+
+When the review only adds evidence but does not resolve the modelling decision,
+the canonical YAML should not be changed.
 
 ## Summary
 
