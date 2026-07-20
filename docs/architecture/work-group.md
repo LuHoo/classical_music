@@ -69,7 +69,7 @@ Examples include:
 
 - piano versus harpsichord;
 - historical versus modern instruments;
-- chamber versus symphony orchestra;
+- different ensemble sizes when the artistic Work is otherwise the same;
 - different conductors;
 - different soloists;
 - different choirs;
@@ -163,7 +163,7 @@ Performance
         ↓
 Work
         ↓
-Work Group (derived automatically)
+Work Group (resolved through the Work)
 ```
 
 Editorial comparison always occurs within:
