@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-piano-concerto-no-5-emperor-in-e-flat-major-op-73-group"
+composer_id: "ludwig-van-beethoven"
+title: "Piano Concerto No. 5 \"Emperor\" in E♭ major"
+source:
+  file: "docs/beethoven.md"
+  line: "64"
+catalogue:
+  opus: "Op. 73"

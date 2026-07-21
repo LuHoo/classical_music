@@ -1,0 +1,13 @@
+id: "anton-bruckner-kronstorfer-messe-in-d-minor-work-latvian-radio-choir-sigvards-klava"
+work_id: "anton-bruckner-kronstorfer-messe-in-d-minor-work"
+source:
+  file: "docs/bruckner.md"
+  line: "96"
+recommendation:
+  source: "legacy_tidal_link"
+  status: "accepted"
+links:
+  - platform: "tidal"
+    url: "https://tidal.com/browse/track/284019398?u"
+performers:
+  - name: "Latvian Radio Choir, Sigvards Klava"

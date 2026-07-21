@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-gratulations-minuet-in-e-flat-woo-3-work"
+work_group_id: "ludwig-van-beethoven-gratulations-minuet-in-e-flat-woo-3-group"
+composer_id: "ludwig-van-beethoven"
+title: "Gratulations-Minuet in E♭"
+source:
+  file: "docs/beethoven.md"
+  line: "86"
+catalogue:
+  woo: "WoO 3"
+date_text: "1822"
+category: "Orchestral"

@@ -1,0 +1,15 @@
+id: "paul-hindemith-herodiade-work-2-annie-gicquel-frankfurt-rso-werner-andreas-albert"
+work_id: "paul-hindemith-herodiade-work-2"
+performers:
+  - name: "Annie Gicquel"
+    role: "performer"
+  - name: "Frankfurt RSO"
+    role: "orchestra"
+  - name: "Werner Andreas Albert"
+    role: "conductor"
+links:
+  tidal:
+    url: "http://www.tidal.com/track/74080286"
+source:
+  file: "docs/hindemith.md"
+  line: "53"

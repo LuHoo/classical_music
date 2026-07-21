@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-symphony-no-7-in-a-major-op-92-work-2-oslo-kammerakademie"
+work_id: "ludwig-van-beethoven-symphony-no-7-in-a-major-op-92-work-2"
+performers:
+  - name: "Oslo Kammerakademie"
+    role: "ensemble"
+links:
+  tidal:
+    url: "http://www.tidal.com/track/123221004"
+source:
+  file: "docs/beethoven.md"
+  line: "244"

@@ -1,0 +1,13 @@
+id: "johann-sebastian-bach-brandenburg-concerto-no-4-in-g-maj-work-isabelle-faustakademie-fur-alte-musik-berlin"
+work_id: "johann-sebastian-bach-brandenburg-concerto-no-4-in-g-maj-work"
+source:
+  file: "docs/bachJS.md"
+  line: "30"
+recommendation:
+  source: "legacy_tidal_link"
+  status: "accepted"
+links:
+  - platform: "tidal"
+    url: "http://www.tidal.com/track/197388373"
+performers:
+  - name: "Isabelle FaustAkademie für Alte Musik Berlin"

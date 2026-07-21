@@ -1,0 +1,11 @@
+id: dmitri-shostakovich-music-to-the-comedy-the-bedbug-by-mayakovsky-work
+work_group_id: dmitri-shostakovich-music-to-the-comedy-the-bedbug-by-mayakovsky-group
+composer_id: dmitri-shostakovich
+title: Music to the comedy The Bedbug by Mayakovsky
+source:
+  file: docs/shostakovich.md
+  line: '24'
+catalogue:
+  op: Op. 19
+date_text: '1929'
+category: Orchestral

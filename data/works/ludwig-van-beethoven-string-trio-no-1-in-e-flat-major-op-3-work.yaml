@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-string-trio-no-1-in-e-flat-major-op-3-work"
+work_group_id: "ludwig-van-beethoven-string-trio-no-1-in-e-flat-major-op-3-group"
+composer_id: "ludwig-van-beethoven"
+title: "String Trio No. 1 in E♭ major"
+source:
+  file: "docs/beethoven.md"
+  line: "128"
+catalogue:
+  opus: "Op. 3"
+date_text: "before 1794?"
+category: "Chamber"

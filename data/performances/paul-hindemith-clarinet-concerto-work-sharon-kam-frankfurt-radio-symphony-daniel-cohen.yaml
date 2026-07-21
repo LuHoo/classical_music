@@ -1,0 +1,15 @@
+id: "paul-hindemith-clarinet-concerto-work-sharon-kam-frankfurt-radio-symphony-daniel-cohen"
+work_id: "paul-hindemith-clarinet-concerto-work"
+performers:
+  - name: "Sharon Kam"
+    role: "performer"
+  - name: "Frankfurt Radio Symphony"
+    role: "orchestra"
+  - name: "Daniel Cohen"
+    role: "orchestra"
+links:
+  tidal:
+    url: "https://tidal.com/album/201678139/track/201678141"
+source:
+  file: "docs/hindemith.md"
+  line: "132"

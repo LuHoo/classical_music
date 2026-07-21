@@ -1,0 +1,11 @@
+id: sergei-prokofiev-divertissement-work
+work_group_id: sergei-prokofiev-divertissement-group
+composer_id: sergei-prokofiev
+title: Divertissement
+source:
+  file: docs/prokofiev.md
+  line: '73'
+catalogue:
+  op: Op. 43
+date_text: 1925–29
+category: Orchestral

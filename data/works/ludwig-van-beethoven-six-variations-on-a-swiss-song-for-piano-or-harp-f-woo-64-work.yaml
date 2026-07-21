@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-six-variations-on-a-swiss-song-for-piano-or-harp-f-woo-64-work"
+work_group_id: "ludwig-van-beethoven-six-variations-on-a-swiss-song-for-piano-or-harp-f-woo-64-group"
+composer_id: "ludwig-van-beethoven"
+title: "Six variations on a Swiss song for piano or harp, F"
+source:
+  file: "docs/beethoven.md"
+  line: "382"
+catalogue:
+  woo: "WoO 64"
+date_text: "c. 1790–92"
+category: "Piano"

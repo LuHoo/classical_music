@@ -1,0 +1,8 @@
+id: "anton-bruckner-vexilla-regis-group"
+composer_id: "anton-bruckner"
+title: "Vexilla regis"
+source:
+  file: "docs/bruckner.md"
+  line: "94"
+catalogue:
+  wab: "WAB 51"

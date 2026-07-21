@@ -1,0 +1,11 @@
+id: "igor-stravinsky-credo-k-053-work"
+work_group_id: "igor-stravinsky-credo-k-053-group"
+composer_id: "igor-stravinsky"
+title: "Credo"
+source:
+  file: "docs/stravinsky.md"
+  line: "162"
+catalogue:
+  k: "K 053"
+date_text: "1932"
+category: "Choral"

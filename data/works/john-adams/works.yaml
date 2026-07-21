@@ -1,0 +1,1226 @@
+composer_id: john-adams
+works:
+  - id: adams-nixon-in-china
+    composer_id: john-adams
+    canonical_title: Nixon in China
+    localized_titles:
+      en: Nixon in China
+      nl: Nixon in China
+    year: 1987
+    category: operas-and-stage-works
+    aliases:
+      - Nixon in China
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-death-of-klinghoffer
+    composer_id: john-adams
+    canonical_title: The Death of Klinghoffer
+    localized_titles:
+      en: The Death of Klinghoffer
+      nl: The Death of Klinghoffer
+    year: 1991
+    category: operas-and-stage-works
+    aliases:
+      - Death of Klinghoffer
+      - The Death of Klinghoffer
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-i-was-looking-at-the-ceiling
+    composer_id: john-adams
+    canonical_title: I Was Looking at the Ceiling and Then I Saw the Sky
+    localized_titles:
+      en: I Was Looking at the Ceiling and Then I Saw the Sky
+      nl: I Was Looking at the Ceiling and Then I Saw the Sky
+    year: 1995
+    category: operas-and-stage-works
+    aliases:
+      - I Was Looking at the Ceiling and Then I Saw the Sky
+      - I Was Looking at the Ceiling
+      - Ceiling/Sky
+      - song play
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-el-nino
+    composer_id: john-adams
+    canonical_title: El Niño
+    localized_titles:
+      en: El Niño
+      nl: El Niño
+    year: 2000
+    category: operas-and-stage-works
+    aliases:
+      - El Niño
+      - El Nino
+      - opera-oratorio
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-doctor-atomic
+    composer_id: john-adams
+    canonical_title: Doctor Atomic
+    localized_titles:
+      en: Doctor Atomic
+      nl: Doctor Atomic
+    year: 2005
+    category: operas-and-stage-works
+    aliases:
+      - Doctor Atomic
+      - Dr. Atomic
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-flowering-tree
+    composer_id: john-adams
+    canonical_title: A Flowering Tree
+    localized_titles:
+      en: A Flowering Tree
+      nl: A Flowering Tree
+    year: 2006
+    category: operas-and-stage-works
+    aliases:
+      - A Flowering Tree
+      - Flowering Tree
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-gospel-according-to-the-other-mary
+    composer_id: john-adams
+    canonical_title: The Gospel According to the Other Mary
+    localized_titles:
+      en: The Gospel According to the Other Mary
+      nl: The Gospel According to the Other Mary
+    year: 2013
+    category: operas-and-stage-works
+    aliases:
+      - The Gospel According to the Other Mary
+      - Gospel According to the Other Mary
+      - opera-oratorio
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-girls-of-the-golden-west
+    composer_id: john-adams
+    canonical_title: Girls of the Golden West
+    localized_titles:
+      en: Girls of the Golden West
+      nl: Girls of the Golden West
+    year: 2017
+    category: operas-and-stage-works
+    aliases:
+      - Girls of the Golden West
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-antony-and-cleopatra
+    composer_id: john-adams
+    canonical_title: Antony and Cleopatra
+    localized_titles:
+      en: Antony and Cleopatra
+      nl: Antony and Cleopatra
+    year: 2022
+    category: operas-and-stage-works
+    aliases:
+      - Antony and Cleopatra
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-common-tones-in-simple-time
+    composer_id: john-adams
+    canonical_title: Common Tones in Simple Time
+    localized_titles:
+      en: Common Tones in Simple Time
+      nl: Common Tones in Simple Time
+    year: 1979
+    category: orchestral
+    aliases:
+      - Common Tones in Simple Time
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-grand-pianola-music
+    composer_id: john-adams
+    canonical_title: Grand Pianola Music
+    localized_titles:
+      en: Grand Pianola Music
+      nl: Grand Pianola Music
+    year: 1982
+    category: orchestral
+    aliases:
+      - Grand Pianola Music
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-shaker-loops-string-orchestra
+    composer_id: john-adams
+    canonical_title: Shaker Loops
+    localized_titles:
+      en: Shaker Loops
+      nl: Shaker Loops
+    year: 1983
+    category: orchestral
+    aliases:
+      - Shaker Loops
+      - Shaker Loops for string orchestra
+      - adaptation of the 1978 string septet for string orchestra
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+    notes: >-
+      Orchestral adaptation of the 1978 string septet, modelled separately from the chamber version.
+
+  - id: adams-harmonielehre
+    composer_id: john-adams
+    canonical_title: Harmonielehre
+    localized_titles:
+      en: Harmonielehre
+      nl: Harmonielehre
+    year: 1985
+    category: orchestral
+    aliases:
+      - Harmonielehre
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-chairman-dances
+    composer_id: john-adams
+    canonical_title: The Chairman Dances
+    localized_titles:
+      en: The Chairman Dances
+      nl: The Chairman Dances
+    year: 1985
+    category: orchestral
+    aliases:
+      - The Chairman Dances
+      - Chairman Dances
+      - Foxtrot for Orchestra
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-tromba-lontana
+    composer_id: john-adams
+    canonical_title: Tromba Lontana
+    localized_titles:
+      en: Tromba Lontana
+      nl: Tromba Lontana
+    year: 1986
+    category: orchestral
+    aliases:
+      - Tromba Lontana
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-short-ride-in-a-fast-machine
+    composer_id: john-adams
+    canonical_title: Short Ride in a Fast Machine
+    localized_titles:
+      en: Short Ride in a Fast Machine
+      nl: Short Ride in a Fast Machine
+    year: 1986
+    category: orchestral
+    aliases:
+      - Short Ride in a Fast Machine
+      - Fanfare for Orchestra
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-fearful-symmetries
+    composer_id: john-adams
+    canonical_title: Fearful Symmetries
+    localized_titles:
+      en: Fearful Symmetries
+      nl: Fearful Symmetries
+    year: 1988
+    category: orchestral
+    aliases:
+      - Fearful Symmetries
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-el-dorado
+    composer_id: john-adams
+    canonical_title: El Dorado
+    localized_titles:
+      en: El Dorado
+      nl: El Dorado
+    year: 1991
+    category: orchestral
+    aliases:
+      - El Dorado
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-lollapalooza
+    composer_id: john-adams
+    canonical_title: Lollapalooza
+    localized_titles:
+      en: Lollapalooza
+      nl: Lollapalooza
+    year: 1995
+    category: orchestral
+    aliases:
+      - Lollapalooza
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-slonimskys-earbox
+    composer_id: john-adams
+    canonical_title: Slonimsky's Earbox
+    localized_titles:
+      en: Slonimsky's Earbox
+      nl: Slonimsky's Earbox
+    year: 1996
+    category: orchestral
+    aliases:
+      - Slonimsky's Earbox
+      - Slonimskys Earbox
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-naive-and-sentimental-music
+    composer_id: john-adams
+    canonical_title: Naïve and Sentimental Music
+    localized_titles:
+      en: Naïve and Sentimental Music
+      nl: Naïve and Sentimental Music
+    year: 1998
+    category: orchestral
+    aliases:
+      - Naïve and Sentimental Music
+      - Naive and Sentimental Music
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-guide-to-strange-places
+    composer_id: john-adams
+    canonical_title: Guide to Strange Places
+    localized_titles:
+      en: Guide to Strange Places
+      nl: Guide to Strange Places
+    year: 2001
+    category: orchestral
+    aliases:
+      - Guide to Strange Places
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-my-father-knew-charles-ives
+    composer_id: john-adams
+    canonical_title: My Father Knew Charles Ives
+    localized_titles:
+      en: My Father Knew Charles Ives
+      nl: My Father Knew Charles Ives
+    year: 2003
+    category: orchestral
+    aliases:
+      - My Father Knew Charles Ives
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-doctor-atomic-symphony
+    composer_id: john-adams
+    canonical_title: Doctor Atomic Symphony
+    localized_titles:
+      en: Doctor Atomic Symphony
+      nl: Doctor Atomic Symphony
+    year: 2007
+    category: orchestral
+    aliases:
+      - Doctor Atomic Symphony
+      - Dr. Atomic Symphony
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-city-noir
+    composer_id: john-adams
+    canonical_title: City Noir
+    localized_titles:
+      en: City Noir
+      nl: City Noir
+    year: 2009
+    category: orchestral
+    aliases:
+      - City Noir
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-i-still-dance
+    composer_id: john-adams
+    canonical_title: I Still Dance
+    localized_titles:
+      en: I Still Dance
+      nl: I Still Dance
+    year: 2019
+    category: orchestral
+    aliases:
+      - I Still Dance
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-frenzy
+    composer_id: john-adams
+    canonical_title: Frenzy
+    localized_titles:
+      en: Frenzy
+      nl: Frenzy
+    year: 2023
+    category: orchestral
+    aliases:
+      - Frenzy
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-eros-piano
+    composer_id: john-adams
+    canonical_title: Eros Piano
+    localized_titles:
+      en: Eros Piano
+      nl: Eros Piano
+    year: 1989
+    category: concertante
+    aliases:
+      - Eros Piano
+      - Eros Piano for piano and orchestra
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-century-rolls
+    composer_id: john-adams
+    canonical_title: Century Rolls
+    localized_titles:
+      en: Century Rolls
+      nl: Century Rolls
+    year: 1997
+    category: concertante
+    aliases:
+      - Century Rolls
+      - Concerto for piano and orchestra
+      - Century Rolls concerto for piano and orchestra
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-must-the-devil-have-all-the-good-tunes
+    composer_id: john-adams
+    canonical_title: Must the Devil Have All the Good Tunes?
+    localized_titles:
+      en: Must the Devil Have All the Good Tunes?
+      nl: Must the Devil Have All the Good Tunes?
+    year: 2018
+    category: concertante
+    aliases:
+      - Must the Devil Have All the Good Tunes?
+      - Must the Devil Have All the Good Tunes
+      - concerto for piano and orchestra
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-after-the-fall
+    composer_id: john-adams
+    canonical_title: After the Fall
+    localized_titles:
+      en: After the Fall
+      nl: After the Fall
+    year: 2024
+    category: concertante
+    aliases:
+      - After the Fall
+      - concerto for piano and orchestra
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-violin-concerto
+    composer_id: john-adams
+    canonical_title: Violin Concerto
+    localized_titles:
+      en: Violin Concerto
+      nl: Vioolconcert
+    year: 1993
+    category: concertante
+    aliases:
+      - Violin Concerto
+      - Violin Concerto, 1993
+      - Vioolconcert
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-dharma-at-big-sur
+    composer_id: john-adams
+    canonical_title: The Dharma at Big Sur
+    localized_titles:
+      en: The Dharma at Big Sur
+      nl: The Dharma at Big Sur
+    year: 2003
+    category: concertante
+    aliases:
+      - The Dharma at Big Sur
+      - Dharma at Big Sur
+      - concerto for solo electric violin and orchestra
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-scheherazade-2
+    composer_id: john-adams
+    canonical_title: Scheherazade.2
+    localized_titles:
+      en: Scheherazade.2
+      nl: Scheherazade.2
+    year: 2014
+    category: concertante
+    aliases:
+      - Scheherazade.2
+      - Scheherazade 2
+      - dramatic symphony for violin and orchestra
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-absolute-jest
+    composer_id: john-adams
+    canonical_title: Absolute Jest
+    localized_titles:
+      en: Absolute Jest
+      nl: Absolute Jest
+    year: 2012
+    category: concertante
+    aliases:
+      - Absolute Jest
+      - for string quartet and orchestra
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-saxophone-concerto
+    composer_id: john-adams
+    canonical_title: Saxophone Concerto
+    localized_titles:
+      en: Saxophone Concerto
+      nl: Saxofoonconcert
+    year: 2013
+    category: concertante
+    aliases:
+      - Saxophone Concerto
+      - Saxofoonconcert
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-ktaadn
+    composer_id: john-adams
+    canonical_title: Ktaadn
+    localized_titles:
+      en: Ktaadn
+      nl: Ktaadn
+    year: 1974
+    category: vocal-and-choral
+    aliases:
+      - Ktaadn
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-harmonium
+    composer_id: john-adams
+    canonical_title: Harmonium
+    localized_titles:
+      en: Harmonium
+      nl: Harmonium
+    year: 1980
+    category: vocal-and-choral
+    aliases:
+      - Harmonium
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-nixon-tapes
+    composer_id: john-adams
+    canonical_title: The Nixon Tapes
+    localized_titles:
+      en: The Nixon Tapes
+      nl: The Nixon Tapes
+    year: 1987
+    category: vocal-and-choral
+    aliases:
+      - The Nixon Tapes
+      - Nixon Tapes
+      - three suites from Nixon in China
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-wound-dresser
+    composer_id: john-adams
+    canonical_title: The Wound-Dresser
+    localized_titles:
+      en: The Wound-Dresser
+      nl: The Wound-Dresser
+    year: 1989
+    category: vocal-and-choral
+    aliases:
+      - The Wound-Dresser
+      - Wound-Dresser
+      - The Wound Dresser
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-choruses-from-death-of-klinghoffer
+    composer_id: john-adams
+    canonical_title: Choruses from The Death of Klinghoffer
+    localized_titles:
+      en: Choruses from The Death of Klinghoffer
+      nl: Choruses from The Death of Klinghoffer
+    year: 1991
+    category: vocal-and-choral
+    aliases:
+      - Choruses from The Death of Klinghoffer
+      - Klinghoffer Choruses
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-on-the-transmigration-of-souls
+    composer_id: john-adams
+    canonical_title: On the Transmigration of Souls
+    localized_titles:
+      en: On the Transmigration of Souls
+      nl: On the Transmigration of Souls
+    year: 2002
+    category: vocal-and-choral
+    aliases:
+      - On the Transmigration of Souls
+      - Transmigration of Souls
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-piano-quintet
+    composer_id: john-adams
+    canonical_title: Piano Quintet
+    localized_titles:
+      en: Piano Quintet
+      nl: Pianokwintet
+    year: 1970
+    category: chamber-music
+    aliases:
+      - Piano Quintet
+      - Pianokwintet
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-wavemaker
+    composer_id: john-adams
+    canonical_title: Wavemaker
+    localized_titles:
+      en: Wavemaker
+      nl: Wavemaker
+    year: 1975
+    category: chamber-music
+    aliases:
+      - Wavemaker
+      - for string quartet, voices, tape, and live electronics
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-shaker-loops-string-septet
+    composer_id: john-adams
+    canonical_title: Shaker Loops
+    localized_titles:
+      en: Shaker Loops
+      nl: Shaker Loops
+    year: 1978
+    category: chamber-music
+    aliases:
+      - Shaker Loops
+      - Shaker Loops for string septet
+      - Revised version of Wavemaker
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+    notes: >-
+      Chamber version for string septet, modelled separately from the string orchestra adaptation.
+
+  - id: adams-chamber-symphony
+    composer_id: john-adams
+    canonical_title: Chamber Symphony
+    localized_titles:
+      en: Chamber Symphony
+      nl: Chamber Symphony
+    year: 1992
+    category: chamber-music
+    aliases:
+      - Chamber Symphony
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-johns-book-of-alleged-dances
+    composer_id: john-adams
+    canonical_title: John's Book of Alleged Dances
+    localized_titles:
+      en: John's Book of Alleged Dances
+      nl: John's Book of Alleged Dances
+    year: 1994
+    category: chamber-music
+    aliases:
+      - John's Book of Alleged Dances
+      - Johns Book of Alleged Dances
+      - Alleged Dances
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-road-movies
+    composer_id: john-adams
+    canonical_title: Road Movies
+    localized_titles:
+      en: Road Movies
+      nl: Road Movies
+    year: 1995
+    category: chamber-music
+    aliases:
+      - Road Movies
+      - Road Movies for violin and piano
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-gnarly-buttons
+    composer_id: john-adams
+    canonical_title: Gnarly Buttons
+    localized_titles:
+      en: Gnarly Buttons
+      nl: Gnarly Buttons
+    year: 1996
+    category: chamber-music
+    aliases:
+      - Gnarly Buttons
+      - for clarinet and chamber ensemble
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-son-of-chamber-symphony
+    composer_id: john-adams
+    canonical_title: Son of Chamber Symphony
+    localized_titles:
+      en: Son of Chamber Symphony
+      nl: Son of Chamber Symphony
+    year: 2007
+    category: chamber-music
+    aliases:
+      - Son of Chamber Symphony
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-fellow-traveler
+    composer_id: john-adams
+    canonical_title: Fellow Traveler
+    localized_titles:
+      en: Fellow Traveler
+      nl: Fellow Traveler
+    year: 2007
+    category: chamber-music
+    aliases:
+      - Fellow Traveler
+      - for string quartet
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-first-quartet
+    composer_id: john-adams
+    canonical_title: First Quartet
+    localized_titles:
+      en: First Quartet
+      nl: Eerste kwartet
+    year: 2008
+    category: chamber-music
+    aliases:
+      - First Quartet
+      - String Quartet No. 1
+      - Eerste kwartet
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-second-quartet
+    composer_id: john-adams
+    canonical_title: Second Quartet
+    localized_titles:
+      en: Second Quartet
+      nl: Tweede kwartet
+    year: 2014
+    category: chamber-music
+    aliases:
+      - Second Quartet
+      - String Quartet No. 2
+      - Tweede kwartet
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-american-standard
+    composer_id: john-adams
+    canonical_title: American Standard
+    localized_titles:
+      en: American Standard
+      nl: American Standard
+    year: 1973
+    category: other-ensemble-works
+    aliases:
+      - American Standard
+      - Christian Zeal and Activity
+      - American Standard, including Christian Zeal and Activity
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-grounding
+    composer_id: john-adams
+    canonical_title: Grounding
+    localized_titles:
+      en: Grounding
+      nl: Grounding
+    year: 1975
+    category: other-ensemble-works
+    aliases:
+      - Grounding
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-scratchband
+    composer_id: john-adams
+    canonical_title: Scratchband
+    localized_titles:
+      en: Scratchband
+      nl: Scratchband
+    year: 1996
+    category: other-ensemble-works
+    aliases:
+      - Scratchband
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-nancys-fancy
+    composer_id: john-adams
+    canonical_title: Nancy's Fancy
+    localized_titles:
+      en: Nancy's Fancy
+      nl: Nancy's Fancy
+    year: 2001
+    category: other-ensemble-works
+    aliases:
+      - Nancy's Fancy
+      - Nancys Fancy
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-heavy-metal
+    composer_id: john-adams
+    canonical_title: Heavy Metal
+    localized_titles:
+      en: Heavy Metal
+      nl: Heavy Metal
+    year: 1970
+    category: tape-and-electronic-compositions
+    aliases:
+      - Heavy Metal
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-hockey-seen
+    composer_id: john-adams
+    canonical_title: 'Hockey Seen: A Nightmare in Three Periods and Sudden Death'
+    localized_titles:
+      en: 'Hockey Seen: A Nightmare in Three Periods and Sudden Death'
+      nl: 'Hockey Seen: A Nightmare in Three Periods and Sudden Death'
+    year: 1972
+    category: tape-and-electronic-compositions
+    aliases:
+      - Hockey Seen
+      - A Nightmare in Three Periods and Sudden Death
+      - 'Hockey Seen: A Nightmare in Three Periods and Sudden Death'
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-studebaker-love-music
+    composer_id: john-adams
+    canonical_title: Studebaker Love Music
+    localized_titles:
+      en: Studebaker Love Music
+      nl: Studebaker Love Music
+    year: 1976
+    category: tape-and-electronic-compositions
+    aliases:
+      - Studebaker Love Music
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-onyx
+    composer_id: john-adams
+    canonical_title: Onyx
+    localized_titles:
+      en: Onyx
+      nl: Onyx
+    year: 1976
+    category: tape-and-electronic-compositions
+    aliases:
+      - Onyx
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-light-over-water
+    composer_id: john-adams
+    canonical_title: Light Over Water
+    localized_titles:
+      en: Light Over Water
+      nl: Light Over Water
+    year: 1983
+    category: tape-and-electronic-compositions
+    aliases:
+      - Light Over Water
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-hoodoo-zephyr
+    composer_id: john-adams
+    canonical_title: Hoodoo Zephyr
+    localized_titles:
+      en: Hoodoo Zephyr
+      nl: Hoodoo Zephyr
+    year: 1993
+    category: tape-and-electronic-compositions
+    aliases:
+      - Hoodoo Zephyr
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-coast
+    composer_id: john-adams
+    canonical_title: Coast
+    localized_titles:
+      en: Coast
+      nl: Coast
+    category: tape-and-electronic-compositions
+    aliases:
+      - Coast
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-disappointment-lake
+    composer_id: john-adams
+    canonical_title: Disappointment Lake
+    localized_titles:
+      en: Disappointment Lake
+      nl: Disappointment Lake
+    category: tape-and-electronic-compositions
+    aliases:
+      - Disappointment Lake
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-tourist-song
+    composer_id: john-adams
+    canonical_title: Tourist Song
+    localized_titles:
+      en: Tourist Song
+      nl: Tourist Song
+    category: tape-and-electronic-compositions
+    aliases:
+      - Tourist Song
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-tundra
+    composer_id: john-adams
+    canonical_title: Tundra
+    localized_titles:
+      en: Tundra
+      nl: Tundra
+    category: tape-and-electronic-compositions
+    aliases:
+      - Tundra
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-bump
+    composer_id: john-adams
+    canonical_title: Bump
+    localized_titles:
+      en: Bump
+      nl: Bump
+    category: tape-and-electronic-compositions
+    aliases:
+      - Bump
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-cerulean
+    composer_id: john-adams
+    canonical_title: Cerulean
+    localized_titles:
+      en: Cerulean
+      nl: Cerulean
+    category: tape-and-electronic-compositions
+    aliases:
+      - Cerulean
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-ragamarole
+    composer_id: john-adams
+    canonical_title: Ragamarole
+    localized_titles:
+      en: Ragamarole
+      nl: Ragamarole
+    year: 1973
+    category: piano
+    aliases:
+      - Ragamarole
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-blue-light
+    composer_id: john-adams
+    canonical_title: Blue Light
+    localized_titles:
+      en: Blue Light
+      nl: Blue Light
+    year: 1976
+    category: piano
+    aliases:
+      - Blue Light
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-a-fox-at-forty
+    composer_id: john-adams
+    canonical_title: A Fox at Forty
+    localized_titles:
+      en: A Fox at Forty
+      nl: A Fox at Forty
+    year: 1978
+    category: piano
+    aliases:
+      - A Fox at Forty
+      - Fox at Forty
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-phrygian-gates
+    composer_id: john-adams
+    canonical_title: Phrygian Gates
+    localized_titles:
+      en: Phrygian Gates
+      nl: Phrygian Gates
+    year: 1977
+    category: piano
+    aliases:
+      - Phrygian Gates
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-china-gates
+    composer_id: john-adams
+    canonical_title: China Gates
+    localized_titles:
+      en: China Gates
+      nl: China Gates
+    year: 1977
+    category: piano
+    aliases:
+      - China Gates
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-hallelujah-junction
+    composer_id: john-adams
+    canonical_title: Hallelujah Junction
+    localized_titles:
+      en: Hallelujah Junction
+      nl: Hallelujah Junction
+    year: 1996
+    category: piano
+    aliases:
+      - Hallelujah Junction
+      - for two pianos
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-american-berserk
+    composer_id: john-adams
+    canonical_title: American Berserk
+    localized_titles:
+      en: American Berserk
+      nl: American Berserk
+    year: 2001
+    category: piano
+    aliases:
+      - American Berserk
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-roll-over-beethoven
+    composer_id: john-adams
+    canonical_title: Roll Over Beethoven
+    localized_titles:
+      en: Roll Over Beethoven
+      nl: Roll Over Beethoven
+    year: 2014
+    category: piano
+    aliases:
+      - Roll Over Beethoven
+      - for two pianos
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-i-still-play
+    composer_id: john-adams
+    canonical_title: I Still Play
+    localized_titles:
+      en: I Still Play
+      nl: I Still Play
+    year: 2017
+    category: piano
+    aliases:
+      - I Still Play
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-matter-of-heart
+    composer_id: john-adams
+    canonical_title: Matter of Heart
+    localized_titles:
+      en: Matter of Heart
+      nl: Matter of Heart
+    year: 1982
+    category: film-scores
+    aliases:
+      - Matter of Heart
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-cabinet-of-dr-ramirez
+    composer_id: john-adams
+    canonical_title: The Cabinet of Dr. Ramirez
+    localized_titles:
+      en: The Cabinet of Dr. Ramirez
+      nl: The Cabinet of Dr. Ramirez
+    year: 1991
+    category: film-scores
+    aliases:
+      - The Cabinet of Dr. Ramirez
+      - Cabinet of Dr. Ramirez
+      - The Cabinet of Doctor Ramirez
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-american-tapestry
+    composer_id: john-adams
+    canonical_title: American Tapestry
+    localized_titles:
+      en: American Tapestry
+      nl: American Tapestry
+    year: 1999
+    category: film-scores
+    aliases:
+      - American Tapestry
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-i-am-love
+    composer_id: john-adams
+    canonical_title: I Am Love
+    localized_titles:
+      en: I Am Love
+      it: Io sono l'amore
+      nl: I Am Love
+    year: 2010
+    category: film-scores
+    aliases:
+      - I Am Love
+      - Io sono l'amore
+      - pre-existing pieces by Adams
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: adams-call-me-by-your-name
+    composer_id: john-adams
+    canonical_title: Call Me by Your Name
+    localized_titles:
+      en: Call Me by Your Name
+      nl: Call Me by Your Name
+    year: 2017
+    category: film-scores
+    aliases:
+      - Call Me by Your Name
+      - contributions
+    authorities:
+      musicbrainz_work_id:
+      wikidata:

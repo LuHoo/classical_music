@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-wellingtons-victory-battle-symphony-op-91-work"
+work_group_id: "ludwig-van-beethoven-wellingtons-victory-battle-symphony-op-91-group"
+composer_id: "ludwig-van-beethoven"
+title: "Wellington's Victory \"Battle Symphony\""
+source:
+  file: "docs/beethoven.md"
+  line: "74"
+catalogue:
+  opus: "Op. 91"
+date_text: "1813"
+category: "Orchestral"

@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-piano-trio-no-6-in-e-flat-major-op-70-2-work"
+work_group_id: "ludwig-van-beethoven-piano-trio-no-6-in-e-flat-major-op-70-2-group"
+composer_id: "ludwig-van-beethoven"
+title: "Piano Trio No. 6 in E♭ major"
+source:
+  file: "docs/beethoven.md"
+  line: "234"
+catalogue:
+  opus: "Op. 70/2"
+date_text: "1808"
+category: "Chamber"

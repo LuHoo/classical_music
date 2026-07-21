@@ -1,0 +1,14 @@
+id: "ludwig-van-beethoven-string-quartet-no-11-serioso-in-f-minor-op-95-work-calidore-string-quartet"
+work_id: "ludwig-van-beethoven-string-quartet-no-11-serioso-in-f-minor-op-95-work"
+performers:
+  - name: "Calidore String Quartet"
+    role: "ensemble"
+links:
+  tidal:
+    url: "http://www.tidal.com/track/369019702"
+source:
+  file: "docs/beethoven.md"
+  line: "246"
+reviews:
+  gramophone:
+    issue: "2024-10"

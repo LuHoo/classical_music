@@ -1,0 +1,13 @@
+id: "ludwig-van-beethoven-symphony-no-7-in-a-major-op-92-work-3-tessa-uys-ben-schoeman"
+work_id: "ludwig-van-beethoven-symphony-no-7-in-a-major-op-92-work-3"
+performers:
+  - name: "Tessa Uys"
+    role: "performer"
+  - name: "Ben Schoeman"
+    role: "conductor"
+links:
+  tidal:
+    url: "https://tidal.com/browse/track/278632224"
+source:
+  file: "docs/beethoven.md"
+  line: "496"

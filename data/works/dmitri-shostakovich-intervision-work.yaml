@@ -1,0 +1,9 @@
+id: dmitri-shostakovich-intervision-work
+work_group_id: dmitri-shostakovich-intervision-group
+composer_id: dmitri-shostakovich
+title: Intervision
+source:
+  file: docs/shostakovich.md
+  line: '165'
+date_text: '1971'
+category: Orchestral

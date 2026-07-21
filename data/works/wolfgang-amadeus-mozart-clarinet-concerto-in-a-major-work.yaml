@@ -1,0 +1,11 @@
+id: wolfgang-amadeus-mozart-clarinet-concerto-in-a-major-work
+work_group_id: wolfgang-amadeus-mozart-clarinet-concerto-in-a-major-group
+composer_id: wolfgang-amadeus-mozart
+title: Clarinet Concerto in A Major
+source:
+  file: docs/mozart.md
+  line: '133'
+catalogue:
+  k: K. 622
+date_text: http://www.tidal.com/track/12128399
+category: Woodwind concertos

@@ -1,0 +1,11 @@
+id: "paul-hindemith-sonata-for-violin-and-piano-no-2-in-d-op-11-no-2-work"
+work_group_id: "paul-hindemith-sonata-for-violin-and-piano-no-2-in-d-op-11-no-2-group"
+composer_id: "paul-hindemith"
+title: "Sonata for Violin and Piano No. 2 in D"
+source:
+  file: "docs/hindemith.md"
+  line: "254"
+catalogue:
+  opus: "Op. 11, No. 2"
+date_text: "1918"
+category: "Instrumental"

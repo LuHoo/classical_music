@@ -1,0 +1,11 @@
+id: sergei-prokofiev-american-overture-2-work
+work_group_id: sergei-prokofiev-american-overture-2-group
+composer_id: sergei-prokofiev
+title: American Overture
+source:
+  file: docs/prokofiev.md
+  line: '71'
+catalogue:
+  op: Op. 42bis
+date_text: '1928'
+category: Orchestral

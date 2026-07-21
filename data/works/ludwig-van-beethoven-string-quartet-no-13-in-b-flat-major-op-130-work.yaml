@@ -1,0 +1,12 @@
+id: "ludwig-van-beethoven-string-quartet-no-13-in-b-flat-major-op-130-work"
+work_group_id: "ludwig-van-beethoven-string-quartet-no-13-in-b-flat-major-op-130-group"
+composer_id: "ludwig-van-beethoven"
+title: "String Quartet No. 13 in B♭ major"
+source:
+  file: "docs/beethoven.md"
+  line: "278"
+catalogue:
+  opus: "Op. 130"
+date_text: "1825–22 April 1827"
+category: "Chamber"
+gem: true

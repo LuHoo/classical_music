@@ -1,0 +1,15 @@
+id: "igor-stravinsky-symphony-of-psalms-k-052-work-tenebrae-bbc-so-nigel-short"
+work_id: "igor-stravinsky-symphony-of-psalms-k-052-work"
+performers:
+  - name: "Tenebrae"
+    role: "performer"
+  - name: "BBC SO"
+    role: "orchestra"
+  - name: "Nigel Short"
+    role: "conductor"
+links:
+  tidal:
+    url: "http://www.tidal.com/track/80235001"
+source:
+  file: "docs/stravinsky.md"
+  line: "160"

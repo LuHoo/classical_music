@@ -1,0 +1,8 @@
+id: "igor-stravinsky-piano-rag-music-k-035-group"
+composer_id: "igor-stravinsky"
+title: "Piano-Rag-Music"
+source:
+  file: "docs/stravinsky.md"
+  line: "222"
+catalogue:
+  k: "K 035"

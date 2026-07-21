@@ -1,0 +1,17 @@
+id: berlioz-rob-roy
+composer_id: hector-berlioz
+canonical_title: Rob Roy
+localized_titles:
+  fr: Rob Roy
+  en: Rob Roy
+  nl: Rob Roy
+catalogue: {}
+aliases:
+  - Rob Roy Overture
+  - Ouverture Rob Roy
+authorities:
+  musicbrainz_work_id:
+  wikidata:
+notes: >-
+  No catalogue number is shown on the current Berlioz collection page, so the ID uses
+  a normalized title rather than a catalogue-based identifier.

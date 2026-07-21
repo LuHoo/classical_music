@@ -1,0 +1,11 @@
+id: sergei-prokofiev-boris-godunov-work
+work_group_id: sergei-prokofiev-boris-godunov-group
+composer_id: sergei-prokofiev
+title: Boris Godunov
+source:
+  file: docs/prokofiev.md
+  line: '126'
+catalogue:
+  op: Op. 70bis
+date_text: '1936'
+category: Orchestral

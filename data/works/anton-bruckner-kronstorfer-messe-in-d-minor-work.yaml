@@ -1,0 +1,11 @@
+id: "anton-bruckner-kronstorfer-messe-in-d-minor-work"
+work_group_id: "anton-bruckner-kronstorfer-messe-in-d-minor-group"
+composer_id: "anton-bruckner"
+title: "Kronstorfer Messe in D Minor"
+source:
+  file: "docs/bruckner.md"
+  line: "96"
+catalogue:
+  wab: "WAB 146"
+date_text: "1843-44"
+category: "Vocal"

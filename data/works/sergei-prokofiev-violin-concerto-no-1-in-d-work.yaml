@@ -1,0 +1,12 @@
+id: sergei-prokofiev-violin-concerto-no-1-in-d-work
+work_group_id: sergei-prokofiev-violin-concerto-no-1-in-d-group
+composer_id: sergei-prokofiev
+title: Violin Concerto No. 1 in D
+source:
+  file: docs/prokofiev.md
+  line: '32'
+catalogue:
+  op: Op. 19
+date_text: 1916–17
+category: Orchestral
+gem: true

@@ -1,0 +1,8 @@
+id: "igor-stravinsky-rag-time-k-030-group"
+composer_id: "igor-stravinsky"
+title: "Rag-time"
+source:
+  file: "docs/stravinsky.md"
+  line: "129"
+catalogue:
+  k: "K 030"

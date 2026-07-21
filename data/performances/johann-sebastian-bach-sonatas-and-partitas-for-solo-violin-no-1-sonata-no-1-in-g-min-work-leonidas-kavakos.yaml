@@ -1,0 +1,13 @@
+id: "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-1-sonata-no-1-in-g-min-work-leonidas-kavakos"
+work_id: "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-1-sonata-no-1-in-g-min-work"
+source:
+  file: "docs/bachJS.md"
+  line: "98"
+recommendation:
+  source: "legacy_tidal_link"
+  status: "accepted"
+links:
+  - platform: "tidal"
+    url: "http://www.tidal.com/track/203860888"
+performers:
+  - name: "Leonidas Kavakos"

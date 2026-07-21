@@ -1,0 +1,12 @@
+id: "igor-stravinsky-divertimento-k-049-work"
+work_group_id: "igor-stravinsky-le-baiser-de-la-fee-k-049-group"
+composer_id: "igor-stravinsky"
+title: "Divertimento"
+source:
+  file: "docs/stravinsky.md"
+  line: "79"
+catalogue:
+  k: "K 049"
+date_text: "Suite from Le Baiser de la fée, 1934"
+category: "Orchestral"
+notes: "Pilot migration: source text suggests a version, arrangement, revision, suite, or completion boundary that should be reviewed."

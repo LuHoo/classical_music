@@ -1,0 +1,11 @@
+id: "igor-stravinsky-ave-maria-k-054-work"
+work_group_id: "igor-stravinsky-ave-maria-k-054-group"
+composer_id: "igor-stravinsky"
+title: "Ave Maria"
+source:
+  file: "docs/stravinsky.md"
+  line: "164"
+catalogue:
+  k: "K 054"
+date_text: "1934"
+category: "Choral"

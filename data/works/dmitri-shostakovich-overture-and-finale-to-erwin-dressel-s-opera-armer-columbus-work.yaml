@@ -1,0 +1,11 @@
+id: dmitri-shostakovich-overture-and-finale-to-erwin-dressel-s-opera-armer-columbus-work
+work_group_id: dmitri-shostakovich-overture-and-finale-to-erwin-dressel-s-opera-armer-columbus-group
+composer_id: dmitri-shostakovich
+title: Overture and Finale to Erwin Dressel's opera Armer Columbus
+source:
+  file: docs/shostakovich.md
+  line: '30'
+catalogue:
+  op: Op. 23
+date_text: '1929'
+category: Orchestral

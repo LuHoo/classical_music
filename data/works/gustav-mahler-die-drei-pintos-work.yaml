@@ -1,0 +1,9 @@
+id: "gustav-mahler-die-drei-pintos-work"
+work_group_id: "gustav-mahler-die-drei-pintos-group"
+composer_id: "gustav-mahler"
+title: "Die Drei Pintos"
+source:
+  file: "docs/mahler.md"
+  line: "26"
+date_text: "1887–88"
+category: "Wunderhorn period"

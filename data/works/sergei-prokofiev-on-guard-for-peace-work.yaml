@@ -1,0 +1,11 @@
+id: sergei-prokofiev-on-guard-for-peace-work
+work_group_id: sergei-prokofiev-on-guard-for-peace-group
+composer_id: sergei-prokofiev
+title: On Guard for Peace
+source:
+  file: docs/prokofiev.md
+  line: '212'
+catalogue:
+  op: Op. 124
+date_text: '1950'
+category: Orchestral

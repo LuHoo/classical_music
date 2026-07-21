@@ -1,0 +1,13 @@
+id: "gustav-mahler-symphony-no-6-in-a-minor-work-berliner-philharmoniker-kirill-petrenko"
+work_id: "gustav-mahler-symphony-no-6-in-a-minor-work"
+source:
+  file: "docs/mahler.md"
+  line: "52"
+recommendation:
+  source: "legacy_tidal_link"
+  status: "accepted"
+links:
+  - platform: "tidal"
+    url: "http://www.tidal.com/track/174813801"
+performers:
+  - name: "Berliner Philharmoniker, Kirill Petrenko"

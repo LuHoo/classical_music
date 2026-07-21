@@ -1,0 +1,12 @@
+id: "igor-stravinsky-cantata-babel-k-068-work"
+work_group_id: "igor-stravinsky-cantata-babel-k-068-group"
+composer_id: "igor-stravinsky"
+title: "Cantata: Babel"
+source:
+  file: "docs/stravinsky.md"
+  line: "166"
+catalogue:
+  k: "K 068"
+date_text: "1944"
+category: "Choral"
+notes: "Pilot migration: source text suggests a version, arrangement, revision, suite, or completion boundary that should be reviewed."

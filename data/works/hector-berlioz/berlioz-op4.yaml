@@ -1,0 +1,19 @@
+id: berlioz-op4
+composer_id: hector-berlioz
+canonical_title: Le roi Lear
+localized_titles:
+  fr: Le roi Lear
+  en: King Lear
+  nl: Koning Lear
+catalogue:
+  opus: Op. 4
+aliases:
+  - Le roi Lear, Op. 4
+  - King Lear Overture
+  - Ouverture Le roi Lear
+  - Op. 4
+authorities:
+  musicbrainz_work_id:
+  wikidata:
+notes: >-
+  Modelled from the current Berlioz collection page as an overture.

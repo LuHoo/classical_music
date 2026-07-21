@@ -1,0 +1,12 @@
+id: "anton-bruckner-symphony-no-6-in-a-major-work"
+work_group_id: "anton-bruckner-symphony-no-6-in-a-major-group"
+composer_id: "anton-bruckner"
+title: "Symphony No. 6 in A major"
+source:
+  file: "docs/bruckner.md"
+  line: "52"
+catalogue:
+  wab: "WAB 106"
+date_text: "1881"
+category: "Orchestral"
+gem: true

@@ -1,0 +1,15 @@
+id: "igor-stravinsky-ebony-concerto-k-072-work-chris-richards-london-symphony-orchestra-sir-simon-rattle"
+work_id: "igor-stravinsky-ebony-concerto-k-072-work"
+performers:
+  - name: "Chris Richards"
+    role: "performer"
+  - name: "London Symphony Orchestra"
+    role: "orchestra"
+  - name: "Sir Simon Rattle"
+    role: "conductor"
+links:
+  tidal:
+    url: "https://tidal.com/browse/track/227961775?u"
+source:
+  file: "docs/stravinsky.md"
+  line: "117"

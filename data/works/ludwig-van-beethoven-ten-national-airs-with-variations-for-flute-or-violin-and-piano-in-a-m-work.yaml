@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-ten-national-airs-with-variations-for-flute-or-violin-and-piano-in-a-m-work"
+work_group_id: "ludwig-van-beethoven-ten-national-airs-with-variations-for-flute-or-violin-and-piano-in-a-group"
+composer_id: "ludwig-van-beethoven"
+title: "Ten National Airs with Variations for Flute (or Violin) and Piano in A minor"
+source:
+  file: "docs/beethoven.md"
+  line: "268"
+catalogue:
+  opus: "Op. 107"
+date_text: "1818–1819"
+category: "Chamber"

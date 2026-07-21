@@ -1,0 +1,11 @@
+id: sergei-prokofiev-piano-concerto-no-2-in-g-minor-work
+work_group_id: sergei-prokofiev-piano-concerto-no-2-in-g-minor-group
+composer_id: sergei-prokofiev
+title: Piano Concerto No. 2 in G minor
+source:
+  file: docs/prokofiev.md
+  line: '28'
+catalogue:
+  op: Op. 16
+date_text: 1912–13, lost, re-written in 1923
+category: Orchestral

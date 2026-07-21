@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-allegretto-bagatelle-c-minor-woo-53-work"
+work_group_id: "ludwig-van-beethoven-allegretto-bagatelle-c-minor-woo-53-group"
+composer_id: "ludwig-van-beethoven"
+title: "Allegretto (Bagatelle), C minor"
+source:
+  file: "docs/beethoven.md"
+  line: "432"
+catalogue:
+  woo: "WoO 53"
+date_text: "1796–97"
+category: "Piano"

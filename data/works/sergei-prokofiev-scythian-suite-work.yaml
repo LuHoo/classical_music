@@ -1,0 +1,11 @@
+id: sergei-prokofiev-scythian-suite-work
+work_group_id: sergei-prokofiev-scythian-suite-group
+composer_id: sergei-prokofiev
+title: Scythian Suite
+source:
+  file: docs/prokofiev.md
+  line: '35'
+catalogue:
+  op: Op. 20
+date_text: 1914–15
+category: Orchestral

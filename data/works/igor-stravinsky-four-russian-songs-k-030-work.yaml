@@ -1,0 +1,11 @@
+id: "igor-stravinsky-four-russian-songs-k-030-work"
+work_group_id: "igor-stravinsky-four-russian-songs-k-030-group"
+composer_id: "igor-stravinsky"
+title: "Four Russian Songs"
+source:
+  file: "docs/stravinsky.md"
+  line: "196"
+catalogue:
+  k: "K 030"
+date_text: "1918–19"
+category: "Vocal"

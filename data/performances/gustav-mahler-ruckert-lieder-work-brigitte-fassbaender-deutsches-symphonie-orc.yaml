@@ -1,0 +1,13 @@
+id: "gustav-mahler-ruckert-lieder-work-brigitte-fassbaender-deutsches-symphonie-orc"
+work_id: "gustav-mahler-ruckert-lieder-work"
+source:
+  file: "docs/mahler.md"
+  line: "46"
+recommendation:
+  source: "legacy_tidal_link"
+  status: "accepted"
+links:
+  - platform: "tidal"
+    url: "http://www.tidal.com/track/64136735"
+performers:
+  - name: "Brigitte Fassbaender, Deutsches Symphonie-Orchester Berlin, Riccardo Chailly"

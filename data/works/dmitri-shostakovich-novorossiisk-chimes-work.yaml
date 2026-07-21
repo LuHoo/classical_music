@@ -1,0 +1,11 @@
+id: dmitri-shostakovich-novorossiisk-chimes-work
+work_group_id: dmitri-shostakovich-novorossiisk-chimes-group
+composer_id: dmitri-shostakovich
+title: Novorossiisk Chimes
+source:
+  file: docs/shostakovich.md
+  line: '132'
+catalogue:
+  op: Op. 111b
+date_text: '1960'
+category: Orchestral

@@ -1,0 +1,8 @@
+id: wolfgang-amadeus-mozart-clarinet-concerto-in-a-major-group
+composer_id: wolfgang-amadeus-mozart
+title: Clarinet Concerto in A Major
+source:
+  file: docs/mozart.md
+  line: '133'
+catalogue:
+  k: K. 622

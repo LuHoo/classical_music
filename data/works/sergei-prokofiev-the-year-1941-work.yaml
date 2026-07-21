@@ -1,0 +1,11 @@
+id: sergei-prokofiev-the-year-1941-work
+work_group_id: sergei-prokofiev-the-year-1941-group
+composer_id: sergei-prokofiev
+title: The Year 1941
+source:
+  file: docs/prokofiev.md
+  line: '164'
+catalogue:
+  op: Op. 90
+date_text: '1941'
+category: Orchestral

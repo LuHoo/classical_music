@@ -1,0 +1,9 @@
+id: "gustav-mahler-lieder-und-gesange-vol-i-work"
+work_group_id: "gustav-mahler-lieder-und-gesange-vol-i-group"
+composer_id: "gustav-mahler"
+title: "Lieder und Gesänge Vol. I"
+source:
+  file: "docs/mahler.md"
+  line: "18"
+date_text: "1880–83"
+category: "Early works"

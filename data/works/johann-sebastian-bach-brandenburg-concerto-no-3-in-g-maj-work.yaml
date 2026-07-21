@@ -1,0 +1,11 @@
+id: "johann-sebastian-bach-brandenburg-concerto-no-3-in-g-maj-work"
+work_group_id: "johann-sebastian-bach-brandenburg-concerto-no-3-in-g-maj-group"
+composer_id: "johann-sebastian-bach"
+title: "Brandenburg Concerto No. 3 in G maj."
+source:
+  file: "docs/bachJS.md"
+  line: "28"
+catalogue:
+  bwv: "BWV 1048"
+date_text: "1721-03-24"
+category: "Orchestral"

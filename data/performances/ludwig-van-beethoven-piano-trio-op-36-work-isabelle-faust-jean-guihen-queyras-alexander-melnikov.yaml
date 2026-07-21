@@ -1,0 +1,15 @@
+id: "ludwig-van-beethoven-piano-trio-op-36-work-isabelle-faust-jean-guihen-queyras-alexander-melnikov"
+work_id: "ludwig-van-beethoven-piano-trio-op-36-work"
+performers:
+  - name: "Isabelle Faust"
+    role: "performer"
+  - name: "Jean-Guihen Queyras"
+    role: "performer"
+  - name: "Alexander Melnikov"
+    role: "conductor"
+links:
+  tidal:
+    url: "http://www.tidal.com/track/171560424"
+source:
+  file: "docs/beethoven.md"
+  line: "204"

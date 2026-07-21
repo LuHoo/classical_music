@@ -1,0 +1,11 @@
+id: dmitri-shostakovich-symphony-no-12-in-d-minor-work
+work_group_id: dmitri-shostakovich-symphony-no-12-in-d-minor-group
+composer_id: dmitri-shostakovich
+title: Symphony No. 12 in D minor
+source:
+  file: docs/shostakovich.md
+  line: '134'
+catalogue:
+  op: Op. 112
+date_text: '1961'
+category: Orchestral

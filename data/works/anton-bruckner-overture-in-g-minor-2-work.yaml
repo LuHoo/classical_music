@@ -1,0 +1,11 @@
+id: "anton-bruckner-overture-in-g-minor-2-work"
+work_group_id: "anton-bruckner-overture-in-g-minor-2-group"
+composer_id: "anton-bruckner"
+title: "Overture in G minor"
+source:
+  file: "docs/bruckner.md"
+  line: "18"
+catalogue:
+  wab: "WAB 98"
+date_text: "1863 version, modified coda at bars 233–288"
+category: "Orchestral"

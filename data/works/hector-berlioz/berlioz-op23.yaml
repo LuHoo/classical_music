@@ -1,0 +1,20 @@
+id: berlioz-op23
+composer_id: hector-berlioz
+canonical_title: Benvenuto Cellini
+localized_titles:
+  fr: Benvenuto Cellini
+  en: Benvenuto Cellini
+  nl: Benvenuto Cellini
+catalogue:
+  opus: Op. 23
+aliases:
+  - Benvenuto Cellini, Op. 23
+  - Benvenuto Cellini Overture
+  - Ouverture Benvenuto Cellini
+  - Op. 23
+authorities:
+  musicbrainz_work_id:
+  wikidata:
+notes: >-
+  The current collection page links the overture. This record identifies the work title
+  used there; an overture-specific child work can be added later if needed.

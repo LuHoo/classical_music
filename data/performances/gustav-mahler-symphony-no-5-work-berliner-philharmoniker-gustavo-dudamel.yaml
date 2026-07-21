@@ -1,0 +1,13 @@
+id: "gustav-mahler-symphony-no-5-work-berliner-philharmoniker-gustavo-dudamel"
+work_id: "gustav-mahler-symphony-no-5-work"
+source:
+  file: "docs/mahler.md"
+  line: "50"
+recommendation:
+  source: "legacy_tidal_link"
+  status: "accepted"
+links:
+  - platform: "tidal"
+    url: "http://www.tidal.com/track/229400428"
+performers:
+  - name: "Berliner Philharmoniker, Gustavo Dudamel"

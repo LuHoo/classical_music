@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-variations-on-wenzel-mullers-ich-bin-der-schneider-kakadu-in-g-major-group"
+composer_id: "ludwig-van-beethoven"
+title: "Variations on Wenzel Müller's \"Ich bin der Schneider Kakadu,\" in G major"
+source:
+  file: "docs/beethoven.md"
+  line: "270"
+catalogue:
+  opus: "Op. 121a"

@@ -1,0 +1,11 @@
+id: sergei-prokofiev-cello-concerto-in-e-minor-work
+work_group_id: sergei-prokofiev-cello-concerto-in-e-minor-group
+composer_id: sergei-prokofiev
+title: Cello Concerto in E minor
+source:
+  file: docs/prokofiev.md
+  line: '100'
+catalogue:
+  op: Op. 58
+date_text: 1933–38
+category: Orchestral

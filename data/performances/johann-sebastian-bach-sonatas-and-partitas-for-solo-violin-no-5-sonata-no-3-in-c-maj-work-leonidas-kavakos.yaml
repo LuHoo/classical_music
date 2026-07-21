@@ -1,0 +1,13 @@
+id: "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-5-sonata-no-3-in-c-maj-work-leonidas-kavakos"
+work_id: "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-5-sonata-no-3-in-c-maj-work"
+source:
+  file: "docs/bachJS.md"
+  line: "106"
+recommendation:
+  source: "legacy_tidal_link"
+  status: "accepted"
+links:
+  - platform: "tidal"
+    url: "http://www.tidal.com/track/203860879"
+performers:
+  - name: "Leonidas Kavakos"

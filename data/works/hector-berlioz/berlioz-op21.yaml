@@ -1,0 +1,20 @@
+id: berlioz-op21
+composer_id: hector-berlioz
+canonical_title: Le Corsaire
+localized_titles:
+  fr: Le Corsaire
+  en: The Corsair
+  nl: De kaper
+catalogue:
+  opus: Op. 21
+aliases:
+  - Le Corsaire, Op. 21
+  - The Corsair
+  - Corsair Overture
+  - Ouverture Le Corsaire
+  - Op. 21
+authorities:
+  musicbrainz_work_id:
+  wikidata:
+notes: >-
+  Modelled from the overture entry on the current Berlioz collection page.

@@ -1,0 +1,8 @@
+id: "paul-hindemith-die-serenaden-op-35-group"
+composer_id: "paul-hindemith"
+title: "Die Serenaden"
+source:
+  file: "docs/hindemith.md"
+  line: "164"
+catalogue:
+  opus: "Op. 35"

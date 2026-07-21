@@ -1,0 +1,11 @@
+id: "paul-hindemith-string-quartet-no-2-in-f-minor-op-10-work"
+work_group_id: "paul-hindemith-string-quartet-no-2-in-f-minor-op-10-group"
+composer_id: "paul-hindemith"
+title: "String Quartet No. 2 in F minor"
+source:
+  file: "docs/hindemith.md"
+  line: "217"
+catalogue:
+  opus: "Op. 10"
+date_text: "1918"
+category: "Chamber"

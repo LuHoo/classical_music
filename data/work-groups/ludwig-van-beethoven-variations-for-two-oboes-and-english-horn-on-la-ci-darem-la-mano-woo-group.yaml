@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-variations-for-two-oboes-and-english-horn-on-la-ci-darem-la-mano-woo-group"
+composer_id: "ludwig-van-beethoven"
+title: "Variations for two oboes and English horn on \"Là ci darem la mano\""
+source:
+  file: "docs/beethoven.md"
+  line: "130"
+catalogue:
+  woo: "WoO 28"

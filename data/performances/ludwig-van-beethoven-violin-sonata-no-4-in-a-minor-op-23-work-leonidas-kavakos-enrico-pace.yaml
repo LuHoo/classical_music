@@ -1,0 +1,13 @@
+id: "ludwig-van-beethoven-violin-sonata-no-4-in-a-minor-op-23-work-leonidas-kavakos-enrico-pace"
+work_id: "ludwig-van-beethoven-violin-sonata-no-4-in-a-minor-op-23-work"
+performers:
+  - name: "Leonidas Kavakos"
+    role: "performer"
+  - name: "Enrico Pace"
+    role: "orchestra"
+links:
+  tidal:
+    url: "http://www.tidal.com/track/141525095"
+source:
+  file: "docs/beethoven.md"
+  line: "186"

@@ -1,0 +1,11 @@
+id: sergei-prokofiev-russian-overture-work
+work_group_id: sergei-prokofiev-russian-overture-group
+composer_id: sergei-prokofiev
+title: Russian Overture
+source:
+  file: docs/prokofiev.md
+  line: '130'
+catalogue:
+  op: Op. 72
+date_text: '1936'
+category: Orchestral

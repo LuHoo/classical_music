@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-egmont-in-f-minor-op-84-group"
+composer_id: "ludwig-van-beethoven"
+title: "\"Egmont\" in F minor"
+source:
+  file: "docs/beethoven.md"
+  line: "68"
+catalogue:
+  opus: "Op. 84"

@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-piano-trio-no-5-in-d-major-ghost-op-70-1-group"
+composer_id: "ludwig-van-beethoven"
+title: "Piano Trio No. 5 in D major \"Ghost\""
+source:
+  file: "docs/beethoven.md"
+  line: "232"
+catalogue:
+  opus: "Op. 70/1"

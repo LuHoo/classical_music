@@ -1,0 +1,12 @@
+id: "ludwig-van-beethoven-symphony-no-3-eroica-in-e-flat-major-op-55-work-2"
+work_group_id: "ludwig-van-beethoven-symphony-no-3-eroica-in-e-flat-major-op-55-group-2"
+composer_id: "ludwig-van-beethoven"
+title: "Symphony No. 3 \"Eroica\" in E♭ major"
+source:
+  file: "docs/beethoven.md"
+  line: "490"
+catalogue:
+  opus: "Op. 55"
+date_text: "arr piano-4h Scharwenka"
+category: "Piano"
+notes: "Pilot migration: source text suggests a version, arrangement, revision, suite, or completion boundary that should be reviewed."

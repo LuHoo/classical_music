@@ -1,0 +1,8 @@
+id: wolfgang-amadeus-mozart-la-finta-giardiniera-group
+composer_id: wolfgang-amadeus-mozart
+title: La finta giardiniera
+source:
+  file: docs/mozart.md
+  line: '38'
+catalogue:
+  k: K. 196

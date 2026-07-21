@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-piano-trio-no-3-in-c-minor-op-1-3-work"
+work_group_id: "ludwig-van-beethoven-piano-trio-no-3-in-c-minor-op-1-3-group"
+composer_id: "ludwig-van-beethoven"
+title: "Piano Trio No. 3 in C minor"
+source:
+  file: "docs/beethoven.md"
+  line: "126"
+catalogue:
+  opus: "Op. 1/3"
+date_text: "1794–1795"
+category: "Chamber"

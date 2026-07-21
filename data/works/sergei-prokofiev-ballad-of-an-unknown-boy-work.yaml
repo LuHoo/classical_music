@@ -1,0 +1,11 @@
+id: sergei-prokofiev-ballad-of-an-unknown-boy-work
+work_group_id: sergei-prokofiev-ballad-of-an-unknown-boy-group
+composer_id: sergei-prokofiev
+title: Ballad of an Unknown Boy
+source:
+  file: docs/prokofiev.md
+  line: '168'
+catalogue:
+  op: Op. 93
+date_text: 1942–43
+category: Orchestral

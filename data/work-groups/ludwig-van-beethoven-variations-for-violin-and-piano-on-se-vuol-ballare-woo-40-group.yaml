@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-variations-for-violin-and-piano-on-se-vuol-ballare-woo-40-group"
+composer_id: "ludwig-van-beethoven"
+title: "Variations for violin and piano on \"Se vuol ballare\""
+source:
+  file: "docs/beethoven.md"
+  line: "114"
+catalogue:
+  woo: "WoO 40"

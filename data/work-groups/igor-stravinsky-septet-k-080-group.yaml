@@ -1,0 +1,8 @@
+id: "igor-stravinsky-septet-k-080-group"
+composer_id: "igor-stravinsky"
+title: "Septet"
+source:
+  file: "docs/stravinsky.md"
+  line: "145"
+catalogue:
+  k: "K 080"

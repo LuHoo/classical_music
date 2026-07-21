@@ -1,0 +1,13 @@
+id: "johann-sebastian-bach-concerto-for-2-violins-and-orchestra-double-concerto-in-d-min-work-shunske-sato-zefira-valova-il-pomo-d-oro-zef"
+work_id: "johann-sebastian-bach-concerto-for-2-violins-and-orchestra-double-concerto-in-d-min-work"
+source:
+  file: "docs/bachJS.md"
+  line: "16"
+recommendation:
+  source: "legacy_tidal_link"
+  status: "accepted"
+links:
+  - platform: "tidal"
+    url: "http://www.tidal.com/track/95609833"
+performers:
+  - name: "Shunske Sato, Zefira Valova, Il Pomo d'Oro, Zefira Valova"

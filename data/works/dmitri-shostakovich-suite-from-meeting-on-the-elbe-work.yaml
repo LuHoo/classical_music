@@ -1,0 +1,11 @@
+id: dmitri-shostakovich-suite-from-meeting-on-the-elbe-work
+work_group_id: dmitri-shostakovich-suite-from-meeting-on-the-elbe-group
+composer_id: dmitri-shostakovich
+title: Suite from Meeting on the Elbe
+source:
+  file: docs/shostakovich.md
+  line: '98'
+catalogue:
+  op: Op. 80a
+date_text: '1948'
+category: Orchestral
