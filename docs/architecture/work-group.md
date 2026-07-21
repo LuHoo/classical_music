@@ -68,7 +68,10 @@ Groups.
 Examples include:
 
 - piano versus harpsichord;
+- organ versus harpsichord;
 - historical versus modern instruments;
+- wind arrangement or chamber scoring when the recommendation is still for the
+  same Work rather than for an independently recognised arrangement;
 - different ensemble sizes when the artistic Work is otherwise the same;
 - different conductors;
 - different soloists;
@@ -95,6 +98,13 @@ Work Group
 The Work remains the same.
 
 Only the recommended Performances differ.
+
+Composite suites require extra care.
+
+If a suite draws movements or numbers from several different source Works, it
+does not automatically belong to the Work Group of any one source Work. It may
+need its own Work Group, with relationships to the source Works recorded on the
+Works when that relationship vocabulary is available.
 
 ---
 

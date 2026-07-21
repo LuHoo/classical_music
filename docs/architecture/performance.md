@@ -30,6 +30,27 @@ A Tidal album may contain several Works. Each accepted interpretation of a Work 
 
 A canonical Performance must never contain multiple `work_id` values and must never point only to a Work Group.
 
+### Unknown version assignment
+
+A Performance may be canonical even when the exact version, completion or
+edition of the recording is unknown, provided that the general Work identity is
+clear.
+
+In that case the Performance should refer to the general Work within the Work
+Group and record the uncertainty explicitly, for example:
+
+```yaml
+work_id: mozart-mass-in-c-minor-k427
+version_assignment: unspecified
+notes: >
+  Recording metadata does not identify a specific completion/version.
+```
+
+This fallback must not be used when the ambiguity could point to a different
+Work, such as an arrangement instead of the original, a reconstruction instead
+of a fragment, or a completion whose identity materially changes the
+recommendation category.
+
 ## Curatorial boundary
 
 A Performance enters canonical data only after the curator has listened to it and judged it good enough to recommend.
@@ -72,6 +93,23 @@ Typical indicators include:
 - a materially different recorded interpretation of the same Work.
 
 When identity remains uncertain, the repository should report the case for review rather than silently creating a duplicate.
+
+## Instrumentation and Performance Profiles
+
+Differences in performed instrumentation usually belong to the Performance, not
+to Work identity.
+
+Examples include:
+
+- piano, harpsichord or organ performances of the same keyboard concerto;
+- wind or chamber scoring used as a practical performance arrangement;
+- historical versus modern instruments;
+- chamber-sized versus larger ensemble performance, when the underlying Work is
+  otherwise the same.
+
+Use a performance profile only when the distinction matters for comparison or
+public recommendation. Do not create separate Works merely to preserve these
+performance distinctions.
 
 ## Performers
 

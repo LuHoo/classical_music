@@ -154,16 +154,34 @@ MusicBrainz review is required before closing migration questions about:
 
 The absence of a clear MusicBrainz match does not block migration by itself, but
 it must be recorded in the GitHub Issue or review artefact for that item.
-- checking whether a claimed arrangement, revision or derived Work is modelled
-  as a distinct Work elsewhere.
 
 MusicBrainz should not be used to reintroduce canonical Recording or Release
 entities into this repository. Recording and Release evidence may enrich
 Performance candidates, provenance and external links, but the canonical model
 remains Person, Work Group, Work and Performance.
 
-Authority review must not promote a Performance candidate to canonical data when
-the specific Work version of the recording remains unknown.
+Authority review should distinguish unknown version from wrong Work.
+
+When the source and recording metadata do not identify a specific version,
+completion or edition, migration may attach the Performance to a general Work in
+the relevant Work Group if:
+
+- the general composition identity is clear;
+- authority review does not indicate that the recording is actually an
+  arrangement, reconstruction, excerpt or different Work;
+- the ambiguity does not materially change the recommendation category.
+
+The promoted Performance should record the uncertainty explicitly, for example
+with `version_assignment: unspecified` or a concise note.
+
+Migration must keep the item as a candidate when the ambiguity could map the
+recording to the wrong Work. Examples include:
+
+- original Work versus arrangement;
+- incomplete fragment versus reconstruction;
+- materially different completion or realisation;
+- excerpt or suite versus complete parent Work;
+- multiple possible Works in the same source line.
 
 ## Source units
 
@@ -291,7 +309,8 @@ Migration should resolve or create a Work candidate using:
 - title;
 - catalogue number;
 - version or revision label;
-- arrangement, orchestration, completion or suite information;
+- arrangement, orchestration, completion or suite information when it indicates
+  an independent artistic Work;
 - aliases;
 - external identifiers where verified;
 - local editorial context.
@@ -300,6 +319,17 @@ Composer revisions are separate Works within the same Work Group.
 
 Different performers, instruments used in performance, labels, releases,
 remasters, albums or Tidal links do not create new Works.
+
+Instrumental or practical performance arrangements should normally remain
+Performance evidence, not Work evidence. For example, a Mozart opera excerpt
+played by winds or a Bach keyboard concerto played on piano, harpsichord or
+organ remains the same Work unless the source identifies an independently
+recognised arrangement that the collection should present as its own repertoire
+object.
+
+Composite suites should be reviewed before assigning a Work Group. When a suite
+draws material from several different original Works, migration should not place
+it automatically inside the Work Group of just one source Work.
 
 ### Gem markers
 
@@ -361,6 +391,12 @@ If a Work already has a public recommendation in the same comparison category,
 the new item remains a candidate until editorial comparison is complete.
 
 Migration must never replace an existing recommendation automatically.
+
+For Works with multiple versions, completions or editions, `resolved Work` may
+mean a general Work with `version_assignment: unspecified` when the composition
+identity is clear and the exact version is not identified. This is preferable to
+leaving ordinary recommendations permanently in candidate status solely because
+recording metadata omits edition details.
 
 ## Performance profiles
 
