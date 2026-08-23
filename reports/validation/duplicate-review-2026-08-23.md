@@ -3,10 +3,8 @@
 This report groups all potential duplicates with counterpart records.
 Automatic recommendation uses distinctive metadata, not numeric ID suffixes.
 
-Review instruction:
-- Set `verdict` to `merge` or `keep`.
-- If `merge`, set `keeper_if_merge` to the surviving entity_id.
-- Add one-line rationale.
+Only Manual Review sections require curator input.
+Auto-merge sections are execution lists.
 
 ## DUP-002 Work Group Duplicates
 
@@ -727,33 +725,13 @@ Manual review clusters: 15
 ## DUP-003 Work Duplicates
 
 Clusters: 38
+Auto-merge clusters: 9
 Manual review clusters: 29
-Merge-candidate clusters: 9
 
-1. duplicate key: composer=anton-bruckner | title=overture in g minor
-   auto_recommendation: keep-work-review-group-merge
-   suggested_keeper: anton-bruckner-overture-in-g-minor-work
-   counterparts:
-   - [1] entity_id: anton-bruckner-overture-in-g-minor-2-work
-     file: data/works/anton-bruckner-overture-in-g-minor-2-work.yaml
-     title: Overture in G minor
-     work_group_id: anton-bruckner-overture-in-g-minor-2-group
-     catalogue: wab:WAB 98
-     date_text: 1863 version, modified coda at bars 233–288
-     source_line: 18
-   - [2] entity_id: anton-bruckner-overture-in-g-minor-work
-     file: data/works/anton-bruckner-overture-in-g-minor-work.yaml
-     title: Overture in G minor
-     work_group_id: anton-bruckner-overture-in-g-minor-group
-     catalogue: wab:WAB 98
-     date_text: 1862 version
-     source_line: 16
-   verdict: [merge|keep]
-   keeper_if_merge: [entity_id]
-   rationale:
+### Auto-merge (No Manual Review Needed)
 
-2. duplicate key: composer=anton-bruckner | title=symphony no. 1 in c minor "das kecke beserl"
-   auto_recommendation: merge-candidate
+1. duplicate key: composer=anton-bruckner | title=symphony no. 1 in c minor "das kecke beserl"
+   auto_recommendation: auto-merge
    suggested_keeper: anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-work
    counterparts:
    - [1] entity_id: anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-2-work
@@ -777,12 +755,10 @@ Merge-candidate clusters: 9
      catalogue: wab:WAB 101
      date_text: 1865, first concept Adagio & Scherzo
      source_line: 24
-   verdict: [merge|keep]
-   keeper_if_merge: [entity_id]
-   rationale:
+   action: auto-merge
 
-3. duplicate key: composer=anton-bruckner | title=symphony no. 2 in c minor
-   auto_recommendation: merge-candidate
+2. duplicate key: composer=anton-bruckner | title=symphony no. 2 in c minor
+   auto_recommendation: auto-merge
    suggested_keeper: anton-bruckner-symphony-no-2-in-c-minor-work
    counterparts:
    - [1] entity_id: anton-bruckner-symphony-no-2-in-c-minor-2-work
@@ -799,12 +775,10 @@ Merge-candidate clusters: 9
      catalogue: wab:WAB 102
      date_text: 1872 version with Scherzo second and Adagio third, revised in 1873 and 1876
      source_line: 30
-   verdict: [merge|keep]
-   keeper_if_merge: [entity_id]
-   rationale:
+   action: auto-merge
 
-4. duplicate key: composer=anton-bruckner | title=symphony no. 3 in d minor "wagner symphony"
-   auto_recommendation: merge-candidate
+3. duplicate key: composer=anton-bruckner | title=symphony no. 3 in d minor "wagner symphony"
+   auto_recommendation: auto-merge
    suggested_keeper: anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-work
    counterparts:
    - [1] entity_id: anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-2-work
@@ -828,12 +802,10 @@ Merge-candidate clusters: 9
      catalogue: wab:WAB 103
      date_text: 1873 version, revised in 1874
      source_line: 34
-   verdict: [merge|keep]
-   keeper_if_merge: [entity_id]
-   rationale:
+   action: auto-merge
 
-5. duplicate key: composer=anton-bruckner | title=symphony no. 4 in e♭ major "die romantische"
-   auto_recommendation: merge-candidate
+4. duplicate key: composer=anton-bruckner | title=symphony no. 4 in e♭ major "die romantische"
+   auto_recommendation: auto-merge
    suggested_keeper: anton-bruckner-symphony-no-4-in-eb-major-die-romantische-work
    counterparts:
    - [1] entity_id: anton-bruckner-symphony-no-4-in-eb-major-die-romantische-2-work
@@ -864,12 +836,10 @@ Merge-candidate clusters: 9
      catalogue: wab:WAB 104
      date_text: 1874–1876 version
      source_line: 40
-   verdict: [merge|keep]
-   keeper_if_merge: [entity_id]
-   rationale:
+   action: auto-merge
 
-6. duplicate key: composer=anton-bruckner | title=symphony no. 5 in b♭ major
-   auto_recommendation: merge-candidate
+5. duplicate key: composer=anton-bruckner | title=symphony no. 5 in b♭ major
+   auto_recommendation: auto-merge
    suggested_keeper: anton-bruckner-symphony-no-5-in-bb-major-work
    counterparts:
    - [1] entity_id: anton-bruckner-symphony-no-5-in-bb-major-2-work
@@ -886,12 +856,10 @@ Merge-candidate clusters: 9
      catalogue: wab:WAB 105
      date_text: 1876 first concept
      source_line: 48
-   verdict: [merge|keep]
-   keeper_if_merge: [entity_id]
-   rationale:
+   action: auto-merge
 
-7. duplicate key: composer=anton-bruckner | title=symphony no. 7 in e major
-   auto_recommendation: merge-candidate
+6. duplicate key: composer=anton-bruckner | title=symphony no. 7 in e major
+   auto_recommendation: auto-merge
    suggested_keeper: anton-bruckner-symphony-no-7-in-e-major-work
    counterparts:
    - [1] entity_id: anton-bruckner-symphony-no-7-in-e-major-2-work
@@ -908,12 +876,10 @@ Merge-candidate clusters: 9
      catalogue: wab:WAB 107
      date_text: 1883 first concept
      source_line: 54
-   verdict: [merge|keep]
-   keeper_if_merge: [entity_id]
-   rationale:
+   action: auto-merge
 
-8. duplicate key: composer=anton-bruckner | title=symphony no. 8 in c minor "die apokalyptische"
-   auto_recommendation: merge-candidate
+7. duplicate key: composer=anton-bruckner | title=symphony no. 8 in c minor "die apokalyptische"
+   auto_recommendation: auto-merge
    suggested_keeper: anton-bruckner-symphony-no-8-in-c-minor-die-apokalyptische-work
    counterparts:
    - [1] entity_id: anton-bruckner-symphony-no-8-in-c-minor-die-apokalyptische-2-work
@@ -937,11 +903,73 @@ Merge-candidate clusters: 9
      catalogue: wab:WAB 108
      date_text: 1887 version
      source_line: 58
+   action: auto-merge
+
+8. duplicate key: composer=igor-stravinsky | title=petrushka
+   auto_recommendation: auto-merge
+   suggested_keeper: igor-stravinsky-petrushka-k-012-1946-revision-work
+   counterparts:
+   - [1] entity_id: igor-stravinsky-petrushka-k-012-1946-revision-work
+     file: data/works/igor-stravinsky-petrushka-k-012-1946-revision-work.yaml
+     title: Petrushka
+     work_group_id: igor-stravinsky-petrushka-k-012-group
+     catalogue: k:K 012
+     date_text: 1910–1911; revised 1946, revised publication 1948
+     source_line: 33
+   - [2] entity_id: igor-stravinsky-petrushka-k-012-work
+     file: data/works/igor-stravinsky-petrushka-k-012-work.yaml
+     title: Petrushka
+     work_group_id: igor-stravinsky-petrushka-k-012-group
+     catalogue: k:K 012
+     date_text: 01/2001
+     source_line: 33
+   action: auto-merge
+
+9. duplicate key: composer=paul-hindemith | title=hérodiade
+   auto_recommendation: auto-merge
+   suggested_keeper: paul-hindemith-herodiade-work
+   counterparts:
+   - [1] entity_id: paul-hindemith-herodiade-work-2
+     file: data/works/paul-hindemith-herodiade-work-2.yaml
+     title: Hérodiade
+     work_group_id: paul-hindemith-herodiade-group
+     catalogue: 
+     date_text: 1944
+     source_line: 53
+   - [2] entity_id: paul-hindemith-herodiade-work
+     file: data/works/paul-hindemith-herodiade-work.yaml
+     title: Hérodiade
+     work_group_id: paul-hindemith-herodiade-group
+     catalogue: 
+     date_text: 1944
+     source_line: 51
+   action: auto-merge
+
+### Manual Review
+
+1. duplicate key: composer=anton-bruckner | title=overture in g minor
+   auto_recommendation: keep-work-review-group-merge
+   suggested_keeper: anton-bruckner-overture-in-g-minor-work
+   counterparts:
+   - [1] entity_id: anton-bruckner-overture-in-g-minor-2-work
+     file: data/works/anton-bruckner-overture-in-g-minor-2-work.yaml
+     title: Overture in G minor
+     work_group_id: anton-bruckner-overture-in-g-minor-2-group
+     catalogue: wab:WAB 98
+     date_text: 1863 version, modified coda at bars 233–288
+     source_line: 18
+   - [2] entity_id: anton-bruckner-overture-in-g-minor-work
+     file: data/works/anton-bruckner-overture-in-g-minor-work.yaml
+     title: Overture in G minor
+     work_group_id: anton-bruckner-overture-in-g-minor-group
+     catalogue: wab:WAB 98
+     date_text: 1862 version
+     source_line: 16
    verdict: [merge|keep]
    keeper_if_merge: [entity_id]
    rationale:
 
-9. duplicate key: composer=anton-bruckner | title=tantum ergo
+2. duplicate key: composer=anton-bruckner | title=tantum ergo
    auto_recommendation: manual-review
    suggested_keeper: anton-bruckner-tantum-ergo-work
    counterparts:
@@ -970,7 +998,7 @@ Merge-candidate clusters: 9
    keeper_if_merge: [entity_id]
    rationale:
 
-10. duplicate key: composer=dmitri-shostakovich | title=suite from hamlet
+3. duplicate key: composer=dmitri-shostakovich | title=suite from hamlet
    auto_recommendation: manual-review
    suggested_keeper: dmitri-shostakovich-suite-from-hamlet-work
    counterparts:
@@ -992,7 +1020,7 @@ Merge-candidate clusters: 9
    keeper_if_merge: [entity_id]
    rationale:
 
-11. duplicate key: composer=igor-stravinsky | title=circus polka
+4. duplicate key: composer=igor-stravinsky | title=circus polka
    auto_recommendation: manual-review
    suggested_keeper: igor-stravinsky-circus-polka-k-064-work
    counterparts:
@@ -1014,7 +1042,7 @@ Merge-candidate clusters: 9
    keeper_if_merge: [entity_id]
    rationale:
 
-12. duplicate key: composer=igor-stravinsky | title=four russian peasant songs
+5. duplicate key: composer=igor-stravinsky | title=four russian peasant songs
    auto_recommendation: manual-review
    suggested_keeper: igor-stravinsky-four-russian-peasant-songs-k-020a-work
    counterparts:
@@ -1036,7 +1064,7 @@ Merge-candidate clusters: 9
    keeper_if_merge: [entity_id]
    rationale:
 
-13. duplicate key: composer=igor-stravinsky | title=four russian songs
+6. duplicate key: composer=igor-stravinsky | title=four russian songs
    auto_recommendation: manual-review
    suggested_keeper: igor-stravinsky-four-russian-songs-k-030-work
    counterparts:
@@ -1058,7 +1086,7 @@ Merge-candidate clusters: 9
    keeper_if_merge: [entity_id]
    rationale:
 
-14. duplicate key: composer=igor-stravinsky | title=les noces
+7. duplicate key: composer=igor-stravinsky | title=les noces
    auto_recommendation: manual-review
    suggested_keeper: igor-stravinsky-les-noces-k-024-work
    counterparts:
@@ -1080,7 +1108,7 @@ Merge-candidate clusters: 9
    keeper_if_merge: [entity_id]
    rationale:
 
-15. duplicate key: composer=igor-stravinsky | title=pastorale
+8. duplicate key: composer=igor-stravinsky | title=pastorale
    auto_recommendation: manual-review
    suggested_keeper: igor-stravinsky-pastorale-k-001a-work
    counterparts:
@@ -1109,29 +1137,7 @@ Merge-candidate clusters: 9
    keeper_if_merge: [entity_id]
    rationale:
 
-16. duplicate key: composer=igor-stravinsky | title=petrushka
-   auto_recommendation: merge-candidate
-   suggested_keeper: igor-stravinsky-petrushka-k-012-1946-revision-work
-   counterparts:
-   - [1] entity_id: igor-stravinsky-petrushka-k-012-1946-revision-work
-     file: data/works/igor-stravinsky-petrushka-k-012-1946-revision-work.yaml
-     title: Petrushka
-     work_group_id: igor-stravinsky-petrushka-k-012-group
-     catalogue: k:K 012
-     date_text: 1910–1911; revised 1946, revised publication 1948
-     source_line: 33
-   - [2] entity_id: igor-stravinsky-petrushka-k-012-work
-     file: data/works/igor-stravinsky-petrushka-k-012-work.yaml
-     title: Petrushka
-     work_group_id: igor-stravinsky-petrushka-k-012-group
-     catalogue: k:K 012
-     date_text: 01/2001
-     source_line: 33
-   verdict: [merge|keep]
-   keeper_if_merge: [entity_id]
-   rationale:
-
-17. duplicate key: composer=igor-stravinsky | title=septet
+9. duplicate key: composer=igor-stravinsky | title=septet
    auto_recommendation: manual-review
    suggested_keeper: igor-stravinsky-septet-k-080-work
    counterparts:
@@ -1153,7 +1159,7 @@ Merge-candidate clusters: 9
    keeper_if_merge: [entity_id]
    rationale:
 
-18. duplicate key: composer=igor-stravinsky | title=the flood
+10. duplicate key: composer=igor-stravinsky | title=the flood
    auto_recommendation: manual-review
    suggested_keeper: igor-stravinsky-the-flood-k-098-work
    counterparts:
@@ -1175,7 +1181,7 @@ Merge-candidate clusters: 9
    keeper_if_merge: [entity_id]
    rationale:
 
-19. duplicate key: composer=ludwig-van-beethoven | title=piano trio
+11. duplicate key: composer=ludwig-van-beethoven | title=piano trio
    auto_recommendation: manual-review
    suggested_keeper: ludwig-van-beethoven-piano-trio-op-36-work
    counterparts:
@@ -1204,7 +1210,7 @@ Merge-candidate clusters: 9
    keeper_if_merge: [entity_id]
    rationale:
 
-20. duplicate key: composer=ludwig-van-beethoven | title=piano trio in e♭ major
+12. duplicate key: composer=ludwig-van-beethoven | title=piano trio in e♭ major
    auto_recommendation: manual-review
    suggested_keeper: ludwig-van-beethoven-piano-trio-in-e-flat-major-op-38-work
    counterparts:
@@ -1226,7 +1232,7 @@ Merge-candidate clusters: 9
    keeper_if_merge: [entity_id]
    rationale:
 
-21. duplicate key: composer=ludwig-van-beethoven | title=symphony no. 1 in c major
+13. duplicate key: composer=ludwig-van-beethoven | title=symphony no. 1 in c major
    auto_recommendation: keep-work-review-group-merge
    suggested_keeper: ludwig-van-beethoven-symphony-no-1-in-c-major-op-21-work-2
    counterparts:
@@ -1248,7 +1254,7 @@ Merge-candidate clusters: 9
    keeper_if_merge: [entity_id]
    rationale:
 
-22. duplicate key: composer=ludwig-van-beethoven | title=symphony no. 2 in d major
+14. duplicate key: composer=ludwig-van-beethoven | title=symphony no. 2 in d major
    auto_recommendation: keep-work-review-group-merge
    suggested_keeper: ludwig-van-beethoven-symphony-no-2-in-d-major-op-36-work-2
    counterparts:
@@ -1270,7 +1276,7 @@ Merge-candidate clusters: 9
    keeper_if_merge: [entity_id]
    rationale:
 
-23. duplicate key: composer=ludwig-van-beethoven | title=symphony no. 3 "eroica" in e♭ major
+15. duplicate key: composer=ludwig-van-beethoven | title=symphony no. 3 "eroica" in e♭ major
    auto_recommendation: keep-work-review-group-merge
    suggested_keeper: ludwig-van-beethoven-symphony-no-3-eroica-in-e-flat-major-op-55-work-2
    counterparts:
@@ -1292,7 +1298,7 @@ Merge-candidate clusters: 9
    keeper_if_merge: [entity_id]
    rationale:
 
-24. duplicate key: composer=ludwig-van-beethoven | title=symphony no. 4 in b♭ major
+16. duplicate key: composer=ludwig-van-beethoven | title=symphony no. 4 in b♭ major
    auto_recommendation: keep-work-review-group-merge
    suggested_keeper: ludwig-van-beethoven-symphony-no-4-in-b-flat-major-op-60-work-2
    counterparts:
@@ -1314,7 +1320,7 @@ Merge-candidate clusters: 9
    keeper_if_merge: [entity_id]
    rationale:
 
-25. duplicate key: composer=ludwig-van-beethoven | title=symphony no. 6 "pastoral" in f major
+17. duplicate key: composer=ludwig-van-beethoven | title=symphony no. 6 "pastoral" in f major
    auto_recommendation: keep-work-review-group-merge
    suggested_keeper: ludwig-van-beethoven-symphony-no-6-pastoral-in-f-major-op-68-work-2
    counterparts:
@@ -1336,7 +1342,7 @@ Merge-candidate clusters: 9
    keeper_if_merge: [entity_id]
    rationale:
 
-26. duplicate key: composer=ludwig-van-beethoven | title=symphony no. 7 in a major
+18. duplicate key: composer=ludwig-van-beethoven | title=symphony no. 7 in a major
    auto_recommendation: keep-work-review-group-merge
    suggested_keeper: ludwig-van-beethoven-symphony-no-7-in-a-major-op-92-work-2
    counterparts:
@@ -1365,7 +1371,7 @@ Merge-candidate clusters: 9
    keeper_if_merge: [entity_id]
    rationale:
 
-27. duplicate key: composer=ludwig-van-beethoven | title=symphony no. 8 in f major
+19. duplicate key: composer=ludwig-van-beethoven | title=symphony no. 8 in f major
    auto_recommendation: keep-work-review-group-merge
    suggested_keeper: ludwig-van-beethoven-symphony-no-8-in-f-major-op-93-work-2
    counterparts:
@@ -1387,7 +1393,7 @@ Merge-candidate clusters: 9
    keeper_if_merge: [entity_id]
    rationale:
 
-28. duplicate key: composer=paul-hindemith | title=cello concerto
+20. duplicate key: composer=paul-hindemith | title=cello concerto
    auto_recommendation: keep-work-review-group-merge
    suggested_keeper: paul-hindemith-cello-concerto-work
    counterparts:
@@ -1409,7 +1415,7 @@ Merge-candidate clusters: 9
    keeper_if_merge: [entity_id]
    rationale:
 
-29. duplicate key: composer=paul-hindemith | title=concerto
+21. duplicate key: composer=paul-hindemith | title=concerto
    auto_recommendation: keep-work-review-group-merge
    suggested_keeper: paul-hindemith-concerto-work
    counterparts:
@@ -1431,7 +1437,7 @@ Merge-candidate clusters: 9
    keeper_if_merge: [entity_id]
    rationale:
 
-30. duplicate key: composer=paul-hindemith | title=eight pieces
+22. duplicate key: composer=paul-hindemith | title=eight pieces
    auto_recommendation: keep-work-review-group-merge
    suggested_keeper: paul-hindemith-eight-pieces-work
    counterparts:
@@ -1453,7 +1459,7 @@ Merge-candidate clusters: 9
    keeper_if_merge: [entity_id]
    rationale:
 
-31. duplicate key: composer=paul-hindemith | title=hin und zurück
+23. duplicate key: composer=paul-hindemith | title=hin und zurück
    auto_recommendation: keep-work-review-group-merge
    suggested_keeper: paul-hindemith-hin-und-zuruck-work
    counterparts:
@@ -1475,29 +1481,7 @@ Merge-candidate clusters: 9
    keeper_if_merge: [entity_id]
    rationale:
 
-32. duplicate key: composer=paul-hindemith | title=hérodiade
-   auto_recommendation: merge-candidate
-   suggested_keeper: paul-hindemith-herodiade-work
-   counterparts:
-   - [1] entity_id: paul-hindemith-herodiade-work-2
-     file: data/works/paul-hindemith-herodiade-work-2.yaml
-     title: Hérodiade
-     work_group_id: paul-hindemith-herodiade-group
-     catalogue: 
-     date_text: 1944
-     source_line: 53
-   - [2] entity_id: paul-hindemith-herodiade-work
-     file: data/works/paul-hindemith-herodiade-work.yaml
-     title: Hérodiade
-     work_group_id: paul-hindemith-herodiade-group
-     catalogue: 
-     date_text: 1944
-     source_line: 51
-   verdict: [merge|keep]
-   keeper_if_merge: [entity_id]
-   rationale:
-
-33. duplicate key: composer=paul-hindemith | title=konzertmusik
+24. duplicate key: composer=paul-hindemith | title=konzertmusik
    auto_recommendation: manual-review
    suggested_keeper: paul-hindemith-konzertmusik-op-48-work
    counterparts:
@@ -1519,7 +1503,7 @@ Merge-candidate clusters: 9
    keeper_if_merge: [entity_id]
    rationale:
 
-34. duplicate key: composer=paul-hindemith | title=nobilissima visione
+25. duplicate key: composer=paul-hindemith | title=nobilissima visione
    auto_recommendation: keep-work-review-group-merge
    suggested_keeper: paul-hindemith-nobilissima-visione-work
    counterparts:
@@ -1541,7 +1525,7 @@ Merge-candidate clusters: 9
    keeper_if_merge: [entity_id]
    rationale:
 
-35. duplicate key: composer=paul-hindemith | title=sonata
+26. duplicate key: composer=paul-hindemith | title=sonata
    auto_recommendation: keep-work-review-group-merge
    suggested_keeper: paul-hindemith-sonata-work
    counterparts:
@@ -1640,7 +1624,7 @@ Merge-candidate clusters: 9
    keeper_if_merge: [entity_id]
    rationale:
 
-36. duplicate key: composer=paul-hindemith | title=wir bauen eine stadt
+27. duplicate key: composer=paul-hindemith | title=wir bauen eine stadt
    auto_recommendation: keep-work-review-group-merge
    suggested_keeper: paul-hindemith-wir-bauen-eine-stadt-work
    counterparts:
@@ -1662,7 +1646,7 @@ Merge-candidate clusters: 9
    keeper_if_merge: [entity_id]
    rationale:
 
-37. duplicate key: composer=sergei-prokofiev | title=alexander nevsky
+28. duplicate key: composer=sergei-prokofiev | title=alexander nevsky
    auto_recommendation: keep-work-review-group-merge
    suggested_keeper: sergei-prokofiev-alexander-nevsky-work
    counterparts:
@@ -1684,7 +1668,7 @@ Merge-candidate clusters: 9
    keeper_if_merge: [entity_id]
    rationale:
 
-38. duplicate key: composer=sergei-prokofiev | title=american overture
+29. duplicate key: composer=sergei-prokofiev | title=american overture
    auto_recommendation: manual-review
    suggested_keeper: sergei-prokofiev-american-overture-work
    counterparts:

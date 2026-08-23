@@ -138,7 +138,7 @@ def build_work_clusters(root: Path) -> list[dict[str, Any]]:
         if len(group_ids) > 1 and len(catalogues) <= 1:
             recommendation = "keep-work-review-group-merge"
         elif len(group_ids) == 1 and len(catalogues) <= 1:
-            recommendation = "merge-candidate"
+            recommendation = "auto-merge"
         else:
             recommendation = "manual-review"
 
@@ -168,10 +168,8 @@ def write_report(root: Path, output_path: Path) -> None:
     lines.append("This report groups all potential duplicates with counterpart records.")
     lines.append("Automatic recommendation uses distinctive metadata, not numeric ID suffixes.")
     lines.append("")
-    lines.append("Review instruction:")
-    lines.append("- Set `verdict` to `merge` or `keep`.")
-    lines.append("- If `merge`, set `keeper_if_merge` to the surviving entity_id.")
-    lines.append("- Add one-line rationale.")
+    lines.append("Only Manual Review sections require curator input.")
+    lines.append("Auto-merge sections are execution lists.")
     lines.append("")
 
     auto_wg = [cluster for cluster in wg_clusters if not cluster["review_required"]]
@@ -224,18 +222,40 @@ def write_report(root: Path, output_path: Path) -> None:
         lines.append("   rationale:")
         lines.append("")
 
+    auto_w = [cluster for cluster in w_clusters if not cluster["review_required"]]
+    manual_w = [cluster for cluster in w_clusters if cluster["review_required"]]
+
     lines.append("## DUP-003 Work Duplicates")
     lines.append("")
     lines.append(f"Clusters: {len(w_clusters)}")
-    lines.append(
-        f"Manual review clusters: {sum(1 for c in w_clusters if c['review_required'])}"
-    )
-    lines.append(
-        f"Merge-candidate clusters: {sum(1 for c in w_clusters if not c['review_required'])}"
-    )
+    lines.append(f"Auto-merge clusters: {len(auto_w)}")
+    lines.append(f"Manual review clusters: {len(manual_w)}")
     lines.append("")
 
-    for index, cluster in enumerate(w_clusters, start=1):
+    lines.append("### Auto-merge (No Manual Review Needed)")
+    lines.append("")
+    for index, cluster in enumerate(auto_w, start=1):
+        lines.append(
+            f"{index}. duplicate key: composer={cluster['composer']} | title={cluster['title_norm']}"
+        )
+        lines.append(f"   auto_recommendation: {cluster['auto_recommendation']}")
+        lines.append(f"   suggested_keeper: {cluster['suggested_keeper']}")
+        lines.append("   counterparts:")
+        for item_idx, item in enumerate(cluster["items"], start=1):
+            file_rel = Path(item["file"]).relative_to(root).as_posix()
+            lines.append(f"   - [{item_idx}] entity_id: {item['id']}")
+            lines.append(f"     file: {file_rel}")
+            lines.append(f"     title: {item['title']}")
+            lines.append(f"     work_group_id: {item['work_group_id']}")
+            lines.append(f"     catalogue: {item['catalogue']}")
+            lines.append(f"     date_text: {item['date_text']}")
+            lines.append(f"     source_line: {item['source_line']}")
+        lines.append("   action: auto-merge")
+        lines.append("")
+
+    lines.append("### Manual Review")
+    lines.append("")
+    for index, cluster in enumerate(manual_w, start=1):
         lines.append(
             f"{index}. duplicate key: composer={cluster['composer']} | title={cluster['title_norm']}"
         )
