@@ -1,9 +1,13 @@
 id: dmitri-shostakovich-symphony-no-10-in-e-minor-work-boston-so-andris-nelsons
 work_id: dmitri-shostakovich-symphony-no-10-in-e-minor-work
-artists:
-- Boston SO, Andris Nelsons
 source:
   file: docs/shostakovich.md
   line: '108'
 links:
-  tidal: https://tidal.com/album/59709611/track/59709612
+  tidal:
+    url: https://tidal.com/album/59709611/track/59709612
+performers:
+- name: Boston SO
+  role: performer
+- name: Andris Nelsons
+  role: performer

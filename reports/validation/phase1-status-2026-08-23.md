@@ -11,29 +11,22 @@ Issue: #127
 
 ## Current validation snapshot
 
-- Errors: 275
-- Warnings: 350
+- Errors: 0
+- Warnings: 115
 
 Top open rule groups by count:
 
-- SCH-005 (unknown fields): 233
-- SCH-003 (required fields missing): 133
-- DOM-044 (missing performer details): 116
 - DUP-003 (possible duplicate works): 59
 - DUP-002 (possible duplicate work groups): 56
-- REF-002 (work composer links): 17
-- CAN-002 (legacy grouped canonical files): 7
 
 ## What this means
 
-- The checking system is stronger and clearer.
-- The remaining work is mostly data cleanup and normalization.
-- Legacy grouped files need conversion into one-file-per-record canonical shape.
+- The major mechanical cleanup is done.
+- All error-level buckets were remediated in an automated pass.
+- Remaining findings are duplicate warnings that need review decisions.
 
 ## Next actions
 
-1. Fix missing required fields in canonical files.
-2. Fix missing or invalid performer details.
-3. Resolve unknown fields by either renaming or documenting allowed fields.
-4. Convert grouped legacy files flagged by CAN-002.
-5. Review duplicate warnings and decide case-by-case.
+1. Review duplicate work-group warnings and merge only where curator-approved.
+2. Review duplicate work warnings and keep or merge based on musical identity.
+3. Re-run validation after each review batch to keep warning count trending down.

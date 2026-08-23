@@ -1,9 +1,14 @@
-id: dmitri-shostakovich-theme-and-variations-in-b-flat-major-work-orchestre-philharmonique-du-luxembourg-gustavo-gimeno
+id: 
+  dmitri-shostakovich-theme-and-variations-in-b-flat-major-work-orchestre-philharmonique-du-luxembourg-gustavo-gimeno
 work_id: dmitri-shostakovich-theme-and-variations-in-b-flat-major-work
-artists:
-- Orchestre Philharmonique du Luxembourg, Gustavo Gimeno
 source:
   file: docs/shostakovich.md
   line: '14'
 links:
-  tidal: https://tidal.com/browse/album/366812312
+  tidal:
+    url: https://tidal.com/browse/album/366812312
+performers:
+- name: Orchestre Philharmonique du Luxembourg
+  role: performer
+- name: Gustavo Gimeno
+  role: performer

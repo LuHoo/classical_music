@@ -3,11 +3,8 @@ work_id: "johann-sebastian-bach-fugue-in-g-minor-work"
 source:
   file: "docs/bachJS.md"
   line: "88"
-recommendation:
-  source: "legacy_tidal_link"
-  status: "accepted"
 links:
-  - platform: "tidal"
-    url: "http://www.tidal.com/track/2924759"
+- platform: "tidal"
+  url: "http://www.tidal.com/track/2924759"
 performers:
-  - name: "Los Angeles Philharmonic, Esa-Pekka Salonen"
+- name: "Los Angeles Philharmonic, Esa-Pekka Salonen"

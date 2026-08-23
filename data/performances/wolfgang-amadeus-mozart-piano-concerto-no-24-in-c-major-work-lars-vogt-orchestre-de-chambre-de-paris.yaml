@@ -1,9 +1,14 @@
-id: wolfgang-amadeus-mozart-piano-concerto-no-24-in-c-major-work-lars-vogt-orchestre-de-chambre-de-paris
+id: 
+  wolfgang-amadeus-mozart-piano-concerto-no-24-in-c-major-work-lars-vogt-orchestre-de-chambre-de-paris
 work_id: wolfgang-amadeus-mozart-piano-concerto-no-24-in-c-major-work
-artists:
-- Lars Vogt, Orchestre de Chambre de Paris
 source:
   file: docs/mozart.md
   line: '107'
 links:
-  tidal: http://www.tidal.com/track/307469361
+  tidal:
+    url: http://www.tidal.com/track/307469361
+performers:
+- name: Lars Vogt
+  role: performer
+- name: Orchestre de Chambre de Paris
+  role: performer

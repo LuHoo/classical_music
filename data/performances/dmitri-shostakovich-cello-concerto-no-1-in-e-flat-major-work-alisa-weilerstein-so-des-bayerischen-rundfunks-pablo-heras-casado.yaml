@@ -1,9 +1,16 @@
-id: dmitri-shostakovich-cello-concerto-no-1-in-e-flat-major-work-alisa-weilerstein-so-des-bayerischen-rundfunks-pablo-heras-casado
+id: 
+  dmitri-shostakovich-cello-concerto-no-1-in-e-flat-major-work-alisa-weilerstein-so-des-bayerischen-rundfunks-pablo-heras-casado
 work_id: dmitri-shostakovich-cello-concerto-no-1-in-e-flat-major-work
-artists:
-- Alisa Weilerstein, SO des Bayerischen Rundfunks, Pablo Heras-Casado
 source:
   file: docs/shostakovich.md
   line: '126'
 links:
-  tidal: http://www.tidal.com/track/77697909
+  tidal:
+    url: http://www.tidal.com/track/77697909
+performers:
+- name: Alisa Weilerstein
+  role: performer
+- name: SO des Bayerischen Rundfunks
+  role: performer
+- name: Pablo Heras-Casado
+  role: performer

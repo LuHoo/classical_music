@@ -1,20 +1,15 @@
 id: berlioz-op3
 composer_id: hector-berlioz
-canonical_title: Grande Ouverture des franc-juges
-localized_titles:
-  fr: Grande Ouverture des franc-juges
-  en: Overture to Les francs-juges
-  nl: Ouverture Les francs-juges
 catalogue:
   opus: Op. 3
 aliases:
-  - Les francs-juges
-  - Grande Ouverture des Francs-Juges
-  - Grande ouverture des franc-juges, Op. 3
-  - Overture to Les francs-juges
-  - Op. 3
-authorities:
-  musicbrainz_work_id:
-  wikidata:
+- Les francs-juges
+- Grande Ouverture des Francs-Juges
+- Grande ouverture des franc-juges, Op. 3
+- Overture to Les francs-juges
+- Op. 3
+- Ouverture Les francs-juges
 notes: >-
   Modelled as the overture entry currently used in the Berlioz collection page.
+title: Grande Ouverture des franc-juges
+work_group_id: berlioz-op3-group

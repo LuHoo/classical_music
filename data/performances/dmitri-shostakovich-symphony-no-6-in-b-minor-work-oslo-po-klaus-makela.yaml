@@ -1,9 +1,13 @@
 id: dmitri-shostakovich-symphony-no-6-in-b-minor-work-oslo-po-klaus-makela
 work_id: dmitri-shostakovich-symphony-no-6-in-b-minor-work
-artists:
-- Oslo PO, Klaus Mäkelä
 source:
   file: docs/shostakovich.md
   line: '76'
 links:
-  tidal: http://www.tidal.com/track/379721948
+  tidal:
+    url: http://www.tidal.com/track/379721948
+performers:
+- name: Oslo PO
+  role: performer
+- name: Klaus Mäkelä
+  role: performer

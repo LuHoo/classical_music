@@ -1,9 +1,19 @@
-id: wolfgang-amadeus-mozart-piano-concerto-no-10-for-2-pianos-in-e-major-work-mari-kodama-momo-kodama-orchestre-de-la-suisse-romande-kent-nagano
-work_id: wolfgang-amadeus-mozart-piano-concerto-no-10-for-2-pianos-in-e-major-work
-artists:
-- Mari Kodama, Momo Kodama, Orchestre de la Suisse Romande, Kent Nagano
+id: 
+  wolfgang-amadeus-mozart-piano-concerto-no-10-for-2-pianos-in-e-major-work-mari-kodama-momo-kodama-orchestre-de-la-suisse-romande-kent-nagano
+work_id: 
+  wolfgang-amadeus-mozart-piano-concerto-no-10-for-2-pianos-in-e-major-work
 source:
   file: docs/mozart.md
   line: '93'
 links:
-  tidal: http://www.tidal.com/track/362759026
+  tidal:
+    url: http://www.tidal.com/track/362759026
+performers:
+- name: Mari Kodama
+  role: performer
+- name: Momo Kodama
+  role: performer
+- name: Orchestre de la Suisse Romande
+  role: performer
+- name: Kent Nagano
+  role: performer

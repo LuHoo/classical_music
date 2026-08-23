@@ -3,11 +3,8 @@ work_id: "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-6-partit
 source:
   file: "docs/bachJS.md"
   line: "108"
-recommendation:
-  source: "legacy_tidal_link"
-  status: "accepted"
 links:
-  - platform: "tidal"
-    url: "http://www.tidal.com/track/203860872"
+- platform: "tidal"
+  url: "http://www.tidal.com/track/203860872"
 performers:
-  - name: "Leonidas Kavakos"
+- name: "Leonidas Kavakos"
