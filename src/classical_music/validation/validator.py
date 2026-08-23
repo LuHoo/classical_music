@@ -102,6 +102,7 @@ class Record:
     entity_type: str
     file_path: Path
     data: dict[str, Any]
+    display_file: str
 
 
 class DataValidator:
@@ -120,9 +121,10 @@ class DataValidator:
             if not entity_dir.exists():
                 continue
             for file_path in sorted(entity_dir.rglob("*.yaml")):
-                maybe_record = self._load_record(entity_type, file_path, report)
-                if maybe_record is not None:
-                    records.append(maybe_record)
+                loaded = self._load_yaml(entity_type, file_path, report)
+                if loaded is None:
+                    continue
+                records.extend(self._to_records(entity_type, file_path, loaded, report))
 
         self._validate_entity_shapes(records, report)
         self._validate_cross_references(records, report)
@@ -130,9 +132,9 @@ class DataValidator:
 
         return report
 
-    def _load_record(
+    def _load_yaml(
         self, entity_type: str, file_path: Path, report: ValidationReport
-    ) -> Record | None:
+    ) -> dict[str, Any] | None:
         relative = str(file_path.relative_to(self.repository_root))
         try:
             text = file_path.read_text(encoding="utf-8")
@@ -185,7 +187,50 @@ class DataValidator:
             )
             return None
 
-        return Record(entity_type=entity_type, file_path=file_path, data=loaded)
+        return loaded
+
+    def _to_records(
+        self,
+        entity_type: str,
+        file_path: Path,
+        loaded: dict[str, Any],
+        report: ValidationReport,
+    ) -> list[Record]:
+        container_keys = {
+            "persons": ["persons"],
+            "work-groups": ["work_groups", "work-groups"],
+            "works": ["works"],
+            "performances": ["performances"],
+        }
+
+        records: list[Record] = []
+        for container_key in container_keys.get(entity_type, []):
+            if container_key not in loaded:
+                continue
+            items = loaded.get(container_key)
+            if isinstance(items, list):
+                report.findings.append(
+                    ValidationFinding(
+                        rule_id=rules.RULE_CAN_WORKFLOW_NOT_CANONICAL,
+                        severity="error",
+                        file=str(file_path.relative_to(self.repository_root)),
+                        message=(
+                            f"Grouped '{container_key}' container is not canonical repository "
+                            "data. Split records into one-file-per-entity under data/."
+                        ),
+                        entity_type=entity_type,
+                    )
+                )
+                return []
+
+        return [
+            Record(
+                entity_type=entity_type,
+                file_path=file_path,
+                data=loaded,
+                display_file=str(file_path.relative_to(self.repository_root)),
+            )
+        ]
 
     def _validate_entity_shapes(
         self, records: list[Record], report: ValidationReport
@@ -193,7 +238,7 @@ class DataValidator:
         ids_by_entity: dict[str, dict[str, Record]] = defaultdict(dict)
 
         for record in records:
-            file_rel = str(record.file_path.relative_to(self.repository_root))
+            file_rel = record.display_file
             data = record.data
             required = REQUIRED_FIELDS[record.entity_type]
             allowed = ALLOWED_FIELDS[record.entity_type]
@@ -235,13 +280,16 @@ class DataValidator:
             self._validate_gramophone(record, report)
             self._validate_gem_rules(record, report)
             self._validate_recommendation_fields(record, report)
+            self._validate_empty_optional_fields(record, report)
+            self._validate_work_group_domain(record, report)
+            self._validate_work_domain(record, report)
 
             if record.entity_type == "performances":
                 self._validate_performers(record, report)
                 self._validate_performance_work_link_shape(record, report)
 
     def _validate_candidate_fields(self, record: Record, report: ValidationReport) -> None:
-        file_rel = str(record.file_path.relative_to(self.repository_root))
+        file_rel = record.display_file
         intersect = sorted(CANDIDATE_KEYS.intersection(record.data.keys()))
         for key_name in intersect:
             report.findings.append(
@@ -259,13 +307,34 @@ class DataValidator:
                 )
             )
 
+        workflow_keys = {
+            "candidate_searches",
+            "listening_queue",
+            "comparison_state",
+            "duplicate_evidence",
+        }
+        for key_name in sorted(workflow_keys.intersection(record.data.keys())):
+            report.findings.append(
+                ValidationFinding(
+                    rule_id=rules.RULE_CAN_WORKFLOW_NOT_CANONICAL,
+                    severity="error",
+                    file=file_rel,
+                    message=(
+                        f"Workflow field '{key_name}' must not be stored in canonical data."
+                    ),
+                    entity_type=record.entity_type,
+                    entity_id=str(record.data.get("id", "")) or None,
+                    field=key_name,
+                )
+            )
+
     def _validate_id(
         self,
         record: Record,
         ids_by_entity: dict[str, dict[str, Record]],
         report: ValidationReport,
     ) -> None:
-        file_rel = str(record.file_path.relative_to(self.repository_root))
+        file_rel = record.display_file
         identifier = record.data.get("id")
         if not isinstance(identifier, str) or not identifier:
             return
@@ -288,7 +357,7 @@ class DataValidator:
 
         seen = ids_by_entity[record.entity_type]
         if identifier in seen:
-            original = str(seen[identifier].file_path.relative_to(self.repository_root))
+            original = seen[identifier].display_file
             report.findings.append(
                 ValidationFinding(
                     rule_id=rules.RULE_IDN_UNIQUE_ID,
@@ -306,7 +375,7 @@ class DataValidator:
             seen[identifier] = record
 
     def _validate_urls(self, record: Record, report: ValidationReport) -> None:
-        file_rel = str(record.file_path.relative_to(self.repository_root))
+        file_rel = record.display_file
 
         def walk(node: Any, path_parts: list[str]) -> None:
             if isinstance(node, dict):
@@ -338,6 +407,20 @@ class DataValidator:
                         field=".".join(path_parts),
                     )
                 )
+                return
+
+            if "tidal.com" in parsed.netloc and record.entity_type != "performances":
+                report.findings.append(
+                    ValidationFinding(
+                        rule_id=rules.RULE_EXT_TIDAL_ON_PERFORMANCE,
+                        severity="error",
+                        file=file_rel,
+                        message="Tidal URLs are only allowed on Performance links.",
+                        entity_type=record.entity_type,
+                        entity_id=str(record.data.get("id", "")) or None,
+                        field=".".join(path_parts),
+                    )
+                )
 
         walk(record.data, [])
 
@@ -355,7 +438,7 @@ class DataValidator:
         if issue is None:
             return
 
-        file_rel = str(record.file_path.relative_to(self.repository_root))
+        file_rel = record.display_file
         if not isinstance(issue, str) or not GRAMOPHONE_ISSUE_PATTERN.match(issue):
             report.findings.append(
                 ValidationFinding(
@@ -370,7 +453,7 @@ class DataValidator:
             )
 
     def _validate_gem_rules(self, record: Record, report: ValidationReport) -> None:
-        file_rel = str(record.file_path.relative_to(self.repository_root))
+        file_rel = record.display_file
         has_gem = "gem" in record.data
 
         if record.entity_type == "works":
@@ -392,7 +475,7 @@ class DataValidator:
     def _validate_recommendation_fields(
         self, record: Record, report: ValidationReport
     ) -> None:
-        file_rel = str(record.file_path.relative_to(self.repository_root))
+        file_rel = record.display_file
 
         if record.entity_type == "performances" and record.data.get("recommended") is True:
             report.findings.append(
@@ -421,7 +504,7 @@ class DataValidator:
             )
 
     def _validate_performers(self, record: Record, report: ValidationReport) -> None:
-        file_rel = str(record.file_path.relative_to(self.repository_root))
+        file_rel = record.display_file
         performers = record.data.get("performers")
 
         if not isinstance(performers, list) or len(performers) == 0:
@@ -486,7 +569,7 @@ class DataValidator:
     def _validate_performance_work_link_shape(
         self, record: Record, report: ValidationReport
     ) -> None:
-        file_rel = str(record.file_path.relative_to(self.repository_root))
+        file_rel = record.display_file
         work_id = record.data.get("work_id")
         if isinstance(work_id, list):
             report.findings.append(
@@ -524,7 +607,7 @@ class DataValidator:
 
         for record in records:
             data = record.data
-            file_rel = str(record.file_path.relative_to(self.repository_root))
+            file_rel = record.display_file
             entity_id = str(data.get("id", "")) or None
 
             if record.entity_type == "work-groups":
@@ -573,6 +656,27 @@ class DataValidator:
                             field="work_group_id",
                         )
                     )
+
+                relationships = data.get("relationships")
+                if isinstance(relationships, list):
+                    for index, relationship in enumerate(relationships):
+                        if not isinstance(relationship, dict):
+                            continue
+                        related_work = relationship.get("work_id")
+                        if isinstance(related_work, str) and related_work not in works:
+                            report.findings.append(
+                                ValidationFinding(
+                                    rule_id=rules.RULE_REF_WORK_RELATIONSHIP_WORK,
+                                    severity="error",
+                                    file=file_rel,
+                                    message=(
+                                        "Work relationships must reference existing Works."
+                                    ),
+                                    entity_type=record.entity_type,
+                                    entity_id=entity_id,
+                                    field=f"relationships.{index}.work_id",
+                                )
+                            )
 
             if record.entity_type == "performances":
                 work_id = data.get("work_id")
@@ -729,12 +833,152 @@ class DataValidator:
             ValidationFinding(
                 rule_id=rule_id,
                 severity="warning",
-                file=str(record.file_path.relative_to(self.repository_root)),
+                file=record.display_file,
                 message=message,
                 entity_type=record.entity_type,
                 entity_id=str(record.data.get("id", "")) or None,
             )
         )
+
+    def _validate_empty_optional_fields(self, record: Record, report: ValidationReport) -> None:
+        file_rel = record.display_file
+        required = REQUIRED_FIELDS[record.entity_type]
+        for field_name, value in record.data.items():
+            if field_name in required:
+                continue
+            if value is None:
+                report.findings.append(
+                    ValidationFinding(
+                        rule_id=rules.RULE_SCH_EMPTY_OPTIONAL,
+                        severity="warning",
+                        file=file_rel,
+                        message=(
+                            f"Optional field '{field_name}' is empty and should be omitted."
+                        ),
+                        entity_type=record.entity_type,
+                        entity_id=str(record.data.get("id", "")) or None,
+                        field=field_name,
+                    )
+                )
+            elif isinstance(value, str) and value.strip() == "":
+                report.findings.append(
+                    ValidationFinding(
+                        rule_id=rules.RULE_SCH_EMPTY_OPTIONAL,
+                        severity="warning",
+                        file=file_rel,
+                        message=(
+                            f"Optional field '{field_name}' is empty and should be omitted."
+                        ),
+                        entity_type=record.entity_type,
+                        entity_id=str(record.data.get("id", "")) or None,
+                        field=field_name,
+                    )
+                )
+            elif isinstance(value, (list, dict)) and len(value) == 0:
+                report.findings.append(
+                    ValidationFinding(
+                        rule_id=rules.RULE_SCH_EMPTY_OPTIONAL,
+                        severity="warning",
+                        file=file_rel,
+                        message=(
+                            f"Optional field '{field_name}' is empty and should be omitted."
+                        ),
+                        entity_type=record.entity_type,
+                        entity_id=str(record.data.get("id", "")) or None,
+                        field=field_name,
+                    )
+                )
+
+    def _validate_work_group_domain(self, record: Record, report: ValidationReport) -> None:
+        if record.entity_type != "work-groups":
+            return
+
+        file_rel = record.display_file
+        entity_id = str(record.data.get("id", "")) or None
+
+        if "work_id" in record.data or "performers" in record.data:
+            report.findings.append(
+                ValidationFinding(
+                    rule_id=rules.RULE_DOM_WORK_GROUP_NON_PERFORMABLE,
+                    severity="error",
+                    file=file_rel,
+                    message="Work Group must be non-performable.",
+                    entity_type=record.entity_type,
+                    entity_id=entity_id,
+                )
+            )
+
+        if "performances" in record.data:
+            report.findings.append(
+                ValidationFinding(
+                    rule_id=rules.RULE_DOM_WORK_GROUP_NO_DIRECT_PERFORMANCES,
+                    severity="error",
+                    file=file_rel,
+                    message="Work Group must not have direct performances.",
+                    entity_type=record.entity_type,
+                    entity_id=entity_id,
+                    field="performances",
+                )
+            )
+
+        if "recommended" in record.data:
+            report.findings.append(
+                ValidationFinding(
+                    rule_id=rules.RULE_DOM_WORK_GROUP_NO_RECOMMENDATION,
+                    severity="error",
+                    file=file_rel,
+                    message="Work Group must not have recommendation status.",
+                    entity_type=record.entity_type,
+                    entity_id=entity_id,
+                    field="recommended",
+                )
+            )
+
+    def _validate_work_domain(self, record: Record, report: ValidationReport) -> None:
+        if record.entity_type != "works":
+            return
+
+        file_rel = record.display_file
+        entity_id = str(record.data.get("id", "")) or None
+
+        if "work_group_ids" in record.data:
+            report.findings.append(
+                ValidationFinding(
+                    rule_id=rules.RULE_DOM_WORK_NOT_MULTI_GROUP,
+                    severity="error",
+                    file=file_rel,
+                    message="Work must not belong to multiple Work Groups.",
+                    entity_type=record.entity_type,
+                    entity_id=entity_id,
+                    field="work_group_ids",
+                )
+            )
+
+        work_group_id = record.data.get("work_group_id")
+        if isinstance(work_group_id, list):
+            report.findings.append(
+                ValidationFinding(
+                    rule_id=rules.RULE_DOM_WORK_NOT_MULTI_GROUP,
+                    severity="error",
+                    file=file_rel,
+                    message="Work must not belong to multiple Work Groups.",
+                    entity_type=record.entity_type,
+                    entity_id=entity_id,
+                    field="work_group_id",
+                )
+            )
+        elif work_group_id is not None and not isinstance(work_group_id, str):
+            report.findings.append(
+                ValidationFinding(
+                    rule_id=rules.RULE_DOM_WORK_SINGLE_GROUP,
+                    severity="error",
+                    file=file_rel,
+                    message="Work must have exactly one work_group_id string.",
+                    entity_type=record.entity_type,
+                    entity_id=entity_id,
+                    field="work_group_id",
+                )
+            )
 
     def _normalize_title(self, title: str) -> str:
         collapsed = re.sub(r"\s+", " ", title).strip().lower()

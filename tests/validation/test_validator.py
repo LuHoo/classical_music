@@ -129,3 +129,63 @@ def test_invalid_url_and_gramophone_issue_are_errors(tmp_path: Path) -> None:
     report = DataValidator(tmp_path).run()
     assert any(f.rule_id == "SCH-006" for f in report.findings)
     assert any(f.rule_id == "SCH-007" for f in report.findings)
+
+
+def test_grouped_works_yaml_is_flagged_as_non_canonical(tmp_path: Path) -> None:
+    _write(tmp_path / "data/persons/lvb.yaml", "id: lvb\nname: Ludwig van Beethoven\n")
+    _write(
+        tmp_path / "data/work-groups/lvb-op67-group.yaml",
+        "id: lvb-op67-group\ncomposer_id: lvb\ntitle: Symphony No. 5\n",
+    )
+    _write(
+        tmp_path / "data/works/ludwig-van-beethoven/works.yaml",
+        (
+            "composer_id: lvb\n"
+            "works:\n"
+            "  - id: lvb-op67-work\n"
+            "    work_group_id: lvb-op67-group\n"
+            "    title: Symphony No. 5 in C minor\n"
+        ),
+    )
+
+    report = DataValidator(tmp_path).run()
+    assert any(f.rule_id == "CAN-002" for f in report.findings)
+
+
+def test_relationship_work_reference_and_work_group_domain_rules(tmp_path: Path) -> None:
+    _write(tmp_path / "data/persons/jsb.yaml", "id: jsb\nname: J. S. Bach\n")
+    _write(
+        tmp_path / "data/work-groups/bwv-1052.yaml",
+        (
+            "id: bwv-1052\n"
+            "composer_id: jsb\n"
+            "title: Keyboard Concerto BWV 1052\n"
+            "recommended: true\n"
+        ),
+    )
+    _write(
+        tmp_path / "data/works/bwv-1052-work.yaml",
+        (
+            "id: bwv-1052-work\n"
+            "work_group_id: bwv-1052\n"
+            "composer_id: jsb\n"
+            "title: Keyboard Concerto in D minor\n"
+            "relationships:\n"
+            "  - type: revision_of\n"
+            "    work_id: missing-work\n"
+        ),
+    )
+    _write(
+        tmp_path / "data/performances/bwv-1052-perf.yaml",
+        (
+            "id: bwv-1052-perf\n"
+            "work_id: bwv-1052-work\n"
+            "performers:\n"
+            "  - name: Il Pomo d'Oro\n"
+            "    role: orchestra\n"
+        ),
+    )
+
+    report = DataValidator(tmp_path).run()
+    assert any(f.rule_id == "DOM-003" for f in report.findings)
+    assert any(f.rule_id == "REF-006" for f in report.findings)
