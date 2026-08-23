@@ -1,9 +1,14 @@
-id: dmitri-shostakovich-music-to-the-play-king-lear-by-shakespeare-work-boston-so-andris-nelsons
+id: 
+  dmitri-shostakovich-music-to-the-play-king-lear-by-shakespeare-work-boston-so-andris-nelsons
 work_id: dmitri-shostakovich-music-to-the-play-king-lear-by-shakespeare-work
-artists:
-- Boston SO, Andris Nelsons
 source:
   file: docs/shostakovich.md
   line: '78'
 links:
-  tidal: http://www.tidal.com/track/104156169
+  tidal:
+    url: http://www.tidal.com/track/104156169
+performers:
+- name: Boston SO
+  role: performer
+- name: Andris Nelsons
+  role: performer

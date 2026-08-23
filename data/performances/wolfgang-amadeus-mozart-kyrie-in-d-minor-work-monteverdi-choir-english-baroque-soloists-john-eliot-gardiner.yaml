@@ -1,9 +1,16 @@
-id: wolfgang-amadeus-mozart-kyrie-in-d-minor-work-monteverdi-choir-english-baroque-soloists-john-eliot-gardiner
+id: 
+  wolfgang-amadeus-mozart-kyrie-in-d-minor-work-monteverdi-choir-english-baroque-soloists-john-eliot-gardiner
 work_id: wolfgang-amadeus-mozart-kyrie-in-d-minor-work
-artists:
-- Monteverdi Choir, English Baroque Soloists, John Eliot Gardiner
 source:
   file: docs/mozart.md
   line: '27'
 links:
-  tidal: http://www.tidal.com/track/4322243
+  tidal:
+    url: http://www.tidal.com/track/4322243
+performers:
+- name: Monteverdi Choir
+  role: performer
+- name: English Baroque Soloists
+  role: performer
+- name: John Eliot Gardiner
+  role: performer

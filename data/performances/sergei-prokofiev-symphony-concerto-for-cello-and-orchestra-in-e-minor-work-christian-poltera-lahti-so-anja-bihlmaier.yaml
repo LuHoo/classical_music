@@ -1,9 +1,17 @@
-id: sergei-prokofiev-symphony-concerto-for-cello-and-orchestra-in-e-minor-work-christian-poltera-lahti-so-anja-bihlmaier
-work_id: sergei-prokofiev-symphony-concerto-for-cello-and-orchestra-in-e-minor-work
-artists:
-- Christian Poltéra, Lahti SO, Anja Bihlmaier
+id: 
+  sergei-prokofiev-symphony-concerto-for-cello-and-orchestra-in-e-minor-work-christian-poltera-lahti-so-anja-bihlmaier
+work_id: 
+  sergei-prokofiev-symphony-concerto-for-cello-and-orchestra-in-e-minor-work
 source:
   file: docs/prokofiev.md
   line: '214'
 links:
-  tidal: https://tidal.com/album/364535071/
+  tidal:
+    url: https://tidal.com/album/364535071/
+performers:
+- name: Christian Poltéra
+  role: performer
+- name: Lahti SO
+  role: performer
+- name: Anja Bihlmaier
+  role: performer

@@ -1,9 +1,14 @@
-id: sergei-prokofiev-waltz-suite-work-royal-scottish-national-orchestra-neeme-jarvi
+id: 
+  sergei-prokofiev-waltz-suite-work-royal-scottish-national-orchestra-neeme-jarvi
 work_id: sergei-prokofiev-waltz-suite-work
-artists:
-- Royal Scottish National Orchestra, Neeme Järvi
 source:
   file: docs/prokofiev.md
   line: '188'
 links:
-  tidal: https://tidal.com/album/376251584
+  tidal:
+    url: https://tidal.com/album/376251584
+performers:
+- name: Royal Scottish National Orchestra
+  role: performer
+- name: Neeme Järvi
+  role: performer

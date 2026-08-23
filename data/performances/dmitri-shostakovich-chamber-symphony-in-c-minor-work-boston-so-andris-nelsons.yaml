@@ -1,9 +1,14 @@
-id: dmitri-shostakovich-chamber-symphony-in-c-minor-work-boston-so-andris-nelsons
+id: 
+  dmitri-shostakovich-chamber-symphony-in-c-minor-work-boston-so-andris-nelsons
 work_id: dmitri-shostakovich-chamber-symphony-in-c-minor-work
-artists:
-- Boston SO, Andris Nelsons
 source:
   file: docs/shostakovich.md
   line: '128'
 links:
-  tidal: https://tidal.com/album/188218275/track/188218278
+  tidal:
+    url: https://tidal.com/album/188218275/track/188218278
+performers:
+- name: Boston SO
+  role: performer
+- name: Andris Nelsons
+  role: performer

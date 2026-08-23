@@ -1,9 +1,13 @@
 id: dmitri-shostakovich-symphony-no-8-in-c-minor-work-boston-so-andris-nelsons
 work_id: dmitri-shostakovich-symphony-no-8-in-c-minor-work
-artists:
-- Boston SO, Andris Nelsons
 source:
   file: docs/shostakovich.md
   line: '88'
 links:
-  tidal: http://www.tidal.com/track/77611701
+  tidal:
+    url: http://www.tidal.com/track/77611701
+performers:
+- name: Boston SO
+  role: performer
+- name: Andris Nelsons
+  role: performer

@@ -33,7 +33,7 @@ def main(json_output: bool = typer.Option(False, "--json", help="Emit JSON repor
             "info_count": report.info_count,
             "findings": [finding.model_dump() for finding in report.findings],
         }
-        console.print(json.dumps(payload, indent=2))
+        print(json.dumps(payload, indent=2))
     else:
         table = Table(title="Canonical Data Validation")
         table.add_column("Severity", no_wrap=True)

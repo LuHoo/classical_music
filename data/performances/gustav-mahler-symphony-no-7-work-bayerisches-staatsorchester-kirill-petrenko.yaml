@@ -3,11 +3,8 @@ work_id: "gustav-mahler-symphony-no-7-work"
 source:
   file: "docs/mahler.md"
   line: "54"
-recommendation:
-  source: "legacy_tidal_link"
-  status: "accepted"
 links:
-  - platform: "tidal"
-    url: "http://www.tidal.com/track/282962326"
+- platform: "tidal"
+  url: "http://www.tidal.com/track/282962326"
 performers:
-  - name: "Bayerisches Staatsorchester, Kirill Petrenko"
+- name: "Bayerisches Staatsorchester, Kirill Petrenko"

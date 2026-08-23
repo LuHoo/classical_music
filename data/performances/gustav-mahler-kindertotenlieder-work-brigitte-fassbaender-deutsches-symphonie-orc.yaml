@@ -3,11 +3,8 @@ work_id: "gustav-mahler-kindertotenlieder-work"
 source:
   file: "docs/mahler.md"
   line: "48"
-recommendation:
-  source: "legacy_tidal_link"
-  status: "accepted"
 links:
-  - platform: "tidal"
-    url: "http://www.tidal.com/track/64136747"
+- platform: "tidal"
+  url: "http://www.tidal.com/track/64136747"
 performers:
-  - name: "Brigitte Fassbaender, Deutsches Symphonie-Orchester Berlin, Riccardo Chailly"
+- name: "Brigitte Fassbaender, Deutsches Symphonie-Orchester Berlin, Riccardo Chailly"
