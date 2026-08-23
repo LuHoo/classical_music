@@ -1,0 +1,86 @@
+name: Candidate Review
+about: Review a candidate performance before canonical acceptance
+title: "[Candidate Review] <composer> - <work>"
+labels:
+  - candidate-review
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template to review a candidate recommendation.
+        Candidates are non-canonical until explicitly accepted.
+
+  - type: input
+    id: source_file
+    attributes:
+      label: Source File
+      description: Markdown source file path
+      placeholder: docs/mozart.md
+    validations:
+      required: true
+
+  - type: input
+    id: source_line
+    attributes:
+      label: Source Line
+      description: Source line number or range
+      placeholder: "123"
+    validations:
+      required: true
+
+  - type: textarea
+    id: candidate_payload
+    attributes:
+      label: Candidate Record
+      description: Include candidate_work, performer_text, tidal_url, and optional MBIDs
+      placeholder: |
+        candidate_work: ...
+        performer_text: ...
+        tidal_url: ...
+        musicbrainz_recording_id: ...
+        musicbrainz_release_id: ...
+        review_reason: ...
+        status: open
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Cite Grove, composer sources, MusicBrainz, and optionally Wikipedia
+      placeholder: Summarize authoritative evidence
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: authority_review
+    attributes:
+      label: Authority Review
+      options:
+        - label: Grove or composer source checked
+        - label: MusicBrainz Work search checked
+        - label: MusicBrainz relationship review checked
+        - label: Recording/Release match checked
+        - label: Wikipedia fallback checked if needed
+
+  - type: dropdown
+    id: decision
+    attributes:
+      label: Decision
+      options:
+        - accepted
+        - rejected
+        - superseded
+        - needs_more_evidence
+    validations:
+      required: true
+
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Rationale
+      description: Explain why this decision was made
+      placeholder: Curator rationale
+    validations:
+      required: true
