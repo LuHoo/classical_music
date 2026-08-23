@@ -4,6 +4,7 @@ from __future__ import annotations
 from collections import defaultdict
 from pathlib import Path
 from typing import Any
+import re
 
 from ruamel.yaml import YAML
 
@@ -30,6 +31,20 @@ def compact_catalogue(value: Any) -> str:
     return ", ".join(parts)
 
 
+def normalize_id_for_duplicate_check(entity_id: str) -> str:
+    # Remove numeric duplicate suffixes like -2-group or -3-work for grouping/keeper logic.
+    normalized = re.sub(r"-\d+-(group|work)$", r"-\1", entity_id)
+    return normalized
+
+
+def choose_keeper(items: list[dict[str, Any]]) -> str:
+    # Prefer non-numbered canonical id if present, otherwise shortest stable id.
+    non_numbered = [item["id"] for item in items if normalize_id_for_duplicate_check(item["id"]) == item["id"]]
+    if non_numbered:
+        return sorted(non_numbered, key=lambda v: (len(v), v))[0]
+    return sorted((item["id"] for item in items), key=lambda v: (len(v), v))[0]
+
+
 def build_work_group_clusters(root: Path) -> list[dict[str, Any]]:
     groups: defaultdict[tuple[str, str], list[dict[str, Any]]] = defaultdict(list)
 
@@ -51,6 +66,7 @@ def build_work_group_clusters(root: Path) -> list[dict[str, Any]]:
                 "title": str(data.get("title") or ""),
                 "catalogue": compact_catalogue(data.get("catalogue")),
                 "source_line": str(source.get("line") or ""),
+                "source_file": str(source.get("file") or ""),
             }
         )
 
@@ -60,14 +76,23 @@ def build_work_group_clusters(root: Path) -> list[dict[str, Any]]:
             continue
 
         catalogues = {item["catalogue"] for item in items if item["catalogue"]}
-        merge_candidate = len(catalogues) <= 1
+
+        # Auto-merge when all non-source semantics match.
+        semantic_fingerprint = {
+            (item["title"].strip().lower(), item["catalogue"].strip().lower())
+            for item in items
+        }
+        can_auto_merge = len(semantic_fingerprint) == 1 and len(catalogues) <= 1
+        keeper = choose_keeper(items)
 
         clusters.append(
             {
                 "composer": composer,
                 "title_norm": title_norm,
                 "items": items,
-                "auto_recommendation": "merge-candidate" if merge_candidate else "manual-review",
+                "auto_recommendation": "auto-merge" if can_auto_merge else "manual-review",
+                "review_required": not can_auto_merge,
+                "suggested_keeper": keeper,
             }
         )
 
@@ -117,12 +142,16 @@ def build_work_clusters(root: Path) -> list[dict[str, Any]]:
         else:
             recommendation = "manual-review"
 
+        keeper = choose_keeper(items)
+
         clusters.append(
             {
                 "composer": composer,
                 "title_norm": title_norm,
                 "items": items,
                 "auto_recommendation": recommendation,
+                "review_required": recommendation in {"manual-review", "keep-work-review-group-merge"},
+                "suggested_keeper": keeper,
             }
         )
 
@@ -145,16 +174,43 @@ def write_report(root: Path, output_path: Path) -> None:
     lines.append("- Add one-line rationale.")
     lines.append("")
 
+    auto_wg = [cluster for cluster in wg_clusters if not cluster["review_required"]]
+    manual_wg = [cluster for cluster in wg_clusters if cluster["review_required"]]
+
     lines.append("## DUP-002 Work Group Duplicates")
     lines.append("")
     lines.append(f"Clusters: {len(wg_clusters)}")
+    lines.append(f"Auto-merge clusters: {len(auto_wg)}")
+    lines.append(f"Manual review clusters: {len(manual_wg)}")
     lines.append("")
 
-    for index, cluster in enumerate(wg_clusters, start=1):
+    lines.append("### Auto-merge (No Manual Review Needed)")
+    lines.append("")
+    for index, cluster in enumerate(auto_wg, start=1):
         lines.append(
             f"{index}. duplicate key: composer={cluster['composer']} | title={cluster['title_norm']}"
         )
         lines.append(f"   auto_recommendation: {cluster['auto_recommendation']}")
+        lines.append(f"   suggested_keeper: {cluster['suggested_keeper']}")
+        lines.append("   counterparts:")
+        for item_idx, item in enumerate(cluster["items"], start=1):
+            file_rel = Path(item["file"]).relative_to(root).as_posix()
+            lines.append(f"   - [{item_idx}] entity_id: {item['id']}")
+            lines.append(f"     file: {file_rel}")
+            lines.append(f"     title: {item['title']}")
+            lines.append(f"     catalogue: {item['catalogue']}")
+            lines.append(f"     source_line: {item['source_line']}")
+        lines.append("   action: auto-merge")
+        lines.append("")
+
+    lines.append("### Manual Review")
+    lines.append("")
+    for index, cluster in enumerate(manual_wg, start=1):
+        lines.append(
+            f"{index}. duplicate key: composer={cluster['composer']} | title={cluster['title_norm']}"
+        )
+        lines.append(f"   auto_recommendation: {cluster['auto_recommendation']}")
+        lines.append(f"   suggested_keeper: {cluster['suggested_keeper']}")
         lines.append("   counterparts:")
         for item_idx, item in enumerate(cluster["items"], start=1):
             file_rel = Path(item["file"]).relative_to(root).as_posix()
@@ -171,6 +227,12 @@ def write_report(root: Path, output_path: Path) -> None:
     lines.append("## DUP-003 Work Duplicates")
     lines.append("")
     lines.append(f"Clusters: {len(w_clusters)}")
+    lines.append(
+        f"Manual review clusters: {sum(1 for c in w_clusters if c['review_required'])}"
+    )
+    lines.append(
+        f"Merge-candidate clusters: {sum(1 for c in w_clusters if not c['review_required'])}"
+    )
     lines.append("")
 
     for index, cluster in enumerate(w_clusters, start=1):
@@ -178,6 +240,7 @@ def write_report(root: Path, output_path: Path) -> None:
             f"{index}. duplicate key: composer={cluster['composer']} | title={cluster['title_norm']}"
         )
         lines.append(f"   auto_recommendation: {cluster['auto_recommendation']}")
+        lines.append(f"   suggested_keeper: {cluster['suggested_keeper']}")
         lines.append("   counterparts:")
         for item_idx, item in enumerate(cluster["items"], start=1):
             file_rel = Path(item["file"]).relative_to(root).as_posix()
