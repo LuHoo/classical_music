@@ -1,6 +1,6 @@
 # Owner Roadmap
 
-Last updated: 2026-08-23
+Last updated: 2026-08-24
 
 This is a living document. We will update it regularly as work moves forward.
 
@@ -16,7 +16,7 @@ What is already in place:
 - A project board and issues to track progress.
 
 What is not finished yet:
-- The current collection still needs cleanup and final review.
+- Remaining identity questions need authority-backed review.
 - Some edge cases still need better handling.
 - Final readiness checks are still ahead.
 
@@ -29,6 +29,7 @@ What is not finished yet:
 2. Clean up current data
 - Issue: https://github.com/LuHoo/classical_music/issues/128
 - Focus: fix current mistakes, gaps, and unclear entries.
+- Status: phase-1 cleanup complete; unresolved identity questions are routed to authority review.
 
 3. Make checks part of regular work
 - Issue: https://github.com/LuHoo/classical_music/issues/129
