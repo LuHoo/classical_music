@@ -34,6 +34,7 @@ What is not finished yet:
 3. Make checks part of regular work
 - Issue: https://github.com/LuHoo/classical_music/issues/129
 - Focus: ensure every update is checked automatically.
+- Status: automated PR/main checks include validation, tests, artifacts, and an owner-readable job summary.
 
 4. Set up review flow for new candidates
 - Issue: https://github.com/LuHoo/classical_music/issues/130

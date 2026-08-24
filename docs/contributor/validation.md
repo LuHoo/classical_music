@@ -19,13 +19,13 @@ The validator enforces:
 Python 3.13+ is required.
 
 ```bash
-python -m pip install ruamel.yaml pydantic rich typer
+python -m pip install -e .
 ```
 
 Optional test dependencies:
 
 ```bash
-python -m pip install pytest pytest-cov
+python -m pip install -e '.[dev]'
 ```
 
 ## Run Validator
@@ -81,9 +81,29 @@ Validation runs in GitHub Actions via:
 
 The workflow:
 
-- runs the human-readable validator (fails on errors),
+- runs on every pull request and every push to `main`,
+- can be run manually from the Actions tab,
+- installs the project with dev dependencies,
+- runs the human-readable validator, failing on validation errors,
 - emits a JSON report,
-- uploads it as the `validation-report` artifact.
+- adds a concise validation summary to the GitHub Actions job summary,
+- runs the test suite,
+- uploads the full JSON report as the `validation-report` artifact.
+
+The job summary is the quickest owner-facing view. It shows error, warning and
+info counts, the most common rule groups, and the first findings that need
+attention. Use the JSON artifact when a full machine-readable report is needed.
+
+## Run The Regular Checks Locally
+
+Use the same checks before opening or updating a pull request:
+
+```bash
+python scripts/validate_data.py
+python scripts/validate_data.py --json > validation-report.json
+python scripts/summarize_validation_report.py validation-report.json
+python -m pytest
+```
 
 ## Validation Flow
 
