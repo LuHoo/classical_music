@@ -12,6 +12,9 @@ Existing canonical Works are trusted legacy input. No MBID or canonical YAML is 
 
 ## Architecture pre-flight
 
+- `docs/architecture/architecture-principles.md` governs this classification, together with the normative Work, Work Group, migration, and validation documents.
+- The repository is a curated collection and canonical source of truth, not a MusicBrainz mirror.
+- Existing canonical Prokofiev Works are trusted legacy input; missing external identifiers are not defects by themselves.
 - Work identity follows the local Work and Work Group model, not MusicBrainz completeness.
 - Revisions remain separate Works; a missing Op. 136 authority record does not inherit Op. 40.
 - A recognised suite, film score, arrangement, or other distinct artistic object is not collapsed solely because titles match.
