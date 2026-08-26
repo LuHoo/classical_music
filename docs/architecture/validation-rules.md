@@ -43,6 +43,21 @@ Errors must block migration acceptance and canonical repository writes.
 Warnings must remain visible in reports and may be promoted to errors by a
 stricter migration profile.
 
+## Identity escalation
+
+Validation distinguishes repository invariants from identity evidence. Errors
+remain uncompromising and block CI. Similarity findings in trusted existing
+canonical data are `background_suspicion` by default: they are reportable,
+non-blocking, and do not create curator work. An identity-critical workflow
+must explicitly activate affected entity IDs as an identity gate; only those
+unresolved findings are `action_required`.
+
+Reports also use `auto_resolved` for deterministic classifications. Missing
+external authority identifiers on otherwise coherent existing Works are
+informational enrichment gaps, not identity gates. Authority lookup is
+demand-driven and belongs to new, changed, merged, split, or explicitly
+activated identity decisions.
+
 ## Validation profiles
 
 | Profile | Purpose |

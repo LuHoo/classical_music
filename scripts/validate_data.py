@@ -22,15 +22,23 @@ console = Console()
 
 
 @app.command()
-def main(json_output: bool = typer.Option(False, "--json", help="Emit JSON report.")) -> None:
+def main(
+    json_output: bool = typer.Option(False, "--json", help="Emit JSON report."),
+    identity_gate_id: list[str] = typer.Option(
+        [], "--identity-gate-id", help="Activate review for a changed entity ID."
+    ),
+) -> None:
     validator = DataValidator(repository_root=ROOT)
-    report = validator.run()
+    report = validator.run(identity_gate_ids=set(identity_gate_id))
 
     if json_output:
         payload = {
             "error_count": report.error_count,
             "warning_count": report.warning_count,
             "info_count": report.info_count,
+            "action_required_count": report.action_required_count,
+            "background_suspicion_count": report.background_suspicion_count,
+            "auto_resolved_count": report.auto_resolved_count,
             "findings": [finding.model_dump() for finding in report.findings],
         }
         print(json.dumps(payload, indent=2))
@@ -40,6 +48,7 @@ def main(json_output: bool = typer.Option(False, "--json", help="Emit JSON repor
         table.add_column("Rule")
         table.add_column("File")
         table.add_column("Message")
+        table.add_column("Status")
 
         for finding in report.findings:
             table.add_row(
@@ -47,6 +56,7 @@ def main(json_output: bool = typer.Option(False, "--json", help="Emit JSON repor
                 finding.rule_id,
                 finding.file,
                 finding.message,
+                finding.status or "invariant",
             )
 
         console.print(table)
