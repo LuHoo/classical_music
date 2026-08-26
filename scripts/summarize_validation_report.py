@@ -22,6 +22,9 @@ def render_summary(report: dict[str, Any], limit: int) -> str:
     errors = int(report.get("error_count", 0))
     warnings = int(report.get("warning_count", 0))
     info = int(report.get("info_count", 0))
+    action_required = int(report.get("action_required_count", 0))
+    background = int(report.get("background_suspicion_count", 0))
+    auto_resolved = int(report.get("auto_resolved_count", 0))
 
     lines = [
         "## Canonical Data Validation",
@@ -29,6 +32,9 @@ def render_summary(report: dict[str, Any], limit: int) -> str:
         f"- Errors: {errors}",
         f"- Warnings: {warnings}",
         f"- Info: {info}",
+        f"- Action required: {action_required}",
+        f"- Background suspicions: {background}",
+        f"- Automatically resolved/classified: {auto_resolved}",
         "",
     ]
 
@@ -39,11 +45,18 @@ def render_summary(report: dict[str, Any], limit: int) -> str:
             "Validation errors block regular work and should be fixed before merging.",
             "",
         ])
+    elif action_required:
+        lines.extend([
+            "### Attention Needed",
+            "",
+            "No blocking errors. Only explicitly activated identity decisions require curator action.",
+            "",
+        ])
     elif warnings:
         lines.extend([
             "### Attention Needed",
             "",
-            "No blocking errors. Warnings remain review items.",
+            "No blocking errors or active identity decisions. Remaining findings are background suspicions.",
             "",
         ])
     else:

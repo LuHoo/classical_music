@@ -189,3 +189,26 @@ def test_relationship_work_reference_and_work_group_domain_rules(tmp_path: Path)
     report = DataValidator(tmp_path).run()
     assert any(f.rule_id == "DOM-003" for f in report.findings)
     assert any(f.rule_id == "REF-006" for f in report.findings)
+
+
+def test_duplicate_title_is_background_unless_identity_gate_is_activated(tmp_path: Path) -> None:
+    _write(tmp_path / "data/persons/composer.yaml", "id: composer\nname: Composer\n")
+    for suffix in ("one", "two"):
+        _write(
+            tmp_path / f"data/work-groups/work-group-{suffix}.yaml",
+            "id: work-group-{}\ncomposer_id: composer\ntitle: A Work\n".format(suffix),
+        )
+        _write(
+            tmp_path / f"data/works/work-{suffix}.yaml",
+            "id: work-{}\nwork_group_id: work-group-{}\ncomposer_id: composer\ntitle: A Work\n".format(suffix, suffix),
+        )
+
+    report = DataValidator(tmp_path).run()
+    duplicate = next(f for f in report.findings if f.rule_id == "DUP-003")
+    assert duplicate.status == "background_suspicion"
+    assert report.action_required_count == 0
+
+    gated = DataValidator(tmp_path).run(identity_gate_ids={"work-two"})
+    duplicate = next(f for f in gated.findings if f.rule_id == "DUP-003")
+    assert duplicate.status == "action_required"
+    assert gated.action_required_count == 1

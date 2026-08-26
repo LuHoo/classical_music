@@ -18,6 +18,15 @@ vendor/
 .DS_Store
 ~$*
 
+# Ignore local Python development artifacts
+.venv/
+.coverage
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
 # Ignore LaTeX build artifacts
 *.aux
 *.bbl

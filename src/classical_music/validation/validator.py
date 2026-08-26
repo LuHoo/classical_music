@@ -112,7 +112,7 @@ class DataValidator:
         self.yaml = YAML(typ="safe")
         self.yaml.allow_duplicate_keys = False
 
-    def run(self) -> ValidationReport:
+    def run(self, identity_gate_ids: set[str] | None = None) -> ValidationReport:
         report = ValidationReport()
         records: list[Record] = []
 
@@ -128,7 +128,7 @@ class DataValidator:
 
         self._validate_entity_shapes(records, report)
         self._validate_cross_references(records, report)
-        self._validate_duplicates(records, report)
+        self._validate_duplicates(records, report, identity_gate_ids or set())
 
         return report
 
@@ -730,7 +730,10 @@ class DataValidator:
                             )
 
     def _validate_duplicates(
-        self, records: list[Record], report: ValidationReport
+        self,
+        records: list[Record],
+        report: ValidationReport,
+        identity_gate_ids: set[str],
     ) -> None:
         work_groups = [record for record in records if record.entity_type == "work-groups"]
         works = [record for record in records if record.entity_type == "works"]
@@ -750,6 +753,7 @@ class DataValidator:
                     rules.RULE_DUP_WORK_GROUP,
                     record,
                     "Potential duplicate Work Group (same composer and title).",
+                    identity_gate_ids,
                 )
             else:
                 seen_work_group_key[key] = record
@@ -769,6 +773,7 @@ class DataValidator:
                     rules.RULE_DUP_WORK,
                     record,
                     "Potential duplicate Work (same composer and title).",
+                    identity_gate_ids,
                 )
             else:
                 seen_work_key[key] = record
@@ -792,6 +797,7 @@ class DataValidator:
                                 "Potential similar Work title under same composer "
                                 f"(similarity={similarity:.2f})."
                             ),
+                            identity_gate_ids,
                         )
 
         # Performance duplicate warning heuristic.
@@ -808,6 +814,7 @@ class DataValidator:
                     rules.RULE_DUP_PERFORMANCE,
                     record,
                     "Potential duplicate Performance (same work and performers).",
+                    identity_gate_ids,
                 )
             else:
                 seen_perf_key[key] = record
@@ -828,6 +835,7 @@ class DataValidator:
         rule_id: str,
         record: Record,
         message: str,
+        identity_gate_ids: set[str],
     ) -> None:
         report.findings.append(
             ValidationFinding(
@@ -837,6 +845,11 @@ class DataValidator:
                 message=message,
                 entity_type=record.entity_type,
                 entity_id=str(record.data.get("id", "")) or None,
+                status=(
+                    "action_required"
+                    if str(record.data.get("id", "")) in identity_gate_ids
+                    else "background_suspicion"
+                ),
             )
         )
 

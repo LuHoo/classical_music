@@ -5,6 +5,7 @@ from collections import defaultdict
 from pathlib import Path
 from typing import Any
 import re
+import argparse
 
 from ruamel.yaml import YAML
 
@@ -45,7 +46,10 @@ def choose_keeper(items: list[dict[str, Any]]) -> str:
     return sorted((item["id"] for item in items), key=lambda v: (len(v), v))[0]
 
 
-def build_work_group_clusters(root: Path) -> list[dict[str, Any]]:
+def build_work_group_clusters(
+    root: Path, activated_ids: set[str] | None = None
+) -> list[dict[str, Any]]:
+    activated_ids = activated_ids or set()
     groups: defaultdict[tuple[str, str], list[dict[str, Any]]] = defaultdict(list)
 
     for file_path in sorted((root / "data" / "work-groups").glob("*.yaml")):
@@ -85,13 +89,19 @@ def build_work_group_clusters(root: Path) -> list[dict[str, Any]]:
         can_auto_merge = len(semantic_fingerprint) == 1 and len(catalogues) <= 1
         keeper = choose_keeper(items)
 
+        status = (
+            "action_required"
+            if any(item["id"] in activated_ids for item in items)
+            else "background_suspicion"
+        )
         clusters.append(
             {
                 "composer": composer,
                 "title_norm": title_norm,
                 "items": items,
                 "auto_recommendation": "auto-merge" if can_auto_merge else "manual-review",
-                "review_required": not can_auto_merge,
+                "status": "auto_resolved" if can_auto_merge else status,
+                "review_required": status == "action_required",
                 "suggested_keeper": keeper,
             }
         )
@@ -99,7 +109,10 @@ def build_work_group_clusters(root: Path) -> list[dict[str, Any]]:
     return clusters
 
 
-def build_work_clusters(root: Path) -> list[dict[str, Any]]:
+def build_work_clusters(
+    root: Path, activated_ids: set[str] | None = None
+) -> list[dict[str, Any]]:
+    activated_ids = activated_ids or set()
     groups: defaultdict[tuple[str, str], list[dict[str, Any]]] = defaultdict(list)
 
     for file_path in sorted((root / "data" / "works").rglob("*.yaml")):
@@ -144,13 +157,19 @@ def build_work_clusters(root: Path) -> list[dict[str, Any]]:
 
         keeper = choose_keeper(items)
 
+        status = (
+            "action_required"
+            if any(item["id"] in activated_ids for item in items)
+            else "background_suspicion"
+        )
         clusters.append(
             {
                 "composer": composer,
                 "title_norm": title_norm,
                 "items": items,
                 "auto_recommendation": recommendation,
-                "review_required": recommendation in {"manual-review", "keep-work-review-group-merge"},
+                "status": "auto_resolved" if recommendation == "auto-merge" else status,
+                "review_required": status == "action_required",
                 "suggested_keeper": keeper,
             }
         )
@@ -158,9 +177,11 @@ def build_work_clusters(root: Path) -> list[dict[str, Any]]:
     return clusters
 
 
-def write_report(root: Path, output_path: Path) -> None:
-    wg_clusters = build_work_group_clusters(root)
-    w_clusters = build_work_clusters(root)
+def write_report(
+    root: Path, output_path: Path, activated_ids: set[str] | None = None
+) -> None:
+    wg_clusters = build_work_group_clusters(root, activated_ids)
+    w_clusters = build_work_clusters(root, activated_ids)
 
     lines: list[str] = []
     lines.append("# Duplicate Review List (2026-08-23)")
@@ -168,21 +189,25 @@ def write_report(root: Path, output_path: Path) -> None:
     lines.append("This report groups all potential duplicates with counterpart records.")
     lines.append("Automatic recommendation uses distinctive metadata, not numeric ID suffixes.")
     lines.append("")
-    lines.append("Only Manual Review sections require curator input.")
-    lines.append("Auto-merge sections are execution lists.")
+    lines.append("Action Required sections contain only explicitly activated identity gates.")
+    lines.append("Background Suspicion sections are deferred and do not require curator action.")
+    lines.append("Automatically Resolved sections document safe machine classifications.")
     lines.append("")
 
-    auto_wg = [cluster for cluster in wg_clusters if not cluster["review_required"]]
+    auto_wg = [cluster for cluster in wg_clusters if cluster["status"] == "auto_resolved"]
     manual_wg = [cluster for cluster in wg_clusters if cluster["review_required"]]
+    background_wg = [cluster for cluster in wg_clusters if cluster["status"] == "background_suspicion"]
 
     lines.append("## DUP-002 Work Group Duplicates")
     lines.append("")
     lines.append(f"Clusters: {len(wg_clusters)}")
     lines.append(f"Auto-merge clusters: {len(auto_wg)}")
-    lines.append(f"Manual review clusters: {len(manual_wg)}")
+    lines.append(f"Action required clusters: {len(manual_wg)}")
+    lines.append(f"Background suspicion clusters: {len(background_wg)}")
+    lines.append(f"Automatically resolved clusters: {len(auto_wg)}")
     lines.append("")
 
-    lines.append("### Auto-merge (No Manual Review Needed)")
+    lines.append("### Automatically Resolved")
     lines.append("")
     for index, cluster in enumerate(auto_wg, start=1):
         lines.append(
@@ -201,7 +226,7 @@ def write_report(root: Path, output_path: Path) -> None:
         lines.append("   action: auto-merge")
         lines.append("")
 
-    lines.append("### Manual Review")
+    lines.append("### Action Required")
     lines.append("")
     for index, cluster in enumerate(manual_wg, start=1):
         lines.append(
@@ -222,17 +247,30 @@ def write_report(root: Path, output_path: Path) -> None:
         lines.append("   rationale:")
         lines.append("")
 
-    auto_w = [cluster for cluster in w_clusters if not cluster["review_required"]]
+    lines.append("### Background Suspicion")
+    lines.append("")
+    for index, cluster in enumerate(background_wg, start=1):
+        ids = ", ".join(item["id"] for item in cluster["items"])
+        lines.append(
+            f"{index}. composer={cluster['composer']} | title={cluster['title_norm']} | "
+            f"entities={ids}"
+        )
+    lines.append("")
+
+    auto_w = [cluster for cluster in w_clusters if cluster["status"] == "auto_resolved"]
     manual_w = [cluster for cluster in w_clusters if cluster["review_required"]]
+    background_w = [cluster for cluster in w_clusters if cluster["status"] == "background_suspicion"]
 
     lines.append("## DUP-003 Work Duplicates")
     lines.append("")
     lines.append(f"Clusters: {len(w_clusters)}")
     lines.append(f"Auto-merge clusters: {len(auto_w)}")
-    lines.append(f"Manual review clusters: {len(manual_w)}")
+    lines.append(f"Action required clusters: {len(manual_w)}")
+    lines.append(f"Background suspicion clusters: {len(background_w)}")
+    lines.append(f"Automatically resolved clusters: {len(auto_w)}")
     lines.append("")
 
-    lines.append("### Auto-merge (No Manual Review Needed)")
+    lines.append("### Automatically Resolved")
     lines.append("")
     for index, cluster in enumerate(auto_w, start=1):
         lines.append(
@@ -253,7 +291,7 @@ def write_report(root: Path, output_path: Path) -> None:
         lines.append("   action: auto-merge")
         lines.append("")
 
-    lines.append("### Manual Review")
+    lines.append("### Action Required")
     lines.append("")
     for index, cluster in enumerate(manual_w, start=1):
         lines.append(
@@ -276,14 +314,32 @@ def write_report(root: Path, output_path: Path) -> None:
         lines.append("   rationale:")
         lines.append("")
 
+    lines.append("### Background Suspicion")
+    lines.append("")
+    for index, cluster in enumerate(background_w, start=1):
+        ids = ", ".join(item["id"] for item in cluster["items"])
+        lines.append(
+            f"{index}. composer={cluster['composer']} | title={cluster['title_norm']} | "
+            f"entities={ids}"
+        )
+    lines.append("")
+
     output_path.parent.mkdir(parents=True, exist_ok=True)
     output_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--identity-gate-id",
+        action="append",
+        default=[],
+        help="Activate identity review for a specific changed entity ID.",
+    )
+    args = parser.parse_args()
     root = Path(__file__).resolve().parents[1]
     output = root / "reports" / "validation" / "duplicate-review-2026-08-23.md"
-    write_report(root, output)
+    write_report(root, output, set(args.identity_gate_id))
     print(output)
 
 

@@ -1,0 +1,3205 @@
+{
+  "run_context": {
+    "authority_mode": "local_catalogue_and_existing_ids",
+    "non_destructive": true,
+    "live_network_required": false
+  },
+  "clusters": [
+    {
+      "rule_id": "DUP-002",
+      "composer_id": "anton-bruckner",
+      "normalized_title": "overture in g minor",
+      "classification": "confirmed_duplicate",
+      "confidence": 0.75,
+      "curator_review_required": true,
+      "evidence": [
+        "All Works share normalized catalogue identifier wab:wab98"
+      ],
+      "authority_ids": [
+        "wab:wab98"
+      ],
+      "proposed_action": "candidate_for_authority_confirmed_merge",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "anton-bruckner-overture-in-g-minor-2-group",
+          "file": "data/work-groups/anton-bruckner-overture-in-g-minor-2-group.yaml",
+          "title": "Overture in G minor",
+          "work_group_id": "anton-bruckner-overture-in-g-minor-2-group",
+          "catalogues": [
+            "wab:wab98"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "anton-bruckner-overture-in-g-minor-group",
+          "file": "data/work-groups/anton-bruckner-overture-in-g-minor-group.yaml",
+          "title": "Overture in G minor",
+          "work_group_id": "anton-bruckner-overture-in-g-minor-group",
+          "catalogues": [
+            "wab:wab98"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-002",
+      "composer_id": "anton-bruckner",
+      "normalized_title": "symphony no. 1 in c minor \"das kecke beserl\"",
+      "classification": "confirmed_duplicate",
+      "confidence": 0.75,
+      "curator_review_required": true,
+      "evidence": [
+        "All Works share normalized catalogue identifier wab:wab101"
+      ],
+      "authority_ids": [
+        "wab:wab101"
+      ],
+      "proposed_action": "candidate_for_authority_confirmed_merge",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-2-group",
+          "file": "data/work-groups/anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-2-group.yaml",
+          "title": "Symphony No. 1 in C minor \"Das kecke Beserl\"",
+          "work_group_id": "anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-2-group",
+          "catalogues": [
+            "wab:wab101"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-3-group",
+          "file": "data/work-groups/anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-3-group.yaml",
+          "title": "Symphony No. 1 in C minor \"Das kecke Beserl\"",
+          "work_group_id": "anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-3-group",
+          "catalogues": [
+            "wab:wab101"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-group",
+          "file": "data/work-groups/anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-group.yaml",
+          "title": "Symphony No. 1 in C minor \"Das kecke Beserl\"",
+          "work_group_id": "anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-group",
+          "catalogues": [
+            "wab:wab101"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-002",
+      "composer_id": "anton-bruckner",
+      "normalized_title": "symphony no. 2 in c minor",
+      "classification": "confirmed_duplicate",
+      "confidence": 0.75,
+      "curator_review_required": true,
+      "evidence": [
+        "All Works share normalized catalogue identifier wab:wab102"
+      ],
+      "authority_ids": [
+        "wab:wab102"
+      ],
+      "proposed_action": "candidate_for_authority_confirmed_merge",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "anton-bruckner-symphony-no-2-in-c-minor-2-group",
+          "file": "data/work-groups/anton-bruckner-symphony-no-2-in-c-minor-2-group.yaml",
+          "title": "Symphony No. 2 in C minor",
+          "work_group_id": "anton-bruckner-symphony-no-2-in-c-minor-2-group",
+          "catalogues": [
+            "wab:wab102"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "anton-bruckner-symphony-no-2-in-c-minor-group",
+          "file": "data/work-groups/anton-bruckner-symphony-no-2-in-c-minor-group.yaml",
+          "title": "Symphony No. 2 in C minor",
+          "work_group_id": "anton-bruckner-symphony-no-2-in-c-minor-group",
+          "catalogues": [
+            "wab:wab102"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-002",
+      "composer_id": "anton-bruckner",
+      "normalized_title": "symphony no. 3 in d minor \"wagner symphony\"",
+      "classification": "confirmed_duplicate",
+      "confidence": 0.75,
+      "curator_review_required": true,
+      "evidence": [
+        "All Works share normalized catalogue identifier wab:wab103"
+      ],
+      "authority_ids": [
+        "wab:wab103"
+      ],
+      "proposed_action": "candidate_for_authority_confirmed_merge",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-2-group",
+          "file": "data/work-groups/anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-2-group.yaml",
+          "title": "Symphony No. 3 in D minor \"Wagner Symphony\"",
+          "work_group_id": "anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-2-group",
+          "catalogues": [
+            "wab:wab103"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-3-group",
+          "file": "data/work-groups/anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-3-group.yaml",
+          "title": "Symphony No. 3 in D minor \"Wagner Symphony\"",
+          "work_group_id": "anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-3-group",
+          "catalogues": [
+            "wab:wab103"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-group",
+          "file": "data/work-groups/anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-group.yaml",
+          "title": "Symphony No. 3 in D minor \"Wagner Symphony\"",
+          "work_group_id": "anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-group",
+          "catalogues": [
+            "wab:wab103"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-002",
+      "composer_id": "anton-bruckner",
+      "normalized_title": "symphony no. 4 in e\u266d major \"die romantische\"",
+      "classification": "confirmed_duplicate",
+      "confidence": 0.75,
+      "curator_review_required": true,
+      "evidence": [
+        "All Works share normalized catalogue identifier wab:wab104"
+      ],
+      "authority_ids": [
+        "wab:wab104"
+      ],
+      "proposed_action": "candidate_for_authority_confirmed_merge",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-2-group",
+          "file": "data/work-groups/anton-bruckner-symphony-no-4-in-eb-major-die-romantische-2-group.yaml",
+          "title": "Symphony No. 4 in E\u266d major \"Die Romantische\"",
+          "work_group_id": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-2-group",
+          "catalogues": [
+            "wab:wab104"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-3-group",
+          "file": "data/work-groups/anton-bruckner-symphony-no-4-in-eb-major-die-romantische-3-group.yaml",
+          "title": "Symphony No. 4 in E\u266d major \"Die Romantische\"",
+          "work_group_id": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-3-group",
+          "catalogues": [
+            "wab:wab104"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-4-group",
+          "file": "data/work-groups/anton-bruckner-symphony-no-4-in-eb-major-die-romantische-4-group.yaml",
+          "title": "Symphony No. 4 in E\u266d major \"Die Romantische\"",
+          "work_group_id": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-4-group",
+          "catalogues": [
+            "wab:wab104"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-group",
+          "file": "data/work-groups/anton-bruckner-symphony-no-4-in-eb-major-die-romantische-group.yaml",
+          "title": "Symphony No. 4 in E\u266d major \"Die Romantische\"",
+          "work_group_id": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-group",
+          "catalogues": [
+            "wab:wab104"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-002",
+      "composer_id": "anton-bruckner",
+      "normalized_title": "symphony no. 5 in b\u266d major",
+      "classification": "confirmed_duplicate",
+      "confidence": 0.75,
+      "curator_review_required": true,
+      "evidence": [
+        "All Works share normalized catalogue identifier wab:wab105"
+      ],
+      "authority_ids": [
+        "wab:wab105"
+      ],
+      "proposed_action": "candidate_for_authority_confirmed_merge",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "anton-bruckner-symphony-no-5-in-bb-major-2-group",
+          "file": "data/work-groups/anton-bruckner-symphony-no-5-in-bb-major-2-group.yaml",
+          "title": "Symphony No. 5 in B\u266d major",
+          "work_group_id": "anton-bruckner-symphony-no-5-in-bb-major-2-group",
+          "catalogues": [
+            "wab:wab105"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "anton-bruckner-symphony-no-5-in-bb-major-group",
+          "file": "data/work-groups/anton-bruckner-symphony-no-5-in-bb-major-group.yaml",
+          "title": "Symphony No. 5 in B\u266d major",
+          "work_group_id": "anton-bruckner-symphony-no-5-in-bb-major-group",
+          "catalogues": [
+            "wab:wab105"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-002",
+      "composer_id": "anton-bruckner",
+      "normalized_title": "symphony no. 7 in e major",
+      "classification": "confirmed_duplicate",
+      "confidence": 0.75,
+      "curator_review_required": true,
+      "evidence": [
+        "All Works share normalized catalogue identifier wab:wab107"
+      ],
+      "authority_ids": [
+        "wab:wab107"
+      ],
+      "proposed_action": "candidate_for_authority_confirmed_merge",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "anton-bruckner-symphony-no-7-in-e-major-2-group",
+          "file": "data/work-groups/anton-bruckner-symphony-no-7-in-e-major-2-group.yaml",
+          "title": "Symphony No. 7 in E major",
+          "work_group_id": "anton-bruckner-symphony-no-7-in-e-major-2-group",
+          "catalogues": [
+            "wab:wab107"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "anton-bruckner-symphony-no-7-in-e-major-group",
+          "file": "data/work-groups/anton-bruckner-symphony-no-7-in-e-major-group.yaml",
+          "title": "Symphony No. 7 in E major",
+          "work_group_id": "anton-bruckner-symphony-no-7-in-e-major-group",
+          "catalogues": [
+            "wab:wab107"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-002",
+      "composer_id": "anton-bruckner",
+      "normalized_title": "symphony no. 8 in c minor \"die apokalyptische\"",
+      "classification": "confirmed_duplicate",
+      "confidence": 0.75,
+      "curator_review_required": true,
+      "evidence": [
+        "All Works share normalized catalogue identifier wab:wab108"
+      ],
+      "authority_ids": [
+        "wab:wab108"
+      ],
+      "proposed_action": "candidate_for_authority_confirmed_merge",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "anton-bruckner-symphony-no-8-in-c-minor-die-apokalyptische-2-group",
+          "file": "data/work-groups/anton-bruckner-symphony-no-8-in-c-minor-die-apokalyptische-2-group.yaml",
+          "title": "Symphony No. 8 in C minor \"Die Apokalyptische\"",
+          "work_group_id": "anton-bruckner-symphony-no-8-in-c-minor-die-apokalyptische-2-group",
+          "catalogues": [
+            "wab:wab108"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "anton-bruckner-symphony-no-8-in-c-minor-die-apokalyptische-3-group",
+          "file": "data/work-groups/anton-bruckner-symphony-no-8-in-c-minor-die-apokalyptische-3-group.yaml",
+          "title": "Symphony No. 8 in C minor \"Die Apokalyptische\"",
+          "work_group_id": "anton-bruckner-symphony-no-8-in-c-minor-die-apokalyptische-3-group",
+          "catalogues": [
+            "wab:wab108"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "anton-bruckner-symphony-no-8-in-c-minor-die-apokalyptische-group",
+          "file": "data/work-groups/anton-bruckner-symphony-no-8-in-c-minor-die-apokalyptische-group.yaml",
+          "title": "Symphony No. 8 in C minor \"Die Apokalyptische\"",
+          "work_group_id": "anton-bruckner-symphony-no-8-in-c-minor-die-apokalyptische-group",
+          "catalogues": [
+            "wab:wab108"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-002",
+      "composer_id": "anton-bruckner",
+      "normalized_title": "tantum ergo",
+      "classification": "distinct_works",
+      "confidence": 0.7,
+      "curator_review_required": true,
+      "evidence": [
+        "Works have different normalized catalogue identifiers"
+      ],
+      "authority_ids": [
+        "wab:wab32",
+        "wab:wab42",
+        "wab:wab43"
+      ],
+      "proposed_action": "keep_separate_pending_authority_review",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "anton-bruckner-tantum-ergo-2-group",
+          "file": "data/work-groups/anton-bruckner-tantum-ergo-2-group.yaml",
+          "title": "Tantum ergo",
+          "work_group_id": "anton-bruckner-tantum-ergo-2-group",
+          "catalogues": [
+            "wab:wab42"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "anton-bruckner-tantum-ergo-3-group",
+          "file": "data/work-groups/anton-bruckner-tantum-ergo-3-group.yaml",
+          "title": "Tantum ergo",
+          "work_group_id": "anton-bruckner-tantum-ergo-3-group",
+          "catalogues": [
+            "wab:wab43"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "anton-bruckner-tantum-ergo-group",
+          "file": "data/work-groups/anton-bruckner-tantum-ergo-group.yaml",
+          "title": "Tantum ergo",
+          "work_group_id": "anton-bruckner-tantum-ergo-group",
+          "catalogues": [
+            "wab:wab32"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-002",
+      "composer_id": "dmitri-shostakovich",
+      "normalized_title": "suite from hamlet",
+      "classification": "distinct_works",
+      "confidence": 0.7,
+      "curator_review_required": true,
+      "evidence": [
+        "Works have different normalized catalogue identifiers"
+      ],
+      "authority_ids": [
+        "op:op116a",
+        "op:op32a"
+      ],
+      "proposed_action": "keep_separate_pending_authority_review",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "dmitri-shostakovich-suite-from-hamlet-2-group",
+          "file": "data/work-groups/dmitri-shostakovich-suite-from-hamlet-2-group.yaml",
+          "title": "Suite from Hamlet",
+          "work_group_id": "dmitri-shostakovich-suite-from-hamlet-2-group",
+          "catalogues": [
+            "op:op116a"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "dmitri-shostakovich-suite-from-hamlet-group",
+          "file": "data/work-groups/dmitri-shostakovich-suite-from-hamlet-group.yaml",
+          "title": "Suite from Hamlet",
+          "work_group_id": "dmitri-shostakovich-suite-from-hamlet-group",
+          "catalogues": [
+            "op:op32a"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-002",
+      "composer_id": "igor-stravinsky",
+      "normalized_title": "circus polka",
+      "classification": "needs_authority_review",
+      "confidence": 0.0,
+      "curator_review_required": true,
+      "evidence": [
+        "Same composer and title only; no catalogue or authority identifier proves identity"
+      ],
+      "authority_ids": [],
+      "proposed_action": "review_with_external_authority",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "igor-stravinsky-circus-polka-k-064-group",
+          "file": "data/work-groups/igor-stravinsky-circus-polka-k-064-group.yaml",
+          "title": "Circus Polka",
+          "work_group_id": "igor-stravinsky-circus-polka-k-064-group",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "igor-stravinsky-circus-polka-k-066-group",
+          "file": "data/work-groups/igor-stravinsky-circus-polka-k-066-group.yaml",
+          "title": "Circus Polka",
+          "work_group_id": "igor-stravinsky-circus-polka-k-066-group",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-002",
+      "composer_id": "igor-stravinsky",
+      "normalized_title": "four russian peasant songs",
+      "classification": "needs_authority_review",
+      "confidence": 0.0,
+      "curator_review_required": true,
+      "evidence": [
+        "Same composer and title only; no catalogue or authority identifier proves identity"
+      ],
+      "authority_ids": [],
+      "proposed_action": "review_with_external_authority",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "igor-stravinsky-four-russian-peasant-songs-k-020-group",
+          "file": "data/work-groups/igor-stravinsky-four-russian-peasant-songs-k-020-group.yaml",
+          "title": "Four Russian Peasant Songs",
+          "work_group_id": "igor-stravinsky-four-russian-peasant-songs-k-020-group",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "igor-stravinsky-four-russian-peasant-songs-k-020a-group",
+          "file": "data/work-groups/igor-stravinsky-four-russian-peasant-songs-k-020a-group.yaml",
+          "title": "Four Russian Peasant Songs",
+          "work_group_id": "igor-stravinsky-four-russian-peasant-songs-k-020a-group",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-002",
+      "composer_id": "igor-stravinsky",
+      "normalized_title": "four russian songs",
+      "classification": "needs_authority_review",
+      "confidence": 0.0,
+      "curator_review_required": true,
+      "evidence": [
+        "Same composer and title only; no catalogue or authority identifier proves identity"
+      ],
+      "authority_ids": [],
+      "proposed_action": "review_with_external_authority",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "igor-stravinsky-four-russian-songs-k-030-group",
+          "file": "data/work-groups/igor-stravinsky-four-russian-songs-k-030-group.yaml",
+          "title": "Four Russian Songs",
+          "work_group_id": "igor-stravinsky-four-russian-songs-k-030-group",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "igor-stravinsky-four-russian-songs-k-032-group",
+          "file": "data/work-groups/igor-stravinsky-four-russian-songs-k-032-group.yaml",
+          "title": "Four Russian Songs",
+          "work_group_id": "igor-stravinsky-four-russian-songs-k-032-group",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-002",
+      "composer_id": "igor-stravinsky",
+      "normalized_title": "les noces",
+      "classification": "needs_authority_review",
+      "confidence": 0.0,
+      "curator_review_required": true,
+      "evidence": [
+        "Same composer and title only; no catalogue or authority identifier proves identity"
+      ],
+      "authority_ids": [],
+      "proposed_action": "review_with_external_authority",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "igor-stravinsky-les-noces-k-024-group",
+          "file": "data/work-groups/igor-stravinsky-les-noces-k-024-group.yaml",
+          "title": "Les Noces",
+          "work_group_id": "igor-stravinsky-les-noces-k-024-group",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "igor-stravinsky-les-noces-k-040-group",
+          "file": "data/work-groups/igor-stravinsky-les-noces-k-040-group.yaml",
+          "title": "Les Noces",
+          "work_group_id": "igor-stravinsky-les-noces-k-040-group",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-002",
+      "composer_id": "igor-stravinsky",
+      "normalized_title": "pastorale",
+      "classification": "needs_authority_review",
+      "confidence": 0.0,
+      "curator_review_required": true,
+      "evidence": [
+        "Same composer and title only; no catalogue or authority identifier proves identity"
+      ],
+      "authority_ids": [],
+      "proposed_action": "review_with_external_authority",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "igor-stravinsky-pastorale-k-001-group",
+          "file": "data/work-groups/igor-stravinsky-pastorale-k-001-group.yaml",
+          "title": "Pastorale",
+          "work_group_id": "igor-stravinsky-pastorale-k-001-group",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "igor-stravinsky-pastorale-k-001a-group",
+          "file": "data/work-groups/igor-stravinsky-pastorale-k-001a-group.yaml",
+          "title": "Pastorale",
+          "work_group_id": "igor-stravinsky-pastorale-k-001a-group",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "igor-stravinsky-pastorale-k-004-group",
+          "file": "data/work-groups/igor-stravinsky-pastorale-k-004-group.yaml",
+          "title": "Pastorale",
+          "work_group_id": "igor-stravinsky-pastorale-k-004-group",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-002",
+      "composer_id": "igor-stravinsky",
+      "normalized_title": "septet",
+      "classification": "needs_authority_review",
+      "confidence": 0.0,
+      "curator_review_required": true,
+      "evidence": [
+        "Same composer and title only; no catalogue or authority identifier proves identity"
+      ],
+      "authority_ids": [],
+      "proposed_action": "review_with_external_authority",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "igor-stravinsky-septet-k-080-group",
+          "file": "data/work-groups/igor-stravinsky-septet-k-080-group.yaml",
+          "title": "Septet",
+          "work_group_id": "igor-stravinsky-septet-k-080-group",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "igor-stravinsky-septet-k-083-group",
+          "file": "data/work-groups/igor-stravinsky-septet-k-083-group.yaml",
+          "title": "Septet",
+          "work_group_id": "igor-stravinsky-septet-k-083-group",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-002",
+      "composer_id": "igor-stravinsky",
+      "normalized_title": "the flood",
+      "classification": "needs_authority_review",
+      "confidence": 0.0,
+      "curator_review_required": true,
+      "evidence": [
+        "Same composer and title only; no catalogue or authority identifier proves identity"
+      ],
+      "authority_ids": [],
+      "proposed_action": "review_with_external_authority",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "igor-stravinsky-the-flood-k-098-group",
+          "file": "data/work-groups/igor-stravinsky-the-flood-k-098-group.yaml",
+          "title": "The Flood",
+          "work_group_id": "igor-stravinsky-the-flood-k-098-group",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "igor-stravinsky-the-flood-k-099-group",
+          "file": "data/work-groups/igor-stravinsky-the-flood-k-099-group.yaml",
+          "title": "The Flood",
+          "work_group_id": "igor-stravinsky-the-flood-k-099-group",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-002",
+      "composer_id": "ludwig-van-beethoven",
+      "normalized_title": "piano trio",
+      "classification": "distinct_works",
+      "confidence": 0.7,
+      "curator_review_required": true,
+      "evidence": [
+        "Works have different normalized catalogue identifiers"
+      ],
+      "authority_ids": [
+        "opus:op36",
+        "opus:op60",
+        "opus:op67"
+      ],
+      "proposed_action": "keep_separate_pending_authority_review",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "ludwig-van-beethoven-piano-trio-op-36-group",
+          "file": "data/work-groups/ludwig-van-beethoven-piano-trio-op-36-group.yaml",
+          "title": "Piano Trio",
+          "work_group_id": "ludwig-van-beethoven-piano-trio-op-36-group",
+          "catalogues": [
+            "opus:op36"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "ludwig-van-beethoven-piano-trio-op-60-group",
+          "file": "data/work-groups/ludwig-van-beethoven-piano-trio-op-60-group.yaml",
+          "title": "Piano Trio",
+          "work_group_id": "ludwig-van-beethoven-piano-trio-op-60-group",
+          "catalogues": [
+            "opus:op60"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "ludwig-van-beethoven-piano-trio-op-67-group",
+          "file": "data/work-groups/ludwig-van-beethoven-piano-trio-op-67-group.yaml",
+          "title": "Piano Trio",
+          "work_group_id": "ludwig-van-beethoven-piano-trio-op-67-group",
+          "catalogues": [
+            "opus:op67"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-002",
+      "composer_id": "ludwig-van-beethoven",
+      "normalized_title": "piano trio in e\u266d major",
+      "classification": "distinct_works",
+      "confidence": 0.7,
+      "curator_review_required": true,
+      "evidence": [
+        "Works have different normalized catalogue identifiers"
+      ],
+      "authority_ids": [
+        "opus:op38",
+        "woo:woo38"
+      ],
+      "proposed_action": "keep_separate_pending_authority_review",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "ludwig-van-beethoven-piano-trio-in-e-flat-major-op-38-group",
+          "file": "data/work-groups/ludwig-van-beethoven-piano-trio-in-e-flat-major-op-38-group.yaml",
+          "title": "Piano Trio in E\u266d major",
+          "work_group_id": "ludwig-van-beethoven-piano-trio-in-e-flat-major-op-38-group",
+          "catalogues": [
+            "opus:op38"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "ludwig-van-beethoven-piano-trio-in-e-flat-major-woo-38-group",
+          "file": "data/work-groups/ludwig-van-beethoven-piano-trio-in-e-flat-major-woo-38-group.yaml",
+          "title": "Piano Trio in E\u266d major",
+          "work_group_id": "ludwig-van-beethoven-piano-trio-in-e-flat-major-woo-38-group",
+          "catalogues": [
+            "woo:woo38"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-002",
+      "composer_id": "ludwig-van-beethoven",
+      "normalized_title": "symphony no. 1 in c major",
+      "classification": "confirmed_duplicate",
+      "confidence": 0.75,
+      "curator_review_required": true,
+      "evidence": [
+        "All Works share normalized catalogue identifier opus:op21"
+      ],
+      "authority_ids": [
+        "opus:op21"
+      ],
+      "proposed_action": "candidate_for_authority_confirmed_merge",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "ludwig-van-beethoven-symphony-no-1-in-c-major-op-21-group-2",
+          "file": "data/work-groups/ludwig-van-beethoven-symphony-no-1-in-c-major-op-21-group-2.yaml",
+          "title": "Symphony No. 1 in C major",
+          "work_group_id": "ludwig-van-beethoven-symphony-no-1-in-c-major-op-21-group-2",
+          "catalogues": [
+            "opus:op21"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "ludwig-van-beethoven-symphony-no-1-in-c-major-op-21-group",
+          "file": "data/work-groups/ludwig-van-beethoven-symphony-no-1-in-c-major-op-21-group.yaml",
+          "title": "Symphony No. 1 in C major",
+          "work_group_id": "ludwig-van-beethoven-symphony-no-1-in-c-major-op-21-group",
+          "catalogues": [
+            "opus:op21"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-002",
+      "composer_id": "ludwig-van-beethoven",
+      "normalized_title": "symphony no. 2 in d major",
+      "classification": "confirmed_duplicate",
+      "confidence": 0.75,
+      "curator_review_required": true,
+      "evidence": [
+        "All Works share normalized catalogue identifier opus:op36"
+      ],
+      "authority_ids": [
+        "opus:op36"
+      ],
+      "proposed_action": "candidate_for_authority_confirmed_merge",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "ludwig-van-beethoven-symphony-no-2-in-d-major-op-36-group-2",
+          "file": "data/work-groups/ludwig-van-beethoven-symphony-no-2-in-d-major-op-36-group-2.yaml",
+          "title": "Symphony No. 2 in D major",
+          "work_group_id": "ludwig-van-beethoven-symphony-no-2-in-d-major-op-36-group-2",
+          "catalogues": [
+            "opus:op36"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "ludwig-van-beethoven-symphony-no-2-in-d-major-op-36-group",
+          "file": "data/work-groups/ludwig-van-beethoven-symphony-no-2-in-d-major-op-36-group.yaml",
+          "title": "Symphony No. 2 in D major",
+          "work_group_id": "ludwig-van-beethoven-symphony-no-2-in-d-major-op-36-group",
+          "catalogues": [
+            "opus:op36"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-002",
+      "composer_id": "ludwig-van-beethoven",
+      "normalized_title": "symphony no. 3 \"eroica\" in e\u266d major",
+      "classification": "confirmed_duplicate",
+      "confidence": 0.75,
+      "curator_review_required": true,
+      "evidence": [
+        "All Works share normalized catalogue identifier opus:op55"
+      ],
+      "authority_ids": [
+        "opus:op55"
+      ],
+      "proposed_action": "candidate_for_authority_confirmed_merge",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "ludwig-van-beethoven-symphony-no-3-eroica-in-e-flat-major-op-55-group-2",
+          "file": "data/work-groups/ludwig-van-beethoven-symphony-no-3-eroica-in-e-flat-major-op-55-group-2.yaml",
+          "title": "Symphony No. 3 \"Eroica\" in E\u266d major",
+          "work_group_id": "ludwig-van-beethoven-symphony-no-3-eroica-in-e-flat-major-op-55-group-2",
+          "catalogues": [
+            "opus:op55"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "ludwig-van-beethoven-symphony-no-3-eroica-in-e-flat-major-op-55-group",
+          "file": "data/work-groups/ludwig-van-beethoven-symphony-no-3-eroica-in-e-flat-major-op-55-group.yaml",
+          "title": "Symphony No. 3 \"Eroica\" in E\u266d major",
+          "work_group_id": "ludwig-van-beethoven-symphony-no-3-eroica-in-e-flat-major-op-55-group",
+          "catalogues": [
+            "opus:op55"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-002",
+      "composer_id": "ludwig-van-beethoven",
+      "normalized_title": "symphony no. 4 in b\u266d major",
+      "classification": "confirmed_duplicate",
+      "confidence": 0.75,
+      "curator_review_required": true,
+      "evidence": [
+        "All Works share normalized catalogue identifier opus:op60"
+      ],
+      "authority_ids": [
+        "opus:op60"
+      ],
+      "proposed_action": "candidate_for_authority_confirmed_merge",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "ludwig-van-beethoven-symphony-no-4-in-b-flat-major-op-60-group-2",
+          "file": "data/work-groups/ludwig-van-beethoven-symphony-no-4-in-b-flat-major-op-60-group-2.yaml",
+          "title": "Symphony No. 4 in B\u266d major",
+          "work_group_id": "ludwig-van-beethoven-symphony-no-4-in-b-flat-major-op-60-group-2",
+          "catalogues": [
+            "opus:op60"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "ludwig-van-beethoven-symphony-no-4-in-b-flat-major-op-60-group",
+          "file": "data/work-groups/ludwig-van-beethoven-symphony-no-4-in-b-flat-major-op-60-group.yaml",
+          "title": "Symphony No. 4 in B\u266d major",
+          "work_group_id": "ludwig-van-beethoven-symphony-no-4-in-b-flat-major-op-60-group",
+          "catalogues": [
+            "opus:op60"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-002",
+      "composer_id": "ludwig-van-beethoven",
+      "normalized_title": "symphony no. 6 \"pastoral\" in f major",
+      "classification": "confirmed_duplicate",
+      "confidence": 0.75,
+      "curator_review_required": true,
+      "evidence": [
+        "All Works share normalized catalogue identifier opus:op68"
+      ],
+      "authority_ids": [
+        "opus:op68"
+      ],
+      "proposed_action": "candidate_for_authority_confirmed_merge",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "ludwig-van-beethoven-symphony-no-6-pastoral-in-f-major-op-68-group-2",
+          "file": "data/work-groups/ludwig-van-beethoven-symphony-no-6-pastoral-in-f-major-op-68-group-2.yaml",
+          "title": "Symphony No. 6 \"Pastoral\" in F major",
+          "work_group_id": "ludwig-van-beethoven-symphony-no-6-pastoral-in-f-major-op-68-group-2",
+          "catalogues": [
+            "opus:op68"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "ludwig-van-beethoven-symphony-no-6-pastoral-in-f-major-op-68-group",
+          "file": "data/work-groups/ludwig-van-beethoven-symphony-no-6-pastoral-in-f-major-op-68-group.yaml",
+          "title": "Symphony No. 6 \"Pastoral\" in F major",
+          "work_group_id": "ludwig-van-beethoven-symphony-no-6-pastoral-in-f-major-op-68-group",
+          "catalogues": [
+            "opus:op68"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-002",
+      "composer_id": "ludwig-van-beethoven",
+      "normalized_title": "symphony no. 7 in a major",
+      "classification": "confirmed_duplicate",
+      "confidence": 0.75,
+      "curator_review_required": true,
+      "evidence": [
+        "All Works share normalized catalogue identifier opus:op92"
+      ],
+      "authority_ids": [
+        "opus:op92"
+      ],
+      "proposed_action": "candidate_for_authority_confirmed_merge",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "ludwig-van-beethoven-symphony-no-7-in-a-major-op-92-group-2",
+          "file": "data/work-groups/ludwig-van-beethoven-symphony-no-7-in-a-major-op-92-group-2.yaml",
+          "title": "Symphony No. 7 in A major",
+          "work_group_id": "ludwig-van-beethoven-symphony-no-7-in-a-major-op-92-group-2",
+          "catalogues": [
+            "opus:op92"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "ludwig-van-beethoven-symphony-no-7-in-a-major-op-92-group-3",
+          "file": "data/work-groups/ludwig-van-beethoven-symphony-no-7-in-a-major-op-92-group-3.yaml",
+          "title": "Symphony No. 7 in A major",
+          "work_group_id": "ludwig-van-beethoven-symphony-no-7-in-a-major-op-92-group-3",
+          "catalogues": [
+            "opus:op92"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "ludwig-van-beethoven-symphony-no-7-in-a-major-op-92-group",
+          "file": "data/work-groups/ludwig-van-beethoven-symphony-no-7-in-a-major-op-92-group.yaml",
+          "title": "Symphony No. 7 in A major",
+          "work_group_id": "ludwig-van-beethoven-symphony-no-7-in-a-major-op-92-group",
+          "catalogues": [
+            "opus:op92"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-002",
+      "composer_id": "ludwig-van-beethoven",
+      "normalized_title": "symphony no. 8 in f major",
+      "classification": "confirmed_duplicate",
+      "confidence": 0.75,
+      "curator_review_required": true,
+      "evidence": [
+        "All Works share normalized catalogue identifier opus:op93"
+      ],
+      "authority_ids": [
+        "opus:op93"
+      ],
+      "proposed_action": "candidate_for_authority_confirmed_merge",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "ludwig-van-beethoven-symphony-no-8-in-f-major-op-93-group-2",
+          "file": "data/work-groups/ludwig-van-beethoven-symphony-no-8-in-f-major-op-93-group-2.yaml",
+          "title": "Symphony No. 8 in F major",
+          "work_group_id": "ludwig-van-beethoven-symphony-no-8-in-f-major-op-93-group-2",
+          "catalogues": [
+            "opus:op93"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "ludwig-van-beethoven-symphony-no-8-in-f-major-op-93-group",
+          "file": "data/work-groups/ludwig-van-beethoven-symphony-no-8-in-f-major-op-93-group.yaml",
+          "title": "Symphony No. 8 in F major",
+          "work_group_id": "ludwig-van-beethoven-symphony-no-8-in-f-major-op-93-group",
+          "catalogues": [
+            "opus:op93"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-002",
+      "composer_id": "paul-hindemith",
+      "normalized_title": "cello concerto",
+      "classification": "needs_authority_review",
+      "confidence": 0.0,
+      "curator_review_required": true,
+      "evidence": [
+        "Same composer and title only; no catalogue or authority identifier proves identity"
+      ],
+      "authority_ids": [],
+      "proposed_action": "review_with_external_authority",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "paul-hindemith-cello-concerto-group",
+          "file": "data/work-groups/paul-hindemith-cello-concerto-group.yaml",
+          "title": "Cello Concerto",
+          "work_group_id": "paul-hindemith-cello-concerto-group",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "paul-hindemith-cello-concerto-op-3-group",
+          "file": "data/work-groups/paul-hindemith-cello-concerto-op-3-group.yaml",
+          "title": "Cello Concerto",
+          "work_group_id": "paul-hindemith-cello-concerto-op-3-group",
+          "catalogues": [
+            "opus:op3"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-002",
+      "composer_id": "paul-hindemith",
+      "normalized_title": "concerto",
+      "classification": "needs_authority_review",
+      "confidence": 0.0,
+      "curator_review_required": true,
+      "evidence": [
+        "Same composer and title only; no catalogue or authority identifier proves identity"
+      ],
+      "authority_ids": [],
+      "proposed_action": "review_with_external_authority",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "paul-hindemith-concerto-group-2",
+          "file": "data/work-groups/paul-hindemith-concerto-group-2.yaml",
+          "title": "Concerto",
+          "work_group_id": "paul-hindemith-concerto-group-2",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "paul-hindemith-concerto-group",
+          "file": "data/work-groups/paul-hindemith-concerto-group.yaml",
+          "title": "Concerto",
+          "work_group_id": "paul-hindemith-concerto-group",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-002",
+      "composer_id": "paul-hindemith",
+      "normalized_title": "eight pieces",
+      "classification": "needs_authority_review",
+      "confidence": 0.0,
+      "curator_review_required": true,
+      "evidence": [
+        "Same composer and title only; no catalogue or authority identifier proves identity"
+      ],
+      "authority_ids": [],
+      "proposed_action": "review_with_external_authority",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "paul-hindemith-eight-pieces-group-2",
+          "file": "data/work-groups/paul-hindemith-eight-pieces-group-2.yaml",
+          "title": "Eight Pieces",
+          "work_group_id": "paul-hindemith-eight-pieces-group-2",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "paul-hindemith-eight-pieces-group",
+          "file": "data/work-groups/paul-hindemith-eight-pieces-group.yaml",
+          "title": "Eight Pieces",
+          "work_group_id": "paul-hindemith-eight-pieces-group",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-002",
+      "composer_id": "paul-hindemith",
+      "normalized_title": "hin und zur\u00fcck",
+      "classification": "needs_authority_review",
+      "confidence": 0.0,
+      "curator_review_required": true,
+      "evidence": [
+        "Same composer and title only; no catalogue or authority identifier proves identity"
+      ],
+      "authority_ids": [],
+      "proposed_action": "review_with_external_authority",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "paul-hindemith-hin-und-zuruck-group",
+          "file": "data/work-groups/paul-hindemith-hin-und-zuruck-group.yaml",
+          "title": "Hin und zur\u00fcck",
+          "work_group_id": "paul-hindemith-hin-und-zuruck-group",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "paul-hindemith-hin-und-zuruck-op-45a-group",
+          "file": "data/work-groups/paul-hindemith-hin-und-zuruck-op-45a-group.yaml",
+          "title": "Hin und zur\u00fcck",
+          "work_group_id": "paul-hindemith-hin-und-zuruck-op-45a-group",
+          "catalogues": [
+            "opus:op45a"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-002",
+      "composer_id": "paul-hindemith",
+      "normalized_title": "konzertmusik",
+      "classification": "distinct_works",
+      "confidence": 0.7,
+      "curator_review_required": true,
+      "evidence": [
+        "Works have different normalized catalogue identifiers"
+      ],
+      "authority_ids": [
+        "opus:op48",
+        "opus:op49"
+      ],
+      "proposed_action": "keep_separate_pending_authority_review",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "paul-hindemith-konzertmusik-op-48-group",
+          "file": "data/work-groups/paul-hindemith-konzertmusik-op-48-group.yaml",
+          "title": "Konzertmusik",
+          "work_group_id": "paul-hindemith-konzertmusik-op-48-group",
+          "catalogues": [
+            "opus:op48"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "paul-hindemith-konzertmusik-op-49-group",
+          "file": "data/work-groups/paul-hindemith-konzertmusik-op-49-group.yaml",
+          "title": "Konzertmusik",
+          "work_group_id": "paul-hindemith-konzertmusik-op-49-group",
+          "catalogues": [
+            "opus:op49"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-002",
+      "composer_id": "paul-hindemith",
+      "normalized_title": "nobilissima visione",
+      "classification": "needs_authority_review",
+      "confidence": 0.0,
+      "curator_review_required": true,
+      "evidence": [
+        "Same composer and title only; no catalogue or authority identifier proves identity"
+      ],
+      "authority_ids": [],
+      "proposed_action": "review_with_external_authority",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "paul-hindemith-nobilissima-visione-group-2",
+          "file": "data/work-groups/paul-hindemith-nobilissima-visione-group-2.yaml",
+          "title": "Nobilissima Visione",
+          "work_group_id": "paul-hindemith-nobilissima-visione-group-2",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "paul-hindemith-nobilissima-visione-group",
+          "file": "data/work-groups/paul-hindemith-nobilissima-visione-group.yaml",
+          "title": "Nobilissima Visione",
+          "work_group_id": "paul-hindemith-nobilissima-visione-group",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-002",
+      "composer_id": "paul-hindemith",
+      "normalized_title": "sonata",
+      "classification": "needs_authority_review",
+      "confidence": 0.0,
+      "curator_review_required": true,
+      "evidence": [
+        "Same composer and title only; no catalogue or authority identifier proves identity"
+      ],
+      "authority_ids": [],
+      "proposed_action": "review_with_external_authority",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "paul-hindemith-sonata-group-10",
+          "file": "data/work-groups/paul-hindemith-sonata-group-10.yaml",
+          "title": "Sonata",
+          "work_group_id": "paul-hindemith-sonata-group-10",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "paul-hindemith-sonata-group-11",
+          "file": "data/work-groups/paul-hindemith-sonata-group-11.yaml",
+          "title": "Sonata",
+          "work_group_id": "paul-hindemith-sonata-group-11",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "paul-hindemith-sonata-group-12",
+          "file": "data/work-groups/paul-hindemith-sonata-group-12.yaml",
+          "title": "Sonata",
+          "work_group_id": "paul-hindemith-sonata-group-12",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "paul-hindemith-sonata-group-13",
+          "file": "data/work-groups/paul-hindemith-sonata-group-13.yaml",
+          "title": "Sonata",
+          "work_group_id": "paul-hindemith-sonata-group-13",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "paul-hindemith-sonata-group-2",
+          "file": "data/work-groups/paul-hindemith-sonata-group-2.yaml",
+          "title": "Sonata",
+          "work_group_id": "paul-hindemith-sonata-group-2",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "paul-hindemith-sonata-group-3",
+          "file": "data/work-groups/paul-hindemith-sonata-group-3.yaml",
+          "title": "Sonata",
+          "work_group_id": "paul-hindemith-sonata-group-3",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "paul-hindemith-sonata-group-4",
+          "file": "data/work-groups/paul-hindemith-sonata-group-4.yaml",
+          "title": "Sonata",
+          "work_group_id": "paul-hindemith-sonata-group-4",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "paul-hindemith-sonata-group-5",
+          "file": "data/work-groups/paul-hindemith-sonata-group-5.yaml",
+          "title": "Sonata",
+          "work_group_id": "paul-hindemith-sonata-group-5",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "paul-hindemith-sonata-group-6",
+          "file": "data/work-groups/paul-hindemith-sonata-group-6.yaml",
+          "title": "Sonata",
+          "work_group_id": "paul-hindemith-sonata-group-6",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "paul-hindemith-sonata-group-7",
+          "file": "data/work-groups/paul-hindemith-sonata-group-7.yaml",
+          "title": "Sonata",
+          "work_group_id": "paul-hindemith-sonata-group-7",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "paul-hindemith-sonata-group-8",
+          "file": "data/work-groups/paul-hindemith-sonata-group-8.yaml",
+          "title": "Sonata",
+          "work_group_id": "paul-hindemith-sonata-group-8",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "paul-hindemith-sonata-group-9",
+          "file": "data/work-groups/paul-hindemith-sonata-group-9.yaml",
+          "title": "Sonata",
+          "work_group_id": "paul-hindemith-sonata-group-9",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "paul-hindemith-sonata-group",
+          "file": "data/work-groups/paul-hindemith-sonata-group.yaml",
+          "title": "Sonata",
+          "work_group_id": "paul-hindemith-sonata-group",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-002",
+      "composer_id": "paul-hindemith",
+      "normalized_title": "wir bauen eine stadt",
+      "classification": "needs_authority_review",
+      "confidence": 0.0,
+      "curator_review_required": true,
+      "evidence": [
+        "Same composer and title only; no catalogue or authority identifier proves identity"
+      ],
+      "authority_ids": [],
+      "proposed_action": "review_with_external_authority",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "paul-hindemith-wir-bauen-eine-stadt-group-2",
+          "file": "data/work-groups/paul-hindemith-wir-bauen-eine-stadt-group-2.yaml",
+          "title": "Wir bauen eine Stadt",
+          "work_group_id": "paul-hindemith-wir-bauen-eine-stadt-group-2",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "paul-hindemith-wir-bauen-eine-stadt-group",
+          "file": "data/work-groups/paul-hindemith-wir-bauen-eine-stadt-group.yaml",
+          "title": "Wir bauen eine Stadt",
+          "work_group_id": "paul-hindemith-wir-bauen-eine-stadt-group",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-002",
+      "composer_id": "sergei-prokofiev",
+      "normalized_title": "alexander nevsky",
+      "classification": "confirmed_duplicate",
+      "confidence": 0.75,
+      "curator_review_required": true,
+      "evidence": [
+        "All Works share normalized catalogue identifier op:op78"
+      ],
+      "authority_ids": [
+        "op:op78"
+      ],
+      "proposed_action": "candidate_for_authority_confirmed_merge",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "sergei-prokofiev-alexander-nevsky-2-group",
+          "file": "data/work-groups/sergei-prokofiev-alexander-nevsky-2-group.yaml",
+          "title": "Alexander Nevsky",
+          "work_group_id": "sergei-prokofiev-alexander-nevsky-2-group",
+          "catalogues": [
+            "op:op78"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "sergei-prokofiev-alexander-nevsky-group",
+          "file": "data/work-groups/sergei-prokofiev-alexander-nevsky-group.yaml",
+          "title": "Alexander Nevsky",
+          "work_group_id": "sergei-prokofiev-alexander-nevsky-group",
+          "catalogues": [
+            "op:op78"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-002",
+      "composer_id": "sergei-prokofiev",
+      "normalized_title": "american overture",
+      "classification": "distinct_works",
+      "confidence": 0.7,
+      "curator_review_required": true,
+      "evidence": [
+        "Works have different normalized catalogue identifiers"
+      ],
+      "authority_ids": [
+        "op:op42",
+        "op:op42bis"
+      ],
+      "proposed_action": "keep_separate_pending_authority_review",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "sergei-prokofiev-american-overture-2-group",
+          "file": "data/work-groups/sergei-prokofiev-american-overture-2-group.yaml",
+          "title": "American Overture",
+          "work_group_id": "sergei-prokofiev-american-overture-2-group",
+          "catalogues": [
+            "op:op42bis"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "sergei-prokofiev-american-overture-group",
+          "file": "data/work-groups/sergei-prokofiev-american-overture-group.yaml",
+          "title": "American Overture",
+          "work_group_id": "sergei-prokofiev-american-overture-group",
+          "catalogues": [
+            "op:op42"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-003",
+      "composer_id": "anton-bruckner",
+      "normalized_title": "overture in g minor",
+      "classification": "confirmed_duplicate",
+      "confidence": 0.75,
+      "curator_review_required": true,
+      "evidence": [
+        "All Works share normalized catalogue identifier wab:wab98"
+      ],
+      "authority_ids": [
+        "wab:wab98"
+      ],
+      "proposed_action": "candidate_for_authority_confirmed_merge",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "anton-bruckner-overture-in-g-minor-2-work",
+          "file": "data/works/anton-bruckner-overture-in-g-minor-2-work.yaml",
+          "title": "Overture in G minor",
+          "work_group_id": "anton-bruckner-overture-in-g-minor-2-group",
+          "catalogues": [
+            "wab:wab98"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "anton-bruckner-overture-in-g-minor-work",
+          "file": "data/works/anton-bruckner-overture-in-g-minor-work.yaml",
+          "title": "Overture in G minor",
+          "work_group_id": "anton-bruckner-overture-in-g-minor-group",
+          "catalogues": [
+            "wab:wab98"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-003",
+      "composer_id": "anton-bruckner",
+      "normalized_title": "symphony no. 1 in c minor \"das kecke beserl\"",
+      "classification": "confirmed_duplicate",
+      "confidence": 0.75,
+      "curator_review_required": true,
+      "evidence": [
+        "All Works share normalized catalogue identifier wab:wab101"
+      ],
+      "authority_ids": [
+        "wab:wab101"
+      ],
+      "proposed_action": "candidate_for_authority_confirmed_merge",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-2-work",
+          "file": "data/works/anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-2-work.yaml",
+          "title": "Symphony No. 1 in C minor \"Das kecke Beserl\"",
+          "work_group_id": "anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-group",
+          "catalogues": [
+            "wab:wab101"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-3-work",
+          "file": "data/works/anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-3-work.yaml",
+          "title": "Symphony No. 1 in C minor \"Das kecke Beserl\"",
+          "work_group_id": "anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-group",
+          "catalogues": [
+            "wab:wab101"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-work",
+          "file": "data/works/anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-work.yaml",
+          "title": "Symphony No. 1 in C minor \"Das kecke Beserl\"",
+          "work_group_id": "anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-group",
+          "catalogues": [
+            "wab:wab101"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-003",
+      "composer_id": "anton-bruckner",
+      "normalized_title": "symphony no. 2 in c minor",
+      "classification": "confirmed_duplicate",
+      "confidence": 0.75,
+      "curator_review_required": true,
+      "evidence": [
+        "All Works share normalized catalogue identifier wab:wab102"
+      ],
+      "authority_ids": [
+        "wab:wab102"
+      ],
+      "proposed_action": "candidate_for_authority_confirmed_merge",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "anton-bruckner-symphony-no-2-in-c-minor-2-work",
+          "file": "data/works/anton-bruckner-symphony-no-2-in-c-minor-2-work.yaml",
+          "title": "Symphony No. 2 in C minor",
+          "work_group_id": "anton-bruckner-symphony-no-2-in-c-minor-group",
+          "catalogues": [
+            "wab:wab102"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "anton-bruckner-symphony-no-2-in-c-minor-work",
+          "file": "data/works/anton-bruckner-symphony-no-2-in-c-minor-work.yaml",
+          "title": "Symphony No. 2 in C minor",
+          "work_group_id": "anton-bruckner-symphony-no-2-in-c-minor-group",
+          "catalogues": [
+            "wab:wab102"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-003",
+      "composer_id": "anton-bruckner",
+      "normalized_title": "symphony no. 3 in d minor \"wagner symphony\"",
+      "classification": "confirmed_duplicate",
+      "confidence": 0.75,
+      "curator_review_required": true,
+      "evidence": [
+        "All Works share normalized catalogue identifier wab:wab103"
+      ],
+      "authority_ids": [
+        "wab:wab103"
+      ],
+      "proposed_action": "candidate_for_authority_confirmed_merge",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-2-work",
+          "file": "data/works/anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-2-work.yaml",
+          "title": "Symphony No. 3 in D minor \"Wagner Symphony\"",
+          "work_group_id": "anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-group",
+          "catalogues": [
+            "wab:wab103"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-3-work",
+          "file": "data/works/anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-3-work.yaml",
+          "title": "Symphony No. 3 in D minor \"Wagner Symphony\"",
+          "work_group_id": "anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-group",
+          "catalogues": [
+            "wab:wab103"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-work",
+          "file": "data/works/anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-work.yaml",
+          "title": "Symphony No. 3 in D minor \"Wagner Symphony\"",
+          "work_group_id": "anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-group",
+          "catalogues": [
+            "wab:wab103"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-003",
+      "composer_id": "anton-bruckner",
+      "normalized_title": "symphony no. 4 in e\u266d major \"die romantische\"",
+      "classification": "confirmed_duplicate",
+      "confidence": 0.75,
+      "curator_review_required": true,
+      "evidence": [
+        "All Works share normalized catalogue identifier wab:wab104"
+      ],
+      "authority_ids": [
+        "wab:wab104"
+      ],
+      "proposed_action": "candidate_for_authority_confirmed_merge",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-2-work",
+          "file": "data/works/anton-bruckner-symphony-no-4-in-eb-major-die-romantische-2-work.yaml",
+          "title": "Symphony No. 4 in E\u266d major \"Die Romantische\"",
+          "work_group_id": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-group",
+          "catalogues": [
+            "wab:wab104"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-3-work",
+          "file": "data/works/anton-bruckner-symphony-no-4-in-eb-major-die-romantische-3-work.yaml",
+          "title": "Symphony No. 4 in E\u266d major \"Die Romantische\"",
+          "work_group_id": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-group",
+          "catalogues": [
+            "wab:wab104"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-4-work",
+          "file": "data/works/anton-bruckner-symphony-no-4-in-eb-major-die-romantische-4-work.yaml",
+          "title": "Symphony No. 4 in E\u266d major \"Die Romantische\"",
+          "work_group_id": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-group",
+          "catalogues": [
+            "wab:wab104"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-work",
+          "file": "data/works/anton-bruckner-symphony-no-4-in-eb-major-die-romantische-work.yaml",
+          "title": "Symphony No. 4 in E\u266d major \"Die Romantische\"",
+          "work_group_id": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-group",
+          "catalogues": [
+            "wab:wab104"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-003",
+      "composer_id": "anton-bruckner",
+      "normalized_title": "symphony no. 5 in b\u266d major",
+      "classification": "confirmed_duplicate",
+      "confidence": 0.75,
+      "curator_review_required": true,
+      "evidence": [
+        "All Works share normalized catalogue identifier wab:wab105"
+      ],
+      "authority_ids": [
+        "wab:wab105"
+      ],
+      "proposed_action": "candidate_for_authority_confirmed_merge",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "anton-bruckner-symphony-no-5-in-bb-major-2-work",
+          "file": "data/works/anton-bruckner-symphony-no-5-in-bb-major-2-work.yaml",
+          "title": "Symphony No. 5 in B\u266d major",
+          "work_group_id": "anton-bruckner-symphony-no-5-in-bb-major-group",
+          "catalogues": [
+            "wab:wab105"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "anton-bruckner-symphony-no-5-in-bb-major-work",
+          "file": "data/works/anton-bruckner-symphony-no-5-in-bb-major-work.yaml",
+          "title": "Symphony No. 5 in B\u266d major",
+          "work_group_id": "anton-bruckner-symphony-no-5-in-bb-major-group",
+          "catalogues": [
+            "wab:wab105"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-003",
+      "composer_id": "anton-bruckner",
+      "normalized_title": "symphony no. 7 in e major",
+      "classification": "confirmed_duplicate",
+      "confidence": 0.75,
+      "curator_review_required": true,
+      "evidence": [
+        "All Works share normalized catalogue identifier wab:wab107"
+      ],
+      "authority_ids": [
+        "wab:wab107"
+      ],
+      "proposed_action": "candidate_for_authority_confirmed_merge",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "anton-bruckner-symphony-no-7-in-e-major-2-work",
+          "file": "data/works/anton-bruckner-symphony-no-7-in-e-major-2-work.yaml",
+          "title": "Symphony No. 7 in E major",
+          "work_group_id": "anton-bruckner-symphony-no-7-in-e-major-group",
+          "catalogues": [
+            "wab:wab107"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "anton-bruckner-symphony-no-7-in-e-major-work",
+          "file": "data/works/anton-bruckner-symphony-no-7-in-e-major-work.yaml",
+          "title": "Symphony No. 7 in E major",
+          "work_group_id": "anton-bruckner-symphony-no-7-in-e-major-group",
+          "catalogues": [
+            "wab:wab107"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-003",
+      "composer_id": "anton-bruckner",
+      "normalized_title": "symphony no. 8 in c minor \"die apokalyptische\"",
+      "classification": "confirmed_duplicate",
+      "confidence": 0.75,
+      "curator_review_required": true,
+      "evidence": [
+        "All Works share normalized catalogue identifier wab:wab108"
+      ],
+      "authority_ids": [
+        "wab:wab108"
+      ],
+      "proposed_action": "candidate_for_authority_confirmed_merge",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "anton-bruckner-symphony-no-8-in-c-minor-die-apokalyptische-2-work",
+          "file": "data/works/anton-bruckner-symphony-no-8-in-c-minor-die-apokalyptische-2-work.yaml",
+          "title": "Symphony No. 8 in C minor \"Die Apokalyptische\"",
+          "work_group_id": "anton-bruckner-symphony-no-8-in-c-minor-die-apokalyptische-group",
+          "catalogues": [
+            "wab:wab108"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "anton-bruckner-symphony-no-8-in-c-minor-die-apokalyptische-3-work",
+          "file": "data/works/anton-bruckner-symphony-no-8-in-c-minor-die-apokalyptische-3-work.yaml",
+          "title": "Symphony No. 8 in C minor \"Die Apokalyptische\"",
+          "work_group_id": "anton-bruckner-symphony-no-8-in-c-minor-die-apokalyptische-group",
+          "catalogues": [
+            "wab:wab108"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "anton-bruckner-symphony-no-8-in-c-minor-die-apokalyptische-work",
+          "file": "data/works/anton-bruckner-symphony-no-8-in-c-minor-die-apokalyptische-work.yaml",
+          "title": "Symphony No. 8 in C minor \"Die Apokalyptische\"",
+          "work_group_id": "anton-bruckner-symphony-no-8-in-c-minor-die-apokalyptische-group",
+          "catalogues": [
+            "wab:wab108"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-003",
+      "composer_id": "anton-bruckner",
+      "normalized_title": "tantum ergo",
+      "classification": "distinct_works",
+      "confidence": 0.7,
+      "curator_review_required": true,
+      "evidence": [
+        "Works have different normalized catalogue identifiers"
+      ],
+      "authority_ids": [
+        "wab:wab32",
+        "wab:wab42",
+        "wab:wab43"
+      ],
+      "proposed_action": "keep_separate_pending_authority_review",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "anton-bruckner-tantum-ergo-2-work",
+          "file": "data/works/anton-bruckner-tantum-ergo-2-work.yaml",
+          "title": "Tantum ergo",
+          "work_group_id": "anton-bruckner-tantum-ergo-2-group",
+          "catalogues": [
+            "wab:wab42"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "anton-bruckner-tantum-ergo-3-work",
+          "file": "data/works/anton-bruckner-tantum-ergo-3-work.yaml",
+          "title": "Tantum ergo",
+          "work_group_id": "anton-bruckner-tantum-ergo-3-group",
+          "catalogues": [
+            "wab:wab43"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "anton-bruckner-tantum-ergo-work",
+          "file": "data/works/anton-bruckner-tantum-ergo-work.yaml",
+          "title": "Tantum ergo",
+          "work_group_id": "anton-bruckner-tantum-ergo-group",
+          "catalogues": [
+            "wab:wab32"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-003",
+      "composer_id": "dmitri-shostakovich",
+      "normalized_title": "suite from hamlet",
+      "classification": "distinct_works",
+      "confidence": 0.7,
+      "curator_review_required": true,
+      "evidence": [
+        "Works have different normalized catalogue identifiers"
+      ],
+      "authority_ids": [
+        "op:op116a",
+        "op:op32a"
+      ],
+      "proposed_action": "keep_separate_pending_authority_review",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "dmitri-shostakovich-suite-from-hamlet-2-work",
+          "file": "data/works/dmitri-shostakovich-suite-from-hamlet-2-work.yaml",
+          "title": "Suite from Hamlet",
+          "work_group_id": "dmitri-shostakovich-suite-from-hamlet-2-group",
+          "catalogues": [
+            "op:op116a"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "dmitri-shostakovich-suite-from-hamlet-work",
+          "file": "data/works/dmitri-shostakovich-suite-from-hamlet-work.yaml",
+          "title": "Suite from Hamlet",
+          "work_group_id": "dmitri-shostakovich-suite-from-hamlet-group",
+          "catalogues": [
+            "op:op32a"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-003",
+      "composer_id": "igor-stravinsky",
+      "normalized_title": "circus polka",
+      "classification": "needs_authority_review",
+      "confidence": 0.0,
+      "curator_review_required": true,
+      "evidence": [
+        "Same composer and title only; no catalogue or authority identifier proves identity"
+      ],
+      "authority_ids": [],
+      "proposed_action": "review_with_external_authority",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "igor-stravinsky-circus-polka-k-064-work",
+          "file": "data/works/igor-stravinsky-circus-polka-k-064-work.yaml",
+          "title": "Circus Polka",
+          "work_group_id": "igor-stravinsky-circus-polka-k-064-group",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "igor-stravinsky-circus-polka-k-066-work",
+          "file": "data/works/igor-stravinsky-circus-polka-k-066-work.yaml",
+          "title": "Circus Polka",
+          "work_group_id": "igor-stravinsky-circus-polka-k-066-group",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-003",
+      "composer_id": "igor-stravinsky",
+      "normalized_title": "four russian peasant songs",
+      "classification": "needs_authority_review",
+      "confidence": 0.0,
+      "curator_review_required": true,
+      "evidence": [
+        "Same composer and title only; no catalogue or authority identifier proves identity"
+      ],
+      "authority_ids": [],
+      "proposed_action": "review_with_external_authority",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "igor-stravinsky-four-russian-peasant-songs-k-020-work",
+          "file": "data/works/igor-stravinsky-four-russian-peasant-songs-k-020-work.yaml",
+          "title": "Four Russian Peasant Songs",
+          "work_group_id": "igor-stravinsky-four-russian-peasant-songs-k-020-group",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "igor-stravinsky-four-russian-peasant-songs-k-020a-work",
+          "file": "data/works/igor-stravinsky-four-russian-peasant-songs-k-020a-work.yaml",
+          "title": "Four Russian Peasant Songs",
+          "work_group_id": "igor-stravinsky-four-russian-peasant-songs-k-020a-group",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-003",
+      "composer_id": "igor-stravinsky",
+      "normalized_title": "four russian songs",
+      "classification": "needs_authority_review",
+      "confidence": 0.0,
+      "curator_review_required": true,
+      "evidence": [
+        "Same composer and title only; no catalogue or authority identifier proves identity"
+      ],
+      "authority_ids": [],
+      "proposed_action": "review_with_external_authority",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "igor-stravinsky-four-russian-songs-k-030-work",
+          "file": "data/works/igor-stravinsky-four-russian-songs-k-030-work.yaml",
+          "title": "Four Russian Songs",
+          "work_group_id": "igor-stravinsky-four-russian-songs-k-030-group",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "igor-stravinsky-four-russian-songs-k-032-work",
+          "file": "data/works/igor-stravinsky-four-russian-songs-k-032-work.yaml",
+          "title": "Four Russian Songs",
+          "work_group_id": "igor-stravinsky-four-russian-songs-k-032-group",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-003",
+      "composer_id": "igor-stravinsky",
+      "normalized_title": "les noces",
+      "classification": "needs_authority_review",
+      "confidence": 0.0,
+      "curator_review_required": true,
+      "evidence": [
+        "Same composer and title only; no catalogue or authority identifier proves identity"
+      ],
+      "authority_ids": [],
+      "proposed_action": "review_with_external_authority",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "igor-stravinsky-les-noces-k-024-work",
+          "file": "data/works/igor-stravinsky-les-noces-k-024-work.yaml",
+          "title": "Les Noces",
+          "work_group_id": "igor-stravinsky-les-noces-k-024-group",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "igor-stravinsky-les-noces-k-040-work",
+          "file": "data/works/igor-stravinsky-les-noces-k-040-work.yaml",
+          "title": "Les Noces",
+          "work_group_id": "igor-stravinsky-les-noces-k-040-group",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-003",
+      "composer_id": "igor-stravinsky",
+      "normalized_title": "pastorale",
+      "classification": "needs_authority_review",
+      "confidence": 0.0,
+      "curator_review_required": true,
+      "evidence": [
+        "Same composer and title only; no catalogue or authority identifier proves identity"
+      ],
+      "authority_ids": [],
+      "proposed_action": "review_with_external_authority",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "igor-stravinsky-pastorale-k-001-work",
+          "file": "data/works/igor-stravinsky-pastorale-k-001-work.yaml",
+          "title": "Pastorale",
+          "work_group_id": "igor-stravinsky-pastorale-k-001-group",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "igor-stravinsky-pastorale-k-001a-work",
+          "file": "data/works/igor-stravinsky-pastorale-k-001a-work.yaml",
+          "title": "Pastorale",
+          "work_group_id": "igor-stravinsky-pastorale-k-001a-group",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "igor-stravinsky-pastorale-k-004-work",
+          "file": "data/works/igor-stravinsky-pastorale-k-004-work.yaml",
+          "title": "Pastorale",
+          "work_group_id": "igor-stravinsky-pastorale-k-004-group",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-003",
+      "composer_id": "igor-stravinsky",
+      "normalized_title": "petrushka",
+      "classification": "needs_authority_review",
+      "confidence": 0.0,
+      "curator_review_required": true,
+      "evidence": [
+        "Same composer and title only; no catalogue or authority identifier proves identity"
+      ],
+      "authority_ids": [],
+      "proposed_action": "review_with_external_authority",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "igor-stravinsky-petrushka-k-012-1946-revision-work",
+          "file": "data/works/igor-stravinsky-petrushka-k-012-1946-revision-work.yaml",
+          "title": "Petrushka",
+          "work_group_id": "igor-stravinsky-petrushka-k-012-group",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "igor-stravinsky-petrushka-k-012-work",
+          "file": "data/works/igor-stravinsky-petrushka-k-012-work.yaml",
+          "title": "Petrushka",
+          "work_group_id": "igor-stravinsky-petrushka-k-012-group",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-003",
+      "composer_id": "igor-stravinsky",
+      "normalized_title": "septet",
+      "classification": "needs_authority_review",
+      "confidence": 0.0,
+      "curator_review_required": true,
+      "evidence": [
+        "Same composer and title only; no catalogue or authority identifier proves identity"
+      ],
+      "authority_ids": [],
+      "proposed_action": "review_with_external_authority",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "igor-stravinsky-septet-k-080-work",
+          "file": "data/works/igor-stravinsky-septet-k-080-work.yaml",
+          "title": "Septet",
+          "work_group_id": "igor-stravinsky-septet-k-080-group",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "igor-stravinsky-septet-k-083-work",
+          "file": "data/works/igor-stravinsky-septet-k-083-work.yaml",
+          "title": "Septet",
+          "work_group_id": "igor-stravinsky-septet-k-083-group",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-003",
+      "composer_id": "igor-stravinsky",
+      "normalized_title": "the flood",
+      "classification": "needs_authority_review",
+      "confidence": 0.0,
+      "curator_review_required": true,
+      "evidence": [
+        "Same composer and title only; no catalogue or authority identifier proves identity"
+      ],
+      "authority_ids": [],
+      "proposed_action": "review_with_external_authority",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "igor-stravinsky-the-flood-k-098-work",
+          "file": "data/works/igor-stravinsky-the-flood-k-098-work.yaml",
+          "title": "The Flood",
+          "work_group_id": "igor-stravinsky-the-flood-k-098-group",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "igor-stravinsky-the-flood-k-099-work",
+          "file": "data/works/igor-stravinsky-the-flood-k-099-work.yaml",
+          "title": "The Flood",
+          "work_group_id": "igor-stravinsky-the-flood-k-099-group",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-003",
+      "composer_id": "ludwig-van-beethoven",
+      "normalized_title": "piano trio",
+      "classification": "distinct_works",
+      "confidence": 0.7,
+      "curator_review_required": true,
+      "evidence": [
+        "Works have different normalized catalogue identifiers"
+      ],
+      "authority_ids": [
+        "opus:op36",
+        "opus:op60",
+        "opus:op67"
+      ],
+      "proposed_action": "keep_separate_pending_authority_review",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "ludwig-van-beethoven-piano-trio-op-36-work",
+          "file": "data/works/ludwig-van-beethoven-piano-trio-op-36-work.yaml",
+          "title": "Piano Trio",
+          "work_group_id": "ludwig-van-beethoven-piano-trio-op-36-group",
+          "catalogues": [
+            "opus:op36"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "ludwig-van-beethoven-piano-trio-op-60-work",
+          "file": "data/works/ludwig-van-beethoven-piano-trio-op-60-work.yaml",
+          "title": "Piano Trio",
+          "work_group_id": "ludwig-van-beethoven-piano-trio-op-60-group",
+          "catalogues": [
+            "opus:op60"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "ludwig-van-beethoven-piano-trio-op-67-work",
+          "file": "data/works/ludwig-van-beethoven-piano-trio-op-67-work.yaml",
+          "title": "Piano Trio",
+          "work_group_id": "ludwig-van-beethoven-piano-trio-op-67-group",
+          "catalogues": [
+            "opus:op67"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-003",
+      "composer_id": "ludwig-van-beethoven",
+      "normalized_title": "piano trio in e\u266d major",
+      "classification": "distinct_works",
+      "confidence": 0.7,
+      "curator_review_required": true,
+      "evidence": [
+        "Works have different normalized catalogue identifiers"
+      ],
+      "authority_ids": [
+        "opus:op38",
+        "woo:woo38"
+      ],
+      "proposed_action": "keep_separate_pending_authority_review",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "ludwig-van-beethoven-piano-trio-in-e-flat-major-op-38-work",
+          "file": "data/works/ludwig-van-beethoven-piano-trio-in-e-flat-major-op-38-work.yaml",
+          "title": "Piano Trio in E\u266d major",
+          "work_group_id": "ludwig-van-beethoven-piano-trio-in-e-flat-major-op-38-group",
+          "catalogues": [
+            "opus:op38"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "ludwig-van-beethoven-piano-trio-in-e-flat-major-woo-38-work",
+          "file": "data/works/ludwig-van-beethoven-piano-trio-in-e-flat-major-woo-38-work.yaml",
+          "title": "Piano Trio in E\u266d major",
+          "work_group_id": "ludwig-van-beethoven-piano-trio-in-e-flat-major-woo-38-group",
+          "catalogues": [
+            "woo:woo38"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-003",
+      "composer_id": "ludwig-van-beethoven",
+      "normalized_title": "symphony no. 1 in c major",
+      "classification": "confirmed_duplicate",
+      "confidence": 0.75,
+      "curator_review_required": true,
+      "evidence": [
+        "All Works share normalized catalogue identifier opus:op21"
+      ],
+      "authority_ids": [
+        "opus:op21"
+      ],
+      "proposed_action": "candidate_for_authority_confirmed_merge",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "ludwig-van-beethoven-symphony-no-1-in-c-major-op-21-work-2",
+          "file": "data/works/ludwig-van-beethoven-symphony-no-1-in-c-major-op-21-work-2.yaml",
+          "title": "Symphony No. 1 in C major",
+          "work_group_id": "ludwig-van-beethoven-symphony-no-1-in-c-major-op-21-group-2",
+          "catalogues": [
+            "opus:op21"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "ludwig-van-beethoven-symphony-no-1-in-c-major-op-21-work",
+          "file": "data/works/ludwig-van-beethoven-symphony-no-1-in-c-major-op-21-work.yaml",
+          "title": "Symphony No. 1 in C major",
+          "work_group_id": "ludwig-van-beethoven-symphony-no-1-in-c-major-op-21-group",
+          "catalogues": [
+            "opus:op21"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-003",
+      "composer_id": "ludwig-van-beethoven",
+      "normalized_title": "symphony no. 2 in d major",
+      "classification": "confirmed_duplicate",
+      "confidence": 0.75,
+      "curator_review_required": true,
+      "evidence": [
+        "All Works share normalized catalogue identifier opus:op36"
+      ],
+      "authority_ids": [
+        "opus:op36"
+      ],
+      "proposed_action": "candidate_for_authority_confirmed_merge",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "ludwig-van-beethoven-symphony-no-2-in-d-major-op-36-work-2",
+          "file": "data/works/ludwig-van-beethoven-symphony-no-2-in-d-major-op-36-work-2.yaml",
+          "title": "Symphony No. 2 in D major",
+          "work_group_id": "ludwig-van-beethoven-symphony-no-2-in-d-major-op-36-group-2",
+          "catalogues": [
+            "opus:op36"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "ludwig-van-beethoven-symphony-no-2-in-d-major-op-36-work",
+          "file": "data/works/ludwig-van-beethoven-symphony-no-2-in-d-major-op-36-work.yaml",
+          "title": "Symphony No. 2 in D major",
+          "work_group_id": "ludwig-van-beethoven-symphony-no-2-in-d-major-op-36-group",
+          "catalogues": [
+            "opus:op36"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-003",
+      "composer_id": "ludwig-van-beethoven",
+      "normalized_title": "symphony no. 3 \"eroica\" in e\u266d major",
+      "classification": "confirmed_duplicate",
+      "confidence": 0.75,
+      "curator_review_required": true,
+      "evidence": [
+        "All Works share normalized catalogue identifier opus:op55"
+      ],
+      "authority_ids": [
+        "opus:op55"
+      ],
+      "proposed_action": "candidate_for_authority_confirmed_merge",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "ludwig-van-beethoven-symphony-no-3-eroica-in-e-flat-major-op-55-work-2",
+          "file": "data/works/ludwig-van-beethoven-symphony-no-3-eroica-in-e-flat-major-op-55-work-2.yaml",
+          "title": "Symphony No. 3 \"Eroica\" in E\u266d major",
+          "work_group_id": "ludwig-van-beethoven-symphony-no-3-eroica-in-e-flat-major-op-55-group-2",
+          "catalogues": [
+            "opus:op55"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "ludwig-van-beethoven-symphony-no-3-eroica-in-e-flat-major-op-55-work",
+          "file": "data/works/ludwig-van-beethoven-symphony-no-3-eroica-in-e-flat-major-op-55-work.yaml",
+          "title": "Symphony No. 3 \"Eroica\" in E\u266d major",
+          "work_group_id": "ludwig-van-beethoven-symphony-no-3-eroica-in-e-flat-major-op-55-group",
+          "catalogues": [
+            "opus:op55"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-003",
+      "composer_id": "ludwig-van-beethoven",
+      "normalized_title": "symphony no. 4 in b\u266d major",
+      "classification": "confirmed_duplicate",
+      "confidence": 0.75,
+      "curator_review_required": true,
+      "evidence": [
+        "All Works share normalized catalogue identifier opus:op60"
+      ],
+      "authority_ids": [
+        "opus:op60"
+      ],
+      "proposed_action": "candidate_for_authority_confirmed_merge",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "ludwig-van-beethoven-symphony-no-4-in-b-flat-major-op-60-work-2",
+          "file": "data/works/ludwig-van-beethoven-symphony-no-4-in-b-flat-major-op-60-work-2.yaml",
+          "title": "Symphony No. 4 in B\u266d major",
+          "work_group_id": "ludwig-van-beethoven-symphony-no-4-in-b-flat-major-op-60-group-2",
+          "catalogues": [
+            "opus:op60"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "ludwig-van-beethoven-symphony-no-4-in-b-flat-major-op-60-work",
+          "file": "data/works/ludwig-van-beethoven-symphony-no-4-in-b-flat-major-op-60-work.yaml",
+          "title": "Symphony No. 4 in B\u266d major",
+          "work_group_id": "ludwig-van-beethoven-symphony-no-4-in-b-flat-major-op-60-group",
+          "catalogues": [
+            "opus:op60"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-003",
+      "composer_id": "ludwig-van-beethoven",
+      "normalized_title": "symphony no. 6 \"pastoral\" in f major",
+      "classification": "confirmed_duplicate",
+      "confidence": 0.75,
+      "curator_review_required": true,
+      "evidence": [
+        "All Works share normalized catalogue identifier opus:op68"
+      ],
+      "authority_ids": [
+        "opus:op68"
+      ],
+      "proposed_action": "candidate_for_authority_confirmed_merge",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "ludwig-van-beethoven-symphony-no-6-pastoral-in-f-major-op-68-work-2",
+          "file": "data/works/ludwig-van-beethoven-symphony-no-6-pastoral-in-f-major-op-68-work-2.yaml",
+          "title": "Symphony No. 6 \"Pastoral\" in F major",
+          "work_group_id": "ludwig-van-beethoven-symphony-no-6-pastoral-in-f-major-op-68-group-2",
+          "catalogues": [
+            "opus:op68"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "ludwig-van-beethoven-symphony-no-6-pastoral-in-f-major-op-68-work",
+          "file": "data/works/ludwig-van-beethoven-symphony-no-6-pastoral-in-f-major-op-68-work.yaml",
+          "title": "Symphony No. 6 \"Pastoral\" in F major",
+          "work_group_id": "ludwig-van-beethoven-symphony-no-6-pastoral-in-f-major-op-68-group",
+          "catalogues": [
+            "opus:op68"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-003",
+      "composer_id": "ludwig-van-beethoven",
+      "normalized_title": "symphony no. 7 in a major",
+      "classification": "confirmed_duplicate",
+      "confidence": 0.75,
+      "curator_review_required": true,
+      "evidence": [
+        "All Works share normalized catalogue identifier opus:op92"
+      ],
+      "authority_ids": [
+        "opus:op92"
+      ],
+      "proposed_action": "candidate_for_authority_confirmed_merge",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "ludwig-van-beethoven-symphony-no-7-in-a-major-op-92-work-2",
+          "file": "data/works/ludwig-van-beethoven-symphony-no-7-in-a-major-op-92-work-2.yaml",
+          "title": "Symphony No. 7 in A major",
+          "work_group_id": "ludwig-van-beethoven-symphony-no-7-in-a-major-op-92-group-2",
+          "catalogues": [
+            "opus:op92"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "ludwig-van-beethoven-symphony-no-7-in-a-major-op-92-work-3",
+          "file": "data/works/ludwig-van-beethoven-symphony-no-7-in-a-major-op-92-work-3.yaml",
+          "title": "Symphony No. 7 in A major",
+          "work_group_id": "ludwig-van-beethoven-symphony-no-7-in-a-major-op-92-group-3",
+          "catalogues": [
+            "opus:op92"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "ludwig-van-beethoven-symphony-no-7-in-a-major-op-92-work",
+          "file": "data/works/ludwig-van-beethoven-symphony-no-7-in-a-major-op-92-work.yaml",
+          "title": "Symphony No. 7 in A major",
+          "work_group_id": "ludwig-van-beethoven-symphony-no-7-in-a-major-op-92-group",
+          "catalogues": [
+            "opus:op92"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-003",
+      "composer_id": "ludwig-van-beethoven",
+      "normalized_title": "symphony no. 8 in f major",
+      "classification": "confirmed_duplicate",
+      "confidence": 0.75,
+      "curator_review_required": true,
+      "evidence": [
+        "All Works share normalized catalogue identifier opus:op93"
+      ],
+      "authority_ids": [
+        "opus:op93"
+      ],
+      "proposed_action": "candidate_for_authority_confirmed_merge",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "ludwig-van-beethoven-symphony-no-8-in-f-major-op-93-work-2",
+          "file": "data/works/ludwig-van-beethoven-symphony-no-8-in-f-major-op-93-work-2.yaml",
+          "title": "Symphony No. 8 in F major",
+          "work_group_id": "ludwig-van-beethoven-symphony-no-8-in-f-major-op-93-group-2",
+          "catalogues": [
+            "opus:op93"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "ludwig-van-beethoven-symphony-no-8-in-f-major-op-93-work",
+          "file": "data/works/ludwig-van-beethoven-symphony-no-8-in-f-major-op-93-work.yaml",
+          "title": "Symphony No. 8 in F major",
+          "work_group_id": "ludwig-van-beethoven-symphony-no-8-in-f-major-op-93-group",
+          "catalogues": [
+            "opus:op93"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-003",
+      "composer_id": "paul-hindemith",
+      "normalized_title": "cello concerto",
+      "classification": "needs_authority_review",
+      "confidence": 0.0,
+      "curator_review_required": true,
+      "evidence": [
+        "Same composer and title only; no catalogue or authority identifier proves identity"
+      ],
+      "authority_ids": [],
+      "proposed_action": "review_with_external_authority",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "paul-hindemith-cello-concerto-op-3-work",
+          "file": "data/works/paul-hindemith-cello-concerto-op-3-work.yaml",
+          "title": "Cello Concerto",
+          "work_group_id": "paul-hindemith-cello-concerto-op-3-group",
+          "catalogues": [
+            "opus:op3"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "paul-hindemith-cello-concerto-work",
+          "file": "data/works/paul-hindemith-cello-concerto-work.yaml",
+          "title": "Cello Concerto",
+          "work_group_id": "paul-hindemith-cello-concerto-group",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-003",
+      "composer_id": "paul-hindemith",
+      "normalized_title": "concerto",
+      "classification": "needs_authority_review",
+      "confidence": 0.0,
+      "curator_review_required": true,
+      "evidence": [
+        "Same composer and title only; no catalogue or authority identifier proves identity"
+      ],
+      "authority_ids": [],
+      "proposed_action": "review_with_external_authority",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "paul-hindemith-concerto-work-2",
+          "file": "data/works/paul-hindemith-concerto-work-2.yaml",
+          "title": "Concerto",
+          "work_group_id": "paul-hindemith-concerto-group-2",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "paul-hindemith-concerto-work",
+          "file": "data/works/paul-hindemith-concerto-work.yaml",
+          "title": "Concerto",
+          "work_group_id": "paul-hindemith-concerto-group",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-003",
+      "composer_id": "paul-hindemith",
+      "normalized_title": "eight pieces",
+      "classification": "needs_authority_review",
+      "confidence": 0.0,
+      "curator_review_required": true,
+      "evidence": [
+        "Same composer and title only; no catalogue or authority identifier proves identity"
+      ],
+      "authority_ids": [],
+      "proposed_action": "review_with_external_authority",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "paul-hindemith-eight-pieces-work-2",
+          "file": "data/works/paul-hindemith-eight-pieces-work-2.yaml",
+          "title": "Eight Pieces",
+          "work_group_id": "paul-hindemith-eight-pieces-group-2",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "paul-hindemith-eight-pieces-work",
+          "file": "data/works/paul-hindemith-eight-pieces-work.yaml",
+          "title": "Eight Pieces",
+          "work_group_id": "paul-hindemith-eight-pieces-group",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-003",
+      "composer_id": "paul-hindemith",
+      "normalized_title": "hin und zur\u00fcck",
+      "classification": "needs_authority_review",
+      "confidence": 0.0,
+      "curator_review_required": true,
+      "evidence": [
+        "Same composer and title only; no catalogue or authority identifier proves identity"
+      ],
+      "authority_ids": [],
+      "proposed_action": "review_with_external_authority",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "paul-hindemith-hin-und-zuruck-op-45a-work",
+          "file": "data/works/paul-hindemith-hin-und-zuruck-op-45a-work.yaml",
+          "title": "Hin und zur\u00fcck",
+          "work_group_id": "paul-hindemith-hin-und-zuruck-op-45a-group",
+          "catalogues": [
+            "opus:op45a"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "paul-hindemith-hin-und-zuruck-work",
+          "file": "data/works/paul-hindemith-hin-und-zuruck-work.yaml",
+          "title": "Hin und zur\u00fcck",
+          "work_group_id": "paul-hindemith-hin-und-zuruck-group",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-003",
+      "composer_id": "paul-hindemith",
+      "normalized_title": "h\u00e9rodiade",
+      "classification": "needs_authority_review",
+      "confidence": 0.0,
+      "curator_review_required": true,
+      "evidence": [
+        "Same composer and title only; no catalogue or authority identifier proves identity"
+      ],
+      "authority_ids": [],
+      "proposed_action": "review_with_external_authority",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "paul-hindemith-herodiade-work-2",
+          "file": "data/works/paul-hindemith-herodiade-work-2.yaml",
+          "title": "H\u00e9rodiade",
+          "work_group_id": "paul-hindemith-herodiade-group",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "paul-hindemith-herodiade-work",
+          "file": "data/works/paul-hindemith-herodiade-work.yaml",
+          "title": "H\u00e9rodiade",
+          "work_group_id": "paul-hindemith-herodiade-group",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-003",
+      "composer_id": "paul-hindemith",
+      "normalized_title": "konzertmusik",
+      "classification": "distinct_works",
+      "confidence": 0.7,
+      "curator_review_required": true,
+      "evidence": [
+        "Works have different normalized catalogue identifiers"
+      ],
+      "authority_ids": [
+        "opus:op48",
+        "opus:op49"
+      ],
+      "proposed_action": "keep_separate_pending_authority_review",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "paul-hindemith-konzertmusik-op-48-work",
+          "file": "data/works/paul-hindemith-konzertmusik-op-48-work.yaml",
+          "title": "Konzertmusik",
+          "work_group_id": "paul-hindemith-konzertmusik-op-48-group",
+          "catalogues": [
+            "opus:op48"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "paul-hindemith-konzertmusik-op-49-work",
+          "file": "data/works/paul-hindemith-konzertmusik-op-49-work.yaml",
+          "title": "Konzertmusik",
+          "work_group_id": "paul-hindemith-konzertmusik-op-49-group",
+          "catalogues": [
+            "opus:op49"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-003",
+      "composer_id": "paul-hindemith",
+      "normalized_title": "nobilissima visione",
+      "classification": "needs_authority_review",
+      "confidence": 0.0,
+      "curator_review_required": true,
+      "evidence": [
+        "Same composer and title only; no catalogue or authority identifier proves identity"
+      ],
+      "authority_ids": [],
+      "proposed_action": "review_with_external_authority",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "paul-hindemith-nobilissima-visione-work-2",
+          "file": "data/works/paul-hindemith-nobilissima-visione-work-2.yaml",
+          "title": "Nobilissima Visione",
+          "work_group_id": "paul-hindemith-nobilissima-visione-group-2",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "paul-hindemith-nobilissima-visione-work",
+          "file": "data/works/paul-hindemith-nobilissima-visione-work.yaml",
+          "title": "Nobilissima Visione",
+          "work_group_id": "paul-hindemith-nobilissima-visione-group",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-003",
+      "composer_id": "paul-hindemith",
+      "normalized_title": "sonata",
+      "classification": "needs_authority_review",
+      "confidence": 0.0,
+      "curator_review_required": true,
+      "evidence": [
+        "Same composer and title only; no catalogue or authority identifier proves identity"
+      ],
+      "authority_ids": [],
+      "proposed_action": "review_with_external_authority",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "paul-hindemith-sonata-work-10",
+          "file": "data/works/paul-hindemith-sonata-work-10.yaml",
+          "title": "Sonata",
+          "work_group_id": "paul-hindemith-sonata-group-10",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "paul-hindemith-sonata-work-11",
+          "file": "data/works/paul-hindemith-sonata-work-11.yaml",
+          "title": "Sonata",
+          "work_group_id": "paul-hindemith-sonata-group-11",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "paul-hindemith-sonata-work-12",
+          "file": "data/works/paul-hindemith-sonata-work-12.yaml",
+          "title": "Sonata",
+          "work_group_id": "paul-hindemith-sonata-group-12",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "paul-hindemith-sonata-work-13",
+          "file": "data/works/paul-hindemith-sonata-work-13.yaml",
+          "title": "Sonata",
+          "work_group_id": "paul-hindemith-sonata-group-13",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "paul-hindemith-sonata-work-2",
+          "file": "data/works/paul-hindemith-sonata-work-2.yaml",
+          "title": "Sonata",
+          "work_group_id": "paul-hindemith-sonata-group-2",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "paul-hindemith-sonata-work-3",
+          "file": "data/works/paul-hindemith-sonata-work-3.yaml",
+          "title": "Sonata",
+          "work_group_id": "paul-hindemith-sonata-group-3",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "paul-hindemith-sonata-work-4",
+          "file": "data/works/paul-hindemith-sonata-work-4.yaml",
+          "title": "Sonata",
+          "work_group_id": "paul-hindemith-sonata-group-4",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "paul-hindemith-sonata-work-5",
+          "file": "data/works/paul-hindemith-sonata-work-5.yaml",
+          "title": "Sonata",
+          "work_group_id": "paul-hindemith-sonata-group-5",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "paul-hindemith-sonata-work-6",
+          "file": "data/works/paul-hindemith-sonata-work-6.yaml",
+          "title": "Sonata",
+          "work_group_id": "paul-hindemith-sonata-group-6",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "paul-hindemith-sonata-work-7",
+          "file": "data/works/paul-hindemith-sonata-work-7.yaml",
+          "title": "Sonata",
+          "work_group_id": "paul-hindemith-sonata-group-7",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "paul-hindemith-sonata-work-8",
+          "file": "data/works/paul-hindemith-sonata-work-8.yaml",
+          "title": "Sonata",
+          "work_group_id": "paul-hindemith-sonata-group-8",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "paul-hindemith-sonata-work-9",
+          "file": "data/works/paul-hindemith-sonata-work-9.yaml",
+          "title": "Sonata",
+          "work_group_id": "paul-hindemith-sonata-group-9",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "paul-hindemith-sonata-work",
+          "file": "data/works/paul-hindemith-sonata-work.yaml",
+          "title": "Sonata",
+          "work_group_id": "paul-hindemith-sonata-group",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-003",
+      "composer_id": "paul-hindemith",
+      "normalized_title": "wir bauen eine stadt",
+      "classification": "needs_authority_review",
+      "confidence": 0.0,
+      "curator_review_required": true,
+      "evidence": [
+        "Same composer and title only; no catalogue or authority identifier proves identity"
+      ],
+      "authority_ids": [],
+      "proposed_action": "review_with_external_authority",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "paul-hindemith-wir-bauen-eine-stadt-work-2",
+          "file": "data/works/paul-hindemith-wir-bauen-eine-stadt-work-2.yaml",
+          "title": "Wir bauen eine Stadt",
+          "work_group_id": "paul-hindemith-wir-bauen-eine-stadt-group-2",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "paul-hindemith-wir-bauen-eine-stadt-work",
+          "file": "data/works/paul-hindemith-wir-bauen-eine-stadt-work.yaml",
+          "title": "Wir bauen eine Stadt",
+          "work_group_id": "paul-hindemith-wir-bauen-eine-stadt-group",
+          "catalogues": [],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-003",
+      "composer_id": "sergei-prokofiev",
+      "normalized_title": "alexander nevsky",
+      "classification": "confirmed_duplicate",
+      "confidence": 0.75,
+      "curator_review_required": true,
+      "evidence": [
+        "All Works share normalized catalogue identifier op:op78"
+      ],
+      "authority_ids": [
+        "op:op78"
+      ],
+      "proposed_action": "candidate_for_authority_confirmed_merge",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "sergei-prokofiev-alexander-nevsky-2-work",
+          "file": "data/works/sergei-prokofiev-alexander-nevsky-2-work.yaml",
+          "title": "Alexander Nevsky",
+          "work_group_id": "sergei-prokofiev-alexander-nevsky-2-group",
+          "catalogues": [
+            "op:op78"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "sergei-prokofiev-alexander-nevsky-work",
+          "file": "data/works/sergei-prokofiev-alexander-nevsky-work.yaml",
+          "title": "Alexander Nevsky",
+          "work_group_id": "sergei-prokofiev-alexander-nevsky-group",
+          "catalogues": [
+            "op:op78"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    },
+    {
+      "rule_id": "DUP-003",
+      "composer_id": "sergei-prokofiev",
+      "normalized_title": "american overture",
+      "classification": "distinct_works",
+      "confidence": 0.7,
+      "curator_review_required": true,
+      "evidence": [
+        "Works have different normalized catalogue identifiers"
+      ],
+      "authority_ids": [
+        "op:op42",
+        "op:op42bis"
+      ],
+      "proposed_action": "keep_separate_pending_authority_review",
+      "status": "background_suspicion",
+      "items": [
+        {
+          "id": "sergei-prokofiev-american-overture-2-work",
+          "file": "data/works/sergei-prokofiev-american-overture-2-work.yaml",
+          "title": "American Overture",
+          "work_group_id": "sergei-prokofiev-american-overture-2-group",
+          "catalogues": [
+            "op:op42bis"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        },
+        {
+          "id": "sergei-prokofiev-american-overture-work",
+          "file": "data/works/sergei-prokofiev-american-overture-work.yaml",
+          "title": "American Overture",
+          "work_group_id": "sergei-prokofiev-american-overture-group",
+          "catalogues": [
+            "op:op42"
+          ],
+          "musicbrainz_ids": [],
+          "relationship_types": []
+        }
+      ]
+    }
+  ]
+}
