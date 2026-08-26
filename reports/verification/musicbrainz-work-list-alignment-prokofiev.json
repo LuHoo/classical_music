@@ -1,0 +1,112 @@
+{
+  "composer_id": "sergei-prokofiev",
+  "date": "2026-08-26",
+  "issue": 159,
+  "local_work_count": 96,
+  "aligned_musicbrainz_work_count": 63,
+  "unresolved_count": 33,
+  "summary": {
+    "curator_decision_required": 5,
+    "curator_decision_groups": 4,
+    "candidate_evidence_not_written": 2,
+    "background_authority_gap": 27
+  },
+  "canonical_data_changed": false,
+  "policy": {
+    "trusted_legacy_input": true,
+    "external_authorities_are_supporting_evidence": true,
+    "temporary_evidence_outside_canonical_data": true,
+    "core_model": "Person -> Work Group -> Work -> Performance"
+  },
+  "curator_decision_required": [
+    {
+      "local_ids": [
+        "sergei-prokofiev-alexander-nevsky-work",
+        "sergei-prokofiev-alexander-nevsky-2-work"
+      ],
+      "title": "Alexander Nevsky, Op. 78",
+      "candidate_musicbrainz_work_ids": [
+        "bfa47ae2-a283-4785-a614-b88693cd9887",
+        "b066a40a-9ace-4558-be80-14a93f86e11d"
+      ],
+      "decision": "Decide same work, film score versus cantata/suite boundary, or separate curated works."
+    },
+    {
+      "local_ids": [
+        "sergei-prokofiev-lieutenant-kije-work"
+      ],
+      "context_ids": [
+        "sergei-prokofiev-suite-from-lieutenant-kije-work"
+      ],
+      "title": "Lieutenant Kije / Suite from Lieutenant Kije, Op. 60",
+      "candidate_musicbrainz_work_ids": [
+        "f168363e-9a3c-34d4-879f-2c20e0b87b52",
+        "306a677c-f773-4fa0-8069-fc5385f8531b"
+      ],
+      "decision": "Decide whether the local main-title record should share the suite MBID, share one Work Group with the suite, or remain distinct."
+    },
+    {
+      "local_ids": [
+        "sergei-prokofiev-symphony-no-2-in-d-minor-revised-version-work"
+      ],
+      "title": "Symphony No. 2 in D minor, revised version, Op. 136",
+      "candidate_musicbrainz_work_ids": [
+        "4f0ad7d0-b12f-47b9-ab9e-c53629cd2041"
+      ],
+      "decision": "Decide whether Op. 136 remains unresolved as an unrealized/revision boundary rather than inheriting the Op. 40 MBID."
+    },
+    {
+      "local_ids": [
+        "sergei-prokofiev-war-and-peace-suite-work"
+      ],
+      "title": "War and Peace, Suite, Op. 91",
+      "candidate_musicbrainz_work_ids": [
+        "03b4640c-5d6d-4a3d-8e21-a299dd896f7a",
+        "78c692b2-ebf6-4480-b14f-fa3f53ff9822"
+      ],
+      "decision": "Decide whether the local suite should point to the opera Work, a suite Work, or remain unresolved."
+    }
+  ],
+  "candidate_evidence_not_written": [
+    {
+      "local_id": "sergei-prokofiev-on-the-dnieper-work",
+      "title": "On the Dnieper, Op. 51",
+      "best_candidate_musicbrainz_work_id": "c870f7b4-b2ff-4173-b47b-1d356fa3ae60",
+      "reason": "MusicBrainz also lists nearby sections and the Op. 51bis suite."
+    },
+    {
+      "local_id": "sergei-prokofiev-peter-and-the-wolf-work",
+      "title": "Peter and the Wolf, Op. 67",
+      "best_candidate_musicbrainz_work_id": "812b5cc4-a7a0-3809-aa6c-290c9ebd79be",
+      "reason": "MusicBrainz exposes many narrative sections; resolver ambiguity remains."
+    }
+  ],
+  "background_authority_gap": [
+    "sergei-prokofiev-ala-i-lolli-work",
+    "sergei-prokofiev-american-overture-2-work",
+    "sergei-prokofiev-american-overture-work",
+    "sergei-prokofiev-andante-from-piano-sonata-no-4-arranged-for-orchestra-work",
+    "sergei-prokofiev-andante-from-string-quartet-no-1-arranged-for-string-orchestra-work",
+    "sergei-prokofiev-cantata-for-the-20th-anniversary-of-the-october-revolution-work",
+    "sergei-prokofiev-kotovsky-work",
+    "sergei-prokofiev-le-pas-d-acier-the-steel-step-work",
+    "sergei-prokofiev-lermontov-work",
+    "sergei-prokofiev-piano-concerto-no-6-work",
+    "sergei-prokofiev-scythian-suite-work",
+    "sergei-prokofiev-suite-2-from-romeo-and-juliet-work",
+    "sergei-prokofiev-suite-3-from-romeo-and-juliet-work",
+    "sergei-prokofiev-suite-from-chout-work",
+    "sergei-prokofiev-suite-from-egyptian-nights-work",
+    "sergei-prokofiev-suite-from-on-the-dnieper-work",
+    "sergei-prokofiev-suite-from-semyon-kotko-work",
+    "sergei-prokofiev-suite-from-the-gambler-four-portraits-and-denouement-work",
+    "sergei-prokofiev-suite-from-the-love-for-three-oranges-work",
+    "sergei-prokofiev-symphonic-march-work",
+    "sergei-prokofiev-the-partisans-in-the-ukrainian-steppes-work",
+    "sergei-prokofiev-thirty-years-work",
+    "sergei-prokofiev-tonya-work",
+    "sergei-prokofiev-two-poems-for-female-chorus-and-orchestra-work",
+    "sergei-prokofiev-urals-rhapsody-from-the-tale-of-the-stone-flower-work",
+    "sergei-prokofiev-vocal-suite-from-the-fiery-angel-work"
+  ]
+}
