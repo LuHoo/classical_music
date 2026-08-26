@@ -212,3 +212,8 @@ def test_duplicate_title_is_background_unless_identity_gate_is_activated(tmp_pat
     duplicate = next(f for f in gated.findings if f.rule_id == "DUP-003")
     assert duplicate.status == "action_required"
     assert gated.action_required_count == 1
+
+    first_gated = DataValidator(tmp_path).run(identity_gate_ids={"work-one"})
+    duplicate = next(f for f in first_gated.findings if f.rule_id == "DUP-003")
+    assert duplicate.status == "action_required"
+    assert first_gated.action_required_count == 1

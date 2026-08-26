@@ -754,6 +754,7 @@ class DataValidator:
                     record,
                     "Potential duplicate Work Group (same composer and title).",
                     identity_gate_ids,
+                    {record.data.get("id"), seen_work_group_key[key].data.get("id")},
                 )
             else:
                 seen_work_group_key[key] = record
@@ -774,6 +775,7 @@ class DataValidator:
                     record,
                     "Potential duplicate Work (same composer and title).",
                     identity_gate_ids,
+                    {record.data.get("id"), seen_work_key[key].data.get("id")},
                 )
             else:
                 seen_work_key[key] = record
@@ -798,6 +800,7 @@ class DataValidator:
                                 f"(similarity={similarity:.2f})."
                             ),
                             identity_gate_ids,
+                            {record_a.data.get("id"), record_b.data.get("id")},
                         )
 
         # Performance duplicate warning heuristic.
@@ -815,6 +818,7 @@ class DataValidator:
                     record,
                     "Potential duplicate Performance (same work and performers).",
                     identity_gate_ids,
+                    {record.data.get("id"), seen_perf_key[key].data.get("id")},
                 )
             else:
                 seen_perf_key[key] = record
@@ -836,6 +840,7 @@ class DataValidator:
         record: Record,
         message: str,
         identity_gate_ids: set[str],
+        related_ids: set[Any],
     ) -> None:
         report.findings.append(
             ValidationFinding(
@@ -847,7 +852,9 @@ class DataValidator:
                 entity_id=str(record.data.get("id", "")) or None,
                 status=(
                     "action_required"
-                    if str(record.data.get("id", "")) in identity_gate_ids
+                    if identity_gate_ids.intersection(
+                        {str(identifier) for identifier in related_ids if identifier}
+                    )
                     else "background_suspicion"
                 ),
             )

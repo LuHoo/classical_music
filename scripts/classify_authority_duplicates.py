@@ -121,7 +121,7 @@ def group_duplicate_candidates(
                 "normalized_title": normalized_title,
                 "classification": evidence.classification,
                 "confidence": evidence.confidence,
-                "curator_review_required": evidence.curator_review_required,
+                "requires_review_if_activated": evidence.curator_review_required,
                 "evidence": list(evidence.evidence),
                 "authority_ids": list(evidence.authority_ids),
                 "proposed_action": evidence.proposed_action,
@@ -168,7 +168,10 @@ def render_markdown(results: list[dict[str, Any]]) -> str:
         lines.append(f"- classification: `{result['classification']}`")
         lines.append(f"- status: `{result['status']}`")
         lines.append(f"- confidence: `{result['confidence']}`")
-        lines.append(f"- curator_review_required: `{str(result['curator_review_required']).lower()}`")
+        lines.append(
+            f"- requires_review_if_activated: `"
+            f"{str(result['requires_review_if_activated']).lower()}`"
+        )
         lines.append(f"- proposed_action: `{result['proposed_action']}`")
         if result["authority_ids"]:
             lines.append(f"- authority_ids: {', '.join(f'`{value}`' for value in result['authority_ids'])}")

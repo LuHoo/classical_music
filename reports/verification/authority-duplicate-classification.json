@@ -11,7 +11,7 @@
       "normalized_title": "overture in g minor",
       "classification": "confirmed_duplicate",
       "confidence": 0.75,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "All Works share normalized catalogue identifier wab:wab98"
       ],
@@ -51,7 +51,7 @@
       "normalized_title": "symphony no. 1 in c minor \"das kecke beserl\"",
       "classification": "confirmed_duplicate",
       "confidence": 0.75,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "All Works share normalized catalogue identifier wab:wab101"
       ],
@@ -102,7 +102,7 @@
       "normalized_title": "symphony no. 2 in c minor",
       "classification": "confirmed_duplicate",
       "confidence": 0.75,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "All Works share normalized catalogue identifier wab:wab102"
       ],
@@ -142,7 +142,7 @@
       "normalized_title": "symphony no. 3 in d minor \"wagner symphony\"",
       "classification": "confirmed_duplicate",
       "confidence": 0.75,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "All Works share normalized catalogue identifier wab:wab103"
       ],
@@ -193,7 +193,7 @@
       "normalized_title": "symphony no. 4 in e\u266d major \"die romantische\"",
       "classification": "confirmed_duplicate",
       "confidence": 0.75,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "All Works share normalized catalogue identifier wab:wab104"
       ],
@@ -255,7 +255,7 @@
       "normalized_title": "symphony no. 5 in b\u266d major",
       "classification": "confirmed_duplicate",
       "confidence": 0.75,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "All Works share normalized catalogue identifier wab:wab105"
       ],
@@ -295,7 +295,7 @@
       "normalized_title": "symphony no. 7 in e major",
       "classification": "confirmed_duplicate",
       "confidence": 0.75,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "All Works share normalized catalogue identifier wab:wab107"
       ],
@@ -335,7 +335,7 @@
       "normalized_title": "symphony no. 8 in c minor \"die apokalyptische\"",
       "classification": "confirmed_duplicate",
       "confidence": 0.75,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "All Works share normalized catalogue identifier wab:wab108"
       ],
@@ -386,7 +386,7 @@
       "normalized_title": "tantum ergo",
       "classification": "distinct_works",
       "confidence": 0.7,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "Works have different normalized catalogue identifiers"
       ],
@@ -439,7 +439,7 @@
       "normalized_title": "suite from hamlet",
       "classification": "distinct_works",
       "confidence": 0.7,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "Works have different normalized catalogue identifiers"
       ],
@@ -480,7 +480,7 @@
       "normalized_title": "circus polka",
       "classification": "needs_authority_review",
       "confidence": 0.0,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "Same composer and title only; no catalogue or authority identifier proves identity"
       ],
@@ -514,7 +514,7 @@
       "normalized_title": "four russian peasant songs",
       "classification": "needs_authority_review",
       "confidence": 0.0,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "Same composer and title only; no catalogue or authority identifier proves identity"
       ],
@@ -548,7 +548,7 @@
       "normalized_title": "four russian songs",
       "classification": "needs_authority_review",
       "confidence": 0.0,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "Same composer and title only; no catalogue or authority identifier proves identity"
       ],
@@ -582,7 +582,7 @@
       "normalized_title": "les noces",
       "classification": "needs_authority_review",
       "confidence": 0.0,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "Same composer and title only; no catalogue or authority identifier proves identity"
       ],
@@ -616,7 +616,7 @@
       "normalized_title": "pastorale",
       "classification": "needs_authority_review",
       "confidence": 0.0,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "Same composer and title only; no catalogue or authority identifier proves identity"
       ],
@@ -659,7 +659,7 @@
       "normalized_title": "septet",
       "classification": "needs_authority_review",
       "confidence": 0.0,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "Same composer and title only; no catalogue or authority identifier proves identity"
       ],
@@ -693,7 +693,7 @@
       "normalized_title": "the flood",
       "classification": "needs_authority_review",
       "confidence": 0.0,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "Same composer and title only; no catalogue or authority identifier proves identity"
       ],
@@ -727,7 +727,7 @@
       "normalized_title": "piano trio",
       "classification": "distinct_works",
       "confidence": 0.7,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "Works have different normalized catalogue identifiers"
       ],
@@ -780,7 +780,7 @@
       "normalized_title": "piano trio in e\u266d major",
       "classification": "distinct_works",
       "confidence": 0.7,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "Works have different normalized catalogue identifiers"
       ],
@@ -821,7 +821,7 @@
       "normalized_title": "symphony no. 1 in c major",
       "classification": "confirmed_duplicate",
       "confidence": 0.75,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "All Works share normalized catalogue identifier opus:op21"
       ],
@@ -861,7 +861,7 @@
       "normalized_title": "symphony no. 2 in d major",
       "classification": "confirmed_duplicate",
       "confidence": 0.75,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "All Works share normalized catalogue identifier opus:op36"
       ],
@@ -901,7 +901,7 @@
       "normalized_title": "symphony no. 3 \"eroica\" in e\u266d major",
       "classification": "confirmed_duplicate",
       "confidence": 0.75,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "All Works share normalized catalogue identifier opus:op55"
       ],
@@ -941,7 +941,7 @@
       "normalized_title": "symphony no. 4 in b\u266d major",
       "classification": "confirmed_duplicate",
       "confidence": 0.75,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "All Works share normalized catalogue identifier opus:op60"
       ],
@@ -981,7 +981,7 @@
       "normalized_title": "symphony no. 6 \"pastoral\" in f major",
       "classification": "confirmed_duplicate",
       "confidence": 0.75,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "All Works share normalized catalogue identifier opus:op68"
       ],
@@ -1021,7 +1021,7 @@
       "normalized_title": "symphony no. 7 in a major",
       "classification": "confirmed_duplicate",
       "confidence": 0.75,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "All Works share normalized catalogue identifier opus:op92"
       ],
@@ -1072,7 +1072,7 @@
       "normalized_title": "symphony no. 8 in f major",
       "classification": "confirmed_duplicate",
       "confidence": 0.75,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "All Works share normalized catalogue identifier opus:op93"
       ],
@@ -1112,7 +1112,7 @@
       "normalized_title": "cello concerto",
       "classification": "needs_authority_review",
       "confidence": 0.0,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "Same composer and title only; no catalogue or authority identifier proves identity"
       ],
@@ -1148,7 +1148,7 @@
       "normalized_title": "concerto",
       "classification": "needs_authority_review",
       "confidence": 0.0,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "Same composer and title only; no catalogue or authority identifier proves identity"
       ],
@@ -1182,7 +1182,7 @@
       "normalized_title": "eight pieces",
       "classification": "needs_authority_review",
       "confidence": 0.0,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "Same composer and title only; no catalogue or authority identifier proves identity"
       ],
@@ -1216,7 +1216,7 @@
       "normalized_title": "hin und zur\u00fcck",
       "classification": "needs_authority_review",
       "confidence": 0.0,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "Same composer and title only; no catalogue or authority identifier proves identity"
       ],
@@ -1252,7 +1252,7 @@
       "normalized_title": "konzertmusik",
       "classification": "distinct_works",
       "confidence": 0.7,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "Works have different normalized catalogue identifiers"
       ],
@@ -1293,7 +1293,7 @@
       "normalized_title": "nobilissima visione",
       "classification": "needs_authority_review",
       "confidence": 0.0,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "Same composer and title only; no catalogue or authority identifier proves identity"
       ],
@@ -1327,7 +1327,7 @@
       "normalized_title": "sonata",
       "classification": "needs_authority_review",
       "confidence": 0.0,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "Same composer and title only; no catalogue or authority identifier proves identity"
       ],
@@ -1460,7 +1460,7 @@
       "normalized_title": "wir bauen eine stadt",
       "classification": "needs_authority_review",
       "confidence": 0.0,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "Same composer and title only; no catalogue or authority identifier proves identity"
       ],
@@ -1494,7 +1494,7 @@
       "normalized_title": "alexander nevsky",
       "classification": "confirmed_duplicate",
       "confidence": 0.75,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "All Works share normalized catalogue identifier op:op78"
       ],
@@ -1534,7 +1534,7 @@
       "normalized_title": "american overture",
       "classification": "distinct_works",
       "confidence": 0.7,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "Works have different normalized catalogue identifiers"
       ],
@@ -1575,7 +1575,7 @@
       "normalized_title": "overture in g minor",
       "classification": "confirmed_duplicate",
       "confidence": 0.75,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "All Works share normalized catalogue identifier wab:wab98"
       ],
@@ -1615,7 +1615,7 @@
       "normalized_title": "symphony no. 1 in c minor \"das kecke beserl\"",
       "classification": "confirmed_duplicate",
       "confidence": 0.75,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "All Works share normalized catalogue identifier wab:wab101"
       ],
@@ -1666,7 +1666,7 @@
       "normalized_title": "symphony no. 2 in c minor",
       "classification": "confirmed_duplicate",
       "confidence": 0.75,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "All Works share normalized catalogue identifier wab:wab102"
       ],
@@ -1706,7 +1706,7 @@
       "normalized_title": "symphony no. 3 in d minor \"wagner symphony\"",
       "classification": "confirmed_duplicate",
       "confidence": 0.75,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "All Works share normalized catalogue identifier wab:wab103"
       ],
@@ -1757,7 +1757,7 @@
       "normalized_title": "symphony no. 4 in e\u266d major \"die romantische\"",
       "classification": "confirmed_duplicate",
       "confidence": 0.75,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "All Works share normalized catalogue identifier wab:wab104"
       ],
@@ -1819,7 +1819,7 @@
       "normalized_title": "symphony no. 5 in b\u266d major",
       "classification": "confirmed_duplicate",
       "confidence": 0.75,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "All Works share normalized catalogue identifier wab:wab105"
       ],
@@ -1859,7 +1859,7 @@
       "normalized_title": "symphony no. 7 in e major",
       "classification": "confirmed_duplicate",
       "confidence": 0.75,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "All Works share normalized catalogue identifier wab:wab107"
       ],
@@ -1899,7 +1899,7 @@
       "normalized_title": "symphony no. 8 in c minor \"die apokalyptische\"",
       "classification": "confirmed_duplicate",
       "confidence": 0.75,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "All Works share normalized catalogue identifier wab:wab108"
       ],
@@ -1950,7 +1950,7 @@
       "normalized_title": "tantum ergo",
       "classification": "distinct_works",
       "confidence": 0.7,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "Works have different normalized catalogue identifiers"
       ],
@@ -2003,7 +2003,7 @@
       "normalized_title": "suite from hamlet",
       "classification": "distinct_works",
       "confidence": 0.7,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "Works have different normalized catalogue identifiers"
       ],
@@ -2044,7 +2044,7 @@
       "normalized_title": "circus polka",
       "classification": "needs_authority_review",
       "confidence": 0.0,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "Same composer and title only; no catalogue or authority identifier proves identity"
       ],
@@ -2078,7 +2078,7 @@
       "normalized_title": "four russian peasant songs",
       "classification": "needs_authority_review",
       "confidence": 0.0,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "Same composer and title only; no catalogue or authority identifier proves identity"
       ],
@@ -2112,7 +2112,7 @@
       "normalized_title": "four russian songs",
       "classification": "needs_authority_review",
       "confidence": 0.0,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "Same composer and title only; no catalogue or authority identifier proves identity"
       ],
@@ -2146,7 +2146,7 @@
       "normalized_title": "les noces",
       "classification": "needs_authority_review",
       "confidence": 0.0,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "Same composer and title only; no catalogue or authority identifier proves identity"
       ],
@@ -2180,7 +2180,7 @@
       "normalized_title": "pastorale",
       "classification": "needs_authority_review",
       "confidence": 0.0,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "Same composer and title only; no catalogue or authority identifier proves identity"
       ],
@@ -2223,7 +2223,7 @@
       "normalized_title": "petrushka",
       "classification": "needs_authority_review",
       "confidence": 0.0,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "Same composer and title only; no catalogue or authority identifier proves identity"
       ],
@@ -2257,7 +2257,7 @@
       "normalized_title": "septet",
       "classification": "needs_authority_review",
       "confidence": 0.0,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "Same composer and title only; no catalogue or authority identifier proves identity"
       ],
@@ -2291,7 +2291,7 @@
       "normalized_title": "the flood",
       "classification": "needs_authority_review",
       "confidence": 0.0,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "Same composer and title only; no catalogue or authority identifier proves identity"
       ],
@@ -2325,7 +2325,7 @@
       "normalized_title": "piano trio",
       "classification": "distinct_works",
       "confidence": 0.7,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "Works have different normalized catalogue identifiers"
       ],
@@ -2378,7 +2378,7 @@
       "normalized_title": "piano trio in e\u266d major",
       "classification": "distinct_works",
       "confidence": 0.7,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "Works have different normalized catalogue identifiers"
       ],
@@ -2419,7 +2419,7 @@
       "normalized_title": "symphony no. 1 in c major",
       "classification": "confirmed_duplicate",
       "confidence": 0.75,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "All Works share normalized catalogue identifier opus:op21"
       ],
@@ -2459,7 +2459,7 @@
       "normalized_title": "symphony no. 2 in d major",
       "classification": "confirmed_duplicate",
       "confidence": 0.75,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "All Works share normalized catalogue identifier opus:op36"
       ],
@@ -2499,7 +2499,7 @@
       "normalized_title": "symphony no. 3 \"eroica\" in e\u266d major",
       "classification": "confirmed_duplicate",
       "confidence": 0.75,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "All Works share normalized catalogue identifier opus:op55"
       ],
@@ -2539,7 +2539,7 @@
       "normalized_title": "symphony no. 4 in b\u266d major",
       "classification": "confirmed_duplicate",
       "confidence": 0.75,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "All Works share normalized catalogue identifier opus:op60"
       ],
@@ -2579,7 +2579,7 @@
       "normalized_title": "symphony no. 6 \"pastoral\" in f major",
       "classification": "confirmed_duplicate",
       "confidence": 0.75,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "All Works share normalized catalogue identifier opus:op68"
       ],
@@ -2619,7 +2619,7 @@
       "normalized_title": "symphony no. 7 in a major",
       "classification": "confirmed_duplicate",
       "confidence": 0.75,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "All Works share normalized catalogue identifier opus:op92"
       ],
@@ -2670,7 +2670,7 @@
       "normalized_title": "symphony no. 8 in f major",
       "classification": "confirmed_duplicate",
       "confidence": 0.75,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "All Works share normalized catalogue identifier opus:op93"
       ],
@@ -2710,7 +2710,7 @@
       "normalized_title": "cello concerto",
       "classification": "needs_authority_review",
       "confidence": 0.0,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "Same composer and title only; no catalogue or authority identifier proves identity"
       ],
@@ -2746,7 +2746,7 @@
       "normalized_title": "concerto",
       "classification": "needs_authority_review",
       "confidence": 0.0,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "Same composer and title only; no catalogue or authority identifier proves identity"
       ],
@@ -2780,7 +2780,7 @@
       "normalized_title": "eight pieces",
       "classification": "needs_authority_review",
       "confidence": 0.0,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "Same composer and title only; no catalogue or authority identifier proves identity"
       ],
@@ -2814,7 +2814,7 @@
       "normalized_title": "hin und zur\u00fcck",
       "classification": "needs_authority_review",
       "confidence": 0.0,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "Same composer and title only; no catalogue or authority identifier proves identity"
       ],
@@ -2850,7 +2850,7 @@
       "normalized_title": "h\u00e9rodiade",
       "classification": "needs_authority_review",
       "confidence": 0.0,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "Same composer and title only; no catalogue or authority identifier proves identity"
       ],
@@ -2884,7 +2884,7 @@
       "normalized_title": "konzertmusik",
       "classification": "distinct_works",
       "confidence": 0.7,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "Works have different normalized catalogue identifiers"
       ],
@@ -2925,7 +2925,7 @@
       "normalized_title": "nobilissima visione",
       "classification": "needs_authority_review",
       "confidence": 0.0,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "Same composer and title only; no catalogue or authority identifier proves identity"
       ],
@@ -2959,7 +2959,7 @@
       "normalized_title": "sonata",
       "classification": "needs_authority_review",
       "confidence": 0.0,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "Same composer and title only; no catalogue or authority identifier proves identity"
       ],
@@ -3092,7 +3092,7 @@
       "normalized_title": "wir bauen eine stadt",
       "classification": "needs_authority_review",
       "confidence": 0.0,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "Same composer and title only; no catalogue or authority identifier proves identity"
       ],
@@ -3126,7 +3126,7 @@
       "normalized_title": "alexander nevsky",
       "classification": "confirmed_duplicate",
       "confidence": 0.75,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "All Works share normalized catalogue identifier op:op78"
       ],
@@ -3166,7 +3166,7 @@
       "normalized_title": "american overture",
       "classification": "distinct_works",
       "confidence": 0.7,
-      "curator_review_required": true,
+      "requires_review_if_activated": true,
       "evidence": [
         "Works have different normalized catalogue identifiers"
       ],

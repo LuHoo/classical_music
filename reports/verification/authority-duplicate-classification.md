@@ -17,7 +17,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `confirmed_duplicate`
 - status: `background_suspicion`
 - confidence: `0.75`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `candidate_for_authority_confirmed_merge`
 - authority_ids: `wab:wab98`
 - evidence: All Works share normalized catalogue identifier wab:wab98
@@ -32,7 +32,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `confirmed_duplicate`
 - status: `background_suspicion`
 - confidence: `0.75`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `candidate_for_authority_confirmed_merge`
 - authority_ids: `wab:wab101`
 - evidence: All Works share normalized catalogue identifier wab:wab101
@@ -48,7 +48,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `confirmed_duplicate`
 - status: `background_suspicion`
 - confidence: `0.75`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `candidate_for_authority_confirmed_merge`
 - authority_ids: `wab:wab102`
 - evidence: All Works share normalized catalogue identifier wab:wab102
@@ -63,7 +63,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `confirmed_duplicate`
 - status: `background_suspicion`
 - confidence: `0.75`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `candidate_for_authority_confirmed_merge`
 - authority_ids: `wab:wab103`
 - evidence: All Works share normalized catalogue identifier wab:wab103
@@ -79,7 +79,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `confirmed_duplicate`
 - status: `background_suspicion`
 - confidence: `0.75`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `candidate_for_authority_confirmed_merge`
 - authority_ids: `wab:wab104`
 - evidence: All Works share normalized catalogue identifier wab:wab104
@@ -96,7 +96,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `confirmed_duplicate`
 - status: `background_suspicion`
 - confidence: `0.75`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `candidate_for_authority_confirmed_merge`
 - authority_ids: `wab:wab105`
 - evidence: All Works share normalized catalogue identifier wab:wab105
@@ -111,7 +111,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `confirmed_duplicate`
 - status: `background_suspicion`
 - confidence: `0.75`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `candidate_for_authority_confirmed_merge`
 - authority_ids: `wab:wab107`
 - evidence: All Works share normalized catalogue identifier wab:wab107
@@ -126,7 +126,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `confirmed_duplicate`
 - status: `background_suspicion`
 - confidence: `0.75`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `candidate_for_authority_confirmed_merge`
 - authority_ids: `wab:wab108`
 - evidence: All Works share normalized catalogue identifier wab:wab108
@@ -142,7 +142,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `distinct_works`
 - status: `background_suspicion`
 - confidence: `0.7`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `keep_separate_pending_authority_review`
 - authority_ids: `wab:wab32`, `wab:wab42`, `wab:wab43`
 - evidence: Works have different normalized catalogue identifiers
@@ -158,7 +158,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `distinct_works`
 - status: `background_suspicion`
 - confidence: `0.7`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `keep_separate_pending_authority_review`
 - authority_ids: `op:op116a`, `op:op32a`
 - evidence: Works have different normalized catalogue identifiers
@@ -173,7 +173,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `needs_authority_review`
 - status: `background_suspicion`
 - confidence: `0.0`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `review_with_external_authority`
 - evidence: Same composer and title only; no catalogue or authority identifier proves identity
 
@@ -187,7 +187,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `needs_authority_review`
 - status: `background_suspicion`
 - confidence: `0.0`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `review_with_external_authority`
 - evidence: Same composer and title only; no catalogue or authority identifier proves identity
 
@@ -201,7 +201,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `needs_authority_review`
 - status: `background_suspicion`
 - confidence: `0.0`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `review_with_external_authority`
 - evidence: Same composer and title only; no catalogue or authority identifier proves identity
 
@@ -215,7 +215,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `needs_authority_review`
 - status: `background_suspicion`
 - confidence: `0.0`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `review_with_external_authority`
 - evidence: Same composer and title only; no catalogue or authority identifier proves identity
 
@@ -229,7 +229,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `needs_authority_review`
 - status: `background_suspicion`
 - confidence: `0.0`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `review_with_external_authority`
 - evidence: Same composer and title only; no catalogue or authority identifier proves identity
 
@@ -244,7 +244,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `needs_authority_review`
 - status: `background_suspicion`
 - confidence: `0.0`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `review_with_external_authority`
 - evidence: Same composer and title only; no catalogue or authority identifier proves identity
 
@@ -258,7 +258,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `needs_authority_review`
 - status: `background_suspicion`
 - confidence: `0.0`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `review_with_external_authority`
 - evidence: Same composer and title only; no catalogue or authority identifier proves identity
 
@@ -272,7 +272,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `distinct_works`
 - status: `background_suspicion`
 - confidence: `0.7`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `keep_separate_pending_authority_review`
 - authority_ids: `opus:op36`, `opus:op60`, `opus:op67`
 - evidence: Works have different normalized catalogue identifiers
@@ -288,7 +288,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `distinct_works`
 - status: `background_suspicion`
 - confidence: `0.7`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `keep_separate_pending_authority_review`
 - authority_ids: `opus:op38`, `woo:woo38`
 - evidence: Works have different normalized catalogue identifiers
@@ -303,7 +303,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `confirmed_duplicate`
 - status: `background_suspicion`
 - confidence: `0.75`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `candidate_for_authority_confirmed_merge`
 - authority_ids: `opus:op21`
 - evidence: All Works share normalized catalogue identifier opus:op21
@@ -318,7 +318,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `confirmed_duplicate`
 - status: `background_suspicion`
 - confidence: `0.75`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `candidate_for_authority_confirmed_merge`
 - authority_ids: `opus:op36`
 - evidence: All Works share normalized catalogue identifier opus:op36
@@ -333,7 +333,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `confirmed_duplicate`
 - status: `background_suspicion`
 - confidence: `0.75`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `candidate_for_authority_confirmed_merge`
 - authority_ids: `opus:op55`
 - evidence: All Works share normalized catalogue identifier opus:op55
@@ -348,7 +348,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `confirmed_duplicate`
 - status: `background_suspicion`
 - confidence: `0.75`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `candidate_for_authority_confirmed_merge`
 - authority_ids: `opus:op60`
 - evidence: All Works share normalized catalogue identifier opus:op60
@@ -363,7 +363,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `confirmed_duplicate`
 - status: `background_suspicion`
 - confidence: `0.75`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `candidate_for_authority_confirmed_merge`
 - authority_ids: `opus:op68`
 - evidence: All Works share normalized catalogue identifier opus:op68
@@ -378,7 +378,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `confirmed_duplicate`
 - status: `background_suspicion`
 - confidence: `0.75`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `candidate_for_authority_confirmed_merge`
 - authority_ids: `opus:op92`
 - evidence: All Works share normalized catalogue identifier opus:op92
@@ -394,7 +394,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `confirmed_duplicate`
 - status: `background_suspicion`
 - confidence: `0.75`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `candidate_for_authority_confirmed_merge`
 - authority_ids: `opus:op93`
 - evidence: All Works share normalized catalogue identifier opus:op93
@@ -409,7 +409,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `needs_authority_review`
 - status: `background_suspicion`
 - confidence: `0.0`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `review_with_external_authority`
 - evidence: Same composer and title only; no catalogue or authority identifier proves identity
 
@@ -423,7 +423,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `needs_authority_review`
 - status: `background_suspicion`
 - confidence: `0.0`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `review_with_external_authority`
 - evidence: Same composer and title only; no catalogue or authority identifier proves identity
 
@@ -437,7 +437,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `needs_authority_review`
 - status: `background_suspicion`
 - confidence: `0.0`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `review_with_external_authority`
 - evidence: Same composer and title only; no catalogue or authority identifier proves identity
 
@@ -451,7 +451,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `needs_authority_review`
 - status: `background_suspicion`
 - confidence: `0.0`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `review_with_external_authority`
 - evidence: Same composer and title only; no catalogue or authority identifier proves identity
 
@@ -465,7 +465,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `distinct_works`
 - status: `background_suspicion`
 - confidence: `0.7`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `keep_separate_pending_authority_review`
 - authority_ids: `opus:op48`, `opus:op49`
 - evidence: Works have different normalized catalogue identifiers
@@ -480,7 +480,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `needs_authority_review`
 - status: `background_suspicion`
 - confidence: `0.0`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `review_with_external_authority`
 - evidence: Same composer and title only; no catalogue or authority identifier proves identity
 
@@ -494,7 +494,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `needs_authority_review`
 - status: `background_suspicion`
 - confidence: `0.0`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `review_with_external_authority`
 - evidence: Same composer and title only; no catalogue or authority identifier proves identity
 
@@ -519,7 +519,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `needs_authority_review`
 - status: `background_suspicion`
 - confidence: `0.0`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `review_with_external_authority`
 - evidence: Same composer and title only; no catalogue or authority identifier proves identity
 
@@ -533,7 +533,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `confirmed_duplicate`
 - status: `background_suspicion`
 - confidence: `0.75`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `candidate_for_authority_confirmed_merge`
 - authority_ids: `op:op78`
 - evidence: All Works share normalized catalogue identifier op:op78
@@ -548,7 +548,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `distinct_works`
 - status: `background_suspicion`
 - confidence: `0.7`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `keep_separate_pending_authority_review`
 - authority_ids: `op:op42`, `op:op42bis`
 - evidence: Works have different normalized catalogue identifiers
@@ -563,7 +563,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `confirmed_duplicate`
 - status: `background_suspicion`
 - confidence: `0.75`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `candidate_for_authority_confirmed_merge`
 - authority_ids: `wab:wab98`
 - evidence: All Works share normalized catalogue identifier wab:wab98
@@ -578,7 +578,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `confirmed_duplicate`
 - status: `background_suspicion`
 - confidence: `0.75`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `candidate_for_authority_confirmed_merge`
 - authority_ids: `wab:wab101`
 - evidence: All Works share normalized catalogue identifier wab:wab101
@@ -594,7 +594,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `confirmed_duplicate`
 - status: `background_suspicion`
 - confidence: `0.75`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `candidate_for_authority_confirmed_merge`
 - authority_ids: `wab:wab102`
 - evidence: All Works share normalized catalogue identifier wab:wab102
@@ -609,7 +609,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `confirmed_duplicate`
 - status: `background_suspicion`
 - confidence: `0.75`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `candidate_for_authority_confirmed_merge`
 - authority_ids: `wab:wab103`
 - evidence: All Works share normalized catalogue identifier wab:wab103
@@ -625,7 +625,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `confirmed_duplicate`
 - status: `background_suspicion`
 - confidence: `0.75`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `candidate_for_authority_confirmed_merge`
 - authority_ids: `wab:wab104`
 - evidence: All Works share normalized catalogue identifier wab:wab104
@@ -642,7 +642,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `confirmed_duplicate`
 - status: `background_suspicion`
 - confidence: `0.75`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `candidate_for_authority_confirmed_merge`
 - authority_ids: `wab:wab105`
 - evidence: All Works share normalized catalogue identifier wab:wab105
@@ -657,7 +657,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `confirmed_duplicate`
 - status: `background_suspicion`
 - confidence: `0.75`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `candidate_for_authority_confirmed_merge`
 - authority_ids: `wab:wab107`
 - evidence: All Works share normalized catalogue identifier wab:wab107
@@ -672,7 +672,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `confirmed_duplicate`
 - status: `background_suspicion`
 - confidence: `0.75`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `candidate_for_authority_confirmed_merge`
 - authority_ids: `wab:wab108`
 - evidence: All Works share normalized catalogue identifier wab:wab108
@@ -688,7 +688,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `distinct_works`
 - status: `background_suspicion`
 - confidence: `0.7`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `keep_separate_pending_authority_review`
 - authority_ids: `wab:wab32`, `wab:wab42`, `wab:wab43`
 - evidence: Works have different normalized catalogue identifiers
@@ -704,7 +704,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `distinct_works`
 - status: `background_suspicion`
 - confidence: `0.7`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `keep_separate_pending_authority_review`
 - authority_ids: `op:op116a`, `op:op32a`
 - evidence: Works have different normalized catalogue identifiers
@@ -719,7 +719,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `needs_authority_review`
 - status: `background_suspicion`
 - confidence: `0.0`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `review_with_external_authority`
 - evidence: Same composer and title only; no catalogue or authority identifier proves identity
 
@@ -733,7 +733,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `needs_authority_review`
 - status: `background_suspicion`
 - confidence: `0.0`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `review_with_external_authority`
 - evidence: Same composer and title only; no catalogue or authority identifier proves identity
 
@@ -747,7 +747,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `needs_authority_review`
 - status: `background_suspicion`
 - confidence: `0.0`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `review_with_external_authority`
 - evidence: Same composer and title only; no catalogue or authority identifier proves identity
 
@@ -761,7 +761,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `needs_authority_review`
 - status: `background_suspicion`
 - confidence: `0.0`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `review_with_external_authority`
 - evidence: Same composer and title only; no catalogue or authority identifier proves identity
 
@@ -775,7 +775,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `needs_authority_review`
 - status: `background_suspicion`
 - confidence: `0.0`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `review_with_external_authority`
 - evidence: Same composer and title only; no catalogue or authority identifier proves identity
 
@@ -790,7 +790,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `needs_authority_review`
 - status: `background_suspicion`
 - confidence: `0.0`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `review_with_external_authority`
 - evidence: Same composer and title only; no catalogue or authority identifier proves identity
 
@@ -804,7 +804,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `needs_authority_review`
 - status: `background_suspicion`
 - confidence: `0.0`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `review_with_external_authority`
 - evidence: Same composer and title only; no catalogue or authority identifier proves identity
 
@@ -818,7 +818,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `needs_authority_review`
 - status: `background_suspicion`
 - confidence: `0.0`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `review_with_external_authority`
 - evidence: Same composer and title only; no catalogue or authority identifier proves identity
 
@@ -832,7 +832,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `distinct_works`
 - status: `background_suspicion`
 - confidence: `0.7`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `keep_separate_pending_authority_review`
 - authority_ids: `opus:op36`, `opus:op60`, `opus:op67`
 - evidence: Works have different normalized catalogue identifiers
@@ -848,7 +848,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `distinct_works`
 - status: `background_suspicion`
 - confidence: `0.7`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `keep_separate_pending_authority_review`
 - authority_ids: `opus:op38`, `woo:woo38`
 - evidence: Works have different normalized catalogue identifiers
@@ -863,7 +863,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `confirmed_duplicate`
 - status: `background_suspicion`
 - confidence: `0.75`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `candidate_for_authority_confirmed_merge`
 - authority_ids: `opus:op21`
 - evidence: All Works share normalized catalogue identifier opus:op21
@@ -878,7 +878,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `confirmed_duplicate`
 - status: `background_suspicion`
 - confidence: `0.75`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `candidate_for_authority_confirmed_merge`
 - authority_ids: `opus:op36`
 - evidence: All Works share normalized catalogue identifier opus:op36
@@ -893,7 +893,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `confirmed_duplicate`
 - status: `background_suspicion`
 - confidence: `0.75`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `candidate_for_authority_confirmed_merge`
 - authority_ids: `opus:op55`
 - evidence: All Works share normalized catalogue identifier opus:op55
@@ -908,7 +908,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `confirmed_duplicate`
 - status: `background_suspicion`
 - confidence: `0.75`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `candidate_for_authority_confirmed_merge`
 - authority_ids: `opus:op60`
 - evidence: All Works share normalized catalogue identifier opus:op60
@@ -923,7 +923,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `confirmed_duplicate`
 - status: `background_suspicion`
 - confidence: `0.75`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `candidate_for_authority_confirmed_merge`
 - authority_ids: `opus:op68`
 - evidence: All Works share normalized catalogue identifier opus:op68
@@ -938,7 +938,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `confirmed_duplicate`
 - status: `background_suspicion`
 - confidence: `0.75`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `candidate_for_authority_confirmed_merge`
 - authority_ids: `opus:op92`
 - evidence: All Works share normalized catalogue identifier opus:op92
@@ -954,7 +954,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `confirmed_duplicate`
 - status: `background_suspicion`
 - confidence: `0.75`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `candidate_for_authority_confirmed_merge`
 - authority_ids: `opus:op93`
 - evidence: All Works share normalized catalogue identifier opus:op93
@@ -969,7 +969,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `needs_authority_review`
 - status: `background_suspicion`
 - confidence: `0.0`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `review_with_external_authority`
 - evidence: Same composer and title only; no catalogue or authority identifier proves identity
 
@@ -983,7 +983,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `needs_authority_review`
 - status: `background_suspicion`
 - confidence: `0.0`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `review_with_external_authority`
 - evidence: Same composer and title only; no catalogue or authority identifier proves identity
 
@@ -997,7 +997,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `needs_authority_review`
 - status: `background_suspicion`
 - confidence: `0.0`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `review_with_external_authority`
 - evidence: Same composer and title only; no catalogue or authority identifier proves identity
 
@@ -1011,7 +1011,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `needs_authority_review`
 - status: `background_suspicion`
 - confidence: `0.0`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `review_with_external_authority`
 - evidence: Same composer and title only; no catalogue or authority identifier proves identity
 
@@ -1025,7 +1025,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `needs_authority_review`
 - status: `background_suspicion`
 - confidence: `0.0`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `review_with_external_authority`
 - evidence: Same composer and title only; no catalogue or authority identifier proves identity
 
@@ -1039,7 +1039,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `distinct_works`
 - status: `background_suspicion`
 - confidence: `0.7`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `keep_separate_pending_authority_review`
 - authority_ids: `opus:op48`, `opus:op49`
 - evidence: Works have different normalized catalogue identifiers
@@ -1054,7 +1054,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `needs_authority_review`
 - status: `background_suspicion`
 - confidence: `0.0`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `review_with_external_authority`
 - evidence: Same composer and title only; no catalogue or authority identifier proves identity
 
@@ -1068,7 +1068,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `needs_authority_review`
 - status: `background_suspicion`
 - confidence: `0.0`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `review_with_external_authority`
 - evidence: Same composer and title only; no catalogue or authority identifier proves identity
 
@@ -1093,7 +1093,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `needs_authority_review`
 - status: `background_suspicion`
 - confidence: `0.0`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `review_with_external_authority`
 - evidence: Same composer and title only; no catalogue or authority identifier proves identity
 
@@ -1107,7 +1107,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `confirmed_duplicate`
 - status: `background_suspicion`
 - confidence: `0.75`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `candidate_for_authority_confirmed_merge`
 - authority_ids: `op:op78`
 - evidence: All Works share normalized catalogue identifier op:op78
@@ -1122,7 +1122,7 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 - classification: `distinct_works`
 - status: `background_suspicion`
 - confidence: `0.7`
-- curator_review_required: `true`
+- requires_review_if_activated: `true`
 - proposed_action: `keep_separate_pending_authority_review`
 - authority_ids: `op:op42`, `op:op42bis`
 - evidence: Works have different normalized catalogue identifiers
