@@ -1,22 +1,20 @@
 """
 Review categorization: Classify migration review items for curator action.
 
-This module categorizes review items based on ReviewReason classifications:
-- safe: Matched to existing entity or no review reasons
+This module categorizes review items based on WorkIdentityResult from entity_matcher:
+- safe: Matched to existing entity or confirmed new identity
 - unchanged: Already matched to canonical entity (no action needed)
-- background: Non-actionable classifications (Principle 16)
-- consequential: Identity gates requiring curator review (Principle 4)
+- background: No identity information available (Principle 16)
+- consequential: Unresolved identity requiring curator review (Principle 4)
 
-Real ReviewReason classifications:
-- VERSION_REVISION: "revised version" text → identity gate (consequential)
-- ARRANGEMENT_ORCHESTRATION: "orchestrated by" → identity gate (consequential)
-- COMPLETION_RECONSTRUCTION: "completed by" → identity gate (consequential)
-- SUITE_EXCERPT_DERIVED: "excerpt from" → identity gate (consequential)
-- MULTIPLE_TIDAL_LINKS: Multiple Tidal URLs → background (pick first)
-- UNCERTAIN_MATCH: Low confidence → background (no strong signal)
+WorkIdentityResolution status mapping:
+- MATCHED: Existing canonical entity identified → unchanged
+- NEW_IDENTITY: Positive evidence for new Work → safe (no curator action on identity)
+- UNRESOLVED: No clear identity evidence → consequential (requires curator decision)
+- BACKGROUND_ONLY: Performance background only → background (not identity-affecting)
 
-Principle 4: Identity gates require curator decision.
-Principle 16: Distinguish errors/gates/background suspicions.
+Principle 4: Unresolved identities require curator decision.
+Principle 16: Distinguish actual issues from background info.
 """
 
 from __future__ import annotations
@@ -25,7 +23,10 @@ from dataclasses import dataclass
 from enum import Enum
 from typing import Any
 
-from classical_music.migration.models import ReviewReason
+from classical_music.migration.models import (
+    WorkIdentityResolution,
+    WorkIdentityResult,
+)
 
 
 class ReviewCategory(Enum):
@@ -52,29 +53,28 @@ class CategorizedReviewItem:
 
 
 def categorize_review_items(
-    review_items: list[dict[str, Any]],
-    matched_entities: dict[str, str],  # source_id → canonical_entity_id
+    items_with_identity_results: list[dict[str, Any]],
 ) -> list[CategorizedReviewItem]:
     """
-    Categorize review items based on classifications and matches.
+    Categorize review items based on identity resolution results.
 
     Args:
-        review_items: List of review items from migration-summary.json
-        matched_entities: Map of source_id → existing canonical entity_id (if matched)
+        items_with_identity_results: List of dicts with keys:
+            - source_id, source_file, source_line, work_text (source location info)
+            - identity_result: WorkIdentityResult from entity_matcher
 
     Returns:
         List of CategorizedReviewItem with categories and rationales
     """
     categorized = []
 
-    for item in review_items:
+    for item in items_with_identity_results:
         source_id = item["source_id"]
-        matched_id = matched_entities.get(source_id)
-        classifications = item.get("classifications", [])
+        identity_result: WorkIdentityResult = item["identity_result"]
 
-        # Determine category based on classifications and matches
-        category, rationale, action_required = _classify_item(
-            item, classifications, matched_id
+        # Determine category based on identity resolution status
+        category, rationale, action_required = _classify_by_identity(
+            identity_result
         )
 
         categorized.append(
@@ -85,7 +85,7 @@ def categorize_review_items(
                 work_text=item["work_text"],
                 category=category,
                 rationale=rationale,
-                matched_entity_id=matched_id,
+                matched_entity_id=identity_result.matched_work_id,
                 action_required=action_required,
             )
         )
@@ -93,76 +93,60 @@ def categorize_review_items(
     return categorized
 
 
-def _classify_item(
-    item: dict[str, Any],
-    classifications: list[dict[str, Any]],
-    matched_id: str | None,
+def _classify_by_identity(
+    identity_result: WorkIdentityResult,
 ) -> tuple[ReviewCategory, str, bool]:
     """
-    Determine category, rationale and action_required for a single item.
+    Determine category based on identity resolution status.
 
-    Based on actual ReviewReason classifications from real classifier.
+    Maps WorkIdentityResult status to ReviewCategory:
+    - MATCHED → unchanged (no action needed)
+    - NEW_IDENTITY → safe (positive evidence, can migrate)
+    - UNRESOLVED → consequential (requires curator decision)
+    - BACKGROUND_ONLY → background (no identity info)
 
     Returns: (category, rationale, action_required)
     """
 
-    # If matched to existing entity, it's unchanged (no action needed)
-    if matched_id:
+    status = identity_result.status
+
+    if status == WorkIdentityResolution.MATCHED:
         return (
             ReviewCategory.UNCHANGED,
-            f"Matched to existing entity: {matched_id}",
+            f"Matched to existing canonical work: {identity_result.matched_work_id}. "
+            f"Evidence: {identity_result.evidence_used}",
             False,
         )
 
-    # If no classifications, it's safe
-    if not classifications:
+    if status == WorkIdentityResolution.NEW_IDENTITY:
         return (
             ReviewCategory.SAFE,
-            "No review issues identified; ready for canonical migration",
+            f"Clear evidence for new identity. "
+            f"Evidence: {identity_result.evidence_used}. "
+            f"Rationale: {identity_result.rationale}",
             False,
         )
 
-    # Extract reason values
-    reasons = {c.get("reason") for c in classifications}
-
-    # Identity gates: All of these require curator decision
-    # (Principle 4: Identity gates require review)
-    identity_gates = {
-        ReviewReason.VERSION_REVISION,  # "rev." or "revised" text
-        ReviewReason.ARRANGEMENT_ORCHESTRATION,  # "arr." or "arranged" text
-        ReviewReason.COMPLETION_RECONSTRUCTION,  # "completed by" text
-        ReviewReason.SUITE_EXCERPT_DERIVED,  # "excerpt from" or "suite" text
-    }
-
-    if any(r in identity_gates for r in reasons):
-        # At least one identity gate found
-        gate_reasons = [r for r in reasons if r in identity_gates]
+    if status == WorkIdentityResolution.UNRESOLVED:
         return (
             ReviewCategory.CONSEQUENTIAL,
-            f"Identity gate(s) found: {', '.join(str(r) for r in gate_reasons)}. "
-            f"Curator must decide if content represents distinct work or variant.",
-            True,
+            f"Unresolved identity. {identity_result.rationale} "
+            f"Curator must decide based on available evidence.",
+            identity_result.requires_curator_action,
         )
 
-    # Background: Non-actionable classifications
-    # (Principle 16: Background suspicions are not escalated)
-    background_reasons = {
-        ReviewReason.MULTIPLE_TIDAL_LINKS,  # Can pick first; not a defect
-        ReviewReason.UNCERTAIN_MATCH,  # Low confidence; but still worth including
-    }
-
-    if all(r in background_reasons for r in reasons):
+    if status == WorkIdentityResolution.BACKGROUND_ONLY:
         return (
             ReviewCategory.BACKGROUND,
-            f"Non-actionable classification(s): {', '.join(str(r) for r in reasons)}. "
-            f"These do not block migration.",
+            f"No identity information (background context only). "
+            f"Rationale: {identity_result.rationale}",
             False,
         )
 
-    # Safe: Minor issues that don't block migration
+    # Fallback (should not reach)
     return (
         ReviewCategory.SAFE,
-        f"Has classification(s) but can migrate: {', '.join(str(r) for r in reasons)}",
+        f"Unknown status: {status}",
         False,
     )
 
