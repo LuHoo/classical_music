@@ -15,8 +15,13 @@ if str(SRC) not in sys.path:
     sys.path.insert(0, str(SRC))
 
 from classical_music.migration.classifier import classify_review_reason  # noqa: E402
+from classical_music.migration.entity_matcher import EntityMatcher  # noqa: E402
 from classical_music.migration.models import PerformanceCandidate, WorkCandidate  # noqa: E402
 from classical_music.migration.parser import parse_composer_markdown  # noqa: E402
+from classical_music.migration.review_categorizer import (  # noqa: E402
+    categorize_review_items,
+    review_summary,
+)
 from classical_music.migration.writer import (  # noqa: E402
     stable_performance_id,
     stable_work_ids,
@@ -47,6 +52,12 @@ def main(
     works: dict[str, WorkCandidate] = {}
     performances: dict[str, PerformanceCandidate] = {}
     review_items = []
+    matched_entities: dict[str, str] = {}  # source_id → canonical_entity_id
+
+    # Load existing canonical entities for matching
+    entity_matcher = EntityMatcher(ROOT / "data")
+    matcher_summary = entity_matcher.matches_summary()
+    console.print(f"Loaded {matcher_summary['works']} canonical works for matching")
 
     for source_path in selected_files:
         if not source_path.exists():
@@ -58,11 +69,23 @@ def main(
 
         for record in records:
             work_group_id, work_id = stable_work_ids(composer_slug, record.work_text)
+            
+            # Resolve doc slug to canonical composer_id
+            canonical_composer_id = entity_matcher.resolve_composer_id(composer_slug)
+            if not canonical_composer_id:
+                canonical_composer_id = composer_slug  # Fallback to slug if not found
+            
+            # Try to match against existing canonical work
+            existing_work = entity_matcher.find_work(canonical_composer_id, record.work_text)
+            if existing_work:
+                matched_entities[record.source_id] = existing_work.entity_id
+                work_id = existing_work.entity_id
+            
             if work_id not in works:
                 works[work_id] = WorkCandidate(
                     id=work_id,
                     work_group_id=work_group_id,
-                    composer_id=composer_slug,
+                    composer_id=canonical_composer_id,
                     title=record.work_text,
                     gem=record.gem_marker,
                     source_file=record.location.source_file,
@@ -112,20 +135,28 @@ def main(
 
     summary_path = ROOT / "generated" / "migration" / "migration-summary.json"
     summary_path.parent.mkdir(parents=True, exist_ok=True)
+    
+    # Categorize review items for better curator summaries
+    categorized_items = categorize_review_items(review_items, matched_entities)
+    review_stats = review_summary(categorized_items)
+    
     summary = {
         "dry_run": dry_run,
         "works": [asdict(item) for item in sorted(works.values(), key=lambda x: x.id)],
         "performances": [
             asdict(item) for item in sorted(performances.values(), key=lambda x: x.id)
         ],
-        "review_items": review_items,
+        "review_summary": review_stats,
+        "matched_entities": matched_entities,
         "written_files": [str(path.relative_to(ROOT)) for path in written_paths],
     }
     summary_path.write_text(json.dumps(summary, indent=2), encoding="utf-8")
 
     console.print(f"Works candidates: {len(works)}")
     console.print(f"Performance candidates: {len(performances)}")
-    console.print(f"Review items: {len(review_items)}")
+    console.print(f"Matched to existing: {len(matched_entities)}")
+    console.print(f"Review summary: {review_stats['by_category']}")
+    console.print(f"Consequential items (curator action): {review_stats['consequential_count']}")
     console.print(f"Summary: {summary_path}")
     if dry_run:
         console.print("Dry run: no canonical preview files were written.")

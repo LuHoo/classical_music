@@ -79,11 +79,13 @@ class EntityMatcher:
         self.work_groups: dict[str, ExistingEntity] = {}
         self.performances: dict[str, ExistingEntity] = {}
         self.persons: dict[str, ExistingEntity] = {}
+        self._composer_slug_to_id: dict[str, str] = {}  # "bruckner" → "anton-bruckner"
 
         self._load_works()
         self._load_work_groups()
         self._load_performances()
         self._load_persons()
+        self._build_composer_mapping()
 
     def _load_works(self) -> None:
         """Load existing works from data/works/."""
@@ -128,6 +130,28 @@ class EntityMatcher:
             entity = ExistingEntity.from_file("person", file_path)
             if entity and entity.entity_id:
                 self.persons[entity.entity_id] = entity
+
+    def _build_composer_mapping(self) -> None:
+        """
+        Build mapping from doc slug to canonical composer_id.
+        E.g., "bruckner" → "anton-bruckner"
+        """
+        slug_to_id = {}
+        for work in self.works.values():
+            if work.composer_id:
+                # Extract last word as doc slug (e.g., "anton-bruckner" → "bruckner")
+                parts = work.composer_id.split("-")
+                slug = parts[-1]
+                if slug and slug not in slug_to_id:
+                    slug_to_id[slug] = work.composer_id
+        self._composer_slug_to_id = slug_to_id
+
+    def resolve_composer_id(self, doc_slug: str) -> str | None:
+        """
+        Resolve doc slug to canonical composer_id.
+        Returns canonical composer_id or None if not found.
+        """
+        return self._composer_slug_to_id.get(doc_slug)
 
     def find_work(self, composer_id: str, work_title: str) -> ExistingEntity | None:
         """
