@@ -7,8 +7,8 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 ## Summary
 
 - action_required: 0
-- background_suspicion: 74
-- auto_resolved: 0
+- background_suspicion: 67
+- auto_resolved: 7
 
 ## Clusters
 
@@ -575,13 +575,13 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 
 ### DUP-003 | anton-bruckner | symphony no. 1 in c minor "das kecke beserl"
 
-- classification: `confirmed_duplicate`
-- status: `background_suspicion`
-- confidence: `0.75`
-- requires_review_if_activated: `true`
-- proposed_action: `candidate_for_authority_confirmed_merge`
+- classification: `distinct_works`
+- status: `auto_resolved`
+- confidence: `0.85`
+- requires_review_if_activated: `false`
+- proposed_action: `keep_separate_as_accepted_versions`
 - authority_ids: `wab:wab101`
-- evidence: All Works share normalized catalogue identifier wab:wab101
+- evidence: Accepted related versions within work group: all share catalogue wab:wab101 but represent distinct concepts/versions
 
 | ID | File | Catalogues | MusicBrainz IDs |
 | --- | --- | --- | --- |
@@ -591,13 +591,13 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 
 ### DUP-003 | anton-bruckner | symphony no. 2 in c minor
 
-- classification: `confirmed_duplicate`
-- status: `background_suspicion`
-- confidence: `0.75`
-- requires_review_if_activated: `true`
-- proposed_action: `candidate_for_authority_confirmed_merge`
+- classification: `distinct_works`
+- status: `auto_resolved`
+- confidence: `0.85`
+- requires_review_if_activated: `false`
+- proposed_action: `keep_separate_as_accepted_versions`
 - authority_ids: `wab:wab102`
-- evidence: All Works share normalized catalogue identifier wab:wab102
+- evidence: Accepted related versions within work group: all share catalogue wab:wab102 but represent distinct concepts/versions
 
 | ID | File | Catalogues | MusicBrainz IDs |
 | --- | --- | --- | --- |
@@ -606,13 +606,13 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 
 ### DUP-003 | anton-bruckner | symphony no. 3 in d minor "wagner symphony"
 
-- classification: `confirmed_duplicate`
-- status: `background_suspicion`
-- confidence: `0.75`
-- requires_review_if_activated: `true`
-- proposed_action: `candidate_for_authority_confirmed_merge`
+- classification: `distinct_works`
+- status: `auto_resolved`
+- confidence: `0.85`
+- requires_review_if_activated: `false`
+- proposed_action: `keep_separate_as_accepted_versions`
 - authority_ids: `wab:wab103`
-- evidence: All Works share normalized catalogue identifier wab:wab103
+- evidence: Accepted related versions within work group: all share catalogue wab:wab103 but represent distinct concepts/versions
 
 | ID | File | Catalogues | MusicBrainz IDs |
 | --- | --- | --- | --- |
@@ -622,13 +622,13 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 
 ### DUP-003 | anton-bruckner | symphony no. 4 in e♭ major "die romantische"
 
-- classification: `confirmed_duplicate`
-- status: `background_suspicion`
-- confidence: `0.75`
-- requires_review_if_activated: `true`
-- proposed_action: `candidate_for_authority_confirmed_merge`
+- classification: `distinct_works`
+- status: `auto_resolved`
+- confidence: `0.85`
+- requires_review_if_activated: `false`
+- proposed_action: `keep_separate_as_accepted_versions`
 - authority_ids: `wab:wab104`
-- evidence: All Works share normalized catalogue identifier wab:wab104
+- evidence: Accepted related versions within work group: all share catalogue wab:wab104 but represent distinct concepts/versions
 
 | ID | File | Catalogues | MusicBrainz IDs |
 | --- | --- | --- | --- |
@@ -639,13 +639,13 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 
 ### DUP-003 | anton-bruckner | symphony no. 5 in b♭ major
 
-- classification: `confirmed_duplicate`
-- status: `background_suspicion`
-- confidence: `0.75`
-- requires_review_if_activated: `true`
-- proposed_action: `candidate_for_authority_confirmed_merge`
+- classification: `distinct_works`
+- status: `auto_resolved`
+- confidence: `0.85`
+- requires_review_if_activated: `false`
+- proposed_action: `keep_separate_as_accepted_versions`
 - authority_ids: `wab:wab105`
-- evidence: All Works share normalized catalogue identifier wab:wab105
+- evidence: Accepted related versions within work group: all share catalogue wab:wab105 but represent distinct concepts/versions
 
 | ID | File | Catalogues | MusicBrainz IDs |
 | --- | --- | --- | --- |
@@ -654,13 +654,13 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 
 ### DUP-003 | anton-bruckner | symphony no. 7 in e major
 
-- classification: `confirmed_duplicate`
-- status: `background_suspicion`
-- confidence: `0.75`
-- requires_review_if_activated: `true`
-- proposed_action: `candidate_for_authority_confirmed_merge`
+- classification: `distinct_works`
+- status: `auto_resolved`
+- confidence: `0.85`
+- requires_review_if_activated: `false`
+- proposed_action: `keep_separate_as_accepted_versions`
 - authority_ids: `wab:wab107`
-- evidence: All Works share normalized catalogue identifier wab:wab107
+- evidence: Accepted related versions within work group: all share catalogue wab:wab107 but represent distinct concepts/versions
 
 | ID | File | Catalogues | MusicBrainz IDs |
 | --- | --- | --- | --- |
@@ -669,13 +669,13 @@ Unactivated unresolved clusters are background suspicions and do not require cur
 
 ### DUP-003 | anton-bruckner | symphony no. 8 in c minor "die apokalyptische"
 
-- classification: `confirmed_duplicate`
-- status: `background_suspicion`
-- confidence: `0.75`
-- requires_review_if_activated: `true`
-- proposed_action: `candidate_for_authority_confirmed_merge`
+- classification: `distinct_works`
+- status: `auto_resolved`
+- confidence: `0.85`
+- requires_review_if_activated: `false`
+- proposed_action: `keep_separate_as_accepted_versions`
 - authority_ids: `wab:wab108`
-- evidence: All Works share normalized catalogue identifier wab:wab108
+- evidence: Accepted related versions within work group: all share catalogue wab:wab108 but represent distinct concepts/versions
 
 | ID | File | Catalogues | MusicBrainz IDs |
 | --- | --- | --- | --- |
