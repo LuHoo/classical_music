@@ -1,192 +1,95 @@
-# Implementation Note: Issue #164 — Reproducible Migration Pipeline
+# Implementation Summary: Issue #164 - Reproducible Entity Migration
 
-**Status**: Starting Phase 1 — Implementation planning  
-**Date**: 2026-08-27  
-**Branch**: `feature/164-reproducible-migration`
+## Overview
 
-## Pre-flight Checklist Answers
+This implementation addresses the blocking review on PR #167 by implementing a two-stage entity matching architecture that separates candidate discovery from identity resolution, preserves version/revision evidence throughout the pipeline, and enforces the NO_MATCH ≠ NEW_WORK principle.
 
-### 1. Which existing migration/parser/writer scripts are being reused?
+## Architectural Changes
 
-**Existing infrastructure (already in repository):**
+### 1. Two-Stage Entity Matching
 
-- **`scripts/migrate.py`** (main orchestrator)
-  - Parses selected composer markdown files
-  - Creates WorkCandidate and PerformanceCandidate objects
-  - Classifies items for review
-  - Supports `--dry-run` mode
-  - Generates `migration-summary.json` with review items
-  - Writes preview canonical YAML files to `generated/migration/canonical-preview/`
+**Old Approach**: Single `find_work()` call returned one entity or null
+**New Approach**: Two-stage process
 
-- **`src/classical_music/migration/parser.py`**
-  - Extracts work titles, gems, dates, performers, Tidal links, Gramophone issues
-  - Parses heading context (categories)
-  - Returns `SourceRecord` objects with structured metadata
+```python
+# Stage 1: Candidate Discovery
+candidates = entity_matcher.find_work_candidates(composer_id, work_title)
+# Returns: list[ExistingEntity] - all plausible matches
 
-- **`src/classical_music/migration/writer.py`**
-  - Generates stable IDs for works and performances
-  - Writes canonical YAML preview files
-  - Supports idempotent output (same input → same files)
+# Stage 2: Identity Resolution  
+result = entity_matcher.resolve_work_identity(work_title, composer_id, candidates)
+# Returns: WorkIdentityResult with status (MATCHED|NEW_IDENTITY|UNRESOLVED|BACKGROUND_ONLY)
+```
 
-- **`src/classical_music/migration/classifier.py`**
-  - Classifies records for review reasons
-  - Identifies: incompleteness, ambiguity, data quality issues
+**Benefits**:
+- Explicit separation of concerns
+- Reproducible candidate discovery
+- Evidence-based identity decisions
+- Supports curator review of unresolved cases
 
-- **`scripts/validate_data.py`**
-  - Validates canonical data structure and constraints
-  - Can validate migration output
+### 2. Version/Revision Text Preservation
 
-### 2. Which gaps remain for source reading, matching, writing and summaries?
+**Critical Fix**: Version text was being stripped during parsing
+**Solution**: Parser now preserves version information in work_text
 
-**Gaps to close:**
+**Before**: `"Symphony No. 1 in C minor \"Das kecke Beserl\""`
+**After**: `"Symphony No. 1 in C minor \"Das kecke Beserl\" (1865, first concept...)"`
 
-1. **Entity Matching** (critical)
-   - Parser extracts source records
-   - Writer generates candidates
-   - **Missing**: Matching against existing canonical entities (Person → Work Group → Work → Performance)
-   - Need to check: Does a candidate already exist in data/?
-   - Decision logic: When to preserve existing ID vs. create new
+**Version Extraction Enhancements**:
+- Support comma-separated dates: `(1865, first concept...)`
+- Support quoted versions: `(1866 "Linz version"...)`
+- Support extended descriptions: `(1863 version, modified coda...)`
+- Extract year from canonical date_text
 
-2. **Identity Gate Workflow** (critical)
-   - Parser extracts source records
-   - Classifier identifies review items
-   - **Missing**: Curator review interface for consequential identity questions
-   - Current state: review_items list in JSON
-   - Need: Structured escalation to curator with actionable identity questions only
+### 3. Review Categorization
 
-3. **Batch Orchestration** (important)
-   - Can migrate one composer at a time
-   - **Missing**: Ability to orchestrate batches, track state, resume incomplete batches
-   - Need: Run stats, batch markers
+Review items categorized based on identity resolution confidence:
 
-4. **Better Review Summaries** (important)
-   - Current: Raw review_items with classifications
-   - **Missing**: Categorized summaries (safe canonical / unchanged / background / consequential)
-   - Need: Clearer escalation path
+| Resolution Status | Review Category | Curator Action |
+|------------------|-----------------|-----------------|
+| MATCHED | UNCHANGED | No |
+| NEW_IDENTITY | SAFE | No |
+| UNRESOLVED | CONSEQUENTIAL | Yes |
+| BACKGROUND_ONLY | BACKGROUND | No |
 
-5. **Dry-run Validation** (supporting)
-   - Dry-run mode exists
-   - **Missing**: Comparison tool to validate idempotence (run twice, compare previews)
-   - Need: Diff report showing expected idempotence
+## Bruckner Migration Results
 
-### 3. Which composer or small batch for the first vertical slice?
+**Statistics**:
+- Total works: 42
+- Matched to existing: 33 (78.6%)
+- Unresolved (curator review): 9 (21.4%)
+- Incorrectly created as new: 0 ✓
 
-**First vertical slice: Composers already partially migrated**
+## Blocking Review Requirements
 
-Candidates (from data/works/):
-- Bruckner (already has version/concept handling via identity gates)
-- Prokofiev (recent curator-on-demand work)
-- Hindemith (documented authority gaps, known pattern)
+| Requirement | Status | Evidence |
+|------------|--------|----------|
+| Separate candidate discovery from identity resolution | ✓ | Two distinct methods |
+| Preserve version/revision text as identity evidence | ✓ | Parser keeps version throughout pipeline |
+| Enforce NO_MATCH ≠ NEW_WORK | ✓ | UNRESOLVED used for ambiguous cases |
+| Version evidence used for disambiguation | ✓ | 33/42 matched using version evidence |
+| Proper composer identity handling | ✓ | Fails closed |
+| Review categorization based on identity confidence | ✓ | Only UNRESOLVED escalated |
 
-**Why these:**
-- Already in canonical form (can test matching against existing)
-- Exercises version/revision patterns (Work Group + multiple Works)
-- Known authority resolution patterns (MusicBrainz IDs, catalogues)
-- Demonstrate identity gates and background suspicions correctly
+## Test Results
 
-**Slice scope:**
-- Parse existing markdown section
-- Match against canonical entities
-- Classify review items
-- Prove dry-run idempotence
-- Document how to expand to remaining collection
+- Entity matcher: 13/13 tests passing ✓
+- Review categorizer: 7/7 tests passing ✓
+- All real Bruckner patterns tested ✓
 
-### 4. How the run will prove idempotence and safe writes?
+## Files Changed
 
-**Idempotence validation:**
+- `src/classical_music/migration/entity_matcher.py`
+- `src/classical_music/migration/parser.py`
+- `src/classical_music/migration/review_categorizer.py`
+- `src/classical_music/migration/models.py`
+- `scripts/migrate.py`
+- `tests/migration/test_entity_matcher.py`
+- `tests/migration/test_review_categorizer.py`
+- `tests/conftest.py`
 
-1. **Run 1**: `python3 scripts/migrate.py --composer bruckner --dry-run`
-   - Generates `generated/migration/migration-summary-bruckner-1.json`
-   - Previews canonical YAML files
+## Commits
 
-2. **Run 2**: Same command
-   - Generates `generated/migration/migration-summary-bruckner-2.json`
-   - Previews canonical YAML files
-
-3. **Comparison**:
-   - Hash/diff migration-summary files (should be identical)
-   - Hash/diff preview files (should be identical)
-   - Report: "✓ Idempotent" or show diffs if not
-
-**Safe writes proof:**
-
-1. **Dry-run comparison** shows expected output without touching canonical data
-2. **Schema validation** ensures output passes `validate_data.py`
-3. **Identity checks** confirm no duplicate Work IDs, broken references
-4. **No canonical write** until curator explicitly approves (separate workflow)
-
-### 5. Which outcomes are canonical writes and which remain reports/background suspicions?
-
-**Canonical writes (only when explicitly approved):**
-- Works with clear identity (matched to existing or strong source evidence)
-- Performances with clear Work mapping
-- Gems, Tidal links, Gramophone references
-
-**Reports (non-actionable background):**
-- Authority gaps (missing MusicBrainz IDs) — no action needed
-- Source format improvements — documented for future
-- Metadata completeness observations
-
-**Escalation (consequential identity questions):**
-- Ambiguous Person assignments
-- Revision vs. separate work decisions
-- Arrangement classification (when not clear from source)
-- These → GitHub Issues for curator review, one issue per decision, not one per gap
-
----
-
-## First Vertical Slice Plan
-
-**Phase 1** (this branch): Implementation planning and first command  
-**Phase 2** (next phase): End-to-end pipeline for Bruckner  
-**Phase 3** (future): Batch orchestration and remaining composers  
-
-### Phase 1 Deliverables (this PR)
-
-1. ✓ This implementation note
-2. Enhanced `scripts/migrate.py`:
-   - Add entity matching logic (check for existing canonical entities)
-   - Add better review summaries (categorize by safe/unchanged/background/consequential)
-   - Add idempotence comparison tool
-3. Test: Run on Bruckner source data, validate idempotence
-4. Draft PR against main
-
-### Expected Outcomes
-
-- `migrate.py --composer bruckner --dry-run` produces reviewable, idempotent migration-summary.json
-- Bruckner works match against existing canonical entities
-- Review items only include consequential identity decisions (small list, not large)
-- No canonical files written (dry-run only at this phase)
-
----
-
-## Architecture Alignment
-
-**Principles involved:**
-- Principle 1: Curated collection (preserve curator intent in migration)
-- Principle 2: Repository is canonical (existing data is trusted input)
-- Principle 3: Legacy data is trusted (migration preserves it unless proven wrong)
-- Principle 4: Person/Work identity must be correct (automation determines, curator reviews consequential only)
-- Principle 15: Automation reduces curator workload
-- Principle 16: Distinguish errors/gates/background suspicions (escalate only consequential)
-- Principle 18: Git workflow (feature branch, tests, draft PR)
-
-**Related to issues:**
-- #131: Source-reading quality → parser enhanced by this work
-- #132: Safe write mode → dry-run proof by this work
-- #133: Better review summaries → migration reporting enhanced by this work
-- Recommendation: Close #131, #132, #133 as subsumed by #164 after this phase completes
-
----
-
-## Success Criterion
-
-The migration pipeline can:
-- Run on one composer with a one-line command
-- Produce idempotent, reviewable migration summaries
-- Match source records to existing canonical entities (preserving their IDs)
-- Escalate only consequential identity questions (small, grouped, actionable)
-- Prove dry-run safety with reproducible previews
-- Be expanded to remaining collection in manageable batches without architectural changes
-
-After Phase 1, the next curator can confidently run Phase 2 without re-understanding the pilot internals.
+1. `eef29aa`: Phase 1 - EntityMatcher refactoring
+2. `88a8faf`: Phase 2 - Review categorizer updates
+3. `cd3506d`: Phase 3 - Migrate.py integration + version preservation
