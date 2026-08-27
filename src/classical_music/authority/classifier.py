@@ -171,7 +171,27 @@ def classify_duplicate_cluster(cluster: DuplicateCluster) -> AuthorityEvidence:
     if populated_catalogue_sets and len(populated_catalogue_sets) == len(works):
         common_catalogues = set.intersection(*populated_catalogue_sets)
         all_catalogues = set.union(*populated_catalogue_sets)
+        
+        # Check for accepted related versions within a work group first
+        # (e.g., Bruckner symphony versions: same title, same work group, same catalogues, but different variants)
         if common_catalogues:
+            work_group_ids = {work.work_group_id for work in works if work.work_group_id}
+            if len(work_group_ids) == 1:
+                # All works belong to the same work group and share the same catalogues
+                # This indicates they're accepted related versions/concepts, not duplicates to merge
+                catalogue = sorted(common_catalogues)[0]
+                return AuthorityEvidence(
+                    classification="distinct_works",
+                    curator_review_required=False,
+                    evidence=(
+                        f"Accepted related versions within work group: all share catalogue {catalogue} but represent distinct concepts/versions",
+                    ),
+                    authority_ids=tuple(sorted(common_catalogues)),
+                    confidence=0.85,
+                    proposed_action="keep_separate_as_accepted_versions",
+                )
+            
+            # Otherwise, it's a standard confirmed duplicate (same catalogue, same composer/title)
             catalogue = sorted(common_catalogues)[0]
             return AuthorityEvidence(
                 classification="confirmed_duplicate",
@@ -181,6 +201,7 @@ def classify_duplicate_cluster(cluster: DuplicateCluster) -> AuthorityEvidence:
                 confidence=0.75,
                 proposed_action="candidate_for_authority_confirmed_merge",
             )
+        
         if len(all_catalogues) > 1:
             return AuthorityEvidence(
                 classification="distinct_works",

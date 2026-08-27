@@ -15,6 +15,7 @@ def work(
     title: str,
     *,
     composer_id: str = "test-composer",
+    work_group_id: str | None = None,
     catalogue: tuple[str, str] | None = None,
     mbid: str | None = None,
     relationships: tuple[str, ...] = (),
@@ -25,7 +26,7 @@ def work(
         work_id=work_id,
         composer_id=composer_id,
         title=title,
-        work_group_id=f"{work_id}-group",
+        work_group_id=work_group_id or f"{work_id}-group",
         catalogues=catalogues,
         authority_candidates=candidates,
         relationship_types=relationships,
@@ -134,3 +135,39 @@ def test_partial_authority_catalogue_mix_is_catalogue_conflict() -> None:
 
     assert result.classification == "catalogue_conflict"
     assert result.curator_review_required is True
+
+
+def test_accepted_related_versions_within_work_group_not_actionable() -> None:
+    # Bruckner symphony versions: same title, same work group, same catalogue, but distinct concepts
+    shared_wg = "anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-group"
+    result = classify(
+        work(
+            "anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-work",
+            'Symphony No. 1 in C minor "Das kecke Beserl"',
+            composer_id="anton-bruckner",
+            work_group_id=shared_wg,
+            catalogue=("WAB", "WAB 101"),
+        ),
+        work(
+            "anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-2-work",
+            'Symphony No. 1 in C minor "Das kecke Beserl"',
+            composer_id="anton-bruckner",
+            work_group_id=shared_wg,
+            catalogue=("WAB", "WAB 101"),
+        ),
+        work(
+            "anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-3-work",
+            'Symphony No. 1 in C minor "Das kecke Beserl"',
+            composer_id="anton-bruckner",
+            work_group_id=shared_wg,
+            catalogue=("WAB", "WAB 101"),
+        ),
+    )
+
+    # Should be classified as distinct_works (not duplicates to merge)
+    assert result.classification == "distinct_works"
+    # Should NOT require curator review (accepted decision)
+    assert result.curator_review_required is False
+    # Should explain they're accepted as related versions
+    assert "Accepted related versions" in result.evidence[0]
+    assert result.proposed_action == "keep_separate_as_accepted_versions"

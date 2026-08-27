@@ -1613,17 +1613,17 @@
       "rule_id": "DUP-003",
       "composer_id": "anton-bruckner",
       "normalized_title": "symphony no. 1 in c minor \"das kecke beserl\"",
-      "classification": "confirmed_duplicate",
-      "confidence": 0.75,
-      "requires_review_if_activated": true,
+      "classification": "distinct_works",
+      "confidence": 0.85,
+      "requires_review_if_activated": false,
       "evidence": [
-        "All Works share normalized catalogue identifier wab:wab101"
+        "Accepted related versions within work group: all share catalogue wab:wab101 but represent distinct concepts/versions"
       ],
       "authority_ids": [
         "wab:wab101"
       ],
-      "proposed_action": "candidate_for_authority_confirmed_merge",
-      "status": "background_suspicion",
+      "proposed_action": "keep_separate_as_accepted_versions",
+      "status": "auto_resolved",
       "items": [
         {
           "id": "anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-2-work",
@@ -1664,17 +1664,17 @@
       "rule_id": "DUP-003",
       "composer_id": "anton-bruckner",
       "normalized_title": "symphony no. 2 in c minor",
-      "classification": "confirmed_duplicate",
-      "confidence": 0.75,
-      "requires_review_if_activated": true,
+      "classification": "distinct_works",
+      "confidence": 0.85,
+      "requires_review_if_activated": false,
       "evidence": [
-        "All Works share normalized catalogue identifier wab:wab102"
+        "Accepted related versions within work group: all share catalogue wab:wab102 but represent distinct concepts/versions"
       ],
       "authority_ids": [
         "wab:wab102"
       ],
-      "proposed_action": "candidate_for_authority_confirmed_merge",
-      "status": "background_suspicion",
+      "proposed_action": "keep_separate_as_accepted_versions",
+      "status": "auto_resolved",
       "items": [
         {
           "id": "anton-bruckner-symphony-no-2-in-c-minor-2-work",
@@ -1704,17 +1704,17 @@
       "rule_id": "DUP-003",
       "composer_id": "anton-bruckner",
       "normalized_title": "symphony no. 3 in d minor \"wagner symphony\"",
-      "classification": "confirmed_duplicate",
-      "confidence": 0.75,
-      "requires_review_if_activated": true,
+      "classification": "distinct_works",
+      "confidence": 0.85,
+      "requires_review_if_activated": false,
       "evidence": [
-        "All Works share normalized catalogue identifier wab:wab103"
+        "Accepted related versions within work group: all share catalogue wab:wab103 but represent distinct concepts/versions"
       ],
       "authority_ids": [
         "wab:wab103"
       ],
-      "proposed_action": "candidate_for_authority_confirmed_merge",
-      "status": "background_suspicion",
+      "proposed_action": "keep_separate_as_accepted_versions",
+      "status": "auto_resolved",
       "items": [
         {
           "id": "anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-2-work",
@@ -1755,17 +1755,17 @@
       "rule_id": "DUP-003",
       "composer_id": "anton-bruckner",
       "normalized_title": "symphony no. 4 in e\u266d major \"die romantische\"",
-      "classification": "confirmed_duplicate",
-      "confidence": 0.75,
-      "requires_review_if_activated": true,
+      "classification": "distinct_works",
+      "confidence": 0.85,
+      "requires_review_if_activated": false,
       "evidence": [
-        "All Works share normalized catalogue identifier wab:wab104"
+        "Accepted related versions within work group: all share catalogue wab:wab104 but represent distinct concepts/versions"
       ],
       "authority_ids": [
         "wab:wab104"
       ],
-      "proposed_action": "candidate_for_authority_confirmed_merge",
-      "status": "background_suspicion",
+      "proposed_action": "keep_separate_as_accepted_versions",
+      "status": "auto_resolved",
       "items": [
         {
           "id": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-2-work",
@@ -1817,17 +1817,17 @@
       "rule_id": "DUP-003",
       "composer_id": "anton-bruckner",
       "normalized_title": "symphony no. 5 in b\u266d major",
-      "classification": "confirmed_duplicate",
-      "confidence": 0.75,
-      "requires_review_if_activated": true,
+      "classification": "distinct_works",
+      "confidence": 0.85,
+      "requires_review_if_activated": false,
       "evidence": [
-        "All Works share normalized catalogue identifier wab:wab105"
+        "Accepted related versions within work group: all share catalogue wab:wab105 but represent distinct concepts/versions"
       ],
       "authority_ids": [
         "wab:wab105"
       ],
-      "proposed_action": "candidate_for_authority_confirmed_merge",
-      "status": "background_suspicion",
+      "proposed_action": "keep_separate_as_accepted_versions",
+      "status": "auto_resolved",
       "items": [
         {
           "id": "anton-bruckner-symphony-no-5-in-bb-major-2-work",
@@ -1857,17 +1857,17 @@
       "rule_id": "DUP-003",
       "composer_id": "anton-bruckner",
       "normalized_title": "symphony no. 7 in e major",
-      "classification": "confirmed_duplicate",
-      "confidence": 0.75,
-      "requires_review_if_activated": true,
+      "classification": "distinct_works",
+      "confidence": 0.85,
+      "requires_review_if_activated": false,
       "evidence": [
-        "All Works share normalized catalogue identifier wab:wab107"
+        "Accepted related versions within work group: all share catalogue wab:wab107 but represent distinct concepts/versions"
       ],
       "authority_ids": [
         "wab:wab107"
       ],
-      "proposed_action": "candidate_for_authority_confirmed_merge",
-      "status": "background_suspicion",
+      "proposed_action": "keep_separate_as_accepted_versions",
+      "status": "auto_resolved",
       "items": [
         {
           "id": "anton-bruckner-symphony-no-7-in-e-major-2-work",
@@ -1897,17 +1897,17 @@
       "rule_id": "DUP-003",
       "composer_id": "anton-bruckner",
       "normalized_title": "symphony no. 8 in c minor \"die apokalyptische\"",
-      "classification": "confirmed_duplicate",
-      "confidence": 0.75,
-      "requires_review_if_activated": true,
+      "classification": "distinct_works",
+      "confidence": 0.85,
+      "requires_review_if_activated": false,
       "evidence": [
-        "All Works share normalized catalogue identifier wab:wab108"
+        "Accepted related versions within work group: all share catalogue wab:wab108 but represent distinct concepts/versions"
       ],
       "authority_ids": [
         "wab:wab108"
       ],
-      "proposed_action": "candidate_for_authority_confirmed_merge",
-      "status": "background_suspicion",
+      "proposed_action": "keep_separate_as_accepted_versions",
+      "status": "auto_resolved",
       "items": [
         {
           "id": "anton-bruckner-symphony-no-8-in-c-minor-die-apokalyptische-2-work",
