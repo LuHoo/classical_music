@@ -82,14 +82,21 @@ def extract_version_info(text: str) -> dict[str, str] | None:
     
     Returns dict with keys:
     - year: extracted year (e.g., "1865")
-    - type: "version", "revision", "edition", etc.
+    - type: "version", "revision", etc. or "year" if just year
     - full_text: original extracted text
     
     Or None if no version info found.
+    
+    Handles patterns:
+    - "(1865 version)" or "(1865 revision)" or "(1863 version, ...)"
+    - "(1865, first concept...)" (comma-separated)
+    - "(1866 "Linz version"...)" (quoted)
+    - "(1865)" (just year)
     """
-    # Match patterns like "(1865 version)" "(1865 revision)" etc.
+    # Match patterns like "(1865 version...)" "(1865 revision...)" etc.
+    # Allow text after the keyword up to closing paren
     match = re.search(
-        r'\((\d{4})\s+(version|revision|edition|variant)\)',
+        r'\((\d{4})\s+(version|revision|edition|variant)[^)]*\)',
         text,
         re.IGNORECASE
     )
@@ -97,6 +104,25 @@ def extract_version_info(text: str) -> dict[str, str] | None:
         return {
             "year": match.group(1),
             "type": match.group(2).lower(),
+            "full_text": match.group(0),
+        }
+    
+    # Match year followed by quote (e.g., "(1866 "Linz version")")
+    match = re.search(r'\((\d{4})\s*"', text)
+    if match:
+        return {
+            "year": match.group(1),
+            "type": "version",
+            "full_text": match.group(0),
+        }
+    
+    # Match year followed by comma (e.g., "(1865, first concept)")
+    # This is common in Bruckner symphonies
+    match = re.search(r'\((\d{4}),', text)
+    if match:
+        return {
+            "year": match.group(1),
+            "type": "year_descriptive",
             "full_text": match.group(0),
         }
     

@@ -3,246 +3,372 @@
   "works": [
     {
       "id": "anton-bruckner-4-tantum-ergo-work",
-      "work_group_id": "bruckner-4-tantum-ergo-group",
+      "work_group_id": "bruckner-4-tantum-ergo-1888-group",
       "composer_id": "anton-bruckner",
-      "title": "4 Tantum ergo",
+      "title": "4 Tantum ergo (1888)",
       "gem": false,
       "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
       "source_line": 84
     },
     {
       "id": "anton-bruckner-ave-maria-work",
-      "work_group_id": "bruckner-ave-maria-group",
+      "work_group_id": "bruckner-ave-maria-1861-group",
       "composer_id": "anton-bruckner",
-      "title": "Ave Maria",
+      "title": "Ave Maria (1861)",
       "gem": false,
       "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
       "source_line": 68
     },
     {
       "id": "anton-bruckner-christus-factus-est-work",
-      "work_group_id": "bruckner-christus-factus-est-group",
+      "work_group_id": "bruckner-christus-factus-est-1884-group",
       "composer_id": "anton-bruckner",
-      "title": "Christus factus est",
+      "title": "Christus factus est (1884)",
       "gem": false,
       "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
       "source_line": 70
     },
     {
       "id": "anton-bruckner-kronstorfer-messe-in-d-minor-work",
-      "work_group_id": "bruckner-kronstorfer-messe-in-d-minor-group",
+      "work_group_id": "bruckner-kronstorfer-messe-in-d-minor-1843-44-group",
       "composer_id": "anton-bruckner",
-      "title": "Kronstorfer Messe in D Minor",
+      "title": "Kronstorfer Messe in D Minor (1843-44)",
       "gem": false,
       "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
       "source_line": 96
     },
     {
       "id": "anton-bruckner-libera-me-work",
-      "work_group_id": "bruckner-libera-me-group",
+      "work_group_id": "bruckner-libera-me-c-1843-group",
       "composer_id": "anton-bruckner",
-      "title": "Libera me",
+      "title": "Libera me (c. 1843)",
       "gem": false,
       "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
       "source_line": 72
     },
     {
       "id": "anton-bruckner-locus-iste-work",
-      "work_group_id": "bruckner-locus-iste-group",
+      "work_group_id": "bruckner-locus-iste-1869-group",
       "composer_id": "anton-bruckner",
-      "title": "Locus iste",
+      "title": "Locus iste (1869)",
       "gem": false,
       "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
       "source_line": 74
     },
     {
       "id": "anton-bruckner-march-in-d-minor-work",
-      "work_group_id": "bruckner-march-in-d-minor-group",
+      "work_group_id": "bruckner-march-in-d-minor-1862-group",
       "composer_id": "anton-bruckner",
-      "title": "March in D minor",
+      "title": "March in D minor (1862)",
       "gem": false,
       "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
       "source_line": 12
     },
     {
       "id": "anton-bruckner-os-justi-work",
-      "work_group_id": "bruckner-os-justi-group",
+      "work_group_id": "bruckner-os-justi-1879-group",
       "composer_id": "anton-bruckner",
-      "title": "Os justi",
+      "title": "Os justi (1879)",
       "gem": false,
       "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
       "source_line": 76
     },
     {
-      "id": "anton-bruckner-overture-in-g-minor-work",
-      "work_group_id": "bruckner-overture-in-g-minor-group",
+      "id": "anton-bruckner-overture-in-g-minor-2-work",
+      "work_group_id": "bruckner-overture-in-g-minor-1863-version-modified-coda-at-bars-233-288-group",
       "composer_id": "anton-bruckner",
-      "title": "Overture in G minor",
+      "title": "Overture in G minor (1863 version, modified coda at bars 233\u2013288)",
+      "gem": false,
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 18
+    },
+    {
+      "id": "anton-bruckner-overture-in-g-minor-work",
+      "work_group_id": "bruckner-overture-in-g-minor-1862-version-group",
+      "composer_id": "anton-bruckner",
+      "title": "Overture in G minor (1862 version)",
       "gem": false,
       "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
       "source_line": 16
     },
     {
       "id": "anton-bruckner-pange-lingua-work",
-      "work_group_id": "bruckner-pange-lingua-group",
+      "work_group_id": "bruckner-pange-lingua-1868-group",
       "composer_id": "anton-bruckner",
-      "title": "Pange lingua",
+      "title": "Pange lingua (1868)",
       "gem": false,
       "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
       "source_line": 80
     },
     {
       "id": "anton-bruckner-salvum-fac-populum-tuum-work",
-      "work_group_id": "bruckner-salvum-fac-populum-tuum-group",
+      "work_group_id": "bruckner-salvum-fac-populum-tuum-1884-group",
       "composer_id": "anton-bruckner",
-      "title": "Salvum fac populum tuum",
+      "title": "Salvum fac populum tuum (1884)",
       "gem": false,
       "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
       "source_line": 82
     },
     {
       "id": "anton-bruckner-symphony-in-d-minor-die-nullte-work",
-      "work_group_id": "bruckner-symphony-in-d-minor-die-nullte-group",
+      "work_group_id": "bruckner-symphony-in-d-minor-die-nullte-1869-group",
       "composer_id": "anton-bruckner",
-      "title": "Symphony in D minor \"Die Nullte\"",
+      "title": "Symphony in D minor \"Die Nullte\" (1869)",
       "gem": false,
       "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
       "source_line": 22
     },
     {
       "id": "anton-bruckner-symphony-in-f-minor-work",
-      "work_group_id": "bruckner-symphony-in-f-minor-group",
+      "work_group_id": "bruckner-symphony-in-f-minor-studiensymphonie-1863-group",
       "composer_id": "anton-bruckner",
-      "title": "Symphony in F minor",
+      "title": "Symphony in F minor (Studiensymphonie, 1863)",
       "gem": false,
       "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
       "source_line": 20
     },
     {
-      "id": "anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-3-work",
-      "work_group_id": "bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-group",
+      "id": "anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-2-work",
+      "work_group_id": "bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-1866-linz-version-revised-in-1877-1884-group",
       "composer_id": "anton-bruckner",
-      "title": "Symphony No. 1 in C minor \"Das kecke Beserl\"",
+      "title": "Symphony No. 1 in C minor \"Das kecke Beserl\" (1866 \"Linz version\", revised in 1877/1884)",
+      "gem": false,
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 26
+    },
+    {
+      "id": "anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-3-work",
+      "work_group_id": "bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-1891-vienna-version-group",
+      "composer_id": "anton-bruckner",
+      "title": "Symphony No. 1 in C minor \"Das kecke Beserl\" (1891 \"Vienna version\")",
+      "gem": false,
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 28
+    },
+    {
+      "id": "anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-work",
+      "work_group_id": "bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-1865-first-concept-adagio-scherzo-group",
+      "composer_id": "anton-bruckner",
+      "title": "Symphony No. 1 in C minor \"Das kecke Beserl\" (1865, first concept Adagio & Scherzo)",
       "gem": false,
       "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
       "source_line": 24
     },
     {
       "id": "anton-bruckner-symphony-no-2-in-c-minor-2-work",
-      "work_group_id": "bruckner-symphony-no-2-in-c-minor-group",
+      "work_group_id": "bruckner-symphony-no-2-in-c-minor-1877-version-revised-in-1892-group",
       "composer_id": "anton-bruckner",
-      "title": "Symphony No. 2 in C minor",
+      "title": "Symphony No. 2 in C minor (1877 version, revised in 1892)",
+      "gem": false,
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 32
+    },
+    {
+      "id": "anton-bruckner-symphony-no-2-in-c-minor-work",
+      "work_group_id": "bruckner-symphony-no-2-in-c-minor-1872-version-with-scherzo-second-and-adagio-third-revised-in-1873-and-1876-group",
+      "composer_id": "anton-bruckner",
+      "title": "Symphony No. 2 in C minor (1872 version with Scherzo second and Adagio third, revised in 1873 and 1876)",
       "gem": false,
       "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
       "source_line": 30
     },
     {
-      "id": "anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-work",
-      "work_group_id": "bruckner-symphony-no-3-in-d-minor-wagner-symphony-group",
+      "id": "anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-2-work",
+      "work_group_id": "bruckner-symphony-no-3-in-d-minor-wagner-symphony-1876-version-revised-in-1877-1878-most-wagner-quotations-removed-coda-added-to-the-scherzo-group",
       "composer_id": "anton-bruckner",
-      "title": "Symphony No. 3 in D minor \"Wagner Symphony\"",
+      "title": "Symphony No. 3 in D minor \"Wagner Symphony\" (1876 version, revised in 1877\u20131878: most Wagner quotations removed, coda added to the Scherzo)",
+      "gem": false,
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 36
+    },
+    {
+      "id": "anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-3-work",
+      "work_group_id": "bruckner-symphony-no-3-in-d-minor-wagner-symphony-1889-version-group",
+      "composer_id": "anton-bruckner",
+      "title": "Symphony No. 3 in D minor \"Wagner Symphony\" (1889 version)",
+      "gem": false,
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 38
+    },
+    {
+      "id": "anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-work",
+      "work_group_id": "bruckner-symphony-no-3-in-d-minor-wagner-symphony-1873-version-revised-in-1874-group",
+      "composer_id": "anton-bruckner",
+      "title": "Symphony No. 3 in D minor \"Wagner Symphony\" (1873 version, revised in 1874)",
       "gem": false,
       "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
       "source_line": 34
     },
     {
-      "id": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-work",
-      "work_group_id": "bruckner-symphony-no-4-in-e-major-die-romantische-group",
+      "id": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-2-work",
+      "work_group_id": "bruckner-symphony-no-4-in-e-major-die-romantische-1878-version-new-hunting-scherzo-and-volksfest-finale-group",
       "composer_id": "anton-bruckner",
-      "title": "Symphony No. 4 in E\u266d major \"Die Romantische\"",
+      "title": "Symphony No. 4 in E\u266d major \"Die Romantische\" (1878 version: new \"Hunting\" Scherzo and \"Volksfest\" Finale)",
       "gem": false,
       "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 40
+      "source_line": 42
     },
     {
-      "id": "anton-bruckner-symphony-no-5-in-bb-major-work",
-      "work_group_id": "bruckner-symphony-no-5-in-b-major-group",
+      "id": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-3-work",
+      "work_group_id": "bruckner-symphony-no-4-in-e-major-die-romantische-1880-version-new-finale-group",
       "composer_id": "anton-bruckner",
-      "title": "Symphony No. 5 in B\u266d major",
-      "gem": true,
+      "title": "Symphony No. 4 in E\u266d major \"Die Romantische\" (1880 version: new Finale)",
+      "gem": false,
       "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 48
+      "source_line": 44
+    },
+    {
+      "id": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-4-work",
+      "work_group_id": "bruckner-symphony-no-4-in-e-major-die-romantische-1888-version-with-piccolo-and-cymbals-group",
+      "composer_id": "anton-bruckner",
+      "title": "Symphony No. 4 in E\u266d major \"Die Romantische\" (1888 version: with piccolo and cymbals)",
+      "gem": false,
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 46
     },
     {
       "id": "anton-bruckner-symphony-no-6-in-a-major-work",
-      "work_group_id": "bruckner-symphony-no-6-in-a-major-group",
+      "work_group_id": "bruckner-symphony-no-6-in-a-major-1881-group",
       "composer_id": "anton-bruckner",
-      "title": "Symphony No. 6 in A major",
+      "title": "Symphony No. 6 in A major (1881)",
       "gem": true,
       "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
       "source_line": 52
     },
     {
-      "id": "anton-bruckner-symphony-no-7-in-e-major-2-work",
-      "work_group_id": "bruckner-symphony-no-7-in-e-major-group",
+      "id": "anton-bruckner-symphony-no-8-in-c-minor-die-apokalyptische-3-work",
+      "work_group_id": "bruckner-symphony-no-8-in-c-minor-die-apokalyptische-1890-version-3rd-woodwind-in-first-three-movements-fewer-cymbal-clashes-in-adagio-harps-in-trio-group",
       "composer_id": "anton-bruckner",
-      "title": "Symphony No. 7 in E major",
+      "title": "Symphony No. 8 in C minor \"Die Apokalyptische\" (1890 version: 3rd woodwind in first three movements, fewer cymbal clashes in Adagio, harps in Trio)",
       "gem": false,
       "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 54
+      "source_line": 62
     },
     {
-      "id": "anton-bruckner-symphony-no-8-in-c-minor-die-apokalyptische-3-work",
-      "work_group_id": "bruckner-symphony-no-8-in-c-minor-die-apokalyptische-group",
+      "id": "anton-bruckner-symphony-no-8-in-c-minor-die-apokalyptische-work",
+      "work_group_id": "bruckner-symphony-no-8-in-c-minor-die-apokalyptische-1887-version-group",
       "composer_id": "anton-bruckner",
-      "title": "Symphony No. 8 in C minor \"Die Apokalyptische\"",
+      "title": "Symphony No. 8 in C minor \"Die Apokalyptische\" (1887 version)",
       "gem": false,
       "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
       "source_line": 58
     },
     {
       "id": "anton-bruckner-symphony-no-9-in-d-minor-work",
-      "work_group_id": "bruckner-symphony-no-9-in-d-minor-group",
+      "work_group_id": "bruckner-symphony-no-9-in-d-minor-1894-first-three-movements-1896-finale-unfinished-group",
       "composer_id": "anton-bruckner",
-      "title": "Symphony No. 9 in D minor",
+      "title": "Symphony No. 9 in D minor (1894 first three movements, 1896 finale unfinished)",
       "gem": true,
       "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
       "source_line": 64
     },
     {
-      "id": "anton-bruckner-tantum-ergo-3-work",
-      "work_group_id": "bruckner-tantum-ergo-group",
-      "composer_id": "anton-bruckner",
-      "title": "Tantum ergo",
-      "gem": false,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 78
-    },
-    {
       "id": "anton-bruckner-three-orchestral-pieces-work",
-      "work_group_id": "bruckner-three-orchestral-pieces-group",
+      "work_group_id": "bruckner-three-orchestral-pieces-1862-group",
       "composer_id": "anton-bruckner",
-      "title": "Three Orchestral Pieces",
+      "title": "Three Orchestral Pieces (1862)",
       "gem": false,
       "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
       "source_line": 14
     },
     {
       "id": "anton-bruckner-tota-pulchra-es-work",
-      "work_group_id": "bruckner-tota-pulchra-es-group",
+      "work_group_id": "bruckner-tota-pulchra-es-1878-group",
       "composer_id": "anton-bruckner",
-      "title": "Tota pulchra es",
+      "title": "Tota pulchra es (1878)",
       "gem": false,
       "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
       "source_line": 90
     },
     {
       "id": "anton-bruckner-vexilla-regis-work",
-      "work_group_id": "bruckner-vexilla-regis-group",
+      "work_group_id": "bruckner-vexilla-regis-1892-group",
       "composer_id": "anton-bruckner",
-      "title": "Vexilla regis",
+      "title": "Vexilla regis (1892)",
       "gem": false,
       "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
       "source_line": 94
     },
     {
       "id": "anton-bruckner-virga-jesse-work",
-      "work_group_id": "bruckner-virga-jesse-group",
+      "work_group_id": "bruckner-virga-jesse-1885-group",
       "composer_id": "anton-bruckner",
-      "title": "Virga Jesse",
+      "title": "Virga Jesse (1885)",
       "gem": false,
       "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
       "source_line": 92
+    },
+    {
+      "id": "bruckner-symphony-no-4-in-e-major-die-romantische-1874-1876-version-work",
+      "work_group_id": "bruckner-symphony-no-4-in-e-major-die-romantische-1874-1876-version-group",
+      "composer_id": "anton-bruckner",
+      "title": "Symphony No. 4 in E\u266d major \"Die Romantische\" (1874\u20131876 version)",
+      "gem": false,
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 40
+    },
+    {
+      "id": "bruckner-symphony-no-5-in-b-major-1876-first-concept-work",
+      "work_group_id": "bruckner-symphony-no-5-in-b-major-1876-first-concept-group",
+      "composer_id": "anton-bruckner",
+      "title": "Symphony No. 5 in B\u266d major (1876 first concept)",
+      "gem": false,
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 48
+    },
+    {
+      "id": "bruckner-symphony-no-5-in-b-major-revised-in-1878-work",
+      "work_group_id": "bruckner-symphony-no-5-in-b-major-revised-in-1878-group",
+      "composer_id": "anton-bruckner",
+      "title": "Symphony No. 5 in B\u266d major (revised in 1878)",
+      "gem": true,
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 50
+    },
+    {
+      "id": "bruckner-symphony-no-7-in-e-major-1883-first-concept-work",
+      "work_group_id": "bruckner-symphony-no-7-in-e-major-1883-first-concept-group",
+      "composer_id": "anton-bruckner",
+      "title": "Symphony No. 7 in E major (1883 first concept)",
+      "gem": false,
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 54
+    },
+    {
+      "id": "bruckner-symphony-no-7-in-e-major-revised-in-1885-work",
+      "work_group_id": "bruckner-symphony-no-7-in-e-major-revised-in-1885-group",
+      "composer_id": "anton-bruckner",
+      "title": "Symphony No. 7 in E major (revised in 1885)",
+      "gem": false,
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 56
+    },
+    {
+      "id": "bruckner-symphony-no-8-in-c-minor-die-apokalyptische-1888-adagio-work",
+      "work_group_id": "bruckner-symphony-no-8-in-c-minor-die-apokalyptische-1888-adagio-group",
+      "composer_id": "anton-bruckner",
+      "title": "Symphony No. 8 in C minor \"Die Apokalyptische\" (1888 Adagio)",
+      "gem": false,
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 60
+    },
+    {
+      "id": "bruckner-tantum-ergo-1846-1888-work",
+      "work_group_id": "bruckner-tantum-ergo-1846-1888-group",
+      "composer_id": "anton-bruckner",
+      "title": "Tantum ergo (1846/1888)",
+      "gem": false,
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 86
+    },
+    {
+      "id": "bruckner-tantum-ergo-c-1845-work",
+      "work_group_id": "bruckner-tantum-ergo-c-1845-group",
+      "composer_id": "anton-bruckner",
+      "title": "Tantum ergo (c. 1845)",
+      "gem": false,
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 78
     }
   ],
   "performances": [
@@ -346,13 +472,22 @@
       "source_line": 20
     },
     {
-      "id": "anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-3-work-bruckner-orchester-linz-markus-poschner",
-      "work_id": "anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-3-work",
+      "id": "anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-2-work-bruckner-orchester-linz-markus-poschner",
+      "work_id": "anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-2-work",
       "performer_text": "Bruckner Orchester Linz, Markus Poschner",
       "tidal_url": "https://tidal.com/browse/track/384348590?u",
       "gramophone_issue": null,
       "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
       "source_line": 26
+    },
+    {
+      "id": "anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-3-work-bruckner-orchester-linz-markus-poschner",
+      "work_id": "anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-3-work",
+      "performer_text": "Bruckner Orchester Linz, Markus Poschner",
+      "tidal_url": "https://tidal.com/browse/track/384348594?u",
+      "gramophone_issue": "2024-06",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 28
     },
     {
       "id": "anton-bruckner-symphony-no-2-in-c-minor-2-work-bruckner-orchester-linz-markus-poschner",
@@ -364,8 +499,8 @@
       "source_line": 32
     },
     {
-      "id": "anton-bruckner-symphony-no-2-in-c-minor-2-work-orf-vienna-rso-markus-poschner",
-      "work_id": "anton-bruckner-symphony-no-2-in-c-minor-2-work",
+      "id": "anton-bruckner-symphony-no-2-in-c-minor-work-orf-vienna-rso-markus-poschner",
+      "work_id": "anton-bruckner-symphony-no-2-in-c-minor-work",
       "performer_text": "ORF Vienna RSO, Markus Poschner",
       "tidal_url": "https://tidal.com/browse/track/384348599?u",
       "gramophone_issue": "2024-04",
@@ -373,8 +508,17 @@
       "source_line": 30
     },
     {
-      "id": "anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-work-bruckner-orchester-linz-markus-poschner",
-      "work_id": "anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-work",
+      "id": "anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-2-work-orf-vienna-rso-markus-poschner",
+      "work_id": "anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-2-work",
+      "performer_text": "ORF Vienna RSO, Markus Poschner",
+      "tidal_url": "https://tidal.com/browse/track/384348611?u",
+      "gramophone_issue": null,
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 36
+    },
+    {
+      "id": "anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-3-work-bruckner-orchester-linz-markus-poschner",
+      "work_id": "anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-3-work",
       "performer_text": "Bruckner Orchester Linz, Markus Poschner",
       "tidal_url": "https://tidal.com/browse/track/384348616?u",
       "gramophone_issue": "2024-04",
@@ -391,8 +535,8 @@
       "source_line": 34
     },
     {
-      "id": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-work-bruckner-orchester-linz-markus-poschner",
-      "work_id": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-work",
+      "id": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-2-work-bruckner-orchester-linz-markus-poschner",
+      "work_id": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-2-work",
       "performer_text": "Bruckner Orchester Linz, Markus Poschner",
       "tidal_url": "https://tidal.com/browse/track/384348624?u",
       "gramophone_issue": null,
@@ -400,22 +544,22 @@
       "source_line": 42
     },
     {
-      "id": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-work-orf-vienna-rso-markus-poschner",
-      "work_id": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-work",
+      "id": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-3-work-orf-vienna-rso-markus-poschner",
+      "work_id": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-3-work",
       "performer_text": "ORF Vienna RSO, Markus Poschner",
-      "tidal_url": "https://tidal.com/browse/track/384348620?u",
-      "gramophone_issue": "2023-02",
+      "tidal_url": "https://tidal.com/browse/track/384348628?u",
+      "gramophone_issue": null,
       "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 40
+      "source_line": 44
     },
     {
-      "id": "anton-bruckner-symphony-no-5-in-bb-major-work-orf-vienna-rso-markus-poschner",
-      "work_id": "anton-bruckner-symphony-no-5-in-bb-major-work",
+      "id": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-4-work-orf-vienna-rso-markus-poschner",
+      "work_id": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-4-work",
       "performer_text": "ORF Vienna RSO, Markus Poschner",
-      "tidal_url": "https://tidal.com/browse/track/384348633?u",
-      "gramophone_issue": "2024-01",
+      "tidal_url": "https://tidal.com/browse/track/384348629?u",
+      "gramophone_issue": "2023-08",
       "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 50
+      "source_line": 46
     },
     {
       "id": "anton-bruckner-symphony-no-6-in-a-major-work-bruckner-orchester-linz-markus-poschner",
@@ -427,17 +571,17 @@
       "source_line": 52
     },
     {
-      "id": "anton-bruckner-symphony-no-7-in-e-major-2-work-orf-vienna-rso-markus-poschner",
-      "work_id": "anton-bruckner-symphony-no-7-in-e-major-2-work",
-      "performer_text": "ORF Vienna RSO, Markus Poschner",
-      "tidal_url": "https://tidal.com/browse/track/384348641?u",
-      "gramophone_issue": "2024-06",
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 56
-    },
-    {
       "id": "anton-bruckner-symphony-no-8-in-c-minor-die-apokalyptische-3-work-bruckner-orchester-linz-markus-poschner",
       "work_id": "anton-bruckner-symphony-no-8-in-c-minor-die-apokalyptische-3-work",
+      "performer_text": "Bruckner Orchester Linz, Markus Poschner",
+      "tidal_url": "https://tidal.com/browse/track/384348649?u",
+      "gramophone_issue": "2022-01",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 62
+    },
+    {
+      "id": "anton-bruckner-symphony-no-8-in-c-minor-die-apokalyptische-work-bruckner-orchester-linz-markus-poschner",
+      "work_id": "anton-bruckner-symphony-no-8-in-c-minor-die-apokalyptische-work",
       "performer_text": "Bruckner Orchester Linz, Markus Poschner",
       "tidal_url": "https://tidal.com/browse/track/384348645?u",
       "gramophone_issue": "2023-04",
@@ -452,15 +596,6 @@
       "gramophone_issue": null,
       "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
       "source_line": 64
-    },
-    {
-      "id": "anton-bruckner-tantum-ergo-3-work-latvian-radio-choir-sigvards-klava",
-      "work_id": "anton-bruckner-tantum-ergo-3-work",
-      "performer_text": "Latvian Radio Choir, Sigvards Klava",
-      "tidal_url": "https://tidal.com/browse/track/284019408?u",
-      "gramophone_issue": null,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 78
     },
     {
       "id": "anton-bruckner-tota-pulchra-es-work-latvian-radio-choir-sigvards-klava",
@@ -488,46 +623,852 @@
       "gramophone_issue": null,
       "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
       "source_line": 92
+    },
+    {
+      "id": "bruckner-symphony-no-4-in-e-major-die-romantische-1874-1876-version-work-orf-vienna-rso-markus-poschner",
+      "work_id": "bruckner-symphony-no-4-in-e-major-die-romantische-1874-1876-version-work",
+      "performer_text": "ORF Vienna RSO, Markus Poschner",
+      "tidal_url": "https://tidal.com/browse/track/384348620?u",
+      "gramophone_issue": "2023-02",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 40
+    },
+    {
+      "id": "bruckner-symphony-no-5-in-b-major-revised-in-1878-work-orf-vienna-rso-markus-poschner",
+      "work_id": "bruckner-symphony-no-5-in-b-major-revised-in-1878-work",
+      "performer_text": "ORF Vienna RSO, Markus Poschner",
+      "tidal_url": "https://tidal.com/browse/track/384348633?u",
+      "gramophone_issue": "2024-01",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 50
+    },
+    {
+      "id": "bruckner-symphony-no-7-in-e-major-revised-in-1885-work-orf-vienna-rso-markus-poschner",
+      "work_id": "bruckner-symphony-no-7-in-e-major-revised-in-1885-work",
+      "performer_text": "ORF Vienna RSO, Markus Poschner",
+      "tidal_url": "https://tidal.com/browse/track/384348641?u",
+      "gramophone_issue": "2024-06",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 56
+    },
+    {
+      "id": "bruckner-tantum-ergo-1846-1888-work-latvian-radio-choir-sigvards-klava",
+      "work_id": "bruckner-tantum-ergo-1846-1888-work",
+      "performer_text": "Latvian Radio Choir, Sigvards Klava",
+      "tidal_url": "https://tidal.com/browse/track/284019409?u",
+      "gramophone_issue": null,
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 86
+    },
+    {
+      "id": "bruckner-tantum-ergo-c-1845-work-latvian-radio-choir-sigvards-klava",
+      "work_id": "bruckner-tantum-ergo-c-1845-work",
+      "performer_text": "Latvian Radio Choir, Sigvards Klava",
+      "tidal_url": "https://tidal.com/browse/track/284019408?u",
+      "gramophone_issue": null,
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 78
+    }
+  ],
+  "review_items": [
+    {
+      "source_id": "bruckner:12",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 12,
+      "work_text": "March in D minor (1862)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "anton-bruckner-march-in-d-minor-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1862)",
+          "exact_single_candidate"
+        ],
+        "rationale": "Single canonical Work matches: anton-bruckner-march-in-d-minor-work",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "bruckner:14",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 14,
+      "work_text": "Three Orchestral Pieces (1862)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "anton-bruckner-three-orchestral-pieces-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1862)",
+          "exact_single_candidate"
+        ],
+        "rationale": "Single canonical Work matches: anton-bruckner-three-orchestral-pieces-work",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "bruckner:16",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 16,
+      "work_text": "Overture in G minor (1862 version)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "anton-bruckner-overture-in-g-minor-work",
+        "candidates_count": 2,
+        "evidence_used": [
+          "version: (1862 version)",
+          "version_disambiguation"
+        ],
+        "rationale": "Used version evidence to select from 2 candidates",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "bruckner:18",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 18,
+      "work_text": "Overture in G minor (1863 version, modified coda at bars 233\u2013288)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "anton-bruckner-overture-in-g-minor-2-work",
+        "candidates_count": 2,
+        "evidence_used": [
+          "version: (1863 version, modified coda at bars 233\u2013288)",
+          "version_disambiguation"
+        ],
+        "rationale": "Used version evidence to select from 2 candidates",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "bruckner:20",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 20,
+      "work_text": "Symphony in F minor (Studiensymphonie, 1863)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "anton-bruckner-symphony-in-f-minor-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "exact_single_candidate"
+        ],
+        "rationale": "Single canonical Work matches: anton-bruckner-symphony-in-f-minor-work",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "bruckner:22",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 22,
+      "work_text": "Symphony in D minor \"Die Nullte\" (1869)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "anton-bruckner-symphony-in-d-minor-die-nullte-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1869)",
+          "exact_single_candidate"
+        ],
+        "rationale": "Single canonical Work matches: anton-bruckner-symphony-in-d-minor-die-nullte-work",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "bruckner:24",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 24,
+      "work_text": "Symphony No. 1 in C minor \"Das kecke Beserl\" (1865, first concept Adagio & Scherzo)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-work",
+        "candidates_count": 3,
+        "evidence_used": [
+          "version: (1865,",
+          "version_disambiguation"
+        ],
+        "rationale": "Used version evidence to select from 3 candidates",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "bruckner:26",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 26,
+      "work_text": "Symphony No. 1 in C minor \"Das kecke Beserl\" (1866 \"Linz version\", revised in 1877/1884)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-2-work",
+        "candidates_count": 3,
+        "evidence_used": [
+          "version: (1866 \"",
+          "version_disambiguation"
+        ],
+        "rationale": "Used version evidence to select from 3 candidates",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "bruckner:28",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 28,
+      "work_text": "Symphony No. 1 in C minor \"Das kecke Beserl\" (1891 \"Vienna version\")",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-3-work",
+        "candidates_count": 3,
+        "evidence_used": [
+          "version: (1891 \"",
+          "version_disambiguation"
+        ],
+        "rationale": "Used version evidence to select from 3 candidates",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "bruckner:30",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 30,
+      "work_text": "Symphony No. 2 in C minor (1872 version with Scherzo second and Adagio third, revised in 1873 and 1876)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "anton-bruckner-symphony-no-2-in-c-minor-work",
+        "candidates_count": 2,
+        "evidence_used": [
+          "version: (1872 version with Scherzo second and Adagio third, revised in 1873 and 1876)",
+          "version_disambiguation"
+        ],
+        "rationale": "Used version evidence to select from 2 candidates",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "bruckner:32",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 32,
+      "work_text": "Symphony No. 2 in C minor (1877 version, revised in 1892)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "anton-bruckner-symphony-no-2-in-c-minor-2-work",
+        "candidates_count": 2,
+        "evidence_used": [
+          "version: (1877 version, revised in 1892)",
+          "version_disambiguation"
+        ],
+        "rationale": "Used version evidence to select from 2 candidates",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "bruckner:34",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 34,
+      "work_text": "Symphony No. 3 in D minor \"Wagner Symphony\" (1873 version, revised in 1874)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-work",
+        "candidates_count": 3,
+        "evidence_used": [
+          "version: (1873 version, revised in 1874)",
+          "version_disambiguation"
+        ],
+        "rationale": "Used version evidence to select from 3 candidates",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "bruckner:36",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 36,
+      "work_text": "Symphony No. 3 in D minor \"Wagner Symphony\" (1876 version, revised in 1877\u20131878: most Wagner quotations removed, coda added to the Scherzo)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-2-work",
+        "candidates_count": 3,
+        "evidence_used": [
+          "version: (1876 version, revised in 1877\u20131878: most Wagner quotations removed, coda added to the Scherzo)",
+          "version_disambiguation"
+        ],
+        "rationale": "Used version evidence to select from 3 candidates",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "bruckner:38",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 38,
+      "work_text": "Symphony No. 3 in D minor \"Wagner Symphony\" (1889 version)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-3-work",
+        "candidates_count": 3,
+        "evidence_used": [
+          "version: (1889 version)",
+          "version_disambiguation"
+        ],
+        "rationale": "Used version evidence to select from 3 candidates",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "bruckner:40",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 40,
+      "work_text": "Symphony No. 4 in E\u266d major \"Die Romantische\" (1874\u20131876 version)",
+      "identity_result": {
+        "status": "unresolved",
+        "matched_work_id": null,
+        "candidates_count": 4,
+        "evidence_used": [
+          "multiple_candidates_no_version_evidence"
+        ],
+        "rationale": "Found 4 plausible Works but no version evidence to resolve",
+        "requires_curator_action": true
+      }
+    },
+    {
+      "source_id": "bruckner:42",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 42,
+      "work_text": "Symphony No. 4 in E\u266d major \"Die Romantische\" (1878 version: new \"Hunting\" Scherzo and \"Volksfest\" Finale)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-2-work",
+        "candidates_count": 4,
+        "evidence_used": [
+          "version: (1878 version: new \"Hunting\" Scherzo and \"Volksfest\" Finale)",
+          "version_disambiguation"
+        ],
+        "rationale": "Used version evidence to select from 4 candidates",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "bruckner:44",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 44,
+      "work_text": "Symphony No. 4 in E\u266d major \"Die Romantische\" (1880 version: new Finale)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-3-work",
+        "candidates_count": 4,
+        "evidence_used": [
+          "version: (1880 version: new Finale)",
+          "version_disambiguation"
+        ],
+        "rationale": "Used version evidence to select from 4 candidates",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "bruckner:46",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 46,
+      "work_text": "Symphony No. 4 in E\u266d major \"Die Romantische\" (1888 version: with piccolo and cymbals)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-4-work",
+        "candidates_count": 4,
+        "evidence_used": [
+          "version: (1888 version: with piccolo and cymbals)",
+          "version_disambiguation"
+        ],
+        "rationale": "Used version evidence to select from 4 candidates",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "bruckner:48",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 48,
+      "work_text": "Symphony No. 5 in B\u266d major (1876 first concept)",
+      "identity_result": {
+        "status": "unresolved",
+        "matched_work_id": null,
+        "candidates_count": 2,
+        "evidence_used": [
+          "multiple_candidates_no_version_evidence"
+        ],
+        "rationale": "Found 2 plausible Works but no version evidence to resolve",
+        "requires_curator_action": true
+      }
+    },
+    {
+      "source_id": "bruckner:50",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 50,
+      "work_text": "Symphony No. 5 in B\u266d major (revised in 1878)",
+      "identity_result": {
+        "status": "unresolved",
+        "matched_work_id": null,
+        "candidates_count": 2,
+        "evidence_used": [
+          "multiple_candidates_no_version_evidence"
+        ],
+        "rationale": "Found 2 plausible Works but no version evidence to resolve",
+        "requires_curator_action": true
+      }
+    },
+    {
+      "source_id": "bruckner:52",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 52,
+      "work_text": "Symphony No. 6 in A major (1881)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "anton-bruckner-symphony-no-6-in-a-major-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1881)",
+          "exact_single_candidate"
+        ],
+        "rationale": "Single canonical Work matches: anton-bruckner-symphony-no-6-in-a-major-work",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "bruckner:54",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 54,
+      "work_text": "Symphony No. 7 in E major (1883 first concept)",
+      "identity_result": {
+        "status": "unresolved",
+        "matched_work_id": null,
+        "candidates_count": 2,
+        "evidence_used": [
+          "multiple_candidates_no_version_evidence"
+        ],
+        "rationale": "Found 2 plausible Works but no version evidence to resolve",
+        "requires_curator_action": true
+      }
+    },
+    {
+      "source_id": "bruckner:56",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 56,
+      "work_text": "Symphony No. 7 in E major (revised in 1885)",
+      "identity_result": {
+        "status": "unresolved",
+        "matched_work_id": null,
+        "candidates_count": 2,
+        "evidence_used": [
+          "multiple_candidates_no_version_evidence"
+        ],
+        "rationale": "Found 2 plausible Works but no version evidence to resolve",
+        "requires_curator_action": true
+      }
+    },
+    {
+      "source_id": "bruckner:58",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 58,
+      "work_text": "Symphony No. 8 in C minor \"Die Apokalyptische\" (1887 version)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "anton-bruckner-symphony-no-8-in-c-minor-die-apokalyptische-work",
+        "candidates_count": 3,
+        "evidence_used": [
+          "version: (1887 version)",
+          "version_disambiguation"
+        ],
+        "rationale": "Used version evidence to select from 3 candidates",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "bruckner:60",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 60,
+      "work_text": "Symphony No. 8 in C minor \"Die Apokalyptische\" (1888 Adagio)",
+      "identity_result": {
+        "status": "unresolved",
+        "matched_work_id": null,
+        "candidates_count": 3,
+        "evidence_used": [
+          "multiple_candidates_no_version_evidence"
+        ],
+        "rationale": "Found 3 plausible Works but no version evidence to resolve",
+        "requires_curator_action": true
+      }
+    },
+    {
+      "source_id": "bruckner:62",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 62,
+      "work_text": "Symphony No. 8 in C minor \"Die Apokalyptische\" (1890 version: 3rd woodwind in first three movements, fewer cymbal clashes in Adagio, harps in Trio)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "anton-bruckner-symphony-no-8-in-c-minor-die-apokalyptische-3-work",
+        "candidates_count": 3,
+        "evidence_used": [
+          "version: (1890 version: 3rd woodwind in first three movements, fewer cymbal clashes in Adagio, harps in Trio)",
+          "version_disambiguation"
+        ],
+        "rationale": "Used version evidence to select from 3 candidates",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "bruckner:64",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 64,
+      "work_text": "Symphony No. 9 in D minor (1894 first three movements, 1896 finale unfinished)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "anton-bruckner-symphony-no-9-in-d-minor-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "exact_single_candidate"
+        ],
+        "rationale": "Single canonical Work matches: anton-bruckner-symphony-no-9-in-d-minor-work",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "bruckner:68",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 68,
+      "work_text": "Ave Maria (1861)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "anton-bruckner-ave-maria-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1861)",
+          "exact_single_candidate"
+        ],
+        "rationale": "Single canonical Work matches: anton-bruckner-ave-maria-work",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "bruckner:70",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 70,
+      "work_text": "Christus factus est (1884)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "anton-bruckner-christus-factus-est-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1884)",
+          "exact_single_candidate"
+        ],
+        "rationale": "Single canonical Work matches: anton-bruckner-christus-factus-est-work",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "bruckner:72",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 72,
+      "work_text": "Libera me (c. 1843)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "anton-bruckner-libera-me-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "exact_single_candidate"
+        ],
+        "rationale": "Single canonical Work matches: anton-bruckner-libera-me-work",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "bruckner:74",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 74,
+      "work_text": "Locus iste (1869)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "anton-bruckner-locus-iste-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1869)",
+          "exact_single_candidate"
+        ],
+        "rationale": "Single canonical Work matches: anton-bruckner-locus-iste-work",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "bruckner:76",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 76,
+      "work_text": "Os justi (1879)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "anton-bruckner-os-justi-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1879)",
+          "exact_single_candidate"
+        ],
+        "rationale": "Single canonical Work matches: anton-bruckner-os-justi-work",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "bruckner:78",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 78,
+      "work_text": "Tantum ergo (c. 1845)",
+      "identity_result": {
+        "status": "unresolved",
+        "matched_work_id": null,
+        "candidates_count": 3,
+        "evidence_used": [
+          "multiple_candidates_no_version_evidence"
+        ],
+        "rationale": "Found 3 plausible Works but no version evidence to resolve",
+        "requires_curator_action": true
+      }
+    },
+    {
+      "source_id": "bruckner:80",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 80,
+      "work_text": "Pange lingua (1868)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "anton-bruckner-pange-lingua-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1868)",
+          "exact_single_candidate"
+        ],
+        "rationale": "Single canonical Work matches: anton-bruckner-pange-lingua-work",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "bruckner:82",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 82,
+      "work_text": "Salvum fac populum tuum (1884)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "anton-bruckner-salvum-fac-populum-tuum-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1884)",
+          "exact_single_candidate"
+        ],
+        "rationale": "Single canonical Work matches: anton-bruckner-salvum-fac-populum-tuum-work",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "bruckner:84",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 84,
+      "work_text": "4 Tantum ergo (1888)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "anton-bruckner-4-tantum-ergo-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1888)",
+          "exact_single_candidate"
+        ],
+        "rationale": "Single canonical Work matches: anton-bruckner-4-tantum-ergo-work",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "bruckner:86",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 86,
+      "work_text": "Tantum ergo (1846/1888)",
+      "identity_result": {
+        "status": "unresolved",
+        "matched_work_id": null,
+        "candidates_count": 3,
+        "evidence_used": [
+          "multiple_candidates_no_version_evidence"
+        ],
+        "rationale": "Found 3 plausible Works but no version evidence to resolve",
+        "requires_curator_action": true
+      }
+    },
+    {
+      "source_id": "bruckner:88",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 88,
+      "work_text": "Tantum ergo (c. 1845)",
+      "identity_result": {
+        "status": "unresolved",
+        "matched_work_id": null,
+        "candidates_count": 3,
+        "evidence_used": [
+          "multiple_candidates_no_version_evidence"
+        ],
+        "rationale": "Found 3 plausible Works but no version evidence to resolve",
+        "requires_curator_action": true
+      }
+    },
+    {
+      "source_id": "bruckner:90",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 90,
+      "work_text": "Tota pulchra es (1878)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "anton-bruckner-tota-pulchra-es-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1878)",
+          "exact_single_candidate"
+        ],
+        "rationale": "Single canonical Work matches: anton-bruckner-tota-pulchra-es-work",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "bruckner:92",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 92,
+      "work_text": "Virga Jesse (1885)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "anton-bruckner-virga-jesse-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1885)",
+          "exact_single_candidate"
+        ],
+        "rationale": "Single canonical Work matches: anton-bruckner-virga-jesse-work",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "bruckner:94",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 94,
+      "work_text": "Vexilla regis (1892)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "anton-bruckner-vexilla-regis-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1892)",
+          "exact_single_candidate"
+        ],
+        "rationale": "Single canonical Work matches: anton-bruckner-vexilla-regis-work",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "bruckner:96",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_line": 96,
+      "work_text": "Kronstorfer Messe in D Minor (1843-44)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "anton-bruckner-kronstorfer-messe-in-d-minor-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "exact_single_candidate"
+        ],
+        "rationale": "Single canonical Work matches: anton-bruckner-kronstorfer-messe-in-d-minor-work",
+        "requires_curator_action": false
+      }
     }
   ],
   "review_summary": {
     "total_items": 42,
     "by_category": {
       "safe": 0,
-      "unchanged": 42,
+      "unchanged": 33,
       "background": 0,
-      "consequential": 0
+      "consequential": 9
     },
-    "consequential_count": 0,
-    "action_required_count": 0,
-    "consequential_items": []
+    "consequential_count": 9,
+    "action_required_count": 9,
+    "consequential_items": [
+      {
+        "source_id": "bruckner:40",
+        "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+        "source_line": 40,
+        "work_text": "Symphony No. 4 in E\u266d major \"Die Romantische\" (1874\u20131876 version)",
+        "rationale": "Unresolved identity. Found 4 plausible Works but no version evidence to resolve Curator must decide based on available evidence."
+      },
+      {
+        "source_id": "bruckner:48",
+        "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+        "source_line": 48,
+        "work_text": "Symphony No. 5 in B\u266d major (1876 first concept)",
+        "rationale": "Unresolved identity. Found 2 plausible Works but no version evidence to resolve Curator must decide based on available evidence."
+      },
+      {
+        "source_id": "bruckner:50",
+        "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+        "source_line": 50,
+        "work_text": "Symphony No. 5 in B\u266d major (revised in 1878)",
+        "rationale": "Unresolved identity. Found 2 plausible Works but no version evidence to resolve Curator must decide based on available evidence."
+      },
+      {
+        "source_id": "bruckner:54",
+        "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+        "source_line": 54,
+        "work_text": "Symphony No. 7 in E major (1883 first concept)",
+        "rationale": "Unresolved identity. Found 2 plausible Works but no version evidence to resolve Curator must decide based on available evidence."
+      },
+      {
+        "source_id": "bruckner:56",
+        "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+        "source_line": 56,
+        "work_text": "Symphony No. 7 in E major (revised in 1885)",
+        "rationale": "Unresolved identity. Found 2 plausible Works but no version evidence to resolve Curator must decide based on available evidence."
+      },
+      {
+        "source_id": "bruckner:60",
+        "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+        "source_line": 60,
+        "work_text": "Symphony No. 8 in C minor \"Die Apokalyptische\" (1888 Adagio)",
+        "rationale": "Unresolved identity. Found 3 plausible Works but no version evidence to resolve Curator must decide based on available evidence."
+      },
+      {
+        "source_id": "bruckner:78",
+        "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+        "source_line": 78,
+        "work_text": "Tantum ergo (c. 1845)",
+        "rationale": "Unresolved identity. Found 3 plausible Works but no version evidence to resolve Curator must decide based on available evidence."
+      },
+      {
+        "source_id": "bruckner:86",
+        "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+        "source_line": 86,
+        "work_text": "Tantum ergo (1846/1888)",
+        "rationale": "Unresolved identity. Found 3 plausible Works but no version evidence to resolve Curator must decide based on available evidence."
+      },
+      {
+        "source_id": "bruckner:88",
+        "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+        "source_line": 88,
+        "work_text": "Tantum ergo (c. 1845)",
+        "rationale": "Unresolved identity. Found 3 plausible Works but no version evidence to resolve Curator must decide based on available evidence."
+      }
+    ]
   },
   "matched_entities": {
     "bruckner:12": "anton-bruckner-march-in-d-minor-work",
     "bruckner:14": "anton-bruckner-three-orchestral-pieces-work",
     "bruckner:16": "anton-bruckner-overture-in-g-minor-work",
-    "bruckner:18": "anton-bruckner-overture-in-g-minor-work",
+    "bruckner:18": "anton-bruckner-overture-in-g-minor-2-work",
     "bruckner:20": "anton-bruckner-symphony-in-f-minor-work",
     "bruckner:22": "anton-bruckner-symphony-in-d-minor-die-nullte-work",
-    "bruckner:24": "anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-3-work",
-    "bruckner:26": "anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-3-work",
+    "bruckner:24": "anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-work",
+    "bruckner:26": "anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-2-work",
     "bruckner:28": "anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-3-work",
-    "bruckner:30": "anton-bruckner-symphony-no-2-in-c-minor-2-work",
+    "bruckner:30": "anton-bruckner-symphony-no-2-in-c-minor-work",
     "bruckner:32": "anton-bruckner-symphony-no-2-in-c-minor-2-work",
     "bruckner:34": "anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-work",
-    "bruckner:36": "anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-work",
-    "bruckner:38": "anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-work",
-    "bruckner:40": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-work",
-    "bruckner:42": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-work",
-    "bruckner:44": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-work",
-    "bruckner:46": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-work",
-    "bruckner:48": "anton-bruckner-symphony-no-5-in-bb-major-work",
-    "bruckner:50": "anton-bruckner-symphony-no-5-in-bb-major-work",
+    "bruckner:36": "anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-2-work",
+    "bruckner:38": "anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-3-work",
+    "bruckner:42": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-2-work",
+    "bruckner:44": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-3-work",
+    "bruckner:46": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-4-work",
     "bruckner:52": "anton-bruckner-symphony-no-6-in-a-major-work",
-    "bruckner:54": "anton-bruckner-symphony-no-7-in-e-major-2-work",
-    "bruckner:56": "anton-bruckner-symphony-no-7-in-e-major-2-work",
-    "bruckner:58": "anton-bruckner-symphony-no-8-in-c-minor-die-apokalyptische-3-work",
-    "bruckner:60": "anton-bruckner-symphony-no-8-in-c-minor-die-apokalyptische-3-work",
+    "bruckner:58": "anton-bruckner-symphony-no-8-in-c-minor-die-apokalyptische-work",
     "bruckner:62": "anton-bruckner-symphony-no-8-in-c-minor-die-apokalyptische-3-work",
     "bruckner:64": "anton-bruckner-symphony-no-9-in-d-minor-work",
     "bruckner:68": "anton-bruckner-ave-maria-work",
@@ -535,12 +1476,9 @@
     "bruckner:72": "anton-bruckner-libera-me-work",
     "bruckner:74": "anton-bruckner-locus-iste-work",
     "bruckner:76": "anton-bruckner-os-justi-work",
-    "bruckner:78": "anton-bruckner-tantum-ergo-3-work",
     "bruckner:80": "anton-bruckner-pange-lingua-work",
     "bruckner:82": "anton-bruckner-salvum-fac-populum-tuum-work",
     "bruckner:84": "anton-bruckner-4-tantum-ergo-work",
-    "bruckner:86": "anton-bruckner-tantum-ergo-3-work",
-    "bruckner:88": "anton-bruckner-tantum-ergo-3-work",
     "bruckner:90": "anton-bruckner-tota-pulchra-es-work",
     "bruckner:92": "anton-bruckner-virga-jesse-work",
     "bruckner:94": "anton-bruckner-vexilla-regis-work",

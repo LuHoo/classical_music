@@ -39,6 +39,12 @@ def parse_composer_markdown(file_path: Path) -> list[SourceRecord]:
 
         date_match = DATE_RE.search(line)
         date_text = date_match.group("date").strip() if date_match else None
+        
+        # Preserve version/revision text in work_text for identity resolution
+        # Include version text in parentheses if present
+        work_text = title
+        if date_text:
+            work_text = f"{title} ({date_text})"
 
         performers: str | None = None
         performer_match = PERFORMER_RE.search(line)
@@ -61,7 +67,7 @@ def parse_composer_markdown(file_path: Path) -> list[SourceRecord]:
                 ),
                 raw_markdown=line.strip(),
                 gem_marker=gem_marker,
-                work_text=title,
+                work_text=work_text,  # Now includes version text if present
                 date_text=date_text,
                 category=heading_path[-1] if heading_path else None,
                 tidal_links=[url for url in links if "tidal.com" in url],

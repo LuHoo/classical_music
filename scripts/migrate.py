@@ -14,7 +14,6 @@ SRC = ROOT / "src"
 if str(SRC) not in sys.path:
     sys.path.insert(0, str(SRC))
 
-from classical_music.migration.classifier import classify_review_reason  # noqa: E402
 from classical_music.migration.entity_matcher import EntityMatcher  # noqa: E402
 from classical_music.migration.models import PerformanceCandidate, WorkCandidate  # noqa: E402
 from classical_music.migration.parser import parse_composer_markdown  # noqa: E402
@@ -51,7 +50,7 @@ def main(
 
     works: dict[str, WorkCandidate] = {}
     performances: dict[str, PerformanceCandidate] = {}
-    review_items = []
+    review_items = []  # Will contain items with identity_result (not classifications)
     matched_entities: dict[str, str] = {}  # source_id → canonical_entity_id
 
     # Load existing canonical entities for matching
@@ -70,22 +69,37 @@ def main(
         for record in records:
             work_group_id, work_id = stable_work_ids(composer_slug, record.work_text)
             
-            # Resolve doc slug to canonical composer_id
+            # Resolve doc slug to canonical composer_id (fails closed - no fallback)
             canonical_composer_id = entity_matcher.resolve_composer_id(composer_slug)
             if not canonical_composer_id:
-                canonical_composer_id = composer_slug  # Fallback to slug if not found
+                # Composer not found in canonical data
+                # This is treated as BACKGROUND_ONLY/UNRESOLVED for identity
+                console.print(f"[yellow]Warning: Unknown composer slug '{composer_slug}' in {source_path.name}[/yellow]")
+                canonical_composer_id = None
             
-            # Try to match against existing canonical work
-            existing_work = entity_matcher.find_work(canonical_composer_id, record.work_text)
-            if existing_work:
-                matched_entities[record.source_id] = existing_work.entity_id
-                work_id = existing_work.entity_id
+            # Two-stage entity matching: candidate discovery + identity resolution
+            candidates = (
+                entity_matcher.find_work_candidates(canonical_composer_id, record.work_text)
+                if canonical_composer_id
+                else []
+            )
             
+            # Resolve work identity using candidates and version evidence
+            identity_result = entity_matcher.resolve_work_identity(
+                record.work_text, canonical_composer_id, candidates
+            )
+            
+            # Use identity result to determine work_id and matched status
+            if identity_result.matched_work_id:
+                matched_entities[record.source_id] = identity_result.matched_work_id
+                work_id = identity_result.matched_work_id
+            
+            # Create work candidate (even if unresolved, for curator review)
             if work_id not in works:
                 works[work_id] = WorkCandidate(
                     id=work_id,
                     work_group_id=work_group_id,
-                    composer_id=canonical_composer_id,
+                    composer_id=canonical_composer_id or composer_slug,  # Use slug if canonical not found
                     title=record.work_text,
                     gem=record.gem_marker,
                     source_file=record.location.source_file,
@@ -107,21 +121,14 @@ def main(
                         source_line=record.location.line_number,
                     )
 
-            classifications = classify_review_reason(record)
+            # Add review item with identity resolution result
             review_items.append(
                 {
                     "source_id": record.source_id,
                     "source_file": record.location.source_file,
                     "source_line": record.location.line_number,
                     "work_text": record.work_text,
-                    "classifications": [
-                        {
-                            "reason": entry.reason.value,
-                            "confidence": entry.confidence,
-                            "notes": entry.notes,
-                        }
-                        for entry in classifications
-                    ],
+                    "identity_result": identity_result,  # WorkIdentityResult object
                 }
             )
 
@@ -137,8 +144,28 @@ def main(
     summary_path.parent.mkdir(parents=True, exist_ok=True)
     
     # Categorize review items for better curator summaries
-    categorized_items = categorize_review_items(review_items, matched_entities)
+    # (review_items already have WorkIdentityResult objects)
+    categorized_items = categorize_review_items(review_items)
     review_stats = review_summary(categorized_items)
+    
+    # Convert identity results to JSON-serializable dicts for summary
+    review_items_for_json = []
+    for item in review_items:
+        identity_result = item["identity_result"]
+        review_items_for_json.append({
+            "source_id": item["source_id"],
+            "source_file": item["source_file"],
+            "source_line": item["source_line"],
+            "work_text": item["work_text"],
+            "identity_result": {
+                "status": identity_result.status.value,
+                "matched_work_id": identity_result.matched_work_id,
+                "candidates_count": identity_result.candidates_count,
+                "evidence_used": identity_result.evidence_used,
+                "rationale": identity_result.rationale,
+                "requires_curator_action": identity_result.requires_curator_action,
+            }
+        })
     
     summary = {
         "dry_run": dry_run,
@@ -146,6 +173,7 @@ def main(
         "performances": [
             asdict(item) for item in sorted(performances.values(), key=lambda x: x.id)
         ],
+        "review_items": review_items_for_json,
         "review_summary": review_stats,
         "matched_entities": matched_entities,
         "written_files": [str(path.relative_to(ROOT)) for path in written_paths],
