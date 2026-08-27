@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import pytest
 
+from classical_music.migration.models import ReviewReason
 from classical_music.migration.review_categorizer import (
     ReviewCategory,
     categorize_review_items,
@@ -50,7 +51,7 @@ def test_categorize_unchanged_matched_item():
 
 
 def test_categorize_background_metadata_gaps():
-    """Test that metadata gaps are categorized as background."""
+    """Test that MULTIPLE_TIDAL_LINKS is categorized as background."""
     items = [
         {
             "source_id": "test-1",
@@ -58,12 +59,15 @@ def test_categorize_background_metadata_gaps():
             "source_line": 10,
             "work_text": "Test Work",
             "classifications": [
-                {"reason": "missing_musicbrainz_id", "confidence": 0.9, "notes": ""},
-                {"reason": "missing_tidal_link", "confidence": 0.8, "notes": ""},
+                {
+                    "reason": ReviewReason.MULTIPLE_TIDAL_LINKS,
+                    "confidence": 0.95,
+                    "notes": "Multiple Tidal URLs",
+                },
             ],
         }
     ]
-    
+
     categorized = categorize_review_items(items, {})
     assert len(categorized) == 1
     assert categorized[0].category == ReviewCategory.BACKGROUND
@@ -71,19 +75,23 @@ def test_categorize_background_metadata_gaps():
 
 
 def test_categorize_consequential_identity_ambiguity():
-    """Test that identity ambiguity requires curator action."""
+    """Test that identity gates require curator action."""
     items = [
         {
             "source_id": "test-1",
             "source_file": "docs/test.md",
             "source_line": 10,
-            "work_text": "Ambiguous Work",
+            "work_text": "Revised Version",
             "classifications": [
-                {"reason": "work_identity_unclear", "confidence": 0.7, "notes": ""},
+                {
+                    "reason": ReviewReason.VERSION_REVISION,
+                    "confidence": 0.9,
+                    "notes": "",
+                },
             ],
         }
     ]
-    
+
     categorized = categorize_review_items(items, {})
     assert len(categorized) == 1
     assert categorized[0].category == ReviewCategory.CONSEQUENTIAL
@@ -106,7 +114,7 @@ def test_review_summary_stats():
             "source_line": 20,
             "work_text": "Work 2",
             "classifications": [
-                {"reason": "missing_musicbrainz_id", "confidence": 0.9, "notes": ""},
+                {"reason": ReviewReason.MULTIPLE_TIDAL_LINKS, "confidence": 0.95, "notes": ""},
             ],
         },
         {
@@ -115,20 +123,20 @@ def test_review_summary_stats():
             "source_line": 30,
             "work_text": "Work 3",
             "classifications": [
-                {"reason": "person_ambiguous", "confidence": 0.8, "notes": ""},
+                {"reason": ReviewReason.ARRANGEMENT_ORCHESTRATION, "confidence": 0.9, "notes": ""},
             ],
         },
     ]
     matched = {"test-1": "existing-1"}
-    
+
     categorized = categorize_review_items(items, matched)
     summary = review_summary(categorized)
-    
+
     assert summary["total_items"] == 3
     assert summary["by_category"]["unchanged"] == 1  # Matched
     assert summary["by_category"]["safe"] == 0
-    assert summary["by_category"]["background"] == 1  # Metadata gap
-    assert summary["by_category"]["consequential"] == 1  # Identity issue
+    assert summary["by_category"]["background"] == 1  # MULTIPLE_TIDAL_LINKS
+    assert summary["by_category"]["consequential"] == 1  # ARRANGEMENT_ORCHESTRATION
     assert summary["consequential_count"] == 1
     assert len(summary["consequential_items"]) == 1
 
@@ -140,17 +148,75 @@ def test_review_summary_identifies_consequential_items():
             "source_id": "test-1",
             "source_file": "docs/test.md",
             "source_line": 10,
-            "work_text": "Revision vs Separate?",
+            "work_text": "Revised Version",
             "classifications": [
-                {"reason": "revision_vs_separate", "confidence": 0.7, "notes": ""},
+                {
+                    "reason": ReviewReason.VERSION_REVISION,
+                    "confidence": 0.9,
+                    "notes": "",
+                },
             ],
         }
     ]
-    
+
     categorized = categorize_review_items(items, {})
     summary = review_summary(categorized)
-    
+
     assert summary["consequential_count"] == 1
     assert len(summary["consequential_items"]) == 1
     assert summary["consequential_items"][0]["source_id"] == "test-1"
-    assert "Revision vs Separate" in summary["consequential_items"][0]["work_text"]
+    assert "Revised Version" in summary["consequential_items"][0]["work_text"]
+
+
+def test_integration_parser_classifier_categorizer():
+    """Integration test: Real parser → classifier → categorizer pipeline."""
+    from pathlib import Path
+
+    from classical_music.migration.classifier import classify_review_reason
+    from classical_music.migration.parser import parse_composer_markdown
+
+    # Get path to Bruckner docs
+    docs_root = Path(__file__).resolve().parents[2] / "docs"
+    bruckner_path = docs_root / "bruckner.md"
+
+    if not bruckner_path.exists():
+        pytest.skip(f"Test docs not found at {bruckner_path}")
+
+    # Parse actual Bruckner doc
+    records = parse_composer_markdown(bruckner_path)
+    assert len(records) > 0, "Bruckner doc should have records"
+
+    # Run each record through classifier
+    items_for_categorizer = []
+    for record in records[:5]:  # Test first 5 records
+        classifications = classify_review_reason(record)
+
+        items_for_categorizer.append(
+            {
+                "source_id": record.source_id,
+                "source_file": record.location.source_file,
+                "source_line": record.location.line_number,
+                "work_text": record.work_text,
+                "classifications": [
+                    {
+                        "reason": c.reason.value,
+                        "confidence": c.confidence,
+                        "notes": c.notes,
+                    }
+                    for c in classifications
+                ],
+            }
+        )
+
+    # Categorize the results
+    categorized = categorize_review_items(items_for_categorizer, {})
+    summary = review_summary(categorized)
+
+    # Verify structure
+    assert summary["total_items"] == len(items_for_categorizer)
+    assert "by_category" in summary
+    assert all(k in summary["by_category"] for k in ["safe", "unchanged", "background", "consequential"])
+
+    # Every item should be categorized
+    total_categorized = sum(summary["by_category"].values())
+    assert total_categorized == summary["total_items"]

@@ -1,14 +1,22 @@
 """
 Review categorization: Classify migration review items for curator action.
 
-This module categorizes review items as:
-- safe: Can be safely migrated to canonical (identity clear, matched existing)
-- unchanged: Already in canonical form (no action needed)
-- background: Non-actionable metadata gaps or improvements (Principle 16)
-- consequential: Unresolved identity decisions (requires curator attention)
+This module categorizes review items based on ReviewReason classifications:
+- safe: Matched to existing entity or no review reasons
+- unchanged: Already matched to canonical entity (no action needed)
+- background: Non-actionable classifications (Principle 16)
+- consequential: Identity gates requiring curator review (Principle 4)
 
-Principle 16: Distinguish errors, identity gates and background suspicions.
-Only consequential items should be escalated to curator.
+Real ReviewReason classifications:
+- VERSION_REVISION: "revised version" text → identity gate (consequential)
+- ARRANGEMENT_ORCHESTRATION: "orchestrated by" → identity gate (consequential)
+- COMPLETION_RECONSTRUCTION: "completed by" → identity gate (consequential)
+- SUITE_EXCERPT_DERIVED: "excerpt from" → identity gate (consequential)
+- MULTIPLE_TIDAL_LINKS: Multiple Tidal URLs → background (pick first)
+- UNCERTAIN_MATCH: Low confidence → background (no strong signal)
+
+Principle 4: Identity gates require curator decision.
+Principle 16: Distinguish errors/gates/background suspicions.
 """
 
 from __future__ import annotations
@@ -17,14 +25,16 @@ from dataclasses import dataclass
 from enum import Enum
 from typing import Any
 
+from classical_music.migration.models import ReviewReason
+
 
 class ReviewCategory(Enum):
     """Classification of review outcomes."""
 
-    SAFE = "safe"  # Can migrate confidently
-    UNCHANGED = "unchanged"  # Already in canonical form
-    BACKGROUND = "background"  # Non-actionable metadata
-    CONSEQUENTIAL = "consequential"  # Requires curator decision
+    SAFE = "safe"  # No issues; can migrate confidently
+    UNCHANGED = "unchanged"  # Already in canonical form (no action)
+    BACKGROUND = "background"  # Non-actionable (demand-driven authority lookup)
+    CONSEQUENTIAL = "consequential"  # Identity gate (requires curator decision)
 
 
 @dataclass(frozen=True)
@@ -91,10 +101,12 @@ def _classify_item(
     """
     Determine category, rationale and action_required for a single item.
 
+    Based on actual ReviewReason classifications from real classifier.
+
     Returns: (category, rationale, action_required)
     """
 
-    # If matched to existing entity, it's either unchanged or safe
+    # If matched to existing entity, it's unchanged (no action needed)
     if matched_id:
         return (
             ReviewCategory.UNCHANGED,
@@ -102,51 +114,55 @@ def _classify_item(
             False,
         )
 
-    # Analyze classifications to determine category
+    # If no classifications, it's safe
     if not classifications:
         return (
             ReviewCategory.SAFE,
-            "No issues identified; ready for canonical migration",
+            "No review issues identified; ready for canonical migration",
             False,
         )
 
-    # Check for consequential issues
+    # Extract reason values
     reasons = {c.get("reason") for c in classifications}
 
-    # Consequential: Person/Work identity ambiguity
-    if any(
-        reason in ("person_ambiguous", "work_identity_unclear", "revision_vs_separate")
-        for reason in reasons
-    ):
+    # Identity gates: All of these require curator decision
+    # (Principle 4: Identity gates require review)
+    identity_gates = {
+        ReviewReason.VERSION_REVISION,  # "rev." or "revised" text
+        ReviewReason.ARRANGEMENT_ORCHESTRATION,  # "arr." or "arranged" text
+        ReviewReason.COMPLETION_RECONSTRUCTION,  # "completed by" text
+        ReviewReason.SUITE_EXCERPT_DERIVED,  # "excerpt from" or "suite" text
+    }
+
+    if any(r in identity_gates for r in reasons):
+        # At least one identity gate found
+        gate_reasons = [r for r in reasons if r in identity_gates]
         return (
             ReviewCategory.CONSEQUENTIAL,
-            f"Unresolved identity decision: {', '.join(sorted(reasons))}",
+            f"Identity gate(s) found: {', '.join(str(r) for r in gate_reasons)}. "
+            f"Curator must decide if content represents distinct work or variant.",
             True,
         )
 
-    # Background: Authority/metadata gaps (not actionable)
-    if all(
-        reason
-        in (
-            "missing_musicbrainz_id",
-            "missing_gramophone_reference",
-            "missing_tidal_link",
-            "source_format_improvement",
-            "metadata_incomplete",
-        )
-        for reason in reasons
-    ):
+    # Background: Non-actionable classifications
+    # (Principle 16: Background suspicions are not escalated)
+    background_reasons = {
+        ReviewReason.MULTIPLE_TIDAL_LINKS,  # Can pick first; not a defect
+        ReviewReason.UNCERTAIN_MATCH,  # Low confidence; but still worth including
+    }
+
+    if all(r in background_reasons for r in reasons):
         return (
             ReviewCategory.BACKGROUND,
-            f"Non-actionable metadata: {', '.join(sorted(reasons))}. "
-            "Authority lookup is demand-driven; external ID absence is not a defect.",
+            f"Non-actionable classification(s): {', '.join(str(r) for r in reasons)}. "
+            f"These do not block migration.",
             False,
         )
 
-    # Safe: Minor/non-blocking issues
+    # Safe: Minor issues that don't block migration
     return (
         ReviewCategory.SAFE,
-        f"Has minor issues but can migrate: {', '.join(sorted(reasons))}",
+        f"Has classification(s) but can migrate: {', '.join(str(r) for r in reasons)}",
         False,
     )
 
