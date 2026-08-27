@@ -1,0 +1,120 @@
+"""Test entity matcher functionality."""
+
+from __future__ import annotations
+
+from pathlib import Path
+
+import pytest
+
+from classical_music.migration.entity_matcher import (
+    EntityMatcher,
+    extract_catalogue_number,
+    normalize_title,
+)
+
+
+def test_normalize_title():
+    """Test title normalization for matching."""
+    assert normalize_title("Symphony No. 1 in C minor") == 'symphony no. 1 in c minor'
+    assert (
+        normalize_title('Symphony No. 1 in C minor "Das kecke Beserl"')
+        == 'symphony no. 1 in c minor "das kecke beserl"'
+    )
+    # Test various quote styles normalize to double quote
+    assert (
+        normalize_title("Symphony No. 1 'quoted'")
+        == 'symphony no. 1 "quoted"'
+    )
+    assert normalize_title("Ave  Maria") == "ave maria"  # Collapse spaces
+
+
+def test_extract_catalogue_number():
+    """Test catalogue number extraction."""
+    assert extract_catalogue_number("Symphony No. 1, WAB. 101") == "WAB.101"
+    assert extract_catalogue_number("WAB.101 Symphony") == "WAB.101"
+    assert extract_catalogue_number("Op. 23 No. 5") == "Op.23"
+    assert extract_catalogue_number("K. 545 Piano Sonata") == "K.545"
+    assert extract_catalogue_number("BWV 846 Bach") == "BWV.846"
+    assert extract_catalogue_number("No catalogue here") is None
+
+
+def test_entity_matcher_loads_canonical_data(data_root: Path):
+    """Test that EntityMatcher loads canonical entities."""
+    matcher = EntityMatcher(data_root)
+    
+    # Verify counts
+    assert len(matcher.works) > 0
+    assert len(matcher.work_groups) > 0
+    assert len(matcher.persons) > 0
+
+
+def test_entity_matcher_find_bruckner_work(data_root: Path):
+    """Test finding existing Bruckner work by composer and title."""
+    matcher = EntityMatcher(data_root)
+    
+    # Try to find Bruckner Symphony No. 1
+    # Use canonical composer_id from data/
+    work = matcher.find_work(
+        "anton-bruckner",
+        'Symphony No. 1 in C minor "Das kecke Beserl"'
+    )
+    assert work is not None
+    assert "bruckner" in work.entity_id.lower()
+    assert "symphony" in work.entity_id.lower()
+
+
+def test_entity_matcher_find_bruckner_with_version_text(data_root: Path):
+    """Test finding work when title includes version text in parentheses."""
+    matcher = EntityMatcher(data_root)
+    
+    # Legacy Markdown has version info in parentheses
+    # Matcher should extract base title and still find the work
+    work = matcher.find_work(
+        "anton-bruckner",
+        'Symphony No. 1 in C minor "Das kecke Beserl" (1865 version)'
+    )
+    assert work is not None
+    assert "symphony" in work.entity_id.lower()
+
+
+def test_entity_matcher_composer_mapping(data_root: Path):
+    """Test doc slug to canonical composer_id mapping."""
+    matcher = EntityMatcher(data_root)
+    
+    # Slug "bruckner" should resolve to "anton-bruckner"
+    canonical_id = matcher.resolve_composer_id("bruckner")
+    assert canonical_id == "anton-bruckner"
+
+
+def test_entity_matcher_find_returns_none_for_unknown(data_root: Path):
+    """Test that find_work returns None for non-existent works."""
+    matcher = EntityMatcher(data_root)
+    
+    # Try to find work that doesn't exist
+    work = matcher.find_work(
+        "anton-bruckner",
+        "Nonexistent Work"
+    )
+    assert work is None
+
+
+def test_matches_summary(data_root: Path):
+    """Test matches_summary() returns correct counts."""
+    matcher = EntityMatcher(data_root)
+    summary = matcher.matches_summary()
+    
+    assert "works" in summary
+    assert "work_groups" in summary
+    assert "persons" in summary
+    assert "performances" in summary
+    
+    # Rough sanity checks
+    assert summary["works"] > 0
+    assert summary["work_groups"] > 0
+
+
+# Pytest fixture to provide data_root path
+@pytest.fixture
+def data_root() -> Path:
+    """Return path to test data directory."""
+    return Path(__file__).resolve().parents[2] / "data"

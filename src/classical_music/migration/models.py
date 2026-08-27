@@ -4,6 +4,16 @@ from dataclasses import dataclass, field
 from enum import StrEnum
 
 
+
+class WorkIdentityResolution(StrEnum):
+    """Result of resolving a source Work to canonical identity."""
+
+    MATCHED = "matched"  # One specific canonical Work established
+    NEW_IDENTITY = "new_identity"  # Positive evidence supports new Work
+    UNRESOLVED = "unresolved"  # Cannot safely establish identity
+    BACKGROUND_ONLY = "background_only"  # Only non-identity metadata gap
+
+
 class ReviewReason(StrEnum):
     VERSION_REVISION = "version_revision"
     ARRANGEMENT_ORCHESTRATION = "arrangement_orchestration"
@@ -61,3 +71,15 @@ class ReviewClassification:
     reason: ReviewReason
     confidence: float
     notes: str
+
+
+@dataclass(slots=True)
+class WorkIdentityResult:
+    """Result of identity resolution for a source Work."""
+
+    status: WorkIdentityResolution
+    matched_work_id: str | None = None
+    candidates_count: int = 0
+    evidence_used: list[str] = field(default_factory=list)
+    rationale: str = ""
+    requires_curator_action: bool = False
