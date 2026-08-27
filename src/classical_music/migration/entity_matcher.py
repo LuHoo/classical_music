@@ -69,6 +69,39 @@ def normalize_title(title: str) -> str:
     return normalized
 
 
+def extract_catalogue_number(text: str) -> str | None:
+    """
+    Extract catalogue number from text.
+    
+    Looks for patterns like:
+    - WAB. 101 (Bruckner)
+    - Op. 23 (opus)
+    - K. 545 (Köchel, Mozart)
+    - BWV 846 (Bach)
+    """
+    # Match WAB. DIGITS
+    match = re.search(r'WAB\.?\s*(\d+)', text, re.IGNORECASE)
+    if match:
+        return f"WAB.{match.group(1)}"
+    
+    # Match Op. or Opus DIGITS
+    match = re.search(r'Op\.?\s*(\d+)', text, re.IGNORECASE)
+    if match:
+        return f"Op.{match.group(1)}"
+    
+    # Match K. DIGITS (Köchel)
+    match = re.search(r'K\.?\s*(\d+)', text, re.IGNORECASE)
+    if match:
+        return f"K.{match.group(1)}"
+    
+    # Match BWV DIGITS
+    match = re.search(r'BWV\.?\s*(\d+)', text, re.IGNORECASE)
+    if match:
+        return f"BWV.{match.group(1)}"
+    
+    return None
+
+
 class EntityMatcher:
     """Match migration candidates against existing canonical entities."""
 
@@ -157,15 +190,49 @@ class EntityMatcher:
         """
         Find an existing work matching composer and title.
 
+        Tries three strategies in order:
+        1. Exact normalized title match (fast path)
+        2. Catalogue number match (WAB, Op, etc.)
+        3. Base title match (if title contains version/revision text)
+
         Returns the existing entity if found, None otherwise.
         """
         normalized_query = normalize_title(work_title)
+        
+        # Strategy 1: Exact normalized title match
         for work in self.works.values():
             if (
                 work.composer_id == composer_id
                 and work.normalized_title == normalized_query
             ):
                 return work
+        
+        # Strategy 2: Try catalogue number matching
+        query_catalogue = extract_catalogue_number(work_title)
+        if query_catalogue:
+            for work in self.works.values():
+                if work.composer_id != composer_id:
+                    continue
+                
+                # Check catalogue field in canonical work data
+                canonical_catalogue = work.data.get("catalogue")
+                if canonical_catalogue == query_catalogue:
+                    return work
+        
+        # Strategy 3: Try base title matching (for version variations)
+        # E.g., "Symphony No. 1 in C minor" (from various versions)
+        base_title = re.sub(
+            r'\(.*?\)', '', work_title
+        ).strip()  # Remove parentheses and contents
+        if base_title != work_title:
+            normalized_base = normalize_title(base_title)
+            for work in self.works.values():
+                if (
+                    work.composer_id == composer_id
+                    and work.normalized_title == normalized_base
+                ):
+                    return work
+        
         return None
 
     def find_work_group(self, composer_id: str, work_group_name: str) -> ExistingEntity | None:

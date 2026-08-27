@@ -6,7 +6,11 @@ from pathlib import Path
 
 import pytest
 
-from classical_music.migration.entity_matcher import EntityMatcher, normalize_title
+from classical_music.migration.entity_matcher import (
+    EntityMatcher,
+    extract_catalogue_number,
+    normalize_title,
+)
 
 
 def test_normalize_title():
@@ -22,6 +26,16 @@ def test_normalize_title():
         == 'symphony no. 1 "quoted"'
     )
     assert normalize_title("Ave  Maria") == "ave maria"  # Collapse spaces
+
+
+def test_extract_catalogue_number():
+    """Test catalogue number extraction."""
+    assert extract_catalogue_number("Symphony No. 1, WAB. 101") == "WAB.101"
+    assert extract_catalogue_number("WAB.101 Symphony") == "WAB.101"
+    assert extract_catalogue_number("Op. 23 No. 5") == "Op.23"
+    assert extract_catalogue_number("K. 545 Piano Sonata") == "K.545"
+    assert extract_catalogue_number("BWV 846 Bach") == "BWV.846"
+    assert extract_catalogue_number("No catalogue here") is None
 
 
 def test_entity_matcher_loads_canonical_data(data_root: Path):
@@ -46,6 +60,20 @@ def test_entity_matcher_find_bruckner_work(data_root: Path):
     )
     assert work is not None
     assert "bruckner" in work.entity_id.lower()
+    assert "symphony" in work.entity_id.lower()
+
+
+def test_entity_matcher_find_bruckner_with_version_text(data_root: Path):
+    """Test finding work when title includes version text in parentheses."""
+    matcher = EntityMatcher(data_root)
+    
+    # Legacy Markdown has version info in parentheses
+    # Matcher should extract base title and still find the work
+    work = matcher.find_work(
+        "anton-bruckner",
+        'Symphony No. 1 in C minor "Das kecke Beserl" (1865 version)'
+    )
+    assert work is not None
     assert "symphony" in work.entity_id.lower()
 
 
