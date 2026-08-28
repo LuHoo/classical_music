@@ -81,7 +81,7 @@ def main(
                     status=WorkIdentityResolution.UNRESOLVED,
                     matched_work_id=None,
                     candidates_count=0,
-                    evidence_used="",
+                    evidence_used=[],
                     rationale=f"Composer '{composer_slug}' not found in canonical data",
                     requires_curator_action=True,
                 )
@@ -97,9 +97,20 @@ def main(
                 continue  # Skip to next record - no WorkCandidate or PerformanceCandidate
             
             # Two-stage entity matching: candidate discovery + identity resolution
-            candidates = entity_matcher.find_work_candidates(canonical_composer_id, record.work_text)
+            candidates = entity_matcher.find_work_candidates(
+                canonical_composer_id,
+                record.work_text,
+                source_file=record.location.source_file,
+                source_line=record.location.line_number,
+                catalogue=record.catalogue,
+            )
             identity_result = entity_matcher.resolve_work_identity(
-                record.work_text, canonical_composer_id, candidates
+                record.work_text,
+                canonical_composer_id,
+                candidates,
+                source_file=record.location.source_file,
+                source_line=record.location.line_number,
+                catalogue=record.catalogue,
             )
             
             # Fail-closed: Only MATCHED and NEW_IDENTITY create candidates
@@ -148,8 +159,22 @@ def main(
                 identity_result.status == WorkIdentityResolution.MATCHED or
                 identity_result.status == WorkIdentityResolution.NEW_IDENTITY
             ):
+                performance_matched = False
+                performance_candidates = entity_matcher.find_performance_candidates(
+                    work_id, record.tidal_links[0]
+                )
+                performance_result = entity_matcher.resolve_performance_identity(
+                    work_id,
+                    record.performer_text,
+                    record.tidal_links[0],
+                    performance_candidates,
+                )
+                if performance_result.status.value == "matched_existing":
+                    matched_entities[f"{record.source_id}:performance"] = performance_result.matched_performance_id
+                    performance_matched = True
+
                 perf_id = stable_performance_id(work_id, record.performer_text)
-                if perf_id not in performances:
+                if not performance_matched and perf_id not in performances:
                     performances[perf_id] = PerformanceCandidate(
                         id=perf_id,
                         work_id=work_id,

@@ -11,6 +11,7 @@ WorkIdentityResolution status mapping:
 - MATCHED: Existing canonical entity identified → unchanged
 - NEW_IDENTITY: Positive evidence for new Work → safe (no curator action on identity)
 - UNRESOLVED: No clear identity evidence → consequential (requires curator decision)
+- AUTHORITY_EVIDENCE_REQUIRED: Repository evidence insufficient, authority gate before curator
 - BACKGROUND_ONLY: Performance background only → background (not identity-affecting)
 
 Principle 4: Unresolved identities require curator decision.
@@ -133,6 +134,14 @@ def _classify_by_identity(
             f"Unresolved identity. {identity_result.rationale} "
             f"Curator must decide based on available evidence.",
             identity_result.requires_curator_action,
+        )
+
+    if status == WorkIdentityResolution.AUTHORITY_EVIDENCE_REQUIRED:
+        return (
+            ReviewCategory.BACKGROUND,
+            f"Authority evidence required before curator escalation. "
+            f"Rationale: {identity_result.rationale}",
+            False,
         )
 
     if status == WorkIdentityResolution.BACKGROUND_ONLY:

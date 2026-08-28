@@ -154,9 +154,9 @@ def extract_catalogue_number(text: str) -> str | None:
         return f"WAB.{match.group(1)}"
     
     # Match Op. or Opus DIGITS
-    match = re.search(r'Op\.?\s*(\d+)', text, re.IGNORECASE)
+    match = re.search(r'Op\.?\s*(\d+\s*(?:bis|ter)?)', text, re.IGNORECASE)
     if match:
-        return f"Op.{match.group(1)}"
+        return f"Op.{match.group(1).replace(' ', '')}"
     
     # Match K. DIGITS (Köchel)
     match = re.search(r'K\.?\s*(\d+)', text, re.IGNORECASE)
@@ -169,6 +169,62 @@ def extract_catalogue_number(text: str) -> str | None:
         return f"BWV.{match.group(1)}"
     
     return None
+
+
+def normalize_catalogue(value: str | dict[str, Any] | None) -> str | None:
+    """Normalize source/canonical catalogue evidence to comparable text."""
+    if value is None:
+        return None
+    if isinstance(value, dict):
+        parts = []
+        for system, number in sorted(value.items()):
+            text = str(number)
+            if not re.match(str(system), text, re.IGNORECASE):
+                text = f"{system} {text}"
+            parts.append(text)
+        value = " ".join(parts)
+    extracted = extract_catalogue_number(str(value))
+    return extracted.casefold().replace(" ", "") if extracted else None
+
+
+def same_legacy_source_file(source_file: str | None, canonical_file: Any) -> bool:
+    if not source_file or not canonical_file:
+        return False
+    source = str(source_file)
+    canonical = str(canonical_file)
+    return source == canonical or source.endswith(f"/{canonical}")
+
+
+def normalize_tidal_url(url: str | None) -> str | None:
+    if not url:
+        return None
+    text = url.strip().replace("http://", "https://")
+    text = text.split("?", 1)[0].rstrip("/")
+    text = text.replace("https://www.tidal.com/", "https://tidal.com/")
+    return text
+
+
+def canonical_tidal_urls(data: dict[str, Any]) -> set[str]:
+    links = data.get("links")
+    urls: set[str] = set()
+    if isinstance(links, dict):
+        tidal = links.get("tidal")
+        if isinstance(tidal, dict):
+            normalized = normalize_tidal_url(tidal.get("url"))
+            if normalized:
+                urls.add(normalized)
+    if isinstance(links, list):
+        for link in links:
+            if not isinstance(link, dict):
+                continue
+            if link.get("platform") == "tidal":
+                normalized = normalize_tidal_url(link.get("url"))
+                if normalized:
+                    urls.add(normalized)
+    flat = normalize_tidal_url(data.get("tidal_url"))
+    if flat:
+        urls.add(flat)
+    return urls
 
 
 class EntityMatcher:
@@ -258,7 +314,13 @@ class EntityMatcher:
         return self._composer_slug_to_id.get(doc_slug)
 
     def find_work_candidates(
-        self, composer_id: str, work_title: str
+        self,
+        composer_id: str,
+        work_title: str,
+        *,
+        source_file: str | None = None,
+        source_line: int | None = None,
+        catalogue: str | None = None,
     ) -> list[ExistingEntity]:
         """
         Candidate discovery: Find plausible existing Works matching composer and title.
@@ -273,6 +335,25 @@ class EntityMatcher:
         """
         candidates: list[ExistingEntity] = []
         normalized_query = normalize_title(work_title)
+
+        def add(candidate: ExistingEntity) -> None:
+            if candidate.entity_id not in {item.entity_id for item in candidates}:
+                candidates.append(candidate)
+
+        # Strategy 0: trusted legacy provenance. This is only used by migration
+        # because canonical YAML keeps source.file/source.line from the same
+        # trusted legacy docs.
+        if source_file and source_line is not None:
+            for work in self.works.values():
+                if work.composer_id != composer_id:
+                    continue
+                source = work.data.get("source") or {}
+                if (
+                    isinstance(source, dict)
+                    and same_legacy_source_file(source_file, source.get("file"))
+                    and str(source.get("line")) == str(source_line)
+                ):
+                    add(work)
         
         # Strategy 1: Exact normalized title match (fast path)
         for work in self.works.values():
@@ -280,22 +361,21 @@ class EntityMatcher:
                 work.composer_id == composer_id
                 and work.normalized_title == normalized_query
             ):
-                candidates.append(work)
+                add(work)
         
         if candidates:
             return candidates
         
         # Strategy 2: Try catalogue number matching
-        query_catalogue = extract_catalogue_number(work_title)
+        query_catalogue = catalogue or extract_catalogue_number(work_title)
         if query_catalogue:
+            normalized_query_catalogue = normalize_catalogue(query_catalogue)
             for work in self.works.values():
                 if work.composer_id != composer_id:
                     continue
-                
-                # Check catalogue field in canonical work data
-                canonical_catalogue = work.data.get("catalogue")
-                if canonical_catalogue == query_catalogue:
-                    candidates.append(work)
+
+                if normalize_catalogue(work.data.get("catalogue")) == normalized_query_catalogue:
+                    add(work)
         
         if candidates:
             return candidates
@@ -312,7 +392,7 @@ class EntityMatcher:
                     work.composer_id == composer_id
                     and work.normalized_title == normalized_base
                 ):
-                    candidates.append(work)
+                    add(work)
         
         return candidates
 
@@ -372,6 +452,10 @@ class EntityMatcher:
         work_title: str,
         composer_id: str,
         candidates: list[ExistingEntity],
+        *,
+        source_file: str | None = None,
+        source_line: int | None = None,
+        catalogue: str | None = None,
     ) -> WorkIdentityResult:
         """
         Identity resolution: Determine if and which canonical Work matches source.
@@ -395,12 +479,72 @@ class EntityMatcher:
         if version_info:
             evidence_used.append(f"version: {version_info['full_text']}")
         
-        catalogue = extract_catalogue_number(work_title)
+        catalogue = catalogue or extract_catalogue_number(work_title)
+        normalized_source_catalogue = normalize_catalogue(catalogue)
         if catalogue:
             evidence_used.append(f"catalogue: {catalogue}")
+
+        provenance_matches = []
+        if source_file and source_line is not None:
+            for candidate in candidates:
+                source = candidate.data.get("source") or {}
+                if (
+                    isinstance(source, dict)
+                    and same_legacy_source_file(source_file, source.get("file"))
+                    and str(source.get("line")) == str(source_line)
+                ):
+                    provenance_matches.append(candidate)
+            if len(provenance_matches) == 1:
+                candidate = provenance_matches[0]
+                evidence_used.append("legacy_provenance")
+                return WorkIdentityResult(
+                    status=WorkIdentityResolution.MATCHED,
+                    matched_work_id=candidate.entity_id,
+                    candidates_count=len(candidates),
+                    evidence_used=evidence_used,
+                    rationale="Trusted legacy source file/line matches canonical provenance",
+                    requires_curator_action=False,
+                )
+
+        if normalized_source_catalogue:
+            catalogue_matches = [
+                c
+                for c in candidates
+                if normalize_catalogue(c.data.get("catalogue")) == normalized_source_catalogue
+            ]
+            if len(catalogue_matches) == 1 and not version_info:
+                candidate = catalogue_matches[0]
+                evidence_used.append("catalogue_unique")
+                return WorkIdentityResult(
+                    status=WorkIdentityResolution.MATCHED,
+                    matched_work_id=candidate.entity_id,
+                    candidates_count=len(candidates),
+                    evidence_used=evidence_used,
+                    rationale="Unique canonical Work has matching catalogue evidence",
+                    requires_curator_action=False,
+                )
+            if len(catalogue_matches) == 1 and version_info and self._has_positive_version_evidence(catalogue_matches[0], version_info["year"]):
+                candidate = catalogue_matches[0]
+                evidence_used.append("catalogue_and_version")
+                return WorkIdentityResult(
+                    status=WorkIdentityResolution.MATCHED,
+                    matched_work_id=candidate.entity_id,
+                    candidates_count=len(candidates),
+                    evidence_used=evidence_used,
+                    rationale="Catalogue and positive version evidence identify one canonical Work",
+                    requires_curator_action=False,
+                )
         
         # Case 1: No candidates found
         if not candidates:
+            if version_info and composer_id in self.persons:
+                return WorkIdentityResult(
+                    status=WorkIdentityResolution.AUTHORITY_EVIDENCE_REQUIRED,
+                    candidates_count=0,
+                    evidence_used=evidence_used,
+                    rationale="No repository candidate found; route through demand-driven authority evidence before any curator escalation",
+                    requires_curator_action=False,
+                )
             return WorkIdentityResult(
                 status=WorkIdentityResolution.UNRESOLVED,
                 candidates_count=0,
@@ -554,9 +698,9 @@ class EntityMatcher:
         
         # Strategy 1: Exact Tidal URL match (most reliable)
         if tidal_url:
+            normalized_tidal = normalize_tidal_url(tidal_url)
             for perf in performances_for_work:
-                canonical_tidal = perf.data.get("tidal_url")
-                if canonical_tidal == tidal_url:
+                if normalized_tidal in canonical_tidal_urls(perf.data):
                     candidates.append(perf)
         
         return candidates

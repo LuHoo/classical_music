@@ -178,6 +178,82 @@ def test_no_match_means_unresolved_not_new_identity(data_root: Path):
     assert result.requires_curator_action
 
 
+def test_bruckner_tantum_ergo_catalogue_collisions_resolve_distinct_works(data_root: Path):
+    matcher = EntityMatcher(data_root)
+
+    expected = {
+        ("Tantum ergo (c. 1845)", "WAB.32"): "anton-bruckner-tantum-ergo-work",
+        ("Tantum ergo (1846/1888)", "WAB.42"): "anton-bruckner-tantum-ergo-2-work",
+        ("Tantum ergo (c. 1845)", "WAB.43"): "anton-bruckner-tantum-ergo-3-work",
+    }
+
+    for title, catalogue in expected:
+        candidates = matcher.find_work_candidates(
+            "anton-bruckner",
+            title,
+            catalogue=catalogue,
+        )
+        result = matcher.resolve_work_identity(
+            title,
+            "anton-bruckner",
+            candidates,
+            catalogue=catalogue,
+        )
+        assert result.status == WorkIdentityResolution.MATCHED
+        assert result.matched_work_id == expected[(title, catalogue)]
+
+
+def test_source_provenance_selects_bruckner_symphony_no_5_versions(data_root: Path):
+    matcher = EntityMatcher(data_root)
+
+    cases = {
+        48: "anton-bruckner-symphony-no-5-in-bb-major-work",
+        50: "anton-bruckner-symphony-no-5-in-bb-major-2-work",
+    }
+
+    for line, expected_id in cases.items():
+        title = "Symphony No. 5 in B♭ major (1876 first concept)"
+        candidates = matcher.find_work_candidates(
+            "anton-bruckner",
+            title,
+            source_file="docs/bruckner.md",
+            source_line=line,
+            catalogue="WAB.105",
+        )
+        result = matcher.resolve_work_identity(
+            title,
+            "anton-bruckner",
+            candidates,
+            source_file="docs/bruckner.md",
+            source_line=line,
+            catalogue="WAB.105",
+        )
+        assert result.status == WorkIdentityResolution.MATCHED
+        assert result.matched_work_id == expected_id
+
+
+def test_prokofiev_opus_resolves_original_and_revised_versions(data_root: Path):
+    matcher = EntityMatcher(data_root)
+
+    cases = {
+        ("Sinfonietta in A (original version)", "Op.5"): "sergei-prokofiev-sinfonietta-in-a-original-version-work",
+        ("Sinfonietta in A (revised version of Op. 5)", "Op.48"): "sergei-prokofiev-sinfonietta-in-a-revised-version-of-op-5-work",
+        ("Symphony No. 4 in C (original version)", "Op.47"): "sergei-prokofiev-symphony-no-4-in-c-original-version-work",
+        ("Symphony No. 4 in C (revised version)", "Op.112"): "sergei-prokofiev-symphony-no-4-in-c-revised-version-work",
+    }
+
+    for (title, catalogue), expected_id in cases.items():
+        candidates = matcher.find_work_candidates("sergei-prokofiev", title, catalogue=catalogue)
+        result = matcher.resolve_work_identity(
+            title,
+            "sergei-prokofiev",
+            candidates,
+            catalogue=catalogue,
+        )
+        assert result.status == WorkIdentityResolution.MATCHED
+        assert result.matched_work_id == expected_id
+
+
 def test_composer_mapping(data_root: Path):
     """Test doc slug to canonical composer_id mapping."""
     matcher = EntityMatcher(data_root)

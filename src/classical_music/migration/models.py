@@ -11,6 +11,7 @@ class WorkIdentityResolution(StrEnum):
     MATCHED = "matched"  # One specific canonical Work established
     NEW_IDENTITY = "new_identity"  # Positive evidence supports new Work
     UNRESOLVED = "unresolved"  # Cannot safely establish identity
+    AUTHORITY_EVIDENCE_REQUIRED = "authority_evidence_required"
     BACKGROUND_ONLY = "background_only"  # Only non-identity metadata gap
 
 
@@ -47,6 +48,7 @@ class SourceRecord:
     work_text: str
     date_text: str | None
     category: str | None
+    catalogue: str | None = None
     tidal_links: list[str] = field(default_factory=list)
     performer_text: str | None = None
     gramophone_issue: str | None = None
@@ -104,4 +106,3 @@ class PerformanceIdentityResult:
     rationale: str = ""
     requires_curator_action: bool = False
     performance_profile: str | None = None  # Preserve profile from matched Performance
-

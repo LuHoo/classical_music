@@ -115,6 +115,11 @@ Maps source record IDs to existing canonical entity IDs. If present, the work is
 - `background`: Non-actionable metadata (authority lookup demand-driven)
 - `consequential`: Identity gate requiring curator review
 
+Identity-result statuses may also include `authority_evidence_required`. This
+means repository evidence did not establish an existing Work and the next step
+is demand-driven authority evidence. It is not a curator-required decision
+unless authority evidence is insufficient or genuinely ambiguous.
+
 **ClassificationReasons** (from real classifier):
 - `version_revision`: "rev.", "revised" text (identity gate)
 - `arrangement_orchestration`: "arr.", "arrangement" text (identity gate)

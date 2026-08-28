@@ -1,95 +1,138 @@
-# Implementation Summary: Issue #164 - Reproducible Entity Migration
+# Implementation Note: Issue #164 Reproducible Migration
 
-## Overview
+## Architecture Pre-flight
 
-This implementation addresses the blocking review on PR #167 by implementing a two-stage entity matching architecture that separates candidate discovery from identity resolution, preserves version/revision evidence throughout the pipeline, and enforces the NO_MATCH ≠ NEW_WORK principle.
+This update was checked against `docs/architecture/architecture-principles.md`,
+including Principle 19, and the normative Work, Work Group, identity, migration,
+validation and Performance documents.
 
-## Architectural Changes
+The implementation preserves the repository as a curated recommendation
+collection. External authority evidence remains demand-driven. Existing legacy
+data is trusted, but Person and Work identity still fail closed when repository
+or authority evidence has not established identity.
 
-### 1. Two-Stage Entity Matching
+## Identity Gate
 
-**Old Approach**: Single `find_work()` call returned one entity or null
-**New Approach**: Two-stage process
+Migration now treats candidate discovery and identity resolution as separate
+steps:
 
 ```python
-# Stage 1: Candidate Discovery
-candidates = entity_matcher.find_work_candidates(composer_id, work_title)
-# Returns: list[ExistingEntity] - all plausible matches
-
-# Stage 2: Identity Resolution  
-result = entity_matcher.resolve_work_identity(work_title, composer_id, candidates)
-# Returns: WorkIdentityResult with status (MATCHED|NEW_IDENTITY|UNRESOLVED|BACKGROUND_ONLY)
+candidates = matcher.find_work_candidates(...)
+resolution = matcher.resolve_work_identity(...)
 ```
 
-**Benefits**:
-- Explicit separation of concerns
-- Reproducible candidate discovery
-- Evidence-based identity decisions
-- Supports curator review of unresolved cases
+Candidate discovery may use normalized titles, source provenance, catalogue
+numbers and Work-family candidates. Identity resolution then requires specific
+evidence for one canonical Work before returning `MATCHED`.
 
-### 2. Version/Revision Text Preservation
+Evidence consumed by the resolver now includes:
 
-**Critical Fix**: Version text was being stripped during parsing
-**Solution**: Parser now preserves version information in work_text
+- trusted legacy provenance: canonical `source.file` plus `source.line`;
+- parsed catalogue identifiers such as WAB and Opus, including `bis`;
+- canonical title and normalized title candidates;
+- Work Group/family candidates as navigation only;
+- version/date/revision text as identity evidence.
 
-**Before**: `"Symphony No. 1 in C minor \"Das kecke Beserl\""`
-**After**: `"Symphony No. 1 in C minor \"Das kecke Beserl\" (1865, first concept...)"`
+`NO_MATCH != NEW_WORK` remains enforced. A missing repository match does not
+create a Work candidate. If the source has concrete Work evidence but no
+repository candidate, the result is `AUTHORITY_EVIDENCE_REQUIRED`, not curator
+escalation and not canonical creation.
 
-**Version Extraction Enhancements**:
-- Support comma-separated dates: `(1865, first concept...)`
-- Support quoted versions: `(1866 "Linz version"...)`
-- Support extended descriptions: `(1863 version, modified coda...)`
-- Extract year from canonical date_text
+Composer identity also fails closed. A document slug is never used as a
+canonical Person ID fallback.
 
-### 3. Review Categorization
+## Parser Fixes
 
-Review items categorized based on identity resolution confidence:
+The parser now preserves catalogue evidence on `SourceRecord.catalogue` and
+keeps revision/version descriptors in `work_text`.
 
-| Resolution Status | Review Category | Curator Action |
-|------------------|-----------------|-----------------|
-| MATCHED | UNCHANGED | No |
-| NEW_IDENTITY | SAFE | No |
-| UNRESOLVED | CONSEQUENTIAL | Yes |
-| BACKGROUND_ONLY | BACKGROUND | No |
+The Prokofiev collective juvenile line is parsed as two source Work records:
 
-## Bruckner Migration Results
+- `prokofiev:12:1` -> `Symphony (1902)`;
+- `prokofiev:12:2` -> `Symphony (1908)`.
 
-**Statistics**:
-- Total works: 42
-- Matched to existing: 33 (78.6%)
-- Unresolved (curator review): 9 (21.4%)
-- Incorrectly created as new: 0 ✓
+Those two records route to the authority gate because they are not established
+canonical repository identities.
 
-## Blocking Review Requirements
+## Vertical Slice Evidence
 
-| Requirement | Status | Evidence |
-|------------|--------|----------|
-| Separate candidate discovery from identity resolution | ✓ | Two distinct methods |
-| Preserve version/revision text as identity evidence | ✓ | Parser keeps version throughout pipeline |
-| Enforce NO_MATCH ≠ NEW_WORK | ✓ | UNRESOLVED used for ambiguous cases |
-| Version evidence used for disambiguation | ✓ | 33/42 matched using version evidence |
-| Proper composer identity handling | ✓ | Fails closed |
-| Review categorization based on identity confidence | ✓ | Only UNRESOLVED escalated |
+Command:
 
-## Test Results
+```bash
+.venv/bin/python scripts/migrate.py --composer bruckner --composer prokofiev --dry-run
+```
 
-- Entity matcher: 13/13 tests passing ✓
-- Review categorizer: 7/7 tests passing ✓
-- All real Bruckner patterns tested ✓
+Observed result:
 
-## Files Changed
+- source records: 140;
+- existing Works matched automatically: 138;
+- existing Performances matched automatically: 53;
+- new Work candidates: 0;
+- new Performance candidates: 34;
+- authority-gated Work identities: 2 Prokofiev juvenile symphonies;
+- curator-required Work identity decisions: 0;
+- false-positive Work matches found in adversarial review: 0;
+- false-positive Performance matches found in adversarial review: 0.
 
-- `src/classical_music/migration/entity_matcher.py`
-- `src/classical_music/migration/parser.py`
-- `src/classical_music/migration/review_categorizer.py`
-- `src/classical_music/migration/models.py`
-- `scripts/migrate.py`
-- `tests/migration/test_entity_matcher.py`
-- `tests/migration/test_review_categorizer.py`
-- `tests/conftest.py`
+The 21 repository-resolvable cases named in the blocking review are now consumed
+by generic repository evidence: provenance, catalogue, title, version/date and
+relationship context. The only remaining non-matched Work identities in these
+slices are the two parsed Prokofiev juvenile symphonies, both routed to
+authority evidence before any curator question.
 
-## Commits
+## Performance Matching
 
-1. `eef29aa`: Phase 1 - EntityMatcher refactoring
-2. `88a8faf`: Phase 2 - Review categorizer updates
-3. `cd3506d`: Phase 3 - Migrate.py integration + version preservation
+Performance matching runs only after Work identity is resolved. It reads
+canonical Tidal links from both supported repository shapes:
+
+- `links.tidal.url`;
+- list entries with `platform: tidal`.
+
+URLs are normalized for `http`/`https`, `www.tidal.com` and transient query
+suffixes. A matched canonical Performance is reported as existing and is not
+recreated. Different performance profiles remain separate comparison contexts.
+
+## Regression Tests
+
+Added and retained tests cover exact Work identity, revision disambiguation,
+catalogue/version conflicts, alias-style matching, no-match fail-closed
+semantics, unresolved Composer identity, missing MBID behavior, resolved
+version/revision classification, unknown identity-affecting failures, existing
+Performance matching, performance-profile distinction, dry-run idempotence, WAB
+32/42/43 distinctions, Bruckner source-line provenance, Prokofiev Opus/version
+distinctions and the juvenile-symphony parser split.
+
+Verification:
+
+```bash
+.venv/bin/python -m pytest tests/migration -q
+```
+
+Result: 38 passed.
+
+## Hygiene
+
+Runtime and development debris were removed from the PR:
+
+- `.coverage`;
+- `__pycache__` and `*.pyc`;
+- `src/classical_music/migration/entity_matcher_old.py`;
+- stale generated run summaries and source-record dumps.
+
+`.gitignore` already covers these Python runtime artifacts.
+
+## Adversarial Self-review
+
+I explicitly tried to falsify the clean counts by inspecting all non-`MATCHED`
+slice rows in `generated/migration/migration-summary.json`. Only
+`prokofiev:12:1` and `prokofiev:12:2` remain non-matched, and both are
+authority-gated rather than curator-required.
+
+The Bruckner version rows that previously looked unresolved were checked against
+trusted source provenance and catalogue evidence. The Tantum ergo collisions
+resolve to separate Works by WAB number. Prokofiev suite/source collisions now
+preserve `bis` opus suffixes, avoiding false Work matches.
+
+The remaining limitation is deliberate: this PR does not perform live authority
+lookup for the two juvenile Prokofiev symphonies and does not migrate the rest
+of the collection. It keeps PR #167 as a draft vertical slice for #164.

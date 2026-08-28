@@ -24,6 +24,23 @@ def test_parser_extracts_record_and_tidal(tmp_path: Path) -> None:
     assert record.tidal_links == ["http://www.tidal.com/track/123"]
     assert record.performer_text == "Netherlands Wind Ensemble"
     assert record.gramophone_issue == "2024-09"
+    assert record.catalogue == "K.527"
+
+
+def test_parser_splits_prokofiev_juvenile_symphonies(tmp_path: Path) -> None:
+    path = tmp_path / "prokofiev.md"
+    path.write_text(
+        "# Sergei Prokofiev\n\n"
+        "## Orchestral\n"
+        "**Symphonies** – two juvenile: Symphony (1902) and Symphony (1908)\n",
+        encoding="utf-8",
+    )
+
+    records = parse_composer_markdown(path)
+
+    assert [record.source_id for record in records] == ["prokofiev:4:1", "prokofiev:4:2"]
+    assert [record.work_text for record in records] == ["Symphony (1902)", "Symphony (1908)"]
+    assert [record.date_text for record in records] == ["1902", "1908"]
 
 
 def test_classifier_detects_arrangement_signal(tmp_path: Path) -> None:
