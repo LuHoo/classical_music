@@ -295,6 +295,15 @@ class EntityMatcher:
         E.g., "bruckner" → "anton-bruckner"
         """
         slug_to_id = {}
+        for person in self.persons.values():
+            if "composer" not in person.data.get("roles", []):
+                continue
+            source = person.data.get("source") or {}
+            if isinstance(source, dict) and source.get("file"):
+                slug = Path(str(source["file"])).stem
+                if slug:
+                    slug_to_id[slug] = person.entity_id
+
         for work in self.works.values():
             if work.composer_id:
                 # Extract last word as doc slug (e.g., "anton-bruckner" → "bruckner")

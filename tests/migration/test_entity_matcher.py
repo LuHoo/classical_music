@@ -272,6 +272,32 @@ def test_unresolved_composer_fails_closed(data_root: Path):
     assert canonical_id is None
 
 
+def test_composer_mapping_uses_person_source_without_existing_works(tmp_path: Path):
+    """New composer seeds should resolve from Person source provenance."""
+    persons = tmp_path / "persons"
+    works = tmp_path / "works"
+    groups = tmp_path / "work-groups"
+    performances = tmp_path / "performances"
+    persons.mkdir()
+    works.mkdir()
+    groups.mkdir()
+    performances.mkdir()
+    (persons / "johannes-brahms.yaml").write_text(
+        'id: "johannes-brahms"\n'
+        'name: "Johannes Brahms"\n'
+        'sort_name: "Brahms, Johannes"\n'
+        "roles:\n"
+        '  - "composer"\n'
+        "source:\n"
+        '  file: "docs/brahms.md"\n',
+        encoding="utf-8",
+    )
+
+    matcher = EntityMatcher(tmp_path)
+
+    assert matcher.resolve_composer_id("brahms") == "johannes-brahms"
+
+
 def test_matches_summary(data_root: Path):
     """Test that matches summary reports loaded entity counts."""
     matcher = EntityMatcher(data_root)

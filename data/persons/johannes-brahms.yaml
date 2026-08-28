@@ -1,0 +1,7 @@
+id: "johannes-brahms"
+name: "Johannes Brahms"
+sort_name: "Brahms, Johannes"
+roles:
+  - "composer"
+source:
+  file: "docs/brahms.md"
