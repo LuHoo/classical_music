@@ -3,5 +3,7 @@ name: "Johannes Brahms"
 sort_name: "Brahms, Johannes"
 roles:
   - "composer"
+external_ids:
+  musicbrainz: "c70d12a2-24fe-4f83-a6e6-57d84f8efb51"
 source:
   file: "docs/brahms.md"
