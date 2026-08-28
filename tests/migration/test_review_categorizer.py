@@ -80,6 +80,23 @@ class TestClassifyByIdentity:
         assert category == ReviewCategory.BACKGROUND
         assert action_required is False
 
+    def test_unknown_identity_status_fails_closed(self):
+        """Unknown identity statuses must not fall through to SAFE."""
+        result = WorkIdentityResult(
+            status="future_identity_status",
+            matched_work_id=None,
+            candidates_count=0,
+            evidence_used=[],
+            rationale="Unexpected status from resolver",
+            requires_curator_action=False,
+        )
+
+        category, rationale, action_required = _classify_by_identity(result)
+
+        assert category == ReviewCategory.CONSEQUENTIAL
+        assert "future_identity_status" in rationale
+        assert action_required is True
+
 
 class TestCategorizeReviewItems:
     """Test batch categorization of review items."""

@@ -152,11 +152,11 @@ def _classify_by_identity(
             False,
         )
 
-    # Fallback (should not reach)
+    # Fail closed: an unknown identity status must never be treated as safe.
     return (
-        ReviewCategory.SAFE,
+        ReviewCategory.CONSEQUENTIAL,
         f"Unknown status: {status}",
-        False,
+        True,
     )
 
 
