@@ -8,7 +8,9 @@ from .models import SourceLocation, SourceRecord
 
 HEADING_RE = re.compile(r"^(#{2,6})\s+(.*)\s*$")
 WORK_RE = re.compile(r"^(?P<gem>💎|\[gem\])?\s*\*\*(?P<title>.+?)\*\*(?P<tail>.*)$")
-DATE_RE = re.compile(r"\((?P<date>[^)]*\d[^)]*)\)")
+# Match version/revision/date in parentheses, excluding gramophone issues (MM/YYYY)
+# Negative lookahead (?!\d{1,2}/\d{4}(?:\)|$)) prevents matching (09/2024) format
+DATE_RE = re.compile(r"\((?P<date>(?!\d{1,2}/\d{4}(?:\)|$))([^)]+))\)")
 URL_RE = re.compile(r"https?://[^\s)]+")
 PERFORMER_RE = re.compile(r"\[\*(?P<performers>.+?)\*\]\((?P<url>https?://[^)]+)\)")
 GRAMOPHONE_RE = re.compile(r"\((?P<issue>\d{2}/\d{4})\)")
@@ -37,7 +39,19 @@ def parse_composer_markdown(file_path: Path) -> list[SourceRecord]:
         tail = work_match.group("tail") or ""
         gem_marker = bool(work_match.group("gem"))
 
-        date_match = DATE_RE.search(line)
+        performers: str | None = None
+        performer_match = PERFORMER_RE.search(line)
+        if performer_match:
+            performers = performer_match.group("performers").strip()
+        
+        # Remove performer link and URLs from tail before looking for date
+        # This avoids matching parentheses in URLs like (http://...)
+        tail_without_links = tail
+        if performer_match:
+            tail_without_links = tail.replace(performer_match.group(0), "")
+        
+        # Look for dates only in the tail without URLs
+        date_match = DATE_RE.search(tail_without_links)
         date_text = date_match.group("date").strip() if date_match else None
         
         # Preserve version/revision text in work_text for identity resolution
@@ -45,11 +59,6 @@ def parse_composer_markdown(file_path: Path) -> list[SourceRecord]:
         work_text = title
         if date_text:
             work_text = f"{title} ({date_text})"
-
-        performers: str | None = None
-        performer_match = PERFORMER_RE.search(line)
-        if performer_match:
-            performers = performer_match.group("performers").strip()
 
         issue_match = GRAMOPHONE_RE.search(line)
         gramophone_issue = _normalize_gramophone_issue(issue_match.group("issue")) if issue_match else None

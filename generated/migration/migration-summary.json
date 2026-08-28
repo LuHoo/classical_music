@@ -1,1488 +1,2207 @@
 {
   "dry_run": true,
-  "works": [
+  "works": [],
+  "performances": [
     {
-      "id": "anton-bruckner-4-tantum-ergo-work",
-      "work_group_id": "bruckner-4-tantum-ergo-1888-group",
-      "composer_id": "anton-bruckner",
-      "title": "4 Tantum ergo (1888)",
-      "gem": false,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 84
+      "id": "sergei-prokofiev-alexander-nevsky-work-olga-borodina-kirov-chorus-st-petersburg-mariinsky-orchestra-valery-gergiev",
+      "work_id": "sergei-prokofiev-alexander-nevsky-work",
+      "performer_text": "Olga Borodina, Kirov Chorus St Petersburg, Mariinsky Orchestra, Valery Gergiev",
+      "tidal_url": "https://tidal.com/album/7232589",
+      "gramophone_issue": null,
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 138
     },
     {
-      "id": "anton-bruckner-ave-maria-work",
-      "work_group_id": "bruckner-ave-maria-1861-group",
-      "composer_id": "anton-bruckner",
-      "title": "Ave Maria (1861)",
-      "gem": false,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 68
+      "id": "sergei-prokofiev-andante-from-piano-sonata-no-4-arranged-for-orchestra-work-royal-scottish-national-orchestra-neeme-j\u00e4rvi",
+      "work_id": "sergei-prokofiev-andante-from-piano-sonata-no-4-arranged-for-orchestra-work",
+      "performer_text": "Royal Scottish National Orchestra, Neeme J\u00e4rvi",
+      "tidal_url": "https://tidal.com/album/376436518",
+      "gramophone_issue": null,
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 45
     },
     {
-      "id": "anton-bruckner-christus-factus-est-work",
-      "work_group_id": "bruckner-christus-factus-est-1884-group",
-      "composer_id": "anton-bruckner",
-      "title": "Christus factus est (1884)",
-      "gem": false,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 70
+      "id": "sergei-prokofiev-andante-from-string-quartet-no-1-arranged-for-string-orchestra-work-royal-scottish-national-orchestra-neeme-j\u00e4rvi",
+      "work_id": "sergei-prokofiev-andante-from-string-quartet-no-1-arranged-for-string-orchestra-work",
+      "performer_text": "Royal Scottish National Orchestra, Neeme J\u00e4rvi",
+      "tidal_url": "https://tidal.com/album/376317101",
+      "gramophone_issue": null,
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 88
     },
     {
-      "id": "anton-bruckner-kronstorfer-messe-in-d-minor-work",
-      "work_group_id": "bruckner-kronstorfer-messe-in-d-minor-1843-44-group",
-      "composer_id": "anton-bruckner",
-      "title": "Kronstorfer Messe in D Minor (1843-44)",
-      "gem": false,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 96
+      "id": "sergei-prokofiev-autumnal-work-royal-scottish-national-orchestra-neeme-j\u00e4rvi",
+      "work_id": "sergei-prokofiev-autumnal-work",
+      "performer_text": "Royal Scottish National Orchestra, Neeme J\u00e4rvi",
+      "tidal_url": "https://tidal.com/album/376317101",
+      "gramophone_issue": null,
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 22
     },
     {
-      "id": "anton-bruckner-libera-me-work",
-      "work_group_id": "bruckner-libera-me-c-1843-group",
-      "composer_id": "anton-bruckner",
-      "title": "Libera me (c. 1843)",
-      "gem": false,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 72
+      "id": "sergei-prokofiev-boris-godunov-work-royal-scottish-national-orchestra-neeme-j\u00e4rvi",
+      "work_id": "sergei-prokofiev-boris-godunov-work",
+      "performer_text": "Royal Scottish National Orchestra, Neeme J\u00e4rvi",
+      "tidal_url": "https://tidal.com/album/377158952",
+      "gramophone_issue": null,
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 126
     },
     {
-      "id": "anton-bruckner-locus-iste-work",
-      "work_group_id": "bruckner-locus-iste-1869-group",
-      "composer_id": "anton-bruckner",
-      "title": "Locus iste (1869)",
-      "gem": false,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 74
+      "id": "sergei-prokofiev-divertissement-work-royal-scottish-national-orchestra-neeme-j\u00e4rvi",
+      "work_id": "sergei-prokofiev-divertissement-work",
+      "performer_text": "Royal Scottish National Orchestra, Neeme J\u00e4rvi",
+      "tidal_url": "https://tidal.com/album/376436518",
+      "gramophone_issue": null,
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 73
     },
     {
-      "id": "anton-bruckner-march-in-d-minor-work",
-      "work_group_id": "bruckner-march-in-d-minor-1862-group",
-      "composer_id": "anton-bruckner",
-      "title": "March in D minor (1862)",
-      "gem": false,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 12
-    },
-    {
-      "id": "anton-bruckner-os-justi-work",
-      "work_group_id": "bruckner-os-justi-1879-group",
-      "composer_id": "anton-bruckner",
-      "title": "Os justi (1879)",
-      "gem": false,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 76
-    },
-    {
-      "id": "anton-bruckner-overture-in-g-minor-2-work",
-      "work_group_id": "bruckner-overture-in-g-minor-1863-version-modified-coda-at-bars-233-288-group",
-      "composer_id": "anton-bruckner",
-      "title": "Overture in G minor (1863 version, modified coda at bars 233\u2013288)",
-      "gem": false,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "id": "sergei-prokofiev-dreams-work-royal-scottish-national-orchestra-neeme-j\u00e4rvi",
+      "work_id": "sergei-prokofiev-dreams-work",
+      "performer_text": "Royal Scottish National Orchestra, Neeme J\u00e4rvi",
+      "tidal_url": "https://tidal.com/album/377158952",
+      "gramophone_issue": null,
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
       "source_line": 18
     },
     {
-      "id": "anton-bruckner-overture-in-g-minor-work",
-      "work_group_id": "bruckner-overture-in-g-minor-1862-version-group",
-      "composer_id": "anton-bruckner",
-      "title": "Overture in G minor (1862 version)",
-      "gem": false,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 16
+      "id": "sergei-prokofiev-eugene-onegin-work-royal-scottish-national-orchestra-neeme-j\u00e4rvi",
+      "work_id": "sergei-prokofiev-eugene-onegin-work",
+      "performer_text": "Royal Scottish National Orchestra, Neeme J\u00e4rvi",
+      "tidal_url": "https://tidal.com/album/377158952",
+      "gramophone_issue": null,
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 128
     },
     {
-      "id": "anton-bruckner-pange-lingua-work",
-      "work_group_id": "bruckner-pange-lingua-1868-group",
-      "composer_id": "anton-bruckner",
-      "title": "Pange lingua (1868)",
-      "gem": false,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 80
+      "id": "sergei-prokofiev-flourish-mighty-land-work-ussr-state-so-valeri-polyansky",
+      "work_id": "sergei-prokofiev-flourish-mighty-land-work",
+      "performer_text": "USSR State SO, Valeri Polyansky",
+      "tidal_url": "https://tidal.com/browse/album/377109596",
+      "gramophone_issue": null,
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 196
     },
     {
-      "id": "anton-bruckner-salvum-fac-populum-tuum-work",
-      "work_group_id": "bruckner-salvum-fac-populum-tuum-1884-group",
-      "composer_id": "anton-bruckner",
-      "title": "Salvum fac populum tuum (1884)",
-      "gem": false,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 82
+      "id": "sergei-prokofiev-hamlet-work-ussr-state-so-valeri-polyansky",
+      "work_id": "sergei-prokofiev-hamlet-work",
+      "performer_text": "USSR State SO, Valeri Polyansky",
+      "tidal_url": "https://tidal.com/browse/album/377109596",
+      "gramophone_issue": null,
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 136
     },
     {
-      "id": "anton-bruckner-symphony-in-d-minor-die-nullte-work",
-      "work_group_id": "bruckner-symphony-in-d-minor-die-nullte-1869-group",
-      "composer_id": "anton-bruckner",
-      "title": "Symphony in D minor \"Die Nullte\" (1869)",
-      "gem": false,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 22
-    },
-    {
-      "id": "anton-bruckner-symphony-in-f-minor-work",
-      "work_group_id": "bruckner-symphony-in-f-minor-studiensymphonie-1863-group",
-      "composer_id": "anton-bruckner",
-      "title": "Symphony in F minor (Studiensymphonie, 1863)",
-      "gem": false,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 20
-    },
-    {
-      "id": "anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-2-work",
-      "work_group_id": "bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-1866-linz-version-revised-in-1877-1884-group",
-      "composer_id": "anton-bruckner",
-      "title": "Symphony No. 1 in C minor \"Das kecke Beserl\" (1866 \"Linz version\", revised in 1877/1884)",
-      "gem": false,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 26
-    },
-    {
-      "id": "anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-3-work",
-      "work_group_id": "bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-1891-vienna-version-group",
-      "composer_id": "anton-bruckner",
-      "title": "Symphony No. 1 in C minor \"Das kecke Beserl\" (1891 \"Vienna version\")",
-      "gem": false,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 28
-    },
-    {
-      "id": "anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-work",
-      "work_group_id": "bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-1865-first-concept-adagio-scherzo-group",
-      "composer_id": "anton-bruckner",
-      "title": "Symphony No. 1 in C minor \"Das kecke Beserl\" (1865, first concept Adagio & Scherzo)",
-      "gem": false,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 24
-    },
-    {
-      "id": "anton-bruckner-symphony-no-2-in-c-minor-2-work",
-      "work_group_id": "bruckner-symphony-no-2-in-c-minor-1877-version-revised-in-1892-group",
-      "composer_id": "anton-bruckner",
-      "title": "Symphony No. 2 in C minor (1877 version, revised in 1892)",
-      "gem": false,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 32
-    },
-    {
-      "id": "anton-bruckner-symphony-no-2-in-c-minor-work",
-      "work_group_id": "bruckner-symphony-no-2-in-c-minor-1872-version-with-scherzo-second-and-adagio-third-revised-in-1873-and-1876-group",
-      "composer_id": "anton-bruckner",
-      "title": "Symphony No. 2 in C minor (1872 version with Scherzo second and Adagio third, revised in 1873 and 1876)",
-      "gem": false,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 30
-    },
-    {
-      "id": "anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-2-work",
-      "work_group_id": "bruckner-symphony-no-3-in-d-minor-wagner-symphony-1876-version-revised-in-1877-1878-most-wagner-quotations-removed-coda-added-to-the-scherzo-group",
-      "composer_id": "anton-bruckner",
-      "title": "Symphony No. 3 in D minor \"Wagner Symphony\" (1876 version, revised in 1877\u20131878: most Wagner quotations removed, coda added to the Scherzo)",
-      "gem": false,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 36
-    },
-    {
-      "id": "anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-3-work",
-      "work_group_id": "bruckner-symphony-no-3-in-d-minor-wagner-symphony-1889-version-group",
-      "composer_id": "anton-bruckner",
-      "title": "Symphony No. 3 in D minor \"Wagner Symphony\" (1889 version)",
-      "gem": false,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 38
-    },
-    {
-      "id": "anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-work",
-      "work_group_id": "bruckner-symphony-no-3-in-d-minor-wagner-symphony-1873-version-revised-in-1874-group",
-      "composer_id": "anton-bruckner",
-      "title": "Symphony No. 3 in D minor \"Wagner Symphony\" (1873 version, revised in 1874)",
-      "gem": false,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 34
-    },
-    {
-      "id": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-2-work",
-      "work_group_id": "bruckner-symphony-no-4-in-e-major-die-romantische-1878-version-new-hunting-scherzo-and-volksfest-finale-group",
-      "composer_id": "anton-bruckner",
-      "title": "Symphony No. 4 in E\u266d major \"Die Romantische\" (1878 version: new \"Hunting\" Scherzo and \"Volksfest\" Finale)",
-      "gem": false,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 42
-    },
-    {
-      "id": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-3-work",
-      "work_group_id": "bruckner-symphony-no-4-in-e-major-die-romantische-1880-version-new-finale-group",
-      "composer_id": "anton-bruckner",
-      "title": "Symphony No. 4 in E\u266d major \"Die Romantische\" (1880 version: new Finale)",
-      "gem": false,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 44
-    },
-    {
-      "id": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-4-work",
-      "work_group_id": "bruckner-symphony-no-4-in-e-major-die-romantische-1888-version-with-piccolo-and-cymbals-group",
-      "composer_id": "anton-bruckner",
-      "title": "Symphony No. 4 in E\u266d major \"Die Romantische\" (1888 version: with piccolo and cymbals)",
-      "gem": false,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 46
-    },
-    {
-      "id": "anton-bruckner-symphony-no-6-in-a-major-work",
-      "work_group_id": "bruckner-symphony-no-6-in-a-major-1881-group",
-      "composer_id": "anton-bruckner",
-      "title": "Symphony No. 6 in A major (1881)",
-      "gem": true,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 52
-    },
-    {
-      "id": "anton-bruckner-symphony-no-8-in-c-minor-die-apokalyptische-3-work",
-      "work_group_id": "bruckner-symphony-no-8-in-c-minor-die-apokalyptische-1890-version-3rd-woodwind-in-first-three-movements-fewer-cymbal-clashes-in-adagio-harps-in-trio-group",
-      "composer_id": "anton-bruckner",
-      "title": "Symphony No. 8 in C minor \"Die Apokalyptische\" (1890 version: 3rd woodwind in first three movements, fewer cymbal clashes in Adagio, harps in Trio)",
-      "gem": false,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 62
-    },
-    {
-      "id": "anton-bruckner-symphony-no-8-in-c-minor-die-apokalyptische-work",
-      "work_group_id": "bruckner-symphony-no-8-in-c-minor-die-apokalyptische-1887-version-group",
-      "composer_id": "anton-bruckner",
-      "title": "Symphony No. 8 in C minor \"Die Apokalyptische\" (1887 version)",
-      "gem": false,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 58
-    },
-    {
-      "id": "anton-bruckner-symphony-no-9-in-d-minor-work",
-      "work_group_id": "bruckner-symphony-no-9-in-d-minor-1894-first-three-movements-1896-finale-unfinished-group",
-      "composer_id": "anton-bruckner",
-      "title": "Symphony No. 9 in D minor (1894 first three movements, 1896 finale unfinished)",
-      "gem": true,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 64
-    },
-    {
-      "id": "anton-bruckner-three-orchestral-pieces-work",
-      "work_group_id": "bruckner-three-orchestral-pieces-1862-group",
-      "composer_id": "anton-bruckner",
-      "title": "Three Orchestral Pieces (1862)",
-      "gem": false,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 14
-    },
-    {
-      "id": "anton-bruckner-tota-pulchra-es-work",
-      "work_group_id": "bruckner-tota-pulchra-es-1878-group",
-      "composer_id": "anton-bruckner",
-      "title": "Tota pulchra es (1878)",
-      "gem": false,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "id": "sergei-prokofiev-on-the-dnieper-work-wdr-sinfonieorchester-k\u00f6ln-michail-jurowski",
+      "work_id": "sergei-prokofiev-on-the-dnieper-work",
+      "performer_text": "WDR Sinfonieorchester K\u00f6ln, Michail Jurowski",
+      "tidal_url": "https://tidal.com/browse/album/284169959",
+      "gramophone_issue": null,
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
       "source_line": 90
     },
     {
-      "id": "anton-bruckner-vexilla-regis-work",
-      "work_group_id": "bruckner-vexilla-regis-1892-group",
-      "composer_id": "anton-bruckner",
-      "title": "Vexilla regis (1892)",
-      "gem": false,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "id": "sergei-prokofiev-peter-and-the-wolf-work-new-london-orchestra-ronald-corp",
+      "work_id": "sergei-prokofiev-peter-and-the-wolf-work",
+      "performer_text": "New London Orchestra, Ronald Corp",
+      "tidal_url": "https://tidal.com/browse/album/340800600",
+      "gramophone_issue": null,
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 120
+    },
+    {
+      "id": "sergei-prokofiev-piano-concerto-no-1-in-d-flat-work-jean-efflam-bavouzet-bbc-po-gianandrea-noseda",
+      "work_id": "sergei-prokofiev-piano-concerto-no-1-in-d-flat-work",
+      "performer_text": "Jean-Efflam Bavouzet, BBC PO, Gianandrea Noseda",
+      "tidal_url": "https://tidal.com/album/376307111",
+      "gramophone_issue": null,
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 26
+    },
+    {
+      "id": "sergei-prokofiev-piano-concerto-no-2-in-g-minor-work-jean-efflam-bavouzet-bbc-po-gianandrea-noseda",
+      "work_id": "sergei-prokofiev-piano-concerto-no-2-in-g-minor-work",
+      "performer_text": "Jean-Efflam Bavouzet, BBC PO, Gianandrea Noseda",
+      "tidal_url": "https://tidal.com/album/376307111",
+      "gramophone_issue": null,
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 28
+    },
+    {
+      "id": "sergei-prokofiev-piano-concerto-no-3-in-c-work-jean-efflam-bavouzet-bbc-po-gianandrea-noseda",
+      "work_id": "sergei-prokofiev-piano-concerto-no-3-in-c-work",
+      "performer_text": "Jean-Efflam Bavouzet, BBC PO, Gianandrea Noseda",
+      "tidal_url": "https://tidal.com/album/376307111",
+      "gramophone_issue": null,
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 43
+    },
+    {
+      "id": "sergei-prokofiev-piano-concerto-no-4-in-b-flat-work-jean-efflam-bavouzet-bbc-po-gianandrea-noseda",
+      "work_id": "sergei-prokofiev-piano-concerto-no-4-in-b-flat-work",
+      "performer_text": "Jean-Efflam Bavouzet, BBC PO, Gianandrea Noseda",
+      "tidal_url": "https://tidal.com/album/376307111",
+      "gramophone_issue": null,
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
       "source_line": 94
     },
     {
-      "id": "anton-bruckner-virga-jesse-work",
-      "work_group_id": "bruckner-virga-jesse-1885-group",
-      "composer_id": "anton-bruckner",
-      "title": "Virga Jesse (1885)",
-      "gem": false,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 92
-    },
-    {
-      "id": "bruckner-symphony-no-4-in-e-major-die-romantische-1874-1876-version-work",
-      "work_group_id": "bruckner-symphony-no-4-in-e-major-die-romantische-1874-1876-version-group",
-      "composer_id": "anton-bruckner",
-      "title": "Symphony No. 4 in E\u266d major \"Die Romantische\" (1874\u20131876 version)",
-      "gem": false,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 40
-    },
-    {
-      "id": "bruckner-symphony-no-5-in-b-major-1876-first-concept-work",
-      "work_group_id": "bruckner-symphony-no-5-in-b-major-1876-first-concept-group",
-      "composer_id": "anton-bruckner",
-      "title": "Symphony No. 5 in B\u266d major (1876 first concept)",
-      "gem": false,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 48
-    },
-    {
-      "id": "bruckner-symphony-no-5-in-b-major-revised-in-1878-work",
-      "work_group_id": "bruckner-symphony-no-5-in-b-major-revised-in-1878-group",
-      "composer_id": "anton-bruckner",
-      "title": "Symphony No. 5 in B\u266d major (revised in 1878)",
-      "gem": true,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 50
-    },
-    {
-      "id": "bruckner-symphony-no-7-in-e-major-1883-first-concept-work",
-      "work_group_id": "bruckner-symphony-no-7-in-e-major-1883-first-concept-group",
-      "composer_id": "anton-bruckner",
-      "title": "Symphony No. 7 in E major (1883 first concept)",
-      "gem": false,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 54
-    },
-    {
-      "id": "bruckner-symphony-no-7-in-e-major-revised-in-1885-work",
-      "work_group_id": "bruckner-symphony-no-7-in-e-major-revised-in-1885-group",
-      "composer_id": "anton-bruckner",
-      "title": "Symphony No. 7 in E major (revised in 1885)",
-      "gem": false,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 56
-    },
-    {
-      "id": "bruckner-symphony-no-8-in-c-minor-die-apokalyptische-1888-adagio-work",
-      "work_group_id": "bruckner-symphony-no-8-in-c-minor-die-apokalyptische-1888-adagio-group",
-      "composer_id": "anton-bruckner",
-      "title": "Symphony No. 8 in C minor \"Die Apokalyptische\" (1888 Adagio)",
-      "gem": false,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 60
-    },
-    {
-      "id": "bruckner-tantum-ergo-1846-1888-work",
-      "work_group_id": "bruckner-tantum-ergo-1846-1888-group",
-      "composer_id": "anton-bruckner",
-      "title": "Tantum ergo (1846/1888)",
-      "gem": false,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 86
-    },
-    {
-      "id": "bruckner-tantum-ergo-c-1845-work",
-      "work_group_id": "bruckner-tantum-ergo-c-1845-group",
-      "composer_id": "anton-bruckner",
-      "title": "Tantum ergo (c. 1845)",
-      "gem": false,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 78
-    }
-  ],
-  "performances": [
-    {
-      "id": "anton-bruckner-4-tantum-ergo-work-latvian-radio-choir-sigvards-klava",
-      "work_id": "anton-bruckner-4-tantum-ergo-work",
-      "performer_text": "Latvian Radio Choir, Sigvards Klava",
-      "tidal_url": "https://tidal.com/browse/track/284019399?u",
+      "id": "sergei-prokofiev-piano-concerto-no-5-in-g-work-jean-efflam-bavouzet-bbc-po-gianandrea-noseda",
+      "work_id": "sergei-prokofiev-piano-concerto-no-5-in-g-work",
+      "performer_text": "Jean-Efflam Bavouzet, BBC PO, Gianandrea Noseda",
+      "tidal_url": "https://tidal.com/album/376307111",
       "gramophone_issue": null,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 84
-    },
-    {
-      "id": "anton-bruckner-ave-maria-work-latvian-radio-choir-sigvards-klava",
-      "work_id": "anton-bruckner-ave-maria-work",
-      "performer_text": "Latvian Radio Choir, Sigvards Klava",
-      "tidal_url": "https://tidal.com/browse/track/284019406?u",
-      "gramophone_issue": null,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 68
-    },
-    {
-      "id": "anton-bruckner-christus-factus-est-work-latvian-radio-choir-sigvards-klava",
-      "work_id": "anton-bruckner-christus-factus-est-work",
-      "performer_text": "Latvian Radio Choir, Sigvards Klava",
-      "tidal_url": "https://tidal.com/browse/track/284019401?u",
-      "gramophone_issue": null,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 70
-    },
-    {
-      "id": "anton-bruckner-kronstorfer-messe-in-d-minor-work-latvian-radio-choir-sigvards-klava",
-      "work_id": "anton-bruckner-kronstorfer-messe-in-d-minor-work",
-      "performer_text": "Latvian Radio Choir, Sigvards Klava",
-      "tidal_url": "https://tidal.com/browse/track/284019398?u",
-      "gramophone_issue": null,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
       "source_line": 96
     },
     {
-      "id": "anton-bruckner-libera-me-work-latvian-radio-choir-sigvards-klava",
-      "work_id": "anton-bruckner-libera-me-work",
-      "performer_text": "Latvian Radio Choir, Sigvards Klava",
-      "tidal_url": "https://tidal.com/browse/track/284019407?u",
+      "id": "sergei-prokofiev-pushkin-waltzes-work-royal-scottish-national-orchestra-neeme-j\u00e4rvi",
+      "work_id": "sergei-prokofiev-pushkin-waltzes-work",
+      "performer_text": "Royal Scottish National Orchestra, Neeme J\u00e4rvi",
+      "tidal_url": "https://tidal.com/album/377158952",
       "gramophone_issue": null,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 72
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 206
     },
     {
-      "id": "anton-bruckner-locus-iste-work-latvian-radio-choir-sigvards-klava",
-      "work_id": "anton-bruckner-locus-iste-work",
-      "performer_text": "Latvian Radio Choir, Sigvards Klava",
-      "tidal_url": "https://tidal.com/browse/track/284019403?u",
+      "id": "sergei-prokofiev-romeo-and-juliet-work-lso-valery-gergiev",
+      "work_id": "sergei-prokofiev-romeo-and-juliet-work",
+      "performer_text": "LSO, Valery Gergiev",
+      "tidal_url": "https://tidal.com/album/89297520",
       "gramophone_issue": null,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 74
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 112
     },
     {
-      "id": "anton-bruckner-os-justi-work-latvian-radio-choir-sigvards-klava",
-      "work_id": "anton-bruckner-os-justi-work",
-      "performer_text": "Latvian Radio Choir, Sigvards Klava",
-      "tidal_url": "https://tidal.com/browse/track/284019400?u",
+      "id": "sergei-prokofiev-russian-overture-work-philharmonia-orchestra-neeme-j\u00e4rvi",
+      "work_id": "sergei-prokofiev-russian-overture-work",
+      "performer_text": "Philharmonia Orchestra, Neeme J\u00e4rvi",
+      "tidal_url": "https://tidal.com/album/376440234",
       "gramophone_issue": null,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 76
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 130
     },
     {
-      "id": "anton-bruckner-pange-lingua-work-latvian-radio-choir-sigvards-klava",
-      "work_id": "anton-bruckner-pange-lingua-work",
-      "performer_text": "Latvian Radio Choir, Sigvards Klava",
-      "tidal_url": "https://tidal.com/browse/track/284019412?u",
+      "id": "sergei-prokofiev-scythian-suite-work-royal-scottish-national-orchestra-neeme-j\u00e4rvi",
+      "work_id": "sergei-prokofiev-scythian-suite-work",
+      "performer_text": "Royal Scottish National Orchestra, Neeme J\u00e4rvi",
+      "tidal_url": "https://tidal.com/album/376435085",
       "gramophone_issue": null,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 80
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 35
     },
     {
-      "id": "anton-bruckner-salvum-fac-populum-tuum-work-latvian-radio-choir-sigvards-klava",
-      "work_id": "anton-bruckner-salvum-fac-populum-tuum-work",
-      "performer_text": "Latvian Radio Choir, Sigvards Klava",
-      "tidal_url": "https://tidal.com/browse/track/284019413?u",
+      "id": "sergei-prokofiev-suite-from-chout-work-royal-scottish-national-orchestra-neeme-j\u00e4rvi",
+      "work_id": "sergei-prokofiev-suite-from-chout-work",
+      "performer_text": "Royal Scottish National Orchestra, Neeme J\u00e4rvi",
+      "tidal_url": "https://tidal.com/album/376276191",
       "gramophone_issue": null,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 82
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 39
     },
     {
-      "id": "anton-bruckner-symphony-in-d-minor-die-nullte-work-bruckner-orchester-linz-markus-poschner",
-      "work_id": "anton-bruckner-symphony-in-d-minor-die-nullte-work",
-      "performer_text": "Bruckner Orchester Linz, Markus Poschner",
-      "tidal_url": "https://tidal.com/browse/track/384348586?u",
+      "id": "sergei-prokofiev-suite-from-egyptian-nights-work-ussr-state-so-valeri-polyansky",
+      "work_id": "sergei-prokofiev-suite-from-egyptian-nights-work",
+      "performer_text": "USSR State SO, Valeri Polyansky",
+      "tidal_url": "https://tidal.com/browse/album/377109596",
       "gramophone_issue": null,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 22
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 108
     },
     {
-      "id": "anton-bruckner-symphony-in-f-minor-work-bruckner-orchester-linz-markus-poschner",
-      "work_id": "anton-bruckner-symphony-in-f-minor-work",
-      "performer_text": "Bruckner Orchester Linz, Markus Poschner",
-      "tidal_url": "https://tidal.com/browse/track/384348582?u",
+      "id": "sergei-prokofiev-suite-from-le-pas-d-acier-work-royal-scottish-national-orchestra-neeme-j\u00e4rvi",
+      "work_id": "sergei-prokofiev-suite-from-le-pas-d-acier-work",
+      "performer_text": "Royal Scottish National Orchestra, Neeme J\u00e4rvi",
+      "tidal_url": "https://tidal.com/album/376435085",
       "gramophone_issue": null,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 20
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 67
     },
     {
-      "id": "anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-2-work-bruckner-orchester-linz-markus-poschner",
-      "work_id": "anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-2-work",
-      "performer_text": "Bruckner Orchester Linz, Markus Poschner",
-      "tidal_url": "https://tidal.com/browse/track/384348590?u",
+      "id": "sergei-prokofiev-suite-from-lieutenant-kije-work-royal-scottish-national-orchestra-neeme-j\u00e4rvi",
+      "work_id": "sergei-prokofiev-suite-from-lieutenant-kije-work",
+      "performer_text": "Royal Scottish National Orchestra, Neeme J\u00e4rvi",
+      "tidal_url": "https://tidal.com/album/376317101",
       "gramophone_issue": null,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 26
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 106
     },
     {
-      "id": "anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-3-work-bruckner-orchester-linz-markus-poschner",
-      "work_id": "anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-3-work",
-      "performer_text": "Bruckner Orchester Linz, Markus Poschner",
-      "tidal_url": "https://tidal.com/browse/track/384348594?u",
-      "gramophone_issue": "2024-06",
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 28
+      "id": "sergei-prokofiev-suite-from-semyon-kotko-work-royal-scottish-national-orchestra-neeme-j\u00e4rvi",
+      "work_id": "sergei-prokofiev-suite-from-semyon-kotko-work",
+      "performer_text": "Royal Scottish National Orchestra, Neeme J\u00e4rvi",
+      "tidal_url": "https://tidal.com/browse/album/376375444",
+      "gramophone_issue": null,
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 154
     },
     {
-      "id": "anton-bruckner-symphony-no-2-in-c-minor-2-work-bruckner-orchester-linz-markus-poschner",
-      "work_id": "anton-bruckner-symphony-no-2-in-c-minor-2-work",
-      "performer_text": "Bruckner Orchester Linz, Markus Poschner",
-      "tidal_url": "https://tidal.com/browse/track/384348603?u",
-      "gramophone_issue": "2024-01",
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 32
+      "id": "sergei-prokofiev-suite-from-the-prodigal-son-work-royal-scottish-national-orchestra-neeme-j\u00e4rvi",
+      "work_id": "sergei-prokofiev-suite-from-the-prodigal-son-work",
+      "performer_text": "Royal Scottish National Orchestra, Neeme J\u00e4rvi",
+      "tidal_url": "https://tidal.com/album/376436518",
+      "gramophone_issue": null,
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 79
     },
     {
-      "id": "anton-bruckner-symphony-no-2-in-c-minor-work-orf-vienna-rso-markus-poschner",
-      "work_id": "anton-bruckner-symphony-no-2-in-c-minor-work",
-      "performer_text": "ORF Vienna RSO, Markus Poschner",
-      "tidal_url": "https://tidal.com/browse/track/384348599?u",
-      "gramophone_issue": "2024-04",
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "id": "sergei-prokofiev-summer-day-work-new-london-orchestra-ronald-corp",
+      "work_id": "sergei-prokofiev-summer-day-work",
+      "performer_text": "New London Orchestra, Ronald Corp",
+      "tidal_url": "https://tidal.com/browse/album/340800600",
+      "gramophone_issue": null,
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 118
+    },
+    {
+      "id": "sergei-prokofiev-summer-night-suite-from-betrothal-in-a-monastery-work-philharmonia-orchestra-neeme-j\u00e4rvi",
+      "work_id": "sergei-prokofiev-summer-night-suite-from-betrothal-in-a-monastery-work",
+      "performer_text": "Philharmonia Orchestra, Neeme J\u00e4rvi",
+      "tidal_url": "https://tidal.com/album/376440234",
+      "gramophone_issue": null,
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 210
+    },
+    {
+      "id": "sergei-prokofiev-symphonic-song-work-royal-scottish-national-orchestra-neeme-j\u00e4rvi",
+      "work_id": "sergei-prokofiev-symphonic-song-work",
+      "performer_text": "Royal Scottish National Orchestra, Neeme J\u00e4rvi",
+      "tidal_url": "https://tidal.com/album/376436518",
+      "gramophone_issue": null,
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 98
+    },
+    {
+      "id": "sergei-prokofiev-symphony-concerto-for-cello-and-orchestra-in-e-minor-work-christian-polt\u00e9ra-lahti-so-anja-bihlmaier",
+      "work_id": "sergei-prokofiev-symphony-concerto-for-cello-and-orchestra-in-e-minor-work",
+      "performer_text": "Christian Polt\u00e9ra, Lahti SO, Anja Bihlmaier",
+      "tidal_url": "https://tidal.com/album/364535071/",
+      "gramophone_issue": "2024-07",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 214
+    },
+    {
+      "id": "sergei-prokofiev-symphony-no-1-in-d-classical-work-g\u00fcrzenich-orchester-k\u00f6ln-dmitri-kitayenko",
+      "work_id": "sergei-prokofiev-symphony-no-1-in-d-classical-work",
+      "performer_text": "G\u00fcrzenich-Orchester K\u00f6ln, Dmitri Kitayenko",
+      "tidal_url": "https://tidal.com/album/285264999",
+      "gramophone_issue": null,
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 41
+    },
+    {
+      "id": "sergei-prokofiev-symphony-no-2-in-d-minor-work-g\u00fcrzenich-orchester-k\u00f6ln-dmitri-kitayenko",
+      "work_id": "sergei-prokofiev-symphony-no-2-in-d-minor-work",
+      "performer_text": "G\u00fcrzenich-Orchester K\u00f6ln, Dmitri Kitayenko",
+      "tidal_url": "https://tidal.com/album/285264999",
+      "gramophone_issue": null,
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 63
+    },
+    {
+      "id": "sergei-prokofiev-symphony-no-3-in-c-minor-work-g\u00fcrzenich-orchester-k\u00f6ln-dmitri-kitayenko",
+      "work_id": "sergei-prokofiev-symphony-no-3-in-c-minor-work",
+      "performer_text": "G\u00fcrzenich-Orchester K\u00f6ln, Dmitri Kitayenko",
+      "tidal_url": "https://tidal.com/album/285264999",
+      "gramophone_issue": null,
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 75
+    },
+    {
+      "id": "sergei-prokofiev-symphony-no-5-in-b-flat-work-g\u00fcrzenich-orchester-k\u00f6ln-dmitri-kitayenko",
+      "work_id": "sergei-prokofiev-symphony-no-5-in-b-flat-work",
+      "performer_text": "G\u00fcrzenich-Orchester K\u00f6ln, Dmitri Kitayenko",
+      "tidal_url": "https://tidal.com/album/285264999",
+      "gramophone_issue": null,
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 172
+    },
+    {
+      "id": "sergei-prokofiev-symphony-no-6-in-e-flat-minor-work-g\u00fcrzenich-orchester-k\u00f6ln-dmitri-kitayenko",
+      "work_id": "sergei-prokofiev-symphony-no-6-in-e-flat-minor-work",
+      "performer_text": "G\u00fcrzenich-Orchester K\u00f6ln, Dmitri Kitayenko",
+      "tidal_url": "https://tidal.com/album/285264999",
+      "gramophone_issue": null,
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 190
+    },
+    {
+      "id": "sergei-prokofiev-symphony-no-7-in-c-sharp-minor-work-g\u00fcrzenich-orchester-k\u00f6ln-dmitri-kitayenko",
+      "work_id": "sergei-prokofiev-symphony-no-7-in-c-sharp-minor-work",
+      "performer_text": "G\u00fcrzenich-Orchester K\u00f6ln, Dmitri Kitayenko",
+      "tidal_url": "https://tidal.com/album/285264999",
+      "gramophone_issue": null,
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 229
+    },
+    {
+      "id": "sergei-prokofiev-tale-of-the-stone-flower-work-royal-scottish-national-orchestra-neeme-j\u00e4rvi",
+      "work_id": "sergei-prokofiev-tale-of-the-stone-flower-work",
+      "performer_text": "Royal Scottish National Orchestra, Neeme J\u00e4rvi",
+      "tidal_url": "https://tidal.com/album/376317101",
+      "gramophone_issue": null,
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 202
+    },
+    {
+      "id": "sergei-prokofiev-the-ugly-duckling-work-new-london-orchestra-ronald-corp",
+      "work_id": "sergei-prokofiev-the-ugly-duckling-work",
+      "performer_text": "New London Orchestra, Ronald Corp",
+      "tidal_url": "https://tidal.com/browse/album/340800600",
+      "gramophone_issue": null,
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
       "source_line": 30
     },
     {
-      "id": "anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-2-work-orf-vienna-rso-markus-poschner",
-      "work_id": "anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-2-work",
-      "performer_text": "ORF Vienna RSO, Markus Poschner",
-      "tidal_url": "https://tidal.com/browse/track/384348611?u",
+      "id": "sergei-prokofiev-two-poems-for-female-chorus-and-orchestra-work-bournemouth-symphony-orchestra-kirill-karabits",
+      "work_id": "sergei-prokofiev-two-poems-for-female-chorus-and-orchestra-work",
+      "performer_text": "Bournemouth Symphony Orchestra, Kirill Karabits",
+      "tidal_url": "https://tidal.com/album/51997314",
       "gramophone_issue": null,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 36
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 20
     },
     {
-      "id": "anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-3-work-bruckner-orchester-linz-markus-poschner",
-      "work_id": "anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-3-work",
-      "performer_text": "Bruckner Orchester Linz, Markus Poschner",
-      "tidal_url": "https://tidal.com/browse/track/384348616?u",
-      "gramophone_issue": "2024-04",
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 38
-    },
-    {
-      "id": "anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-work-orf-vienna-rso-markus-poschner",
-      "work_id": "anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-work",
-      "performer_text": "ORF Vienna RSO, Markus Poschner",
-      "tidal_url": "https://tidal.com/browse/track/384348607?u",
+      "id": "sergei-prokofiev-violin-concerto-no-1-in-d-work-janine-jansen-oslo-po-klaus-m\u00e4kel\u00e4",
+      "work_id": "sergei-prokofiev-violin-concerto-no-1-in-d-work",
+      "performer_text": "Janine Jansen, Oslo PO, Klaus M\u00e4kel\u00e4",
+      "tidal_url": "https://tidal.com/album/366555415",
       "gramophone_issue": null,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 34
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 32
     },
     {
-      "id": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-2-work-bruckner-orchester-linz-markus-poschner",
-      "work_id": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-2-work",
-      "performer_text": "Bruckner Orchester Linz, Markus Poschner",
-      "tidal_url": "https://tidal.com/browse/track/384348624?u",
+      "id": "sergei-prokofiev-violin-concerto-no-2-in-g-minor-work-lisa-batiashvili-chamber-orchestra-of-europe-yannick-n\u00e9zet-s\u00e9guin",
+      "work_id": "sergei-prokofiev-violin-concerto-no-2-in-g-minor-work",
+      "performer_text": "Lisa Batiashvili, Chamber Orchestra of Europe, Yannick N\u00e9zet-S\u00e9guin",
+      "tidal_url": "https://tidal.com/album/84165949",
       "gramophone_issue": null,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 42
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 110
     },
     {
-      "id": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-3-work-orf-vienna-rso-markus-poschner",
-      "work_id": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-3-work",
-      "performer_text": "ORF Vienna RSO, Markus Poschner",
-      "tidal_url": "https://tidal.com/browse/track/384348628?u",
+      "id": "sergei-prokofiev-waltz-suite-work-royal-scottish-national-orchestra-neeme-j\u00e4rvi",
+      "work_id": "sergei-prokofiev-waltz-suite-work",
+      "performer_text": "Royal Scottish National Orchestra, Neeme J\u00e4rvi",
+      "tidal_url": "https://tidal.com/album/376251584",
       "gramophone_issue": null,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 44
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 188
     },
     {
-      "id": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-4-work-orf-vienna-rso-markus-poschner",
-      "work_id": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-4-work",
-      "performer_text": "ORF Vienna RSO, Markus Poschner",
-      "tidal_url": "https://tidal.com/browse/track/384348629?u",
-      "gramophone_issue": "2023-08",
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 46
-    },
-    {
-      "id": "anton-bruckner-symphony-no-6-in-a-major-work-bruckner-orchester-linz-markus-poschner",
-      "work_id": "anton-bruckner-symphony-no-6-in-a-major-work",
-      "performer_text": "Bruckner Orchester Linz, Markus Poschner",
-      "tidal_url": "https://tidal.com/browse/track/384348637?u",
-      "gramophone_issue": "2021-11",
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 52
-    },
-    {
-      "id": "anton-bruckner-symphony-no-8-in-c-minor-die-apokalyptische-3-work-bruckner-orchester-linz-markus-poschner",
-      "work_id": "anton-bruckner-symphony-no-8-in-c-minor-die-apokalyptische-3-work",
-      "performer_text": "Bruckner Orchester Linz, Markus Poschner",
-      "tidal_url": "https://tidal.com/browse/track/384348649?u",
-      "gramophone_issue": "2022-01",
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 62
-    },
-    {
-      "id": "anton-bruckner-symphony-no-8-in-c-minor-die-apokalyptische-work-bruckner-orchester-linz-markus-poschner",
-      "work_id": "anton-bruckner-symphony-no-8-in-c-minor-die-apokalyptische-work",
-      "performer_text": "Bruckner Orchester Linz, Markus Poschner",
-      "tidal_url": "https://tidal.com/browse/track/384348645?u",
-      "gramophone_issue": "2023-04",
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 58
-    },
-    {
-      "id": "anton-bruckner-symphony-no-9-in-d-minor-work-bruckner-orchester-linz-markus-poschner",
-      "work_id": "anton-bruckner-symphony-no-9-in-d-minor-work",
-      "performer_text": "Bruckner Orchester Linz, Markus Poschner",
-      "tidal_url": "https://tidal.com/browse/track/384348653?u",
+      "id": "sergei-prokofiev-war-and-peace-suite-work-philharmonia-orchestra-neeme-j\u00e4rvi",
+      "work_id": "sergei-prokofiev-war-and-peace-suite-work",
+      "performer_text": "Philharmonia Orchestra, Neeme J\u00e4rvi",
+      "tidal_url": "https://tidal.com/album/376440234",
       "gramophone_issue": null,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 64
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 166
     },
     {
-      "id": "anton-bruckner-tota-pulchra-es-work-latvian-radio-choir-sigvards-klava",
-      "work_id": "anton-bruckner-tota-pulchra-es-work",
-      "performer_text": "Latvian Radio Choir, Sigvards Klava",
-      "tidal_url": "https://tidal.com/browse/track/284019414?u",
+      "id": "sergei-prokofiev-wedding-suite-from-the-tale-of-the-stone-flower-work-royal-scottish-national-orchestra-neeme-j\u00e4rvi",
+      "work_id": "sergei-prokofiev-wedding-suite-from-the-tale-of-the-stone-flower-work",
+      "performer_text": "Royal Scottish National Orchestra, Neeme J\u00e4rvi",
+      "tidal_url": "https://tidal.com/album/376317101",
       "gramophone_issue": null,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 90
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 216
     },
     {
-      "id": "anton-bruckner-vexilla-regis-work-latvian-radio-choir-sigvards-klava",
-      "work_id": "anton-bruckner-vexilla-regis-work",
-      "performer_text": "Latvian Radio Choir, Sigvards Klava",
-      "tidal_url": "https://tidal.com/browse/track/284019415?u",
+      "id": "sergei-prokofiev-winter-bonfire-work-new-london-orchestra-ronald-corp",
+      "work_id": "sergei-prokofiev-winter-bonfire-work",
+      "performer_text": "New London Orchestra, Ronald Corp",
+      "tidal_url": "https://tidal.com/browse/album/340800600",
       "gramophone_issue": null,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 94
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 208
     },
     {
-      "id": "anton-bruckner-virga-jesse-work-latvian-radio-choir-sigvards-klava",
-      "work_id": "anton-bruckner-virga-jesse-work",
-      "performer_text": "Latvian Radio Choir, Sigvards Klava",
-      "tidal_url": "https://tidal.com/browse/track/284019411?u",
+      "id": "sergei-prokofiev-zdravitsa-work-ussr-state-so-valeri-polyansky",
+      "work_id": "sergei-prokofiev-zdravitsa-work",
+      "performer_text": "USSR State SO, Valeri Polyansky",
+      "tidal_url": "https://tidal.com/browse/album/377109596",
       "gramophone_issue": null,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 92
-    },
-    {
-      "id": "bruckner-symphony-no-4-in-e-major-die-romantische-1874-1876-version-work-orf-vienna-rso-markus-poschner",
-      "work_id": "bruckner-symphony-no-4-in-e-major-die-romantische-1874-1876-version-work",
-      "performer_text": "ORF Vienna RSO, Markus Poschner",
-      "tidal_url": "https://tidal.com/browse/track/384348620?u",
-      "gramophone_issue": "2023-02",
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 40
-    },
-    {
-      "id": "bruckner-symphony-no-5-in-b-major-revised-in-1878-work-orf-vienna-rso-markus-poschner",
-      "work_id": "bruckner-symphony-no-5-in-b-major-revised-in-1878-work",
-      "performer_text": "ORF Vienna RSO, Markus Poschner",
-      "tidal_url": "https://tidal.com/browse/track/384348633?u",
-      "gramophone_issue": "2024-01",
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 50
-    },
-    {
-      "id": "bruckner-symphony-no-7-in-e-major-revised-in-1885-work-orf-vienna-rso-markus-poschner",
-      "work_id": "bruckner-symphony-no-7-in-e-major-revised-in-1885-work",
-      "performer_text": "ORF Vienna RSO, Markus Poschner",
-      "tidal_url": "https://tidal.com/browse/track/384348641?u",
-      "gramophone_issue": "2024-06",
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 56
-    },
-    {
-      "id": "bruckner-tantum-ergo-1846-1888-work-latvian-radio-choir-sigvards-klava",
-      "work_id": "bruckner-tantum-ergo-1846-1888-work",
-      "performer_text": "Latvian Radio Choir, Sigvards Klava",
-      "tidal_url": "https://tidal.com/browse/track/284019409?u",
-      "gramophone_issue": null,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 86
-    },
-    {
-      "id": "bruckner-tantum-ergo-c-1845-work-latvian-radio-choir-sigvards-klava",
-      "work_id": "bruckner-tantum-ergo-c-1845-work",
-      "performer_text": "Latvian Radio Choir, Sigvards Klava",
-      "tidal_url": "https://tidal.com/browse/track/284019408?u",
-      "gramophone_issue": null,
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 78
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 156
     }
   ],
   "review_items": [
     {
-      "source_id": "bruckner:12",
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_id": "prokofiev:12",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
       "source_line": 12,
-      "work_text": "March in D minor (1862)",
+      "work_text": "Symphonies (1902)",
       "identity_result": {
-        "status": "matched",
-        "matched_work_id": "anton-bruckner-march-in-d-minor-work",
-        "candidates_count": 1,
+        "status": "unresolved",
+        "matched_work_id": null,
+        "candidates_count": 0,
         "evidence_used": [
-          "version: (1862)",
-          "exact_single_candidate"
+          "version: (1902)"
         ],
-        "rationale": "Single canonical Work matches: anton-bruckner-march-in-d-minor-work",
-        "requires_curator_action": false
+        "rationale": "No candidate Works found; cannot resolve identity without positive evidence for new Work",
+        "requires_curator_action": true
       }
     },
     {
-      "source_id": "bruckner:14",
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_id": "prokofiev:14",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
       "source_line": 14,
-      "work_text": "Three Orchestral Pieces (1862)",
+      "work_text": "Ala i Lolli (1915, abandoned and rewritten as the Scythian Suite)",
       "identity_result": {
         "status": "matched",
-        "matched_work_id": "anton-bruckner-three-orchestral-pieces-work",
+        "matched_work_id": "sergei-prokofiev-ala-i-lolli-work",
         "candidates_count": 1,
         "evidence_used": [
-          "version: (1862)",
-          "exact_single_candidate"
+          "version: (1915,",
+          "version_evidence_positive"
         ],
-        "rationale": "Single canonical Work matches: anton-bruckner-three-orchestral-pieces-work",
+        "rationale": "Single candidate with positive evidence for version 1915",
         "requires_curator_action": false
       }
     },
     {
-      "source_id": "bruckner:16",
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_id": "prokofiev:16",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
       "source_line": 16,
-      "work_text": "Overture in G minor (1862 version)",
+      "work_text": "Sinfonietta in A (original version) (1909)",
       "identity_result": {
-        "status": "matched",
-        "matched_work_id": "anton-bruckner-overture-in-g-minor-work",
-        "candidates_count": 2,
+        "status": "unresolved",
+        "matched_work_id": null,
+        "candidates_count": 0,
         "evidence_used": [
-          "version: (1862 version)",
-          "version_disambiguation"
+          "version: (1909)"
         ],
-        "rationale": "Used version evidence to select from 2 candidates",
-        "requires_curator_action": false
+        "rationale": "No candidate Works found; cannot resolve identity without positive evidence for new Work",
+        "requires_curator_action": true
       }
     },
     {
-      "source_id": "bruckner:18",
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_id": "prokofiev:18",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
       "source_line": 18,
-      "work_text": "Overture in G minor (1863 version, modified coda at bars 233\u2013288)",
+      "work_text": "Dreams (1910)",
       "identity_result": {
         "status": "matched",
-        "matched_work_id": "anton-bruckner-overture-in-g-minor-2-work",
-        "candidates_count": 2,
+        "matched_work_id": "sergei-prokofiev-dreams-work",
+        "candidates_count": 1,
         "evidence_used": [
-          "version: (1863 version, modified coda at bars 233\u2013288)",
-          "version_disambiguation"
+          "version: (1910)",
+          "version_evidence_positive"
         ],
-        "rationale": "Used version evidence to select from 2 candidates",
+        "rationale": "Single candidate with positive evidence for version 1910",
         "requires_curator_action": false
       }
     },
     {
-      "source_id": "bruckner:20",
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_id": "prokofiev:20",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
       "source_line": 20,
-      "work_text": "Symphony in F minor (Studiensymphonie, 1863)",
+      "work_text": "Two Poems for Female Chorus and Orchestra (1909\u201310)",
       "identity_result": {
         "status": "matched",
-        "matched_work_id": "anton-bruckner-symphony-in-f-minor-work",
+        "matched_work_id": "sergei-prokofiev-two-poems-for-female-chorus-and-orchestra-work",
         "candidates_count": 1,
         "evidence_used": [
           "exact_single_candidate"
         ],
-        "rationale": "Single canonical Work matches: anton-bruckner-symphony-in-f-minor-work",
+        "rationale": "Single canonical Work matches: sergei-prokofiev-two-poems-for-female-chorus-and-orchestra-work",
         "requires_curator_action": false
       }
     },
     {
-      "source_id": "bruckner:22",
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_id": "prokofiev:22",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
       "source_line": 22,
-      "work_text": "Symphony in D minor \"Die Nullte\" (1869)",
+      "work_text": "Autumnal (1910)",
       "identity_result": {
         "status": "matched",
-        "matched_work_id": "anton-bruckner-symphony-in-d-minor-die-nullte-work",
+        "matched_work_id": "sergei-prokofiev-autumnal-work",
         "candidates_count": 1,
         "evidence_used": [
-          "version: (1869)",
-          "exact_single_candidate"
+          "version: (1910)",
+          "version_evidence_positive"
         ],
-        "rationale": "Single canonical Work matches: anton-bruckner-symphony-in-d-minor-die-nullte-work",
+        "rationale": "Single candidate with positive evidence for version 1910",
         "requires_curator_action": false
       }
     },
     {
-      "source_id": "bruckner:24",
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 24,
-      "work_text": "Symphony No. 1 in C minor \"Das kecke Beserl\" (1865, first concept Adagio & Scherzo)",
-      "identity_result": {
-        "status": "matched",
-        "matched_work_id": "anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-work",
-        "candidates_count": 3,
-        "evidence_used": [
-          "version: (1865,",
-          "version_disambiguation"
-        ],
-        "rationale": "Used version evidence to select from 3 candidates",
-        "requires_curator_action": false
-      }
-    },
-    {
-      "source_id": "bruckner:26",
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_id": "prokofiev:26",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
       "source_line": 26,
-      "work_text": "Symphony No. 1 in C minor \"Das kecke Beserl\" (1866 \"Linz version\", revised in 1877/1884)",
+      "work_text": "Piano Concerto No. 1 in D-flat (1911\u201312)",
       "identity_result": {
         "status": "matched",
-        "matched_work_id": "anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-2-work",
-        "candidates_count": 3,
+        "matched_work_id": "sergei-prokofiev-piano-concerto-no-1-in-d-flat-work",
+        "candidates_count": 1,
         "evidence_used": [
-          "version: (1866 \"",
-          "version_disambiguation"
+          "exact_single_candidate"
         ],
-        "rationale": "Used version evidence to select from 3 candidates",
+        "rationale": "Single canonical Work matches: sergei-prokofiev-piano-concerto-no-1-in-d-flat-work",
         "requires_curator_action": false
       }
     },
     {
-      "source_id": "bruckner:28",
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_id": "prokofiev:28",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
       "source_line": 28,
-      "work_text": "Symphony No. 1 in C minor \"Das kecke Beserl\" (1891 \"Vienna version\")",
+      "work_text": "Piano Concerto No. 2 in G minor (1912\u201313, lost, re-written in 1923)",
       "identity_result": {
         "status": "matched",
-        "matched_work_id": "anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-3-work",
-        "candidates_count": 3,
+        "matched_work_id": "sergei-prokofiev-piano-concerto-no-2-in-g-minor-work",
+        "candidates_count": 1,
         "evidence_used": [
-          "version: (1891 \"",
-          "version_disambiguation"
+          "exact_single_candidate"
         ],
-        "rationale": "Used version evidence to select from 3 candidates",
+        "rationale": "Single canonical Work matches: sergei-prokofiev-piano-concerto-no-2-in-g-minor-work",
         "requires_curator_action": false
       }
     },
     {
-      "source_id": "bruckner:30",
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_id": "prokofiev:30",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
       "source_line": 30,
-      "work_text": "Symphony No. 2 in C minor (1872 version with Scherzo second and Adagio third, revised in 1873 and 1876)",
+      "work_text": "The Ugly Duckling (1914)",
       "identity_result": {
         "status": "matched",
-        "matched_work_id": "anton-bruckner-symphony-no-2-in-c-minor-work",
-        "candidates_count": 2,
+        "matched_work_id": "sergei-prokofiev-the-ugly-duckling-work",
+        "candidates_count": 1,
         "evidence_used": [
-          "version: (1872 version with Scherzo second and Adagio third, revised in 1873 and 1876)",
-          "version_disambiguation"
+          "version: (1914)",
+          "version_evidence_positive"
         ],
-        "rationale": "Used version evidence to select from 2 candidates",
+        "rationale": "Single candidate with positive evidence for version 1914",
         "requires_curator_action": false
       }
     },
     {
-      "source_id": "bruckner:32",
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_id": "prokofiev:32",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
       "source_line": 32,
-      "work_text": "Symphony No. 2 in C minor (1877 version, revised in 1892)",
+      "work_text": "Violin Concerto No. 1 in D (1916\u201317)",
       "identity_result": {
         "status": "matched",
-        "matched_work_id": "anton-bruckner-symphony-no-2-in-c-minor-2-work",
+        "matched_work_id": "sergei-prokofiev-violin-concerto-no-1-in-d-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "exact_single_candidate"
+        ],
+        "rationale": "Single canonical Work matches: sergei-prokofiev-violin-concerto-no-1-in-d-work",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:35",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 35,
+      "work_text": "Scythian Suite (1914\u201315)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-scythian-suite-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "exact_single_candidate"
+        ],
+        "rationale": "Single canonical Work matches: sergei-prokofiev-scythian-suite-work",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:37",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 37,
+      "work_text": "Chout / Tale of the Jester (1915, rev. 1920)",
+      "identity_result": {
+        "status": "unresolved",
+        "matched_work_id": null,
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1915,"
+        ],
+        "rationale": "Source names version 1915 but canonical has no positive evidence for this version",
+        "requires_curator_action": true
+      }
+    },
+    {
+      "source_id": "prokofiev:39",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 39,
+      "work_text": "Suite from Chout (1920)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-suite-from-chout-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1920)",
+          "version_evidence_positive"
+        ],
+        "rationale": "Single candidate with positive evidence for version 1920",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:41",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 41,
+      "work_text": "Symphony No. 1 in D, Classical (1916\u201317)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-symphony-no-1-in-d-classical-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "exact_single_candidate"
+        ],
+        "rationale": "Single canonical Work matches: sergei-prokofiev-symphony-no-1-in-d-classical-work",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:43",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 43,
+      "work_text": "Piano Concerto No. 3 in C (1917\u201321)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-piano-concerto-no-3-in-c-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "exact_single_candidate"
+        ],
+        "rationale": "Single canonical Work matches: sergei-prokofiev-piano-concerto-no-3-in-c-work",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:45",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 45,
+      "work_text": "Andante from Piano Sonata No. 4, arranged for orchestra (1934)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-andante-from-piano-sonata-no-4-arranged-for-orchestra-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1934)",
+          "version_evidence_positive"
+        ],
+        "rationale": "Single candidate with positive evidence for version 1934",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:47",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 47,
+      "work_text": "Trapeze (1924, abandoned and rewritten as the Quintet for Oboe, Clarinet, Violin, Viola, and Double Bass)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-trapeze-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1924,",
+          "version_evidence_positive"
+        ],
+        "rationale": "Single candidate with positive evidence for version 1924",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:51",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 51,
+      "work_text": "Seven, They Are Seven (1917\u201318, rev. 1933)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-seven-they-are-seven-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "exact_single_candidate"
+        ],
+        "rationale": "Single canonical Work matches: sergei-prokofiev-seven-they-are-seven-work",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:53",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 53,
+      "work_text": "Suite from The Love for Three Oranges (1919, rev. 1924)",
+      "identity_result": {
+        "status": "unresolved",
+        "matched_work_id": null,
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1919,"
+        ],
+        "rationale": "Source names version 1919 but canonical has no positive evidence for this version",
+        "requires_curator_action": true
+      }
+    },
+    {
+      "source_id": "prokofiev:55",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 55,
+      "work_text": "Overture on Hebrew Themes (1934)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-overture-on-hebrew-themes-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1934)",
+          "version_evidence_positive"
+        ],
+        "rationale": "Single candidate with positive evidence for version 1934",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:57",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 57,
+      "work_text": "Melodie (1920)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-melodie-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1920)",
+          "version_evidence_positive"
+        ],
+        "rationale": "Single candidate with positive evidence for version 1920",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:59",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 59,
+      "work_text": "Vocal Suite from The Fiery Angel (1923, incomplete)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-vocal-suite-from-the-fiery-angel-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1923,",
+          "version_evidence_positive"
+        ],
+        "rationale": "Single candidate with positive evidence for version 1923",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:63",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 63,
+      "work_text": "Symphony No. 2 in D minor (1924\u201325)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-symphony-no-2-in-d-minor-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "exact_single_candidate"
+        ],
+        "rationale": "Single canonical Work matches: sergei-prokofiev-symphony-no-2-in-d-minor-work",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:65",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 65,
+      "work_text": "Le pas d'acier / The Steel Step (1926)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-le-pas-d-acier-the-steel-step-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1926)",
+          "version_evidence_positive"
+        ],
+        "rationale": "Single candidate with positive evidence for version 1926",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:67",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 67,
+      "work_text": "Suite from Le pas d'acier (1926)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-suite-from-le-pas-d-acier-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1926)",
+          "version_evidence_positive"
+        ],
+        "rationale": "Single candidate with positive evidence for version 1926",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:69",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 69,
+      "work_text": "American Overture (1926)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-american-overture-work",
         "candidates_count": 2,
         "evidence_used": [
-          "version: (1877 version, revised in 1892)",
-          "version_disambiguation"
+          "version: (1926)",
+          "version_evidence_positive_disambiguation"
         ],
-        "rationale": "Used version evidence to select from 2 candidates",
+        "rationale": "Used positive version evidence to select from 2 candidates",
         "requires_curator_action": false
       }
     },
     {
-      "source_id": "bruckner:34",
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 34,
-      "work_text": "Symphony No. 3 in D minor \"Wagner Symphony\" (1873 version, revised in 1874)",
+      "source_id": "prokofiev:71",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 71,
+      "work_text": "American Overture (1928)",
       "identity_result": {
         "status": "matched",
-        "matched_work_id": "anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-work",
-        "candidates_count": 3,
-        "evidence_used": [
-          "version: (1873 version, revised in 1874)",
-          "version_disambiguation"
-        ],
-        "rationale": "Used version evidence to select from 3 candidates",
-        "requires_curator_action": false
-      }
-    },
-    {
-      "source_id": "bruckner:36",
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 36,
-      "work_text": "Symphony No. 3 in D minor \"Wagner Symphony\" (1876 version, revised in 1877\u20131878: most Wagner quotations removed, coda added to the Scherzo)",
-      "identity_result": {
-        "status": "matched",
-        "matched_work_id": "anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-2-work",
-        "candidates_count": 3,
-        "evidence_used": [
-          "version: (1876 version, revised in 1877\u20131878: most Wagner quotations removed, coda added to the Scherzo)",
-          "version_disambiguation"
-        ],
-        "rationale": "Used version evidence to select from 3 candidates",
-        "requires_curator_action": false
-      }
-    },
-    {
-      "source_id": "bruckner:38",
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 38,
-      "work_text": "Symphony No. 3 in D minor \"Wagner Symphony\" (1889 version)",
-      "identity_result": {
-        "status": "matched",
-        "matched_work_id": "anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-3-work",
-        "candidates_count": 3,
-        "evidence_used": [
-          "version: (1889 version)",
-          "version_disambiguation"
-        ],
-        "rationale": "Used version evidence to select from 3 candidates",
-        "requires_curator_action": false
-      }
-    },
-    {
-      "source_id": "bruckner:40",
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 40,
-      "work_text": "Symphony No. 4 in E\u266d major \"Die Romantische\" (1874\u20131876 version)",
-      "identity_result": {
-        "status": "unresolved",
-        "matched_work_id": null,
-        "candidates_count": 4,
-        "evidence_used": [
-          "multiple_candidates_no_version_evidence"
-        ],
-        "rationale": "Found 4 plausible Works but no version evidence to resolve",
-        "requires_curator_action": true
-      }
-    },
-    {
-      "source_id": "bruckner:42",
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 42,
-      "work_text": "Symphony No. 4 in E\u266d major \"Die Romantische\" (1878 version: new \"Hunting\" Scherzo and \"Volksfest\" Finale)",
-      "identity_result": {
-        "status": "matched",
-        "matched_work_id": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-2-work",
-        "candidates_count": 4,
-        "evidence_used": [
-          "version: (1878 version: new \"Hunting\" Scherzo and \"Volksfest\" Finale)",
-          "version_disambiguation"
-        ],
-        "rationale": "Used version evidence to select from 4 candidates",
-        "requires_curator_action": false
-      }
-    },
-    {
-      "source_id": "bruckner:44",
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 44,
-      "work_text": "Symphony No. 4 in E\u266d major \"Die Romantische\" (1880 version: new Finale)",
-      "identity_result": {
-        "status": "matched",
-        "matched_work_id": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-3-work",
-        "candidates_count": 4,
-        "evidence_used": [
-          "version: (1880 version: new Finale)",
-          "version_disambiguation"
-        ],
-        "rationale": "Used version evidence to select from 4 candidates",
-        "requires_curator_action": false
-      }
-    },
-    {
-      "source_id": "bruckner:46",
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 46,
-      "work_text": "Symphony No. 4 in E\u266d major \"Die Romantische\" (1888 version: with piccolo and cymbals)",
-      "identity_result": {
-        "status": "matched",
-        "matched_work_id": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-4-work",
-        "candidates_count": 4,
-        "evidence_used": [
-          "version: (1888 version: with piccolo and cymbals)",
-          "version_disambiguation"
-        ],
-        "rationale": "Used version evidence to select from 4 candidates",
-        "requires_curator_action": false
-      }
-    },
-    {
-      "source_id": "bruckner:48",
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 48,
-      "work_text": "Symphony No. 5 in B\u266d major (1876 first concept)",
-      "identity_result": {
-        "status": "unresolved",
-        "matched_work_id": null,
+        "matched_work_id": "sergei-prokofiev-american-overture-2-work",
         "candidates_count": 2,
         "evidence_used": [
-          "multiple_candidates_no_version_evidence"
+          "version: (1928)",
+          "version_evidence_positive_disambiguation"
         ],
-        "rationale": "Found 2 plausible Works but no version evidence to resolve",
-        "requires_curator_action": true
+        "rationale": "Used positive version evidence to select from 2 candidates",
+        "requires_curator_action": false
       }
     },
     {
-      "source_id": "bruckner:50",
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 50,
-      "work_text": "Symphony No. 5 in B\u266d major (revised in 1878)",
+      "source_id": "prokofiev:73",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 73,
+      "work_text": "Divertissement (1925\u201329)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-divertissement-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "exact_single_candidate"
+        ],
+        "rationale": "Single canonical Work matches: sergei-prokofiev-divertissement-work",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:75",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 75,
+      "work_text": "Symphony No. 3 in C minor (1928)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-symphony-no-3-in-c-minor-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1928)",
+          "version_evidence_positive"
+        ],
+        "rationale": "Single candidate with positive evidence for version 1928",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:77",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 77,
+      "work_text": "Le fils prodigue / The Prodigal Son (1929)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-le-fils-prodigue-the-prodigal-son-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1929)",
+          "version_evidence_positive"
+        ],
+        "rationale": "Single candidate with positive evidence for version 1929",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:79",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 79,
+      "work_text": "Suite from The Prodigal Son (1929)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-suite-from-the-prodigal-son-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1929)",
+          "version_evidence_positive"
+        ],
+        "rationale": "Single candidate with positive evidence for version 1929",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:81",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 81,
+      "work_text": "Symphony No. 4 in C (original version) (1929\u201330)",
       "identity_result": {
         "status": "unresolved",
         "matched_work_id": null,
-        "candidates_count": 2,
-        "evidence_used": [
-          "multiple_candidates_no_version_evidence"
-        ],
-        "rationale": "Found 2 plausible Works but no version evidence to resolve",
+        "candidates_count": 0,
+        "evidence_used": [],
+        "rationale": "No candidate Works found; cannot resolve identity without positive evidence for new Work",
         "requires_curator_action": true
       }
     },
     {
-      "source_id": "bruckner:52",
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 52,
-      "work_text": "Symphony No. 6 in A major (1881)",
-      "identity_result": {
-        "status": "matched",
-        "matched_work_id": "anton-bruckner-symphony-no-6-in-a-major-work",
-        "candidates_count": 1,
-        "evidence_used": [
-          "version: (1881)",
-          "exact_single_candidate"
-        ],
-        "rationale": "Single canonical Work matches: anton-bruckner-symphony-no-6-in-a-major-work",
-        "requires_curator_action": false
-      }
-    },
-    {
-      "source_id": "bruckner:54",
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 54,
-      "work_text": "Symphony No. 7 in E major (1883 first concept)",
+      "source_id": "prokofiev:83",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 83,
+      "work_text": "Sinfonietta in A (revised version of Op. 5) (revised version of Op. 5)",
       "identity_result": {
         "status": "unresolved",
         "matched_work_id": null,
-        "candidates_count": 2,
+        "candidates_count": 0,
         "evidence_used": [
-          "multiple_candidates_no_version_evidence"
+          "catalogue: Op.5"
         ],
-        "rationale": "Found 2 plausible Works but no version evidence to resolve",
+        "rationale": "No candidate Works found; cannot resolve identity without positive evidence for new Work",
         "requires_curator_action": true
       }
     },
     {
-      "source_id": "bruckner:56",
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 56,
-      "work_text": "Symphony No. 7 in E major (revised in 1885)",
+      "source_id": "prokofiev:85",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 85,
+      "work_text": "Suite from The Gambler (\"Four Portraits and Denouement\") (1931)",
       "identity_result": {
         "status": "unresolved",
         "matched_work_id": null,
-        "candidates_count": 2,
+        "candidates_count": 0,
         "evidence_used": [
-          "multiple_candidates_no_version_evidence"
+          "version: (1931)"
         ],
-        "rationale": "Found 2 plausible Works but no version evidence to resolve",
+        "rationale": "No candidate Works found; cannot resolve identity without positive evidence for new Work",
         "requires_curator_action": true
       }
     },
     {
-      "source_id": "bruckner:58",
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 58,
-      "work_text": "Symphony No. 8 in C minor \"Die Apokalyptische\" (1887 version)",
-      "identity_result": {
-        "status": "matched",
-        "matched_work_id": "anton-bruckner-symphony-no-8-in-c-minor-die-apokalyptische-work",
-        "candidates_count": 3,
-        "evidence_used": [
-          "version: (1887 version)",
-          "version_disambiguation"
-        ],
-        "rationale": "Used version evidence to select from 3 candidates",
-        "requires_curator_action": false
-      }
-    },
-    {
-      "source_id": "bruckner:60",
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 60,
-      "work_text": "Symphony No. 8 in C minor \"Die Apokalyptische\" (1888 Adagio)",
-      "identity_result": {
-        "status": "unresolved",
-        "matched_work_id": null,
-        "candidates_count": 3,
-        "evidence_used": [
-          "multiple_candidates_no_version_evidence"
-        ],
-        "rationale": "Found 3 plausible Works but no version evidence to resolve",
-        "requires_curator_action": true
-      }
-    },
-    {
-      "source_id": "bruckner:62",
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 62,
-      "work_text": "Symphony No. 8 in C minor \"Die Apokalyptische\" (1890 version: 3rd woodwind in first three movements, fewer cymbal clashes in Adagio, harps in Trio)",
-      "identity_result": {
-        "status": "matched",
-        "matched_work_id": "anton-bruckner-symphony-no-8-in-c-minor-die-apokalyptische-3-work",
-        "candidates_count": 3,
-        "evidence_used": [
-          "version: (1890 version: 3rd woodwind in first three movements, fewer cymbal clashes in Adagio, harps in Trio)",
-          "version_disambiguation"
-        ],
-        "rationale": "Used version evidence to select from 3 candidates",
-        "requires_curator_action": false
-      }
-    },
-    {
-      "source_id": "bruckner:64",
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 64,
-      "work_text": "Symphony No. 9 in D minor (1894 first three movements, 1896 finale unfinished)",
-      "identity_result": {
-        "status": "matched",
-        "matched_work_id": "anton-bruckner-symphony-no-9-in-d-minor-work",
-        "candidates_count": 1,
-        "evidence_used": [
-          "exact_single_candidate"
-        ],
-        "rationale": "Single canonical Work matches: anton-bruckner-symphony-no-9-in-d-minor-work",
-        "requires_curator_action": false
-      }
-    },
-    {
-      "source_id": "bruckner:68",
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 68,
-      "work_text": "Ave Maria (1861)",
-      "identity_result": {
-        "status": "matched",
-        "matched_work_id": "anton-bruckner-ave-maria-work",
-        "candidates_count": 1,
-        "evidence_used": [
-          "version: (1861)",
-          "exact_single_candidate"
-        ],
-        "rationale": "Single canonical Work matches: anton-bruckner-ave-maria-work",
-        "requires_curator_action": false
-      }
-    },
-    {
-      "source_id": "bruckner:70",
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 70,
-      "work_text": "Christus factus est (1884)",
-      "identity_result": {
-        "status": "matched",
-        "matched_work_id": "anton-bruckner-christus-factus-est-work",
-        "candidates_count": 1,
-        "evidence_used": [
-          "version: (1884)",
-          "exact_single_candidate"
-        ],
-        "rationale": "Single canonical Work matches: anton-bruckner-christus-factus-est-work",
-        "requires_curator_action": false
-      }
-    },
-    {
-      "source_id": "bruckner:72",
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 72,
-      "work_text": "Libera me (c. 1843)",
-      "identity_result": {
-        "status": "matched",
-        "matched_work_id": "anton-bruckner-libera-me-work",
-        "candidates_count": 1,
-        "evidence_used": [
-          "exact_single_candidate"
-        ],
-        "rationale": "Single canonical Work matches: anton-bruckner-libera-me-work",
-        "requires_curator_action": false
-      }
-    },
-    {
-      "source_id": "bruckner:74",
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 74,
-      "work_text": "Locus iste (1869)",
-      "identity_result": {
-        "status": "matched",
-        "matched_work_id": "anton-bruckner-locus-iste-work",
-        "candidates_count": 1,
-        "evidence_used": [
-          "version: (1869)",
-          "exact_single_candidate"
-        ],
-        "rationale": "Single canonical Work matches: anton-bruckner-locus-iste-work",
-        "requires_curator_action": false
-      }
-    },
-    {
-      "source_id": "bruckner:76",
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 76,
-      "work_text": "Os justi (1879)",
-      "identity_result": {
-        "status": "matched",
-        "matched_work_id": "anton-bruckner-os-justi-work",
-        "candidates_count": 1,
-        "evidence_used": [
-          "version: (1879)",
-          "exact_single_candidate"
-        ],
-        "rationale": "Single canonical Work matches: anton-bruckner-os-justi-work",
-        "requires_curator_action": false
-      }
-    },
-    {
-      "source_id": "bruckner:78",
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 78,
-      "work_text": "Tantum ergo (c. 1845)",
-      "identity_result": {
-        "status": "unresolved",
-        "matched_work_id": null,
-        "candidates_count": 3,
-        "evidence_used": [
-          "multiple_candidates_no_version_evidence"
-        ],
-        "rationale": "Found 3 plausible Works but no version evidence to resolve",
-        "requires_curator_action": true
-      }
-    },
-    {
-      "source_id": "bruckner:80",
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 80,
-      "work_text": "Pange lingua (1868)",
-      "identity_result": {
-        "status": "matched",
-        "matched_work_id": "anton-bruckner-pange-lingua-work",
-        "candidates_count": 1,
-        "evidence_used": [
-          "version: (1868)",
-          "exact_single_candidate"
-        ],
-        "rationale": "Single canonical Work matches: anton-bruckner-pange-lingua-work",
-        "requires_curator_action": false
-      }
-    },
-    {
-      "source_id": "bruckner:82",
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 82,
-      "work_text": "Salvum fac populum tuum (1884)",
-      "identity_result": {
-        "status": "matched",
-        "matched_work_id": "anton-bruckner-salvum-fac-populum-tuum-work",
-        "candidates_count": 1,
-        "evidence_used": [
-          "version: (1884)",
-          "exact_single_candidate"
-        ],
-        "rationale": "Single canonical Work matches: anton-bruckner-salvum-fac-populum-tuum-work",
-        "requires_curator_action": false
-      }
-    },
-    {
-      "source_id": "bruckner:84",
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 84,
-      "work_text": "4 Tantum ergo (1888)",
-      "identity_result": {
-        "status": "matched",
-        "matched_work_id": "anton-bruckner-4-tantum-ergo-work",
-        "candidates_count": 1,
-        "evidence_used": [
-          "version: (1888)",
-          "exact_single_candidate"
-        ],
-        "rationale": "Single canonical Work matches: anton-bruckner-4-tantum-ergo-work",
-        "requires_curator_action": false
-      }
-    },
-    {
-      "source_id": "bruckner:86",
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 86,
-      "work_text": "Tantum ergo (1846/1888)",
-      "identity_result": {
-        "status": "unresolved",
-        "matched_work_id": null,
-        "candidates_count": 3,
-        "evidence_used": [
-          "multiple_candidates_no_version_evidence"
-        ],
-        "rationale": "Found 3 plausible Works but no version evidence to resolve",
-        "requires_curator_action": true
-      }
-    },
-    {
-      "source_id": "bruckner:88",
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
+      "source_id": "prokofiev:88",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
       "source_line": 88,
-      "work_text": "Tantum ergo (c. 1845)",
+      "work_text": "Andante from String Quartet No. 1, arranged for string orchestra (1930)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-andante-from-string-quartet-no-1-arranged-for-string-orchestra-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1930)",
+          "version_evidence_positive"
+        ],
+        "rationale": "Single candidate with positive evidence for version 1930",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:90",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 90,
+      "work_text": "On the Dnieper (1931)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-on-the-dnieper-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1931)",
+          "version_evidence_positive"
+        ],
+        "rationale": "Single candidate with positive evidence for version 1931",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:92",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 92,
+      "work_text": "Suite from On the Dnieper (1933)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-suite-from-on-the-dnieper-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1933)",
+          "version_evidence_positive"
+        ],
+        "rationale": "Single candidate with positive evidence for version 1933",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:94",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 94,
+      "work_text": "Piano Concerto No. 4 in B-flat (1931)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-piano-concerto-no-4-in-b-flat-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1931)",
+          "version_evidence_positive"
+        ],
+        "rationale": "Single candidate with positive evidence for version 1931",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:96",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 96,
+      "work_text": "Piano Concerto No. 5 in G (1932)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-piano-concerto-no-5-in-g-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1932)",
+          "version_evidence_positive"
+        ],
+        "rationale": "Single candidate with positive evidence for version 1932",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:98",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 98,
+      "work_text": "Symphonic Song (1933)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-symphonic-song-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1933)",
+          "version_evidence_positive"
+        ],
+        "rationale": "Single candidate with positive evidence for version 1933",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:100",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 100,
+      "work_text": "Cello Concerto in E minor (1933\u201338)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-cello-concerto-in-e-minor-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "exact_single_candidate"
+        ],
+        "rationale": "Single canonical Work matches: sergei-prokofiev-cello-concerto-in-e-minor-work",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:104",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 104,
+      "work_text": "Lieutenant Kij\u00e9 (1934)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-lieutenant-kije-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1934)",
+          "version_evidence_positive"
+        ],
+        "rationale": "Single candidate with positive evidence for version 1934",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:106",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 106,
+      "work_text": "Suite from Lieutenant Kij\u00e9 (1934)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-suite-from-lieutenant-kije-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1934)",
+          "version_evidence_positive"
+        ],
+        "rationale": "Single candidate with positive evidence for version 1934",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:108",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 108,
+      "work_text": "Suite from Egyptian Nights (1938)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-suite-from-egyptian-nights-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1938)",
+          "version_evidence_positive"
+        ],
+        "rationale": "Single candidate with positive evidence for version 1938",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:110",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 110,
+      "work_text": "Violin Concerto No. 2 in G minor (1935)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-violin-concerto-no-2-in-g-minor-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1935)",
+          "version_evidence_positive"
+        ],
+        "rationale": "Single candidate with positive evidence for version 1935",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:112",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 112,
+      "work_text": "Romeo and Juliet (1935, classified as a Soviet choreodrama, or drambalet)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-romeo-and-juliet-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1935,",
+          "version_evidence_positive"
+        ],
+        "rationale": "Single candidate with positive evidence for version 1935",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:114",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 114,
+      "work_text": "Suite 1 from Romeo and Juliet (1936)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-suite-1-from-romeo-and-juliet-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1936)",
+          "version_evidence_positive"
+        ],
+        "rationale": "Single candidate with positive evidence for version 1936",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:116",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 116,
+      "work_text": "Suite 2 from Romeo and Juliet (1936)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-suite-2-from-romeo-and-juliet-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1936)",
+          "version_evidence_positive"
+        ],
+        "rationale": "Single candidate with positive evidence for version 1936",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:118",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 118,
+      "work_text": "Summer Day (https://tidal.com/browse/album/340800600)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-summer-day-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "exact_single_candidate"
+        ],
+        "rationale": "Single canonical Work matches: sergei-prokofiev-summer-day-work",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:120",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 120,
+      "work_text": "Peter and the Wolf (1936)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-peter-and-the-wolf-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1936)",
+          "version_evidence_positive"
+        ],
+        "rationale": "Single candidate with positive evidence for version 1936",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:124",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 124,
+      "work_text": "The Queen of Spades (1936)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-the-queen-of-spades-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1936)",
+          "version_evidence_positive"
+        ],
+        "rationale": "Single candidate with positive evidence for version 1936",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:126",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 126,
+      "work_text": "Boris Godunov (1936)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-boris-godunov-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1936)",
+          "version_evidence_positive"
+        ],
+        "rationale": "Single candidate with positive evidence for version 1936",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:128",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 128,
+      "work_text": "Eugene Onegin (1936)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-eugene-onegin-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1936)",
+          "version_evidence_positive"
+        ],
+        "rationale": "Single candidate with positive evidence for version 1936",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:130",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 130,
+      "work_text": "Russian Overture (1936)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-russian-overture-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1936)",
+          "version_evidence_positive"
+        ],
+        "rationale": "Single candidate with positive evidence for version 1936",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:132",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 132,
+      "work_text": "Cantata for the 20th Anniversary of the October Revolution (1936\u201337)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-cantata-for-the-20th-anniversary-of-the-october-revolution-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "exact_single_candidate"
+        ],
+        "rationale": "Single canonical Work matches: sergei-prokofiev-cantata-for-the-20th-anniversary-of-the-october-revolution-work",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:134",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 134,
+      "work_text": "Songs of Our Days (1937)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-songs-of-our-days-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1937)",
+          "version_evidence_positive"
+        ],
+        "rationale": "Single candidate with positive evidence for version 1937",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:136",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 136,
+      "work_text": "Hamlet (1937\u201338)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-hamlet-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "exact_single_candidate"
+        ],
+        "rationale": "Single canonical Work matches: sergei-prokofiev-hamlet-work",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:138",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 138,
+      "work_text": "Alexander Nevsky (1939)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-alexander-nevsky-work",
+        "candidates_count": 2,
+        "evidence_used": [
+          "version: (1939)",
+          "version_evidence_positive_disambiguation"
+        ],
+        "rationale": "Used positive version evidence to select from 2 candidates",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:140",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 140,
+      "work_text": "Alexander Nevsky (1938)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-alexander-nevsky-2-work",
+        "candidates_count": 2,
+        "evidence_used": [
+          "version: (1938)",
+          "version_evidence_positive_disambiguation"
+        ],
+        "rationale": "Used positive version evidence to select from 2 candidates",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:142",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 142,
+      "work_text": "Lermontov (1941)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-lermontov-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1941)",
+          "version_evidence_positive"
+        ],
+        "rationale": "Single candidate with positive evidence for version 1941",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:144",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 144,
+      "work_text": "Kotovsky (1942)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-kotovsky-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1942)",
+          "version_evidence_positive"
+        ],
+        "rationale": "Single candidate with positive evidence for version 1942",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:146",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 146,
+      "work_text": "Tonya (1942)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-tonya-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1942)",
+          "version_evidence_positive"
+        ],
+        "rationale": "Single candidate with positive evidence for version 1942",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:148",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 148,
+      "work_text": "The Partisans in the Ukrainian Steppes (1942)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-the-partisans-in-the-ukrainian-steppes-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1942)",
+          "version_evidence_positive"
+        ],
+        "rationale": "Single candidate with positive evidence for version 1942",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:154",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 154,
+      "work_text": "Suite from Semyon Kotko (1941)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-suite-from-semyon-kotko-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1941)",
+          "version_evidence_positive"
+        ],
+        "rationale": "Single candidate with positive evidence for version 1941",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:156",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 156,
+      "work_text": "Zdravitsa (1939)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-zdravitsa-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1939)",
+          "version_evidence_positive"
+        ],
+        "rationale": "Single candidate with positive evidence for version 1939",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:158",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 158,
+      "work_text": "Cinderella (1944)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-cinderella-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1944)",
+          "version_evidence_positive"
+        ],
+        "rationale": "Single candidate with positive evidence for version 1944",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:160",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 160,
+      "work_text": "Symphonic March (1941)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-symphonic-march-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1941)",
+          "version_evidence_positive"
+        ],
+        "rationale": "Single candidate with positive evidence for version 1941",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:164",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 164,
+      "work_text": "The Year 1941 (1941)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-the-year-1941-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1941)",
+          "version_evidence_positive"
+        ],
+        "rationale": "Single candidate with positive evidence for version 1941",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:166",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 166,
+      "work_text": "War and Peace, Suite (https://tidal.com/album/376440234)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-war-and-peace-suite-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "exact_single_candidate"
+        ],
+        "rationale": "Single canonical Work matches: sergei-prokofiev-war-and-peace-suite-work",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:168",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 168,
+      "work_text": "Ballad of an Unknown Boy (1942\u201343)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-ballad-of-an-unknown-boy-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "exact_single_candidate"
+        ],
+        "rationale": "Single canonical Work matches: sergei-prokofiev-ballad-of-an-unknown-boy-work",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:172",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 172,
+      "work_text": "Symphony No. 5 in B-flat (1944)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-symphony-no-5-in-b-flat-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1944)",
+          "version_evidence_positive"
+        ],
+        "rationale": "Single candidate with positive evidence for version 1944",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:174",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 174,
+      "work_text": "Suite 3 from Romeo and Juliet (1946)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-suite-3-from-romeo-and-juliet-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1946)",
+          "version_evidence_positive"
+        ],
+        "rationale": "Single candidate with positive evidence for version 1946",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:176",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 176,
+      "work_text": "Ode to the End of the War (1945)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-ode-to-the-end-of-the-war-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1945)",
+          "version_evidence_positive"
+        ],
+        "rationale": "Single candidate with positive evidence for version 1945",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:178",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 178,
+      "work_text": "Suite 1 from Cinderella (1946)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-suite-1-from-cinderella-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1946)",
+          "version_evidence_positive"
+        ],
+        "rationale": "Single candidate with positive evidence for version 1946",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:180",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 180,
+      "work_text": "Suite 2 from Cinderella (1946)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-suite-2-from-cinderella-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1946)",
+          "version_evidence_positive"
+        ],
+        "rationale": "Single candidate with positive evidence for version 1946",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:182",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 182,
+      "work_text": "Suite 3 from Cinderella (1946)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-suite-3-from-cinderella-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1946)",
+          "version_evidence_positive"
+        ],
+        "rationale": "Single candidate with positive evidence for version 1946",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:188",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 188,
+      "work_text": "Waltz Suite (1946)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-waltz-suite-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1946)",
+          "version_evidence_positive"
+        ],
+        "rationale": "Single candidate with positive evidence for version 1946",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:190",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 190,
+      "work_text": "Symphony No. 6 in E-flat minor (1945\u201347)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-symphony-no-6-in-e-flat-minor-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "exact_single_candidate"
+        ],
+        "rationale": "Single canonical Work matches: sergei-prokofiev-symphony-no-6-in-e-flat-minor-work",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:192",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 192,
+      "work_text": "Symphony No. 4 in C (revised version) (1947)",
       "identity_result": {
         "status": "unresolved",
         "matched_work_id": null,
-        "candidates_count": 3,
+        "candidates_count": 0,
         "evidence_used": [
-          "multiple_candidates_no_version_evidence"
+          "version: (1947)"
         ],
-        "rationale": "Found 3 plausible Works but no version evidence to resolve",
+        "rationale": "No candidate Works found; cannot resolve identity without positive evidence for new Work",
         "requires_curator_action": true
       }
     },
     {
-      "source_id": "bruckner:90",
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 90,
-      "work_text": "Tota pulchra es (1878)",
+      "source_id": "prokofiev:194",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 194,
+      "work_text": "Thirty Years (1947)",
       "identity_result": {
         "status": "matched",
-        "matched_work_id": "anton-bruckner-tota-pulchra-es-work",
+        "matched_work_id": "sergei-prokofiev-thirty-years-work",
         "candidates_count": 1,
         "evidence_used": [
-          "version: (1878)",
-          "exact_single_candidate"
+          "version: (1947)",
+          "version_evidence_positive"
         ],
-        "rationale": "Single canonical Work matches: anton-bruckner-tota-pulchra-es-work",
+        "rationale": "Single candidate with positive evidence for version 1947",
         "requires_curator_action": false
       }
     },
     {
-      "source_id": "bruckner:92",
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 92,
-      "work_text": "Virga Jesse (1885)",
+      "source_id": "prokofiev:196",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 196,
+      "work_text": "Flourish, Mighty Land (1947)",
       "identity_result": {
         "status": "matched",
-        "matched_work_id": "anton-bruckner-virga-jesse-work",
+        "matched_work_id": "sergei-prokofiev-flourish-mighty-land-work",
         "candidates_count": 1,
         "evidence_used": [
-          "version: (1885)",
-          "exact_single_candidate"
+          "version: (1947)",
+          "version_evidence_positive"
         ],
-        "rationale": "Single canonical Work matches: anton-bruckner-virga-jesse-work",
+        "rationale": "Single candidate with positive evidence for version 1947",
         "requires_curator_action": false
       }
     },
     {
-      "source_id": "bruckner:94",
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 94,
-      "work_text": "Vexilla regis (1892)",
+      "source_id": "prokofiev:200",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 200,
+      "work_text": "Ivan the Terrible (1942\u201345)",
       "identity_result": {
         "status": "matched",
-        "matched_work_id": "anton-bruckner-vexilla-regis-work",
+        "matched_work_id": "sergei-prokofiev-ivan-the-terrible-work",
         "candidates_count": 1,
         "evidence_used": [
-          "version: (1892)",
           "exact_single_candidate"
         ],
-        "rationale": "Single canonical Work matches: anton-bruckner-vexilla-regis-work",
+        "rationale": "Single canonical Work matches: sergei-prokofiev-ivan-the-terrible-work",
         "requires_curator_action": false
       }
     },
     {
-      "source_id": "bruckner:96",
-      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-      "source_line": 96,
-      "work_text": "Kronstorfer Messe in D Minor (1843-44)",
+      "source_id": "prokofiev:202",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 202,
+      "work_text": "Tale of the Stone Flower (1953)",
       "identity_result": {
         "status": "matched",
-        "matched_work_id": "anton-bruckner-kronstorfer-messe-in-d-minor-work",
+        "matched_work_id": "sergei-prokofiev-tale-of-the-stone-flower-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1953)",
+          "version_evidence_positive"
+        ],
+        "rationale": "Single candidate with positive evidence for version 1953",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:206",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 206,
+      "work_text": "Pushkin Waltzes (1949)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-pushkin-waltzes-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1949)",
+          "version_evidence_positive"
+        ],
+        "rationale": "Single candidate with positive evidence for version 1949",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:208",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 208,
+      "work_text": "Winter Bonfire (1949\u201350)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-winter-bonfire-work",
         "candidates_count": 1,
         "evidence_used": [
           "exact_single_candidate"
         ],
-        "rationale": "Single canonical Work matches: anton-bruckner-kronstorfer-messe-in-d-minor-work",
+        "rationale": "Single canonical Work matches: sergei-prokofiev-winter-bonfire-work",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:210",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 210,
+      "work_text": "Summer Night, suite from Betrothal in a Monastery (1950)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-summer-night-suite-from-betrothal-in-a-monastery-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1950)",
+          "version_evidence_positive"
+        ],
+        "rationale": "Single candidate with positive evidence for version 1950",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:212",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 212,
+      "work_text": "On Guard for Peace (1950)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-on-guard-for-peace-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1950)",
+          "version_evidence_positive"
+        ],
+        "rationale": "Single candidate with positive evidence for version 1950",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:214",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 214,
+      "work_text": "Symphony-Concerto for Cello and Orchestra in E minor (1950\u201352)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-symphony-concerto-for-cello-and-orchestra-in-e-minor-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "exact_single_candidate"
+        ],
+        "rationale": "Single canonical Work matches: sergei-prokofiev-symphony-concerto-for-cello-and-orchestra-in-e-minor-work",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:216",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 216,
+      "work_text": "Wedding Suite from The Tale of the Stone Flower (1951)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-wedding-suite-from-the-tale-of-the-stone-flower-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1951)",
+          "version_evidence_positive"
+        ],
+        "rationale": "Single candidate with positive evidence for version 1951",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:218",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 218,
+      "work_text": "Gypsy Fantasy from The Tale of the Stone Flower (1951)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-gypsy-fantasy-from-the-tale-of-the-stone-flower-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1951)",
+          "version_evidence_positive"
+        ],
+        "rationale": "Single candidate with positive evidence for version 1951",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:220",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 220,
+      "work_text": "Urals Rhapsody from The Tale of the Stone Flower (1951)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-urals-rhapsody-from-the-tale-of-the-stone-flower-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1951)",
+          "version_evidence_positive"
+        ],
+        "rationale": "Single candidate with positive evidence for version 1951",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:222",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 222,
+      "work_text": "The Mistress of Copper Mountain from The Tale of the Stone Flower (1951)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-the-mistress-of-copper-mountain-from-the-tale-of-the-stone-flower-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1951)",
+          "version_evidence_positive"
+        ],
+        "rationale": "Single candidate with positive evidence for version 1951",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:227",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 227,
+      "work_text": "The Meeting of the Volga and the Don (1951)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-the-meeting-of-the-volga-and-the-don-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "version: (1951)",
+          "version_evidence_positive"
+        ],
+        "rationale": "Single candidate with positive evidence for version 1951",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:229",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 229,
+      "work_text": "Symphony No. 7 in C-sharp minor (1951\u201352)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-symphony-no-7-in-c-sharp-minor-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "exact_single_candidate"
+        ],
+        "rationale": "Single canonical Work matches: sergei-prokofiev-symphony-no-7-in-c-sharp-minor-work",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:231",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 231,
+      "work_text": "Cello Concertino in G minor (1953\u2013unfinished)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-cello-concertino-in-g-minor-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "exact_single_candidate"
+        ],
+        "rationale": "Single canonical Work matches: sergei-prokofiev-cello-concertino-in-g-minor-work",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:233",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 233,
+      "work_text": "Piano Concerto No. 6 (1953\u2013unfinished)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-piano-concerto-no-6-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "exact_single_candidate"
+        ],
+        "rationale": "Single canonical Work matches: sergei-prokofiev-piano-concerto-no-6-work",
+        "requires_curator_action": false
+      }
+    },
+    {
+      "source_id": "prokofiev:235",
+      "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+      "source_line": 235,
+      "work_text": "Symphony No. 2 in D minor (revised version) (1953; unrealized)",
+      "identity_result": {
+        "status": "matched",
+        "matched_work_id": "sergei-prokofiev-symphony-no-2-in-d-minor-work",
+        "candidates_count": 1,
+        "evidence_used": [
+          "exact_single_candidate"
+        ],
+        "rationale": "Single canonical Work matches: sergei-prokofiev-symphony-no-2-in-d-minor-work",
         "requires_curator_action": false
       }
     }
   ],
   "review_summary": {
-    "total_items": 42,
+    "total_items": 97,
     "by_category": {
       "safe": 0,
-      "unchanged": 33,
+      "unchanged": 89,
       "background": 0,
-      "consequential": 9
+      "consequential": 8
     },
-    "consequential_count": 9,
-    "action_required_count": 9,
+    "consequential_count": 8,
+    "action_required_count": 8,
     "consequential_items": [
       {
-        "source_id": "bruckner:40",
-        "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-        "source_line": 40,
-        "work_text": "Symphony No. 4 in E\u266d major \"Die Romantische\" (1874\u20131876 version)",
-        "rationale": "Unresolved identity. Found 4 plausible Works but no version evidence to resolve Curator must decide based on available evidence."
+        "source_id": "prokofiev:12",
+        "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+        "source_line": 12,
+        "work_text": "Symphonies (1902)",
+        "rationale": "Unresolved identity. No candidate Works found; cannot resolve identity without positive evidence for new Work Curator must decide based on available evidence."
       },
       {
-        "source_id": "bruckner:48",
-        "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-        "source_line": 48,
-        "work_text": "Symphony No. 5 in B\u266d major (1876 first concept)",
-        "rationale": "Unresolved identity. Found 2 plausible Works but no version evidence to resolve Curator must decide based on available evidence."
+        "source_id": "prokofiev:16",
+        "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+        "source_line": 16,
+        "work_text": "Sinfonietta in A (original version) (1909)",
+        "rationale": "Unresolved identity. No candidate Works found; cannot resolve identity without positive evidence for new Work Curator must decide based on available evidence."
       },
       {
-        "source_id": "bruckner:50",
-        "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-        "source_line": 50,
-        "work_text": "Symphony No. 5 in B\u266d major (revised in 1878)",
-        "rationale": "Unresolved identity. Found 2 plausible Works but no version evidence to resolve Curator must decide based on available evidence."
+        "source_id": "prokofiev:37",
+        "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+        "source_line": 37,
+        "work_text": "Chout / Tale of the Jester (1915, rev. 1920)",
+        "rationale": "Unresolved identity. Source names version 1915 but canonical has no positive evidence for this version Curator must decide based on available evidence."
       },
       {
-        "source_id": "bruckner:54",
-        "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-        "source_line": 54,
-        "work_text": "Symphony No. 7 in E major (1883 first concept)",
-        "rationale": "Unresolved identity. Found 2 plausible Works but no version evidence to resolve Curator must decide based on available evidence."
+        "source_id": "prokofiev:53",
+        "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+        "source_line": 53,
+        "work_text": "Suite from The Love for Three Oranges (1919, rev. 1924)",
+        "rationale": "Unresolved identity. Source names version 1919 but canonical has no positive evidence for this version Curator must decide based on available evidence."
       },
       {
-        "source_id": "bruckner:56",
-        "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-        "source_line": 56,
-        "work_text": "Symphony No. 7 in E major (revised in 1885)",
-        "rationale": "Unresolved identity. Found 2 plausible Works but no version evidence to resolve Curator must decide based on available evidence."
+        "source_id": "prokofiev:81",
+        "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+        "source_line": 81,
+        "work_text": "Symphony No. 4 in C (original version) (1929\u201330)",
+        "rationale": "Unresolved identity. No candidate Works found; cannot resolve identity without positive evidence for new Work Curator must decide based on available evidence."
       },
       {
-        "source_id": "bruckner:60",
-        "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-        "source_line": 60,
-        "work_text": "Symphony No. 8 in C minor \"Die Apokalyptische\" (1888 Adagio)",
-        "rationale": "Unresolved identity. Found 3 plausible Works but no version evidence to resolve Curator must decide based on available evidence."
+        "source_id": "prokofiev:83",
+        "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+        "source_line": 83,
+        "work_text": "Sinfonietta in A (revised version of Op. 5) (revised version of Op. 5)",
+        "rationale": "Unresolved identity. No candidate Works found; cannot resolve identity without positive evidence for new Work Curator must decide based on available evidence."
       },
       {
-        "source_id": "bruckner:78",
-        "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-        "source_line": 78,
-        "work_text": "Tantum ergo (c. 1845)",
-        "rationale": "Unresolved identity. Found 3 plausible Works but no version evidence to resolve Curator must decide based on available evidence."
+        "source_id": "prokofiev:85",
+        "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+        "source_line": 85,
+        "work_text": "Suite from The Gambler (\"Four Portraits and Denouement\") (1931)",
+        "rationale": "Unresolved identity. No candidate Works found; cannot resolve identity without positive evidence for new Work Curator must decide based on available evidence."
       },
       {
-        "source_id": "bruckner:86",
-        "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-        "source_line": 86,
-        "work_text": "Tantum ergo (1846/1888)",
-        "rationale": "Unresolved identity. Found 3 plausible Works but no version evidence to resolve Curator must decide based on available evidence."
-      },
-      {
-        "source_id": "bruckner:88",
-        "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/bruckner.md",
-        "source_line": 88,
-        "work_text": "Tantum ergo (c. 1845)",
-        "rationale": "Unresolved identity. Found 3 plausible Works but no version evidence to resolve Curator must decide based on available evidence."
+        "source_id": "prokofiev:192",
+        "source_file": "/Users/lucashoogduin/Documents/6. Mental/classical_music/docs/prokofiev.md",
+        "source_line": 192,
+        "work_text": "Symphony No. 4 in C (revised version) (1947)",
+        "rationale": "Unresolved identity. No candidate Works found; cannot resolve identity without positive evidence for new Work Curator must decide based on available evidence."
       }
     ]
   },
   "matched_entities": {
-    "bruckner:12": "anton-bruckner-march-in-d-minor-work",
-    "bruckner:14": "anton-bruckner-three-orchestral-pieces-work",
-    "bruckner:16": "anton-bruckner-overture-in-g-minor-work",
-    "bruckner:18": "anton-bruckner-overture-in-g-minor-2-work",
-    "bruckner:20": "anton-bruckner-symphony-in-f-minor-work",
-    "bruckner:22": "anton-bruckner-symphony-in-d-minor-die-nullte-work",
-    "bruckner:24": "anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-work",
-    "bruckner:26": "anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-2-work",
-    "bruckner:28": "anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-3-work",
-    "bruckner:30": "anton-bruckner-symphony-no-2-in-c-minor-work",
-    "bruckner:32": "anton-bruckner-symphony-no-2-in-c-minor-2-work",
-    "bruckner:34": "anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-work",
-    "bruckner:36": "anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-2-work",
-    "bruckner:38": "anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-3-work",
-    "bruckner:42": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-2-work",
-    "bruckner:44": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-3-work",
-    "bruckner:46": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-4-work",
-    "bruckner:52": "anton-bruckner-symphony-no-6-in-a-major-work",
-    "bruckner:58": "anton-bruckner-symphony-no-8-in-c-minor-die-apokalyptische-work",
-    "bruckner:62": "anton-bruckner-symphony-no-8-in-c-minor-die-apokalyptische-3-work",
-    "bruckner:64": "anton-bruckner-symphony-no-9-in-d-minor-work",
-    "bruckner:68": "anton-bruckner-ave-maria-work",
-    "bruckner:70": "anton-bruckner-christus-factus-est-work",
-    "bruckner:72": "anton-bruckner-libera-me-work",
-    "bruckner:74": "anton-bruckner-locus-iste-work",
-    "bruckner:76": "anton-bruckner-os-justi-work",
-    "bruckner:80": "anton-bruckner-pange-lingua-work",
-    "bruckner:82": "anton-bruckner-salvum-fac-populum-tuum-work",
-    "bruckner:84": "anton-bruckner-4-tantum-ergo-work",
-    "bruckner:90": "anton-bruckner-tota-pulchra-es-work",
-    "bruckner:92": "anton-bruckner-virga-jesse-work",
-    "bruckner:94": "anton-bruckner-vexilla-regis-work",
-    "bruckner:96": "anton-bruckner-kronstorfer-messe-in-d-minor-work"
+    "prokofiev:14": "sergei-prokofiev-ala-i-lolli-work",
+    "prokofiev:18": "sergei-prokofiev-dreams-work",
+    "prokofiev:20": "sergei-prokofiev-two-poems-for-female-chorus-and-orchestra-work",
+    "prokofiev:22": "sergei-prokofiev-autumnal-work",
+    "prokofiev:26": "sergei-prokofiev-piano-concerto-no-1-in-d-flat-work",
+    "prokofiev:28": "sergei-prokofiev-piano-concerto-no-2-in-g-minor-work",
+    "prokofiev:30": "sergei-prokofiev-the-ugly-duckling-work",
+    "prokofiev:32": "sergei-prokofiev-violin-concerto-no-1-in-d-work",
+    "prokofiev:35": "sergei-prokofiev-scythian-suite-work",
+    "prokofiev:39": "sergei-prokofiev-suite-from-chout-work",
+    "prokofiev:41": "sergei-prokofiev-symphony-no-1-in-d-classical-work",
+    "prokofiev:43": "sergei-prokofiev-piano-concerto-no-3-in-c-work",
+    "prokofiev:45": "sergei-prokofiev-andante-from-piano-sonata-no-4-arranged-for-orchestra-work",
+    "prokofiev:47": "sergei-prokofiev-trapeze-work",
+    "prokofiev:51": "sergei-prokofiev-seven-they-are-seven-work",
+    "prokofiev:55": "sergei-prokofiev-overture-on-hebrew-themes-work",
+    "prokofiev:57": "sergei-prokofiev-melodie-work",
+    "prokofiev:59": "sergei-prokofiev-vocal-suite-from-the-fiery-angel-work",
+    "prokofiev:63": "sergei-prokofiev-symphony-no-2-in-d-minor-work",
+    "prokofiev:65": "sergei-prokofiev-le-pas-d-acier-the-steel-step-work",
+    "prokofiev:67": "sergei-prokofiev-suite-from-le-pas-d-acier-work",
+    "prokofiev:69": "sergei-prokofiev-american-overture-work",
+    "prokofiev:71": "sergei-prokofiev-american-overture-2-work",
+    "prokofiev:73": "sergei-prokofiev-divertissement-work",
+    "prokofiev:75": "sergei-prokofiev-symphony-no-3-in-c-minor-work",
+    "prokofiev:77": "sergei-prokofiev-le-fils-prodigue-the-prodigal-son-work",
+    "prokofiev:79": "sergei-prokofiev-suite-from-the-prodigal-son-work",
+    "prokofiev:88": "sergei-prokofiev-andante-from-string-quartet-no-1-arranged-for-string-orchestra-work",
+    "prokofiev:90": "sergei-prokofiev-on-the-dnieper-work",
+    "prokofiev:92": "sergei-prokofiev-suite-from-on-the-dnieper-work",
+    "prokofiev:94": "sergei-prokofiev-piano-concerto-no-4-in-b-flat-work",
+    "prokofiev:96": "sergei-prokofiev-piano-concerto-no-5-in-g-work",
+    "prokofiev:98": "sergei-prokofiev-symphonic-song-work",
+    "prokofiev:100": "sergei-prokofiev-cello-concerto-in-e-minor-work",
+    "prokofiev:104": "sergei-prokofiev-lieutenant-kije-work",
+    "prokofiev:106": "sergei-prokofiev-suite-from-lieutenant-kije-work",
+    "prokofiev:108": "sergei-prokofiev-suite-from-egyptian-nights-work",
+    "prokofiev:110": "sergei-prokofiev-violin-concerto-no-2-in-g-minor-work",
+    "prokofiev:112": "sergei-prokofiev-romeo-and-juliet-work",
+    "prokofiev:114": "sergei-prokofiev-suite-1-from-romeo-and-juliet-work",
+    "prokofiev:116": "sergei-prokofiev-suite-2-from-romeo-and-juliet-work",
+    "prokofiev:118": "sergei-prokofiev-summer-day-work",
+    "prokofiev:120": "sergei-prokofiev-peter-and-the-wolf-work",
+    "prokofiev:124": "sergei-prokofiev-the-queen-of-spades-work",
+    "prokofiev:126": "sergei-prokofiev-boris-godunov-work",
+    "prokofiev:128": "sergei-prokofiev-eugene-onegin-work",
+    "prokofiev:130": "sergei-prokofiev-russian-overture-work",
+    "prokofiev:132": "sergei-prokofiev-cantata-for-the-20th-anniversary-of-the-october-revolution-work",
+    "prokofiev:134": "sergei-prokofiev-songs-of-our-days-work",
+    "prokofiev:136": "sergei-prokofiev-hamlet-work",
+    "prokofiev:138": "sergei-prokofiev-alexander-nevsky-work",
+    "prokofiev:140": "sergei-prokofiev-alexander-nevsky-2-work",
+    "prokofiev:142": "sergei-prokofiev-lermontov-work",
+    "prokofiev:144": "sergei-prokofiev-kotovsky-work",
+    "prokofiev:146": "sergei-prokofiev-tonya-work",
+    "prokofiev:148": "sergei-prokofiev-the-partisans-in-the-ukrainian-steppes-work",
+    "prokofiev:154": "sergei-prokofiev-suite-from-semyon-kotko-work",
+    "prokofiev:156": "sergei-prokofiev-zdravitsa-work",
+    "prokofiev:158": "sergei-prokofiev-cinderella-work",
+    "prokofiev:160": "sergei-prokofiev-symphonic-march-work",
+    "prokofiev:164": "sergei-prokofiev-the-year-1941-work",
+    "prokofiev:166": "sergei-prokofiev-war-and-peace-suite-work",
+    "prokofiev:168": "sergei-prokofiev-ballad-of-an-unknown-boy-work",
+    "prokofiev:172": "sergei-prokofiev-symphony-no-5-in-b-flat-work",
+    "prokofiev:174": "sergei-prokofiev-suite-3-from-romeo-and-juliet-work",
+    "prokofiev:176": "sergei-prokofiev-ode-to-the-end-of-the-war-work",
+    "prokofiev:178": "sergei-prokofiev-suite-1-from-cinderella-work",
+    "prokofiev:180": "sergei-prokofiev-suite-2-from-cinderella-work",
+    "prokofiev:182": "sergei-prokofiev-suite-3-from-cinderella-work",
+    "prokofiev:188": "sergei-prokofiev-waltz-suite-work",
+    "prokofiev:190": "sergei-prokofiev-symphony-no-6-in-e-flat-minor-work",
+    "prokofiev:194": "sergei-prokofiev-thirty-years-work",
+    "prokofiev:196": "sergei-prokofiev-flourish-mighty-land-work",
+    "prokofiev:200": "sergei-prokofiev-ivan-the-terrible-work",
+    "prokofiev:202": "sergei-prokofiev-tale-of-the-stone-flower-work",
+    "prokofiev:206": "sergei-prokofiev-pushkin-waltzes-work",
+    "prokofiev:208": "sergei-prokofiev-winter-bonfire-work",
+    "prokofiev:210": "sergei-prokofiev-summer-night-suite-from-betrothal-in-a-monastery-work",
+    "prokofiev:212": "sergei-prokofiev-on-guard-for-peace-work",
+    "prokofiev:214": "sergei-prokofiev-symphony-concerto-for-cello-and-orchestra-in-e-minor-work",
+    "prokofiev:216": "sergei-prokofiev-wedding-suite-from-the-tale-of-the-stone-flower-work",
+    "prokofiev:218": "sergei-prokofiev-gypsy-fantasy-from-the-tale-of-the-stone-flower-work",
+    "prokofiev:220": "sergei-prokofiev-urals-rhapsody-from-the-tale-of-the-stone-flower-work",
+    "prokofiev:222": "sergei-prokofiev-the-mistress-of-copper-mountain-from-the-tale-of-the-stone-flower-work",
+    "prokofiev:227": "sergei-prokofiev-the-meeting-of-the-volga-and-the-don-work",
+    "prokofiev:229": "sergei-prokofiev-symphony-no-7-in-c-sharp-minor-work",
+    "prokofiev:231": "sergei-prokofiev-cello-concertino-in-g-minor-work",
+    "prokofiev:233": "sergei-prokofiev-piano-concerto-no-6-work",
+    "prokofiev:235": "sergei-prokofiev-symphony-no-2-in-d-minor-work"
   },
   "written_files": []
 }

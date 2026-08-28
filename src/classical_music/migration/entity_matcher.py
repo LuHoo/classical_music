@@ -324,6 +324,48 @@ class EntityMatcher:
         import re
         match = re.search(r'(\d{4})', date_text)
         return match.group(1) if match else None
+    
+    def _has_positive_version_evidence(
+        self, candidate: ExistingEntity, source_version_year: str
+    ) -> bool:
+        """
+        Check if canonical candidate has POSITIVE evidence for source_version_year.
+        
+        Returns True only if we find explicit version evidence matching the year.
+        Absence of version data does NOT count as positive evidence.
+        
+        Checks in order:
+        1. version_year field (explicit)
+        2. date_text when it unambiguously identifies the version year
+        3. title containing explicit version/revision identifier
+        """
+        # Check 1: Explicit version_year field
+        canonical_version_year = candidate.data.get("version_year")
+        if canonical_version_year == source_version_year:
+            return True  # Positive evidence: explicit version_year match
+        
+        # Check 2: date_text (if it clearly identifies this version)
+        date_text = candidate.data.get("date_text")
+        if date_text:
+            # Extract first year from date_text
+            extracted_year = self._extract_year_from_date_text(date_text)
+            if extracted_year == source_version_year:
+                # Check that date_text isn't ambiguous (e.g., not "1865-1872 revisions")
+                # Simple heuristic: if it contains only one 4-digit year, it's explicit
+                years_in_text = re.findall(r'\d{4}', date_text)
+                if len(years_in_text) == 1:
+                    return True  # Positive evidence: unambiguous date_text
+        
+        # Check 3: Title containing explicit version/revision identifier
+        # (e.g., title includes "1865 version" or "Vienna version")
+        title = candidate.data.get("title", "")
+        if title:
+            # Look for version patterns in title
+            if re.search(rf'{source_version_year}.*version', title, re.IGNORECASE):
+                return True  # Positive evidence: version in title
+        
+        # No positive evidence found (absence of contradiction ≠ positive match)
+        return False
 
     def resolve_work_identity(
         self,
@@ -371,71 +413,80 @@ class EntityMatcher:
         if len(candidates) == 1:
             candidate = candidates[0]
             
-            # If source has version info, verify it doesn't contradict canonical
-            # (Only conflict if canonical explicitly has different version_year)
+            # If source has version info, REQUIRE positive evidence from canonical
             if version_info:
-                canonical_version_year = candidate.data.get("version_year")
-                # Only raise conflict if canonical has version info that differs
-                if canonical_version_year and canonical_version_year != version_info["year"]:
-                    # Version mismatch: this candidate is not the right version
+                # When source explicitly names version, we must have positive evidence
+                # Absence of version data in canonical is NOT evidence for match
+                if self._has_positive_version_evidence(candidate, version_info["year"]):
+                    # Positive evidence confirmed the version
+                    evidence_used.append(f"version_evidence_positive")
+                    return WorkIdentityResult(
+                        status=WorkIdentityResolution.MATCHED,
+                        matched_work_id=candidate.entity_id,
+                        candidates_count=1,
+                        evidence_used=evidence_used,
+                        rationale=f"Single candidate with positive evidence for version {version_info['year']}",
+                        requires_curator_action=False,
+                    )
+                else:
+                    # No positive evidence for the version - unresolved
                     return WorkIdentityResult(
                         status=WorkIdentityResolution.UNRESOLVED,
                         candidates_count=1,
                         evidence_used=evidence_used,
-                        rationale=f"Found Work but version mismatch: source {version_info['year']} vs canonical {canonical_version_year}",
+                        rationale=f"Source names version {version_info['year']} but canonical has no positive evidence for this version",
                         requires_curator_action=True,
                     )
-                # If canonical has no version_year, source version info doesn't conflict
-            
-            # Single candidate matches
-            evidence_used.append("exact_single_candidate")
-            return WorkIdentityResult(
-                status=WorkIdentityResolution.MATCHED,
-                matched_work_id=candidate.entity_id,
-                candidates_count=1,
-                evidence_used=evidence_used,
-                rationale=f"Single canonical Work matches: {candidate.entity_id}",
-                requires_curator_action=False,
-            )
+            else:
+                # Source has no version info - single candidate is safe
+                evidence_used.append("exact_single_candidate")
+                return WorkIdentityResult(
+                    status=WorkIdentityResolution.MATCHED,
+                    matched_work_id=candidate.entity_id,
+                    candidates_count=1,
+                    evidence_used=evidence_used,
+                    rationale=f"Single canonical Work matches: {candidate.entity_id}",
+                    requires_curator_action=False,
+                )
         
         # Case 3: Multiple candidates (ambiguity)
         # Try to use version info to disambiguate
         if version_info:
-            # Check both version_year field and date_text for year
-            version_matches = [
+            # Requirement: Catalogue evidence must not override contradictory version evidence
+            # So check version evidence first for ALL candidates
+            version_positive = [
                 c for c in candidates
-                if c.data.get("version_year") == version_info["year"]
-                or self._extract_year_from_date_text(c.data.get("date_text")) == version_info["year"]
+                if self._has_positive_version_evidence(c, version_info["year"])
             ]
             
-            if len(version_matches) == 1:
-                # Version info resolved the ambiguity
-                candidate = version_matches[0]
-                evidence_used.append("version_disambiguation")
+            if len(version_positive) == 1:
+                # Positive version evidence resolves the ambiguity
+                candidate = version_positive[0]
+                evidence_used.append("version_evidence_positive_disambiguation")
                 return WorkIdentityResult(
                     status=WorkIdentityResolution.MATCHED,
                     matched_work_id=candidate.entity_id,
                     candidates_count=len(candidates),
                     evidence_used=evidence_used,
-                    rationale=f"Used version evidence to select from {len(candidates)} candidates",
+                    rationale=f"Used positive version evidence to select from {len(candidates)} candidates",
                     requires_curator_action=False,
                 )
-            elif len(version_matches) > 1:
-                # Version info didn't uniquely resolve
+            elif len(version_positive) > 1:
+                # Positive version evidence still doesn't uniquely resolve
                 return WorkIdentityResult(
                     status=WorkIdentityResolution.UNRESOLVED,
                     candidates_count=len(candidates),
                     evidence_used=evidence_used,
-                    rationale=f"Version {version_info['year']} matches multiple Works; cannot resolve identity",
+                    rationale=f"Version {version_info['year']} has positive evidence in multiple Works; cannot resolve identity",
                     requires_curator_action=True,
                 )
             else:
-                # Source has version that doesn't match any candidate
+                # Source has version that doesn't have positive evidence in any candidate
                 return WorkIdentityResult(
                     status=WorkIdentityResolution.UNRESOLVED,
                     candidates_count=len(candidates),
                     evidence_used=evidence_used,
-                    rationale=f"Source version {version_info['year']} doesn't match any of {len(candidates)} candidates",
+                    rationale=f"Source version {version_info['year']} lacks positive evidence in any of {len(candidates)} candidates",
                     requires_curator_action=True,
                 )
         
@@ -475,6 +526,119 @@ class EntityMatcher:
     def find_person(self, person_id: str) -> ExistingEntity | None:
         """Find an existing person by ID."""
         return self.persons.get(person_id)
+
+    def find_performance_candidates(
+        self, work_id: str, tidal_url: str | None = None
+    ) -> list[ExistingEntity]:
+        """
+        Candidate discovery: Find canonical Performances for a resolved Work.
+        
+        Only attempt after Work identity is MATCHED or safely NEW_IDENTITY.
+        
+        Uses:
+        1. Exact Tidal URL match (preferred)
+        2. Normalized performer text matching
+        
+        Returns list of candidate Performances (may be empty, one, or multiple).
+        """
+        candidates: list[ExistingEntity] = []
+        
+        # Find all performances for this work
+        performances_for_work = [
+            p for p in self.performances.values()
+            if p.data.get("work_id") == work_id
+        ]
+        
+        if not performances_for_work:
+            return candidates
+        
+        # Strategy 1: Exact Tidal URL match (most reliable)
+        if tidal_url:
+            for perf in performances_for_work:
+                canonical_tidal = perf.data.get("tidal_url")
+                if canonical_tidal == tidal_url:
+                    candidates.append(perf)
+        
+        return candidates
+
+    def resolve_performance_identity(
+        self,
+        work_id: str,
+        performer_text: str,
+        tidal_url: str | None,
+        candidates: list[ExistingEntity],
+    ) -> "PerformanceIdentityResult":
+        """
+        Identity resolution: Determine if and which canonical Performance matches.
+        
+        Only called after Work identity is resolved.
+        
+        Returns PerformanceIdentityResult with:
+        - status: MATCHED_EXISTING | NEW_PERFORMANCE | UNRESOLVED
+        - matched_performance_id: if MATCHED_EXISTING
+        - performance_profile: preserved from matched Performance
+        """
+        from classical_music.migration.models import (
+            PerformanceIdentityResolution,
+            PerformanceIdentityResult,
+        )
+        
+        evidence_used: list[str] = []
+        
+        # Case 1: No candidates found
+        if not candidates:
+            # Without matching canonical Performance, check if source has
+            # sufficient evidence for a new Performance
+            # For now, insufficient evidence → UNRESOLVED
+            return PerformanceIdentityResult(
+                status=PerformanceIdentityResolution.UNRESOLVED,
+                candidates_count=0,
+                evidence_used=evidence_used,
+                rationale="No canonical Performance found; insufficient evidence for new Performance",
+                requires_curator_action=True,
+            )
+        
+        # Case 2: Exactly one candidate
+        if len(candidates) == 1:
+            candidate = candidates[0]
+            
+            # Exact Tidal URL match → definitely the same Performance
+            if tidal_url:
+                evidence_used.append(f"tidal_url_match")
+                
+                # Preserve performance_profile if present in canonical
+                profile = candidate.data.get("performance_profile")
+                
+                return PerformanceIdentityResult(
+                    status=PerformanceIdentityResolution.MATCHED_EXISTING,
+                    matched_performance_id=candidate.entity_id,
+                    candidates_count=1,
+                    evidence_used=evidence_used,
+                    rationale=f"Tidal URL matches canonical Performance: {candidate.entity_id}",
+                    requires_curator_action=False,
+                    performance_profile=profile,
+                )
+            
+            # No Tidal URL but single performer match
+            # This is weaker evidence → UNRESOLVED (require curator decision)
+            evidence_used.append("performer_match_only")
+            return PerformanceIdentityResult(
+                status=PerformanceIdentityResolution.UNRESOLVED,
+                candidates_count=1,
+                evidence_used=evidence_used,
+                rationale=f"Performer text matches but no Tidal URL confirmation",
+                requires_curator_action=True,
+            )
+        
+        # Case 3: Multiple candidates (ambiguity)
+        # Without additional evidence, cannot resolve
+        return PerformanceIdentityResult(
+            status=PerformanceIdentityResolution.UNRESOLVED,
+            candidates_count=len(candidates),
+            evidence_used=evidence_used,
+            rationale=f"Found {len(candidates)} Performances with same performer; cannot resolve identity",
+            requires_curator_action=True,
+        )
 
     def matches_summary(self) -> dict[str, int]:
         """Return summary of loaded entities."""

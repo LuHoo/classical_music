@@ -205,3 +205,214 @@ def test_matches_summary(data_root: Path):
     assert summary["work_groups"] > 0
     assert summary["works"] > 0
     assert summary["performances"] > 0
+
+
+def test_single_candidate_requires_positive_version_evidence(data_root: Path):
+    """
+    Requirement #2: Single candidate + source version must have positive evidence.
+    
+    Test: source says 1865, canonical has no version evidence → UNRESOLVED
+    (not MATCHED by absence of contradiction)
+    """
+    matcher = EntityMatcher(data_root)
+    
+    # Create a synthetic candidate with no version evidence
+    from classical_music.migration.entity_matcher import ExistingEntity
+    candidate = ExistingEntity(
+        entity_type="work",
+        entity_id="test-work",
+        file_path=data_root / "test.yaml",
+        data={
+            "id": "test-work",
+            "title": "Symphony No. 1 in C minor",
+            # No version_year, no date_text, no version in title
+        },
+    )
+    
+    # Source explicitly names 1865
+    result = matcher.resolve_work_identity(
+        "Symphony No. 1 in C minor (1865 version)",
+        "test-composer",
+        [candidate],
+    )
+    
+    # Without positive version evidence, must be UNRESOLVED
+    assert result.status == WorkIdentityResolution.UNRESOLVED
+    assert result.candidates_count == 1
+    assert result.requires_curator_action is True
+
+
+def test_single_candidate_with_positive_version_evidence(data_root: Path):
+    """
+    Test: source says 1865, canonical has explicit version_year 1865 → MATCHED
+    """
+    matcher = EntityMatcher(data_root)
+    
+    from classical_music.migration.entity_matcher import ExistingEntity
+    candidate = ExistingEntity(
+        entity_type="work",
+        entity_id="test-work-1865",
+        file_path=data_root / "test.yaml",
+        data={
+            "id": "test-work-1865",
+            "title": "Symphony No. 1 in C minor",
+            "version_year": "1865",  # Positive evidence
+        },
+    )
+    
+    result = matcher.resolve_work_identity(
+        "Symphony No. 1 in C minor (1865 version)",
+        "test-composer",
+        [candidate],
+    )
+    
+    # With positive version_year evidence, should MATCH
+    assert result.status == WorkIdentityResolution.MATCHED
+    assert result.matched_work_id == "test-work-1865"
+    assert result.requires_curator_action is False
+
+
+def test_single_candidate_contradictory_version(data_root: Path):
+    """
+    Test: source says 1865, canonical explicitly says 1889 → UNRESOLVED
+    (contradictory explicit evidence means not this version)
+    """
+    matcher = EntityMatcher(data_root)
+    
+    from classical_music.migration.entity_matcher import ExistingEntity
+    candidate = ExistingEntity(
+        entity_type="work",
+        entity_id="test-work-1889",
+        file_path=data_root / "test.yaml",
+        data={
+            "id": "test-work-1889",
+            "title": "Symphony No. 1 in C minor",
+            "version_year": "1889",  # Contradicts source
+        },
+    )
+    
+    result = matcher.resolve_work_identity(
+        "Symphony No. 1 in C minor (1865 version)",
+        "test-composer",
+        [candidate],
+    )
+    
+    # Explicit contradiction means this is not the right version
+    assert result.status == WorkIdentityResolution.UNRESOLVED
+    assert result.requires_curator_action is True
+
+
+def test_catalogue_evidence_does_not_override_version(data_root: Path):
+    """
+    Requirement: Catalogue evidence must not override contradictory version evidence.
+    
+    Test: same WAB family + source 1873 + candidate explicitly 1889 → UNRESOLVED
+    """
+    matcher = EntityMatcher(data_root)
+    
+    from classical_music.migration.entity_matcher import ExistingEntity
+    # Candidate in same WAB family but different version
+    candidate = ExistingEntity(
+        entity_type="work",
+        entity_id="bruckner-sym1-1889-version",
+        file_path=data_root / "test.yaml",
+        data={
+            "id": "bruckner-sym1-1889-version",
+            "title": "Symphony No. 1 in C minor",
+            "catalogue": "WAB.101",
+            "version_year": "1889",  # Explicit different version
+        },
+    )
+    
+    # Source explicitly says 1873 with same catalogue number
+    result = matcher.resolve_work_identity(
+        "Symphony No. 1 in C minor, WAB. 101 (1873 version)",
+        "anton-bruckner",
+        [candidate],
+    )
+    
+    # Version evidence overrides catalogue evidence when contradictory
+    assert result.status == WorkIdentityResolution.UNRESOLVED
+    assert result.requires_curator_action is True
+
+
+def test_find_performance_candidates_by_tidal_url(data_root: Path):
+    """
+    Test: Performance candidate discovery by Tidal URL.
+    
+    For a given Work, find canonical Performance with matching Tidal URL.
+    """
+    matcher = EntityMatcher(data_root)
+    
+    # Try finding performances for a known Bruckner work
+    from classical_music.migration.entity_matcher import ExistingEntity
+    
+    # Performance exists in canonical data for some work
+    # For this test, create synthetic scenario since we need specific work_id
+    test_work_id = "test-work-123"
+    
+    # Performances are loaded from data/performances/
+    # Just verify the method signature works and returns a list
+    candidates = matcher.find_performance_candidates(
+        work_id=test_work_id,
+        tidal_url="https://tidal.com/browse/track/123456",
+    )
+    
+    # Should return a list (empty if no matches)
+    assert isinstance(candidates, list)
+
+
+def test_resolve_performance_identity_with_tidal_url(data_root: Path):
+    """
+    Test: Performance identity resolution with exact Tidal URL match.
+    
+    Same Tidal URL + same Work → MATCHED_EXISTING
+    """
+    matcher = EntityMatcher(data_root)
+    from classical_music.migration.entity_matcher import ExistingEntity
+    from classical_music.migration.models import PerformanceIdentityResolution
+    
+    # Synthetic canonical Performance
+    perf_candidate = ExistingEntity(
+        entity_type="performance",
+        entity_id="perf-123",
+        file_path=data_root / "test.yaml",
+        data={
+            "id": "perf-123",
+            "work_id": "work-xyz",
+            "tidal_url": "https://tidal.com/browse/track/123456",
+            "performer_text": "Vienna Philharmonic, Zubin Mehta",
+            "performance_profile": "live",
+        },
+    )
+    
+    result = matcher.resolve_performance_identity(
+        work_id="work-xyz",
+        performer_text="Vienna Philharmonic, Zubin Mehta",
+        tidal_url="https://tidal.com/browse/track/123456",
+        candidates=[perf_candidate],
+    )
+    
+    assert result.status == PerformanceIdentityResolution.MATCHED_EXISTING
+    assert result.matched_performance_id == "perf-123"
+    assert result.performance_profile == "live"
+    assert result.requires_curator_action is False
+
+
+def test_resolve_performance_identity_no_candidates(data_root: Path):
+    """
+    Test: Performance identity with no candidates → UNRESOLVED
+    (not automatically NEW_PERFORMANCE without positive evidence)
+    """
+    matcher = EntityMatcher(data_root)
+    from classical_music.migration.models import PerformanceIdentityResolution
+    
+    result = matcher.resolve_performance_identity(
+        work_id="work-xyz",
+        performer_text="Some Performer",
+        tidal_url=None,
+        candidates=[],
+    )
+    
+    assert result.status == PerformanceIdentityResolution.UNRESOLVED
+    assert result.requires_curator_action is True
