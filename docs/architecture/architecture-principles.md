@@ -216,6 +216,141 @@ Do not merge or mark the PR ready for review unless the curator explicitly asks 
 
 This workflow is a project default and does not need to be repeated by the curator in every task.
 
+## 19. Mandatory completion and adversarial review protocol
+
+Substantive Codex/agent work must not be declared complete on the basis of passing tests or self-generated metrics alone.
+
+### Completion has three distinct stages
+
+```text
+implementation
+    ↓
+adversarial self-review
+    ↓
+completion evidence
+```
+
+Passing tests after implementation is necessary but is not by itself evidence that the task is complete.
+
+### Adversarial self-review is mandatory
+
+Before claiming completion, the implementing agent must actively try to falsify its own solution against the task's architecture and acceptance criteria.
+
+Examples of adversarial review:
+
+- **for automatic identity matches**, look for evidence that the selected Person/Work/Performance could be wrong;
+- **for unresolved/escalated cases**, try to prove that repository evidence or appropriate authority evidence can resolve the case without the curator;
+- **for migrations**, verify that trusted source information was not lost by parsing or normalization;
+- **for workflow automation**, inspect whether the implementation manufactures avoidable curator work;
+- **for validators**, test both false positives and false negatives rather than optimizing warning counts.
+
+A current function's inability to resolve a case is a software diagnosis, not evidence that human judgment is required.
+
+### Curator escalation requires exhaustion of automation
+
+An identity case may be labelled `curator_required` only after the agent has established:
+
+```text
+repository evidence insufficient
+AND
+appropriate demand-driven authority evidence insufficient or genuinely ambiguous
+AND
+the unresolved question materially affects canonical identity or an active curator decision
+```
+
+If repository evidence can resolve it, classify it as automation work. If only external authority evidence is still required, classify it as an authority gate, not curator work.
+
+### Independent ground truth
+
+Never validate a resolver/classifier by treating its own output as ground truth.
+
+Ground truth must come from an independent source appropriate to the task, such as:
+
+- trusted legacy provenance;
+- canonical repository evidence independent of the decision under test;
+- catalogue identifiers or established relationships;
+- an appropriate authoritative external source;
+- a previously recorded curator decision.
+
+A result is not proven correct merely because the selected canonical ID exists or its title looks plausible.
+
+### Completion claims require evidence pointers
+
+Codex/agents must not claim `done`, `complete`, `all requirements satisfied`, or equivalent unless every acceptance criterion has a concrete evidence pointer.
+
+Require a PR section conceptually like:
+
+```markdown
+## Completion evidence
+
+### Acceptance criteria
+- [x] Criterion 1
+  Evidence: `path/file.py` + named test/report section
+- [x] Criterion 2
+  Evidence: `reports/...` §...
+
+### Adversarial self-review
+Cases deliberately tested to falsify the implementation:
+- ...
+
+### Remaining unresolved cases
+- repository_resolvable: 0
+- authority_evidence_required: N
+- curator_required: N
+
+For every curator_required case:
+- repository evidence checked: ...
+- authority evidence checked: ...
+- why human judgment remains necessary: ...
+
+### Repository hygiene
+- [x] no runtime artifacts
+- [x] no backup implementation files
+- [x] generated files intentionally retained only
+- [x] PR body/docs reflect current implementation
+```
+
+The exact formatting may vary, but the evidence content is mandatory. A checked box without an evidence pointer does not count as completion evidence.
+
+### Re-read the original task before declaring completion
+
+Immediately before the completion claim, the agent must re-read:
+
+- the issue/task description;
+- all blocking review comments still applicable;
+- the acceptance criteria;
+- the governing architecture documents.
+
+It must explicitly reconcile its implementation against them. Requirements may not silently be moved to `future work` when they were part of the current acceptance criteria.
+
+### Technical metrics are diagnostic, not completion criteria
+
+Metrics such as match rate, warning count, line coverage, external-ID coverage or number of passing tests do not prove architectural correctness by themselves.
+
+Prefer domain-level success measures such as:
+
+- zero known false-positive identity matches;
+- no unnecessary curator escalations;
+- all identity-critical decision paths behaviorally tested;
+- canonical data remains within the documented domain model;
+- curator/user workflow is actually simplified.
+
+### Repository hygiene is part of completion
+
+Runtime artifacts, caches, backup source files, stale generated output and obsolete PR/documentation claims must be removed before completion unless explicitly retained as stable repository artifacts.
+
+### Relationship to existing principles
+
+This protocol explicitly reinforces:
+
+- Principle 2: repository is canonical;
+- Principle 3: trusted legacy data;
+- Principle 4: Person/Work identity accuracy;
+- Principle 6: demand-driven authorities;
+- Principle 15: automation reduces curator workload;
+- Principle 16: distinguish identity gates from background suspicions;
+- Principle 18: mandatory Git workflow.
+
 ## Mandatory pre-flight checklist
 
 Before starting any implementation, Codex task or substantive repository change, answer these questions:
