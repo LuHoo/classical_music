@@ -4,11 +4,14 @@ import re
 from pathlib import Path
 
 from .models import SourceLocation, SourceRecord
+from .entity_matcher import extract_catalogue_number
 
 
 HEADING_RE = re.compile(r"^(#{2,6})\s+(.*)\s*$")
 WORK_RE = re.compile(r"^(?P<gem>💎|\[gem\])?\s*\*\*(?P<title>.+?)\*\*(?P<tail>.*)$")
-DATE_RE = re.compile(r"\((?P<date>[^)]*\d[^)]*)\)")
+# Match version/revision/date in parentheses, excluding gramophone issues (MM/YYYY)
+# Negative lookahead (?!\d{1,2}/\d{4}(?:\)|$)) prevents matching (09/2024) format
+DATE_RE = re.compile(r"\((?P<date>(?!\d{1,2}/\d{4}(?:\)|$))([^)]+))\)")
 URL_RE = re.compile(r"https?://[^\s)]+")
 PERFORMER_RE = re.compile(r"\[\*(?P<performers>.+?)\*\]\((?P<url>https?://[^)]+)\)")
 GRAMOPHONE_RE = re.compile(r"\((?P<issue>\d{2}/\d{4})\)")
@@ -37,13 +40,26 @@ def parse_composer_markdown(file_path: Path) -> list[SourceRecord]:
         tail = work_match.group("tail") or ""
         gem_marker = bool(work_match.group("gem"))
 
-        date_match = DATE_RE.search(line)
-        date_text = date_match.group("date").strip() if date_match else None
-
         performers: str | None = None
         performer_match = PERFORMER_RE.search(line)
         if performer_match:
             performers = performer_match.group("performers").strip()
+        
+        # Remove performer link and URLs from tail before looking for date
+        # This avoids matching parentheses in URLs like (http://...)
+        tail_without_links = tail
+        if performer_match:
+            tail_without_links = tail.replace(performer_match.group(0), "")
+        
+        # Look for dates only in the tail without URLs
+        date_match = DATE_RE.search(tail_without_links)
+        date_text = date_match.group("date").strip() if date_match else None
+        
+        # Preserve version/revision text in work_text for identity resolution
+        # Include version text in parentheses if present
+        work_text = title
+        if date_text:
+            work_text = f"{title} ({date_text})"
 
         issue_match = GRAMOPHONE_RE.search(line)
         gramophone_issue = _normalize_gramophone_issue(issue_match.group("issue")) if issue_match else None
@@ -51,22 +67,51 @@ def parse_composer_markdown(file_path: Path) -> list[SourceRecord]:
         links = URL_RE.findall(line)
 
         source_id = f"{file_path.stem}:{line_number}"
+        common = {
+            "location": SourceLocation(
+                source_file=str(file_path.as_posix()),
+                line_number=line_number,
+                heading_path=heading_path.copy(),
+            ),
+            "raw_markdown": line.strip(),
+            "gem_marker": gem_marker,
+            "category": heading_path[-1] if heading_path else None,
+            "tidal_links": [url for url in links if "tidal.com" in url],
+            "performer_text": performers,
+            "gramophone_issue": gramophone_issue,
+        }
+
+        # A legacy collective Prokofiev line describes two juvenile Works. Keep
+        # this generic enough for explicit "two juvenile" source phrasing while
+        # preserving the original source line for the authority gate.
+        juvenile_symphonies = re.search(
+            r"two\s+juvenile:\s*Symphony\s*\((?P<first>\d{4})\)\s+and\s+Symphony\s*\((?P<second>\d{4})\)",
+            tail,
+            re.IGNORECASE,
+        )
+        if normalize_title_for_parser(title) == "symphonies" and juvenile_symphonies:
+            for index, year in enumerate(
+                (juvenile_symphonies.group("first"), juvenile_symphonies.group("second")),
+                start=1,
+            ):
+                records.append(
+                    SourceRecord(
+                        source_id=f"{source_id}:{index}",
+                        work_text=f"Symphony ({year})",
+                        date_text=year,
+                        catalogue=None,
+                        **common,
+                    )
+                )
+            continue
+
         records.append(
             SourceRecord(
                 source_id=source_id,
-                location=SourceLocation(
-                    source_file=str(file_path.as_posix()),
-                    line_number=line_number,
-                    heading_path=heading_path.copy(),
-                ),
-                raw_markdown=line.strip(),
-                gem_marker=gem_marker,
-                work_text=title,
+                work_text=work_text,
                 date_text=date_text,
-                category=heading_path[-1] if heading_path else None,
-                tidal_links=[url for url in links if "tidal.com" in url],
-                performer_text=performers,
-                gramophone_issue=gramophone_issue,
+                catalogue=extract_catalogue_number(f"{title} {tail}"),
+                **common,
             )
         )
 
@@ -78,3 +123,7 @@ def _normalize_gramophone_issue(issue: str | None) -> str | None:
         return None
     month, year = issue.split("/")
     return f"{year}-{month}"
+
+
+def normalize_title_for_parser(title: str) -> str:
+    return re.sub(r"\s+", " ", title.casefold().strip())
