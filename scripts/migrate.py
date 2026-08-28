@@ -28,7 +28,7 @@ from classical_music.migration.review_categorizer import (  # noqa: E402
 )
 from classical_music.migration.writer import (  # noqa: E402
     stable_performance_id,
-    stable_work_ids,
+    stable_work_ids_with_catalogue,
     write_canonical_preview,
 )
 
@@ -125,7 +125,9 @@ def main(
                 
             elif identity_result.status == WorkIdentityResolution.NEW_IDENTITY:
                 # Positive evidence for new work - create candidate
-                work_group_id, work_id = stable_work_ids(composer_slug, record.work_text)
+                work_group_id, work_id = stable_work_ids_with_catalogue(
+                    composer_slug, record.work_text, record.catalogue
+                )
                 
                 if work_id not in works:
                     works[work_id] = WorkCandidate(
@@ -133,6 +135,7 @@ def main(
                         work_group_id=work_group_id,
                         composer_id=canonical_composer_id,
                         title=record.work_text,
+                        catalogue=record.catalogue,
                         gem=record.gem_marker,
                         source_file=record.location.source_file,
                         source_line=record.location.line_number,

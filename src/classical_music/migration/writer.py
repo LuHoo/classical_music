@@ -28,6 +28,13 @@ def stable_work_ids(composer_slug: str, title: str) -> tuple[str, str]:
     return f"{base}-group", f"{base}-work"
 
 
+def stable_work_ids_with_catalogue(
+    composer_slug: str, title: str, catalogue: str | None
+) -> tuple[str, str]:
+    identity_text = f"{title} {catalogue}" if catalogue else title
+    return stable_work_ids(composer_slug, identity_text)
+
+
 def stable_performance_id(work_id: str, performer_text: str) -> str:
     return slugify(f"{work_id}-{performer_text}")
 
@@ -57,6 +64,8 @@ def write_canonical_preview(
             "composer_id": work.composer_id,
             "title": work.title,
         }
+        if work.catalogue:
+            payload["catalogue"] = work.catalogue
         if work.gem:
             payload["gem"] = True
         if work.source_file is not None or work.source_line is not None:

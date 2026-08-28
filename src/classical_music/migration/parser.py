@@ -51,15 +51,28 @@ def parse_composer_markdown(file_path: Path) -> list[SourceRecord]:
         if performer_match:
             tail_without_links = tail.replace(performer_match.group(0), "")
         
-        # Look for dates only in the tail without URLs
+        # Look for dates only in the tail without URLs.
         date_match = DATE_RE.search(tail_without_links)
         date_text = date_match.group("date").strip() if date_match else None
-        
-        # Preserve version/revision text in work_text for identity resolution
-        # Include version text in parentheses if present
+
+        parenthetical_texts = [
+            match.group("date").strip()
+            for match in DATE_RE.finditer(tail_without_links)
+        ]
+        identity_parentheticals = [
+            text
+            for text in parenthetical_texts
+            if text != date_text and not GRAMOPHONE_RE.fullmatch(f"({text})")
+        ]
+
+        # Preserve date and version/arrangement descriptors in work_text for
+        # identity resolution. The source document often stores curated Work
+        # boundary information in trailing parentheses after the recording link.
         work_text = title
         if date_text:
             work_text = f"{title} ({date_text})"
+        for descriptor in identity_parentheticals:
+            work_text = f"{work_text} ({descriptor})"
 
         issue_match = GRAMOPHONE_RE.search(line)
         gramophone_issue = _normalize_gramophone_issue(issue_match.group("issue")) if issue_match else None

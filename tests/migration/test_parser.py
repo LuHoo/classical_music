@@ -43,6 +43,27 @@ def test_parser_splits_prokofiev_juvenile_symphonies(tmp_path: Path) -> None:
     assert [record.date_text for record in records] == ["1902", "1908"]
 
 
+def test_parser_preserves_trailing_identity_parenthetical_after_recording(tmp_path: Path) -> None:
+    path = tmp_path / "brahms.md"
+    path.write_text(
+        "# Brahms\n\n"
+        "## Orchestral\n"
+        "**Serenade No. 1 in D major**, Op. 11 (1857-1858) "
+        "[*Linos Ensemble*](http://www.tidal.com/track/230183268) "
+        "(original version for chamber orchestra)\n",
+        encoding="utf-8",
+    )
+
+    records = parse_composer_markdown(path)
+
+    assert len(records) == 1
+    assert records[0].work_text == (
+        "Serenade No. 1 in D major (1857-1858) "
+        "(original version for chamber orchestra)"
+    )
+    assert records[0].catalogue == "Op.11"
+
+
 def test_classifier_detects_arrangement_signal(tmp_path: Path) -> None:
     path = tmp_path / "beethoven.md"
     path.write_text(

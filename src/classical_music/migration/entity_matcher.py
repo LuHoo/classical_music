@@ -147,14 +147,15 @@ def extract_catalogue_number(text: str) -> str | None:
     - Op. 23 (opus)
     - K. 545 (Köchel, Mozart)
     - BWV 846 (Bach)
+    - W. 1 / A. 3/1 (Brahms McCorkle appendix-style source notation)
     """
     # Match WAB. DIGITS
     match = re.search(r'WAB\.?\s*(\d+)', text, re.IGNORECASE)
     if match:
         return f"WAB.{match.group(1)}"
     
-    # Match Op. or Opus DIGITS
-    match = re.search(r'Op\.?\s*(\d+\s*(?:bis|ter)?)', text, re.IGNORECASE)
+    # Match Op. or Opus DIGITS, preserving suffixes such as 56a/56b.
+    match = re.search(r'Op\.?\s*(\d+\s*[a-z]?(?:bis|ter)?)', text, re.IGNORECASE)
     if match:
         return f"Op.{match.group(1).replace(' ', '')}"
     
@@ -167,6 +168,14 @@ def extract_catalogue_number(text: str) -> str | None:
     match = re.search(r'BWV\.?\s*(\d+)', text, re.IGNORECASE)
     if match:
         return f"BWV.{match.group(1)}"
+
+    match = re.search(r'\bW\.?\s*(\d+(?:/\d+)?)', text, re.IGNORECASE)
+    if match:
+        return f"W.{match.group(1)}"
+
+    match = re.search(r'\bA\.?\s*(\d+(?:/\d+)?)', text, re.IGNORECASE)
+    if match:
+        return f"A.{match.group(1)}"
     
     return None
 
@@ -546,6 +555,20 @@ class EntityMatcher:
         
         # Case 1: No candidates found
         if not candidates:
+            if (
+                self.is_curated_source_for_composer(composer_id, source_file)
+                and (catalogue or version_info or work_title.strip())
+            ):
+                evidence = evidence_used.copy()
+                if source_file and source_line is not None:
+                    evidence.append("curated_source_provenance")
+                return WorkIdentityResult(
+                    status=WorkIdentityResolution.NEW_IDENTITY,
+                    candidates_count=0,
+                    evidence_used=evidence,
+                    rationale="Curated source document provides positive provenance for a new Work candidate",
+                    requires_curator_action=False,
+                )
             if version_info and composer_id in self.persons:
                 return WorkIdentityResult(
                     status=WorkIdentityResolution.AUTHORITY_EVIDENCE_REQUIRED,
@@ -680,6 +703,19 @@ class EntityMatcher:
         """Find an existing person by ID."""
         return self.persons.get(person_id)
 
+    def is_curated_source_for_composer(
+        self, composer_id: str, source_file: str | None
+    ) -> bool:
+        """Return whether a source file is explicitly attached to a Person seed."""
+        person = self.persons.get(composer_id)
+        if not person:
+            return False
+        source = person.data.get("source") or {}
+        return (
+            isinstance(source, dict)
+            and same_legacy_source_file(source_file, source.get("file"))
+        )
+
     def find_performance_candidates(
         self, work_id: str, tidal_url: str | None = None
     ) -> list[ExistingEntity]:
@@ -740,9 +776,15 @@ class EntityMatcher:
         
         # Case 1: No candidates found
         if not candidates:
-            # Without matching canonical Performance, check if source has
-            # sufficient evidence for a new Performance
-            # For now, insufficient evidence → UNRESOLVED
+            if tidal_url:
+                evidence_used.append("tidal_url")
+                return PerformanceIdentityResult(
+                    status=PerformanceIdentityResolution.NEW_PERFORMANCE,
+                    candidates_count=0,
+                    evidence_used=evidence_used,
+                    rationale="Curated source provides performer text with a Tidal URL for a new Performance candidate",
+                    requires_curator_action=False,
+                )
             return PerformanceIdentityResult(
                 status=PerformanceIdentityResolution.UNRESOLVED,
                 candidates_count=0,
