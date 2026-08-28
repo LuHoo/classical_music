@@ -42,7 +42,9 @@ Each work extracted from legacy Markdown:
 - `work_group_id`: Groups versions of same work (e.g., all Symphony No. 1 variants)
 - `composer_id`: Canonical composer identifier (e.g., "anton-bruckner")
 - `title`: Raw title from legacy Markdown (includes version/revision notes)
-- `gem`: Marked with 💎 in source (indicates curator-curated recording)
+- `gem`: Work-level public presentation marker from 💎 in the source; it does
+  not create or prioritize Performance, Recording, recommendation, validation or
+  authority workflow.
 - `source_file`: Markdown file containing this entry
 - `source_line`: Line number in Markdown
 
