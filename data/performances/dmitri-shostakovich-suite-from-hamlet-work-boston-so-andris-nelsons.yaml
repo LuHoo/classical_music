@@ -1,0 +1,16 @@
+id: dmitri-shostakovich-suite-from-hamlet-work-boston-so-andris-nelsons
+work_id: dmitri-shostakovich-suite-from-hamlet-work
+performers:
+- artist_id: boston-symphony-orchestra
+  name: Boston SO
+  role: performer
+- artist_id: andris-nelsons
+  name: Andris Nelsons
+  role: conductor
+source_performer_text: Boston SO, Andris Nelsons
+links:
+  tidal:
+    url: http://www.tidal.com/track/77611685
+source:
+  file: /Users/Lucas_new/.codex/.chatgpt-projects/g-p-6a500123ac548191ab37db95c0d285a2/classical_music/docs/shostakovich.md
+  line: '50'

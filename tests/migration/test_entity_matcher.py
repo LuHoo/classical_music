@@ -120,6 +120,13 @@ def test_performer_entries_use_final_conductor_for_vocal_orchestral_tuple():
     }
 
 
+def test_performer_entries_use_final_conductor_after_source_orchestra_abbreviation():
+    assert performer_entries_from_text("Boston SO, Andris Nelsons") == [
+        {"artist_id": "boston-so", "name": "Boston SO", "role": "performer"},
+        {"artist_id": "andris-nelsons", "name": "Andris Nelsons", "role": "conductor"},
+    ]
+
+
 def test_performer_entries_do_not_infer_conductor_for_chamber_tuple():
     entries = performer_entries_from_text(
         "Belcea Quartet, Tabea Zimmermann, Jean-Guihen Queyras"
