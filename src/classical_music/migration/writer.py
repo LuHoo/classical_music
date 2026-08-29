@@ -48,7 +48,20 @@ def stable_performance_id(work_id: str, performer_text: str) -> str:
     return slugify(f"{work_id}-{performer_text}")
 
 
-def is_brahms_curated_conductor_context(name: str) -> bool:
+CONDUCTED_COLLECTIVE_TYPES = {"choir", "ensemble", "orchestra"}
+
+
+def is_curated_conductor_context(
+    name: str,
+    artist_name_index: dict[str, str] | None = None,
+    artist_type_index: dict[str, str] | None = None,
+) -> bool:
+    artist_name_index = artist_name_index or {}
+    artist_type_index = artist_type_index or {}
+    artist_id = artist_name_index.get(slugify(name), slugify(name))
+    if artist_type_index.get(artist_id) in CONDUCTED_COLLECTIVE_TYPES:
+        return True
+
     lowered = name.casefold()
     words = lowered.replace(".", " ").split()
     return any(
@@ -63,7 +76,7 @@ def is_brahms_curated_conductor_context(name: str) -> bool:
             "sinfonieorchester",
             "symphoniker",
         )
-    ) or (words[-1:] and words[-1] in {"co", "po", "rso", "so"})
+    ) or (words[-1:] and words[-1] in {"co", "lso", "po", "rso", "so"})
 
 
 def load_artist_name_index(artists_root: Path) -> dict[str, str]:
@@ -89,6 +102,28 @@ def load_artist_name_index(artists_root: Path) -> dict[str, str]:
     return index
 
 
+def load_artist_type_index(artists_root: Path) -> dict[str, str]:
+    yaml = YAML(typ="safe")
+    index: dict[str, str] = {}
+    if not artists_root.exists():
+        return index
+
+    for path in sorted(artists_root.glob("*.yaml")):
+        loaded = yaml.load(path.read_text(encoding="utf-8"))
+        if not isinstance(loaded, dict):
+            continue
+        raw_artists = loaded.get("artists")
+        artists = raw_artists if isinstance(raw_artists, list) else [loaded]
+        for artist in artists:
+            if not isinstance(artist, dict):
+                continue
+            artist_id = artist.get("id")
+            artist_type = artist.get("type")
+            if isinstance(artist_id, str) and isinstance(artist_type, str):
+                index[artist_id] = artist_type
+    return index
+
+
 def artist_identity_names(artist: dict[str, Any]) -> list[str]:
     names: list[str] = []
     for field in ("canonical_name", "aliases"):
@@ -106,13 +141,21 @@ def artist_identity_names(artist: dict[str, Any]) -> list[str]:
 
 
 def performer_entries_from_text(
-    performer_text: str, artist_name_index: dict[str, str] | None = None
+    performer_text: str,
+    artist_name_index: dict[str, str] | None = None,
+    artist_type_index: dict[str, str] | None = None,
 ) -> list[dict[str, str]]:
     artist_name_index = artist_name_index or {}
+    artist_type_index = artist_type_index or {}
     names = [part.strip() for part in performer_text.split(",") if part.strip()]
     entries = []
     has_conducted_collective_before_last = any(
-        is_brahms_curated_conductor_context(name) for name in names[:-1]
+        is_curated_conductor_context(
+            name,
+            artist_name_index=artist_name_index,
+            artist_type_index=artist_type_index,
+        )
+        for name in names[:-1]
     )
     for index, name in enumerate(names):
         role = "performer"
@@ -135,6 +178,7 @@ def write_canonical_preview(
     performances: Iterable[PerformanceCandidate],
     dry_run: bool,
     artist_name_index: dict[str, str] | None = None,
+    artist_type_index: dict[str, str] | None = None,
 ) -> list[Path]:
     yaml = YAML()
     yaml.default_flow_style = False
@@ -197,7 +241,9 @@ def write_canonical_preview(
             "id": performance.id,
             "work_id": performance.work_id,
             "performers": performer_entries_from_text(
-                performance.performer_text, artist_name_index=artist_name_index
+                performance.performer_text,
+                artist_name_index=artist_name_index,
+                artist_type_index=artist_type_index,
             ),
             "source_performer_text": performance.performer_text,
             "links": {"tidal": {"url": performance.tidal_url}},

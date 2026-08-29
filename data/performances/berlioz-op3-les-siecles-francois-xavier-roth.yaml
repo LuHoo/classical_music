@@ -1,0 +1,16 @@
+id: berlioz-op3-les-siecles-francois-xavier-roth
+work_id: berlioz-op3
+performers:
+- artist_id: les-siecles
+  name: Les Siècles
+  role: performer
+- artist_id: francois-xavier-roth
+  name: François-Xavier Roth
+  role: conductor
+source_performer_text: Les Siècles, François-Xavier Roth
+links:
+  tidal:
+    url: http://www.tidal.com/track/118267645
+source:
+  file: /Users/Lucas_new/.codex/.chatgpt-projects/g-p-6a500123ac548191ab37db95c0d285a2/classical_music/docs/berlioz.md
+  line: '12'
