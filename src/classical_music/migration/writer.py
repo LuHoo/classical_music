@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import unicodedata
 from pathlib import Path
-from typing import Iterable
+from typing import Any, Iterable
 
 from ruamel.yaml import YAML
 
@@ -64,7 +64,49 @@ def is_brahms_curated_conductor_context(name: str) -> bool:
     )
 
 
-def performer_entries_from_text(performer_text: str) -> list[dict[str, str]]:
+def load_artist_name_index(artists_root: Path) -> dict[str, str]:
+    yaml = YAML(typ="safe")
+    index: dict[str, str] = {}
+    if not artists_root.exists():
+        return index
+
+    for path in sorted(artists_root.glob("*.yaml")):
+        loaded = yaml.load(path.read_text(encoding="utf-8"))
+        if not isinstance(loaded, dict):
+            continue
+        raw_artists = loaded.get("artists")
+        artists = raw_artists if isinstance(raw_artists, list) else [loaded]
+        for artist in artists:
+            if not isinstance(artist, dict):
+                continue
+            artist_id = artist.get("id")
+            if not isinstance(artist_id, str):
+                continue
+            for name in artist_identity_names(artist):
+                index.setdefault(slugify(name), artist_id)
+    return index
+
+
+def artist_identity_names(artist: dict[str, Any]) -> list[str]:
+    names: list[str] = []
+    for field in ("canonical_name", "aliases"):
+        value = artist.get(field)
+        if isinstance(value, str):
+            names.append(value)
+        elif isinstance(value, list):
+            names.extend(item for item in value if isinstance(item, str))
+
+    display_names = artist.get("display_names")
+    if isinstance(display_names, dict):
+        names.extend(value for value in display_names.values() if isinstance(value, str))
+
+    return names
+
+
+def performer_entries_from_text(
+    performer_text: str, artist_name_index: dict[str, str] | None = None
+) -> list[dict[str, str]]:
+    artist_name_index = artist_name_index or {}
     names = [part.strip() for part in performer_text.split(",") if part.strip()]
     entries = []
     has_conducted_collective_before_last = any(
@@ -76,7 +118,7 @@ def performer_entries_from_text(performer_text: str) -> list[dict[str, str]]:
             role = "conductor"
         entries.append(
             {
-                "artist_id": slugify(name),
+                "artist_id": artist_name_index.get(slugify(name), slugify(name)),
                 "name": name,
                 "role": role,
             }
@@ -90,6 +132,7 @@ def write_canonical_preview(
     works: Iterable[WorkCandidate],
     performances: Iterable[PerformanceCandidate],
     dry_run: bool,
+    artist_name_index: dict[str, str] | None = None,
 ) -> list[Path]:
     yaml = YAML()
     yaml.default_flow_style = False
@@ -151,7 +194,9 @@ def write_canonical_preview(
         payload = {
             "id": performance.id,
             "work_id": performance.work_id,
-            "performers": performer_entries_from_text(performance.performer_text),
+            "performers": performer_entries_from_text(
+                performance.performer_text, artist_name_index=artist_name_index
+            ),
             "source_performer_text": performance.performer_text,
             "links": {"tidal": {"url": performance.tidal_url}},
         }

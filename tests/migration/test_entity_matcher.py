@@ -18,6 +18,7 @@ from classical_music.migration.models import (
     WorkIdentityResolution,
 )
 from classical_music.migration.writer import (
+    load_artist_name_index,
     performer_entries_from_text,
     slugify,
     write_canonical_preview,
@@ -129,6 +130,34 @@ def test_performer_entries_do_not_infer_conductor_for_chamber_tuple():
         "name": "Jean-Guihen Queyras",
         "role": "performer",
     }
+
+
+def test_performer_entries_reuse_global_artist_alias(tmp_path: Path):
+    artists_root = tmp_path / "data/artists"
+    artists_root.mkdir(parents=True)
+    (artists_root / "performers.yaml").write_text(
+        (
+            "artists:\n"
+            "  - id: akademie-fuer-alte-musik-berlin\n"
+            "    type: ensemble\n"
+            "    canonical_name: Akademie für Alte Musik Berlin\n"
+            "    aliases:\n"
+            "      - Academy for Early Music Berlin\n"
+        ),
+        encoding="utf-8",
+    )
+
+    artist_name_index = load_artist_name_index(artists_root)
+
+    assert performer_entries_from_text(
+        "Academy for Early Music Berlin", artist_name_index=artist_name_index
+    ) == [
+        {
+            "artist_id": "akademie-fuer-alte-musik-berlin",
+            "name": "Academy for Early Music Berlin",
+            "role": "performer",
+        }
+    ]
 
 
 def test_writer_preserves_source_performer_text(tmp_path: Path):
