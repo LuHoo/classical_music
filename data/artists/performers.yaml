@@ -253,6 +253,8 @@ artists:
 - id: london-symphony-orchestra
   type: orchestra
   canonical_name: London Symphony Orchestra
+  aliases:
+  - LSO
   source:
     file: docs/brahms.md
 - id: latvian-radio-choir
@@ -510,3 +512,101 @@ artists:
   canonical_name: Zehetmaier Quartett
   source:
     file: docs/brahms.md
+- id: andrew-davis
+  type: conductor
+  canonical_name: Andrew Davis
+  source:
+    file: docs/berlioz.md
+- id: anima-eterna
+  type: orchestra
+  canonical_name: Anima Eterna
+  source:
+    file: docs/berlioz.md
+- id: chetham-s-school-of-music-brass-ensemble
+  type: ensemble
+  canonical_name: Chetham's School of Music Brass Ensemble
+  source:
+    file: docs/berlioz.md
+- id: colin-davis
+  type: conductor
+  canonical_name: Colin Davis
+  aliases:
+  - Sir Colin Davis
+  source:
+    file: docs/berlioz.md
+- id: francois-xavier-roth
+  type: conductor
+  canonical_name: François-Xavier Roth
+  source:
+    file: docs/berlioz.md
+- id: gabrieli-consort-and-players
+  type: ensemble
+  canonical_name: Gabrieli Consort and Players
+  source:
+    file: docs/berlioz.md
+- id: james-ehnes
+  type: soloist
+  canonical_name: James Ehnes
+  source:
+    file: docs/berlioz.md
+  instruments:
+  - violin
+- id: jos-van-immerseel
+  type: conductor
+  canonical_name: Jos van Immerseel
+  source:
+    file: docs/berlioz.md
+- id: kazuki-yamada
+  type: conductor
+  canonical_name: Kazuki Yamada
+  source:
+    file: docs/berlioz.md
+- id: les-siecles
+  type: orchestra
+  canonical_name: Les Siècles
+  source:
+    file: docs/berlioz.md
+- id: marie-nicole-lemieux
+  type: singer
+  canonical_name: Marie-Nicole Lemieux
+  source:
+    file: docs/berlioz.md
+- id: melbourne-symphony-orchestra
+  type: orchestra
+  canonical_name: Melbourne Symphony Orchestra
+  aliases:
+  - Melbourne SO
+  source:
+    file: docs/berlioz.md
+- id: orchestre-philharmonique-de-monte-carlo
+  type: orchestra
+  canonical_name: Orchestre Philharmonique de Monte Carlo
+  source:
+    file: docs/berlioz.md
+- id: paull-mccreesh
+  type: conductor
+  canonical_name: Paull McCreesh
+  source:
+    file: docs/berlioz.md
+- id: robert-murray
+  type: singer
+  canonical_name: Robert Murray
+  source:
+    file: docs/berlioz.md
+- id: royal-northern-college-of-music-wind-orchestra
+  type: orchestra
+  canonical_name: Royal Northern College of Music Wind Orchestra
+  source:
+    file: docs/berlioz.md
+- id: timothy-reynish
+  type: conductor
+  canonical_name: Timothy Reynish
+  source:
+    file: docs/berlioz.md
+- id: wroclaw-philharmonic-choir-orchestra
+  type: ensemble
+  canonical_name: Wroclaw Philharmonic Choir & Orchestra
+  aliases:
+  - Wroclaw Philharmonic Choir \& Orchestra
+  source:
+    file: docs/berlioz.md

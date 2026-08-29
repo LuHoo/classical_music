@@ -88,6 +88,24 @@ def test_parser_omits_labelled_recording_links_from_work_identity(tmp_path: Path
     assert records[0].catalogue == "K.012"
 
 
+def test_parser_extracts_performers_from_labelled_recording_link(tmp_path: Path) -> None:
+    path = tmp_path / "berlioz.md"
+    path.write_text(
+        "# Berlioz\n\n"
+        "## Orchestral\n"
+        "**Waverley**, Op. 1 (1828) [Ouverture *LSO, Sir Colin Davis*](http://www.tidal.com/track/4505556)\n",
+        encoding="utf-8",
+    )
+
+    records = parse_composer_markdown(path)
+
+    assert len(records) == 1
+    assert records[0].work_text == "Waverley (1828)"
+    assert records[0].performer_text == "LSO, Sir Colin Davis"
+    assert records[0].tidal_links == ["http://www.tidal.com/track/4505556"]
+    assert records[0].catalogue == "Op.1"
+
+
 def test_classifier_detects_arrangement_signal(tmp_path: Path) -> None:
     path = tmp_path / "beethoven.md"
     path.write_text(

@@ -29,6 +29,7 @@ from classical_music.migration.review_categorizer import (  # noqa: E402
 )
 from classical_music.migration.writer import (  # noqa: E402
     load_artist_name_index,
+    load_artist_type_index,
     stable_performance_id,
     stable_work_ids_with_catalogue,
     write_canonical_preview,
@@ -64,6 +65,7 @@ def main(
     # Load existing canonical entities for matching
     entity_matcher = EntityMatcher(ROOT / "data")
     artist_name_index = load_artist_name_index(ROOT / "data" / "artists")
+    artist_type_index = load_artist_type_index(ROOT / "data" / "artists")
     matcher_summary = entity_matcher.matches_summary()
     console.print(f"Loaded {matcher_summary['works']} canonical works for matching")
 
@@ -222,6 +224,7 @@ def main(
         performances=performances.values(),
         dry_run=dry_run,
         artist_name_index=artist_name_index,
+        artist_type_index=artist_type_index,
     )
 
     summary_path = ROOT / "generated" / "migration" / "migration-summary.json"

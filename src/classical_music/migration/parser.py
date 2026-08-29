@@ -13,7 +13,7 @@ WORK_RE = re.compile(r"^(?P<gem>💎|\[gem\])?\s*\*\*(?P<title>.+?)\*\*(?P<tail>
 # Negative lookahead (?!\d{1,2}/\d{4}(?:\)|$)) prevents matching (09/2024) format
 DATE_RE = re.compile(r"\((?P<date>(?!\d{1,2}/\d{4}(?:\)|$))([^)]+))\)")
 URL_RE = re.compile(r"https?://[^\s)]+")
-PERFORMER_RE = re.compile(r"\[\*(?P<performers>.+?)\*\]\((?P<url>https?://[^)]+)\)")
+PERFORMER_RE = re.compile(r"\[[^\]]*?\*(?P<performers>.+?)\*[^\]]*?\]\((?P<url>https?://[^)]+)\)")
 MARKDOWN_LINK_RE = re.compile(r"\[[^\]]+\]\(https?://[^)]+\)")
 GRAMOPHONE_RE = re.compile(r"\((?P<issue>\d{2}/\d{4})\)")
 

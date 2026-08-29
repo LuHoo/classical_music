@@ -19,6 +19,7 @@ from classical_music.migration.models import (
 )
 from classical_music.migration.writer import (
     load_artist_name_index,
+    load_artist_type_index,
     performer_entries_from_text,
     slugify,
     write_canonical_preview,
@@ -127,6 +128,13 @@ def test_performer_entries_use_final_conductor_after_source_orchestra_abbreviati
     ]
 
 
+def test_performer_entries_use_final_conductor_after_lso_abbreviation():
+    assert performer_entries_from_text("LSO, Sir Colin Davis") == [
+        {"artist_id": "lso", "name": "LSO", "role": "performer"},
+        {"artist_id": "sir-colin-davis", "name": "Sir Colin Davis", "role": "conductor"},
+    ]
+
+
 def test_performer_entries_use_final_conductor_after_orchester_name():
     assert performer_entries_from_text("Bruckner Orchester Linz, Markus Poschner") == [
         {
@@ -179,6 +187,39 @@ def test_performer_entries_reuse_global_artist_alias(tmp_path: Path):
             "name": "Academy for Early Music Berlin",
             "role": "performer",
         }
+    ]
+
+
+def test_performer_entries_use_global_artist_type_for_final_conductor(tmp_path: Path):
+    artists_root = tmp_path / "data/artists"
+    artists_root.mkdir(parents=True)
+    (artists_root / "performers.yaml").write_text(
+        (
+            "artists:\n"
+            "  - id: les-siecles\n"
+            "    type: orchestra\n"
+            "    canonical_name: Les Siècles\n"
+            "  - id: francois-xavier-roth\n"
+            "    type: conductor\n"
+            "    canonical_name: François-Xavier Roth\n"
+        ),
+        encoding="utf-8",
+    )
+
+    artist_name_index = load_artist_name_index(artists_root)
+    artist_type_index = load_artist_type_index(artists_root)
+
+    assert performer_entries_from_text(
+        "Les Siècles, François-Xavier Roth",
+        artist_name_index=artist_name_index,
+        artist_type_index=artist_type_index,
+    ) == [
+        {"artist_id": "les-siecles", "name": "Les Siècles", "role": "performer"},
+        {
+            "artist_id": "francois-xavier-roth",
+            "name": "François-Xavier Roth",
+            "role": "conductor",
+        },
     ]
 
 
