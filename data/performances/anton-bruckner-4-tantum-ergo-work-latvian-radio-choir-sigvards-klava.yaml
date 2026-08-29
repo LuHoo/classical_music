@@ -1,0 +1,16 @@
+id: anton-bruckner-4-tantum-ergo-work-latvian-radio-choir-sigvards-klava
+work_id: anton-bruckner-4-tantum-ergo-work
+performers:
+- artist_id: latvian-radio-choir
+  name: Latvian Radio Choir
+  role: performer
+- artist_id: sigvards-klava
+  name: Sigvards Klava
+  role: conductor
+source_performer_text: Latvian Radio Choir, Sigvards Klava
+links:
+  tidal:
+    url: https://tidal.com/browse/track/284019399?u
+source:
+  file: /Users/Lucas_new/.codex/.chatgpt-projects/g-p-6a500123ac548191ab37db95c0d285a2/classical_music/docs/bruckner.md
+  line: '84'
