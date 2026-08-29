@@ -48,16 +48,40 @@ def stable_performance_id(work_id: str, performer_text: str) -> str:
     return slugify(f"{work_id}-{performer_text}")
 
 
+def is_brahms_curated_conductor_context(name: str) -> bool:
+    lowered = name.casefold()
+    return any(
+        token in lowered
+        for token in (
+            "choir",
+            "chorus",
+            "orchestra",
+            "orchestre",
+            "philharmoniker",
+            "sinfonieorchester",
+            "symphoniker",
+        )
+    )
+
+
 def performer_entries_from_text(performer_text: str) -> list[dict[str, str]]:
-    return [
-        {
-            "artist_id": slugify(name),
-            "name": name,
-            "role": "performer",
-        }
-        for name in (part.strip() for part in performer_text.split(","))
-        if name
-    ]
+    names = [part.strip() for part in performer_text.split(",") if part.strip()]
+    entries = []
+    has_conducted_collective_before_last = any(
+        is_brahms_curated_conductor_context(name) for name in names[:-1]
+    )
+    for index, name in enumerate(names):
+        role = "performer"
+        if index == len(names) - 1 and has_conducted_collective_before_last:
+            role = "conductor"
+        entries.append(
+            {
+                "artist_id": slugify(name),
+                "name": name,
+                "role": role,
+            }
+        )
+    return entries
 
 
 def write_canonical_preview(

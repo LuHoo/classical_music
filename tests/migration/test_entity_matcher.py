@@ -105,8 +105,30 @@ def test_performer_entries_split_ensemble_and_conductor_tuple():
             "name": "Chamber Orchestra of Europe",
             "role": "performer",
         },
-        {"artist_id": "paavo-berglund", "name": "Paavo Berglund", "role": "performer"},
+        {"artist_id": "paavo-berglund", "name": "Paavo Berglund", "role": "conductor"},
     ]
+
+
+def test_performer_entries_use_final_conductor_for_vocal_orchestral_tuple():
+    assert performer_entries_from_text(
+        "Nathalie Stutzmann, Monteverdi Choir, Orchestre Révolutionnaire et Romantique, John Eliot Gardiner"
+    )[-1] == {
+        "artist_id": "john-eliot-gardiner",
+        "name": "John Eliot Gardiner",
+        "role": "conductor",
+    }
+
+
+def test_performer_entries_do_not_infer_conductor_for_chamber_tuple():
+    entries = performer_entries_from_text(
+        "Belcea Quartet, Tabea Zimmermann, Jean-Guihen Queyras"
+    )
+
+    assert entries[-1] == {
+        "artist_id": "jean-guihen-queyras",
+        "name": "Jean-Guihen Queyras",
+        "role": "performer",
+    }
 
 
 def test_writer_preserves_source_performer_text(tmp_path: Path):
