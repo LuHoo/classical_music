@@ -78,6 +78,7 @@ ALLOWED_FIELDS: dict[str, set[str]] = {
         "reviews",
         "external_ids",
         "keep_looking",
+        "source_performer_text",
         "notes",
         "source",
     },
@@ -536,15 +537,19 @@ class DataValidator:
                 )
                 continue
 
-            if not performer.get("person_id") and not performer.get("name"):
+            if (
+                not performer.get("artist_id")
+                and not performer.get("person_id")
+                and not performer.get("name")
+            ):
                 report.findings.append(
                     ValidationFinding(
                         rule_id=rules.RULE_DOM_PERFORMER_REQUIRED,
                         severity="error",
                         file=file_rel,
                         message=(
-                            f"Performer index {idx} must include person_id "
-                            "or name."
+                            f"Performer index {idx} must include artist_id, "
+                            "person_id, or name."
                         ),
                         entity_type=record.entity_type,
                         entity_id=str(record.data.get("id", "")) or None,
@@ -1019,7 +1024,12 @@ class DataValidator:
         for performer in performers:
             if not isinstance(performer, dict):
                 continue
-            name = str(performer.get("person_id") or performer.get("name") or "").strip().lower()
+            name = str(
+                performer.get("artist_id")
+                or performer.get("person_id")
+                or performer.get("name")
+                or ""
+            ).strip().lower()
             role = str(performer.get("role") or "").strip().lower()
             if name:
                 parts.append(f"{name}:{role}")

@@ -55,6 +55,16 @@ class SourceRecord:
 
 
 @dataclass(slots=True)
+class WorkGroupCandidate:
+    id: str
+    composer_id: str
+    title: str
+    catalogue: str | None = None
+    source_file: str | None = None
+    source_line: int | None = None
+
+
+@dataclass(slots=True)
 class WorkCandidate:
     id: str
     work_group_id: str

@@ -1,0 +1,16 @@
+id: brahms-violin-sonata-no-3-in-d-minor-1886-88-op-108-work-leonidas-kavakos-yuja-wang
+work_id: brahms-violin-sonata-no-3-in-d-minor-1886-88-op-108-work
+performers:
+- artist_id: leonidas-kavakos
+  name: Leonidas Kavakos
+  role: violin
+- artist_id: yuja-wang
+  name: Yuja Wang
+  role: piano
+links:
+  tidal:
+    url: http://www.tidal.com/track/27201209
+source:
+  file: /Users/Lucas_new/.codex/.chatgpt-projects/g-p-6a500123ac548191ab37db95c0d285a2/classical_music/docs/brahms.md
+  line: '103'
+source_performer_text: Leonidas Kavakos, Yuja Wang

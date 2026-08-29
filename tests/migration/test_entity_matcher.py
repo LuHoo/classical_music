@@ -13,8 +13,14 @@ from classical_music.migration.entity_matcher import (
     normalize_title,
 )
 from classical_music.migration.models import (
+    PerformanceCandidate,
     PerformanceIdentityResolution,
     WorkIdentityResolution,
+)
+from classical_music.migration.writer import (
+    performer_entries_from_text,
+    slugify,
+    write_canonical_preview,
 )
 
 
@@ -65,6 +71,9 @@ def test_extract_catalogue_number():
     # Opus number
     assert extract_catalogue_number("Piano Sonata Op. 23") == "Op.23"
     assert extract_catalogue_number("Variations Op. 56a") == "Op.56a"
+    assert extract_catalogue_number("Clarinet Sonata Op. 120/1") == "Op.120/1"
+    assert extract_catalogue_number("8 Songs, Op. 57/3, 4 (vc/pf)") == "Op.57/3,4"
+    assert extract_catalogue_number("Alto Rhapsody, Op. 53 for contralto") == "Op.53"
     
     # Köchel number
     assert extract_catalogue_number("Symphony K. 545") == "K.545"
@@ -74,6 +83,77 @@ def test_extract_catalogue_number():
     
     # No catalogue
     assert extract_catalogue_number("Untitled Work") is None
+
+
+def test_slugify_outputs_ascii_and_preserves_flat_meaning():
+    assert slugify("Piano Concerto No. 2 in B♭ major") == "piano-concerto-no-2-in-b-flat-major"
+    assert slugify("6 Klavierstücke, István Kertész") == "6-klavierstucke-istvan-kertesz"
+    assert slugify("Ein deutsches Requiem (1865–68)") == "ein-deutsches-requiem-1865-68"
+
+
+def test_performer_entries_split_two_person_tuple():
+    assert performer_entries_from_text("Amy Norrington, Piet Kuijken") == [
+        {"artist_id": "amy-norrington", "name": "Amy Norrington", "role": "performer"},
+        {"artist_id": "piet-kuijken", "name": "Piet Kuijken", "role": "performer"},
+    ]
+
+
+def test_performer_entries_split_ensemble_and_conductor_tuple():
+    assert performer_entries_from_text("Chamber Orchestra of Europe, Paavo Berglund") == [
+        {
+            "artist_id": "chamber-orchestra-of-europe",
+            "name": "Chamber Orchestra of Europe",
+            "role": "performer",
+        },
+        {"artist_id": "paavo-berglund", "name": "Paavo Berglund", "role": "conductor"},
+    ]
+
+
+def test_performer_entries_use_final_conductor_for_vocal_orchestral_tuple():
+    assert performer_entries_from_text(
+        "Nathalie Stutzmann, Monteverdi Choir, Orchestre Révolutionnaire et Romantique, John Eliot Gardiner"
+    )[-1] == {
+        "artist_id": "john-eliot-gardiner",
+        "name": "John Eliot Gardiner",
+        "role": "conductor",
+    }
+
+
+def test_performer_entries_do_not_infer_conductor_for_chamber_tuple():
+    entries = performer_entries_from_text(
+        "Belcea Quartet, Tabea Zimmermann, Jean-Guihen Queyras"
+    )
+
+    assert entries[-1] == {
+        "artist_id": "jean-guihen-queyras",
+        "name": "Jean-Guihen Queyras",
+        "role": "performer",
+    }
+
+
+def test_writer_preserves_source_performer_text(tmp_path: Path):
+    write_canonical_preview(
+        output_root=tmp_path,
+        work_groups=[],
+        works=[],
+        performances=[
+            PerformanceCandidate(
+                id="brahms-test-performance",
+                work_id="brahms-test-work",
+                performer_text="Amy Norrington, Piet Kuijken",
+                tidal_url="https://tidal.com/browse/track/1",
+            )
+        ],
+        dry_run=False,
+    )
+
+    text = (tmp_path / "performances" / "brahms-test-performance.yaml").read_text(
+        encoding="utf-8"
+    )
+
+    assert "artist_id: amy-norrington" in text
+    assert "artist_id: piet-kuijken" in text
+    assert "source_performer_text: Amy Norrington, Piet Kuijken" in text
 
 
 def test_entity_matcher_loads_canonical_data(data_root: Path):
