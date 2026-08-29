@@ -14,6 +14,7 @@ WORK_RE = re.compile(r"^(?P<gem>💎|\[gem\])?\s*\*\*(?P<title>.+?)\*\*(?P<tail>
 DATE_RE = re.compile(r"\((?P<date>(?!\d{1,2}/\d{4}(?:\)|$))([^)]+))\)")
 URL_RE = re.compile(r"https?://[^\s)]+")
 PERFORMER_RE = re.compile(r"\[\*(?P<performers>.+?)\*\]\((?P<url>https?://[^)]+)\)")
+MARKDOWN_LINK_RE = re.compile(r"\[[^\]]+\]\(https?://[^)]+\)")
 GRAMOPHONE_RE = re.compile(r"\((?P<issue>\d{2}/\d{4})\)")
 
 
@@ -45,11 +46,9 @@ def parse_composer_markdown(file_path: Path) -> list[SourceRecord]:
         if performer_match:
             performers = performer_match.group("performers").strip()
         
-        # Remove performer link and URLs from tail before looking for date
+        # Remove recording links from tail before looking for date
         # This avoids matching parentheses in URLs like (http://...)
-        tail_without_links = tail
-        if performer_match:
-            tail_without_links = tail.replace(performer_match.group(0), "")
+        tail_without_links = MARKDOWN_LINK_RE.sub("", tail)
         
         # Look for dates only in the tail without URLs.
         date_match = DATE_RE.search(tail_without_links)

@@ -1,0 +1,16 @@
+id: johann-sebastian-bach-suite-for-organ-harpsichord-orchestra-work-los-angeles-philharmonic-esa-pekka-salonen
+work_id: johann-sebastian-bach-suite-for-organ-harpsichord-orchestra-work
+performers:
+- artist_id: los-angeles-philharmonic
+  name: Los Angeles Philharmonic
+  role: performer
+- artist_id: esa-pekka-salonen
+  name: Esa-Pekka Salonen
+  role: performer
+source_performer_text: Los Angeles Philharmonic, Esa-Pekka Salonen
+links:
+  tidal:
+    url: http://www.tidal.com/track/2924761
+source:
+  file: /Users/Lucas_new/.codex/.chatgpt-projects/g-p-6a500123ac548191ab37db95c0d285a2/classical_music/docs/bachJS.md
+  line: '92'

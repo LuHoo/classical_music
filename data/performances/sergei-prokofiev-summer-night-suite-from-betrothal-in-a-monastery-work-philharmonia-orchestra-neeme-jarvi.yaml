@@ -1,0 +1,16 @@
+id: sergei-prokofiev-summer-night-suite-from-betrothal-in-a-monastery-work-philharmonia-orchestra-neeme-jarvi
+work_id: sergei-prokofiev-summer-night-suite-from-betrothal-in-a-monastery-work
+performers:
+- artist_id: philharmonia-orchestra
+  name: Philharmonia Orchestra
+  role: performer
+- artist_id: neeme-jarvi
+  name: Neeme Järvi
+  role: conductor
+source_performer_text: Philharmonia Orchestra, Neeme Järvi
+links:
+  tidal:
+    url: https://tidal.com/album/376440234
+source:
+  file: /Users/Lucas_new/.codex/.chatgpt-projects/g-p-6a500123ac548191ab37db95c0d285a2/classical_music/docs/prokofiev.md
+  line: '210'
