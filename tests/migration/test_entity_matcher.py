@@ -408,6 +408,35 @@ def test_source_provenance_selects_bruckner_symphony_no_5_versions(data_root: Pa
         assert result.matched_work_id == expected_id
 
 
+def test_source_version_text_selects_mahler_gamzou_realisation(data_root: Path):
+    matcher = EntityMatcher(data_root)
+    work_title = (
+        "Symphony No. 10 in F sharp (unfinished; continuous draft score) (1910) "
+        "(Realisation and elaboration of the unfinished drafts by Yoel Gamzou)"
+    )
+
+    candidates = matcher.find_work_candidates(
+        "gustav-mahler",
+        work_title,
+        source_file="docs/mahler.md",
+        source_line=64,
+    )
+    result = matcher.resolve_work_identity(
+        work_title,
+        "gustav-mahler",
+        candidates,
+        source_file="docs/mahler.md",
+        source_line=64,
+    )
+
+    assert result.status == WorkIdentityResolution.MATCHED
+    assert (
+        result.matched_work_id
+        == "gustav-mahler-symphony-no-10-in-f-sharp-gamzou-realisation-work"
+    )
+    assert "version_text_match" in result.evidence_used
+
+
 def test_prokofiev_opus_resolves_original_and_revised_versions(data_root: Path):
     matcher = EntityMatcher(data_root)
 

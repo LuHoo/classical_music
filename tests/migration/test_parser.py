@@ -106,6 +106,26 @@ def test_parser_extracts_performers_from_labelled_recording_link(tmp_path: Path)
     assert records[0].catalogue == "Op.1"
 
 
+def test_parser_preserves_completion_label_as_work_identity(tmp_path: Path) -> None:
+    path = tmp_path / "mahler.md"
+    path.write_text(
+        "# Mahler\n\n"
+        "## Late works\n"
+        "**Symphony No. 10 in F sharp** (unfinished; continuous draft score) (1910) "
+        "[Realisation and elaboration of the unfinished drafts by Yoel Gamzou, "
+        "*International Mahler Orchestra, Yoel Gamzou*](http://www.tidal.com/track/88068553)\n",
+        encoding="utf-8",
+    )
+
+    records = parse_composer_markdown(path)
+
+    assert records[0].work_text == (
+        "Symphony No. 10 in F sharp (unfinished; continuous draft score) (1910) "
+        "(Realisation and elaboration of the unfinished drafts by Yoel Gamzou)"
+    )
+    assert records[0].performer_text == "International Mahler Orchestra, Yoel Gamzou"
+
+
 def test_classifier_detects_arrangement_signal(tmp_path: Path) -> None:
     path = tmp_path / "beethoven.md"
     path.write_text(
