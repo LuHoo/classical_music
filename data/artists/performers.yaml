@@ -620,3 +620,8 @@ artists:
   - Wroclaw Philharmonic Choir \& Orchestra
   source:
     file: docs/berlioz.md
+- id: netherlands-wind-ensemble
+  type: ensemble
+  canonical_name: Netherlands Wind Ensemble
+  source:
+    file: docs/mozart.md
