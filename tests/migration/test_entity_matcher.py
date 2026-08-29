@@ -12,7 +12,10 @@ from classical_music.migration.entity_matcher import (
     extract_version_info,
     normalize_title,
 )
-from classical_music.migration.models import WorkIdentityResolution
+from classical_music.migration.models import (
+    PerformanceIdentityResolution,
+    WorkIdentityResolution,
+)
 
 
 def test_normalize_title():
@@ -61,6 +64,7 @@ def test_extract_catalogue_number():
     
     # Opus number
     assert extract_catalogue_number("Piano Sonata Op. 23") == "Op.23"
+    assert extract_catalogue_number("Variations Op. 56a") == "Op.56a"
     
     # Köchel number
     assert extract_catalogue_number("Symphony K. 545") == "K.545"
@@ -270,6 +274,98 @@ def test_unresolved_composer_fails_closed(data_root: Path):
     # Unknown composer should return None, not fallback
     canonical_id = matcher.resolve_composer_id("completely-unknown-composer")
     assert canonical_id is None
+
+
+def test_composer_mapping_uses_person_source_without_existing_works(tmp_path: Path):
+    """New composer seeds should resolve from Person source provenance."""
+    persons = tmp_path / "persons"
+    works = tmp_path / "works"
+    groups = tmp_path / "work-groups"
+    performances = tmp_path / "performances"
+    persons.mkdir()
+    works.mkdir()
+    groups.mkdir()
+    performances.mkdir()
+    (persons / "johannes-brahms.yaml").write_text(
+        'id: "johannes-brahms"\n'
+        'name: "Johannes Brahms"\n'
+        'sort_name: "Brahms, Johannes"\n'
+        "roles:\n"
+        '  - "composer"\n'
+        "source:\n"
+        '  file: "docs/brahms.md"\n',
+        encoding="utf-8",
+    )
+
+    matcher = EntityMatcher(tmp_path)
+
+    assert matcher.resolve_composer_id("brahms") == "johannes-brahms"
+
+
+def test_curated_composer_source_with_no_existing_work_creates_new_identity(tmp_path: Path):
+    """Curated composer markdown is positive provenance for new Work candidates."""
+    persons = tmp_path / "persons"
+    works = tmp_path / "works"
+    groups = tmp_path / "work-groups"
+    performances = tmp_path / "performances"
+    persons.mkdir()
+    works.mkdir()
+    groups.mkdir()
+    performances.mkdir()
+    (persons / "johannes-brahms.yaml").write_text(
+        'id: "johannes-brahms"\n'
+        'name: "Johannes Brahms"\n'
+        'sort_name: "Brahms, Johannes"\n'
+        "roles:\n"
+        '  - "composer"\n'
+        "source:\n"
+        '  file: "docs/brahms.md"\n',
+        encoding="utf-8",
+    )
+
+    matcher = EntityMatcher(tmp_path)
+    result = matcher.resolve_work_identity(
+        "Symphony No. 1 in C minor (1854-1876)",
+        "johannes-brahms",
+        [],
+        source_file="docs/brahms.md",
+        source_line=31,
+        catalogue="Op.68",
+    )
+
+    assert result.status == WorkIdentityResolution.NEW_IDENTITY
+    assert result.requires_curator_action is False
+    assert "curated_source_provenance" in result.evidence_used
+
+
+def test_uncurated_no_match_still_fails_closed(data_root: Path):
+    """A random no-candidate title must not become a new Work."""
+    matcher = EntityMatcher(data_root)
+    result = matcher.resolve_work_identity(
+        "Completely Fake Symphony in Z Major",
+        "anton-bruckner",
+        [],
+        source_file="docs/not-bruckner.md",
+        source_line=1,
+    )
+
+    assert result.status == WorkIdentityResolution.UNRESOLVED
+    assert result.requires_curator_action is True
+
+
+def test_tidal_source_with_no_existing_performance_creates_new_performance(data_root: Path):
+    matcher = EntityMatcher(data_root)
+
+    result = matcher.resolve_performance_identity(
+        "johannes-brahms-symphony-no-1-work",
+        "Chamber Orchestra of Europe, Paavo Berglund",
+        "https://tidal.com/browse/track/284016473?u",
+        [],
+    )
+
+    assert result.status == PerformanceIdentityResolution.NEW_PERFORMANCE
+    assert result.requires_curator_action is False
+    assert result.evidence_used == ["tidal_url"]
 
 
 def test_matches_summary(data_root: Path):

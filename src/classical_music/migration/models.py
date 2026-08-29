@@ -60,6 +60,7 @@ class WorkCandidate:
     work_group_id: str
     composer_id: str
     title: str
+    catalogue: str | None = None
     gem: bool = False
     source_file: str | None = None
     source_line: int | None = None
