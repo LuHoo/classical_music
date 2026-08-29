@@ -29,6 +29,11 @@ artists:
     file: docs/brahms.md
   instruments:
   - clarinet
+- id: andris-nelsons
+  type: conductor
+  canonical_name: Andris Nelsons
+  source:
+    file: docs/shostakovich.md
 - id: antonio-pappano
   type: conductor
   canonical_name: Antonio Pappano
@@ -39,6 +44,13 @@ artists:
   canonical_name: Belcea Quartet
   source:
     file: docs/brahms.md
+- id: boston-symphony-orchestra
+  type: orchestra
+  canonical_name: Boston Symphony Orchestra
+  aliases:
+  - Boston SO
+  source:
+    file: docs/shostakovich.md
 - id: chamber-orchestra-of-europe
   type: orchestra
   canonical_name: Chamber Orchestra of Europe
@@ -78,6 +90,13 @@ artists:
     file: docs/brahms.md
   instruments:
   - cello
+- id: gothenburg-symphony-orchestra
+  type: orchestra
+  canonical_name: Gothenburg Symphony Orchestra
+  aliases:
+  - Gothenburg SO
+  source:
+    file: docs/shostakovich.md
 - id: gil-garburg
   type: soloist
   canonical_name: Gil Garburg
@@ -182,6 +201,11 @@ artists:
   canonical_name: Monteverdi Choir
   source:
     file: docs/brahms.md
+- id: neeme-jarvi
+  type: conductor
+  canonical_name: Neeme Järvi
+  source:
+    file: docs/shostakovich.md
 - id: nathalie-stutzmann
   type: singer
   canonical_name: Nathalie Stutzmann
@@ -252,6 +276,11 @@ artists:
   canonical_name: Quatuor Agate
   source:
     file: docs/brahms.md
+- id: royal-scottish-national-orchestra
+  type: orchestra
+  canonical_name: Royal Scottish National Orchestra
+  source:
+    file: docs/shostakovich.md
 - id: raphael-wallfisch
   type: soloist
   canonical_name: Raphael Wallfisch

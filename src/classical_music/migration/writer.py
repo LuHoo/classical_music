@@ -50,6 +50,7 @@ def stable_performance_id(work_id: str, performer_text: str) -> str:
 
 def is_brahms_curated_conductor_context(name: str) -> bool:
     lowered = name.casefold()
+    words = lowered.replace(".", " ").split()
     return any(
         token in lowered
         for token in (
@@ -61,7 +62,7 @@ def is_brahms_curated_conductor_context(name: str) -> bool:
             "sinfonieorchester",
             "symphoniker",
         )
-    )
+    ) or (words[-1:] and words[-1] in {"co", "po", "rso", "so"})
 
 
 def load_artist_name_index(artists_root: Path) -> dict[str, str]:

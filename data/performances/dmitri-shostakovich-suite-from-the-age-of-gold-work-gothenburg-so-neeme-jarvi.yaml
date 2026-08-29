@@ -1,0 +1,16 @@
+id: dmitri-shostakovich-suite-from-the-age-of-gold-work-gothenburg-so-neeme-jarvi
+work_id: dmitri-shostakovich-suite-from-the-age-of-gold-work
+performers:
+- artist_id: gothenburg-symphony-orchestra
+  name: Gothenburg SO
+  role: performer
+- artist_id: neeme-jarvi
+  name: Neeme Järvi
+  role: conductor
+source_performer_text: Gothenburg SO, Neeme Järvi
+links:
+  tidal:
+    url: http://www.tidal.com/track/4423826
+source:
+  file: /Users/Lucas_new/.codex/.chatgpt-projects/g-p-6a500123ac548191ab37db95c0d285a2/classical_music/docs/shostakovich.md
+  line: '28'
