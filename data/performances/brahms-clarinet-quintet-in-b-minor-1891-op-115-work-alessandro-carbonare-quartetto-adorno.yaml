@@ -1,7 +1,11 @@
 id: brahms-clarinet-quintet-in-b-minor-1891-op-115-work-alessandro-carbonare-quartetto-adorno
 work_id: brahms-clarinet-quintet-in-b-minor-1891-op-115-work
 performers:
-- name: Alessandro Carbonare, Quartetto Adorno
+- artist_id: alessandro-carbonare
+  name: Alessandro Carbonare
+  role: clarinet
+- artist_id: quartetto-adorno
+  name: Quartetto Adorno
   role: performer
 links:
   tidal:
@@ -9,3 +13,4 @@ links:
 source:
   file: /Users/Lucas_new/.codex/.chatgpt-projects/g-p-6a500123ac548191ab37db95c0d285a2/classical_music/docs/brahms.md
   line: '109'
+source_performer_text: Alessandro Carbonare, Quartetto Adorno

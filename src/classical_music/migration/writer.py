@@ -48,6 +48,18 @@ def stable_performance_id(work_id: str, performer_text: str) -> str:
     return slugify(f"{work_id}-{performer_text}")
 
 
+def performer_entries_from_text(performer_text: str) -> list[dict[str, str]]:
+    return [
+        {
+            "artist_id": slugify(name),
+            "name": name,
+            "role": "performer",
+        }
+        for name in (part.strip() for part in performer_text.split(","))
+        if name
+    ]
+
+
 def write_canonical_preview(
     output_root: Path,
     work_groups: Iterable[WorkGroupCandidate],
@@ -115,7 +127,8 @@ def write_canonical_preview(
         payload = {
             "id": performance.id,
             "work_id": performance.work_id,
-            "performers": [{"name": performance.performer_text, "role": "performer"}],
+            "performers": performer_entries_from_text(performance.performer_text),
+            "source_performer_text": performance.performer_text,
             "links": {"tidal": {"url": performance.tidal_url}},
         }
         if performance.gramophone_issue:

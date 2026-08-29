@@ -1,11 +1,22 @@
 id: brahms-concerto-for-piano-four-hands-and-string-orchestra-in-g-minor-op-25-work-gil-garburg-sivan-silver-wiener-symphoniker-florian-krumpock
 work_id: brahms-concerto-for-piano-four-hands-and-string-orchestra-in-g-minor-op-25-work
 performers:
-- name: Gil Garburg, Sivan Silver, Wiener Symphoniker, Florian Krumpöck
+- artist_id: gil-garburg
+  name: Gil Garburg
+  role: piano
+- artist_id: sivan-silver
+  name: Sivan Silver
+  role: piano
+- artist_id: wiener-symphoniker
+  name: Wiener Symphoniker
   role: performer
+- artist_id: florian-krumpock
+  name: Florian Krumpöck
+  role: conductor
 links:
   tidal:
     url: http://www.tidal.com/track/151961690
 source:
   file: /Users/Lucas_new/.codex/.chatgpt-projects/g-p-6a500123ac548191ab37db95c0d285a2/classical_music/docs/brahms.md
   line: '25'
+source_performer_text: Gil Garburg, Sivan Silver, Wiener Symphoniker, Florian Krumpöck

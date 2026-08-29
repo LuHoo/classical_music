@@ -1,11 +1,16 @@
 id: brahms-piano-quartet-no-1-in-g-minor-orch-schoenberg-op-25-work-luzerner-sinfonieorchester-michael-sanderling
 work_id: brahms-piano-quartet-no-1-in-g-minor-orch-schoenberg-op-25-work
 performers:
-- name: Luzerner Sinfonieorchester, Michael Sanderling
+- artist_id: luzerner-sinfonieorchester
+  name: Luzerner Sinfonieorchester
   role: performer
+- artist_id: michael-sanderling
+  name: Michael Sanderling
+  role: conductor
 links:
   tidal:
     url: http://www.tidal.com/track/277983998
 source:
   file: /Users/Lucas_new/.codex/.chatgpt-projects/g-p-6a500123ac548191ab37db95c0d285a2/classical_music/docs/brahms.md
   line: '27'
+source_performer_text: Luzerner Sinfonieorchester, Michael Sanderling

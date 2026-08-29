@@ -1,11 +1,16 @@
 id: brahms-tragic-overture-1880-op-81-work-pittsburgh-symphony-orchestra-william-steinberg
 work_id: brahms-tragic-overture-1880-op-81-work
 performers:
-- name: Pittsburgh Symphony Orchestra, William Steinberg
+- artist_id: pittsburgh-symphony-orchestra
+  name: Pittsburgh Symphony Orchestra
   role: performer
+- artist_id: william-steinberg
+  name: William Steinberg
+  role: conductor
 links:
   tidal:
     url: http://www.tidal.com/track/218186383
 source:
   file: /Users/Lucas_new/.codex/.chatgpt-projects/g-p-6a500123ac548191ab37db95c0d285a2/classical_music/docs/brahms.md
   line: '39'
+source_performer_text: Pittsburgh Symphony Orchestra, William Steinberg

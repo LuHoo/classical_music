@@ -1,11 +1,13 @@
 id: brahms-capriccio-in-g-minor-1893-op-119-work-paul-lewis
 work_id: brahms-capriccio-in-g-minor-1893-op-119-work
 performers:
-- name: Paul Lewis
-  role: performer
+- artist_id: paul-lewis
+  name: Paul Lewis
+  role: piano
 links:
   tidal:
     url: http://www.tidal.com/track/212733458
 source:
   file: /Users/Lucas_new/.codex/.chatgpt-projects/g-p-6a500123ac548191ab37db95c0d285a2/classical_music/docs/brahms.md
   line: '137'
+source_performer_text: Paul Lewis

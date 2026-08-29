@@ -1,0 +1,329 @@
+artists:
+- id: alessandro-carbonare
+  type: soloist
+  canonical_name: Alessandro Carbonare
+  source:
+    file: docs/brahms.md
+  instruments:
+  - clarinet
+- id: amy-norrington
+  type: soloist
+  canonical_name: Amy Norrington
+  source:
+    file: docs/brahms.md
+  instruments:
+  - cello
+  authorities:
+    musicbrainz_artist_id: 74fc97c4-658d-4a89-aacf-c8b7ed42ffc1
+- id: andras-schiff
+  type: soloist
+  canonical_name: András Schiff
+  source:
+    file: docs/brahms.md
+  instruments:
+  - piano
+- id: andreas-ottensamer
+  type: soloist
+  canonical_name: Andreas Ottensamer
+  source:
+    file: docs/brahms.md
+  instruments:
+  - clarinet
+- id: antonio-pappano
+  type: conductor
+  canonical_name: Antonio Pappano
+  source:
+    file: docs/brahms.md
+- id: belcea-quartet
+  type: ensemble
+  canonical_name: Belcea Quartet
+  source:
+    file: docs/brahms.md
+- id: chamber-orchestra-of-europe
+  type: orchestra
+  canonical_name: Chamber Orchestra of Europe
+  source:
+    file: docs/brahms.md
+- id: christian-tetzlaff
+  type: soloist
+  canonical_name: Christian Tetzlaff
+  source:
+    file: docs/brahms.md
+  instruments:
+  - violin
+- id: claudio-abbado
+  type: conductor
+  canonical_name: Claudio Abbado
+  source:
+    file: docs/brahms.md
+- id: deutsches-symphonie-orchester-berlin
+  type: soloist
+  canonical_name: Deutsches Symphonie-Orchester Berlin
+  source:
+    file: docs/brahms.md
+- id: emanuel-ax
+  type: soloist
+  canonical_name: Emanuel Ax
+  source:
+    file: docs/brahms.md
+- id: florian-krumpock
+  type: conductor
+  canonical_name: Florian Krumpöck
+  source:
+    file: docs/brahms.md
+- id: gautier-capucon
+  type: soloist
+  canonical_name: Gautier Capuçon
+  source:
+    file: docs/brahms.md
+  instruments:
+  - cello
+- id: gil-garburg
+  type: soloist
+  canonical_name: Gil Garburg
+  source:
+    file: docs/brahms.md
+  instruments:
+  - piano
+- id: isaac-stern
+  type: soloist
+  canonical_name: Isaac Stern
+  source:
+    file: docs/brahms.md
+- id: istvan-kertesz
+  type: conductor
+  canonical_name: István Kertész
+  source:
+    file: docs/brahms.md
+- id: jaime-laredo
+  type: soloist
+  canonical_name: Jaime Laredo
+  source:
+    file: docs/brahms.md
+- id: janine-jansen
+  type: soloist
+  canonical_name: Janine Jansen
+  source:
+    file: docs/brahms.md
+  instruments:
+  - violin
+- id: jean-guihen-queyras
+  type: soloist
+  canonical_name: Jean-Guihen Queyras
+  source:
+    file: docs/brahms.md
+  instruments:
+  - cello
+- id: john-york
+  type: soloist
+  canonical_name: John York
+  source:
+    file: docs/brahms.md
+  instruments:
+  - piano
+- id: jonathan-plowright
+  type: soloist
+  canonical_name: Jonathan Plowright
+  source:
+    file: docs/brahms.md
+  instruments:
+  - piano
+- id: katarzyna-budnik
+  type: soloist
+  canonical_name: Katarzyna Budnik
+  source:
+    file: docs/brahms.md
+- id: krystian-zimerman
+  type: soloist
+  canonical_name: Krystian Zimerman
+  source:
+    file: docs/brahms.md
+- id: leonidas-kavakos
+  type: soloist
+  canonical_name: Leonidas Kavakos
+  source:
+    file: docs/brahms.md
+  instruments:
+  - violin
+- id: linos-ensemble
+  type: ensemble
+  canonical_name: Linos Ensemble
+  source:
+    file: docs/brahms.md
+- id: london-symphony-orchestra
+  type: orchestra
+  canonical_name: London Symphony Orchestra
+  source:
+    file: docs/brahms.md
+- id: luzerner-sinfonieorchester
+  type: orchestra
+  canonical_name: Luzerner Sinfonieorchester
+  source:
+    file: docs/brahms.md
+- id: maria-nowak
+  type: soloist
+  canonical_name: Maria Nowak
+  source:
+    file: docs/brahms.md
+- id: michael-collins
+  type: soloist
+  canonical_name: Michael Collins
+  source:
+    file: docs/brahms.md
+  instruments:
+  - clarinet
+- id: michael-sanderling
+  type: conductor
+  canonical_name: Michael Sanderling
+  source:
+    file: docs/brahms.md
+- id: monteverdi-choir
+  type: choir
+  canonical_name: Monteverdi Choir
+  source:
+    file: docs/brahms.md
+- id: nathalie-stutzmann
+  type: soloist
+  canonical_name: Nathalie Stutzmann
+  source:
+    file: docs/brahms.md
+- id: nikolaus-harnoncourt
+  type: conductor
+  canonical_name: Nikolaus Harnoncourt
+  source:
+    file: docs/brahms.md
+- id: orchestra-dell-accademia-nazionale-di-santa-cecilia
+  type: orchestra
+  canonical_name: Orchestra dell'Accademia Nazionale di Santa Cecilia
+  source:
+    file: docs/brahms.md
+- id: orchestra-of-the-age-of-enlightenment
+  type: orchestra
+  canonical_name: Orchestra of the Age of Enlightenment
+  source:
+    file: docs/brahms.md
+- id: orchestre-revolutionnaire-et-romantique
+  type: soloist
+  canonical_name: Orchestre Révolutionnaire et Romantique
+  source:
+    file: docs/brahms.md
+- id: paavo-berglund
+  type: conductor
+  canonical_name: Paavo Berglund
+  source:
+    file: docs/brahms.md
+- id: paavo-jarvi
+  type: conductor
+  canonical_name: Paavo Järvi
+  source:
+    file: docs/brahms.md
+- id: paul-lewis
+  type: soloist
+  canonical_name: Paul Lewis
+  source:
+    file: docs/brahms.md
+  instruments:
+  - piano
+- id: piet-kuijken
+  type: soloist
+  canonical_name: Piet Kuijken
+  source:
+    file: docs/brahms.md
+  instruments:
+  - piano
+  authorities:
+    musicbrainz_artist_id: 6a46a3f0-a189-4766-9b22-d4be5a4aa232
+- id: pittsburgh-symphony-orchestra
+  type: orchestra
+  canonical_name: Pittsburgh Symphony Orchestra
+  source:
+    file: docs/brahms.md
+- id: quartetto-adorno
+  type: ensemble
+  canonical_name: Quartetto Adorno
+  source:
+    file: docs/brahms.md
+- id: quatuor-agate
+  type: soloist
+  canonical_name: Quatuor Agate
+  source:
+    file: docs/brahms.md
+- id: raphael-wallfisch
+  type: soloist
+  canonical_name: Raphael Wallfisch
+  source:
+    file: docs/brahms.md
+  instruments:
+  - cello
+- id: seong-jin-cho
+  type: soloist
+  canonical_name: Seong-Jin Cho
+  source:
+    file: docs/brahms.md
+  instruments:
+  - piano
+- id: sivan-silver
+  type: soloist
+  canonical_name: Sivan Silver
+  source:
+    file: docs/brahms.md
+  instruments:
+  - piano
+- id: stephen-hough
+  type: soloist
+  canonical_name: Stephen Hough
+  source:
+    file: docs/brahms.md
+  instruments:
+  - piano
+- id: tabea-zimmermann
+  type: soloist
+  canonical_name: Tabea Zimmermann
+  source:
+    file: docs/brahms.md
+  instruments:
+  - viola
+- id: tanja-tetzlaff
+  type: soloist
+  canonical_name: Tanja Tetzlaff
+  source:
+    file: docs/brahms.md
+  instruments:
+  - cello
+- id: wiener-philharmoniker
+  type: orchestra
+  canonical_name: Wiener Philharmoniker
+  source:
+    file: docs/brahms.md
+- id: wiener-symphoniker
+  type: orchestra
+  canonical_name: Wiener Symphoniker
+  source:
+    file: docs/brahms.md
+- id: william-steinberg
+  type: conductor
+  canonical_name: William Steinberg
+  source:
+    file: docs/brahms.md
+- id: yo-yo-ma
+  type: soloist
+  canonical_name: Yo-Yo Ma
+  source:
+    file: docs/brahms.md
+- id: yuja-wang
+  type: soloist
+  canonical_name: Yuja Wang
+  source:
+    file: docs/brahms.md
+  instruments:
+  - piano
+- id: yuya-okamoto
+  type: soloist
+  canonical_name: Yuya Okamoto
+  source:
+    file: docs/brahms.md
+- id: zehetmaier-quartett
+  type: ensemble
+  canonical_name: Zehetmaier Quartett
+  source:
+    file: docs/brahms.md

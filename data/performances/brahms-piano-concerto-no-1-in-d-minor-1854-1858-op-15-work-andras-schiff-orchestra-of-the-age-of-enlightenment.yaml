@@ -1,7 +1,11 @@
 id: brahms-piano-concerto-no-1-in-d-minor-1854-1858-op-15-work-andras-schiff-orchestra-of-the-age-of-enlightenment
 work_id: brahms-piano-concerto-no-1-in-d-minor-1854-1858-op-15-work
 performers:
-- name: András Schiff, Orchestra of the Age of Enlightenment
+- artist_id: andras-schiff
+  name: András Schiff
+  role: piano
+- artist_id: orchestra-of-the-age-of-enlightenment
+  name: Orchestra of the Age of Enlightenment
   role: performer
 links:
   tidal:
@@ -12,3 +16,4 @@ reviews:
 source:
   file: /Users/Lucas_new/.codex/.chatgpt-projects/g-p-6a500123ac548191ab37db95c0d285a2/classical_music/docs/brahms.md
   line: '17'
+source_performer_text: András Schiff, Orchestra of the Age of Enlightenment

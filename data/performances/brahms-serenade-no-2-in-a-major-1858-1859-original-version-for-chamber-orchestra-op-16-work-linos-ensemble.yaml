@@ -1,7 +1,8 @@
 id: brahms-serenade-no-2-in-a-major-1858-1859-original-version-for-chamber-orchestra-op-16-work-linos-ensemble
 work_id: brahms-serenade-no-2-in-a-major-1858-1859-original-version-for-chamber-orchestra-op-16-work
 performers:
-- name: Linos Ensemble
+- artist_id: linos-ensemble
+  name: Linos Ensemble
   role: performer
 links:
   tidal:
@@ -9,3 +10,4 @@ links:
 source:
   file: /Users/Lucas_new/.codex/.chatgpt-projects/g-p-6a500123ac548191ab37db95c0d285a2/classical_music/docs/brahms.md
   line: '23'
+source_performer_text: Linos Ensemble
