@@ -16,6 +16,10 @@ URL_RE = re.compile(r"https?://[^\s)]+")
 PERFORMER_RE = re.compile(r"\[[^\]]*?\*(?P<performers>.+?)\*[^\]]*?\]\((?P<url>https?://[^)]+)\)")
 MARKDOWN_LINK_RE = re.compile(r"\[[^\]]+\]\(https?://[^)]+\)")
 GRAMOPHONE_RE = re.compile(r"\((?P<issue>\d{2}/\d{4})\)")
+WORK_IDENTITY_LINK_LABEL_RE = re.compile(
+    r"\[(?P<label>[^*\]]*(?:realisation|realization|completion|elaboration)[^*\]]*)\*",
+    re.IGNORECASE,
+)
 
 
 def parse_composer_markdown(file_path: Path) -> list[SourceRecord]:
@@ -72,6 +76,11 @@ def parse_composer_markdown(file_path: Path) -> list[SourceRecord]:
             work_text = f"{title} ({date_text})"
         for descriptor in identity_parentheticals:
             work_text = f"{work_text} ({descriptor})"
+        identity_label_match = WORK_IDENTITY_LINK_LABEL_RE.search(tail)
+        if identity_label_match:
+            descriptor = identity_label_match.group("label").strip(" :,-")
+            if descriptor:
+                work_text = f"{work_text} ({descriptor})"
 
         issue_match = GRAMOPHONE_RE.search(line)
         gramophone_issue = _normalize_gramophone_issue(issue_match.group("issue")) if issue_match else None

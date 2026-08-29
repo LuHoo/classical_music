@@ -568,6 +568,23 @@ class EntityMatcher:
                     rationale="Catalogue and positive version evidence identify one canonical Work",
                     requires_curator_action=False,
                 )
+
+        version_text_matches = [
+            c
+            for c in candidates
+            if _source_contains_candidate_version(work_title, c)
+        ]
+        if len(version_text_matches) == 1:
+            candidate = version_text_matches[0]
+            evidence_used.append("version_text_match")
+            return WorkIdentityResult(
+                status=WorkIdentityResolution.MATCHED,
+                matched_work_id=candidate.entity_id,
+                candidates_count=len(candidates),
+                evidence_used=evidence_used,
+                rationale="Source text matches one canonical Work version field",
+                requires_curator_action=False,
+            )
         
         # Case 1: No candidates found
         if not candidates:
@@ -873,3 +890,10 @@ def find_work(
     """
     candidates = matcher.find_work_candidates(composer_id, work_title)
     return candidates[0] if candidates else None
+
+
+def _source_contains_candidate_version(work_title: str, candidate: ExistingEntity) -> bool:
+    version = candidate.data.get("version")
+    if not isinstance(version, str) or not version.strip():
+        return False
+    return normalize_title(version) in normalize_title(work_title)

@@ -512,6 +512,16 @@ artists:
   canonical_name: Zehetmaier Quartett
   source:
     file: docs/brahms.md
+- id: international-mahler-orchestra
+  type: orchestra
+  canonical_name: International Mahler Orchestra
+  source:
+    file: docs/mahler.md
+- id: yoel-gamzou
+  type: conductor
+  canonical_name: Yoel Gamzou
+  source:
+    file: docs/mahler.md
 - id: andrew-davis
   type: conductor
   canonical_name: Andrew Davis
