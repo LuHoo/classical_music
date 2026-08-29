@@ -154,8 +154,13 @@ def extract_catalogue_number(text: str) -> str | None:
     if match:
         return f"WAB.{match.group(1)}"
     
-    # Match Op. or Opus DIGITS, preserving suffixes such as 56a/56b.
-    match = re.search(r'Op\.?\s*(\d+\s*[a-z]?(?:bis|ter)?)', text, re.IGNORECASE)
+    # Match Op. or Opus DIGITS, preserving adjacent suffixes and parts such
+    # as 56a, 120/1, and 57/3, 4 without swallowing prose like "Op. 53 for".
+    match = re.search(
+        r'Op\.?\s*(\d+(?:[a-z]|bis|ter)?(?:/\d+(?:\s*,\s*\d+)*)?)',
+        text,
+        re.IGNORECASE,
+    )
     if match:
         return f"Op.{match.group(1).replace(' ', '')}"
     

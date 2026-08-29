@@ -1,0 +1,14 @@
+id: brahms-string-sextet-no-2-in-g-major-1864-65-op-36-work-belcea-quartet-tabea-zimmermann-jean-guihen-queyras
+work_id: brahms-string-sextet-no-2-in-g-major-1864-65-op-36-work
+performers:
+- name: Belcea Quartet, Tabea Zimmermann, Jean-Guihen Queyras
+  role: performer
+links:
+  tidal:
+    url: http://www.tidal.com/track/213985512
+reviews:
+  gramophone:
+    issue: 2022-04
+source:
+  file: /Users/Lucas_new/.codex/.chatgpt-projects/g-p-6a500123ac548191ab37db95c0d285a2/classical_music/docs/brahms.md
+  line: '67'

@@ -1,0 +1,11 @@
+id: brahms-cello-sonata-no-1-in-e-minor-1862-1865-op-38-work-gautier-capucon-yuja-wang
+work_id: brahms-cello-sonata-no-1-in-e-minor-1862-1865-op-38-work
+performers:
+- name: Gautier Capuçon, Yuja Wang
+  role: performer
+links:
+  tidal:
+    url: http://www.tidal.com/track/245035795
+source:
+  file: /Users/Lucas_new/.codex/.chatgpt-projects/g-p-6a500123ac548191ab37db95c0d285a2/classical_music/docs/brahms.md
+  line: '69'

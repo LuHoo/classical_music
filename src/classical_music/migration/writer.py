@@ -1,14 +1,23 @@
 from __future__ import annotations
 
+import unicodedata
 from pathlib import Path
 from typing import Iterable
 
 from ruamel.yaml import YAML
 
-from .models import PerformanceCandidate, WorkCandidate
+from .models import PerformanceCandidate, WorkCandidate, WorkGroupCandidate
 
 
 def slugify(value: str) -> str:
+    value = (
+        value.replace("♭", " flat ")
+        .replace("♯", " sharp ")
+        .replace("ß", "ss")
+        .replace("–", "-")
+        .replace("—", "-")
+    )
+    value = unicodedata.normalize("NFKD", value).encode("ascii", "ignore").decode("ascii")
     cleaned = []
     previous_hyphen = False
     for char in value.lower():
@@ -41,6 +50,7 @@ def stable_performance_id(work_id: str, performer_text: str) -> str:
 
 def write_canonical_preview(
     output_root: Path,
+    work_groups: Iterable[WorkGroupCandidate],
     works: Iterable[WorkCandidate],
     performances: Iterable[PerformanceCandidate],
     dry_run: bool,
@@ -48,11 +58,32 @@ def write_canonical_preview(
     yaml = YAML()
     yaml.default_flow_style = False
     yaml.allow_unicode = True
+    yaml.width = 4096
 
     written: list[Path] = []
 
     if dry_run:
         return written
+
+    for group in sorted(work_groups, key=lambda item: item.id):
+        group_dir = output_root / "work-groups"
+        group_dir.mkdir(parents=True, exist_ok=True)
+        path = group_dir / f"{group.id}.yaml"
+        payload = {
+            "id": group.id,
+            "composer_id": group.composer_id,
+            "title": group.title,
+        }
+        if group.catalogue:
+            payload["catalogue"] = group.catalogue
+        if group.source_file is not None or group.source_line is not None:
+            payload["source"] = {
+                "file": group.source_file,
+                "line": str(group.source_line) if group.source_line is not None else None,
+            }
+        with path.open("w", encoding="utf-8") as handle:
+            yaml.dump(payload, handle)
+        written.append(path)
 
     for work in sorted(works, key=lambda item: item.id):
         work_dir = output_root / "works"

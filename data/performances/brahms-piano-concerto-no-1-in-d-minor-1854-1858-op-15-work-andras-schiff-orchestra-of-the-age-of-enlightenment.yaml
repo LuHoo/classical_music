@@ -1,0 +1,14 @@
+id: brahms-piano-concerto-no-1-in-d-minor-1854-1858-op-15-work-andras-schiff-orchestra-of-the-age-of-enlightenment
+work_id: brahms-piano-concerto-no-1-in-d-minor-1854-1858-op-15-work
+performers:
+- name: András Schiff, Orchestra of the Age of Enlightenment
+  role: performer
+links:
+  tidal:
+    url: http://www.tidal.com/track/185728418
+reviews:
+  gramophone:
+    issue: 2021-07
+source:
+  file: /Users/Lucas_new/.codex/.chatgpt-projects/g-p-6a500123ac548191ab37db95c0d285a2/classical_music/docs/brahms.md
+  line: '17'

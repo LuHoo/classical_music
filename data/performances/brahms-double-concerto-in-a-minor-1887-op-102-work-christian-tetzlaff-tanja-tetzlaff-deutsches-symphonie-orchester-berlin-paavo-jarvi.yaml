@@ -1,0 +1,11 @@
+id: brahms-double-concerto-in-a-minor-1887-op-102-work-christian-tetzlaff-tanja-tetzlaff-deutsches-symphonie-orchester-berlin-paavo-jarvi
+work_id: brahms-double-concerto-in-a-minor-1887-op-102-work
+performers:
+- name: Christian Tetzlaff, Tanja Tetzlaff, Deutsches Symphonie-Orchester Berlin, Paavo Järvi
+  role: performer
+links:
+  tidal:
+    url: http://www.tidal.com/track/313629848
+source:
+  file: /Users/Lucas_new/.codex/.chatgpt-projects/g-p-6a500123ac548191ab37db95c0d285a2/classical_music/docs/brahms.md
+  line: '47'

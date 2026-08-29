@@ -1,0 +1,11 @@
+id: brahms-piano-quartet-no-1-in-g-minor-1856-61-op-25-work-isaac-stern-jaime-laredo-yo-yo-ma-emanuel-ax
+work_id: brahms-piano-quartet-no-1-in-g-minor-1856-61-op-25-work
+performers:
+- name: Isaac Stern, Jaime Laredo, Yo-Yo Ma, Emanuel Ax
+  role: performer
+links:
+  tidal:
+    url: http://www.tidal.com/track/1877174
+source:
+  file: /Users/Lucas_new/.codex/.chatgpt-projects/g-p-6a500123ac548191ab37db95c0d285a2/classical_music/docs/brahms.md
+  line: '61'

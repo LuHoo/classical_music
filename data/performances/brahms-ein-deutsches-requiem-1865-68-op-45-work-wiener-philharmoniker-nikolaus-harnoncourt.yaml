@@ -1,0 +1,11 @@
+id: brahms-ein-deutsches-requiem-1865-68-op-45-work-wiener-philharmoniker-nikolaus-harnoncourt
+work_id: brahms-ein-deutsches-requiem-1865-68-op-45-work
+performers:
+- name: Wiener Philharmoniker, Nikolaus Harnoncourt
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/browse/album/4691140?u
+source:
+  file: /Users/Lucas_new/.codex/.chatgpt-projects/g-p-6a500123ac548191ab37db95c0d285a2/classical_music/docs/brahms.md
+  line: '147'

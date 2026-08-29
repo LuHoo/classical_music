@@ -18,6 +18,7 @@ from classical_music.migration.entity_matcher import EntityMatcher  # noqa: E402
 from classical_music.migration.models import (  # noqa: E402
     PerformanceCandidate,
     WorkCandidate,
+    WorkGroupCandidate,
     WorkIdentityResolution,
     WorkIdentityResult,
 )
@@ -54,6 +55,7 @@ def main(
         selected_files = sorted(docs_root / f"{name}.md" for name in composer)
 
     works: dict[str, WorkCandidate] = {}
+    work_groups: dict[str, WorkGroupCandidate] = {}
     performances: dict[str, PerformanceCandidate] = {}
     review_items = []  # Will contain items with identity_result (not classifications)
     matched_entities: dict[str, str] = {}  # source_id → canonical_entity_id
@@ -130,6 +132,17 @@ def main(
                 )
                 
                 if work_id not in works:
+                    work_groups.setdefault(
+                        work_group_id,
+                        WorkGroupCandidate(
+                            id=work_group_id,
+                            composer_id=canonical_composer_id,
+                            title=record.work_text,
+                            catalogue=record.catalogue,
+                            source_file=record.location.source_file,
+                            source_line=record.location.line_number,
+                        ),
+                    )
                     works[work_id] = WorkCandidate(
                         id=work_id,
                         work_group_id=work_group_id,
@@ -202,6 +215,7 @@ def main(
     output_root = ROOT / "generated" / "migration" / "canonical-preview"
     written_paths = write_canonical_preview(
         output_root=output_root,
+        work_groups=work_groups.values(),
         works=works.values(),
         performances=performances.values(),
         dry_run=dry_run,
@@ -236,6 +250,7 @@ def main(
     
     summary = {
         "dry_run": dry_run,
+        "work_groups": [asdict(item) for item in sorted(work_groups.values(), key=lambda x: x.id)],
         "works": [asdict(item) for item in sorted(works.values(), key=lambda x: x.id)],
         "performances": [
             asdict(item) for item in sorted(performances.values(), key=lambda x: x.id)
@@ -248,6 +263,7 @@ def main(
     summary_path.write_text(json.dumps(summary, indent=2), encoding="utf-8")
 
     console.print(f"Works candidates: {len(works)}")
+    console.print(f"Work Group candidates: {len(work_groups)}")
     console.print(f"Performance candidates: {len(performances)}")
     console.print(f"Matched to existing: {len(matched_entities)}")
     console.print(f"Review summary: {review_stats['by_category']}")

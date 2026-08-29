@@ -1,0 +1,11 @@
+id: brahms-violin-concerto-in-d-major-1878-op-77-work-janine-jansen-orchestra-dell-accademia-nazionale-di-santa-cecilia-antonio-pappano
+work_id: brahms-violin-concerto-in-d-major-1878-op-77-work
+performers:
+- name: Janine Jansen, Orchestra dell'Accademia Nazionale di Santa Cecilia, Antonio Pappano
+  role: performer
+links:
+  tidal:
+    url: http://www.tidal.com/track/77609390
+source:
+  file: /Users/Lucas_new/.codex/.chatgpt-projects/g-p-6a500123ac548191ab37db95c0d285a2/classical_music/docs/brahms.md
+  line: '35'

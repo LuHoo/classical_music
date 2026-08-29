@@ -1,0 +1,11 @@
+id: brahms-alto-rhapsody-1869-op-53-work-nathalie-stutzmann-monteverdi-choir-orchestre-revolutionnaire-et-romantique-john-eliot-gardiner
+work_id: brahms-alto-rhapsody-1869-op-53-work
+performers:
+- name: Nathalie Stutzmann, Monteverdi Choir, Orchestre Révolutionnaire et Romantique, John Eliot Gardiner
+  role: performer
+links:
+  tidal:
+    url: http://www.tidal.com/track/79497950
+source:
+  file: /Users/Lucas_new/.codex/.chatgpt-projects/g-p-6a500123ac548191ab37db95c0d285a2/classical_music/docs/brahms.md
+  line: '149'

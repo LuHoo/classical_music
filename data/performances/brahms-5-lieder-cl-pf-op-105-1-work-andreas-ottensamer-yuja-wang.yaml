@@ -1,0 +1,11 @@
+id: brahms-5-lieder-cl-pf-op-105-1-work-andreas-ottensamer-yuja-wang
+work_id: brahms-5-lieder-cl-pf-op-105-1-work
+performers:
+- name: Andreas Ottensamer, Yuja Wang
+  role: performer
+links:
+  tidal:
+    url: http://www.tidal.com/track/105044321
+source:
+  file: /Users/Lucas_new/.codex/.chatgpt-projects/g-p-6a500123ac548191ab37db95c0d285a2/classical_music/docs/brahms.md
+  line: '101'

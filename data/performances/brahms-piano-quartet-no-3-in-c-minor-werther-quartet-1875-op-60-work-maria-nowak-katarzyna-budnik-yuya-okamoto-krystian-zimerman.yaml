@@ -1,0 +1,11 @@
+id: brahms-piano-quartet-no-3-in-c-minor-werther-quartet-1875-op-60-work-maria-nowak-katarzyna-budnik-yuya-okamoto-krystian-zimerman
+work_id: brahms-piano-quartet-no-3-in-c-minor-werther-quartet-1875-op-60-work
+performers:
+- name: Maria Nowak, Katarzyna Budnik, Yuya Okamoto, Krystian Zimerman
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/426702629
+source:
+  file: /Users/Lucas_new/.codex/.chatgpt-projects/g-p-6a500123ac548191ab37db95c0d285a2/classical_music/docs/brahms.md
+  line: '83'

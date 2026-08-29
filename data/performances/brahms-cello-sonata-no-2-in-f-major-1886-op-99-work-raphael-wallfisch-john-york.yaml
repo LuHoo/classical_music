@@ -1,0 +1,11 @@
+id: brahms-cello-sonata-no-2-in-f-major-1886-op-99-work-raphael-wallfisch-john-york
+work_id: brahms-cello-sonata-no-2-in-f-major-1886-op-99-work
+performers:
+- name: Raphael Wallfisch, John York
+  role: performer
+links:
+  tidal:
+    url: http://www.tidal.com/track/98291615
+source:
+  file: /Users/Lucas_new/.codex/.chatgpt-projects/g-p-6a500123ac548191ab37db95c0d285a2/classical_music/docs/brahms.md
+  line: '93'

@@ -16,6 +16,7 @@ from classical_music.migration.models import (
     PerformanceIdentityResolution,
     WorkIdentityResolution,
 )
+from classical_music.migration.writer import slugify
 
 
 def test_normalize_title():
@@ -65,6 +66,9 @@ def test_extract_catalogue_number():
     # Opus number
     assert extract_catalogue_number("Piano Sonata Op. 23") == "Op.23"
     assert extract_catalogue_number("Variations Op. 56a") == "Op.56a"
+    assert extract_catalogue_number("Clarinet Sonata Op. 120/1") == "Op.120/1"
+    assert extract_catalogue_number("8 Songs, Op. 57/3, 4 (vc/pf)") == "Op.57/3,4"
+    assert extract_catalogue_number("Alto Rhapsody, Op. 53 for contralto") == "Op.53"
     
     # Köchel number
     assert extract_catalogue_number("Symphony K. 545") == "K.545"
@@ -74,6 +78,12 @@ def test_extract_catalogue_number():
     
     # No catalogue
     assert extract_catalogue_number("Untitled Work") is None
+
+
+def test_slugify_outputs_ascii_and_preserves_flat_meaning():
+    assert slugify("Piano Concerto No. 2 in B♭ major") == "piano-concerto-no-2-in-b-flat-major"
+    assert slugify("6 Klavierstücke, István Kertész") == "6-klavierstucke-istvan-kertesz"
+    assert slugify("Ein deutsches Requiem (1865–68)") == "ein-deutsches-requiem-1865-68"
 
 
 def test_entity_matcher_loads_canonical_data(data_root: Path):

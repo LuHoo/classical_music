@@ -1,0 +1,14 @@
+id: brahms-symphony-no-1-in-c-minor-1854-1876-op-68-work-chamber-orchestra-of-europe-paavo-berglund
+work_id: brahms-symphony-no-1-in-c-minor-1854-1876-op-68-work
+performers:
+- name: Chamber Orchestra of Europe, Paavo Berglund
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/browse/track/284016473?u
+reviews:
+  gramophone:
+    issue: 2001-08
+source:
+  file: /Users/Lucas_new/.codex/.chatgpt-projects/g-p-6a500123ac548191ab37db95c0d285a2/classical_music/docs/brahms.md
+  line: '31'
