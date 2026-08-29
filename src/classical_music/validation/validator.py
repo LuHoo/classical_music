@@ -16,6 +16,7 @@ from . import rules
 
 
 REQUIRED_FIELDS: dict[str, set[str]] = {
+    "artists": {"id", "type", "canonical_name"},
     "persons": {"id", "name"},
     "work-groups": {"id", "composer_id", "title"},
     "works": {"id", "work_group_id", "composer_id", "title"},
@@ -23,6 +24,21 @@ REQUIRED_FIELDS: dict[str, set[str]] = {
 }
 
 ALLOWED_FIELDS: dict[str, set[str]] = {
+    "artists": {
+        "id",
+        "type",
+        "canonical_name",
+        "display_names",
+        "aliases",
+        "roles",
+        "instruments",
+        "voice",
+        "country",
+        "city",
+        "authorities",
+        "notes",
+        "source",
+    },
     "persons": {
         "id",
         "name",
@@ -117,7 +133,7 @@ class DataValidator:
         report = ValidationReport()
         records: list[Record] = []
 
-        for entity_type in ("persons", "work-groups", "works", "performances"):
+        for entity_type in ("artists", "persons", "work-groups", "works", "performances"):
             entity_dir = self.data_root / entity_type
             if not entity_dir.exists():
                 continue
@@ -198,6 +214,7 @@ class DataValidator:
         report: ValidationReport,
     ) -> list[Record]:
         container_keys = {
+            "artists": ["artists"],
             "persons": ["persons"],
             "work-groups": ["work_groups", "work-groups"],
             "works": ["works"],
@@ -210,6 +227,17 @@ class DataValidator:
                 continue
             items = loaded.get(container_key)
             if isinstance(items, list):
+                if entity_type == "artists":
+                    return [
+                        Record(
+                            entity_type=entity_type,
+                            file_path=file_path,
+                            data=item,
+                            display_file=str(file_path.relative_to(self.repository_root)),
+                        )
+                        for item in items
+                        if isinstance(item, dict)
+                    ]
                 report.findings.append(
                     ValidationFinding(
                         rule_id=rules.RULE_CAN_WORKFLOW_NOT_CANONICAL,
@@ -607,6 +635,7 @@ class DataValidator:
         self, records: list[Record], report: ValidationReport
     ) -> None:
         people = self._ids_for(records, "persons")
+        artists = self._ids_for(records, "artists")
         work_groups = self._ids_for(records, "work-groups")
         works = self._ids_for(records, "works")
 
@@ -731,6 +760,21 @@ class DataValidator:
                                     entity_type=record.entity_type,
                                     entity_id=entity_id,
                                     field=f"performers.{index}.person_id",
+                                )
+                            )
+                        artist_id = performer.get("artist_id")
+                        if isinstance(artist_id, str) and artist_id not in artists:
+                            report.findings.append(
+                                ValidationFinding(
+                                    rule_id=rules.RULE_REF_PERFORMER_ARTIST,
+                                    severity="error",
+                                    file=file_rel,
+                                    message=(
+                                        f"Performer artist_id '{artist_id}' does not exist in artists."
+                                    ),
+                                    entity_type=record.entity_type,
+                                    entity_id=entity_id,
+                                    field=f"performers.{index}.artist_id",
                                 )
                             )
 

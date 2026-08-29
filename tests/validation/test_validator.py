@@ -48,6 +48,149 @@ def test_valid_minimal_dataset_has_no_errors(tmp_path: Path) -> None:
     assert report.error_count == 0
 
 
+def test_performer_artist_id_must_reference_global_artist(tmp_path: Path) -> None:
+    _write(
+        tmp_path / "data/persons/ludwig-van-beethoven.yaml",
+        "id: ludwig-van-beethoven\nname: Ludwig van Beethoven\n",
+    )
+    _write(
+        tmp_path / "data/work-groups/beethoven-symphony-5.yaml",
+        (
+            "id: beethoven-symphony-5\n"
+            "composer_id: ludwig-van-beethoven\n"
+            "title: Symphony No. 5\n"
+        ),
+    )
+    _write(
+        tmp_path / "data/works/beethoven-symphony-5-work.yaml",
+        (
+            "id: beethoven-symphony-5-work\n"
+            "work_group_id: beethoven-symphony-5\n"
+            "composer_id: ludwig-van-beethoven\n"
+            "title: Symphony No. 5 in C minor\n"
+        ),
+    )
+    _write(
+        tmp_path / "data/performances/beethoven-symphony-5-kleiber.yaml",
+        (
+            "id: beethoven-symphony-5-kleiber\n"
+            "work_id: beethoven-symphony-5-work\n"
+            "performers:\n"
+            "  - artist_id: carlos-kleiber\n"
+            "    name: Carlos Kleiber\n"
+            "    role: conductor\n"
+        ),
+    )
+
+    report = DataValidator(tmp_path).run()
+
+    assert any(f.rule_id == "REF-008" for f in report.findings)
+
+
+def test_global_artist_can_be_reused_across_composer_contexts(tmp_path: Path) -> None:
+    _write(
+        tmp_path / "data/artists/performers.yaml",
+        (
+            "artists:\n"
+            "  - id: leonidas-kavakos\n"
+            "    type: instrumentalist\n"
+            "    canonical_name: Leonidas Kavakos\n"
+            "    instruments:\n"
+            "      - violin\n"
+        ),
+    )
+    for composer_id, composer_name, work_title in (
+        ("johannes-brahms", "Johannes Brahms", "Violin Sonata No. 1"),
+        ("ludwig-van-beethoven", "Ludwig van Beethoven", "Violin Sonata No. 5"),
+    ):
+        _write(
+            tmp_path / f"data/persons/{composer_id}.yaml",
+            f"id: {composer_id}\nname: {composer_name}\n",
+        )
+        _write(
+            tmp_path / f"data/work-groups/{composer_id}-sonata.yaml",
+            f"id: {composer_id}-sonata\ncomposer_id: {composer_id}\ntitle: {work_title}\n",
+        )
+        _write(
+            tmp_path / f"data/works/{composer_id}-sonata-work.yaml",
+            (
+                f"id: {composer_id}-sonata-work\n"
+                f"work_group_id: {composer_id}-sonata\n"
+                f"composer_id: {composer_id}\n"
+                f"title: {work_title}\n"
+            ),
+        )
+        _write(
+            tmp_path / f"data/performances/{composer_id}-sonata-kavakos.yaml",
+            (
+                f"id: {composer_id}-sonata-kavakos\n"
+                f"work_id: {composer_id}-sonata-work\n"
+                "performers:\n"
+                "  - artist_id: leonidas-kavakos\n"
+                "    name: Leonidas Kavakos\n"
+                "    role: violin\n"
+            ),
+        )
+
+    report = DataValidator(tmp_path).run()
+
+    assert report.error_count == 0
+
+
+def test_global_artist_supports_multiple_roles_without_fixing_performance_role(
+    tmp_path: Path,
+) -> None:
+    _write(
+        tmp_path / "data/artists/performers.yaml",
+        (
+            "artists:\n"
+            "  - id: nathalie-stutzmann\n"
+            "    type: singer\n"
+            "    canonical_name: Nathalie Stutzmann\n"
+            "    roles:\n"
+            "      - singer\n"
+            "      - conductor\n"
+            "    voice: contralto\n"
+        ),
+    )
+    _write(
+        tmp_path / "data/persons/johannes-brahms.yaml",
+        "id: johannes-brahms\nname: Johannes Brahms\n",
+    )
+    for suffix, title, role in (
+        ("alto-rhapsody", "Alto Rhapsody", "contralto"),
+        ("symphony", "Symphony No. 1", "conductor"),
+    ):
+        _write(
+            tmp_path / f"data/work-groups/brahms-{suffix}.yaml",
+            f"id: brahms-{suffix}\ncomposer_id: johannes-brahms\ntitle: {title}\n",
+        )
+        _write(
+            tmp_path / f"data/works/brahms-{suffix}-work.yaml",
+            (
+                f"id: brahms-{suffix}-work\n"
+                f"work_group_id: brahms-{suffix}\n"
+                "composer_id: johannes-brahms\n"
+                f"title: {title}\n"
+            ),
+        )
+        _write(
+            tmp_path / f"data/performances/brahms-{suffix}-stutzmann.yaml",
+            (
+                f"id: brahms-{suffix}-stutzmann\n"
+                f"work_id: brahms-{suffix}-work\n"
+                "performers:\n"
+                "  - artist_id: nathalie-stutzmann\n"
+                "    name: Nathalie Stutzmann\n"
+                f"    role: {role}\n"
+            ),
+        )
+
+    report = DataValidator(tmp_path).run()
+
+    assert report.error_count == 0
+
+
 def test_performance_referencing_work_group_is_error(tmp_path: Path) -> None:
     _write(tmp_path / "data/persons/w-a-mozart.yaml", "id: w-a-mozart\nname: W. A. Mozart\n")
     _write(

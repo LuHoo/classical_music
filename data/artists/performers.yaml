@@ -57,7 +57,7 @@ artists:
   source:
     file: docs/brahms.md
 - id: deutsches-symphonie-orchester-berlin
-  type: soloist
+  type: orchestra
   canonical_name: Deutsches Symphonie-Orchester Berlin
   source:
     file: docs/brahms.md
@@ -183,10 +183,14 @@ artists:
   source:
     file: docs/brahms.md
 - id: nathalie-stutzmann
-  type: soloist
+  type: singer
   canonical_name: Nathalie Stutzmann
   source:
     file: docs/brahms.md
+  roles:
+  - singer
+  - conductor
+  voice: contralto
 - id: nikolaus-harnoncourt
   type: conductor
   canonical_name: Nikolaus Harnoncourt
@@ -203,7 +207,7 @@ artists:
   source:
     file: docs/brahms.md
 - id: orchestre-revolutionnaire-et-romantique
-  type: soloist
+  type: orchestra
   canonical_name: Orchestre Révolutionnaire et Romantique
   source:
     file: docs/brahms.md
@@ -244,7 +248,7 @@ artists:
   source:
     file: docs/brahms.md
 - id: quatuor-agate
-  type: soloist
+  type: ensemble
   canonical_name: Quatuor Agate
   source:
     file: docs/brahms.md

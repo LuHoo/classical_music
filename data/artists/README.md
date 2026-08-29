@@ -6,13 +6,16 @@ transliteration, abbreviation, and script differences from creating duplicate ar
 
 ## Location
 
-Artist records may be stored in composer- or migration-sized YAML files under:
+Artist records are stored in global authority YAML files under:
 
 ```text
 data/artists/
 ```
 
-Each record must have a globally unique, stable `id`.
+Each record must have a globally unique, stable `id`. Artist identities are not
+owned by a composer, source document, or migration batch. Composer-specific
+provenance belongs on the Performance or source evidence that introduced the
+artist, not in a composer-scoped artist namespace.
 
 ## Proposed format
 
@@ -65,6 +68,7 @@ authorities:
 - `aliases`: abbreviations, shortened forms, transliterations, historical forms, and metadata variants.
 - `country`: country associated with an organization or person when useful.
 - `city`: home city for an ensemble or institution when useful.
+- `roles`: known artist capabilities or functions, such as `singer`, `conductor`, or `instrumentalist`.
 - `instruments`: instruments for soloists or instrumentalists.
 - `voice`: voice type for singers.
 - `authorities`: verified external identifiers.
@@ -87,9 +91,31 @@ institution
 label
 ```
 
-`soloist` should be used only when a more specific role is not known. A person may later
-need multiple roles; a future schema can add `roles` while retaining `type` as the primary
-classification.
+`soloist` should be used only when a more specific type is not known. `type` is a
+primary classification for the artist identity, not the complete list of possible
+performance functions. Use `roles`, `instruments`, and `voice` to record known
+capabilities when helpful.
+
+Performance roles remain contextual. For example, Nathalie Stutzmann can be
+credited as a singer in one Performance and as a conductor in another. Pinchas
+Zukerman can be credited as violinist in one Performance and violist in another.
+The global Artist record may describe those known capabilities, but it must not
+force every Performance to use the same role.
+
+## Performance references
+
+Performance records may reference a global Artist with `artist_id`:
+
+```yaml
+performers:
+  - artist_id: nathalie-stutzmann
+    name: Nathalie Stutzmann
+    role: contralto
+```
+
+When `artist_id` is present, validation requires it to resolve to an Artist record
+under `data/artists/`. The `name` field may preserve the source display form, and
+the `role` field describes the artist's function in that specific recording.
 
 ## Identifier conventions
 
