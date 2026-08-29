@@ -56,6 +56,7 @@ def is_brahms_curated_conductor_context(name: str) -> bool:
         for token in (
             "choir",
             "chorus",
+            "orchester",
             "orchestra",
             "orchestre",
             "philharmoniker",

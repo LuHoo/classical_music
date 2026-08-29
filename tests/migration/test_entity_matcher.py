@@ -127,6 +127,21 @@ def test_performer_entries_use_final_conductor_after_source_orchestra_abbreviati
     ]
 
 
+def test_performer_entries_use_final_conductor_after_orchester_name():
+    assert performer_entries_from_text("Bruckner Orchester Linz, Markus Poschner") == [
+        {
+            "artist_id": "bruckner-orchester-linz",
+            "name": "Bruckner Orchester Linz",
+            "role": "performer",
+        },
+        {
+            "artist_id": "markus-poschner",
+            "name": "Markus Poschner",
+            "role": "conductor",
+        },
+    ]
+
+
 def test_performer_entries_do_not_infer_conductor_for_chamber_tuple():
     entries = performer_entries_from_text(
         "Belcea Quartet, Tabea Zimmermann, Jean-Guihen Queyras"

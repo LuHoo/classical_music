@@ -34,11 +34,26 @@ artists:
   canonical_name: Andris Nelsons
   source:
     file: docs/shostakovich.md
+- id: anne-sofie-von-otter
+  type: singer
+  canonical_name: Anne Sofie von Otter
+  source:
+    file: docs/mozart.md
 - id: antonio-pappano
   type: conductor
   canonical_name: Antonio Pappano
   source:
     file: docs/brahms.md
+- id: bach-collegium-japan-chorus
+  type: choir
+  canonical_name: Bach Collegium Japan Chorus
+  source:
+    file: docs/mozart.md
+- id: barbara-bonney
+  type: singer
+  canonical_name: Barbara Bonney
+  source:
+    file: docs/mozart.md
 - id: belcea-quartet
   type: ensemble
   canonical_name: Belcea Quartet
@@ -58,6 +73,16 @@ artists:
   - Boston SO
   source:
     file: docs/shostakovich.md
+- id: bruckner-orchester-linz
+  type: orchestra
+  canonical_name: Bruckner Orchester Linz
+  source:
+    file: docs/bruckner.md
+- id: carolyn-sampson
+  type: singer
+  canonical_name: Carolyn Sampson
+  source:
+    file: docs/mozart.md
 - id: chamber-orchestra-of-europe
   type: orchestra
   canonical_name: Chamber Orchestra of Europe
@@ -85,6 +110,11 @@ artists:
   canonical_name: Dmitri Kitayenko
   source:
     file: docs/prokofiev.md
+- id: english-baroque-soloists
+  type: ensemble
+  canonical_name: English Baroque Soloists
+  source:
+    file: docs/mozart.md
 - id: emanuel-ax
   type: soloist
   canonical_name: Emanuel Ax
@@ -126,6 +156,11 @@ artists:
   - Gothenburg SO
   source:
     file: docs/shostakovich.md
+- id: hans-peter-blochwitz
+  type: singer
+  canonical_name: Hans Peter Blochwitz
+  source:
+    file: docs/mozart.md
 - id: gurzenich-orchester-koln
   type: orchestra
   canonical_name: Gürzenich-Orchester Köln
@@ -220,6 +255,11 @@ artists:
   canonical_name: London Symphony Orchestra
   source:
     file: docs/brahms.md
+- id: latvian-radio-choir
+  type: choir
+  canonical_name: Latvian Radio Choir
+  source:
+    file: docs/bruckner.md
 - id: los-angeles-philharmonic
   type: orchestra
   canonical_name: Los Angeles Philharmonic
@@ -235,6 +275,16 @@ artists:
   canonical_name: Maria Nowak
   source:
     file: docs/brahms.md
+- id: markus-poschner
+  type: conductor
+  canonical_name: Markus Poschner
+  source:
+    file: docs/bruckner.md
+- id: masaaki-suzuki
+  type: conductor
+  canonical_name: Masaaki Suzuki
+  source:
+    file: docs/mozart.md
 - id: michael-collins
   type: soloist
   canonical_name: Michael Collins
@@ -286,6 +336,13 @@ artists:
   canonical_name: Orchestra of the Age of Enlightenment
   source:
     file: docs/brahms.md
+- id: orf-vienna-rso
+  type: orchestra
+  canonical_name: ORF Vienna Radio Symphony Orchestra
+  aliases:
+  - ORF Vienna RSO
+  source:
+    file: docs/bruckner.md
 - id: philharmonia-orchestra
   type: orchestra
   canonical_name: Philharmonia Orchestra
@@ -363,6 +420,11 @@ artists:
     file: docs/brahms.md
   instruments:
   - piano
+- id: sigvards-klava
+  type: conductor
+  canonical_name: Sigvards Klava
+  source:
+    file: docs/bruckner.md
 - id: stephen-hough
   type: soloist
   canonical_name: Stephen Hough
@@ -370,6 +432,11 @@ artists:
     file: docs/brahms.md
   instruments:
   - piano
+- id: susan-addison
+  type: singer
+  canonical_name: Susan Addison
+  source:
+    file: docs/mozart.md
 - id: tabea-zimmermann
   type: soloist
   canonical_name: Tabea Zimmermann
@@ -394,6 +461,11 @@ artists:
   canonical_name: WDR Sinfonieorchester Köln
   source:
     file: docs/prokofiev.md
+- id: willard-white
+  type: singer
+  canonical_name: Willard White
+  source:
+    file: docs/mozart.md
 - id: tanja-tetzlaff
   type: soloist
   canonical_name: Tanja Tetzlaff
