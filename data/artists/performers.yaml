@@ -44,6 +44,13 @@ artists:
   canonical_name: Belcea Quartet
   source:
     file: docs/brahms.md
+- id: bbc-po
+  type: orchestra
+  canonical_name: BBC Philharmonic
+  aliases:
+  - BBC PO
+  source:
+    file: docs/prokofiev.md
 - id: boston-symphony-orchestra
   type: orchestra
   canonical_name: Boston Symphony Orchestra
@@ -73,16 +80,33 @@ artists:
   canonical_name: Deutsches Symphonie-Orchester Berlin
   source:
     file: docs/brahms.md
+- id: dmitri-kitayenko
+  type: conductor
+  canonical_name: Dmitri Kitayenko
+  source:
+    file: docs/prokofiev.md
 - id: emanuel-ax
   type: soloist
   canonical_name: Emanuel Ax
   source:
     file: docs/brahms.md
+- id: esa-pekka-salonen
+  type: conductor
+  canonical_name: Esa-Pekka Salonen
+  source:
+    file: docs/bachJS.md
 - id: florian-krumpock
   type: conductor
   canonical_name: Florian Krumpöck
   source:
     file: docs/brahms.md
+- id: francesco-corti
+  type: soloist
+  canonical_name: Francesco Corti
+  source:
+    file: docs/bachJS.md
+  instruments:
+  - harpsichord
 - id: gautier-capucon
   type: soloist
   canonical_name: Gautier Capuçon
@@ -90,6 +114,11 @@ artists:
     file: docs/brahms.md
   instruments:
   - cello
+- id: gianandrea-noseda
+  type: conductor
+  canonical_name: Gianandrea Noseda
+  source:
+    file: docs/prokofiev.md
 - id: gothenburg-symphony-orchestra
   type: orchestra
   canonical_name: Gothenburg Symphony Orchestra
@@ -97,6 +126,11 @@ artists:
   - Gothenburg SO
   source:
     file: docs/shostakovich.md
+- id: gurzenich-orchester-koln
+  type: orchestra
+  canonical_name: Gürzenich-Orchester Köln
+  source:
+    file: docs/prokofiev.md
 - id: gil-garburg
   type: soloist
   canonical_name: Gil Garburg
@@ -114,11 +148,23 @@ artists:
   canonical_name: István Kertész
   source:
     file: docs/brahms.md
+- id: il-pomo-d-oro
+  type: ensemble
+  canonical_name: Il Pomo d'Oro
+  source:
+    file: docs/bachJS.md
 - id: jaime-laredo
   type: soloist
   canonical_name: Jaime Laredo
   source:
     file: docs/brahms.md
+- id: jean-efflam-bavouzet
+  type: soloist
+  canonical_name: Jean-Efflam Bavouzet
+  source:
+    file: docs/prokofiev.md
+  instruments:
+  - piano
 - id: janine-jansen
   type: soloist
   canonical_name: Janine Jansen
@@ -174,6 +220,11 @@ artists:
   canonical_name: London Symphony Orchestra
   source:
     file: docs/brahms.md
+- id: los-angeles-philharmonic
+  type: orchestra
+  canonical_name: Los Angeles Philharmonic
+  source:
+    file: docs/bachJS.md
 - id: luzerner-sinfonieorchester
   type: orchestra
   canonical_name: Luzerner Sinfonieorchester
@@ -201,6 +252,11 @@ artists:
   canonical_name: Monteverdi Choir
   source:
     file: docs/brahms.md
+- id: michail-jurowski
+  type: conductor
+  canonical_name: Michail Jurowski
+  source:
+    file: docs/prokofiev.md
 - id: neeme-jarvi
   type: conductor
   canonical_name: Neeme Järvi
@@ -230,6 +286,11 @@ artists:
   canonical_name: Orchestra of the Age of Enlightenment
   source:
     file: docs/brahms.md
+- id: philharmonia-orchestra
+  type: orchestra
+  canonical_name: Philharmonia Orchestra
+  source:
+    file: docs/prokofiev.md
 - id: orchestre-revolutionnaire-et-romantique
   type: orchestra
   canonical_name: Orchestre Révolutionnaire et Romantique
@@ -316,6 +377,23 @@ artists:
     file: docs/brahms.md
   instruments:
   - viola
+- id: ussr-state-so
+  type: orchestra
+  canonical_name: USSR State Symphony Orchestra
+  aliases:
+  - USSR State SO
+  source:
+    file: docs/prokofiev.md
+- id: valeri-polyansky
+  type: conductor
+  canonical_name: Valeri Polyansky
+  source:
+    file: docs/prokofiev.md
+- id: wdr-sinfonieorchester-koln
+  type: orchestra
+  canonical_name: WDR Sinfonieorchester Köln
+  source:
+    file: docs/prokofiev.md
 - id: tanja-tetzlaff
   type: soloist
   canonical_name: Tanja Tetzlaff

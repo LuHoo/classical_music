@@ -463,10 +463,21 @@ class EntityMatcher:
         # (e.g., title includes "1865 version" or "Vienna version")
         title = candidate.data.get("title", "")
         if title:
+            if re.search(rf"\({source_version_year}\)", title):
+                return True
             # Look for version patterns in title
             if re.search(rf'{source_version_year}.*version', title, re.IGNORECASE):
                 return True  # Positive evidence: version in title
-        
+
+        # Check 4: Explicit version text field
+        version = candidate.data.get("version", "")
+        if isinstance(version, str) and re.search(
+            rf"{source_version_year}.*(version|revision|original)",
+            version,
+            re.IGNORECASE,
+        ):
+            return True
+
         # No positive evidence found (absence of contradiction ≠ positive match)
         return False
 

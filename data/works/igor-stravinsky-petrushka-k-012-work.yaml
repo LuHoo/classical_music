@@ -2,6 +2,7 @@ id: "igor-stravinsky-petrushka-k-012-work"
 work_group_id: "igor-stravinsky-petrushka-k-012-group"
 composer_id: "igor-stravinsky"
 title: "Petrushka"
+version: "1911 original version"
 source:
   file: "docs/stravinsky.md"
   line: "33"

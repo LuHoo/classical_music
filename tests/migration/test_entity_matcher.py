@@ -560,6 +560,66 @@ def test_single_candidate_with_positive_version_evidence(data_root: Path):
     assert result.requires_curator_action is False
 
 
+def test_single_candidate_with_positive_version_field_evidence(data_root: Path):
+    """
+    Test: source says 1911, canonical version text explicitly says 1911 original version.
+    """
+    matcher = EntityMatcher(data_root)
+
+    from classical_music.migration.entity_matcher import ExistingEntity
+
+    candidate = ExistingEntity(
+        entity_type="work",
+        entity_id="test-work-1911",
+        file_path=data_root / "test.yaml",
+        data={
+            "id": "test-work-1911",
+            "title": "Petrushka",
+            "version": "1911 original version",
+        },
+    )
+
+    result = matcher.resolve_work_identity(
+        "Petrushka (1911 version)",
+        "test-composer",
+        [candidate],
+    )
+
+    assert result.status == WorkIdentityResolution.MATCHED
+    assert result.matched_work_id == "test-work-1911"
+    assert result.requires_curator_action is False
+
+
+def test_multiple_candidates_disambiguate_by_explicit_year_in_title(data_root: Path):
+    matcher = EntityMatcher(data_root)
+
+    from classical_music.migration.entity_matcher import ExistingEntity
+
+    candidates = [
+        ExistingEntity(
+            entity_type="work",
+            entity_id="symphony-1902",
+            file_path=data_root / "symphony-1902.yaml",
+            data={"id": "symphony-1902", "title": "Symphony (1902)"},
+        ),
+        ExistingEntity(
+            entity_type="work",
+            entity_id="symphony-1908",
+            file_path=data_root / "symphony-1908.yaml",
+            data={"id": "symphony-1908", "title": "Symphony (1908)"},
+        ),
+    ]
+
+    result = matcher.resolve_work_identity(
+        "Symphony (1902)",
+        "sergei-prokofiev",
+        candidates,
+    )
+
+    assert result.status == WorkIdentityResolution.MATCHED
+    assert result.matched_work_id == "symphony-1902"
+
+
 def test_single_candidate_contradictory_version(data_root: Path):
     """
     Test: source says 1865, canonical explicitly says 1889 → UNRESOLVED
