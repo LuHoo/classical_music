@@ -196,9 +196,13 @@ class PublicationSiteGenerator:
         if performances:
             body.append("## Recommended Performances")
             body.append("")
-            for performance in performances:
-                body.append(self._format_performance(performance))
-                body.append("")
+            for profile, profile_performances in self._performances_by_profile(performances):
+                if profile:
+                    body.append(f"### {self._escape(profile)}")
+                    body.append("")
+                for performance in profile_performances:
+                    body.extend(self._format_performance(performance))
+                    body.append("")
         else:
             body.append("No recommendation yet.")
             body.append("")
@@ -210,12 +214,38 @@ class PublicationSiteGenerator:
         grouped = self._group_by(self._sorted_values(self.adapter.performances), "work_id")
         return {work_id: self._sorted_values(performances) for work_id, performances in grouped.items()}
 
-    def _format_performance(self, performance: dict[str, Any]) -> str:
+    def _performances_by_profile(self, performances: list[dict[str, Any]]) -> list[tuple[str, list[dict[str, Any]]]]:
+        grouped = self._group_by(performances, "profile")
+        without_profile = [performance for performance in performances if not performance.get("profile")]
+        result: list[tuple[str, list[dict[str, Any]]]] = []
+        if without_profile:
+            result.append(("", self._sorted_values(without_profile)))
+        for profile in sorted(grouped):
+            result.append((profile, self._sorted_values(grouped[profile])))
+        return result
+
+    def _format_performance(self, performance: dict[str, Any]) -> list[str]:
         performers = performance.get("performers", [])
-        names = ", ".join(self._escape(item.get("name", "")) for item in performers if item.get("name"))
-        if not names:
-            names = "Unknown performers"
-        return f"- {names}"
+        formatted_performers = []
+        for item in performers:
+            name = item.get("name")
+            if not name:
+                continue
+            role = item.get("role")
+            if role:
+                formatted_performers.append(f"{self._escape(name)} ({self._escape(role)})")
+            else:
+                formatted_performers.append(self._escape(name))
+
+        summary = ", ".join(formatted_performers) or "Unknown performers"
+        lines = [f"- {summary}"]
+
+        if performance.get("tidal_url"):
+            lines.append(f"  - [Tidal]({performance['tidal_url']})")
+        if performance.get("gramophone_ref"):
+            lines.append(f"  - Gramophone: {self._escape(str(performance['gramophone_ref']))}")
+
+        return lines
 
     def _write_page(self, path: Path, lines: list[str]) -> None:
         path.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
