@@ -141,3 +141,16 @@ def test_public_pages_include_mobile_friendly_polish_structure(tmp_path):
     assert 'class="composer-list"' in composer_index
     assert 'class="work-list__row"' in composer_page
     assert 'class="recommendation-card"' in work_page
+
+
+def test_work_pages_are_reachable_but_excluded_from_global_navigation(tmp_path):
+    _seed_repo(tmp_path)
+
+    PublicationSiteGenerator(tmp_path).generate()
+
+    composer_page = (tmp_path / "publication" / "composers" / "bach.md").read_text(encoding="utf-8")
+    work_page = (tmp_path / "publication" / "works" / "bach-cantata-1.md").read_text(encoding="utf-8")
+
+    assert "/publication/works/bach-cantata-1/" in composer_page
+    assert "nav_exclude: true" in work_page
+    assert "parent: Collection" not in work_page

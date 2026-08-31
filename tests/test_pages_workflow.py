@@ -28,3 +28,10 @@ def test_generated_publication_pages_are_included_by_jekyll():
 
     assert "include:" in config
     assert "- publication" in config
+
+
+def test_site_uses_bundled_theme_for_local_preview():
+    config = Path("_config.yml").read_text(encoding="utf-8")
+
+    assert "theme: just-the-docs" in config
+    assert "remote_theme:" not in config

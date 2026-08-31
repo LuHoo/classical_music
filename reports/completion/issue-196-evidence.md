@@ -35,9 +35,17 @@ Generated markdown pages were inspected after generation:
 - Long work and performer names are wrapped through CSS rather than hidden or
   clipped.
 
-Local Jekyll rendering was attempted, but the system Ruby installation does not
-have Bundler 2.5.9 installed. The GitHub Pages workflow is therefore the
-authoritative rendered build check for this branch.
+Rendered local browser checks were also completed with Homebrew Ruby 3.4.4 and
+Playwright:
+
+- `bundle exec jekyll build --baseurl ""` succeeded.
+- `http://127.0.0.1:4010/publication/` returned HTTP 200.
+- Playwright verified title `Collection | Classical Music`.
+- Playwright verified the Collection page content, `publication.css`, no 404
+  text, and no leaked Liquid `{% assign ... %}` text.
+- Playwright verified zero Work links in the sidebar navigation, 25 Work links
+  in the main "Works Without Recommendations" list, and normal page height.
+- Screenshot captured at `/tmp/classical-publication-final.png`.
 
 ## Boundaries Preserved
 

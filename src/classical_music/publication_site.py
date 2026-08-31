@@ -220,7 +220,7 @@ class PublicationSiteGenerator:
         body = [
             "---",
             f'title: "{self._front_matter(work["title"])}"',
-            "parent: Collection",
+            "nav_exclude: true",
             "---",
             "",
             f"# {self._escape(work['title'])}",

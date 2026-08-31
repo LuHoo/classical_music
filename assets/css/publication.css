@@ -40,6 +40,12 @@
   list-style: none;
 }
 
+.main-content .composer-list > li::before,
+.main-content .work-list > li::before,
+.main-content .recommendation-list > li::before {
+  display: none;
+}
+
 .composer-list li,
 .work-list li {
   border-bottom: 1px solid #e8ebef;
