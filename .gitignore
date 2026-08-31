@@ -46,3 +46,6 @@ generated/migration/*.json
 *.out
 *.synctex.gz
 *.toc
+
+# Adapter output - generated files
+_data_generated/
