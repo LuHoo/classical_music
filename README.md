@@ -19,7 +19,15 @@ publication adapter and validator. The generated Jekyll source is written to
 `publication/` during build and is intentionally not committed.
 
 ```bash
+python -m pip install --upgrade pip
+python -m pip install -e '.[dev]'
+gem install bundler
+bundle install
 python -m classical_music.cli_validator
 python scripts/generate_publication_site.py
 bundle exec jekyll build
 ```
+
+On pull requests, GitHub Actions runs the same validation, generation, and
+Jekyll build path without deploying. Deployment to `gh-pages` only runs after a
+push to `main`.
