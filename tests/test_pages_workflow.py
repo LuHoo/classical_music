@@ -12,3 +12,11 @@ def test_pages_workflow_builds_on_pull_request_without_deploying_from_pr():
     assert "python scripts/generate_publication_site.py" in workflow
     assert "bundle exec jekyll build" in workflow
     assert "if: github.event_name == 'push' && github.ref == 'refs/heads/main'" in workflow
+
+
+def test_just_the_docs_head_custom_is_include_only():
+    config = Path("_config.yml").read_text(encoding="utf-8")
+    head_custom = Path("_includes/head_custom.html").read_text(encoding="utf-8")
+
+    assert "head_custom:" not in config
+    assert "publication.css" in head_custom
