@@ -84,9 +84,3 @@ if __name__ == "__main__":
 
     exit_code = main(repo_path)
     sys.exit(exit_code)
-
-
-if __name__ == "classical_music.cli_validator":
-    # When run as: python -m classical_music.cli_validator
-    exit_code = main()
-    sys.exit(exit_code)

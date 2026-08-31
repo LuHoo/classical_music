@@ -102,8 +102,31 @@ class PublicationValidator:
         """
         self.result = ValidationResult(passed=True, errors=[], warnings=[])
 
-        # Load canonical data
-        self.adapter.adapt()
+        # Load canonical data. Publication validation must fail closed when the
+        # canonical publication model cannot be built.
+        if not self.adapter.adapt():
+            for error in self.adapter.errors:
+                self._add_error(
+                    "LOAD-001",
+                    "repository",
+                    str(self.repo_root),
+                    "data",
+                    f"Publication data adapter failed: {error}",
+                    str(self.repo_root / "data"),
+                )
+
+            if not self.adapter.errors:
+                self._add_error(
+                    "LOAD-001",
+                    "repository",
+                    str(self.repo_root),
+                    "data",
+                    "Publication data adapter failed",
+                    str(self.repo_root / "data"),
+                )
+
+            self.result.passed = False
+            return self.result
 
         # Run validation checks
         self._validate_work_group_references()  # REF-001

@@ -16,7 +16,7 @@ from classical_music.publication_validator import PublicationValidator, Validati
 @pytest.fixture
 def validator():
     """Create validator with actual project data."""
-    repo_root = Path(__file__).parent.parent.parent
+    repo_root = Path(__file__).parent.parent
     return PublicationValidator(repo_root)
 
 
@@ -212,6 +212,15 @@ class TestAcceptanceCriteria:
         assert result.error_count() == 0, "Should have no errors"
         assert result.exit_code() == 0, "Exit code should be 0"
 
+    def test_missing_canonical_data_fails_closed(self, tmp_path):
+        """AC#4: Missing canonical data must block publication."""
+        validator = PublicationValidator(tmp_path)
+        result = validator.validate()
+
+        assert not result.passed, "Publication validation must fail if canonical data cannot be loaded"
+        assert result.exit_code() == 1
+        assert any(e.rule_id == "LOAD-001" for e in result.errors)
+
 
 # ============================================================================
 # Reference Validation Tests
@@ -364,6 +373,10 @@ class TestPublicationWithRealData:
         # Main assertion
         assert result.passed, f"Publication validation failed: {result.error_count()} errors"
         assert result.exit_code() == 0, "Exit code should be 0"
+        assert len(validator.adapter.persons) == 11
+        assert len(validator.adapter.work_groups) == 934
+        assert len(validator.adapter.works) == 939
+        assert len(validator.adapter.performances) == 482
 
     def test_validator_returns_validation_result(self, validator):
         """Validate that validator returns proper ValidationResult."""
