@@ -9,7 +9,7 @@ and validates the Person -> WorkGroup -> Work -> Performance hierarchy.
 import json
 from pathlib import Path
 from typing import Dict, List, Any, Optional
-import yaml
+from ruamel.yaml import YAML
 
 
 class PublicationDataAdapter:
@@ -73,7 +73,7 @@ class PublicationDataAdapter:
         return len(self.errors) == 0
     
     def _load_yaml_directory(self, directory: Path, entity_type: str) -> Dict[str, Any]:
-        """Load all YAML files from a directory.
+        """Load all YAML files from a directory (recursively).
         
         Args:
             directory: Directory to load from
@@ -88,10 +88,13 @@ class PublicationDataAdapter:
             self.errors.append(f"{entity_type} directory not found: {directory}")
             return entities
         
-        for yaml_file in directory.glob("*.yaml"):
+        yaml = YAML()
+        yaml.preserve_quotes = True
+        
+        for yaml_file in sorted(directory.glob("**/*.yaml")):
             try:
                 with open(yaml_file) as f:
-                    data = yaml.safe_load(f)
+                    data = yaml.load(f)
                     if data and "id" in data:
                         entities[data["id"]] = data
             except Exception as e:

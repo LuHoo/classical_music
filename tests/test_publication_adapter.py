@@ -319,7 +319,7 @@ class TestPublicationDataIntegrity:
                     f"Work {work_id} references non-existent work_group {wg_id}"
     
     def test_performance_work_references_exist(self, adapter):
-        """Verify performance work references are valid."""
+        """Verify all performance work references exist in adapted model."""
         adapter.load_canonical_data()
         adapter.adapt_to_publication_model()
         
@@ -330,11 +330,10 @@ class TestPublicationDataIntegrity:
                 if work_id not in adapter.works:
                     orphaned_perfs.append((perf_id, work_id))
         
-        # Report orphaned performances but don't fail test
-        if orphaned_perfs:
-            print(f"\nWarning: {len(orphaned_perfs)} orphaned performances found")
-            for perf_id, work_id in orphaned_perfs[:3]:
-                print(f"  - {perf_id} → {work_id}")
+        # Fail if any canonical performance references are missing from the model
+        assert len(orphaned_perfs) == 0, \
+            f"{len(orphaned_perfs)} orphaned performances: adapter did not load all canonical Works. " \
+            f"Examples: {orphaned_perfs[:5]}"
 
 
 if __name__ == "__main__":
