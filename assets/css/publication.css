@@ -1,0 +1,126 @@
+.publication-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+  gap: 0.75rem;
+  margin: 1rem 0 1.25rem;
+}
+
+.publication-stat {
+  border: 1px solid #d7dce3;
+  border-radius: 8px;
+  padding: 0.8rem 0.9rem;
+  background: #fff;
+}
+
+.publication-stat strong {
+  display: block;
+  color: #1f2328;
+  font-size: 1.3rem;
+  line-height: 1.2;
+}
+
+.publication-stat span,
+.publication-note,
+.work-meta,
+.recommendation-meta,
+.work-list__status {
+  color: #5f6b7a;
+  font-size: 0.9rem;
+}
+
+.publication-actions {
+  margin: 0 0 1.5rem;
+}
+
+.composer-list,
+.work-list,
+.recommendation-list {
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.composer-list li,
+.work-list li {
+  border-bottom: 1px solid #e8ebef;
+  padding: 0.45rem 0;
+}
+
+.work-list__row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem 0.6rem;
+}
+
+.work-list__title {
+  min-width: min(100%, 18rem);
+}
+
+.gem-badge {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #b08326;
+  border-radius: 999px;
+  padding: 0.1rem 0.45rem;
+  color: #6f5013;
+  background: #fff7e6;
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.recommendation-profile {
+  margin-top: 1.25rem;
+}
+
+.recommendation-card {
+  border: 1px solid #d7dce3;
+  border-radius: 8px;
+  padding: 0.8rem 0.9rem;
+  margin: 0.75rem 0;
+  background: #fff;
+}
+
+.performer-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.5rem;
+  margin-bottom: 0.45rem;
+}
+
+.performer-credit {
+  overflow-wrap: anywhere;
+}
+
+.performer-role {
+  color: #5f6b7a;
+}
+
+.recommendation-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.75rem;
+  margin-top: 0.45rem;
+}
+
+.recommendation-empty {
+  border-left: 3px solid #d7dce3;
+  margin-top: 1rem;
+  padding: 0.6rem 0 0.6rem 0.85rem;
+  color: #5f6b7a;
+}
+
+@media (max-width: 40rem) {
+  .publication-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .publication-stat strong {
+    font-size: 1.15rem;
+  }
+
+  .recommendation-card {
+    padding: 0.75rem;
+  }
+}

@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
+from html import escape as html_escape
 from pathlib import Path
 from typing import Any
 
@@ -104,19 +105,40 @@ class PublicationSiteGenerator:
             "",
             "# Classical Music Collection",
             "",
-            f"{len(persons)} composers · {len(works)} works · {recommended_count} works with recommendations",
+            '<div class="publication-summary" aria-label="Collection summary">',
+            f'<div class="publication-stat"><strong>{len(persons)}</strong><span>composers</span></div>',
+            f'<div class="publication-stat"><strong>{len(works)}</strong><span>works</span></div>',
+            (
+                f'<div class="publication-stat"><strong>{recommended_count}</strong>'
+                "<span>works with recommendations</span></div>"
+            ),
+            "</div>",
             "",
-            "- [Browse composers]({{ site.baseurl }}/publication/composers/)",
+            '<p class="publication-actions">'
+            '<a href="{{ site.baseurl }}/publication/composers/">Browse composers</a>'
+            "</p>",
             "",
             "## Works Without Recommendations",
             "",
+            '<ul class="work-list">',
         ]
 
         without_performances = [work for work in works if not performances_by_work.get(work["id"])]
         for work in without_performances[:25]:
-            body.append(f"- [{self._escape(work['title'])}]({{{{ site.baseurl }}}}/publication/works/{work['id']}/)")
+            body.append(
+                '<li><span class="work-list__row">'
+                f'<a class="work-list__title" href="{{{{ site.baseurl }}}}/publication/works/{work["id"]}/">'
+                f"{self._html(work['title'])}</a>"
+                '<span class="work-list__status">no recommendation yet</span>'
+                "</span></li>"
+            )
         if len(without_performances) > 25:
-            body.append(f"- ... {len(without_performances) - 25} more")
+            body.append(
+                '<li class="publication-note">'
+                f"{len(without_performances) - 25} more works without recommendations"
+                "</li>"
+            )
+        body.append("</ul>")
 
         self._write_page(self.output_dir / "index.md", body)
         return 1
@@ -133,10 +155,16 @@ class PublicationSiteGenerator:
             "",
             "# Composers",
             "",
+            '<ul class="composer-list">',
         ]
         for person in persons:
             count = len(works_by_composer.get(person["id"], []))
-            body.append(f"- [{self._escape(person['name'])}]({{{{ site.baseurl }}}}/publication/composers/{person['id']}/) ({count})")
+            body.append(
+                f'<li><a href="{{{{ site.baseurl }}}}/publication/composers/{person["id"]}/">'
+                f"{self._html(person['name'])}</a> "
+                f'<span class="publication-note">{count} works</span></li>'
+            )
+        body.append("</ul>")
 
         self._write_page(self.output_dir / "composers" / "index.md", body)
         return 1
@@ -158,7 +186,7 @@ class PublicationSiteGenerator:
             "",
             f"# {self._escape(person['name'])}",
             "",
-            f"{len(works)} works",
+            f'<p class="publication-note">{len(works)} works</p>',
             "",
         ]
 
@@ -168,9 +196,21 @@ class PublicationSiteGenerator:
                 continue
             body.append(f"## {self._escape(group['title'])}")
             body.append("")
+            body.append('<ul class="work-list">')
             for work in group_works:
-                suffix = "" if performances_by_work.get(work["id"]) else " · no recommendation yet"
-                body.append(f"- [{self._escape(work['title'])}]({{{{ site.baseurl }}}}/publication/works/{work['id']}/){suffix}")
+                body.append(
+                    '<li><span class="work-list__row">'
+                    f'<a class="work-list__title" href="{{{{ site.baseurl }}}}/publication/works/{work["id"]}/">'
+                    f"{self._html(work['title'])}</a>"
+                    + (' <span class="gem-badge">Gem</span>' if work.get("gem") else "")
+                    + (
+                        ""
+                        if performances_by_work.get(work["id"])
+                        else ' <span class="work-list__status">no recommendation yet</span>'
+                    )
+                    + "</span></li>"
+                )
+            body.append("</ul>")
             body.append("")
 
         self._write_page(self.output_dir / "composers" / f"{person['id']}.md", body)
@@ -187,10 +227,10 @@ class PublicationSiteGenerator:
             "",
         ]
         if work.get("catalogue"):
-            body.append(f"Catalogue: {self._escape(str(work['catalogue']))}")
+            body.append(f'<p class="work-meta">Catalogue: {self._html(str(work["catalogue"]))}</p>')
             body.append("")
         if work.get("gem"):
-            body.append("Gem: yes")
+            body.append('<p><span class="gem-badge">Gem</span></p>')
             body.append("")
 
         if performances:
@@ -198,13 +238,15 @@ class PublicationSiteGenerator:
             body.append("")
             for profile, profile_performances in self._performances_by_profile(performances):
                 if profile:
-                    body.append(f"### {self._escape(profile)}")
+                    body.append(f'<section class="recommendation-profile"><h3>{self._html(profile)}</h3>')
                     body.append("")
                 for performance in profile_performances:
                     body.extend(self._format_performance(performance))
                     body.append("")
+                if profile:
+                    body.append("</section>")
         else:
-            body.append("No recommendation yet.")
+            body.append('<p class="recommendation-empty">No recommendation yet.</p>')
             body.append("")
 
         self._write_page(self.output_dir / "works" / f"{work['id']}.md", body)
@@ -233,17 +275,27 @@ class PublicationSiteGenerator:
                 continue
             role = item.get("role")
             if role:
-                formatted_performers.append(f"{self._escape(name)} ({self._escape(role)})")
+                formatted_performers.append(
+                    '<span class="performer-credit">'
+                    f'{self._html(name)} <span class="performer-role">({self._html(role)})</span>'
+                    "</span>"
+                )
             else:
-                formatted_performers.append(self._escape(name))
+                formatted_performers.append(f'<span class="performer-credit">{self._html(name)}</span>')
 
-        summary = ", ".join(formatted_performers) or "Unknown performers"
-        lines = [f"- {summary}"]
+        summary = " ".join(formatted_performers) or '<span class="performer-credit">Unknown performers</span>'
+        lines = [f'<div class="recommendation-card"><div class="performer-list">{summary}</div>']
 
         if performance.get("tidal_url"):
-            lines.append(f"  - [Tidal]({performance['tidal_url']})")
+            lines.append('<div class="recommendation-links">')
+            lines.append(f'<a href="{performance["tidal_url"]}">Tidal</a>')
         if performance.get("gramophone_ref"):
-            lines.append(f"  - Gramophone: {self._escape(str(performance['gramophone_ref']))}")
+            if not performance.get("tidal_url"):
+                lines.append('<div class="recommendation-links">')
+            lines.append(f'<span class="recommendation-meta">Gramophone: {self._html(str(performance["gramophone_ref"]))}</span>')
+        if performance.get("tidal_url") or performance.get("gramophone_ref"):
+            lines.append("</div>")
+        lines.append("</div>")
 
         return lines
 
@@ -267,6 +319,10 @@ class PublicationSiteGenerator:
     @staticmethod
     def _escape(value: str) -> str:
         return value.replace("|", "\\|")
+
+    @staticmethod
+    def _html(value: str) -> str:
+        return html_escape(str(value), quote=True)
 
     @staticmethod
     def _front_matter(value: str) -> str:

@@ -81,7 +81,7 @@ def test_generated_pages_show_works_without_performances(tmp_path):
     work_page = (tmp_path / "publication" / "works" / "bach-cantata-2.md").read_text(encoding="utf-8")
     composer_page = (tmp_path / "publication" / "composers" / "bach.md").read_text(encoding="utf-8")
 
-    assert "No recommendation yet." in work_page
+    assert '<p class="recommendation-empty">No recommendation yet.</p>' in work_page
     assert "Cantata No. 2" in composer_page
     assert "no recommendation yet" in composer_page
 
@@ -104,10 +104,13 @@ def test_work_page_renders_links_reviews_performer_roles_and_gem(tmp_path):
 
     work_page = (tmp_path / "publication" / "works" / "bach-cantata-1.md").read_text(encoding="utf-8")
 
-    assert "Gem: yes" in work_page
-    assert "Monteverdi Choir (choir)" in work_page
-    assert "English Baroque Soloists (ensemble)" in work_page
-    assert "[Tidal](https://tidal.com/browse/track/123)" in work_page
+    assert '<span class="gem-badge">Gem</span>' in work_page
+    assert '<span class="performer-credit">Monteverdi Choir <span class="performer-role">(choir)</span></span>' in work_page
+    assert (
+        '<span class="performer-credit">English Baroque Soloists <span class="performer-role">(ensemble)</span></span>'
+        in work_page
+    )
+    assert '<a href="https://tidal.com/browse/track/123">Tidal</a>' in work_page
     assert "Gramophone: 2024-01" in work_page
     assert "{" not in work_page
 
@@ -119,6 +122,22 @@ def test_multiple_profiles_remain_distinct(tmp_path):
 
     work_page = (tmp_path / "publication" / "works" / "bach-cantata-1.md").read_text(encoding="utf-8")
 
-    assert "### chamber version" in work_page
-    assert "### choir and orchestra" in work_page
-    assert work_page.index("### chamber version") != work_page.index("### choir and orchestra")
+    assert "<h3>chamber version</h3>" in work_page
+    assert "<h3>choir and orchestra</h3>" in work_page
+    assert work_page.index("<h3>chamber version</h3>") != work_page.index("<h3>choir and orchestra</h3>")
+
+
+def test_public_pages_include_mobile_friendly_polish_structure(tmp_path):
+    _seed_repo(tmp_path)
+
+    PublicationSiteGenerator(tmp_path).generate()
+
+    home_page = (tmp_path / "publication" / "index.md").read_text(encoding="utf-8")
+    composer_index = (tmp_path / "publication" / "composers" / "index.md").read_text(encoding="utf-8")
+    composer_page = (tmp_path / "publication" / "composers" / "bach.md").read_text(encoding="utf-8")
+    work_page = (tmp_path / "publication" / "works" / "bach-cantata-1.md").read_text(encoding="utf-8")
+
+    assert 'class="publication-summary"' in home_page
+    assert 'class="composer-list"' in composer_index
+    assert 'class="work-list__row"' in composer_page
+    assert 'class="recommendation-card"' in work_page
