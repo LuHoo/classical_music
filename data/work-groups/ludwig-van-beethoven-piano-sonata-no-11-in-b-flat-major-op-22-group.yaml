@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-piano-sonata-no-11-in-b-flat-major-op-22-group"
+composer_id: "ludwig-van-beethoven"
+title: "Piano Sonata No. 11 in B♭ major"
+source:
+  file: "docs/beethoven.md"
+  line: "334"
+catalogue:
+  opus: "Op. 22"

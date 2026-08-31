@@ -1,0 +1,11 @@
+id: dmitri-shostakovich-symphony-no-3-in-e-flat-major-work
+work_group_id: dmitri-shostakovich-symphony-no-3-in-e-flat-major-group
+composer_id: dmitri-shostakovich
+title: Symphony No. 3 in E-flat major
+source:
+  file: docs/shostakovich.md
+  line: '26'
+catalogue:
+  op: Op. 20
+date_text: '1929'
+category: Orchestral

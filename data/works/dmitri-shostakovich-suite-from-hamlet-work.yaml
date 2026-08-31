@@ -1,0 +1,11 @@
+id: dmitri-shostakovich-suite-from-hamlet-work
+work_group_id: dmitri-shostakovich-suite-from-hamlet-group
+composer_id: dmitri-shostakovich
+title: Suite from Hamlet
+source:
+  file: docs/shostakovich.md
+  line: '50'
+catalogue:
+  op: Op. 32a
+date_text: '1932'
+category: Orchestral

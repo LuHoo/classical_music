@@ -1,0 +1,10 @@
+id: "gustav-mahler-symphony-no-7-work-bayerisches-staatsorchester-kirill-petrenko"
+work_id: "gustav-mahler-symphony-no-7-work"
+source:
+  file: "docs/mahler.md"
+  line: "54"
+links:
+- platform: "tidal"
+  url: "http://www.tidal.com/track/282962326"
+performers:
+- name: "Bayerisches Staatsorchester, Kirill Petrenko"

@@ -1,0 +1,14 @@
+id: 
+  wolfgang-amadeus-mozart-piano-concerto-no-9-in-e-major-jenamy-work-lars-vogt-orchestre-de-chambre-de-paris
+work_id: wolfgang-amadeus-mozart-piano-concerto-no-9-in-e-major-jenamy-work
+source:
+  file: docs/mozart.md
+  line: '91'
+links:
+  tidal:
+    url: http://www.tidal.com/track/307469358
+performers:
+- name: Lars Vogt
+  role: performer
+- name: Orchestre de Chambre de Paris
+  role: performer

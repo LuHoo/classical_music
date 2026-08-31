@@ -1,0 +1,11 @@
+id: sergei-prokofiev-seven-they-are-seven-work
+work_group_id: sergei-prokofiev-seven-they-are-seven-group
+composer_id: sergei-prokofiev
+title: Seven, They Are Seven
+source:
+  file: docs/prokofiev.md
+  line: '51'
+catalogue:
+  op: Op. 30
+date_text: 1917–18, rev. 1933
+category: Orchestral

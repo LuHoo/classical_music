@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-thirty-two-variations-on-an-original-theme-c-minor-woo-80-group"
+composer_id: "ludwig-van-beethoven"
+title: "Thirty-two variations on an original theme, C minor"
+source:
+  file: "docs/beethoven.md"
+  line: "410"
+catalogue:
+  woo: "WoO 80"

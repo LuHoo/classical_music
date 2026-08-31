@@ -1,0 +1,11 @@
+id: "igor-stravinsky-mavra-k-039-work"
+work_group_id: "igor-stravinsky-mavra-k-039-group"
+composer_id: "igor-stravinsky"
+title: "Mavra"
+source:
+  file: "docs/stravinsky.md"
+  line: "19"
+catalogue:
+  k: "K 039"
+date_text: "1922"
+category: "Opera/Theatre"

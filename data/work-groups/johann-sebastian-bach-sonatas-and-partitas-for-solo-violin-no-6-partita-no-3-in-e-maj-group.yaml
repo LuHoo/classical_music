@@ -1,0 +1,8 @@
+id: "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-6-partita-no-3-in-e-maj-group"
+composer_id: "johann-sebastian-bach"
+title: "Sonatas and partitas for solo violin No. 6: Partita No. 3 in E maj."
+source:
+  file: "docs/bachJS.md"
+  line: "108"
+catalogue:
+  bwv: "BWV 1006"

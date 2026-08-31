@@ -1,0 +1,9 @@
+id: "gustav-mahler-ruckert-lieder-work"
+work_group_id: "gustav-mahler-ruckert-lieder-group"
+composer_id: "gustav-mahler"
+title: "Rückert-Lieder"
+source:
+  file: "docs/mahler.md"
+  line: "46"
+date_text: "1901–04"
+category: "Middle period"

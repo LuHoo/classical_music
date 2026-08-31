@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-string-quartet-no-3-in-d-major-op-18-3-work"
+work_group_id: "ludwig-van-beethoven-string-quartet-no-3-in-d-major-op-18-3-group"
+composer_id: "ludwig-van-beethoven"
+title: "String Quartet No. 3 in D major"
+source:
+  file: "docs/beethoven.md"
+  line: "176"
+catalogue:
+  opus: "Op. 18/3"
+date_text: "1798–1799"
+category: "Chamber"

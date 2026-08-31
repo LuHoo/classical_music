@@ -1,0 +1,8 @@
+id: "igor-stravinsky-symphony-in-three-movements-k-073-group"
+composer_id: "igor-stravinsky"
+title: "Symphony in Three Movements"
+source:
+  file: "docs/stravinsky.md"
+  line: "95"
+catalogue:
+  k: "K 073"

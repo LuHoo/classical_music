@@ -1,0 +1,11 @@
+id: "igor-stravinsky-oedipus-rex-k-047-work"
+work_group_id: "igor-stravinsky-oedipus-rex-k-047-group"
+composer_id: "igor-stravinsky"
+title: "Oedipus rex"
+source:
+  file: "docs/stravinsky.md"
+  line: "21"
+catalogue:
+  k: "K 047"
+date_text: "1927"
+category: "Opera/Theatre"

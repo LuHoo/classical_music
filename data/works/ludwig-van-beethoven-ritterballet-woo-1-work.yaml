@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-ritterballet-woo-1-work"
+work_group_id: "ludwig-van-beethoven-ritterballet-woo-1-group"
+composer_id: "ludwig-van-beethoven"
+title: "Ritterballet"
+source:
+  file: "docs/beethoven.md"
+  line: "12"
+catalogue:
+  woo: "WoO 1"
+date_text: "1790–1791"
+category: "Orchestral"

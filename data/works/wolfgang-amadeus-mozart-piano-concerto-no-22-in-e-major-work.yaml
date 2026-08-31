@@ -1,0 +1,11 @@
+id: wolfgang-amadeus-mozart-piano-concerto-no-22-in-e-major-work
+work_group_id: wolfgang-amadeus-mozart-piano-concerto-no-22-in-e-major-group
+composer_id: wolfgang-amadeus-mozart
+title: Piano Concerto No. 22 in E♭ major
+source:
+  file: docs/mozart.md
+  line: '103'
+catalogue:
+  k: K. 482
+date_text: '1785'
+category: Piano concertos

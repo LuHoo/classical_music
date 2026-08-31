@@ -1,0 +1,8 @@
+id: wolfgang-amadeus-mozart-der-schauspieldirektor-group
+composer_id: wolfgang-amadeus-mozart
+title: Der Schauspieldirektor
+source:
+  file: docs/mozart.md
+  line: '46'
+catalogue:
+  k: K. 486

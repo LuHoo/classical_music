@@ -1,0 +1,22 @@
+id: 
+  dmitri-shostakovich-symphony-no-14-work-elizabeth-atherton-peter-rose-jess-dandy-bbc-philharmonic-john-storgards
+work_id: dmitri-shostakovich-symphony-no-14-work
+source:
+  file: docs/shostakovich.md
+  line: '155'
+links:
+  tidal:
+    url: https://tidal.com/album/376386463/track/376386467
+performers:
+- name: Elizabeth Atherton
+  role: performer
+- name: Peter Rose
+  role: performer
+- name: Jess
+  role: performer
+- name: Dandy
+  role: performer
+- name: BBC Philharmonic
+  role: performer
+- name: John Storgårds
+  role: performer

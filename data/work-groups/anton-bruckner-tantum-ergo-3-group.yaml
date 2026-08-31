@@ -1,0 +1,8 @@
+id: "anton-bruckner-tantum-ergo-3-group"
+composer_id: "anton-bruckner"
+title: "Tantum ergo"
+source:
+  file: "docs/bruckner.md"
+  line: "88"
+catalogue:
+  wab: "WAB 43"

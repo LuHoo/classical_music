@@ -1,0 +1,11 @@
+id: wolfgang-amadeus-mozart-symphony-no-24-in-b-work
+work_group_id: wolfgang-amadeus-mozart-symphony-no-24-in-b-group
+composer_id: wolfgang-amadeus-mozart
+title: Symphony No. 24 in B♭
+source:
+  file: docs/mozart.md
+  line: '61'
+catalogue:
+  k: K. 182
+date_text: http://www.tidal.com/track/4514701
+category: Symphonies

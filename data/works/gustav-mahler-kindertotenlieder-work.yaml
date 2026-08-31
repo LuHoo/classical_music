@@ -1,0 +1,9 @@
+id: "gustav-mahler-kindertotenlieder-work"
+work_group_id: "gustav-mahler-kindertotenlieder-group"
+composer_id: "gustav-mahler"
+title: "Kindertotenlieder"
+source:
+  file: "docs/mahler.md"
+  line: "48"
+date_text: "1901–04"
+category: "Middle period"

@@ -1,0 +1,7 @@
+id: "igor-stravinsky"
+name: "Igor Stravinsky"
+sort_name: "Stravinsky, Igor"
+roles:
+  - "composer"
+source:
+  file: "docs/stravinsky.md"

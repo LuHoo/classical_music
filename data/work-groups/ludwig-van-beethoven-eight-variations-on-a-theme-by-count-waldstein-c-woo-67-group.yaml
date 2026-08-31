@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-eight-variations-on-a-theme-by-count-waldstein-c-woo-67-group"
+composer_id: "ludwig-van-beethoven"
+title: "Eight Variations on a Theme by Count Waldstein, C"
+source:
+  file: "docs/beethoven.md"
+  line: "478"
+catalogue:
+  woo: "WoO 67"

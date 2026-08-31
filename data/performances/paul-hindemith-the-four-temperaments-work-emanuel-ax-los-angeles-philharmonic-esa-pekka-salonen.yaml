@@ -1,0 +1,15 @@
+id: "paul-hindemith-the-four-temperaments-work-emanuel-ax-los-angeles-philharmonic-esa-pekka-salonen"
+work_id: "paul-hindemith-the-four-temperaments-work"
+performers:
+  - name: "Emanuel Ax"
+    role: "performer"
+  - name: "Los Angeles Philharmonic"
+    role: "orchestra"
+  - name: "Esa-Pekka Salonen"
+    role: "conductor"
+links:
+  tidal:
+    url: "http://www.tidal.com/track/87478092"
+source:
+  file: "docs/hindemith.md"
+  line: "49"

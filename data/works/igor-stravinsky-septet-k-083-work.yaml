@@ -1,0 +1,11 @@
+id: "igor-stravinsky-septet-k-083-work"
+work_group_id: "igor-stravinsky-septet-k-083-group"
+composer_id: "igor-stravinsky"
+title: "Septet"
+source:
+  file: "docs/stravinsky.md"
+  line: "137"
+catalogue:
+  k: "K 083"
+date_text: "1953"
+category: "Chamber"

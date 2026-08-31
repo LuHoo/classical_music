@@ -1,0 +1,8 @@
+id: "igor-stravinsky-serenade-en-la-k-040-group"
+composer_id: "igor-stravinsky"
+title: "Serenade en la"
+source:
+  file: "docs/stravinsky.md"
+  line: "224"
+catalogue:
+  k: "K 040"

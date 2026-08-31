@@ -1,0 +1,13 @@
+id: "paul-hindemith-symphony-mathis-der-maler-work-bbc-scottish-so-martyn-brabbins"
+work_id: "paul-hindemith-symphony-mathis-der-maler-work"
+performers:
+  - name: "BBC Scottish SO"
+    role: "orchestra"
+  - name: "Martyn Brabbins"
+    role: "conductor"
+links:
+  tidal:
+    url: "https://tidal.com/album/340823857"
+source:
+  file: "docs/hindemith.md"
+  line: "72"

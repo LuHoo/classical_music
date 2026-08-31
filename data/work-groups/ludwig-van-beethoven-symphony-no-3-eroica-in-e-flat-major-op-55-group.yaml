@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-symphony-no-3-eroica-in-e-flat-major-op-55-group"
+composer_id: "ludwig-van-beethoven"
+title: "Symphony No. 3 \"Eroica\" in E♭ major"
+source:
+  file: "docs/beethoven.md"
+  line: "40"
+catalogue:
+  opus: "Op. 55"

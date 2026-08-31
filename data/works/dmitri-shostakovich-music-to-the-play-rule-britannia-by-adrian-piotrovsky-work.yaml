@@ -1,0 +1,11 @@
+id: dmitri-shostakovich-music-to-the-play-rule-britannia-by-adrian-piotrovsky-work
+work_group_id: dmitri-shostakovich-music-to-the-play-rule-britannia-by-adrian-piotrovsky-group
+composer_id: dmitri-shostakovich
+title: Music to the play Rule, Britannia! by Adrian Piotrovsky
+source:
+  file: docs/shostakovich.md
+  line: '38'
+catalogue:
+  op: Op. 28
+date_text: '1931'
+category: Orchestral

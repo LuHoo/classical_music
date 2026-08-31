@@ -1,0 +1,13 @@
+id: dmitri-shostakovich-symphony-no-7-in-c-major-work-boston-so-andris-nelsons
+work_id: dmitri-shostakovich-symphony-no-7-in-c-major-work
+source:
+  file: docs/shostakovich.md
+  line: '80'
+links:
+  tidal:
+    url: http://www.tidal.com/track/104156169
+performers:
+- name: Boston SO
+  role: performer
+- name: Andris Nelsons
+  role: performer

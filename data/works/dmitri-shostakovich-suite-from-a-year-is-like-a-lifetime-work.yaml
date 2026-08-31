@@ -1,0 +1,11 @@
+id: dmitri-shostakovich-suite-from-a-year-is-like-a-lifetime-work
+work_group_id: dmitri-shostakovich-suite-from-a-year-is-like-a-lifetime-group
+composer_id: dmitri-shostakovich
+title: Suite from A Year Is Like a Lifetime
+source:
+  file: docs/shostakovich.md
+  line: '144'
+catalogue:
+  op: Op. 120a
+date_text: '1965'
+category: Orchestral

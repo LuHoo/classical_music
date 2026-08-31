@@ -1,0 +1,18 @@
+id: "paul-hindemith-der-schwanendreher-work-lucas-ranieri-orchestra-ico-suoni-del-sud-marco-moresco"
+work_id: "paul-hindemith-der-schwanendreher-work"
+performers:
+  - name: "Lucas Ranieri"
+    role: "performer"
+  - name: "Orchestra Ico Suoni del Sud"
+    role: "orchestra"
+  - name: "Marco MOresco"
+    role: "orchestra"
+links:
+  tidal:
+    url: "https://tidal.com/browse/track/441869689?u"
+source:
+  file: "docs/hindemith.md"
+  line: "122"
+reviews:
+  gramophone:
+    issue: "2025-09"

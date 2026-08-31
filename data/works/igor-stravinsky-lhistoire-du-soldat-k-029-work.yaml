@@ -1,0 +1,11 @@
+id: "igor-stravinsky-lhistoire-du-soldat-k-029-work"
+work_group_id: "igor-stravinsky-lhistoire-du-soldat-k-029-group"
+composer_id: "igor-stravinsky"
+title: "L'Histoire du soldat"
+source:
+  file: "docs/stravinsky.md"
+  line: "17"
+catalogue:
+  k: "K 029"
+date_text: "1918"
+category: "Opera/Theatre"

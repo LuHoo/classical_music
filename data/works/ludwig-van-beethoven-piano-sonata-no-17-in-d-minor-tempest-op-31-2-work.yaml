@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-piano-sonata-no-17-in-d-minor-tempest-op-31-2-work"
+work_group_id: "ludwig-van-beethoven-piano-sonata-no-17-in-d-minor-tempest-op-31-2-group"
+composer_id: "ludwig-van-beethoven"
+title: "Piano Sonata No. 17 in D minor, \"Tempest\""
+source:
+  file: "docs/beethoven.md"
+  line: "346"
+catalogue:
+  opus: "Op. 31/2"
+date_text: "1802"
+category: "Piano"

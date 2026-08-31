@@ -1,0 +1,11 @@
+id: sergei-prokofiev-pushkin-waltzes-work
+work_group_id: sergei-prokofiev-pushkin-waltzes-group
+composer_id: sergei-prokofiev
+title: Pushkin Waltzes
+source:
+  file: docs/prokofiev.md
+  line: '206'
+catalogue:
+  op: Op. 120
+date_text: '1949'
+category: Orchestral

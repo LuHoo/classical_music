@@ -1,0 +1,11 @@
+id: "igor-stravinsky-four-russian-peasant-songs-k-020-work"
+work_group_id: "igor-stravinsky-four-russian-peasant-songs-k-020-group"
+composer_id: "igor-stravinsky"
+title: "Four Russian Peasant Songs"
+source:
+  file: "docs/stravinsky.md"
+  line: "154"
+catalogue:
+  k: "K 020"
+date_text: "1914–17"
+category: "Choral"

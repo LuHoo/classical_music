@@ -1,0 +1,8 @@
+id: "johann-sebastian-bach-suite-for-organ-harpsichord-orchestra-group"
+composer_id: "johann-sebastian-bach"
+title: "Suite for Organ, Harpsichord & Orchestra"
+source:
+  file: "docs/bachJS.md"
+  line: "92"
+catalogue:
+  bwv: "BWV 1067"

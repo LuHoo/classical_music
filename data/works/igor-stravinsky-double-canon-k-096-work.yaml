@@ -1,0 +1,11 @@
+id: "igor-stravinsky-double-canon-k-096-work"
+work_group_id: "igor-stravinsky-double-canon-k-096-group"
+composer_id: "igor-stravinsky"
+title: "Double Canon"
+source:
+  file: "docs/stravinsky.md"
+  line: "143"
+catalogue:
+  k: "K 096"
+date_text: "1959"
+category: "Chamber"

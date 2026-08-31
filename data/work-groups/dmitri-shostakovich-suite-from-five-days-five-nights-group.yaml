@@ -1,0 +1,8 @@
+id: dmitri-shostakovich-suite-from-five-days-five-nights-group
+composer_id: dmitri-shostakovich
+title: Suite from Five Days, Five Nights
+source:
+  file: docs/shostakovich.md
+  line: '130'
+catalogue:
+  op: Op. 111a

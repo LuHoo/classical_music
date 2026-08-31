@@ -1,0 +1,14 @@
+id: 
+  dmitri-shostakovich-funeral-triumphal-prelude-work-royal-philharmonic-orchestra-vladimir-ashkenazy
+work_id: dmitri-shostakovich-funeral-triumphal-prelude-work
+source:
+  file: docs/shostakovich.md
+  line: '151'
+links:
+  tidal:
+    url: https://tidal.com/browse/album/5217343?u
+performers:
+- name: Royal Philharmonic Orchestra
+  role: performer
+- name: Vladimir Ashkenazy
+  role: performer

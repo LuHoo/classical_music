@@ -1,0 +1,24 @@
+id: 
+  wolfgang-amadeus-mozart-vesperae-solennes-de-dominica-in-c-work-mitsuko-shirai-heidi-riess-eberhard-buchner-hermann-christian-polster-rundfunkchor-leipzig
+work_id: wolfgang-amadeus-mozart-vesperae-solennes-de-dominica-in-c-work
+source:
+  file: docs/mozart.md
+  line: '25'
+links:
+  tidal:
+    url: http://www.tidal.com/track/4395479
+performers:
+- name: Mitsuko Shirai
+  role: performer
+- name: Heidi Riess
+  role: performer
+- name: Eberhard Büchner
+  role: performer
+- name: Hermann Christian Polster
+  role: performer
+- name: Rundfunkchor Leipzig
+  role: performer
+- name: MDR-Sinfonieorchester
+  role: performer
+- name: Herbert Kegel
+  role: performer

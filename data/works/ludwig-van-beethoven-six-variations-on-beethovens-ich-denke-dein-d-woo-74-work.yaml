@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-six-variations-on-beethovens-ich-denke-dein-d-woo-74-work"
+work_group_id: "ludwig-van-beethoven-six-variations-on-beethovens-ich-denke-dein-d-woo-74-group"
+composer_id: "ludwig-van-beethoven"
+title: "Six Variations on Beethoven's \"Ich denke dein\", D"
+source:
+  file: "docs/beethoven.md"
+  line: "482"
+catalogue:
+  woo: "WoO 74"
+date_text: "1799, 1803"
+category: "Piano"

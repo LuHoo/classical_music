@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-violin-sonata-in-a-major-hess-46-work"
+work_group_id: "ludwig-van-beethoven-violin-sonata-in-a-major-hess-46-group"
+composer_id: "ludwig-van-beethoven"
+title: "Violin Sonata in A major"
+source:
+  file: "docs/beethoven.md"
+  line: "106"
+catalogue:
+  hess: "Hess 46"
+date_text: "c. 1790–1792"
+category: "Chamber"

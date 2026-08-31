@@ -1,0 +1,8 @@
+id: "igor-stravinsky-canon-on-a-popular-russian-tune-k-105-group"
+composer_id: "igor-stravinsky"
+title: "Canon on a Popular Russian Tune"
+source:
+  file: "docs/stravinsky.md"
+  line: "103"
+catalogue:
+  k: "K 105"

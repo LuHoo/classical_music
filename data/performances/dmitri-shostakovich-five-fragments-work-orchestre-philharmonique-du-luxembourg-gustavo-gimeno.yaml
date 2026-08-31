@@ -1,0 +1,14 @@
+id: 
+  dmitri-shostakovich-five-fragments-work-orchestre-philharmonique-du-luxembourg-gustavo-gimeno
+work_id: dmitri-shostakovich-five-fragments-work
+source:
+  file: docs/shostakovich.md
+  line: '64'
+links:
+  tidal:
+    url: https://tidal.com/browse/album/366812312
+performers:
+- name: Orchestre Philharmonique du Luxembourg
+  role: performer
+- name: Gustavo Gimeno
+  role: performer

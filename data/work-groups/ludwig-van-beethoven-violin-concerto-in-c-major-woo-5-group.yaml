@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-violin-concerto-in-c-major-woo-5-group"
+composer_id: "ludwig-van-beethoven"
+title: "Violin Concerto in C major"
+source:
+  file: "docs/beethoven.md"
+  line: "16"
+catalogue:
+  woo: "WoO 5"

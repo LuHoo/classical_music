@@ -1,0 +1,8 @@
+id: "anton-bruckner-tota-pulchra-es-group"
+composer_id: "anton-bruckner"
+title: "Tota pulchra es"
+source:
+  file: "docs/bruckner.md"
+  line: "90"
+catalogue:
+  wab: "WAB 46"

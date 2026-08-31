@@ -1,0 +1,8 @@
+id: wolfgang-amadeus-mozart-requiem-mass-in-d-minor-group
+composer_id: wolfgang-amadeus-mozart
+title: Requiem Mass in D minor
+source:
+  file: docs/mozart.md
+  line: '19'
+catalogue:
+  k: K. 626

@@ -1,0 +1,11 @@
+id: "paul-hindemith-sing-und-spielmusiken-fur-liebhaber-und-musikfreunde-op-45-work"
+work_group_id: "paul-hindemith-sing-und-spielmusiken-fur-liebhaber-und-musikfreunde-op-45-group"
+composer_id: "paul-hindemith"
+title: "Sing und Spielmusiken für Liebhaber und Musikfreunde"
+source:
+  file: "docs/hindemith.md"
+  line: "166"
+catalogue:
+  opus: "Op. 45"
+date_text: "1928/29"
+category: "Vocal -- selection"

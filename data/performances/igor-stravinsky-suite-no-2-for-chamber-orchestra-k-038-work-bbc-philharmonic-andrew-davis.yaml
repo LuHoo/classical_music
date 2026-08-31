@@ -1,0 +1,13 @@
+id: "igor-stravinsky-suite-no-2-for-chamber-orchestra-k-038-work-bbc-philharmonic-andrew-davis"
+work_id: "igor-stravinsky-suite-no-2-for-chamber-orchestra-k-038-work"
+performers:
+  - name: "BBC Philharmonic"
+    role: "orchestra"
+  - name: "Andrew Davis"
+    role: "conductor"
+links:
+  tidal:
+    url: "https://tidal.com/browse/track/376355668?u"
+source:
+  file: "docs/stravinsky.md"
+  line: "75"

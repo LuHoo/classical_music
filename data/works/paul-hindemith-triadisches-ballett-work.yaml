@@ -1,0 +1,9 @@
+id: "paul-hindemith-triadisches-ballett-work"
+work_group_id: "paul-hindemith-triadisches-ballett-group"
+composer_id: "paul-hindemith"
+title: "Triadisches Ballett"
+source:
+  file: "docs/hindemith.md"
+  line: "45"
+date_text: "1923"
+category: "Ballet"

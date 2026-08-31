@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-piano-sonata-no-27-in-e-minor-op-90-work"
+work_group_id: "ludwig-van-beethoven-piano-sonata-no-27-in-e-minor-op-90-group"
+composer_id: "ludwig-van-beethoven"
+title: "Piano Sonata No. 27, in E minor"
+source:
+  file: "docs/beethoven.md"
+  line: "362"
+catalogue:
+  opus: "Op. 90"
+date_text: "1814"
+category: "Piano"

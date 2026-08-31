@@ -1,0 +1,8 @@
+id: "igor-stravinsky-two-balmont-songs-k-015-group"
+composer_id: "igor-stravinsky"
+title: "Two Balmont Songs"
+source:
+  file: "docs/stravinsky.md"
+  line: "200"
+catalogue:
+  k: "K 015"

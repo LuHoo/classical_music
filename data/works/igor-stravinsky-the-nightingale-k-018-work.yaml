@@ -1,0 +1,11 @@
+id: "igor-stravinsky-the-nightingale-k-018-work"
+work_group_id: "igor-stravinsky-the-nightingale-k-018-group"
+composer_id: "igor-stravinsky"
+title: "The Nightingale"
+source:
+  file: "docs/stravinsky.md"
+  line: "13"
+catalogue:
+  k: "K 018"
+date_text: "1914"
+category: "Opera/Theatre"

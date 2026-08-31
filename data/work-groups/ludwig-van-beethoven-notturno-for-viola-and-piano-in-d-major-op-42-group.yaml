@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-notturno-for-viola-and-piano-in-d-major-op-42-group"
+composer_id: "ludwig-van-beethoven"
+title: "Notturno for Viola and Piano in D major"
+source:
+  file: "docs/beethoven.md"
+  line: "212"
+catalogue:
+  opus: "Op. 42"

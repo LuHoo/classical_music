@@ -1,0 +1,9 @@
+id: "paul-hindemith-trauermusik-work"
+work_group_id: "paul-hindemith-trauermusik-group"
+composer_id: "paul-hindemith"
+title: "Trauermusik"
+source:
+  file: "docs/hindemith.md"
+  line: "124"
+date_text: "1936"
+category: "Concertante"

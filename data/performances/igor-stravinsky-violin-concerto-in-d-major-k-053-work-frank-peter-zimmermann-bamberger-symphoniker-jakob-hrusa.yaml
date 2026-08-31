@@ -1,0 +1,18 @@
+id: "igor-stravinsky-violin-concerto-in-d-major-k-053-work-frank-peter-zimmermann-bamberger-symphoniker-jakob-hrusa"
+work_id: "igor-stravinsky-violin-concerto-in-d-major-k-053-work"
+performers:
+  - name: "Frank Peter Zimmermann"
+    role: "performer"
+  - name: "Bamberger Symphoniker"
+    role: "performer"
+  - name: "Jakob Hrusa"
+    role: "conductor"
+links:
+  tidal:
+    url: "http://www.tidal.com/track/343201673"
+source:
+  file: "docs/stravinsky.md"
+  line: "111"
+reviews:
+  gramophone:
+    issue: "2024-02"

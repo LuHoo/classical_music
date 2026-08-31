@@ -1,0 +1,16 @@
+id: "ludwig-van-beethoven-coriolan-overture-in-c-minor-op-62-work-cappella-aquileia-marcus-bosch"
+work_id: "ludwig-van-beethoven-coriolan-overture-in-c-minor-op-62-work"
+performers:
+  - name: "Cappella Aquileia"
+    role: "performer"
+  - name: "Marcus Bosch"
+    role: "conductor"
+links:
+  tidal:
+    url: "http://www.tidal.com/track/191149827"
+source:
+  file: "docs/beethoven.md"
+  line: "54"
+reviews:
+  gramophone:
+    issue: "2021-10"

@@ -1,0 +1,11 @@
+id: wolfgang-amadeus-mozart-piano-concerto-no-23-in-a-major-work
+work_group_id: wolfgang-amadeus-mozart-piano-concerto-no-23-in-a-major-group
+composer_id: wolfgang-amadeus-mozart
+title: Piano Concerto No. 23 in A major
+source:
+  file: docs/mozart.md
+  line: '105'
+catalogue:
+  k: K. 488
+date_text: http://www.tidal.com/track/313466205
+category: Piano concertos

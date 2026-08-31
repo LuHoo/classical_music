@@ -1,0 +1,12 @@
+id: dmitri-shostakovich-piano-concerto-no-1-in-c-minor-work
+work_group_id: dmitri-shostakovich-piano-concerto-no-1-in-c-minor-group
+composer_id: dmitri-shostakovich
+title: Piano Concerto No. 1 in C minor
+source:
+  file: docs/shostakovich.md
+  line: '52'
+catalogue:
+  op: Op. 35
+date_text: '1933'
+category: Orchestral
+gem: true

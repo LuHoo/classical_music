@@ -1,0 +1,12 @@
+id: "ludwig-van-beethoven-variations-on-wenzel-mullers-ich-bin-der-schneider-kakadu-in-g-major-o-work"
+work_group_id: "ludwig-van-beethoven-variations-on-wenzel-mullers-ich-bin-der-schneider-kakadu-in-g-major-group"
+composer_id: "ludwig-van-beethoven"
+title: "Variations on Wenzel Müller's \"Ich bin der Schneider Kakadu,\" in G major"
+source:
+  file: "docs/beethoven.md"
+  line: "270"
+catalogue:
+  opus: "Op. 121a"
+date_text: "1803? rev. 1816"
+category: "Chamber"
+notes: "Pilot migration: source text suggests a version, arrangement, revision, suite, or completion boundary that should be reviewed."

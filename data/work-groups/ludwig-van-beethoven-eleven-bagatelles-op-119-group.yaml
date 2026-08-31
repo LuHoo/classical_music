@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-eleven-bagatelles-op-119-group"
+composer_id: "ludwig-van-beethoven"
+title: "Eleven Bagatelles"
+source:
+  file: "docs/beethoven.md"
+  line: "464"
+catalogue:
+  opus: "Op. 119"

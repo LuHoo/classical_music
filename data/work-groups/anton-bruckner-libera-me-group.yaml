@@ -1,0 +1,8 @@
+id: "anton-bruckner-libera-me-group"
+composer_id: "anton-bruckner"
+title: "Libera me"
+source:
+  file: "docs/bruckner.md"
+  line: "72"
+catalogue:
+  wab: "WAB 21"

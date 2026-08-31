@@ -1,0 +1,11 @@
+id: "anton-bruckner-three-orchestral-pieces-work"
+work_group_id: "anton-bruckner-three-orchestral-pieces-group"
+composer_id: "anton-bruckner"
+title: "Three Orchestral Pieces"
+source:
+  file: "docs/bruckner.md"
+  line: "14"
+catalogue:
+  wab: "WAB 97"
+date_text: "1862"
+category: "Orchestral"

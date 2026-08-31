@@ -1,0 +1,16 @@
+id: "ludwig-van-beethoven-wellingtons-victory-battle-symphony-op-91-work-cappella-aquileia-marcus-bosch"
+work_id: "ludwig-van-beethoven-wellingtons-victory-battle-symphony-op-91-work"
+performers:
+  - name: "Cappella Aquileia"
+    role: "performer"
+  - name: "Marcus Bosch"
+    role: "conductor"
+links:
+  tidal:
+    url: "http://www.tidal.com/track/191149830"
+source:
+  file: "docs/beethoven.md"
+  line: "74"
+reviews:
+  gramophone:
+    issue: "2021-10"

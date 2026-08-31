@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-piano-sonata-no-18-the-hunt-e-flat-op-31-3-work-igor-levit"
+work_id: "ludwig-van-beethoven-piano-sonata-no-18-the-hunt-e-flat-op-31-3-work"
+performers:
+  - name: "Igor Levit"
+    role: "performer"
+links:
+  tidal:
+    url: "https://tidal.com/browse/track/113297817"
+source:
+  file: "docs/beethoven.md"
+  line: "348"

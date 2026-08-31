@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-trio-for-piano-flute-and-bassoon-in-g-major-woo-37-group"
+composer_id: "ludwig-van-beethoven"
+title: "Trio for piano, flute, and bassoon in G major"
+source:
+  file: "docs/beethoven.md"
+  line: "102"
+catalogue:
+  woo: "WoO 37"

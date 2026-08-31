@@ -1,0 +1,8 @@
+id: "johann-sebastian-bach-concerto-for-2-violins-and-orchestra-double-concerto-in-d-min-group"
+composer_id: "johann-sebastian-bach"
+title: "Concerto for 2 violins and orchestra – Double Concerto in D min."
+source:
+  file: "docs/bachJS.md"
+  line: "16"
+catalogue:
+  bwv: "BWV 1043"

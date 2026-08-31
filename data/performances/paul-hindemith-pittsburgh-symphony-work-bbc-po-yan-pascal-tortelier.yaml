@@ -1,0 +1,13 @@
+id: "paul-hindemith-pittsburgh-symphony-work-bbc-po-yan-pascal-tortelier"
+work_id: "paul-hindemith-pittsburgh-symphony-work"
+performers:
+  - name: "BBC PO"
+    role: "orchestra"
+  - name: "Yan Pascal Tortelier"
+    role: "conductor"
+links:
+  tidal:
+    url: "https://tidal.com/album/12444399/track/12444400"
+source:
+  file: "docs/hindemith.md"
+  line: "92"

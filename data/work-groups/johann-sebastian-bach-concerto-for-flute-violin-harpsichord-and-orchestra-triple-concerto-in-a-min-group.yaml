@@ -1,0 +1,8 @@
+id: "johann-sebastian-bach-concerto-for-flute-violin-harpsichord-and-orchestra-triple-concerto-in-a-min-group"
+composer_id: "johann-sebastian-bach"
+title: "Concerto for flute, violin, harpsichord and orchestra – Triple Concerto in A min."
+source:
+  file: "docs/bachJS.md"
+  line: "18"
+catalogue:
+  bwv: "BWV 1044"

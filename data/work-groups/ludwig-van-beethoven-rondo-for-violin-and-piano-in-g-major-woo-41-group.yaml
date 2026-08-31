@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-rondo-for-violin-and-piano-in-g-major-woo-41-group"
+composer_id: "ludwig-van-beethoven"
+title: "Rondo for Violin and Piano in G major"
+source:
+  file: "docs/beethoven.md"
+  line: "120"
+catalogue:
+  woo: "WoO 41"

@@ -1,0 +1,11 @@
+id: "paul-hindemith-trio-op-47-work"
+work_group_id: "paul-hindemith-trio-op-47-group"
+composer_id: "paul-hindemith"
+title: "Trio"
+source:
+  file: "docs/hindemith.md"
+  line: "235"
+catalogue:
+  opus: "Op. 47"
+date_text: "1928"
+category: "Chamber"

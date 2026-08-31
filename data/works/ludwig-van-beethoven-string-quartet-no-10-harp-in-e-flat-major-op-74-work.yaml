@@ -1,0 +1,12 @@
+id: "ludwig-van-beethoven-string-quartet-no-10-harp-in-e-flat-major-op-74-work"
+work_group_id: "ludwig-van-beethoven-string-quartet-no-10-harp-in-e-flat-major-op-74-group"
+composer_id: "ludwig-van-beethoven"
+title: "String Quartet No. 10 \"Harp\" in E♭ major"
+source:
+  file: "docs/beethoven.md"
+  line: "238"
+catalogue:
+  opus: "Op. 74"
+date_text: "1809"
+category: "Chamber"
+gem: true

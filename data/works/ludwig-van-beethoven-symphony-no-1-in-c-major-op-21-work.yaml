@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-symphony-no-1-in-c-major-op-21-work"
+work_group_id: "ludwig-van-beethoven-symphony-no-1-in-c-major-op-21-group"
+composer_id: "ludwig-van-beethoven"
+title: "Symphony No. 1 in C major"
+source:
+  file: "docs/beethoven.md"
+  line: "28"
+catalogue:
+  opus: "Op. 21"
+date_text: "1799–1800"
+category: "Orchestral"

@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-fugue-c-hess-64-group"
+composer_id: "ludwig-van-beethoven"
+title: "Fugue, C"
+source:
+  file: "docs/beethoven.md"
+  line: "428"
+catalogue:
+  hess: "Hess 64"

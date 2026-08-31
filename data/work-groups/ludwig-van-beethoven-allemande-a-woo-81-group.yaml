@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-allemande-a-woo-81-group"
+composer_id: "ludwig-van-beethoven"
+title: "Allemande, A"
+source:
+  file: "docs/beethoven.md"
+  line: "424"
+catalogue:
+  woo: "WoO 81"

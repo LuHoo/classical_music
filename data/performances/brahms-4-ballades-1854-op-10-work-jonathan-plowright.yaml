@@ -1,0 +1,13 @@
+id: brahms-4-ballades-1854-op-10-work-jonathan-plowright
+work_id: brahms-4-ballades-1854-op-10-work
+performers:
+- artist_id: jonathan-plowright
+  name: Jonathan Plowright
+  role: piano
+links:
+  tidal:
+    url: http://www.tidal.com/track/341663077
+source:
+  file: /Users/Lucas_new/.codex/.chatgpt-projects/g-p-6a500123ac548191ab37db95c0d285a2/classical_music/docs/brahms.md
+  line: '121'
+source_performer_text: Jonathan Plowright

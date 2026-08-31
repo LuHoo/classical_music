@@ -1,0 +1,11 @@
+id: "paul-hindemith-melancholie-op-13-work"
+work_group_id: "paul-hindemith-melancholie-op-13-group"
+composer_id: "paul-hindemith"
+title: "Melancholie"
+source:
+  file: "docs/hindemith.md"
+  line: "150"
+catalogue:
+  opus: "Op. 13"
+date_text: "1919"
+category: "Vocal -- selection"

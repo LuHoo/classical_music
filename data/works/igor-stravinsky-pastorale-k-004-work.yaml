@@ -1,0 +1,11 @@
+id: "igor-stravinsky-pastorale-k-004-work"
+work_group_id: "igor-stravinsky-pastorale-k-004-group"
+composer_id: "igor-stravinsky"
+title: "Pastorale"
+source:
+  file: "docs/stravinsky.md"
+  line: "125"
+catalogue:
+  k: "K 004"
+date_text: "1907"
+category: "Chamber"

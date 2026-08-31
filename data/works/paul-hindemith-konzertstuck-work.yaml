@@ -1,0 +1,9 @@
+id: "paul-hindemith-konzertstuck-work"
+work_group_id: "paul-hindemith-konzertstuck-group"
+composer_id: "paul-hindemith"
+title: "Konzertstück"
+source:
+  file: "docs/hindemith.md"
+  line: "241"
+date_text: "1933"
+category: "Chamber"

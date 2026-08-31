@@ -1,0 +1,213 @@
+composer_id: johann-sebastian-bach
+source_note: >-
+  Representative pilot set based on the existing docs/bachJS.md page. The purpose is to
+  test BWV-based identities, ranges, arrangements, and major title aliases before a full
+  Bach migration.
+works:
+  - id: bach-bwv1041
+    composer_id: johann-sebastian-bach
+    canonical_title: Violin Concerto No. 1 in A minor
+    localized_titles:
+      en: Violin Concerto No. 1 in A minor
+      de: Violinkonzert Nr. 1 a-Moll
+      nl: Vioolconcert nr. 1 in a klein
+    category: orchestral
+    catalogue: { bwv: BWV 1041 }
+    aliases: [Concerto for violin and orchestra No. 1 in A minor, Violin Concerto in A minor, BWV 1041]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: bach-bwv1042
+    composer_id: johann-sebastian-bach
+    canonical_title: Violin Concerto No. 2 in E major
+    localized_titles:
+      en: Violin Concerto No. 2 in E major
+      de: Violinkonzert Nr. 2 E-Dur
+      nl: Vioolconcert nr. 2 in E groot
+    category: orchestral
+    catalogue: { bwv: BWV 1042 }
+    aliases: [Concerto for violin and orchestra No. 2 in E major, Violin Concerto in E major, BWV 1042]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: bach-bwv1043
+    composer_id: johann-sebastian-bach
+    canonical_title: Concerto for Two Violins in D minor
+    localized_titles:
+      en: Concerto for Two Violins in D minor
+      de: Konzert für zwei Violinen d-Moll
+      nl: Dubbelconcert voor twee violen in d klein
+    category: orchestral
+    catalogue: { bwv: BWV 1043 }
+    aliases: [Double Concerto, Concerto for 2 violins and orchestra, BWV 1043]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: bach-bwv1044
+    composer_id: johann-sebastian-bach
+    canonical_title: Triple Concerto in A minor
+    localized_titles:
+      en: Triple Concerto in A minor
+      nl: Tripelconcert in a klein
+    category: orchestral
+    catalogue: { bwv: BWV 1044 }
+    aliases: [Concerto for flute, violin, harpsichord and orchestra, Triple Concerto, BWV 1044]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: bach-bwv1046-2
+    composer_id: johann-sebastian-bach
+    canonical_title: Brandenburg Concerto No. 1 in F major
+    localized_titles:
+      en: Brandenburg Concerto No. 1 in F major
+      de: Brandenburgisches Konzert Nr. 1 F-Dur
+      nl: Brandenburgs concert nr. 1 in F groot
+    category: orchestral
+    catalogue: { bwv: BWV 1046.2 }
+    aliases: [Brandenburg Concerto No. 1, Brandenburgisches Konzert Nr. 1, BWV 1046, BWV 1046.2]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: bach-bwv1047
+    composer_id: johann-sebastian-bach
+    canonical_title: Brandenburg Concerto No. 2 in F major
+    localized_titles:
+      en: Brandenburg Concerto No. 2 in F major
+      de: Brandenburgisches Konzert Nr. 2 F-Dur
+      nl: Brandenburgs concert nr. 2 in F groot
+    category: orchestral
+    catalogue: { bwv: BWV 1047 }
+    aliases: [Brandenburg Concerto No. 2, Brandenburgisches Konzert Nr. 2, BWV 1047]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: bach-bwv1048
+    composer_id: johann-sebastian-bach
+    canonical_title: Brandenburg Concerto No. 3 in G major
+    localized_titles:
+      en: Brandenburg Concerto No. 3 in G major
+      de: Brandenburgisches Konzert Nr. 3 G-Dur
+      nl: Brandenburgs concert nr. 3 in G groot
+    category: orchestral
+    catalogue: { bwv: BWV 1048 }
+    aliases: [Brandenburg Concerto No. 3, Brandenburgisches Konzert Nr. 3, BWV 1048]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: bach-bwv1049
+    composer_id: johann-sebastian-bach
+    canonical_title: Brandenburg Concerto No. 4 in G major
+    localized_titles:
+      en: Brandenburg Concerto No. 4 in G major
+      de: Brandenburgisches Konzert Nr. 4 G-Dur
+      nl: Brandenburgs concert nr. 4 in G groot
+    category: orchestral
+    catalogue: { bwv: BWV 1049 }
+    aliases: [Brandenburg Concerto No. 4, Brandenburgisches Konzert Nr. 4, BWV 1049]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: bach-bwv1050-1
+    composer_id: johann-sebastian-bach
+    canonical_title: Brandenburg Concerto No. 5 in D major
+    localized_titles:
+      en: Brandenburg Concerto No. 5 in D major
+      de: Brandenburgisches Konzert Nr. 5 D-Dur
+      nl: Brandenburgs concert nr. 5 in D groot
+    category: orchestral
+    catalogue: { bwv: BWV 1050.1 }
+    aliases: [Brandenburg Concerto No. 5, revised version, BWV 1050, BWV 1050.1]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: bach-bwv1051
+    composer_id: johann-sebastian-bach
+    canonical_title: Brandenburg Concerto No. 6 in B-flat major
+    localized_titles:
+      en: Brandenburg Concerto No. 6 in B-flat major
+      de: Brandenburgisches Konzert Nr. 6 B-Dur
+      nl: Brandenburgs concert nr. 6 in Bes groot
+    category: orchestral
+    catalogue: { bwv: BWV 1051 }
+    aliases: [Brandenburg Concerto No. 6, Brandenburgisches Konzert Nr. 6, BWV 1051]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: bach-bwv1052-2
+    composer_id: johann-sebastian-bach
+    canonical_title: Harpsichord Concerto No. 1 in D minor
+    localized_titles:
+      en: Harpsichord Concerto No. 1 in D minor
+      nl: Klavecimbelconcert nr. 1 in d klein
+    category: orchestral
+    catalogue: { bwv: BWV 1052.2 }
+    aliases: [Concerto for harpsichord and orchestra No. 1, Harpsichord Concerto in D minor, BWV 1052, BWV 1052.2]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: bach-bwv1066
+    composer_id: johann-sebastian-bach
+    canonical_title: Orchestral Suite No. 1 in C major
+    localized_titles:
+      en: Orchestral Suite No. 1 in C major
+      de: Orchestersuite Nr. 1 C-Dur
+      nl: Orkestsuite nr. 1 in C groot
+    category: orchestral
+    catalogue: { bwv: BWV 1066 }
+    aliases: [Ouverture No. 1, Orchestral Suite No. 1, BWV 1066]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: bach-bwv1067
+    composer_id: johann-sebastian-bach
+    canonical_title: Orchestral Suite No. 2 in B minor
+    localized_titles:
+      en: Orchestral Suite No. 2 in B minor
+      de: Orchestersuite Nr. 2 h-Moll
+      nl: Orkestsuite nr. 2 in b klein
+    category: orchestral
+    catalogue: { bwv: BWV 1067 }
+    aliases: [Ouverture No. 2, Orchestral Suite No. 2, BWV 1067]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: bach-bwv1068
+    composer_id: johann-sebastian-bach
+    canonical_title: Orchestral Suite No. 3 in D major
+    localized_titles:
+      en: Orchestral Suite No. 3 in D major
+      de: Orchestersuite Nr. 3 D-Dur
+      nl: Orkestsuite nr. 3 in D groot
+    category: orchestral
+    catalogue: { bwv: BWV 1068 }
+    aliases: [Ouverture No. 3, Orchestral Suite No. 3, Air on the G String, BWV 1068]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: bach-bwv1001-1006
+    composer_id: johann-sebastian-bach
+    canonical_title: Sonatas and Partitas for Solo Violin
+    localized_titles:
+      en: Sonatas and Partitas for Solo Violin
+      de: Sonaten und Partiten für Violine solo
+      nl: Sonates en partita's voor viool solo
+    category: chamber
+    catalogue: { bwv: BWV 1001-1006 }
+    aliases: [Six Sonatas and Partitas for Solo Violin, Sonatas and partitas for solo violin, BWV 1001-1006]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: bach-bwv988
+    composer_id: johann-sebastian-bach
+    canonical_title: Goldberg Variations
+    localized_titles:
+      en: Goldberg Variations
+      de: Goldberg-Variationen
+      nl: Goldbergvariaties
+    category: keyboard
+    catalogue: { bwv: BWV 988 }
+    aliases: [Goldberg Variations, Goldberg-Variationen, Goldbergvariaties, BWV 988]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: bach-bwv846-869
+    composer_id: johann-sebastian-bach
+    canonical_title: The Well-Tempered Clavier, Book I
+    localized_titles:
+      en: The Well-Tempered Clavier, Book I
+      de: Das wohltemperierte Klavier, Teil I
+      nl: Das Wohltemperierte Klavier, Boek I
+    category: keyboard
+    catalogue: { bwv: BWV 846-869 }
+    aliases: [Well-Tempered Clavier Book 1, WTC I, Das wohltemperierte Klavier I, BWV 846-869]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: bach-bwv870-893
+    composer_id: johann-sebastian-bach
+    canonical_title: The Well-Tempered Clavier, Book II
+    localized_titles:
+      en: The Well-Tempered Clavier, Book II
+      de: Das wohltemperierte Klavier, Teil II
+      nl: Das Wohltemperierte Klavier, Boek II
+    category: keyboard
+    catalogue: { bwv: BWV 870-893 }
+    aliases: [Well-Tempered Clavier Book 2, WTC II, Das wohltemperierte Klavier II, BWV 870-893]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: bach-bwv245
+    composer_id: johann-sebastian-bach
+    canonical_title: St John Passion
+    localized_titles:
+      en: St John Passion
+      de: Johannes-Passion
+      nl: Johannes-Passion
+    category: passions-oratorios
+    catalogue: { bwv: BWV 245 }
+    aliases: [Johannes-Passion, St John Passion, Saint John Passion, BWV 245]
+    authorities: { musicbrainz_work_id:, wikidata: }

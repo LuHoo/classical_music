@@ -1,0 +1,9 @@
+id: "paul-hindemith-amor-und-psyche-work"
+work_group_id: "paul-hindemith-amor-und-psyche-group"
+composer_id: "paul-hindemith"
+title: "Amor und Psyche"
+source:
+  file: "docs/hindemith.md"
+  line: "80"
+date_text: "1943"
+category: "Orchestral"

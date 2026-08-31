@@ -1,0 +1,11 @@
+id: "igor-stravinsky-two-poems-of-paul-verlaine-k-002-work"
+work_group_id: "igor-stravinsky-two-poems-of-paul-verlaine-k-002-group"
+composer_id: "igor-stravinsky"
+title: "Two Poems of Paul Verlaine"
+source:
+  file: "docs/stravinsky.md"
+  line: "182"
+catalogue:
+  k: "K 002"
+date_text: "1907–08"
+category: "Vocal"

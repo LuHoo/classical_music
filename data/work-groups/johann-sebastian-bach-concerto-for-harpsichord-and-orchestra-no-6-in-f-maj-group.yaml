@@ -1,0 +1,8 @@
+id: "johann-sebastian-bach-concerto-for-harpsichord-and-orchestra-no-6-in-f-maj-group"
+composer_id: "johann-sebastian-bach"
+title: "Concerto for harpsichord and orchestra No. 6 in F maj."
+source:
+  file: "docs/bachJS.md"
+  line: "52"
+catalogue:
+  bwv: "BWV 1057"

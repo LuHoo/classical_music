@@ -1,0 +1,11 @@
+id: "johann-sebastian-bach-inventions-and-sinfonias-work"
+work_group_id: "johann-sebastian-bach-inventions-and-sinfonias-group"
+composer_id: "johann-sebastian-bach"
+title: "Inventions and Sinfonias"
+source:
+  file: "docs/bachJS.md"
+  line: "112"
+catalogue:
+  bwv: "BWV 772"
+date_text: "http://www.tidal.com/track/24788065"
+category: "Keyboard"

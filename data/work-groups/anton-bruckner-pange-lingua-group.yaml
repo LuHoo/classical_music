@@ -1,0 +1,8 @@
+id: "anton-bruckner-pange-lingua-group"
+composer_id: "anton-bruckner"
+title: "Pange lingua"
+source:
+  file: "docs/bruckner.md"
+  line: "80"
+catalogue:
+  wab: "WAB 33"

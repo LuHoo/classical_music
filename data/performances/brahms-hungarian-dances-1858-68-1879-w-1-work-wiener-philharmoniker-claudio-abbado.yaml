@@ -1,0 +1,16 @@
+id: brahms-hungarian-dances-1858-68-1879-w-1-work-wiener-philharmoniker-claudio-abbado
+work_id: brahms-hungarian-dances-1858-68-1879-w-1-work
+performers:
+- artist_id: wiener-philharmoniker
+  name: Wiener Philharmoniker
+  role: performer
+- artist_id: claudio-abbado
+  name: Claudio Abbado
+  role: conductor
+links:
+  tidal:
+    url: http://www.tidal.com/track/4708013
+source:
+  file: /Users/Lucas_new/.codex/.chatgpt-projects/g-p-6a500123ac548191ab37db95c0d285a2/classical_music/docs/brahms.md
+  line: '19'
+source_performer_text: Wiener Philharmoniker, Claudio Abbado

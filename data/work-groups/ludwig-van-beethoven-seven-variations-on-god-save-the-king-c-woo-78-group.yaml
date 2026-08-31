@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-seven-variations-on-god-save-the-king-c-woo-78-group"
+composer_id: "ludwig-van-beethoven"
+title: "Seven variations on \"God Save the King\", C"
+source:
+  file: "docs/beethoven.md"
+  line: "406"
+catalogue:
+  woo: "WoO 78"

@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-three-early-kurfurstensonatas-no-2-in-f-minor-woo-47-2-work"
+work_group_id: "ludwig-van-beethoven-three-early-kurfurstensonatas-no-2-in-f-minor-woo-47-2-group"
+composer_id: "ludwig-van-beethoven"
+title: "Three early Kurfürstensonatas, No. 2 in F minor"
+source:
+  file: "docs/beethoven.md"
+  line: "302"
+catalogue:
+  woo: "WoO 47/2"
+date_text: "1782-1783"
+category: "Piano"

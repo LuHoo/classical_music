@@ -1,0 +1,12 @@
+id: "ludwig-van-beethoven-choral-fantasy-in-c-minor-op-80-work"
+work_group_id: "ludwig-van-beethoven-choral-fantasy-in-c-minor-op-80-group"
+composer_id: "ludwig-van-beethoven"
+title: "Choral Fantasy in C minor"
+source:
+  file: "docs/beethoven.md"
+  line: "66"
+catalogue:
+  opus: "Op. 80"
+date_text: "1808, rev. 1809"
+category: "Orchestral"
+notes: "Pilot migration: source text suggests a version, arrangement, revision, suite, or completion boundary that should be reviewed."

@@ -1,0 +1,9 @@
+id: "paul-hindemith-duet-work"
+work_group_id: "paul-hindemith-duet-group"
+composer_id: "paul-hindemith"
+title: "Duet"
+source:
+  file: "docs/hindemith.md"
+  line: "203"
+date_text: "1934"
+category: "Chamber"

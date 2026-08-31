@@ -1,0 +1,12 @@
+id: "igor-stravinsky-tango-for-chamber-orchestra-k-062-work"
+work_group_id: "igor-stravinsky-tango-for-chamber-orchestra-k-062-group"
+composer_id: "igor-stravinsky"
+title: "Tango for chamber orchestra"
+source:
+  file: "docs/stravinsky.md"
+  line: "87"
+catalogue:
+  k: "K 062"
+date_text: "1953, arrangement of 1940 work for piano"
+category: "Orchestral"
+notes: "Pilot migration: source text suggests a version, arrangement, revision, suite, or completion boundary that should be reviewed."

@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-horn-sonata-in-f-major-op-17-work"
+work_group_id: "ludwig-van-beethoven-horn-sonata-in-f-major-op-17-group"
+composer_id: "ludwig-van-beethoven"
+title: "Horn Sonata in F major"
+source:
+  file: "docs/beethoven.md"
+  line: "170"
+catalogue:
+  opus: "Op. 17"
+date_text: "18 April 1800"
+category: "Chamber"

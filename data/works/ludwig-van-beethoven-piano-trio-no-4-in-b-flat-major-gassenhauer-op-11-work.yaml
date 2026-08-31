@@ -1,0 +1,12 @@
+id: "ludwig-van-beethoven-piano-trio-no-4-in-b-flat-major-gassenhauer-op-11-work"
+work_group_id: "ludwig-van-beethoven-piano-trio-no-4-in-b-flat-major-gassenhauer-op-11-group"
+composer_id: "ludwig-van-beethoven"
+title: "Piano Trio No. 4 in B♭ major \"Gassenhauer\""
+source:
+  file: "docs/beethoven.md"
+  line: "156"
+catalogue:
+  opus: "Op. 11"
+date_text: "1797"
+category: "Chamber"
+notes: "Pilot migration: source text suggests a version, arrangement, revision, suite, or completion boundary that should be reviewed."

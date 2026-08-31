@@ -1,0 +1,12 @@
+id: "igor-stravinsky-the-firebird-k-010-work"
+work_group_id: "igor-stravinsky-the-firebird-k-010-group"
+composer_id: "igor-stravinsky"
+title: "The Firebird"
+source:
+  file: "docs/stravinsky.md"
+  line: "31"
+catalogue:
+  k: "K 010"
+date_text: "1910; rev. 1919, 1945"
+category: "Ballet"
+notes: "Pilot migration: source text suggests a version, arrangement, revision, suite, or completion boundary that should be reviewed."

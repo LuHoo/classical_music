@@ -1,0 +1,11 @@
+id: "igor-stravinsky-variations-k-103-work"
+work_group_id: "igor-stravinsky-variations-k-103-group"
+composer_id: "igor-stravinsky"
+title: "Variations"
+source:
+  file: "docs/stravinsky.md"
+  line: "101"
+catalogue:
+  k: "K 103"
+date_text: "1963/1964"
+category: "Orchestral"

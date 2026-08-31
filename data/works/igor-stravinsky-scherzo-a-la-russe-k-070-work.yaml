@@ -1,0 +1,12 @@
+id: "igor-stravinsky-scherzo-a-la-russe-k-070-work"
+work_group_id: "igor-stravinsky-scherzo-a-la-russe-k-070-group"
+composer_id: "igor-stravinsky"
+title: "Scherzo à la russe"
+source:
+  file: "docs/stravinsky.md"
+  line: "93"
+catalogue:
+  k: "K 070"
+date_text: "1944, also a version for Paul Whiteman's band"
+category: "Orchestral"
+notes: "Pilot migration: source text suggests a version, arrangement, revision, suite, or completion boundary that should be reviewed."

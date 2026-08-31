@@ -1,0 +1,12 @@
+id: "igor-stravinsky-ebony-concerto-k-072-work"
+work_group_id: "igor-stravinsky-ebony-concerto-k-072-group"
+composer_id: "igor-stravinsky"
+title: "Ebony Concerto"
+source:
+  file: "docs/stravinsky.md"
+  line: "117"
+catalogue:
+  k: "K 072"
+date_text: "1945"
+category: "Concertante"
+gem: true

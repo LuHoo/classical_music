@@ -1,0 +1,15 @@
+id: wolfgang-amadeus-mozart-mass-in-c-minor-work
+work_group_id: wolfgang-amadeus-mozart-mass-in-c-minor-group
+composer_id: wolfgang-amadeus-mozart
+title: Mass in C Minor
+source:
+  file: docs/mozart.md
+  line: '17'
+catalogue:
+  k: K. 427
+date_text: Completed by F. Beyer
+category: Masses
+external_ids:
+  musicbrainz: e43227dd-7c9a-4b8a-ae10-969ab94c642b
+notes: MusicBrainz identifies Mass in C minor K. 427 and an other-version relation.
+  Keep completion-specific recommendation assignment under manual review.

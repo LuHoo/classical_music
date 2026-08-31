@@ -1,0 +1,10 @@
+id: "gustav-mahler-symphony-no-9-work"
+work_group_id: "gustav-mahler-symphony-no-9-group"
+composer_id: "gustav-mahler"
+title: "Symphony No. 9"
+source:
+  file: "docs/mahler.md"
+  line: "62"
+date_text: "1909–10"
+category: "Late works"
+gem: true

@@ -1,0 +1,12 @@
+id: sergei-prokofiev-suite-from-the-prodigal-son-work
+work_group_id: sergei-prokofiev-suite-from-the-prodigal-son-group
+composer_id: sergei-prokofiev
+title: Suite from The Prodigal Son
+source:
+  file: docs/prokofiev.md
+  line: '79'
+catalogue:
+  op: Op. 46bis
+date_text: '1929'
+category: Orchestral
+gem: true

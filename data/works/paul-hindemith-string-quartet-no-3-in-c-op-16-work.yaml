@@ -1,0 +1,11 @@
+id: "paul-hindemith-string-quartet-no-3-in-c-op-16-work"
+work_group_id: "paul-hindemith-string-quartet-no-3-in-c-op-16-group"
+composer_id: "paul-hindemith"
+title: "String Quartet No. 3 in C"
+source:
+  file: "docs/hindemith.md"
+  line: "219"
+catalogue:
+  opus: "Op. 16"
+date_text: "1920"
+category: "Chamber"

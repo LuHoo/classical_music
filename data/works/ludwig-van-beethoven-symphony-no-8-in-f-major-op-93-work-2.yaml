@@ -1,0 +1,12 @@
+id: "ludwig-van-beethoven-symphony-no-8-in-f-major-op-93-work-2"
+work_group_id: "ludwig-van-beethoven-symphony-no-8-in-f-major-op-93-group-2"
+composer_id: "ludwig-van-beethoven"
+title: "Symphony No. 8 in F major"
+source:
+  file: "docs/beethoven.md"
+  line: "498"
+catalogue:
+  opus: "Op. 93"
+date_text: "arr piano-4h Scharwenka"
+category: "Piano"
+notes: "Pilot migration: source text suggests a version, arrangement, revision, suite, or completion boundary that should be reviewed."

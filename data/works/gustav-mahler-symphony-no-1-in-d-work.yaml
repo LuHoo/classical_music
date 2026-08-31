@@ -1,0 +1,10 @@
+id: "gustav-mahler-symphony-no-1-in-d-work"
+work_group_id: "gustav-mahler-symphony-no-1-in-d-group"
+composer_id: "gustav-mahler"
+title: "Symphony No. 1 in D"
+source:
+  file: "docs/mahler.md"
+  line: "32"
+date_text: "1884–88"
+category: "Wunderhorn period"
+gem: true

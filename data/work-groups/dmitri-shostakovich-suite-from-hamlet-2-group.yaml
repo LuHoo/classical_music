@@ -1,0 +1,8 @@
+id: dmitri-shostakovich-suite-from-hamlet-2-group
+composer_id: dmitri-shostakovich
+title: Suite from Hamlet
+source:
+  file: docs/shostakovich.md
+  line: '142'
+catalogue:
+  op: Op. 116a

@@ -1,0 +1,14 @@
+id: "ludwig-van-beethoven-piano-trio-no-5-in-d-major-ghost-op-70-1-work-sitkovetski-trio"
+work_id: "ludwig-van-beethoven-piano-trio-no-5-in-d-major-ghost-op-70-1-work"
+performers:
+  - name: "Sitkovetski Trio"
+    role: "ensemble"
+links:
+  tidal:
+    url: "http://www.tidal.com/track/376682546"
+source:
+  file: "docs/beethoven.md"
+  line: "232"
+reviews:
+  gramophone:
+    issue: "2024-09"

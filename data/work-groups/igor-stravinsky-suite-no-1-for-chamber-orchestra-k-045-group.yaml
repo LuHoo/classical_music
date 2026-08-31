@@ -1,0 +1,8 @@
+id: "igor-stravinsky-suite-no-1-for-chamber-orchestra-k-045-group"
+composer_id: "igor-stravinsky"
+title: "Suite No. 1 for chamber orchestra"
+source:
+  file: "docs/stravinsky.md"
+  line: "77"
+catalogue:
+  k: "K 045"

@@ -1,0 +1,8 @@
+id: "paul-hindemith-kleine-kammermusik-op-24-2-group"
+composer_id: "paul-hindemith"
+title: "Kleine Kammermusik"
+source:
+  file: "docs/hindemith.md"
+  line: "197"
+catalogue:
+  opus: "Op. 24/2"

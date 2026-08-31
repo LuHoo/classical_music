@@ -1,0 +1,11 @@
+id: "anton-bruckner-symphony-no-8-in-c-minor-die-apokalyptische-3-work"
+work_group_id: "anton-bruckner-symphony-no-8-in-c-minor-die-apokalyptische-group"
+composer_id: "anton-bruckner"
+title: "Symphony No. 8 in C minor \"Die Apokalyptische\""
+source:
+  file: "docs/bruckner.md"
+  line: "62"
+catalogue:
+  wab: "WAB 108"
+date_text: "1890 version: 3rd woodwind in first three movements, fewer cymbal clashes in Adagio, harps in Trio"
+category: "Orchestral"

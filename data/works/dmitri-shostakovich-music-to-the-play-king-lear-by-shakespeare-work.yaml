@@ -1,0 +1,11 @@
+id: dmitri-shostakovich-music-to-the-play-king-lear-by-shakespeare-work
+work_group_id: dmitri-shostakovich-music-to-the-play-king-lear-by-shakespeare-group
+composer_id: dmitri-shostakovich
+title: Music to the play King Lear by Shakespeare
+source:
+  file: docs/shostakovich.md
+  line: '78'
+catalogue:
+  op: Op. 58a
+date_text: '1940'
+category: Orchestral

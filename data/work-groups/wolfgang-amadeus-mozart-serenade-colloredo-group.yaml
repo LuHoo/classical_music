@@ -1,0 +1,8 @@
+id: wolfgang-amadeus-mozart-serenade-colloredo-group
+composer_id: wolfgang-amadeus-mozart
+title: Serenade Colloredo
+source:
+  file: docs/mozart.md
+  line: '150'
+catalogue:
+  k: K. 203

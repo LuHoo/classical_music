@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-fugue-for-string-quintet-in-d-major-op-137-group"
+composer_id: "ludwig-van-beethoven"
+title: "Fugue for String Quintet in D major"
+source:
+  file: "docs/beethoven.md"
+  line: "288"
+catalogue:
+  opus: "Op. 137"

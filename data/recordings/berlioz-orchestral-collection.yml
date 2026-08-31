@@ -1,0 +1,31 @@
+id: berlioz-orchestral-collection
+title: "Berlioz: Orchestral Works"
+label: Decca
+catalog_number: "467 123-2"
+year: 1998
+artists:
+  conductor:
+    - sir-colin-davis
+  orchestra:
+    - london-symphony-orchestra
+works:
+  - work_id: berlioz-le-roi-lear
+    status: recommended
+    track:
+      number: 1
+      title: Le Roi Lear
+    links:
+      tidal:
+        url: https://tidal.com/browse/track/111111111
+        status: active
+        last_checked: "2026-07-09"
+  - work_id: berlioz-le-corsaire
+    status: candidate
+  - work_id: berlioz-benvenuto-cellini
+    notes: Present on the album but not yet evaluated.
+links:
+  tidal:
+    url: https://tidal.com/browse/album/222222222
+    status: active
+    last_checked: 2026-07-09
+notes: Multi-work example showing different statuses on one recording.

@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-symphony-no-5-fate-in-c-minor-op-67-work"
+work_group_id: "ludwig-van-beethoven-symphony-no-5-fate-in-c-minor-op-67-group"
+composer_id: "ludwig-van-beethoven"
+title: "Symphony No. 5 \"Fate\" in C minor"
+source:
+  file: "docs/beethoven.md"
+  line: "56"
+catalogue:
+  opus: "Op. 67"
+date_text: "1807–1808"
+category: "Orchestral"

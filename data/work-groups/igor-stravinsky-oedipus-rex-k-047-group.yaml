@@ -1,0 +1,8 @@
+id: "igor-stravinsky-oedipus-rex-k-047-group"
+composer_id: "igor-stravinsky"
+title: "Oedipus rex"
+source:
+  file: "docs/stravinsky.md"
+  line: "21"
+catalogue:
+  k: "K 047"

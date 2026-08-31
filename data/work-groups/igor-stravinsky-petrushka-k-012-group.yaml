@@ -1,0 +1,8 @@
+id: "igor-stravinsky-petrushka-k-012-group"
+composer_id: "igor-stravinsky"
+title: "Petrushka"
+source:
+  file: "docs/stravinsky.md"
+  line: "33"
+catalogue:
+  k: "K 012"

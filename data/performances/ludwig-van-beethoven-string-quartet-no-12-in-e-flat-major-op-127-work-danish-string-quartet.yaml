@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-string-quartet-no-12-in-e-flat-major-op-127-work-danish-string-quartet"
+work_id: "ludwig-van-beethoven-string-quartet-no-12-in-e-flat-major-op-127-work"
+performers:
+  - name: "Danish String Quartet"
+    role: "ensemble"
+links:
+  tidal:
+    url: "http://www.tidal.com/track/95056673"
+source:
+  file: "docs/beethoven.md"
+  line: "274"

@@ -1,0 +1,12 @@
+id: "ludwig-van-beethoven-piano-sonata-no-13-quasi-una-fantasia-in-e-flat-major-op-27-1-work"
+work_group_id: "ludwig-van-beethoven-piano-sonata-no-13-quasi-una-fantasia-in-e-flat-major-op-27-1-group"
+composer_id: "ludwig-van-beethoven"
+title: "Piano Sonata No. 13 \"Quasi una fantasia\" in E♭ major"
+source:
+  file: "docs/beethoven.md"
+  line: "338"
+catalogue:
+  opus: "Op. 27/1"
+date_text: "1801"
+category: "Piano"
+gem: true

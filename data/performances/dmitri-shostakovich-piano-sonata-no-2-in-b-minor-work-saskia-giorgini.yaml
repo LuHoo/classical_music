@@ -1,0 +1,11 @@
+id: dmitri-shostakovich-piano-sonata-no-2-in-b-minor-work-saskia-giorgini
+work_id: dmitri-shostakovich-piano-sonata-no-2-in-b-minor-work
+source:
+  file: docs/shostakovich.md
+  line: '169'
+links:
+  tidal:
+    url: https://tidal.com/track/476120350
+performers:
+- name: Saskia Giorgini
+  role: performer

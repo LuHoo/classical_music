@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-quintet-for-oboe-3-horns-and-bassoon-in-e-flat-major-hess-19-work"
+work_group_id: "ludwig-van-beethoven-quintet-for-oboe-3-horns-and-bassoon-in-e-flat-major-hess-19-group"
+composer_id: "ludwig-van-beethoven"
+title: "Quintet for oboe, 3 horns, and bassoon in E♭ major"
+source:
+  file: "docs/beethoven.md"
+  line: "116"
+catalogue:
+  hess: "Hess 19"
+date_text: "1793?"
+category: "Chamber"

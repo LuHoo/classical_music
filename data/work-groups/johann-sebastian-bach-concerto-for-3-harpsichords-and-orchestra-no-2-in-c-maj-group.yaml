@@ -1,0 +1,8 @@
+id: "johann-sebastian-bach-concerto-for-3-harpsichords-and-orchestra-no-2-in-c-maj-group"
+composer_id: "johann-sebastian-bach"
+title: "Concerto for 3 harpsichords and orchestra No. 2 in C maj."
+source:
+  file: "docs/bachJS.md"
+  line: "68"
+catalogue:
+  bwv: "BWV 1064"

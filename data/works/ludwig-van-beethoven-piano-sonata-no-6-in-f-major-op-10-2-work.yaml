@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-piano-sonata-no-6-in-f-major-op-10-2-work"
+work_group_id: "ludwig-van-beethoven-piano-sonata-no-6-in-f-major-op-10-2-group"
+composer_id: "ludwig-van-beethoven"
+title: "Piano Sonata No. 6 in F major"
+source:
+  file: "docs/beethoven.md"
+  line: "322"
+catalogue:
+  opus: "Op. 10/2"
+date_text: "1796–1797"
+category: "Piano"

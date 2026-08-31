@@ -1,0 +1,11 @@
+id: wolfgang-amadeus-mozart-symphony-no-41-in-c-major-jupiter-work
+work_group_id: wolfgang-amadeus-mozart-symphony-no-41-in-c-major-jupiter-group
+composer_id: wolfgang-amadeus-mozart
+title: Symphony No. 41 in C major "Jupiter"
+source:
+  file: docs/mozart.md
+  line: '77'
+catalogue:
+  k: K. 551
+date_text: http://www.tidal.com/track/156570996
+category: Symphonies

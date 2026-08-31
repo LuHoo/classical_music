@@ -1,0 +1,11 @@
+id: "igor-stravinsky-the-flood-k-098-work"
+work_group_id: "igor-stravinsky-the-flood-k-098-group"
+composer_id: "igor-stravinsky"
+title: "The Flood"
+source:
+  file: "docs/stravinsky.md"
+  line: "27"
+catalogue:
+  k: "K 098"
+date_text: "1962"
+category: "Opera/Theatre"

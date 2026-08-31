@@ -1,0 +1,16 @@
+id: 
+  wolfgang-amadeus-mozart-piano-concerto-no-23-in-a-major-work-charles-richard-hamelin-les-violons-du-roi-jonathan-cohen
+work_id: wolfgang-amadeus-mozart-piano-concerto-no-23-in-a-major-work
+source:
+  file: docs/mozart.md
+  line: '105'
+links:
+  tidal:
+    url: http://www.tidal.com/track/313466205
+performers:
+- name: Charles Richard-Hamelin
+  role: performer
+- name: Les Violons du Roi
+  role: performer
+- name: Jonathan Cohen
+  role: performer

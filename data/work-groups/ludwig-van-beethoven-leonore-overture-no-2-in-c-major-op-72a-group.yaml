@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-leonore-overture-no-2-in-c-major-op-72a-group"
+composer_id: "ludwig-van-beethoven"
+title: "\"Leonore\" Overture No. 2 in C major"
+source:
+  file: "docs/beethoven.md"
+  line: "60"
+catalogue:
+  opus: "Op. 72a"

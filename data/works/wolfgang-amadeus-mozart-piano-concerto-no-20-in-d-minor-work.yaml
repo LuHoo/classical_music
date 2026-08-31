@@ -1,0 +1,11 @@
+id: wolfgang-amadeus-mozart-piano-concerto-no-20-in-d-minor-work
+work_group_id: wolfgang-amadeus-mozart-piano-concerto-no-20-in-d-minor-group
+composer_id: wolfgang-amadeus-mozart
+title: Piano Concerto No. 20 in D minor
+source:
+  file: docs/mozart.md
+  line: '99'
+catalogue:
+  k: K. 466
+date_text: http://www.tidal.com/track/313466200
+category: Piano concertos

@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-symphony-no-4-in-b-flat-major-op-60-group"
+composer_id: "ludwig-van-beethoven"
+title: "Symphony No. 4 in B♭ major"
+source:
+  file: "docs/beethoven.md"
+  line: "48"
+catalogue:
+  opus: "Op. 60"

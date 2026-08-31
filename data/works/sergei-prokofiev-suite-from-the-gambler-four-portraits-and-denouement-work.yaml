@@ -1,0 +1,11 @@
+id: sergei-prokofiev-suite-from-the-gambler-four-portraits-and-denouement-work
+work_group_id: sergei-prokofiev-suite-from-the-gambler-four-portraits-and-denouement-group
+composer_id: sergei-prokofiev
+title: Suite from The Gambler ("Four Portraits and Denouement")
+source:
+  file: docs/prokofiev.md
+  line: '85'
+catalogue:
+  op: Op. 49
+date_text: '1931'
+category: Orchestral

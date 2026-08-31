@@ -1,0 +1,11 @@
+id: "igor-stravinsky-four-norwegian-moods-k-065-work"
+work_group_id: "igor-stravinsky-four-norwegian-moods-k-065-group"
+composer_id: "igor-stravinsky"
+title: "Four Norwegian Moods"
+source:
+  file: "docs/stravinsky.md"
+  line: "91"
+catalogue:
+  k: "K 065"
+date_text: "1942"
+category: "Orchestral"

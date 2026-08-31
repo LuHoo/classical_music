@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-violin-sonata-no-7-in-c-minor-op-30-2-group"
+composer_id: "ludwig-van-beethoven"
+title: "Violin Sonata No. 7 in C minor"
+source:
+  file: "docs/beethoven.md"
+  line: "200"
+catalogue:
+  opus: "Op. 30/2"

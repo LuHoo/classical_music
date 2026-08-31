@@ -1,0 +1,8 @@
+id: dmitri-shostakovich-suite-from-the-limpid-stream-group
+composer_id: dmitri-shostakovich
+title: Suite from The Limpid Stream
+source:
+  file: docs/shostakovich.md
+  line: '62'
+catalogue:
+  op: Op. 39a

@@ -1,0 +1,11 @@
+id: dmitri-shostakovich-suite-from-the-gadfly-work
+work_group_id: dmitri-shostakovich-suite-from-the-gadfly-group
+composer_id: dmitri-shostakovich
+title: Suite from The Gadfly
+source:
+  file: docs/shostakovich.md
+  line: '116'
+catalogue:
+  op: Op. 97a
+date_text: 1955, arranged by Levon Atovmyan
+category: Orchestral

@@ -1,0 +1,8 @@
+id: "igor-stravinsky-concerto-for-two-solo-pianos-k-057-group"
+composer_id: "igor-stravinsky"
+title: "Concerto for Two Solo Pianos"
+source:
+  file: "docs/stravinsky.md"
+  line: "115"
+catalogue:
+  k: "K 057"

@@ -1,0 +1,10 @@
+id: "johann-sebastian-bach-prelude-fugue-in-e-flat-major-work-praeludium-los-angeles-philharmonic-esa-pekk"
+work_id: "johann-sebastian-bach-prelude-fugue-in-e-flat-major-work"
+source:
+  file: "docs/bachJS.md"
+  line: "84"
+links:
+- platform: "tidal"
+  url: "http://www.tidal.com/track/2924757"
+performers:
+- name: "Praeludium Los Angeles Philharmonic, Esa-Pekka Salonen"

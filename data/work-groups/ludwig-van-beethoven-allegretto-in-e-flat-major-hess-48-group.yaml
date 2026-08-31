@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-allegretto-in-e-flat-major-hess-48-group"
+composer_id: "ludwig-van-beethoven"
+title: "Allegretto in E♭ major"
+source:
+  file: "docs/beethoven.md"
+  line: "108"
+catalogue:
+  hess: "Hess 48"

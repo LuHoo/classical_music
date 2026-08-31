@@ -1,0 +1,13 @@
+id: "igor-stravinsky-suite-from-pulcinella-k-034-work-mahler-chamber-orchestra-pablo-heras-casado"
+work_id: "igor-stravinsky-suite-from-pulcinella-k-034-work"
+performers:
+  - name: "Mahler Chamber Orchestra"
+    role: "orchestra"
+  - name: "Pablo Heras-Casado"
+    role: "conductor"
+links:
+  tidal:
+    url: "https://tidal.com/browse/track/346134373?u"
+source:
+  file: "docs/stravinsky.md"
+  line: "69"

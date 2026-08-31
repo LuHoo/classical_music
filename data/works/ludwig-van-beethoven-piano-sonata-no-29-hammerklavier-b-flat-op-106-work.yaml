@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-piano-sonata-no-29-hammerklavier-b-flat-op-106-work"
+work_group_id: "ludwig-van-beethoven-piano-sonata-no-29-hammerklavier-b-flat-op-106-group"
+composer_id: "ludwig-van-beethoven"
+title: "Piano Sonata No. 29 (\"Hammerklavier\"), B♭"
+source:
+  file: "docs/beethoven.md"
+  line: "366"
+catalogue:
+  opus: "Op. 106"
+date_text: "1817–18"
+category: "Piano"

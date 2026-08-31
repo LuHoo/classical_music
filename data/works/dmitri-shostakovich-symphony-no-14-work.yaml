@@ -1,0 +1,11 @@
+id: dmitri-shostakovich-symphony-no-14-work
+work_group_id: dmitri-shostakovich-symphony-no-14-group
+composer_id: dmitri-shostakovich
+title: Symphony No. 14
+source:
+  file: docs/shostakovich.md
+  line: '155'
+catalogue:
+  op: Op. 135
+date_text: '1969'
+category: Orchestral

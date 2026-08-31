@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-zur-namensfeier-feastday-in-c-major-op-115-work"
+work_group_id: "ludwig-van-beethoven-zur-namensfeier-feastday-in-c-major-op-115-group"
+composer_id: "ludwig-van-beethoven"
+title: "\"Zur Namensfeier\" (Feastday) in C major"
+source:
+  file: "docs/beethoven.md"
+  line: "82"
+catalogue:
+  opus: "Op. 115"
+date_text: "1814–1815"
+category: "Orchestral"

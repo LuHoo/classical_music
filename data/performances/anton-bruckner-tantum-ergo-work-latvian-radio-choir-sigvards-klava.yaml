@@ -1,0 +1,10 @@
+id: "anton-bruckner-tantum-ergo-work-latvian-radio-choir-sigvards-klava"
+work_id: "anton-bruckner-tantum-ergo-work"
+source:
+  file: "docs/bruckner.md"
+  line: "78"
+links:
+- platform: "tidal"
+  url: "https://tidal.com/browse/track/284019408?u"
+performers:
+- name: "Latvian Radio Choir, Sigvards Klava"

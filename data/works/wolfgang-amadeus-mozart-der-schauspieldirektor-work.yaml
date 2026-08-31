@@ -1,0 +1,11 @@
+id: wolfgang-amadeus-mozart-der-schauspieldirektor-work
+work_group_id: wolfgang-amadeus-mozart-der-schauspieldirektor-group
+composer_id: wolfgang-amadeus-mozart
+title: Der Schauspieldirektor
+source:
+  file: docs/mozart.md
+  line: '46'
+catalogue:
+  k: K. 486
+date_text: '1786'
+category: Operas

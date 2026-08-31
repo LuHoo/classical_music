@@ -1,0 +1,11 @@
+id: wolfgang-amadeus-mozart-serenade-no-13-work
+work_group_id: wolfgang-amadeus-mozart-serenade-no-13-group
+composer_id: wolfgang-amadeus-mozart
+title: Serenade No. 13
+source:
+  file: docs/mozart.md
+  line: '156'
+catalogue:
+  k: K. 525
+date_text: '1787'
+category: Serenades

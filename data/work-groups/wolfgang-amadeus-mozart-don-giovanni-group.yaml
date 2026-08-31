@@ -1,0 +1,8 @@
+id: wolfgang-amadeus-mozart-don-giovanni-group
+composer_id: wolfgang-amadeus-mozart
+title: Don Giovanni
+source:
+  file: docs/mozart.md
+  line: '48'
+catalogue:
+  k: K. 527

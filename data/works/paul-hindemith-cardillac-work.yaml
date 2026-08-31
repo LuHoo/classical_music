@@ -1,0 +1,10 @@
+id: "paul-hindemith-cardillac-work"
+work_group_id: "paul-hindemith-cardillac-group"
+composer_id: "paul-hindemith"
+title: "Cardillac"
+source:
+  file: "docs/hindemith.md"
+  line: "18"
+date_text: "premiered 1926; revised version premiered 1952"
+category: "Opera"
+notes: "Wikipedia evidence confirms a revised version premiered in 1952. Keep one Work Group; create separate versioned Works only when a source or recording identifies the version."

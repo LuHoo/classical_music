@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-variations-for-cello-and-piano-on-see-the-conquering-hero-comes-woo-45-work"
+work_group_id: "ludwig-van-beethoven-variations-for-cello-and-piano-on-see-the-conquering-hero-comes-woo-4-group"
+composer_id: "ludwig-van-beethoven"
+title: "Variations for cello and piano on \"See the conquering hero comes\""
+source:
+  file: "docs/beethoven.md"
+  line: "146"
+catalogue:
+  woo: "WoO 45"
+date_text: "1796"
+category: "Chamber"

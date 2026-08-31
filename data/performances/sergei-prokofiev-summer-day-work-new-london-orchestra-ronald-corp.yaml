@@ -1,0 +1,13 @@
+id: sergei-prokofiev-summer-day-work-new-london-orchestra-ronald-corp
+work_id: sergei-prokofiev-summer-day-work
+source:
+  file: docs/prokofiev.md
+  line: '118'
+links:
+  tidal:
+    url: https://tidal.com/browse/album/340800600
+performers:
+- name: New London Orchestra
+  role: performer
+- name: Ronald Corp
+  role: performer

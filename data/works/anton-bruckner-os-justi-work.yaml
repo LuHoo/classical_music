@@ -1,0 +1,11 @@
+id: "anton-bruckner-os-justi-work"
+work_group_id: "anton-bruckner-os-justi-group"
+composer_id: "anton-bruckner"
+title: "Os justi"
+source:
+  file: "docs/bruckner.md"
+  line: "76"
+catalogue:
+  wab: "WAB 30"
+date_text: "1879"
+category: "Vocal"

@@ -1,0 +1,12 @@
+id: "ludwig-van-beethoven-symphony-no-4-in-b-flat-major-op-60-work-2"
+work_group_id: "ludwig-van-beethoven-symphony-no-4-in-b-flat-major-op-60-group-2"
+composer_id: "ludwig-van-beethoven"
+title: "Symphony No. 4 in B♭ major"
+source:
+  file: "docs/beethoven.md"
+  line: "492"
+catalogue:
+  opus: "Op. 60"
+date_text: "arr piano-4h Scharwenka"
+category: "Piano"
+notes: "Pilot migration: source text suggests a version, arrangement, revision, suite, or completion boundary that should be reviewed."

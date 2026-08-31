@@ -1,0 +1,11 @@
+id: sergei-prokofiev-suite-3-from-romeo-and-juliet-work
+work_group_id: sergei-prokofiev-suite-3-from-romeo-and-juliet-group
+composer_id: sergei-prokofiev
+title: Suite 3 from Romeo and Juliet
+source:
+  file: docs/prokofiev.md
+  line: '174'
+catalogue:
+  op: Op. 101
+date_text: '1946'
+category: Orchestral

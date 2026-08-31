@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-septet-in-e-flat-major-op-20-work"
+work_group_id: "ludwig-van-beethoven-septet-in-e-flat-major-op-20-group"
+composer_id: "ludwig-van-beethoven"
+title: "Septet in E♭ major"
+source:
+  file: "docs/beethoven.md"
+  line: "184"
+catalogue:
+  opus: "Op. 20"
+date_text: "2 April 1800"
+category: "Chamber"

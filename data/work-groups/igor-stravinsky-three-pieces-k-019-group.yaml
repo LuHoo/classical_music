@@ -1,0 +1,8 @@
+id: "igor-stravinsky-three-pieces-k-019-group"
+composer_id: "igor-stravinsky"
+title: "Three Pieces"
+source:
+  file: "docs/stravinsky.md"
+  line: "127"
+catalogue:
+  k: "K 019"

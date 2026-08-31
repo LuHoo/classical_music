@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-symphony-no-2-in-d-major-op-36-group"
+composer_id: "ludwig-van-beethoven"
+title: "Symphony No. 2 in D major"
+source:
+  file: "docs/beethoven.md"
+  line: "30"
+catalogue:
+  opus: "Op. 36"

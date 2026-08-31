@@ -1,0 +1,16 @@
+id: "ludwig-van-beethoven-violin-sonata-no-7-in-c-minor-op-30-2-work-antje-weithaas-denes-varjon"
+work_id: "ludwig-van-beethoven-violin-sonata-no-7-in-c-minor-op-30-2-work"
+performers:
+  - name: "Antje Weithaas"
+    role: "performer"
+  - name: "Dénes Várjon"
+    role: "conductor"
+links:
+  tidal:
+    url: "http://www.tidal.com/track/322929058"
+source:
+  file: "docs/beethoven.md"
+  line: "200"
+reviews:
+  gramophone:
+    issue: "2024-01"

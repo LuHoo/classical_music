@@ -1,0 +1,8 @@
+id: sergei-prokofiev-peter-and-the-wolf-group
+composer_id: sergei-prokofiev
+title: Peter and the Wolf
+source:
+  file: docs/prokofiev.md
+  line: '120'
+catalogue:
+  op: Op. 67

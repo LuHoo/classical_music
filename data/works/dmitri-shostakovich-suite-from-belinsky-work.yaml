@@ -1,0 +1,11 @@
+id: dmitri-shostakovich-suite-from-belinsky-work
+work_group_id: dmitri-shostakovich-suite-from-belinsky-group
+composer_id: dmitri-shostakovich
+title: Suite from Belinsky
+source:
+  file: docs/shostakovich.md
+  line: '104'
+catalogue:
+  op: Op. 85a
+date_text: 1960, arranged by Levon Atovmyan
+category: Orchestral

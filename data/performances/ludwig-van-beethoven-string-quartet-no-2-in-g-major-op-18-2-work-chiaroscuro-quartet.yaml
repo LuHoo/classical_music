@@ -1,0 +1,14 @@
+id: "ludwig-van-beethoven-string-quartet-no-2-in-g-major-op-18-2-work-chiaroscuro-quartet"
+work_id: "ludwig-van-beethoven-string-quartet-no-2-in-g-major-op-18-2-work"
+performers:
+  - name: "Chiaroscuro Quartet"
+    role: "ensemble"
+links:
+  tidal:
+    url: "http://www.tidal.com/track/341644414"
+source:
+  file: "docs/beethoven.md"
+  line: "174"
+reviews:
+  gramophone:
+    issue: "2021-12"

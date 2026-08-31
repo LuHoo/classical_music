@@ -1,0 +1,14 @@
+id: 
+  wolfgang-amadeus-mozart-divertimento-no-15-in-b-major-work-berliner-philharmoniker-herbert-von-karajan
+work_id: wolfgang-amadeus-mozart-divertimento-no-15-in-b-major-work
+source:
+  file: docs/mozart.md
+  line: '161'
+links:
+  tidal:
+    url: http://www.tidal.com/track/171967227
+performers:
+- name: Berliner Philharmoniker
+  role: performer
+- name: Herbert von Karajan
+  role: performer

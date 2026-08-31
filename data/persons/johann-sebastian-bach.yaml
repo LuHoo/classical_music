@@ -1,0 +1,7 @@
+id: "johann-sebastian-bach"
+name: "Johann Sebastian Bach"
+sort_name: "Bach, Johann Sebastian"
+roles:
+  - "composer"
+source:
+  file: "docs/bachJS.md"

@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-adagio-for-mandolin-and-piano-in-e-flat-major-woo-43b-work"
+work_group_id: "ludwig-van-beethoven-adagio-for-mandolin-and-piano-in-e-flat-major-woo-43b-group"
+composer_id: "ludwig-van-beethoven"
+title: "Adagio for mandolin and piano in E♭ major"
+source:
+  file: "docs/beethoven.md"
+  line: "140"
+catalogue:
+  woo: "WoO 43b"
+date_text: "1796"
+category: "Chamber"

@@ -1,0 +1,11 @@
+id: "anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-work"
+work_group_id: "anton-bruckner-symphony-no-1-in-c-minor-das-kecke-beserl-group"
+composer_id: "anton-bruckner"
+title: "Symphony No. 1 in C minor \"Das kecke Beserl\""
+source:
+  file: "docs/bruckner.md"
+  line: "24"
+catalogue:
+  wab: "WAB 101"
+date_text: "1865, first concept Adagio & Scherzo"
+category: "Orchestral"

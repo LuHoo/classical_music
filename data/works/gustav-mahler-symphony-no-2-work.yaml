@@ -1,0 +1,10 @@
+id: "gustav-mahler-symphony-no-2-work"
+work_group_id: "gustav-mahler-symphony-no-2-group"
+composer_id: "gustav-mahler"
+title: "Symphony No. 2"
+source:
+  file: "docs/mahler.md"
+  line: "34"
+date_text: "1888–94"
+category: "Wunderhorn period"
+gem: true

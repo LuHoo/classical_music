@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-six-national-airs-with-variations-for-flute-or-violin-and-piano-in-g-m-work"
+work_group_id: "ludwig-van-beethoven-six-national-airs-with-variations-for-flute-or-violin-and-piano-in-g-group"
+composer_id: "ludwig-van-beethoven"
+title: "Six National Airs with Variations for flute (or violin) and piano in G major"
+source:
+  file: "docs/beethoven.md"
+  line: "266"
+catalogue:
+  opus: "Op. 105"
+date_text: "1818–1819"
+category: "Chamber"

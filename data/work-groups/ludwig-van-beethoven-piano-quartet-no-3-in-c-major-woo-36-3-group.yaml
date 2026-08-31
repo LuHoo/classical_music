@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-piano-quartet-no-3-in-c-major-woo-36-3-group"
+composer_id: "ludwig-van-beethoven"
+title: "Piano Quartet No. 3 in C major"
+source:
+  file: "docs/beethoven.md"
+  line: "100"
+catalogue:
+  woo: "WoO 36/3"

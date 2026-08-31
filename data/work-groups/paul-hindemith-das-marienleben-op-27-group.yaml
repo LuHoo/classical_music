@@ -1,0 +1,8 @@
+id: "paul-hindemith-das-marienleben-op-27-group"
+composer_id: "paul-hindemith"
+title: "Das Marienleben"
+source:
+  file: "docs/hindemith.md"
+  line: "162"
+catalogue:
+  opus: "Op. 27"

@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-allegretto-c-minor-hess-69-group"
+composer_id: "ludwig-van-beethoven"
+title: "Allegretto, C minor"
+source:
+  file: "docs/beethoven.md"
+  line: "434"
+catalogue:
+  hess: "Hess 69"

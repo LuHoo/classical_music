@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-piano-sonata-no-26-les-adieux-e-flat-op-81a-work"
+work_group_id: "ludwig-van-beethoven-piano-sonata-no-26-les-adieux-e-flat-op-81a-group"
+composer_id: "ludwig-van-beethoven"
+title: "Piano Sonata No. 26 (\"Les Adieux\"), E♭"
+source:
+  file: "docs/beethoven.md"
+  line: "360"
+catalogue:
+  opus: "Op. 81a"
+date_text: "1809–10"
+category: "Piano"

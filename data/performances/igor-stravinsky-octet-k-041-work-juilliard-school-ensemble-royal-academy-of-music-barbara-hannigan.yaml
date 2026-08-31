@@ -1,0 +1,15 @@
+id: "igor-stravinsky-octet-k-041-work-juilliard-school-ensemble-royal-academy-of-music-barbara-hannigan"
+work_id: "igor-stravinsky-octet-k-041-work"
+performers:
+  - name: "Juilliard School Ensemble"
+    role: "ensemble"
+  - name: "Royal Academy of Music"
+    role: "ensemble"
+  - name: "Barbara Hannigan"
+    role: "conductor"
+links:
+  tidal:
+    url: "https://tidal.com/browse/track/378000325?u"
+source:
+  file: "docs/stravinsky.md"
+  line: "131"

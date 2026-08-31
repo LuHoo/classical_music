@@ -1,0 +1,11 @@
+id: sergei-prokofiev-symphony-no-6-in-e-flat-minor-work
+work_group_id: sergei-prokofiev-symphony-no-6-in-e-flat-minor-group
+composer_id: sergei-prokofiev
+title: Symphony No. 6 in E-flat minor
+source:
+  file: docs/prokofiev.md
+  line: '190'
+catalogue:
+  op: Op. 111
+date_text: 1945–47
+category: Orchestral

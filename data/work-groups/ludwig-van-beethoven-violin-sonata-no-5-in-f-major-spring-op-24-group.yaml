@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-violin-sonata-no-5-in-f-major-spring-op-24-group"
+composer_id: "ludwig-van-beethoven"
+title: "Violin Sonata No. 5 in F major, \"Spring\""
+source:
+  file: "docs/beethoven.md"
+  line: "188"
+catalogue:
+  opus: "Op. 24"

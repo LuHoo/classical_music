@@ -1,0 +1,8 @@
+id: dmitri-shostakovich-suite-from-the-bolt-group
+composer_id: dmitri-shostakovich
+title: Suite from The Bolt
+source:
+  file: docs/shostakovich.md
+  line: '36'
+catalogue:
+  op: Op. 27a

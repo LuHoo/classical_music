@@ -1,0 +1,8 @@
+id: "johann-sebastian-bach-orchestral-suite-no-2-in-b-min-group"
+composer_id: "johann-sebastian-bach"
+title: "Orchestral Suite No. 2 in B min."
+source:
+  file: "docs/bachJS.md"
+  line: "74"
+catalogue:
+  bwv: "BWV 1067"

@@ -1,0 +1,11 @@
+id: "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-3-work"
+work_group_id: "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-group"
+composer_id: "anton-bruckner"
+title: "Symphony No. 4 in E♭ major \"Die Romantische\""
+source:
+  file: "docs/bruckner.md"
+  line: "44"
+catalogue:
+  wab: "WAB 104"
+date_text: "1880 version: new Finale"
+category: "Orchestral"

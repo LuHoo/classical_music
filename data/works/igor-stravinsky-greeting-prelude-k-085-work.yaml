@@ -1,0 +1,11 @@
+id: "igor-stravinsky-greeting-prelude-k-085-work"
+work_group_id: "igor-stravinsky-greeting-prelude-k-085-group"
+composer_id: "igor-stravinsky"
+title: "Greeting Prelude"
+source:
+  file: "docs/stravinsky.md"
+  line: "99"
+catalogue:
+  k: "K 085"
+date_text: "1955"
+category: "Orchestral"

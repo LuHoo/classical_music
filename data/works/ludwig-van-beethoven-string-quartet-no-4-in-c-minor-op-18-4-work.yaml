@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-string-quartet-no-4-in-c-minor-op-18-4-work"
+work_group_id: "ludwig-van-beethoven-string-quartet-no-4-in-c-minor-op-18-4-group"
+composer_id: "ludwig-van-beethoven"
+title: "String Quartet No. 4 in C minor"
+source:
+  file: "docs/beethoven.md"
+  line: "178"
+catalogue:
+  opus: "Op. 18/4"
+date_text: "1799"
+category: "Chamber"

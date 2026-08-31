@@ -1,0 +1,8 @@
+id: "paul-hindemith-three-pieces-op-8-group"
+composer_id: "paul-hindemith"
+title: "Three Pieces"
+source:
+  file: "docs/hindemith.md"
+  line: "284"
+catalogue:
+  opus: "Op. 8"

@@ -1,0 +1,13 @@
+id: "igor-stravinsky-the-rite-of-spring-k-015-work"
+work_group_id: "igor-stravinsky-the-rite-of-spring-k-015-group"
+composer_id: "igor-stravinsky"
+title: "The Rite of Spring"
+source:
+  file: "docs/stravinsky.md"
+  line: "35"
+catalogue:
+  k: "K 015"
+date_text: "1913; rev. 1947, 1967"
+category: "Ballet"
+gem: true
+notes: "Pilot migration: source text suggests a version, arrangement, revision, suite, or completion boundary that should be reviewed."

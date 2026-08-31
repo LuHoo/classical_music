@@ -1,0 +1,11 @@
+id: sergei-prokofiev-suite-from-lieutenant-kije-work
+work_group_id: sergei-prokofiev-suite-from-lieutenant-kije-group
+composer_id: sergei-prokofiev
+title: Suite from Lieutenant Kijé
+source:
+  file: docs/prokofiev.md
+  line: '106'
+catalogue:
+  op: Op. 60
+date_text: '1934'
+category: Orchestral

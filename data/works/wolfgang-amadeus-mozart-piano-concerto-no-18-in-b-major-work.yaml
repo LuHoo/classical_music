@@ -1,0 +1,11 @@
+id: wolfgang-amadeus-mozart-piano-concerto-no-18-in-b-major-work
+work_group_id: wolfgang-amadeus-mozart-piano-concerto-no-18-in-b-major-group
+composer_id: wolfgang-amadeus-mozart
+title: Piano Concerto No. 18 in B♭ major
+source:
+  file: docs/mozart.md
+  line: '97'
+catalogue:
+  k: K. 456
+date_text: https://tidal.com/browse/track/245362672?u
+category: Piano concertos

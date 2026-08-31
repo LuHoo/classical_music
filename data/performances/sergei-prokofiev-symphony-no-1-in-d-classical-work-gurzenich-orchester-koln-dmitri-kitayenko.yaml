@@ -1,0 +1,14 @@
+id: 
+  sergei-prokofiev-symphony-no-1-in-d-classical-work-gurzenich-orchester-koln-dmitri-kitayenko
+work_id: sergei-prokofiev-symphony-no-1-in-d-classical-work
+source:
+  file: docs/prokofiev.md
+  line: '41'
+links:
+  tidal:
+    url: https://tidal.com/album/285264999
+performers:
+- name: Gürzenich-Orchester Köln
+  role: performer
+- name: Dmitri Kitayenko
+  role: performer

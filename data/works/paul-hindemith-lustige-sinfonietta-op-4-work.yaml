@@ -1,0 +1,11 @@
+id: "paul-hindemith-lustige-sinfonietta-op-4-work"
+work_group_id: "paul-hindemith-lustige-sinfonietta-op-4-group"
+composer_id: "paul-hindemith"
+title: "Lustige Sinfonietta"
+source:
+  file: "docs/hindemith.md"
+  line: "58"
+catalogue:
+  opus: "Op. 4"
+date_text: "1916"
+category: "Orchestral"

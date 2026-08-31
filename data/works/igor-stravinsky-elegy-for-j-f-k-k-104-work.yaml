@@ -1,0 +1,11 @@
+id: "igor-stravinsky-elegy-for-j-f-k-k-104-work"
+work_group_id: "igor-stravinsky-elegy-for-j-f-k-k-104-group"
+composer_id: "igor-stravinsky"
+title: "Elegy for J.F.K."
+source:
+  file: "docs/stravinsky.md"
+  line: "208"
+catalogue:
+  k: "K 104"
+date_text: "1964"
+category: "Vocal"

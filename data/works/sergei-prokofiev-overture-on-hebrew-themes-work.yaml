@@ -1,0 +1,11 @@
+id: sergei-prokofiev-overture-on-hebrew-themes-work
+work_group_id: sergei-prokofiev-overture-on-hebrew-themes-group
+composer_id: sergei-prokofiev
+title: Overture on Hebrew Themes
+source:
+  file: docs/prokofiev.md
+  line: '55'
+catalogue:
+  op: Op. 34bis
+date_text: '1934'
+category: Orchestral

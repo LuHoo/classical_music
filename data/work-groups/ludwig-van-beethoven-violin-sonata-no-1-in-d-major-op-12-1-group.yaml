@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-violin-sonata-no-1-in-d-major-op-12-1-group"
+composer_id: "ludwig-van-beethoven"
+title: "Violin Sonata No. 1 in D major"
+source:
+  file: "docs/beethoven.md"
+  line: "158"
+catalogue:
+  opus: "Op. 12/1"

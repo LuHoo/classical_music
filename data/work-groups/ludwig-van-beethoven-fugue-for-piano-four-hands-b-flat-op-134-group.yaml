@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-fugue-for-piano-four-hands-b-flat-op-134-group"
+composer_id: "ludwig-van-beethoven"
+title: "Fugue for Piano, four hands, B♭"
+source:
+  file: "docs/beethoven.md"
+  line: "500"
+catalogue:
+  opus: "Op. 134"

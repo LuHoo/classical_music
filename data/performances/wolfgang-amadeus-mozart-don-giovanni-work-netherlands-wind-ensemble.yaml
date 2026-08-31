@@ -1,0 +1,15 @@
+id: wolfgang-amadeus-mozart-don-giovanni-work-netherlands-wind-ensemble
+work_id: wolfgang-amadeus-mozart-don-giovanni-work
+profile: wind arrangement
+performers:
+- artist_id: netherlands-wind-ensemble
+  name: Netherlands Wind Ensemble
+  role: ensemble
+source_performer_text: Netherlands Wind Ensemble
+links:
+  tidal:
+    url: http://www.tidal.com/track/227732930
+source:
+  file: docs/mozart.md
+  line: '48'
+notes: Practical wind arrangement treated as Performance profile evidence for the existing opera Work.

@@ -1,0 +1,14 @@
+id: 
+  wolfgang-amadeus-mozart-zaide-work-overture-manchester-camerata-gabor-takacs-nagy
+work_id: wolfgang-amadeus-mozart-zaide-work
+source:
+  file: docs/mozart.md
+  line: '42'
+links:
+  tidal:
+    url: http://www.tidal.com/track/376332026
+performers:
+- name: 'Overture: Manchester Camerata'
+  role: performer
+- name: Gábor Takács-Nagy
+  role: performer

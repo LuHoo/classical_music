@@ -1,0 +1,11 @@
+id: wolfgang-amadeus-mozart-piano-concerto-no-6-in-b-major-work
+work_group_id: wolfgang-amadeus-mozart-piano-concerto-no-6-in-b-major-group
+composer_id: wolfgang-amadeus-mozart
+title: Piano Concerto No. 6 in B♭ major
+source:
+  file: docs/mozart.md
+  line: '84'
+catalogue:
+  k: K. 238
+date_text: http://www.tidal.com/track/376332016
+category: Piano concertos

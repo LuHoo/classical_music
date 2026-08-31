@@ -1,0 +1,226 @@
+{
+  "canonical_data_changed": false,
+  "composer_id": "sergei-prokofiev",
+  "counts": {
+    "action_required": 0,
+    "automatically_resolved_or_safely_classified": 7,
+    "background_suspicion": 0,
+    "unchanged_authority_gap": 26
+  },
+  "coverage_check": {
+    "classified_record_count": 33,
+    "complete": true,
+    "input_record_count": 33
+  },
+  "curator_decisions": [],
+  "decisions": [
+    {
+      "decision": "retain_as_distinct_local_work",
+      "local_id": "sergei-prokofiev-alexander-nevsky-work",
+      "reason": "Source identifies the 1939 cantata separately from the 1938 film score.",
+      "status": "automatically_resolved"
+    },
+    {
+      "decision": "retain_as_distinct_local_work",
+      "local_id": "sergei-prokofiev-alexander-nevsky-2-work",
+      "reason": "Source identifies the 1938 film score separately from the 1939 cantata.",
+      "status": "automatically_resolved"
+    },
+    {
+      "decision": "retain_as_distinct_local_work",
+      "local_id": "sergei-prokofiev-lieutenant-kije-work",
+      "reason": "Source identifies the film score and separately names its orchestral suite.",
+      "status": "automatically_resolved"
+    },
+    {
+      "decision": "retain_as_distinct_local_work",
+      "local_id": "sergei-prokofiev-symphony-no-2-in-d-minor-revised-version-work",
+      "reason": "Architecture requires composer revisions to remain separate Works; missing Op. 136 authority coverage does not justify inheriting Op. 40.",
+      "status": "automatically_resolved"
+    },
+    {
+      "decision": "retain_as_suite_work",
+      "local_id": "sergei-prokofiev-war-and-peace-suite-work",
+      "reason": "The local title explicitly identifies a suite; authority absence does not justify assigning the opera Work.",
+      "status": "automatically_resolved"
+    },
+    {
+      "candidate_musicbrainz_work_id": "c870f7b4-b2ff-4173-b47b-1d356fa3ae60",
+      "decision": "safe_candidate_not_written",
+      "local_id": "sergei-prokofiev-on-the-dnieper-work",
+      "reason": "The Op. 51 title and catalogue match; nearby sections and Op. 51bis are excluded from canonical writing.",
+      "status": "automatically_resolved"
+    },
+    {
+      "candidate_musicbrainz_work_id": "812b5cc4-a7a0-3809-aa6c-290c9ebd79be",
+      "decision": "safe_candidate_not_written",
+      "local_id": "sergei-prokofiev-peter-and-the-wolf-work",
+      "reason": "The Op. 67 title and catalogue match; narrative sections are not the parent Work.",
+      "status": "automatically_resolved"
+    },
+    {
+      "decision": "leave_unchanged",
+      "local_id": "sergei-prokofiev-ala-i-lolli-work",
+      "reason": "Existing canonical Work is trusted; missing MusicBrainz coverage is not identity evidence.",
+      "status": "unchanged_authority_gap"
+    },
+    {
+      "decision": "leave_unchanged",
+      "local_id": "sergei-prokofiev-american-overture-2-work",
+      "reason": "Existing canonical Work is trusted; missing MusicBrainz coverage is not identity evidence.",
+      "status": "unchanged_authority_gap"
+    },
+    {
+      "decision": "leave_unchanged",
+      "local_id": "sergei-prokofiev-american-overture-work",
+      "reason": "Existing canonical Work is trusted; missing MusicBrainz coverage is not identity evidence.",
+      "status": "unchanged_authority_gap"
+    },
+    {
+      "decision": "leave_unchanged",
+      "local_id": "sergei-prokofiev-andante-from-piano-sonata-no-4-arranged-for-orchestra-work",
+      "reason": "Existing canonical Work is trusted; missing MusicBrainz coverage is not identity evidence.",
+      "status": "unchanged_authority_gap"
+    },
+    {
+      "decision": "leave_unchanged",
+      "local_id": "sergei-prokofiev-andante-from-string-quartet-no-1-arranged-for-string-orchestra-work",
+      "reason": "Existing canonical Work is trusted; missing MusicBrainz coverage is not identity evidence.",
+      "status": "unchanged_authority_gap"
+    },
+    {
+      "decision": "leave_unchanged",
+      "local_id": "sergei-prokofiev-cantata-for-the-20th-anniversary-of-the-october-revolution-work",
+      "reason": "Existing canonical Work is trusted; missing MusicBrainz coverage is not identity evidence.",
+      "status": "unchanged_authority_gap"
+    },
+    {
+      "decision": "leave_unchanged",
+      "local_id": "sergei-prokofiev-kotovsky-work",
+      "reason": "Existing canonical Work is trusted; missing MusicBrainz coverage is not identity evidence.",
+      "status": "unchanged_authority_gap"
+    },
+    {
+      "decision": "leave_unchanged",
+      "local_id": "sergei-prokofiev-le-pas-d-acier-the-steel-step-work",
+      "reason": "Existing canonical Work is trusted; missing MusicBrainz coverage is not identity evidence.",
+      "status": "unchanged_authority_gap"
+    },
+    {
+      "decision": "leave_unchanged",
+      "local_id": "sergei-prokofiev-lermontov-work",
+      "reason": "Existing canonical Work is trusted; missing MusicBrainz coverage is not identity evidence.",
+      "status": "unchanged_authority_gap"
+    },
+    {
+      "decision": "leave_unchanged",
+      "local_id": "sergei-prokofiev-piano-concerto-no-6-work",
+      "reason": "Existing canonical Work is trusted; missing MusicBrainz coverage is not identity evidence.",
+      "status": "unchanged_authority_gap"
+    },
+    {
+      "decision": "leave_unchanged",
+      "local_id": "sergei-prokofiev-scythian-suite-work",
+      "reason": "Existing canonical Work is trusted; missing MusicBrainz coverage is not identity evidence.",
+      "status": "unchanged_authority_gap"
+    },
+    {
+      "decision": "leave_unchanged",
+      "local_id": "sergei-prokofiev-suite-2-from-romeo-and-juliet-work",
+      "reason": "Existing canonical Work is trusted; missing MusicBrainz coverage is not identity evidence.",
+      "status": "unchanged_authority_gap"
+    },
+    {
+      "decision": "leave_unchanged",
+      "local_id": "sergei-prokofiev-suite-3-from-romeo-and-juliet-work",
+      "reason": "Existing canonical Work is trusted; missing MusicBrainz coverage is not identity evidence.",
+      "status": "unchanged_authority_gap"
+    },
+    {
+      "decision": "leave_unchanged",
+      "local_id": "sergei-prokofiev-suite-from-chout-work",
+      "reason": "Existing canonical Work is trusted; missing MusicBrainz coverage is not identity evidence.",
+      "status": "unchanged_authority_gap"
+    },
+    {
+      "decision": "leave_unchanged",
+      "local_id": "sergei-prokofiev-suite-from-egyptian-nights-work",
+      "reason": "Existing canonical Work is trusted; missing MusicBrainz coverage is not identity evidence.",
+      "status": "unchanged_authority_gap"
+    },
+    {
+      "decision": "leave_unchanged",
+      "local_id": "sergei-prokofiev-suite-from-on-the-dnieper-work",
+      "reason": "Existing canonical Work is trusted; missing MusicBrainz coverage is not identity evidence.",
+      "status": "unchanged_authority_gap"
+    },
+    {
+      "decision": "leave_unchanged",
+      "local_id": "sergei-prokofiev-suite-from-semyon-kotko-work",
+      "reason": "Existing canonical Work is trusted; missing MusicBrainz coverage is not identity evidence.",
+      "status": "unchanged_authority_gap"
+    },
+    {
+      "decision": "leave_unchanged",
+      "local_id": "sergei-prokofiev-suite-from-the-gambler-four-portraits-and-denouement-work",
+      "reason": "Existing canonical Work is trusted; missing MusicBrainz coverage is not identity evidence.",
+      "status": "unchanged_authority_gap"
+    },
+    {
+      "decision": "leave_unchanged",
+      "local_id": "sergei-prokofiev-suite-from-the-love-for-three-oranges-work",
+      "reason": "Existing canonical Work is trusted; missing MusicBrainz coverage is not identity evidence.",
+      "status": "unchanged_authority_gap"
+    },
+    {
+      "decision": "leave_unchanged",
+      "local_id": "sergei-prokofiev-symphonic-march-work",
+      "reason": "Existing canonical Work is trusted; missing MusicBrainz coverage is not identity evidence.",
+      "status": "unchanged_authority_gap"
+    },
+    {
+      "decision": "leave_unchanged",
+      "local_id": "sergei-prokofiev-the-partisans-in-the-ukrainian-steppes-work",
+      "reason": "Existing canonical Work is trusted; missing MusicBrainz coverage is not identity evidence.",
+      "status": "unchanged_authority_gap"
+    },
+    {
+      "decision": "leave_unchanged",
+      "local_id": "sergei-prokofiev-thirty-years-work",
+      "reason": "Existing canonical Work is trusted; missing MusicBrainz coverage is not identity evidence.",
+      "status": "unchanged_authority_gap"
+    },
+    {
+      "decision": "leave_unchanged",
+      "local_id": "sergei-prokofiev-tonya-work",
+      "reason": "Existing canonical Work is trusted; missing MusicBrainz coverage is not identity evidence.",
+      "status": "unchanged_authority_gap"
+    },
+    {
+      "decision": "leave_unchanged",
+      "local_id": "sergei-prokofiev-two-poems-for-female-chorus-and-orchestra-work",
+      "reason": "Existing canonical Work is trusted; missing MusicBrainz coverage is not identity evidence.",
+      "status": "unchanged_authority_gap"
+    },
+    {
+      "decision": "leave_unchanged",
+      "local_id": "sergei-prokofiev-urals-rhapsody-from-the-tale-of-the-stone-flower-work",
+      "reason": "Existing canonical Work is trusted; missing MusicBrainz coverage is not identity evidence.",
+      "status": "unchanged_authority_gap"
+    },
+    {
+      "decision": "leave_unchanged",
+      "local_id": "sergei-prokofiev-vocal-suite-from-the-fiery-angel-work",
+      "reason": "Existing canonical Work is trusted; missing MusicBrainz coverage is not identity evidence.",
+      "status": "unchanged_authority_gap"
+    }
+  ],
+  "input_unresolved_count": 33,
+  "issue": 159,
+  "policy": {
+    "authority_is_supporting_evidence": true,
+    "curator_review_is_last_resort": true,
+    "mbid_coverage_is_not_a_success_metric": true,
+    "trusted_legacy_input": true
+  }
+}

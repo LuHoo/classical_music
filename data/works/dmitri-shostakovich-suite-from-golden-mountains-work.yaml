@@ -1,0 +1,11 @@
+id: dmitri-shostakovich-suite-from-golden-mountains-work
+work_group_id: dmitri-shostakovich-suite-from-golden-mountains-group
+composer_id: dmitri-shostakovich
+title: Suite from Golden Mountains
+source:
+  file: docs/shostakovich.md
+  line: '42'
+catalogue:
+  op: Op. 30a
+date_text: '1931'
+category: Orchestral

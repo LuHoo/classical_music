@@ -1,0 +1,11 @@
+id: dmitri-shostakovich-five-fragments-work
+work_group_id: dmitri-shostakovich-five-fragments-group
+composer_id: dmitri-shostakovich
+title: Five Fragments
+source:
+  file: docs/shostakovich.md
+  line: '64'
+catalogue:
+  op: Op. 42
+date_text: '1935'
+category: Orchestral

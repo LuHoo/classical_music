@@ -1,0 +1,11 @@
+id: wolfgang-amadeus-mozart-il-re-pastore-work
+work_group_id: wolfgang-amadeus-mozart-il-re-pastore-group
+composer_id: wolfgang-amadeus-mozart
+title: Il re pastore
+source:
+  file: docs/mozart.md
+  line: '40'
+catalogue:
+  k: K. 208
+date_text: '1775'
+category: Operas

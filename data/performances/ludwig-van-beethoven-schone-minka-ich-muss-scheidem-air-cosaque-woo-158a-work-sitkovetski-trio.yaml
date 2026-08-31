@@ -1,0 +1,14 @@
+id: "ludwig-van-beethoven-schone-minka-ich-muss-scheidem-air-cosaque-woo-158a-work-sitkovetski-trio"
+work_id: "ludwig-van-beethoven-schone-minka-ich-muss-scheidem-air-cosaque-woo-158a-work"
+performers:
+  - name: "Sitkovetski Trio"
+    role: "ensemble"
+links:
+  tidal:
+    url: "http://www.tidal.com/track/376682553"
+source:
+  file: "docs/beethoven.md"
+  line: "294"
+reviews:
+  gramophone:
+    issue: "2024-09"

@@ -1,0 +1,8 @@
+id: wolfgang-amadeus-mozart-il-re-pastore-group
+composer_id: wolfgang-amadeus-mozart
+title: Il re pastore
+source:
+  file: docs/mozart.md
+  line: '40'
+catalogue:
+  k: K. 208

@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-the-ruins-of-athens-die-ruinen-von-athen-in-g-major-op-113-work"
+work_group_id: "ludwig-van-beethoven-the-ruins-of-athens-die-ruinen-von-athen-in-g-major-op-113-group"
+composer_id: "ludwig-van-beethoven"
+title: "\"The Ruins of Athens\" (Die Ruinen von Athen) in G major"
+source:
+  file: "docs/beethoven.md"
+  line: "76"
+catalogue:
+  opus: "Op. 113"
+date_text: "1811–1812"
+category: "Orchestral"

@@ -1,0 +1,13 @@
+id: "igor-stravinsky-greeting-prelude-k-085-work-bbc-po-andrew-davis"
+work_id: "igor-stravinsky-greeting-prelude-k-085-work"
+performers:
+  - name: "BBC PO"
+    role: "orchestra"
+  - name: "Andrew Davis"
+    role: "conductor"
+links:
+  tidal:
+    url: "http://www.tidal.com/track/376259018"
+source:
+  file: "docs/stravinsky.md"
+  line: "99"

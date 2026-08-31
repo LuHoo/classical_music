@@ -1,0 +1,13 @@
+id: "paul-hindemith-nobilissima-visione-work-2-wdr-so-marek-janowski"
+work_id: "paul-hindemith-nobilissima-visione-work-2"
+performers:
+  - name: "WDR SO"
+    role: "orchestra"
+  - name: "Marek Janowski"
+    role: "conductor"
+links:
+  tidal:
+    url: "http://www.tidal.com/track/83931281"
+source:
+  file: "docs/hindemith.md"
+  line: "76"

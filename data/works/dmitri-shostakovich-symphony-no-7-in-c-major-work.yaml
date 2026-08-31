@@ -1,0 +1,11 @@
+id: dmitri-shostakovich-symphony-no-7-in-c-major-work
+work_group_id: dmitri-shostakovich-symphony-no-7-in-c-major-group
+composer_id: dmitri-shostakovich
+title: Symphony No. 7 in C major
+source:
+  file: docs/shostakovich.md
+  line: '80'
+catalogue:
+  op: Op. 60
+date_text: '1941'
+category: Orchestral

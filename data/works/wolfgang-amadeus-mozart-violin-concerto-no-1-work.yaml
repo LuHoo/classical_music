@@ -1,0 +1,11 @@
+id: wolfgang-amadeus-mozart-violin-concerto-no-1-work
+work_group_id: wolfgang-amadeus-mozart-violin-concerto-no-1-group
+composer_id: wolfgang-amadeus-mozart
+title: Violin Concerto No. 1
+source:
+  file: docs/mozart.md
+  line: '116'
+catalogue:
+  k: K. 207
+date_text: http://www.tidal.com/track/3042937
+category: Violin concertos

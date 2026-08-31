@@ -1,0 +1,16 @@
+id: wolfgang-amadeus-mozart-requiem-mass-in-d-minor-work
+work_group_id: wolfgang-amadeus-mozart-requiem-mass-in-d-minor-group
+composer_id: wolfgang-amadeus-mozart
+title: Requiem Mass in D minor
+source:
+  file: docs/mozart.md
+  line: '19'
+catalogue:
+  k: K. 626
+date_text: 1791; unfinished, completed by Franz Xaver Süssmayr
+category: Masses
+external_ids:
+  musicbrainz: e3442502-1d20-44ec-9c39-2655956840e2
+notes: MusicBrainz identifies Requiem K. 626 and related arrangement/completion-style
+  records. Keep as review candidate until the recommended recording/completion is
+  explicitly assigned.

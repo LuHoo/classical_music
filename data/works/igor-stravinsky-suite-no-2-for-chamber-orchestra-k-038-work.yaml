@@ -1,0 +1,12 @@
+id: "igor-stravinsky-suite-no-2-for-chamber-orchestra-k-038-work"
+work_group_id: "igor-stravinsky-suite-no-2-for-chamber-orchestra-k-038-group"
+composer_id: "igor-stravinsky"
+title: "Suite No. 2 for chamber orchestra"
+source:
+  file: "docs/stravinsky.md"
+  line: "75"
+catalogue:
+  k: "K 038"
+date_text: "1921, arrangement of Trois pièces faciles and Cinq pièces faciles No. 5"
+category: "Orchestral"
+notes: "Pilot migration: source text suggests a version, arrangement, revision, suite, or completion boundary that should be reviewed."

@@ -1,0 +1,11 @@
+id: dmitri-shostakovich-violin-concerto-no-1-in-a-minor-work
+work_group_id: dmitri-shostakovich-violin-concerto-no-1-in-a-minor-group
+composer_id: dmitri-shostakovich
+title: Violin Concerto No. 1 in A minor
+source:
+  file: docs/shostakovich.md
+  line: '96'
+catalogue:
+  op: Op. 77
+date_text: 1947–1948
+category: Orchestral

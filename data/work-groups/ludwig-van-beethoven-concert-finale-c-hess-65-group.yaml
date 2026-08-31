@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-concert-finale-c-hess-65-group"
+composer_id: "ludwig-van-beethoven"
+title: "\"Concert Finale\", C"
+source:
+  file: "docs/beethoven.md"
+  line: "460"
+catalogue:
+  hess: "Hess 65"

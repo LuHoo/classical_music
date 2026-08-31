@@ -1,0 +1,14 @@
+id: 
+  wolfgang-amadeus-mozart-symphony-no-41-in-c-major-jupiter-work-scottish-chamber-orchestra-sir-charles-mackerras
+work_id: wolfgang-amadeus-mozart-symphony-no-41-in-c-major-jupiter-work
+source:
+  file: docs/mozart.md
+  line: '77'
+links:
+  tidal:
+    url: http://www.tidal.com/track/156570996
+performers:
+- name: Scottish Chamber Orchestra
+  role: performer
+- name: Sir Charles Mackerras
+  role: performer

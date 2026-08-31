@@ -1,0 +1,8 @@
+id: "johann-sebastian-bach-brandenburg-concerto-no-6-in-bb-maj-group"
+composer_id: "johann-sebastian-bach"
+title: "Brandenburg Concerto No. 6 in B♭ maj."
+source:
+  file: "docs/bachJS.md"
+  line: "36"
+catalogue:
+  bwv: "BWV 1051"

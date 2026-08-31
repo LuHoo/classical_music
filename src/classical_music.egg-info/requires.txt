@@ -1,0 +1,9 @@
+pydantic<3,>=2.8
+rich<14,>=13.7
+ruamel.yaml<1,>=0.18
+typer<1,>=0.16
+
+[dev]
+pytest<9,>=8.3
+pytest-cov<6,>=5
+mypy<2,>=1.11
