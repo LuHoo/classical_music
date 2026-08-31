@@ -27,6 +27,7 @@ jobs:
       - run: gem install bundler
       - run: bundle install
       - run: bundle exec jekyll build
+      - run: test -f _site/publication/index.html
       - uses: peaceiris/actions-gh-pages@v4
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         with:

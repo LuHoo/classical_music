@@ -11,6 +11,7 @@ def test_pages_workflow_builds_on_pull_request_without_deploying_from_pr():
     assert "python -m classical_music.cli_validator" in workflow
     assert "python scripts/generate_publication_site.py" in workflow
     assert "bundle exec jekyll build" in workflow
+    assert "test -f _site/publication/index.html" in workflow
     assert "if: github.event_name == 'push' && github.ref == 'refs/heads/main'" in workflow
 
 
