@@ -11,3 +11,15 @@ We’d love to hear from you if you find this collection useful or want to share
 ## Internal recording data model
 
 The repository now includes an internal proposal for recording metadata in [data/recordings/README.md](data/recordings/README.md), with example YAML files under [data/recordings](data/recordings).
+
+## Publication site generation
+
+The public collection pages are generated from canonical `data/` through the
+publication adapter and validator. The generated Jekyll source is written to
+`publication/` during build and is intentionally not committed.
+
+```bash
+python -m classical_music.cli_validator
+python scripts/generate_publication_site.py
+bundle exec jekyll build
+```
