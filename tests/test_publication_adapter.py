@@ -236,17 +236,18 @@ class TestPublicationDataAdapter:
             assert len(data["performances"]) > 0
     
     def test_reference_validation(self, adapter):
-        """Test that reference validation catches broken links."""
+        """Test that reference validation completes successfully."""
         adapter.load_canonical_data()
         adapter.adapt_to_publication_model()
         
         # Validate references
         adapter.validate_references()
         
-        # Should have some validation info
-        # Note: we expect some errors (orphaned Berlioz performances)
-        # but the validation should complete
+        # All references should be valid - no orphaned performances
         assert isinstance(adapter.errors, list)
+        # After recursive YAML loading, no canonical references should be orphaned
+        assert len(adapter.errors) == 0, \
+            f"Unexpected reference errors: {adapter.errors}"
     
     def test_gem_field_preserved(self, adapter):
         """Test that gem field is preserved in publication model."""
