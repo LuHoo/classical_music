@@ -1,0 +1,6 @@
+---
+layout: work
+title: Sonatas and partitas for solo violin No. 6: Partita No. 3 in E maj.
+permalink: /works/johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-6-partita-no-3-in-e-maj-work/
+work_id: johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-6-partita-no-3-in-e-maj-work
+---

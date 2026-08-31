@@ -1,0 +1,88 @@
+---
+layout: default
+---
+
+{% assign work_id = page.work_id %}
+{% assign work = site.data.collection.works[work_id] %}
+{% assign work_group = site.data.collection.work_groups[work.work_group_id] %}
+{% assign composer = site.data.collection.composers[work.composer_id] %}
+
+<div class="work-detail">
+  <nav class="breadcrumb">
+    <a href="/">Home</a>
+    <span class="separator">›</span>
+    <a href="/composers/{{ work.composer_id }}">{{ composer.name }}</a>
+    {% if work_group %}
+      <span class="separator">›</span>
+      <a href="/composers/{{ work.composer_id }}#group-{{ work_group.id }}">{{ work_group.title }}</a>
+    {% endif %}
+    <span class="separator">›</span>
+    <span>{{ work.title }}</span>
+  </nav>
+  
+  <div class="work-header">
+    {% if work.gem %}
+      <span class="gem-badge large" title="Gem: A particularly excellent work">💎</span>
+    {% endif %}
+    <h1>{{ work.title }}</h1>
+    <div class="work-metadata">
+      <p class="composer"><a href="/composers/{{ work.composer_id }}">{{ composer.name }}</a></p>
+      {% if work_group %}
+        <p class="work-group"><a href="/composers/{{ work.composer_id }}#group-{{ work_group.id }}">{{ work_group.title }}</a></p>
+      {% endif %}
+    </div>
+  </div>
+  
+  {% if work.performances %}
+    <section class="recommended-recordings">
+      <h2>Recommended Recordings</h2>
+      
+      <div class="performances-list">
+        {% assign grouped_performances = "" | split: "" %}
+        
+        {% for performance in work.performances %}
+          <div class="performance-item">
+            <div class="performance-header">
+              {% if performance.performers %}
+                <div class="performers">
+                  <strong>{{ performance.performers | join: ", " }}</strong>
+                </div>
+              {% endif %}
+            </div>
+            
+            <div class="performance-details">
+              {% if performance.profile %}
+                <div class="performance-profile">
+                  <span class="profile-label">Profile:</span>
+                  <span class="profile-value">{{ performance.profile }}</span>
+                </div>
+              {% endif %}
+              
+              <div class="performance-links">
+                {% if performance.tidal_url %}
+                  <a href="{{ performance.tidal_url }}" class="link-tidal" target="_blank">
+                    Listen on Tidal
+                  </a>
+                {% endif %}
+                
+                {% if performance.gramophone_ref %}
+                  <span class="gramophone-ref">
+                    <em>Gramophone</em> review available
+                  </span>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </section>
+  {% else %}
+    <section class="no-performances">
+      <p><em>No recommended performances documented yet. Check back soon!</em></p>
+    </section>
+  {% endif %}
+  
+  <div class="work-actions">
+    <a href="/composers/{{ work.composer_id }}" class="btn">← Back to {{ composer.name }}</a>
+  </div>
+</div>

@@ -252,6 +252,10 @@ class SiteGenerator:
         except ValueError:
             print(f"\n✅ Site data written to {output_file}")
         
+        # Generate individual page files
+        self.generate_composer_pages()
+        self.generate_work_pages()
+        
         if self.warnings:
             print(f"\n⚠️  Warnings ({len(self.warnings)}):")
             for w in self.warnings:
@@ -277,6 +281,57 @@ class SiteGenerator:
             print(f"\n⚠️  WARNINGS ({len(self.warnings)}):")
             for w in self.warnings:
                 print(f"  - {w}")
+    
+    def generate_composer_pages(self):
+        """Generate individual composer pages."""
+        print("\nGenerating composer pages...")
+        composers_dir = self.repo_root / "_pages" / "composers"
+        composers_dir.mkdir(parents=True, exist_ok=True)
+        
+        count = 0
+        for composer_id, composer in self.persons.items():
+            page_content = f"""---
+layout: composer
+title: {composer.get('name', 'Unknown')}
+permalink: /composers/{composer_id}/
+composer_id: {composer_id}
+---
+"""
+            
+            page_file = composers_dir / f"{composer_id}.md"
+            with open(page_file, "w") as f:
+                f.write(page_content)
+            
+            count += 1
+        
+        print(f"  Created {count} composer pages")
+        return count
+    
+    def generate_work_pages(self):
+        """Generate individual work pages."""
+        print("Generating work pages...")
+        works_dir = self.repo_root / "_pages" / "works"
+        works_dir.mkdir(parents=True, exist_ok=True)
+        
+        count = 0
+        for work_id, work in self.works.items():
+            work_title = work.get("title", "Unknown")
+            page_content = f"""---
+layout: work
+title: {work_title}
+permalink: /works/{work_id}/
+work_id: {work_id}
+---
+"""
+            
+            page_file = works_dir / f"{work_id}.md"
+            with open(page_file, "w") as f:
+                f.write(page_content)
+            
+            count += 1
+        
+        print(f"  Created {count} work pages")
+        return count
 
 
 def main():

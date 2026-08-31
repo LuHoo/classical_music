@@ -1,0 +1,54 @@
+---
+layout: default
+---
+
+<div class="site-hero">
+  <h1>Classical Music Collection</h1>
+  <p class="lead">A curated guide to masterworks from the classical era to the 20th century</p>
+</div>
+
+<div class="collection-stats">
+  <div class="stat">
+    <div class="stat-number">{{ site.data.collection.composers | size }}</div>
+    <div class="stat-label">Composers</div>
+  </div>
+  <div class="stat">
+    <div class="stat-number">{{ site.data.collection.works | size }}</div>
+    <div class="stat-label">Works</div>
+  </div>
+  <div class="stat">
+    <div class="stat-number">{{ site.data.collection.performances | size }}</div>
+    <div class="stat-label">Recommended Performances</div>
+  </div>
+</div>
+
+<section class="featured-composers">
+  <h2>Browse by Composer</h2>
+  
+  <div class="composer-grid">
+    {% assign composers = site.data.collection.composers | sort: "name" %}
+    {% for composer_id in composers %}
+      {% assign composer = site.data.collection.composers[composer_id] %}
+      <div class="composer-card">
+        <h3>
+          <a href="/composers/{{ composer_id }}">{{ composer.name }}</a>
+        </h3>
+        <div class="composer-stats">
+          <p>{{ composer.work_groups | size }} work groups</p>
+          <p>{{ composer.works | size }} works</p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="about">
+  <h2>About This Collection</h2>
+  <p>
+    This site presents a curated collection of classical music works and performance recommendations.
+    Each composer's works are organized by work group, and we provide recommendations for outstanding recordings.
+  </p>
+  <p>
+    Browse composers to explore their works, or use the search to find specific pieces.
+  </p>
+</section>

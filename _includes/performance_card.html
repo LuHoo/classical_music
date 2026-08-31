@@ -1,0 +1,34 @@
+<div class="performance-card">
+  <div class="performance-performers">
+    {% if include.performance.performers %}
+      <strong>{{ include.performance.performers | join: ", " }}</strong>
+    {% else %}
+      <em>Performers information not available</em>
+    {% endif %}
+  </div>
+  
+  <div class="performance-info">
+    {% if include.performance.profile %}
+      <span class="performance-profile">
+        <small>{{ include.performance.profile }}</small>
+      </span>
+    {% endif %}
+  </div>
+  
+  <div class="performance-actions">
+    {% if include.performance.tidal_url %}
+      <a href="{{ include.performance.tidal_url }}" 
+         class="btn btn-listen" 
+         target="_blank" 
+         rel="noopener noreferrer">
+        🎵 Listen on Tidal
+      </a>
+    {% endif %}
+    
+    {% if include.performance.gramophone_ref %}
+      <span class="gramophone-note">
+        <em>Featured in Gramophone</em>
+      </span>
+    {% endif %}
+  </div>
+</div>

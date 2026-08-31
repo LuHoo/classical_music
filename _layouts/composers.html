@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+<div class="composers-container">
+  <h1>Composers</h1>
+  
+  <div class="composers-index">
+    {% assign sorted_composers = site.data.collection.composers | sort: "name" %}
+    {% assign current_letter = "" %}
+    
+    {% for composer_id in sorted_composers %}
+      {% assign composer = site.data.collection.composers[composer_id] %}
+      {% capture first_letter %}{{ composer.name | slice: 0 }}{% endcapture %}
+      
+      {% if first_letter != current_letter %}
+        {% if current_letter != "" %}
+          </ul>
+        {% endif %}
+        <h2 id="letter-{{ first_letter }}">{{ first_letter }}</h2>
+        <ul class="composer-list">
+        {% assign current_letter = first_letter %}
+      {% endif %}
+      
+      <li>
+        <a href="/composers/{{ composer_id }}">
+          <span class="composer-name">{{ composer.name }}</span>
+          <span class="work-count">{{ composer.works | size }} works</span>
+        </a>
+      </li>
+    {% endfor %}
+    
+    {% if current_letter != "" %}
+      </ul>
+    {% endif %}
+  </div>
+</div>

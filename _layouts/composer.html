@@ -1,0 +1,96 @@
+---
+layout: default
+---
+
+{% assign composer_id = page.composer_id %}
+{% assign composer = site.data.collection.composers[composer_id] %}
+
+<div class="composer-detail">
+  <nav class="breadcrumb">
+    <a href="/">Home</a>
+    <span class="separator">›</span>
+    <a href="/composers">Composers</a>
+    <span class="separator">›</span>
+    <span>{{ composer.name }}</span>
+  </nav>
+  
+  <h1>{{ composer.name }}</h1>
+  
+  <div class="composer-overview">
+    <div class="overview-stat">
+      <div class="stat-value">{{ composer.work_groups | size }}</div>
+      <div class="stat-label">Work Groups</div>
+    </div>
+    <div class="overview-stat">
+      <div class="stat-value">{{ composer.works | size }}</div>
+      <div class="stat-label">Works</div>
+    </div>
+    <div class="overview-stat">
+      <div class="stat-value">
+        {% assign perf_count = 0 %}
+        {% for work_id in composer.works %}
+          {% assign work = site.data.collection.works[work_id.id] %}
+          {% if work.performances %}
+            {% assign perf_count = perf_count | plus: work.performances | size %}
+          {% endif %}
+        {% endfor %}
+        {{ perf_count }}
+      </div>
+      <div class="stat-label">Recommended Performances</div>
+    </div>
+  </div>
+  
+  <!-- Work Groups -->
+  <div class="work-groups">
+    {% for work_group_id in composer.work_groups %}
+      {% assign work_group = composer.work_groups[forloop.index0] %}
+      
+      <section class="work-group-section">
+        <h2 id="group-{{ work_group.id }}">{{ work_group.title }}</h2>
+        
+        <div class="works-in-group">
+          {% for work_ref in work_group.works %}
+            {% assign work = site.data.collection.works[work_ref.id] %}
+            
+            <div class="work-card {% if work_ref.gem %}gem-work{% endif %}">
+              <div class="work-header">
+                {% if work_ref.gem %}
+                  <span class="gem-badge" title="Gem: A particularly excellent work">💎</span>
+                {% endif %}
+                <h3>
+                  <a href="/works/{{ work_ref.id }}">{{ work_ref.title }}</a>
+                </h3>
+              </div>
+              
+              {% if work.performances %}
+                <div class="performance-count">
+                  {{ work.performances | size }} recommended recording{{ work.performances | size | minus: 1 | abs | size == 2 and 's' or '' }}
+                </div>
+              {% else %}
+                <div class="no-performances">
+                  <em>No recommended performances yet</em>
+                </div>
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
+      </section>
+    {% endfor %}
+  </div>
+  
+  <!-- Works without group -->
+  {% assign ungrouped_works = composer.works | where: "work_group_id", nil %}
+  {% if ungrouped_works.size > 0 %}
+    <section class="ungrouped-works">
+      <h2>Other Works</h2>
+      <div class="works-list">
+        {% for work_ref in ungrouped_works %}
+          {% assign work = site.data.collection.works[work_ref.id] %}
+          <div class="work-item">
+            <a href="/works/{{ work_ref.id }}">{{ work_ref.title }}</a>
+          </div>
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
+</div>

@@ -1,5 +1,6 @@
 ---
-title: Home
+layout: home
+title: Classical Music Collection
 nav_order: 0
 ---
 

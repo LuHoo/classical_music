@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title | default: "Classical Music Collection" }} | Classical Music Collection</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="header-content">
+        <h1 class="site-title">
+          <a href="/">Classical Music Collection</a>
+        </h1>
+        <nav class="site-nav">
+          <ul>
+            <li><a href="/composers" class="nav-link">Composers</a></li>
+            <li><a href="/about" class="nav-link">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  
+  <main class="site-main">
+    <div class="container">
+      {{ content }}
+    </div>
+  </main>
+  
+  <footer class="site-footer">
+    <div class="container">
+      <p>Classical Music Collection</p>
+      <p class="footer-note">
+        Source: <a href="https://github.com/lucashoogduin/classical_music">Repository</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
