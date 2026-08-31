@@ -1,12 +1,37 @@
 title: "Classical Music"
 description: "Favorite classical recordings by composer"
-remote_theme: just-the-docs/just-the-docs
-
 url: "https://luhoo.github.io"   # your GitHub Pages root URL
 baseurl: "/classical_music"      # the repository name
 
-# Enable navigation
-nav_sort: case_insensitive
+# Theme - using default Jekyll theme for maximum compatibility
+# (comment out just-the-docs to use default)
+# remote_theme: just-the-docs/just-the-docs
 
-just_the_docs:
-  head_custom: _includes/head_custom.html
+# Jekyll settings
+markdown: kramdown
+highlighter: rouge
+
+# Site structure
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+# Data directories
+data_dir: _data_generated
+
+# Build settings
+include:
+  - _data_generated
+  - _pages
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - scripts
+  - tests
+  - reports
+  - docs
+  - data
+  - side materials
+  - generated
