@@ -20,3 +20,10 @@ def test_just_the_docs_head_custom_is_include_only():
 
     assert "head_custom:" not in config
     assert "publication.css" in head_custom
+
+
+def test_generated_publication_pages_are_included_by_jekyll():
+    config = Path("_config.yml").read_text(encoding="utf-8")
+
+    assert "include:" in config
+    assert "- publication" in config

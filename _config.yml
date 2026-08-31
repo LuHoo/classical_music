@@ -7,3 +7,7 @@ baseurl: "/classical_music"      # the repository name
 
 # Enable navigation
 nav_sort: case_insensitive
+
+# Generated during the Pages build and intentionally ignored by Git.
+include:
+  - publication
