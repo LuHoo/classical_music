@@ -42,7 +42,7 @@ Playwright:
 - `http://127.0.0.1:4010/publication/` returned HTTP 200.
 - Playwright verified title `Collection | Classical Music`.
 - Playwright verified the Collection page content, `publication.css`, no 404
-  text, and no leaked Liquid `{% assign ... %}` text.
+  text, and no leaked Liquid assign-template text.
 - Playwright verified zero Work links in the sidebar navigation, 25 Work links
   in the main "Works Without Recommendations" list, and normal page height.
 - Screenshot captured at `/tmp/classical-publication-final.png`.
