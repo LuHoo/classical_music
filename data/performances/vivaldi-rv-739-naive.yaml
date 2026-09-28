@@ -1,0 +1,18 @@
+id: 844bfecf621e492ea1b8bd8de32fb473
+work_id: dbc5a18f9a194077a1b72dd1b207c47f
+performers:
+- name: Ensemble Matheus
+  role: ensemble
+- name: Jean-Christophe Spinosi
+  role: conductor
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP30365
+  album_title: La verità in cimento
+source:
+  url: https://vivaldiedition.net/portfolio/vol-9-la-verita-in-cimento-2003/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: 'The Vivaldi Edition, volume 9. Album page verified 2026-09-28. '
+links:
+  tidal:
+    url: https://tidal.com/album/91800729

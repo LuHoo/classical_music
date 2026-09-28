@@ -1,0 +1,9 @@
+id: 4b8ee4294dd14cc7a99e4d5afcbfe10e
+work_group_id: f1b4aba9f63c49e58480400ac55b0c05
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Oboe Concerto, RV 453
+catalogue:
+  rv: RV 453
+source:
+  url: https://vivaldiedition.net/portfolio/vol-35-concerti-per-oboe-2008/
+  file: reports/vivaldi-naive-edition/catalogue.json

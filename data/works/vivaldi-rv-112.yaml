@@ -1,0 +1,9 @@
+id: 4ef2cf6637474664b0098a85bb8139b7
+work_group_id: e636466b70434865a80a4cde579fead7
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Concerto for strings, RV 112
+catalogue:
+  rv: RV 112
+source:
+  url: https://vivaldiedition.net/portfolio/vol-64-argippo/
+  file: reports/vivaldi-naive-edition/catalogue.json

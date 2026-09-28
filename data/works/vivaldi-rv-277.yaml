@@ -1,0 +1,10 @@
+id: 038946eb6d6a41d19fa574b1ee8c05cb
+work_group_id: 2124ed28e8e84f56aa51a2ca5ec5b459
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 277
+catalogue:
+  rv: RV 277
+  opus: Op. 11
+source:
+  file: docs/vivaldi.md
+  line: '32'

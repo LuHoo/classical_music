@@ -1,0 +1,20 @@
+id: 7004428840a5421cbc89445821485f9d
+work_id: 4fb82add79c14d8a957746822e7df0d0
+performers:
+- name: Concerto Italiano
+  role: ensemble
+- name: Rinaldo Alessandrini
+  role: conductor
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP30415
+  album_title: Arie per basso
+source:
+  url: https://vivaldiedition.net/portfolio/vol-22-arie-per-basso-2005/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: The Vivaldi Edition, volume 22. Album page verified 2026-09-28. Inclusief de instrumentale sinfonia’s
+  RV 699, 711 en 162; de overige nummers verwijzen naar aria’s uit opera’s.
+links:
+  tidal:
+    url: https://tidal.com/album/92797025
+excerpt: 'Excerpts: opera arias and/or sinfonia; this album does not contain the complete opera.'

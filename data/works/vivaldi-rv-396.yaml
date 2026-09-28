@@ -1,0 +1,9 @@
+id: 3232cbda59684ce9a042e9d31c02742b
+work_group_id: ca2ed6d388d3443cb1a0d03cd81767f2
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Viola d’amore Concerto, RV 396
+catalogue:
+  rv: RV 396
+source:
+  url: https://vivaldiedition.net/portfolio/vol-56-concerti-per-archi-iii-e-concerti-per-viola-damore-2018/
+  file: reports/vivaldi-naive-edition/catalogue.json

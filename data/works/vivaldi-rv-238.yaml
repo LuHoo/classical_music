@@ -1,0 +1,10 @@
+id: a19db4de92b84fbe8458df01325b659e
+work_group_id: 6cc3bee58a6d4d56bfed861e72d6db62
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 238
+catalogue:
+  rv: RV 238
+  opus: Op. 9
+source:
+  file: docs/vivaldi.md
+  line: '28'

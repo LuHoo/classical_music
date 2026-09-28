@@ -1,0 +1,9 @@
+id: 7491e0b2907c466ba2b38d6dbbaf2cd3
+work_group_id: ef7a1f3798dd4186865ef727dd26abf9
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 328
+catalogue:
+  rv: RV 328
+source:
+  url: https://vivaldiedition.net/portfolio/vol-49-concerti-per-violino-v-per-pisendel-2012/
+  file: reports/vivaldi-naive-edition/catalogue.json

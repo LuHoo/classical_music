@@ -1,0 +1,10 @@
+id: ff669f7a227344459925a3a4db41e54e
+work_group_id: 1d7961a7d5184d75979f49f9f0aa17d6
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Chamber Sonata, RV 79
+catalogue:
+  rv: RV 79
+  opus: Op. 1
+source:
+  url: https://vivaldiedition.net/portfolio/vol-44-sonate-da-camera-a-tre-opus-1-2011/
+  file: reports/vivaldi-naive-edition/catalogue.json

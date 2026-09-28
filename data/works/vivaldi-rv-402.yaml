@@ -1,0 +1,11 @@
+id: f6e3352067434122bb016606a76821d1
+work_group_id: b4ba12fe0d6a4efabe539bc4b6222aab
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Concerto in C minor, RV 402
+catalogue:
+  rv: RV 402
+source:
+  url: https://vivaldiedition.net/portfolio/concerti-per-vari-strumenti-ii-2/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: Presented on volume 76 in a bassoon version of the concerto; instrumentation does not imply a new
+  composition.

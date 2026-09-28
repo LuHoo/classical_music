@@ -1,0 +1,10 @@
+id: 790e5d23f3ff43768ca45de04a35c6c5
+work_group_id: b6d19f753b1d4b0bb7937c3a52b63f15
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Sonata, RV 11
+catalogue:
+  rv: RV 11
+  opus: Op. 11
+source:
+  file: docs/vivaldi.md
+  line: '32'

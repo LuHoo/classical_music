@@ -1,0 +1,18 @@
+id: 0f7cc837faf74c998e5878f7b9c6ecc4
+work_id: 6e050a0ae5504bf19080f517583875d0
+performers:
+- name: Modo Antiquo
+  role: ensemble
+- name: Anton Steck
+  role: violin
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP30427
+  album_title: Concerti per violino II — Di sfida
+source:
+  url: https://vivaldiedition.net/portfolio/vol-28-concerti-per-violin-ii-di-sfida-2006/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: 'The Vivaldi Edition, volume 28. Album page verified 2026-09-28. '
+links:
+  tidal:
+    url: https://tidal.com/album/92207034

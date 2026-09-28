@@ -1,0 +1,10 @@
+id: 7b372d1ce79c46ecb90317186e5068c0
+work_group_id: 0ffca9d55afe4868839114a6aeacc9c0
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 242
+catalogue:
+  rv: RV 242
+  opus: Op. 8
+source:
+  url: https://vivaldiedition.net/portfolio/vol-49-concerti-per-violino-v-per-pisendel-2012/
+  file: reports/vivaldi-naive-edition/catalogue.json

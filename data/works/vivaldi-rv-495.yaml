@@ -1,0 +1,9 @@
+id: e9955120813c49bc92a7e9acacea8243
+work_group_id: 2b1c85063ecb4da5b1b79159245138eb
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Bassoon Concerto, RV 495
+catalogue:
+  rv: RV 495
+source:
+  url: https://vivaldiedition.net/portfolio/vol-39-concerti-per-fagotto-i-2009/
+  file: reports/vivaldi-naive-edition/catalogue.json

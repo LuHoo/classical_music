@@ -1,0 +1,10 @@
+id: 7117b28932074350bdee82267a131239
+work_group_id: 8b43a24f7683408296a3bf65915d7366
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Orlando 1714, RV 819
+catalogue:
+  rv: RV 819
+source:
+  url: https://vivaldiedition.net/portfolio/vol-30-arie-ritrovate-2007/
+  file: reports/vivaldi-naive-edition/catalogue.json
+version: '1714'

@@ -1,0 +1,17 @@
+id: 970fad7320e544d4a54cda717861a8b5
+work_id: 9edc1f17d6cf4f4cb325e3cda82a8dc4
+performers:
+- name: Accademia Bizantina
+  role: ensemble
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP30416
+  album_title: In furore — Laudate pueri e concerti sacri
+source:
+  url: https://vivaldiedition.net/portfolio/vol-25-griselda-2006-2/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: The Vivaldi Edition, volume 24. Album page verified 2026-09-28. RV 541 is aangevuld vanuit de officiële
+  albumomschrijving.
+links:
+  tidal:
+    url: https://tidal.com/album/73947302

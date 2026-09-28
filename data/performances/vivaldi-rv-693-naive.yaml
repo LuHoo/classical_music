@@ -1,0 +1,18 @@
+id: e231fb39fc444db99037ac07cb339dd7
+work_id: 68553d3be82043c5910706577e1917c5
+performers:
+- name: Concerto Italiano
+  role: ensemble
+- name: Rinaldo Alessandrini
+  role: conductor
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP30339
+  album_title: La Senna festeggiante
+source:
+  url: https://vivaldiedition.net/portfolio/vol-4-la-senna-festeggiante-2002/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: 'The Vivaldi Edition, volume 4. Album page verified 2026-09-28. '
+links:
+  tidal:
+    url: https://tidal.com/album/91800664

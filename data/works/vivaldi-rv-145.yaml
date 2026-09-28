@@ -1,0 +1,9 @@
+id: ecb7fbaa508040b6b079b40d103c10bb
+work_group_id: 0de00e3ddec1477882a21926b9f784d2
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Concerto for strings, RV 145
+catalogue:
+  rv: RV 145
+source:
+  url: https://vivaldiedition.net/portfolio/vol-56-concerti-per-archi-iii-e-concerti-per-viola-damore-2018/
+  file: reports/vivaldi-naive-edition/catalogue.json

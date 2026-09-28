@@ -1,0 +1,18 @@
+id: 3e87a61d38394ef5a34a9008ebe868d5
+work_id: 36ffdb89f8324dcab0b3a713ae4a76cb
+performers:
+- name: L’Onda Armonica
+  role: ensemble
+- name: Christophe Coin
+  role: cello
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP30574
+  album_title: Concerti per violoncello III
+source:
+  url: https://vivaldiedition.net/portfolio/vol-61-concerti-per-violoncello-iii-2019/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: 'The Vivaldi Edition, volume 61. Album page verified 2026-09-28. '
+links:
+  tidal:
+    url: https://tidal.com/album/117652293

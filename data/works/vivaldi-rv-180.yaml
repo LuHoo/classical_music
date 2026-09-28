@@ -1,0 +1,11 @@
+id: 45f1f1a5c7c247308d8f3832fe886501
+work_group_id: 29220ec0ec464d53b62c96e16b319c98
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 180
+catalogue:
+  rv: RV 180
+  opus: Op. 8
+source:
+  file: docs/vivaldi.md
+  line: '26'
+gem: true

@@ -1,0 +1,20 @@
+id: ec3e4d341ed240808c60a9fd6b909fca
+work_id: e0d6708ccb184357896e715bc6b84038
+performers:
+- name: Abchordis Ensemble
+  role: ensemble
+- name: Andrea Buccarella
+  role: director
+- name: Arianna Vendittelli
+  role: soprano
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP7257
+  album_title: Cantate per soprano I
+source:
+  url: https://vivaldiedition.net/portfolio/vol-68-cantate-per-soprano-i/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: 'The Vivaldi Edition, volume 68. Album page verified 2026-09-28. '
+links:
+  tidal:
+    url: https://tidal.com/album/202223956

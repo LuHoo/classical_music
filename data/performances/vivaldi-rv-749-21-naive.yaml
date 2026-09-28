@@ -1,0 +1,19 @@
+id: a833d799a89143d1b3ff58bac5f6f424
+work_id: af162125e8b140f0aa983d8d51a05cac
+performers:
+- name: Modo Antiquo
+  role: ensemble
+- name: Federico Maria Sardelli
+  role: conductor
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP30411
+  album_title: Arie d'opera
+source:
+  url: https://vivaldiedition.net/portfolio/vol-20-arie-dopera-2005/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: The Vivaldi Edition, volume 20. Album page verified 2026-09-28. Opera-RV-nummers verwijzen naar de
+  herkomst van de aria’s. RV 749.21 en 749.13 zijn afzonderlijke aria-aanduidingen.
+links:
+  tidal:
+    url: https://tidal.com/album/92930094

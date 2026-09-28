@@ -1,0 +1,18 @@
+id: cd577c6871e74bfb9ef1c12f2865c5ec
+work_id: ddb6a7b59e354465a58f4ebd354cc48c
+performers:
+- name: L’Aura Soave Cremona
+  role: ensemble
+- name: Sergio Azzolini
+  role: bassoon
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP30496
+  album_title: Concerti per fagotto I
+source:
+  url: https://vivaldiedition.net/portfolio/vol-39-concerti-per-fagotto-i-2009/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: 'The Vivaldi Edition, volume 39. Album page verified 2026-09-28. '
+links:
+  tidal:
+    url: https://tidal.com/album/65305766

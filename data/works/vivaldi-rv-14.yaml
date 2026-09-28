@@ -1,0 +1,10 @@
+id: 39ff4db5e70f473da8d69322ca31f256
+work_group_id: 4bf34f1d7a7d4696a9b20067de5922fd
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Sonata, RV 14
+catalogue:
+  rv: RV 14
+  opus: Op. 2
+source:
+  file: docs/vivaldi.md
+  line: '14'

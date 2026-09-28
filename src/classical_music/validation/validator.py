@@ -95,6 +95,7 @@ ALLOWED_FIELDS: dict[str, set[str]] = {
         "external_ids",
         "keep_looking",
         "source_performer_text",
+        "excerpt",
         "notes",
         "source",
     },

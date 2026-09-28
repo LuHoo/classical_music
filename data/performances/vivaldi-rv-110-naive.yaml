@@ -1,0 +1,20 @@
+id: 57d70644bd0041f3a8f491127a8e4066
+work_id: db2a1cd767a9442bad7f1a71fbc928e1
+performers:
+- name: I Barocchisti
+  role: ensemble
+- name: Diego Fasolis
+  role: conductor
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP30504
+  album_title: Arie per tenore
+source:
+  url: https://vivaldiedition.net/portfolio/vol-40-arie-per-tenore-2010/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: The Vivaldi Edition, volume 40. Album page verified 2026-09-28. Inclusief het instrumentale RV 110. De
+  overige RV-nummers verwijzen naar de bronopera’s; RV 739 is aangevuld voor Vinta a piè d’un dolce affetto.
+  RV 706 en 706-B blijven afzonderlijk genoteerd conform de trackmetadata.
+links:
+  tidal:
+    url: https://tidal.com/album/91194278
