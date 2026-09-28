@@ -1,0 +1,20 @@
+id: 64fab6dbbf8941e480174e1b963ed883
+work_id: e1eab212c59f48e4b24d360b656afad2
+performers:
+- name: Accademia Bizantina
+  role: ensemble
+- name: Ottavio Dantone
+  role: conductor
+- name: Alessandro Tampieri
+  role: violin
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP7078
+  album_title: Concerti per violino VII — Per il castello
+source:
+  url: https://vivaldiedition.net/portfolio/vol-62-concerti-per-violino-vii-per-il-castello-2019/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: 'The Vivaldi Edition, volume 62. Album page verified 2026-09-28. '
+links:
+  tidal:
+    url: https://tidal.com/album/119018912

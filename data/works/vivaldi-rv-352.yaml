@@ -1,0 +1,9 @@
+id: 09a0c822dee1452e888fbce4b9ced0d5
+work_group_id: e57dc0dd17d84dd08d7c77bd02588e86
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 352
+catalogue:
+  rv: RV 352
+source:
+  url: https://vivaldiedition.net/portfolio/vol-33-concerti-per-violin-iii-il-ballo-2008/
+  file: reports/vivaldi-naive-edition/catalogue.json

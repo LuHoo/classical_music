@@ -1,0 +1,9 @@
+id: 3673e0e59d8d4e558680f99fde4f1c22
+work_group_id: f32b44f4648745a4b14c05cce5fa9a30
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Concerto for strings, RV 129
+catalogue:
+  rv: RV 129
+source:
+  url: https://vivaldiedition.net/portfolio/vol-13-concerti-per-archi-2004/
+  file: reports/vivaldi-naive-edition/catalogue.json

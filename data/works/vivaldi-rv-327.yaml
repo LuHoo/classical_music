@@ -1,0 +1,9 @@
+id: 08b5314795bb48fa81d3fa395d59806a
+work_group_id: 70dfb17438884813aa8845dfba4f38e1
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 327
+catalogue:
+  rv: RV 327
+source:
+  url: https://vivaldiedition.net/portfolio/vol-45-concerti-per-violin-iv-limperatore-2011/
+  file: reports/vivaldi-naive-edition/catalogue.json

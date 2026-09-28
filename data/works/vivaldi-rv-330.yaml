@@ -1,0 +1,9 @@
+id: d3515d81788d436591c8aa11817c232f
+work_group_id: 319c0434322d4b85b405d26cc181abdc
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 330
+catalogue:
+  rv: RV 330
+source:
+  url: https://vivaldiedition.net/portfolio/vol-57-concerti-per-violino-vi-la-boemia-2018/
+  file: reports/vivaldi-naive-edition/catalogue.json

@@ -1,0 +1,9 @@
+id: 307b96947c3f404dbb8001785b65ae4f
+work_group_id: e47ae398fbc04d709bf2923c56f4833d
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 363
+catalogue:
+  rv: RV 363
+source:
+  url: https://vivaldiedition.net/portfolio/vol-71-concerti-per-violino-xi-per-anna-mariavol-71/
+  file: reports/vivaldi-naive-edition/catalogue.json

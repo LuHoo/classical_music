@@ -1,0 +1,18 @@
+id: 1238c5e4dcf04bc69970a726f41f24eb
+work_id: c2e810ac6c474c4484bfd4bfaecf5f5a
+performers:
+- name: Ensemble Matheus
+  role: ensemble
+- name: Jean-Christophe Spinosi
+  role: conductor
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP30393
+  album_title: Orlando furioso
+source:
+  url: https://vivaldiedition.net/portfolio/vol-17-orlando-furioso-2004/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: 'The Vivaldi Edition, volume 17. Album page verified 2026-09-28. '
+links:
+  tidal:
+    url: https://tidal.com/album/78145897

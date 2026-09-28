@@ -1,0 +1,9 @@
+id: 436391bc13b64412a43d803f30baa499
+work_group_id: 1d6c5d2d19ef4f839cf0fb7a79355ee1
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Concerto for strings, RV 163
+catalogue:
+  rv: RV 163
+source:
+  url: https://vivaldiedition.net/portfolio/vol-56-concerti-per-archi-iii-e-concerti-per-viola-damore-2018/
+  file: reports/vivaldi-naive-edition/catalogue.json

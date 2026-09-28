@@ -1,0 +1,18 @@
+id: 14c44baff099446d915ed6fc57343432
+work_id: 0b9e6ce6d54f4f31a027ba030cd89fde
+performers:
+- name: L’Astrée
+  role: ensemble
+- name: Giorgio Tabacco
+  role: harpsichord
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP30404
+  album_title: Concerti e cantate da camera II
+source:
+  url: https://vivaldiedition.net/portfolio/vol-16-concerti-e-cantata-da-camera-ii-2004/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: 'The Vivaldi Edition, volume 16. Album page verified 2026-09-28. '
+links:
+  tidal:
+    url: https://tidal.com/album/92214991

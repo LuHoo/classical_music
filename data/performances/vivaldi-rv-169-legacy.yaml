@@ -1,0 +1,14 @@
+id: be3feb31d51040a69748b3d3b0c6302e
+work_id: a2b12f17df4b4dbc9bb3f5bef7a6488f
+performers:
+- name: Concerto Köln
+  role: performer
+- name: Shunske Sato
+  role: performer
+links:
+  tidal:
+    url: http://www.tidal.com/track/64126591
+source:
+  file: docs/vivaldi.md
+  line: '40'
+notes: Existing curator recommendation retained pending comparison with the Naïve Edition where applicable.

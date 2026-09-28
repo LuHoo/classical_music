@@ -73,6 +73,22 @@ def test_minimal_site_generation_creates_expected_pages(tmp_path):
     assert (tmp_path / "publication" / "works" / "bach-cantata-1.md").exists()
 
 
+def test_excerpt_coverage_is_visible_and_escaped(tmp_path):
+    _seed_repo(tmp_path)
+    path = tmp_path / "data" / "performances" / "bach-cantata-1-gardiner.yaml"
+    yaml = YAML()
+    data = yaml.load(path.read_text())
+    data["excerpt"] = "Aria only; <not the complete cantata>"
+    _write_yaml(path, data)
+
+    PublicationSiteGenerator(tmp_path).generate()
+
+    page = (tmp_path / "publication" / "works" / "bach-cantata-1.md").read_text()
+    assert 'class="recommendation-coverage"' in page
+    assert "Aria only; &lt;not the complete cantata&gt;" in page
+    assert "<not the complete cantata>" not in page
+
+
 def test_generated_pages_show_works_without_performances(tmp_path):
     _seed_repo(tmp_path)
 

@@ -1,0 +1,10 @@
+id: a6758742b22749268f32e9249b1fc2c0
+work_group_id: 6456873be14b4d7aafe78fa724b5d62a
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Concerto for two violins, RV 530
+catalogue:
+  rv: RV 530
+  opus: Op. 9
+source:
+  file: docs/vivaldi.md
+  line: '28'

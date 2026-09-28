@@ -1,0 +1,10 @@
+id: 57c3a9ac89d94ba8809b0c0782963f5f
+work_group_id: ba7c1ec0a67c47e49872f31c5f8afb96
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Oboe Concerto, RV 460
+catalogue:
+  rv: RV 460
+  opus: Op. 11
+source:
+  file: docs/vivaldi.md
+  line: '32'

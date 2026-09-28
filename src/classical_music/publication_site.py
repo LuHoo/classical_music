@@ -286,6 +286,9 @@ class PublicationSiteGenerator:
         summary = " ".join(formatted_performers) or '<span class="performer-credit">Unknown performers</span>'
         lines = [f'<div class="recommendation-card"><div class="performer-list">{summary}</div>']
 
+        if performance.get("excerpt"):
+            lines.append(f'<p class="recommendation-coverage">{self._html(performance["excerpt"])}</p>')
+
         if performance.get("tidal_url"):
             lines.append('<div class="recommendation-links">')
             lines.append(f'<a href="{performance["tidal_url"]}">Tidal</a>')

@@ -1,0 +1,19 @@
+id: 7c495a4ad5734cc7bf4dc76f70a6bb7c
+work_id: 49b0254294194bb5b75512ffcc3ca236
+performers:
+- name: Europa Galante
+  role: ensemble
+- name: Fabio Biondi
+  role: director
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP7079
+  album_title: Argippo
+source:
+  url: https://vivaldiedition.net/portfolio/vol-64-argippo/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: The Vivaldi Edition, volume 64. Album page verified 2026-09-28. Het opgenomen Argippo is het pasticcio
+  RV Anh. 137, niet RV 697. De openingssinfonia is RV 112.
+links:
+  tidal:
+    url: https://tidal.com/album/159927017

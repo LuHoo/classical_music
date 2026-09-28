@@ -177,6 +177,10 @@ class PublicationDataAdapter:
             elif "profile" in perf_data:
                 pub_perf["profile"] = perf_data["profile"]
 
+            # Coverage is public: an aria or movement must not imply a complete work.
+            if perf_data.get("excerpt"):
+                pub_perf["excerpt"] = perf_data["excerpt"]
+
             self.performances[perf_id] = pub_perf
 
         print(f"  ✅ Adapted {len(self.persons)} persons")

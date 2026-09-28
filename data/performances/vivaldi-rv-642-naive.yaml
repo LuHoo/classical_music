@@ -1,0 +1,18 @@
+id: ce74068a2c694788b3664fdcb49b162f
+work_id: 0a0e60802c164eb2873f2aa938cd5087
+performers:
+- name: Concerto Italiano
+  role: ensemble
+- name: Rinaldo Alessandrini
+  role: conductor
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP30485
+  album_title: Gloria
+source:
+  url: https://vivaldiedition.net/portfolio/vol-36-gloria-2009/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: 'The Vivaldi Edition, volume 36. Album page verified 2026-09-28. '
+links:
+  tidal:
+    url: https://tidal.com/album/73947359

@@ -1,0 +1,19 @@
+id: 9ed0ea889efd41db9c6c4c3daf17a27a
+work_id: dd5e11a230284e419d27bc1e524c79a9
+performers:
+- name: Academia Montis Regalis
+  role: ensemble
+- name: Enrico Onofri
+  role: violin
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP30417
+  album_title: Concerti per violino I — La caccia
+source:
+  url: https://vivaldiedition.net/portfolio/vol-23-concerti-per-violin-i-la-caccia-2005/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: The Vivaldi Edition, volume 23. Album page verified 2026-09-28. RV 199 is aanwezig in de tracklijst,
+  maar ontbreekt in de korte officiële albumomschrijving.
+links:
+  tidal:
+    url: https://tidal.com/album/92207007

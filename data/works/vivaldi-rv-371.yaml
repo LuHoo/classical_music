@@ -1,0 +1,9 @@
+id: de3c28b384e9412eba5f0dfe338dc1bf
+work_group_id: b66c50eacca14f5180db80477ebcea6b
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 371
+catalogue:
+  rv: RV 371
+source:
+  url: https://vivaldiedition.net/portfolio/vol-62-concerti-per-violino-vii-per-il-castello-2019/
+  file: reports/vivaldi-naive-edition/catalogue.json

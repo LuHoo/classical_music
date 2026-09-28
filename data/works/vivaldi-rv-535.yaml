@@ -1,0 +1,9 @@
+id: 9fe3874a8406424eb7a5a58c2ff3b537
+work_group_id: 50f5345fa1b44ce9a7e21039a5c25bb4
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Concerto for two oboes, RV 535
+catalogue:
+  rv: RV 535
+source:
+  url: https://vivaldiedition.net/portfolio/concerti-per-vari-strumenti-ii/
+  file: reports/vivaldi-naive-edition/catalogue.json

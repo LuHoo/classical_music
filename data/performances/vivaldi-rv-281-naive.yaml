@@ -1,0 +1,19 @@
+id: 1abbb8a5774d4041908ad5581ac6d7fa
+work_id: 359bc4ec26ec48d2af2438e89f2b79ae
+performers:
+- name: Concerto Italiano
+  role: ensemble
+- name: Rinaldo Alessandrini
+  role: conductor
+- name: Boris Begelman
+  role: violin
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP7258
+  album_title: Concerti per violino IX — Le nuove vie
+source:
+  url: https://vivaldiedition.net/portfolio/vol-67-concerti-per-violino-ix-le-nuove-vie/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: 'The Vivaldi Edition, volume 67. Album page verified 2026-09-28. Volledig album niet gevonden op TIDAL. De
+  TIDAL-knop op de label-smartlink leidt naar een single met alleen het eerste deel van RV 283: https://tidal.com/album/187261613.
+  Deze single is niet als albumkoppeling opgenomen. Full TIDAL album not found; the label links to a one-track single.'
