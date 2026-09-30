@@ -1,0 +1,1783 @@
+[
+  {
+    "volume": 1,
+    "title": "La Passione",
+    "label": "Alpha Classics",
+    "catalogue_number": "ALPHA670",
+    "status": "released",
+    "source_url": "https://www.haydn2032.com/en/projects/no1-la-passione",
+    "tracklist_url": "https://www.prestomusic.com/classical/products/8047516--haydn-2032-volume-1-la-passione",
+    "performers": [
+      {
+        "name": "Il Giardino Armonico",
+        "role": "orchestra"
+      },
+      {
+        "name": "Giovanni Antonini",
+        "role": "conductor"
+      }
+    ],
+    "works": [
+      {
+        "slug": "haydn-symphony-39",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 39 in G minor",
+        "catalogue": {
+          "hoboken": "Hob. I:39"
+        },
+        "category": "Symphonies",
+        "key": "G minor",
+        "medium": "CD"
+      },
+      {
+        "slug": "haydn-symphony-49",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 49 in F minor “La Passione”",
+        "catalogue": {
+          "hoboken": "Hob. I:49"
+        },
+        "category": "Symphonies",
+        "key": "F minor",
+        "medium": "CD"
+      },
+      {
+        "slug": "haydn-symphony-1",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 1 in D major",
+        "catalogue": {
+          "hoboken": "Hob. I:1"
+        },
+        "category": "Symphonies",
+        "key": "D major",
+        "medium": "CD"
+      },
+      {
+        "slug": "gluck-don-juan-original",
+        "composer": "Christoph Willibald Gluck",
+        "title": "Don Juan ou Le festin de pierre",
+        "catalogue": {
+          "wq": "Wq. 52"
+        },
+        "category": "Ballets",
+        "version": "Original version (1761)",
+        "notes": "The official project identifies the original version. The 15 numbered movements plus Sinfonia are not labelled as an arbitrary suite.",
+        "medium": "CD"
+      }
+    ],
+    "tidal_url": "https://tidal.com/album/187335404",
+    "checked_at": "2026-09-30",
+    "tidal_metadata": {
+      "@context": "https://schema.org",
+      "@id": "https://tidal.com/album/187335404",
+      "@type": "MusicAlbum",
+      "url": "https://tidal.com/album/187335404",
+      "byArtist": [
+        {
+          "@id": "https://tidal.com/artist/18259",
+          "@type": "MusicGroup",
+          "name": "Giovanni Antonini",
+          "url": "https://tidal.com/artist/18259"
+        },
+        {
+          "@id": "https://tidal.com/artist/12468",
+          "@type": "MusicGroup",
+          "name": "Il Giardino Armonico",
+          "url": "https://tidal.com/artist/12468"
+        }
+      ],
+      "datePublished": "2014-10-28",
+      "image": "https://resources.tidal.com/images/6d6293fb/0768/4d2c/a9ca/f74d812ae669/640x640.jpg",
+      "name": "Haydn 2032, Vol. 1: La Passione"
+    }
+  },
+  {
+    "volume": 2,
+    "title": "Il filosofo",
+    "label": "Alpha Classics",
+    "catalogue_number": "ALPHA671",
+    "status": "released",
+    "source_url": "https://www.haydn2032.com/en/projects/no2-il-filosofo",
+    "tracklist_url": "https://www.prestomusic.com/classical/products/8061501--haydn-2032-volume-2-il-filosofo",
+    "performers": [
+      {
+        "name": "Il Giardino Armonico",
+        "role": "orchestra"
+      },
+      {
+        "name": "Giovanni Antonini",
+        "role": "conductor"
+      }
+    ],
+    "works": [
+      {
+        "slug": "haydn-symphony-46",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 46 in B major",
+        "catalogue": {
+          "hoboken": "Hob. I:46"
+        },
+        "category": "Symphonies",
+        "key": "B major",
+        "medium": "CD"
+      },
+      {
+        "slug": "haydn-symphony-22",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 22 in E-flat major “Il filosofo”",
+        "catalogue": {
+          "hoboken": "Hob. I:22"
+        },
+        "category": "Symphonies",
+        "key": "E-flat major",
+        "medium": "CD"
+      },
+      {
+        "slug": "haydn-symphony-47",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 47 in G major “Palindrome”",
+        "catalogue": {
+          "hoboken": "Hob. I:47"
+        },
+        "category": "Symphonies",
+        "key": "G major",
+        "medium": "CD"
+      },
+      {
+        "slug": "wf-bach-symphony-f-major",
+        "composer": "Wilhelm Friedemann Bach",
+        "title": "Symphony in F major “Dissonant”",
+        "catalogue": {
+          "br": "BR C 2",
+          "fk": "Fk. 67"
+        },
+        "category": "Symphonies",
+        "medium": "CD"
+      }
+    ],
+    "tidal_url": "https://tidal.com/album/187335290",
+    "checked_at": "2026-09-30",
+    "tidal_metadata": {
+      "@context": "https://schema.org",
+      "@id": "https://tidal.com/album/187335290",
+      "@type": "MusicAlbum",
+      "url": "https://tidal.com/album/187335290",
+      "byArtist": [
+        {
+          "@id": "https://tidal.com/artist/12468",
+          "@type": "MusicGroup",
+          "name": "Il Giardino Armonico",
+          "url": "https://tidal.com/artist/12468"
+        },
+        {
+          "@id": "https://tidal.com/artist/18259",
+          "@type": "MusicGroup",
+          "name": "Giovanni Antonini",
+          "url": "https://tidal.com/artist/18259"
+        }
+      ],
+      "datePublished": "2015-05-19",
+      "image": "https://resources.tidal.com/images/1bb8e6e3/72dd/416c/ac71/5d3da0e0183b/640x640.jpg",
+      "name": "Haydn 2032, Vol. 2: Il filosofo"
+    }
+  },
+  {
+    "volume": 3,
+    "title": "Solo e pensoso",
+    "label": "Alpha Classics",
+    "catalogue_number": "ALPHA672",
+    "status": "released",
+    "source_url": "https://www.haydn2032.com/en/projects/no3-solo-e-pensoso",
+    "tracklist_url": "https://www.prestomusic.com/classical/products/8161187--haydn-2032-volume-3-solo-e-pensoso",
+    "performers": [
+      {
+        "name": "Il Giardino Armonico",
+        "role": "orchestra"
+      },
+      {
+        "name": "Giovanni Antonini",
+        "role": "conductor"
+      }
+    ],
+    "works": [
+      {
+        "slug": "haydn-symphony-42",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 42 in D major",
+        "catalogue": {
+          "hoboken": "Hob. I:42"
+        },
+        "category": "Symphonies",
+        "key": "D major",
+        "medium": "CD"
+      },
+      {
+        "slug": "haydn-symphony-64",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 64 in A major “Tempora mutantur”",
+        "catalogue": {
+          "hoboken": "Hob. I:64"
+        },
+        "category": "Symphonies",
+        "key": "A major",
+        "medium": "CD"
+      },
+      {
+        "slug": "haydn-symphony-4",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 4 in D major",
+        "catalogue": {
+          "hoboken": "Hob. I:4"
+        },
+        "category": "Symphonies",
+        "key": "D major",
+        "medium": "CD"
+      },
+      {
+        "slug": "haydn-isola-disabitata-overture",
+        "composer": "Joseph Haydn",
+        "title": "Overture to L'isola disabitata",
+        "catalogue": {
+          "hoboken": "Hob. Ia:13"
+        },
+        "category": "Overtures",
+        "notes": "Separately catalogued overture; the complete opera is Hob. XXVIII:9 and is not recorded on this album.",
+        "medium": "CD"
+      },
+      {
+        "slug": "haydn-solo-e-pensoso",
+        "composer": "Joseph Haydn",
+        "title": "Solo e pensoso",
+        "catalogue": {
+          "hoboken": "Hob. XXIVb:20"
+        },
+        "category": "Arias",
+        "soloists": [
+          {
+            "name": "Francesca Aspromonte",
+            "role": "soprano"
+          }
+        ],
+        "medium": "CD"
+      }
+    ],
+    "tidal_url": "https://tidal.com/album/187335264",
+    "checked_at": "2026-09-30",
+    "tidal_metadata": {
+      "@context": "https://schema.org",
+      "@id": "https://tidal.com/album/187335264",
+      "@type": "MusicAlbum",
+      "url": "https://tidal.com/album/187335264",
+      "byArtist": [
+        {
+          "@id": "https://tidal.com/artist/12468",
+          "@type": "MusicGroup",
+          "name": "Il Giardino Armonico",
+          "url": "https://tidal.com/artist/12468"
+        },
+        {
+          "@id": "https://tidal.com/artist/18259",
+          "@type": "MusicGroup",
+          "name": "Giovanni Antonini",
+          "url": "https://tidal.com/artist/18259"
+        }
+      ],
+      "datePublished": "2016-08-19",
+      "image": "https://resources.tidal.com/images/2a756409/64fd/4930/8a9e/0836b6ebaa70/640x640.jpg",
+      "name": "Haydn 2032, Vol. 3: Solo e pensoso"
+    }
+  },
+  {
+    "volume": 4,
+    "title": "Il distratto",
+    "label": "Alpha Classics",
+    "catalogue_number": "ALPHA674",
+    "status": "released",
+    "source_url": "https://www.haydn2032.com/en/projects/no4-il-distratto",
+    "tracklist_url": "https://www.prestomusic.com/classical/products/8271111--haydn-2032-volume-4-il-distratto",
+    "performers": [
+      {
+        "name": "Il Giardino Armonico",
+        "role": "orchestra"
+      },
+      {
+        "name": "Giovanni Antonini",
+        "role": "conductor"
+      }
+    ],
+    "works": [
+      {
+        "slug": "haydn-symphony-60",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 60 in C major “Il distratto”",
+        "catalogue": {
+          "hoboken": "Hob. I:60"
+        },
+        "category": "Symphonies",
+        "key": "C major",
+        "medium": "CD"
+      },
+      {
+        "slug": "haydn-symphony-70",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 70 in D major",
+        "catalogue": {
+          "hoboken": "Hob. I:70"
+        },
+        "category": "Symphonies",
+        "key": "D major",
+        "medium": "CD"
+      },
+      {
+        "slug": "haydn-symphony-12",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 12 in E major",
+        "catalogue": {
+          "hoboken": "Hob. I:12"
+        },
+        "category": "Symphonies",
+        "key": "E major",
+        "medium": "CD"
+      },
+      {
+        "slug": "cimarosa-il-maestro-di-cappella",
+        "composer": "Domenico Cimarosa",
+        "title": "Il maestro di cappella",
+        "catalogue": {},
+        "category": "Intermezzi",
+        "soloists": [
+          {
+            "name": "Riccardo Novaro",
+            "role": "baritone"
+          }
+        ],
+        "medium": "CD"
+      }
+    ],
+    "tidal_url": "https://tidal.com/album/187334728",
+    "checked_at": "2026-09-30",
+    "tidal_metadata": {
+      "@context": "https://schema.org",
+      "@id": "https://tidal.com/album/187334728",
+      "@type": "MusicAlbum",
+      "url": "https://tidal.com/album/187334728",
+      "byArtist": [
+        {
+          "@id": "https://tidal.com/artist/18259",
+          "@type": "MusicGroup",
+          "name": "Giovanni Antonini",
+          "url": "https://tidal.com/artist/18259"
+        },
+        {
+          "@id": "https://tidal.com/artist/6299520",
+          "@type": "MusicGroup",
+          "name": "Riccardo Novaro",
+          "url": "https://tidal.com/artist/6299520"
+        },
+        {
+          "@id": "https://tidal.com/artist/12468",
+          "@type": "MusicGroup",
+          "name": "Il Giardino Armonico",
+          "url": "https://tidal.com/artist/12468"
+        }
+      ],
+      "datePublished": "2017-03-10",
+      "image": "https://resources.tidal.com/images/b70495c1/9cb8/405a/89de/b1cf38cce277/640x640.jpg",
+      "name": "Haydn 2032, Vol. 4: Il distratto"
+    }
+  },
+  {
+    "volume": 5,
+    "title": "L'homme de génie",
+    "label": "Alpha Classics",
+    "catalogue_number": "ALPHA676",
+    "status": "released",
+    "source_url": "https://www.haydn2032.com/en/projects/no5-lhomme-de-genie",
+    "tracklist_url": "https://www.prestomusic.com/classical/products/8366613--haydn-2032-volume-5-l-homme-de-genie",
+    "performers": [
+      {
+        "name": "Kammerorchester Basel",
+        "role": "orchestra"
+      },
+      {
+        "name": "Giovanni Antonini",
+        "role": "conductor"
+      }
+    ],
+    "works": [
+      {
+        "slug": "haydn-symphony-80",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 80 in D minor",
+        "catalogue": {
+          "hoboken": "Hob. I:80"
+        },
+        "category": "Symphonies",
+        "key": "D minor",
+        "medium": "CD"
+      },
+      {
+        "slug": "haydn-symphony-81",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 81 in G major",
+        "catalogue": {
+          "hoboken": "Hob. I:81"
+        },
+        "category": "Symphonies",
+        "key": "G major",
+        "medium": "CD"
+      },
+      {
+        "slug": "haydn-symphony-19",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 19 in D major",
+        "catalogue": {
+          "hoboken": "Hob. I:19"
+        },
+        "category": "Symphonies",
+        "key": "D major",
+        "medium": "CD"
+      },
+      {
+        "slug": "kraus-symphony-c-minor",
+        "composer": "Joseph Martin Kraus",
+        "title": "Symphony in C minor",
+        "catalogue": {
+          "vb": "VB 142"
+        },
+        "category": "Symphonies",
+        "medium": "CD"
+      }
+    ],
+    "tidal_url": "https://tidal.com/album/187335064",
+    "checked_at": "2026-09-30",
+    "tidal_metadata": {
+      "@context": "https://schema.org",
+      "@id": "https://tidal.com/album/187335064",
+      "@type": "MusicAlbum",
+      "url": "https://tidal.com/album/187335064",
+      "byArtist": [
+        {
+          "@id": "https://tidal.com/artist/3565211",
+          "@type": "MusicGroup",
+          "name": "Kammerorchester Basel",
+          "url": "https://tidal.com/artist/3565211"
+        },
+        {
+          "@id": "https://tidal.com/artist/18259",
+          "@type": "MusicGroup",
+          "name": "Giovanni Antonini",
+          "url": "https://tidal.com/artist/18259"
+        }
+      ],
+      "datePublished": "2017-11-03",
+      "image": "https://resources.tidal.com/images/1a498016/cb12/4dad/bbcd/eed39a511040/640x640.jpg",
+      "name": "Haydn 2032, Vol. 5: L'homme de génie"
+    }
+  },
+  {
+    "volume": 6,
+    "title": "Lamentatione",
+    "label": "Alpha Classics",
+    "catalogue_number": "ALPHA678",
+    "status": "released",
+    "source_url": "https://www.haydn2032.com/en/projects/no6-lamentatione",
+    "tracklist_url": "https://www.prestomusic.com/classical/products/8438801--haydn-2032-volume-6-lamentatione",
+    "performers": [
+      {
+        "name": "Kammerorchester Basel",
+        "role": "orchestra"
+      },
+      {
+        "name": "Giovanni Antonini",
+        "role": "conductor"
+      }
+    ],
+    "works": [
+      {
+        "slug": "haydn-symphony-3",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 3 in G major",
+        "catalogue": {
+          "hoboken": "Hob. I:3"
+        },
+        "category": "Symphonies",
+        "key": "G major",
+        "medium": "CD"
+      },
+      {
+        "slug": "haydn-symphony-26",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 26 in D minor “Lamentatione”",
+        "catalogue": {
+          "hoboken": "Hob. I:26"
+        },
+        "category": "Symphonies",
+        "key": "D minor",
+        "medium": "CD"
+      },
+      {
+        "slug": "haydn-symphony-79",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 79 in F major",
+        "catalogue": {
+          "hoboken": "Hob. I:79"
+        },
+        "category": "Symphonies",
+        "key": "F major",
+        "medium": "CD"
+      },
+      {
+        "slug": "haydn-symphony-30",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 30 in C major “Alleluia”",
+        "catalogue": {
+          "hoboken": "Hob. I:30"
+        },
+        "category": "Symphonies",
+        "key": "C major",
+        "medium": "CD"
+      }
+    ],
+    "tidal_url": "https://tidal.com/album/187335083",
+    "checked_at": "2026-09-30",
+    "tidal_metadata": {
+      "@context": "https://schema.org",
+      "@id": "https://tidal.com/album/187335083",
+      "@type": "MusicAlbum",
+      "url": "https://tidal.com/album/187335083",
+      "byArtist": [
+        {
+          "@id": "https://tidal.com/artist/3565211",
+          "@type": "MusicGroup",
+          "name": "Kammerorchester Basel",
+          "url": "https://tidal.com/artist/3565211"
+        },
+        {
+          "@id": "https://tidal.com/artist/18259",
+          "@type": "MusicGroup",
+          "name": "Giovanni Antonini",
+          "url": "https://tidal.com/artist/18259"
+        }
+      ],
+      "datePublished": "2018-06-08",
+      "image": "https://resources.tidal.com/images/82e3a922/cae1/473a/87bf/f1fb243d0bfa/640x640.jpg",
+      "name": "Haydn 2032, Vol. 6: Lamentatione"
+    }
+  },
+  {
+    "volume": 7,
+    "title": "Gli Impresari",
+    "label": "Alpha Classics",
+    "catalogue_number": "ALPHA680",
+    "status": "released",
+    "source_url": "https://www.haydn2032.com/en/projects/no7-gli-impresari",
+    "tracklist_url": "https://www.prestomusic.com/classical/products/8539820--haydn-2032-volume-7-gli-impresari",
+    "performers": [
+      {
+        "name": "Kammerorchester Basel",
+        "role": "orchestra"
+      },
+      {
+        "name": "Giovanni Antonini",
+        "role": "conductor"
+      }
+    ],
+    "works": [
+      {
+        "slug": "haydn-symphony-67",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 67 in F major",
+        "catalogue": {
+          "hoboken": "Hob. I:67"
+        },
+        "category": "Symphonies",
+        "key": "F major",
+        "medium": "CD"
+      },
+      {
+        "slug": "haydn-symphony-65",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 65 in A major",
+        "catalogue": {
+          "hoboken": "Hob. I:65"
+        },
+        "category": "Symphonies",
+        "key": "A major",
+        "medium": "CD"
+      },
+      {
+        "slug": "haydn-symphony-9",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 9 in C major",
+        "catalogue": {
+          "hoboken": "Hob. I:9"
+        },
+        "category": "Symphonies",
+        "key": "C major",
+        "medium": "CD"
+      },
+      {
+        "slug": "mozart-thamos",
+        "composer": "Wolfgang Amadeus Mozart",
+        "title": "Thamos, König in Ägypten",
+        "catalogue": {
+          "k": "K. 345"
+        },
+        "category": "Incidental music",
+        "excerpt": "Instrumental excerpts: I–IV and VIIa; this album does not contain the complete incidental music.",
+        "medium": "CD"
+      }
+    ],
+    "tidal_url": "https://tidal.com/album/187335148",
+    "checked_at": "2026-09-30",
+    "tidal_metadata": {
+      "@context": "https://schema.org",
+      "@id": "https://tidal.com/album/187335148",
+      "@type": "MusicAlbum",
+      "url": "https://tidal.com/album/187335148",
+      "byArtist": [
+        {
+          "@id": "https://tidal.com/artist/3565211",
+          "@type": "MusicGroup",
+          "name": "Kammerorchester Basel",
+          "url": "https://tidal.com/artist/3565211"
+        },
+        {
+          "@id": "https://tidal.com/artist/18259",
+          "@type": "MusicGroup",
+          "name": "Giovanni Antonini",
+          "url": "https://tidal.com/artist/18259"
+        }
+      ],
+      "datePublished": "2019-03-01",
+      "image": "https://resources.tidal.com/images/d9318ff5/9d31/4a2c/8e0d/20ce458954ad/640x640.jpg",
+      "name": "Haydn 2032, Vol. 7: Gli Impresari"
+    }
+  },
+  {
+    "volume": 8,
+    "title": "La Roxolana",
+    "label": "Alpha Classics",
+    "catalogue_number": "ALPHA682",
+    "status": "released",
+    "source_url": "https://www.haydn2032.com/en/projects/no8-la-roxolana",
+    "tracklist_url": "https://www.prestomusic.com/classical/products/8711985--haydn-2032-volume-8-la-roxolana",
+    "performers": [
+      {
+        "name": "Il Giardino Armonico",
+        "role": "orchestra"
+      },
+      {
+        "name": "Giovanni Antonini",
+        "role": "conductor"
+      }
+    ],
+    "works": [
+      {
+        "slug": "haydn-symphony-63",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 63 in C major “La Roxolana”",
+        "catalogue": {
+          "hoboken": "Hob. I:63"
+        },
+        "category": "Symphonies",
+        "key": "C major",
+        "medium": "CD"
+      },
+      {
+        "slug": "haydn-symphony-43",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 43 in E-flat major “Mercury”",
+        "catalogue": {
+          "hoboken": "Hob. I:43"
+        },
+        "category": "Symphonies",
+        "key": "E-flat major",
+        "medium": "CD"
+      },
+      {
+        "slug": "haydn-symphony-28",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 28 in A major",
+        "catalogue": {
+          "hoboken": "Hob. I:28"
+        },
+        "category": "Symphonies",
+        "key": "A major",
+        "medium": "CD"
+      },
+      {
+        "slug": "bartok-romanian-folk-dances-orchestra",
+        "composer": "Béla Bartók",
+        "title": "Romanian Folk Dances for orchestra",
+        "catalogue": {
+          "bb": "BB 76",
+          "sz": "Sz. 68"
+        },
+        "category": "Orchestral works",
+        "legacy": {
+          "file": "docs/bartok.md",
+          "line": 50,
+          "recommendation": null
+        },
+        "medium": "CD"
+      },
+      {
+        "slug": "anonymous-sonata-jucunda",
+        "composer": "Anonymous",
+        "title": "Sonata Jucunda",
+        "catalogue": {},
+        "category": "Chamber music",
+        "medium": "CD"
+      }
+    ],
+    "tidal_url": "https://tidal.com/album/187335103",
+    "checked_at": "2026-09-30",
+    "tidal_metadata": {
+      "@context": "https://schema.org",
+      "@id": "https://tidal.com/album/187335103",
+      "@type": "MusicAlbum",
+      "url": "https://tidal.com/album/187335103",
+      "byArtist": [
+        {
+          "@id": "https://tidal.com/artist/18259",
+          "@type": "MusicGroup",
+          "name": "Giovanni Antonini",
+          "url": "https://tidal.com/artist/18259"
+        },
+        {
+          "@id": "https://tidal.com/artist/12468",
+          "@type": "MusicGroup",
+          "name": "Il Giardino Armonico",
+          "url": "https://tidal.com/artist/12468"
+        }
+      ],
+      "datePublished": "2020-01-24",
+      "image": "https://resources.tidal.com/images/82d42b52/7676/48fd/b169/a31302b6bcb0/640x640.jpg",
+      "name": "Haydn 2032, Vol. 8: La Roxolana"
+    }
+  },
+  {
+    "volume": 9,
+    "title": "L'Addio",
+    "label": "Alpha Classics",
+    "catalogue_number": "ALPHA684",
+    "status": "released",
+    "source_url": "https://www.haydn2032.com/en/projects/no9-laddio",
+    "tracklist_url": "https://www.prestomusic.com/classical/products/8864913--haydn-2032-vol-9-laddio",
+    "performers": [
+      {
+        "name": "Il Giardino Armonico",
+        "role": "orchestra"
+      },
+      {
+        "name": "Giovanni Antonini",
+        "role": "conductor"
+      }
+    ],
+    "works": [
+      {
+        "slug": "haydn-symphony-35",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 35 in B-flat major",
+        "catalogue": {
+          "hoboken": "Hob. I:35"
+        },
+        "category": "Symphonies",
+        "key": "B-flat major",
+        "medium": "CD"
+      },
+      {
+        "slug": "haydn-symphony-45",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 45 in F-sharp minor “Farewell”",
+        "catalogue": {
+          "hoboken": "Hob. I:45"
+        },
+        "category": "Symphonies",
+        "key": "F-sharp minor",
+        "medium": "CD"
+      },
+      {
+        "slug": "haydn-symphony-15",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 15 in D major",
+        "catalogue": {
+          "hoboken": "Hob. I:15"
+        },
+        "category": "Symphonies",
+        "key": "D major",
+        "medium": "CD"
+      },
+      {
+        "slug": "haydn-berenice-che-fai",
+        "composer": "Joseph Haydn",
+        "title": "Berenice, che fai?",
+        "catalogue": {
+          "hoboken": "Hob. XXIVa:10"
+        },
+        "category": "Scenas",
+        "soloists": [
+          {
+            "name": "Sandrine Piau",
+            "role": "soprano"
+          }
+        ],
+        "medium": "CD"
+      }
+    ],
+    "tidal_url": "https://tidal.com/album/187296904",
+    "checked_at": "2026-09-30",
+    "tidal_metadata": {
+      "@context": "https://schema.org",
+      "@id": "https://tidal.com/album/187296904",
+      "@type": "MusicAlbum",
+      "url": "https://tidal.com/album/187296904",
+      "byArtist": [
+        {
+          "@id": "https://tidal.com/artist/3564499",
+          "@type": "MusicGroup",
+          "name": "Sandrine Piau",
+          "url": "https://tidal.com/artist/3564499"
+        },
+        {
+          "@id": "https://tidal.com/artist/12468",
+          "@type": "MusicGroup",
+          "name": "Il Giardino Armonico",
+          "url": "https://tidal.com/artist/12468"
+        },
+        {
+          "@id": "https://tidal.com/artist/18259",
+          "@type": "MusicGroup",
+          "name": "Giovanni Antonini",
+          "url": "https://tidal.com/artist/18259"
+        }
+      ],
+      "datePublished": "2021-01-22",
+      "image": "https://resources.tidal.com/images/e512425d/61c2/44e4/ae2a/53b57eed492d/640x640.jpg",
+      "name": "Haydn 2032, Vol. 9: L'Addio"
+    }
+  },
+  {
+    "volume": 10,
+    "title": "Les heures du jour",
+    "label": "Alpha Classics",
+    "catalogue_number": "ALPHA686",
+    "status": "released",
+    "source_url": "https://www.haydn2032.com/en/projects/no10-les-heures-du-jour",
+    "tracklist_url": "https://www.prestomusic.com/classical/products/8917718--haydn-2032-vol-10-les-heures-du-jour",
+    "performers": [
+      {
+        "name": "Il Giardino Armonico",
+        "role": "orchestra"
+      },
+      {
+        "name": "Giovanni Antonini",
+        "role": "conductor"
+      }
+    ],
+    "works": [
+      {
+        "slug": "haydn-symphony-6",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 6 in D major “Le Matin”",
+        "catalogue": {
+          "hoboken": "Hob. I:6"
+        },
+        "category": "Symphonies",
+        "key": "D major",
+        "medium": "CD"
+      },
+      {
+        "slug": "haydn-symphony-7",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 7 in C major “Le Midi”",
+        "catalogue": {
+          "hoboken": "Hob. I:7"
+        },
+        "category": "Symphonies",
+        "key": "C major",
+        "medium": "CD"
+      },
+      {
+        "slug": "haydn-symphony-8",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 8 in G major “Le Soir”",
+        "catalogue": {
+          "hoboken": "Hob. I:8"
+        },
+        "category": "Symphonies",
+        "key": "G major",
+        "medium": "CD"
+      },
+      {
+        "slug": "mozart-serenata-notturna",
+        "composer": "Wolfgang Amadeus Mozart",
+        "title": "Serenata notturna",
+        "catalogue": {
+          "k": "K. 239"
+        },
+        "category": "Serenades",
+        "existing_path": "data/works/wolfgang-amadeus-mozart-serenade-notturna-work.yaml",
+        "legacy": {
+          "file": "docs/mozart.md",
+          "line": 152,
+          "recommendation": "https://tidal.com/browse/track/294065322?u",
+          "performers": "Mozarteumorchester Salzburg, Roberto González-Monjas"
+        },
+        "medium": "CD"
+      }
+    ],
+    "tidal_url": "https://tidal.com/album/183220000",
+    "checked_at": "2026-09-30",
+    "tidal_metadata": {
+      "@context": "https://schema.org",
+      "@id": "https://tidal.com/album/183220000",
+      "@type": "MusicAlbum",
+      "url": "https://tidal.com/album/183220000",
+      "byArtist": [
+        {
+          "@id": "https://tidal.com/artist/18259",
+          "@type": "MusicGroup",
+          "name": "Giovanni Antonini",
+          "url": "https://tidal.com/artist/18259"
+        },
+        {
+          "@id": "https://tidal.com/artist/12468",
+          "@type": "MusicGroup",
+          "name": "Il Giardino Armonico",
+          "url": "https://tidal.com/artist/12468"
+        }
+      ],
+      "datePublished": "2021-07-09",
+      "image": "https://resources.tidal.com/images/601ade4a/d504/4109/88b4/04c714903f48/640x640.jpg",
+      "name": "Haydn 2032, Vol. 10: Les heures du jour"
+    }
+  },
+  {
+    "volume": 11,
+    "title": "Au goût parisien",
+    "label": "Alpha Classics",
+    "catalogue_number": "ALPHA688",
+    "status": "released",
+    "source_url": "https://www.haydn2032.com/en/projects/no11-au-gout-parisien",
+    "tracklist_url": "https://www.prestomusic.com/classical/products/9268519--haydn-2032-vol-11-au-gout-parisien",
+    "performers": [
+      {
+        "name": "Kammerorchester Basel",
+        "role": "orchestra"
+      },
+      {
+        "name": "Giovanni Antonini",
+        "role": "conductor"
+      }
+    ],
+    "works": [
+      {
+        "slug": "haydn-symphony-82",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 82 in C major “L'Ours”",
+        "catalogue": {
+          "hoboken": "Hob. I:82"
+        },
+        "category": "Symphonies",
+        "key": "C major",
+        "medium": "CD"
+      },
+      {
+        "slug": "haydn-symphony-87",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 87 in A major",
+        "catalogue": {
+          "hoboken": "Hob. I:87"
+        },
+        "category": "Symphonies",
+        "key": "A major",
+        "medium": "CD"
+      },
+      {
+        "slug": "haydn-symphony-24",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 24 in D major",
+        "catalogue": {
+          "hoboken": "Hob. I:24"
+        },
+        "category": "Symphonies",
+        "key": "D major",
+        "medium": "CD"
+      },
+      {
+        "slug": "haydn-symphony-2",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 2 in C major",
+        "catalogue": {
+          "hoboken": "Hob. I:2"
+        },
+        "category": "Symphonies",
+        "key": "C major",
+        "medium": "CD"
+      }
+    ],
+    "tidal_url": "https://tidal.com/album/214310882",
+    "checked_at": "2026-09-30",
+    "tidal_metadata": {
+      "@context": "https://schema.org",
+      "@id": "https://tidal.com/album/214310882",
+      "@type": "MusicAlbum",
+      "url": "https://tidal.com/album/214310882",
+      "byArtist": [
+        {
+          "@id": "https://tidal.com/artist/18259",
+          "@type": "MusicGroup",
+          "name": "Giovanni Antonini",
+          "url": "https://tidal.com/artist/18259"
+        },
+        {
+          "@id": "https://tidal.com/artist/3565211",
+          "@type": "MusicGroup",
+          "name": "Kammerorchester Basel",
+          "url": "https://tidal.com/artist/3565211"
+        }
+      ],
+      "datePublished": "2023-09-08",
+      "image": "https://resources.tidal.com/images/6dfa5b01/c77a/4466/8e20/f562cb7c6f60/640x640.jpg",
+      "name": "Haydn 2032, Vol. 11: Au goût parisien"
+    }
+  },
+  {
+    "volume": 12,
+    "title": "Les jeux et les plaisirs",
+    "label": "Alpha Classics",
+    "catalogue_number": "ALPHA690",
+    "status": "released",
+    "source_url": "https://www.haydn2032.com/en/projects/no12-les-jeux-et-les-plaisirs",
+    "tracklist_url": "https://www.prestomusic.com/classical/products/9334463--haydn-2032-vol-12-les-jeux-et-les-plaisirs",
+    "performers": [
+      {
+        "name": "Kammerorchester Basel",
+        "role": "orchestra"
+      },
+      {
+        "name": "Giovanni Antonini",
+        "role": "conductor"
+      }
+    ],
+    "works": [
+      {
+        "slug": "haydn-symphony-61",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 61 in D major",
+        "catalogue": {
+          "hoboken": "Hob. I:61"
+        },
+        "category": "Symphonies",
+        "key": "D major",
+        "medium": "CD"
+      },
+      {
+        "slug": "haydn-symphony-66",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 66 in B-flat major",
+        "catalogue": {
+          "hoboken": "Hob. I:66"
+        },
+        "category": "Symphonies",
+        "key": "B-flat major",
+        "medium": "CD"
+      },
+      {
+        "slug": "haydn-symphony-69",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 69 in C major “Laudon”",
+        "catalogue": {
+          "hoboken": "Hob. I:69"
+        },
+        "category": "Symphonies",
+        "key": "C major",
+        "medium": "CD"
+      },
+      {
+        "slug": "anonymous-toy-symphony",
+        "composer": "Anonymous",
+        "title": "Sinfonia in C major “Berchtoldsgadner” (Toy Symphony; attribution uncertain)",
+        "catalogue": {
+          "hoboken": "Hob. II:47"
+        },
+        "category": "Symphonies",
+        "notes": "Official project attribution: Johann Michael Haydn et al., attributed; Urtext edition by Sonja Gerlach. Hob. II:47 is a historical catalogue reference, not proof of Joseph Haydn authorship. Kept separate from authenticated Joseph Haydn symphonies.",
+        "medium": "CD"
+      }
+    ],
+    "tidal_url": "https://tidal.com/album/230784321",
+    "checked_at": "2026-09-30",
+    "tidal_metadata": {
+      "@context": "https://schema.org",
+      "@id": "https://tidal.com/album/230784321",
+      "@type": "MusicAlbum",
+      "url": "https://tidal.com/album/230784321",
+      "byArtist": [
+        {
+          "@id": "https://tidal.com/artist/18259",
+          "@type": "MusicGroup",
+          "name": "Giovanni Antonini",
+          "url": "https://tidal.com/artist/18259"
+        },
+        {
+          "@id": "https://tidal.com/artist/3565211",
+          "@type": "MusicGroup",
+          "name": "Kammerorchester Basel",
+          "url": "https://tidal.com/artist/3565211"
+        }
+      ],
+      "datePublished": "2022-07-08",
+      "image": "https://resources.tidal.com/images/474cc43f/a180/46bf/87fa/bdddf7e3e52e/640x640.jpg",
+      "name": "Haydn 2032, Vol. 12: Les jeux et les plaisirs"
+    }
+  },
+  {
+    "volume": 13,
+    "title": "Horn Signal",
+    "label": "Alpha Classics",
+    "catalogue_number": "ALPHA692",
+    "status": "released",
+    "source_url": "https://www.haydn2032.com/en/projects/no13-hornsignal",
+    "tracklist_url": "https://www.prestomusic.com/classical/products/9408525--haydn-2032-vol-13-horn-signal",
+    "performers": [
+      {
+        "name": "Il Giardino Armonico",
+        "role": "orchestra"
+      },
+      {
+        "name": "Giovanni Antonini",
+        "role": "conductor"
+      }
+    ],
+    "works": [
+      {
+        "slug": "haydn-symphony-31",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 31 in D major “Horn Signal”",
+        "catalogue": {
+          "hoboken": "Hob. I:31"
+        },
+        "category": "Symphonies",
+        "key": "D major",
+        "medium": "CD"
+      },
+      {
+        "slug": "haydn-symphony-59",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 59 in A major “Fire”",
+        "catalogue": {
+          "hoboken": "Hob. I:59"
+        },
+        "category": "Symphonies",
+        "key": "A major",
+        "medium": "CD"
+      },
+      {
+        "slug": "haydn-symphony-48",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 48 in C major “Maria Theresia”",
+        "catalogue": {
+          "hoboken": "Hob. I:48"
+        },
+        "category": "Symphonies",
+        "key": "C major",
+        "medium": "CD"
+      },
+      {
+        "slug": "telemann-concerto-recorder-horn",
+        "composer": "Georg Philipp Telemann",
+        "title": "Concerto in F major for recorder, horn and basso continuo",
+        "catalogue": {
+          "twv": "TWV 42:F14"
+        },
+        "category": "Chamber music",
+        "medium": "digital_bonus",
+        "medium_note": "Presto explicitly states that this concerto is not on the CD; retained in the inventory only."
+      }
+    ],
+    "tidal_url": "https://tidal.com/album/267861472",
+    "checked_at": "2026-09-30",
+    "tidal_metadata": {
+      "@context": "https://schema.org",
+      "@id": "https://tidal.com/album/267861472",
+      "@type": "MusicAlbum",
+      "url": "https://tidal.com/album/267861472",
+      "byArtist": [
+        {
+          "@id": "https://tidal.com/artist/12468",
+          "@type": "MusicGroup",
+          "name": "Il Giardino Armonico",
+          "url": "https://tidal.com/artist/12468"
+        },
+        {
+          "@id": "https://tidal.com/artist/18259",
+          "@type": "MusicGroup",
+          "name": "Giovanni Antonini",
+          "url": "https://tidal.com/artist/18259"
+        }
+      ],
+      "datePublished": "2023-01-27",
+      "image": "https://resources.tidal.com/images/8008f6a3/2b74/498e/a289/4d89d3054234/640x640.jpg",
+      "name": "Haydn 2032, Vol. 13: Horn Signal"
+    }
+  },
+  {
+    "volume": 14,
+    "title": "L'impériale",
+    "label": "Alpha Classics",
+    "catalogue_number": "ALPHA694",
+    "status": "released",
+    "source_url": "https://www.haydn2032.com/en/projects/no14-limperiale",
+    "tracklist_url": "https://www.prestomusic.com/classical/products/9512111--haydn-2032-vol-14-limperiale",
+    "performers": [
+      {
+        "name": "Kammerorchester Basel",
+        "role": "orchestra"
+      },
+      {
+        "name": "Giovanni Antonini",
+        "role": "conductor"
+      }
+    ],
+    "works": [
+      {
+        "slug": "haydn-symphony-53",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 53 in D major “L'impériale”",
+        "catalogue": {
+          "hoboken": "Hob. I:53"
+        },
+        "category": "Symphonies",
+        "key": "D major",
+        "version": "Version A (final version)",
+        "notes": "The official project commentary identifies the recorded symphony as version A. The separately catalogued Sinfonia Hob. Ia:7 on the same album is also associated with the alternative finale of version B; it is not a second complete performance of Symphony No. 53.",
+        "medium": "CD"
+      },
+      {
+        "slug": "haydn-symphony-54",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 54 in G major",
+        "catalogue": {
+          "hoboken": "Hob. I:54"
+        },
+        "category": "Symphonies",
+        "key": "G major",
+        "medium": "CD"
+      },
+      {
+        "slug": "haydn-symphony-33",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 33 in C major",
+        "catalogue": {
+          "hoboken": "Hob. I:33"
+        },
+        "category": "Symphonies",
+        "key": "C major",
+        "medium": "CD"
+      },
+      {
+        "slug": "haydn-sinfonia-d-ia7",
+        "composer": "Joseph Haydn",
+        "title": "Sinfonia in D major (overture to “Genovefens vierter Theil”?)",
+        "catalogue": {
+          "hoboken": "Hob. Ia:7"
+        },
+        "category": "Overtures",
+        "notes": "Separately catalogued one-movement Sinfonia, also associated with the finale of Symphony No. 53 version B. The attribution to a specific play is tentative in the official source.",
+        "medium": "CD"
+      }
+    ],
+    "tidal_url": "https://tidal.com/album/304074965",
+    "checked_at": "2026-09-30",
+    "tidal_metadata": {
+      "@context": "https://schema.org",
+      "@id": "https://tidal.com/album/304074965",
+      "@type": "MusicAlbum",
+      "url": "https://tidal.com/album/304074965",
+      "byArtist": [
+        {
+          "@id": "https://tidal.com/artist/18259",
+          "@type": "MusicGroup",
+          "name": "Giovanni Antonini",
+          "url": "https://tidal.com/artist/18259"
+        },
+        {
+          "@id": "https://tidal.com/artist/3565211",
+          "@type": "MusicGroup",
+          "name": "Kammerorchester Basel",
+          "url": "https://tidal.com/artist/3565211"
+        }
+      ],
+      "datePublished": "2023-09-08",
+      "image": "https://resources.tidal.com/images/b736559e/c420/40e8/997f/3842ac42df68/640x640.jpg",
+      "name": "Haydn 2032, Vol. 14: L'impériale"
+    }
+  },
+  {
+    "volume": 15,
+    "title": "La Reine",
+    "label": "Alpha Classics",
+    "catalogue_number": "ALPHA696",
+    "status": "released",
+    "source_url": "https://www.haydn2032.com/en/projects/no15-la-reine",
+    "tracklist_url": "https://www.prestomusic.com/classical/products/9609348--haydn-2032-vol-15-la-reine",
+    "performers": [
+      {
+        "name": "Kammerorchester Basel",
+        "role": "orchestra"
+      },
+      {
+        "name": "Giovanni Antonini",
+        "role": "conductor"
+      }
+    ],
+    "works": [
+      {
+        "slug": "haydn-symphony-85",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 85 in B-flat major “La Reine”",
+        "catalogue": {
+          "hoboken": "Hob. I:85"
+        },
+        "category": "Symphonies",
+        "key": "B-flat major",
+        "medium": "CD"
+      },
+      {
+        "slug": "haydn-symphony-62",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 62 in D major",
+        "catalogue": {
+          "hoboken": "Hob. I:62"
+        },
+        "category": "Symphonies",
+        "key": "D major",
+        "medium": "CD"
+      },
+      {
+        "slug": "haydn-symphony-50",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 50 in C major “Der Götterrath”",
+        "catalogue": {
+          "hoboken": "Hob. I:50"
+        },
+        "category": "Symphonies",
+        "key": "C major",
+        "medium": "CD"
+      }
+    ],
+    "tidal_url": "https://tidal.com/album/347594506",
+    "checked_at": "2026-09-30",
+    "tidal_metadata": {
+      "@context": "https://schema.org",
+      "@id": "https://tidal.com/album/347594506",
+      "@type": "MusicAlbum",
+      "url": "https://tidal.com/album/347594506",
+      "byArtist": [
+        {
+          "@id": "https://tidal.com/artist/3565211",
+          "@type": "MusicGroup",
+          "name": "Kammerorchester Basel",
+          "url": "https://tidal.com/artist/3565211"
+        },
+        {
+          "@id": "https://tidal.com/artist/18259",
+          "@type": "MusicGroup",
+          "name": "Giovanni Antonini",
+          "url": "https://tidal.com/artist/18259"
+        }
+      ],
+      "datePublished": "2024-04-26",
+      "image": "https://resources.tidal.com/images/d8b65f40/c79a/4e0d/852d/5ffa2f6de2a7/640x640.jpg",
+      "name": "Haydn 2032, Vol. 15: La Reine"
+    }
+  },
+  {
+    "volume": 16,
+    "title": "The Surprise",
+    "label": "Alpha Classics",
+    "catalogue_number": "ALPHA698",
+    "status": "released",
+    "source_url": "https://www.haydn2032.com/en/projects/no16-the-surprise",
+    "tracklist_url": "https://www.prestomusic.com/classical/products/9719694--haydn-2032-vol-16-the-surprise",
+    "performers": [
+      {
+        "name": "Il Giardino Armonico",
+        "role": "orchestra"
+      },
+      {
+        "name": "Kammerorchester Basel",
+        "role": "orchestra"
+      },
+      {
+        "name": "Giovanni Antonini",
+        "role": "conductor"
+      }
+    ],
+    "works": [
+      {
+        "slug": "haydn-symphony-98",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 98 in B-flat major",
+        "catalogue": {
+          "hoboken": "Hob. I:98"
+        },
+        "category": "Symphonies",
+        "key": "B-flat major",
+        "medium": "CD"
+      },
+      {
+        "slug": "haydn-symphony-94",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 94 in G major “The Surprise”",
+        "catalogue": {
+          "hoboken": "Hob. I:94"
+        },
+        "category": "Symphonies",
+        "key": "G major",
+        "medium": "CD"
+      },
+      {
+        "slug": "haydn-symphony-90",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 90 in C major",
+        "catalogue": {
+          "hoboken": "Hob. I:90"
+        },
+        "category": "Symphonies",
+        "key": "C major",
+        "medium": "CD"
+      },
+      {
+        "slug": "rossini-la-scala-di-seta",
+        "composer": "Gioachino Rossini",
+        "title": "La scala di seta",
+        "catalogue": {},
+        "category": "Operas",
+        "excerpt": "Overture only; this album does not contain the complete opera.",
+        "medium": "CD"
+      }
+    ],
+    "tidal_url": "https://tidal.com/album/386182541",
+    "checked_at": "2026-09-30",
+    "tidal_metadata": {
+      "@context": "https://schema.org",
+      "@id": "https://tidal.com/album/386182541",
+      "@type": "MusicAlbum",
+      "url": "https://tidal.com/album/386182541",
+      "byArtist": [
+        {
+          "@id": "https://tidal.com/artist/12468",
+          "@type": "MusicGroup",
+          "name": "Il Giardino Armonico",
+          "url": "https://tidal.com/artist/12468"
+        },
+        {
+          "@id": "https://tidal.com/artist/3565211",
+          "@type": "MusicGroup",
+          "name": "Kammerorchester Basel",
+          "url": "https://tidal.com/artist/3565211"
+        },
+        {
+          "@id": "https://tidal.com/artist/18259",
+          "@type": "MusicGroup",
+          "name": "Giovanni Antonini",
+          "url": "https://tidal.com/artist/18259"
+        }
+      ],
+      "datePublished": "2024-11-01",
+      "image": "https://resources.tidal.com/images/8c46e424/ea8d/4140/8193/82dee02f6332/640x640.jpg",
+      "name": "Haydn 2032, Vol. 16: The Surprise"
+    },
+    "ensemble_note": "Joint orchestra assembled from Il Giardino Armonico and Kammerorchester Basel; the official project lists a combined line-up."
+  },
+  {
+    "volume": 17,
+    "title": "Per il Luigi",
+    "label": "Alpha Classics",
+    "catalogue_number": "ALPHA1146",
+    "status": "released",
+    "source_url": "https://www.haydn2032.com/en/projects/no17-per-il-luigi",
+    "tracklist_url": "https://www.prestomusic.com/classical/products/9769890--haydn-2032-vol-17-per-il-luigi",
+    "performers": [
+      {
+        "name": "Kammerorchester Basel",
+        "role": "orchestra"
+      },
+      {
+        "name": "Giovanni Antonini",
+        "role": "conductor"
+      }
+    ],
+    "works": [
+      {
+        "slug": "haydn-symphony-36",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 36 in E-flat major",
+        "catalogue": {
+          "hoboken": "Hob. I:36"
+        },
+        "category": "Symphonies",
+        "key": "E-flat major",
+        "medium": "CD"
+      },
+      {
+        "slug": "haydn-symphony-16",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 16 in B-flat major",
+        "catalogue": {
+          "hoboken": "Hob. I:16"
+        },
+        "category": "Symphonies",
+        "key": "B-flat major",
+        "medium": "CD"
+      },
+      {
+        "slug": "haydn-symphony-13",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 13 in D major",
+        "catalogue": {
+          "hoboken": "Hob. I:13"
+        },
+        "category": "Symphonies",
+        "key": "D major",
+        "medium": "CD"
+      },
+      {
+        "slug": "haydn-violin-concerto-1",
+        "composer": "Joseph Haydn",
+        "title": "Violin Concerto No. 1 in C major “Per il Luigi”",
+        "catalogue": {
+          "hoboken": "Hob. VIIa:1"
+        },
+        "category": "Concertos",
+        "soloists": [
+          {
+            "name": "Dmitry Smirnov",
+            "role": "violin"
+          }
+        ],
+        "medium": "CD"
+      }
+    ],
+    "tidal_url": "https://tidal.com/album/432606500",
+    "checked_at": "2026-09-30",
+    "tidal_metadata": {
+      "@context": "https://schema.org",
+      "@id": "https://tidal.com/album/432606500",
+      "@type": "MusicAlbum",
+      "url": "https://tidal.com/album/432606500",
+      "byArtist": [
+        {
+          "@id": "https://tidal.com/artist/3565211",
+          "@type": "MusicGroup",
+          "name": "Kammerorchester Basel",
+          "url": "https://tidal.com/artist/3565211"
+        },
+        {
+          "@id": "https://tidal.com/artist/18259",
+          "@type": "MusicGroup",
+          "name": "Giovanni Antonini",
+          "url": "https://tidal.com/artist/18259"
+        }
+      ],
+      "datePublished": "2025-06-20",
+      "image": "https://resources.tidal.com/images/b26c2309/a0c7/4b74/96be/5f8d5b388ea2/640x640.jpg",
+      "name": "Haydn 2032, Vol. 17: Per il Luigi"
+    }
+  },
+  {
+    "volume": 18,
+    "title": "Il maestro di scuola",
+    "label": "Alpha Classics",
+    "catalogue_number": "ALPHA1092",
+    "status": "released",
+    "source_url": "https://www.haydn2032.com/en/projects/no18-maestro-e-scolare",
+    "tracklist_url": "https://www.prestomusic.com/classical/products/9827138--haydn-2032-vol-18-il-maestro-di-scuola",
+    "performers": [
+      {
+        "name": "Kammerorchester Basel",
+        "role": "orchestra"
+      },
+      {
+        "name": "Giovanni Antonini",
+        "role": "conductor"
+      }
+    ],
+    "works": [
+      {
+        "slug": "haydn-symphony-56",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 56 in C major",
+        "catalogue": {
+          "hoboken": "Hob. I:56"
+        },
+        "category": "Symphonies",
+        "key": "C major",
+        "medium": "CD"
+      },
+      {
+        "slug": "haydn-symphony-29",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 29 in E major",
+        "catalogue": {
+          "hoboken": "Hob. I:29"
+        },
+        "category": "Symphonies",
+        "key": "E major",
+        "medium": "CD"
+      },
+      {
+        "slug": "haydn-symphony-55",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 55 in E-flat major “Il maestro di scuola”",
+        "catalogue": {
+          "hoboken": "Hob. I:55"
+        },
+        "category": "Symphonies",
+        "key": "E-flat major",
+        "medium": "CD"
+      },
+      {
+        "slug": "lessel-symphony-5",
+        "composer": "Franciszek Lessel",
+        "title": "Symphony No. 5 in G minor",
+        "catalogue": {},
+        "category": "Symphonies",
+        "excerpt": "Finale only: Molto presto.",
+        "medium": "CD"
+      }
+    ],
+    "tidal_url": "https://tidal.com/album/467075961",
+    "checked_at": "2026-09-30",
+    "tidal_metadata": {
+      "@context": "https://schema.org",
+      "@id": "https://tidal.com/album/467075961",
+      "@type": "MusicAlbum",
+      "url": "https://tidal.com/album/467075961",
+      "byArtist": [
+        {
+          "@id": "https://tidal.com/artist/18259",
+          "@type": "MusicGroup",
+          "name": "Giovanni Antonini",
+          "url": "https://tidal.com/artist/18259"
+        },
+        {
+          "@id": "https://tidal.com/artist/3565211",
+          "@type": "MusicGroup",
+          "name": "Kammerorchester Basel",
+          "url": "https://tidal.com/artist/3565211"
+        }
+      ],
+      "datePublished": "2025-11-28",
+      "image": "https://resources.tidal.com/images/a80ad541/2a29/4a24/8552/8b7b5ad167f2/640x640.jpg",
+      "name": "Haydn 2032, Vol. 18: Il maestro di scuola"
+    }
+  },
+  {
+    "volume": 19,
+    "title": "Trauer",
+    "label": "Alpha Classics",
+    "catalogue_number": "ALPHA1101",
+    "status": "released",
+    "source_url": "https://www.haydn2032.com/en/projects/no19-trauer",
+    "tracklist_url": "https://www.prestomusic.com/classical/products/9856776--haydn2032-vol-19-trauer",
+    "performers": [
+      {
+        "name": "Il Giardino Armonico",
+        "role": "orchestra"
+      },
+      {
+        "name": "Giovanni Antonini",
+        "role": "conductor"
+      }
+    ],
+    "works": [
+      {
+        "slug": "haydn-symphony-52",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 52 in C minor",
+        "catalogue": {
+          "hoboken": "Hob. I:52"
+        },
+        "category": "Symphonies",
+        "key": "C minor",
+        "medium": "CD"
+      },
+      {
+        "slug": "haydn-symphony-44",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 44 in E minor “Trauer”",
+        "catalogue": {
+          "hoboken": "Hob. I:44"
+        },
+        "category": "Symphonies",
+        "key": "E minor",
+        "medium": "CD"
+      },
+      {
+        "slug": "haydn-symphony-108",
+        "composer": "Joseph Haydn",
+        "title": "Symphony No. 108 in B-flat major “Sinfonia B”",
+        "catalogue": {
+          "hoboken": "Hob. I:108"
+        },
+        "category": "Symphonies",
+        "key": "B-flat major",
+        "aliases": [
+          "Symphony B",
+          "Sinfonia B",
+          "Hob. I:108"
+        ],
+        "medium": "CD"
+      },
+      {
+        "slug": "part-da-pacem-domine-strings",
+        "composer": "Arvo Pärt",
+        "title": "Da pacem Domine (version for string orchestra)",
+        "catalogue": {},
+        "category": "Orchestral works",
+        "version": "String orchestra, 2004/2006",
+        "medium": "CD"
+      },
+      {
+        "slug": "scheidt-paduan-a4",
+        "composer": "Samuel Scheidt",
+        "title": "Paduan à 4 (Paduana dolorosa)",
+        "catalogue": {
+          "sswv": "SSWV 43"
+        },
+        "category": "Instrumental music",
+        "medium": "CD"
+      }
+    ],
+    "tidal_url": "https://tidal.com/album/504485309",
+    "checked_at": "2026-09-30",
+    "tidal_metadata": {
+      "@context": "https://schema.org",
+      "@id": "https://tidal.com/album/504485309",
+      "@type": "MusicAlbum",
+      "url": "https://tidal.com/album/504485309",
+      "byArtist": [
+        {
+          "@id": "https://tidal.com/artist/18259",
+          "@type": "MusicGroup",
+          "name": "Giovanni Antonini",
+          "url": "https://tidal.com/artist/18259"
+        },
+        {
+          "@id": "https://tidal.com/artist/12468",
+          "@type": "MusicGroup",
+          "name": "Il Giardino Armonico",
+          "url": "https://tidal.com/artist/12468"
+        }
+      ],
+      "datePublished": "2026-05-15",
+      "image": "https://resources.tidal.com/images/5e2864ba/af28/4648/838f/2f9a0f269c26/640x640.jpg",
+      "name": "Haydn2032, Vol. 19: Trauer"
+    }
+  }
+]

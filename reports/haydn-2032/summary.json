@@ -1,0 +1,21 @@
+{
+  "checked_at": "2026-09-30",
+  "released_volumes": 19,
+  "cd_work_occurrences": 78,
+  "digital_bonus_occurrences": 1,
+  "haydn_symphonies": 59,
+  "new_works": 77,
+  "new_work_groups": 77,
+  "new_persons": 11,
+  "new_selected_performances": 76,
+  "comparison_candidates": 2,
+  "verified_tidal_albums": 20,
+  "canonical_counts": {
+    "persons": 23,
+    "work-groups": 1469,
+    "works": 1481,
+    "performances": 938
+  },
+  "released_albums": 20,
+  "unnumbered_companion_albums": 1
+}

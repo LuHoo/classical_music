@@ -1,0 +1,19 @@
+id: 21e1bb41f77d40b8b2ded970e86bcdd6
+work_id: 779d2f55d66f4e4ba10568ff885cec35
+performers:
+- name: Il Giardino Armonico
+  role: orchestra
+- name: Giovanni Antonini
+  role: conductor
+release:
+  label: Alpha Classics
+  catalogue_number: ALPHA670
+  album_title: 'Haydn 2032, Vol. 1: La Passione'
+source:
+  url: https://www.prestomusic.com/classical/products/8047516--haydn-2032-volume-1-la-passione
+  file: reports/haydn-2032/catalogue.json
+links:
+  tidal:
+    url: https://tidal.com/album/187335404
+notes: Haydn 2032, volume 1. Sources and Tidal album metadata checked 2026-09-30. Album link covers this
+  work; it is not a work-specific track link.
