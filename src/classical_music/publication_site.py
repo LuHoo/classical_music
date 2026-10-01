@@ -123,27 +123,7 @@ class PublicationSiteGenerator:
             '<a href="{{ site.baseurl }}/publication/composers/">Browse composers</a>'
             "</p>",
             "",
-            "## Works Without Recommendations",
-            "",
-            '<ul class="work-list">',
         ]
-
-        without_performances = [work for work in works if not performances_by_work.get(work["id"])]
-        for work in without_performances[:25]:
-            body.append(
-                '<li><span class="work-list__row">'
-                f'<a class="work-list__title" href="{{{{ site.baseurl }}}}/publication/works/{work["id"]}/">'
-                f"{self._html(work['title'])}</a>"
-                '<span class="work-list__status">no recommendation yet</span>'
-                "</span></li>"
-            )
-        if len(without_performances) > 25:
-            body.append(
-                '<li class="publication-note">'
-                f"{len(without_performances) - 25} more works without recommendations"
-                "</li>"
-            )
-        body.append("</ul>")
 
         self._write_page(self.output_dir / "index.md", body)
         return 1
@@ -216,7 +196,8 @@ class PublicationSiteGenerator:
                 for _, run in groupby(members, key=lambda work: self._recommendation_key(
                         performances_by_work.get(work["id"], []))):
                     run = list(run)
-                    text = ", ".join(self._work_entry(work, [], catalogue_only=True) for work in run)
+                    text = ", ".join(self._work_entry(work, performances_by_work.get(work["id"], []),
+                                                       catalogue_only=True, show_recommendations=False) for work in run)
                     recommendations = self._inline_recommendations(performances_by_work.get(run[0]["id"], []))
                     if recommendations:
                         text += " — " + recommendations
@@ -283,11 +264,16 @@ class PublicationSiteGenerator:
                 result.append(text)
         return ", ".join(result)
 
-    def _work_entry(self, work: dict[str, Any], performances: list[dict[str, Any]], catalogue_only: bool = False) -> str:
+    def _work_entry(self, work: dict[str, Any], performances: list[dict[str, Any]],
+                    catalogue_only: bool = False, show_recommendations: bool = True) -> str:
         label = (self._catalogue_text(work.get("catalogue"), exclude=("opus",)) if catalogue_only else "") or work["title"]
         entry = ('<span class="gem-mark" aria-label="Gem">💎</span> ' if work.get("gem") else "")
-        entry += (f'<a class="work-title" href="{{{{ site.baseurl }}}}/publication/works/{work["id"]}/">'
-                  f'<strong>{self._html(label)}</strong></a>')
+        title = f'<strong>{self._html(label)}</strong>'
+        if performances:
+            entry += (f'<a class="work-title" href="{{{{ site.baseurl }}}}/publication/works/{work["id"]}/">'
+                      f'{title}</a>')
+        else:
+            entry += title
         if not catalogue_only:
             catalogue = self._catalogue_text(work.get("catalogue"), work["title"])
             if catalogue:
@@ -295,7 +281,7 @@ class PublicationSiteGenerator:
             date = work.get("date_text") or work.get("year")
             if date:
                 entry += f" ({self._html(str(date))})"
-        recommendations = self._inline_recommendations(performances)
+        recommendations = self._inline_recommendations(performances) if show_recommendations else ""
         if recommendations:
             entry += " — " + recommendations
         return entry
