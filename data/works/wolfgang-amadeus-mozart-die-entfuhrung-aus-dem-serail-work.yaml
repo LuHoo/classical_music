@@ -1,0 +1,11 @@
+id: wolfgang-amadeus-mozart-die-entfuhrung-aus-dem-serail-work
+work_group_id: wolfgang-amadeus-mozart-die-entfuhrung-aus-dem-serail-group
+composer_id: wolfgang-amadeus-mozart
+title: Die Entführung aus dem Serail
+source:
+  file: docs/mozart.md
+  line: '44'
+catalogue:
+  k: K. 384
+date_text: 1781-1782
+category: Operas

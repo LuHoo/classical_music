@@ -1,0 +1,8 @@
+id: "paul-hindemith-eight-waltzes-op-6-group"
+composer_id: "paul-hindemith"
+title: "Eight Waltzes"
+source:
+  file: "docs/hindemith.md"
+  line: "331"
+catalogue:
+  opus: "Op. 6"

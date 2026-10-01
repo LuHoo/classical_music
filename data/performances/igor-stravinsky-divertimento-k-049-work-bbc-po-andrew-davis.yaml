@@ -1,0 +1,13 @@
+id: "igor-stravinsky-divertimento-k-049-work-bbc-po-andrew-davis"
+work_id: "igor-stravinsky-divertimento-k-049-work"
+performers:
+  - name: "BBC PO"
+    role: "orchestra"
+  - name: "Andrew Davis"
+    role: "conductor"
+links:
+  tidal:
+    url: "http://www.tidal.com/track/376259023"
+source:
+  file: "docs/stravinsky.md"
+  line: "79"

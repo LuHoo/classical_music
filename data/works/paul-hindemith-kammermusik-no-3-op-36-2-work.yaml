@@ -1,0 +1,11 @@
+id: "paul-hindemith-kammermusik-no-3-op-36-2-work"
+work_group_id: "paul-hindemith-kammermusik-no-3-op-36-2-group"
+composer_id: "paul-hindemith"
+title: "Kammermusik No. 3"
+source:
+  file: "docs/hindemith.md"
+  line: "104"
+catalogue:
+  opus: "Op. 36/2"
+date_text: "1925"
+category: "Concertante"

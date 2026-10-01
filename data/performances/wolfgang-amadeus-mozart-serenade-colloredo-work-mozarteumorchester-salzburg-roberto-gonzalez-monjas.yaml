@@ -1,0 +1,14 @@
+id: 
+  wolfgang-amadeus-mozart-serenade-colloredo-work-mozarteumorchester-salzburg-roberto-gonzalez-monjas
+work_id: wolfgang-amadeus-mozart-serenade-colloredo-work
+source:
+  file: docs/mozart.md
+  line: '150'
+links:
+  tidal:
+    url: https://tidal.com/browse/track/294065326?u
+performers:
+- name: Mozarteumorchester Salzburg
+  role: performer
+- name: Roberto González-Monjas
+  role: performer

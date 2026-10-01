@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-trio-for-two-oboes-and-english-horn-in-c-major-op-87-group"
+composer_id: "ludwig-van-beethoven"
+title: "Trio for two oboes and English horn in C major"
+source:
+  file: "docs/beethoven.md"
+  line: "242"
+catalogue:
+  opus: "Op. 87"

@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-piano-sonata-no-22-f-op-54-group"
+composer_id: "ludwig-van-beethoven"
+title: "Piano Sonata No. 22, F"
+source:
+  file: "docs/beethoven.md"
+  line: "352"
+catalogue:
+  opus: "Op. 54"

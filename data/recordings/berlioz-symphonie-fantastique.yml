@@ -1,0 +1,21 @@
+id: berlioz-symphonie-fantastique
+title: "Berlioz: Symphonie fantastique"
+label: Philips
+catalog_number: "442 441-2"
+year: 1994
+edition: "Studio recording"
+artists:
+  conductor:
+    - bernard-haitink
+  orchestra:
+    - royal-concertgebouw-orchestra
+works:
+  - work_id: berlioz-symphonie-fantastique
+    status: recommended
+    notes: Current public recommendation for this work.
+links:
+  tidal:
+    url: https://tidal.com/browse/album/123456789
+    status: active
+    last_checked: "2026-07-09"
+notes: A compact single-work example for the internal recording model.

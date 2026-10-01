@@ -1,0 +1,18 @@
+id: a7c1bad7d5cd43bfbda965930ed41f04
+work_id: 4db1ad5730664946b199911e60aa8915
+performers:
+- name: La Cetra Barockorchester Basel
+  role: ensemble
+- name: Andrea Marcon
+  role: conductor
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP8676
+  album_title: Arsilda, regina di Ponto
+source:
+  url: https://vivaldiedition.net/portfolio/vol-73-arsilda/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: 'The Vivaldi Edition, volume 74. Album page verified 2026-09-28. '
+links:
+  tidal:
+    url: https://tidal.com/album/401308324

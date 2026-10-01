@@ -1,0 +1,8 @@
+id: "igor-stravinsky-variations-k-103-group"
+composer_id: "igor-stravinsky"
+title: "Variations"
+source:
+  file: "docs/stravinsky.md"
+  line: "101"
+catalogue:
+  k: "K 103"

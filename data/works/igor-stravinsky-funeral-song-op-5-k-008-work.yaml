@@ -1,0 +1,12 @@
+id: "igor-stravinsky-funeral-song-op-5-k-008-work"
+work_group_id: "igor-stravinsky-funeral-song-op-5-k-008-group"
+composer_id: "igor-stravinsky"
+title: "Funeral Song"
+source:
+  file: "docs/stravinsky.md"
+  line: "65"
+catalogue:
+  opus: "Op. 5"
+  k: "K 008"
+date_text: "1908"
+category: "Orchestral"

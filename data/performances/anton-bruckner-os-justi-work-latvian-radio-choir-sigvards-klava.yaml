@@ -1,0 +1,10 @@
+id: "anton-bruckner-os-justi-work-latvian-radio-choir-sigvards-klava"
+work_id: "anton-bruckner-os-justi-work"
+source:
+  file: "docs/bruckner.md"
+  line: "76"
+links:
+- platform: "tidal"
+  url: "https://tidal.com/browse/track/284019400?u"
+performers:
+- name: "Latvian Radio Choir, Sigvards Klava"

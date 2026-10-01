@@ -1,0 +1,11 @@
+id: "igor-stravinsky-agon-k-088-work"
+work_group_id: "igor-stravinsky-agon-k-088-group"
+composer_id: "igor-stravinsky"
+title: "Agon"
+source:
+  file: "docs/stravinsky.md"
+  line: "55"
+catalogue:
+  k: "K 088"
+date_text: "1957"
+category: "Ballet"

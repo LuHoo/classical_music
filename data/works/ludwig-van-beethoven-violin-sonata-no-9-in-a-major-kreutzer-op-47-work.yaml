@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-violin-sonata-no-9-in-a-major-kreutzer-op-47-work"
+work_group_id: "ludwig-van-beethoven-violin-sonata-no-9-in-a-major-kreutzer-op-47-group"
+composer_id: "ludwig-van-beethoven"
+title: "Violin Sonata No. 9 in A major, \"Kreutzer\""
+source:
+  file: "docs/beethoven.md"
+  line: "216"
+catalogue:
+  opus: "Op. 47"
+date_text: "1802–24 May 1803"
+category: "Chamber"

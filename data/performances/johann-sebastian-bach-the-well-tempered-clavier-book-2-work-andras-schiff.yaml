@@ -1,0 +1,10 @@
+id: "johann-sebastian-bach-the-well-tempered-clavier-book-2-work-andras-schiff"
+work_id: "johann-sebastian-bach-the-well-tempered-clavier-book-2-work"
+source:
+  file: "docs/bachJS.md"
+  line: "116"
+links:
+- platform: "tidal"
+  url: "http://www.tidal.com/track/77689950"
+performers:
+- name: "András Schiff"

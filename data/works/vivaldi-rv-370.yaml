@@ -1,0 +1,9 @@
+id: 3a76038c693a4a678370edcd0beda925
+work_group_id: 784766c5ed8e4978b7552fce74c812ac
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 370
+catalogue:
+  rv: RV 370
+source:
+  url: https://vivaldiedition.net/portfolio/vol-49-concerti-per-violino-v-per-pisendel-2012/
+  file: reports/vivaldi-naive-edition/catalogue.json

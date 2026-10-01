@@ -1,0 +1,12 @@
+id: "johann-sebastian-bach-johannes-passion-work"
+work_group_id: "johann-sebastian-bach-johannes-passion-group"
+composer_id: "johann-sebastian-bach"
+title: "Johannes-Passion"
+source:
+  file: "docs/bachJS.md"
+  line: "122"
+catalogue:
+  bwv: "BWV 245"
+date_text: "1724"
+category: "Passions, Oratorios"
+gem: true

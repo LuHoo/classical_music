@@ -1,0 +1,19 @@
+id: 38a7b1b7882242679d2d33a707c80f2a
+work_id: 86dec3212b024dcfaa546453b5ba4fc0
+performers:
+- name: Modo Antiquo
+  role: ensemble
+- name: Federico Maria Sardelli
+  role: conductor
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP30534
+  album_title: New Discoveries II
+source:
+  url: https://vivaldiedition.net/portfolio/vol-46-new-discoveries-ii-2011/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: The Vivaldi Edition, volume 46. Album page verified 2026-09-28. RV 431a, niet RV 431. RV 721 en 722
+  verwijzen naar opera-aria’s.
+links:
+  tidal:
+    url: https://tidal.com/album/91801069

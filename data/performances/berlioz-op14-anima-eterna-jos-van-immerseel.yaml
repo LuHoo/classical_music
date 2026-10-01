@@ -1,0 +1,16 @@
+id: berlioz-op14-anima-eterna-jos-van-immerseel
+work_id: berlioz-op14
+performers:
+- artist_id: anima-eterna
+  name: Anima Eterna
+  role: performer
+- artist_id: jos-van-immerseel
+  name: Jos van Immerseel
+  role: conductor
+source_performer_text: Anima Eterna, Jos van Immerseel
+links:
+  tidal:
+    url: http://www.tidal.com/track/187313911
+source:
+  file: /Users/Lucas_new/.codex/.chatgpt-projects/g-p-6a500123ac548191ab37db95c0d285a2/classical_music/docs/berlioz.md
+  line: '24'

@@ -1,0 +1,8 @@
+id: "paul-hindemith-der-damon-op-28-group"
+composer_id: "paul-hindemith"
+title: "Der Dämon"
+source:
+  file: "docs/hindemith.md"
+  line: "43"
+catalogue:
+  opus: "Op. 28"

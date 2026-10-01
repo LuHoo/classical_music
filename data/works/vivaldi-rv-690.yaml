@@ -1,0 +1,9 @@
+id: 9efacfc9d3b04f0d9305c3b4d259aff0
+work_group_id: 9cc739fc87154d6abe5f51cf1915411f
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Serenata a tre, RV 690
+catalogue:
+  rv: RV 690
+source:
+  url: https://vivaldiedition.net/portfolio/vol-70-serenata-a-tre/
+  file: reports/vivaldi-naive-edition/catalogue.json

@@ -1,0 +1,12 @@
+id: dmitri-shostakovich-symphony-no-4-in-c-minor-work
+work_group_id: dmitri-shostakovich-symphony-no-4-in-c-minor-group
+composer_id: dmitri-shostakovich
+title: Symphony No. 4 in C minor
+source:
+  file: docs/shostakovich.md
+  line: '66'
+catalogue:
+  op: Op. 43
+date_text: 1935–1936
+category: Orchestral
+gem: true

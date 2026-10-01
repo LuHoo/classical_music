@@ -1,0 +1,11 @@
+id: sergei-prokofiev-symphony-no-7-in-c-sharp-minor-work
+work_group_id: sergei-prokofiev-symphony-no-7-in-c-sharp-minor-group
+composer_id: sergei-prokofiev
+title: Symphony No. 7 in C-sharp minor
+source:
+  file: docs/prokofiev.md
+  line: '229'
+catalogue:
+  op: Op. 131
+date_text: 1951–52
+category: Orchestral

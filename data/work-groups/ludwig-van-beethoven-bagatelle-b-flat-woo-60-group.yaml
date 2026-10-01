@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-bagatelle-b-flat-woo-60-group"
+composer_id: "ludwig-van-beethoven"
+title: "Bagatelle, B♭"
+source:
+  file: "docs/beethoven.md"
+  line: "458"
+catalogue:
+  woo: "WoO 60"

@@ -1,0 +1,8 @@
+id: "igor-stravinsky-greeting-prelude-k-085-group"
+composer_id: "igor-stravinsky"
+title: "Greeting Prelude"
+source:
+  file: "docs/stravinsky.md"
+  line: "99"
+catalogue:
+  k: "K 085"

@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-the-creatures-of-prometheus-op-43-work"
+work_group_id: "ludwig-van-beethoven-the-creatures-of-prometheus-op-43-group"
+composer_id: "ludwig-van-beethoven"
+title: "The Creatures of Prometheus"
+source:
+  file: "docs/beethoven.md"
+  line: "36"
+catalogue:
+  opus: "Op. 43"
+date_text: "1800–1801"
+category: "Orchestral"

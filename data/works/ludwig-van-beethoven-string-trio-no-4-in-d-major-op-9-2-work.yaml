@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-string-trio-no-4-in-d-major-op-9-2-work"
+work_group_id: "ludwig-van-beethoven-string-trio-no-4-in-d-major-op-9-2-group"
+composer_id: "ludwig-van-beethoven"
+title: "String Trio No. 4 in D major"
+source:
+  file: "docs/beethoven.md"
+  line: "152"
+catalogue:
+  opus: "Op. 9/2"
+date_text: "1797–1798"
+category: "Chamber"

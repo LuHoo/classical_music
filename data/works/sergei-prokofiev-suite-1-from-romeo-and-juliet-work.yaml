@@ -1,0 +1,11 @@
+id: sergei-prokofiev-suite-1-from-romeo-and-juliet-work
+work_group_id: sergei-prokofiev-suite-1-from-romeo-and-juliet-group
+composer_id: sergei-prokofiev
+title: Suite 1 from Romeo and Juliet
+source:
+  file: docs/prokofiev.md
+  line: '114'
+catalogue:
+  op: Op. 64bis
+date_text: '1936'
+category: Orchestral

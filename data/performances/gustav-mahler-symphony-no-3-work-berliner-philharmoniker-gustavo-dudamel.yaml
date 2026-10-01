@@ -1,0 +1,10 @@
+id: "gustav-mahler-symphony-no-3-work-berliner-philharmoniker-gustavo-dudamel"
+work_id: "gustav-mahler-symphony-no-3-work"
+source:
+  file: "docs/mahler.md"
+  line: "40"
+links:
+- platform: "tidal"
+  url: "http://www.tidal.com/track/185182374"
+performers:
+- name: "Berliner Philharmoniker, Gustavo Dudamel"

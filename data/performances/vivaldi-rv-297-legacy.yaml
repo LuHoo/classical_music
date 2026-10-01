@@ -1,0 +1,14 @@
+id: 810028cffe8e44eba270086ee7616c25
+work_id: 8652baec51024e279e33b775120274a0
+performers:
+- name: Anne-Sophie Mutter
+  role: performer
+- name: Trondheim Soloists
+  role: performer
+links:
+  tidal:
+    url: http://www.tidal.com/track/77697108
+source:
+  file: docs/vivaldi.md
+  line: '26'
+notes: Existing curator recommendation retained pending comparison with the Naïve Edition where applicable.

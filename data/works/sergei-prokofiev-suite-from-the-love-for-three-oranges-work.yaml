@@ -1,0 +1,11 @@
+id: sergei-prokofiev-suite-from-the-love-for-three-oranges-work
+work_group_id: sergei-prokofiev-suite-from-the-love-for-three-oranges-group
+composer_id: sergei-prokofiev
+title: Suite from The Love for Three Oranges
+source:
+  file: docs/prokofiev.md
+  line: '53'
+catalogue:
+  op: Op. 33bis
+date_text: 1919, rev. 1924
+category: Orchestral

@@ -1,0 +1,19 @@
+id: 60314cb16f144bada558b169df7f2e0e
+work_id: ec7bb8eb088648a5afee1e648ef5ab2e
+performers:
+- name: Abchordis Ensemble
+  role: ensemble
+- name: Andrea Buccarella
+  role: director
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP8877
+  album_title: La Gloria e Imeneo
+source:
+  url: https://vivaldiedition.net/portfolio/vol-73-la-gloria-e-imeneo/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: The Vivaldi Edition, volume 73. Album page verified 2026-09-28. Inclusief de openingssinfonia RV 138
+  naast de serenata RV 687.
+links:
+  tidal:
+    url: https://tidal.com/album/444026485

@@ -1,0 +1,11 @@
+id: "johann-sebastian-bach-concerto-for-3-harpsichords-and-orchestra-no-1-in-d-min-work"
+work_group_id: "johann-sebastian-bach-concerto-for-3-harpsichords-and-orchestra-no-1-in-d-min-group"
+composer_id: "johann-sebastian-bach"
+title: "Concerto for 3 harpsichords and orchestra No. 1 in D min."
+source:
+  file: "docs/bachJS.md"
+  line: "66"
+catalogue:
+  bwv: "BWV 1063"
+date_text: "c.1730"
+category: "Orchestral"

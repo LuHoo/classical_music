@@ -1,0 +1,11 @@
+id: sergei-prokofiev-suite-from-on-the-dnieper-work
+work_group_id: sergei-prokofiev-suite-from-on-the-dnieper-group
+composer_id: sergei-prokofiev
+title: Suite from On the Dnieper
+source:
+  file: docs/prokofiev.md
+  line: '92'
+catalogue:
+  op: Op. 51bis
+date_text: '1933'
+category: Orchestral

@@ -1,0 +1,9 @@
+id: a1431a0d5fde44179f6ef0f72bfaf4ac
+work_group_id: 53a49894a83846a28407e97c64f72467
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 325
+catalogue:
+  rv: RV 325
+source:
+  url: https://vivaldiedition.net/portfolio/vol-28-concerti-per-violin-ii-di-sfida-2006/
+  file: reports/vivaldi-naive-edition/catalogue.json

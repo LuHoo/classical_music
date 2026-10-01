@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-string-quartet-no-15-in-a-minor-op-132-work-danish-string-quartet"
+work_id: "ludwig-van-beethoven-string-quartet-no-15-in-a-minor-op-132-work"
+performers:
+  - name: "Danish String Quartet"
+    role: "ensemble"
+links:
+  tidal:
+    url: "http://www.tidal.com/track/231055289"
+source:
+  file: "docs/beethoven.md"
+  line: "282"

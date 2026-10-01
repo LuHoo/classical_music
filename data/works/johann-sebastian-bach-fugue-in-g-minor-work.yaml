@@ -1,0 +1,11 @@
+id: "johann-sebastian-bach-fugue-in-g-minor-work"
+work_group_id: "johann-sebastian-bach-fugue-in-g-minor-group"
+composer_id: "johann-sebastian-bach"
+title: "Fugue in G Minor"
+source:
+  file: "docs/bachJS.md"
+  line: "88"
+catalogue:
+  bwv: "BWV 578"
+date_text: "http://www.tidal.com/track/2924759"
+category: "Orchestral arrangements"

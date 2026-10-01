@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-piano-trio-no-2-in-g-major-op-1-2-group"
+composer_id: "ludwig-van-beethoven"
+title: "Piano Trio No. 2 in G major"
+source:
+  file: "docs/beethoven.md"
+  line: "124"
+catalogue:
+  opus: "Op. 1/2"

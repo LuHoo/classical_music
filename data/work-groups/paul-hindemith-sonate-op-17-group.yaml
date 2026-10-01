@@ -1,0 +1,8 @@
+id: "paul-hindemith-sonate-op-17-group"
+composer_id: "paul-hindemith"
+title: "Sonate"
+source:
+  file: "docs/hindemith.md"
+  line: "335"
+catalogue:
+  opus: "Op. 17"

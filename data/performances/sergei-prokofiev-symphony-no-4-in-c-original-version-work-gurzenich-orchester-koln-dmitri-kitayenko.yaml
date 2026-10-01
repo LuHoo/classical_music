@@ -1,0 +1,16 @@
+id: sergei-prokofiev-symphony-no-4-in-c-original-version-work-gurzenich-orchester-koln-dmitri-kitayenko
+work_id: sergei-prokofiev-symphony-no-4-in-c-original-version-work
+performers:
+- artist_id: gurzenich-orchester-koln
+  name: Gürzenich-Orchester Köln
+  role: performer
+- artist_id: dmitri-kitayenko
+  name: Dmitri Kitayenko
+  role: performer
+source_performer_text: Gürzenich-Orchester Köln, Dmitri Kitayenko
+links:
+  tidal:
+    url: https://tidal.com/album/285264999
+source:
+  file: /Users/Lucas_new/.codex/.chatgpt-projects/g-p-6a500123ac548191ab37db95c0d285a2/classical_music/docs/prokofiev.md
+  line: '81'

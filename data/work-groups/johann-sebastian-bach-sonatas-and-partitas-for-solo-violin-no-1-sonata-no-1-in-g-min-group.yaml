@@ -1,0 +1,8 @@
+id: "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-1-sonata-no-1-in-g-min-group"
+composer_id: "johann-sebastian-bach"
+title: "Sonatas and partitas for solo violin No. 1: Sonata No. 1 in G min."
+source:
+  file: "docs/bachJS.md"
+  line: "98"
+catalogue:
+  bwv: "BWV 1001"

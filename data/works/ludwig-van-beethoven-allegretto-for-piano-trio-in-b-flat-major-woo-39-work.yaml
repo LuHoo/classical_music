@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-allegretto-for-piano-trio-in-b-flat-major-woo-39-work"
+work_group_id: "ludwig-van-beethoven-allegretto-for-piano-trio-in-b-flat-major-woo-39-group"
+composer_id: "ludwig-van-beethoven"
+title: "Allegretto for piano trio in B♭ major"
+source:
+  file: "docs/beethoven.md"
+  line: "248"
+catalogue:
+  woo: "WoO 39"
+date_text: "June 1812"
+category: "Chamber"

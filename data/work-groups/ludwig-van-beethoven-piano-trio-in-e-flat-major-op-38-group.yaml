@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-piano-trio-in-e-flat-major-op-38-group"
+composer_id: "ludwig-van-beethoven"
+title: "Piano Trio in E♭ major"
+source:
+  file: "docs/beethoven.md"
+  line: "206"
+catalogue:
+  opus: "Op. 38"

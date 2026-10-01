@@ -1,0 +1,10 @@
+id: 371002232cc343189f9365039d6dae94
+work_group_id: babfab20a45b4f2bb94473348142e054
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 253
+catalogue:
+  rv: RV 253
+  opus: Op. 8
+source:
+  file: docs/vivaldi.md
+  line: '26'

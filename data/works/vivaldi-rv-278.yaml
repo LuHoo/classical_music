@@ -1,0 +1,9 @@
+id: eed0cd9176f24780a46558636c076029
+work_group_id: aa699df61354470da428218bad441ebc
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 278
+catalogue:
+  rv: RV 278
+source:
+  url: https://vivaldiedition.net/portfolio/vol-57-concerti-per-violino-vi-la-boemia-2018/
+  file: reports/vivaldi-naive-edition/catalogue.json

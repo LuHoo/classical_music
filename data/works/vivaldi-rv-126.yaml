@@ -1,0 +1,9 @@
+id: 9c7a6c2d19a84ab093e1750da2ed3d07
+work_group_id: dbf4cbef1d5c4b6ea50ee37dc947dc74
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Concerto for strings, RV 126
+catalogue:
+  rv: RV 126
+source:
+  url: https://vivaldiedition.net/portfolio/vol-56-concerti-per-archi-iii-e-concerti-per-viola-damore-2018/
+  file: reports/vivaldi-naive-edition/catalogue.json

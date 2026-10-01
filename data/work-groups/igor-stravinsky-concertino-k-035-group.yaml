@@ -1,0 +1,8 @@
+id: "igor-stravinsky-concertino-k-035-group"
+composer_id: "igor-stravinsky"
+title: "Concertino"
+source:
+  file: "docs/stravinsky.md"
+  line: "141"
+catalogue:
+  k: "K 035"

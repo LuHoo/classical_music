@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-sonata-for-piano-four-hands-d-op-6-group"
+composer_id: "ludwig-van-beethoven"
+title: "Sonata for Piano, Four Hands, D"
+source:
+  file: "docs/beethoven.md"
+  line: "480"
+catalogue:
+  opus: "Op. 6"

@@ -1,0 +1,11 @@
+id: sergei-prokofiev-autumnal-work
+work_group_id: sergei-prokofiev-autumnal-group
+composer_id: sergei-prokofiev
+title: Autumnal
+source:
+  file: docs/prokofiev.md
+  line: '22'
+catalogue:
+  op: Op. 8
+date_text: '1910'
+category: Orchestral

@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-thirteen-variations-on-the-aria-es-war-einmal-ein-alter-mann-from-car-group"
+composer_id: "ludwig-van-beethoven"
+title: "Thirteen variations on the aria \"Es war einmal ein alter Mann\" from Carl Ditters von Dittersdorf's opera Das rote Käppchen, A"
+source:
+  file: "docs/beethoven.md"
+  line: "380"
+catalogue:
+  woo: "WoO 66"

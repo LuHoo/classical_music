@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-choral-fantasy-in-c-minor-op-80-group"
+composer_id: "ludwig-van-beethoven"
+title: "Choral Fantasy in C minor"
+source:
+  file: "docs/beethoven.md"
+  line: "66"
+catalogue:
+  opus: "Op. 80"

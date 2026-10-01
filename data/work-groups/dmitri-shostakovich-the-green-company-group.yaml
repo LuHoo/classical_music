@@ -1,0 +1,6 @@
+id: dmitri-shostakovich-the-green-company-group
+composer_id: dmitri-shostakovich
+title: The Green Company
+source:
+  file: docs/shostakovich.md
+  line: '44'

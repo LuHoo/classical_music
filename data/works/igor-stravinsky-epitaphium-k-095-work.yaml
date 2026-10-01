@@ -1,0 +1,11 @@
+id: "igor-stravinsky-epitaphium-k-095-work"
+work_group_id: "igor-stravinsky-epitaphium-k-095-group"
+composer_id: "igor-stravinsky"
+title: "Epitaphium"
+source:
+  file: "docs/stravinsky.md"
+  line: "147"
+catalogue:
+  k: "K 095"
+date_text: "1959"
+category: "Chamber"

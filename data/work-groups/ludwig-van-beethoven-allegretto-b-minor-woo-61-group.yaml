@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-allegretto-b-minor-woo-61-group"
+composer_id: "ludwig-van-beethoven"
+title: "Allegretto, B minor"
+source:
+  file: "docs/beethoven.md"
+  line: "462"
+catalogue:
+  woo: "WoO 61"

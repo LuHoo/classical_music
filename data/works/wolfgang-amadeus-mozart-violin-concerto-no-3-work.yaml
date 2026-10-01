@@ -1,0 +1,11 @@
+id: wolfgang-amadeus-mozart-violin-concerto-no-3-work
+work_group_id: wolfgang-amadeus-mozart-violin-concerto-no-3-group
+composer_id: wolfgang-amadeus-mozart
+title: Violin Concerto No. 3
+source:
+  file: docs/mozart.md
+  line: '120'
+catalogue:
+  k: K. 216
+date_text: http://www.tidal.com/track/3042943
+category: Violin concertos

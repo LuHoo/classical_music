@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-oboe-concerto-in-f-major-hess-12-group"
+composer_id: "ludwig-van-beethoven"
+title: "Oboe Concerto in F major"
+source:
+  file: "docs/beethoven.md"
+  line: "18"
+catalogue:
+  hess: "Hess 12"

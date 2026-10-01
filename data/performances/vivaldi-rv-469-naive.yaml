@@ -1,0 +1,18 @@
+id: d19c8ac82eb24adbb1ae2ef34f3b5c6d
+work_id: 69e9e530be3244b9a1e63fd12aee5f13
+performers:
+- name: L’Onda Armonica
+  role: ensemble
+- name: Sergio Azzolini
+  role: bassoon
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP30551
+  album_title: Concerti per fagotto IV
+source:
+  url: https://vivaldiedition.net/portfolio/vol-54-concerti-per-fagotto-iv-2015/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: 'The Vivaldi Edition, volume 54. Album page verified 2026-09-28. '
+links:
+  tidal:
+    url: https://tidal.com/album/65305033

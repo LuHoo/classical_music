@@ -1,0 +1,11 @@
+id: wolfgang-amadeus-mozart-piano-concerto-no-10-for-2-pianos-in-e-major-work
+work_group_id: wolfgang-amadeus-mozart-piano-concerto-no-10-for-2-pianos-in-e-major-group
+composer_id: wolfgang-amadeus-mozart
+title: Piano concerto No. 10 for 2 pianos in E♭ major
+source:
+  file: docs/mozart.md
+  line: '93'
+catalogue:
+  k: K. 365
+date_text: http://www.tidal.com/track/362759026
+category: Piano concertos

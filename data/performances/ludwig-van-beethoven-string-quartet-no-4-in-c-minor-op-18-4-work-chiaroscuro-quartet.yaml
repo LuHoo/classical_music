@@ -1,0 +1,14 @@
+id: "ludwig-van-beethoven-string-quartet-no-4-in-c-minor-op-18-4-work-chiaroscuro-quartet"
+work_id: "ludwig-van-beethoven-string-quartet-no-4-in-c-minor-op-18-4-work"
+performers:
+  - name: "Chiaroscuro Quartet"
+    role: "ensemble"
+links:
+  tidal:
+    url: "http://www.tidal.com/track/339837631"
+source:
+  file: "docs/beethoven.md"
+  line: "178"
+reviews:
+  gramophone:
+    issue: "2022-06"

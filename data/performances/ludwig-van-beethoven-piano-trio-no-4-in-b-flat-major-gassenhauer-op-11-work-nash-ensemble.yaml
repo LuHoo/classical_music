@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-piano-trio-no-4-in-b-flat-major-gassenhauer-op-11-work-nash-ensemble"
+work_id: "ludwig-van-beethoven-piano-trio-no-4-in-b-flat-major-gassenhauer-op-11-work"
+performers:
+  - name: "Nash Ensemble"
+    role: "ensemble"
+links:
+  tidal:
+    url: "http://www.tidal.com/track/1565667"
+source:
+  file: "docs/beethoven.md"
+  line: "156"

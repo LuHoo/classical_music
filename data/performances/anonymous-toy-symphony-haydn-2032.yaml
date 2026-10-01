@@ -1,0 +1,19 @@
+id: 27738ed2a9de4991a0a3b512e2927e2b
+work_id: 44a840a122cf4bd6925734bc23207a64
+performers:
+- name: Kammerorchester Basel
+  role: orchestra
+- name: Giovanni Antonini
+  role: conductor
+release:
+  label: Alpha Classics
+  catalogue_number: ALPHA690
+  album_title: 'Haydn 2032, Vol. 12: Les jeux et les plaisirs'
+source:
+  url: https://www.prestomusic.com/classical/products/9334463--haydn-2032-vol-12-les-jeux-et-les-plaisirs
+  file: reports/haydn-2032/catalogue.json
+links:
+  tidal:
+    url: https://tidal.com/album/230784321
+notes: Haydn 2032, volume 12. Sources and Tidal album metadata checked 2026-09-30. Album link covers this
+  work; it is not a work-specific track link.

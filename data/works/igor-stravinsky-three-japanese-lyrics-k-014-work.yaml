@@ -1,0 +1,11 @@
+id: "igor-stravinsky-three-japanese-lyrics-k-014-work"
+work_group_id: "igor-stravinsky-three-japanese-lyrics-k-014-group"
+composer_id: "igor-stravinsky"
+title: "Three Japanese Lyrics"
+source:
+  file: "docs/stravinsky.md"
+  line: "190"
+catalogue:
+  k: "K 014"
+date_text: "1912–13"
+category: "Vocal"

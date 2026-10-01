@@ -1,0 +1,16 @@
+id: "ludwig-van-beethoven-violin-sonata-no-10-in-g-major-op-96-work-antje-weithaas-denes-varjon"
+work_id: "ludwig-van-beethoven-violin-sonata-no-10-in-g-major-op-96-work"
+performers:
+  - name: "Antje Weithaas"
+    role: "performer"
+  - name: "Dénes Várjon"
+    role: "conductor"
+links:
+  tidal:
+    url: "http://www.tidal.com/track/352737408"
+source:
+  file: "docs/beethoven.md"
+  line: "252"
+reviews:
+  gramophone:
+    issue: "2024-06"

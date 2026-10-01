@@ -1,0 +1,8 @@
+id: sergei-prokofiev-suite-from-chout-group
+composer_id: sergei-prokofiev
+title: Suite from Chout
+source:
+  file: docs/prokofiev.md
+  line: '39'
+catalogue:
+  op: Op. 21bis

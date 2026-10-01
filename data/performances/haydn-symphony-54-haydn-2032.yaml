@@ -1,0 +1,19 @@
+id: af8336321e564522b68a646167520507
+work_id: 9cc808fc01624e1686c50fcb23689e27
+performers:
+- name: Kammerorchester Basel
+  role: orchestra
+- name: Giovanni Antonini
+  role: conductor
+release:
+  label: Alpha Classics
+  catalogue_number: ALPHA694
+  album_title: 'Haydn 2032, Vol. 14: L''impériale'
+source:
+  url: https://www.prestomusic.com/classical/products/9512111--haydn-2032-vol-14-limperiale
+  file: reports/haydn-2032/catalogue.json
+links:
+  tidal:
+    url: https://tidal.com/album/304074965
+notes: Haydn 2032, volume 14. Sources and Tidal album metadata checked 2026-09-30. Album link covers this
+  work; it is not a work-specific track link.

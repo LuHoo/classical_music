@@ -1,0 +1,8 @@
+id: "paul-hindemith-suite-1922-op-26-group"
+composer_id: "paul-hindemith"
+title: "Suite \"1922\""
+source:
+  file: "docs/hindemith.md"
+  line: "339"
+catalogue:
+  opus: "Op. 26"

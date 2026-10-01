@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "classical-music"
+version = "0.1.0"
+description = "Canonical data validation and migration tooling for the classical music repository"
+requires-python = ">=3.13"
+dependencies = [
+  "pydantic>=2.8,<3",
+  "rich>=13.7,<14",
+  "ruamel.yaml>=0.18,<1",
+  "typer>=0.16,<1"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.3,<9",
+  "pytest-cov>=5,<6",
+  "mypy>=1.11,<2"
+]
+
+[tool.pytest.ini_options]
+addopts = "-q --cov=src/classical_music/validation --cov=src/classical_music/migration --cov-report=term-missing"
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

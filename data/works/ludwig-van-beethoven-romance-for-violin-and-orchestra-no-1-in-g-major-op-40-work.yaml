@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-romance-for-violin-and-orchestra-no-1-in-g-major-op-40-work"
+work_group_id: "ludwig-van-beethoven-romance-for-violin-and-orchestra-no-1-in-g-major-op-40-group"
+composer_id: "ludwig-van-beethoven"
+title: "Romance for Violin and Orchestra No. 1 in G major"
+source:
+  file: "docs/beethoven.md"
+  line: "34"
+catalogue:
+  opus: "Op. 40"
+date_text: "1801–1802"
+category: "Orchestral"

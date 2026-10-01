@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-symphony-no-1-in-c-major-op-21-group-2"
+composer_id: "ludwig-van-beethoven"
+title: "Symphony No. 1 in C major"
+source:
+  file: "docs/beethoven.md"
+  line: "484"
+catalogue:
+  opus: "Op. 21"

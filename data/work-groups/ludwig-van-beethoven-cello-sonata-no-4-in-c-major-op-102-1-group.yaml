@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-cello-sonata-no-4-in-c-major-op-102-1-group"
+composer_id: "ludwig-van-beethoven"
+title: "Cello Sonata No. 4 in C major"
+source:
+  file: "docs/beethoven.md"
+  line: "256"
+catalogue:
+  opus: "Op. 102/1"

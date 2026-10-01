@@ -1,0 +1,11 @@
+id: sergei-prokofiev-melodie-work
+work_group_id: sergei-prokofiev-melodie-group
+composer_id: sergei-prokofiev
+title: Melodie
+source:
+  file: docs/prokofiev.md
+  line: '57'
+catalogue:
+  op: Op. 35bis
+date_text: '1920'
+category: Orchestral

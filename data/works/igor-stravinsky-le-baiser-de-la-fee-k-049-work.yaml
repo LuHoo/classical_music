@@ -1,0 +1,12 @@
+id: "igor-stravinsky-le-baiser-de-la-fee-k-049-work"
+work_group_id: "igor-stravinsky-le-baiser-de-la-fee-k-049-group"
+composer_id: "igor-stravinsky"
+title: "Le Baiser de la fée"
+source:
+  file: "docs/stravinsky.md"
+  line: "43"
+catalogue:
+  k: "K 049"
+date_text: "1928; rev. 1950"
+category: "Ballet"
+notes: "Pilot migration: source text suggests a version, arrangement, revision, suite, or completion boundary that should be reviewed."

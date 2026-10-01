@@ -1,0 +1,8 @@
+id: "anton-bruckner-march-in-d-minor-group"
+composer_id: "anton-bruckner"
+title: "March in D minor"
+source:
+  file: "docs/bruckner.md"
+  line: "12"
+catalogue:
+  wab: "WAB 96"

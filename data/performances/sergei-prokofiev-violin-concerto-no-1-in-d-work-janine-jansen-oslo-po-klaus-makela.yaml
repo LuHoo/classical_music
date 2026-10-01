@@ -1,0 +1,16 @@
+id: 
+  sergei-prokofiev-violin-concerto-no-1-in-d-work-janine-jansen-oslo-po-klaus-makela
+work_id: sergei-prokofiev-violin-concerto-no-1-in-d-work
+source:
+  file: docs/prokofiev.md
+  line: '32'
+links:
+  tidal:
+    url: https://tidal.com/album/366555415
+performers:
+- name: Janine Jansen
+  role: performer
+- name: Oslo PO
+  role: performer
+- name: Klaus Mäkelä
+  role: performer

@@ -1,0 +1,12 @@
+id: "igor-stravinsky-pastorale-k-001a-work"
+work_group_id: "igor-stravinsky-pastorale-k-001a-group"
+composer_id: "igor-stravinsky"
+title: "Pastorale"
+source:
+  file: "docs/stravinsky.md"
+  line: "184"
+catalogue:
+  k: "K 001a"
+date_text: "1907, arr. 1933"
+category: "Vocal"
+notes: "Pilot migration: source text suggests a version, arrangement, revision, suite, or completion boundary that should be reviewed."

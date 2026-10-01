@@ -1,0 +1,11 @@
+id: dmitri-shostakovich-suite-from-the-tale-of-the-priest-and-of-his-workman-balda-work
+work_group_id: dmitri-shostakovich-suite-from-the-tale-of-the-priest-and-of-his-workman-balda-group
+composer_id: dmitri-shostakovich
+title: Suite from The Tale of the Priest and of His Workman Balda
+source:
+  file: docs/shostakovich.md
+  line: '56'
+catalogue:
+  op: Op. 36a
+date_text: '1935'
+category: Orchestral

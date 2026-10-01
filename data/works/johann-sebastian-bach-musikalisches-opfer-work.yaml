@@ -1,0 +1,11 @@
+id: "johann-sebastian-bach-musikalisches-opfer-work"
+work_group_id: "johann-sebastian-bach-musikalisches-opfer-group"
+composer_id: "johann-sebastian-bach"
+title: "Musikalisches Opfer"
+source:
+  file: "docs/bachJS.md"
+  line: "94"
+catalogue:
+  bwv: "BWV 1079"
+date_text: "http://www.tidal.com/track/2924755"
+category: "Orchestral arrangements"

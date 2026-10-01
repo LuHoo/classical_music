@@ -1,0 +1,16 @@
+id: anton-bruckner-symphony-no-4-in-eb-major-die-romantische-3-work-orf-vienna-rso-markus-poschner
+work_id: anton-bruckner-symphony-no-4-in-eb-major-die-romantische-3-work
+performers:
+- artist_id: orf-vienna-rso
+  name: ORF Vienna RSO
+  role: performer
+- artist_id: markus-poschner
+  name: Markus Poschner
+  role: conductor
+source_performer_text: ORF Vienna RSO, Markus Poschner
+links:
+  tidal:
+    url: https://tidal.com/browse/track/384348628?u
+source:
+  file: /Users/Lucas_new/.codex/.chatgpt-projects/g-p-6a500123ac548191ab37db95c0d285a2/classical_music/docs/bruckner.md
+  line: '44'

@@ -1,0 +1,8 @@
+id: "igor-stravinsky-pastorale-k-001a-group"
+composer_id: "igor-stravinsky"
+title: "Pastorale"
+source:
+  file: "docs/stravinsky.md"
+  line: "184"
+catalogue:
+  k: "K 001a"

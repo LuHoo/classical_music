@@ -1,0 +1,11 @@
+id: "johann-sebastian-bach-prelude-fugue-in-e-flat-major-work"
+work_group_id: "johann-sebastian-bach-prelude-fugue-in-e-flat-major-group"
+composer_id: "johann-sebastian-bach"
+title: "Prelude & Fugue in E-Flat Major"
+source:
+  file: "docs/bachJS.md"
+  line: "84"
+catalogue:
+  bwv: "BWV 552"
+date_text: "http://www.tidal.com/track/2924757"
+category: "Orchestral arrangements"

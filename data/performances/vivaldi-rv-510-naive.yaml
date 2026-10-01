@@ -1,0 +1,21 @@
+id: 60dae2630e6f4a3fbd656c779c4bb120
+work_id: 278fa07489c8469fb24a29aeee8a7b83
+performers:
+- name: Il Pomo d’Oro
+  role: ensemble
+- name: Dmitry Sinkovsky
+  role: violin
+- name: Riccardo Minasi
+  role: violin
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP30550
+  album_title: Concerti per due violini e archi I
+source:
+  url: https://vivaldiedition.net/portfolio/vol-51-concerti-per-due-violini-e-archi-i-2013/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: The Vivaldi Edition, volume 51. Album page verified 2026-09-28. OP30550 volgens het officiële boekje en
+  de albumtekst; de voettekst van de webpagina noemt ten onrechte OP30554.
+links:
+  tidal:
+    url: https://tidal.com/album/91801130

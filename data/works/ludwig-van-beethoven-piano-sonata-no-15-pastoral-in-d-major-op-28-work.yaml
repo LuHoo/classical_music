@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-piano-sonata-no-15-pastoral-in-d-major-op-28-work"
+work_group_id: "ludwig-van-beethoven-piano-sonata-no-15-pastoral-in-d-major-op-28-group"
+composer_id: "ludwig-van-beethoven"
+title: "Piano Sonata No. 15 \"Pastoral\" in D major"
+source:
+  file: "docs/beethoven.md"
+  line: "342"
+catalogue:
+  opus: "Op. 28"
+date_text: "1801"
+category: "Piano"

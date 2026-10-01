@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-string-quartet-no-16-in-f-major-op-135-work-danish-string-quartet"
+work_id: "ludwig-van-beethoven-string-quartet-no-16-in-f-major-op-135-work"
+performers:
+  - name: "Danish String Quartet"
+    role: "ensemble"
+links:
+  tidal:
+    url: "http://www.tidal.com/track/287841473"
+source:
+  file: "docs/beethoven.md"
+  line: "286"

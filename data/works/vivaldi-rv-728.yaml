@@ -1,0 +1,9 @@
+id: c2e810ac6c474c4484bfd4bfaecf5f5a
+work_group_id: a2570f99a0654fd18706840e8c43fbb1
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Orlando furioso, RV 728
+catalogue:
+  rv: RV 728
+source:
+  url: https://vivaldiedition.net/portfolio/vol-17-orlando-furioso-2004/
+  file: reports/vivaldi-naive-edition/catalogue.json

@@ -1,0 +1,9 @@
+id: efb4635cd32844008041cb67e45ca7e8
+work_group_id: d222910e50e64de28ac9111e08c82507
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Concerto for violin and oboe, RV 543
+catalogue:
+  rv: RV 543
+source:
+  url: https://vivaldiedition.net/portfolio/concerti-per-vari-strumenti-ii/
+  file: reports/vivaldi-naive-edition/catalogue.json

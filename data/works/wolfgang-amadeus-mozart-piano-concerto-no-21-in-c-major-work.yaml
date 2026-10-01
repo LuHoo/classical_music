@@ -1,0 +1,11 @@
+id: wolfgang-amadeus-mozart-piano-concerto-no-21-in-c-major-work
+work_group_id: wolfgang-amadeus-mozart-piano-concerto-no-21-in-c-major-group
+composer_id: wolfgang-amadeus-mozart
+title: Piano Concerto No. 21 in C Major
+source:
+  file: docs/mozart.md
+  line: '101'
+catalogue:
+  k: K. 467
+date_text: http://www.tidal.com/track/183597083
+category: Piano concertos

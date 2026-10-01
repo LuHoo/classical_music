@@ -1,0 +1,19 @@
+id: berlioz-op16-james-ehnes-melbourne-so-andrew-davis
+work_id: berlioz-op16
+performers:
+- artist_id: james-ehnes
+  name: James Ehnes
+  role: performer
+- artist_id: melbourne-symphony-orchestra
+  name: Melbourne SO
+  role: performer
+- artist_id: andrew-davis
+  name: Andrew Davis
+  role: conductor
+source_performer_text: James Ehnes, Melbourne SO, Andrew Davis
+links:
+  tidal:
+    url: http://www.tidal.com/track/376423779
+source:
+  file: /Users/Lucas_new/.codex/.chatgpt-projects/g-p-6a500123ac548191ab37db95c0d285a2/classical_music/docs/berlioz.md
+  line: '28'

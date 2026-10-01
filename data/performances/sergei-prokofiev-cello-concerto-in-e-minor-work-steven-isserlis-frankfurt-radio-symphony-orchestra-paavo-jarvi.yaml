@@ -1,0 +1,16 @@
+id: 
+  sergei-prokofiev-cello-concerto-in-e-minor-work-steven-isserlis-frankfurt-radio-symphony-orchestra-paavo-jarvi
+work_id: sergei-prokofiev-cello-concerto-in-e-minor-work
+source:
+  file: docs/prokofiev.md
+  line: '100'
+links:
+  tidal:
+    url: https://tidal.com/browse/album/306164901?u
+performers:
+- name: Steven Isserlis
+  role: performer
+- name: Frankfurt Radio Symphony Orchestra
+  role: performer
+- name: Paavo Järvi
+  role: performer

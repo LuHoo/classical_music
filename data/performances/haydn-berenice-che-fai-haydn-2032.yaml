@@ -1,0 +1,21 @@
+id: 662e19a1ad2e4cd3b766dac1ef672464
+work_id: e8cfb77813be4bc68346568a741324d7
+performers:
+- name: Il Giardino Armonico
+  role: orchestra
+- name: Giovanni Antonini
+  role: conductor
+- name: Sandrine Piau
+  role: soprano
+release:
+  label: Alpha Classics
+  catalogue_number: ALPHA684
+  album_title: 'Haydn 2032, Vol. 9: L''Addio'
+source:
+  url: https://www.prestomusic.com/classical/products/8864913--haydn-2032-vol-9-laddio
+  file: reports/haydn-2032/catalogue.json
+links:
+  tidal:
+    url: https://tidal.com/album/187296904
+notes: Haydn 2032, volume 9. Sources and Tidal album metadata checked 2026-09-30. Album link covers this
+  work; it is not a work-specific track link.

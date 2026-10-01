@@ -1,0 +1,16 @@
+id: dmitri-shostakovich-ballet-suite-no-1-work-royal-scottish-national-orchestra-neeme-jarvi
+work_id: dmitri-shostakovich-ballet-suite-no-1-work
+performers:
+- artist_id: royal-scottish-national-orchestra
+  name: Royal Scottish National Orchestra
+  role: performer
+- artist_id: neeme-jarvi
+  name: Neeme Järvi
+  role: conductor
+source_performer_text: Royal Scottish National Orchestra, Neeme Järvi
+links:
+  tidal:
+    url: https://tidal.com/browse/album/376313892
+source:
+  file: /Users/Lucas_new/.codex/.chatgpt-projects/g-p-6a500123ac548191ab37db95c0d285a2/classical_music/docs/shostakovich.md
+  line: '100'

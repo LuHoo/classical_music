@@ -1,0 +1,10 @@
+id: "anton-bruckner-salvum-fac-populum-tuum-work-latvian-radio-choir-sigvards-klava"
+work_id: "anton-bruckner-salvum-fac-populum-tuum-work"
+source:
+  file: "docs/bruckner.md"
+  line: "82"
+links:
+- platform: "tidal"
+  url: "https://tidal.com/browse/track/284019413?u"
+performers:
+- name: "Latvian Radio Choir, Sigvards Klava"

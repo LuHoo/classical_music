@@ -1,0 +1,13 @@
+id: "igor-stravinsky-le-baiser-de-la-fee-k-049-work-london-po-vladimir-jurowski"
+work_id: "igor-stravinsky-le-baiser-de-la-fee-k-049-work"
+performers:
+  - name: "London PO"
+    role: "orchestra"
+  - name: "Vladimir Jurowski"
+    role: "conductor"
+links:
+  tidal:
+    url: "http://www.tidal.com/track/290901291"
+source:
+  file: "docs/stravinsky.md"
+  line: "43"

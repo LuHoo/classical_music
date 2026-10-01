@@ -1,0 +1,11 @@
+id: "anton-bruckner-symphony-no-7-in-e-major-work"
+work_group_id: "anton-bruckner-symphony-no-7-in-e-major-group"
+composer_id: "anton-bruckner"
+title: "Symphony No. 7 in E major"
+source:
+  file: "docs/bruckner.md"
+  line: "54"
+catalogue:
+  wab: "WAB 107"
+date_text: "1883 first concept"
+category: "Orchestral"

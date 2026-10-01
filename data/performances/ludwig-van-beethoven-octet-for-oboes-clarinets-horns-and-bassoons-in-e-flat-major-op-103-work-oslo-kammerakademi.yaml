@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-octet-for-oboes-clarinets-horns-and-bassoons-in-e-flat-major-op-103-work-oslo-kammerakademi"
+work_id: "ludwig-van-beethoven-octet-for-oboes-clarinets-horns-and-bassoons-in-e-flat-major-op-103-work"
+performers:
+  - name: "Oslo Kammerakademi"
+    role: "ensemble"
+links:
+  tidal:
+    url: "http://www.tidal.com/track/123220999"
+source:
+  file: "docs/beethoven.md"
+  line: "260"

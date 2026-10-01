@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-prelude-for-string-quintet-in-d-minor-hess-40-group"
+composer_id: "ludwig-van-beethoven"
+title: "Prelude for string quintet in D minor"
+source:
+  file: "docs/beethoven.md"
+  line: "262"
+catalogue:
+  hess: "Hess 40"

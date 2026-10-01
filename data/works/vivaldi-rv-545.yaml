@@ -1,0 +1,9 @@
+id: 02f61b49213d4208bb113f30507ed7ca
+work_group_id: f2a96bbfddc24db68708ebb668d7a642
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Concerto for oboe and bassoon, RV 545
+catalogue:
+  rv: RV 545
+source:
+  url: https://vivaldiedition.net/portfolio/vol-15-concerti-per-fagotto-e-oboe-2004/
+  file: reports/vivaldi-naive-edition/catalogue.json

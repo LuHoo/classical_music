@@ -1,0 +1,8 @@
+id: "anton-bruckner-symphony-no-2-in-c-minor-2-group"
+composer_id: "anton-bruckner"
+title: "Symphony No. 2 in C minor"
+source:
+  file: "docs/bruckner.md"
+  line: "32"
+catalogue:
+  wab: "WAB 102"

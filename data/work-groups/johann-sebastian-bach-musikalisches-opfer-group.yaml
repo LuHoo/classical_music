@@ -1,0 +1,8 @@
+id: "johann-sebastian-bach-musikalisches-opfer-group"
+composer_id: "johann-sebastian-bach"
+title: "Musikalisches Opfer"
+source:
+  file: "docs/bachJS.md"
+  line: "94"
+catalogue:
+  bwv: "BWV 1079"

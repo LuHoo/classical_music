@@ -1,0 +1,8 @@
+id: "johann-sebastian-bach-violin-concerto-no-5-in-g-minor-group"
+composer_id: "johann-sebastian-bach"
+title: "Violin Concerto No. 5 in G minor"
+source:
+  file: "docs/bachJS.md"
+  line: "50"
+catalogue:
+  bwv: "BWV 1056R"

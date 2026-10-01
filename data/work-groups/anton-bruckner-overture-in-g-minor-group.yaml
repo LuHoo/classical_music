@@ -1,0 +1,8 @@
+id: "anton-bruckner-overture-in-g-minor-group"
+composer_id: "anton-bruckner"
+title: "Overture in G minor"
+source:
+  file: "docs/bruckner.md"
+  line: "16"
+catalogue:
+  wab: "WAB 98"

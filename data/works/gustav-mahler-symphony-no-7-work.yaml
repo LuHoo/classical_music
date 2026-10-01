@@ -1,0 +1,10 @@
+id: "gustav-mahler-symphony-no-7-work"
+work_group_id: "gustav-mahler-symphony-no-7-group"
+composer_id: "gustav-mahler"
+title: "Symphony No. 7"
+source:
+  file: "docs/mahler.md"
+  line: "54"
+date_text: "1904–05"
+category: "Middle period"
+gem: true

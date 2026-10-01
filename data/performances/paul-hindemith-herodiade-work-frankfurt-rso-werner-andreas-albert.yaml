@@ -1,0 +1,13 @@
+id: "paul-hindemith-herodiade-work-frankfurt-rso-werner-andreas-albert"
+work_id: "paul-hindemith-herodiade-work"
+performers:
+  - name: "Frankfurt RSO"
+    role: "orchestra"
+  - name: "Werner Andreas Albert"
+    role: "conductor"
+links:
+  tidal:
+    url: "http://www.tidal.com/track/74080286"
+source:
+  file: "docs/hindemith.md"
+  line: "51"

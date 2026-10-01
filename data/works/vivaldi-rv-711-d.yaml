@@ -1,0 +1,10 @@
+id: 09ade39d93ce4a6f9f72324c8ca49939
+work_group_id: fed310dcb05343b5b3249b814040811c
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Farnace, RV 711-D
+catalogue:
+  rv: RV 711-D
+source:
+  url: https://vivaldiedition.net/portfolio/vol-37-farnace-2009/
+  file: reports/vivaldi-naive-edition/catalogue.json
+version: RV 711-D

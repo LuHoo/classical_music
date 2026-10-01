@@ -1,0 +1,11 @@
+id: a957ca8fa0574297a6c90842258d0a01
+work_group_id: 9bf7c0fa00e5478abf17764248e69bb1
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 347
+catalogue:
+  rv: RV 347
+  opus: Op. 4
+source:
+  file: docs/vivaldi.md
+  line: '18'
+gem: true

@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-string-quartet-no-9-razumovsky-in-c-major-op-59-3-group"
+composer_id: "ludwig-van-beethoven"
+title: "String Quartet No. 9 \"Razumovsky\" in C major"
+source:
+  file: "docs/beethoven.md"
+  line: "222"
+catalogue:
+  opus: "Op. 59/3"

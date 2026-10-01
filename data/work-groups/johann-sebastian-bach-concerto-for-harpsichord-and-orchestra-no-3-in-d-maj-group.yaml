@@ -1,0 +1,8 @@
+id: "johann-sebastian-bach-concerto-for-harpsichord-and-orchestra-no-3-in-d-maj-group"
+composer_id: "johann-sebastian-bach"
+title: "Concerto for harpsichord and orchestra No. 3 in D maj."
+source:
+  file: "docs/bachJS.md"
+  line: "44"
+catalogue:
+  bwv: "BWV 1054"

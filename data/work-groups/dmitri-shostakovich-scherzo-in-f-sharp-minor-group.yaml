@@ -1,0 +1,8 @@
+id: dmitri-shostakovich-scherzo-in-f-sharp-minor-group
+composer_id: dmitri-shostakovich
+title: Scherzo in F-sharp minor
+source:
+  file: docs/shostakovich.md
+  line: '12'
+catalogue:
+  op: Op. 1

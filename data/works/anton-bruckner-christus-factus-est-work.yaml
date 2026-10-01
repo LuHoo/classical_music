@@ -1,0 +1,11 @@
+id: "anton-bruckner-christus-factus-est-work"
+work_group_id: "anton-bruckner-christus-factus-est-group"
+composer_id: "anton-bruckner"
+title: "Christus factus est"
+source:
+  file: "docs/bruckner.md"
+  line: "70"
+catalogue:
+  wab: "WAB 11"
+date_text: "1884"
+category: "Vocal"

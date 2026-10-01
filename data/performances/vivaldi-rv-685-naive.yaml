@@ -1,0 +1,21 @@
+id: af69399cb5754097b3fff404968d80c8
+work_id: b37915d553984b7aaf353ea290c93859
+performers:
+- name: Accademia Bizantina
+  role: ensemble
+- name: Ottavio Dantone
+  role: conductor
+- name: Delphine Galou
+  role: contralto
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP30584
+  album_title: Arie e cantate per contralto
+source:
+  url: https://vivaldiedition.net/portfolio/vol-60-arie-e-cantate-per-contralto-2019/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: The Vivaldi Edition, volume 60. Album page verified 2026-09-28. RV 684, 685 en 686 zijn cantates; de
+  overige RV-nummers verwijzen naar de bronopera’s van de aria’s.
+links:
+  tidal:
+    url: https://tidal.com/album/107519638

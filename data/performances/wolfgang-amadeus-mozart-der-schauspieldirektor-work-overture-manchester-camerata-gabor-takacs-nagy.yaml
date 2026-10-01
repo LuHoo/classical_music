@@ -1,0 +1,14 @@
+id: 
+  wolfgang-amadeus-mozart-der-schauspieldirektor-work-overture-manchester-camerata-gabor-takacs-nagy
+work_id: wolfgang-amadeus-mozart-der-schauspieldirektor-work
+source:
+  file: docs/mozart.md
+  line: '46'
+links:
+  tidal:
+    url: http://www.tidal.com/track/376248929
+performers:
+- name: 'Overture: Manchester Camerata'
+  role: performer
+- name: Gábor Takács-Nagy
+  role: performer

@@ -1,0 +1,9 @@
+id: "paul-hindemith-wind-septet-work"
+work_group_id: "paul-hindemith-wind-septet-group"
+composer_id: "paul-hindemith"
+title: "Wind Septet"
+source:
+  file: "docs/hindemith.md"
+  line: "237"
+date_text: "1948"
+category: "Chamber"

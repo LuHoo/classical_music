@@ -1,0 +1,11 @@
+id: "anton-bruckner-march-in-d-minor-work"
+work_group_id: "anton-bruckner-march-in-d-minor-group"
+composer_id: "anton-bruckner"
+title: "March in D minor"
+source:
+  file: "docs/bruckner.md"
+  line: "12"
+catalogue:
+  wab: "WAB 96"
+date_text: "1862"
+category: "Orchestral"

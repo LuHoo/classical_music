@@ -1,0 +1,9 @@
+id: sergei-prokofiev-ala-i-lolli-work
+work_group_id: sergei-prokofiev-ala-i-lolli-group
+composer_id: sergei-prokofiev
+title: Ala i Lolli
+source:
+  file: docs/prokofiev.md
+  line: '14'
+date_text: 1915, abandoned and rewritten as the Scythian Suite
+category: Orchestral

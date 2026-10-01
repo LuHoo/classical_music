@@ -1,0 +1,9 @@
+id: 278fa07489c8469fb24a29aeee8a7b83
+work_group_id: e0af53f752014f5c93d98827cc3bd8a8
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Concerto for two violins, RV 510
+catalogue:
+  rv: RV 510
+source:
+  url: https://vivaldiedition.net/portfolio/vol-51-concerti-per-due-violini-e-archi-i-2013/
+  file: reports/vivaldi-naive-edition/catalogue.json

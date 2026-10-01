@@ -1,0 +1,8 @@
+id: "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-4-partita-no-2-in-d-min-group"
+composer_id: "johann-sebastian-bach"
+title: "Sonatas and partitas for solo violin No. 4: Partita No. 2 in D min."
+source:
+  file: "docs/bachJS.md"
+  line: "104"
+catalogue:
+  bwv: "BWV 1004"

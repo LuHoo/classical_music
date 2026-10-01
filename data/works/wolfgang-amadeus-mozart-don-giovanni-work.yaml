@@ -1,0 +1,11 @@
+id: wolfgang-amadeus-mozart-don-giovanni-work
+work_group_id: wolfgang-amadeus-mozart-don-giovanni-group
+composer_id: wolfgang-amadeus-mozart
+title: Don Giovanni
+source:
+  file: docs/mozart.md
+  line: '48'
+catalogue:
+  k: K. 527
+date_text: '1787'
+category: Operas

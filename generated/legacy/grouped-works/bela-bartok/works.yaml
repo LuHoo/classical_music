@@ -1,0 +1,197 @@
+composer_id: bela-bartok
+source_note: >-
+  Data-first representative pilot for a composer not yet represented by a markdown page.
+  It tests Sz catalogue identifiers, BB identifiers, translated titles, folk-based titles,
+  and works with common English/Hungarian variants.
+works:
+  - id: bartok-sz36-bb55
+    composer_id: bela-bartok
+    canonical_title: Bluebeard's Castle
+    localized_titles:
+      en: Bluebeard's Castle
+      hu: A kékszakállú herceg vára
+      nl: Blauwbaards burcht
+    category: opera
+    catalogue: { sz: Sz. 48, bb: BB 62 }
+    aliases: [Bluebeard's Castle, Duke Bluebeard's Castle, A kékszakállú herceg vára, Blauwbaards burcht, Sz. 48, BB 62]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: bartok-wooden-prince
+    composer_id: bela-bartok
+    canonical_title: The Wooden Prince
+    localized_titles:
+      en: The Wooden Prince
+      hu: A fából faragott királyfi
+      nl: De houten prins
+    category: ballet
+    catalogue: { sz: Sz. 60, bb: BB 74 }
+    aliases: [The Wooden Prince, A fából faragott királyfi, De houten prins, Sz. 60, BB 74]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: bartok-miraculous-mandarin
+    composer_id: bela-bartok
+    canonical_title: The Miraculous Mandarin
+    localized_titles:
+      en: The Miraculous Mandarin
+      hu: A csodálatos mandarin
+      nl: De wonderbaarlijke mandarijn
+    category: ballet
+    catalogue: { sz: Sz. 73, bb: BB 82 }
+    aliases: [The Miraculous Mandarin, A csodálatos mandarin, De wonderbaarlijke mandarijn, Suite from The Miraculous Mandarin, Sz. 73, BB 82]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: bartok-kossuth
+    composer_id: bela-bartok
+    canonical_title: Kossuth
+    localized_titles: { en: Kossuth, hu: Kossuth, nl: Kossuth }
+    category: orchestral
+    catalogue: { sz: Sz. 21, bb: BB 31 }
+    aliases: [Kossuth, symphonic poem, Sz. 21, BB 31]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: bartok-two-portraits
+    composer_id: bela-bartok
+    canonical_title: Two Portraits
+    localized_titles:
+      en: Two Portraits
+      hu: Két portré
+      nl: Twee portretten
+    category: orchestral
+    catalogue: { opus: Op. 5, sz: Sz. 37, bb: BB 48b }
+    aliases: [Two Portraits, Két portré, Twee portretten, Op. 5, Sz. 37, BB 48b]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: bartok-four-orchestral-pieces
+    composer_id: bela-bartok
+    canonical_title: Four Orchestral Pieces
+    localized_titles:
+      en: Four Orchestral Pieces
+      hu: Négy zenekari darab
+      nl: Vier orkeststukken
+    category: orchestral
+    catalogue: { opus: Op. 12, sz: Sz. 51, bb: BB 64 }
+    aliases: [Four Orchestral Pieces, Négy zenekari darab, Vier orkeststukken, Op. 12, Sz. 51, BB 64]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: bartok-dance-suite
+    composer_id: bela-bartok
+    canonical_title: Dance Suite
+    localized_titles:
+      en: Dance Suite
+      hu: Táncszvit
+      nl: Danssuite
+    category: orchestral
+    catalogue: { sz: Sz. 77, bb: BB 86a }
+    aliases: [Dance Suite, Táncszvit, Danssuite, Sz. 77, BB 86a]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: bartok-music-for-strings-percussion-celesta
+    composer_id: bela-bartok
+    canonical_title: Music for Strings, Percussion and Celesta
+    localized_titles:
+      en: Music for Strings, Percussion and Celesta
+      hu: Zene húros hangszerekre, ütőkre és cselesztára
+      nl: Muziek voor snaarinstrumenten, slagwerk en celesta
+    category: orchestral
+    catalogue: { sz: Sz. 106, bb: BB 114 }
+    aliases: [Music for Strings, Percussion and Celesta, Music for Strings Percussion and Celesta, Sz. 106, BB 114]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: bartok-concerto-for-orchestra
+    composer_id: bela-bartok
+    canonical_title: Concerto for Orchestra
+    localized_titles:
+      en: Concerto for Orchestra
+      hu: Concerto zenekarra
+      nl: Concert voor orkest
+    category: orchestral
+    catalogue: { sz: Sz. 116, bb: BB 123 }
+    aliases: [Concerto for Orchestra, Concerto zenekarra, Concert voor orkest, Sz. 116, BB 123]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: bartok-piano-concerto-1
+    composer_id: bela-bartok
+    canonical_title: Piano Concerto No. 1
+    localized_titles: { en: Piano Concerto No. 1, hu: Zongoraverseny No. 1, nl: Pianoconcert nr. 1 }
+    category: concertante
+    catalogue: { sz: Sz. 83, bb: BB 91 }
+    aliases: [Piano Concerto No. 1, First Piano Concerto, Sz. 83, BB 91]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: bartok-piano-concerto-2
+    composer_id: bela-bartok
+    canonical_title: Piano Concerto No. 2
+    localized_titles: { en: Piano Concerto No. 2, hu: Zongoraverseny No. 2, nl: Pianoconcert nr. 2 }
+    category: concertante
+    catalogue: { sz: Sz. 95, bb: BB 101 }
+    aliases: [Piano Concerto No. 2, Second Piano Concerto, Sz. 95, BB 101]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: bartok-piano-concerto-3
+    composer_id: bela-bartok
+    canonical_title: Piano Concerto No. 3
+    localized_titles: { en: Piano Concerto No. 3, hu: Zongoraverseny No. 3, nl: Pianoconcert nr. 3 }
+    category: concertante
+    catalogue: { sz: Sz. 119, bb: BB 127 }
+    aliases: [Piano Concerto No. 3, Third Piano Concerto, Sz. 119, BB 127]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: bartok-violin-concerto-1
+    composer_id: bela-bartok
+    canonical_title: Violin Concerto No. 1
+    localized_titles: { en: Violin Concerto No. 1, hu: Hegedűverseny No. 1, nl: Vioolconcert nr. 1 }
+    category: concertante
+    catalogue: { sz: Sz. 36, bb: BB 48a }
+    aliases: [Violin Concerto No. 1, First Violin Concerto, Sz. 36, BB 48a]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: bartok-violin-concerto-2
+    composer_id: bela-bartok
+    canonical_title: Violin Concerto No. 2
+    localized_titles: { en: Violin Concerto No. 2, hu: Hegedűverseny No. 2, nl: Vioolconcert nr. 2 }
+    category: concertante
+    catalogue: { sz: Sz. 112, bb: BB 117 }
+    aliases: [Violin Concerto No. 2, Second Violin Concerto, Sz. 112, BB 117]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: bartok-viola-concerto
+    composer_id: bela-bartok
+    canonical_title: Viola Concerto
+    localized_titles: { en: Viola Concerto, hu: Brácsaverseny, nl: Altvioolconcert }
+    category: concertante
+    catalogue: { sz: Sz. 120, bb: BB 128 }
+    aliases: [Viola Concerto, Brácsaverseny, Altvioolconcert, Sz. 120, BB 128]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: bartok-string-quartets
+    composer_id: bela-bartok
+    canonical_title: Six String Quartets
+    localized_titles: { en: Six String Quartets, hu: Hat vonósnégyes, nl: Zes strijkkwartetten }
+    category: chamber
+    aliases: [String Quartets, Six String Quartets, Bartók String Quartets, String Quartets Nos. 1-6]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: bartok-string-quartet-4
+    composer_id: bela-bartok
+    canonical_title: String Quartet No. 4
+    localized_titles: { en: String Quartet No. 4, hu: Vonósnégyes No. 4, nl: Strijkkwartet nr. 4 }
+    category: chamber
+    catalogue: { sz: Sz. 91, bb: BB 95 }
+    aliases: [String Quartet No. 4, Fourth String Quartet, Sz. 91, BB 95]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: bartok-sonata-for-two-pianos-and-percussion
+    composer_id: bela-bartok
+    canonical_title: Sonata for Two Pianos and Percussion
+    localized_titles: { en: Sonata for Two Pianos and Percussion, nl: Sonate voor twee piano's en slagwerk }
+    category: chamber
+    catalogue: { sz: Sz. 110, bb: BB 115 }
+    aliases: [Sonata for Two Pianos and Percussion, Sonata for 2 Pianos and Percussion, Sz. 110, BB 115]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: bartok-mikrokosmos
+    composer_id: bela-bartok
+    canonical_title: Mikrokosmos
+    localized_titles: { en: Mikrokosmos, hu: Mikrokozmosz, nl: Mikrokosmos }
+    category: piano
+    catalogue: { sz: Sz. 107, bb: BB 105 }
+    aliases: [Mikrokosmos, Mikrokozmosz, Mikrokosmosz, Sz. 107, BB 105]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: bartok-romanian-folk-dances
+    composer_id: bela-bartok
+    canonical_title: Romanian Folk Dances
+    localized_titles: { en: Romanian Folk Dances, hu: Román népi táncok, nl: Roemeense volksdansen }
+    category: piano-or-orchestral
+    catalogue: { sz: Sz. 56, bb: BB 68 }
+    aliases: [Romanian Folk Dances, Romanian Folk Dances from Hungary, Román népi táncok, Sz. 56, BB 68]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: bartok-allegro-barbaro
+    composer_id: bela-bartok
+    canonical_title: Allegro barbaro
+    localized_titles: { en: Allegro barbaro, hu: Allegro barbaro, nl: Allegro barbaro }
+    category: piano
+    catalogue: { sz: Sz. 49, bb: BB 63 }
+    aliases: [Allegro barbaro, Sz. 49, BB 63]
+    authorities: { musicbrainz_work_id:, wikidata: }

@@ -1,0 +1,11 @@
+id: "anton-bruckner-salvum-fac-populum-tuum-work"
+work_group_id: "anton-bruckner-salvum-fac-populum-tuum-group"
+composer_id: "anton-bruckner"
+title: "Salvum fac populum tuum"
+source:
+  file: "docs/bruckner.md"
+  line: "82"
+catalogue:
+  wab: "WAB 40"
+date_text: "1884"
+category: "Vocal"

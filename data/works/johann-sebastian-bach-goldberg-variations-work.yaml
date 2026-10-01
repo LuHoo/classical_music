@@ -1,0 +1,12 @@
+id: "johann-sebastian-bach-goldberg-variations-work"
+work_group_id: "johann-sebastian-bach-goldberg-variations-group"
+composer_id: "johann-sebastian-bach"
+title: "Goldberg Variations"
+source:
+  file: "docs/bachJS.md"
+  line: "118"
+catalogue:
+  bwv: "BWV 988"
+date_text: "http://www.tidal.com/track/210117464"
+category: "Keyboard"
+gem: true

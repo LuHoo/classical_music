@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-serenade-for-string-trio-string-trio-no-2-in-d-major-op-8-work"
+work_group_id: "ludwig-van-beethoven-serenade-for-string-trio-string-trio-no-2-in-d-major-op-8-group"
+composer_id: "ludwig-van-beethoven"
+title: "Serenade for string trio, (String Trio No. 2) in D major"
+source:
+  file: "docs/beethoven.md"
+  line: "148"
+catalogue:
+  opus: "Op. 8"
+date_text: "1796–1797"
+category: "Chamber"

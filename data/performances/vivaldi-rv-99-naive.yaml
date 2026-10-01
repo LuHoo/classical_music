@@ -1,0 +1,16 @@
+id: 0115fae8435e42668bb2a7cce4f7a633
+work_id: 97da4c0777964c2b9dc008f6e876eadc
+performers:
+- name: L’Astrée
+  role: ensemble
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP30394
+  album_title: Concerti da camera
+source:
+  url: https://vivaldiedition.net/portfolio/vol-1-concerti-da-camera-2001/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: 'The Vivaldi Edition, volume 1. Album page verified 2026-09-28. '
+links:
+  tidal:
+    url: https://tidal.com/album/66768093

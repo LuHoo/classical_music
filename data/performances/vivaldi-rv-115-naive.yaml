@@ -1,0 +1,19 @@
+id: fad3882d8c4b439db758c154a8d1fa03
+work_id: dd9bbfb12d144c96bf108811858d8c00
+performers:
+- name: Concerto Italiano
+  role: ensemble
+- name: Rinaldo Alessandrini
+  role: conductor
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP30377
+  album_title: Concerti per archi I
+source:
+  url: https://vivaldiedition.net/portfolio/vol-13-concerti-per-archi-2004/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: The Vivaldi Edition, volume 13. Album page verified 2026-09-28. RV 143 volgens de tracklijst; de
+  officiële korte albumtekst vermeldt hier ten onrechte RV 146.
+links:
+  tidal:
+    url: https://tidal.com/album/91193915

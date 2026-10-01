@@ -1,0 +1,15 @@
+id: "paul-hindemith-kammermusik-no-5-op-36-4-work-kronberg-academy-soloists-schleswig-holstein-festival-orchestra-christoph-eschenbach"
+work_id: "paul-hindemith-kammermusik-no-5-op-36-4-work"
+performers:
+  - name: "Kronberg Academy Soloists"
+    role: "ensemble"
+  - name: "Schleswig-Holstein Festival Orchestra"
+    role: "orchestra"
+  - name: "Christoph Eschenbach"
+    role: "conductor"
+links:
+  tidal:
+    url: "http://www.tidal.com/track/151740135"
+source:
+  file: "docs/hindemith.md"
+  line: "108"

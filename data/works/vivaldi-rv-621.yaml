@@ -1,0 +1,9 @@
+id: 39bb67e5f7724a518206416edcdb44f4
+work_group_id: ff2cb699bacb4166bbb717260cde0d0b
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Stabat Mater, RV 621
+catalogue:
+  rv: RV 621
+source:
+  url: https://vivaldiedition.net/portfolio/vol-6-stabat-mater-2002/
+  file: reports/vivaldi-naive-edition/catalogue.json

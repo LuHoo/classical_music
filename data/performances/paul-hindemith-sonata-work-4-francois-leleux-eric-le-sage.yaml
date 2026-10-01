@@ -1,0 +1,13 @@
+id: "paul-hindemith-sonata-work-4-francois-leleux-eric-le-sage"
+work_id: "paul-hindemith-sonata-work-4"
+performers:
+  - name: "François Leleux"
+    role: "orchestra"
+  - name: "Eric Le Sage"
+    role: "conductor"
+links:
+  tidal:
+    url: "https://tidal.com/album/179722104"
+source:
+  file: "docs/hindemith.md"
+  line: "306"
