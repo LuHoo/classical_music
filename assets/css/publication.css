@@ -130,3 +130,25 @@
     padding: 0.75rem;
   }
 }
+
+/* Composer overviews follow the compact editorial legacy pages. */
+.work-entry,
+.collection-entry {
+  margin: 0 0 1rem;
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+}
+
+.work-title {
+  color: inherit;
+  text-decoration: none;
+}
+
+.work-title:hover,
+.work-title:focus-visible {
+  text-decoration: underline;
+}
+
+.gem-mark {
+  white-space: nowrap;
+}

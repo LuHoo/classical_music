@@ -4,7 +4,11 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from html import escape as html_escape
+from itertools import groupby
 from pathlib import Path
+import re
+
+from ruamel.yaml import YAML
 from typing import Any
 
 from classical_music.publication_adapter import PublicationDataAdapter
@@ -193,31 +197,127 @@ class PublicationSiteGenerator:
             "",
         ]
 
-        for group in work_groups:
-            group_works = works_by_group.get(group["id"], [])
-            if not group_works:
-                continue
-            body.append(f"## {self._escape(group['title'])}")
-            body.append("")
-            body.append('<ul class="work-list">')
-            for work in group_works:
-                body.append(
-                    '<li><span class="work-list__row">'
-                    f'<a class="work-list__title" href="{{{{ site.baseurl }}}}/publication/works/{work["id"]}/">'
-                    f"{self._html(work['title'])}</a>"
-                    + (' <span class="gem-badge">Gem</span>' if work.get("gem") else "")
-                    + (
-                        ""
-                        if performances_by_work.get(work["id"])
-                        else ' <span class="work-list__status">no recommendation yet</span>'
-                    )
-                    + "</span></li>"
-                )
-            body.append("</ul>")
-            body.append("")
+        collections = self._composer_collections(person["id"], works)
+        displayed = set()
+        if collections:
+            body.extend(["## Works with opus number", ""])
+            by_id = {work["id"]: work for work in works}
+            for collection in collections:
+                members = [by_id[work_id] for work_id in collection["work_ids"]]
+                displayed.update(collection["work_ids"])
+                heading = f'<strong>{self._html(collection["title"])}</strong>'
+                if collection.get("opus"):
+                    heading += f', {self._html(collection["opus"])}'
+                if collection.get("date_text"):
+                    heading += f' ({self._html(collection["date_text"])})'
+                entries = []
+                # Repeat an album recommendation once for each consecutive covered run.
+                # A gap or a different profile/excerpt starts a new run.
+                for _, run in groupby(members, key=lambda work: self._recommendation_key(
+                        performances_by_work.get(work["id"], []))):
+                    run = list(run)
+                    text = ", ".join(self._work_entry(work, [], catalogue_only=True) for work in run)
+                    recommendations = self._inline_recommendations(performances_by_work.get(run[0]["id"], []))
+                    if recommendations:
+                        text += " — " + recommendations
+                    entries.append(text)
+                body.extend([f'<p class="collection-entry">{heading}, ' + "; ".join(entries) + "</p>", ""])
+
+        remaining = [work for work in works if work["id"] not in displayed]
+        sections: dict[str, list[dict[str, Any]]] = {}
+        for work in sorted(remaining, key=self._work_sort_key):
+            sections.setdefault(work.get("category") or "", []).append(work)
+        for category, section_works in sections.items():
+            heading = category or ("Other works" if collections else "Works")
+            body.extend([f"## {self._escape(heading)}", ""])
+            # A family heading is useful for versions, but repeats a singleton's title.
+            families = self._group_by(section_works, "work_group_id")
+            group_titles = {group["id"]: group["title"] for group in work_groups}
+            for group_id, members in families.items():
+                if len(members) > 1:
+                    body.extend([f"### {self._escape(group_titles[group_id])}", ""])
+                for work in sorted(members, key=self._work_sort_key):
+                    body.extend(['<p class="work-entry">' + self._work_entry(
+                        work, performances_by_work.get(work["id"], [])) + "</p>", ""])
 
         self._write_page(self.output_dir / "composers" / f"{person['id']}.md", body)
         return 1
+
+    def _composer_collections(self, composer_id: str, works: list[dict[str, Any]]) -> list[dict[str, Any]]:
+        """Optional editorial layout; membership never changes artistic Work identity."""
+        path = self.repo_root / "data" / "publication" / f"{composer_id}.yaml"
+        if not path.exists():
+            return []
+        data = YAML(typ="safe").load(path.read_text(encoding="utf-8"))
+        if not isinstance(data, dict) or data.get("composer_id") != composer_id:
+            raise RuntimeError(f"Invalid composer layout: {path}")
+        collections = data.get("collections", [])
+        available = {work["id"] for work in works}
+        seen = set()
+        if not isinstance(collections, list):
+            raise RuntimeError(f"Invalid collections: {path}")
+        for collection in collections:
+            if not isinstance(collection, dict) or not collection.get("title") or not collection.get("work_ids"):
+                raise RuntimeError(f"Invalid collection entry: {path}")
+            for work_id in collection["work_ids"]:
+                if work_id not in available or work_id in seen:
+                    raise RuntimeError(f"Unknown, foreign or repeated collection Work {work_id}: {path}")
+                seen.add(work_id)
+        return collections
+
+    @staticmethod
+    def _work_sort_key(work: dict[str, Any]) -> tuple:
+        """Natural title order keeps concerto/symphony numbers readable."""
+        return tuple((0, int(part)) if part.isdigit() else (1, part.casefold())
+                     for part in re.split(r"(\d+)", work["title"]))
+
+    def _catalogue_text(self, catalogue: Any, title: str = "", exclude: tuple[str, ...] = ()) -> str:
+        values = catalogue.items() if isinstance(catalogue, dict) else [("", catalogue)]
+        result = []
+        normalized_title = re.sub(r"\s+", "", title).casefold()
+        for key, value in values:
+            if key in exclude or not value:
+                continue
+            text = str(value)
+            if re.sub(r"\s+", "", text).casefold() not in normalized_title:
+                result.append(text)
+        return ", ".join(result)
+
+    def _work_entry(self, work: dict[str, Any], performances: list[dict[str, Any]], catalogue_only: bool = False) -> str:
+        label = (self._catalogue_text(work.get("catalogue"), exclude=("opus",)) if catalogue_only else "") or work["title"]
+        entry = ('<span class="gem-mark" aria-label="Gem">💎</span> ' if work.get("gem") else "")
+        entry += (f'<a class="work-title" href="{{{{ site.baseurl }}}}/publication/works/{work["id"]}/">'
+                  f'<strong>{self._html(label)}</strong></a>')
+        if not catalogue_only:
+            catalogue = self._catalogue_text(work.get("catalogue"), work["title"])
+            if catalogue:
+                entry += ", " + self._html(catalogue)
+            date = work.get("date_text") or work.get("year")
+            if date:
+                entry += f" ({self._html(str(date))})"
+        recommendations = self._inline_recommendations(performances)
+        if recommendations:
+            entry += " — " + recommendations
+        return entry
+
+    @staticmethod
+    def _recommendation_key(performances: list[dict[str, Any]]) -> tuple:
+        return tuple((performance.get("tidal_url"), performance.get("profile"), performance.get("excerpt"),
+                      tuple((item.get("name"), item.get("role")) for item in performance.get("performers", [])))
+                     for performance in performances)
+
+    def _inline_recommendations(self, performances: list[dict[str, Any]]) -> str:
+        recommendations = []
+        for performance in performances:
+            names = ", ".join(item["name"] for item in performance.get("performers", []) if item.get("name")) or "Unknown performers"
+            text = f'<em>{self._html(names)}</em>'
+            if performance.get("tidal_url"):
+                text = f'<a href="{self._html(performance["tidal_url"])}">{text}</a>'
+            details = [performance[field] for field in ("profile", "excerpt") if performance.get(field)]
+            if details:
+                text += " (" + "; ".join(self._html(str(detail)) for detail in details) + ")"
+            recommendations.append(text)
+        return "; ".join(recommendations)
 
     def _write_work_page(self, work: dict[str, Any], performances: list[dict[str, Any]]) -> int:
         body = [
@@ -231,7 +331,7 @@ class PublicationSiteGenerator:
             "",
         ]
         if work.get("catalogue"):
-            body.append(f'<p class="work-meta">Catalogue: {self._html(str(work["catalogue"]))}</p>')
+            body.append(f'<p class="work-meta">Catalogue: {self._html(self._catalogue_text(work["catalogue"]))}</p>')
             body.append("")
         if work.get("gem"):
             body.append('<p><span class="gem-badge">Gem</span></p>')
