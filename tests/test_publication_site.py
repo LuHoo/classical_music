@@ -119,7 +119,7 @@ def test_generated_pages_show_works_without_performances(tmp_path):
 
     assert '<p class="recommendation-empty">No recommendation yet.</p>' in work_page
     assert "Cantata No. 2" in composer_page
-    assert "no recommendation yet" in composer_page
+    assert '<strong>Cantata No. 2</strong>' in composer_page
 
 
 def test_work_groups_are_navigation_only_not_recommendations(tmp_path):
@@ -129,7 +129,7 @@ def test_work_groups_are_navigation_only_not_recommendations(tmp_path):
 
     composer_page = (tmp_path / "publication" / "composers" / "bach.md").read_text(encoding="utf-8")
 
-    assert "## Cantatas" in composer_page
+    assert "### Cantatas" in composer_page
     assert "Recommended Performances" not in composer_page
 
 
@@ -175,7 +175,7 @@ def test_public_pages_include_mobile_friendly_polish_structure(tmp_path):
 
     assert 'class="publication-summary"' in home_page
     assert 'class="composer-list"' in composer_index
-    assert 'class="work-list__row"' in composer_page
+    assert 'class="work-entry"' in composer_page
     assert 'class="recommendation-card"' in work_page
 
 
@@ -190,3 +190,87 @@ def test_work_pages_are_reachable_but_excluded_from_global_navigation(tmp_path):
     assert "/publication/works/bach-cantata-1/" in composer_page
     assert "nav_exclude: true" in work_page
     assert "parent: Collection" not in work_page
+
+
+def test_editorial_collection_order_and_work_specific_recommendations(tmp_path):
+    _seed_repo(tmp_path)
+    _write_yaml(tmp_path / "data" / "publication" / "bach.yaml", {
+        "composer_id": "bach", "collections": [{
+            "title": "Collected cantatas", "opus": "Op. 3", "date_text": "1711",
+            "work_ids": ["bach-cantata-2", "bach-cantata-1"],
+        }],
+    })
+    _write_yaml(tmp_path / "data" / "works" / "bach-cantata-1.yaml", {
+        "id": "bach-cantata-1", "work_group_id": "cantatas", "composer_id": "bach",
+        "title": "Cantata No. 1", "catalogue": {"bwv": "BWV 1", "opus": "Op. 3"}, "gem": True,
+    })
+    PublicationSiteGenerator(tmp_path).generate()
+    page = (tmp_path / "publication" / "composers" / "bach.md").read_text()
+    assert "## Works with opus number" in page
+    assert "<strong>Collected cantatas</strong>, Op. 3 (1711)" in page
+    assert page.index("Cantata No. 2") < page.index("BWV 1") < page.index("Monteverdi Choir")
+    assert '<a href="https://tidal.com/browse/track/123"><em>Monteverdi Choir, English Baroque Soloists</em></a>' in page
+    assert "chamber version" in page and "choir and orchestra" in page
+    assert "💎" in page
+    assert page.count('/publication/works/bach-cantata-1/') == 1
+    assert page.count('/publication/works/bach-cantata-2/') == 1
+
+
+def test_singleton_is_compact_with_dates_catalogue_and_partial_coverage(tmp_path):
+    _seed_repo(tmp_path)
+    path = tmp_path / "data" / "works" / "bach-cantata-1.yaml"
+    yaml = YAML()
+    work = yaml.load(path.read_text())
+    work.update({"catalogue": {"bwv": "BWV 1", "opus": "Op. 3"}, "date_text": "1705–1706", "category": "Vocal"})
+    _write_yaml(path, work)
+    perf_path = tmp_path / "data" / "performances" / "bach-cantata-1-gardiner.yaml"
+    perf = yaml.load(perf_path.read_text())
+    perf["excerpt"] = "Aria only <excerpt>"
+    _write_yaml(perf_path, perf)
+    PublicationSiteGenerator(tmp_path).generate()
+    page = (tmp_path / "publication" / "composers" / "bach.md").read_text()
+    assert "## Vocal" in page
+    assert "<strong>Cantata No. 1</strong></a>, BWV 1, Op. 3 (1705–1706)" in page
+    assert "Aria only &lt;excerpt&gt;" in page
+    assert "### Cantatas" not in page
+    assert "no recommendation yet" not in page
+    detail = (tmp_path / "publication" / "works" / "bach-cantata-1.md").read_text()
+    assert "Catalogue: BWV 1, Op. 3" in detail
+    assert "{'bwv'" not in detail
+
+
+def test_invalid_editorial_membership_blocks_generation(tmp_path):
+    import pytest
+    _seed_repo(tmp_path)
+    for ids in (["missing"], ["bach-cantata-1", "bach-cantata-1"]):
+        _write_yaml(tmp_path / "data" / "publication" / "bach.yaml", {
+            "composer_id": "bach", "collections": [{"title": "Collection", "work_ids": ids}],
+        })
+        with pytest.raises(RuntimeError, match="Unknown, foreign or repeated"):
+            PublicationSiteGenerator(tmp_path).generate()
+
+
+def test_collection_shares_recommendation_only_across_covered_members(tmp_path):
+    _seed_repo(tmp_path)
+    _write_yaml(tmp_path / "data" / "works" / "third.yaml", {
+        "id": "third", "work_group_id": "cantatas", "composer_id": "bach", "title": "Cantata No. 3",
+    })
+    yaml = YAML()
+    for source in (tmp_path / "data" / "performances").glob('*.yaml'):
+        perf = yaml.load(source.read_text())
+        perf.update({"id": perf["id"] + "-third", "work_id": "third"})
+        _write_yaml(source.with_name(source.stem + '-third.yaml'), perf)
+    _write_yaml(tmp_path / "data" / "publication" / "bach.yaml", {
+        "composer_id": "bach", "collections": [{"title": "Cantatas", "work_ids": ["bach-cantata-1", "third", "bach-cantata-2"]}],
+    })
+    PublicationSiteGenerator(tmp_path).generate()
+    page = (tmp_path / "publication" / "composers" / "bach.md").read_text()
+    assert page.count("Monteverdi Choir") == 1
+    assert page.index("Cantata No. 3") < page.index("Monteverdi Choir") < page.index("Cantata No. 2")
+    # An uncovered member breaks a run, so the link cannot imply its coverage.
+    _write_yaml(tmp_path / "data" / "publication" / "bach.yaml", {
+        "composer_id": "bach", "collections": [{"title": "Cantatas", "work_ids": ["bach-cantata-1", "bach-cantata-2", "third"]}],
+    })
+    PublicationSiteGenerator(tmp_path).generate()
+    page = (tmp_path / "publication" / "composers" / "bach.md").read_text()
+    assert page.count("Monteverdi Choir") == 2

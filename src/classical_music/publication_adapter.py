@@ -140,6 +140,9 @@ class PublicationDataAdapter:
             # Include optional public fields
             if "catalogue" in work_data:
                 pub_work["catalogue"] = work_data["catalogue"]
+            for field in ("date_text", "year"):
+                if field in work_data:
+                    pub_work[field] = work_data[field]
             if "category" in work_data:
                 pub_work["category"] = work_data["category"]
             if "gem" in work_data:
