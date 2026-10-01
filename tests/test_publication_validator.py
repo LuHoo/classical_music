@@ -373,10 +373,10 @@ class TestPublicationWithRealData:
         # Main assertion
         assert result.passed, f"Publication validation failed: {result.error_count()} errors"
         assert result.exit_code() == 0, "Exit code should be 0"
-        assert len(validator.adapter.persons) == 12
-        assert len(validator.adapter.work_groups) == 1392
-        assert len(validator.adapter.works) == 1404
-        assert len(validator.adapter.performances) == 862
+        assert len(validator.adapter.persons) == 23
+        assert len(validator.adapter.work_groups) == 1469
+        assert len(validator.adapter.works) == 1481
+        assert len(validator.adapter.performances) == 938
 
     def test_validator_returns_validation_result(self, validator):
         """Validate that validator returns proper ValidationResult."""

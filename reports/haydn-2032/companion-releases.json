@@ -1,0 +1,82 @@
+[
+  {
+    "title": "Die Schöpfung",
+    "label": "Alpha Classics",
+    "catalogue_number": "ALPHA567",
+    "status": "released",
+    "type": "unnumbered companion",
+    "discs": 2,
+    "release_date": "2020-10-09",
+    "source_url": "https://www.br-chor.de/cd-dvd/projekt-haydn-2032-giovanni-antonini-dirigiert-die-schoepfung/",
+    "tracklist_url": "https://www.prestomusic.com/classical/products/8820488--haydn-die-schopfung",
+    "performers": [
+      {
+        "name": "Il Giardino Armonico",
+        "role": "orchestra"
+      },
+      {
+        "name": "Chor des Bayerischen Rundfunks",
+        "role": "choir"
+      },
+      {
+        "name": "Giovanni Antonini",
+        "role": "conductor"
+      },
+      {
+        "name": "Anna Lucia Richter",
+        "role": "soprano"
+      },
+      {
+        "name": "Maximilian Schmitt",
+        "role": "tenor"
+      },
+      {
+        "name": "Florian Boesch",
+        "role": "baritone"
+      },
+      {
+        "name": "Gabriele Weinfurter",
+        "role": "mezzo-soprano"
+      }
+    ],
+    "tidal_url": "https://tidal.com/album/187429062",
+    "tidal_metadata": {
+      "@context": "https://schema.org",
+      "@id": "https://tidal.com/album/187429062",
+      "@type": "MusicAlbum",
+      "url": "https://tidal.com/album/187429062",
+      "byArtist": [
+        {
+          "@id": "https://tidal.com/artist/12468",
+          "@type": "MusicGroup",
+          "name": "Il Giardino Armonico",
+          "url": "https://tidal.com/artist/12468"
+        },
+        {
+          "@id": "https://tidal.com/artist/18259",
+          "@type": "MusicGroup",
+          "name": "Giovanni Antonini",
+          "url": "https://tidal.com/artist/18259"
+        }
+      ],
+      "datePublished": "2020-10-09",
+      "image": "https://resources.tidal.com/images/6b8a6e21/38ff/4c09/9c9e/3b67087327c2/640x640.jpg",
+      "name": "Haydn: Die Schöpfung"
+    },
+    "works": [
+      {
+        "slug": "haydn-die-schopfung",
+        "composer": "Joseph Haydn",
+        "title": "Die Schöpfung (The Creation)",
+        "catalogue": {
+          "hoboken": "Hob. XXI:2"
+        },
+        "category": "Oratorios",
+        "medium": "CD"
+      }
+    ],
+    "canonical_import": true,
+    "checked_at": "2026-09-30",
+    "catalogue_note": "The BR Chorus web page mistypes the Hoboken section as XXXI; the correct catalogue is XXI:2."
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Haydn 2032, Vol. 1–10: The Symphonies",
+    "catalogue_number": "ALPHA774",
+    "type": "box-set reissue",
+    "source_url": "https://outhere-music.com/en/albums/haydn-2032-vol-1-10-symphonies",
+    "canonical_import": false,
+    "reason": "Reissues volumes 1–10; no additional performances created."
+  },
+  {
+    "title": "Die Schöpfung",
+    "catalogue_number": "ALPHA567",
+    "type": "unnumbered companion",
+    "source_url": "https://www.prestomusic.com/classical/products/8820488--haydn-die-schopfung",
+    "canonical_import": true,
+    "reason": "Unnumbered project CD release confirmed by the BR Chorus and label; imported in companion-releases.json."
+  }
+]
