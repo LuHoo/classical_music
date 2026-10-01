@@ -100,6 +100,7 @@ class PublicationSiteGenerator:
         body = [
             "---",
             'title: "Collection"',
+            "permalink: /publication/",
             "nav_order: 1",
             "---",
             "",
@@ -149,6 +150,7 @@ class PublicationSiteGenerator:
         body = [
             "---",
             'title: "Composers"',
+            "permalink: /publication/composers/",
             "parent: Collection",
             "nav_order: 1",
             "---",
@@ -180,6 +182,7 @@ class PublicationSiteGenerator:
         body = [
             "---",
             f'title: "{self._front_matter(person["name"])}"',
+            f"permalink: /publication/composers/{person['id']}/",
             "parent: Composers",
             "grand_parent: Collection",
             "---",
@@ -220,6 +223,7 @@ class PublicationSiteGenerator:
         body = [
             "---",
             f'title: "{self._front_matter(work["title"])}"',
+            f"permalink: /publication/works/{work['id']}/",
             "nav_exclude: true",
             "---",
             "",

@@ -28,6 +28,7 @@ jobs:
       - run: bundle install
       - run: bundle exec jekyll build
       - run: test -f _site/publication/index.html
+      - run: python scripts/check_publication_links.py
       - uses: peaceiris/actions-gh-pages@v4
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         with:

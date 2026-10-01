@@ -26,8 +26,13 @@ bundle install
 python -m classical_music.cli_validator
 python scripts/generate_publication_site.py
 bundle exec jekyll build
+python scripts/check_publication_links.py
 ```
 
 On pull requests, GitHub Actions runs the same validation, generation, and
 Jekyll build path without deploying. Deployment to `gh-pages` only runs after a
 push to `main`.
+
+Generated collection pages have explicit directory permalinks. The post-build
+link check verifies that collection navigation points to HTML files actually
+produced by Jekyll, including on the repository's configured base URL.

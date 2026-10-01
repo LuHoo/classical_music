@@ -73,6 +73,26 @@ def test_minimal_site_generation_creates_expected_pages(tmp_path):
     assert (tmp_path / "publication" / "works" / "bach-cantata-1.md").exists()
 
 
+def test_publication_links_match_explicit_directory_permalinks(tmp_path):
+    """Every collection link must resolve to a declared route, including with a base URL."""
+    import re
+
+    _seed_repo(tmp_path)
+    PublicationSiteGenerator(tmp_path).generate()
+    pages = list((tmp_path / "publication").rglob("*.md"))
+    yaml = YAML(typ="safe")
+    routes = set()
+    for page in pages:
+        front_matter = yaml.load(page.read_text().split("---", 2)[1])
+        routes.add(front_matter["permalink"])
+    assert len(routes) == len(pages)
+    assert "/publication/composers/bach/" in routes
+    assert "/publication/works/bach-cantata-1/" in routes
+    for page in pages:
+        for href in re.findall(r'href="\{\{ site.baseurl \}\}([^\"]+)"', page.read_text()):
+            assert href in routes, f"{page.name} links to undeclared route {href}"
+
+
 def test_excerpt_coverage_is_visible_and_escaped(tmp_path):
     _seed_repo(tmp_path)
     path = tmp_path / "data" / "performances" / "bach-cantata-1-gardiner.yaml"
