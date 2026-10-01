@@ -1,0 +1,9 @@
+id: f902df88e38546c6900d5a7ae9420f1f
+work_group_id: 96ee5dd045c54ddda9c65a3f1f3c87d8
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Cello Concerto, RV 423
+catalogue:
+  rv: RV 423
+source:
+  url: https://vivaldiedition.net/portfolio/vol-61-concerti-per-violoncello-iii-2019/
+  file: reports/vivaldi-naive-edition/catalogue.json

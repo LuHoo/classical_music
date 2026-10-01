@@ -1,0 +1,19 @@
+id: a5a76fe1ff1d43f89056528206c78624
+work_id: eed0cd9176f24780a46558636c076029
+performers:
+- name: Europa Galante
+  role: ensemble
+- name: Fabio Biondi
+  role: violin
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP30572
+  album_title: Concerti per violino VI — La boemia
+source:
+  url: https://vivaldiedition.net/portfolio/vol-57-concerti-per-violino-vi-la-boemia-2018/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: The Vivaldi Edition, volume 57. Album page verified 2026-09-28. OP30572; de officiële pagina heeft een
+  onjuiste voettekst en boekjeslink. Catalogusnummer ook gecontroleerd bij Presto Music.
+links:
+  tidal:
+    url: https://tidal.com/album/94258645

@@ -1,0 +1,18 @@
+id: 6bdbfd90724b49ff9c3c468e3b3da34a
+work_id: 9efacfc9d3b04f0d9305c3b4d259aff0
+performers:
+- name: Abchordis Ensemble
+  role: ensemble
+- name: Andrea Buccarella
+  role: director
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP7901
+  album_title: Serenata a tre
+source:
+  url: https://vivaldiedition.net/portfolio/vol-70-serenata-a-tre/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: 'The Vivaldi Edition, volume 70. Album page verified 2026-09-28. '
+links:
+  tidal:
+    url: https://tidal.com/album/276512507

@@ -3,6 +3,8 @@ name: Build and Deploy Jekyll site to GitHub Pages
 on:
   push:
     branches: [main]
+  pull_request:
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -15,12 +17,21 @@ jobs:
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.2'
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.13"
+      - run: python -m pip install --upgrade pip
+      - run: python -m pip install -e '.[dev]'
+      - run: python -m classical_music.cli_validator
+      - run: python scripts/generate_publication_site.py
       - run: gem install bundler
       - run: bundle install
       - run: bundle exec jekyll build
+      - run: test -f _site/publication/index.html
       - uses: peaceiris/actions-gh-pages@v4
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
           publish_dir: ./_site
-          force_orphan: true 
+          force_orphan: true

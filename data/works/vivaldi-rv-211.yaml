@@ -1,0 +1,9 @@
+id: 6481f525240e46a08737a73067bf612c
+work_group_id: a371d6a18cf54449a50b7195f690f8a8
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 211
+catalogue:
+  rv: RV 211
+source:
+  url: https://vivaldiedition.net/portfolio/vol-67-concerti-per-violino-ix-le-nuove-vie/
+  file: reports/vivaldi-naive-edition/catalogue.json

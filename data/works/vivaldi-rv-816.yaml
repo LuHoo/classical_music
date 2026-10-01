@@ -1,0 +1,9 @@
+id: ba1f3a7533fb48b7a4a420f3650d584e
+work_group_id: 3405b72afd0f4020bf4dd58bed0f5130
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Sonata, RV 816
+catalogue:
+  rv: RV 816
+source:
+  url: https://vivaldiedition.net/portfolio/vol-46-new-discoveries-ii-2011/
+  file: reports/vivaldi-naive-edition/catalogue.json

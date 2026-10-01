@@ -1,0 +1,18 @@
+id: 9a6eee7fffc34c09a1779f7ef6ae6f50
+work_id: b1519d6f1d614dbfad2273f6d47f9465
+performers:
+- name: Accademia Bizantina
+  role: ensemble
+- name: Ottavio Dantone
+  role: conductor
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP7080
+  album_title: Il Tamerlano (Il Bajazet)
+source:
+  url: https://vivaldiedition.net/portfolio/vol-65-il-tamerlano-il-bajazet/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: 'The Vivaldi Edition, volume 65. Album page verified 2026-09-28. '
+links:
+  tidal:
+    url: https://tidal.com/album/153965807

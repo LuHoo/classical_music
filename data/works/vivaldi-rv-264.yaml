@@ -1,0 +1,9 @@
+id: ac8d859cd1a9497dbd6c6be1cb95bb25
+work_group_id: aa5d023812ab4dd6bde059559080741c
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 264
+catalogue:
+  rv: RV 264
+source:
+  url: https://vivaldiedition.net/portfolio/vol-28-concerti-per-violin-ii-di-sfida-2006/
+  file: reports/vivaldi-naive-edition/catalogue.json

@@ -1,0 +1,9 @@
+id: 8f10ce85cfe34f499584b929b5387c01
+work_group_id: c805981ae9f344cfb1c3b44b642dd74d
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Oboe Concerto, RV 451
+catalogue:
+  rv: RV 451
+source:
+  url: https://vivaldiedition.net/portfolio/vol-15-concerti-per-fagotto-e-oboe-2004/
+  file: reports/vivaldi-naive-edition/catalogue.json

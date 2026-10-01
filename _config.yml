@@ -1,6 +1,6 @@
 title: "Classical Music"
 description: "Favorite classical recordings by composer"
-remote_theme: just-the-docs/just-the-docs
+theme: just-the-docs
 
 url: "https://luhoo.github.io"   # your GitHub Pages root URL
 baseurl: "/classical_music"      # the repository name
@@ -8,5 +8,6 @@ baseurl: "/classical_music"      # the repository name
 # Enable navigation
 nav_sort: case_insensitive
 
-just_the_docs:
-  head_custom: _includes/head_custom.html
+# Generated during the Pages build and intentionally ignored by Git.
+include:
+  - publication

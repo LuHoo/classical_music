@@ -1,0 +1,9 @@
+id: 05cebb5bff034d77b51e62a8a561f0bf
+work_group_id: f5d9e76728b541b087e49f33c32af9b7
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Cello Concerto, RV 409
+catalogue:
+  rv: RV 409
+source:
+  url: https://vivaldiedition.net/portfolio/vol-27-concerti-per-violon%e2%80%90-cello-i-2006/
+  file: reports/vivaldi-naive-edition/catalogue.json

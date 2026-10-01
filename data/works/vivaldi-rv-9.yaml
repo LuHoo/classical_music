@@ -1,0 +1,10 @@
+id: 86909fb652e9449d8d57f6d33b6453ae
+work_group_id: 4655a9f9a33f488d860bc509fb22c918
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Sonata, RV 9
+catalogue:
+  rv: RV 9
+  opus: Op. 2
+source:
+  file: docs/vivaldi.md
+  line: '14'

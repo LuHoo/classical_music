@@ -1,0 +1,9 @@
+id: 8fbd642a00994baebe32bcf40b82c4e3
+work_group_id: c17b22263bfd49fe955c4e94b42992ae
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 271
+catalogue:
+  rv: RV 271
+source:
+  url: https://vivaldiedition.net/portfolio/vol-45-concerti-per-violin-iv-limperatore-2011/
+  file: reports/vivaldi-naive-edition/catalogue.json

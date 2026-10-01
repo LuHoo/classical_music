@@ -1,0 +1,21 @@
+id: 9d35b80a9af14311a779a1ea937b9681
+work_id: f69de43016684d32b131cee140be2363
+performers:
+- name: Il Giardino Armonico
+  role: orchestra
+- name: Kammerorchester Basel
+  role: orchestra
+- name: Giovanni Antonini
+  role: conductor
+release:
+  label: Alpha Classics
+  catalogue_number: ALPHA698
+  album_title: 'Haydn 2032, Vol. 16: The Surprise'
+source:
+  url: https://www.prestomusic.com/classical/products/9719694--haydn-2032-vol-16-the-surprise
+  file: reports/haydn-2032/catalogue.json
+links:
+  tidal:
+    url: https://tidal.com/album/386182541
+notes: Haydn 2032, volume 16. Sources and Tidal album metadata checked 2026-09-30. Album link covers this
+  work; it is not a work-specific track link.

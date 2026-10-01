@@ -1,0 +1,10 @@
+id: 36996db395e3495e88f86c7bb77225d4
+work_group_id: e2b684e4e4bc411ab9da35702154de23
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 181a
+catalogue:
+  rv: RV 181a
+  opus: Op. 9
+source:
+  url: https://vivaldiedition.net/portfolio/vol-45-concerti-per-violin-iv-limperatore-2011/
+  file: reports/vivaldi-naive-edition/catalogue.json

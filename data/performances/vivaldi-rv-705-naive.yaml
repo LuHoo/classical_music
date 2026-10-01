@@ -1,0 +1,19 @@
+id: cf3f7cb81ecc42eabee8b51937ac5dd0
+work_id: 3970989724c747fbaf0ecd652fcfb613
+performers:
+- name: Il Complesso Barocco
+  role: ensemble
+- name: Alan Curtis
+  role: conductor
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP30545
+  album_title: Catone in Utica
+source:
+  url: https://vivaldiedition.net/portfolio/vol-50-catone-in-utica-2012/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: The Vivaldi Edition, volume 50. Album page verified 2026-09-28. Inclusief de openingssinfonia uit RV
+  725; Catone in Utica is RV 705, met gereconstrueerde eerste akte.
+links:
+  tidal:
+    url: https://tidal.com/album/91194446

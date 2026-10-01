@@ -1,0 +1,9 @@
+id: 7c12d1b80e2d453dabb387f9ab1191ca
+work_group_id: 5f9a6db1ac1d45ee87b7a8ba26f04f95
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Cello Concerto, RV 400
+catalogue:
+  rv: RV 400
+source:
+  url: https://vivaldiedition.net/portfolio/vol-61-concerti-per-violoncello-iii-2019/
+  file: reports/vivaldi-naive-edition/catalogue.json

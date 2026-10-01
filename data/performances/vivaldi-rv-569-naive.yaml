@@ -1,0 +1,18 @@
+id: bb9c2947ae1e4c67bc34a3e16b8b33b6
+work_id: 0458511cebe4432e8ecd2127bbc65f0b
+performers:
+- name: Freiburger Barockorchester
+  role: ensemble
+- name: Gottfried von der Goltz
+  role: violin
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP30283
+  album_title: Concerti di Dresda
+source:
+  url: https://vivaldiedition.net/portfolio/vol-7-concerti-di-dresda-2003/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: 'The Vivaldi Edition, volume 7. Album page verified 2026-09-28. '
+links:
+  tidal:
+    url: https://tidal.com/album/65271994

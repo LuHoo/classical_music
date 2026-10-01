@@ -1,0 +1,19 @@
+id: 0714772c69f3470f994dca69b301e101
+work_id: db098243477840899c765ce102298686
+performers:
+- name: Accademia Bizantina
+  role: ensemble
+- name: Ottavio Dantone
+  role: conductor
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP30569
+  album_title: Musica sacra per alto
+source:
+  url: https://vivaldiedition.net/portfolio/vol-59-musica-sacra-per-alto-2019/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: The Vivaldi Edition, volume 59. Album page verified 2026-09-28. RV 641 is aangevuld vanuit de officiële
+  albumomschrijving.
+links:
+  tidal:
+    url: https://tidal.com/album/107519620

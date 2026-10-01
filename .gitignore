@@ -49,3 +49,4 @@ generated/migration/*.json
 
 # Adapter output - generated files
 _data_generated/
+publication/

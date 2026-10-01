@@ -1,0 +1,19 @@
+id: 77de2f200a784b439416b7edb7e893f2
+work_id: 3261307c834249a1b49de636472722c8
+performers:
+- name: Il Giardino Armonico
+  role: orchestra
+- name: Giovanni Antonini
+  role: conductor
+release:
+  label: Alpha Classics
+  catalogue_number: ALPHA684
+  album_title: 'Haydn 2032, Vol. 9: L''Addio'
+source:
+  url: https://www.prestomusic.com/classical/products/8864913--haydn-2032-vol-9-laddio
+  file: reports/haydn-2032/catalogue.json
+links:
+  tidal:
+    url: https://tidal.com/album/187296904
+notes: Haydn 2032, volume 9. Sources and Tidal album metadata checked 2026-09-30. Album link covers this
+  work; it is not a work-specific track link.

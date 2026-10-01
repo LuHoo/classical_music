@@ -1,0 +1,9 @@
+id: 2d6dd5e0a7e64914b803824a0cb4e053
+work_group_id: 182e7ea9500043a0bf9c1123a41805dc
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 307
+catalogue:
+  rv: RV 307
+source:
+  url: https://vivaldiedition.net/portfolio/vol-33-concerti-per-violin-iii-il-ballo-2008/
+  file: reports/vivaldi-naive-edition/catalogue.json

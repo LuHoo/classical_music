@@ -1,0 +1,10 @@
+id: 2e53351f651a4a918673980080d22345
+work_group_id: dc8f9bedc83a4a149b4f07cbbaa3e979
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 379
+catalogue:
+  rv: RV 379
+  opus: Op. 12
+source:
+  url: https://vivaldiedition.net/portfolio/vol-49-concerti-per-violino-v-per-pisendel-2012/
+  file: reports/vivaldi-naive-edition/catalogue.json

@@ -1,0 +1,19 @@
+id: d78f50563a3f49679e385b9b8e209203
+work_id: 0fd94e1ed973468ca7a8fd0a9a6838a4
+performers:
+- name: L’Onda Armonica
+  role: ensemble
+- name: Sergio Azzolini
+  role: bassoon
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP7956
+  album_title: Concerti per fagotto VI
+source:
+  url: https://vivaldiedition.net/portfolio/concerti-per-vari-strumenti-ii-2/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: The Vivaldi Edition, volume 76. Album page verified 2026-09-28. RV 468/399 en 482/406 duiden de op dit
+  album gebruikte reconstructies/combinaties aan; niet vier afzonderlijke complete concerten.
+links:
+  tidal:
+    url: https://tidal.com/album/518903747

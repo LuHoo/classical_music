@@ -1,0 +1,10 @@
+id: b36f0baaa3cd4efa90bc9347d644c650
+work_group_id: c7d672688352463bba59249c50f43e97
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 334
+catalogue:
+  rv: RV 334
+  opus: Op. 9
+source:
+  file: docs/vivaldi.md
+  line: '28'

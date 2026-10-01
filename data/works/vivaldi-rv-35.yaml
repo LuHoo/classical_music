@@ -1,0 +1,10 @@
+id: 28bcc15eb7c44b8aa2a951fdea4adf00
+work_group_id: 34932cebea204a489a6cbf623cbb7b0c
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Sonata, RV 35
+catalogue:
+  rv: RV 35
+  opus: Op. 5
+source:
+  file: docs/vivaldi.md
+  line: '20'

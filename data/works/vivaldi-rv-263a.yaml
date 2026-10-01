@@ -1,0 +1,10 @@
+id: e967bd3dbabc4726b62ae4f6a5a72b43
+work_group_id: ab8c9755e0a541d0adacd2a49c166b55
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 263a
+catalogue:
+  rv: RV 263a
+  opus: Op. 9
+source:
+  url: https://vivaldiedition.net/portfolio/vol-45-concerti-per-violin-iv-limperatore-2011/
+  file: reports/vivaldi-naive-edition/catalogue.json

@@ -1,0 +1,10 @@
+id: ed7224cb27a44d37a18ff94400a50359
+work_group_id: 3d77f236c64e44219214d25f520b32a2
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Chamber Sonata, RV 64
+catalogue:
+  rv: RV 64
+  opus: Op. 1
+source:
+  url: https://vivaldiedition.net/portfolio/vol-44-sonate-da-camera-a-tre-opus-1-2011/
+  file: reports/vivaldi-naive-edition/catalogue.json

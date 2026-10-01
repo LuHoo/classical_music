@@ -1,0 +1,19 @@
+id: 0cccb3ba31b34a88ada1fc275ed7510d
+work_id: bccf77feee0c4eec88251f2077bce175
+performers:
+- name: Modo Antiquo
+  role: ensemble
+- name: Federico Maria Sardelli
+  role: conductor
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP30540
+  album_title: Orlando 1714
+source:
+  url: https://vivaldiedition.net/portfolio/vol-47-orlando-1714-2012/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: The Vivaldi Edition, volume 47. Album page verified 2026-09-28. Orlando 1714 is RV 819; daarnaast staat
+  de openingssinfonia RV 781 op de opname.
+links:
+  tidal:
+    url: https://tidal.com/album/65306104

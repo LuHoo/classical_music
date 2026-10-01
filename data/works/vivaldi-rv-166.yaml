@@ -1,0 +1,9 @@
+id: 61734653b10a4b9fb0d404afc84f6873
+work_group_id: 56d2979920914d8ea178a1b26a75c86f
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Concerto for strings, RV 166
+catalogue:
+  rv: RV 166
+source:
+  url: https://vivaldiedition.net/portfolio/vol-68-concerti-per-archi-ii-2013/
+  file: reports/vivaldi-naive-edition/catalogue.json

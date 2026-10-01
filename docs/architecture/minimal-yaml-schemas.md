@@ -284,6 +284,12 @@ to a different Work.
 `release` is limited Performance metadata. It does not create a canonical
 Release entity and does not define Performance identity.
 
+`excerpt` may contain a short public description when the linked performance
+contains only part of the Work (for example `Sinfonia only` or `Act II reconstruction`).
+It is displayed alongside the recommendation so a recital link cannot imply a
+complete opera recording. Excerpts do not create artificial Works or performance
+profiles. Omit this field for complete performances.
+
 `keep_looking: true` means only that the curator remains open to finding a
 better recommendation. It must not automatically create searches or GitHub
 Issues.
