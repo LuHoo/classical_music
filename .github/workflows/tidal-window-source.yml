@@ -1,0 +1,28 @@
+name: Best Classical window 333-1998 source
+on:
+  push:
+    branches: [tidal-playlist-window-333-1998-source]
+    paths: [.github/workflows/tidal-window-source.yml]
+permissions:
+  contents: read
+jobs:
+  source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+      - name: Read prefix and two boundary-context items
+        env:
+          TIDAL_CLIENT_ID: ${{ secrets.TIDAL_CLIENT_ID }}
+          TIDAL_CLIENT_SECRET: ${{ secrets.TIDAL_CLIENT_SECRET }}
+        run: python scripts/fetch_tidal_playlist.py https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3 --limit 2000
+      - uses: actions/upload-artifact@v7
+        with:
+          name: window-source-${{ github.run_id }}
+          path: reports/tidal-playlist/source.json
+          retention-days: 14
