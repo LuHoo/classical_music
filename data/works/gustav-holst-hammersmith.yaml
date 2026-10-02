@@ -1,9 +1,10 @@
 id: gustav-holst-hammersmith
 work_group_id: gustav-holst-hammersmith-group
 composer_id: gustav-holst
-title: Hammersmith
+title: Hammersmith (orchestral version)
 source:
   file: reports/playlist-import/best-classical/window-333-1998.json
   url: https://www.naxos.com/CatalogueDetail/?id=8.553696
 catalogue:
   opus: Op. 52
+version: Orchestral version

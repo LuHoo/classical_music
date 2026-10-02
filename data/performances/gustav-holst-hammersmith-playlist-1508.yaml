@@ -4,6 +4,8 @@ performers:
 - name: Royal Scottish National Orchestra
   role: orchestra
   artist_id: royal-scottish-national-orchestra
+- name: David Lloyd-Jones
+  role: conductor
 links:
   tidal:
     url: https://tidal.com/track/73941593

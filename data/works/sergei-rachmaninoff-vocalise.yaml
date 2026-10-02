@@ -1,9 +1,10 @@
 id: sergei-rachmaninoff-vocalise
 work_group_id: sergei-rachmaninoff-vocalise-group
 composer_id: sergei-rachmaninoff
-title: Vocalise
+title: Vocalise (version for voice and orchestra)
 source:
   file: reports/playlist-import/best-classical/window-333-1998.json
   url: https://www.chandos.net/products/catalogue/CHAN%2010327
 catalogue:
   opus: Op. 34 No. 14
+version: Version for voice and orchestra

@@ -31822,7 +31822,7 @@
       ],
       "work_source": "https://www.naxos.com/CatalogueDetail/?id=ODE921-2",
       "version": null,
-      "version_assignment": null,
+      "version_assignment": "unspecified",
       "disposition": "import_new",
       "composer_id": "einojuhani-rautavaara",
       "work_id": "einojuhani-rautavaara-flute-concerto-dances-with-the-winds",
@@ -32687,7 +32687,7 @@
         1508
       ],
       "composer": "Gustav Holst",
-      "title": "Hammersmith, Op. 52",
+      "title": "Hammersmith (orchestral version)",
       "tracks": [
         {
           "position": 1508,
@@ -32709,15 +32709,19 @@
         }
       ],
       "credited_artists": [
-        "Royal Scottish National Orchestra"
+        "Royal Scottish National Orchestra",
+        "David Lloyd-Jones"
       ],
       "work_source": "https://www.naxos.com/CatalogueDetail/?id=8.553696",
-      "version": null,
+      "version": "Orchestral version",
       "version_assignment": null,
       "disposition": "import_new",
       "composer_id": "gustav-holst",
       "work_id": "gustav-holst-hammersmith",
-      "performance_id": "gustav-holst-hammersmith-playlist-1508"
+      "performance_id": "gustav-holst-hammersmith-playlist-1508",
+      "evidence": [
+        "Naxos 8.553696 identifies David Lloyd-Jones conducting the Royal Scottish National Orchestra."
+      ]
     },
     {
       "positions": [
@@ -32746,7 +32750,8 @@
         }
       ],
       "credited_artists": [
-        "Royal Scottish National Orchestra"
+        "Royal Scottish National Orchestra",
+        "David Lloyd-Jones"
       ],
       "work_source": "https://www.naxos.com/CatalogueDetail/?id=8.553696",
       "version": null,
@@ -32754,7 +32759,10 @@
       "disposition": "import_new",
       "composer_id": "gustav-holst",
       "work_id": "gustav-holst-a-fugal-overture-no-1",
-      "performance_id": "gustav-holst-a-fugal-overture-no-1-playlist-1509"
+      "performance_id": "gustav-holst-a-fugal-overture-no-1-playlist-1509",
+      "evidence": [
+        "Naxos 8.553696 identifies David Lloyd-Jones conducting the Royal Scottish National Orchestra."
+      ]
     },
     {
       "positions": [
@@ -35317,7 +35325,7 @@
         1604
       ],
       "composer": "Edvard Grieg",
-      "title": "The First Meeting, Op. 21 No. 1",
+      "title": "The First Meeting (orchestral version)",
       "tracks": [
         {
           "position": 1604,
@@ -35348,7 +35356,7 @@
         "Neeme Järvi"
       ],
       "work_source": "https://www.deutschegrammophon.com/en/catalogue/products/grieg-complete-music-with-orchestra-jaervi-11417",
-      "version": null,
+      "version": "Orchestral version",
       "version_assignment": null,
       "disposition": "import_new",
       "composer_id": "edvard-grieg",
@@ -35403,7 +35411,7 @@
         1606
       ],
       "composer": "Edvard Grieg",
-      "title": "A Swan, Op. 25 No. 2",
+      "title": "A Swan (orchestral version)",
       "tracks": [
         {
           "position": 1606,
@@ -35434,7 +35442,7 @@
         "Neeme Järvi"
       ],
       "work_source": "https://www.deutschegrammophon.com/en/catalogue/products/grieg-complete-music-with-orchestra-jaervi-11417",
-      "version": null,
+      "version": "Orchestral version",
       "version_assignment": null,
       "disposition": "import_new",
       "composer_id": "edvard-grieg",
@@ -36641,7 +36649,7 @@
         1646
       ],
       "composer": "Sergei Rachmaninoff",
-      "title": "Vocalise, Op. 34 No. 14",
+      "title": "Vocalise (version for voice and orchestra)",
       "tracks": [
         {
           "position": 1646,
@@ -36666,7 +36674,7 @@
         "Suzanne Murphy"
       ],
       "work_source": "https://www.chandos.net/products/catalogue/CHAN%2010327",
-      "version": null,
+      "version": "Version for voice and orchestra",
       "version_assignment": null,
       "disposition": "import_new",
       "composer_id": "sergei-rachmaninoff",
@@ -46133,7 +46141,7 @@
       ],
       "work_source": "https://www.deccaclassics.com/en/catalogue/products/the-tchaikovsky-project-semyon-bychkov-10992",
       "version": null,
-      "version_assignment": null,
+      "version_assignment": "unspecified",
       "disposition": "import_new",
       "composer_id": "pyotr-ilyich-tchaikovsky",
       "work_id": "pyotr-ilyich-tchaikovsky-symphony-no-1-th-24-winter-reveries",
