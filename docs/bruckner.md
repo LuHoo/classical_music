@@ -29,7 +29,7 @@ nav_order: 1
 
 **Symphony No. 2 in C minor** (1872 version with Scherzo second and Adagio third, revised in 1873 and 1876), WAB. 102 [*ORF Vienna RSO, Markus Poschner*](https://tidal.com/browse/track/384348599?u) (04/2024)
 
-**Symphony No. 2 in C minor** (1877 version, revised in 1892), WAB. 102 [*Bruckner Orchester Linz, Markus Poschner*](https://tidal.com/browse/track/384348603?u) (01/2024)
+**Symphony No. 2 in C minor** (1877 version, edition Paul Hawkshaw), WAB. 102 [*Bruckner Orchester Linz, Markus Poschner*](https://tidal.com/browse/track/384348603?u) (01/2024)
 
 **Symphony No. 3 in D minor "Wagner Symphony"** (1873 version, revised in 1874), WAB. 103 [*ORF Vienna RSO, Markus Poschner*](https://tidal.com/browse/track/384348607?u) (A/2022)
 
@@ -39,9 +39,9 @@ nav_order: 1
 
 **Symphony No. 4 in E♭ major "Die Romantische"** (1874–1876 version), WAB. 104 [*ORF Vienna RSO, Markus Poschner*](https://tidal.com/browse/track/384348620?u) (02/2023)
 
-**Symphony No. 4 in E♭ major "Die Romantische"** (1878 version: new "Hunting" Scherzo and "Volksfest" Finale), WAB. 104 [*Bruckner Orchester Linz, Markus Poschner*](https://tidal.com/browse/track/384348624?u)
+**Symphony No. 4 in E♭ major "Die Romantische"** (1878 version: new "Hunting" Scherzo and "Volksfest" Finale), WAB. 104 [Volksfest finale only: *ORF Vienna RSO, Markus Poschner*](https://tidal.com/browse/track/384348628?u)
 
-**Symphony No. 4 in E♭ major "Die Romantische"** (1880 version: new Finale), WAB. 104 [*ORF Vienna RSO, Markus Poschner*](https://tidal.com/browse/track/384348628?u)
+**Symphony No. 4 in E♭ major "Die Romantische"** (1878–1880 version, 1881 performance text: new Finale), WAB. 104 [*Bruckner Orchester Linz, Markus Poschner*](https://tidal.com/browse/track/384348624?u)
 
 **Symphony No. 4 in E♭ major "Die Romantische"** (1888 version: with piccolo and cymbals), WAB. 104 [*ORF Vienna RSO, Markus Poschner*](https://tidal.com/browse/track/384348629?u) (08/2023)
 
