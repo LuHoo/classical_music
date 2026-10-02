@@ -4,7 +4,6 @@ from __future__ import annotations
 
 import argparse
 import json
-import os
 import re
 import time
 from collections import Counter
@@ -18,6 +17,8 @@ from urllib.parse import urlencode, urljoin, urlsplit
 from urllib.request import HTTPRedirectHandler, Request, build_opener
 
 from ruamel.yaml import YAML
+
+from classical_music.tidal_auth import access_token
 
 MAX_BYTES = 2_000_000
 HOSTS = {"tidal.com", "www.tidal.com", "listen.tidal.com"}
@@ -56,6 +57,8 @@ def normalized(url: str) -> str:
 class SafeRedirects(HTTPRedirectHandler):
     def redirect_request(self, req, fp, code, msg, headers, newurl):
         # Do not follow login, unrelated domains, or arbitrary API redirects.
+        if req.get_header("Authorization"):
+            raise ValueError("Authenticated Tidal requests must not redirect")
         if not resource(newurl):
             raise ValueError("Redirect left supported Tidal album/track URLs")
         return super().redirect_request(req, fp, code, msg, headers, newurl)
@@ -614,7 +617,7 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument(
         "--use-api",
         action="store_true",
-        help="Use official API with TIDAL_ACCESS_TOKEN",
+        help="Use official API with a token or Tidal app credentials",
     )
     p.add_argument("--timeout", type=float, default=15)
     p.add_argument("--delay", type=float, default=0.5)
@@ -634,9 +637,10 @@ def main(argv: list[str] | None = None) -> int:
         or not re.fullmatch("[A-Z]{2}", a.country)
     ):
         p.error("Invalid timeout, delay, limit or country")
-    token = os.environ.get("TIDAL_ACCESS_TOKEN", "")
-    if a.use_api and not token:
-        p.error("--use-api requires TIDAL_ACCESS_TOKEN")
+    try:
+        token = access_token() if a.use_api else ""
+    except ValueError as exc:
+        p.error(str(exc))
 
     def read(path):
         return json.loads(path.read_text()) if path else None

@@ -12,7 +12,8 @@ GitHub issues, or deploys the website.
    `docs/architecture/`. ADR 0004 is superseded and is not normative.
 2. Purpose: keep listening links useful without changing musical recommendations.
 3. Smallest scope: a local command, one JSON/Markdown report, optional verified
-   URL updates. No scheduler or new canonical entity.
+   URL updates, plus a bounded authenticated GitHub Actions pilot. No monthly
+   scheduler or new canonical entity.
 4. Identity: no Person or Work identity changes; preserve trusted legacy input.
 5. Curator load: group shared URLs, separate technical uncertainty from confirmed
    missing pages, and make no automatic curator queue.
@@ -84,8 +85,12 @@ python scripts/check_tidal_links.py --use-api --country NL
 python scripts/check_tidal_links.py --use-api --country NL --apply
 ```
 
-Obtain an authorized access token through the Tidal developer platform. The
-command does not log or persist the token. Official API contract consulted:
+Provide an access token, or set `TIDAL_CLIENT_ID` and `TIDAL_CLIENT_SECRET`
+from your Tidal developer app. With app credentials, `--use-api` obtains a
+temporary token through the official client-credentials flow. Token requests
+refuse redirects and never print provider error bodies or credentials. On
+GitHub Actions the generated token is masked; it is not stored in a file or
+report. Official API contract consulted:
 [Tidal Web API reference](https://tidal-music.github.io/tidal-api-reference/),
 `https://openapi.tidal.com/v2`, `GET /tracks/{id}`, `GET /albums/{id}`,
 `GET /tracks?filter[isrc]=…`, `GET /albums?filter[barcodeId]=…` with `countryCode`.
@@ -115,7 +120,8 @@ link has already disappeared before any fingerprint was captured and the API
 cannot retrieve its identity, this implementation cannot safely recover it from
 names alone. It reports the evidence gap; it does not ask the curator to select
 a different recommendation. API behavior is covered with independent protocol
-fixtures; no authenticated live API run was possible during implementation.
+fixtures. The bounded live pilot below tests the same API contract against
+the configured app credentials.
 
 `--apply` updates only verified `links.tidal.url` (or the equivalent list entry).
 The default is report-only. YAML comments and quoting are round-tripped. Each
@@ -146,16 +152,35 @@ issues, or search for other Performances. An unavailable URL remains attached to
 its accepted recommendation and is labelled `no longer available at this Tidal
 URL`; this does not claim the Performance has vanished from all of Tidal.
 
-## Scheduling boundary
+## Authenticated GitHub Actions pilot
 
-The command can run later in GitHub Actions without code changes. No monthly
-schedule is activated by this PR. A future scheduled job should use the same
-command, persist the previous JSON report/fingerprints between runs, upload one
-JSON/Markdown artifact, and expose its Markdown in the job summary. Use read-only
-repository permissions for report-only checks. Do not automatically deploy,
-promote recommendations, or create one issue per failure. URL changes can be
-prepared in a maintenance PR using `--apply` after available access and observed
-failure rates have been assessed.
+Set repository Actions secrets `TIDAL_CLIENT_ID` and `TIDAL_CLIENT_SECRET`.
+`.github/workflows/tidal-link-check.yml` provides a report-only pilot using
+`scripts/run_tidal_api_check.py`. It obtains a temporary token in memory,
+checks one independently observed track ISRC and an album barcode, exercises
+both exact-identifier search endpoints, then checks 5 collection URLs by
+default. An authentication/metadata pre-flight failure fails the job before a
+misleading successful maintenance report can be produced.
+
+The job has read-only repository permissions, a 15-minute timeout and a maximum
+of 50 URLs. Credentials are scoped to the pilot step; checkout does not retain
+a Git token. Output is one JSON/Markdown artifact retained for 14 days and a
+Markdown job summary. It cannot apply URL changes, publish recommendations,
+open issues, or deploy the site.
+
+Once the workflow is on the default branch, use **Actions → Tidal link check →
+Run workflow** and select the branch and limit. GitHub requires the workflow
+file to exist on the default branch before offering manual dispatch. To test
+this draft without merging, a narrow bootstrap trigger also runs on pushes to
+`issue-64-tidal-link-maintenance` that change the workflow or its runtime code.
+It is not a recurring schedule and does not run on other feature branches or
+pull requests from forks.
+
+No monthly schedule is activated. A later periodic rollout must persist the
+previous JSON report/fingerprints between runs; these disposable pilot runners
+do not automatically restore historical fingerprints. The downloadable JSON
+can be reused locally with `--previous`. Any future URL repairs should be
+prepared in a maintenance PR using `--apply`, never published automatically.
 
 ## Validation and adversarial evidence
 
@@ -166,3 +191,10 @@ stale URL fingerprints, shared links, both YAML shapes, unchanged editorial
 metadata, previous-candidate profile filtering, concurrent edits, official API
 barcode recovery, token exclusion and pagination refusal. Tests use independent
 input responses, not the checker's own labels as expected ground truth.
+
+Authentication and workflow tests in `tests/test_tidal_auth.py` verify the
+client-credentials request, explicit-token precedence, redaction of provider
+errors, runner masking, refusal of authentication/Bearer redirects, an
+independent ISRC mismatch, exact-search pre-flight, environment cleanup,
+read-only permissions and bounded branch triggers. Tests contain only
+synthetic credentials.

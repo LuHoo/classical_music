@@ -1,0 +1,66 @@
+name: Tidal link check
+
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "Maximum unique collection URLs (1-50; report only)"
+        required: true
+        default: "5"
+        type: string
+  # Bootstrap the live pilot before this draft is merged. This trigger only
+  # covers the dedicated issue-64 branch and maintenance-specific edits.
+  push:
+    branches: [issue-64-tidal-link-maintenance]
+    paths:
+      - .github/workflows/tidal-link-check.yml
+      - scripts/run_tidal_api_check.py
+      - src/classical_music/tidal_auth.py
+      - src/classical_music/tidal_maintenance.py
+
+permissions:
+  contents: read
+
+concurrency:
+  group: tidal-link-check-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.13"
+      - name: Install dependencies
+        run: python -m pip install -e .
+      - name: Authenticated report-only pilot
+        env:
+          TIDAL_CLIENT_ID: ${{ secrets.TIDAL_CLIENT_ID }}
+          TIDAL_CLIENT_SECRET: ${{ secrets.TIDAL_CLIENT_SECRET }}
+          PILOT_LIMIT: ${{ inputs.limit || '5' }}
+        run: python scripts/run_tidal_api_check.py --limit "$PILOT_LIMIT"
+      - name: Add report summary
+        if: always()
+        run: |
+          if [ -f reports/tidal-maintenance/latest.md ]; then
+            cat reports/tidal-maintenance/latest.md >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "No maintenance report produced; see the authenticated pilot step." >> "$GITHUB_STEP_SUMMARY"
+          fi
+      - name: Upload operational report
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: tidal-link-check-${{ github.run_id }}
+          path: |
+            reports/tidal-maintenance/latest.json
+            reports/tidal-maintenance/latest.md
+          if-no-files-found: ignore
+          retention-days: 14
