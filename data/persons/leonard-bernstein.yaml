@@ -1,0 +1,7 @@
+id: leonard-bernstein
+name: Leonard Bernstein
+roles:
+- composer
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://leonardbernstein.com/works

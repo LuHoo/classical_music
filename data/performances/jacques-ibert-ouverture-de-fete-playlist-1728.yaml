@@ -1,0 +1,13 @@
+id: jacques-ibert-ouverture-de-fete-playlist-1728
+work_id: jacques-ibert-ouverture-de-fete
+performers:
+- name: Jean Martinon
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/2963064
+release:
+  album_title: 'Ibert: Divertissement, Escales & Flute Concerto'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

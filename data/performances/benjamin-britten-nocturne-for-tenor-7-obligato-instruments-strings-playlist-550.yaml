@@ -1,0 +1,30 @@
+id: benjamin-britten-nocturne-for-tenor-7-obligato-instruments-strings-playlist-550
+work_id: benjamin-britten-nocturne-for-tenor-7-obligato-instruments-strings
+performers:
+- name: Peter Pears
+  role: performer
+- name: Barry Tuckwell
+  role: performer
+- name: Osian Ellis
+  role: performer
+- name: Denis Blyth
+  role: performer
+- name: Roger Lord
+  role: performer
+- name: Alexander Murray
+  role: performer
+- name: Gervase De Peyer
+  role: performer
+- name: William Waterhouse
+  role: performer
+- name: London Symphony Orchestra
+  role: orchestra
+  artist_id: london-symphony-orchestra
+links:
+  tidal:
+    url: https://tidal.com/track/4492462
+release:
+  album_title: Britten conducts Britten Vol.4
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

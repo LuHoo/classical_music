@@ -1,0 +1,19 @@
+id: gorecki-symphony-3-upshaw-london-sinfonietta-zinman
+work_id: gorecki-symphony-3
+performers:
+  - name: Dawn Upshaw
+    role: soprano
+  - name: London Sinfonietta
+    role: orchestra
+  - name: David Zinman
+    role: conductor
+year: 1991
+release:
+  label: Nonesuch
+  catalogue_number: '79282'
+links:
+  tidal:
+    url: https://tidal.com/track/256721
+source:
+  file: reports/playlist-import/best-classical/batch-001.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

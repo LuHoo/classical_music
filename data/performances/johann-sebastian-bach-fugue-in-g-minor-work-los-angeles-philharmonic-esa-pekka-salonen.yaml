@@ -1,10 +1,14 @@
-id: "johann-sebastian-bach-fugue-in-g-minor-work-los-angeles-philharmonic-esa-pekka-salonen"
-work_id: "johann-sebastian-bach-fugue-in-g-minor-work"
+id: johann-sebastian-bach-fugue-in-g-minor-work-los-angeles-philharmonic-esa-pekka-salonen
+work_id: johann-sebastian-bach-fugue-in-g-minor-work
 source:
-  file: "docs/bachJS.md"
-  line: "88"
+  file: docs/bachJS.md
+  line: '88'
+  url: https://ci.nii.ac.jp/ncid/BA50788723
 links:
-- platform: "tidal"
-  url: "http://www.tidal.com/track/2924759"
+- platform: tidal
+  url: http://www.tidal.com/track/2924759
 performers:
-- name: "Los Angeles Philharmonic, Esa-Pekka Salonen"
+- name: Los Angeles Philharmonic
+  role: orchestra
+- name: Esa-Pekka Salonen
+  role: conductor

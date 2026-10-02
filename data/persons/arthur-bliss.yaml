@@ -1,0 +1,7 @@
+id: arthur-bliss
+name: Arthur Bliss
+roles:
+- composer
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://www.chandos.net/chanimages/Booklets/CH10380.pdf

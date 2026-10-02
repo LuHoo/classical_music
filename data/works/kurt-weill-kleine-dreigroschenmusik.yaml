@@ -1,0 +1,7 @@
+id: kurt-weill-kleine-dreigroschenmusik
+work_group_id: kurt-weill-kleine-dreigroschenmusik-group
+composer_id: kurt-weill
+title: Kleine Dreigroschenmusik
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://www.kwf.org/works/kleine-dreigroschenmusik/

@@ -1,0 +1,9 @@
+id: erno-dohnanyi
+name: Ernő Dohnányi
+roles:
+- composer
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://www.naxos.com/CatalogueDetail/?id=C5380
+aliases:
+- Ernst von Dohnányi

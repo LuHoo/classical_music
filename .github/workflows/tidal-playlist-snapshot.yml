@@ -1,0 +1,51 @@
+name: Tidal playlist source snapshot
+
+on:
+  workflow_dispatch:
+    inputs:
+      playlist:
+        description: "Public curated Tidal playlist URL"
+        required: true
+        default: "https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3"
+        type: string
+      limit:
+        description: "Maximum source items to read (1-2000; no canonical writes)"
+        required: true
+        default: "100"
+        type: string
+  # Read-only bootstrap on this dedicated draft branch while dispatch is not
+  # yet available on main. Canonical data edits cannot trigger another fetch.
+  push:
+    branches: [tidal-playlist-best-classical-batch-1]
+    paths:
+      - .github/workflows/tidal-playlist-snapshot.yml
+      - scripts/fetch_tidal_playlist.py
+      - src/classical_music/tidal_playlist.py
+      - src/classical_music/tidal_auth.py
+
+permissions:
+  contents: read
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.13"
+      - name: Read curated source
+        env:
+          TIDAL_CLIENT_ID: ${{ secrets.TIDAL_CLIENT_ID }}
+          TIDAL_CLIENT_SECRET: ${{ secrets.TIDAL_CLIENT_SECRET }}
+          SOURCE_PLAYLIST: ${{ inputs.playlist || 'https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3' }}
+          SOURCE_LIMIT: ${{ inputs.limit || '333' }}
+        run: python scripts/fetch_tidal_playlist.py "$SOURCE_PLAYLIST" --limit "$SOURCE_LIMIT"
+      - uses: actions/upload-artifact@v7
+        with:
+          name: tidal-playlist-source-${{ github.run_id }}
+          path: reports/tidal-playlist/source.json
+          retention-days: 14

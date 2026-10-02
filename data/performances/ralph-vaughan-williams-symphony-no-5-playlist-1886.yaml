@@ -1,0 +1,15 @@
+id: ralph-vaughan-williams-symphony-no-5-playlist-1886
+work_id: ralph-vaughan-williams-symphony-no-5
+performers:
+- name: BBC Symphony Orchestra
+  role: performer
+- name: Martyn Brabbins
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/340821952
+release:
+  album_title: "Vaughan Williams: Symphony No. 5 & Scenes from Pilgrim's Progress"
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

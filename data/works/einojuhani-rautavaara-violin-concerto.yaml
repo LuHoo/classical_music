@@ -1,0 +1,8 @@
+id: einojuhani-rautavaara-violin-concerto
+work_group_id: einojuhani-rautavaara-violin-concerto-group
+composer_id: einojuhani-rautavaara
+title: Violin Concerto
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url:
+    https://www.ondine.net/index.php?cid=2.1&filter=622%2C0%2C182%2C180%2C0%2C61%2C0%2C0&lid=en&pid=3%2C1

@@ -1,0 +1,7 @@
+id: leonard-bernstein-divertimento-for-orchestra
+work_group_id: leonard-bernstein-divertimento-for-orchestra-group
+composer_id: leonard-bernstein
+title: Divertimento for Orchestra
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://leonardbernstein.com/works

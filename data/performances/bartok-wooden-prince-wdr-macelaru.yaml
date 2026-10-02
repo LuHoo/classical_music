@@ -1,0 +1,18 @@
+id: bartok-wooden-prince-wdr-macelaru
+links:
+  tidal:
+    url: https://tidal.com/track/267871131
+performers:
+- name: WDR Sinfonieorchester
+  role: orchestra
+- name: Cristian Măcelaru
+  role: conductor
+release:
+  album_title: 'Bartók: The Wooden Prince & Dance Suite'
+  catalogue_number: CKD714
+  label: Linn
+source:
+  file: reports/playlist-import/best-classical/prepared-120.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+version_assignment: unspecified
+work_id: bartok-wooden-prince

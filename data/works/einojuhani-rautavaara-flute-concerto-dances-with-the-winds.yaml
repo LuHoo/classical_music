@@ -1,0 +1,9 @@
+id: einojuhani-rautavaara-flute-concerto-dances-with-the-winds
+work_group_id: einojuhani-rautavaara-flute-concerto-dances-with-the-winds-group
+composer_id: einojuhani-rautavaara
+title: Flute Concerto, "Dances with the Winds"
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://www.naxos.com/CatalogueDetail/?id=ODE921-2
+catalogue:
+  opus: Op. 63

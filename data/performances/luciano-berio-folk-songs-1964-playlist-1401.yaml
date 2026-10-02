@@ -1,0 +1,18 @@
+id: luciano-berio-folk-songs-1964-playlist-1401
+work_id: luciano-berio-folk-songs-1964
+performers:
+- person_id: luciano-berio
+  role: conductor
+- name: Cathy Berberian
+  role: performer
+  artist_id: cathy-berberian
+- name: Juilliard Ensemble
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/43365184
+release:
+  album_title: 'Berio: Recital I For Cathy & Folk Songs'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

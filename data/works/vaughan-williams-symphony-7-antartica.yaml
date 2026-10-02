@@ -1,0 +1,7 @@
+composer_id: ralph-vaughan-williams
+id: vaughan-williams-symphony-7-antartica
+source:
+  file: reports/playlist-import/best-classical/prepared-120.json
+  url: https://www.hyperion-records.co.uk/dc.asp?dc=D_CDA68405
+title: Sinfonia antartica (Symphony No. 7)
+work_group_id: vaughan-williams-symphony-7-antartica-group

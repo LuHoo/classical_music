@@ -1,0 +1,8 @@
+composer_id: franz-schmidt
+id: schmidt-notre-dame
+source:
+  file: reports/playlist-import/best-classical/prepared-120.json
+  url:
+    https://www.deutschegrammophon.com/en/catalogue/products/franz-schmidt-complete-symphonies-paavo-jaervi-12080
+title: Notre Dame
+work_group_id: schmidt-notre-dame-group

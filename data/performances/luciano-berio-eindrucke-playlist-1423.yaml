@@ -1,0 +1,13 @@
+id: luciano-berio-eindrucke-playlist-1423
+work_id: luciano-berio-eindrucke
+performers:
+- name: Pierre Boulez & Orchestre National de France
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/338148
+release:
+  album_title: 'Berio : Sinfonia & Eindrücke'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

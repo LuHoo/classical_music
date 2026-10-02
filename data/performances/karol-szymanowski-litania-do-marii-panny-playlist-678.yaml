@@ -1,0 +1,13 @@
+id: karol-szymanowski-litania-do-marii-panny-playlist-678
+work_id: karol-szymanowski-litania-do-marii-panny
+performers:
+- name: Jadwiga Gadulanka/Polish Radio National Symphony Orchestra/Antoni Wit
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/2977302
+release:
+  album_title: 'Szymanowski : Mandragora/Stabat mater/Litania do Marii Panny/Demeter'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
