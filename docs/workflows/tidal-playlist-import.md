@@ -27,7 +27,9 @@ python scripts/fetch_tidal_playlist.py \
   --limit 100 --country NL
 ```
 
-The default limit is 100 source items; the allowed range is 1–200. This is a
+The CLI default limit is 100 source items; the allowed range is 1–500. The
+dedicated draft branch's push probe reads 333 items to analyse positions 34–333
+while verifying the previously processed prefix. This is a
 metadata fetch budget, not the canonical batch size. The reader preserves item
 order and duplicate occurrences, follows Tidal's cursor pagination, delays
 requests, and bounds retries after HTTP 429. It refuses external-host redirects,

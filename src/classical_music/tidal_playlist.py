@@ -88,8 +88,8 @@ class Catalogue:
 
 
 def snapshot(value: str, *, limit: int = 100, country: str = "NL", client=None) -> dict:
-    if not 1 <= limit <= 200:
-        raise ValueError("Track limit must be between 1 and 200")
+    if not 1 <= limit <= 500:
+        raise ValueError("Track limit must be between 1 and 500")
     if len(country) != 2 or not country.isascii() or not country.isalpha():
         raise ValueError("Expected a two-letter country code")
     country = country.upper()
