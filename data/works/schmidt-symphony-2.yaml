@@ -1,0 +1,8 @@
+composer_id: franz-schmidt
+id: schmidt-symphony-2
+source:
+  file: reports/playlist-import/best-classical/prepared-120.json
+  url:
+    https://www.deutschegrammophon.com/en/catalogue/products/franz-schmidt-complete-symphonies-paavo-jaervi-12080
+title: Symphony No. 2 in E-flat major
+work_group_id: schmidt-symphony-2-group

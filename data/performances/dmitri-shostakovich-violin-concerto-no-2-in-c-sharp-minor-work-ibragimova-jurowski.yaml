@@ -1,0 +1,20 @@
+id:
+  dmitri-shostakovich-violin-concerto-no-2-in-c-sharp-minor-work-ibragimova-jurowski
+links:
+  tidal:
+    url: https://tidal.com/track/306149652
+performers:
+- name: Alina Ibragimova
+  role: violin
+- name: State Academic Symphony Orchestra of Russia "Evgeny Svetlanov"
+  role: orchestra
+- name: Vladimir Jurowski
+  role: conductor
+release:
+  album_title: 'Shostakovich: Violin Concertos 1 & 2'
+  catalogue_number: CDA68313
+  label: Hyperion
+source:
+  file: reports/playlist-import/best-classical/prepared-120.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+work_id: dmitri-shostakovich-violin-concerto-no-2-in-c-sharp-minor-work

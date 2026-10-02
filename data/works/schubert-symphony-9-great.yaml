@@ -1,0 +1,9 @@
+catalogue:
+  d: D. 944
+composer_id: franz-schubert
+id: schubert-symphony-9-great
+source:
+  file: reports/playlist-import/best-classical/prepared-120.json
+  url: https://www.alia-vox.com/en/producte/franz-schubert-transfiguracio/
+title: Symphony No. 9 in C major "Great"
+work_group_id: schubert-symphony-9-great-group

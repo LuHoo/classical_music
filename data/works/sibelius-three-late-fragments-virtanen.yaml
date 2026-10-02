@@ -1,0 +1,13 @@
+catalogue:
+  hul: HUL 1325; HUL 1326/9; HUL 1327/2
+composer_id: jean-sibelius
+id: sibelius-three-late-fragments-virtanen
+notes: The recorded set of three realised orchestral fragments; not a complete
+  Symphony No. 8. The sketches' connection with that symphony is uncertain.
+source:
+  file: reports/playlist-import/best-classical/prepared-120.json
+  url:
+    https://www.deccaclassics.com/en/catalogue/products/sibelius-klaus-maekelae-12615
+title: Three Late Fragments (Timo Virtanen realisation)
+version: Timo Virtanen realisation
+work_group_id: sibelius-three-late-fragments-virtanen-group

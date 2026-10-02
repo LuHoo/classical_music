@@ -1,0 +1,19 @@
+id: zemlinsky-psalm-83-chailly
+links:
+  tidal:
+    url: https://tidal.com/track/50610013
+performers:
+- name: Slovak Philharmonic Chorus
+  role: choir
+- artist_id: wiener-philharmoniker
+  name: Wiener Philharmoniker
+  role: orchestra
+- name: Riccardo Chailly
+  role: conductor
+release:
+  album_title: 'Zemlinsky: Lyric Symphony'
+  label: Decca
+source:
+  file: reports/playlist-import/best-classical/prepared-120.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+work_id: zemlinsky-psalm-83

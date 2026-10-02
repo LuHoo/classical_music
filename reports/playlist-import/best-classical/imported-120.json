@@ -1,0 +1,570 @@
+{
+  "counts": {
+    "performances": 33,
+    "persons": 9,
+    "work-groups": 32,
+    "works": 32
+  },
+  "canonical_validation": {
+    "errors": 0,
+    "action_required": 0,
+    "background_suspicions": 118,
+    "new_entity_findings": 0
+  },
+  "publication": {
+    "passed": true,
+    "pages": 1551,
+    "composers": 33,
+    "works": 1516,
+    "performances": 974,
+    "all_imported_links_and_excerpts_verified": true
+  },
+  "schema_version": 1,
+  "status": "imported_to_canonical_branch",
+  "authorised_date": "2026-10-02",
+  "prepared_manifest": "reports/playlist-import/best-classical/prepared-120.json",
+  "source_sha256": "69df2e1057b47405ba9c61e70e766b6bc9de66d1a156e108c16ddc2ab825f237",
+  "selected_tracks": 120,
+  "excluded": {
+    "bruckner_positions": [
+      279,
+      315
+    ],
+    "bruckner_tracks": 37,
+    "boundary_position": 333,
+    "boundary_track_id": "284454595"
+  },
+  "records": [
+    {
+      "entity_type": "performances",
+      "id": "part-tabula-rasa-capucon-lausanne",
+      "path": "data/performances/part-tabula-rasa-capucon-lausanne.yaml"
+    },
+    {
+      "entity_type": "performances",
+      "id": "zemlinsky-lyric-symphony-chailly",
+      "path": "data/performances/zemlinsky-lyric-symphony-chailly.yaml"
+    },
+    {
+      "entity_type": "performances",
+      "id": "zemlinsky-symphonic-songs-chailly",
+      "path": "data/performances/zemlinsky-symphonic-songs-chailly.yaml"
+    },
+    {
+      "entity_type": "performances",
+      "id": "zemlinsky-psalm-83-chailly",
+      "path": "data/performances/zemlinsky-psalm-83-chailly.yaml"
+    },
+    {
+      "entity_type": "performances",
+      "id": "bartok-wooden-prince-wdr-macelaru",
+      "path": "data/performances/bartok-wooden-prince-wdr-macelaru.yaml"
+    },
+    {
+      "entity_type": "performances",
+      "id": "bartok-dance-suite-wdr-macelaru",
+      "path": "data/performances/bartok-dance-suite-wdr-macelaru.yaml"
+    },
+    {
+      "entity_type": "performances",
+      "id": "sibelius-symphony-1-oslo-makela",
+      "path": "data/performances/sibelius-symphony-1-oslo-makela.yaml"
+    },
+    {
+      "entity_type": "performances",
+      "id": "sibelius-symphony-2-oslo-makela",
+      "path": "data/performances/sibelius-symphony-2-oslo-makela.yaml"
+    },
+    {
+      "entity_type": "performances",
+      "id": "sibelius-symphony-3-oslo-makela",
+      "path": "data/performances/sibelius-symphony-3-oslo-makela.yaml"
+    },
+    {
+      "entity_type": "performances",
+      "id": "sibelius-symphony-5-oslo-makela",
+      "path": "data/performances/sibelius-symphony-5-oslo-makela.yaml"
+    },
+    {
+      "entity_type": "performances",
+      "id": "sibelius-symphony-6-oslo-makela",
+      "path": "data/performances/sibelius-symphony-6-oslo-makela.yaml"
+    },
+    {
+      "entity_type": "performances",
+      "id": "sibelius-symphony-7-oslo-makela",
+      "path": "data/performances/sibelius-symphony-7-oslo-makela.yaml"
+    },
+    {
+      "entity_type": "performances",
+      "id": "sibelius-tapiola-oslo-makela",
+      "path": "data/performances/sibelius-tapiola-oslo-makela.yaml"
+    },
+    {
+      "entity_type": "performances",
+      "id": "sibelius-three-late-fragments-virtanen-oslo-makela",
+      "path": "data/performances/sibelius-three-late-fragments-virtanen-oslo-makela.yaml"
+    },
+    {
+      "entity_type": "performances",
+      "id": "schubert-symphony-8-unfinished-savall",
+      "path": "data/performances/schubert-symphony-8-unfinished-savall.yaml"
+    },
+    {
+      "entity_type": "performances",
+      "id": "schubert-symphony-9-great-savall",
+      "path": "data/performances/schubert-symphony-9-great-savall.yaml"
+    },
+    {
+      "entity_type": "performances",
+      "id": "martinu-violin-concerto-2-zimmermann-bamberg-hrusa",
+      "path": "data/performances/martinu-violin-concerto-2-zimmermann-bamberg-hrusa.yaml"
+    },
+    {
+      "entity_type": "performances",
+      "id": "martinu-violin-concerto-1-zimmermann-bamberg-hrusa",
+      "path": "data/performances/martinu-violin-concerto-1-zimmermann-bamberg-hrusa.yaml"
+    },
+    {
+      "entity_type": "performances",
+      "id": "rachmaninoff-symphony-1-philadelphia-nezet-seguin",
+      "path": "data/performances/rachmaninoff-symphony-1-philadelphia-nezet-seguin.yaml"
+    },
+    {
+      "entity_type": "performances",
+      "id": "rachmaninoff-symphonic-dances-philadelphia-nezet-seguin",
+      "path": "data/performances/rachmaninoff-symphonic-dances-philadelphia-nezet-seguin.yaml"
+    },
+    {
+      "entity_type": "performances",
+      "id": "simpson-geysir-simpson-ensemble",
+      "path": "data/performances/simpson-geysir-simpson-ensemble.yaml"
+    },
+    {
+      "entity_type": "performances",
+      "id": "dmitri-shostakovich-violin-concerto-no-2-in-c-sharp-minor-work-ibragimova-jurowski",
+      "path": "data/performances/dmitri-shostakovich-violin-concerto-no-2-in-c-sharp-minor-work-ibragimova-jurowski.yaml"
+    },
+    {
+      "entity_type": "performances",
+      "id": "schmidt-symphony-1-frankfurt-jarvi",
+      "path": "data/performances/schmidt-symphony-1-frankfurt-jarvi.yaml"
+    },
+    {
+      "entity_type": "performances",
+      "id": "schmidt-symphony-2-frankfurt-jarvi",
+      "path": "data/performances/schmidt-symphony-2-frankfurt-jarvi.yaml"
+    },
+    {
+      "entity_type": "performances",
+      "id": "schmidt-notre-dame-frankfurt-jarvi",
+      "path": "data/performances/schmidt-notre-dame-frankfurt-jarvi.yaml"
+    },
+    {
+      "entity_type": "performances",
+      "id": "schmidt-symphony-3-frankfurt-jarvi",
+      "path": "data/performances/schmidt-symphony-3-frankfurt-jarvi.yaml"
+    },
+    {
+      "entity_type": "performances",
+      "id": "schmidt-symphony-4-frankfurt-jarvi",
+      "path": "data/performances/schmidt-symphony-4-frankfurt-jarvi.yaml"
+    },
+    {
+      "entity_type": "performances",
+      "id": "vaughan-williams-symphony-7-antartica-bbc-brabbins",
+      "path": "data/performances/vaughan-williams-symphony-7-antartica-bbc-brabbins.yaml"
+    },
+    {
+      "entity_type": "performances",
+      "id": "vaughan-williams-symphony-9-bbc-brabbins",
+      "path": "data/performances/vaughan-williams-symphony-9-bbc-brabbins.yaml"
+    },
+    {
+      "entity_type": "performances",
+      "id": "poulenc-piano-concerto-bebbington",
+      "path": "data/performances/poulenc-piano-concerto-bebbington.yaml"
+    },
+    {
+      "entity_type": "performances",
+      "id": "poulenc-trio-piano-oboe-bassoon-bebbington",
+      "path": "data/performances/poulenc-trio-piano-oboe-bassoon-bebbington.yaml"
+    },
+    {
+      "entity_type": "performances",
+      "id": "poulenc-concert-champetre-bebbington",
+      "path": "data/performances/poulenc-concert-champetre-bebbington.yaml"
+    },
+    {
+      "entity_type": "performances",
+      "id": "poulenc-oboe-sonata-bebbington",
+      "path": "data/performances/poulenc-oboe-sonata-bebbington.yaml"
+    },
+    {
+      "entity_type": "persons",
+      "id": "alexander-von-zemlinsky",
+      "path": "data/persons/alexander-von-zemlinsky.yaml"
+    },
+    {
+      "entity_type": "persons",
+      "id": "jean-sibelius",
+      "path": "data/persons/jean-sibelius.yaml"
+    },
+    {
+      "entity_type": "persons",
+      "id": "franz-schubert",
+      "path": "data/persons/franz-schubert.yaml"
+    },
+    {
+      "entity_type": "persons",
+      "id": "bohuslav-martinu",
+      "path": "data/persons/bohuslav-martinu.yaml"
+    },
+    {
+      "entity_type": "persons",
+      "id": "sergei-rachmaninoff",
+      "path": "data/persons/sergei-rachmaninoff.yaml"
+    },
+    {
+      "entity_type": "persons",
+      "id": "mark-simpson",
+      "path": "data/persons/mark-simpson.yaml"
+    },
+    {
+      "entity_type": "persons",
+      "id": "franz-schmidt",
+      "path": "data/persons/franz-schmidt.yaml"
+    },
+    {
+      "entity_type": "persons",
+      "id": "ralph-vaughan-williams",
+      "path": "data/persons/ralph-vaughan-williams.yaml"
+    },
+    {
+      "entity_type": "persons",
+      "id": "francis-poulenc",
+      "path": "data/persons/francis-poulenc.yaml"
+    },
+    {
+      "entity_type": "work-groups",
+      "id": "part-tabula-rasa-group",
+      "path": "data/work-groups/part-tabula-rasa-group.yaml"
+    },
+    {
+      "entity_type": "work-groups",
+      "id": "zemlinsky-lyric-symphony-group",
+      "path": "data/work-groups/zemlinsky-lyric-symphony-group.yaml"
+    },
+    {
+      "entity_type": "work-groups",
+      "id": "zemlinsky-symphonic-songs-group",
+      "path": "data/work-groups/zemlinsky-symphonic-songs-group.yaml"
+    },
+    {
+      "entity_type": "work-groups",
+      "id": "zemlinsky-psalm-83-group",
+      "path": "data/work-groups/zemlinsky-psalm-83-group.yaml"
+    },
+    {
+      "entity_type": "work-groups",
+      "id": "bartok-wooden-prince-group",
+      "path": "data/work-groups/bartok-wooden-prince-group.yaml"
+    },
+    {
+      "entity_type": "work-groups",
+      "id": "bartok-dance-suite-group",
+      "path": "data/work-groups/bartok-dance-suite-group.yaml"
+    },
+    {
+      "entity_type": "work-groups",
+      "id": "sibelius-symphony-1-group",
+      "path": "data/work-groups/sibelius-symphony-1-group.yaml"
+    },
+    {
+      "entity_type": "work-groups",
+      "id": "sibelius-symphony-2-group",
+      "path": "data/work-groups/sibelius-symphony-2-group.yaml"
+    },
+    {
+      "entity_type": "work-groups",
+      "id": "sibelius-symphony-3-group",
+      "path": "data/work-groups/sibelius-symphony-3-group.yaml"
+    },
+    {
+      "entity_type": "work-groups",
+      "id": "sibelius-symphony-5-group",
+      "path": "data/work-groups/sibelius-symphony-5-group.yaml"
+    },
+    {
+      "entity_type": "work-groups",
+      "id": "sibelius-symphony-6-group",
+      "path": "data/work-groups/sibelius-symphony-6-group.yaml"
+    },
+    {
+      "entity_type": "work-groups",
+      "id": "sibelius-symphony-7-group",
+      "path": "data/work-groups/sibelius-symphony-7-group.yaml"
+    },
+    {
+      "entity_type": "work-groups",
+      "id": "sibelius-tapiola-group",
+      "path": "data/work-groups/sibelius-tapiola-group.yaml"
+    },
+    {
+      "entity_type": "work-groups",
+      "id": "sibelius-three-late-fragments-virtanen-group",
+      "path": "data/work-groups/sibelius-three-late-fragments-virtanen-group.yaml"
+    },
+    {
+      "entity_type": "work-groups",
+      "id": "schubert-symphony-8-unfinished-group",
+      "path": "data/work-groups/schubert-symphony-8-unfinished-group.yaml"
+    },
+    {
+      "entity_type": "work-groups",
+      "id": "schubert-symphony-9-great-group",
+      "path": "data/work-groups/schubert-symphony-9-great-group.yaml"
+    },
+    {
+      "entity_type": "work-groups",
+      "id": "martinu-violin-concerto-2-group",
+      "path": "data/work-groups/martinu-violin-concerto-2-group.yaml"
+    },
+    {
+      "entity_type": "work-groups",
+      "id": "martinu-violin-concerto-1-group",
+      "path": "data/work-groups/martinu-violin-concerto-1-group.yaml"
+    },
+    {
+      "entity_type": "work-groups",
+      "id": "rachmaninoff-symphony-1-group",
+      "path": "data/work-groups/rachmaninoff-symphony-1-group.yaml"
+    },
+    {
+      "entity_type": "work-groups",
+      "id": "rachmaninoff-symphonic-dances-group",
+      "path": "data/work-groups/rachmaninoff-symphonic-dances-group.yaml"
+    },
+    {
+      "entity_type": "work-groups",
+      "id": "simpson-geysir-group",
+      "path": "data/work-groups/simpson-geysir-group.yaml"
+    },
+    {
+      "entity_type": "work-groups",
+      "id": "schmidt-symphony-1-group",
+      "path": "data/work-groups/schmidt-symphony-1-group.yaml"
+    },
+    {
+      "entity_type": "work-groups",
+      "id": "schmidt-symphony-2-group",
+      "path": "data/work-groups/schmidt-symphony-2-group.yaml"
+    },
+    {
+      "entity_type": "work-groups",
+      "id": "schmidt-notre-dame-group",
+      "path": "data/work-groups/schmidt-notre-dame-group.yaml"
+    },
+    {
+      "entity_type": "work-groups",
+      "id": "schmidt-symphony-3-group",
+      "path": "data/work-groups/schmidt-symphony-3-group.yaml"
+    },
+    {
+      "entity_type": "work-groups",
+      "id": "schmidt-symphony-4-group",
+      "path": "data/work-groups/schmidt-symphony-4-group.yaml"
+    },
+    {
+      "entity_type": "work-groups",
+      "id": "vaughan-williams-symphony-7-antartica-group",
+      "path": "data/work-groups/vaughan-williams-symphony-7-antartica-group.yaml"
+    },
+    {
+      "entity_type": "work-groups",
+      "id": "vaughan-williams-symphony-9-group",
+      "path": "data/work-groups/vaughan-williams-symphony-9-group.yaml"
+    },
+    {
+      "entity_type": "work-groups",
+      "id": "poulenc-piano-concerto-group",
+      "path": "data/work-groups/poulenc-piano-concerto-group.yaml"
+    },
+    {
+      "entity_type": "work-groups",
+      "id": "poulenc-trio-piano-oboe-bassoon-group",
+      "path": "data/work-groups/poulenc-trio-piano-oboe-bassoon-group.yaml"
+    },
+    {
+      "entity_type": "work-groups",
+      "id": "poulenc-concert-champetre-group",
+      "path": "data/work-groups/poulenc-concert-champetre-group.yaml"
+    },
+    {
+      "entity_type": "work-groups",
+      "id": "poulenc-oboe-sonata-group",
+      "path": "data/work-groups/poulenc-oboe-sonata-group.yaml"
+    },
+    {
+      "entity_type": "works",
+      "id": "part-tabula-rasa",
+      "path": "data/works/part-tabula-rasa.yaml"
+    },
+    {
+      "entity_type": "works",
+      "id": "zemlinsky-lyric-symphony",
+      "path": "data/works/zemlinsky-lyric-symphony.yaml"
+    },
+    {
+      "entity_type": "works",
+      "id": "zemlinsky-symphonic-songs",
+      "path": "data/works/zemlinsky-symphonic-songs.yaml"
+    },
+    {
+      "entity_type": "works",
+      "id": "zemlinsky-psalm-83",
+      "path": "data/works/zemlinsky-psalm-83.yaml"
+    },
+    {
+      "entity_type": "works",
+      "id": "bartok-wooden-prince",
+      "path": "data/works/bartok-wooden-prince.yaml"
+    },
+    {
+      "entity_type": "works",
+      "id": "bartok-dance-suite",
+      "path": "data/works/bartok-dance-suite.yaml"
+    },
+    {
+      "entity_type": "works",
+      "id": "sibelius-symphony-1",
+      "path": "data/works/sibelius-symphony-1.yaml"
+    },
+    {
+      "entity_type": "works",
+      "id": "sibelius-symphony-2",
+      "path": "data/works/sibelius-symphony-2.yaml"
+    },
+    {
+      "entity_type": "works",
+      "id": "sibelius-symphony-3",
+      "path": "data/works/sibelius-symphony-3.yaml"
+    },
+    {
+      "entity_type": "works",
+      "id": "sibelius-symphony-5",
+      "path": "data/works/sibelius-symphony-5.yaml"
+    },
+    {
+      "entity_type": "works",
+      "id": "sibelius-symphony-6",
+      "path": "data/works/sibelius-symphony-6.yaml"
+    },
+    {
+      "entity_type": "works",
+      "id": "sibelius-symphony-7",
+      "path": "data/works/sibelius-symphony-7.yaml"
+    },
+    {
+      "entity_type": "works",
+      "id": "sibelius-tapiola",
+      "path": "data/works/sibelius-tapiola.yaml"
+    },
+    {
+      "entity_type": "works",
+      "id": "sibelius-three-late-fragments-virtanen",
+      "path": "data/works/sibelius-three-late-fragments-virtanen.yaml"
+    },
+    {
+      "entity_type": "works",
+      "id": "schubert-symphony-8-unfinished",
+      "path": "data/works/schubert-symphony-8-unfinished.yaml"
+    },
+    {
+      "entity_type": "works",
+      "id": "schubert-symphony-9-great",
+      "path": "data/works/schubert-symphony-9-great.yaml"
+    },
+    {
+      "entity_type": "works",
+      "id": "martinu-violin-concerto-2",
+      "path": "data/works/martinu-violin-concerto-2.yaml"
+    },
+    {
+      "entity_type": "works",
+      "id": "martinu-violin-concerto-1",
+      "path": "data/works/martinu-violin-concerto-1.yaml"
+    },
+    {
+      "entity_type": "works",
+      "id": "rachmaninoff-symphony-1",
+      "path": "data/works/rachmaninoff-symphony-1.yaml"
+    },
+    {
+      "entity_type": "works",
+      "id": "rachmaninoff-symphonic-dances",
+      "path": "data/works/rachmaninoff-symphonic-dances.yaml"
+    },
+    {
+      "entity_type": "works",
+      "id": "simpson-geysir",
+      "path": "data/works/simpson-geysir.yaml"
+    },
+    {
+      "entity_type": "works",
+      "id": "schmidt-symphony-1",
+      "path": "data/works/schmidt-symphony-1.yaml"
+    },
+    {
+      "entity_type": "works",
+      "id": "schmidt-symphony-2",
+      "path": "data/works/schmidt-symphony-2.yaml"
+    },
+    {
+      "entity_type": "works",
+      "id": "schmidt-notre-dame",
+      "path": "data/works/schmidt-notre-dame.yaml"
+    },
+    {
+      "entity_type": "works",
+      "id": "schmidt-symphony-3",
+      "path": "data/works/schmidt-symphony-3.yaml"
+    },
+    {
+      "entity_type": "works",
+      "id": "schmidt-symphony-4",
+      "path": "data/works/schmidt-symphony-4.yaml"
+    },
+    {
+      "entity_type": "works",
+      "id": "vaughan-williams-symphony-7-antartica",
+      "path": "data/works/vaughan-williams-symphony-7-antartica.yaml"
+    },
+    {
+      "entity_type": "works",
+      "id": "vaughan-williams-symphony-9",
+      "path": "data/works/vaughan-williams-symphony-9.yaml"
+    },
+    {
+      "entity_type": "works",
+      "id": "poulenc-piano-concerto",
+      "path": "data/works/poulenc-piano-concerto.yaml"
+    },
+    {
+      "entity_type": "works",
+      "id": "poulenc-trio-piano-oboe-bassoon",
+      "path": "data/works/poulenc-trio-piano-oboe-bassoon.yaml"
+    },
+    {
+      "entity_type": "works",
+      "id": "poulenc-concert-champetre",
+      "path": "data/works/poulenc-concert-champetre.yaml"
+    },
+    {
+      "entity_type": "works",
+      "id": "poulenc-oboe-sonata",
+      "path": "data/works/poulenc-oboe-sonata.yaml"
+    }
+  ],
+  "existing_canonical_files_unchanged": true
+}
