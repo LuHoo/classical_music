@@ -1,0 +1,46 @@
+name: Bruckner exact reference audit
+on:
+  push:
+    branches: [tidal-bruckner-reference-audit]
+    paths: [.github/workflows/bruckner-reference-audit.yml]
+permissions:
+  contents: read
+jobs:
+  references:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+      - name: Read ten exact canonical references
+        env:
+          TIDAL_CLIENT_ID: ${{ secrets.TIDAL_CLIENT_ID }}
+          TIDAL_CLIENT_SECRET: ${{ secrets.TIDAL_CLIENT_SECRET }}
+          PYTHONPATH: src
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from datetime import datetime, UTC
+          from classical_music.tidal_playlist import Catalogue, API
+          from classical_music.tidal_auth import access_token
+          ids = ['384348586','384348603','384348607','384348624','384348628','384348629','384348633','384348637','384348645','384348649']
+          client = Catalogue(access_token())
+          result = {'fetched_at': datetime.now(UTC).isoformat(), 'country': 'NL', 'requested_ids': ids, 'documents': []}
+          for identifier in ids:
+              doc = client.get(f'{API}/tracks/{identifier}?countryCode=NL&include=albums,artists')
+              assert doc['data']['id'] == identifier
+              result['documents'].append(doc)
+          Path('reports/tidal-playlist').mkdir(parents=True, exist_ok=True)
+          Path('reports/tidal-playlist/bruckner-references.json').write_text(json.dumps(result, ensure_ascii=False, indent=2))
+          print('Read', len(ids), 'exact canonical track references; no canonical writes.')
+          PY
+      - uses: actions/upload-artifact@v7
+        with:
+          name: bruckner-references-${{ github.run_id }}
+          path: reports/tidal-playlist/bruckner-references.json
+          retention-days: 14
