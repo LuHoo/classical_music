@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import time
 from datetime import UTC, datetime
 from urllib.error import HTTPError, URLError
 from urllib.parse import parse_qsl, urlencode, urljoin, urlsplit, urlunsplit
@@ -51,17 +52,30 @@ class Catalogue:
                 "Accept": "application/vnd.api+json",
             },
         )
-        try:
-            with self.opener.open(request, timeout=20) as response:
-                raw = response.read(MAX_RESPONSE_BYTES + 1)
-        except HTTPError as exc:
-            raise ValueError(
-                f"Playlist catalogue request failed (HTTP {exc.code})"
-            ) from None
-        except (URLError, OSError):
-            raise ValueError(
-                "Playlist catalogue request failed (network error)"
-            ) from None
+        for attempt in range(3):
+            # Catalogue endpoints have a small per-app request budget.
+            time.sleep(2)
+            try:
+                with self.opener.open(request, timeout=20) as response:
+                    raw = response.read(MAX_RESPONSE_BYTES + 1)
+                break
+            except HTTPError as exc:
+                if exc.code == 429 and attempt < 2:
+                    try:
+                        delay = min(
+                            30, max(2, int(exc.headers.get("Retry-After", "5")))
+                        )
+                    except (ValueError, AttributeError):
+                        delay = 5
+                    time.sleep(delay)
+                    continue
+                raise ValueError(
+                    f"Playlist catalogue request failed (HTTP {exc.code})"
+                ) from None
+            except (URLError, OSError):
+                raise ValueError(
+                    "Playlist catalogue request failed (network error)"
+                ) from None
         if len(raw) > MAX_RESPONSE_BYTES:
             raise ValueError("Catalogue response exceeded the snapshot size limit")
         try:

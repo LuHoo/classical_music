@@ -1,8 +1,11 @@
+import io
 from copy import deepcopy
+from unittest.mock import patch
+from urllib.error import HTTPError
 
 import pytest
 
-from classical_music.tidal_playlist import API, playlist_id, snapshot
+from classical_music.tidal_playlist import API, Catalogue, playlist_id, snapshot
 
 IDENTIFIER = "c11f614b-c011-43b2-be10-639f5cf7e5e3"
 URL = f"https://tidal.com/playlist/{IDENTIFIER}"
@@ -119,6 +122,29 @@ def test_only_exact_playlist_source_urls_are_accepted(value):
 def test_canonical_playlist_uuid():
     assert playlist_id(URL) == IDENTIFIER
     assert playlist_id(IDENTIFIER.upper()) == IDENTIFIER
+
+
+def test_rate_limit_retries_are_bounded_and_provider_errors_are_sanitized():
+    response = io.BytesIO(b'{"data": []}')
+    with patch("classical_music.tidal_playlist.time.sleep") as sleep:
+        client = Catalogue("synthetic-token")
+        with patch.object(
+            client.opener,
+            "open",
+            side_effect=[
+                HTTPError(API, 429, "secret", {"Retry-After": "3"}, None),
+                response,
+            ],
+        ):
+            assert client.get(API + "/tracks")["data"] == []
+        assert [c.args[0] for c in sleep.call_args_list] == [2, 3, 2]
+        with patch.object(
+            client.opener, "open", side_effect=HTTPError(API, 429, "secret", {}, None)
+        ) as opening:
+            with pytest.raises(ValueError, match="HTTP 429") as err:
+                client.get(API + "/tracks")
+            assert opening.call_count == 3
+            assert "secret" not in str(err.value)
 
 
 @pytest.mark.parametrize("limit", [0, 201])
