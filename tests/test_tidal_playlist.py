@@ -161,7 +161,7 @@ def test_rate_limit_retries_are_bounded_and_provider_errors_are_sanitized():
             assert "secret" not in str(err.value)
 
 
-@pytest.mark.parametrize("limit", [0, 501])
+@pytest.mark.parametrize("limit", [0, 2001])
 def test_source_fetch_is_bounded_before_any_request(limit):
     client = Client()
     with pytest.raises(ValueError, match="limit"):
@@ -176,3 +176,15 @@ def test_scale_probe_can_read_333_items_without_changing_order():
     assert [x["resource"]["id"] for x in result["items"]] == ids[:333]
     assert result["next_item_position"] == 334
     assert result["source_complete"] is False
+
+
+def test_large_window_preserves_repeated_items_and_boundary_context():
+    ids = [str(n % 37) for n in range(2001)]
+    client = Client(metadata(), page(ids[:500], "?page[cursor]=next"),
+                    page(ids[500:]), metadata())
+    result = snapshot(URL, limit=2000, client=client)
+    selected = [x for x in result["items"] if 333 <= x["position"] <= 1998]
+    assert len(selected) == 1666
+    assert [x["resource"]["id"] for x in selected] == ids[332:1998]
+    assert result["next_item_position"] == 2001
+    assert result["next_page"] is None

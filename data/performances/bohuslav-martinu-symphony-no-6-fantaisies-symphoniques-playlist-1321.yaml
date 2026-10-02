@@ -1,0 +1,13 @@
+id: bohuslav-martinu-symphony-no-6-fantaisies-symphoniques-playlist-1321
+work_id: bohuslav-martinu-symphony-no-6-fantaisies-symphoniques
+performers:
+- name: Bamberger Symphoniker
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/22486411
+release:
+  album_title: 'Martinů, B.: Symphonies Nos. 5 & 6'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

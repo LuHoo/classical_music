@@ -1,0 +1,7 @@
+id: felix-mendelssohn
+name: Felix Mendelssohn
+roles:
+- composer
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://www.naxos.com/catalogueDetail/?id=CD93.132

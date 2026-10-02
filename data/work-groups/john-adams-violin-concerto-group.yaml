@@ -1,0 +1,6 @@
+id: john-adams-violin-concerto-group
+composer_id: john-adams
+title: Violin Concerto
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://www.nonesuch.com/albums/collected-works

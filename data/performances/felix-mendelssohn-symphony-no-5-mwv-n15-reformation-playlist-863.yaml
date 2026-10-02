@@ -1,0 +1,14 @@
+id: felix-mendelssohn-symphony-no-5-mwv-n15-reformation-playlist-863
+work_id: felix-mendelssohn-symphony-no-5-mwv-n15-reformation
+performers:
+- name: Radio-Sinfonieorchester Stuttgart des SWR
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/12367456
+release:
+  album_title: 'Mendelssohn: Symphonies Nos. 1 and 5'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+version_assignment: unspecified

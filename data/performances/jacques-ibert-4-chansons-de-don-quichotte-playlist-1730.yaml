@@ -1,0 +1,15 @@
+id: jacques-ibert-4-chansons-de-don-quichotte-playlist-1730
+work_id: jacques-ibert-4-chansons-de-don-quichotte
+performers:
+- name: Kent Nagano
+  role: performer
+- name: José Van Dam
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/2963074
+release:
+  album_title: 'Ibert: Divertissement, Escales & Flute Concerto'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

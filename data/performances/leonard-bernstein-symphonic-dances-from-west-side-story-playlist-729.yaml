@@ -1,0 +1,16 @@
+id: leonard-bernstein-symphonic-dances-from-west-side-story-playlist-729
+work_id: leonard-bernstein-symphonic-dances-from-west-side-story
+performers:
+- name: Paavo Järvi
+  role: conductor
+  artist_id: paavo-jarvi
+- name: City of Birmingham Symphony Orchestra
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/1559397
+release:
+  album_title: "Bernstein: West Side Story's Symphonic Dances - Divertimento & Facsimile"
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

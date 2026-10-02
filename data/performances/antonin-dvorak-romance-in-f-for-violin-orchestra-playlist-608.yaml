@@ -1,0 +1,17 @@
+id: antonin-dvorak-romance-in-f-for-violin-orchestra-playlist-608
+work_id: antonin-dvorak-romance-in-f-for-violin-orchestra
+performers:
+- name: Jan Mráček
+  role: performer
+- name: Czech National Symphony Orchestra
+  role: performer
+- name: James Judd
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/61944299
+release:
+  album_title: 'Dvorak: Violin Concerto, Romance, Mazurek & Four Romantic Pieces'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

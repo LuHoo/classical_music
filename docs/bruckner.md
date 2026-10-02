@@ -23,7 +23,7 @@ nav_order: 1
 
 **Symphony No. 1 in C minor "Das kecke Beserl"** (1865, first concept Adagio & Scherzo), WAB. 101 [Scherzo: *Bruckner Orchester Linz, Markus Poschner*](https://tidal.com/browse/track/384348598?u)
 
-**Symphony No. 1 in C minor "Das kecke Beserl"** (1866 "Linz version", revised in 1877/1884), WAB. 101 [*Bruckner Orchester Linz, Markus Poschner*](https://tidal.com/browse/track/384348590?u)
+**Symphony No. 1 in C minor "Das kecke Beserl"** (1868 "Linz version", ed. Thomas Röder), WAB. 101 [*Bruckner Orchester Linz, Markus Poschner*](https://tidal.com/browse/track/384348590?u)
 
 **Symphony No. 1 in C minor "Das kecke Beserl"** (1891 "Vienna version"), WAB. 101 [*Bruckner Orchester Linz, Markus Poschner*](https://tidal.com/browse/track/384348594?u) (06/2024)
 

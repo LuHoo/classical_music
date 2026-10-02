@@ -50,7 +50,7 @@ def analyse(source, root, start=34, end=333):
         != "https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3"
         or source.get("playlist", {}).get("attributes", {}).get("lastModifiedAt")
         != "2026-10-02T12:06:31.897Z"
-        or (start, end) != (34, 333)
+        or not 1 <= start <= end <= 2000
     ):
         raise ValueError(
             "Position-specific corrections require the verified Best Classical snapshot"
@@ -174,17 +174,20 @@ if __name__ == "__main__":
     parser.add_argument("source", type=Path)
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--inventory", type=Path)
+    parser.add_argument("--start", type=int, default=34)
+    parser.add_argument("--end", type=int, default=333)
+    parser.add_argument("--source-run", default="37024628787")
     args = parser.parse_args()
     root = Path(__file__).resolve().parents[1]
     if any("data" in p.resolve().parts for p in [args.output, args.inventory] if p):
         parser.error("Analysis output must remain outside canonical data")
-    result = analyse(json.loads(args.source.read_text()), root)
+    result = analyse(json.loads(args.source.read_text()), root, args.start, args.end)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n")
     if args.inventory:
         inventory = {
             "source_sha256": hashlib.sha256(args.source.read_bytes()).hexdigest(),
-            "source_run": "https://github.com/LuHoo/classical_music/actions/runs/37024628787",
+            "source_run": f"https://github.com/LuHoo/classical_music/actions/runs/{args.source_run}",
             "positions": result["positions"],
             "provisional_units": [
                 {

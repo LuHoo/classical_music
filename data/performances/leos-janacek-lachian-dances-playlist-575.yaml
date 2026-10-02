@@ -1,0 +1,15 @@
+id: leos-janacek-lachian-dances-playlist-575
+work_id: leos-janacek-lachian-dances
+performers:
+- name: London Philharmonic Orchestra
+  role: performer
+- name: François Huybrechts
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/4471571
+release:
+  album_title: 'Janácek: Sinfonietta/Taras Bulba/Mládi etc.'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

@@ -1,0 +1,15 @@
+id: felix-mendelssohn-a-midsummer-night-s-dream-overture-playlist-889
+work_id: felix-mendelssohn-a-midsummer-night-s-dream-overture
+performers:
+- name: Iván Fischer
+  role: performer
+- name: Budapest Festival Orchestra
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/269503203
+release:
+  album_title: "Mendelssohn: Overture & Incidental Music to A Midsummer Night's Dream"
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

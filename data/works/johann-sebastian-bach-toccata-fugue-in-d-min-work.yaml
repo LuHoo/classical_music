@@ -1,11 +1,12 @@
-id: "johann-sebastian-bach-toccata-fugue-in-d-min-work"
-work_group_id: "johann-sebastian-bach-toccata-fugue-in-d-min-group"
-composer_id: "johann-sebastian-bach"
-title: "Toccata & Fugue in D min."
+id: johann-sebastian-bach-toccata-fugue-in-d-min-work
+work_group_id: johann-sebastian-bach-toccata-fugue-in-d-min-group
+composer_id: johann-sebastian-bach
+title: Toccata and Fugue in D minor (Stokowski orchestration)
 source:
-  file: "docs/bachJS.md"
-  line: "86"
+  file: docs/bachJS.md
+  line: '86'
+  url: https://ci.nii.ac.jp/ncid/BA50788723
 catalogue:
-  bwv: "BWV 565"
-date_text: "http://www.tidal.com/track/2924750"
-category: "Orchestral arrangements"
+  bwv: BWV 565
+category: Orchestral arrangements
+version: Orchestration by Leopold Stokowski

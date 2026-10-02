@@ -9,7 +9,7 @@ on:
         default: "https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3"
         type: string
       limit:
-        description: "Maximum source items to read (1-500; no canonical writes)"
+        description: "Maximum source items to read (1-2000; no canonical writes)"
         required: true
         default: "100"
         type: string
@@ -29,7 +29,7 @@ permissions:
 jobs:
   snapshot:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v7
         with:

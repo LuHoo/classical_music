@@ -1,0 +1,9 @@
+id: samuel-barber-violin-concerto
+work_group_id: samuel-barber-violin-concerto-group
+composer_id: samuel-barber
+title: Violin Concerto
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://vasilypetrenkomusic.com/project/barber-bruch-violin-concertos/
+catalogue:
+  opus: Op. 14

@@ -1,0 +1,17 @@
+id: richard-strauss-four-last-songs-playlist-1811
+work_id: richard-strauss-four-last-songs
+performers:
+- name: Renée Fleming
+  role: performer
+- name: Münchner Philharmoniker
+  role: performer
+- name: Christian Thielemann
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/4583616
+release:
+  album_title: 'Strauss, R.: Vier Letzte Lieder'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

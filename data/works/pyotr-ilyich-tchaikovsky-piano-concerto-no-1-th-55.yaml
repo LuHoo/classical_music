@@ -1,0 +1,10 @@
+id: pyotr-ilyich-tchaikovsky-piano-concerto-no-1-th-55
+work_group_id: pyotr-ilyich-tchaikovsky-piano-concerto-no-1-th-55-group
+composer_id: pyotr-ilyich-tchaikovsky
+title: Piano Concerto No. 1, TH 55
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url:
+    https://www.deccaclassics.com/en/catalogue/products/the-tchaikovsky-project-semyon-bychkov-10992
+catalogue:
+  opus: Op. 23

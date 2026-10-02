@@ -27,7 +27,7 @@ python scripts/fetch_tidal_playlist.py \
   --limit 100 --country NL
 ```
 
-The CLI default limit is 100 source items; the allowed range is 1–500. The
+The CLI default limit is 100 source items; the allowed range is 1–2000. The
 dedicated draft branch's push probe reads 333 items to analyse positions 34–333
 while verifying the previously processed prefix. This is a
 metadata fetch budget, not the canonical batch size. The reader preserves item
@@ -93,3 +93,21 @@ The first concrete batch is documented in
 JSON manifest. It imports three missing recommendations and reuses seven
 existing interpretations. This pilot does not implement automatic musicological
 matching or the separate Excel-column intake contract in issue #186.
+
+## Larger authorised windows
+
+A curator may explicitly request a larger window. Positions 333–1998 were
+reviewed as one authorised window after fetching a 2,000-item prefix and
+verifying the previously reviewed first 333 identities and modification marker.
+The reader limit is a metadata budget; it does not make provisional title stems
+canonical work boundaries. The reviewed manifest retains every selected
+occurrence, explicit excerpts, recording-reference evidence and unresolved
+choices in `reports/playlist-import/best-classical/window-333-1998.json`.
+
+The import uses the same one-recommendation policy. It adds unambiguous accepted
+interpretations, reuses verified existing interpretations and leaves competing
+recommendations outside canonical Performance data. Independently identified
+Works may be added without a recommendation while a choice is pending. Missing
+NL usage rules do not reject accepted curation, and this workflow does not test
+playback. Run `python scripts/check_tidal_window_import.py` to verify manifest
+coverage, canonical assignments and public links/excerpts without a live token.

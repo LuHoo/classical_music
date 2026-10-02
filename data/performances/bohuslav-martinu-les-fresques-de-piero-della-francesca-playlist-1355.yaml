@@ -1,0 +1,13 @@
+id: bohuslav-martinu-les-fresques-de-piero-della-francesca-playlist-1355
+work_id: bohuslav-martinu-les-fresques-de-piero-della-francesca
+performers:
+- name: Malmö Symphony Orchestra
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/12107350
+release:
+  album_title: 'Martinu: Fresques De Piero Della Francesca (Les) / Viola Rhapsody-Concerto / Double Concerto'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

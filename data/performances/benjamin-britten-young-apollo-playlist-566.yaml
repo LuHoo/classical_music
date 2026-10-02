@@ -1,0 +1,17 @@
+id: benjamin-britten-young-apollo-playlist-566
+work_id: benjamin-britten-young-apollo
+performers:
+- name: Steven Osborne
+  role: performer
+- name: Ilan Volkov
+  role: performer
+- name: BBC Scottish Symphony Orchestra
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/306149866
+release:
+  album_title: 'Britten: Piano Concerto; Diversions; Young Apollo'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

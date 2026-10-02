@@ -1,0 +1,26 @@
+id: edvard-grieg-before-a-southern-convent-playlist-1610
+work_id: edvard-grieg-before-a-southern-convent
+performers:
+- name: Barbara Bonney
+  role: performer
+  artist_id: barbara-bonney
+- name: Randi Stene
+  role: performer
+- name: Gothenburg Symphony Orchestra
+  role: orchestra
+  artist_id: gothenburg-symphony-orchestra
+- name: Neeme Järvi
+  role: conductor
+  artist_id: neeme-jarvi
+- name: Women's Voices of the Gothenburg Symphony Chorus
+  role: performer
+- name: Mats Nilsson
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/4360550
+release:
+  album_title: 'Grieg: Complete Music with Orchestra'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
