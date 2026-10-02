@@ -97,8 +97,15 @@ def snapshot(value: str, *, limit: int = 100, country: str = "NL", client=None) 
     client = client or Catalogue(access_token())
     metadata_url = f"{API}/playlists/{identifier}?{urlencode({'countryCode': country})}"
     metadata = client.get(metadata_url)["data"]
-    if not isinstance(metadata, dict) or metadata.get("id") != identifier:
+    if (
+        not isinstance(metadata, dict)
+        or metadata.get("id") != identifier
+        or metadata.get("type") != "playlists"
+    ):
         raise ValueError("Playlist identity does not match the requested source")
+    modified = metadata.get("attributes", {}).get("lastModifiedAt")
+    if not isinstance(modified, str) or not modified:
+        raise ValueError("Playlist has no modification marker; stable snapshot refused")
     path = f"/v2/playlists/{identifier}/relationships/items"
     next_url = (
         "https://openapi.tidal.com"
@@ -148,6 +155,8 @@ def snapshot(value: str, *, limit: int = 100, country: str = "NL", client=None) 
             # Tidal documents root-relative links without the API version.
             target = urlsplit(next_url)
             query = dict(parse_qsl(target.query, keep_blank_values=True))
+            if query.get("countryCode", country).upper() != country:
+                raise ValueError("Playlist pagination changed the requested country")
             query.setdefault("countryCode", country)
             query.setdefault("include", INCLUDE)
             next_url = urlunsplit(
@@ -162,9 +171,12 @@ def snapshot(value: str, *, limit: int = 100, country: str = "NL", client=None) 
         if not page and next_url:
             raise ValueError("Empty playlist page has a continuation")
     after = client.get(metadata_url)["data"]
-    if metadata.get("attributes", {}).get("lastModifiedAt") != after.get(
-        "attributes", {}
-    ).get("lastModifiedAt"):
+    if (
+        not isinstance(after, dict)
+        or after.get("id") != identifier
+        or after.get("type") != "playlists"
+        or modified != after.get("attributes", {}).get("lastModifiedAt")
+    ):
         raise ValueError("Playlist changed during snapshot; retry before importing")
     return {
         "schema_version": 1,

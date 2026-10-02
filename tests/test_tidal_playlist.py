@@ -105,6 +105,20 @@ def test_changed_playlist_is_not_an_importable_snapshot():
         snapshot(URL, client=client)
 
 
+def test_missing_modification_marker_cannot_establish_stable_source():
+    client = Client(metadata(None))
+    with pytest.raises(ValueError, match="modification marker"):
+        snapshot(URL, client=client)
+    assert len(client.urls) == 1
+
+
+def test_pagination_cannot_change_reported_country():
+    client = Client(metadata(), page(["a"], "?page[cursor]=next&countryCode=US"))
+    with pytest.raises(ValueError, match="country"):
+        snapshot(URL, client=client)
+    assert len(client.urls) == 2
+
+
 @pytest.mark.parametrize(
     "value",
     [
