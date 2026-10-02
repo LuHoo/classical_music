@@ -5,7 +5,7 @@ from __future__ import annotations
 import json
 from datetime import UTC, datetime
 from urllib.error import HTTPError, URLError
-from urllib.parse import urlencode, urljoin, urlsplit
+from urllib.parse import parse_qsl, urlencode, urljoin, urlsplit, urlunsplit
 from urllib.request import Request, build_opener
 from uuid import UUID
 
@@ -105,7 +105,10 @@ def snapshot(value: str, *, limit: int = 100, country: str = "NL", client=None) 
             or parsed.fragment
             or next_url in seen
         ):
-            raise ValueError("Invalid or repeated playlist pagination link")
+            raise ValueError(
+                f"Invalid or repeated playlist pagination link "
+                f"(host={parsed.netloc}, path={parsed.path})"
+            )
         seen.add(next_url)
         document = client.get(next_url)
         page = document["data"]
@@ -127,6 +130,21 @@ def snapshot(value: str, *, limit: int = 100, country: str = "NL", client=None) 
         if isinstance(following, dict):
             following = following.get("href")
         next_url = urljoin(next_url, following) if following else None
+        if next_url:
+            # Tidal documents root-relative links without the API version.
+            target = urlsplit(next_url)
+            query = dict(parse_qsl(target.query, keep_blank_values=True))
+            query.setdefault("countryCode", country)
+            query.setdefault("include", INCLUDE)
+            next_url = urlunsplit(
+                (
+                    target.scheme,
+                    target.netloc,
+                    path if target.path == path.removeprefix("/v2") else target.path,
+                    urlencode(query),
+                    target.fragment,
+                )
+            )
         if not page and next_url:
             raise ValueError("Empty playlist page has a continuation")
     after = client.get(metadata_url)["data"]

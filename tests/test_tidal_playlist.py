@@ -66,6 +66,17 @@ def test_limit_does_not_offer_a_cursor_that_skips_unread_items():
     assert len(client.urls) == 3
 
 
+def test_documented_root_relative_links_keep_country_and_nested_includes():
+    following = f"/playlists/{IDENTIFIER}/relationships/items?page[cursor]=next"
+    client = Client(metadata(), page(["a"], following), page(["b"]), metadata())
+    assert snapshot(URL, client=client)["source_complete"]
+    assert client.urls[2].startswith(
+        f"{API}/playlists/{IDENTIFIER}/relationships/items?"
+    )
+    assert "countryCode=NL" in client.urls[2]
+    assert "include=items" in client.urls[2]
+
+
 @pytest.mark.parametrize(
     "following", ["https://evil.test/steal", f"{API}/tracks/1", "#fragment"]
 )
