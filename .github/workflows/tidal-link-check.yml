@@ -46,6 +46,11 @@ jobs:
           TIDAL_CLIENT_SECRET: ${{ secrets.TIDAL_CLIENT_SECRET }}
           PILOT_LIMIT: ${{ inputs.limit || '5' }}
         run: python scripts/run_tidal_api_check.py --limit "$PILOT_LIMIT"
+      - name: Playlist ISRC recovery pilot (read only)
+        env:
+          TIDAL_CLIENT_ID: ${{ secrets.TIDAL_CLIENT_ID }}
+          TIDAL_CLIENT_SECRET: ${{ secrets.TIDAL_CLIENT_SECRET }}
+        run: python scripts/playlist_recovery_pilot.py
       - name: Add report summary
         if: always()
         run: |
@@ -60,6 +65,7 @@ jobs:
         with:
           name: tidal-link-check-${{ github.run_id }}
           path: |
+            reports/tidal-maintenance/playlist-recovery.json
             reports/tidal-maintenance/latest.json
             reports/tidal-maintenance/latest.md
           if-no-files-found: ignore
