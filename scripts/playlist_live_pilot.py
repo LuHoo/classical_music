@@ -8,7 +8,7 @@ import re
 import sys
 import time
 from collections import Counter
-from datetime import UTC, datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode, urljoin, urlsplit, parse_qsl, urlunsplit
@@ -108,7 +108,7 @@ def replaced_items(items, replacements):
 def write_test(client):
     """Only a newly created disposable playlist can be mutated by this pilot."""
     a, b = '283191456', '283191455'
-    created = client.request('/playlists', 'POST', {'data': {'type': 'playlists', 'attributes': {'name': 'Playlist repair API test ' + datetime.now(UTC).isoformat(), 'accessType': 'UNLISTED'}}})
+    created = client.request('/playlists', 'POST', {'data': {'type': 'playlists', 'attributes': {'name': 'Playlist repair API test ' + datetime.now(timezone.utc).isoformat(), 'accessType': 'UNLISTED'}}})
     pid = created['data']['id']
     if pid == PLAYLIST:
         raise ValueError('Test playlist unexpectedly equals source playlist')
@@ -142,7 +142,7 @@ def main(argv=None):
     parser.add_argument('--output', type=Path, default=Path('reports/tidal-maintenance/playlist-live-pilot.json'))
     args = parser.parse_args(argv)
     token = os.environ.get('TIDAL_USER_ACCESS_TOKEN', '')
-    report = {'checked_at': datetime.now(UTC).isoformat(), 'source_playlist_mutations': 0, 'user_token_present': bool(token)}
+    report = {'checked_at': datetime.now(timezone.utc).isoformat(), 'source_playlist_mutations': 0, 'user_token_present': bool(token)}
     args.output.parent.mkdir(parents=True, exist_ok=True)
     try:
         client = Client(token or access_token())
