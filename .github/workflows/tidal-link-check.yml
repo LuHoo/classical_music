@@ -15,6 +15,7 @@ on:
     paths:
       - .github/workflows/tidal-link-check.yml
       - scripts/run_tidal_api_check.py
+      - scripts/playlist_live_pilot.py
       - src/classical_music/tidal_auth.py
       - src/classical_music/tidal_maintenance.py
 
