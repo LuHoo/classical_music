@@ -23,7 +23,9 @@ REDIRECT_URI = 'http://127.0.0.1:8765/callback'
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--client-id', default=os.environ.get('TIDAL_CLIENT_ID', ''))
-    parser.add_argument('--repair-confirmed', action='store_true', help='Apply the 609 approved occurrences to Best Classical')
+    modes = parser.add_mutually_exclusive_group()
+    modes.add_argument('--repair-one-second', action='store_true', help='Apply the 108 approved one-second duration differences')
+    modes.add_argument('--repair-confirmed', action='store_true', help='Apply the 609 approved occurrences to Best Classical')
     args = parser.parse_args()
     if not args.client_id:
         parser.error('Supply the public TIDAL Client ID using --client-id or TIDAL_CLIENT_ID')
@@ -58,7 +60,9 @@ def main():
             'scope':'playlists.read playlists.write', 'state':state,
             'code_challenge':challenge, 'code_challenge_method':'S256'})
         print('Opening TIDAL login. Required registered redirect URI: ' + REDIRECT_URI)
-        if args.repair_confirmed:
+        if args.repair_one_second:
+            print('Applying the 108 approved one-second replacements to Best Classical after fresh validation.')
+        elif args.repair_confirmed:
             print('Applying the 609 approved replacements to Best Classical after fresh validation.')
         else:
             print('The test uses a temporary unlisted playlist; Best Classical will not be modified.')
@@ -95,9 +99,9 @@ def main():
     prior = os.environ.get('TIDAL_USER_ACCESS_TOKEN')
     os.environ['TIDAL_USER_ACCESS_TOKEN']=token
     try:
-        if args.repair_confirmed:
+        if args.repair_confirmed or args.repair_one_second:
             from repair_tidal_playlist import main as run_repair
-            return run_repair([])
+            return run_repair(['--duration-one-second'] if args.repair_one_second else [])
         return run_pilot(['--test-write'])
     finally:
         if prior is None:

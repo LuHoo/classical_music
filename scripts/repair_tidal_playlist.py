@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Apply only the 609 explicitly approved occurrences from the verified NL scan."""
+"""Apply explicitly approved batches from the verified NL scan."""
 import argparse
 import copy
 import json
@@ -7,11 +7,12 @@ import os
 from pathlib import Path
 from datetime import datetime, timezone
 from playlist_live_pilot import Client, PLAYLIST
-from scan_tidal_playlist import ScannerClient, assess
+from scan_tidal_playlist import ScannerClient, assess, seconds
 
 ROOT = Path(__file__).resolve().parents[1]
 REPORT = ROOT / 'reports/tidal-maintenance/full-playlist-scan-2026-10-03.json'
 JOURNAL = ROOT / 'reports/tidal-maintenance/confirmed-repair-local.json'
+DURATION_JOURNAL = ROOT / 'reports/tidal-maintenance/duration-one-second-repair-local.json'
 
 
 def save(path, doc):
@@ -25,13 +26,39 @@ def identity(item):
     return item['type'], item['id'], item.get('meta', {}).get('itemId')
 
 
-def plan(report, source):
+def one_second_match(fingerprint, candidate):
+    checks = candidate['checks']
+    duration = seconds(candidate.get('duration'))
+    old_duration = fingerprint.get('duration_seconds')
+    return (checks.get('same_isrc') and checks.get('same_title') and checks.get('artist_overlap')
+            and not checks.get('same_duration') and duration is not None and old_duration is not None
+            and abs(duration - old_duration) == 1)
+
+
+def approved_rows(report, duration_batch=False):
+    if not duration_batch:
+        return [r for r in report['rows'] if r['status'] == 'CONFIRMED']
+    return [dict(r, replacement_id=r['candidates'][0]['id']) for r in report['rows']
+            if r['status'] == 'REVIEW' and len(r['candidates']) == 1
+            and one_second_match(r['fingerprint'], r['candidates'][0])]
+
+
+def plan(report, source, duration_batch=False, previous=None):
     if report.get('playlist', {}).get('id') != PLAYLIST or report.get('country') != 'NL' or not report.get('source_unchanged'):
         raise ValueError('Unexpected or unstable approval report')
-    rows = [r for r in report['rows'] if r['status'] == 'CONFIRMED']
-    if len(rows) != 609 or len({r['item_id'] for r in rows}) != 609:
-        raise ValueError('Expected exactly 609 distinct approved occurrences')
-    if len(source['items']) != report['total_occurrences'] or source['playlist']['attributes']['lastModifiedAt'] != report['playlist']['attributes']['lastModifiedAt']:
+    rows = approved_rows(report, duration_batch)
+    total = 108 if duration_batch else 609
+    if len(rows) != total or len({r['item_id'] for r in rows}) != total:
+        raise ValueError('Unexpected number of distinct approved occurrences')
+    baseline = report['playlist']
+    if duration_batch:
+        if not previous or previous.get('status') != 'passed' or previous.get('completed_occurrences') != 609:
+            raise ValueError('The successful 609-replacement journal is required')
+        final = previous.get('final_snapshot', {})
+        if [identity(i) for i in source['items']] != [identity(i) for i in final.get('items', [])]:
+            raise ValueError('Playlist no longer matches the successful 609-replacement snapshot')
+        baseline = final.get('playlist', {})
+    if len(source['items']) != report['total_occurrences'] or source['playlist']['attributes']['lastModifiedAt'] != baseline.get('attributes', {}).get('lastModifiedAt'):
         raise ValueError('Playlist changed since approval; a new scan is required')
     selected = {r['item_id']: r for r in rows}
     groups = []
@@ -47,7 +74,7 @@ def plan(report, source):
             active = []
     if active:
         groups.append(active)
-    if sum(map(len, groups)) != 609:
+    if sum(map(len, groups)) != total:
         raise ValueError('Some approved occurrences are missing')
     ids = [identity(i)[2] for i in source['items']]
     if not all(ids) or len(set(ids)) != len(ids):
@@ -55,25 +82,27 @@ def plan(report, source):
     return rows, groups
 
 
-def validate_candidates(client, rows):
+def validate_candidates(client, rows, duration_batch=False):
     isrcs = list(dict.fromkeys(r['fingerprint']['isrc'] for r in rows))
     candidates = []
     for offset in range(0, len(isrcs), 20):
         candidates.extend(client.tracks('isrc', isrcs[offset:offset+20]))
     for row in rows:
         status, matches = assess(row['fingerprint'], candidates, client.resources)
-        if status != 'CONFIRMED' or matches[0]['id'] != row['replacement_id']:
+        valid = (len(matches) == 1 and (one_second_match(row['fingerprint'], matches[0]) if duration_batch else status == 'CONFIRMED'))
+        if not valid or matches[0]['id'] != row['replacement_id']:
             raise ValueError('Replacement catalogue identity changed at position ' + str(row['position']))
 
 
-def execute(client, report, path, catalogue):
+def execute(client, report, path, catalogue, duration_batch=False, previous=None):
     if path.exists():
         raise ValueError('A repair journal already exists. Do not repeat writes blindly; inspect this journal before continuing: ' + str(path))
     source = client.snapshot(PLAYLIST)
-    rows, groups = plan(report, source)
-    validate_candidates(catalogue, rows)
+    rows, groups = plan(report, source, duration_batch, previous)
+    total = len(rows)
+    validate_candidates(catalogue, rows, duration_batch)
     journal = {'started_at': datetime.now(timezone.utc).isoformat(), 'status': 'prepared',
-               'approved_occurrences': 609, 'completed_occurrences': 0,
+               'approved_occurrences': total, 'batch': 'duration_one_second' if duration_batch else 'confirmed', 'completed_occurrences': 0,
                'backup': source, 'operations': []}
     save(path, journal)
     expected = copy.deepcopy(source['items'])
@@ -124,7 +153,7 @@ def execute(client, report, path, catalogue):
             if attrs.get('numberOfItems') != len(expected):
                 raise ValueError('Unexpected count after deletion')
             marker = attrs['lastModifiedAt']
-            print(json.dumps({'replaced': journal['completed_occurrences'], 'total': 609}), flush=True)
+            print(json.dumps({'replaced': journal['completed_occurrences'], 'total': total}), flush=True)
         final = client.snapshot(PLAYLIST)
         journal['final_snapshot'] = final
         if [identity(i) for i in final['items']] != [identity(i) for i in expected]:
@@ -132,7 +161,7 @@ def execute(client, report, path, catalogue):
         journal['status'] = 'passed'
         journal['finished_at'] = datetime.now(timezone.utc).isoformat()
         save(path, journal)
-        print(json.dumps({'status': 'passed', 'replaced_occurrences': 609, 'final_item_count': len(final['items']), 'order_verified': True, 'journal': str(path)}))
+        print(json.dumps({'status': 'passed', 'replaced_occurrences': total, 'final_item_count': len(final['items']), 'order_verified': True, 'journal': str(path)}))
     except Exception as exc:
         journal['status'] = 'stopped'
         journal['error'] = str(exc)
@@ -142,13 +171,16 @@ def execute(client, report, path, catalogue):
 
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--journal', type=Path, default=JOURNAL)
+    parser.add_argument('--journal', type=Path)
+    parser.add_argument('--duration-one-second', action='store_true', help='Apply only the 108 explicitly approved one-second differences')
     args = parser.parse_args(argv)
     token = os.environ.get('TIDAL_USER_ACCESS_TOKEN', '')
     if not token:
         raise ValueError('Local user OAuth login is required')
     report = json.loads(REPORT.read_text(encoding='utf-8'))
-    execute(Client(token), report, args.journal, ScannerClient(token))
+    previous = json.loads(JOURNAL.read_text(encoding='utf-8')) if args.duration_one_second else None
+    path = args.journal or (DURATION_JOURNAL if args.duration_one_second else JOURNAL)
+    execute(Client(token), report, path, ScannerClient(token), args.duration_one_second, previous)
     return 0
 
 

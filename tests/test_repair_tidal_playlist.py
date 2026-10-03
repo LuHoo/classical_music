@@ -99,6 +99,58 @@ class RepairTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'identity changed'):
             repair.validate_candidates(Catalogue(), [row])
 
+    def duration_fixture(self):
+        source, report = fixture()
+        for row in report['rows'][:108]:
+            row['status'] = 'REVIEW'
+            row['fingerprint'] = {'isrc': 'ISRC-' + row['old_id'], 'title': 'Work', 'duration_seconds': 60, 'artists': ['Artist']}
+            row['candidates'] = [{'id': row['replacement_id'], 'duration': 'PT1M1S', 'checks': {'same_isrc': True, 'same_title': True, 'same_duration': False, 'artist_overlap': True}}]
+        previous = {'status': 'passed', 'completed_occurrences': 609, 'final_snapshot': copy.deepcopy(source)}
+        return source, report, previous
+
+    def test_duration_batch_replaces_only_108_and_keeps_prior_snapshot(self):
+        source, report, previous = self.duration_fixture()
+        client = FakeClient(source)
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / 'duration.json'
+            with patch.object(repair, 'validate_candidates'), patch('builtins.print'):
+                repair.execute(client, report, path, None, True, previous)
+            journal = json.loads(path.read_text())
+            self.assertEqual(journal['completed_occurrences'], 108)
+            self.assertEqual(journal['status'], 'passed')
+            self.assertEqual(client.source['items'][-1], source['items'][-1])
+            self.assertEqual(client.source['items'][2], source['items'][2])
+            self.assertEqual(previous['final_snapshot'], source)
+
+    def test_duration_batch_refuses_changed_post_repair_snapshot(self):
+        source, report, previous = self.duration_fixture()
+        source['items'][-1]['id'] = 'unexpected'
+        with self.assertRaisesRegex(ValueError, 'no longer matches'):
+            repair.plan(report, source, True, previous)
+
+    def test_duration_batch_requires_successful_prior_journal(self):
+        source, report, previous = self.duration_fixture()
+        previous['status'] = 'stopped'
+        with self.assertRaisesRegex(ValueError, 'successful'):
+            repair.plan(report, source, True, previous)
+
+    def test_duration_batch_excludes_larger_or_other_differences(self):
+        source, report, previous = self.duration_fixture()
+        report['rows'][0]['candidates'][0]['duration'] = 'PT1M2S'
+        report['rows'][1]['candidates'][0]['checks']['same_title'] = False
+        self.assertEqual(len(repair.approved_rows(report, True)), 106)
+        with self.assertRaisesRegex(ValueError, 'number'):
+            repair.plan(report, source, True, previous)
+
+    def test_duration_catalogue_recheck_refuses_two_second_difference(self):
+        class Catalogue:
+            resources = {('artists', 'a'): {'attributes': {'name': 'Artist'}}}
+            def tracks(self, field, values):
+                return [{'type': 'tracks', 'id': 'new', 'attributes': {'isrc': 'ISRC', 'title': 'Work', 'duration': 'PT1M2S', 'availability': ['STREAM']}, 'relationships': {'artists': {'data': [{'type': 'artists', 'id': 'a'}]}}}]
+        row = {'position': 1, 'replacement_id': 'new', 'fingerprint': {'isrc': 'ISRC', 'title': 'Work', 'duration_seconds': 60, 'artists': ['Artist']}}
+        with self.assertRaisesRegex(ValueError, 'identity changed'):
+            repair.validate_candidates(Catalogue(), [row], True)
+
     def test_stale_approval_refused(self):
         source, report = fixture()
         source['playlist']['attributes']['lastModifiedAt'] = 'changed'
