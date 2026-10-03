@@ -51,6 +51,17 @@ jobs:
           TIDAL_CLIENT_ID: ${{ secrets.TIDAL_CLIENT_ID }}
           TIDAL_CLIENT_SECRET: ${{ secrets.TIDAL_CLIENT_SECRET }}
         run: python scripts/playlist_recovery_pilot.py
+      - name: Stable live playlist and occurrence pilot
+        env:
+          TIDAL_CLIENT_ID: ${{ secrets.TIDAL_CLIENT_ID }}
+          TIDAL_CLIENT_SECRET: ${{ secrets.TIDAL_CLIENT_SECRET }}
+          TIDAL_USER_ACCESS_TOKEN: ${{ secrets.TIDAL_USER_ACCESS_TOKEN }}
+        run: |
+          if [ -n "$TIDAL_USER_ACCESS_TOKEN" ]; then
+            python scripts/playlist_live_pilot.py --test-write
+          else
+            python scripts/playlist_live_pilot.py
+          fi
       - name: Add report summary
         if: always()
         run: |
@@ -65,6 +76,7 @@ jobs:
         with:
           name: tidal-link-check-${{ github.run_id }}
           path: |
+            reports/tidal-maintenance/playlist-live-pilot.json
             reports/tidal-maintenance/playlist-recovery.json
             reports/tidal-maintenance/latest.json
             reports/tidal-maintenance/latest.md
