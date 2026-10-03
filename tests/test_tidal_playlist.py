@@ -161,7 +161,7 @@ def test_rate_limit_retries_are_bounded_and_provider_errors_are_sanitized():
             assert "secret" not in str(err.value)
 
 
-@pytest.mark.parametrize("limit", [0, 2001])
+@pytest.mark.parametrize("limit", [0, 5001])
 def test_source_fetch_is_bounded_before_any_request(limit):
     client = Client()
     with pytest.raises(ValueError, match="limit"):
