@@ -4,6 +4,7 @@ import argparse
 import csv
 import json
 import os
+import re
 import sys
 import time
 from collections import Counter
@@ -158,7 +159,10 @@ def main(argv=None):
             candidates = [c for c in doc['data'] if c.get('attributes',{}).get('isrc') == old['isrc'] and 'STREAM' in c.get('attributes',{}).get('availability',[])]
             occurrence_positions = [n for n,i in enumerate(items,1) if i['type']=='tracks' and i['id']==old['trackId']]
             row = {'export_position': pos, 'old_id':old['trackId'], 'isrc':old['isrc'], 'live_positions':occurrence_positions, 'candidate_ids':[c['id'] for c in candidates]}
-            if len(candidates)==1 and not doc.get('links',{}).get('next'):
+            duration = re.fullmatch(r'PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?', candidates[0].get('attributes',{}).get('duration','')) if len(candidates)==1 else None
+            same_duration = bool(duration) and sum(int(value or 0)*factor for value,factor in zip(duration.groups(),[3600,60,1])) == int(old['duration'].rstrip('s'))
+            row['same_duration'] = same_duration
+            if len(candidates)==1 and same_duration and not doc.get('links',{}).get('next'):
                 matches[old['trackId']]=candidates[0]['id']
                 row['replacement_id']=candidates[0]['id']
             plan.append(row)
