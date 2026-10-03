@@ -24,6 +24,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--client-id', default=os.environ.get('TIDAL_CLIENT_ID', ''))
     modes = parser.add_mutually_exclusive_group()
+    modes.add_argument('--repair-spartacus', action='store_true', help='Apply the 29 approved Spartacus replacements')
     modes.add_argument('--repair-one-second', action='store_true', help='Apply the 108 approved one-second duration differences')
     modes.add_argument('--repair-confirmed', action='store_true', help='Apply the 609 approved occurrences to Best Classical')
     args = parser.parse_args()
@@ -60,7 +61,9 @@ def main():
             'scope':'playlists.read playlists.write', 'state':state,
             'code_challenge':challenge, 'code_challenge_method':'S256'})
         print('Opening TIDAL login. Required registered redirect URI: ' + REDIRECT_URI)
-        if args.repair_one_second:
+        if args.repair_spartacus:
+            print('Applying the 29 approved Spartacus replacements to Best Classical after fresh validation.')
+        elif args.repair_one_second:
             print('Applying the 108 approved one-second replacements to Best Classical after fresh validation.')
         elif args.repair_confirmed:
             print('Applying the 609 approved replacements to Best Classical after fresh validation.')
@@ -99,9 +102,9 @@ def main():
     prior = os.environ.get('TIDAL_USER_ACCESS_TOKEN')
     os.environ['TIDAL_USER_ACCESS_TOKEN']=token
     try:
-        if args.repair_confirmed or args.repair_one_second:
+        if args.repair_confirmed or args.repair_one_second or args.repair_spartacus:
             from repair_tidal_playlist import main as run_repair
-            return run_repair(['--duration-one-second'] if args.repair_one_second else [])
+            return run_repair(['--spartacus'] if args.repair_spartacus else (['--duration-one-second'] if args.repair_one_second else []))
         return run_pilot(['--test-write'])
     finally:
         if prior is None:

@@ -151,6 +151,51 @@ class RepairTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'identity changed'):
             repair.validate_candidates(Catalogue(), [row], True)
 
+    def spartacus_fixture(self):
+        source, report = fixture()
+        source['items'] = [{'type': 'tracks', 'id': str(n), 'meta': {'itemId': 'old-' + str(n)}} for n in range(1300)]
+        source['playlist']['attributes']['numberOfItems'] = 1300
+        report['total_occurrences'] = 1300
+        report['rows'] = []
+        for pos in range(1217, 1246):
+            item = source['items'][pos-1]
+            report['rows'].append({'status': 'REVIEW', 'position': pos, 'old_id': item['id'], 'item_id': item['meta']['itemId'], 'fingerprint': {'title': 'Spartacus (1968 Bolshoi version) (arr. Y. Grigorovich): Act I: Part ' + str(pos), 'isrc': 'ISRC-' + str(pos), 'duration_seconds': 60, 'artists': ['Choir']}, 'candidates': [{'id': 'new-' + item['id'], 'title': 'Spartacus, Act I: Part ' + str(pos) + ' (arr. Y. Grigorovich) [1968 Bolshoi Version]', 'duration': 'PT1M1S', 'checks': {'same_isrc': True, 'same_title': False, 'same_duration': False, 'artist_overlap': True}}]})
+        previous = {'status': 'passed', 'completed_occurrences': 108, 'final_snapshot': copy.deepcopy(source)}
+        return source, report, previous
+
+    def test_spartacus_replaces_29_and_preserves_other_occurrences(self):
+        source, report, previous = self.spartacus_fixture()
+        client = FakeClient(source)
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / 'spartacus.json'
+            with patch.object(repair, 'validate_candidates'), patch('builtins.print'):
+                repair.execute(client, report, path, None, False, previous, True)
+            result = json.loads(path.read_text())
+            self.assertEqual(result['status'], 'passed')
+            self.assertEqual(result['completed_occurrences'], 29)
+            self.assertEqual(client.source['items'][:1216], source['items'][:1216])
+            self.assertEqual(client.source['items'][1245:], source['items'][1245:])
+            self.assertEqual(len(result['operations']), 1)
+
+    def test_spartacus_rejects_different_movement_or_larger_duration(self):
+        source, report, previous = self.spartacus_fixture()
+        report['rows'][0]['candidates'][0]['title'] = 'Spartacus, Act I: Different movement (arr. Y. Grigorovich) [1968 Bolshoi Version]'
+        report['rows'][1]['candidates'][0]['duration'] = 'PT1M2S'
+        self.assertEqual(len(repair.approved_rows(report, False, True)), 27)
+        with self.assertRaisesRegex(ValueError, 'number'):
+            repair.plan(report, source, False, previous, True)
+
+    def test_latest_journal_uses_latest_success_and_refuses_partial(self):
+        with tempfile.TemporaryDirectory() as directory:
+            paths = [Path(directory) / name for name in ('confirmed.json', 'duration.json', 'spartacus.json')]
+            paths[0].write_text(json.dumps({'status': 'passed', 'finished_at': '2026-10-03T08:00:00Z', 'completed_occurrences': 609}))
+            paths[1].write_text(json.dumps({'status': 'passed', 'finished_at': '2026-10-03T09:00:00Z', 'completed_occurrences': 108}))
+            with patch.object(repair, 'JOURNAL', paths[0]), patch.object(repair, 'DURATION_JOURNAL', paths[1]), patch.object(repair, 'SPARTACUS_JOURNAL', paths[2]):
+                self.assertEqual(repair.latest_successful_journal()['completed_occurrences'], 108)
+                paths[2].write_text(json.dumps({'status': 'stopped'}))
+                with self.assertRaisesRegex(ValueError, 'partial'):
+                    repair.latest_successful_journal()
+
     def test_stale_approval_refused(self):
         source, report = fixture()
         source['playlist']['attributes']['lastModifiedAt'] = 'changed'
