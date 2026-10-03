@@ -1,0 +1,14 @@
+id: ferruccio-busoni-rondo-arlecchinesco-op-46-elegie-no-3-playlist-3210
+work_id: ferruccio-busoni-rondo-arlecchinesco-op-46-elegie-no-3
+performers:
+- name: NDR Sinfonieorchester
+- name: Werner Andreas Albert
+- name: NDR SO
+links:
+  tidal:
+    url: https://tidal.com/track/284123911
+release:
+  album_title: 'Busoni: Orchestral Works'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

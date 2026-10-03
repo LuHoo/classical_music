@@ -1,0 +1,13 @@
+id: maurice-ravel-une-barque-sur-locean-orchestral-version-playlist-2167
+work_id: maurice-ravel-une-barque-sur-locean-orchestral-version
+performers:
+- name: Sir Simon Rattle
+- name: City of Birmingham Symphony Orchestra
+links:
+  tidal:
+    url: https://tidal.com/track/2951955
+release:
+  album_title: The Simon Rattle Album
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

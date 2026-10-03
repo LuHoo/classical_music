@@ -1,0 +1,14 @@
+id: sergei-rachmaninoff-symphony-no-2-playlist-3592
+work_id: sergei-rachmaninoff-symphony-no-2
+performers:
+- name: The Philadelphia Orchestra
+- name: Yannick Nézet-Séguin
+links:
+  tidal:
+    url: https://tidal.com/track/301318774
+release:
+  album_title: 'Rachmaninoff: Symphonies Nos. 2 & 3; Isle of the Dead'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+version_assignment: unspecified

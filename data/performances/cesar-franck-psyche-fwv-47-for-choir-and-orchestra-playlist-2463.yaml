@@ -1,0 +1,16 @@
+id: cesar-franck-psyche-fwv-47-for-choir-and-orchestra-playlist-2463
+work_id: cesar-franck-psyche-fwv-47-for-choir-and-orchestra
+performers:
+- name: RCS Voices
+- name: Royal Scottish National Orchestra
+  artist_id: royal-scottish-national-orchestra
+  role: orchestra
+- name: Jean-Luc Tingaud
+links:
+  tidal:
+    url: https://tidal.com/track/140474046
+release:
+  album_title: 'Franck: Orchestral Works'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

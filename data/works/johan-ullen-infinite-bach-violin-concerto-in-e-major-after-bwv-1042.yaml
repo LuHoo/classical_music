@@ -1,0 +1,9 @@
+id: johan-ullen-infinite-bach-violin-concerto-in-e-major-after-bwv-1042
+work_group_id: johan-ullen-infinite-bach-violin-concerto-in-e-major-after-bwv-1042-group
+composer_id: johan-ullen
+title: 'Infinite Bach: Violin Concerto in E major (after BWV 1042)'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://www.infinitebach.com/about
+catalogue:
+  bwv: '1042'

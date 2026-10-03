@@ -1,0 +1,9 @@
+id: albert-roussel-rapsodie-flamande-op-56
+work_group_id: albert-roussel-rapsodie-flamande-op-56-group
+composer_id: albert-roussel
+title: Rapsodie Flamande, Op. 56
+source:
+  file: docs/roussel.md
+  url: https://en.wikipedia.org/wiki/Albert_Roussel#Works
+catalogue:
+  op: '56'

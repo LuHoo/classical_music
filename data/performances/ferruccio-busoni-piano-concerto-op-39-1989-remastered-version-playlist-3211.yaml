@@ -1,0 +1,14 @@
+id: ferruccio-busoni-piano-concerto-op-39-1989-remastered-version-playlist-3211
+work_id: ferruccio-busoni-piano-concerto-op-39-1989-remastered-version
+performers:
+- name: John Ogdon
+- name: Royal PO
+- name: Daniell Revenaugh
+links:
+  tidal:
+    url: https://tidal.com/track/1345358
+release:
+  album_title: Busoni - Piano Concerto
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

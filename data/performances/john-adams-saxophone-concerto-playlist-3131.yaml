@@ -1,0 +1,15 @@
+id: john-adams-saxophone-concerto-playlist-3131
+work_id: john-adams-saxophone-concerto
+performers:
+- name: St. Louis Symphony
+- name: David Robertson
+- name: Timothy McAllister
+links:
+  tidal:
+    url: https://tidal.com/track/29595953
+release:
+  album_title: City Noir
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+version_assignment: unspecified

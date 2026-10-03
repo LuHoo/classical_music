@@ -1,0 +1,7 @@
+id: john-adams-naive-and-sentimental-music
+work_group_id: john-adams-naive-and-sentimental-music-group
+composer_id: john-adams
+title: Naïve and Sentimental Music
+source:
+  file: docs/adams.md
+  url: https://en.wikipedia.org/wiki/John_Adams_(composer

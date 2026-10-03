@@ -1,0 +1,13 @@
+id: ottorino-respighi-pini-di-roma-p-141-playlist-3440
+work_id: ottorino-respighi-pini-di-roma-p-141
+performers:
+- name: John Wilson
+- name: Sinfonia Of London
+links:
+  tidal:
+    url: https://tidal.com/track/376256490
+release:
+  album_title: 'Respighi: Roman Trilogy'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

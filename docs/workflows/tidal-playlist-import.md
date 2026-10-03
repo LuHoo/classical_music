@@ -27,8 +27,8 @@ python scripts/fetch_tidal_playlist.py \
   --limit 100 --country NL
 ```
 
-The CLI default limit is 100 source items; the allowed range is 1–2000. The
-dedicated draft branch's push probe reads 333 items to analyse positions 34–333
+The CLI default limit is 100 source items; the allowed range is 1–5000. The
+dedicated draft branch's push probe reads 4,001 items to analyse positions 1999–4000
 while verifying the previously processed prefix. This is a
 metadata fetch budget, not the canonical batch size. The reader preserves item
 order and duplicate occurrences, follows Tidal's cursor pagination, delays
@@ -111,3 +111,9 @@ Works may be added without a recommendation while a choice is pending. Missing
 NL usage rules do not reject accepted curation, and this workflow does not test
 playback. Run `python scripts/check_tidal_window_import.py` to verify manifest
 coverage, canonical assignments and public links/excerpts without a live token.
+
+Positions 1999–4000 use a fresh 4,001-item prefix after the playlist-link repairs.
+The older CSV is joined only by exact track ID; its row numbers are not current
+playlist positions. The boundary at position 4001 remains outside this window.
+Run `python scripts/check_tidal_window_import.py --manifest
+reports/playlist-import/best-classical/window-1999-4000.json` for this window.

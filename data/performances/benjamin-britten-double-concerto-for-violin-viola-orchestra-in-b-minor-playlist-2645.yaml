@@ -1,0 +1,19 @@
+id: benjamin-britten-double-concerto-for-violin-viola-orchestra-in-b-minor-playlist-2645
+work_id: benjamin-britten-double-concerto-for-violin-viola-orchestra-in-b-minor
+performers:
+- name: Baiba Skride
+- name: ORF Vienna Radio Symphony Orchestra
+  artist_id: orf-vienna-rso
+  role: orchestra
+- name: Marin Alsop
+- name: Ivan Vukčević
+links:
+  tidal:
+    url: https://tidal.com/track/332426185
+release:
+  album_title: 'Britten: Violin Concerto in D Minor, Op. 15 & Double Concerto for Violin, Viola & Orchestra
+    in B Minor'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+version_assignment: unspecified

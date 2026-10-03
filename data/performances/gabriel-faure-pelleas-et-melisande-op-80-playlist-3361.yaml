@@ -1,0 +1,15 @@
+id: gabriel-faure-pelleas-et-melisande-op-80-playlist-3361
+work_id: gabriel-faure-pelleas-et-melisande-op-80
+performers:
+- name: Frankfurt Radio Symphony
+- name: Paavo Järvi
+  artist_id: paavo-jarvi
+  role: conductor
+links:
+  tidal:
+    url: https://tidal.com/track/362832456
+release:
+  album_title: 'Schoenberg & Fauré: Pelléas et Mélisande'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

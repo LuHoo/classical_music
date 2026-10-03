@@ -1,0 +1,18 @@
+id: rodion-shchedrin-double-concerto-for-piano-cello-and-orchestra-romantic-offering-playlist-2700
+work_id: rodion-shchedrin-double-concerto-for-piano-cello-and-orchestra-romantic-offering
+performers:
+- name: Martha Argerich
+- name: Mischa Maisky
+- name: Verbier Festival Orchestra
+- name: Neeme Järvi
+  artist_id: neeme-jarvi
+  role: conductor
+links:
+  tidal:
+    url: https://tidal.com/track/261326757
+release:
+  album_title: The Verbier Festival Celebrates Rodion Shchedrin At Ninety (Live)
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+version_assignment: unspecified

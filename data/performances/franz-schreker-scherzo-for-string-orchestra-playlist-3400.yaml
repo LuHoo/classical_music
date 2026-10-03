@@ -1,0 +1,13 @@
+id: franz-schreker-scherzo-for-string-orchestra-playlist-3400
+work_id: franz-schreker-scherzo-for-string-orchestra
+performers:
+- name: Festival Strings Lucerne
+- name: Daniel Dodds
+links:
+  tidal:
+    url: https://tidal.com/track/339643970
+release:
+  album_title: 'Eastbound: Schumann, Dvorak, Schreker (Works for String Orchestra)'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

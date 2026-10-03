@@ -1,0 +1,10 @@
+id: erno-dohnanyi-symphony-no-2-in-e-major-op-40
+work_group_id: erno-dohnanyi-symphony-no-2-in-e-major-op-40-group
+composer_id: erno-dohnanyi
+title: Symphony No. 2 in E Major, Op. 40
+source:
+  file: docs/dohnanyi.md
+  url:
+    https://www.gramophone.co.uk/reviews/review?slug=dohn%C3%A1nyi-symphony-in-f-zrinyi-overture-no-2
+catalogue:
+  op: '40'

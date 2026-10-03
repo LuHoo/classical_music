@@ -22,7 +22,7 @@ def audit(manifest_path: Path) -> dict:
     units = manifest["units"]
     positions = [p for unit in units for p in unit["positions"]]
     assert sorted(positions) == list(range(window["start"], window["end"] + 1))
-    assert len(positions) == window["selected_tracks"] == 1666
+    assert len(positions) == window["selected_tracks"] == window["end"] - window["start"] + 1
     yaml = YAML(typ="safe")
     data = {}
     for entity in ("persons", "work-groups", "works", "performances"):
@@ -32,6 +32,11 @@ def audit(manifest_path: Path) -> dict:
             assert record["id"] not in data[entity], record["id"]
             data[entity][record["id"]] = record
     new_ids = {r["id"] for r in manifest["new_records"]}
+    manifest_file = str(manifest_path.resolve().relative_to(ROOT))
+    changed_ids = {r["id"] for r in manifest["changed_existing"]}
+    for performance in data["performances"].values():
+        if performance.get("source", {}).get("file") == manifest_file:
+            assert performance["id"] in new_ids | changed_ids, performance["id"]
     for record in manifest["new_records"] + manifest["changed_existing"]:
         saved = yaml.load((ROOT / record["path"]).read_text())
         assert saved["id"] == record["id"]
@@ -75,15 +80,34 @@ def audit(manifest_path: Path) -> dict:
                 "version_assignment"
             )
             assert "year" not in performance  # Release dates are not session dates.
-            assert work["source"]["url"] and "tidal.com" not in work["source"]["url"]
+            source = work.get("source", {})
+            independent_url = source.get("url", "")
+            independent_file = source.get("file", "")
+            assert (
+                independent_url and "tidal.com" not in independent_url
+            ) or (
+                (independent_file.startswith("docs/") or independent_file.startswith("side materials/"))
+                and (ROOT / independent_file).is_file()
+            ), (unit["positions"], source)
         else:
             assert status == "reuse_existing" and unit["evidence"]
+            if match := unit.get("recording_match"):
+                assert match["selected_positions"]
+                selected = [t for t in unit["tracks"] if t["position"] in match["selected_positions"]]
+                assert len(selected) == len(match["selected_positions"])
+                if match["match"] == "exact_recording_isrc":
+                    assert all(t["isrc"] == match["reference_isrc"] for t in selected)
+                elif match["match"] == "exact_trusted_track":
+                    assert all(t["id"] == match["reference_track_id"] for t in selected)
+                else:
+                    assert match["match"] == "trusted_album_and_compatible_catalogue"
+                    assert all(match["reference_album_id"] in t["album_ids"] for t in selected)
             reused_performances.add(performance["id"])
     assert dict(counts) == manifest["counts"]["track_dispositions"]
     assert len(new_performances) == manifest["counts"]["new_records"]["performances"]
     assert (
         len(reused_performances)
-        == manifest["counts"]["unit_dispositions"]["reuse_existing"]
+        == manifest["counts"].get("existing_performances_unique", manifest["counts"]["unit_dispositions"]["reuse_existing"])
     )
     assert manifest["next_boundary"]["position"] == window["end"] + 1
     return {

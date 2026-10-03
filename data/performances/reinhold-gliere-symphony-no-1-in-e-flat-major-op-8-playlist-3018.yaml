@@ -1,0 +1,16 @@
+id: reinhold-gliere-symphony-no-1-in-e-flat-major-op-8-playlist-3018
+work_id: reinhold-gliere-symphony-no-1-in-e-flat-major-op-8
+performers:
+- name: Sir Edward Downes
+- name: BBC Philharmonic
+  artist_id: bbc-po
+  role: orchestra
+links:
+  tidal:
+    url: https://tidal.com/track/376386033
+release:
+  album_title: 'Glière: Symphony No. 1 & The Red Poppy'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+version_assignment: unspecified

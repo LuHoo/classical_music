@@ -1,0 +1,9 @@
+id: george-frideric-handel-dixit-dominus-hwv-232
+work_group_id: george-frideric-handel-dixit-dominus-hwv-232-group
+composer_id: george-frideric-handel
+title: Dixit Dominus, HWV 232
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://catalogue.bnf.fr/rechercher.do?index=TIT3&numNotice=13913661
+catalogue:
+  hwv: '232'

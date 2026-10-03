@@ -1,0 +1,9 @@
+id: ferruccio-busoni-indianische-fantasie-op-44-bv-264
+work_group_id: ferruccio-busoni-indianische-fantasie-op-44-bv-264-group
+composer_id: ferruccio-busoni
+title: Indianische Fantasie, Op. 44, BV 264
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://www.chandos.net/products/catalogue/CHAN%2010302
+catalogue:
+  op: '44'

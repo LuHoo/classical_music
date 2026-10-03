@@ -1,0 +1,15 @@
+id: albert-roussel-piano-concerto-op-36-playlist-2103
+work_id: albert-roussel-piano-concerto-op-36
+performers:
+- name: Danielle Laval
+- name: Jean-Pierre Jacquillat
+- name: Orchestre de Paris
+links:
+  tidal:
+    url: https://tidal.com/track/3277673
+release:
+  album_title: 'Albert Roussel: Symphonies, Piano Concerto, Bacchus et Ariane'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+version_assignment: unspecified

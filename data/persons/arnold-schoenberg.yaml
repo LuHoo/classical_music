@@ -1,0 +1,7 @@
+id: arnold-schoenberg
+name: Arnold Schoenberg
+roles:
+- composer
+source:
+  file: docs/schoenberg.md
+  url: https://en.wikipedia.org/wiki/List_of_compositions_by_Arnold_Schoenberg

@@ -1,0 +1,7 @@
+id: max-richter-infra-5
+work_group_id: max-richter-infra-5-group
+composer_id: max-richter
+title: Infra 5
+source:
+  file: docs/richter.md
+  url: https://en.wikipedia.org/wiki/Max_Richter

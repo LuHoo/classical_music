@@ -1,0 +1,8 @@
+id: samuel-barber-piano-concerto-op-38
+work_group_id: samuel-barber-piano-concerto-op-38-group
+composer_id: samuel-barber
+title: Piano Concerto, Op. 38
+source:
+  file: docs/barber.md
+catalogue:
+  op: '38'

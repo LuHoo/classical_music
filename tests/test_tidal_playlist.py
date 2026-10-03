@@ -188,3 +188,18 @@ def test_large_window_preserves_repeated_items_and_boundary_context():
     assert [x["resource"]["id"] for x in selected] == ids[332:1998]
     assert result["next_item_position"] == 2001
     assert result["next_page"] is None
+
+
+def test_repaired_playlist_window_keeps_4001_boundary_and_occurrences():
+    ids = [str(n % 53) for n in range(4002)]
+    client = Client(metadata(), page(ids[:2000], "?page[cursor]=next"),
+                    page(ids[2000:]), metadata())
+    result = snapshot(URL, limit=4001, client=client)
+    selected = [x for x in result["items"] if 1999 <= x["position"] <= 4000]
+    assert len(selected) == 2002
+    assert [x["resource"]["id"] for x in selected] == ids[1998:4000]
+    assert result["items"][-1]["position"] == 4001
+    assert result["items"][-1]["resource"]["id"] == ids[4000]
+    assert result["next_item_position"] == 4002
+    assert result["next_page"] is None
+    assert result["source_complete"] is False
