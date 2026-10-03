@@ -30,7 +30,7 @@ cd ../classical_music-tidal-pilot
 python3 scripts/tidal_playlist_login.py --client-id YOUR_PUBLIC_CLIENT_ID
 ```
 
-Python 3.11 or newer is required for these standard-library scripts. The Client ID is public; do not paste a client secret or token into a chat. If the app requires confidential-client authentication during token exchange, `TIDAL_CLIENT_SECRET` can be supplied securely in your local environment; it is never printed.
+Python 3.9 or newer is supported by these standalone standard-library scripts. The repository package's separate Python >=3.13 requirement does not apply to running this pilot directly. The Client ID is public; do not paste a client secret or token into a chat. If the app requires confidential-client authentication during token exchange, `TIDAL_CLIENT_SECRET` can be supplied securely in your local environment; it is never printed.
 
 3. Complete the TIDAL login and consent in the browser on that computer. The loopback callback validates OAuth state; PKCE binds the code exchange. The token stays in the process's memory. It is not written to disk, printed, or uploaded. The login script then runs the disposable write pilot automatically.
 
