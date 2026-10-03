@@ -1,0 +1,47 @@
+name: Full Tidal playlist scan
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [issue-64-tidal-link-maintenance]
+    paths:
+      - .github/workflows/tidal-playlist-scan.yml
+      - scripts/scan_tidal_playlist.py
+
+permissions:
+  contents: read
+
+concurrency:
+  group: full-tidal-playlist-scan
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+      - name: Full read-only availability and ISRC scan
+        env:
+          TIDAL_CLIENT_ID: ${{ secrets.TIDAL_CLIENT_ID }}
+          TIDAL_CLIENT_SECRET: ${{ secrets.TIDAL_CLIENT_SECRET }}
+        run: python scripts/scan_tidal_playlist.py
+      - name: Add summary
+        if: always()
+        run: |
+          if [ -f reports/tidal-maintenance/full-playlist-scan.md ]; then
+            head -n 25 reports/tidal-maintenance/full-playlist-scan.md >> "$GITHUB_STEP_SUMMARY"
+          fi
+      - uses: actions/upload-artifact@v7
+        if: always()
+        with:
+          name: full-tidal-playlist-scan-${{ github.run_id }}
+          path: |
+            reports/tidal-maintenance/full-playlist-scan.json
+            reports/tidal-maintenance/full-playlist-scan.md
+          retention-days: 14
