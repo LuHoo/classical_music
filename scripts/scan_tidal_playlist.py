@@ -7,6 +7,7 @@ import re
 import sys
 import unicodedata
 from collections import Counter
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlencode, urlsplit, urlunsplit, parse_qsl, urljoin, quote
@@ -94,6 +95,8 @@ def artists(resource, resources):
 
 def fingerprint(resource, archived, resources):
     attrs = (resource or {}).get('attributes',{})
+    if not any(attrs.get(k) for k in ['isrc','title','duration']):
+        resource = None
     result = {'isrc':attrs.get('isrc'), 'title':attrs.get('title'), 'duration_seconds':seconds(attrs.get('duration')), 'artists':artists(resource or {},resources), 'source':'live_catalogue'}
     if archived:
         for target, source in [('isrc','isrc'),('title','title')]:
@@ -132,23 +135,35 @@ def assess(old, candidates, resources):
 def scan(client, snapshot, archived):
     items=snapshot['items']
     ids=list(dict.fromkeys(i['id'] for i in items if i['type']=='tracks'))
-    pending=[rid for rid in ids if ('tracks',rid) not in client.resources]
+    pending=[rid for rid in ids if not isinstance(client.resources.get(('tracks',rid),{}).get('attributes',{}).get('availability'),list)]
     errors={}
+    bulk_errors=[]
     for start in range(0,len(pending),20):
         batch=pending[start:start+20]
         try:
             client.tracks('id',batch)
         except ValueError as exc:
-            for rid in batch: errors[rid]=str(exc)
-    missing=[rid for rid in ids if ('tracks',rid) not in client.resources and rid not in errors]
+            bulk_errors.append({'ids':batch,'error':str(exc)})
+            # Individual checks below can resolve a failed bulk lookup.
+    missing=[rid for rid in ids if not isinstance(client.resources.get(('tracks',rid),{}).get('attributes',{}).get('availability'),list) and rid not in errors]
     absent=set()
-    for n,rid in enumerate(missing,1):
+    def check_missing(rid):
+        # Two bounded read-only workers; each uses its own HTTP opener and cache.
+        local=ScannerClient(client.token) if isinstance(client,ScannerClient) else client
         try:
-            client.request('/tracks/'+quote(rid,safe='')+'?'+urlencode({'countryCode':'NL','include':'artists,albums'}))
+            local.request('/tracks/'+quote(rid,safe='')+'?'+urlencode({'countryCode':'NL','include':'artists,albums'}))
+            return rid,local.resources,None
         except ValueError as exc:
-            if str(exc)=='API GET failed (HTTP 404)': absent.add(rid)
-            else: errors[rid]=str(exc)
-        if n%50==0:print(json.dumps({'missing_ids_checked':n,'total_missing_ids':len(missing)}),flush=True)
+            return rid,{},str(exc)
+    with ThreadPoolExecutor(max_workers=2) as pool:
+        futures=[pool.submit(check_missing,rid) for rid in missing]
+        for n,future in enumerate(as_completed(futures),1):
+            rid,resources,error=future.result()
+            client.resources.update(resources)
+            if error=='API GET failed (HTTP 404)': absent.add(rid)
+            elif error: errors[rid]=error
+            if n%100==0:
+                print(json.dumps({'missing_ids_checked':n,'total_missing_ids':len(missing)}),flush=True)
     unavailable={}
     uncertain={}
     available=set()
@@ -202,7 +217,7 @@ def scan(client, snapshot, archived):
     return {'total_occurrences':len(items),'available_occurrences':sum(i['type']=='tracks' and i['id'] in available for i in items),
             'unavailable_occurrences':sum(i['type']=='tracks' and i['id'] in unavailable for i in items),
             'uncertain_occurrences':sum(i['type']=='tracks' and i['id'] in uncertain for i in items),
-            'status_counts':dict(Counter(r['status'] for r in rows)), 'rows':rows}
+            'status_counts':dict(Counter(r['status'] for r in rows)), 'bulk_lookup_errors':bulk_errors, 'rows':rows}
 
 
 def render(report):
@@ -227,6 +242,12 @@ def main():
     args.output.parent.mkdir(parents=True,exist_ok=True)
     try:
         client=ScannerClient(access_token())
+        known_ids={'283191456','283191455'}
+        if {r['id'] for r in client.tracks('id',sorted(known_ids))} != known_ids:
+            raise ValueError('Bulk track-ID preflight did not return both known resources')
+        if not known_ids.issubset({r['id'] for r in client.tracks('isrc',['GBYDS2000298','GBYDS2000299'])}):
+            raise ValueError('Bulk ISRC preflight did not return both known resources')
+        print('Bulk ID and ISRC preflight passed.',flush=True)
         snapshot=client.snapshot(PLAYLIST)
         report['playlist']=snapshot['playlist']
         expected=snapshot['playlist'].get('attributes',{}).get('numberOfItems')

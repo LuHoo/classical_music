@@ -60,6 +60,18 @@ class Tests(unittest.TestCase):
         self.assertEqual(result['status_counts'],{'CONFIRMED':2,'UNCERTAIN':1})
         self.assertEqual([r['item_id'] for r in result['rows'] if r['status']=='CONFIRMED'],['1','3'])
 
+    def test_included_placeholder_still_gets_individual_404_check(self):
+        class Fake:
+            resources={('tracks','dead'):{'id':'dead','type':'tracks','attributes':{}}}
+            def tracks(self,*args):return []
+            def request(self,path):raise ValueError('API GET failed (HTTP 404)')
+        archived={'dead':{'title':'Geysir','isrc':'GBYDS2000298','duration':'475s','artist':'Mark Simpson'}}
+        result=scan.scan(Fake(),{'items':[{'id':'dead','type':'tracks','meta':{'itemId':'one'}}]},archived)
+        self.assertEqual(result['unavailable_occurrences'],1)
+        self.assertEqual(result['uncertain_occurrences'],0)
+        self.assertEqual(result['rows'][0]['availability_reason'],'HTTP_404_NL')
+        self.assertEqual(result['rows'][0]['fingerprint']['source'],'csv_export')
+
     def test_no_write_interface(self):
         client=scan.ScannerClient('fake')
         with self.assertRaisesRegex(ValueError,'cannot make write'):
