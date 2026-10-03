@@ -65,7 +65,7 @@ class Client:
         path = '/v2' + base + '/relationships/items'
         next_url = API + base + '/relationships/items?' + urlencode({'countryCode': 'NL', 'sort': 'itemIndex'})
         items, seen = [], set()
-        for _ in range(200):
+        for page_number in range(1000):
             if not next_url:
                 break
             if next_url in seen:
@@ -75,6 +75,8 @@ class Client:
             if not isinstance(page.get('data'), list):
                 raise ValueError('Invalid playlist page')
             items.extend(page['data'])
+            if (page_number + 1) % 100 == 0:
+                print(json.dumps({'pages_read': page_number + 1, 'items_read': len(items)}), flush=True)
             if len(items) > 10000:
                 raise ValueError('Playlist exceeded 10000-item pilot limit')
             following = page.get('links', {}).get('next')
