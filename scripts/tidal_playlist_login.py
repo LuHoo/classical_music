@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Local OAuth+PKCE login; token stays in memory; run only the disposable write pilot."""
+"""Local OAuth+PKCE login; token stays in memory; run the disposable pilot or explicitly approved repairs."""
 import argparse
 import base64
 import hashlib
@@ -23,6 +23,7 @@ REDIRECT_URI = 'http://127.0.0.1:8765/callback'
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--client-id', default=os.environ.get('TIDAL_CLIENT_ID', ''))
+    parser.add_argument('--repair-confirmed', action='store_true', help='Apply the 609 approved occurrences to Best Classical')
     args = parser.parse_args()
     if not args.client_id:
         parser.error('Supply the public TIDAL Client ID using --client-id or TIDAL_CLIENT_ID')
@@ -57,7 +58,10 @@ def main():
             'scope':'playlists.read playlists.write', 'state':state,
             'code_challenge':challenge, 'code_challenge_method':'S256'})
         print('Opening TIDAL login. Required registered redirect URI: ' + REDIRECT_URI)
-        print('The test uses a temporary unlisted playlist; Best Classical will not be modified.')
+        if args.repair_confirmed:
+            print('Applying the 609 approved replacements to Best Classical after fresh validation.')
+        else:
+            print('The test uses a temporary unlisted playlist; Best Classical will not be modified.')
         if not webbrowser.open(url):
             print('Open this login link on this computer: ' + url)
         deadline = time.monotonic()+600
@@ -91,6 +95,9 @@ def main():
     prior = os.environ.get('TIDAL_USER_ACCESS_TOKEN')
     os.environ['TIDAL_USER_ACCESS_TOKEN']=token
     try:
+        if args.repair_confirmed:
+            from repair_tidal_playlist import main as run_repair
+            return run_repair([])
         return run_pilot(['--test-write'])
     finally:
         if prior is None:
