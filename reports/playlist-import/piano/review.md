@@ -53,6 +53,7 @@ boundary. Uncertainty is not silently converted into a new recommendation.
 - Piano inventory/publication audit passed: all references, selected listening
   anchors, public links and excerpt descriptions; pending candidates remain
   outside canonical Performance data.
+- Local Jekyll website build passed (3,488 Works, 2,901 Performances).
 - All **15 focused Piano and Chamber regression tests passed**. They include
   missing/changed occurrences, raw metadata changes, wrong-Work reuse, curator
   leakage, the embellished Nocturne and non-adjacent movement anchors.
