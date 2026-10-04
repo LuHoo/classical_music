@@ -36,3 +36,9 @@ push to `main`.
 Generated collection pages have explicit directory permalinks. The post-build
 link check verifies that collection navigation points to HTML files actually
 produced by Jekyll, including on the repository's configured base URL.
+
+## Tidal link maintenance
+
+Run `python scripts/check_tidal_links.py` for an operational JSON/Markdown report.
+Verified URL repairs require explicit `--apply`; musical recommendations never
+change. See [the local workflow and recovery rules](docs/workflows/tidal-link-maintenance.md).

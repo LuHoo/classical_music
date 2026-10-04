@@ -50,4 +50,7 @@ generated/migration/*.json
 # Adapter output - generated files
 _data_generated/
 /publication/
+
+# Operational Tidal checks and identity fingerprints (not canonical knowledge).
+/reports/tidal-maintenance/
 /reports/tidal-playlist/
