@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "policy": "Keep original and practical arrangement in distinct, explicit Performance profiles; preserve excerpt coverage.",
-  "implementation_pr": null,
+  "implementation_pr": "https://github.com/LuHoo/classical_music/pull/297",
   "sources": {
     "piano": {
       "snapshot_url": "https://github.com/LuHoo/classical_music/blob/import/piano-playlist/reports/playlist-import/piano/snapshot-2026-10-04.json",

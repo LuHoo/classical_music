@@ -1,0 +1,13 @@
+id: domenico-scarlatti-sonata-in-a-major-k-208-piano-p558
+work_id: domenico-scarlatti-sonata-in-a-major-k-208
+performers:
+  - name: Wolfram Schmitt-Leonardy
+    role: piano
+links:
+  tidal:
+    url: https://tidal.com/track/228849373
+release:
+  album_title: 'Scarlatti: Sonatas'
+source:
+  file: reports/playlist-import/piano/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/82853f8e-4fd6-42b6-b0a7-230da5ee86a1

@@ -1,0 +1,13 @@
+id: franz-schubert-4-impromptus-op-90-d-899-piano-p301
+work_id: franz-schubert-4-impromptus-op-90-d-899
+performers:
+  - name: Alfred Brendel
+    role: piano
+links:
+  tidal:
+    url: https://tidal.com/track/4402843
+release:
+  album_title: 'Schubert: Impromptus D899; Impromptus D935'
+source:
+  file: reports/playlist-import/piano/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/82853f8e-4fd6-42b6-b0a7-230da5ee86a1

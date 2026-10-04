@@ -47280,7 +47280,8 @@
             "tidal_url": "https://tidal.com/track/242732036"
           }
         ],
-        "implementation_report": "reports/curator-decisions/original-arrangement-2026-10-04.json"
+        "implementation_report": "reports/curator-decisions/original-arrangement-2026-10-04.json",
+        "implementation_pr": "https://github.com/LuHoo/classical_music/pull/297"
       }
     },
     {
@@ -47312,7 +47313,8 @@
             "tidal_url": "https://tidal.com/track/328375839"
           }
         ],
-        "implementation_report": "reports/curator-decisions/original-arrangement-2026-10-04.json"
+        "implementation_report": "reports/curator-decisions/original-arrangement-2026-10-04.json",
+        "implementation_pr": "https://github.com/LuHoo/classical_music/pull/297"
       }
     },
     {
@@ -47345,7 +47347,8 @@
             "tidal_url": "http://www.tidal.com/track/203860879"
           }
         ],
-        "implementation_report": "reports/curator-decisions/original-arrangement-2026-10-04.json"
+        "implementation_report": "reports/curator-decisions/original-arrangement-2026-10-04.json",
+        "implementation_pr": "https://github.com/LuHoo/classical_music/pull/297"
       }
     },
     {
@@ -47378,7 +47381,8 @@
             "tidal_url": "http://www.tidal.com/track/203860888"
           }
         ],
-        "implementation_report": "reports/curator-decisions/original-arrangement-2026-10-04.json"
+        "implementation_report": "reports/curator-decisions/original-arrangement-2026-10-04.json",
+        "implementation_pr": "https://github.com/LuHoo/classical_music/pull/297"
       }
     },
     {
@@ -47411,7 +47415,8 @@
             "tidal_url": "http://www.tidal.com/track/203860900"
           }
         ],
-        "implementation_report": "reports/curator-decisions/original-arrangement-2026-10-04.json"
+        "implementation_report": "reports/curator-decisions/original-arrangement-2026-10-04.json",
+        "implementation_pr": "https://github.com/LuHoo/classical_music/pull/297"
       }
     },
     {
@@ -47443,7 +47448,8 @@
             "tidal_url": "http://www.tidal.com/track/210117464"
           }
         ],
-        "implementation_report": "reports/curator-decisions/original-arrangement-2026-10-04.json"
+        "implementation_report": "reports/curator-decisions/original-arrangement-2026-10-04.json",
+        "implementation_pr": "https://github.com/LuHoo/classical_music/pull/297"
       }
     },
     {
@@ -47475,7 +47481,8 @@
             "tidal_url": "https://tidal.com/browse/track/47622466?u"
           }
         ],
-        "implementation_report": "reports/curator-decisions/original-arrangement-2026-10-04.json"
+        "implementation_report": "reports/curator-decisions/original-arrangement-2026-10-04.json",
+        "implementation_pr": "https://github.com/LuHoo/classical_music/pull/297"
       }
     },
     {
@@ -47507,7 +47514,8 @@
             "tidal_url": "https://tidal.com/browse/track/305308959?u"
           }
         ],
-        "implementation_report": "reports/curator-decisions/original-arrangement-2026-10-04.json"
+        "implementation_report": "reports/curator-decisions/original-arrangement-2026-10-04.json",
+        "implementation_pr": "https://github.com/LuHoo/classical_music/pull/297"
       }
     }
   ]

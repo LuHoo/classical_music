@@ -1,0 +1,15 @@
+id:
+  franz-liszt-trauervorspiel-und-trauermarsch-s206-r83-84-funeral-prelude-and-funeral-march-trauervorspiel-und-trauermarsch-funeral-prelude-and-funeral-march-s206-r83-84-piano-p429
+work_id:
+  franz-liszt-trauervorspiel-und-trauermarsch-s206-r83-84-funeral-prelude-and-funeral-march-trauervorspiel-und-trauermarsch-funeral-prelude-and-funeral-march-s206-r83-84
+performers:
+  - name: Michael Korstick
+    role: piano
+links:
+  tidal:
+    url: https://tidal.com/track/12673990
+release:
+  album_title: 'Liszt: Années de Pèlerinage II  - Late Piano Works'
+source:
+  file: reports/playlist-import/piano/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/82853f8e-4fd6-42b6-b0a7-230da5ee86a1

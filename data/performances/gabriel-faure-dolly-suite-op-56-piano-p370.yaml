@@ -1,0 +1,15 @@
+id: gabriel-faure-dolly-suite-op-56-piano-p370
+work_id: gabriel-faure-dolly-suite-op-56
+performers:
+  - name: Marc-André Hamelin
+    role: piano
+  - name: Cathy Fuller
+    role: piano
+links:
+  tidal:
+    url: https://tidal.com/track/312767736
+release:
+  album_title: 'Fauré: Nocturnes & Barcarolles'
+source:
+  file: reports/playlist-import/piano/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/82853f8e-4fd6-42b6-b0a7-230da5ee86a1

@@ -150,3 +150,21 @@ Run `python scripts/check_chamber_import.py` to check coverage, recommendation
 gates and public links/excerpts without live Tidal access. Subsequent curator
 changes must update the manifest and link the explicit decision before changing
 canonical recommendations.
+
+## Piano full-playlist intake
+
+The complete Piano snapshot of 4 October 2026 contains 2,119 occurrences. Its
+reviewed assignments and Work-level choices are in
+`../../reports/playlist-import/piano/README.md`. The 43 additions beyond the
+older archive are included with label evidence. The manifest preserves both
+release occurrences of the same Debussy Arabesque and keeps Hough's ornamented
+Chopin take in the same Work comparison as the ordinary take.
+
+Run `python scripts/check_piano_import.py` to verify all occurrences, raw source
+metadata, curator gates and generated listening links/excerpts. Selected opening
+tracks can occur later in a disordered playlist; `listening_track_id` identifies
+that chosen source track without changing occurrence order. The import corrects
+three legacy Brahms opus-set titles while preserving recommendation identities.
+Mozart K. 397 has a dedicated combined version-research/curator issue; the other
+source gaps are kept separate from listening decisions. No pending alternative
+becomes a canonical recommendation without an explicit subsequent decision.
