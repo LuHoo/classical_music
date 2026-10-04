@@ -137,3 +137,16 @@ Run `python scripts/check_tidal_window_import.py --manifest
 reports/playlist-import/best-classical/window-4001-5518.json` to audit this window.
 The full PR has added 1039 Performances; it remains a draft and does not write
 to TIDAL or deploy the public site.
+
+
+## Chamber full-playlist intake
+
+The curator authorised all 1,368 occurrences of Chamber as one import. Its
+complete 4 October 2026 snapshot and reviewed work/recording assignments are in
+`../../reports/playlist-import/chamber/README.md`. New alternatives are withheld
+behind one curator issue per Work; bibliographic/version gaps have a separate
+research issue. A C-code decision covers all movements of its interpretation.
+Run `python scripts/check_chamber_import.py` to check coverage, recommendation
+gates and public links/excerpts without live Tidal access. Subsequent curator
+changes must update the manifest and link the explicit decision before changing
+canonical recommendations.

@@ -1,0 +1,16 @@
+id: erno-dohnanyi-quintet-in-c-minor-for-piano-2-violins-viola-cello-op-1-chamber-c062
+work_id: erno-dohnanyi-quintet-in-c-minor-for-piano-2-violins-viola-cello-op-1
+performers:
+  - name: András Schiff
+  - name: Gábor Takács-Nagy
+  - name: András Fejér
+  - name: Károly Schranz
+  - name: Gabor Ormai
+links:
+  tidal:
+    url: https://tidal.com/track/5138646
+release:
+  album_title: 'Dohnányi: Piano Quintet/Piano Sextet'
+source:
+  file: reports/playlist-import/chamber/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/a2327106-07fd-4433-8bd3-d8a5c251c69a

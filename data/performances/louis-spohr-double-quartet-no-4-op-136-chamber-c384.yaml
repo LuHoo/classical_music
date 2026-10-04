@@ -1,0 +1,13 @@
+id: louis-spohr-double-quartet-no-4-op-136-chamber-c384
+work_id: louis-spohr-double-quartet-no-4-op-136
+performers:
+  - name: WDR Sinfonieorchester Chamber Players
+    role: ensemble
+links:
+  tidal:
+    url: https://tidal.com/track/461921646
+release:
+  album_title: 'The Romantic Room: Chamber Works by Spohr'
+source:
+  file: reports/playlist-import/chamber/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/a2327106-07fd-4433-8bd3-d8a5c251c69a

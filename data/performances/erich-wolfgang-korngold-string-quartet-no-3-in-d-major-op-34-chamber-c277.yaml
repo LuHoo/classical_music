@@ -1,0 +1,12 @@
+id: erich-wolfgang-korngold-string-quartet-no-3-in-d-major-op-34-chamber-c277
+work_id: erich-wolfgang-korngold-string-quartet-no-3-in-d-major-op-34
+performers:
+  - name: Tippett Quartet
+links:
+  tidal:
+    url: https://tidal.com/track/279537714
+release:
+  album_title: 'Korngold: String Quartets Nos. 1-3'
+source:
+  file: reports/playlist-import/chamber/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/a2327106-07fd-4433-8bd3-d8a5c251c69a

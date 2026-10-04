@@ -1,0 +1,12 @@
+id: alfred-schnittke-string-quartet-no-3-chamber-c023
+work_id: alfred-schnittke-string-quartet-no-3
+performers:
+  - name: Danish String Quartet
+links:
+  tidal:
+    url: https://tidal.com/track/117215664
+release:
+  album_title: 'Prism II: Beethoven, Schnittke, Bach'
+source:
+  file: reports/playlist-import/chamber/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/a2327106-07fd-4433-8bd3-d8a5c251c69a

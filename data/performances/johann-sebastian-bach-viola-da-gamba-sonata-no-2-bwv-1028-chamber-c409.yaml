@@ -1,0 +1,15 @@
+id: johann-sebastian-bach-viola-da-gamba-sonata-no-2-bwv-1028-chamber-c409
+work_id: johann-sebastian-bach-viola-da-gamba-sonata-no-2-bwv-1028
+performers:
+  - name: Martin Fröst
+  - name: Anastasia Kobekina
+  - name: Sébastien Dubé
+links:
+  tidal:
+    url: https://tidal.com/track/448367333
+release:
+  album_title: B.A.C.H.
+source:
+  file: reports/playlist-import/chamber/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/a2327106-07fd-4433-8bd3-d8a5c251c69a
+excerpt: First movement only (clarinet and strings)
