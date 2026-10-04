@@ -1,0 +1,14 @@
+id: erik-satie-nouvelles-enfantines-piano-p001
+work_id: erik-satie-nouvelles-enfantines
+performers:
+  - name: Alessandro Simonetto
+    role: piano
+links:
+  tidal:
+    url: https://tidal.com/track/267153765
+release:
+  album_title: 'Satie: Piano Works (1913-20), Vol. 2 – Children’s Pieces, Sport et divertissements, Nocturnes, Late
+    Pieces'
+source:
+  file: reports/playlist-import/piano/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/82853f8e-4fd6-42b6-b0a7-230da5ee86a1

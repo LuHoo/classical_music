@@ -1,0 +1,15 @@
+id: francis-poulenc-sonata-for-2-pianos-fp-156-piano-p385
+work_id: francis-poulenc-sonata-for-2-pianos-fp-156
+performers:
+  - name: Bracha Eden
+    role: piano
+  - name: Alexander Tamir
+    role: piano
+links:
+  tidal:
+    url: https://tidal.com/track/4471750
+release:
+  album_title: 'Poulenc: Piano Concerto/Organ Concerto/Gloria etc.'
+source:
+  file: reports/playlist-import/piano/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/82853f8e-4fd6-42b6-b0a7-230da5ee86a1

@@ -1,0 +1,13 @@
+id: franz-schubert-moments-musicaux-op-94-d-780-piano-p102
+work_id: franz-schubert-moments-musicaux-op-94-d-780
+performers:
+  - name: Alexandre Tharaud
+    role: piano
+links:
+  tidal:
+    url: https://tidal.com/track/194384285
+release:
+  album_title: 'Schubert: 4 Impromptus, D. 899 & 6 Moments musicaux'
+source:
+  file: reports/playlist-import/piano/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/82853f8e-4fd6-42b6-b0a7-230da5ee86a1
