@@ -65,3 +65,21 @@ def test_reuse_must_match_the_work_not_just_a_track(inventory):
     data['performances'][unit['performance_id']]['work_id'] = 'another-work'
     with pytest.raises(AssertionError, match='wrong Work'):
         audit.check_inventory(manifest, data)
+
+
+def test_distinct_profiles_do_not_allow_competing_recommendations(inventory):
+    manifest, data = deepcopy(inventory)
+    choice = manifest['resolved_choices'][0]
+    first, second = choice['decision']['performances']
+    data['performances'][second['performance_id']]['profile'] = first['profile']
+    with pytest.raises(AssertionError, match='Competing recommendation'):
+        audit.check_inventory(manifest, data)
+
+
+def test_resolved_profile_choice_requires_traceable_curator_decision(inventory):
+    manifest, data = deepcopy(inventory)
+    choice = manifest['resolved_choices'][0]
+    unit = next(u for u in manifest['units'] if u['unit_id'] in choice['units'])
+    unit['curator_decision'] = None
+    with pytest.raises(AssertionError, match='Missing curator decision'):
+        audit.check_inventory(manifest, data)

@@ -1,0 +1,16 @@
+id: cesar-franck-violin-sonata-in-a-major-fwv-8-chamber-c098
+work_id: cesar-franck-violin-sonata-in-a-major-fwv-8
+performers:
+  - name: Lisa Batiashvili
+  - name: Giorgi Gigashvili
+profile: original violin and piano
+links:
+  tidal:
+    url: https://tidal.com/track/242732036
+release:
+  album_title: Secret Love Letters
+source:
+  file: reports/playlist-import/chamber/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/a2327106-07fd-4433-8bd3-d8a5c251c69a
+  unit_id: C098
+  curator_decision: https://github.com/LuHoo/classical_music/issues/244#issuecomment-5984117672

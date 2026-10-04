@@ -1,0 +1,1855 @@
+{
+  "schema_version": 1,
+  "policy": "Keep original and practical arrangement in distinct, explicit Performance profiles; preserve excerpt coverage.",
+  "implementation_pr": null,
+  "sources": {
+    "piano": {
+      "snapshot_url": "https://github.com/LuHoo/classical_music/blob/import/piano-playlist/reports/playlist-import/piano/snapshot-2026-10-04.json",
+      "source": {
+        "url": "https://tidal.com/playlist/82853f8e-4fd6-42b6-b0a7-230da5ee86a1",
+        "playlist_id": "82853f8e-4fd6-42b6-b0a7-230da5ee86a1",
+        "name": "Piano",
+        "fetched_at": "2026-10-04T13:14:51.676823+00:00",
+        "country_code": "NL",
+        "track_count": 2119,
+        "workflow_run": "https://github.com/LuHoo/classical_music/actions/runs/37204697629",
+        "raw_snapshot_sha256": "4e89fc80a886d8470a1f1b4e5bf7e458dd9a0f561e7e87047d32b719ca0c3f91",
+        "ordered_occurrences_sha256": "08e563d860f87e39895a84b9d6f2de2847f00490a7eb30411b21fac1ebb4b692"
+      }
+    },
+    "chamber": {
+      "snapshot_file": "reports/playlist-import/chamber/snapshot-2026-10-04.json",
+      "source": {
+        "url": "https://tidal.com/playlist/a2327106-07fd-4433-8bd3-d8a5c251c69a",
+        "playlist_id": "a2327106-07fd-4433-8bd3-d8a5c251c69a",
+        "name": "Chamber",
+        "fetched_at": "2026-10-04T12:15:11.257037+00:00",
+        "country_code": "NL",
+        "track_count": 1368,
+        "workflow_run": "https://github.com/LuHoo/classical_music/actions/runs/37201308716",
+        "raw_snapshot_sha256": "cc02e4fa011fd13df2e95e2e7c04ecd19effc2f4860cdcce718bf5a7caabd8fc",
+        "ordered_occurrences_sha256": "22f394a240a6707190e31e8a0093c29670180bb17062bdc3ef5dd3b1b425b41a"
+      }
+    }
+  },
+  "decisions": [
+    {
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/244",
+      "decision_comment": "https://github.com/LuHoo/classical_music/issues/244#issuecomment-5984117672",
+      "work_id": "cesar-franck-violin-sonata-in-a-major-fwv-8",
+      "source_name": "chamber",
+      "performances": [
+        {
+          "performance_id": "cesar-franck-violin-sonata-in-a-major-fwv-8-chamber-c069",
+          "profile": "cello and piano arrangement (Delsart)",
+          "origin": "new",
+          "unit_id": "C069",
+          "tidal_url": "https://tidal.com/track/327003704"
+        },
+        {
+          "performance_id": "cesar-franck-violin-sonata-in-a-major-fwv-8-chamber-c098",
+          "profile": "original violin and piano",
+          "origin": "new",
+          "unit_id": "C098",
+          "tidal_url": "https://tidal.com/track/242732036"
+        }
+      ],
+      "source_units": [
+        {
+          "unit_id": "C069",
+          "composer": "César Franck",
+          "composer_id": "cesar-franck",
+          "title": "Violin Sonata in A Major, FWV 8",
+          "positions": [
+            227,
+            228,
+            229,
+            230
+          ],
+          "disposition": "import_new",
+          "work_id": "cesar-franck-violin-sonata-in-a-major-fwv-8",
+          "performers": [
+            {
+              "name": "Bruno Philippe"
+            },
+            {
+              "name": "Tanguy de Williencourt"
+            }
+          ],
+          "evidence": [
+            {
+              "file": "side materials/Music collection/Chamber Tidal.xlsx",
+              "locator": "Chamber sheet; join by exact track ID or unique ISRC, never by live position."
+            }
+          ],
+          "reason": "Curator accepted both original and arrangement in distinct profiles.",
+          "review_classification": "curator_accepted",
+          "curator_issue": "https://github.com/LuHoo/classical_music/issues/244",
+          "tracks": [
+            {
+              "position": 227,
+              "id": "327003704",
+              "item_id": "f441ba69-ce92-4e3e-9388-256b47f1dab2",
+              "title": "Violin Sonata in A Major, FWV 8 (Arr. for Cello and Piano by Jules Delsart): I. Allegretto ben moderato",
+              "isrc": "FR7JM2246020",
+              "duration": "PT6M21S",
+              "artists": [
+                "Bruno Philippe",
+                "Tanguy de Williencourt"
+              ],
+              "album_titles": [
+                "Saint-Saëns: Cello Concerto No. 1 - Franck, Fauré & Poulenc (Bonus Track Version)"
+              ],
+              "album_ids": [
+                "327003702"
+              ],
+              "export_position": 227,
+              "archive_match": "exact_track_id"
+            },
+            {
+              "position": 228,
+              "id": "327003705",
+              "item_id": "2dc4997c-97aa-401e-9712-5578fb07c4e3",
+              "title": "Violin Sonata in A Major, FWV 8 (Arr. for Cello and Piano by Jules Delsart): II. Allegro",
+              "isrc": "FR7JM2246030",
+              "duration": "PT8M32S",
+              "artists": [
+                "Bruno Philippe",
+                "Tanguy de Williencourt"
+              ],
+              "album_titles": [
+                "Saint-Saëns: Cello Concerto No. 1 - Franck, Fauré & Poulenc (Bonus Track Version)"
+              ],
+              "album_ids": [
+                "327003702"
+              ],
+              "export_position": 228,
+              "archive_match": "exact_track_id"
+            },
+            {
+              "position": 229,
+              "id": "327003706",
+              "item_id": "29ff2942-b48b-4217-bd44-445a48bca354",
+              "title": "Violin Sonata in A Major, FWV 8 (Arr. for Cello and Piano by Jules Delsart): III. Recitativo-Fantasia. Ben moderato - Molto lento",
+              "isrc": "FR7JM2246040",
+              "duration": "PT7M39S",
+              "artists": [
+                "Bruno Philippe",
+                "Tanguy de Williencourt"
+              ],
+              "album_titles": [
+                "Saint-Saëns: Cello Concerto No. 1 - Franck, Fauré & Poulenc (Bonus Track Version)"
+              ],
+              "album_ids": [
+                "327003702"
+              ],
+              "export_position": 229,
+              "archive_match": "exact_track_id"
+            },
+            {
+              "position": 230,
+              "id": "327003707",
+              "item_id": "bedd54f1-2f8e-4e7b-9af1-2ca95cc897e4",
+              "title": "Violin Sonata in A Major, FWV 8 (Arr. for Cello and Piano by Jules Delsart): IV. Allegretto poco mosso",
+              "isrc": "FR7JM2246050",
+              "duration": "PT6M28S",
+              "artists": [
+                "Bruno Philippe",
+                "Tanguy de Williencourt"
+              ],
+              "album_titles": [
+                "Saint-Saëns: Cello Concerto No. 1 - Franck, Fauré & Poulenc (Bonus Track Version)"
+              ],
+              "album_ids": [
+                "327003702"
+              ],
+              "export_position": 230,
+              "archive_match": "exact_track_id"
+            }
+          ],
+          "performance_id": "cesar-franck-violin-sonata-in-a-major-fwv-8-chamber-c069",
+          "profile": "cello and piano arrangement (Delsart)",
+          "curator_decision": "https://github.com/LuHoo/classical_music/issues/244#issuecomment-5984117672"
+        },
+        {
+          "unit_id": "C098",
+          "composer": "César Franck",
+          "composer_id": "cesar-franck",
+          "title": "Violin Sonata in A Major, FWV 8",
+          "positions": [
+            323,
+            324,
+            325,
+            326
+          ],
+          "disposition": "import_new",
+          "work_id": "cesar-franck-violin-sonata-in-a-major-fwv-8",
+          "performers": [
+            {
+              "name": "Lisa Batiashvili"
+            },
+            {
+              "name": "Giorgi Gigashvili"
+            }
+          ],
+          "evidence": [
+            {
+              "file": "side materials/Music collection/Chamber Tidal.xlsx",
+              "locator": "Chamber sheet; join by exact track ID or unique ISRC, never by live position."
+            }
+          ],
+          "reason": "Curator accepted both original and arrangement in distinct profiles.",
+          "review_classification": "curator_accepted",
+          "curator_issue": "https://github.com/LuHoo/classical_music/issues/244",
+          "tracks": [
+            {
+              "position": 323,
+              "id": "242732036",
+              "item_id": "ec861f41-80be-4433-8bb4-38ac531808a8",
+              "title": "Franck: Violin Sonata in A Major, M. 8 - I. Allegretto ben moderato",
+              "isrc": "DEN962201311",
+              "duration": "PT6M8S",
+              "artists": [
+                "Lisa Batiashvili",
+                "Giorgi Gigashvili"
+              ],
+              "album_titles": [
+                "Secret Love Letters"
+              ],
+              "album_ids": [
+                "242732035"
+              ],
+              "export_position": 323,
+              "archive_match": "exact_track_id"
+            },
+            {
+              "position": 324,
+              "id": "242732037",
+              "item_id": "f55b7457-d0da-4878-811e-676e2313086d",
+              "title": "Franck: Violin Sonata in A Major, M. 8 - II. Allegro",
+              "isrc": "DEN962201312",
+              "duration": "PT8M1S",
+              "artists": [
+                "Lisa Batiashvili",
+                "Giorgi Gigashvili"
+              ],
+              "album_titles": [
+                "Secret Love Letters"
+              ],
+              "album_ids": [
+                "242732035"
+              ],
+              "export_position": 324,
+              "archive_match": "exact_track_id"
+            },
+            {
+              "position": 325,
+              "id": "242732038",
+              "item_id": "ac3ffe46-ceae-47d5-840d-86f9b5d0d442",
+              "title": "Franck: Violin Sonata in A Major, M. 8 - III. Recitativo - Fantasia (Ben moderato)",
+              "isrc": "DEN962201313",
+              "duration": "PT7M21S",
+              "artists": [
+                "Lisa Batiashvili",
+                "Giorgi Gigashvili"
+              ],
+              "album_titles": [
+                "Secret Love Letters"
+              ],
+              "album_ids": [
+                "242732035"
+              ],
+              "export_position": 325,
+              "archive_match": "exact_track_id"
+            },
+            {
+              "position": 326,
+              "id": "242732039",
+              "item_id": "844d7993-abc8-42e3-9ca4-6c74da88b67d",
+              "title": "Franck: Violin Sonata in A Major, M. 8 - IV. Allegretto poco mosso",
+              "isrc": "DEN962201314",
+              "duration": "PT5M55S",
+              "artists": [
+                "Lisa Batiashvili",
+                "Giorgi Gigashvili"
+              ],
+              "album_titles": [
+                "Secret Love Letters"
+              ],
+              "album_ids": [
+                "242732035"
+              ],
+              "export_position": 326,
+              "archive_match": "exact_track_id"
+            }
+          ],
+          "performance_id": "cesar-franck-violin-sonata-in-a-major-fwv-8-chamber-c098",
+          "profile": "original violin and piano",
+          "curator_decision": "https://github.com/LuHoo/classical_music/issues/244#issuecomment-5984117672"
+        }
+      ]
+    },
+    {
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/245",
+      "decision_comment": "https://github.com/LuHoo/classical_music/issues/245#issuecomment-5984117830",
+      "work_id": "camille-saint-saens-le-carnaval-des-animaux",
+      "source_name": "chamber",
+      "performances": [
+        {
+          "performance_id": "camille-saint-saens-le-carnaval-des-animaux-chamber-c073",
+          "profile": "cello and piano arrangement",
+          "origin": "new",
+          "unit_id": "C073",
+          "tidal_url": "https://tidal.com/track/327003719"
+        },
+        {
+          "performance_id": "camille-saint-saens-le-carnaval-des-animaux-playlist-478",
+          "profile": "original chamber ensemble",
+          "origin": "existing",
+          "tidal_url": "https://tidal.com/track/328375839"
+        }
+      ],
+      "source_units": [
+        {
+          "unit_id": "C073",
+          "composer": "Camille Saint-Saëns",
+          "composer_id": "camille-saint-saens",
+          "title": "Le Carnaval des Animaux, R. 125",
+          "positions": [
+            237
+          ],
+          "disposition": "import_new",
+          "work_id": "camille-saint-saens-le-carnaval-des-animaux",
+          "performers": [
+            {
+              "name": "Bruno Philippe"
+            },
+            {
+              "name": "Tanguy de Williencourt"
+            }
+          ],
+          "excerpt": "Le Cygne only (cello and piano)",
+          "evidence": [
+            {
+              "file": "side materials/Music collection/Chamber Tidal.xlsx",
+              "locator": "Chamber sheet; join by exact track ID or unique ISRC, never by live position."
+            }
+          ],
+          "reason": "Curator accepted both original and arrangement in distinct profiles.",
+          "review_classification": "curator_accepted",
+          "curator_issue": "https://github.com/LuHoo/classical_music/issues/245",
+          "tracks": [
+            {
+              "position": 237,
+              "id": "327003719",
+              "item_id": "8f7c11d3-2d9b-45f9-87e2-0dcaf8ae6389",
+              "title": "Le Carnaval des Animaux, R. 125: XIII. Le Cygne (Version for Cello and Piano)",
+              "isrc": "FR7JM2246150",
+              "duration": "PT2M56S",
+              "artists": [
+                "Bruno Philippe",
+                "Tanguy de Williencourt"
+              ],
+              "album_titles": [
+                "Saint-Saëns: Cello Concerto No. 1 - Franck, Fauré & Poulenc (Bonus Track Version)"
+              ],
+              "album_ids": [
+                "327003702"
+              ],
+              "export_position": 237,
+              "archive_match": "exact_track_id"
+            }
+          ],
+          "performance_id": "camille-saint-saens-le-carnaval-des-animaux-chamber-c073",
+          "profile": "cello and piano arrangement",
+          "curator_decision": "https://github.com/LuHoo/classical_music/issues/245#issuecomment-5984117830"
+        }
+      ]
+    },
+    {
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/249",
+      "decision_comment": "https://github.com/LuHoo/classical_music/issues/249#issuecomment-5984117945",
+      "work_id": "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-5-sonata-no-3-in-c-maj-work",
+      "source_name": "chamber",
+      "performances": [
+        {
+          "performance_id": "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-5-sonata-no-3-in-c-maj-work-chamber-c204",
+          "profile": "lute transcription",
+          "origin": "new",
+          "unit_id": "C204",
+          "tidal_url": "https://tidal.com/track/201393029"
+        },
+        {
+          "performance_id": "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-5-sonata-no-3-in-c-maj-work-leonidas-kavakos",
+          "profile": "original solo violin",
+          "origin": "existing",
+          "tidal_url": "http://www.tidal.com/track/203860879"
+        }
+      ],
+      "source_units": [
+        {
+          "unit_id": "C204",
+          "composer": "Johann Sebastian Bach",
+          "composer_id": "johann-sebastian-bach",
+          "title": "Violin Sonata No. 3 in C Major, BWV 1005 (Excerpts Arr. J. Lindberg for Lute)",
+          "positions": [
+            668,
+            669
+          ],
+          "disposition": "import_new",
+          "work_id": "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-5-sonata-no-3-in-c-maj-work",
+          "performers": [
+            {
+              "name": "Jakob Lindberg"
+            }
+          ],
+          "excerpt": "Selected movements only (lute transcription)",
+          "evidence": [
+            {
+              "file": "side materials/Music collection/Chamber Tidal.xlsx",
+              "locator": "Chamber sheet; join by exact track ID or unique ISRC, never by live position."
+            }
+          ],
+          "reason": "Curator accepted both original and arrangement in distinct profiles.",
+          "review_classification": "curator_accepted",
+          "curator_issue": "https://github.com/LuHoo/classical_music/issues/249",
+          "tracks": [
+            {
+              "position": 668,
+              "id": "201393029",
+              "item_id": "8c5c2424-1ce4-4446-be5d-4e8571e697f1",
+              "title": "Violin Sonata No. 3 in C Major, BWV 1005 (Excerpts Arr. J. Lindberg for Lute): II. Fuga",
+              "isrc": "SEAEB2152020",
+              "duration": "PT10M47S",
+              "artists": [
+                "Jakob Lindberg"
+              ],
+              "album_titles": [
+                "Bach on the Rauwolf Lute"
+              ],
+              "album_ids": [
+                "201393027"
+              ],
+              "export_position": 668,
+              "archive_match": "exact_track_id"
+            },
+            {
+              "position": 669,
+              "id": "201393030",
+              "item_id": "b4b95339-29de-4985-b6d5-00b0e35fd403",
+              "title": "Violin Sonata No. 3 in C Major, BWV 1005 (Excerpts Arr. J. Lindberg for Lute): III. Largo",
+              "isrc": "SEAEB2152030",
+              "duration": "PT3M4S",
+              "artists": [
+                "Jakob Lindberg"
+              ],
+              "album_titles": [
+                "Bach on the Rauwolf Lute"
+              ],
+              "album_ids": [
+                "201393027"
+              ],
+              "export_position": 669,
+              "archive_match": "exact_track_id"
+            }
+          ],
+          "performance_id": "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-5-sonata-no-3-in-c-maj-work-chamber-c204",
+          "profile": "lute transcription",
+          "curator_decision": "https://github.com/LuHoo/classical_music/issues/249#issuecomment-5984117945"
+        },
+        {
+          "unit_id": "C359",
+          "composer": "Johann Sebastian Bach",
+          "composer_id": "johann-sebastian-bach",
+          "title": "Violin Sonata No. 3, BWV 1005",
+          "positions": [
+            1156,
+            1157,
+            1158,
+            1159
+          ],
+          "disposition": "reuse_existing",
+          "work_id": "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-5-sonata-no-3-in-c-maj-work",
+          "performance_id": "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-5-sonata-no-3-in-c-maj-work-leonidas-kavakos",
+          "performers": [
+            {
+              "name": "Leonidas Kavakos"
+            }
+          ],
+          "evidence": [],
+          "recording_evidence": [
+            {
+              "position": 1156,
+              "type": "id",
+              "value": "203860879"
+            }
+          ],
+          "curator_issue": "https://github.com/LuHoo/classical_music/issues/249",
+          "tracks": [
+            {
+              "position": 1156,
+              "id": "203860879",
+              "item_id": "3783fb77-ea3b-45b2-a878-67ce49659852",
+              "title": "Violin Sonata No. 3 in C Major, BWV 1005: I. Adagio",
+              "isrc": "USSM12102104",
+              "duration": "PT4M54S",
+              "artists": [
+                "Leonidas Kavakos"
+              ],
+              "album_titles": [
+                "Bach: Sei Solo"
+              ],
+              "album_ids": [
+                "203860871"
+              ],
+              "export_position": null,
+              "archive_match": null
+            },
+            {
+              "position": 1157,
+              "id": "203860880",
+              "item_id": "ff6b5dd6-4e73-4919-bd2f-8176d6394e2c",
+              "title": "Violin Sonata No. 3 in C Major, BWV 1005: II. Fuga",
+              "isrc": "USSM12102105",
+              "duration": "PT10M37S",
+              "artists": [
+                "Leonidas Kavakos"
+              ],
+              "album_titles": [
+                "Bach: Sei Solo"
+              ],
+              "album_ids": [
+                "203860871"
+              ],
+              "export_position": null,
+              "archive_match": null
+            },
+            {
+              "position": 1158,
+              "id": "203860881",
+              "item_id": "7523b9f9-6c14-4c35-a091-33fadd18eac8",
+              "title": "Violin Sonata No. 3 in C Major, BWV 1005: III. Largo",
+              "isrc": "USSM12102106",
+              "duration": "PT3M33S",
+              "artists": [
+                "Leonidas Kavakos"
+              ],
+              "album_titles": [
+                "Bach: Sei Solo"
+              ],
+              "album_ids": [
+                "203860871"
+              ],
+              "export_position": null,
+              "archive_match": null
+            },
+            {
+              "position": 1159,
+              "id": "203860882",
+              "item_id": "878ad2de-da2b-41bf-aa17-5610f126b438",
+              "title": "Violin Sonata No. 3 in C Major, BWV 1005: IV. Allegro assai",
+              "isrc": "USSM12102107",
+              "duration": "PT5M38S",
+              "artists": [
+                "Leonidas Kavakos"
+              ],
+              "album_titles": [
+                "Bach: Sei Solo"
+              ],
+              "album_ids": [
+                "203860871"
+              ],
+              "export_position": null,
+              "archive_match": null
+            }
+          ],
+          "profile": "original solo violin",
+          "curator_decision": "https://github.com/LuHoo/classical_music/issues/249#issuecomment-5984117945",
+          "reason": "Curator accepted both original and arrangement in distinct profiles.",
+          "review_classification": "curator_accepted"
+        }
+      ]
+    },
+    {
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/250",
+      "decision_comment": "https://github.com/LuHoo/classical_music/issues/250#issuecomment-5984118060",
+      "work_id": "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-1-sonata-no-1-in-g-min-work",
+      "source_name": "chamber",
+      "performances": [
+        {
+          "performance_id": "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-1-sonata-no-1-in-g-min-work-chamber-c207",
+          "profile": "lute transcription",
+          "origin": "new",
+          "unit_id": "C207",
+          "tidal_url": "https://tidal.com/track/201393043"
+        },
+        {
+          "performance_id": "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-1-sonata-no-1-in-g-min-work-leonidas-kavakos",
+          "profile": "original solo violin",
+          "origin": "existing",
+          "tidal_url": "http://www.tidal.com/track/203860888"
+        }
+      ],
+      "source_units": [
+        {
+          "unit_id": "C207",
+          "composer": "Johann Sebastian Bach",
+          "composer_id": "johann-sebastian-bach",
+          "title": "Violin Sonata No. 1 in G Minor, BWV 1001 (Arr. J. Lindberg for Lute)",
+          "positions": [
+            682,
+            683,
+            684,
+            685
+          ],
+          "disposition": "import_new",
+          "work_id": "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-1-sonata-no-1-in-g-min-work",
+          "performers": [
+            {
+              "name": "Jakob Lindberg"
+            }
+          ],
+          "evidence": [
+            {
+              "file": "side materials/Music collection/Chamber Tidal.xlsx",
+              "locator": "Chamber sheet; join by exact track ID or unique ISRC, never by live position."
+            }
+          ],
+          "reason": "Curator accepted both original and arrangement in distinct profiles.",
+          "review_classification": "curator_accepted",
+          "curator_issue": "https://github.com/LuHoo/classical_music/issues/250",
+          "tracks": [
+            {
+              "position": 682,
+              "id": "201393043",
+              "item_id": "97db4c77-a66b-4877-958e-d51897b3fe70",
+              "title": "Violin Sonata No. 1 in G Minor, BWV 1001 (Arr. J. Lindberg for Lute): I. Adagio",
+              "isrc": "SEAEB2152160",
+              "duration": "PT3M38S",
+              "artists": [
+                "Jakob Lindberg"
+              ],
+              "album_titles": [
+                "Bach on the Rauwolf Lute"
+              ],
+              "album_ids": [
+                "201393027"
+              ],
+              "export_position": 682,
+              "archive_match": "exact_track_id"
+            },
+            {
+              "position": 683,
+              "id": "201393044",
+              "item_id": "f89657ba-72c7-4b02-89e3-707db64aba73",
+              "title": "Violin Sonata No. 1 in G Minor, BWV 1001 (Arr. J. Lindberg for Lute): II. Fuga",
+              "isrc": "SEAEB2152170",
+              "duration": "PT6M7S",
+              "artists": [
+                "Jakob Lindberg"
+              ],
+              "album_titles": [
+                "Bach on the Rauwolf Lute"
+              ],
+              "album_ids": [
+                "201393027"
+              ],
+              "export_position": 683,
+              "archive_match": "exact_track_id"
+            },
+            {
+              "position": 684,
+              "id": "201393045",
+              "item_id": "51416e86-312e-437f-9ce7-6d226d422f05",
+              "title": "Violin Sonata No. 1 in G Minor, BWV 1001 (Arr. J. Lindberg for Lute): III. Siciliana",
+              "isrc": "SEAEB2152180",
+              "duration": "PT2M58S",
+              "artists": [
+                "Jakob Lindberg"
+              ],
+              "album_titles": [
+                "Bach on the Rauwolf Lute"
+              ],
+              "album_ids": [
+                "201393027"
+              ],
+              "export_position": 684,
+              "archive_match": "exact_track_id"
+            },
+            {
+              "position": 685,
+              "id": "201393046",
+              "item_id": "eab6d2b0-6fca-4c7b-816f-788280856a3f",
+              "title": "Violin Sonata No. 1 in G Minor, BWV 1001 (Arr. J. Lindberg for Lute): IV. Presto",
+              "isrc": "SEAEB2152190",
+              "duration": "PT3M35S",
+              "artists": [
+                "Jakob Lindberg"
+              ],
+              "album_titles": [
+                "Bach on the Rauwolf Lute"
+              ],
+              "album_ids": [
+                "201393027"
+              ],
+              "export_position": 685,
+              "archive_match": "exact_track_id"
+            }
+          ],
+          "performance_id": "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-1-sonata-no-1-in-g-min-work-chamber-c207",
+          "profile": "lute transcription",
+          "curator_decision": "https://github.com/LuHoo/classical_music/issues/250#issuecomment-5984118060"
+        },
+        {
+          "unit_id": "C361",
+          "composer": "Johann Sebastian Bach",
+          "composer_id": "johann-sebastian-bach",
+          "title": "Violin Sonata No. 1, BWV 1001",
+          "positions": [
+            1164,
+            1165,
+            1166,
+            1167
+          ],
+          "disposition": "reuse_existing",
+          "work_id": "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-1-sonata-no-1-in-g-min-work",
+          "performance_id": "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-1-sonata-no-1-in-g-min-work-leonidas-kavakos",
+          "performers": [
+            {
+              "name": "Leonidas Kavakos"
+            }
+          ],
+          "evidence": [],
+          "recording_evidence": [
+            {
+              "position": 1164,
+              "type": "id",
+              "value": "203860888"
+            }
+          ],
+          "curator_issue": "https://github.com/LuHoo/classical_music/issues/250",
+          "tracks": [
+            {
+              "position": 1164,
+              "id": "203860888",
+              "item_id": "e0e4564f-19ce-465d-96f2-194d79911a6d",
+              "title": "Violin Sonata No. 1 in G Minor, BWV 1001: I. Adagio",
+              "isrc": "USSM12102079",
+              "duration": "PT3M48S",
+              "artists": [
+                "Leonidas Kavakos"
+              ],
+              "album_titles": [
+                "Bach: Sei Solo"
+              ],
+              "album_ids": [
+                "203860871"
+              ],
+              "export_position": null,
+              "archive_match": null
+            },
+            {
+              "position": 1165,
+              "id": "203860889",
+              "item_id": "3ccd96ec-89ea-41cd-b7fb-197520daa2ae",
+              "title": "Violin Sonata No. 1 in G Minor, BWV 1001: II. Fuga",
+              "isrc": "USSM12102080",
+              "duration": "PT5M21S",
+              "artists": [
+                "Leonidas Kavakos"
+              ],
+              "album_titles": [
+                "Bach: Sei Solo"
+              ],
+              "album_ids": [
+                "203860871"
+              ],
+              "export_position": null,
+              "archive_match": null
+            },
+            {
+              "position": 1166,
+              "id": "203860890",
+              "item_id": "91e5ad92-caec-4467-be29-fbc83d06253f",
+              "title": "Violin Sonata No. 1 in G Minor, BWV 1001: III. Siciliana",
+              "isrc": "USSM12102081",
+              "duration": "PT2M58S",
+              "artists": [
+                "Leonidas Kavakos"
+              ],
+              "album_titles": [
+                "Bach: Sei Solo"
+              ],
+              "album_ids": [
+                "203860871"
+              ],
+              "export_position": null,
+              "archive_match": null
+            },
+            {
+              "position": 1167,
+              "id": "203860891",
+              "item_id": "b08cef0e-a267-4e5e-9a3d-79f1e5e147e5",
+              "title": "Violin Sonata No. 1 in G Minor, BWV 1001: IV. Presto",
+              "isrc": "USSM12102082",
+              "duration": "PT4M12S",
+              "artists": [
+                "Leonidas Kavakos"
+              ],
+              "album_titles": [
+                "Bach: Sei Solo"
+              ],
+              "album_ids": [
+                "203860871"
+              ],
+              "export_position": null,
+              "archive_match": null
+            }
+          ],
+          "profile": "original solo violin",
+          "curator_decision": "https://github.com/LuHoo/classical_music/issues/250#issuecomment-5984118060",
+          "reason": "Curator accepted both original and arrangement in distinct profiles.",
+          "review_classification": "curator_accepted"
+        }
+      ]
+    },
+    {
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/251",
+      "decision_comment": "https://github.com/LuHoo/classical_music/issues/251#issuecomment-5984118167",
+      "work_id": "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-4-partita-no-2-in-d-min-work",
+      "source_name": "chamber",
+      "performances": [
+        {
+          "performance_id": "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-4-partita-no-2-in-d-min-work-chamber-c208",
+          "profile": "lute transcription",
+          "origin": "new",
+          "unit_id": "C208",
+          "tidal_url": "https://tidal.com/track/201393047"
+        },
+        {
+          "performance_id": "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-4-partita-no-2-in-d-min-work-leonidas-kavakos",
+          "profile": "original solo violin",
+          "origin": "existing",
+          "tidal_url": "http://www.tidal.com/track/203860900"
+        }
+      ],
+      "source_units": [
+        {
+          "unit_id": "C208",
+          "composer": "Johann Sebastian Bach",
+          "composer_id": "johann-sebastian-bach",
+          "title": "Violin Partita No. 2 in D Minor, BWV 1004",
+          "positions": [
+            686
+          ],
+          "disposition": "import_new",
+          "work_id": "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-4-partita-no-2-in-d-min-work",
+          "performers": [
+            {
+              "name": "Jakob Lindberg"
+            }
+          ],
+          "excerpt": "Chaconne only (lute transcription)",
+          "evidence": [
+            {
+              "file": "side materials/Music collection/Chamber Tidal.xlsx",
+              "locator": "Chamber sheet; join by exact track ID or unique ISRC, never by live position."
+            }
+          ],
+          "reason": "Curator accepted both original and arrangement in distinct profiles.",
+          "review_classification": "curator_accepted",
+          "curator_issue": "https://github.com/LuHoo/classical_music/issues/251",
+          "tracks": [
+            {
+              "position": 686,
+              "id": "201393047",
+              "item_id": "fc037741-060d-4c62-b049-579ba819194a",
+              "title": "Violin Partita No. 2 in D Minor, BWV 1004: V. Chaconne (Arr. J. Lindberg for Lute)",
+              "isrc": "SEAEB2152200",
+              "duration": "PT14M34S",
+              "artists": [
+                "Jakob Lindberg"
+              ],
+              "album_titles": [
+                "Bach on the Rauwolf Lute"
+              ],
+              "album_ids": [
+                "201393027"
+              ],
+              "export_position": 686,
+              "archive_match": "exact_track_id"
+            }
+          ],
+          "performance_id": "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-4-partita-no-2-in-d-min-work-chamber-c208",
+          "profile": "lute transcription",
+          "curator_decision": "https://github.com/LuHoo/classical_music/issues/251#issuecomment-5984118167"
+        },
+        {
+          "unit_id": "C363",
+          "composer": "Johann Sebastian Bach",
+          "composer_id": "johann-sebastian-bach",
+          "title": "Violin Partita No. 2, BWV 1004",
+          "positions": [
+            1176,
+            1177,
+            1178,
+            1179,
+            1180
+          ],
+          "disposition": "reuse_existing",
+          "work_id": "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-4-partita-no-2-in-d-min-work",
+          "performance_id": "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-4-partita-no-2-in-d-min-work-leonidas-kavakos",
+          "performers": [
+            {
+              "name": "Leonidas Kavakos"
+            }
+          ],
+          "evidence": [],
+          "recording_evidence": [
+            {
+              "position": 1176,
+              "type": "id",
+              "value": "203860900"
+            }
+          ],
+          "curator_issue": "https://github.com/LuHoo/classical_music/issues/251",
+          "tracks": [
+            {
+              "position": 1176,
+              "id": "203860900",
+              "item_id": "ae6c28ab-df39-47ce-af9d-386ae84bee74",
+              "title": "Violin Partita No. 2 in D Minor BWV 1004: I. Allemanda",
+              "isrc": "USSM12102098",
+              "duration": "PT4M53S",
+              "artists": [
+                "Leonidas Kavakos"
+              ],
+              "album_titles": [
+                "Bach: Sei Solo"
+              ],
+              "album_ids": [
+                "203860871"
+              ],
+              "export_position": null,
+              "archive_match": null
+            },
+            {
+              "position": 1177,
+              "id": "203860901",
+              "item_id": "e5b99b1e-2cda-426d-bb7f-3e29d961dd81",
+              "title": "Violin Partita No. 2 in D Minor BWV 1004: II. Corrente",
+              "isrc": "USSM12102099",
+              "duration": "PT2M32S",
+              "artists": [
+                "Leonidas Kavakos"
+              ],
+              "album_titles": [
+                "Bach: Sei Solo"
+              ],
+              "album_ids": [
+                "203860871"
+              ],
+              "export_position": null,
+              "archive_match": null
+            },
+            {
+              "position": 1178,
+              "id": "203860903",
+              "item_id": "05f46f87-a224-4518-8740-9cec33cd8e89",
+              "title": "Violin Partita No. 2 in D Minor BWV 1004: III. Sarabanda",
+              "isrc": "USSM12102100",
+              "duration": "PT3M49S",
+              "artists": [
+                "Leonidas Kavakos"
+              ],
+              "album_titles": [
+                "Bach: Sei Solo"
+              ],
+              "album_ids": [
+                "203860871"
+              ],
+              "export_position": null,
+              "archive_match": null
+            },
+            {
+              "position": 1179,
+              "id": "203860904",
+              "item_id": "6acc1561-014a-4965-87c7-f2551d408faf",
+              "title": "Violin Partita No. 2 in D Minor BWV 1004: IV. Giga",
+              "isrc": "USSM12102101",
+              "duration": "PT4M6S",
+              "artists": [
+                "Leonidas Kavakos"
+              ],
+              "album_titles": [
+                "Bach: Sei Solo"
+              ],
+              "album_ids": [
+                "203860871"
+              ],
+              "export_position": null,
+              "archive_match": null
+            },
+            {
+              "position": 1180,
+              "id": "203860905",
+              "item_id": "ef665d8c-b58c-4a0f-87a5-f81f0a512922",
+              "title": "Violin Partita No. 2 in D Minor BWV 1004: V. Ciaccona",
+              "isrc": "USSM12102102",
+              "duration": "PT14M57S",
+              "artists": [
+                "Leonidas Kavakos"
+              ],
+              "album_titles": [
+                "Bach: Sei Solo"
+              ],
+              "album_ids": [
+                "203860871"
+              ],
+              "export_position": null,
+              "archive_match": null
+            }
+          ],
+          "profile": "original solo violin",
+          "curator_decision": "https://github.com/LuHoo/classical_music/issues/251#issuecomment-5984118167",
+          "reason": "Curator accepted both original and arrangement in distinct profiles.",
+          "review_classification": "curator_accepted"
+        }
+      ]
+    },
+    {
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/258",
+      "decision_comment": "https://github.com/LuHoo/classical_music/issues/258#issuecomment-5984118267",
+      "work_id": "johann-sebastian-bach-goldberg-variations-work",
+      "source_name": "chamber",
+      "performances": [
+        {
+          "performance_id": "johann-sebastian-bach-goldberg-variations-work-chamber-c402",
+          "profile": "clarinet and double bass arrangement",
+          "origin": "new",
+          "unit_id": "C402",
+          "tidal_url": "https://tidal.com/track/448367326"
+        },
+        {
+          "performance_id": "johann-sebastian-bach-goldberg-variations-work-klara-wurtz",
+          "profile": "original keyboard (piano)",
+          "origin": "existing",
+          "tidal_url": "http://www.tidal.com/track/210117464"
+        }
+      ],
+      "source_units": [
+        {
+          "unit_id": "C402",
+          "composer": "Johann Sebastian Bach",
+          "composer_id": "johann-sebastian-bach",
+          "title": "Goldberg Variations, BWV 988",
+          "positions": [
+            1329
+          ],
+          "disposition": "import_new",
+          "work_id": "johann-sebastian-bach-goldberg-variations-work",
+          "performers": [
+            {
+              "name": "Martin Fröst"
+            },
+            {
+              "name": "Sébastien Dubé"
+            }
+          ],
+          "excerpt": "Aria only (clarinet and double bass)",
+          "evidence": [
+            {
+              "url": "https://www.sonyclassical.com/releases/releases-details/b-a-c-h"
+            }
+          ],
+          "reason": "Curator accepted both original and arrangement in distinct profiles.",
+          "review_classification": "curator_accepted",
+          "curator_issue": "https://github.com/LuHoo/classical_music/issues/258",
+          "tracks": [
+            {
+              "position": 1329,
+              "id": "448367326",
+              "item_id": "1511eba7-5be0-4bc4-b62e-c640bad91779",
+              "title": "Goldberg Variations, BWV 988: Aria (Arr. for Clarinet and Bass by Martin Fröst and Sebastien Dubé)",
+              "isrc": "USSM12502274",
+              "duration": "PT4M49S",
+              "artists": [
+                "Martin Fröst",
+                "Sébastien Dubé"
+              ],
+              "album_titles": [
+                "B.A.C.H."
+              ],
+              "album_ids": [
+                "448367318"
+              ],
+              "export_position": null,
+              "archive_match": null
+            }
+          ],
+          "performance_id": "johann-sebastian-bach-goldberg-variations-work-chamber-c402",
+          "profile": "clarinet and double bass arrangement",
+          "curator_decision": "https://github.com/LuHoo/classical_music/issues/258#issuecomment-5984118267"
+        }
+      ]
+    },
+    {
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/259",
+      "decision_comment": "https://github.com/LuHoo/classical_music/issues/259#issuecomment-5984118360",
+      "work_id": "johann-sebastian-bach-orchestral-suite-no-3-in-d-maj-work",
+      "source_name": "chamber",
+      "performances": [
+        {
+          "performance_id": "johann-sebastian-bach-orchestral-suite-no-3-in-d-maj-work-chamber-c406",
+          "profile": "clarinet, double bass and theorbo arrangement",
+          "origin": "new",
+          "unit_id": "C406",
+          "tidal_url": "https://tidal.com/track/448367330"
+        },
+        {
+          "performance_id": "johann-sebastian-bach-orchestral-suite-no-3-in-d-maj-work-akademie-fur-alte-musik-berlin",
+          "profile": "original orchestra",
+          "origin": "existing",
+          "tidal_url": "https://tidal.com/browse/track/47622466?u"
+        }
+      ],
+      "source_units": [
+        {
+          "unit_id": "C406",
+          "composer": "Johann Sebastian Bach",
+          "composer_id": "johann-sebastian-bach",
+          "title": "Orchestral Suite No. 3, BWV 1068",
+          "positions": [
+            1333
+          ],
+          "disposition": "import_new",
+          "work_id": "johann-sebastian-bach-orchestral-suite-no-3-in-d-maj-work",
+          "performers": [
+            {
+              "name": "Martin Fröst"
+            },
+            {
+              "name": "Sébastien Dubé"
+            },
+            {
+              "name": "Jonas Nordberg"
+            }
+          ],
+          "excerpt": "Air only (clarinet, double bass and theorbo)",
+          "evidence": [
+            {
+              "url": "https://www.sonyclassical.com/releases/releases-details/b-a-c-h"
+            }
+          ],
+          "reason": "Curator accepted both original and arrangement in distinct profiles.",
+          "review_classification": "curator_accepted",
+          "curator_issue": "https://github.com/LuHoo/classical_music/issues/259",
+          "tracks": [
+            {
+              "position": 1333,
+              "id": "448367330",
+              "item_id": "20fc7023-13b5-4ffa-8213-e300bc349030",
+              "title": "Orchestral Suite No.3 in D Major, BWV 1068: II. Air (Arr. for Clarinet, Theorbo and Bass by Martin Fröst, Jonas Nordberg and Sebastien Dubé)",
+              "isrc": "USSM12502278",
+              "duration": "PT4M48S",
+              "artists": [
+                "Martin Fröst",
+                "Sébastien Dubé",
+                "Jonas Nordberg"
+              ],
+              "album_titles": [
+                "B.A.C.H."
+              ],
+              "album_ids": [
+                "448367318"
+              ],
+              "export_position": null,
+              "archive_match": null
+            }
+          ],
+          "performance_id": "johann-sebastian-bach-orchestral-suite-no-3-in-d-maj-work-chamber-c406",
+          "profile": "clarinet, double bass and theorbo arrangement",
+          "curator_decision": "https://github.com/LuHoo/classical_music/issues/259#issuecomment-5984118360"
+        }
+      ]
+    },
+    {
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/260",
+      "decision_comment": "https://github.com/LuHoo/classical_music/issues/260#issuecomment-5984118486",
+      "work_id": "johann-sebastian-bach-concerto-for-harpsichord-and-orchestra-no-5-in-f-min-work",
+      "source_name": "chamber",
+      "performances": [
+        {
+          "performance_id": "johann-sebastian-bach-concerto-for-harpsichord-and-orchestra-no-5-in-f-min-work-chamber-c417",
+          "profile": "clarinet and piano arrangement",
+          "origin": "new",
+          "unit_id": "C417",
+          "tidal_url": "https://tidal.com/track/448367342"
+        },
+        {
+          "performance_id": "johann-sebastian-bach-concerto-for-harpsichord-and-orchestra-no-5-in-f-min-work-francesco-corti-il-pomo-d-oro",
+          "profile": "original harpsichord and orchestra",
+          "origin": "existing",
+          "tidal_url": "https://tidal.com/browse/track/305308959?u"
+        }
+      ],
+      "source_units": [
+        {
+          "unit_id": "C417",
+          "composer": "Johann Sebastian Bach",
+          "composer_id": "johann-sebastian-bach",
+          "title": "Keyboard Concerto No. 5, BWV 1056",
+          "positions": [
+            1345
+          ],
+          "disposition": "import_new",
+          "work_id": "johann-sebastian-bach-concerto-for-harpsichord-and-orchestra-no-5-in-f-min-work",
+          "performers": [
+            {
+              "name": "Martin Fröst"
+            },
+            {
+              "name": "Benny Andersson"
+            }
+          ],
+          "excerpt": "Largo only (clarinet and piano)",
+          "evidence": [
+            {
+              "url": "https://www.sonyclassical.com/releases/releases-details/b-a-c-h"
+            }
+          ],
+          "reason": "Curator accepted both original and arrangement in distinct profiles.",
+          "review_classification": "curator_accepted",
+          "curator_issue": "https://github.com/LuHoo/classical_music/issues/260",
+          "tracks": [
+            {
+              "position": 1345,
+              "id": "448367342",
+              "item_id": "3f08156a-5757-412b-8fc8-9f5b5ca497d5",
+              "title": "Largo (after Piano Concerto No. 5 in F Minor, BWV 1056) [Arr. for Clarinet and Piano by Martin Fröst and Benny Andersson]",
+              "isrc": "USSM12502291",
+              "duration": "PT3M5S",
+              "artists": [
+                "Martin Fröst",
+                "Benny Andersson"
+              ],
+              "album_titles": [
+                "B.A.C.H."
+              ],
+              "album_ids": [
+                "448367318"
+              ],
+              "export_position": null,
+              "archive_match": null
+            }
+          ],
+          "performance_id": "johann-sebastian-bach-concerto-for-harpsichord-and-orchestra-no-5-in-f-min-work-chamber-c417",
+          "profile": "clarinet and piano arrangement",
+          "curator_decision": "https://github.com/LuHoo/classical_music/issues/260#issuecomment-5984118486"
+        }
+      ]
+    },
+    {
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/286",
+      "decision_comment": "https://github.com/LuHoo/classical_music/issues/286#issuecomment-5984118614",
+      "work_id": "felix-mendelssohn-song-without-words-op-30-no-4-mwv-u-98",
+      "source_name": "piano",
+      "performances": [
+        {
+          "performance_id": "felix-mendelssohn-song-without-words-op-30-no-4-mwv-u-98-chamber-c220",
+          "profile": "clarinet and piano arrangement",
+          "origin": "existing",
+          "tidal_url": "https://tidal.com/track/105044322"
+        },
+        {
+          "performance_id": "felix-mendelssohn-song-without-words-op-30-no-4-mwv-u-98-piano-p608",
+          "profile": "original solo piano",
+          "origin": "new",
+          "unit_id": "P608",
+          "tidal_url": "https://tidal.com/track/338436208"
+        }
+      ],
+      "source_units": [
+        {
+          "unit_id": "P608",
+          "composer": "Felix Mendelssohn",
+          "composer_id": "felix-mendelssohn",
+          "title": "Song Without Words, MWV U 98",
+          "positions": [
+            1881
+          ],
+          "disposition": "import_new",
+          "work_id": "felix-mendelssohn-song-without-words-op-30-no-4-mwv-u-98",
+          "performers": [
+            {
+              "name": "Howard Shelley",
+              "role": "piano"
+            }
+          ],
+          "evidence": [
+            {
+              "file": "side materials/Music collection/Piano Tidal.xlsx",
+              "sheet": "Piano",
+              "archive_positions": [
+                1899
+              ]
+            }
+          ],
+          "reason": "Curator accepted both original and arrangement in distinct profiles.",
+          "review_classification": "curator_accepted",
+          "curator_issue": "https://github.com/LuHoo/classical_music/issues/286",
+          "tracks": [
+            {
+              "position": 1881,
+              "id": "338436208",
+              "item_id": "e0bcc0a0-26e9-46a4-a781-e029daceb8b7",
+              "title": "Mendelssohn: Lieder ohne Worte II, Op. 30: IV. Agitato e con fuoco, MWV U98",
+              "isrc": "GBAJY1405914",
+              "duration": "PT2M44S",
+              "artists": [
+                "Howard Shelley"
+              ],
+              "album_titles": [
+                "Mendelssohn: The Complete Solo Piano Music 2"
+              ],
+              "album_ids": [
+                "338436194"
+              ],
+              "nl_usage_rules": {
+                "countryCode": "NL",
+                "paid": [],
+                "subscription": [
+                  "STREAM",
+                  "DJ"
+                ],
+                "free": [],
+                "validFrom": "2024-01-12T00:00:00Z"
+              },
+              "export_position": 1899,
+              "archive_match": "exact_track_id"
+            }
+          ],
+          "performance_id": "felix-mendelssohn-song-without-words-op-30-no-4-mwv-u-98-piano-p608",
+          "profile": "original solo piano",
+          "curator_decision": "https://github.com/LuHoo/classical_music/issues/286#issuecomment-5984118614"
+        }
+      ]
+    },
+    {
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/287",
+      "decision_comment": "https://github.com/LuHoo/classical_music/issues/287#issuecomment-5984078260",
+      "work_id": "felix-mendelssohn-song-without-words-op-30-no-6-mwv-u-110",
+      "source_name": "piano",
+      "performances": [
+        {
+          "performance_id": "felix-mendelssohn-song-without-words-op-30-no-6-mwv-u-110-chamber-c223",
+          "profile": "clarinet and piano arrangement",
+          "origin": "existing",
+          "tidal_url": "https://tidal.com/track/105044327"
+        },
+        {
+          "performance_id": "felix-mendelssohn-song-without-words-op-30-no-6-mwv-u-110-piano-p610",
+          "profile": "original solo piano",
+          "origin": "new",
+          "unit_id": "P610",
+          "tidal_url": "https://tidal.com/track/338436210"
+        }
+      ],
+      "source_units": [
+        {
+          "unit_id": "P610",
+          "composer": "Felix Mendelssohn",
+          "composer_id": "felix-mendelssohn",
+          "title": "Song Without Words, MWV U 110",
+          "positions": [
+            1883
+          ],
+          "disposition": "import_new",
+          "work_id": "felix-mendelssohn-song-without-words-op-30-no-6-mwv-u-110",
+          "performers": [
+            {
+              "name": "Howard Shelley",
+              "role": "piano"
+            }
+          ],
+          "evidence": [
+            {
+              "file": "side materials/Music collection/Piano Tidal.xlsx",
+              "sheet": "Piano",
+              "archive_positions": [
+                1901
+              ]
+            }
+          ],
+          "reason": "Curator accepted both original and arrangement in distinct profiles.",
+          "review_classification": "curator_accepted",
+          "curator_issue": "https://github.com/LuHoo/classical_music/issues/287",
+          "tracks": [
+            {
+              "position": 1883,
+              "id": "338436210",
+              "item_id": "a2d01840-ad79-4e1b-8213-9290a21d755d",
+              "title": "Mendelssohn: Lieder ohne Worte II, Op. 30: VI. Venetian Gondola Song. Allegretto, MWV U110",
+              "isrc": "GBAJY1405916",
+              "duration": "PT2M59S",
+              "artists": [
+                "Howard Shelley"
+              ],
+              "album_titles": [
+                "Mendelssohn: The Complete Solo Piano Music 2"
+              ],
+              "album_ids": [
+                "338436194"
+              ],
+              "nl_usage_rules": {
+                "countryCode": "NL",
+                "paid": [],
+                "subscription": [
+                  "STREAM",
+                  "DJ"
+                ],
+                "free": [],
+                "validFrom": "2024-01-12T00:00:00Z"
+              },
+              "export_position": 1901,
+              "archive_match": "exact_track_id"
+            }
+          ],
+          "performance_id": "felix-mendelssohn-song-without-words-op-30-no-6-mwv-u-110-piano-p610",
+          "profile": "original solo piano",
+          "curator_decision": "https://github.com/LuHoo/classical_music/issues/287#issuecomment-5984078260"
+        }
+      ]
+    },
+    {
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/288",
+      "decision_comment": "https://github.com/LuHoo/classical_music/issues/288#issuecomment-5984118731",
+      "work_id": "felix-mendelssohn-song-without-words-op-67-no-2-mwv-u-145",
+      "source_name": "piano",
+      "performances": [
+        {
+          "performance_id": "felix-mendelssohn-song-without-words-op-67-no-2-mwv-u-145-chamber-c224",
+          "profile": "clarinet and piano arrangement",
+          "origin": "existing",
+          "tidal_url": "https://tidal.com/track/105044328"
+        },
+        {
+          "performance_id": "felix-mendelssohn-song-without-words-op-67-no-2-mwv-u-145-piano-p629",
+          "profile": "original solo piano",
+          "origin": "new",
+          "unit_id": "P629",
+          "tidal_url": "https://tidal.com/track/338436381"
+        }
+      ],
+      "source_units": [
+        {
+          "unit_id": "P629",
+          "composer": "Felix Mendelssohn",
+          "composer_id": "felix-mendelssohn",
+          "title": "Song Without Words, MWV U 145",
+          "positions": [
+            1911
+          ],
+          "disposition": "import_new",
+          "work_id": "felix-mendelssohn-song-without-words-op-67-no-2-mwv-u-145",
+          "performers": [
+            {
+              "name": "Howard Shelley",
+              "role": "piano"
+            }
+          ],
+          "evidence": [
+            {
+              "file": "side materials/Music collection/Piano Tidal.xlsx",
+              "sheet": "Piano",
+              "archive_positions": [
+                1929
+              ]
+            }
+          ],
+          "reason": "Curator accepted both original and arrangement in distinct profiles.",
+          "review_classification": "curator_accepted",
+          "curator_issue": "https://github.com/LuHoo/classical_music/issues/288",
+          "tracks": [
+            {
+              "position": 1911,
+              "id": "338436381",
+              "item_id": "6132f3d1-f838-45e2-9c9e-289e5e0c2100",
+              "title": "Mendelssohn: Lieder ohne Worte VI, Op. 67: II. Allegro leggiero, MWV U145 \"Lost Illusions\"",
+              "isrc": "GBAJY2134422",
+              "duration": "PT2M13S",
+              "artists": [
+                "Howard Shelley"
+              ],
+              "album_titles": [
+                "Mendelssohn: The Complete Solo Piano Music 5"
+              ],
+              "album_ids": [
+                "338436354"
+              ],
+              "nl_usage_rules": {
+                "countryCode": "NL",
+                "paid": [],
+                "subscription": [
+                  "STREAM",
+                  "DJ"
+                ],
+                "free": [],
+                "validFrom": "2024-01-12T00:00:00Z"
+              },
+              "export_position": 1929,
+              "archive_match": "exact_track_id"
+            }
+          ],
+          "performance_id": "felix-mendelssohn-song-without-words-op-67-no-2-mwv-u-145-piano-p629",
+          "profile": "original solo piano",
+          "curator_decision": "https://github.com/LuHoo/classical_music/issues/288#issuecomment-5984118731"
+        }
+      ]
+    },
+    {
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/289",
+      "decision_comment": "https://github.com/LuHoo/classical_music/issues/289#issuecomment-5984118879",
+      "work_id": "felix-mendelssohn-song-without-words-op-67-no-3-mwv-u-102",
+      "source_name": "piano",
+      "performances": [
+        {
+          "performance_id": "felix-mendelssohn-song-without-words-op-67-no-3-mwv-u-102-chamber-c221",
+          "profile": "clarinet and piano arrangement",
+          "origin": "existing",
+          "tidal_url": "https://tidal.com/track/105044323"
+        },
+        {
+          "performance_id": "felix-mendelssohn-song-without-words-op-67-no-3-mwv-u-102-piano-p630",
+          "profile": "original solo piano",
+          "origin": "new",
+          "unit_id": "P630",
+          "tidal_url": "https://tidal.com/track/338436384"
+        }
+      ],
+      "source_units": [
+        {
+          "unit_id": "P630",
+          "composer": "Felix Mendelssohn",
+          "composer_id": "felix-mendelssohn",
+          "title": "Song Without Words, MWV U 102",
+          "positions": [
+            1912
+          ],
+          "disposition": "import_new",
+          "work_id": "felix-mendelssohn-song-without-words-op-67-no-3-mwv-u-102",
+          "performers": [
+            {
+              "name": "Howard Shelley",
+              "role": "piano"
+            }
+          ],
+          "evidence": [
+            {
+              "file": "side materials/Music collection/Piano Tidal.xlsx",
+              "sheet": "Piano",
+              "archive_positions": [
+                1930
+              ]
+            }
+          ],
+          "reason": "Curator accepted both original and arrangement in distinct profiles.",
+          "review_classification": "curator_accepted",
+          "curator_issue": "https://github.com/LuHoo/classical_music/issues/289",
+          "tracks": [
+            {
+              "position": 1912,
+              "id": "338436384",
+              "item_id": "12190854-8819-4852-9ce3-041358939527",
+              "title": "Mendelssohn: Lieder ohne Worte VI, Op. 67: III. Andante tranquillo, MWV U102",
+              "isrc": "GBAJY2134423",
+              "duration": "PT2M38S",
+              "artists": [
+                "Howard Shelley"
+              ],
+              "album_titles": [
+                "Mendelssohn: The Complete Solo Piano Music 5"
+              ],
+              "album_ids": [
+                "338436354"
+              ],
+              "nl_usage_rules": {
+                "countryCode": "NL",
+                "paid": [],
+                "subscription": [
+                  "STREAM",
+                  "DJ"
+                ],
+                "free": [],
+                "validFrom": "2024-01-12T00:00:00Z"
+              },
+              "export_position": 1930,
+              "archive_match": "exact_track_id"
+            }
+          ],
+          "performance_id": "felix-mendelssohn-song-without-words-op-67-no-3-mwv-u-102-piano-p630",
+          "profile": "original solo piano",
+          "curator_decision": "https://github.com/LuHoo/classical_music/issues/289#issuecomment-5984118879"
+        }
+      ]
+    },
+    {
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/290",
+      "decision_comment": "https://github.com/LuHoo/classical_music/issues/290#issuecomment-5984118973",
+      "work_id": "felix-mendelssohn-song-without-words-op-85-no-4-mwv-u-190",
+      "source_name": "piano",
+      "performances": [
+        {
+          "performance_id": "felix-mendelssohn-song-without-words-op-85-no-4-mwv-u-190-chamber-c225",
+          "profile": "clarinet and piano arrangement",
+          "origin": "existing",
+          "tidal_url": "https://tidal.com/track/105044329"
+        },
+        {
+          "performance_id": "felix-mendelssohn-song-without-words-op-85-no-4-mwv-u-190-piano-p645",
+          "profile": "original solo piano",
+          "origin": "new",
+          "unit_id": "P645",
+          "tidal_url": "https://tidal.com/track/338434408"
+        }
+      ],
+      "source_units": [
+        {
+          "unit_id": "P645",
+          "composer": "Felix Mendelssohn",
+          "composer_id": "felix-mendelssohn",
+          "title": "Song Without Words, MWV U 190",
+          "positions": [
+            1932
+          ],
+          "disposition": "import_new",
+          "work_id": "felix-mendelssohn-song-without-words-op-85-no-4-mwv-u-190",
+          "performers": [
+            {
+              "name": "Howard Shelley",
+              "role": "piano"
+            }
+          ],
+          "evidence": [
+            {
+              "file": "side materials/Music collection/Piano Tidal.xlsx",
+              "sheet": "Piano",
+              "archive_positions": [
+                1950
+              ]
+            }
+          ],
+          "reason": "Curator accepted both original and arrangement in distinct profiles.",
+          "review_classification": "curator_accepted",
+          "curator_issue": "https://github.com/LuHoo/classical_music/issues/290",
+          "tracks": [
+            {
+              "position": 1932,
+              "id": "338434408",
+              "item_id": "d590a732-594c-418a-9d2b-5f7947f7a3ab",
+              "title": "Mendelssohn: Lieder ohne Worte VII, Op. 85: IV. Andante sostenuto, MWV U190 \"Elegy\"",
+              "isrc": "GBAJY2136817",
+              "duration": "PT3M13S",
+              "artists": [
+                "Howard Shelley"
+              ],
+              "album_titles": [
+                "Mendelssohn: The Complete Solo Piano Music 6"
+              ],
+              "album_ids": [
+                "338434391"
+              ],
+              "nl_usage_rules": {
+                "countryCode": "NL",
+                "paid": [],
+                "subscription": [
+                  "STREAM",
+                  "DJ"
+                ],
+                "free": [],
+                "validFrom": "2024-01-12T00:00:00Z"
+              },
+              "export_position": 1950,
+              "archive_match": "exact_track_id"
+            }
+          ],
+          "performance_id": "felix-mendelssohn-song-without-words-op-85-no-4-mwv-u-190-piano-p645",
+          "profile": "original solo piano",
+          "curator_decision": "https://github.com/LuHoo/classical_music/issues/290#issuecomment-5984118973"
+        }
+      ]
+    },
+    {
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/291",
+      "decision_comment": "https://github.com/LuHoo/classical_music/issues/291#issuecomment-5984119081",
+      "work_id": "felix-mendelssohn-song-without-words-op-85-no-6-mwv-u-155",
+      "source_name": "piano",
+      "performances": [
+        {
+          "performance_id": "felix-mendelssohn-song-without-words-op-85-no-6-mwv-u-155-chamber-c217",
+          "profile": "clarinet and piano arrangement",
+          "origin": "existing",
+          "tidal_url": "https://tidal.com/track/105044319"
+        },
+        {
+          "performance_id": "felix-mendelssohn-song-without-words-op-85-no-6-mwv-u-155-piano-p647",
+          "profile": "original solo piano",
+          "origin": "new",
+          "unit_id": "P647",
+          "tidal_url": "https://tidal.com/track/338434410"
+        }
+      ],
+      "source_units": [
+        {
+          "unit_id": "P647",
+          "composer": "Felix Mendelssohn",
+          "composer_id": "felix-mendelssohn",
+          "title": "Song Without Words, MWV U 155",
+          "positions": [
+            1934
+          ],
+          "disposition": "import_new",
+          "work_id": "felix-mendelssohn-song-without-words-op-85-no-6-mwv-u-155",
+          "performers": [
+            {
+              "name": "Howard Shelley",
+              "role": "piano"
+            }
+          ],
+          "evidence": [
+            {
+              "file": "side materials/Music collection/Piano Tidal.xlsx",
+              "sheet": "Piano",
+              "archive_positions": [
+                1952
+              ]
+            }
+          ],
+          "reason": "Curator accepted both original and arrangement in distinct profiles.",
+          "review_classification": "curator_accepted",
+          "curator_issue": "https://github.com/LuHoo/classical_music/issues/291",
+          "tracks": [
+            {
+              "position": 1934,
+              "id": "338434410",
+              "item_id": "8a45d696-60f7-4dc2-acc2-2d79f3bf2054",
+              "title": "Mendelssohn: Lieder ohne Worte VII, Op. 85: VI. Allegretto con moto, MWV U155",
+              "isrc": "GBAJY2136819",
+              "duration": "PT2M2S",
+              "artists": [
+                "Howard Shelley"
+              ],
+              "album_titles": [
+                "Mendelssohn: The Complete Solo Piano Music 6"
+              ],
+              "album_ids": [
+                "338434391"
+              ],
+              "nl_usage_rules": {
+                "countryCode": "NL",
+                "paid": [],
+                "subscription": [
+                  "STREAM",
+                  "DJ"
+                ],
+                "free": [],
+                "validFrom": "2024-01-12T00:00:00Z"
+              },
+              "export_position": 1952,
+              "archive_match": "exact_track_id"
+            }
+          ],
+          "performance_id": "felix-mendelssohn-song-without-words-op-85-no-6-mwv-u-155-piano-p647",
+          "profile": "original solo piano",
+          "curator_decision": "https://github.com/LuHoo/classical_music/issues/291#issuecomment-5984119081"
+        }
+      ]
+    },
+    {
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/292",
+      "decision_comment": "https://github.com/LuHoo/classical_music/issues/292#issuecomment-5984119196",
+      "work_id": "felix-mendelssohn-song-without-words-op-102-no-1-mwv-u-162",
+      "source_name": "piano",
+      "performances": [
+        {
+          "performance_id": "felix-mendelssohn-song-without-words-op-102-no-1-mwv-u-162-chamber-c218",
+          "profile": "clarinet and piano arrangement",
+          "origin": "existing",
+          "tidal_url": "https://tidal.com/track/105044320"
+        },
+        {
+          "performance_id": "felix-mendelssohn-song-without-words-op-102-no-1-mwv-u-162-piano-p648",
+          "profile": "original solo piano",
+          "origin": "new",
+          "unit_id": "P648",
+          "tidal_url": "https://tidal.com/track/338434411"
+        }
+      ],
+      "source_units": [
+        {
+          "unit_id": "P648",
+          "composer": "Felix Mendelssohn",
+          "composer_id": "felix-mendelssohn",
+          "title": "Song Without Words, MWV U 162",
+          "positions": [
+            1935
+          ],
+          "disposition": "import_new",
+          "work_id": "felix-mendelssohn-song-without-words-op-102-no-1-mwv-u-162",
+          "performers": [
+            {
+              "name": "Howard Shelley",
+              "role": "piano"
+            }
+          ],
+          "evidence": [
+            {
+              "file": "side materials/Music collection/Piano Tidal.xlsx",
+              "sheet": "Piano",
+              "archive_positions": [
+                1953
+              ]
+            }
+          ],
+          "reason": "Curator accepted both original and arrangement in distinct profiles.",
+          "review_classification": "curator_accepted",
+          "curator_issue": "https://github.com/LuHoo/classical_music/issues/292",
+          "tracks": [
+            {
+              "position": 1935,
+              "id": "338434411",
+              "item_id": "b03f3bfe-67d3-457a-8de3-0dbf14bd858c",
+              "title": "Mendelssohn: Lieder ohne Worte VIII, Op. 102: I. Andante un poco agitato, MWV U162",
+              "isrc": "GBAJY2136820",
+              "duration": "PT2M41S",
+              "artists": [
+                "Howard Shelley"
+              ],
+              "album_titles": [
+                "Mendelssohn: The Complete Solo Piano Music 6"
+              ],
+              "album_ids": [
+                "338434391"
+              ],
+              "nl_usage_rules": {
+                "countryCode": "NL",
+                "paid": [],
+                "subscription": [
+                  "STREAM",
+                  "DJ"
+                ],
+                "free": [],
+                "validFrom": "2024-01-12T00:00:00Z"
+              },
+              "export_position": 1953,
+              "archive_match": "exact_track_id"
+            }
+          ],
+          "performance_id": "felix-mendelssohn-song-without-words-op-102-no-1-mwv-u-162-piano-p648",
+          "profile": "original solo piano",
+          "curator_decision": "https://github.com/LuHoo/classical_music/issues/292#issuecomment-5984119196"
+        }
+      ]
+    }
+  ]
+}
