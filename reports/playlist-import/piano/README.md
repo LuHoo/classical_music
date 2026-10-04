@@ -4,16 +4,16 @@ All **2,119 source occurrences** in the complete [4 October 2026 snapshot](https
 
 | Result | Work/recording groups | Source occurrences |
 |---|---:|---:|
-| import_new | 641 | 1660 |
+| import_new | 648 | 1667 |
 | reuse_existing | 53 | 385 |
-| recommendation_choice | 54 | 58 |
+| recommendation_choice | 47 | 51 |
 | identity_unresolved | 7 | 16 |
 
-New records: {'persons': 8, 'work-groups': 655, 'works': 664, 'performances': 641}. Existing recordings reused: 53. A group is one Work/interpretation, not one track. Hough’s embellished Op. 9 No. 2 is an additional take in the same Work choice.
+New records: {'persons': 8, 'work-groups': 655, 'works': 664, 'performances': 648}. Existing recordings reused: 53. A group is one Work/interpretation, not one track. Hough’s embellished Op. 9 No. 2 is an additional take in the same Work choice.
 
 ## Curator choices
 
-**31 Work-level issues:** 30 confirmed Work comparisons, plus Mozart K. 397 requiring version research before the choice. Answer with the issue number and a P-code, `existing` where offered, `geen`, or `unresolved`. One decision covers all movements; only exceptions or doubt need a short explanation. No CSV editing or per-track report is required. Different performance profiles require an explicit decision.
+**24 pending Work-level issues:** 23 confirmed Work comparisons, plus Mozart K. 397 requiring version research before the choice. Answer with the issue number and a P-code, `existing` where offered, `geen`, or `unresolved`. One decision covers all movements; only exceptions or doubt need a short explanation. No CSV editing or per-track report is required. Different performance profiles require an explicit decision.
 
 | Issue | Composer — Work | Piano alternatives |
 |---|---|---|
@@ -40,13 +40,13 @@ New records: {'persons': 8, 'work-groups': 655, 'works': 664, 'performances': 64
 | [#283](https://github.com/LuHoo/classical_music/issues/283) | Frédéric Chopin — Nocturne, Op. 72 No. 1 | P331, P583 |
 | [#284](https://github.com/LuHoo/classical_music/issues/284) | Frédéric Chopin — Nocturne in C-Sharp Minor, KK IVa/16 | P332, P582 |
 | [#285](https://github.com/LuHoo/classical_music/issues/285) | Frédéric Chopin — Nocturne in C Minor, KK IVb/8 (attributed to Chopin) | P333, P584 |
-| [#286](https://github.com/LuHoo/classical_music/issues/286) | Felix Mendelssohn — Song Without Words, MWV U 98 | P608; existing |
-| [#287](https://github.com/LuHoo/classical_music/issues/287) | Felix Mendelssohn — Song Without Words, MWV U 110 | P610; existing |
-| [#288](https://github.com/LuHoo/classical_music/issues/288) | Felix Mendelssohn — Song Without Words, MWV U 145 | P629; existing |
-| [#289](https://github.com/LuHoo/classical_music/issues/289) | Felix Mendelssohn — Song Without Words, MWV U 102 | P630; existing |
-| [#290](https://github.com/LuHoo/classical_music/issues/290) | Felix Mendelssohn — Song Without Words, MWV U 190 | P645; existing |
-| [#291](https://github.com/LuHoo/classical_music/issues/291) | Felix Mendelssohn — Song Without Words, MWV U 155 | P647; existing |
-| [#292](https://github.com/LuHoo/classical_music/issues/292) | Felix Mendelssohn — Song Without Words, MWV U 162 | P648; existing |
+| [#286](https://github.com/LuHoo/classical_music/issues/286) | Felix Mendelssohn — Song Without Words, MWV U 98 | P608; existing  **Resolved: both, distinct profiles** |
+| [#287](https://github.com/LuHoo/classical_music/issues/287) | Felix Mendelssohn — Song Without Words, MWV U 110 | P610; existing  **Resolved: both, distinct profiles** |
+| [#288](https://github.com/LuHoo/classical_music/issues/288) | Felix Mendelssohn — Song Without Words, MWV U 145 | P629; existing  **Resolved: both, distinct profiles** |
+| [#289](https://github.com/LuHoo/classical_music/issues/289) | Felix Mendelssohn — Song Without Words, MWV U 102 | P630; existing  **Resolved: both, distinct profiles** |
+| [#290](https://github.com/LuHoo/classical_music/issues/290) | Felix Mendelssohn — Song Without Words, MWV U 190 | P645; existing  **Resolved: both, distinct profiles** |
+| [#291](https://github.com/LuHoo/classical_music/issues/291) | Felix Mendelssohn — Song Without Words, MWV U 155 | P647; existing  **Resolved: both, distinct profiles** |
+| [#292](https://github.com/LuHoo/classical_music/issues/292) | Felix Mendelssohn — Song Without Words, MWV U 162 | P648; existing  **Resolved: both, distinct profiles** |
 | [Mozart K. 397](https://github.com/LuHoo/classical_music/issues/293) | Fragment / completed ending: research before selection | P090, P379 |
 
 Unchosen alternatives remain outside canonical Performance data. Existing recommendations stay in place. Neither an issue nor playlist membership authorises automatically choosing between alternatives. Applying a later decision requires its explicit source and a separate reviewed change. No Tidal playlist writes are made.
@@ -69,3 +69,7 @@ Unchosen alternatives remain outside canonical Performance data. Existing recomm
 ## Verification
 
 `python scripts/check_piano_import.py` checks complete membership, metadata fingerprints, canonical references, curator gates and generated links/excerpts. Use the canonical validator and focused regression tests as described in [review notes](review.md). The [machine-readable manifest](snapshot-2026-10-04.json) records every source occurrence, Work/recording assignment and issue. Raw API output remains in the workflow artifact, outside canonical data.
+
+## Original and arrangement decisions — 4 October 2026
+
+[#297](https://github.com/LuHoo/classical_music/pull/297) applies Lucas's decision in #287 and his extension to equivalent cases. The seven Mendelssohn comparisons (#286–#292) now retain Shelley's original solo piano performances and Ottensamer/Wang's clarinet and piano arrangements in distinct explicit profiles. `resolved_choices` links all source occurrences to decision comments and the [implementation report](../../curator-decisions/original-arrangement-2026-10-04.json).

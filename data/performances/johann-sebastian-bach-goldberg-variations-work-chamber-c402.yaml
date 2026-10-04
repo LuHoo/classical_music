@@ -1,0 +1,17 @@
+id: johann-sebastian-bach-goldberg-variations-work-chamber-c402
+work_id: johann-sebastian-bach-goldberg-variations-work
+performers:
+  - name: Martin Fröst
+  - name: Sébastien Dubé
+profile: clarinet and double bass arrangement
+links:
+  tidal:
+    url: https://tidal.com/track/448367326
+release:
+  album_title: B.A.C.H.
+source:
+  file: reports/playlist-import/chamber/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/a2327106-07fd-4433-8bd3-d8a5c251c69a
+  unit_id: C402
+  curator_decision: https://github.com/LuHoo/classical_music/issues/258#issuecomment-5984118267
+excerpt: Aria only (clarinet and double bass)

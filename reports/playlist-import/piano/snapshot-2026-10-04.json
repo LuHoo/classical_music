@@ -826,9 +826,9 @@
   "base_commit": "6139470",
   "summary": {
     "import_new": {
-      "units": 641,
-      "track_occurrences": 1660,
-      "distinct_performances": 641
+      "units": 648,
+      "track_occurrences": 1667,
+      "distinct_performances": 648
     },
     "reuse_existing": {
       "units": 53,
@@ -836,8 +836,8 @@
       "distinct_performances": 53
     },
     "recommendation_choice": {
-      "units": 54,
-      "track_occurrences": 58,
+      "units": 47,
+      "track_occurrences": 51,
       "distinct_performances": 0
     },
     "identity_unresolved": {
@@ -10686,6 +10686,41 @@
       "id": "edvard-grieg-efterklang-op-71-no-7-piano-p755",
       "entity": "performances",
       "path": "data/performances/edvard-grieg-efterklang-op-71-no-7-piano-p755.yaml"
+    },
+    {
+      "id": "felix-mendelssohn-song-without-words-op-30-no-4-mwv-u-98-piano-p608",
+      "entity": "performances",
+      "path": "data/performances/felix-mendelssohn-song-without-words-op-30-no-4-mwv-u-98-piano-p608.yaml"
+    },
+    {
+      "id": "felix-mendelssohn-song-without-words-op-30-no-6-mwv-u-110-piano-p610",
+      "entity": "performances",
+      "path": "data/performances/felix-mendelssohn-song-without-words-op-30-no-6-mwv-u-110-piano-p610.yaml"
+    },
+    {
+      "id": "felix-mendelssohn-song-without-words-op-67-no-2-mwv-u-145-piano-p629",
+      "entity": "performances",
+      "path": "data/performances/felix-mendelssohn-song-without-words-op-67-no-2-mwv-u-145-piano-p629.yaml"
+    },
+    {
+      "id": "felix-mendelssohn-song-without-words-op-67-no-3-mwv-u-102-piano-p630",
+      "entity": "performances",
+      "path": "data/performances/felix-mendelssohn-song-without-words-op-67-no-3-mwv-u-102-piano-p630.yaml"
+    },
+    {
+      "id": "felix-mendelssohn-song-without-words-op-85-no-4-mwv-u-190-piano-p645",
+      "entity": "performances",
+      "path": "data/performances/felix-mendelssohn-song-without-words-op-85-no-4-mwv-u-190-piano-p645.yaml"
+    },
+    {
+      "id": "felix-mendelssohn-song-without-words-op-85-no-6-mwv-u-155-piano-p647",
+      "entity": "performances",
+      "path": "data/performances/felix-mendelssohn-song-without-words-op-85-no-6-mwv-u-155-piano-p647.yaml"
+    },
+    {
+      "id": "felix-mendelssohn-song-without-words-op-102-no-1-mwv-u-162-piano-p648",
+      "entity": "performances",
+      "path": "data/performances/felix-mendelssohn-song-without-words-op-102-no-1-mwv-u-162-piano-p648.yaml"
     }
   ],
   "changed_existing": [
@@ -11125,97 +11160,6 @@
       ],
       "existing_performances": [],
       "issue_url": "https://github.com/LuHoo/classical_music/issues/285",
-      "decision": null
-    },
-    {
-      "work_id": "felix-mendelssohn-song-without-words-op-30-no-4-mwv-u-98",
-      "title": "Song Without Words, MWV U 98",
-      "composer": "Felix Mendelssohn",
-      "units": [
-        "P608"
-      ],
-      "existing_performances": [
-        "felix-mendelssohn-song-without-words-op-30-no-4-mwv-u-98-chamber-c220"
-      ],
-      "issue_url": "https://github.com/LuHoo/classical_music/issues/286",
-      "decision": null
-    },
-    {
-      "work_id": "felix-mendelssohn-song-without-words-op-30-no-6-mwv-u-110",
-      "title": "Song Without Words, MWV U 110",
-      "composer": "Felix Mendelssohn",
-      "units": [
-        "P610"
-      ],
-      "existing_performances": [
-        "felix-mendelssohn-song-without-words-op-30-no-6-mwv-u-110-chamber-c223"
-      ],
-      "issue_url": "https://github.com/LuHoo/classical_music/issues/287",
-      "decision": null
-    },
-    {
-      "work_id": "felix-mendelssohn-song-without-words-op-67-no-2-mwv-u-145",
-      "title": "Song Without Words, MWV U 145",
-      "composer": "Felix Mendelssohn",
-      "units": [
-        "P629"
-      ],
-      "existing_performances": [
-        "felix-mendelssohn-song-without-words-op-67-no-2-mwv-u-145-chamber-c224"
-      ],
-      "issue_url": "https://github.com/LuHoo/classical_music/issues/288",
-      "decision": null
-    },
-    {
-      "work_id": "felix-mendelssohn-song-without-words-op-67-no-3-mwv-u-102",
-      "title": "Song Without Words, MWV U 102",
-      "composer": "Felix Mendelssohn",
-      "units": [
-        "P630"
-      ],
-      "existing_performances": [
-        "felix-mendelssohn-song-without-words-op-67-no-3-mwv-u-102-chamber-c221"
-      ],
-      "issue_url": "https://github.com/LuHoo/classical_music/issues/289",
-      "decision": null
-    },
-    {
-      "work_id": "felix-mendelssohn-song-without-words-op-85-no-4-mwv-u-190",
-      "title": "Song Without Words, MWV U 190",
-      "composer": "Felix Mendelssohn",
-      "units": [
-        "P645"
-      ],
-      "existing_performances": [
-        "felix-mendelssohn-song-without-words-op-85-no-4-mwv-u-190-chamber-c225"
-      ],
-      "issue_url": "https://github.com/LuHoo/classical_music/issues/290",
-      "decision": null
-    },
-    {
-      "work_id": "felix-mendelssohn-song-without-words-op-85-no-6-mwv-u-155",
-      "title": "Song Without Words, MWV U 155",
-      "composer": "Felix Mendelssohn",
-      "units": [
-        "P647"
-      ],
-      "existing_performances": [
-        "felix-mendelssohn-song-without-words-op-85-no-6-mwv-u-155-chamber-c217"
-      ],
-      "issue_url": "https://github.com/LuHoo/classical_music/issues/291",
-      "decision": null
-    },
-    {
-      "work_id": "felix-mendelssohn-song-without-words-op-102-no-1-mwv-u-162",
-      "title": "Song Without Words, MWV U 162",
-      "composer": "Felix Mendelssohn",
-      "units": [
-        "P648"
-      ],
-      "existing_performances": [
-        "felix-mendelssohn-song-without-words-op-102-no-1-mwv-u-162-chamber-c218"
-      ],
-      "issue_url": "https://github.com/LuHoo/classical_music/issues/292",
       "decision": null
     }
   ],
@@ -85142,7 +85086,7 @@
       "positions": [
         1881
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "import_new",
       "work_id": "felix-mendelssohn-song-without-words-op-30-no-4-mwv-u-98",
       "performers": [
         {
@@ -85159,8 +85103,8 @@
           ]
         }
       ],
-      "reason": "A different interpretation of this Work is already recommended or also selected in Piano. Explicit curator choice required.",
-      "review_classification": "curator_required",
+      "reason": "Curator accepted both original and arrangement in distinct profiles.",
+      "review_classification": "curator_accepted",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/286",
       "tracks": [
         {
@@ -85192,7 +85136,11 @@
           "export_position": 1899,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "performance_id": "felix-mendelssohn-song-without-words-op-30-no-4-mwv-u-98-piano-p608",
+      "profile": "original solo piano",
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/286#issuecomment-5984118614",
+      "listening_track_id": "338436208"
     },
     {
       "unit_id": "P609",
@@ -85261,7 +85209,7 @@
       "positions": [
         1883
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "import_new",
       "work_id": "felix-mendelssohn-song-without-words-op-30-no-6-mwv-u-110",
       "performers": [
         {
@@ -85278,8 +85226,8 @@
           ]
         }
       ],
-      "reason": "A different interpretation of this Work is already recommended or also selected in Piano. Explicit curator choice required.",
-      "review_classification": "curator_required",
+      "reason": "Curator accepted both original and arrangement in distinct profiles.",
+      "review_classification": "curator_accepted",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/287",
       "tracks": [
         {
@@ -85311,7 +85259,11 @@
           "export_position": 1901,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "performance_id": "felix-mendelssohn-song-without-words-op-30-no-6-mwv-u-110-piano-p610",
+      "profile": "original solo piano",
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/287#issuecomment-5984078260",
+      "listening_track_id": "338436210"
     },
     {
       "unit_id": "P611",
@@ -86662,7 +86614,7 @@
       "positions": [
         1911
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "import_new",
       "work_id": "felix-mendelssohn-song-without-words-op-67-no-2-mwv-u-145",
       "performers": [
         {
@@ -86679,8 +86631,8 @@
           ]
         }
       ],
-      "reason": "A different interpretation of this Work is already recommended or also selected in Piano. Explicit curator choice required.",
-      "review_classification": "curator_required",
+      "reason": "Curator accepted both original and arrangement in distinct profiles.",
+      "review_classification": "curator_accepted",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/288",
       "tracks": [
         {
@@ -86712,7 +86664,11 @@
           "export_position": 1929,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "performance_id": "felix-mendelssohn-song-without-words-op-67-no-2-mwv-u-145-piano-p629",
+      "profile": "original solo piano",
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/288#issuecomment-5984118731",
+      "listening_track_id": "338436381"
     },
     {
       "unit_id": "P630",
@@ -86722,7 +86678,7 @@
       "positions": [
         1912
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "import_new",
       "work_id": "felix-mendelssohn-song-without-words-op-67-no-3-mwv-u-102",
       "performers": [
         {
@@ -86739,8 +86695,8 @@
           ]
         }
       ],
-      "reason": "A different interpretation of this Work is already recommended or also selected in Piano. Explicit curator choice required.",
-      "review_classification": "curator_required",
+      "reason": "Curator accepted both original and arrangement in distinct profiles.",
+      "review_classification": "curator_accepted",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/289",
       "tracks": [
         {
@@ -86772,7 +86728,11 @@
           "export_position": 1930,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "performance_id": "felix-mendelssohn-song-without-words-op-67-no-3-mwv-u-102-piano-p630",
+      "profile": "original solo piano",
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/289#issuecomment-5984118879",
+      "listening_track_id": "338436384"
     },
     {
       "unit_id": "P631",
@@ -87763,7 +87723,7 @@
       "positions": [
         1932
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "import_new",
       "work_id": "felix-mendelssohn-song-without-words-op-85-no-4-mwv-u-190",
       "performers": [
         {
@@ -87780,8 +87740,8 @@
           ]
         }
       ],
-      "reason": "A different interpretation of this Work is already recommended or also selected in Piano. Explicit curator choice required.",
-      "review_classification": "curator_required",
+      "reason": "Curator accepted both original and arrangement in distinct profiles.",
+      "review_classification": "curator_accepted",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/290",
       "tracks": [
         {
@@ -87813,7 +87773,11 @@
           "export_position": 1950,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "performance_id": "felix-mendelssohn-song-without-words-op-85-no-4-mwv-u-190-piano-p645",
+      "profile": "original solo piano",
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/290#issuecomment-5984118973",
+      "listening_track_id": "338434408"
     },
     {
       "unit_id": "P646",
@@ -87882,7 +87846,7 @@
       "positions": [
         1934
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "import_new",
       "work_id": "felix-mendelssohn-song-without-words-op-85-no-6-mwv-u-155",
       "performers": [
         {
@@ -87899,8 +87863,8 @@
           ]
         }
       ],
-      "reason": "A different interpretation of this Work is already recommended or also selected in Piano. Explicit curator choice required.",
-      "review_classification": "curator_required",
+      "reason": "Curator accepted both original and arrangement in distinct profiles.",
+      "review_classification": "curator_accepted",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/291",
       "tracks": [
         {
@@ -87932,7 +87896,11 @@
           "export_position": 1952,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "performance_id": "felix-mendelssohn-song-without-words-op-85-no-6-mwv-u-155-piano-p647",
+      "profile": "original solo piano",
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/291#issuecomment-5984119081",
+      "listening_track_id": "338434410"
     },
     {
       "unit_id": "P648",
@@ -87942,7 +87910,7 @@
       "positions": [
         1935
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "import_new",
       "work_id": "felix-mendelssohn-song-without-words-op-102-no-1-mwv-u-162",
       "performers": [
         {
@@ -87959,8 +87927,8 @@
           ]
         }
       ],
-      "reason": "A different interpretation of this Work is already recommended or also selected in Piano. Explicit curator choice required.",
-      "review_classification": "curator_required",
+      "reason": "Curator accepted both original and arrangement in distinct profiles.",
+      "review_classification": "curator_accepted",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/292",
       "tracks": [
         {
@@ -87992,7 +87960,11 @@
           "export_position": 1953,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "performance_id": "felix-mendelssohn-song-without-words-op-102-no-1-mwv-u-162-piano-p648",
+      "profile": "original solo piano",
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/292#issuecomment-5984119196",
+      "listening_track_id": "338434411"
     },
     {
       "unit_id": "P649",
@@ -96561,6 +96533,239 @@
           "archive_match": null
         }
       ]
+    }
+  ],
+  "resolved_choices": [
+    {
+      "work_id": "felix-mendelssohn-song-without-words-op-30-no-4-mwv-u-98",
+      "title": "Song Without Words, MWV U 98",
+      "composer": "Felix Mendelssohn",
+      "units": [
+        "P608"
+      ],
+      "existing_performances": [
+        "felix-mendelssohn-song-without-words-op-30-no-4-mwv-u-98-chamber-c220"
+      ],
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/286",
+      "decision": {
+        "choice": "both_distinct_profiles",
+        "comment_url": "https://github.com/LuHoo/classical_music/issues/286#issuecomment-5984118614",
+        "performances": [
+          {
+            "performance_id": "felix-mendelssohn-song-without-words-op-30-no-4-mwv-u-98-chamber-c220",
+            "profile": "clarinet and piano arrangement",
+            "origin": "existing",
+            "tidal_url": "https://tidal.com/track/105044322"
+          },
+          {
+            "performance_id": "felix-mendelssohn-song-without-words-op-30-no-4-mwv-u-98-piano-p608",
+            "profile": "original solo piano",
+            "origin": "new",
+            "unit_id": "P608",
+            "tidal_url": "https://tidal.com/track/338436208"
+          }
+        ],
+        "implementation_report": "reports/curator-decisions/original-arrangement-2026-10-04.json",
+        "implementation_pr": "https://github.com/LuHoo/classical_music/pull/297"
+      }
+    },
+    {
+      "work_id": "felix-mendelssohn-song-without-words-op-30-no-6-mwv-u-110",
+      "title": "Song Without Words, MWV U 110",
+      "composer": "Felix Mendelssohn",
+      "units": [
+        "P610"
+      ],
+      "existing_performances": [
+        "felix-mendelssohn-song-without-words-op-30-no-6-mwv-u-110-chamber-c223"
+      ],
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/287",
+      "decision": {
+        "choice": "both_distinct_profiles",
+        "comment_url": "https://github.com/LuHoo/classical_music/issues/287#issuecomment-5984078260",
+        "performances": [
+          {
+            "performance_id": "felix-mendelssohn-song-without-words-op-30-no-6-mwv-u-110-chamber-c223",
+            "profile": "clarinet and piano arrangement",
+            "origin": "existing",
+            "tidal_url": "https://tidal.com/track/105044327"
+          },
+          {
+            "performance_id": "felix-mendelssohn-song-without-words-op-30-no-6-mwv-u-110-piano-p610",
+            "profile": "original solo piano",
+            "origin": "new",
+            "unit_id": "P610",
+            "tidal_url": "https://tidal.com/track/338436210"
+          }
+        ],
+        "implementation_report": "reports/curator-decisions/original-arrangement-2026-10-04.json",
+        "implementation_pr": "https://github.com/LuHoo/classical_music/pull/297"
+      }
+    },
+    {
+      "work_id": "felix-mendelssohn-song-without-words-op-67-no-2-mwv-u-145",
+      "title": "Song Without Words, MWV U 145",
+      "composer": "Felix Mendelssohn",
+      "units": [
+        "P629"
+      ],
+      "existing_performances": [
+        "felix-mendelssohn-song-without-words-op-67-no-2-mwv-u-145-chamber-c224"
+      ],
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/288",
+      "decision": {
+        "choice": "both_distinct_profiles",
+        "comment_url": "https://github.com/LuHoo/classical_music/issues/288#issuecomment-5984118731",
+        "performances": [
+          {
+            "performance_id": "felix-mendelssohn-song-without-words-op-67-no-2-mwv-u-145-chamber-c224",
+            "profile": "clarinet and piano arrangement",
+            "origin": "existing",
+            "tidal_url": "https://tidal.com/track/105044328"
+          },
+          {
+            "performance_id": "felix-mendelssohn-song-without-words-op-67-no-2-mwv-u-145-piano-p629",
+            "profile": "original solo piano",
+            "origin": "new",
+            "unit_id": "P629",
+            "tidal_url": "https://tidal.com/track/338436381"
+          }
+        ],
+        "implementation_report": "reports/curator-decisions/original-arrangement-2026-10-04.json",
+        "implementation_pr": "https://github.com/LuHoo/classical_music/pull/297"
+      }
+    },
+    {
+      "work_id": "felix-mendelssohn-song-without-words-op-67-no-3-mwv-u-102",
+      "title": "Song Without Words, MWV U 102",
+      "composer": "Felix Mendelssohn",
+      "units": [
+        "P630"
+      ],
+      "existing_performances": [
+        "felix-mendelssohn-song-without-words-op-67-no-3-mwv-u-102-chamber-c221"
+      ],
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/289",
+      "decision": {
+        "choice": "both_distinct_profiles",
+        "comment_url": "https://github.com/LuHoo/classical_music/issues/289#issuecomment-5984118879",
+        "performances": [
+          {
+            "performance_id": "felix-mendelssohn-song-without-words-op-67-no-3-mwv-u-102-chamber-c221",
+            "profile": "clarinet and piano arrangement",
+            "origin": "existing",
+            "tidal_url": "https://tidal.com/track/105044323"
+          },
+          {
+            "performance_id": "felix-mendelssohn-song-without-words-op-67-no-3-mwv-u-102-piano-p630",
+            "profile": "original solo piano",
+            "origin": "new",
+            "unit_id": "P630",
+            "tidal_url": "https://tidal.com/track/338436384"
+          }
+        ],
+        "implementation_report": "reports/curator-decisions/original-arrangement-2026-10-04.json",
+        "implementation_pr": "https://github.com/LuHoo/classical_music/pull/297"
+      }
+    },
+    {
+      "work_id": "felix-mendelssohn-song-without-words-op-85-no-4-mwv-u-190",
+      "title": "Song Without Words, MWV U 190",
+      "composer": "Felix Mendelssohn",
+      "units": [
+        "P645"
+      ],
+      "existing_performances": [
+        "felix-mendelssohn-song-without-words-op-85-no-4-mwv-u-190-chamber-c225"
+      ],
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/290",
+      "decision": {
+        "choice": "both_distinct_profiles",
+        "comment_url": "https://github.com/LuHoo/classical_music/issues/290#issuecomment-5984118973",
+        "performances": [
+          {
+            "performance_id": "felix-mendelssohn-song-without-words-op-85-no-4-mwv-u-190-chamber-c225",
+            "profile": "clarinet and piano arrangement",
+            "origin": "existing",
+            "tidal_url": "https://tidal.com/track/105044329"
+          },
+          {
+            "performance_id": "felix-mendelssohn-song-without-words-op-85-no-4-mwv-u-190-piano-p645",
+            "profile": "original solo piano",
+            "origin": "new",
+            "unit_id": "P645",
+            "tidal_url": "https://tidal.com/track/338434408"
+          }
+        ],
+        "implementation_report": "reports/curator-decisions/original-arrangement-2026-10-04.json",
+        "implementation_pr": "https://github.com/LuHoo/classical_music/pull/297"
+      }
+    },
+    {
+      "work_id": "felix-mendelssohn-song-without-words-op-85-no-6-mwv-u-155",
+      "title": "Song Without Words, MWV U 155",
+      "composer": "Felix Mendelssohn",
+      "units": [
+        "P647"
+      ],
+      "existing_performances": [
+        "felix-mendelssohn-song-without-words-op-85-no-6-mwv-u-155-chamber-c217"
+      ],
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/291",
+      "decision": {
+        "choice": "both_distinct_profiles",
+        "comment_url": "https://github.com/LuHoo/classical_music/issues/291#issuecomment-5984119081",
+        "performances": [
+          {
+            "performance_id": "felix-mendelssohn-song-without-words-op-85-no-6-mwv-u-155-chamber-c217",
+            "profile": "clarinet and piano arrangement",
+            "origin": "existing",
+            "tidal_url": "https://tidal.com/track/105044319"
+          },
+          {
+            "performance_id": "felix-mendelssohn-song-without-words-op-85-no-6-mwv-u-155-piano-p647",
+            "profile": "original solo piano",
+            "origin": "new",
+            "unit_id": "P647",
+            "tidal_url": "https://tidal.com/track/338434410"
+          }
+        ],
+        "implementation_report": "reports/curator-decisions/original-arrangement-2026-10-04.json",
+        "implementation_pr": "https://github.com/LuHoo/classical_music/pull/297"
+      }
+    },
+    {
+      "work_id": "felix-mendelssohn-song-without-words-op-102-no-1-mwv-u-162",
+      "title": "Song Without Words, MWV U 162",
+      "composer": "Felix Mendelssohn",
+      "units": [
+        "P648"
+      ],
+      "existing_performances": [
+        "felix-mendelssohn-song-without-words-op-102-no-1-mwv-u-162-chamber-c218"
+      ],
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/292",
+      "decision": {
+        "choice": "both_distinct_profiles",
+        "comment_url": "https://github.com/LuHoo/classical_music/issues/292#issuecomment-5984119196",
+        "performances": [
+          {
+            "performance_id": "felix-mendelssohn-song-without-words-op-102-no-1-mwv-u-162-chamber-c218",
+            "profile": "clarinet and piano arrangement",
+            "origin": "existing",
+            "tidal_url": "https://tidal.com/track/105044320"
+          },
+          {
+            "performance_id": "felix-mendelssohn-song-without-words-op-102-no-1-mwv-u-162-piano-p648",
+            "profile": "original solo piano",
+            "origin": "new",
+            "unit_id": "P648",
+            "tidal_url": "https://tidal.com/track/338434411"
+          }
+        ],
+        "implementation_report": "reports/curator-decisions/original-arrangement-2026-10-04.json",
+        "implementation_pr": "https://github.com/LuHoo/classical_music/pull/297"
+      }
     }
   ]
 }

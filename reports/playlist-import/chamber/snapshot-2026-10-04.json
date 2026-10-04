@@ -1423,9 +1423,9 @@
   "base_commit": "f03bf06",
   "summary": {
     "import_new": {
-      "units": 283,
-      "track_occurrences": 913,
-      "distinct_performances": 283
+      "units": 292,
+      "track_occurrences": 932,
+      "distinct_performances": 292
     },
     "reuse_existing": {
       "units": 92,
@@ -1433,8 +1433,8 @@
       "distinct_performances": 91
     },
     "recommendation_choice": {
-      "units": 32,
-      "track_occurrences": 91,
+      "units": 23,
+      "track_occurrences": 72,
       "distinct_performances": 0
     },
     "identity_unresolved": {
@@ -5843,6 +5843,51 @@
       "id": "robin-holloway-fantasy-pieces-on-the-heine-liederkreis-op-16-chamber-c424",
       "path": "data/performances/robin-holloway-fantasy-pieces-on-the-heine-liederkreis-op-16-chamber-c424.yaml",
       "entity": "performances"
+    },
+    {
+      "id": "cesar-franck-violin-sonata-in-a-major-fwv-8-chamber-c069",
+      "entity": "performances",
+      "path": "data/performances/cesar-franck-violin-sonata-in-a-major-fwv-8-chamber-c069.yaml"
+    },
+    {
+      "id": "cesar-franck-violin-sonata-in-a-major-fwv-8-chamber-c098",
+      "entity": "performances",
+      "path": "data/performances/cesar-franck-violin-sonata-in-a-major-fwv-8-chamber-c098.yaml"
+    },
+    {
+      "id": "camille-saint-saens-le-carnaval-des-animaux-chamber-c073",
+      "entity": "performances",
+      "path": "data/performances/camille-saint-saens-le-carnaval-des-animaux-chamber-c073.yaml"
+    },
+    {
+      "id": "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-5-sonata-no-3-in-c-maj-work-chamber-c204",
+      "entity": "performances",
+      "path": "data/performances/johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-5-sonata-no-3-in-c-maj-work-chamber-c204.yaml"
+    },
+    {
+      "id": "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-1-sonata-no-1-in-g-min-work-chamber-c207",
+      "entity": "performances",
+      "path": "data/performances/johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-1-sonata-no-1-in-g-min-work-chamber-c207.yaml"
+    },
+    {
+      "id": "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-4-partita-no-2-in-d-min-work-chamber-c208",
+      "entity": "performances",
+      "path": "data/performances/johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-4-partita-no-2-in-d-min-work-chamber-c208.yaml"
+    },
+    {
+      "id": "johann-sebastian-bach-goldberg-variations-work-chamber-c402",
+      "entity": "performances",
+      "path": "data/performances/johann-sebastian-bach-goldberg-variations-work-chamber-c402.yaml"
+    },
+    {
+      "id": "johann-sebastian-bach-orchestral-suite-no-3-in-d-maj-work-chamber-c406",
+      "entity": "performances",
+      "path": "data/performances/johann-sebastian-bach-orchestral-suite-no-3-in-d-maj-work-chamber-c406.yaml"
+    },
+    {
+      "id": "johann-sebastian-bach-concerto-for-harpsichord-and-orchestra-no-5-in-f-min-work-chamber-c417",
+      "entity": "performances",
+      "path": "data/performances/johann-sebastian-bach-concerto-for-harpsichord-and-orchestra-no-5-in-f-min-work-chamber-c417.yaml"
     }
   ],
   "changed_existing": [],
@@ -5888,31 +5933,6 @@
       "decision": null
     },
     {
-      "work_id": "cesar-franck-violin-sonata-in-a-major-fwv-8",
-      "title": "Violin Sonata in A Major, FWV 8",
-      "composer": "César Franck",
-      "units": [
-        "C069",
-        "C098"
-      ],
-      "existing_performances": [],
-      "issue_url": "https://github.com/LuHoo/classical_music/issues/244",
-      "decision": null
-    },
-    {
-      "work_id": "camille-saint-saens-le-carnaval-des-animaux",
-      "title": "Le Carnaval des Animaux, R. 125",
-      "composer": "Camille Saint-Saëns",
-      "units": [
-        "C073"
-      ],
-      "existing_performances": [
-        "camille-saint-saens-le-carnaval-des-animaux-playlist-478"
-      ],
-      "issue_url": "https://github.com/LuHoo/classical_music/issues/245",
-      "decision": null
-    },
-    {
       "work_id": "jacques-ibert-trois-pieces-breves",
       "title": "Trois pièces brèves",
       "composer": "Jacques Ibert",
@@ -5947,48 +5967,6 @@
       ],
       "existing_performances": [],
       "issue_url": "https://github.com/LuHoo/classical_music/issues/248",
-      "decision": null
-    },
-    {
-      "work_id": "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-5-sonata-no-3-in-c-maj-work",
-      "title": "Violin Sonata No. 3 in C Major, BWV 1005 (Excerpts Arr. J. Lindberg for Lute)",
-      "composer": "Johann Sebastian Bach",
-      "units": [
-        "C204",
-        "C359"
-      ],
-      "existing_performances": [
-        "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-5-sonata-no-3-in-c-maj-work-leonidas-kavakos"
-      ],
-      "issue_url": "https://github.com/LuHoo/classical_music/issues/249",
-      "decision": null
-    },
-    {
-      "work_id": "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-1-sonata-no-1-in-g-min-work",
-      "title": "Violin Sonata No. 1 in G Minor, BWV 1001 (Arr. J. Lindberg for Lute)",
-      "composer": "Johann Sebastian Bach",
-      "units": [
-        "C207",
-        "C361"
-      ],
-      "existing_performances": [
-        "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-1-sonata-no-1-in-g-min-work-leonidas-kavakos"
-      ],
-      "issue_url": "https://github.com/LuHoo/classical_music/issues/250",
-      "decision": null
-    },
-    {
-      "work_id": "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-4-partita-no-2-in-d-min-work",
-      "title": "Violin Partita No. 2 in D Minor, BWV 1004",
-      "composer": "Johann Sebastian Bach",
-      "units": [
-        "C208",
-        "C363"
-      ],
-      "existing_performances": [
-        "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-4-partita-no-2-in-d-min-work-leonidas-kavakos"
-      ],
-      "issue_url": "https://github.com/LuHoo/classical_music/issues/251",
       "decision": null
     },
     {
@@ -6076,45 +6054,6 @@
         "igor-stravinsky-concerto-in-e-flat-dumbarton-oaks-k-060-work-nieuw-sinfonietta-amsterdam-lev-markiz"
       ],
       "issue_url": "https://github.com/LuHoo/classical_music/issues/257",
-      "decision": null
-    },
-    {
-      "work_id": "johann-sebastian-bach-goldberg-variations-work",
-      "title": "Goldberg Variations, BWV 988",
-      "composer": "Johann Sebastian Bach",
-      "units": [
-        "C402"
-      ],
-      "existing_performances": [
-        "johann-sebastian-bach-goldberg-variations-work-klara-wurtz"
-      ],
-      "issue_url": "https://github.com/LuHoo/classical_music/issues/258",
-      "decision": null
-    },
-    {
-      "work_id": "johann-sebastian-bach-orchestral-suite-no-3-in-d-maj-work",
-      "title": "Orchestral Suite No. 3, BWV 1068",
-      "composer": "Johann Sebastian Bach",
-      "units": [
-        "C406"
-      ],
-      "existing_performances": [
-        "johann-sebastian-bach-orchestral-suite-no-3-in-d-maj-work-akademie-fur-alte-musik-berlin"
-      ],
-      "issue_url": "https://github.com/LuHoo/classical_music/issues/259",
-      "decision": null
-    },
-    {
-      "work_id": "johann-sebastian-bach-concerto-for-harpsichord-and-orchestra-no-5-in-f-min-work",
-      "title": "Keyboard Concerto No. 5, BWV 1056",
-      "composer": "Johann Sebastian Bach",
-      "units": [
-        "C417"
-      ],
-      "existing_performances": [
-        "johann-sebastian-bach-concerto-for-harpsichord-and-orchestra-no-5-in-f-min-work-francesco-corti-il-pomo-d-oro"
-      ],
-      "issue_url": "https://github.com/LuHoo/classical_music/issues/260",
       "decision": null
     }
   ],
@@ -12871,7 +12810,7 @@
         229,
         230
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "import_new",
       "work_id": "cesar-franck-violin-sonata-in-a-major-fwv-8",
       "performers": [
         {
@@ -12887,8 +12826,8 @@
           "locator": "Chamber sheet; join by exact track ID or unique ISRC, never by live position."
         }
       ],
-      "reason": "Alternative interpretation of this Work; explicit curator choice required before any recommendation is added or replaced.",
-      "review_classification": "curator_required",
+      "reason": "Curator accepted both original and arrangement in distinct profiles.",
+      "review_classification": "curator_accepted",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/244",
       "tracks": [
         {
@@ -12971,7 +12910,10 @@
           "export_position": 230,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "performance_id": "cesar-franck-violin-sonata-in-a-major-fwv-8-chamber-c069",
+      "profile": "cello and piano arrangement (Delsart)",
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/244#issuecomment-5984117672"
     },
     {
       "unit_id": "C070",
@@ -13188,7 +13130,7 @@
       "positions": [
         237
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "import_new",
       "work_id": "camille-saint-saens-le-carnaval-des-animaux",
       "performers": [
         {
@@ -13205,8 +13147,8 @@
           "locator": "Chamber sheet; join by exact track ID or unique ISRC, never by live position."
         }
       ],
-      "reason": "Alternative interpretation of this Work; explicit curator choice required before any recommendation is added or replaced.",
-      "review_classification": "curator_required",
+      "reason": "Curator accepted both original and arrangement in distinct profiles.",
+      "review_classification": "curator_accepted",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/245",
       "tracks": [
         {
@@ -13229,7 +13171,10 @@
           "export_position": 237,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "performance_id": "camille-saint-saens-le-carnaval-des-animaux-chamber-c073",
+      "profile": "cello and piano arrangement",
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/245#issuecomment-5984117830"
     },
     {
       "unit_id": "C074",
@@ -15988,7 +15933,7 @@
         325,
         326
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "import_new",
       "work_id": "cesar-franck-violin-sonata-in-a-major-fwv-8",
       "performers": [
         {
@@ -16004,8 +15949,8 @@
           "locator": "Chamber sheet; join by exact track ID or unique ISRC, never by live position."
         }
       ],
-      "reason": "Alternative interpretation of this Work; explicit curator choice required before any recommendation is added or replaced.",
-      "review_classification": "curator_required",
+      "reason": "Curator accepted both original and arrangement in distinct profiles.",
+      "review_classification": "curator_accepted",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/244",
       "tracks": [
         {
@@ -16088,7 +16033,10 @@
           "export_position": 326,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "performance_id": "cesar-franck-violin-sonata-in-a-major-fwv-8-chamber-c098",
+      "profile": "original violin and piano",
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/244#issuecomment-5984117672"
     },
     {
       "unit_id": "C099",
@@ -26189,7 +26137,7 @@
         668,
         669
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "import_new",
       "work_id": "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-5-sonata-no-3-in-c-maj-work",
       "performers": [
         {
@@ -26203,8 +26151,8 @@
           "locator": "Chamber sheet; join by exact track ID or unique ISRC, never by live position."
         }
       ],
-      "reason": "Alternative interpretation of this Work; explicit curator choice required before any recommendation is added or replaced.",
-      "review_classification": "curator_required",
+      "reason": "Curator accepted both original and arrangement in distinct profiles.",
+      "review_classification": "curator_accepted",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/249",
       "tracks": [
         {
@@ -26245,7 +26193,10 @@
           "export_position": 669,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "performance_id": "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-5-sonata-no-3-in-c-maj-work-chamber-c204",
+      "profile": "lute transcription",
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/249#issuecomment-5984117945"
     },
     {
       "unit_id": "C205",
@@ -26546,7 +26497,7 @@
         684,
         685
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "import_new",
       "work_id": "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-1-sonata-no-1-in-g-min-work",
       "performers": [
         {
@@ -26559,8 +26510,8 @@
           "locator": "Chamber sheet; join by exact track ID or unique ISRC, never by live position."
         }
       ],
-      "reason": "Alternative interpretation of this Work; explicit curator choice required before any recommendation is added or replaced.",
-      "review_classification": "curator_required",
+      "reason": "Curator accepted both original and arrangement in distinct profiles.",
+      "review_classification": "curator_accepted",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/250",
       "tracks": [
         {
@@ -26639,7 +26590,10 @@
           "export_position": 685,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "performance_id": "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-1-sonata-no-1-in-g-min-work-chamber-c207",
+      "profile": "lute transcription",
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/250#issuecomment-5984118060"
     },
     {
       "unit_id": "C208",
@@ -26649,7 +26603,7 @@
       "positions": [
         686
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "import_new",
       "work_id": "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-4-partita-no-2-in-d-min-work",
       "performers": [
         {
@@ -26663,8 +26617,8 @@
           "locator": "Chamber sheet; join by exact track ID or unique ISRC, never by live position."
         }
       ],
-      "reason": "Alternative interpretation of this Work; explicit curator choice required before any recommendation is added or replaced.",
-      "review_classification": "curator_required",
+      "reason": "Curator accepted both original and arrangement in distinct profiles.",
+      "review_classification": "curator_accepted",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/251",
       "tracks": [
         {
@@ -26686,7 +26640,10 @@
           "export_position": 686,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "performance_id": "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-4-partita-no-2-in-d-min-work-chamber-c208",
+      "profile": "lute transcription",
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/251#issuecomment-5984118167"
     },
     {
       "unit_id": "C209",
@@ -41184,7 +41141,11 @@
           "export_position": null,
           "archive_match": null
         }
-      ]
+      ],
+      "profile": "original solo violin",
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/249#issuecomment-5984117945",
+      "reason": "Curator accepted both original and arrangement in distinct profiles.",
+      "review_classification": "curator_accepted"
     },
     {
       "unit_id": "C360",
@@ -41397,7 +41358,11 @@
           "export_position": null,
           "archive_match": null
         }
-      ]
+      ],
+      "profile": "original solo violin",
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/250#issuecomment-5984118060",
+      "reason": "Curator accepted both original and arrangement in distinct profiles.",
+      "review_classification": "curator_accepted"
     },
     {
       "unit_id": "C362",
@@ -41710,7 +41675,11 @@
           "export_position": null,
           "archive_match": null
         }
-      ]
+      ],
+      "profile": "original solo violin",
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/251#issuecomment-5984118167",
+      "reason": "Curator accepted both original and arrangement in distinct profiles.",
+      "review_classification": "curator_accepted"
     },
     {
       "unit_id": "C364",
@@ -45828,7 +45797,7 @@
       "positions": [
         1329
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "import_new",
       "work_id": "johann-sebastian-bach-goldberg-variations-work",
       "performers": [
         {
@@ -45844,8 +45813,8 @@
           "url": "https://www.sonyclassical.com/releases/releases-details/b-a-c-h"
         }
       ],
-      "reason": "Alternative interpretation of this Work; explicit curator choice required before any recommendation is added or replaced.",
-      "review_classification": "curator_required",
+      "reason": "Curator accepted both original and arrangement in distinct profiles.",
+      "review_classification": "curator_accepted",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/258",
       "tracks": [
         {
@@ -45868,7 +45837,10 @@
           "export_position": null,
           "archive_match": null
         }
-      ]
+      ],
+      "performance_id": "johann-sebastian-bach-goldberg-variations-work-chamber-c402",
+      "profile": "clarinet and double bass arrangement",
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/258#issuecomment-5984118267"
     },
     {
       "unit_id": "C403",
@@ -46028,7 +46000,7 @@
       "positions": [
         1333
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "import_new",
       "work_id": "johann-sebastian-bach-orchestral-suite-no-3-in-d-maj-work",
       "performers": [
         {
@@ -46047,8 +46019,8 @@
           "url": "https://www.sonyclassical.com/releases/releases-details/b-a-c-h"
         }
       ],
-      "reason": "Alternative interpretation of this Work; explicit curator choice required before any recommendation is added or replaced.",
-      "review_classification": "curator_required",
+      "reason": "Curator accepted both original and arrangement in distinct profiles.",
+      "review_classification": "curator_accepted",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/259",
       "tracks": [
         {
@@ -46072,7 +46044,10 @@
           "export_position": null,
           "archive_match": null
         }
-      ]
+      ],
+      "performance_id": "johann-sebastian-bach-orchestral-suite-no-3-in-d-maj-work-chamber-c406",
+      "profile": "clarinet, double bass and theorbo arrangement",
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/259#issuecomment-5984118360"
     },
     {
       "unit_id": "C407",
@@ -46595,7 +46570,7 @@
       "positions": [
         1345
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "import_new",
       "work_id": "johann-sebastian-bach-concerto-for-harpsichord-and-orchestra-no-5-in-f-min-work",
       "performers": [
         {
@@ -46611,8 +46586,8 @@
           "url": "https://www.sonyclassical.com/releases/releases-details/b-a-c-h"
         }
       ],
-      "reason": "Alternative interpretation of this Work; explicit curator choice required before any recommendation is added or replaced.",
-      "review_classification": "curator_required",
+      "reason": "Curator accepted both original and arrangement in distinct profiles.",
+      "review_classification": "curator_accepted",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/260",
       "tracks": [
         {
@@ -46635,7 +46610,10 @@
           "export_position": null,
           "archive_match": null
         }
-      ]
+      ],
+      "performance_id": "johann-sebastian-bach-concerto-for-harpsichord-and-orchestra-no-5-in-f-min-work-chamber-c417",
+      "profile": "clarinet and piano arrangement",
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/260#issuecomment-5984118486"
     },
     {
       "unit_id": "C418",
@@ -47271,5 +47249,274 @@
       ]
     }
   ],
-  "identity_research_issue": "https://github.com/LuHoo/classical_music/issues/261"
+  "identity_research_issue": "https://github.com/LuHoo/classical_music/issues/261",
+  "resolved_choices": [
+    {
+      "work_id": "cesar-franck-violin-sonata-in-a-major-fwv-8",
+      "title": "Violin Sonata in A Major, FWV 8",
+      "composer": "César Franck",
+      "units": [
+        "C069",
+        "C098"
+      ],
+      "existing_performances": [],
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/244",
+      "decision": {
+        "choice": "both_distinct_profiles",
+        "comment_url": "https://github.com/LuHoo/classical_music/issues/244#issuecomment-5984117672",
+        "performances": [
+          {
+            "performance_id": "cesar-franck-violin-sonata-in-a-major-fwv-8-chamber-c069",
+            "profile": "cello and piano arrangement (Delsart)",
+            "origin": "new",
+            "unit_id": "C069",
+            "tidal_url": "https://tidal.com/track/327003704"
+          },
+          {
+            "performance_id": "cesar-franck-violin-sonata-in-a-major-fwv-8-chamber-c098",
+            "profile": "original violin and piano",
+            "origin": "new",
+            "unit_id": "C098",
+            "tidal_url": "https://tidal.com/track/242732036"
+          }
+        ],
+        "implementation_report": "reports/curator-decisions/original-arrangement-2026-10-04.json",
+        "implementation_pr": "https://github.com/LuHoo/classical_music/pull/297"
+      }
+    },
+    {
+      "work_id": "camille-saint-saens-le-carnaval-des-animaux",
+      "title": "Le Carnaval des Animaux, R. 125",
+      "composer": "Camille Saint-Saëns",
+      "units": [
+        "C073"
+      ],
+      "existing_performances": [
+        "camille-saint-saens-le-carnaval-des-animaux-playlist-478"
+      ],
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/245",
+      "decision": {
+        "choice": "both_distinct_profiles",
+        "comment_url": "https://github.com/LuHoo/classical_music/issues/245#issuecomment-5984117830",
+        "performances": [
+          {
+            "performance_id": "camille-saint-saens-le-carnaval-des-animaux-chamber-c073",
+            "profile": "cello and piano arrangement",
+            "origin": "new",
+            "unit_id": "C073",
+            "tidal_url": "https://tidal.com/track/327003719"
+          },
+          {
+            "performance_id": "camille-saint-saens-le-carnaval-des-animaux-playlist-478",
+            "profile": "original chamber ensemble",
+            "origin": "existing",
+            "tidal_url": "https://tidal.com/track/328375839"
+          }
+        ],
+        "implementation_report": "reports/curator-decisions/original-arrangement-2026-10-04.json",
+        "implementation_pr": "https://github.com/LuHoo/classical_music/pull/297"
+      }
+    },
+    {
+      "work_id": "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-5-sonata-no-3-in-c-maj-work",
+      "title": "Violin Sonata No. 3 in C Major, BWV 1005 (Excerpts Arr. J. Lindberg for Lute)",
+      "composer": "Johann Sebastian Bach",
+      "units": [
+        "C204",
+        "C359"
+      ],
+      "existing_performances": [
+        "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-5-sonata-no-3-in-c-maj-work-leonidas-kavakos"
+      ],
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/249",
+      "decision": {
+        "choice": "both_distinct_profiles",
+        "comment_url": "https://github.com/LuHoo/classical_music/issues/249#issuecomment-5984117945",
+        "performances": [
+          {
+            "performance_id": "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-5-sonata-no-3-in-c-maj-work-chamber-c204",
+            "profile": "lute transcription",
+            "origin": "new",
+            "unit_id": "C204",
+            "tidal_url": "https://tidal.com/track/201393029"
+          },
+          {
+            "performance_id": "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-5-sonata-no-3-in-c-maj-work-leonidas-kavakos",
+            "profile": "original solo violin",
+            "origin": "existing",
+            "tidal_url": "http://www.tidal.com/track/203860879"
+          }
+        ],
+        "implementation_report": "reports/curator-decisions/original-arrangement-2026-10-04.json",
+        "implementation_pr": "https://github.com/LuHoo/classical_music/pull/297"
+      }
+    },
+    {
+      "work_id": "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-1-sonata-no-1-in-g-min-work",
+      "title": "Violin Sonata No. 1 in G Minor, BWV 1001 (Arr. J. Lindberg for Lute)",
+      "composer": "Johann Sebastian Bach",
+      "units": [
+        "C207",
+        "C361"
+      ],
+      "existing_performances": [
+        "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-1-sonata-no-1-in-g-min-work-leonidas-kavakos"
+      ],
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/250",
+      "decision": {
+        "choice": "both_distinct_profiles",
+        "comment_url": "https://github.com/LuHoo/classical_music/issues/250#issuecomment-5984118060",
+        "performances": [
+          {
+            "performance_id": "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-1-sonata-no-1-in-g-min-work-chamber-c207",
+            "profile": "lute transcription",
+            "origin": "new",
+            "unit_id": "C207",
+            "tidal_url": "https://tidal.com/track/201393043"
+          },
+          {
+            "performance_id": "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-1-sonata-no-1-in-g-min-work-leonidas-kavakos",
+            "profile": "original solo violin",
+            "origin": "existing",
+            "tidal_url": "http://www.tidal.com/track/203860888"
+          }
+        ],
+        "implementation_report": "reports/curator-decisions/original-arrangement-2026-10-04.json",
+        "implementation_pr": "https://github.com/LuHoo/classical_music/pull/297"
+      }
+    },
+    {
+      "work_id": "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-4-partita-no-2-in-d-min-work",
+      "title": "Violin Partita No. 2 in D Minor, BWV 1004",
+      "composer": "Johann Sebastian Bach",
+      "units": [
+        "C208",
+        "C363"
+      ],
+      "existing_performances": [
+        "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-4-partita-no-2-in-d-min-work-leonidas-kavakos"
+      ],
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/251",
+      "decision": {
+        "choice": "both_distinct_profiles",
+        "comment_url": "https://github.com/LuHoo/classical_music/issues/251#issuecomment-5984118167",
+        "performances": [
+          {
+            "performance_id": "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-4-partita-no-2-in-d-min-work-chamber-c208",
+            "profile": "lute transcription",
+            "origin": "new",
+            "unit_id": "C208",
+            "tidal_url": "https://tidal.com/track/201393047"
+          },
+          {
+            "performance_id": "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-4-partita-no-2-in-d-min-work-leonidas-kavakos",
+            "profile": "original solo violin",
+            "origin": "existing",
+            "tidal_url": "http://www.tidal.com/track/203860900"
+          }
+        ],
+        "implementation_report": "reports/curator-decisions/original-arrangement-2026-10-04.json",
+        "implementation_pr": "https://github.com/LuHoo/classical_music/pull/297"
+      }
+    },
+    {
+      "work_id": "johann-sebastian-bach-goldberg-variations-work",
+      "title": "Goldberg Variations, BWV 988",
+      "composer": "Johann Sebastian Bach",
+      "units": [
+        "C402"
+      ],
+      "existing_performances": [
+        "johann-sebastian-bach-goldberg-variations-work-klara-wurtz"
+      ],
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/258",
+      "decision": {
+        "choice": "both_distinct_profiles",
+        "comment_url": "https://github.com/LuHoo/classical_music/issues/258#issuecomment-5984118267",
+        "performances": [
+          {
+            "performance_id": "johann-sebastian-bach-goldberg-variations-work-chamber-c402",
+            "profile": "clarinet and double bass arrangement",
+            "origin": "new",
+            "unit_id": "C402",
+            "tidal_url": "https://tidal.com/track/448367326"
+          },
+          {
+            "performance_id": "johann-sebastian-bach-goldberg-variations-work-klara-wurtz",
+            "profile": "original keyboard (piano)",
+            "origin": "existing",
+            "tidal_url": "http://www.tidal.com/track/210117464"
+          }
+        ],
+        "implementation_report": "reports/curator-decisions/original-arrangement-2026-10-04.json",
+        "implementation_pr": "https://github.com/LuHoo/classical_music/pull/297"
+      }
+    },
+    {
+      "work_id": "johann-sebastian-bach-orchestral-suite-no-3-in-d-maj-work",
+      "title": "Orchestral Suite No. 3, BWV 1068",
+      "composer": "Johann Sebastian Bach",
+      "units": [
+        "C406"
+      ],
+      "existing_performances": [
+        "johann-sebastian-bach-orchestral-suite-no-3-in-d-maj-work-akademie-fur-alte-musik-berlin"
+      ],
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/259",
+      "decision": {
+        "choice": "both_distinct_profiles",
+        "comment_url": "https://github.com/LuHoo/classical_music/issues/259#issuecomment-5984118360",
+        "performances": [
+          {
+            "performance_id": "johann-sebastian-bach-orchestral-suite-no-3-in-d-maj-work-chamber-c406",
+            "profile": "clarinet, double bass and theorbo arrangement",
+            "origin": "new",
+            "unit_id": "C406",
+            "tidal_url": "https://tidal.com/track/448367330"
+          },
+          {
+            "performance_id": "johann-sebastian-bach-orchestral-suite-no-3-in-d-maj-work-akademie-fur-alte-musik-berlin",
+            "profile": "original orchestra",
+            "origin": "existing",
+            "tidal_url": "https://tidal.com/browse/track/47622466?u"
+          }
+        ],
+        "implementation_report": "reports/curator-decisions/original-arrangement-2026-10-04.json",
+        "implementation_pr": "https://github.com/LuHoo/classical_music/pull/297"
+      }
+    },
+    {
+      "work_id": "johann-sebastian-bach-concerto-for-harpsichord-and-orchestra-no-5-in-f-min-work",
+      "title": "Keyboard Concerto No. 5, BWV 1056",
+      "composer": "Johann Sebastian Bach",
+      "units": [
+        "C417"
+      ],
+      "existing_performances": [
+        "johann-sebastian-bach-concerto-for-harpsichord-and-orchestra-no-5-in-f-min-work-francesco-corti-il-pomo-d-oro"
+      ],
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/260",
+      "decision": {
+        "choice": "both_distinct_profiles",
+        "comment_url": "https://github.com/LuHoo/classical_music/issues/260#issuecomment-5984118486",
+        "performances": [
+          {
+            "performance_id": "johann-sebastian-bach-concerto-for-harpsichord-and-orchestra-no-5-in-f-min-work-chamber-c417",
+            "profile": "clarinet and piano arrangement",
+            "origin": "new",
+            "unit_id": "C417",
+            "tidal_url": "https://tidal.com/track/448367342"
+          },
+          {
+            "performance_id": "johann-sebastian-bach-concerto-for-harpsichord-and-orchestra-no-5-in-f-min-work-francesco-corti-il-pomo-d-oro",
+            "profile": "original harpsichord and orchestra",
+            "origin": "existing",
+            "tidal_url": "https://tidal.com/browse/track/305308959?u"
+          }
+        ],
+        "implementation_report": "reports/curator-decisions/original-arrangement-2026-10-04.json",
+        "implementation_pr": "https://github.com/LuHoo/classical_music/pull/297"
+      }
+    }
+  ]
 }

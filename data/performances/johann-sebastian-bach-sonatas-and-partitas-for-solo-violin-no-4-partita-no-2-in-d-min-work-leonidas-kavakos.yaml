@@ -3,8 +3,10 @@ work_id: "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-4-partit
 source:
   file: "docs/bachJS.md"
   line: "104"
+  curator_decision: https://github.com/LuHoo/classical_music/issues/251#issuecomment-5984118167
 links:
-- platform: "tidal"
-  url: "http://www.tidal.com/track/203860900"
+  tidal:
+    url: http://www.tidal.com/track/203860900
 performers:
 - name: "Leonidas Kavakos"
+profile: original solo violin

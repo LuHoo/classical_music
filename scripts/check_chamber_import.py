@@ -35,6 +35,8 @@ def check_inventory(manifest: dict, data: dict) -> None:
     new_ids = {r['id'] for r in manifest['new_records']}
     new_performance_ids = {r['id'] for r in manifest['new_records'] if r['entity'] == 'performances'}
     choices = {c['work_id']: c for c in manifest['recommendation_choices']}
+    resolved = {c['work_id']: c for c in manifest.get('resolved_choices', [])}
+    assert not set(choices) & set(resolved), 'Resolved choice still pending'
     used_new = set()
     for u in units:
         assert u['positions'] == [t['position'] for t in u['tracks']]
@@ -63,7 +65,12 @@ def check_inventory(manifest: dict, data: dict) -> None:
         if status == 'import_new':
             assert perf['id'] in new_performance_ids
             used_new.add(perf['id'])
-            assert len([p for p in data['performances'].values() if p['work_id'] == work['id']]) == 1, 'Competing recommendation added without a decision'
+            assert len([p for p in data['performances'].values() if p['work_id'] == work['id'] and p.get('profile') == perf.get('profile')]) == 1, 'Competing recommendation added without a decision'
+            if work['id'] in resolved:
+                decision = resolved[work['id']]['decision']
+                assert u['curator_decision'] == decision['comment_url'], 'Missing curator decision'
+                assert perf['source']['curator_decision'] == decision['comment_url']
+                assert u['profile'] == perf['profile']
             assert perf['source']['file'] == str(MANIFEST)
             assert perf['links']['tidal']['url'] == 'https://tidal.com/track/' + u['tracks'][0]['id']
             assert perf.get('excerpt') == u.get('excerpt')
@@ -82,6 +89,19 @@ def check_inventory(manifest: dict, data: dict) -> None:
         assert {u['unit_id'] for u in matching} == set(choice['units'])
         assert any(u['disposition'] == 'recommendation_choice' for u in matching)
         assert choice['issue_url'].startswith('https://github.com/LuHoo/classical_music/issues/')
+    for choice in resolved.values():
+        decision = choice['decision']
+        assert decision['choice'] == 'both_distinct_profiles'
+        assert decision['comment_url'].startswith(choice['issue_url'] + '#issuecomment-'), 'Missing curator decision'
+        matching = [u for u in units if u.get('work_id') == choice['work_id']]
+        assert {u['unit_id'] for u in matching} == set(choice['units'])
+        assert all(u['disposition'] in ('import_new', 'reuse_existing') for u in matching)
+        assigned = decision['performances']
+        assert len({p['profile'] for p in assigned}) == len(assigned), 'Duplicate comparison profile'
+        actual = [p for p in data['performances'].values() if p['work_id'] == choice['work_id']]
+        assert {p['id'] for p in actual} == {p['performance_id'] for p in assigned}, 'Decision and recommendations differ'
+        for p in assigned:
+            assert data['performances'][p['performance_id']]['profile'] == p['profile']
 
 
 def audit(root: Path = ROOT) -> dict:

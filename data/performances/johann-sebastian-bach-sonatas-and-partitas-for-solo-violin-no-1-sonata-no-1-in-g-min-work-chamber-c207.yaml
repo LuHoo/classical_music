@@ -1,0 +1,15 @@
+id: johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-1-sonata-no-1-in-g-min-work-chamber-c207
+work_id: johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-1-sonata-no-1-in-g-min-work
+performers:
+  - name: Jakob Lindberg
+profile: lute transcription
+links:
+  tidal:
+    url: https://tidal.com/track/201393043
+release:
+  album_title: Bach on the Rauwolf Lute
+source:
+  file: reports/playlist-import/chamber/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/a2327106-07fd-4433-8bd3-d8a5c251c69a
+  unit_id: C207
+  curator_decision: https://github.com/LuHoo/classical_music/issues/250#issuecomment-5984118060
