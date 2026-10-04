@@ -1,0 +1,16 @@
+id: antonin-dvorak-rondo-in-g-minor-op-94-b-181-playlist-5229
+work_id: antonin-dvorak-rondo-in-g-minor-op-94-b-181
+performers:
+- name: Daniel Müller-Schott
+- name: NDR Sinfonieorchester
+- name: Michael Sanderling
+  artist_id: michael-sanderling
+  role: conductor
+links:
+  tidal:
+    url: https://tidal.com/track/282956954
+release:
+  album_title: 'Dvořák: The Cello Works'
+source:
+  file: reports/playlist-import/best-classical/window-4001-5518.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

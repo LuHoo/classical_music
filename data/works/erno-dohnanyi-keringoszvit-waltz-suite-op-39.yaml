@@ -1,0 +1,10 @@
+id: erno-dohnanyi-keringoszvit-waltz-suite-op-39
+work_group_id: erno-dohnanyi-keringoszvit-waltz-suite-op-39-group
+composer_id: erno-dohnanyi
+title: Keringoszvit (Waltz Suite), Op. 39
+source:
+  file: docs/dohnanyi.md
+  url:
+    https://www.gramophone.co.uk/reviews/review?slug=dohn%C3%A1nyi-symphony-in-f-zrinyi-overture-no-2
+catalogue:
+  op: '39'

@@ -1,0 +1,15 @@
+id: michael-tippett-piano-concerto-playlist-5329
+work_id: michael-tippett-piano-concerto
+performers:
+- name: Clare Hammond
+- name: BBC Symphony Orchestra
+- name: George Vass
+links:
+  tidal:
+    url: https://tidal.com/track/448411642
+release:
+  album_title: Tippett – Britten – Walton
+source:
+  file: reports/playlist-import/best-classical/window-4001-5518.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+version_assignment: unspecified

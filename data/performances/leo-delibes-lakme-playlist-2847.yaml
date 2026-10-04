@@ -1,0 +1,18 @@
+id: leo-delibes-lakme-playlist-2847
+work_id: leo-delibes-lakme
+performers:
+- name: Katherine Jenkins
+- name: Kiri Te Kanawa
+- name: Philharmonia Orchestra
+  artist_id: philharmonia-orchestra
+  role: orchestra
+- name: Anthony Inglis
+links:
+  tidal:
+    url: https://tidal.com/track/1299586
+release:
+  album_title: Katherine Jenkins / From The Heart
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+excerpt: Flower Duet.

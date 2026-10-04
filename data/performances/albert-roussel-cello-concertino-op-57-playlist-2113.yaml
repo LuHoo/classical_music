@@ -1,0 +1,14 @@
+id: albert-roussel-cello-concertino-op-57-playlist-2113
+work_id: albert-roussel-cello-concertino-op-57
+performers:
+- name: Ensemble Orchestral de Paris
+- name: Jean-Guihen Queras
+- name: David Stern
+links:
+  tidal:
+    url: https://tidal.com/track/69600752
+release:
+  album_title: 'Albert Roussel: Concertos pour orchestre'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

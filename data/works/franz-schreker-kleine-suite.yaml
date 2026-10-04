@@ -1,0 +1,6 @@
+id: franz-schreker-kleine-suite
+work_group_id: franz-schreker-kleine-suite-group
+composer_id: franz-schreker
+title: Kleine Suite
+source:
+  file: docs/schreker.md

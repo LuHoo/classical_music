@@ -1,0 +1,12 @@
+id: paul-hindemith-rag-time-wohltemperiert-well-tempered-playlist-3220
+work_id: paul-hindemith-rag-time-wohltemperiert-well-tempered
+performers:
+- name: BBC Philharmonic Orchestra
+links:
+  tidal:
+    url: https://tidal.com/track/12444404
+release:
+  album_title: 'Hindemith: Symphonic Dances / Rag Time / Pittsburgh Symphony'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

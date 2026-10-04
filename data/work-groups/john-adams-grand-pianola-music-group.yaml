@@ -1,0 +1,6 @@
+id: john-adams-grand-pianola-music-group
+composer_id: john-adams
+title: Grand Pianola Music
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://www.nonesuch.com/albums/collected-works

@@ -1,0 +1,9 @@
+id: josef-suk-symphony
+work_group_id: josef-suk-symphony-group
+composer_id: josef-suk
+title: Symphony
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://www.supraphonline.cz/album/465-suk-ostrcil-symfonie-e-dur-krizova-cesta
+catalogue:
+  opus: Op. 14

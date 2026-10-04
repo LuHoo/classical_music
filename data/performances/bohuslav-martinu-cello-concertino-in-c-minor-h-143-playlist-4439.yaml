@@ -1,0 +1,17 @@
+id: bohuslav-martinu-cello-concertino-in-c-minor-h-143-playlist-4439
+work_id: bohuslav-martinu-cello-concertino-in-c-minor-h-143
+performers:
+- name: Raphael Wallfisch
+  artist_id: raphael-wallfisch
+  role: soloist
+- name: Czech Philharmonic
+- name: Jiří Bělohlávek
+links:
+  tidal:
+    url: https://tidal.com/track/12417089
+release:
+  album_title: 'Martinu, B.: Cello Concertos Nos. 1 and 2 / Cello Concertino in C
+    Minor'
+source:
+  file: reports/playlist-import/best-classical/window-4001-5518.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

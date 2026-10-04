@@ -1,0 +1,27 @@
+id: alexander-von-zemlinsky-maiblumen-bluhten-uberall-playlist-1097
+work_id: alexander-von-zemlinsky-maiblumen-bluhten-uberall
+performers:
+- name: Soile Isokoski
+  role: performer
+- name: Torsten Janicke
+  role: performer
+- name: Rose Kaufmann
+  role: performer
+- name: Mile Kosi
+  role: performer
+- name: Urara Seo
+  role: performer
+- name: Daniel Cahen
+  role: performer
+- name: Sylvia Borg
+  role: performer
+- name: James Conlon
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/1444240
+release:
+  album_title: 'Zemlinsky: Sämtliche Orchesterlieder'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

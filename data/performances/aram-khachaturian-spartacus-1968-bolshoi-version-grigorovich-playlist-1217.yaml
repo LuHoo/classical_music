@@ -1,0 +1,13 @@
+id: aram-khachaturian-spartacus-1968-bolshoi-version-grigorovich-playlist-1217
+work_id: aram-khachaturian-spartacus-1968-bolshoi-version-grigorovich
+performers:
+- name: RIAS Kammerchor
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/12212003
+release:
+  album_title: 'Khachaturian, A.I.: Spartacus [Ballet]'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

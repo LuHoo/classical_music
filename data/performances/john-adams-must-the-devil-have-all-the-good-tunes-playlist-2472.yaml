@@ -1,0 +1,19 @@
+id: john-adams-must-the-devil-have-all-the-good-tunes-playlist-2472
+work_id: john-adams-must-the-devil-have-all-the-good-tunes
+performers:
+- name: Yuja Wang
+  artist_id: yuja-wang
+  role: soloist
+- name: Los Angeles Philharmonic
+  artist_id: los-angeles-philharmonic
+  role: orchestra
+- name: Gustavo Dudamel
+- name: Los Angekes Philharmonic
+links:
+  tidal:
+    url: https://tidal.com/track/137025516
+release:
+  album_title: 'John Adams: Must the Devil Have All the Good Tunes?'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

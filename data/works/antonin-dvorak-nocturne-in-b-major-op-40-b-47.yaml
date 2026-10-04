@@ -1,0 +1,8 @@
+id: antonin-dvorak-nocturne-in-b-major-op-40-b-47
+work_group_id: antonin-dvorak-nocturne-in-b-major-op-40-b-47-group
+composer_id: antonin-dvorak
+title: Nocturne in B Major, Op. 40, B. 47
+source:
+  file: docs/dvorak.md
+catalogue:
+  op: '40'

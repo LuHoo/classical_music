@@ -1,0 +1,21 @@
+id: bartok-concerto-for-orchestra-lille-bloch
+work_id: bartok-concerto-for-orchestra
+performers:
+  - name: Orchestre National de Lille
+    role: orchestra
+  - name: Alexandre Bloch
+    role: conductor
+version_assignment: unspecified
+year: 2022
+release:
+  label: Alpha Classics
+  catalogue_number: ALPHA1013
+links:
+  tidal:
+    url: https://tidal.com/track/309518268
+notes: >
+  The source identifies the composition but does not establish whether this
+  recording uses the original or revised ending. Assigned to the general Work.
+source:
+  file: reports/playlist-import/best-classical/batch-001.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

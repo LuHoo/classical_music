@@ -1,0 +1,8 @@
+id: antonin-dvorak-symphony-no-2-in-b-flat-major-op-4-b-12
+work_group_id: antonin-dvorak-symphony-no-2-in-b-flat-major-op-4-b-12-group
+composer_id: antonin-dvorak
+title: Symphony No. 2 in B-Flat Major, Op. 4, B. 12
+source:
+  file: docs/dvorak.md
+catalogue:
+  op: '4'

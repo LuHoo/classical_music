@@ -1,0 +1,15 @@
+id: karol-szymanowski-romance-for-violin-and-piano-playlist-675
+work_id: karol-szymanowski-romance-for-violin-and-piano
+performers:
+- name: Thomas Zehetmair
+  role: performer
+- name: Silke Avenhaus
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/1354536
+release:
+  album_title: Szymanowski - Violin Concertos Nos. 1 & 2
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

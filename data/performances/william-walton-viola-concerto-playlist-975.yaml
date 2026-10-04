@@ -1,0 +1,19 @@
+id: william-walton-viola-concerto-playlist-975
+work_id: william-walton-viola-concerto
+performers:
+- name: Isabelle van Keulen
+  role: performer
+- name: NDR Radiophilharmonie
+  role: performer
+- name: Andrew Manze
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/96330720
+release:
+  album_title: 'Prokofiev: Violin Concerto No. 1 - Walton: Viola Concerto - Vaughan Williams: The Lark
+    Ascending'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+version_assignment: unspecified

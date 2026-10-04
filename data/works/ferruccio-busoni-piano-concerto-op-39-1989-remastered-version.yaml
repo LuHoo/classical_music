@@ -1,0 +1,9 @@
+id: ferruccio-busoni-piano-concerto-op-39-1989-remastered-version
+work_group_id: ferruccio-busoni-piano-concerto-op-39-1989-remastered-version-group
+composer_id: ferruccio-busoni
+title: Piano Concerto Op. 39 (1989 Remastered Version)
+source:
+  file: docs/busoni.md
+  url: https://en.wikipedia.org/wiki/List_of_compositions_by_Ferruccio_Busoni
+catalogue:
+  op: '39'

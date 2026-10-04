@@ -1,0 +1,15 @@
+id: franz-liszt-piano-concerto-no-1-in-e-flat-major-s-124-playlist-2135
+work_id: franz-liszt-piano-concerto-no-1-in-e-flat-major-s-124
+performers:
+- name: Michel Béroff
+- name: Kurt Masur
+- name: Gewandhausorchester
+links:
+  tidal:
+    url: https://tidal.com/track/7593970
+release:
+  album_title: 'Liszt: Orchesterwerke & Werke für Klavier und Orchester'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+version_assignment: unspecified

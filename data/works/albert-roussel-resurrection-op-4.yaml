@@ -1,0 +1,9 @@
+id: albert-roussel-resurrection-op-4
+work_group_id: albert-roussel-resurrection-op-4-group
+composer_id: albert-roussel
+title: Resurrection, Op. 4
+source:
+  file: docs/roussel.md
+  url: https://en.wikipedia.org/wiki/Albert_Roussel#Works
+catalogue:
+  op: '4'

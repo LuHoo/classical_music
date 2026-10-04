@@ -1,0 +1,27 @@
+id: alexander-von-zemlinsky-minnelied-playlist-1111
+work_id: alexander-von-zemlinsky-minnelied
+performers:
+- name: Mülheimer Kantorei
+  role: performer
+- name: Gürzenich-Orchester Kölner Philharmoniker
+  role: performer
+- name: André Sebald
+  role: performer
+- name: Christiane Menke
+  role: performer
+- name: Egon Hellrung
+  role: performer
+- name: Robert Thistle
+  role: performer
+- name: Mechthild Rohrmus
+  role: performer
+- name: James Conlon
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/1443933
+release:
+  album_title: 'Zemlinsky: Psalmen/Complete Choral Works'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

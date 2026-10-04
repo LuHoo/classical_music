@@ -1,0 +1,7 @@
+id: zdenek-fibich
+name: Zdeněk Fibich
+roles:
+- composer
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://www.naxos.com/CatalogueDetail/?id=8.574120

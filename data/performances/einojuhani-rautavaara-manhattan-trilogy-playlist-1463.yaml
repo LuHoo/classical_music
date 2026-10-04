@@ -1,0 +1,15 @@
+id: einojuhani-rautavaara-manhattan-trilogy-playlist-1463
+work_id: einojuhani-rautavaara-manhattan-trilogy
+performers:
+- name: Helsinki Philharmonic Orchestra
+  role: performer
+- name: Leif Segerstam
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/284393352
+release:
+  album_title: 'Rautavaara, E.: Manhattan Trilogy / Symphony No. 3'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

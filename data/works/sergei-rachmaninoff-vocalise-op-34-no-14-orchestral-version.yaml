@@ -1,0 +1,11 @@
+id: sergei-rachmaninoff-vocalise-op-34-no-14-orchestral-version
+work_group_id: sergei-rachmaninoff-vocalise-group
+composer_id: sergei-rachmaninoff
+title: Vocalise, Op. 34 No. 14 (orchestral version)
+source:
+  file: side materials/Music collection/Grove/Poulenc-Roussel.doc
+catalogue:
+  op: 34no14
+relationships:
+- type: arrangement_of
+  work_id: sergei-rachmaninoff-vocalise

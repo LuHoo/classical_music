@@ -1,0 +1,9 @@
+id: alexander-von-zemlinsky-psalm-13
+work_group_id: alexander-von-zemlinsky-psalm-13-group
+composer_id: alexander-von-zemlinsky
+title: Psalm 13
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://www.prestomusic.com/classical/products/8166322--zemlinsky-complete-choral-works
+catalogue:
+  opus: Op. 24

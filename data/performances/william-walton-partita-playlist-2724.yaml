@@ -1,0 +1,14 @@
+id: william-walton-partita-playlist-2724
+work_id: william-walton-partita
+performers:
+- name: London Philharmonic Orchestra
+- name: Bryden Thomson
+links:
+  tidal:
+    url: https://tidal.com/track/12436259
+release:
+  album_title: 'Walton: Cello Concerto / Partita / Improvisations On an Impromptu of Benjamin Britten
+    / Passacaglia'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

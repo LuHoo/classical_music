@@ -1,0 +1,20 @@
+id: 
+  hector-berlioz-grande-symphonie-funebre-et-triomphale-op-15-original-wind-band-version-playlist-5378
+work_id: 
+  hector-berlioz-grande-symphonie-funebre-et-triomphale-op-15-original-wind-band-version
+performers:
+- name: Royal Northern College of Music Wind Orchestra
+  artist_id: royal-northern-college-of-music-wind-orchestra
+  role: orchestra
+- name: Timothy Reynish
+  artist_id: timothy-reynish
+  role: conductor
+- name: Joseph Alessi
+links:
+  tidal:
+    url: https://tidal.com/track/376347172
+release:
+  album_title: RNCM Wind Orchestra Plays French Wind Band Classics
+source:
+  file: reports/playlist-import/best-classical/window-4001-5518.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

@@ -1,0 +1,9 @@
+id: henry-purcell-o-solitude-z-406
+work_group_id: henry-purcell-o-solitude-z-406-group
+composer_id: henry-purcell
+title: O Solitude, Z. 406
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://catalogue.bnf.fr/ark:/12148/cb38315848m
+catalogue:
+  z: '406'

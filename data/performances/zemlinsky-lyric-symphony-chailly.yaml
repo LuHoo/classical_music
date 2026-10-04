@@ -1,0 +1,21 @@
+id: zemlinsky-lyric-symphony-chailly
+links:
+  tidal:
+    url: https://tidal.com/track/50609999
+performers:
+- name: Alessandra Marc
+  role: soprano
+- name: Håkan Hagegård
+  role: baritone
+- artist_id: royal-concertgebouw-orchestra
+  name: Royal Concertgebouw Orchestra
+  role: orchestra
+- name: Riccardo Chailly
+  role: conductor
+release:
+  album_title: 'Zemlinsky: Lyric Symphony'
+  label: Decca
+source:
+  file: reports/playlist-import/best-classical/prepared-120.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+work_id: zemlinsky-lyric-symphony

@@ -1,0 +1,17 @@
+id: samuel-barber-violin-concerto-playlist-790
+work_id: samuel-barber-violin-concerto
+performers:
+- name: Esther Yoo
+  role: performer
+- name: Royal Philharmonic Orchestra
+  role: performer
+- name: Vasily Petrenko
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/272245795
+release:
+  album_title: Barber, Bruch
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

@@ -1,0 +1,29 @@
+id: bohuslav-martinu-the-epic-of-gilgamesh-playlist-1376
+work_id: bohuslav-martinu-the-epic-of-gilgamesh
+performers:
+- name: Czech Philharmonic
+  role: performer
+- name: Prague Philharmonic Choir
+  role: performer
+- name: Manfred Honeck
+  role: performer
+- name: Lukáš Vasilek
+  role: performer
+- name: Jan Martiník
+  role: performer
+- name: Simon Callow
+  role: performer
+- name: Lucy Crowe
+  role: performer
+- name: Andrew Staples
+  role: performer
+- name: Derek Welton
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/92803607
+release:
+  album_title: 'Martinů: The Epic of Gilgamesh'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

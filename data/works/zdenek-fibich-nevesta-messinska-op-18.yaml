@@ -1,0 +1,9 @@
+id: zdenek-fibich-nevesta-messinska-op-18
+work_group_id: zdenek-fibich-nevesta-messinska-op-18-group
+composer_id: zdenek-fibich
+title: Nevěsta messinská, Op. 18
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://www.naxos.com/CatalogueDetail/?id=8.574120
+catalogue:
+  op: '18'

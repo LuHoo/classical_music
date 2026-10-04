@@ -1,0 +1,17 @@
+id: aram-khachaturian-spartacus-ballet-suite-no-3-playlist-1259
+work_id: aram-khachaturian-spartacus-ballet-suite-no-3
+performers:
+- name: Neeme Järvi
+  role: conductor
+  artist_id: neeme-jarvi
+- name: Royal Scottish National Orchestra
+  role: orchestra
+  artist_id: royal-scottish-national-orchestra
+links:
+  tidal:
+    url: https://tidal.com/track/208666821
+release:
+  album_title: 'Khachaturian: Spartacus Suites'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

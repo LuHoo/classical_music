@@ -1,0 +1,14 @@
+id: hendrik-andriessen-symphony-no-2-playlist-2636
+work_id: hendrik-andriessen-symphony-no-2
+performers:
+- name: Netherlands Symphony Orchestra
+- name: David Porcelijn
+links:
+  tidal:
+    url: https://tidal.com/track/25810800
+release:
+  album_title: 'Hendrik Andriessen: Symphonic Works, Vol. 2'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+version_assignment: unspecified

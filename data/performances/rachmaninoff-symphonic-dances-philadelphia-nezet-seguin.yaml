@@ -1,0 +1,16 @@
+id: rachmaninoff-symphonic-dances-philadelphia-nezet-seguin
+links:
+  tidal:
+    url: https://tidal.com/track/170507527
+performers:
+- name: The Philadelphia Orchestra
+  role: orchestra
+- name: Yannick Nézet-Séguin
+  role: conductor
+release:
+  album_title: 'Rachmaninoff: Symphony 1 + Symphonic Dances'
+  label: Deutsche Grammophon
+source:
+  file: reports/playlist-import/best-classical/prepared-120.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+work_id: rachmaninoff-symphonic-dances

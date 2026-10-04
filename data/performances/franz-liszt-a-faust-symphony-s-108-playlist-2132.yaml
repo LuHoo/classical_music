@@ -1,0 +1,17 @@
+id: franz-liszt-a-faust-symphony-s-108-playlist-2132
+work_id: franz-liszt-a-faust-symphony-s-108
+performers:
+- name: Kurt Masur
+- name: Gewandhausorchester
+- name: Klaus König
+- name: Rundfunkchor Leipzig
+- name: Walter Heinz Bernstein
+links:
+  tidal:
+    url: https://tidal.com/track/7593963
+release:
+  album_title: 'Liszt: Orchesterwerke & Werke für Klavier und Orchester'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+version_assignment: unspecified

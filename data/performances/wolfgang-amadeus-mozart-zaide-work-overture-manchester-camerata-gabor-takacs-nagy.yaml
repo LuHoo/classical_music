@@ -1,6 +1,5 @@
-id: 
-  wolfgang-amadeus-mozart-zaide-work-overture-manchester-camerata-gabor-takacs-nagy
-work_id: wolfgang-amadeus-mozart-zaide-work
+id: wolfgang-amadeus-mozart-zaide-work-overture-manchester-camerata-gabor-takacs-nagy
+work_id: wolfgang-amadeus-mozart-symphony-no-32-in-g-major-k-318
 source:
   file: docs/mozart.md
   line: '42'
@@ -8,7 +7,8 @@ links:
   tidal:
     url: http://www.tidal.com/track/376332026
 performers:
-- name: 'Overture: Manchester Camerata'
-  role: performer
+- name: Manchester Camerata
 - name: Gábor Takács-Nagy
-  role: performer
+  role: conductor
+notes: The label identifies these three tracks as Symphony No. 32, K. 318, used as an overture to
+  Zaide. Corrected from the source heading’s K. 344 assignment.

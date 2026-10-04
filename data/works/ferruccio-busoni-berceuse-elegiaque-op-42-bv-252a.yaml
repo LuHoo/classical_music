@@ -1,0 +1,9 @@
+id: ferruccio-busoni-berceuse-elegiaque-op-42-bv-252a
+work_group_id: ferruccio-busoni-berceuse-elegiaque-op-42-bv-252a-group
+composer_id: ferruccio-busoni
+title: Berceuse élégiaque, Op. 42, BV 252a
+source:
+  file: docs/busoni.md
+  url: https://en.wikipedia.org/wiki/List_of_compositions_by_Ferruccio_Busoni
+catalogue:
+  op: '42'

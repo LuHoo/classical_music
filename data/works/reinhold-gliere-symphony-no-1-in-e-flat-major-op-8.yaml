@@ -1,0 +1,9 @@
+id: reinhold-gliere-symphony-no-1-in-e-flat-major-op-8
+work_group_id: reinhold-gliere-symphony-no-1-in-e-flat-major-op-8-group
+composer_id: reinhold-gliere
+title: Symphony No. 1 in E-Flat Major, Op. 8
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://www.chandos.net/products/catalogue/CHAN%209160
+catalogue:
+  op: '8'

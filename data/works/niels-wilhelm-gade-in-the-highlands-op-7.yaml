@@ -1,0 +1,9 @@
+id: niels-wilhelm-gade-in-the-highlands-op-7
+work_group_id: niels-wilhelm-gade-in-the-highlands-op-7-group
+composer_id: niels-wilhelm-gade
+title: In the Highlands, Op. 7
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://www.chandos.net/products/catalogue/CHAN%209862
+catalogue:
+  op: '7'

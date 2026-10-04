@@ -1,11 +1,12 @@
-id: "johann-sebastian-bach-musikalisches-opfer-work"
-work_group_id: "johann-sebastian-bach-musikalisches-opfer-group"
-composer_id: "johann-sebastian-bach"
-title: "Musikalisches Opfer"
+id: johann-sebastian-bach-musikalisches-opfer-work
+work_group_id: johann-sebastian-bach-musikalisches-opfer-group
+composer_id: johann-sebastian-bach
+title: Ricercar a 6 from Musikalisches Opfer (Webern orchestration)
 source:
-  file: "docs/bachJS.md"
-  line: "94"
+  file: docs/bachJS.md
+  line: '94'
+  url: https://ci.nii.ac.jp/ncid/BA50788723
 catalogue:
-  bwv: "BWV 1079"
-date_text: "http://www.tidal.com/track/2924755"
-category: "Orchestral arrangements"
+  bwv: BWV 1079
+category: Orchestral arrangements
+version: Orchestration by Anton Webern

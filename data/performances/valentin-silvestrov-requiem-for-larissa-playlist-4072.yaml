@@ -1,0 +1,19 @@
+id: valentin-silvestrov-requiem-for-larissa-playlist-4072
+work_id: valentin-silvestrov-requiem-for-larissa
+performers:
+- name: Priska Eser
+- name: Jutta Neumann
+- name: Andreas Hirtreiter
+- name: Wolfgang Klose
+- name: Michael Mantaj
+- name: Bavarian Radio Chorus
+- name: Munich Radio Orchestra
+- name: Andres Mustonen
+links:
+  tidal:
+    url: https://tidal.com/track/282977005
+release:
+  album_title: 'Valentin Silvestrov: Requiem für Larissa (Live)'
+source:
+  file: reports/playlist-import/best-classical/window-4001-5518.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

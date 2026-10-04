@@ -1,0 +1,14 @@
+id: sergei-rachmaninoff-the-rock-op-7-playlist-4878
+work_id: sergei-rachmaninoff-the-rock-op-7
+performers:
+- name: Paavo Järvi
+  artist_id: paavo-jarvi
+  role: conductor
+links:
+  tidal:
+    url: https://tidal.com/track/51563294
+release:
+  album_title: 'Rachmaninov: Symphony No. 3, Symphonic Dances'
+source:
+  file: reports/playlist-import/best-classical/window-4001-5518.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

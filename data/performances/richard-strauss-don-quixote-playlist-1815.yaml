@@ -1,0 +1,17 @@
+id: richard-strauss-don-quixote-playlist-1815
+work_id: richard-strauss-don-quixote
+performers:
+- name: Rudolf Kempe
+  role: performer
+- name: Paul Tortelier
+  role: performer
+- name: Max Rostal
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/109675542
+release:
+  album_title: 'Strauss: Don Quixote, Op. 35 & Dance Suite from Keyboard Pieces by François Couperin'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

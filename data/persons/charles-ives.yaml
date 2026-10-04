@@ -1,0 +1,7 @@
+id: charles-ives
+name: Charles Ives
+roles:
+- composer
+source:
+  file: docs/ives.md
+  url: https://en.wikipedia.org/wiki/List_of_compositions_by_Charles_Ives

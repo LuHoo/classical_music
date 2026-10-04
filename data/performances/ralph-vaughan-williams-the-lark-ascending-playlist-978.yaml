@@ -1,0 +1,18 @@
+id: ralph-vaughan-williams-the-lark-ascending-playlist-978
+work_id: ralph-vaughan-williams-the-lark-ascending
+performers:
+- name: Isabelle van Keulen
+  role: performer
+- name: NDR Radiophilharmonie
+  role: performer
+- name: Andrew Manze
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/96330723
+release:
+  album_title: 'Prokofiev: Violin Concerto No. 1 - Walton: Viola Concerto - Vaughan Williams: The Lark
+    Ascending'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

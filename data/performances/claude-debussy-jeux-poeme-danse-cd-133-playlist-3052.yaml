@@ -1,0 +1,13 @@
+id: claude-debussy-jeux-poeme-danse-cd-133-playlist-3052
+work_id: claude-debussy-jeux-poeme-danse-cd-133
+performers:
+- name: Orchestre de Paris
+- name: Klaus Mäkelä
+links:
+  tidal:
+    url: https://tidal.com/track/348355825
+release:
+  album_title: 'Stravinsky: Petrushka; Debussy: Jeux, Prélude'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

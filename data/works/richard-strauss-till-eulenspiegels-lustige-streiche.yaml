@@ -1,0 +1,10 @@
+id: richard-strauss-till-eulenspiegels-lustige-streiche
+work_group_id: richard-strauss-till-eulenspiegels-lustige-streiche-group
+composer_id: richard-strauss
+title: Till Eulenspiegels lustige Streiche
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://www.deutschegrammophon.com/de/katalog/produkte/r-strauss-nelsons-12607
+catalogue:
+  opus: Op. 28
+  trv: TrV 171

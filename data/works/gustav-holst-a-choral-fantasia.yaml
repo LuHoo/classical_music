@@ -1,0 +1,9 @@
+id: gustav-holst-a-choral-fantasia
+work_group_id: gustav-holst-a-choral-fantasia-group
+composer_id: gustav-holst
+title: A Choral Fantasia
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://www.musicweb-international.com/classrev/2010/Sept10/holst_6278982.htm
+catalogue:
+  opus: Op. 51

@@ -3,9 +3,12 @@
 Composer overviews follow the editorial style of the legacy `docs/vivaldi.md`:
 compact paragraphs, bold Work titles, readable catalogue numbers and dates,
 italic performer names linked directly to Tidal, and a diamond for a Gem.
-Work titles still link to detail pages containing roles, reviews and other
+Recommended Work titles link to detail pages containing roles, reviews and other
 recommendation metadata. Profiles and excerpt coverage are also visible inline.
-Works without a recommendation remain visible without a workflow/status label.
+Works without a recommendation remain visible as plain bold text without a link
+or workflow/status label, including within editorial collections. The landing
+page contains collection counts and composer navigation; it does not list Works
+without recommendations.
 
 Categories form sections. Work Group headings appear only when a section has
 multiple Works in the same artistic family; singleton titles are not repeated.

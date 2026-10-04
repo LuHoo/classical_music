@@ -1,0 +1,7 @@
+id: knut-nystedt
+name: Knut Nystedt
+roles:
+- composer
+source:
+  file: reports/playlist-import/best-classical/window-4001-5518.json
+  url: https://www.knutnystedt.com/works/choir/mixed-choir/

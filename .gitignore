@@ -53,3 +53,4 @@ _data_generated/
 
 # Operational Tidal checks and identity fingerprints (not canonical knowledge).
 /reports/tidal-maintenance/
+/reports/tidal-playlist/

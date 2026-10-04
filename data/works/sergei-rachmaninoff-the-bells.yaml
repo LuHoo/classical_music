@@ -1,0 +1,9 @@
+id: sergei-rachmaninoff-the-bells
+work_group_id: sergei-rachmaninoff-the-bells-group
+composer_id: sergei-rachmaninoff
+title: The Bells
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://www.warnerclassics.com/release/rachmaninov-symphonic-dances-bells
+catalogue:
+  opus: Op. 35

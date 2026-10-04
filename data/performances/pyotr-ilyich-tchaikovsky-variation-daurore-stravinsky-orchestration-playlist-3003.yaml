@@ -1,0 +1,13 @@
+id: pyotr-ilyich-tchaikovsky-variation-daurore-stravinsky-orchestration-playlist-3003
+work_id: pyotr-ilyich-tchaikovsky-variation-daurore-stravinsky-orchestration
+performers:
+- name: Vladimir Jurowski
+- name: London Philharmonic Orchestra
+links:
+  tidal:
+    url: https://tidal.com/track/290901289
+release:
+  album_title: Jurowski conducts Stravinsky, Vol. 2 (Live)
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

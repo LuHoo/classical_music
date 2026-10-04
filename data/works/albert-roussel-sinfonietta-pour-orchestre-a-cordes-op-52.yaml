@@ -1,0 +1,9 @@
+id: albert-roussel-sinfonietta-pour-orchestre-a-cordes-op-52
+work_group_id: albert-roussel-sinfonietta-pour-orchestre-a-cordes-op-52-group
+composer_id: albert-roussel
+title: Sinfonietta pour orchestre à cordes, Op. 52
+source:
+  file: docs/roussel.md
+  url: https://en.wikipedia.org/wiki/Albert_Roussel#Works
+catalogue:
+  op: '52'
