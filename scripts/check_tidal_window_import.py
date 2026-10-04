@@ -49,7 +49,7 @@ def audit(manifest_path: Path) -> dict:
         counts[status] += len(unit["positions"])
         assert [t["position"] for t in unit["tracks"]] == unit["positions"]
         assert all(t["id"] and t["title"] and t["isrc"] for t in unit["tracks"])
-        if status == "identity_unresolved":
+        if status in {"identity_unresolved", "excluded_nonmusical"}:
             assert not unit.get("performance_id") and unit["reason"]
             continue
         work = data["works"][unit["work_id"]]
@@ -109,7 +109,10 @@ def audit(manifest_path: Path) -> dict:
         len(reused_performances)
         == manifest["counts"].get("existing_performances_unique", manifest["counts"]["unit_dispositions"]["reuse_existing"])
     )
-    assert manifest["next_boundary"]["position"] == window["end"] + 1
+    if manifest["source"].get("source_complete") and window["end"] == manifest["source"]["playlist_tracks"]:
+        assert manifest["next_boundary"] is None
+    else:
+        assert manifest["next_boundary"]["position"] == window["end"] + 1
     return {
         "selected_tracks": len(positions),
         "track_dispositions": dict(counts),

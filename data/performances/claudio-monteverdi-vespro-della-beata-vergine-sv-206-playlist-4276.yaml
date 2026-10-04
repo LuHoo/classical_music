@@ -1,0 +1,25 @@
+id: claudio-monteverdi-vespro-della-beata-vergine-sv-206-playlist-4276
+work_id: claudio-monteverdi-vespro-della-beata-vergine-sv-206
+performers:
+- name: Raphaël Pichon
+- name: Pygmalion
+- name: Renaud Brès
+- name: Emiliano Gonzalez Toro
+- name: Céline Scheen
+- name: Perrine Devillers
+- name: Zachary Wilder
+- name: Antonin Rondepierre
+- name: Adrien Mabire
+- name: Marouan Mankar-Bennis
+- name: Pierre Gallon
+- name: Etienne Bazola
+- name: Nicolas Brooymans
+- name: Lucile Richardot
+links:
+  tidal:
+    url: https://tidal.com/track/313098585
+release:
+  album_title: 'Monteverdi: Vespro della Beata Vergine'
+source:
+  file: reports/playlist-import/best-classical/window-4001-5518.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

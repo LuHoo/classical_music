@@ -1,0 +1,13 @@
+id: frank-martin-passacaille-string-orchestra-version-playlist-4800
+work_id: frank-martin-passacaille-string-orchestra-version
+performers:
+- name: Arion Ensemble
+- name: Alexandru Lascae
+links:
+  tidal:
+    url: https://tidal.com/track/145844008
+release:
+  album_title: Françaix & Martin
+source:
+  file: reports/playlist-import/best-classical/window-4001-5518.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

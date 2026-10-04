@@ -203,3 +203,16 @@ def test_repaired_playlist_window_keeps_4001_boundary_and_occurrences():
     assert result["next_item_position"] == 4002
     assert result["next_page"] is None
     assert result["source_complete"] is False
+
+
+def test_final_playlist_window_reaches_end_without_losing_occurrences():
+    ids = [str(n % 61) for n in range(5518)]
+    client = Client(metadata(), page(ids[:4000], "?page[cursor]=last"),
+                    page(ids[4000:]), metadata())
+    result = snapshot(URL, limit=5518, client=client)
+    selected = [x for x in result["items"] if 4001 <= x["position"] <= 5518]
+    assert len(selected) == 1518
+    assert [x["resource"]["id"] for x in selected] == ids[4000:]
+    assert result["source_complete"] is True
+    assert result["next_page"] is None
+    assert result["next_item_position"] is None

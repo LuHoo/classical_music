@@ -27,8 +27,8 @@ python scripts/fetch_tidal_playlist.py \
   --limit 100 --country NL
 ```
 
-The CLI default limit is 100 source items; the allowed range is 1–5000. The
-dedicated draft branch's push probe reads 4,001 items to analyse positions 1999–4000
+The CLI default limit is 100 source items; the allowed range is 1–6000. The
+dedicated draft branch's push probe reads 5,518 items to analyse positions 4001–5518
 while verifying the previously processed prefix. This is a
 metadata fetch budget, not the canonical batch size. The reader preserves item
 order and duplicate occurrences, follows Tidal's cursor pagination, delays
@@ -117,3 +117,23 @@ The older CSV is joined only by exact track ID; its row numbers are not current
 playlist positions. The boundary at position 4001 remains outside this window.
 Run `python scripts/check_tidal_window_import.py --manifest
 reports/playlist-import/best-classical/window-1999-4000.json` for this window.
+
+
+Positions 4001–5518 complete the authorised 1518-item window. The fresh source
+contains 5539 playlist items: 21 later additions at positions 5519–5539 are
+outside this request. The snapshot reads 5518 items, so `source_complete` remains
+false and the next boundary is explicitly recorded at 5519. The first 4001 source
+items are unchanged from the previous window. A pagination regression test also
+verifies a genuinely complete 5518-item playlist and preserves duplicates.
+
+The final manifest adds 255 Performances covering 998 source occurrences,
+reuses 97 existing Performances for 369 occurrences, retains 93 occurrences
+as recommendation choices, and retains 57 occurrences for composition/version
+identity review. One spoken Paul Sacher interview is `excluded_nonmusical`.
+All open cases retain their original metadata and active TIDAL links in
+`reports/playlist-import/best-classical/window-4001-5518.md`.
+
+Run `python scripts/check_tidal_window_import.py --manifest
+reports/playlist-import/best-classical/window-4001-5518.json` to audit this window.
+The full PR has added 1039 Performances; it remains a draft and does not write
+to TIDAL or deploy the public site.

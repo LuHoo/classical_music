@@ -1,0 +1,19 @@
+id: 
+  camille-saint-saens-orient-et-occident-op-25-original-1869-wind-band-scoring-playlist-5371
+work_id: 
+  camille-saint-saens-orient-et-occident-op-25-original-1869-wind-band-scoring
+performers:
+- name: Royal Northern College of Music Wind Orchestra
+  artist_id: royal-northern-college-of-music-wind-orchestra
+  role: orchestra
+- name: Timothy Reynish
+  artist_id: timothy-reynish
+  role: conductor
+links:
+  tidal:
+    url: https://tidal.com/track/376347162
+release:
+  album_title: RNCM Wind Orchestra Plays French Wind Band Classics
+source:
+  file: reports/playlist-import/best-classical/window-4001-5518.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

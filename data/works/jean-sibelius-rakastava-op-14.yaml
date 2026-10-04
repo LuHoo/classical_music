@@ -1,0 +1,8 @@
+id: jean-sibelius-rakastava-op-14
+work_group_id: jean-sibelius-rakastava-op-14-group
+composer_id: jean-sibelius
+title: Rakastava, Op. 14
+source:
+  file: docs/sibelius.md
+catalogue:
+  op: '14'

@@ -1,0 +1,19 @@
+id: 
+  frank-martin-polyptique-pour-violon-et-deux-petites-orchestres-a-cordes-playlist-4790
+work_id: frank-martin-polyptique-pour-violon-et-deux-petites-orchestres-a-cordes
+performers:
+- name: Marieke Blankestijn
+- name: Chamber Orchestra of Europe
+  artist_id: chamber-orchestra-of-europe
+  role: orchestra
+- name: Thierry Fischer
+links:
+  tidal:
+    url: https://tidal.com/track/4616350
+release:
+  album_title: 'Martin: Concerto For 7 Wind Instruments (1949); Polyptyque pour violon
+    solo et deux petits orchestres à cordes (1972-73); Études pour orchestre à cordes
+    (1955-56)'
+source:
+  file: reports/playlist-import/best-classical/window-4001-5518.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

@@ -1,0 +1,13 @@
+id: boris-blacher-music-for-cleveland-op-53-playlist-4857
+work_id: boris-blacher-music-for-cleveland-op-53
+performers:
+- name: George Szell
+- name: Cologne Radio Symphony Orchestra
+links:
+  tidal:
+    url: https://tidal.com/track/287016686
+release:
+  album_title: 'Blacher, Mozart & Brahms: Orchestral Works (Remastered 2023)'
+source:
+  file: reports/playlist-import/best-classical/window-4001-5518.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

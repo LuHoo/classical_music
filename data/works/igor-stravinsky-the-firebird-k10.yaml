@@ -1,0 +1,8 @@
+id: igor-stravinsky-the-firebird-k10
+work_group_id: igor-stravinsky-the-firebird-k10-group
+composer_id: igor-stravinsky
+title: The Firebird, K10
+source:
+  file: docs/stravinsky.md
+catalogue:
+  k: '10'
