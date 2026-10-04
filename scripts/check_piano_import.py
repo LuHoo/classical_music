@@ -64,7 +64,7 @@ def check_inventory(manifest: dict, data: dict) -> None:
             choice = choices[work['id']]
             assert u['unit_id'] in choice['units']
             assert choice['decision'] is None and u['curator_issue'] == choice['issue_url']
-            assert not any(p['work_id'] == work['id'] and p['id'] in new_ids for p in data['performances'].values()), 'Pending curator choice leaked into recommendations'
+            assert {p['id'] for p in data['performances'].values() if p['work_id'] == work['id']} == set(choice['existing_performances']), 'Pending curator choice leaked into recommendations'
         if status == 'recommendation_choice':
             assert u['work_id'] in choices and not u.get('performance_id')
             assert u['reason'] and u['review_classification'] == 'curator_required'

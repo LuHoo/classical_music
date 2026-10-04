@@ -82,6 +82,14 @@ def test_ornamented_nocturne_stays_in_same_curator_choice(inventory):
     assert len({units[c]['curator_issue'] for c in ['P314', 'P565', 'P586']}) == 1
 
 
+def test_unlisted_candidate_cannot_bypass_manifest_gate(inventory):
+    manifest, data = deepcopy(inventory)
+    unit = next(u for u in manifest['units'] if u['disposition'] == 'recommendation_choice')
+    data['performances']['unlisted'] = {'id': 'unlisted', 'work_id': unit['work_id']}
+    with pytest.raises(AssertionError, match='Pending curator choice leaked'):
+        audit.check_inventory(manifest, data)
+
+
 def test_nonadjacent_movements_keep_selected_opening_anchor(inventory):
     manifest, _ = inventory
     units = {u['unit_id']: u for u in manifest['units']}

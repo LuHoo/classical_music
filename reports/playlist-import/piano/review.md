@@ -54,7 +54,7 @@ boundary. Uncertainty is not silently converted into a new recommendation.
   anchors, public links and excerpt descriptions; pending candidates remain
   outside canonical Performance data.
 - Local Jekyll website build passed (3,488 Works, 2,901 Performances).
-- All **15 focused Piano and Chamber regression tests passed**. They include
+- All **16 focused Piano and Chamber regression tests passed**. They include
   missing/changed occurrences, raw metadata changes, wrong-Work reuse, curator
   leakage, the embellished Nocturne and non-adjacent movement anchors.
 - NL subscription STREAM rules were present for 1,562 source occurrences and
