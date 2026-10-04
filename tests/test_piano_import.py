@@ -78,8 +78,10 @@ def test_ornamented_nocturne_stays_in_same_curator_choice(inventory):
     manifest, _ = inventory
     units = {u['unit_id']: u for u in manifest['units']}
     assert units['P314']['work_id'] == units['P565']['work_id'] == units['P586']['work_id']
-    assert all(units[c]['disposition'] == 'recommendation_choice' for c in ['P314', 'P565', 'P586'])
+    assert units['P314']['disposition'] == 'import_new'
+    assert all(units[c]['disposition'] == 'not_selected' for c in ['P565', 'P586'])
     assert len({units[c]['curator_issue'] for c in ['P314', 'P565', 'P586']}) == 1
+    assert len({units[c]['curator_decision'] for c in ['P314', 'P565', 'P586']}) == 1
 
 
 def test_unlisted_candidate_cannot_bypass_manifest_gate(inventory):
@@ -97,3 +99,20 @@ def test_nonadjacent_movements_keep_selected_opening_anchor(inventory):
         u = units[code]
         assert u['listening_track_id'] in {t['id'] for t in u['tracks']}
         assert u['listening_track_id'] != u['tracks'][0]['id']
+
+
+def test_rejected_alternative_cannot_reappear_as_recommendation(inventory):
+    manifest, data = deepcopy(inventory)
+    unit = next(u for u in manifest['units'] if u['disposition'] == 'not_selected')
+    data['performances']['unapproved-alternative'] = {'id': 'unapproved-alternative', 'work_id': unit['work_id']}
+    with pytest.raises(AssertionError, match='Competing recommendation'):
+        audit.check_inventory(manifest, data)
+
+
+def test_selected_recording_requires_its_curator_decision(inventory):
+    manifest, data = deepcopy(inventory)
+    choice = next(c for c in manifest['resolved_choices'] if c['decision']['choice'] == 'selected_performance')
+    unit = next(u for u in manifest['units'] if u['unit_id'] in choice['decision']['selected_units'])
+    unit['curator_decision'] = None
+    with pytest.raises(AssertionError, match='Missing curator decision'):
+        audit.check_inventory(manifest, data)

@@ -826,9 +826,9 @@
   "base_commit": "6139470",
   "summary": {
     "import_new": {
-      "units": 648,
-      "track_occurrences": 1667,
-      "distinct_performances": 648
+      "units": 669,
+      "track_occurrences": 1688,
+      "distinct_performances": 669
     },
     "reuse_existing": {
       "units": 53,
@@ -836,13 +836,18 @@
       "distinct_performances": 53
     },
     "recommendation_choice": {
-      "units": 47,
-      "track_occurrences": 51,
+      "units": 4,
+      "track_occurrences": 8,
       "distinct_performances": 0
     },
     "identity_unresolved": {
       "units": 7,
       "track_occurrences": 16,
+      "distinct_performances": 0
+    },
+    "not_selected": {
+      "units": 22,
+      "track_occurrences": 22,
       "distinct_performances": 0
     }
   },
@@ -10721,6 +10726,111 @@
       "id": "felix-mendelssohn-song-without-words-op-102-no-1-mwv-u-162-piano-p648",
       "entity": "performances",
       "path": "data/performances/felix-mendelssohn-song-without-words-op-102-no-1-mwv-u-162-piano-p648.yaml"
+    },
+    {
+      "id": "frederic-chopin-nocturne-op-9-no-1-piano-p313",
+      "entity": "performances",
+      "path": "data/performances/frederic-chopin-nocturne-op-9-no-1-piano-p313.yaml"
+    },
+    {
+      "id": "frederic-chopin-nocturne-op-9-no-2-piano-p314",
+      "entity": "performances",
+      "path": "data/performances/frederic-chopin-nocturne-op-9-no-2-piano-p314.yaml"
+    },
+    {
+      "id": "frederic-chopin-nocturne-op-9-no-3-piano-p315",
+      "entity": "performances",
+      "path": "data/performances/frederic-chopin-nocturne-op-9-no-3-piano-p315.yaml"
+    },
+    {
+      "id": "frederic-chopin-nocturne-op-15-no-1-piano-p316",
+      "entity": "performances",
+      "path": "data/performances/frederic-chopin-nocturne-op-15-no-1-piano-p316.yaml"
+    },
+    {
+      "id": "frederic-chopin-nocturne-op-15-no-2-piano-p317",
+      "entity": "performances",
+      "path": "data/performances/frederic-chopin-nocturne-op-15-no-2-piano-p317.yaml"
+    },
+    {
+      "id": "frederic-chopin-nocturne-op-15-no-3-piano-p318",
+      "entity": "performances",
+      "path": "data/performances/frederic-chopin-nocturne-op-15-no-3-piano-p318.yaml"
+    },
+    {
+      "id": "frederic-chopin-nocturne-op-27-no-1-piano-p319",
+      "entity": "performances",
+      "path": "data/performances/frederic-chopin-nocturne-op-27-no-1-piano-p319.yaml"
+    },
+    {
+      "id": "frederic-chopin-nocturne-op-27-no-2-piano-p320",
+      "entity": "performances",
+      "path": "data/performances/frederic-chopin-nocturne-op-27-no-2-piano-p320.yaml"
+    },
+    {
+      "id": "frederic-chopin-nocturne-op-32-no-1-piano-p321",
+      "entity": "performances",
+      "path": "data/performances/frederic-chopin-nocturne-op-32-no-1-piano-p321.yaml"
+    },
+    {
+      "id": "frederic-chopin-nocturne-op-32-no-2-piano-p322",
+      "entity": "performances",
+      "path": "data/performances/frederic-chopin-nocturne-op-32-no-2-piano-p322.yaml"
+    },
+    {
+      "id": "frederic-chopin-nocturne-op-37-no-1-piano-p323",
+      "entity": "performances",
+      "path": "data/performances/frederic-chopin-nocturne-op-37-no-1-piano-p323.yaml"
+    },
+    {
+      "id": "frederic-chopin-nocturne-op-37-no-2-piano-p324",
+      "entity": "performances",
+      "path": "data/performances/frederic-chopin-nocturne-op-37-no-2-piano-p324.yaml"
+    },
+    {
+      "id": "frederic-chopin-nocturne-op-48-no-1-piano-p325",
+      "entity": "performances",
+      "path": "data/performances/frederic-chopin-nocturne-op-48-no-1-piano-p325.yaml"
+    },
+    {
+      "id": "frederic-chopin-nocturne-op-48-no-2-piano-p326",
+      "entity": "performances",
+      "path": "data/performances/frederic-chopin-nocturne-op-48-no-2-piano-p326.yaml"
+    },
+    {
+      "id": "frederic-chopin-nocturne-op-55-no-1-piano-p327",
+      "entity": "performances",
+      "path": "data/performances/frederic-chopin-nocturne-op-55-no-1-piano-p327.yaml"
+    },
+    {
+      "id": "frederic-chopin-nocturne-op-55-no-2-piano-p328",
+      "entity": "performances",
+      "path": "data/performances/frederic-chopin-nocturne-op-55-no-2-piano-p328.yaml"
+    },
+    {
+      "id": "frederic-chopin-nocturne-op-62-no-1-piano-p329",
+      "entity": "performances",
+      "path": "data/performances/frederic-chopin-nocturne-op-62-no-1-piano-p329.yaml"
+    },
+    {
+      "id": "frederic-chopin-nocturne-op-62-no-2-piano-p330",
+      "entity": "performances",
+      "path": "data/performances/frederic-chopin-nocturne-op-62-no-2-piano-p330.yaml"
+    },
+    {
+      "id": "frederic-chopin-nocturne-op-72-no-1-piano-p331",
+      "entity": "performances",
+      "path": "data/performances/frederic-chopin-nocturne-op-72-no-1-piano-p331.yaml"
+    },
+    {
+      "id": "frederic-chopin-nocturne-in-c-sharp-minor-kk-iva-16-piano-p332",
+      "entity": "performances",
+      "path": "data/performances/frederic-chopin-nocturne-in-c-sharp-minor-kk-iva-16-piano-p332.yaml"
+    },
+    {
+      "id": "frederic-chopin-nocturne-in-c-minor-kk-ivb-8-attributed-to-chopin-piano-p333",
+      "entity": "performances",
+      "path": "data/performances/frederic-chopin-nocturne-in-c-minor-kk-ivb-8-attributed-to-chopin-piano-p333.yaml"
     }
   ],
   "changed_existing": [
@@ -10907,259 +11017,6 @@
       ],
       "existing_performances": [],
       "issue_url": "https://github.com/LuHoo/classical_music/issues/264",
-      "decision": null
-    },
-    {
-      "work_id": "frederic-chopin-nocturne-op-9-no-1",
-      "title": "Nocturne, Op. 9 No. 1",
-      "composer": "Frédéric Chopin",
-      "units": [
-        "P313",
-        "P564"
-      ],
-      "existing_performances": [],
-      "issue_url": "https://github.com/LuHoo/classical_music/issues/265",
-      "decision": null
-    },
-    {
-      "work_id": "frederic-chopin-nocturne-op-9-no-2",
-      "title": "Nocturne, Op. 9 No. 2",
-      "composer": "Frédéric Chopin",
-      "units": [
-        "P314",
-        "P565",
-        "P586"
-      ],
-      "existing_performances": [],
-      "issue_url": "https://github.com/LuHoo/classical_music/issues/266",
-      "decision": null
-    },
-    {
-      "work_id": "frederic-chopin-nocturne-op-9-no-3",
-      "title": "Nocturne, Op. 9 No. 3",
-      "composer": "Frédéric Chopin",
-      "units": [
-        "P315",
-        "P566"
-      ],
-      "existing_performances": [],
-      "issue_url": "https://github.com/LuHoo/classical_music/issues/267",
-      "decision": null
-    },
-    {
-      "work_id": "frederic-chopin-nocturne-op-15-no-1",
-      "title": "Nocturne, Op. 15 No. 1",
-      "composer": "Frédéric Chopin",
-      "units": [
-        "P316",
-        "P567"
-      ],
-      "existing_performances": [],
-      "issue_url": "https://github.com/LuHoo/classical_music/issues/268",
-      "decision": null
-    },
-    {
-      "work_id": "frederic-chopin-nocturne-op-15-no-2",
-      "title": "Nocturne, Op. 15 No. 2",
-      "composer": "Frédéric Chopin",
-      "units": [
-        "P317",
-        "P568"
-      ],
-      "existing_performances": [],
-      "issue_url": "https://github.com/LuHoo/classical_music/issues/269",
-      "decision": null
-    },
-    {
-      "work_id": "frederic-chopin-nocturne-op-15-no-3",
-      "title": "Nocturne, Op. 15 No. 3",
-      "composer": "Frédéric Chopin",
-      "units": [
-        "P318",
-        "P569"
-      ],
-      "existing_performances": [],
-      "issue_url": "https://github.com/LuHoo/classical_music/issues/270",
-      "decision": null
-    },
-    {
-      "work_id": "frederic-chopin-nocturne-op-27-no-1",
-      "title": "Nocturne, Op. 27 No. 1",
-      "composer": "Frédéric Chopin",
-      "units": [
-        "P319",
-        "P570"
-      ],
-      "existing_performances": [],
-      "issue_url": "https://github.com/LuHoo/classical_music/issues/271",
-      "decision": null
-    },
-    {
-      "work_id": "frederic-chopin-nocturne-op-27-no-2",
-      "title": "Nocturne, Op. 27 No. 2",
-      "composer": "Frédéric Chopin",
-      "units": [
-        "P320",
-        "P571"
-      ],
-      "existing_performances": [],
-      "issue_url": "https://github.com/LuHoo/classical_music/issues/272",
-      "decision": null
-    },
-    {
-      "work_id": "frederic-chopin-nocturne-op-32-no-1",
-      "title": "Nocturne, Op. 32 No. 1",
-      "composer": "Frédéric Chopin",
-      "units": [
-        "P321",
-        "P572"
-      ],
-      "existing_performances": [],
-      "issue_url": "https://github.com/LuHoo/classical_music/issues/273",
-      "decision": null
-    },
-    {
-      "work_id": "frederic-chopin-nocturne-op-32-no-2",
-      "title": "Nocturne, Op. 32 No. 2",
-      "composer": "Frédéric Chopin",
-      "units": [
-        "P322",
-        "P573"
-      ],
-      "existing_performances": [],
-      "issue_url": "https://github.com/LuHoo/classical_music/issues/274",
-      "decision": null
-    },
-    {
-      "work_id": "frederic-chopin-nocturne-op-37-no-1",
-      "title": "Nocturne, Op. 37 No. 1",
-      "composer": "Frédéric Chopin",
-      "units": [
-        "P323",
-        "P574"
-      ],
-      "existing_performances": [],
-      "issue_url": "https://github.com/LuHoo/classical_music/issues/275",
-      "decision": null
-    },
-    {
-      "work_id": "frederic-chopin-nocturne-op-37-no-2",
-      "title": "Nocturne, Op. 37 No. 2",
-      "composer": "Frédéric Chopin",
-      "units": [
-        "P324",
-        "P575"
-      ],
-      "existing_performances": [],
-      "issue_url": "https://github.com/LuHoo/classical_music/issues/276",
-      "decision": null
-    },
-    {
-      "work_id": "frederic-chopin-nocturne-op-48-no-1",
-      "title": "Nocturne, Op. 48 No. 1",
-      "composer": "Frédéric Chopin",
-      "units": [
-        "P325",
-        "P576"
-      ],
-      "existing_performances": [],
-      "issue_url": "https://github.com/LuHoo/classical_music/issues/277",
-      "decision": null
-    },
-    {
-      "work_id": "frederic-chopin-nocturne-op-48-no-2",
-      "title": "Nocturne, Op. 48 No. 2",
-      "composer": "Frédéric Chopin",
-      "units": [
-        "P326",
-        "P577"
-      ],
-      "existing_performances": [],
-      "issue_url": "https://github.com/LuHoo/classical_music/issues/278",
-      "decision": null
-    },
-    {
-      "work_id": "frederic-chopin-nocturne-op-55-no-1",
-      "title": "Nocturne, Op. 55 No. 1",
-      "composer": "Frédéric Chopin",
-      "units": [
-        "P327",
-        "P578"
-      ],
-      "existing_performances": [],
-      "issue_url": "https://github.com/LuHoo/classical_music/issues/279",
-      "decision": null
-    },
-    {
-      "work_id": "frederic-chopin-nocturne-op-55-no-2",
-      "title": "Nocturne, Op. 55 No. 2",
-      "composer": "Frédéric Chopin",
-      "units": [
-        "P328",
-        "P579"
-      ],
-      "existing_performances": [],
-      "issue_url": "https://github.com/LuHoo/classical_music/issues/280",
-      "decision": null
-    },
-    {
-      "work_id": "frederic-chopin-nocturne-op-62-no-1",
-      "title": "Nocturne, Op. 62 No. 1",
-      "composer": "Frédéric Chopin",
-      "units": [
-        "P329",
-        "P580"
-      ],
-      "existing_performances": [],
-      "issue_url": "https://github.com/LuHoo/classical_music/issues/281",
-      "decision": null
-    },
-    {
-      "work_id": "frederic-chopin-nocturne-op-62-no-2",
-      "title": "Nocturne, Op. 62 No. 2",
-      "composer": "Frédéric Chopin",
-      "units": [
-        "P330",
-        "P581"
-      ],
-      "existing_performances": [],
-      "issue_url": "https://github.com/LuHoo/classical_music/issues/282",
-      "decision": null
-    },
-    {
-      "work_id": "frederic-chopin-nocturne-op-72-no-1",
-      "title": "Nocturne, Op. 72 No. 1",
-      "composer": "Frédéric Chopin",
-      "units": [
-        "P331",
-        "P583"
-      ],
-      "existing_performances": [],
-      "issue_url": "https://github.com/LuHoo/classical_music/issues/283",
-      "decision": null
-    },
-    {
-      "work_id": "frederic-chopin-nocturne-in-c-sharp-minor-kk-iva-16",
-      "title": "Nocturne in C-Sharp Minor, KK IVa/16",
-      "composer": "Frédéric Chopin",
-      "units": [
-        "P332",
-        "P582"
-      ],
-      "existing_performances": [],
-      "issue_url": "https://github.com/LuHoo/classical_music/issues/284",
-      "decision": null
-    },
-    {
-      "work_id": "frederic-chopin-nocturne-in-c-minor-kk-ivb-8-attributed-to-chopin",
-      "title": "Nocturne in C Minor, KK IVb/8 (attributed to Chopin)",
-      "composer": "Frédéric Chopin",
-      "units": [
-        "P333",
-        "P584"
-      ],
-      "existing_performances": [],
-      "issue_url": "https://github.com/LuHoo/classical_music/issues/285",
       "decision": null
     }
   ],
@@ -55091,7 +54948,7 @@
       "positions": [
         1172
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "import_new",
       "work_id": "frederic-chopin-nocturne-op-9-no-1",
       "performers": [
         {
@@ -55108,8 +54965,8 @@
           ]
         }
       ],
-      "reason": "A different interpretation of this Work is already recommended or also selected in Piano. Explicit curator choice required.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected Nelson Goerner for this Work.",
+      "review_classification": "curator_accepted",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/265",
       "tracks": [
         {
@@ -55141,7 +54998,10 @@
           "export_position": 1184,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "performance_id": "frederic-chopin-nocturne-op-9-no-1-piano-p313",
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/265#issuecomment-5984514366",
+      "listening_track_id": "187523948"
     },
     {
       "unit_id": "P314",
@@ -55151,7 +55011,7 @@
       "positions": [
         1173
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "import_new",
       "work_id": "frederic-chopin-nocturne-op-9-no-2",
       "performers": [
         {
@@ -55168,8 +55028,8 @@
           ]
         }
       ],
-      "reason": "A different interpretation of this Work is already recommended or also selected in Piano. Explicit curator choice required.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected Nelson Goerner for this Work.",
+      "review_classification": "curator_accepted",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/266",
       "tracks": [
         {
@@ -55201,7 +55061,10 @@
           "export_position": 1185,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "performance_id": "frederic-chopin-nocturne-op-9-no-2-piano-p314",
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/266#issuecomment-5984514470",
+      "listening_track_id": "187523949"
     },
     {
       "unit_id": "P315",
@@ -55211,7 +55074,7 @@
       "positions": [
         1174
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "import_new",
       "work_id": "frederic-chopin-nocturne-op-9-no-3",
       "performers": [
         {
@@ -55228,8 +55091,8 @@
           ]
         }
       ],
-      "reason": "A different interpretation of this Work is already recommended or also selected in Piano. Explicit curator choice required.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected Nelson Goerner for this Work.",
+      "review_classification": "curator_accepted",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/267",
       "tracks": [
         {
@@ -55261,7 +55124,10 @@
           "export_position": 1186,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "performance_id": "frederic-chopin-nocturne-op-9-no-3-piano-p315",
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/267#issuecomment-5984514572",
+      "listening_track_id": "187523950"
     },
     {
       "unit_id": "P316",
@@ -55271,7 +55137,7 @@
       "positions": [
         1175
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "import_new",
       "work_id": "frederic-chopin-nocturne-op-15-no-1",
       "performers": [
         {
@@ -55288,8 +55154,8 @@
           ]
         }
       ],
-      "reason": "A different interpretation of this Work is already recommended or also selected in Piano. Explicit curator choice required.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected Nelson Goerner for this Work.",
+      "review_classification": "curator_accepted",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/268",
       "tracks": [
         {
@@ -55321,7 +55187,10 @@
           "export_position": 1187,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "performance_id": "frederic-chopin-nocturne-op-15-no-1-piano-p316",
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/268#issuecomment-5984514679",
+      "listening_track_id": "187523952"
     },
     {
       "unit_id": "P317",
@@ -55331,7 +55200,7 @@
       "positions": [
         1176
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "import_new",
       "work_id": "frederic-chopin-nocturne-op-15-no-2",
       "performers": [
         {
@@ -55348,8 +55217,8 @@
           ]
         }
       ],
-      "reason": "A different interpretation of this Work is already recommended or also selected in Piano. Explicit curator choice required.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected Nelson Goerner for this Work.",
+      "review_classification": "curator_accepted",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/269",
       "tracks": [
         {
@@ -55381,7 +55250,10 @@
           "export_position": 1188,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "performance_id": "frederic-chopin-nocturne-op-15-no-2-piano-p317",
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/269#issuecomment-5984514765",
+      "listening_track_id": "187523953"
     },
     {
       "unit_id": "P318",
@@ -55391,7 +55263,7 @@
       "positions": [
         1177
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "import_new",
       "work_id": "frederic-chopin-nocturne-op-15-no-3",
       "performers": [
         {
@@ -55408,8 +55280,8 @@
           ]
         }
       ],
-      "reason": "A different interpretation of this Work is already recommended or also selected in Piano. Explicit curator choice required.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected Nelson Goerner for this Work.",
+      "review_classification": "curator_accepted",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/270",
       "tracks": [
         {
@@ -55441,7 +55313,10 @@
           "export_position": 1189,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "performance_id": "frederic-chopin-nocturne-op-15-no-3-piano-p318",
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/270#issuecomment-5984514852",
+      "listening_track_id": "187523954"
     },
     {
       "unit_id": "P319",
@@ -55451,7 +55326,7 @@
       "positions": [
         1178
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "import_new",
       "work_id": "frederic-chopin-nocturne-op-27-no-1",
       "performers": [
         {
@@ -55468,8 +55343,8 @@
           ]
         }
       ],
-      "reason": "A different interpretation of this Work is already recommended or also selected in Piano. Explicit curator choice required.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected Nelson Goerner for this Work.",
+      "review_classification": "curator_accepted",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/271",
       "tracks": [
         {
@@ -55501,7 +55376,10 @@
           "export_position": 1190,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "performance_id": "frederic-chopin-nocturne-op-27-no-1-piano-p319",
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/271#issuecomment-5984514957",
+      "listening_track_id": "187523955"
     },
     {
       "unit_id": "P320",
@@ -55511,7 +55389,7 @@
       "positions": [
         1179
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "import_new",
       "work_id": "frederic-chopin-nocturne-op-27-no-2",
       "performers": [
         {
@@ -55528,8 +55406,8 @@
           ]
         }
       ],
-      "reason": "A different interpretation of this Work is already recommended or also selected in Piano. Explicit curator choice required.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected Nelson Goerner for this Work.",
+      "review_classification": "curator_accepted",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/272",
       "tracks": [
         {
@@ -55561,7 +55439,10 @@
           "export_position": 1191,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "performance_id": "frederic-chopin-nocturne-op-27-no-2-piano-p320",
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/272#issuecomment-5984515075",
+      "listening_track_id": "187523956"
     },
     {
       "unit_id": "P321",
@@ -55571,7 +55452,7 @@
       "positions": [
         1180
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "import_new",
       "work_id": "frederic-chopin-nocturne-op-32-no-1",
       "performers": [
         {
@@ -55588,8 +55469,8 @@
           ]
         }
       ],
-      "reason": "A different interpretation of this Work is already recommended or also selected in Piano. Explicit curator choice required.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected Nelson Goerner for this Work.",
+      "review_classification": "curator_accepted",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/273",
       "tracks": [
         {
@@ -55621,7 +55502,10 @@
           "export_position": 1192,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "performance_id": "frederic-chopin-nocturne-op-32-no-1-piano-p321",
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/273#issuecomment-5984515161",
+      "listening_track_id": "187523957"
     },
     {
       "unit_id": "P322",
@@ -55631,7 +55515,7 @@
       "positions": [
         1181
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "import_new",
       "work_id": "frederic-chopin-nocturne-op-32-no-2",
       "performers": [
         {
@@ -55648,8 +55532,8 @@
           ]
         }
       ],
-      "reason": "A different interpretation of this Work is already recommended or also selected in Piano. Explicit curator choice required.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected Nelson Goerner for this Work.",
+      "review_classification": "curator_accepted",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/274",
       "tracks": [
         {
@@ -55681,7 +55565,10 @@
           "export_position": 1193,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "performance_id": "frederic-chopin-nocturne-op-32-no-2-piano-p322",
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/274#issuecomment-5984515255",
+      "listening_track_id": "187523958"
     },
     {
       "unit_id": "P323",
@@ -55691,7 +55578,7 @@
       "positions": [
         1182
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "import_new",
       "work_id": "frederic-chopin-nocturne-op-37-no-1",
       "performers": [
         {
@@ -55708,8 +55595,8 @@
           ]
         }
       ],
-      "reason": "A different interpretation of this Work is already recommended or also selected in Piano. Explicit curator choice required.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected Nelson Goerner for this Work.",
+      "review_classification": "curator_accepted",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/275",
       "tracks": [
         {
@@ -55741,7 +55628,10 @@
           "export_position": 1194,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "performance_id": "frederic-chopin-nocturne-op-37-no-1-piano-p323",
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/275#issuecomment-5984515372",
+      "listening_track_id": "187523959"
     },
     {
       "unit_id": "P324",
@@ -55751,7 +55641,7 @@
       "positions": [
         1183
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "import_new",
       "work_id": "frederic-chopin-nocturne-op-37-no-2",
       "performers": [
         {
@@ -55768,8 +55658,8 @@
           ]
         }
       ],
-      "reason": "A different interpretation of this Work is already recommended or also selected in Piano. Explicit curator choice required.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected Nelson Goerner for this Work.",
+      "review_classification": "curator_accepted",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/276",
       "tracks": [
         {
@@ -55801,7 +55691,10 @@
           "export_position": 1195,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "performance_id": "frederic-chopin-nocturne-op-37-no-2-piano-p324",
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/276#issuecomment-5984515483",
+      "listening_track_id": "187523960"
     },
     {
       "unit_id": "P325",
@@ -55811,7 +55704,7 @@
       "positions": [
         1184
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "import_new",
       "work_id": "frederic-chopin-nocturne-op-48-no-1",
       "performers": [
         {
@@ -55828,8 +55721,8 @@
           ]
         }
       ],
-      "reason": "A different interpretation of this Work is already recommended or also selected in Piano. Explicit curator choice required.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected Nelson Goerner for this Work.",
+      "review_classification": "curator_accepted",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/277",
       "tracks": [
         {
@@ -55861,7 +55754,10 @@
           "export_position": 1196,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "performance_id": "frederic-chopin-nocturne-op-48-no-1-piano-p325",
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/277#issuecomment-5984515597",
+      "listening_track_id": "187523961"
     },
     {
       "unit_id": "P326",
@@ -55871,7 +55767,7 @@
       "positions": [
         1185
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "import_new",
       "work_id": "frederic-chopin-nocturne-op-48-no-2",
       "performers": [
         {
@@ -55888,8 +55784,8 @@
           ]
         }
       ],
-      "reason": "A different interpretation of this Work is already recommended or also selected in Piano. Explicit curator choice required.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected Nelson Goerner for this Work.",
+      "review_classification": "curator_accepted",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/278",
       "tracks": [
         {
@@ -55921,7 +55817,10 @@
           "export_position": 1197,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "performance_id": "frederic-chopin-nocturne-op-48-no-2-piano-p326",
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/278#issuecomment-5984515692",
+      "listening_track_id": "187523962"
     },
     {
       "unit_id": "P327",
@@ -55931,7 +55830,7 @@
       "positions": [
         1186
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "import_new",
       "work_id": "frederic-chopin-nocturne-op-55-no-1",
       "performers": [
         {
@@ -55948,8 +55847,8 @@
           ]
         }
       ],
-      "reason": "A different interpretation of this Work is already recommended or also selected in Piano. Explicit curator choice required.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected Nelson Goerner for this Work.",
+      "review_classification": "curator_accepted",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/279",
       "tracks": [
         {
@@ -55981,7 +55880,10 @@
           "export_position": 1198,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "performance_id": "frederic-chopin-nocturne-op-55-no-1-piano-p327",
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/279#issuecomment-5984515781",
+      "listening_track_id": "187523963"
     },
     {
       "unit_id": "P328",
@@ -55991,7 +55893,7 @@
       "positions": [
         1187
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "import_new",
       "work_id": "frederic-chopin-nocturne-op-55-no-2",
       "performers": [
         {
@@ -56008,8 +55910,8 @@
           ]
         }
       ],
-      "reason": "A different interpretation of this Work is already recommended or also selected in Piano. Explicit curator choice required.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected Nelson Goerner for this Work.",
+      "review_classification": "curator_accepted",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/280",
       "tracks": [
         {
@@ -56041,7 +55943,10 @@
           "export_position": 1199,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "performance_id": "frederic-chopin-nocturne-op-55-no-2-piano-p328",
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/280#issuecomment-5984515899",
+      "listening_track_id": "187523965"
     },
     {
       "unit_id": "P329",
@@ -56051,7 +55956,7 @@
       "positions": [
         1188
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "import_new",
       "work_id": "frederic-chopin-nocturne-op-62-no-1",
       "performers": [
         {
@@ -56068,8 +55973,8 @@
           ]
         }
       ],
-      "reason": "A different interpretation of this Work is already recommended or also selected in Piano. Explicit curator choice required.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected Nelson Goerner for this Work.",
+      "review_classification": "curator_accepted",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/281",
       "tracks": [
         {
@@ -56101,7 +56006,10 @@
           "export_position": 1200,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "performance_id": "frederic-chopin-nocturne-op-62-no-1-piano-p329",
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/281#issuecomment-5984516004",
+      "listening_track_id": "187523968"
     },
     {
       "unit_id": "P330",
@@ -56111,7 +56019,7 @@
       "positions": [
         1189
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "import_new",
       "work_id": "frederic-chopin-nocturne-op-62-no-2",
       "performers": [
         {
@@ -56128,8 +56036,8 @@
           ]
         }
       ],
-      "reason": "A different interpretation of this Work is already recommended or also selected in Piano. Explicit curator choice required.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected Nelson Goerner for this Work.",
+      "review_classification": "curator_accepted",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/282",
       "tracks": [
         {
@@ -56161,7 +56069,10 @@
           "export_position": 1201,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "performance_id": "frederic-chopin-nocturne-op-62-no-2-piano-p330",
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/282#issuecomment-5984516108",
+      "listening_track_id": "187523969"
     },
     {
       "unit_id": "P331",
@@ -56171,7 +56082,7 @@
       "positions": [
         1190
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "import_new",
       "work_id": "frederic-chopin-nocturne-op-72-no-1",
       "performers": [
         {
@@ -56188,8 +56099,8 @@
           ]
         }
       ],
-      "reason": "A different interpretation of this Work is already recommended or also selected in Piano. Explicit curator choice required.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected Nelson Goerner for this Work.",
+      "review_classification": "curator_accepted",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/283",
       "tracks": [
         {
@@ -56221,7 +56132,10 @@
           "export_position": 1202,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "performance_id": "frederic-chopin-nocturne-op-72-no-1-piano-p331",
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/283#issuecomment-5984516227",
+      "listening_track_id": "187523964"
     },
     {
       "unit_id": "P332",
@@ -56231,7 +56145,7 @@
       "positions": [
         1191
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "import_new",
       "work_id": "frederic-chopin-nocturne-in-c-sharp-minor-kk-iva-16",
       "performers": [
         {
@@ -56248,8 +56162,8 @@
           ]
         }
       ],
-      "reason": "A different interpretation of this Work is already recommended or also selected in Piano. Explicit curator choice required.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected Nelson Goerner for this Work.",
+      "review_classification": "curator_accepted",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/284",
       "tracks": [
         {
@@ -56281,7 +56195,10 @@
           "export_position": 1203,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "performance_id": "frederic-chopin-nocturne-in-c-sharp-minor-kk-iva-16-piano-p332",
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/284#issuecomment-5984516332",
+      "listening_track_id": "187523966"
     },
     {
       "unit_id": "P333",
@@ -56291,7 +56208,7 @@
       "positions": [
         1192
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "import_new",
       "work_id": "frederic-chopin-nocturne-in-c-minor-kk-ivb-8-attributed-to-chopin",
       "performers": [
         {
@@ -56308,8 +56225,8 @@
           ]
         }
       ],
-      "reason": "A different interpretation of this Work is already recommended or also selected in Piano. Explicit curator choice required.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected Nelson Goerner for this Work.",
+      "review_classification": "curator_accepted",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/285",
       "tracks": [
         {
@@ -56341,7 +56258,10 @@
           "export_position": 1204,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "performance_id": "frederic-chopin-nocturne-in-c-minor-kk-ivb-8-attributed-to-chopin-piano-p333",
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/285#issuecomment-5984516439",
+      "listening_track_id": "187523970"
     },
     {
       "unit_id": "P334",
@@ -81022,7 +80942,7 @@
       "positions": [
         1791
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "not_selected",
       "work_id": "frederic-chopin-nocturne-op-9-no-1",
       "performers": [
         {
@@ -81039,8 +80959,8 @@
           ]
         }
       ],
-      "reason": "A different interpretation of this Work is already recommended or also selected in Piano. Explicit curator choice required.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected Goerner; retain this alternative only as source/candidate evidence.",
+      "review_classification": "curator_not_selected",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/265",
       "tracks": [
         {
@@ -81072,7 +80992,8 @@
           "export_position": 1805,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/265#issuecomment-5984514366"
     },
     {
       "unit_id": "P565",
@@ -81082,7 +81003,7 @@
       "positions": [
         1792
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "not_selected",
       "work_id": "frederic-chopin-nocturne-op-9-no-2",
       "performers": [
         {
@@ -81099,8 +81020,8 @@
           ]
         }
       ],
-      "reason": "A different interpretation of this Work is already recommended or also selected in Piano. Explicit curator choice required.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected Goerner; retain this alternative only as source/candidate evidence.",
+      "review_classification": "curator_not_selected",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/266",
       "tracks": [
         {
@@ -81132,7 +81053,8 @@
           "export_position": 1806,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/266#issuecomment-5984514470"
     },
     {
       "unit_id": "P566",
@@ -81142,7 +81064,7 @@
       "positions": [
         1793
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "not_selected",
       "work_id": "frederic-chopin-nocturne-op-9-no-3",
       "performers": [
         {
@@ -81159,8 +81081,8 @@
           ]
         }
       ],
-      "reason": "A different interpretation of this Work is already recommended or also selected in Piano. Explicit curator choice required.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected Goerner; retain this alternative only as source/candidate evidence.",
+      "review_classification": "curator_not_selected",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/267",
       "tracks": [
         {
@@ -81192,7 +81114,8 @@
           "export_position": 1807,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/267#issuecomment-5984514572"
     },
     {
       "unit_id": "P567",
@@ -81202,7 +81125,7 @@
       "positions": [
         1794
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "not_selected",
       "work_id": "frederic-chopin-nocturne-op-15-no-1",
       "performers": [
         {
@@ -81219,8 +81142,8 @@
           ]
         }
       ],
-      "reason": "A different interpretation of this Work is already recommended or also selected in Piano. Explicit curator choice required.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected Goerner; retain this alternative only as source/candidate evidence.",
+      "review_classification": "curator_not_selected",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/268",
       "tracks": [
         {
@@ -81252,7 +81175,8 @@
           "export_position": 1808,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/268#issuecomment-5984514679"
     },
     {
       "unit_id": "P568",
@@ -81262,7 +81186,7 @@
       "positions": [
         1795
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "not_selected",
       "work_id": "frederic-chopin-nocturne-op-15-no-2",
       "performers": [
         {
@@ -81279,8 +81203,8 @@
           ]
         }
       ],
-      "reason": "A different interpretation of this Work is already recommended or also selected in Piano. Explicit curator choice required.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected Goerner; retain this alternative only as source/candidate evidence.",
+      "review_classification": "curator_not_selected",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/269",
       "tracks": [
         {
@@ -81312,7 +81236,8 @@
           "export_position": 1809,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/269#issuecomment-5984514765"
     },
     {
       "unit_id": "P569",
@@ -81322,7 +81247,7 @@
       "positions": [
         1796
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "not_selected",
       "work_id": "frederic-chopin-nocturne-op-15-no-3",
       "performers": [
         {
@@ -81339,8 +81264,8 @@
           ]
         }
       ],
-      "reason": "A different interpretation of this Work is already recommended or also selected in Piano. Explicit curator choice required.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected Goerner; retain this alternative only as source/candidate evidence.",
+      "review_classification": "curator_not_selected",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/270",
       "tracks": [
         {
@@ -81372,7 +81297,8 @@
           "export_position": 1810,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/270#issuecomment-5984514852"
     },
     {
       "unit_id": "P570",
@@ -81382,7 +81308,7 @@
       "positions": [
         1797
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "not_selected",
       "work_id": "frederic-chopin-nocturne-op-27-no-1",
       "performers": [
         {
@@ -81399,8 +81325,8 @@
           ]
         }
       ],
-      "reason": "A different interpretation of this Work is already recommended or also selected in Piano. Explicit curator choice required.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected Goerner; retain this alternative only as source/candidate evidence.",
+      "review_classification": "curator_not_selected",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/271",
       "tracks": [
         {
@@ -81432,7 +81358,8 @@
           "export_position": 1811,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/271#issuecomment-5984514957"
     },
     {
       "unit_id": "P571",
@@ -81442,7 +81369,7 @@
       "positions": [
         1798
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "not_selected",
       "work_id": "frederic-chopin-nocturne-op-27-no-2",
       "performers": [
         {
@@ -81459,8 +81386,8 @@
           ]
         }
       ],
-      "reason": "A different interpretation of this Work is already recommended or also selected in Piano. Explicit curator choice required.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected Goerner; retain this alternative only as source/candidate evidence.",
+      "review_classification": "curator_not_selected",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/272",
       "tracks": [
         {
@@ -81492,7 +81419,8 @@
           "export_position": 1812,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/272#issuecomment-5984515075"
     },
     {
       "unit_id": "P572",
@@ -81502,7 +81430,7 @@
       "positions": [
         1799
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "not_selected",
       "work_id": "frederic-chopin-nocturne-op-32-no-1",
       "performers": [
         {
@@ -81519,8 +81447,8 @@
           ]
         }
       ],
-      "reason": "A different interpretation of this Work is already recommended or also selected in Piano. Explicit curator choice required.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected Goerner; retain this alternative only as source/candidate evidence.",
+      "review_classification": "curator_not_selected",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/273",
       "tracks": [
         {
@@ -81552,7 +81480,8 @@
           "export_position": 1813,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/273#issuecomment-5984515161"
     },
     {
       "unit_id": "P573",
@@ -81562,7 +81491,7 @@
       "positions": [
         1800
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "not_selected",
       "work_id": "frederic-chopin-nocturne-op-32-no-2",
       "performers": [
         {
@@ -81579,8 +81508,8 @@
           ]
         }
       ],
-      "reason": "A different interpretation of this Work is already recommended or also selected in Piano. Explicit curator choice required.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected Goerner; retain this alternative only as source/candidate evidence.",
+      "review_classification": "curator_not_selected",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/274",
       "tracks": [
         {
@@ -81612,7 +81541,8 @@
           "export_position": 1814,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/274#issuecomment-5984515255"
     },
     {
       "unit_id": "P574",
@@ -81622,7 +81552,7 @@
       "positions": [
         1801
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "not_selected",
       "work_id": "frederic-chopin-nocturne-op-37-no-1",
       "performers": [
         {
@@ -81639,8 +81569,8 @@
           ]
         }
       ],
-      "reason": "A different interpretation of this Work is already recommended or also selected in Piano. Explicit curator choice required.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected Goerner; retain this alternative only as source/candidate evidence.",
+      "review_classification": "curator_not_selected",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/275",
       "tracks": [
         {
@@ -81672,7 +81602,8 @@
           "export_position": 1815,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/275#issuecomment-5984515372"
     },
     {
       "unit_id": "P575",
@@ -81682,7 +81613,7 @@
       "positions": [
         1802
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "not_selected",
       "work_id": "frederic-chopin-nocturne-op-37-no-2",
       "performers": [
         {
@@ -81699,8 +81630,8 @@
           ]
         }
       ],
-      "reason": "A different interpretation of this Work is already recommended or also selected in Piano. Explicit curator choice required.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected Goerner; retain this alternative only as source/candidate evidence.",
+      "review_classification": "curator_not_selected",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/276",
       "tracks": [
         {
@@ -81732,7 +81663,8 @@
           "export_position": 1816,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/276#issuecomment-5984515483"
     },
     {
       "unit_id": "P576",
@@ -81742,7 +81674,7 @@
       "positions": [
         1803
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "not_selected",
       "work_id": "frederic-chopin-nocturne-op-48-no-1",
       "performers": [
         {
@@ -81759,8 +81691,8 @@
           ]
         }
       ],
-      "reason": "A different interpretation of this Work is already recommended or also selected in Piano. Explicit curator choice required.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected Goerner; retain this alternative only as source/candidate evidence.",
+      "review_classification": "curator_not_selected",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/277",
       "tracks": [
         {
@@ -81792,7 +81724,8 @@
           "export_position": 1817,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/277#issuecomment-5984515597"
     },
     {
       "unit_id": "P577",
@@ -81802,7 +81735,7 @@
       "positions": [
         1804
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "not_selected",
       "work_id": "frederic-chopin-nocturne-op-48-no-2",
       "performers": [
         {
@@ -81819,8 +81752,8 @@
           ]
         }
       ],
-      "reason": "A different interpretation of this Work is already recommended or also selected in Piano. Explicit curator choice required.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected Goerner; retain this alternative only as source/candidate evidence.",
+      "review_classification": "curator_not_selected",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/278",
       "tracks": [
         {
@@ -81852,7 +81785,8 @@
           "export_position": 1818,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/278#issuecomment-5984515692"
     },
     {
       "unit_id": "P578",
@@ -81862,7 +81796,7 @@
       "positions": [
         1805
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "not_selected",
       "work_id": "frederic-chopin-nocturne-op-55-no-1",
       "performers": [
         {
@@ -81879,8 +81813,8 @@
           ]
         }
       ],
-      "reason": "A different interpretation of this Work is already recommended or also selected in Piano. Explicit curator choice required.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected Goerner; retain this alternative only as source/candidate evidence.",
+      "review_classification": "curator_not_selected",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/279",
       "tracks": [
         {
@@ -81912,7 +81846,8 @@
           "export_position": 1819,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/279#issuecomment-5984515781"
     },
     {
       "unit_id": "P579",
@@ -81922,7 +81857,7 @@
       "positions": [
         1806
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "not_selected",
       "work_id": "frederic-chopin-nocturne-op-55-no-2",
       "performers": [
         {
@@ -81939,8 +81874,8 @@
           ]
         }
       ],
-      "reason": "A different interpretation of this Work is already recommended or also selected in Piano. Explicit curator choice required.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected Goerner; retain this alternative only as source/candidate evidence.",
+      "review_classification": "curator_not_selected",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/280",
       "tracks": [
         {
@@ -81972,7 +81907,8 @@
           "export_position": 1820,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/280#issuecomment-5984515899"
     },
     {
       "unit_id": "P580",
@@ -81982,7 +81918,7 @@
       "positions": [
         1807
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "not_selected",
       "work_id": "frederic-chopin-nocturne-op-62-no-1",
       "performers": [
         {
@@ -81999,8 +81935,8 @@
           ]
         }
       ],
-      "reason": "A different interpretation of this Work is already recommended or also selected in Piano. Explicit curator choice required.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected Goerner; retain this alternative only as source/candidate evidence.",
+      "review_classification": "curator_not_selected",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/281",
       "tracks": [
         {
@@ -82032,7 +81968,8 @@
           "export_position": 1821,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/281#issuecomment-5984516004"
     },
     {
       "unit_id": "P581",
@@ -82042,7 +81979,7 @@
       "positions": [
         1808
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "not_selected",
       "work_id": "frederic-chopin-nocturne-op-62-no-2",
       "performers": [
         {
@@ -82059,8 +81996,8 @@
           ]
         }
       ],
-      "reason": "A different interpretation of this Work is already recommended or also selected in Piano. Explicit curator choice required.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected Goerner; retain this alternative only as source/candidate evidence.",
+      "review_classification": "curator_not_selected",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/282",
       "tracks": [
         {
@@ -82092,7 +82029,8 @@
           "export_position": 1822,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/282#issuecomment-5984516108"
     },
     {
       "unit_id": "P582",
@@ -82102,7 +82040,7 @@
       "positions": [
         1809
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "not_selected",
       "work_id": "frederic-chopin-nocturne-in-c-sharp-minor-kk-iva-16",
       "performers": [
         {
@@ -82119,8 +82057,8 @@
           ]
         }
       ],
-      "reason": "A different interpretation of this Work is already recommended or also selected in Piano. Explicit curator choice required.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected Goerner; retain this alternative only as source/candidate evidence.",
+      "review_classification": "curator_not_selected",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/284",
       "tracks": [
         {
@@ -82152,7 +82090,8 @@
           "export_position": 1823,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/284#issuecomment-5984516332"
     },
     {
       "unit_id": "P583",
@@ -82162,7 +82101,7 @@
       "positions": [
         1810
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "not_selected",
       "work_id": "frederic-chopin-nocturne-op-72-no-1",
       "performers": [
         {
@@ -82179,8 +82118,8 @@
           ]
         }
       ],
-      "reason": "A different interpretation of this Work is already recommended or also selected in Piano. Explicit curator choice required.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected Goerner; retain this alternative only as source/candidate evidence.",
+      "review_classification": "curator_not_selected",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/283",
       "tracks": [
         {
@@ -82212,7 +82151,8 @@
           "export_position": 1824,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/283#issuecomment-5984516227"
     },
     {
       "unit_id": "P584",
@@ -82222,7 +82162,7 @@
       "positions": [
         1811
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "not_selected",
       "work_id": "frederic-chopin-nocturne-in-c-minor-kk-ivb-8-attributed-to-chopin",
       "performers": [
         {
@@ -82239,8 +82179,8 @@
           ]
         }
       ],
-      "reason": "A different interpretation of this Work is already recommended or also selected in Piano. Explicit curator choice required.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected Goerner; retain this alternative only as source/candidate evidence.",
+      "review_classification": "curator_not_selected",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/285",
       "tracks": [
         {
@@ -82272,7 +82212,8 @@
           "export_position": 1825,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/285#issuecomment-5984516439"
     },
     {
       "unit_id": "P585",
@@ -82335,7 +82276,7 @@
       "positions": [
         1813
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "not_selected",
       "work_id": "frederic-chopin-nocturne-op-9-no-2",
       "performers": [
         {
@@ -82357,8 +82298,8 @@
           ]
         }
       ],
-      "reason": "A different interpretation of this Work is already recommended or also selected in Piano. Explicit curator choice required.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected Goerner; retain this alternative only as source/candidate evidence.",
+      "review_classification": "curator_not_selected",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/266",
       "tracks": [
         {
@@ -82390,7 +82331,8 @@
           "export_position": 1827,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/266#issuecomment-5984514470"
     },
     {
       "unit_id": "P587",
@@ -96765,6 +96707,659 @@
         ],
         "implementation_report": "reports/curator-decisions/original-arrangement-2026-10-04.json",
         "implementation_pr": "https://github.com/LuHoo/classical_music/pull/297"
+      }
+    },
+    {
+      "work_id": "frederic-chopin-nocturne-op-9-no-1",
+      "title": "Nocturne, Op. 9 No. 1",
+      "composer": "Frédéric Chopin",
+      "units": [
+        "P313",
+        "P564"
+      ],
+      "existing_performances": [],
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/265",
+      "decision": {
+        "choice": "selected_performance",
+        "selected_units": [
+          "P313"
+        ],
+        "not_selected_units": [
+          "P564"
+        ],
+        "comment_url": "https://github.com/LuHoo/classical_music/issues/265#issuecomment-5984514366",
+        "performances": [
+          {
+            "performance_id": "frederic-chopin-nocturne-op-9-no-1-piano-p313",
+            "profile": null,
+            "unit_id": "P313",
+            "tidal_url": "https://tidal.com/track/187523948"
+          }
+        ],
+        "implementation_report": "reports/playlist-import/piano/snapshot-2026-10-04.json",
+        "implementation_record": "reports/curator-decisions/goerner-2026-10-04.json"
+      }
+    },
+    {
+      "work_id": "frederic-chopin-nocturne-op-9-no-2",
+      "title": "Nocturne, Op. 9 No. 2",
+      "composer": "Frédéric Chopin",
+      "units": [
+        "P314",
+        "P565",
+        "P586"
+      ],
+      "existing_performances": [],
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/266",
+      "decision": {
+        "choice": "selected_performance",
+        "selected_units": [
+          "P314"
+        ],
+        "not_selected_units": [
+          "P565",
+          "P586"
+        ],
+        "comment_url": "https://github.com/LuHoo/classical_music/issues/266#issuecomment-5984514470",
+        "performances": [
+          {
+            "performance_id": "frederic-chopin-nocturne-op-9-no-2-piano-p314",
+            "profile": null,
+            "unit_id": "P314",
+            "tidal_url": "https://tidal.com/track/187523949"
+          }
+        ],
+        "implementation_report": "reports/playlist-import/piano/snapshot-2026-10-04.json",
+        "implementation_record": "reports/curator-decisions/goerner-2026-10-04.json"
+      }
+    },
+    {
+      "work_id": "frederic-chopin-nocturne-op-9-no-3",
+      "title": "Nocturne, Op. 9 No. 3",
+      "composer": "Frédéric Chopin",
+      "units": [
+        "P315",
+        "P566"
+      ],
+      "existing_performances": [],
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/267",
+      "decision": {
+        "choice": "selected_performance",
+        "selected_units": [
+          "P315"
+        ],
+        "not_selected_units": [
+          "P566"
+        ],
+        "comment_url": "https://github.com/LuHoo/classical_music/issues/267#issuecomment-5984514572",
+        "performances": [
+          {
+            "performance_id": "frederic-chopin-nocturne-op-9-no-3-piano-p315",
+            "profile": null,
+            "unit_id": "P315",
+            "tidal_url": "https://tidal.com/track/187523950"
+          }
+        ],
+        "implementation_report": "reports/playlist-import/piano/snapshot-2026-10-04.json",
+        "implementation_record": "reports/curator-decisions/goerner-2026-10-04.json"
+      }
+    },
+    {
+      "work_id": "frederic-chopin-nocturne-op-15-no-1",
+      "title": "Nocturne, Op. 15 No. 1",
+      "composer": "Frédéric Chopin",
+      "units": [
+        "P316",
+        "P567"
+      ],
+      "existing_performances": [],
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/268",
+      "decision": {
+        "choice": "selected_performance",
+        "selected_units": [
+          "P316"
+        ],
+        "not_selected_units": [
+          "P567"
+        ],
+        "comment_url": "https://github.com/LuHoo/classical_music/issues/268#issuecomment-5984514679",
+        "performances": [
+          {
+            "performance_id": "frederic-chopin-nocturne-op-15-no-1-piano-p316",
+            "profile": null,
+            "unit_id": "P316",
+            "tidal_url": "https://tidal.com/track/187523952"
+          }
+        ],
+        "implementation_report": "reports/playlist-import/piano/snapshot-2026-10-04.json",
+        "implementation_record": "reports/curator-decisions/goerner-2026-10-04.json"
+      }
+    },
+    {
+      "work_id": "frederic-chopin-nocturne-op-15-no-2",
+      "title": "Nocturne, Op. 15 No. 2",
+      "composer": "Frédéric Chopin",
+      "units": [
+        "P317",
+        "P568"
+      ],
+      "existing_performances": [],
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/269",
+      "decision": {
+        "choice": "selected_performance",
+        "selected_units": [
+          "P317"
+        ],
+        "not_selected_units": [
+          "P568"
+        ],
+        "comment_url": "https://github.com/LuHoo/classical_music/issues/269#issuecomment-5984514765",
+        "performances": [
+          {
+            "performance_id": "frederic-chopin-nocturne-op-15-no-2-piano-p317",
+            "profile": null,
+            "unit_id": "P317",
+            "tidal_url": "https://tidal.com/track/187523953"
+          }
+        ],
+        "implementation_report": "reports/playlist-import/piano/snapshot-2026-10-04.json",
+        "implementation_record": "reports/curator-decisions/goerner-2026-10-04.json"
+      }
+    },
+    {
+      "work_id": "frederic-chopin-nocturne-op-15-no-3",
+      "title": "Nocturne, Op. 15 No. 3",
+      "composer": "Frédéric Chopin",
+      "units": [
+        "P318",
+        "P569"
+      ],
+      "existing_performances": [],
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/270",
+      "decision": {
+        "choice": "selected_performance",
+        "selected_units": [
+          "P318"
+        ],
+        "not_selected_units": [
+          "P569"
+        ],
+        "comment_url": "https://github.com/LuHoo/classical_music/issues/270#issuecomment-5984514852",
+        "performances": [
+          {
+            "performance_id": "frederic-chopin-nocturne-op-15-no-3-piano-p318",
+            "profile": null,
+            "unit_id": "P318",
+            "tidal_url": "https://tidal.com/track/187523954"
+          }
+        ],
+        "implementation_report": "reports/playlist-import/piano/snapshot-2026-10-04.json",
+        "implementation_record": "reports/curator-decisions/goerner-2026-10-04.json"
+      }
+    },
+    {
+      "work_id": "frederic-chopin-nocturne-op-27-no-1",
+      "title": "Nocturne, Op. 27 No. 1",
+      "composer": "Frédéric Chopin",
+      "units": [
+        "P319",
+        "P570"
+      ],
+      "existing_performances": [],
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/271",
+      "decision": {
+        "choice": "selected_performance",
+        "selected_units": [
+          "P319"
+        ],
+        "not_selected_units": [
+          "P570"
+        ],
+        "comment_url": "https://github.com/LuHoo/classical_music/issues/271#issuecomment-5984514957",
+        "performances": [
+          {
+            "performance_id": "frederic-chopin-nocturne-op-27-no-1-piano-p319",
+            "profile": null,
+            "unit_id": "P319",
+            "tidal_url": "https://tidal.com/track/187523955"
+          }
+        ],
+        "implementation_report": "reports/playlist-import/piano/snapshot-2026-10-04.json",
+        "implementation_record": "reports/curator-decisions/goerner-2026-10-04.json"
+      }
+    },
+    {
+      "work_id": "frederic-chopin-nocturne-op-27-no-2",
+      "title": "Nocturne, Op. 27 No. 2",
+      "composer": "Frédéric Chopin",
+      "units": [
+        "P320",
+        "P571"
+      ],
+      "existing_performances": [],
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/272",
+      "decision": {
+        "choice": "selected_performance",
+        "selected_units": [
+          "P320"
+        ],
+        "not_selected_units": [
+          "P571"
+        ],
+        "comment_url": "https://github.com/LuHoo/classical_music/issues/272#issuecomment-5984515075",
+        "performances": [
+          {
+            "performance_id": "frederic-chopin-nocturne-op-27-no-2-piano-p320",
+            "profile": null,
+            "unit_id": "P320",
+            "tidal_url": "https://tidal.com/track/187523956"
+          }
+        ],
+        "implementation_report": "reports/playlist-import/piano/snapshot-2026-10-04.json",
+        "implementation_record": "reports/curator-decisions/goerner-2026-10-04.json"
+      }
+    },
+    {
+      "work_id": "frederic-chopin-nocturne-op-32-no-1",
+      "title": "Nocturne, Op. 32 No. 1",
+      "composer": "Frédéric Chopin",
+      "units": [
+        "P321",
+        "P572"
+      ],
+      "existing_performances": [],
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/273",
+      "decision": {
+        "choice": "selected_performance",
+        "selected_units": [
+          "P321"
+        ],
+        "not_selected_units": [
+          "P572"
+        ],
+        "comment_url": "https://github.com/LuHoo/classical_music/issues/273#issuecomment-5984515161",
+        "performances": [
+          {
+            "performance_id": "frederic-chopin-nocturne-op-32-no-1-piano-p321",
+            "profile": null,
+            "unit_id": "P321",
+            "tidal_url": "https://tidal.com/track/187523957"
+          }
+        ],
+        "implementation_report": "reports/playlist-import/piano/snapshot-2026-10-04.json",
+        "implementation_record": "reports/curator-decisions/goerner-2026-10-04.json"
+      }
+    },
+    {
+      "work_id": "frederic-chopin-nocturne-op-32-no-2",
+      "title": "Nocturne, Op. 32 No. 2",
+      "composer": "Frédéric Chopin",
+      "units": [
+        "P322",
+        "P573"
+      ],
+      "existing_performances": [],
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/274",
+      "decision": {
+        "choice": "selected_performance",
+        "selected_units": [
+          "P322"
+        ],
+        "not_selected_units": [
+          "P573"
+        ],
+        "comment_url": "https://github.com/LuHoo/classical_music/issues/274#issuecomment-5984515255",
+        "performances": [
+          {
+            "performance_id": "frederic-chopin-nocturne-op-32-no-2-piano-p322",
+            "profile": null,
+            "unit_id": "P322",
+            "tidal_url": "https://tidal.com/track/187523958"
+          }
+        ],
+        "implementation_report": "reports/playlist-import/piano/snapshot-2026-10-04.json",
+        "implementation_record": "reports/curator-decisions/goerner-2026-10-04.json"
+      }
+    },
+    {
+      "work_id": "frederic-chopin-nocturne-op-37-no-1",
+      "title": "Nocturne, Op. 37 No. 1",
+      "composer": "Frédéric Chopin",
+      "units": [
+        "P323",
+        "P574"
+      ],
+      "existing_performances": [],
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/275",
+      "decision": {
+        "choice": "selected_performance",
+        "selected_units": [
+          "P323"
+        ],
+        "not_selected_units": [
+          "P574"
+        ],
+        "comment_url": "https://github.com/LuHoo/classical_music/issues/275#issuecomment-5984515372",
+        "performances": [
+          {
+            "performance_id": "frederic-chopin-nocturne-op-37-no-1-piano-p323",
+            "profile": null,
+            "unit_id": "P323",
+            "tidal_url": "https://tidal.com/track/187523959"
+          }
+        ],
+        "implementation_report": "reports/playlist-import/piano/snapshot-2026-10-04.json",
+        "implementation_record": "reports/curator-decisions/goerner-2026-10-04.json"
+      }
+    },
+    {
+      "work_id": "frederic-chopin-nocturne-op-37-no-2",
+      "title": "Nocturne, Op. 37 No. 2",
+      "composer": "Frédéric Chopin",
+      "units": [
+        "P324",
+        "P575"
+      ],
+      "existing_performances": [],
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/276",
+      "decision": {
+        "choice": "selected_performance",
+        "selected_units": [
+          "P324"
+        ],
+        "not_selected_units": [
+          "P575"
+        ],
+        "comment_url": "https://github.com/LuHoo/classical_music/issues/276#issuecomment-5984515483",
+        "performances": [
+          {
+            "performance_id": "frederic-chopin-nocturne-op-37-no-2-piano-p324",
+            "profile": null,
+            "unit_id": "P324",
+            "tidal_url": "https://tidal.com/track/187523960"
+          }
+        ],
+        "implementation_report": "reports/playlist-import/piano/snapshot-2026-10-04.json",
+        "implementation_record": "reports/curator-decisions/goerner-2026-10-04.json"
+      }
+    },
+    {
+      "work_id": "frederic-chopin-nocturne-op-48-no-1",
+      "title": "Nocturne, Op. 48 No. 1",
+      "composer": "Frédéric Chopin",
+      "units": [
+        "P325",
+        "P576"
+      ],
+      "existing_performances": [],
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/277",
+      "decision": {
+        "choice": "selected_performance",
+        "selected_units": [
+          "P325"
+        ],
+        "not_selected_units": [
+          "P576"
+        ],
+        "comment_url": "https://github.com/LuHoo/classical_music/issues/277#issuecomment-5984515597",
+        "performances": [
+          {
+            "performance_id": "frederic-chopin-nocturne-op-48-no-1-piano-p325",
+            "profile": null,
+            "unit_id": "P325",
+            "tidal_url": "https://tidal.com/track/187523961"
+          }
+        ],
+        "implementation_report": "reports/playlist-import/piano/snapshot-2026-10-04.json",
+        "implementation_record": "reports/curator-decisions/goerner-2026-10-04.json"
+      }
+    },
+    {
+      "work_id": "frederic-chopin-nocturne-op-48-no-2",
+      "title": "Nocturne, Op. 48 No. 2",
+      "composer": "Frédéric Chopin",
+      "units": [
+        "P326",
+        "P577"
+      ],
+      "existing_performances": [],
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/278",
+      "decision": {
+        "choice": "selected_performance",
+        "selected_units": [
+          "P326"
+        ],
+        "not_selected_units": [
+          "P577"
+        ],
+        "comment_url": "https://github.com/LuHoo/classical_music/issues/278#issuecomment-5984515692",
+        "performances": [
+          {
+            "performance_id": "frederic-chopin-nocturne-op-48-no-2-piano-p326",
+            "profile": null,
+            "unit_id": "P326",
+            "tidal_url": "https://tidal.com/track/187523962"
+          }
+        ],
+        "implementation_report": "reports/playlist-import/piano/snapshot-2026-10-04.json",
+        "implementation_record": "reports/curator-decisions/goerner-2026-10-04.json"
+      }
+    },
+    {
+      "work_id": "frederic-chopin-nocturne-op-55-no-1",
+      "title": "Nocturne, Op. 55 No. 1",
+      "composer": "Frédéric Chopin",
+      "units": [
+        "P327",
+        "P578"
+      ],
+      "existing_performances": [],
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/279",
+      "decision": {
+        "choice": "selected_performance",
+        "selected_units": [
+          "P327"
+        ],
+        "not_selected_units": [
+          "P578"
+        ],
+        "comment_url": "https://github.com/LuHoo/classical_music/issues/279#issuecomment-5984515781",
+        "performances": [
+          {
+            "performance_id": "frederic-chopin-nocturne-op-55-no-1-piano-p327",
+            "profile": null,
+            "unit_id": "P327",
+            "tidal_url": "https://tidal.com/track/187523963"
+          }
+        ],
+        "implementation_report": "reports/playlist-import/piano/snapshot-2026-10-04.json",
+        "implementation_record": "reports/curator-decisions/goerner-2026-10-04.json"
+      }
+    },
+    {
+      "work_id": "frederic-chopin-nocturne-op-55-no-2",
+      "title": "Nocturne, Op. 55 No. 2",
+      "composer": "Frédéric Chopin",
+      "units": [
+        "P328",
+        "P579"
+      ],
+      "existing_performances": [],
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/280",
+      "decision": {
+        "choice": "selected_performance",
+        "selected_units": [
+          "P328"
+        ],
+        "not_selected_units": [
+          "P579"
+        ],
+        "comment_url": "https://github.com/LuHoo/classical_music/issues/280#issuecomment-5984515899",
+        "performances": [
+          {
+            "performance_id": "frederic-chopin-nocturne-op-55-no-2-piano-p328",
+            "profile": null,
+            "unit_id": "P328",
+            "tidal_url": "https://tidal.com/track/187523965"
+          }
+        ],
+        "implementation_report": "reports/playlist-import/piano/snapshot-2026-10-04.json",
+        "implementation_record": "reports/curator-decisions/goerner-2026-10-04.json"
+      }
+    },
+    {
+      "work_id": "frederic-chopin-nocturne-op-62-no-1",
+      "title": "Nocturne, Op. 62 No. 1",
+      "composer": "Frédéric Chopin",
+      "units": [
+        "P329",
+        "P580"
+      ],
+      "existing_performances": [],
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/281",
+      "decision": {
+        "choice": "selected_performance",
+        "selected_units": [
+          "P329"
+        ],
+        "not_selected_units": [
+          "P580"
+        ],
+        "comment_url": "https://github.com/LuHoo/classical_music/issues/281#issuecomment-5984516004",
+        "performances": [
+          {
+            "performance_id": "frederic-chopin-nocturne-op-62-no-1-piano-p329",
+            "profile": null,
+            "unit_id": "P329",
+            "tidal_url": "https://tidal.com/track/187523968"
+          }
+        ],
+        "implementation_report": "reports/playlist-import/piano/snapshot-2026-10-04.json",
+        "implementation_record": "reports/curator-decisions/goerner-2026-10-04.json"
+      }
+    },
+    {
+      "work_id": "frederic-chopin-nocturne-op-62-no-2",
+      "title": "Nocturne, Op. 62 No. 2",
+      "composer": "Frédéric Chopin",
+      "units": [
+        "P330",
+        "P581"
+      ],
+      "existing_performances": [],
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/282",
+      "decision": {
+        "choice": "selected_performance",
+        "selected_units": [
+          "P330"
+        ],
+        "not_selected_units": [
+          "P581"
+        ],
+        "comment_url": "https://github.com/LuHoo/classical_music/issues/282#issuecomment-5984516108",
+        "performances": [
+          {
+            "performance_id": "frederic-chopin-nocturne-op-62-no-2-piano-p330",
+            "profile": null,
+            "unit_id": "P330",
+            "tidal_url": "https://tidal.com/track/187523969"
+          }
+        ],
+        "implementation_report": "reports/playlist-import/piano/snapshot-2026-10-04.json",
+        "implementation_record": "reports/curator-decisions/goerner-2026-10-04.json"
+      }
+    },
+    {
+      "work_id": "frederic-chopin-nocturne-op-72-no-1",
+      "title": "Nocturne, Op. 72 No. 1",
+      "composer": "Frédéric Chopin",
+      "units": [
+        "P331",
+        "P583"
+      ],
+      "existing_performances": [],
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/283",
+      "decision": {
+        "choice": "selected_performance",
+        "selected_units": [
+          "P331"
+        ],
+        "not_selected_units": [
+          "P583"
+        ],
+        "comment_url": "https://github.com/LuHoo/classical_music/issues/283#issuecomment-5984516227",
+        "performances": [
+          {
+            "performance_id": "frederic-chopin-nocturne-op-72-no-1-piano-p331",
+            "profile": null,
+            "unit_id": "P331",
+            "tidal_url": "https://tidal.com/track/187523964"
+          }
+        ],
+        "implementation_report": "reports/playlist-import/piano/snapshot-2026-10-04.json",
+        "implementation_record": "reports/curator-decisions/goerner-2026-10-04.json"
+      }
+    },
+    {
+      "work_id": "frederic-chopin-nocturne-in-c-sharp-minor-kk-iva-16",
+      "title": "Nocturne in C-Sharp Minor, KK IVa/16",
+      "composer": "Frédéric Chopin",
+      "units": [
+        "P332",
+        "P582"
+      ],
+      "existing_performances": [],
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/284",
+      "decision": {
+        "choice": "selected_performance",
+        "selected_units": [
+          "P332"
+        ],
+        "not_selected_units": [
+          "P582"
+        ],
+        "comment_url": "https://github.com/LuHoo/classical_music/issues/284#issuecomment-5984516332",
+        "performances": [
+          {
+            "performance_id": "frederic-chopin-nocturne-in-c-sharp-minor-kk-iva-16-piano-p332",
+            "profile": null,
+            "unit_id": "P332",
+            "tidal_url": "https://tidal.com/track/187523966"
+          }
+        ],
+        "implementation_report": "reports/playlist-import/piano/snapshot-2026-10-04.json",
+        "implementation_record": "reports/curator-decisions/goerner-2026-10-04.json"
+      }
+    },
+    {
+      "work_id": "frederic-chopin-nocturne-in-c-minor-kk-ivb-8-attributed-to-chopin",
+      "title": "Nocturne in C Minor, KK IVb/8 (attributed to Chopin)",
+      "composer": "Frédéric Chopin",
+      "units": [
+        "P333",
+        "P584"
+      ],
+      "existing_performances": [],
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/285",
+      "decision": {
+        "choice": "selected_performance",
+        "selected_units": [
+          "P333"
+        ],
+        "not_selected_units": [
+          "P584"
+        ],
+        "comment_url": "https://github.com/LuHoo/classical_music/issues/285#issuecomment-5984516439",
+        "performances": [
+          {
+            "performance_id": "frederic-chopin-nocturne-in-c-minor-kk-ivb-8-attributed-to-chopin-piano-p333",
+            "profile": null,
+            "unit_id": "P333",
+            "tidal_url": "https://tidal.com/track/187523970"
+          }
+        ],
+        "implementation_report": "reports/playlist-import/piano/snapshot-2026-10-04.json",
+        "implementation_record": "reports/curator-decisions/goerner-2026-10-04.json"
       }
     }
   ]
