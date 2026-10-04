@@ -1,0 +1,13 @@
+id: claude-debussy-children-s-corner-l-113-cd-119-piano-p269
+work_id: claude-debussy-children-s-corner-l-113-cd-119
+performers:
+  - name: Jean-Efflam Bavouzet
+    role: piano
+links:
+  tidal:
+    url: https://tidal.com/track/196684289
+release:
+  album_title: 'Debussy: Complete Works for Piano, Vol. 3'
+source:
+  file: reports/playlist-import/piano/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/82853f8e-4fd6-42b6-b0a7-230da5ee86a1

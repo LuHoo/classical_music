@@ -1,0 +1,13 @@
+id: leos-janacek-on-an-overgrown-path-jw-viii-17-book-1-piano-p084
+work_id: leos-janacek-on-an-overgrown-path-jw-viii-17-book-1
+performers:
+  - name: Lars Vogt
+    role: piano
+links:
+  tidal:
+    url: https://tidal.com/track/169060779
+release:
+  album_title: 'Janáček: Piano Works'
+source:
+  file: reports/playlist-import/piano/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/82853f8e-4fd6-42b6-b0a7-230da5ee86a1
