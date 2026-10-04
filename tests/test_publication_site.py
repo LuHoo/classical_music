@@ -120,6 +120,7 @@ def test_generated_pages_show_works_without_performances(tmp_path):
     assert '<p class="recommendation-empty">No recommendation yet.</p>' in work_page
     assert "Cantata No. 2" in composer_page
     assert '<strong>Cantata No. 2</strong>' in composer_page
+    assert "/publication/works/bach-cantata-2/" not in composer_page
 
 
 def test_work_groups_are_navigation_only_not_recommendations(tmp_path):
@@ -213,7 +214,7 @@ def test_editorial_collection_order_and_work_specific_recommendations(tmp_path):
     assert "chamber version" in page and "choir and orchestra" in page
     assert "💎" in page
     assert page.count('/publication/works/bach-cantata-1/') == 1
-    assert page.count('/publication/works/bach-cantata-2/') == 1
+    assert '/publication/works/bach-cantata-2/' not in page
 
 
 def test_singleton_is_compact_with_dates_catalogue_and_partial_coverage(tmp_path):
@@ -274,3 +275,15 @@ def test_collection_shares_recommendation_only_across_covered_members(tmp_path):
     PublicationSiteGenerator(tmp_path).generate()
     page = (tmp_path / "publication" / "composers" / "bach.md").read_text()
     assert page.count("Monteverdi Choir") == 2
+
+
+def test_landing_page_contains_summary_and_browse_without_work_queue(tmp_path):
+    _seed_repo(tmp_path)
+    PublicationSiteGenerator(tmp_path).generate()
+    page = (tmp_path / "publication" / "index.md").read_text()
+    assert "Works Without Recommendations" not in page
+    assert "no recommendation yet" not in page
+    assert "/publication/works/" not in page
+    assert "/publication/composers/" in page
+    assert "<strong>2</strong><span>works</span>" in page
+    assert "<strong>1</strong><span>works with recommendations</span>" in page
