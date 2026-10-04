@@ -4,42 +4,43 @@ All **2,119 source occurrences** in the complete [4 October 2026 snapshot](https
 
 | Result | Work/recording groups | Source occurrences |
 |---|---:|---:|
-| import_new | 648 | 1667 |
+| import_new | 669 | 1688 |
 | reuse_existing | 53 | 385 |
-| recommendation_choice | 47 | 51 |
+| recommendation_choice | 4 | 8 |
+| not_selected | 22 | 22 |
 | identity_unresolved | 7 | 16 |
 
-New records: {'persons': 8, 'work-groups': 655, 'works': 664, 'performances': 648}. Existing recordings reused: 53. A group is one Work/interpretation, not one track. Hough’s embellished Op. 9 No. 2 is an additional take in the same Work choice.
+New records: {'persons': 8, 'work-groups': 655, 'works': 664, 'performances': 669}. Existing recordings reused: 53. A group is one Work/interpretation, not one track. Hough’s embellished Op. 9 No. 2 is an additional take in the same Work choice.
 
 ## Curator choices
 
-**24 pending Work-level issues:** 23 confirmed Work comparisons, plus Mozart K. 397 requiring version research before the choice. Answer with the issue number and a P-code, `existing` where offered, `geen`, or `unresolved`. One decision covers all movements; only exceptions or doubt need a short explanation. No CSV editing or per-track report is required. Different performance profiles require an explicit decision.
+**3 pending Work-level issues:** two confirmed Work comparisons (Mompou and Haydn), plus Mozart K. 397 requiring version research before the choice. Answer with the issue number and a P-code, `existing` where offered, `geen`, or `unresolved`. One decision covers all movements; only exceptions or doubt need a short explanation. No CSV editing or per-track report is required. Different performance profiles require an explicit decision.
 
 | Issue | Composer — Work | Piano alternatives |
 |---|---|---|
 | [#263](https://github.com/LuHoo/classical_music/issues/263) | Frederic Mompou — Cançó de bressol (Chanson de berceau) | P078, P081 |
 | [#264](https://github.com/LuHoo/classical_music/issues/264) | Joseph Haydn — Piano Sonata in B Minor, Hob.XVI.32 | P093, P182 |
-| [#265](https://github.com/LuHoo/classical_music/issues/265) | Frédéric Chopin — Nocturne, Op. 9 No. 1 | P313, P564 |
-| [#266](https://github.com/LuHoo/classical_music/issues/266) | Frédéric Chopin — Nocturne, Op. 9 No. 2 | P314, P565, P586 |
-| [#267](https://github.com/LuHoo/classical_music/issues/267) | Frédéric Chopin — Nocturne, Op. 9 No. 3 | P315, P566 |
-| [#268](https://github.com/LuHoo/classical_music/issues/268) | Frédéric Chopin — Nocturne, Op. 15 No. 1 | P316, P567 |
-| [#269](https://github.com/LuHoo/classical_music/issues/269) | Frédéric Chopin — Nocturne, Op. 15 No. 2 | P317, P568 |
-| [#270](https://github.com/LuHoo/classical_music/issues/270) | Frédéric Chopin — Nocturne, Op. 15 No. 3 | P318, P569 |
-| [#271](https://github.com/LuHoo/classical_music/issues/271) | Frédéric Chopin — Nocturne, Op. 27 No. 1 | P319, P570 |
-| [#272](https://github.com/LuHoo/classical_music/issues/272) | Frédéric Chopin — Nocturne, Op. 27 No. 2 | P320, P571 |
-| [#273](https://github.com/LuHoo/classical_music/issues/273) | Frédéric Chopin — Nocturne, Op. 32 No. 1 | P321, P572 |
-| [#274](https://github.com/LuHoo/classical_music/issues/274) | Frédéric Chopin — Nocturne, Op. 32 No. 2 | P322, P573 |
-| [#275](https://github.com/LuHoo/classical_music/issues/275) | Frédéric Chopin — Nocturne, Op. 37 No. 1 | P323, P574 |
-| [#276](https://github.com/LuHoo/classical_music/issues/276) | Frédéric Chopin — Nocturne, Op. 37 No. 2 | P324, P575 |
-| [#277](https://github.com/LuHoo/classical_music/issues/277) | Frédéric Chopin — Nocturne, Op. 48 No. 1 | P325, P576 |
-| [#278](https://github.com/LuHoo/classical_music/issues/278) | Frédéric Chopin — Nocturne, Op. 48 No. 2 | P326, P577 |
-| [#279](https://github.com/LuHoo/classical_music/issues/279) | Frédéric Chopin — Nocturne, Op. 55 No. 1 | P327, P578 |
-| [#280](https://github.com/LuHoo/classical_music/issues/280) | Frédéric Chopin — Nocturne, Op. 55 No. 2 | P328, P579 |
-| [#281](https://github.com/LuHoo/classical_music/issues/281) | Frédéric Chopin — Nocturne, Op. 62 No. 1 | P329, P580 |
-| [#282](https://github.com/LuHoo/classical_music/issues/282) | Frédéric Chopin — Nocturne, Op. 62 No. 2 | P330, P581 |
-| [#283](https://github.com/LuHoo/classical_music/issues/283) | Frédéric Chopin — Nocturne, Op. 72 No. 1 | P331, P583 |
-| [#284](https://github.com/LuHoo/classical_music/issues/284) | Frédéric Chopin — Nocturne in C-Sharp Minor, KK IVa/16 | P332, P582 |
-| [#285](https://github.com/LuHoo/classical_music/issues/285) | Frédéric Chopin — Nocturne in C Minor, KK IVb/8 (attributed to Chopin) | P333, P584 |
+| [#265](https://github.com/LuHoo/classical_music/issues/265) | Frédéric Chopin — Nocturne, Op. 9 No. 1 | P313, P564  **Resolved: Goerner** |
+| [#266](https://github.com/LuHoo/classical_music/issues/266) | Frédéric Chopin — Nocturne, Op. 9 No. 2 | P314, P565, P586  **Resolved: Goerner** |
+| [#267](https://github.com/LuHoo/classical_music/issues/267) | Frédéric Chopin — Nocturne, Op. 9 No. 3 | P315, P566  **Resolved: Goerner** |
+| [#268](https://github.com/LuHoo/classical_music/issues/268) | Frédéric Chopin — Nocturne, Op. 15 No. 1 | P316, P567  **Resolved: Goerner** |
+| [#269](https://github.com/LuHoo/classical_music/issues/269) | Frédéric Chopin — Nocturne, Op. 15 No. 2 | P317, P568  **Resolved: Goerner** |
+| [#270](https://github.com/LuHoo/classical_music/issues/270) | Frédéric Chopin — Nocturne, Op. 15 No. 3 | P318, P569  **Resolved: Goerner** |
+| [#271](https://github.com/LuHoo/classical_music/issues/271) | Frédéric Chopin — Nocturne, Op. 27 No. 1 | P319, P570  **Resolved: Goerner** |
+| [#272](https://github.com/LuHoo/classical_music/issues/272) | Frédéric Chopin — Nocturne, Op. 27 No. 2 | P320, P571  **Resolved: Goerner** |
+| [#273](https://github.com/LuHoo/classical_music/issues/273) | Frédéric Chopin — Nocturne, Op. 32 No. 1 | P321, P572  **Resolved: Goerner** |
+| [#274](https://github.com/LuHoo/classical_music/issues/274) | Frédéric Chopin — Nocturne, Op. 32 No. 2 | P322, P573  **Resolved: Goerner** |
+| [#275](https://github.com/LuHoo/classical_music/issues/275) | Frédéric Chopin — Nocturne, Op. 37 No. 1 | P323, P574  **Resolved: Goerner** |
+| [#276](https://github.com/LuHoo/classical_music/issues/276) | Frédéric Chopin — Nocturne, Op. 37 No. 2 | P324, P575  **Resolved: Goerner** |
+| [#277](https://github.com/LuHoo/classical_music/issues/277) | Frédéric Chopin — Nocturne, Op. 48 No. 1 | P325, P576  **Resolved: Goerner** |
+| [#278](https://github.com/LuHoo/classical_music/issues/278) | Frédéric Chopin — Nocturne, Op. 48 No. 2 | P326, P577  **Resolved: Goerner** |
+| [#279](https://github.com/LuHoo/classical_music/issues/279) | Frédéric Chopin — Nocturne, Op. 55 No. 1 | P327, P578  **Resolved: Goerner** |
+| [#280](https://github.com/LuHoo/classical_music/issues/280) | Frédéric Chopin — Nocturne, Op. 55 No. 2 | P328, P579  **Resolved: Goerner** |
+| [#281](https://github.com/LuHoo/classical_music/issues/281) | Frédéric Chopin — Nocturne, Op. 62 No. 1 | P329, P580  **Resolved: Goerner** |
+| [#282](https://github.com/LuHoo/classical_music/issues/282) | Frédéric Chopin — Nocturne, Op. 62 No. 2 | P330, P581  **Resolved: Goerner** |
+| [#283](https://github.com/LuHoo/classical_music/issues/283) | Frédéric Chopin — Nocturne, Op. 72 No. 1 | P331, P583  **Resolved: Goerner** |
+| [#284](https://github.com/LuHoo/classical_music/issues/284) | Frédéric Chopin — Nocturne in C-Sharp Minor, KK IVa/16 | P332, P582  **Resolved: Goerner** |
+| [#285](https://github.com/LuHoo/classical_music/issues/285) | Frédéric Chopin — Nocturne in C Minor, KK IVb/8 (attributed to Chopin) | P333, P584  **Resolved: Goerner** |
 | [#286](https://github.com/LuHoo/classical_music/issues/286) | Felix Mendelssohn — Song Without Words, MWV U 98 | P608; existing  **Resolved: both, distinct profiles** |
 | [#287](https://github.com/LuHoo/classical_music/issues/287) | Felix Mendelssohn — Song Without Words, MWV U 110 | P610; existing  **Resolved: both, distinct profiles** |
 | [#288](https://github.com/LuHoo/classical_music/issues/288) | Felix Mendelssohn — Song Without Words, MWV U 145 | P629; existing  **Resolved: both, distinct profiles** |
@@ -73,3 +74,7 @@ Unchosen alternatives remain outside canonical Performance data. Existing recomm
 ## Original and arrangement decisions — 4 October 2026
 
 [#297](https://github.com/LuHoo/classical_music/pull/297) applies Lucas's decision in #287 and his extension to equivalent cases. The seven Mendelssohn comparisons (#286–#292) now retain Shelley's original solo piano performances and Ottensamer/Wang's clarinet and piano arrangements in distinct explicit profiles. `resolved_choices` links all source occurrences to decision comments and the [implementation report](../../curator-decisions/original-arrangement-2026-10-04.json).
+
+## Goerner decisions — 4 October 2026
+
+Lucas selected Nelson Goerner in all issues #265–#285. Each decision is linked to its issue comment in `resolved_choices`. The 21 Goerner performances are recommended; 22 alternative units remain traceable with disposition `not_selected`, including the additional embellished Hough take of Op. 9 No. 2. All 2,119 original source occurrences and their raw metadata remain unchanged.

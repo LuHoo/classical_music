@@ -62,6 +62,14 @@ def check_inventory(manifest: dict, data: dict) -> None:
         assert work['composer_id'] == u['composer_id']
         assert work['composer_id'] in data['persons']
         assert work['work_group_id'] in data['work-groups']
+        if status == 'not_selected':
+            assert u['work_id'] in resolved and not u.get('performance_id'), 'Unselected candidate became a recommendation'
+            decision = resolved[u['work_id']]['decision']
+            assert decision['choice'] == 'selected_performance'
+            assert u['unit_id'] in decision['not_selected_units']
+            assert u['curator_decision'] == decision['comment_url'], 'Missing curator decision'
+            assert u['reason'] and u['review_classification'] == 'curator_not_selected'
+            continue
         if work['id'] in choices:
             choice = choices[work['id']]
             assert u['unit_id'] in choice['units']
@@ -81,7 +89,7 @@ def check_inventory(manifest: dict, data: dict) -> None:
                 decision = resolved[work['id']]['decision']
                 assert u['curator_decision'] == decision['comment_url'], 'Missing curator decision'
                 assert perf['source']['curator_decision'] == decision['comment_url']
-                assert u['profile'] == perf['profile']
+                assert u.get('profile') == perf.get('profile')
                 assert perf['source']['file'] == decision['implementation_report']
             else:
                 assert perf['source']['file'] == str(MANIFEST)
@@ -108,17 +116,22 @@ def check_inventory(manifest: dict, data: dict) -> None:
         assert choice['issue_url'].startswith('https://github.com/LuHoo/classical_music/issues/')
     for choice in resolved.values():
         decision = choice['decision']
-        assert decision['choice'] == 'both_distinct_profiles'
+        assert decision['choice'] in ('both_distinct_profiles', 'selected_performance')
         assert decision['comment_url'].startswith(choice['issue_url'] + '#issuecomment-'), 'Missing curator decision'
         matching = [u for u in units if u.get('work_id') == choice['work_id']]
         assert {u['unit_id'] for u in matching} == set(choice['units'])
-        assert all(u['disposition'] == 'import_new' for u in matching)
+        if decision['choice'] == 'selected_performance':
+            assert {u['unit_id'] for u in matching if u['disposition'] == 'import_new'} == set(decision['selected_units'])
+            assert {u['unit_id'] for u in matching if u['disposition'] == 'not_selected'} == set(decision['not_selected_units'])
+            assert len(decision['performances']) == 1
+        else:
+            assert all(u['disposition'] == 'import_new' for u in matching)
         assigned = decision['performances']
         assert len({p['profile'] for p in assigned}) == len(assigned), 'Duplicate comparison profile'
         actual = [p for p in data['performances'].values() if p['work_id'] == choice['work_id']]
         assert {p['id'] for p in actual} == {p['performance_id'] for p in assigned}, 'Decision and recommendations differ'
         for p in assigned:
-            assert data['performances'][p['performance_id']]['profile'] == p['profile']
+            assert data['performances'][p['performance_id']].get('profile') == p['profile']
 
 
 def audit(root: Path = ROOT) -> dict:
