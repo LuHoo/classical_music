@@ -63444,7 +63444,35 @@
       "path": "data/performances/alexander-scriabin-promethee-le-poeme-du-feu-op-60-playlist-5506.yaml"
     }
   ],
-  "changed_existing": [],
+  "changed_existing": [
+    {
+      "entity_type": "performances",
+      "id": "wolfgang-amadeus-mozart-der-schauspieldirektor-work-overture-manchester-camerata-gabor-takacs-nagy",
+      "path": "data/performances/wolfgang-amadeus-mozart-der-schauspieldirektor-work-overture-manchester-camerata-gabor-takacs-nagy.yaml",
+      "fields": [
+        "excerpt"
+      ],
+      "reason": "Make the confirmed selected excerpt visible without changing the accepted recording."
+    },
+    {
+      "entity_type": "performances",
+      "id": "anton-bruckner-4-tantum-ergo-work-latvian-radio-choir-sigvards-klava",
+      "path": "data/performances/anton-bruckner-4-tantum-ergo-work-latvian-radio-choir-sigvards-klava.yaml",
+      "fields": [
+        "excerpt"
+      ],
+      "reason": "Make the confirmed selected excerpt visible without changing the accepted recording."
+    },
+    {
+      "entity_type": "performances",
+      "id": "sergei-prokofiev-eugene-onegin-work-royal-scottish-national-orchestra-neeme-jarvi",
+      "path": "data/performances/sergei-prokofiev-eugene-onegin-work-royal-scottish-national-orchestra-neeme-jarvi.yaml",
+      "fields": [
+        "excerpt"
+      ],
+      "reason": "Make the confirmed selected excerpt visible without changing the accepted recording."
+    }
+  ],
   "counts": {
     "track_dispositions": {
       "excluded_nonmusical": 1,
@@ -63466,7 +63494,7 @@
       "persons": 15,
       "performances": 255
     },
-    "changed_existing": 0,
+    "changed_existing": 3,
     "existing_performances_unique": 97
   },
   "next_boundary": {

@@ -102,6 +102,9 @@ def audit(manifest_path: Path) -> dict:
                 else:
                     assert match["match"] == "trusted_album_and_compatible_catalogue"
                     assert all(match["reference_album_id"] in t["album_ids"] for t in selected)
+            if performance["id"] in changed_ids and unit.get("excerpt"):
+                assert performance.get("excerpt") == unit["excerpt"]
+                assert escape(unit["excerpt"]) in page
             reused_performances.add(performance["id"])
     assert dict(counts) == manifest["counts"]["track_dispositions"]
     assert len(new_performances) == manifest["counts"]["new_records"]["performances"]
