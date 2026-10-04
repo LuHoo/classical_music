@@ -1,0 +1,12 @@
+id: igor-stravinsky-danses-concertantes-for-chamber-orchestra-playlist-4985
+work_id: igor-stravinsky-danses-concertantes-for-chamber-orchestra
+performers:
+- name: Orpheus Chamber Orchestra
+links:
+  tidal:
+    url: https://tidal.com/track/4838824
+release:
+  album_title: 'Stravinsky: Orpheus; Danses concertantes'
+source:
+  file: reports/playlist-import/best-classical/window-4001-5518.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

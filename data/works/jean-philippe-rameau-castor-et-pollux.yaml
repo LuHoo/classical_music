@@ -1,0 +1,9 @@
+id: jean-philippe-rameau-castor-et-pollux
+work_group_id: jean-philippe-rameau-castor-et-pollux-group
+composer_id: jean-philippe-rameau
+title: Castor et Pollux
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://www.sonyclassical.de/alben/releases-details/rameau-the-sound-of-light
+catalogue:
+  rct: RCT 32

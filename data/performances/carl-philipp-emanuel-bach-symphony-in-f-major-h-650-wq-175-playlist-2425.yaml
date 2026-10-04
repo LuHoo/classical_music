@@ -1,0 +1,16 @@
+id: carl-philipp-emanuel-bach-symphony-in-f-major-h-650-wq-175-playlist-2425
+work_id: carl-philipp-emanuel-bach-symphony-in-f-major-h-650-wq-175
+performers:
+- name: Bernhard Forck
+- name: Akademie für Alte Musik Berlin
+  artist_id: akademie-fuer-alte-musik-berlin
+  role: ensemble
+links:
+  tidal:
+    url: https://tidal.com/track/144670031
+release:
+  album_title: 'Beethoven: Symphonies Nos. 1 & 2 - C.P.E. Bach: Symphonies, Wq 175 & 183/17'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+version_assignment: unspecified

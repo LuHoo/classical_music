@@ -1,0 +1,9 @@
+id: pyotr-ilyich-tchaikovsky-symphony-no-4
+work_group_id: pyotr-ilyich-tchaikovsky-symphony-no-4-group
+composer_id: pyotr-ilyich-tchaikovsky
+title: Symphony No. 4
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://lsolive.lso.co.uk/products/lso0810-tchaikovsky-mussorgsky
+catalogue:
+  opus: Op. 36

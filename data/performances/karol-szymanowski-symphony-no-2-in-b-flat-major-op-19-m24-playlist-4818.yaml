@@ -1,0 +1,16 @@
+id: karol-szymanowski-symphony-no-2-in-b-flat-major-op-19-m24-playlist-4818
+work_id: karol-szymanowski-symphony-no-2-in-b-flat-major-op-19-m24
+performers:
+- name: Edward Gardner
+- name: BBC Philharmonic
+  artist_id: bbc-po
+  role: orchestra
+links:
+  tidal:
+    url: https://tidal.com/track/380562800
+release:
+  album_title: 'Szymanowski: Orchestral Works, Vol. 5'
+source:
+  file: reports/playlist-import/best-classical/window-4001-5518.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+version_assignment: unspecified

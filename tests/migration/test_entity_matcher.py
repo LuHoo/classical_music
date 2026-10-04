@@ -293,10 +293,13 @@ def test_identity_resolution_multiple_candidates_no_version(data_root: Path):
     """Test that multiple candidates without version evidence = unresolved."""
     matcher = EntityMatcher(data_root)
     
-    # Title without version - matches 3 versions of same symphony
-    title_no_version = 'Symphony No. 1 in C minor "Das kecke Beserl"'
+    # A shared catalogue finds all three versions even when a canonical title
+    # explicitly names its version. The source supplies no version evidence.
+    title_no_version = "Symphony No. 1 in C minor"
     
-    candidates = matcher.find_work_candidates("anton-bruckner", title_no_version)
+    candidates = matcher.find_work_candidates(
+        "anton-bruckner", title_no_version, catalogue="WAB.101"
+    )
     result = matcher.resolve_work_identity(title_no_version, "anton-bruckner", candidates)
     
     # Multiple candidates without disambiguating evidence should be UNRESOLVED

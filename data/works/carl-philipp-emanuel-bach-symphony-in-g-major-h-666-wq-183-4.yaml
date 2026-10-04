@@ -1,0 +1,9 @@
+id: carl-philipp-emanuel-bach-symphony-in-g-major-h-666-wq-183-4
+work_group_id: carl-philipp-emanuel-bach-symphony-in-g-major-h-666-wq-183-4-group
+composer_id: carl-philipp-emanuel-bach
+title: Symphony in G Major, H. 666, Wq. 183/4
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://imslp.org/wiki/List_of_compositions_by_Carl_Philipp_Emanuel_Bach
+catalogue:
+  wq: '1834'

@@ -1,0 +1,8 @@
+id: boris-blacher-orchestral-ornament-op-44
+work_group_id: boris-blacher-orchestral-ornament-op-44-group
+composer_id: boris-blacher
+title: Orchestral Ornament, Op. 44
+source:
+  file: docs/blacher.md
+catalogue:
+  op: '44'

@@ -1,0 +1,7 @@
+id: samuel-barber
+name: Samuel Barber
+roles:
+- composer
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://vasilypetrenkomusic.com/project/barber-bruch-violin-concertos/

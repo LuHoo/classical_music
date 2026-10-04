@@ -1,0 +1,16 @@
+id: 
+  01fd4da861fc43e8b52922f5121f6d12-violin-concerto-in-c-major-op-8-no-6-rv-180-il-piacere-playlist-5455
+work_id: 
+  01fd4da861fc43e8b52922f5121f6d12-violin-concerto-in-c-major-op-8-no-6-rv-180-il-piacere
+performers:
+- name: La Serenissima
+- name: Adrian Chandler
+links:
+  tidal:
+    url: https://tidal.com/track/401810401
+release:
+  album_title: 'Vivaldi Opus 8, Vol. 1: The Four Seasons and other concertos'
+source:
+  file: reports/playlist-import/best-classical/window-4001-5518.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+version_assignment: unspecified

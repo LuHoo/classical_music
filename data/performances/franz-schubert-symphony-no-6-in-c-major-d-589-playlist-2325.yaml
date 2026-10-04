@@ -1,0 +1,14 @@
+id: franz-schubert-symphony-no-6-in-c-major-d-589-playlist-2325
+work_id: franz-schubert-symphony-no-6-in-c-major-d-589
+performers:
+- name: SWR Sinfonieorchester Baden-Baden und Freiburg
+- name: Hans Zender
+links:
+  tidal:
+    url: https://tidal.com/track/282646377
+release:
+  album_title: 'Schubert: Symphonies Nos 1-6, 8-9'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+version_assignment: unspecified

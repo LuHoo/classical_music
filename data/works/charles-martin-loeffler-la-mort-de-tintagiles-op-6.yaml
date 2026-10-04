@@ -1,0 +1,9 @@
+id: charles-martin-loeffler-la-mort-de-tintagiles-op-6
+work_group_id: charles-martin-loeffler-la-mort-de-tintagiles-op-6-group
+composer_id: charles-martin-loeffler
+title: La mort de tintagiles, Op. 6
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://ondine.net/index.php?cid=2.2&lid=en&oid=6784
+catalogue:
+  op: '6'

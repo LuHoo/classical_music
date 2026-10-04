@@ -1,0 +1,14 @@
+id: henryk-gorecki-kleines-requiem-fur-eine-polka-playlist-2168
+work_id: henryk-gorecki-kleines-requiem-fur-eine-polka
+performers:
+- name: London Sinfonietta
+- name: David Zinman
+- name: John Constable
+links:
+  tidal:
+    url: https://tidal.com/track/2110744
+release:
+  album_title: 'Górecki, Henryk: Kleines Requiem Für Eine Polka/Harpsichord Concerto/Good Night'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

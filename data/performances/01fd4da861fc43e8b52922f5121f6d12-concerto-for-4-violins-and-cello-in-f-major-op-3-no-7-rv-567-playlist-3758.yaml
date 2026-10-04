@@ -1,0 +1,20 @@
+id:
+  01fd4da861fc43e8b52922f5121f6d12-concerto-for-4-violins-and-cello-in-f-major-op-3-no-7-rv-567-playlist-3758
+work_id:
+  01fd4da861fc43e8b52922f5121f6d12-concerto-for-4-violins-and-cello-in-f-major-op-3-no-7-rv-567
+performers:
+- name: Brecon Baroque
+- name: Rachel Podger
+- name: Bojan Čičić
+- name: Johannes Pramsohler
+- name: Sabine Stoffer
+- name: Alison McGillivray
+links:
+  tidal:
+    url: https://tidal.com/track/269505358
+release:
+  album_title: "Vivaldi: L'Estro Armonico"
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+version_assignment: unspecified

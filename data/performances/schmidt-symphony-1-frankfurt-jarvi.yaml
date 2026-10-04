@@ -1,0 +1,17 @@
+id: schmidt-symphony-1-frankfurt-jarvi
+links:
+  tidal:
+    url: https://tidal.com/track/154158527
+performers:
+- name: Frankfurt Radio Symphony
+  role: orchestra
+- artist_id: paavo-jarvi
+  name: Paavo Järvi
+  role: conductor
+release:
+  album_title: 'Franz Schmidt: Complete Symphonies'
+  label: Deutsche Grammophon
+source:
+  file: reports/playlist-import/best-classical/prepared-120.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+work_id: schmidt-symphony-1

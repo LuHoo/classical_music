@@ -1,0 +1,21 @@
+id: camille-saint-saens-melodies-persanes-palazzetto-bru-zane-orchestral-edition-playlist-3629
+work_id: camille-saint-saens-melodies-persanes-palazzetto-bru-zane-orchestral-edition
+performers:
+- name: Orchestre Philharmonique de Monte Carlo
+  artist_id: orchestre-philharmonique-de-monte-carlo
+  role: orchestra
+- name: Kazuki Yamada
+  artist_id: kazuki-yamada
+  role: conductor
+- name: Marie-Nicole Lemieux
+  artist_id: marie-nicole-lemieux
+  role: singer
+links:
+  tidal:
+    url: https://tidal.com/track/312537540
+release:
+  album_title: "Berlioz: Les nuits d'été, Op. 7, H 81b - Ravel: Shéhérazade, M. 41 - Saint-Saëns: Mélodies
+    persanes, Op. 26"
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

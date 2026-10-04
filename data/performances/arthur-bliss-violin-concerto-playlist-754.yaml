@@ -1,0 +1,13 @@
+id: arthur-bliss-violin-concerto-playlist-754
+work_id: arthur-bliss-violin-concerto
+performers:
+- name: Lydia Mordkovitch
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/12415266
+release:
+  album_title: 'Bliss: Colour Symphony (A) / Violin Concerto'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

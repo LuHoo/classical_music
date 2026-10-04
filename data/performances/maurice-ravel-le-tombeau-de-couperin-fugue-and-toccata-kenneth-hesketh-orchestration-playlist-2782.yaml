@@ -1,0 +1,14 @@
+id:
+  maurice-ravel-le-tombeau-de-couperin-fugue-and-toccata-kenneth-hesketh-orchestration-playlist-2782
+work_id: maurice-ravel-le-tombeau-de-couperin-fugue-and-toccata-kenneth-hesketh-orchestration
+performers:
+- name: Royal Stockholm Philharmonic Orchestra
+- name: Sakari Oramo
+links:
+  tidal:
+    url: https://tidal.com/track/339837268
+release:
+  album_title: 'Ravel: La valse, M. 72 & Other Works'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

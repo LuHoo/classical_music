@@ -1,0 +1,8 @@
+id: sergei-rachmaninoff
+name: Sergei Rachmaninoff
+roles:
+- composer
+source:
+  file: reports/playlist-import/best-classical/prepared-120.json
+  url:
+    https://www.deutschegrammophon.com/en/catalogue/products/rachmaninoff-symphony-no-1-symphonic-dances-nezet-seguin-12192

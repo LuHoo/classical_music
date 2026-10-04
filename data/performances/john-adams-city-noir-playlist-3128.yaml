@@ -1,0 +1,13 @@
+id: john-adams-city-noir-playlist-3128
+work_id: john-adams-city-noir
+performers:
+- name: St. Louis Symphony
+- name: David Robertson
+links:
+  tidal:
+    url: https://tidal.com/track/29595950
+release:
+  album_title: City Noir
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

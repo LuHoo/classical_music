@@ -1,0 +1,15 @@
+id: maurice-ravel-la-nuit-m-33-playlist-4098
+work_id: maurice-ravel-la-nuit-m-33
+performers:
+- name: Clarisse Dalles
+- name: Choeur de l'onpl
+- name: Orchestre National des Pays de la Loire
+- name: Pascal Rophé
+links:
+  tidal:
+    url: https://tidal.com/track/341642181
+release:
+  album_title: 'Ravel: Cantates pour le Prix de Rome'
+source:
+  file: reports/playlist-import/best-classical/window-4001-5518.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

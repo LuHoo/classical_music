@@ -1,0 +1,9 @@
+id: alexander-von-zemlinsky-six-maeterlinck-songs-orchestral-version
+work_group_id: alexander-von-zemlinsky-six-maeterlinck-songs-orchestral-version-group
+composer_id: alexander-von-zemlinsky
+title: Six Maeterlinck Songs (orchestral version)
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://www.prestomusic.com/classical/products/8124210--zemlinsky-samtliche-orchesterlieder
+catalogue:
+  opus: Op. 13

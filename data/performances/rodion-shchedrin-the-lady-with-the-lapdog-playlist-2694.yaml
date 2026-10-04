@@ -1,0 +1,13 @@
+id: rodion-shchedrin-the-lady-with-the-lapdog-playlist-2694
+work_id: rodion-shchedrin-the-lady-with-the-lapdog
+performers:
+- name: Alexander Lazarev
+- name: Bolshoi Theatre Orchestra
+links:
+  tidal:
+    url: https://tidal.com/track/141388602
+release:
+  album_title: 'Shchedrin: The Lady with the Lapdog & Music for the Town of Kothen'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

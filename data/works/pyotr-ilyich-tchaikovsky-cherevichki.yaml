@@ -1,0 +1,7 @@
+id: pyotr-ilyich-tchaikovsky-cherevichki
+work_group_id: pyotr-ilyich-tchaikovsky-cherevichki-group
+composer_id: pyotr-ilyich-tchaikovsky
+title: Cherevichki
+source:
+  file: docs/tchaikovsky.md
+  url: https://en.wikipedia.org/wiki/List_of_compositions_by_Pyotr_Ilyich_Tchaikovsky

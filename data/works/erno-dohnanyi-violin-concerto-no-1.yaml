@@ -1,0 +1,9 @@
+id: erno-dohnanyi-violin-concerto-no-1
+work_group_id: erno-dohnanyi-violin-concerto-no-1-group
+composer_id: erno-dohnanyi
+title: Violin Concerto No. 1
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://www.naxos.com/CatalogueDetail/?id=8.570833
+catalogue:
+  opus: Op. 27

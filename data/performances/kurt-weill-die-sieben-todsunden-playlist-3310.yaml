@@ -1,0 +1,18 @@
+id: kurt-weill-die-sieben-todsunden-playlist-3310
+work_id: kurt-weill-die-sieben-todsunden
+performers:
+- name: Katharine Mehrling
+- name: Konzerthausorchester Berlin
+- name: Joana Mallwitz
+- name: Michael Porter
+- name: Simon Bode
+- name: Michael Nagl
+- name: Oliver Zwarg
+links:
+  tidal:
+    url: https://tidal.com/track/377518701
+release:
+  album_title: The Kurt Weill Album
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

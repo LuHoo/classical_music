@@ -1,0 +1,9 @@
+id: maurice-emmanuel-chansons-bourguignonnes-du-pays-de-beaune-op-17
+work_group_id: maurice-emmanuel-chansons-bourguignonnes-du-pays-de-beaune-op-17-group
+composer_id: maurice-emmanuel
+title: Chansons bourguignonnes du pays de Beaune, Op. 17
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://catalogue.bnf.fr/affiner.do?index=AUT3&numNotice=13892124
+catalogue:
+  op: '17'

@@ -1,0 +1,8 @@
+composer_id: franz-schmidt
+id: schmidt-symphony-1
+source:
+  file: reports/playlist-import/best-classical/prepared-120.json
+  url:
+    https://www.deutschegrammophon.com/en/catalogue/products/franz-schmidt-complete-symphonies-paavo-jaervi-12080
+title: Symphony No. 1 in E major
+work_group_id: schmidt-symphony-1-group

@@ -1,0 +1,10 @@
+id: camille-saint-saens-melodies-persanes-palazzetto-bru-zane-orchestral-edition
+work_group_id: camille-saint-saens-melodies-persanes-palazzetto-bru-zane-orchestral-edition-group
+composer_id: camille-saint-saens
+title: Mélodies persanes (Palazzetto Bru Zane orchestral edition)
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url:
+    https://www2.banq.qc.ca/ressources_en_ligne/bibliographie_quebec/2024-08-aout/vm950635014706485120.html
+version: Orchestral edition of the six songs, incorporating instrumental excerpts from La Nuit
+  persane and Saint-Saëns’s orchestration of La splendeur vide.

@@ -1,0 +1,13 @@
+id: charles-ives-five-songs-orchestrated-by-john-adams-playlist-2204
+work_id: charles-ives-five-songs-orchestrated-by-john-adams
+performers:
+- name: Dawn Upshaw
+- name: Orchestra of St. Luke's
+links:
+  tidal:
+    url: https://tidal.com/track/294042
+release:
+  album_title: American Elegies
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

@@ -1,0 +1,7 @@
+id: john-adams-century-rolls
+work_group_id: john-adams-century-rolls-group
+composer_id: john-adams
+title: Century Rolls
+source:
+  file: docs/adams.md
+  url: https://en.wikipedia.org/wiki/John_Adams_(composer

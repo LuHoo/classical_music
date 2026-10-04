@@ -1,0 +1,547 @@
+{
+  "schema_version": 1,
+  "status": "reviewed_and_corrected_canonical_reuse",
+  "source_sha256": "69df2e1057b47405ba9c61e70e766b6bc9de66d1a156e108c16ddc2ab825f237",
+  "reference_audit_sha256": "eb879be948974f3b88df709a83b3a9bc1c436d6e5ee19d24bf6ea15e56faeef2",
+  "reference_audit_run": "https://github.com/LuHoo/classical_music/actions/runs/37053043146",
+  "counts": {
+    "tracks": 37,
+    "existing_performances": 10,
+    "new_persons": 0,
+    "new_work_groups": 0,
+    "new_works": 0,
+    "new_performances": 0
+  },
+  "entries": [
+    {
+      "positions": [
+        279,
+        282
+      ],
+      "decision": "reuse_existing_performance_after_identity_review",
+      "performance_id": "anton-bruckner-symphony-no-5-in-bb-major-2-work-orf-vienna-rso-markus-poschner",
+      "work_id": "anton-bruckner-symphony-no-5-in-bb-major-2-work",
+      "canonical_path": "data/performances/anton-bruckner-symphony-no-5-in-bb-major-2-work-orf-vienna-rso-markus-poschner.yaml",
+      "canonical_track_id": "384348633",
+      "canonical_isrc": "DEB262300221",
+      "selected_first_isrc": "DEB262300221",
+      "identity_evidence": "Exact first-track ISRC; identical interpretation on Capriccio single release and Poschner box, with independently verified version and orchestra. Other selected movements remain within that same release and work.",
+      "source_album": {
+        "id": "308546831",
+        "title": "Bruckner: Symphony No. 5 in B-Flat Major, WAB 105 \"Phantastische\" (1878 Version, L. Nowak Edition)",
+        "barcode": "845221080901",
+        "catalogue_number": "C8090"
+      },
+      "version": "1878",
+      "edition": "Leopold Nowak",
+      "excerpt": null,
+      "primary_sources": [
+        "https://www.naxos.com/CatalogueDetail/?id=8.501804"
+      ],
+      "tracks": [
+        {
+          "position": 279,
+          "id": "308546841",
+          "isrc": "DEB262300221",
+          "title": "Symphony No. 5 in B-Flat Major, WAB 105 \"Phantastische\" (1878 Version, L. Nowak Edition): I. Introduction. Adagio"
+        },
+        {
+          "position": 280,
+          "id": "308546843",
+          "isrc": "DEB262300222",
+          "title": "Symphony No. 5 in B-Flat Major, WAB 105 \"Phantastische\" (1878 Version, L. Nowak Edition): II. Adagio. Sehr langsam"
+        },
+        {
+          "position": 281,
+          "id": "308546844",
+          "isrc": "DEB262300223",
+          "title": "Symphony No. 5 in B-Flat Major, WAB 105 \"Phantastische\" (1878 Version, L. Nowak Edition): III. Scherzo. Molto vivace"
+        },
+        {
+          "position": 282,
+          "id": "308546846",
+          "isrc": "DEB262300224",
+          "title": "Symphony No. 5 in B-Flat Major, WAB 105 \"Phantastische\" (1878 Version, L. Nowak Edition): IV. Finale. Adagio"
+        }
+      ]
+    },
+    {
+      "positions": [
+        283,
+        286
+      ],
+      "decision": "reuse_existing_performance_after_identity_review",
+      "performance_id": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-4-work-orf-vienna-rso-markus-poschner",
+      "work_id": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-4-work",
+      "canonical_path": "data/performances/anton-bruckner-symphony-no-4-in-eb-major-die-romantische-4-work-orf-vienna-rso-markus-poschner.yaml",
+      "canonical_track_id": "384348629",
+      "canonical_isrc": "DEB262300051",
+      "selected_first_isrc": "DEB262300051",
+      "identity_evidence": "Exact first-track ISRC; identical interpretation on Capriccio single release and Poschner box, with independently verified version and orchestra. Other selected movements remain within that same release and work.",
+      "source_album": {
+        "id": "279720126",
+        "title": "Anton Bruckner: Symphony No. 4 in E-Flat Major, WAB 104 (1888 Version)",
+        "barcode": "845221080857",
+        "catalogue_number": "C8085"
+      },
+      "version": "1888",
+      "edition": "Benjamin Korstvedt",
+      "excerpt": null,
+      "primary_sources": [
+        "https://www.naxos.com/CatalogueDetail/?id=8.501804"
+      ],
+      "tracks": [
+        {
+          "position": 283,
+          "id": "279720127",
+          "isrc": "DEB262300051",
+          "title": "Symphony No. 4 in E-Flat Major, WAB 104 \"Romantic\" (1888 Version, Korstvedt Edition): I. Ruhig bewegt"
+        },
+        {
+          "position": 284,
+          "id": "279720128",
+          "isrc": "DEB262300052",
+          "title": "Symphony No. 4 in E-Flat Major, WAB 104 \"Romantic\" (1888 Version, Korstvedt Edition): II. Andante"
+        },
+        {
+          "position": 285,
+          "id": "279720129",
+          "isrc": "DEB262300053",
+          "title": "Symphony No. 4 in E-Flat Major, WAB 104 \"Romantic\" (1888 Version, Korstvedt Edition): III. Bewegt"
+        },
+        {
+          "position": 286,
+          "id": "279720130",
+          "isrc": "DEB262300054",
+          "title": "Symphony No. 4 in E-Flat Major, WAB 104 \"Romantic\" (1888 Version, Korstvedt Edition): IV. Mäßig bewegt"
+        }
+      ]
+    },
+    {
+      "positions": [
+        287,
+        290
+      ],
+      "decision": "reuse_existing_performance_after_identity_review",
+      "performance_id": "anton-bruckner-symphony-in-d-minor-die-nullte-work-bruckner-orchester-linz-markus-poschner",
+      "work_id": "anton-bruckner-symphony-in-d-minor-die-nullte-work",
+      "canonical_path": "data/performances/anton-bruckner-symphony-in-d-minor-die-nullte-work-bruckner-orchester-linz-markus-poschner.yaml",
+      "canonical_track_id": "384348586",
+      "canonical_isrc": "DEB262100701",
+      "selected_first_isrc": "DEB262100701",
+      "identity_evidence": "Exact first-track ISRC; identical interpretation on Capriccio single release and Poschner box, with independently verified version and orchestra. Other selected movements remain within that same release and work.",
+      "source_album": {
+        "id": "212233716",
+        "title": "Bruckner: Symphony in D Minor, WAB 100 \"Die Nullte\"",
+        "barcode": "845221080826",
+        "catalogue_number": "C8082"
+      },
+      "version": "1869",
+      "edition": "Leopold Nowak",
+      "excerpt": null,
+      "primary_sources": [
+        "https://www.naxos.com/CatalogueDetail/?id=8.501804"
+      ],
+      "tracks": [
+        {
+          "position": 287,
+          "id": "212233717",
+          "isrc": "DEB262100701",
+          "title": "Symphony in D Minor, WAB 100 \"Die Nullte\": I. Allegro"
+        },
+        {
+          "position": 288,
+          "id": "212233718",
+          "isrc": "DEB262100702",
+          "title": "Symphony in D Minor, WAB 100 \"Die Nullte\": II. Andante"
+        },
+        {
+          "position": 289,
+          "id": "212233719",
+          "isrc": "DEB262100703",
+          "title": "Symphony in D Minor, WAB 100 \"Die Nullte\": III. Scherzo. Presto - Trio. Langsamer und ruhiger"
+        },
+        {
+          "position": 290,
+          "id": "212233720",
+          "isrc": "DEB262100704",
+          "title": "Symphony in D Minor, WAB 100 \"Die Nullte\": IV. Finale. Moderato"
+        }
+      ]
+    },
+    {
+      "positions": [
+        291,
+        294
+      ],
+      "decision": "reuse_existing_performance_after_identity_review",
+      "performance_id": "anton-bruckner-symphony-no-8-in-c-minor-die-apokalyptische-3-work-bruckner-orchester-linz-markus-poschner",
+      "work_id": "anton-bruckner-symphony-no-8-in-c-minor-die-apokalyptische-3-work",
+      "canonical_path": "data/performances/anton-bruckner-symphony-no-8-in-c-minor-die-apokalyptische-3-work-bruckner-orchester-linz-markus-poschner.yaml",
+      "canonical_track_id": "384348649",
+      "canonical_isrc": "DEB262100230",
+      "selected_first_isrc": "DEB262100230",
+      "identity_evidence": "Exact first-track ISRC; identical interpretation on Capriccio single release and Poschner box, with independently verified version and orchestra. Other selected movements remain within that same release and work.",
+      "source_album": {
+        "id": "201393173",
+        "title": "Bruckner: Symphony No. 8 in C Minor, WAB 108 \"Apocalyptic\" (1890 Version)",
+        "barcode": "845221080819",
+        "catalogue_number": "C8081"
+      },
+      "version": "1890",
+      "edition": "Leopold Nowak",
+      "excerpt": null,
+      "primary_sources": [
+        "https://www.naxos.com/CatalogueDetail/?id=8.501804"
+      ],
+      "tracks": [
+        {
+          "position": 291,
+          "id": "201393178",
+          "isrc": "DEB262100230",
+          "title": "Symphony No. 8 in C Minor, WAB 108 \"Apocalyptic\" (1890 Version): I. Allegro moderato"
+        },
+        {
+          "position": 292,
+          "id": "201393181",
+          "isrc": "DEB262100231",
+          "title": "Symphony No. 8 in C Minor, WAB 108 \"Apocalyptic\" (1890 Version): II. Scherzo. Allegro moderato"
+        },
+        {
+          "position": 293,
+          "id": "201393183",
+          "isrc": "DEB262100232",
+          "title": "Symphony No. 8 in C Minor, WAB 108 \"Apocalyptic\" (1890 Version): III. Adagio. Feierlich langsam, doch nicht schleppend"
+        },
+        {
+          "position": 294,
+          "id": "201393185",
+          "isrc": "DEB262100233",
+          "title": "Symphony No. 8 in C Minor, WAB 108 \"Apocalyptic\" (1890 Version): IV. Finale. Feierlich, nicht schnell"
+        }
+      ]
+    },
+    {
+      "positions": [
+        295,
+        298
+      ],
+      "decision": "reuse_existing_performance_after_identity_review",
+      "performance_id": "anton-bruckner-symphony-no-6-in-a-major-work-bruckner-orchester-linz-markus-poschner",
+      "work_id": "anton-bruckner-symphony-no-6-in-a-major-work",
+      "canonical_path": "data/performances/anton-bruckner-symphony-no-6-in-a-major-work-bruckner-orchester-linz-markus-poschner.yaml",
+      "canonical_track_id": "384348637",
+      "canonical_isrc": "DEB262100221",
+      "selected_first_isrc": "DEB262100221",
+      "identity_evidence": "Exact first-track ISRC; identical interpretation on Capriccio single release and Poschner box, with independently verified version and orchestra. Other selected movements remain within that same release and work.",
+      "source_album": {
+        "id": "197810039",
+        "title": "Bruckner: Symphony No. 6 in A Major, WAB 106",
+        "barcode": "845221080802",
+        "catalogue_number": "C8080"
+      },
+      "version": "1881",
+      "edition": "Robert Haas, prepared by John Williamson",
+      "excerpt": null,
+      "primary_sources": [
+        "https://www.naxos.com/CatalogueDetail/?id=8.501804",
+        "https://cdn.naxos.com/sharedfiles/PDF/Capriccio.pdf"
+      ],
+      "tracks": [
+        {
+          "position": 295,
+          "id": "197810044",
+          "isrc": "DEB262100221",
+          "title": "Symphony No. 6 in A Major, WAB 106: I. Majestoso"
+        },
+        {
+          "position": 296,
+          "id": "197810045",
+          "isrc": "DEB262100222",
+          "title": "Symphony No. 6 in A Major, WAB 106: II. Adagio. Sehr feierlich"
+        },
+        {
+          "position": 297,
+          "id": "197810046",
+          "isrc": "DEB262100223",
+          "title": "Symphony No. 6 in A Major, WAB 106: III. Scherzo. Nicht schnell - Langsam"
+        },
+        {
+          "position": 298,
+          "id": "197810047",
+          "isrc": "DEB262100224",
+          "title": "Symphony No. 6 in A Major, WAB 106: IV. Finale. Bewegt, doch nicht zu schnell"
+        }
+      ]
+    },
+    {
+      "positions": [
+        299,
+        302
+      ],
+      "decision": "reuse_existing_performance_after_identity_review",
+      "performance_id": "anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-work-orf-vienna-rso-markus-poschner",
+      "work_id": "anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-work",
+      "canonical_path": "data/performances/anton-bruckner-symphony-no-3-in-d-minor-wagner-symphony-work-orf-vienna-rso-markus-poschner.yaml",
+      "canonical_track_id": "384348607",
+      "canonical_isrc": "DEB262200500",
+      "selected_first_isrc": "DEB262200500",
+      "identity_evidence": "Exact first-track ISRC; identical interpretation on Capriccio single release and Poschner box, with independently verified version and orchestra. Other selected movements remain within that same release and work.",
+      "source_album": {
+        "id": "241689670",
+        "title": "Bruckner: Symphony No. 3 in D Minor, WAB 103 \"Wagner\" (1873 Version, Ed. L. Nowak)",
+        "barcode": "845221080864",
+        "catalogue_number": "C8086"
+      },
+      "version": "1873",
+      "edition": "Leopold Nowak",
+      "excerpt": null,
+      "primary_sources": [
+        "https://www.naxos.com/CatalogueDetail/?id=8.501804"
+      ],
+      "tracks": [
+        {
+          "position": 299,
+          "id": "241689673",
+          "isrc": "DEB262200500",
+          "title": "Symphony No. 3 in D Minor, WAB 103 \"Wagner\" (1873 Version, Ed. L. Nowak): I. Gemäßigt, misterioso"
+        },
+        {
+          "position": 300,
+          "id": "241689674",
+          "isrc": "DEB262200501",
+          "title": "Symphony No. 3 in D Minor, WAB 103 \"Wagner\" (1873 Version, Ed. L. Nowak): II. Adagio. Feierliche"
+        },
+        {
+          "position": 301,
+          "id": "241689675",
+          "isrc": "DEB262200502",
+          "title": "Symphony No. 3 in D Minor, WAB 103 \"Wagner\" (1873 Version, Ed. L. Nowak): III. Scherzo. Ziemlich schnell"
+        },
+        {
+          "position": 302,
+          "id": "241689676",
+          "isrc": "DEB262200503",
+          "title": "Symphony No. 3 in D Minor, WAB 103 \"Wagner\" (1873 Version, Ed. L. Nowak): IV. Finale. Allegro"
+        }
+      ]
+    },
+    {
+      "positions": [
+        303,
+        306
+      ],
+      "decision": "reuse_existing_performance_after_identity_review",
+      "performance_id": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-2-work-bruckner-orchester-linz-markus-poschner",
+      "work_id": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-3-work",
+      "canonical_path": "data/performances/anton-bruckner-symphony-no-4-in-eb-major-die-romantische-2-work-bruckner-orchester-linz-markus-poschner.yaml",
+      "canonical_track_id": "384348624",
+      "canonical_isrc": "DEB262200001",
+      "selected_first_isrc": "DEB262200001",
+      "identity_evidence": "Exact first-track ISRC; identical interpretation on Capriccio single release and Poschner box, with independently verified version and orchestra. Other selected movements remain within that same release and work.",
+      "source_album": {
+        "id": "224916690",
+        "title": "Bruckner: Symphony No. 4 in E-Flat Major, WAB 104 \"Romantic\" (2nd Version)",
+        "barcode": "845221080833",
+        "catalogue_number": "C8083"
+      },
+      "version": "1878–1880 (1881 performance text)",
+      "edition": "Benjamin Korstvedt",
+      "excerpt": null,
+      "primary_sources": [
+        "https://www.naxos.com/CatalogueDetail/?id=8.501804",
+        "https://capriccio.at/bruckner24-4-the-complete-versions-edition"
+      ],
+      "tracks": [
+        {
+          "position": 303,
+          "id": "224916691",
+          "isrc": "DEB262200001",
+          "title": "Symphony No. 4 in E-Flat Major, WAB 104 \"Romantic\" (2nd Version): I. Bewegt, nicht zu schnell"
+        },
+        {
+          "position": 304,
+          "id": "224916693",
+          "isrc": "DEB262200002",
+          "title": "Symphony No. 4 in E-Flat Major, WAB 104 \"Romantic\" (2nd Version): II. Andante quasi allegretto"
+        },
+        {
+          "position": 305,
+          "id": "224916694",
+          "isrc": "DEB262200003",
+          "title": "Symphony No. 4 in E-Flat Major, WAB 104 \"Romantic\" (2nd Version): III. Scherzo. Bewegt"
+        },
+        {
+          "position": 306,
+          "id": "224916695",
+          "isrc": "DEB262200004",
+          "title": "Symphony No. 4 in E-Flat Major, WAB 104 \"Romantic\" (2nd Version): IV. Finale. Bewegt, doch nicht zu schnell"
+        }
+      ]
+    },
+    {
+      "positions": [
+        307,
+        307
+      ],
+      "decision": "reuse_existing_performance_after_identity_review",
+      "performance_id": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-3-work-orf-vienna-rso-markus-poschner",
+      "work_id": "anton-bruckner-symphony-no-4-in-eb-major-die-romantische-2-work",
+      "canonical_path": "data/performances/anton-bruckner-symphony-no-4-in-eb-major-die-romantische-3-work-orf-vienna-rso-markus-poschner.yaml",
+      "canonical_track_id": "384348628",
+      "canonical_isrc": "DEB262200005",
+      "selected_first_isrc": "DEB262200005",
+      "identity_evidence": "Exact first-track ISRC; identical interpretation on Capriccio single release and Poschner box, with independently verified version and orchestra. Other selected movements remain within that same release and work.",
+      "source_album": {
+        "id": "224916690",
+        "title": "Bruckner: Symphony No. 4 in E-Flat Major, WAB 104 \"Romantic\" (2nd Version)",
+        "barcode": "845221080833",
+        "catalogue_number": "C8083"
+      },
+      "version": "1878 Volksfest finale",
+      "edition": "Benjamin Korstvedt",
+      "excerpt": "Volksfest finale only",
+      "primary_sources": [
+        "https://www.naxos.com/CatalogueDetail/?id=8.501804",
+        "https://capriccio.at/bruckner24-4-the-complete-versions-edition"
+      ],
+      "tracks": [
+        {
+          "position": 307,
+          "id": "224916696",
+          "isrc": "DEB262200005",
+          "title": "Symphony No. 4 in E-Flat Major, WAB 104 \"Romantic\" (1878 Version): IV. Finale. Volksfest"
+        }
+      ]
+    },
+    {
+      "positions": [
+        308,
+        311
+      ],
+      "decision": "reuse_existing_performance_after_identity_review",
+      "performance_id": "anton-bruckner-symphony-no-8-in-c-minor-die-apokalyptische-work-bruckner-orchester-linz-markus-poschner",
+      "work_id": "anton-bruckner-symphony-no-8-in-c-minor-die-apokalyptische-work",
+      "canonical_path": "data/performances/anton-bruckner-symphony-no-8-in-c-minor-die-apokalyptische-work-bruckner-orchester-linz-markus-poschner.yaml",
+      "canonical_track_id": "384348645",
+      "canonical_isrc": "DEB262200661",
+      "selected_first_isrc": "DEB262200661",
+      "identity_evidence": "Exact first-track ISRC; identical interpretation on Capriccio single release and Poschner box, with independently verified version and orchestra. Other selected movements remain within that same release and work.",
+      "source_album": {
+        "id": "272469796",
+        "title": "Bruckner: Symphony No. 8 in C Minor, WAB 108 (1887 Version)",
+        "barcode": "845221080871",
+        "catalogue_number": "C8087"
+      },
+      "version": "1887",
+      "edition": "Paul Hawkshaw",
+      "excerpt": null,
+      "primary_sources": [
+        "https://www.naxos.com/CatalogueDetail/?id=8.501804"
+      ],
+      "tracks": [
+        {
+          "position": 308,
+          "id": "272469802",
+          "isrc": "DEB262200661",
+          "title": "Symphony No. 8 in C Minor, WAB 108 (1887 Version): I. Allegro moderato"
+        },
+        {
+          "position": 309,
+          "id": "272469804",
+          "isrc": "DEB262200662",
+          "title": "Symphony No. 8 in C Minor, WAB 108 (1887 Version): II. Scherzo. Allegro moderato - Trio. Langsam"
+        },
+        {
+          "position": 310,
+          "id": "272469805",
+          "isrc": "DEB262200663",
+          "title": "Symphony No. 8 in C Minor, WAB 108 (1887 Version): III. Adagio. Feierlich langsam, doch nicht schleppend"
+        },
+        {
+          "position": 311,
+          "id": "272469806",
+          "isrc": "DEB262200664",
+          "title": "Symphony No. 8 in C Minor, WAB 108 (1887 Version): IV. Finale. Feierlich, nicht schnell"
+        }
+      ]
+    },
+    {
+      "positions": [
+        312,
+        315
+      ],
+      "decision": "reuse_existing_performance_after_identity_review",
+      "performance_id": "anton-bruckner-symphony-no-2-in-c-minor-2-work-bruckner-orchester-linz-markus-poschner",
+      "work_id": "anton-bruckner-symphony-no-2-in-c-minor-2-work",
+      "canonical_path": "data/performances/anton-bruckner-symphony-no-2-in-c-minor-2-work-bruckner-orchester-linz-markus-poschner.yaml",
+      "canonical_track_id": "384348603",
+      "canonical_isrc": "DEB262300171",
+      "selected_first_isrc": "DEB262300171",
+      "identity_evidence": "Exact first-track ISRC; identical interpretation on Capriccio single release and Poschner box, with independently verified version and orchestra. Other selected movements remain within that same release and work.",
+      "source_album": {
+        "id": "299951435",
+        "title": "Bruckner: Symphony No. 2 in C Minor, WAB 102 (1877 Version, Ed. W. Carragan)",
+        "barcode": "845221080895",
+        "catalogue_number": "C8089"
+      },
+      "version": "1877",
+      "edition": "Paul Hawkshaw",
+      "excerpt": null,
+      "primary_sources": [
+        "https://www.naxos.com/CatalogueDetail/?id=8.501804",
+        "https://cdn.naxosmusiclibrary.com/sharedfiles/booklets/CAR/booklet-C8089.pdf"
+      ],
+      "tracks": [
+        {
+          "position": 312,
+          "id": "299951436",
+          "isrc": "DEB262300171",
+          "title": "Symphony No. 2 in C Minor, WAB 102 (1877 Version, Ed. W. Carragan): I. Moderato"
+        },
+        {
+          "position": 313,
+          "id": "299951437",
+          "isrc": "DEB262300172",
+          "title": "Symphony No. 2 in C Minor, WAB 102 (1877 Version, Ed. W. Carragan): II. Andante"
+        },
+        {
+          "position": 314,
+          "id": "299951438",
+          "isrc": "DEB262300173",
+          "title": "Symphony No. 2 in C Minor, WAB 102 (1877 Version, Ed. W. Carragan): III. Scherzo: Mäßig schnell - Trio: Gleiches Tempo"
+        },
+        {
+          "position": 315,
+          "id": "299951439",
+          "isrc": "DEB262300174",
+          "title": "Symphony No. 2 in C Minor, WAB 102 (1877 Version, Ed. W. Carragan): IV. Finale: Ziemlich schnell"
+        }
+      ]
+    }
+  ],
+  "remaining_boundary": {
+    "position": 333,
+    "track_id": "284454595",
+    "status": "deferred"
+  },
+  "window_34_333": {
+    "existing_tracks": 179,
+    "existing_performances": 43,
+    "new_tracks": 120,
+    "new_performances": 33,
+    "deferred_tracks": 1
+  },
+  "validation": {
+    "errors": 0,
+    "action_required": 0,
+    "background_suspicions": 116,
+    "publication_passed": true,
+    "generated_pages": 1551,
+    "works": 1516,
+    "performances": 974,
+    "fourth_symphony_links_and_excerpt_checked": true,
+    "publication_site_tests_passed": 13,
+    "legacy_background_change": "118 to 116: two reviewed version-specific Works now have distinct version-qualified titles."
+  }
+}

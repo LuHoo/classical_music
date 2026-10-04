@@ -1,0 +1,21 @@
+id: giovanni-girolamo-kapsberger-toccata-arpeggiata-arr-julian-schneemann-playlist-789
+work_id: giovanni-girolamo-kapsberger-toccata-arpeggiata-arr-julian-schneemann
+performers:
+- name: Nederlands Blazers Ensemble
+  role: performer
+- name: Jeff Heijne
+  role: performer
+- name: Dusty Ciggaar
+  role: performer
+- name: Jaber Fayad
+  role: performer
+- name: David Mackor
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/216680022
+release:
+  album_title: Troubadours (Live)
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

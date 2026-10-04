@@ -1,0 +1,17 @@
+id: karol-szymanowski-symphony-no-4-op-60-m70-sinfonia-concertante-playlist-4815
+work_id: karol-szymanowski-symphony-no-4-op-60-m70-sinfonia-concertante
+performers:
+- name: Edward Gardner
+- name: Louis Lortie
+- name: BBC Philharmonic
+  artist_id: bbc-po
+  role: orchestra
+links:
+  tidal:
+    url: https://tidal.com/track/380562797
+release:
+  album_title: 'Szymanowski: Orchestral Works, Vol. 5'
+source:
+  file: reports/playlist-import/best-classical/window-4001-5518.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+version_assignment: unspecified

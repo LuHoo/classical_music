@@ -1,0 +1,14 @@
+id: einojuhani-rautavaara-flute-concerto-dances-with-the-winds-playlist-1474
+work_id: einojuhani-rautavaara-flute-concerto-dances-with-the-winds
+performers:
+- name: Patrick Gallois
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/12663451
+release:
+  album_title: 'Rautavaara, E.: On the Last Frontier / Flute Concerto / Anadyomene'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+version_assignment: unspecified

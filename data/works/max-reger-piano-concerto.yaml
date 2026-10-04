@@ -1,0 +1,9 @@
+id: max-reger-piano-concerto
+work_group_id: max-reger-piano-concerto-group
+composer_id: max-reger
+title: Piano Concerto
+source:
+  file: docs/reger.md
+  url: https://en.wikipedia.org/wiki/List_of_compositions_by_Max_Reger
+catalogue:
+  op: '114'

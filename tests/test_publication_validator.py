@@ -373,10 +373,17 @@ class TestPublicationWithRealData:
         # Main assertion
         assert result.passed, f"Publication validation failed: {result.error_count()} errors"
         assert result.exit_code() == 0, "Exit code should be 0"
-        assert len(validator.adapter.persons) == 23
-        assert len(validator.adapter.work_groups) == 1469
-        assert len(validator.adapter.works) == 1481
-        assert len(validator.adapter.performances) == 938
+        # Every canonical record must reach publication as the collection grows.
+        # Fixed totals would fail on each legitimate playlist import.
+        for directory, entities in (
+            ("persons", validator.adapter.persons),
+            ("work-groups", validator.adapter.work_groups),
+            ("works", validator.adapter.works),
+            ("performances", validator.adapter.performances),
+        ):
+            assert entities
+            source_files = list((validator.repo_root / "data" / directory).rglob("*.yaml"))
+            assert len(entities) == len(source_files), directory
 
     def test_validator_returns_validation_result(self, validator):
         """Validate that validator returns proper ValidationResult."""

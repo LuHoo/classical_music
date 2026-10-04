@@ -1,0 +1,10 @@
+catalogue:
+  h: H. 293
+composer_id: bohuslav-martinu
+id: martinu-violin-concerto-2
+source:
+  file: reports/playlist-import/best-classical/prepared-120.json
+  url:
+    https://eclassical.textalk.se/shop/17115/art19/5059519-b620d1-BIS-2457_booklet.pdf
+title: Violin Concerto No. 2
+work_group_id: martinu-violin-concerto-2-group

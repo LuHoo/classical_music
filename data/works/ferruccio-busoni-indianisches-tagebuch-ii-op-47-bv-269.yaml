@@ -1,0 +1,9 @@
+id: ferruccio-busoni-indianisches-tagebuch-ii-op-47-bv-269
+work_group_id: ferruccio-busoni-indianisches-tagebuch-ii-op-47-bv-269-group
+composer_id: ferruccio-busoni
+title: Indianisches Tagebuch II, Op. 47, BV 269
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://www.chandos.net/products/catalogue/CHAN%2010302
+catalogue:
+  op: '47'

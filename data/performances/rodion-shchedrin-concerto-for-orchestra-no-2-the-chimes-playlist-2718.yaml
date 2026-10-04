@@ -1,0 +1,14 @@
+id: rodion-shchedrin-concerto-for-orchestra-no-2-the-chimes-playlist-2718
+work_id: rodion-shchedrin-concerto-for-orchestra-no-2-the-chimes
+performers:
+- name: Russian National Orchestra
+- name: Mikhail Pletnev
+links:
+  tidal:
+    url: https://tidal.com/track/4702062
+release:
+  album_title: 'Shchedrin: Carmen Suite; Naughty Limericks; The Chimes'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+version_assignment: unspecified

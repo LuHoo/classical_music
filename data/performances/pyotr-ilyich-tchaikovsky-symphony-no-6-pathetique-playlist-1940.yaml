@@ -1,0 +1,16 @@
+id: pyotr-ilyich-tchaikovsky-symphony-no-6-pathetique-playlist-1940
+work_id: pyotr-ilyich-tchaikovsky-symphony-no-6-pathetique
+performers:
+- name: Orchestra della Svizzera italiana
+  role: performer
+- name: Markus Poschner
+  role: conductor
+  artist_id: markus-poschner
+links:
+  tidal:
+    url: https://tidal.com/track/335112046
+release:
+  album_title: Pyotr Ilyich Tchaikovsky, Symphony No. 5 & No. 6
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

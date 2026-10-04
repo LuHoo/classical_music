@@ -1,0 +1,13 @@
+id: granville-bantock-the-pierrot-of-the-minute-playlist-3936
+work_id: granville-bantock-the-pierrot-of-the-minute
+performers:
+- name: Norman Del Mar
+- name: Bournemouth Sinfonietta
+links:
+  tidal:
+    url: https://tidal.com/track/376441017
+release:
+  album_title: 'Bantock, Butterworth & Bridge: Orchestral Works'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

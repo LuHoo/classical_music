@@ -1,0 +1,13 @@
+id: zoltan-kodaly-hary-janos-orchestral-suite-playlist-2963
+work_id: zoltan-kodaly-hary-janos-orchestral-suite
+performers:
+- name: Hungarian State Orchestra
+- name: Adam Fischer
+links:
+  tidal:
+    url: https://tidal.com/track/80765511
+release:
+  album_title: 'Kodály: Orchestral Music'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

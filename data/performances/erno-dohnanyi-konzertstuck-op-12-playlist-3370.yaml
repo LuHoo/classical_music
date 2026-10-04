@@ -1,0 +1,14 @@
+id: erno-dohnanyi-konzertstuck-op-12-playlist-3370
+work_id: erno-dohnanyi-konzertstuck-op-12
+performers:
+- name: Tim Posner
+- name: Berner SO
+- name: Katharina Müllner
+links:
+  tidal:
+    url: https://tidal.com/track/341378762
+release:
+  album_title: Bloch, Dohnányi, Bruch, Tim Posner, Berner Symphonieorchester, Katharina Müllner
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

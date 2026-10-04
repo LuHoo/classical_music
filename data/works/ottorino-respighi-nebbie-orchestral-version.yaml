@@ -1,0 +1,10 @@
+id: ottorino-respighi-nebbie-orchestral-version
+work_group_id: ottorino-respighi-nebbie-orchestral-version-group
+composer_id: ottorino-respighi
+title: Tre liriche, P. 99a (orchestral version)
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://salvatoredivittorio.com/tre-liriche/
+catalogue:
+  p: P. 99a
+version: 1913 orchestral cycle

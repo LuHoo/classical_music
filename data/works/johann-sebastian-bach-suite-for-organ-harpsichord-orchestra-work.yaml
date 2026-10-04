@@ -1,11 +1,12 @@
-id: "johann-sebastian-bach-suite-for-organ-harpsichord-orchestra-work"
-work_group_id: "johann-sebastian-bach-suite-for-organ-harpsichord-orchestra-group"
-composer_id: "johann-sebastian-bach"
-title: "Suite for Organ, Harpsichord & Orchestra"
+id: johann-sebastian-bach-suite-for-organ-harpsichord-orchestra-work
+work_group_id: johann-sebastian-bach-suite-for-organ-harpsichord-orchestra-group
+composer_id: johann-sebastian-bach
+title: Suite for organ, harpsichord and orchestra (Mahler arrangement)
 source:
-  file: "docs/bachJS.md"
-  line: "92"
+  file: docs/bachJS.md
+  line: '92'
+  url: https://ci.nii.ac.jp/ncid/BA50788723
 catalogue:
-  bwv: "BWV 1067"
-date_text: "Selections from Bach's Orchestral Suites, BWV 1067 & BWV 1068"
-category: "Orchestral arrangements"
+  bwv: BWV 1067
+category: Orchestral arrangements
+version: Arrangement by Gustav Mahler from BWV 1067 and BWV 1068

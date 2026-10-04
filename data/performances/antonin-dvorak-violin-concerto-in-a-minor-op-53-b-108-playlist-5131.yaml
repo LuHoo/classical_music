@@ -1,0 +1,15 @@
+id: antonin-dvorak-violin-concerto-in-a-minor-op-53-b-108-playlist-5131
+work_id: antonin-dvorak-violin-concerto-in-a-minor-op-53-b-108
+performers:
+- name: Jan Mráček
+- name: Czech National Symphony Orchestra
+- name: James Judd
+links:
+  tidal:
+    url: https://tidal.com/track/61944296
+release:
+  album_title: 'Dvorak: Violin Concerto, Romance, Mazurek & Four Romantic Pieces'
+source:
+  file: reports/playlist-import/best-classical/window-4001-5518.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+version_assignment: unspecified

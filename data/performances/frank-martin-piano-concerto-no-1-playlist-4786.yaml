@@ -1,0 +1,15 @@
+id: frank-martin-piano-concerto-no-1-playlist-4786
+work_id: frank-martin-piano-concerto-no-1
+performers:
+- name: Christian Benda
+- name: Orchestra della Svizzera Italiana
+- name: Sebastian Benda
+links:
+  tidal:
+    url: https://tidal.com/track/4296990
+release:
+  album_title: 'Frank Martin: Music for Piano & Orchestra'
+source:
+  file: reports/playlist-import/best-classical/window-4001-5518.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+version_assignment: unspecified

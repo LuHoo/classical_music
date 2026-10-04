@@ -1,0 +1,13 @@
+id: pyotr-ilyich-tchaikovsky-fatum-playlist-3679
+work_id: pyotr-ilyich-tchaikovsky-fatum
+performers:
+- name: BBC Scottish Symphony Orchestra
+- name: Alpesh Chauhan
+links:
+  tidal:
+    url: https://tidal.com/track/376334046
+release:
+  album_title: Tchaikovsky Orchestral Works Vol. 2
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

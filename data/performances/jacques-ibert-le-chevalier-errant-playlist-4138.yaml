@@ -1,0 +1,13 @@
+id: jacques-ibert-le-chevalier-errant-playlist-4138
+work_id: jacques-ibert-le-chevalier-errant
+performers:
+- name: Orchestre National de Lyon
+- name: Nikolaj Szeps-Znaider
+links:
+  tidal:
+    url: https://tidal.com/track/388951006
+release:
+  album_title: 'Strauss: Don Quixote - Ibert: Le Chevalier errant'
+source:
+  file: reports/playlist-import/best-classical/window-4001-5518.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

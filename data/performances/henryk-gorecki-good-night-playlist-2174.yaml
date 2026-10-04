@@ -1,0 +1,15 @@
+id: henryk-gorecki-good-night-playlist-2174
+work_id: henryk-gorecki-good-night
+performers:
+- name: Dawn Upshaw
+- name: Sebastian Bell
+- name: John Constable
+- name: David Hockings
+links:
+  tidal:
+    url: https://tidal.com/track/2110750
+release:
+  album_title: 'Górecki, Henryk: Kleines Requiem Für Eine Polka/Harpsichord Concerto/Good Night'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

@@ -1,10 +1,14 @@
-id: "johann-sebastian-bach-toccata-fugue-in-d-min-work-los-angeles-philharmonic-esa-pekka-salonen"
-work_id: "johann-sebastian-bach-toccata-fugue-in-d-min-work"
+id: johann-sebastian-bach-toccata-fugue-in-d-min-work-los-angeles-philharmonic-esa-pekka-salonen
+work_id: johann-sebastian-bach-toccata-fugue-in-d-min-work
 source:
-  file: "docs/bachJS.md"
-  line: "86"
+  file: docs/bachJS.md
+  line: '86'
+  url: https://ci.nii.ac.jp/ncid/BA50788723
 links:
-- platform: "tidal"
-  url: "http://www.tidal.com/track/2924750"
+- platform: tidal
+  url: http://www.tidal.com/track/2924750
 performers:
-- name: "Los Angeles Philharmonic, Esa-Pekka Salonen"
+- name: Los Angeles Philharmonic
+  role: orchestra
+- name: Esa-Pekka Salonen
+  role: conductor

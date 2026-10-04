@@ -1,0 +1,7 @@
+id: jean-philippe-rameau
+name: Jean-Philippe Rameau
+roles:
+- composer
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://www.sonyclassical.de/alben/releases-details/rameau-the-sound-of-light

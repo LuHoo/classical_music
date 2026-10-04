@@ -1,0 +1,18 @@
+id: ferruccio-busoni-indianisches-tagebuch-ii-op-47-bv-269-playlist-3203
+work_id: ferruccio-busoni-indianisches-tagebuch-ii-op-47-bv-269
+performers:
+- name: Neeme Järvi
+  artist_id: neeme-jarvi
+  role: conductor
+- name: BBC Philharmonic
+  artist_id: bbc-po
+  role: orchestra
+- name: BBC PO
+links:
+  tidal:
+    url: https://tidal.com/track/376415120
+release:
+  album_title: 'Busoni: Orchestral Works, Vol. 2'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

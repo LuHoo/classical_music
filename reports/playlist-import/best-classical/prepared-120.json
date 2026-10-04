@@ -1,0 +1,1562 @@
+{
+  "schema_version": 1,
+  "status": "prepared_not_imported",
+  "source_sha256": "69df2e1057b47405ba9c61e70e766b6bc9de66d1a156e108c16ddc2ab825f237",
+  "source_run": "https://github.com/LuHoo/classical_music/actions/runs/37024628787",
+  "curator_acceptance": "Explicit curator-owned playlist instruction in this thread.",
+  "counts": {
+    "persons": 9,
+    "work-groups": 32,
+    "works": 32,
+    "performances": 33
+  },
+  "selected_tracks": 120,
+  "entries": [
+    {
+      "unit": 1,
+      "positions": [
+        34,
+        35
+      ],
+      "source_title": "Tabula Rasa",
+      "prepared_work_id": "part-tabula-rasa",
+      "prepared_performance_id": "part-tabula-rasa-capucon-lausanne",
+      "composer_id": "3933294105514c1885644d1099a7006b",
+      "decision": "prepared_addition_not_applied",
+      "primary_evidence": [
+        "https://www.warnerclassics.com/release/tabula-rasa"
+      ],
+      "source_album": {
+        "id": "190541070",
+        "title": "Pärt: Tabula Rasa",
+        "barcode": "190295029562",
+        "release_date": "2021-09-10"
+      },
+      "coverage": "complete_selected_work",
+      "tracks": [
+        {
+          "position": 34,
+          "id": "190541071",
+          "isrc": "GBAYC2100003",
+          "title": "Tabula Rasa: I. Ludus"
+        },
+        {
+          "position": 35,
+          "id": "190541072",
+          "isrc": "GBAYC2100004",
+          "title": "Tabula Rasa: II. Silentium"
+        }
+      ]
+    },
+    {
+      "unit": 2,
+      "positions": [
+        36,
+        42
+      ],
+      "source_title": "Zemlinsky: Lyrische Symphonie, Op. 18",
+      "prepared_work_id": "zemlinsky-lyric-symphony",
+      "prepared_performance_id": "zemlinsky-lyric-symphony-chailly",
+      "composer_id": "alexander-von-zemlinsky",
+      "decision": "prepared_addition_not_applied",
+      "primary_evidence": [
+        "https://www.deccaclassics.com/en/catalogue/products/zemlinsky-lyrische-symphonie-7275",
+        "https://www.deccaclassics.com/en/catalogue/products/zemlinsky-lyrische-symphonie-chailly-433",
+        "https://www.zemlinsky.at/EN/Catalogue-of-Compositions/catalog.pdf"
+      ],
+      "source_album": {
+        "id": "50609998",
+        "title": "Zemlinsky: Lyric Symphony",
+        "barcode": "00028947883579",
+        "release_date": "2015-08-01"
+      },
+      "coverage": "complete_selected_work",
+      "tracks": [
+        {
+          "position": 36,
+          "id": "50609999",
+          "isrc": "GBF079310741",
+          "title": "Zemlinsky: Lyrische Symphonie, Op. 18: 1. Langsam"
+        },
+        {
+          "position": 37,
+          "id": "50610000",
+          "isrc": "GBF079310742",
+          "title": "Zemlinsky: Lyrische Symphonie, Op. 18: 2. Lebhaft"
+        },
+        {
+          "position": 38,
+          "id": "50610001",
+          "isrc": "GBF079310743",
+          "title": "Zemlinsky: Lyrische Symphonie, Op. 18: 3. Von hier ab plötzlich breiter . . ."
+        },
+        {
+          "position": 39,
+          "id": "50610002",
+          "isrc": "GBF079310744",
+          "title": "Zemlinsky: Lyrische Symphonie, Op. 18: 4. Langsam"
+        },
+        {
+          "position": 40,
+          "id": "50610003",
+          "isrc": "GBF079310745",
+          "title": "Zemlinsky: Lyrische Symphonie, Op. 18: 5. Feurig und kraftvoll"
+        },
+        {
+          "position": 41,
+          "id": "50610004",
+          "isrc": "GBF079310746",
+          "title": "Zemlinsky: Lyrische Symphonie, Op. 18: 6. Sehr mässig"
+        },
+        {
+          "position": 42,
+          "id": "50610005",
+          "isrc": "GBF079310747",
+          "title": "Zemlinsky: Lyrische Symphonie, Op. 18: 7. Molto Adagio"
+        }
+      ]
+    },
+    {
+      "unit": 3,
+      "positions": [
+        43,
+        49
+      ],
+      "source_title": "Zemlinsky: Sinfonische Gesänge. Op. 20",
+      "prepared_work_id": "zemlinsky-symphonic-songs",
+      "prepared_performance_id": "zemlinsky-symphonic-songs-chailly",
+      "composer_id": "alexander-von-zemlinsky",
+      "decision": "prepared_addition_not_applied",
+      "primary_evidence": [
+        "https://www.deccaclassics.com/en/catalogue/products/zemlinsky-lyrische-symphonie-7275",
+        "https://www.deccaclassics.com/en/catalogue/products/zemlinsky-lyrische-symphonie-chailly-433",
+        "https://www.zemlinsky.at/EN/Catalogue-of-Compositions/catalog.pdf"
+      ],
+      "source_album": {
+        "id": "50609998",
+        "title": "Zemlinsky: Lyric Symphony",
+        "barcode": "00028947883579",
+        "release_date": "2015-08-01"
+      },
+      "coverage": "complete_selected_work",
+      "tracks": [
+        {
+          "position": 43,
+          "id": "50610006",
+          "isrc": "GBF079310751",
+          "title": "Zemlinsky: Sinfonische Gesänge. Op. 20: 1. Lied aus Dixieland"
+        },
+        {
+          "position": 44,
+          "id": "50610007",
+          "isrc": "GBF079310752",
+          "title": "Zemlinsky: Sinfonische Gesänge. Op. 20: 2. Lied der Baumwollpacker"
+        },
+        {
+          "position": 45,
+          "id": "50610008",
+          "isrc": "GBF079310753",
+          "title": "Zemlinsky: Sinfonische Gesänge. Op. 20: 3. Totes braunes Mädel"
+        },
+        {
+          "position": 46,
+          "id": "50610009",
+          "isrc": "GBF079310754",
+          "title": "Zemlinsky: Sinfonische Gesänge. Op. 20: 4. Übler Bursche"
+        },
+        {
+          "position": 47,
+          "id": "50610010",
+          "isrc": "GBF079310755",
+          "title": "Zemlinsky: Sinfonische Gesänge. Op. 20: 5. Erkenntnis"
+        },
+        {
+          "position": 48,
+          "id": "50610011",
+          "isrc": "GBF079310756",
+          "title": "Zemlinsky: Sinfonische Gesänge. Op. 20: 6. Afrikanischer Tanz"
+        },
+        {
+          "position": 49,
+          "id": "50610012",
+          "isrc": "GBF079319757",
+          "title": "Zemlinsky: Sinfonische Gesänge. Op. 20: 7. Arabeske"
+        }
+      ]
+    },
+    {
+      "unit": 4,
+      "positions": [
+        50,
+        50
+      ],
+      "source_title": "Zemlinsky: Psalm 83",
+      "prepared_work_id": "zemlinsky-psalm-83",
+      "prepared_performance_id": "zemlinsky-psalm-83-chailly",
+      "composer_id": "alexander-von-zemlinsky",
+      "decision": "prepared_addition_not_applied",
+      "primary_evidence": [
+        "https://www.deccaclassics.com/en/catalogue/products/zemlinsky-lyrische-symphonie-7275",
+        "https://www.deccaclassics.com/en/catalogue/products/zemlinsky-lyrische-symphonie-chailly-433",
+        "https://www.zemlinsky.at/EN/Catalogue-of-Compositions/catalog.pdf"
+      ],
+      "source_album": {
+        "id": "50609998",
+        "title": "Zemlinsky: Lyric Symphony",
+        "barcode": "00028947883579",
+        "release_date": "2015-08-01"
+      },
+      "coverage": "complete_selected_work",
+      "tracks": [
+        {
+          "position": 50,
+          "id": "50610013",
+          "isrc": "GBF079711960",
+          "title": "Zemlinsky: Psalm 83"
+        }
+      ]
+    },
+    {
+      "unit": 5,
+      "positions": [
+        51,
+        63
+      ],
+      "source_title": "The Wooden Prince, Op. 13 Sz. 60",
+      "prepared_work_id": "bartok-wooden-prince",
+      "prepared_performance_id": "bartok-wooden-prince-wdr-macelaru",
+      "composer_id": "388053797e01483593f1e62c6dd407ab",
+      "decision": "prepared_addition_not_applied",
+      "primary_evidence": [
+        "https://outhere-music.com/en/albums/bartok-wooden-prince-dance-suite"
+      ],
+      "source_album": {
+        "id": "267871130",
+        "title": "Bartók: The Wooden Prince & Dance Suite",
+        "barcode": "691062071420",
+        "release_date": "2023-03-10"
+      },
+      "coverage": "complete_selected_work",
+      "tracks": [
+        {
+          "position": 51,
+          "id": "267871131",
+          "isrc": "GBASH2371401",
+          "title": "The Wooden Prince, Op. 13 Sz. 60: I. Introduction"
+        },
+        {
+          "position": 52,
+          "id": "267871132",
+          "isrc": "GBASH2371402",
+          "title": "The Wooden Prince, Op. 13 Sz. 60: II. First Dance. Dance of the Princess in the Forest"
+        },
+        {
+          "position": 53,
+          "id": "267871133",
+          "isrc": "GBASH2371403",
+          "title": "The Wooden Prince, Op. 13 Sz. 60: III. The Prince Sets off and Falls in Love"
+        },
+        {
+          "position": 54,
+          "id": "267871134",
+          "isrc": "GBASH2371404",
+          "title": "The Wooden Prince, Op. 13 Sz. 60: IV. Second Dance. Dance of the Trees"
+        },
+        {
+          "position": 55,
+          "id": "267871135",
+          "isrc": "GBASH2371405",
+          "title": "The Wooden Prince, Op. 13 Sz. 60: V. Third Dance. Dance of the Waves"
+        },
+        {
+          "position": 56,
+          "id": "267871136",
+          "isrc": "GBASH2371406",
+          "title": "The Wooden Prince, Op. 13 Sz. 60: VI. The Prince Has an Idea"
+        },
+        {
+          "position": 57,
+          "id": "267871137",
+          "isrc": "GBASH2371407",
+          "title": "The Wooden Prince, Op. 13 Sz. 60: VII. Fourth Dance. Dance of the Princess With the Wooden Prince"
+        },
+        {
+          "position": 58,
+          "id": "267871138",
+          "isrc": "GBASH2371408",
+          "title": "The Wooden Prince, Op. 13 Sz. 60: VIII. The Prince Despairs"
+        },
+        {
+          "position": 59,
+          "id": "267871139",
+          "isrc": "GBASH2371409",
+          "title": "The Wooden Prince, Op. 13 Sz. 60: IX. The prince Is Restored"
+        },
+        {
+          "position": 60,
+          "id": "267871140",
+          "isrc": "GBASH2371410",
+          "title": "The Wooden Prince, Op. 13 Sz. 60: X. Return of the Princess - Fifth Dance"
+        },
+        {
+          "position": 61,
+          "id": "267871141",
+          "isrc": "GBASH2371411",
+          "title": "The Wooden Prince, Op. 13 Sz. 60: XI. The Wooden Prince Falls to the Ground - The Radiant Prince Appears - Sixth Dance"
+        },
+        {
+          "position": 62,
+          "id": "267871142",
+          "isrc": "GBASH2371412",
+          "title": "The Wooden Prince, Op. 13 Sz. 60: XII. Seventh Dance. The Despair of the Princess"
+        },
+        {
+          "position": 63,
+          "id": "267871143",
+          "isrc": "GBASH2371413",
+          "title": "The Wooden Prince, Op. 13 Sz. 60: XIII. The Happy End"
+        }
+      ]
+    },
+    {
+      "unit": 6,
+      "positions": [
+        64,
+        69
+      ],
+      "source_title": "Dance Suite, Sz. 77",
+      "prepared_work_id": "bartok-dance-suite",
+      "prepared_performance_id": "bartok-dance-suite-wdr-macelaru",
+      "composer_id": "388053797e01483593f1e62c6dd407ab",
+      "decision": "prepared_addition_not_applied",
+      "primary_evidence": [
+        "https://outhere-music.com/en/albums/bartok-wooden-prince-dance-suite"
+      ],
+      "source_album": {
+        "id": "267871130",
+        "title": "Bartók: The Wooden Prince & Dance Suite",
+        "barcode": "691062071420",
+        "release_date": "2023-03-10"
+      },
+      "coverage": "complete_selected_work",
+      "tracks": [
+        {
+          "position": 64,
+          "id": "267871144",
+          "isrc": "GBASH2371414",
+          "title": "Dance Suite, Sz. 77: I. Moderato"
+        },
+        {
+          "position": 65,
+          "id": "267871145",
+          "isrc": "GBASH2371415",
+          "title": "Dance Suite, Sz. 77: II. Allegro molto"
+        },
+        {
+          "position": 66,
+          "id": "267871146",
+          "isrc": "GBASH2371416",
+          "title": "Dance Suite, Sz. 77: III. Allegro vivace"
+        },
+        {
+          "position": 67,
+          "id": "267871147",
+          "isrc": "GBASH2371417",
+          "title": "Dance Suite, Sz. 77: IV. Molto tranquillo"
+        },
+        {
+          "position": 68,
+          "id": "267871148",
+          "isrc": "GBASH2371418",
+          "title": "Dance Suite, Sz. 77: V. Comodo"
+        },
+        {
+          "position": 69,
+          "id": "267871149",
+          "isrc": "GBASH2371419",
+          "title": "Dance Suite, Sz. 77: VI. Finale. Allegro"
+        }
+      ]
+    },
+    {
+      "unit": 13,
+      "positions": [
+        96,
+        99
+      ],
+      "source_title": "Sibelius: Symphony No. 1 in E Minor, Op. 39",
+      "prepared_work_id": "sibelius-symphony-1",
+      "prepared_performance_id": "sibelius-symphony-1-oslo-makela",
+      "composer_id": "jean-sibelius",
+      "decision": "prepared_addition_not_applied",
+      "primary_evidence": [
+        "https://www.deccaclassics.com/en/catalogue/products/sibelius-klaus-maekelae-12615",
+        "https://www.deccaclassics.com/en/artists/klaus-makela/news/klaus-maekelae-releases-debut-album-265377"
+      ],
+      "source_album": {
+        "id": "221536040",
+        "title": "Sibelius: Symphonies 1-7; Tapiola; 3 Late Fragments",
+        "barcode": "00028948528516",
+        "release_date": "2022-03-25"
+      },
+      "coverage": "complete_selected_work",
+      "tracks": [
+        {
+          "position": 96,
+          "id": "221536041",
+          "isrc": "GBBBC2100796",
+          "title": "Sibelius: Symphony No. 1 in E Minor, Op. 39: I. Andante, ma non troppo – Allegro energico"
+        },
+        {
+          "position": 97,
+          "id": "221536042",
+          "isrc": "GBBBC2100797",
+          "title": "Sibelius: Symphony No. 1 in E Minor, Op. 39: II. Andante, ma non troppo lento"
+        },
+        {
+          "position": 98,
+          "id": "221536043",
+          "isrc": "GBBBC2100798",
+          "title": "Sibelius: Symphony No. 1 in E Minor, Op. 39: III. Scherzo. Allegro"
+        },
+        {
+          "position": 99,
+          "id": "221536044",
+          "isrc": "GBBBC2100799",
+          "title": "Sibelius: Symphony No. 1 in E Minor, Op. 39: IV. Finale, quasi una fantasia. Andante – Allegro molto"
+        }
+      ]
+    },
+    {
+      "unit": 14,
+      "positions": [
+        100,
+        103
+      ],
+      "source_title": "Sibelius: Symphony No. 2 in D Major, Op. 43",
+      "prepared_work_id": "sibelius-symphony-2",
+      "prepared_performance_id": "sibelius-symphony-2-oslo-makela",
+      "composer_id": "jean-sibelius",
+      "decision": "prepared_addition_not_applied",
+      "primary_evidence": [
+        "https://www.deccaclassics.com/en/catalogue/products/sibelius-klaus-maekelae-12615",
+        "https://www.deccaclassics.com/en/artists/klaus-makela/news/klaus-maekelae-releases-debut-album-265377"
+      ],
+      "source_album": {
+        "id": "221536040",
+        "title": "Sibelius: Symphonies 1-7; Tapiola; 3 Late Fragments",
+        "barcode": "00028948528516",
+        "release_date": "2022-03-25"
+      },
+      "coverage": "complete_selected_work",
+      "tracks": [
+        {
+          "position": 100,
+          "id": "221536045",
+          "isrc": "GBBBC2100800",
+          "title": "Sibelius: Symphony No. 2 in D Major, Op. 43: I. Allegretto"
+        },
+        {
+          "position": 101,
+          "id": "221536046",
+          "isrc": "GBBBC2100801",
+          "title": "Sibelius: Symphony No. 2 in D Major, Op. 43: II. Tempo andante, ma rubato"
+        },
+        {
+          "position": 102,
+          "id": "221536047",
+          "isrc": "GBBBC2100802",
+          "title": "Sibelius: Symphony No. 2 in D Major, Op. 43: III. Vivacissimo –"
+        },
+        {
+          "position": 103,
+          "id": "221536048",
+          "isrc": "GBBBC2100803",
+          "title": "Sibelius: Symphony No. 2 in D Major, Op. 43: IV. Finale. Allegro moderato"
+        }
+      ]
+    },
+    {
+      "unit": 15,
+      "positions": [
+        104,
+        104
+      ],
+      "source_title": "Sibelius: Symphony No. 3 in C Major, Op. 52",
+      "prepared_work_id": "sibelius-symphony-3",
+      "prepared_performance_id": "sibelius-symphony-3-oslo-makela",
+      "composer_id": "jean-sibelius",
+      "decision": "prepared_addition_not_applied",
+      "primary_evidence": [
+        "https://www.deccaclassics.com/en/catalogue/products/sibelius-klaus-maekelae-12615",
+        "https://www.deccaclassics.com/en/artists/klaus-makela/news/klaus-maekelae-releases-debut-album-265377"
+      ],
+      "source_album": {
+        "id": "221536040",
+        "title": "Sibelius: Symphonies 1-7; Tapiola; 3 Late Fragments",
+        "barcode": "00028948528516",
+        "release_date": "2022-03-25"
+      },
+      "coverage": "first_movement_only",
+      "tracks": [
+        {
+          "position": 104,
+          "id": "221536049",
+          "isrc": "GBBBC2100804",
+          "title": "Sibelius: Symphony No. 3 in C Major, Op. 52: I. Allegro moderato"
+        }
+      ]
+    },
+    {
+      "unit": 16,
+      "positions": [
+        105,
+        107
+      ],
+      "source_title": "Sibelius: Symphony No. 5 in E-Flat Major, Op. 82",
+      "prepared_work_id": "sibelius-symphony-5",
+      "prepared_performance_id": "sibelius-symphony-5-oslo-makela",
+      "composer_id": "jean-sibelius",
+      "decision": "prepared_addition_not_applied",
+      "primary_evidence": [
+        "https://www.deccaclassics.com/en/catalogue/products/sibelius-klaus-maekelae-12615",
+        "https://www.deccaclassics.com/en/artists/klaus-makela/news/klaus-maekelae-releases-debut-album-265377"
+      ],
+      "source_album": {
+        "id": "221536040",
+        "title": "Sibelius: Symphonies 1-7; Tapiola; 3 Late Fragments",
+        "barcode": "00028948528516",
+        "release_date": "2022-03-25"
+      },
+      "coverage": "complete_selected_work",
+      "tracks": [
+        {
+          "position": 105,
+          "id": "221536056",
+          "isrc": "GBBBC2100811",
+          "title": "Sibelius: Symphony No. 5 in E-Flat Major, Op. 82: I. Tempo molto moderato – Largamente – Allegro moderato – Presto"
+        },
+        {
+          "position": 106,
+          "id": "221536057",
+          "isrc": "GBBBC2100812",
+          "title": "Sibelius: Symphony No. 5 in E-Flat Major, Op. 82: II. Andante mosso, quasi allegretto"
+        },
+        {
+          "position": 107,
+          "id": "221536058",
+          "isrc": "GBBBC2100813",
+          "title": "Sibelius: Symphony No. 5 in E-Flat Major, Op. 82: III. Allegro molto – Misterioso – un pochettino largamente – Largamente assai"
+        }
+      ]
+    },
+    {
+      "unit": 17,
+      "positions": [
+        108,
+        111
+      ],
+      "source_title": "Sibelius: Symphony No. 6 in D Minor, Op. 104",
+      "prepared_work_id": "sibelius-symphony-6",
+      "prepared_performance_id": "sibelius-symphony-6-oslo-makela",
+      "composer_id": "jean-sibelius",
+      "decision": "prepared_addition_not_applied",
+      "primary_evidence": [
+        "https://www.deccaclassics.com/en/catalogue/products/sibelius-klaus-maekelae-12615",
+        "https://www.deccaclassics.com/en/artists/klaus-makela/news/klaus-maekelae-releases-debut-album-265377"
+      ],
+      "source_album": {
+        "id": "221536040",
+        "title": "Sibelius: Symphonies 1-7; Tapiola; 3 Late Fragments",
+        "barcode": "00028948528516",
+        "release_date": "2022-03-25"
+      },
+      "coverage": "complete_selected_work",
+      "tracks": [
+        {
+          "position": 108,
+          "id": "221536059",
+          "isrc": "GBBBC2100815",
+          "title": "Sibelius: Symphony No. 6 in D Minor, Op. 104: I. Allegro molto moderato"
+        },
+        {
+          "position": 109,
+          "id": "221536060",
+          "isrc": "GBBBC2100816",
+          "title": "Sibelius: Symphony No. 6 in D Minor, Op. 104: II. Allegretto moderato"
+        },
+        {
+          "position": 110,
+          "id": "221536061",
+          "isrc": "GBBBC2100737",
+          "title": "Sibelius: Symphony No. 6 in D Minor, Op. 104: III. Poco vivace"
+        },
+        {
+          "position": 111,
+          "id": "221536062",
+          "isrc": "GBBBC2100817",
+          "title": "Sibelius: Symphony No. 6 in D Minor, Op. 104: IV. Allegro molto"
+        }
+      ]
+    },
+    {
+      "unit": 18,
+      "positions": [
+        112,
+        115
+      ],
+      "source_title": "Sibelius: Symphony No. 7 in C Major, Op. 105",
+      "prepared_work_id": "sibelius-symphony-7",
+      "prepared_performance_id": "sibelius-symphony-7-oslo-makela",
+      "composer_id": "jean-sibelius",
+      "decision": "prepared_addition_not_applied",
+      "primary_evidence": [
+        "https://www.deccaclassics.com/en/catalogue/products/sibelius-klaus-maekelae-12615",
+        "https://www.deccaclassics.com/en/artists/klaus-makela/news/klaus-maekelae-releases-debut-album-265377"
+      ],
+      "source_album": {
+        "id": "221536040",
+        "title": "Sibelius: Symphonies 1-7; Tapiola; 3 Late Fragments",
+        "barcode": "00028948528516",
+        "release_date": "2022-03-25"
+      },
+      "coverage": "complete_selected_work",
+      "tracks": [
+        {
+          "position": 112,
+          "id": "221536063",
+          "isrc": "GBBBC2100818",
+          "title": "Sibelius: Symphony No. 7 in C Major, Op. 105: I. Adagio –"
+        },
+        {
+          "position": 113,
+          "id": "221536064",
+          "isrc": "GBBBC2100819",
+          "title": "Sibelius: Symphony No. 7 in C Major, Op. 105: II. Vivacissimo – Adagio –"
+        },
+        {
+          "position": 114,
+          "id": "221536065",
+          "isrc": "GBBBC2100820",
+          "title": "Sibelius: Symphony No. 7 in C Major, Op. 105: III. Allegro molto moderato – Allegro moderato –"
+        },
+        {
+          "position": 115,
+          "id": "221536066",
+          "isrc": "GBBBC2100821",
+          "title": "Sibelius: Symphony No. 7 in C Major, Op. 105: IV. Vivace – Presto – Adagio – Largamente molto – Affettuoso"
+        }
+      ]
+    },
+    {
+      "unit": 19,
+      "positions": [
+        116,
+        116
+      ],
+      "source_title": "Sibelius: Tapiola, Op. 112",
+      "prepared_work_id": "sibelius-tapiola",
+      "prepared_performance_id": "sibelius-tapiola-oslo-makela",
+      "composer_id": "jean-sibelius",
+      "decision": "prepared_addition_not_applied",
+      "primary_evidence": [
+        "https://www.deccaclassics.com/en/catalogue/products/sibelius-klaus-maekelae-12615",
+        "https://www.deccaclassics.com/en/artists/klaus-makela/news/klaus-maekelae-releases-debut-album-265377"
+      ],
+      "source_album": {
+        "id": "221536040",
+        "title": "Sibelius: Symphonies 1-7; Tapiola; 3 Late Fragments",
+        "barcode": "00028948528516",
+        "release_date": "2022-03-25"
+      },
+      "coverage": "complete_selected_work",
+      "tracks": [
+        {
+          "position": 116,
+          "id": "221536067",
+          "isrc": "GBBBC2100822",
+          "title": "Sibelius: Tapiola, Op. 112"
+        }
+      ]
+    },
+    {
+      "unit": 20,
+      "positions": [
+        117,
+        119
+      ],
+      "source_title": "Sibelius: 3 Late Fragments (Compl. Virtanen)",
+      "prepared_work_id": "sibelius-three-late-fragments-virtanen",
+      "prepared_performance_id": "sibelius-three-late-fragments-virtanen-oslo-makela",
+      "composer_id": "jean-sibelius",
+      "decision": "prepared_addition_not_applied",
+      "primary_evidence": [
+        "https://www.deccaclassics.com/en/catalogue/products/sibelius-klaus-maekelae-12615",
+        "https://www.deccaclassics.com/en/artists/klaus-makela/news/klaus-maekelae-releases-debut-album-265377",
+        "https://www.hyperion-records.co.uk/dw.asp?dc=W24919_4852256",
+        "https://www.chandos.net/products/catalogue/CHAN%2010809"
+      ],
+      "source_album": {
+        "id": "221536040",
+        "title": "Sibelius: Symphonies 1-7; Tapiola; 3 Late Fragments",
+        "barcode": "00028948528516",
+        "release_date": "2022-03-25"
+      },
+      "coverage": "complete_realised_fragment_set",
+      "tracks": [
+        {
+          "position": 117,
+          "id": "221536068",
+          "isrc": "GBBBC2100823",
+          "title": "Sibelius: 3 Late Fragments: I. HUL 1325 (Compl. Virtanen)"
+        },
+        {
+          "position": 118,
+          "id": "221536069",
+          "isrc": "GBBBC2100824",
+          "title": "Sibelius: 3 Late Fragments: II. HUL 1326/9 (Compl. Virtanen)"
+        },
+        {
+          "position": 119,
+          "id": "221536070",
+          "isrc": "GBBBC2100825",
+          "title": "Sibelius: 3 Late Fragments: III. Allegro moderato, HUL 1327/2 (Compl. Virtanen)"
+        }
+      ]
+    },
+    {
+      "unit": 21,
+      "positions": [
+        120,
+        121
+      ],
+      "source_title": "Symphony No. 8 in B Minor, D. 759 'Unfinished'",
+      "prepared_work_id": "schubert-symphony-8-unfinished",
+      "prepared_performance_id": "schubert-symphony-8-unfinished-savall",
+      "composer_id": "franz-schubert",
+      "decision": "prepared_addition_not_applied",
+      "primary_evidence": [
+        "https://www.alia-vox.com/en/producte/franz-schubert-transfiguracio/"
+      ],
+      "source_album": {
+        "id": "250180586",
+        "title": "Schubert: Symphonies Nos. 8 & 9",
+        "barcode": "197187021635",
+        "release_date": "2022-10-07"
+      },
+      "coverage": "complete_selected_work",
+      "tracks": [
+        {
+          "position": 120,
+          "id": "250180588",
+          "isrc": "CH4212200050",
+          "title": "Symphony No. 8 in B Minor, D. 759 'Unfinished': I. Allegro moderato"
+        },
+        {
+          "position": 121,
+          "id": "250180589",
+          "isrc": "CH4212200051",
+          "title": "Symphony No. 8 in B Minor, D. 759 'Unfinished': II. Andante con moto"
+        }
+      ]
+    },
+    {
+      "unit": 22,
+      "positions": [
+        122,
+        125
+      ],
+      "source_title": "Symphony No. 9 in C Major D. 944 'The Great'",
+      "prepared_work_id": "schubert-symphony-9-great",
+      "prepared_performance_id": "schubert-symphony-9-great-savall",
+      "composer_id": "franz-schubert",
+      "decision": "prepared_addition_not_applied",
+      "primary_evidence": [
+        "https://www.alia-vox.com/en/producte/franz-schubert-transfiguracio/"
+      ],
+      "source_album": {
+        "id": "250180586",
+        "title": "Schubert: Symphonies Nos. 8 & 9",
+        "barcode": "197187021635",
+        "release_date": "2022-10-07"
+      },
+      "coverage": "complete_selected_work",
+      "tracks": [
+        {
+          "position": 122,
+          "id": "250180590",
+          "isrc": "CH4212200052",
+          "title": "Symphony No. 9 in C Major D. 944 'The Great': I. Andante · Allegro ma non troppo - Più mosso"
+        },
+        {
+          "position": 123,
+          "id": "250180591",
+          "isrc": "CH4212200053",
+          "title": "Symphony No. 9 in C Major D. 944 'The Great': II. Andante con moto"
+        },
+        {
+          "position": 124,
+          "id": "250180592",
+          "isrc": "CH4212200054",
+          "title": "Symphony No. 9 in C Major D. 944 'The Great': III. Allegro vivace - Trio - Scherzo da capo"
+        },
+        {
+          "position": 125,
+          "id": "250180593",
+          "isrc": "CH4212200055",
+          "title": "Symphony No. 9 in C Major D. 944 'The Great': IV. Allegro vivace"
+        }
+      ]
+    },
+    {
+      "unit": 23,
+      "positions": [
+        126,
+        128
+      ],
+      "source_title": "Violin Concerto No. 2, H. 293",
+      "prepared_work_id": "martinu-violin-concerto-2",
+      "prepared_performance_id": "martinu-violin-concerto-2-zimmermann-bamberg-hrusa",
+      "composer_id": "bohuslav-martinu",
+      "decision": "prepared_addition_not_applied",
+      "primary_evidence": [
+        "https://eclassical.textalk.se/shop/17115/art19/5059519-b620d1-BIS-2457_booklet.pdf"
+      ],
+      "source_album": {
+        "id": "283474092",
+        "title": "Martinů: Violin Concertos Nos. 1 & 2 - Bartók: Sonata for Solo Violin",
+        "barcode": "7318599924571",
+        "release_date": "2020-11-06"
+      },
+      "coverage": "complete_selected_work",
+      "tracks": [
+        {
+          "position": 126,
+          "id": "283474093",
+          "isrc": "SEAEA2057010",
+          "title": "Violin Concerto No. 2, H. 293: I. Andante - Poco allegro"
+        },
+        {
+          "position": 127,
+          "id": "283474094",
+          "isrc": "SEAEA2057020",
+          "title": "Violin Concerto No. 2, H. 293: II. Andante moderato"
+        },
+        {
+          "position": 128,
+          "id": "283474095",
+          "isrc": "SEAEA2057030",
+          "title": "Violin Concerto No. 2, H. 293: III. Poco allegro"
+        }
+      ]
+    },
+    {
+      "unit": 24,
+      "positions": [
+        129,
+        131
+      ],
+      "source_title": "Violin Concerto No. 1, H. 226",
+      "prepared_work_id": "martinu-violin-concerto-1",
+      "prepared_performance_id": "martinu-violin-concerto-1-zimmermann-bamberg-hrusa",
+      "composer_id": "bohuslav-martinu",
+      "decision": "prepared_addition_not_applied",
+      "primary_evidence": [
+        "https://eclassical.textalk.se/shop/17115/art19/5059519-b620d1-BIS-2457_booklet.pdf"
+      ],
+      "source_album": {
+        "id": "283474092",
+        "title": "Martinů: Violin Concertos Nos. 1 & 2 - Bartók: Sonata for Solo Violin",
+        "barcode": "7318599924571",
+        "release_date": "2020-11-06"
+      },
+      "coverage": "complete_selected_work",
+      "tracks": [
+        {
+          "position": 129,
+          "id": "283474096",
+          "isrc": "SEAEA2057040",
+          "title": "Violin Concerto No. 1, H. 226: I. Allegro moderato"
+        },
+        {
+          "position": 130,
+          "id": "283474097",
+          "isrc": "SEAEA2057050",
+          "title": "Violin Concerto No. 1, H. 226: II. Andante"
+        },
+        {
+          "position": 131,
+          "id": "283474098",
+          "isrc": "SEAEA2057060",
+          "title": "Violin Concerto No. 1, H. 226: III. Allegretto"
+        }
+      ]
+    },
+    {
+      "unit": 25,
+      "positions": [
+        132,
+        135
+      ],
+      "source_title": "Rachmaninoff: Symphony No. 1 in D Minor, Op. 13",
+      "prepared_work_id": "rachmaninoff-symphony-1",
+      "prepared_performance_id": "rachmaninoff-symphony-1-philadelphia-nezet-seguin",
+      "composer_id": "sergei-rachmaninoff",
+      "decision": "prepared_addition_not_applied",
+      "primary_evidence": [
+        "https://www.deutschegrammophon.com/en/catalogue/products/rachmaninoff-symphony-no-1-symphonic-dances-nezet-seguin-12192"
+      ],
+      "source_album": {
+        "id": "170507522",
+        "title": "Rachmaninoff: Symphony 1 + Symphonic Dances",
+        "barcode": "00028948398416",
+        "release_date": "2021-01-29"
+      },
+      "coverage": "complete_selected_work",
+      "tracks": [
+        {
+          "position": 132,
+          "id": "170507523",
+          "isrc": "DEN961904571",
+          "title": "Rachmaninoff: Symphony No. 1 in D Minor, Op. 13: I. Grave - Allegro ma non troppo"
+        },
+        {
+          "position": 133,
+          "id": "170507524",
+          "isrc": "DEN961904572",
+          "title": "Rachmaninoff: Symphony No. 1 in D Minor, Op. 13: II. Allegro animato"
+        },
+        {
+          "position": 134,
+          "id": "170507525",
+          "isrc": "DEN961904573",
+          "title": "Rachmaninoff: Symphony No. 1 in D Minor, Op. 13: III. Larghetto"
+        },
+        {
+          "position": 135,
+          "id": "170507526",
+          "isrc": "DEN961904574",
+          "title": "Rachmaninoff: Symphony No. 1 in D Minor, Op. 13: IV. Allegro con fuoco"
+        }
+      ]
+    },
+    {
+      "unit": 26,
+      "positions": [
+        136,
+        138
+      ],
+      "source_title": "Rachmaninoff: Symphonic Dances, Op. 45",
+      "prepared_work_id": "rachmaninoff-symphonic-dances",
+      "prepared_performance_id": "rachmaninoff-symphonic-dances-philadelphia-nezet-seguin",
+      "composer_id": "sergei-rachmaninoff",
+      "decision": "prepared_addition_not_applied",
+      "primary_evidence": [
+        "https://www.deutschegrammophon.com/en/catalogue/products/rachmaninoff-symphony-no-1-symphonic-dances-nezet-seguin-12192"
+      ],
+      "source_album": {
+        "id": "170507522",
+        "title": "Rachmaninoff: Symphony 1 + Symphonic Dances",
+        "barcode": "00028948398416",
+        "release_date": "2021-01-29"
+      },
+      "coverage": "complete_selected_work",
+      "tracks": [
+        {
+          "position": 136,
+          "id": "170507527",
+          "isrc": "DEN961803711",
+          "title": "Rachmaninoff: Symphonic Dances, Op. 45: I. Non allegro"
+        },
+        {
+          "position": 137,
+          "id": "170507528",
+          "isrc": "DEN961803712",
+          "title": "Rachmaninoff: Symphonic Dances, Op. 45: II. Andante con moto. Tempo di valse"
+        },
+        {
+          "position": 138,
+          "id": "170507529",
+          "isrc": "DEN961803713",
+          "title": "Rachmaninoff: Symphonic Dances, Op. 45: III. Lento assai - Allegro vivace"
+        }
+      ]
+    },
+    {
+      "unit": 27,
+      "positions": [
+        139,
+        139
+      ],
+      "source_title": "Geysir",
+      "prepared_work_id": "simpson-geysir",
+      "prepared_performance_id": "simpson-geysir-simpson-ensemble",
+      "composer_id": "mark-simpson",
+      "decision": "prepared_addition_not_applied",
+      "primary_evidence": [
+        "https://www.orchidclassics.com/releases/orc100150-mark-simpson/"
+      ],
+      "source_album": {
+        "id": "160324009",
+        "title": "Mark Simpson: Geysir - Mozart: Serenade No. 10 in B-Flat Major, K. 361 \"Gran partita\"",
+        "barcode": "5060189561506",
+        "release_date": "2020-11-20"
+      },
+      "coverage": "complete_selected_work",
+      "tracks": [
+        {
+          "position": 139,
+          "id": "160324010",
+          "isrc": "GBYDS2000298",
+          "title": "Geysir"
+        }
+      ]
+    },
+    {
+      "unit": 43,
+      "positions": [
+        208,
+        210
+      ],
+      "source_title": "Shostakovich: Violin Concerto No. 2 in C-Sharp Minor, Op. 129",
+      "prepared_work_id": "dmitri-shostakovich-violin-concerto-no-2-in-c-sharp-minor-work",
+      "prepared_performance_id": "dmitri-shostakovich-violin-concerto-no-2-in-c-sharp-minor-work-ibragimova-jurowski",
+      "composer_id": "dmitri-shostakovich",
+      "decision": "prepared_addition_not_applied",
+      "primary_evidence": [
+        "https://www.hyperion-records.co.uk/dc.asp?dc=D_CDA68313"
+      ],
+      "source_album": {
+        "id": "306149647",
+        "title": "Shostakovich: Violin Concertos 1 & 2",
+        "barcode": "00602448798756",
+        "release_date": "2020-05-29"
+      },
+      "coverage": "complete_selected_work",
+      "tracks": [
+        {
+          "position": 208,
+          "id": "306149652",
+          "isrc": "GBAJY2031305",
+          "title": "Shostakovich: Violin Concerto No. 2 in C-Sharp Minor, Op. 129: I. Moderato"
+        },
+        {
+          "position": 209,
+          "id": "306149653",
+          "isrc": "GBAJY2031306",
+          "title": "Shostakovich: Violin Concerto No. 2 in C-Sharp Minor, Op. 129: II. Adagio –"
+        },
+        {
+          "position": 210,
+          "id": "306149654",
+          "isrc": "GBAJY2031307",
+          "title": "Shostakovich: Violin Concerto No. 2 in C-Sharp Minor, Op. 129: III. Adagio – Allegro"
+        }
+      ]
+    },
+    {
+      "unit": 44,
+      "positions": [
+        211,
+        214
+      ],
+      "source_title": "Schmidt: Symphony No. 1 in E Major",
+      "prepared_work_id": "schmidt-symphony-1",
+      "prepared_performance_id": "schmidt-symphony-1-frankfurt-jarvi",
+      "composer_id": "franz-schmidt",
+      "decision": "prepared_addition_not_applied",
+      "primary_evidence": [
+        "https://www.deutschegrammophon.com/en/catalogue/products/franz-schmidt-complete-symphonies-paavo-jaervi-12080",
+        "https://cdn.naxosmusiclibrary.com/sharedfiles/booklets/DGG/booklet-00028948383405.pdf"
+      ],
+      "source_album": {
+        "id": "154158526",
+        "title": "Franz Schmidt: Complete Symphonies",
+        "barcode": "00028948388240",
+        "release_date": "2020-09-11"
+      },
+      "coverage": "complete_selected_work",
+      "tracks": [
+        {
+          "position": 211,
+          "id": "154158527",
+          "isrc": "DEN961702381",
+          "title": "Schmidt: Symphony No. 1 in E Major: I. Sehr langsam - Sehr lebhaft"
+        },
+        {
+          "position": 212,
+          "id": "154158528",
+          "isrc": "DEN961702382",
+          "title": "Schmidt: Symphony No. 1 in E Major: II. Langsam"
+        },
+        {
+          "position": 213,
+          "id": "154158529",
+          "isrc": "DEN961702383",
+          "title": "Schmidt: Symphony No. 1 in E Major: III. Schnell und leicht"
+        },
+        {
+          "position": 214,
+          "id": "154158530",
+          "isrc": "DEN961702384",
+          "title": "Schmidt: Symphony No. 1 in E Major: IV. Lebhaft, doch nicht zu schnell"
+        }
+      ]
+    },
+    {
+      "unit": 45,
+      "positions": [
+        215,
+        217
+      ],
+      "source_title": "Schmidt: Symphony No. 2 in E Flat Major",
+      "prepared_work_id": "schmidt-symphony-2",
+      "prepared_performance_id": "schmidt-symphony-2-frankfurt-jarvi",
+      "composer_id": "franz-schmidt",
+      "decision": "prepared_addition_not_applied",
+      "primary_evidence": [
+        "https://www.deutschegrammophon.com/en/catalogue/products/franz-schmidt-complete-symphonies-paavo-jaervi-12080",
+        "https://cdn.naxosmusiclibrary.com/sharedfiles/booklets/DGG/booklet-00028948383405.pdf"
+      ],
+      "source_album": {
+        "id": "154158526",
+        "title": "Franz Schmidt: Complete Symphonies",
+        "barcode": "00028948388240",
+        "release_date": "2020-09-11"
+      },
+      "coverage": "complete_selected_work",
+      "tracks": [
+        {
+          "position": 215,
+          "id": "154158531",
+          "isrc": "DEN961305221",
+          "title": "Schmidt: Symphony No. 2 in E Flat Major: I. Lebhaft"
+        },
+        {
+          "position": 216,
+          "id": "154158532",
+          "isrc": "DEN961305222",
+          "title": "Schmidt: Symphony No. 2 in E Flat Major: II. Allegretto con variazioni. Einfach und zart"
+        },
+        {
+          "position": 217,
+          "id": "154158533",
+          "isrc": "DEN961305223",
+          "title": "Schmidt: Symphony No. 2 in E Flat Major: III. Finale. Langsam"
+        }
+      ]
+    },
+    {
+      "unit": 46,
+      "positions": [
+        218,
+        218
+      ],
+      "source_title": "Schmidt: Notre Dame: Intermezzo",
+      "prepared_work_id": "schmidt-notre-dame",
+      "prepared_performance_id": "schmidt-notre-dame-frankfurt-jarvi",
+      "composer_id": "franz-schmidt",
+      "decision": "prepared_addition_not_applied",
+      "primary_evidence": [
+        "https://www.deutschegrammophon.com/en/catalogue/products/franz-schmidt-complete-symphonies-paavo-jaervi-12080",
+        "https://cdn.naxosmusiclibrary.com/sharedfiles/booklets/DGG/booklet-00028948383405.pdf"
+      ],
+      "source_album": {
+        "id": "154158526",
+        "title": "Franz Schmidt: Complete Symphonies",
+        "barcode": "00028948388240",
+        "release_date": "2020-09-11"
+      },
+      "coverage": "intermezzo_only",
+      "tracks": [
+        {
+          "position": 218,
+          "id": "154158534",
+          "isrc": "DEN961803680",
+          "title": "Schmidt: Notre Dame: Intermezzo"
+        }
+      ]
+    },
+    {
+      "unit": 47,
+      "positions": [
+        219,
+        222
+      ],
+      "source_title": "Schmidt: Symphony No. 3 in A Major",
+      "prepared_work_id": "schmidt-symphony-3",
+      "prepared_performance_id": "schmidt-symphony-3-frankfurt-jarvi",
+      "composer_id": "franz-schmidt",
+      "decision": "prepared_addition_not_applied",
+      "primary_evidence": [
+        "https://www.deutschegrammophon.com/en/catalogue/products/franz-schmidt-complete-symphonies-paavo-jaervi-12080",
+        "https://cdn.naxosmusiclibrary.com/sharedfiles/booklets/DGG/booklet-00028948383405.pdf"
+      ],
+      "source_album": {
+        "id": "154158526",
+        "title": "Franz Schmidt: Complete Symphonies",
+        "barcode": "00028948388240",
+        "release_date": "2020-09-11"
+      },
+      "coverage": "complete_selected_work",
+      "tracks": [
+        {
+          "position": 219,
+          "id": "154158535",
+          "isrc": "DEN961404561",
+          "title": "Schmidt: Symphony No. 3 in A Major: I. Allegro molto moderato"
+        },
+        {
+          "position": 220,
+          "id": "154158536",
+          "isrc": "DEN961404562",
+          "title": "Schmidt: Symphony No. 3 in A Major: II. Adagio"
+        },
+        {
+          "position": 221,
+          "id": "154158537",
+          "isrc": "DEN961404563",
+          "title": "Schmidt: Symphony No. 3 in A Major: III. Scherzo. Allegro vivace"
+        },
+        {
+          "position": 222,
+          "id": "154158538",
+          "isrc": "DEN961404564",
+          "title": "Schmidt: Symphony No. 3 in A Major: IV. Lento - Allegro vivace"
+        }
+      ]
+    },
+    {
+      "unit": 48,
+      "positions": [
+        223,
+        226
+      ],
+      "source_title": "Schmidt: Symphony No. 4 in C Major",
+      "prepared_work_id": "schmidt-symphony-4",
+      "prepared_performance_id": "schmidt-symphony-4-frankfurt-jarvi",
+      "composer_id": "franz-schmidt",
+      "decision": "prepared_addition_not_applied",
+      "primary_evidence": [
+        "https://www.deutschegrammophon.com/en/catalogue/products/franz-schmidt-complete-symphonies-paavo-jaervi-12080",
+        "https://cdn.naxosmusiclibrary.com/sharedfiles/booklets/DGG/booklet-00028948383405.pdf"
+      ],
+      "source_album": {
+        "id": "154158526",
+        "title": "Franz Schmidt: Complete Symphonies",
+        "barcode": "00028948388240",
+        "release_date": "2020-09-11"
+      },
+      "coverage": "complete_selected_work",
+      "tracks": [
+        {
+          "position": 223,
+          "id": "154158539",
+          "isrc": "DEN961803691",
+          "title": "Schmidt: Symphony No. 4 in C Major: I. Allegro molto moderato - Passionato"
+        },
+        {
+          "position": 224,
+          "id": "154158540",
+          "isrc": "DEN961803692",
+          "title": "Schmidt: Symphony No. 4 in C Major: II. Adagio - Piu lento - Adagio"
+        },
+        {
+          "position": 225,
+          "id": "154158541",
+          "isrc": "DEN961803693",
+          "title": "Schmidt: Symphony No. 4 in C Major: III. Molto Vivace"
+        },
+        {
+          "position": 226,
+          "id": "154158542",
+          "isrc": "DEN961803694",
+          "title": "Schmidt: Symphony No. 4 in C Major: IV. Tempo primo un poco sostenuto - Passionato - Tempo primo. Allegro molto moderato"
+        }
+      ]
+    },
+    {
+      "unit": 49,
+      "positions": [
+        227,
+        231
+      ],
+      "source_title": "Vaughan Williams: Sinfonia antartica \"Symphony No. 7\"",
+      "prepared_work_id": "vaughan-williams-symphony-7-antartica",
+      "prepared_performance_id": "vaughan-williams-symphony-7-antartica-bbc-brabbins",
+      "composer_id": "ralph-vaughan-williams",
+      "decision": "prepared_addition_not_applied",
+      "primary_evidence": [
+        "https://www.hyperion-records.co.uk/dc.asp?dc=D_CDA68405"
+      ],
+      "source_album": {
+        "id": "306142151",
+        "title": "Vaughan Williams: Sinfonia antartica (Symphony No. 7) & Symphony No. 9",
+        "barcode": "00602448798824",
+        "release_date": "2023-03-03"
+      },
+      "coverage": "complete_selected_work",
+      "tracks": [
+        {
+          "position": 227,
+          "id": "306142152",
+          "isrc": "GBAJY2340501",
+          "title": "Vaughan Williams: Sinfonia antartica \"Symphony No. 7\": I. Prelude. Andante maestoso"
+        },
+        {
+          "position": 228,
+          "id": "306142153",
+          "isrc": "GBAJY2340502",
+          "title": "Vaughan Williams: Sinfonia antartica \"Symphony No. 7\": II. Scherzo. Moderato"
+        },
+        {
+          "position": 229,
+          "id": "306142154",
+          "isrc": "GBAJY2340503",
+          "title": "Vaughan Williams: Sinfonia antartica \"Symphony No. 7\": III. Landscape. Lento –"
+        },
+        {
+          "position": 230,
+          "id": "306142155",
+          "isrc": "GBAJY2340504",
+          "title": "Vaughan Williams: Sinfonia antartica \"Symphony No. 7\": IV. Intermezzo. Andante sostenuto"
+        },
+        {
+          "position": 231,
+          "id": "306142156",
+          "isrc": "GBAJY2340505",
+          "title": "Vaughan Williams: Sinfonia antartica \"Symphony No. 7\": V. Epilogue. Alla marcia, moderato (non troppo allegro)"
+        }
+      ]
+    },
+    {
+      "unit": 50,
+      "positions": [
+        232,
+        235
+      ],
+      "source_title": "Vaughan Williams: Symphony No. 9 in E Minor",
+      "prepared_work_id": "vaughan-williams-symphony-9",
+      "prepared_performance_id": "vaughan-williams-symphony-9-bbc-brabbins",
+      "composer_id": "ralph-vaughan-williams",
+      "decision": "prepared_addition_not_applied",
+      "primary_evidence": [
+        "https://www.hyperion-records.co.uk/dc.asp?dc=D_CDA68405"
+      ],
+      "source_album": {
+        "id": "306142151",
+        "title": "Vaughan Williams: Sinfonia antartica (Symphony No. 7) & Symphony No. 9",
+        "barcode": "00602448798824",
+        "release_date": "2023-03-03"
+      },
+      "coverage": "complete_selected_work",
+      "tracks": [
+        {
+          "position": 232,
+          "id": "306142157",
+          "isrc": "GBAJY2340506",
+          "title": "Vaughan Williams: Symphony No. 9 in E Minor: I. Moderato maestoso"
+        },
+        {
+          "position": 233,
+          "id": "306142158",
+          "isrc": "GBAJY2340507",
+          "title": "Vaughan Williams: Symphony No. 9 in E Minor: II. Andante sostenuto"
+        },
+        {
+          "position": 234,
+          "id": "306142159",
+          "isrc": "GBAJY2340508",
+          "title": "Vaughan Williams: Symphony No. 9 in E Minor: III. Scherzo. Allegro pesante"
+        },
+        {
+          "position": 235,
+          "id": "306142160",
+          "isrc": "GBAJY2340509",
+          "title": "Vaughan Williams: Symphony No. 9 in E Minor: IV. Finale. Andante tranquillo"
+        }
+      ]
+    },
+    {
+      "unit": 72,
+      "positions": [
+        320,
+        322
+      ],
+      "source_title": "Concerto for Piano & Orchestra, FP 146",
+      "prepared_work_id": "poulenc-piano-concerto",
+      "prepared_performance_id": "poulenc-piano-concerto-bebbington",
+      "composer_id": "francis-poulenc",
+      "decision": "prepared_addition_not_applied",
+      "primary_evidence": [
+        "https://www.resonusclassics.com/products/poulenc-piano-concerto-concert-champetre-mark-bebbington-royal-philharmonic-orchestra-res10256"
+      ],
+      "source_album": {
+        "id": "139837484",
+        "title": "Francis Poulenc: Piano Concerto & Concert Champêtre",
+        "barcode": "5060262792148",
+        "release_date": "2020-03-06"
+      },
+      "coverage": "complete_selected_work",
+      "tracks": [
+        {
+          "position": 320,
+          "id": "139837485",
+          "isrc": "GBC3S2025601",
+          "title": "Concerto for Piano & Orchestra, FP 146: I. Allegretto"
+        },
+        {
+          "position": 321,
+          "id": "139837486",
+          "isrc": "GBC3S2025602",
+          "title": "Concerto for Piano & Orchestra, FP 146: II. Andante con moto"
+        },
+        {
+          "position": 322,
+          "id": "139837487",
+          "isrc": "GBC3S2025603",
+          "title": "Concerto for Piano & Orchestra, FP 146: III. Rondeau à la Française"
+        }
+      ]
+    },
+    {
+      "unit": 73,
+      "positions": [
+        323,
+        325
+      ],
+      "source_title": "Trio for Piano, Oboe & Bassoon, FP 43",
+      "prepared_work_id": "poulenc-trio-piano-oboe-bassoon",
+      "prepared_performance_id": "poulenc-trio-piano-oboe-bassoon-bebbington",
+      "composer_id": "francis-poulenc",
+      "decision": "prepared_addition_not_applied",
+      "primary_evidence": [
+        "https://www.resonusclassics.com/products/poulenc-piano-concerto-concert-champetre-mark-bebbington-royal-philharmonic-orchestra-res10256"
+      ],
+      "source_album": {
+        "id": "139837484",
+        "title": "Francis Poulenc: Piano Concerto & Concert Champêtre",
+        "barcode": "5060262792148",
+        "release_date": "2020-03-06"
+      },
+      "coverage": "complete_selected_work",
+      "tracks": [
+        {
+          "position": 323,
+          "id": "139837488",
+          "isrc": "GBC3S2025604",
+          "title": "Trio for Piano, Oboe & Bassoon, FP 43: I. Presto"
+        },
+        {
+          "position": 324,
+          "id": "139837489",
+          "isrc": "GBC3S2025605",
+          "title": "Trio for Piano, Oboe & Bassoon, FP 43: II. Andante"
+        },
+        {
+          "position": 325,
+          "id": "139837490",
+          "isrc": "GBC3S2025606",
+          "title": "Trio for Piano, Oboe & Bassoon, FP 43: III. Rondo"
+        }
+      ]
+    },
+    {
+      "unit": 74,
+      "positions": [
+        326,
+        328
+      ],
+      "source_title": "Concert champêtre, FP 49",
+      "prepared_work_id": "poulenc-concert-champetre",
+      "prepared_performance_id": "poulenc-concert-champetre-bebbington",
+      "composer_id": "francis-poulenc",
+      "decision": "prepared_addition_not_applied",
+      "primary_evidence": [
+        "https://www.resonusclassics.com/products/poulenc-piano-concerto-concert-champetre-mark-bebbington-royal-philharmonic-orchestra-res10256"
+      ],
+      "source_album": {
+        "id": "139837484",
+        "title": "Francis Poulenc: Piano Concerto & Concert Champêtre",
+        "barcode": "5060262792148",
+        "release_date": "2020-03-06"
+      },
+      "coverage": "complete_selected_work",
+      "tracks": [
+        {
+          "position": 326,
+          "id": "139837491",
+          "isrc": "GBC3S2025607",
+          "title": "Concert champêtre, FP 49: I. Allegro molto"
+        },
+        {
+          "position": 327,
+          "id": "139837492",
+          "isrc": "GBC3S2025608",
+          "title": "Concert champêtre, FP 49: II. Andante"
+        },
+        {
+          "position": 328,
+          "id": "139837493",
+          "isrc": "GBC3S2025609",
+          "title": "Concert champêtre, FP 49: III. Finale"
+        }
+      ]
+    },
+    {
+      "unit": 75,
+      "positions": [
+        329,
+        331
+      ],
+      "source_title": "Sonata for Oboe & Piano, FP 185",
+      "prepared_work_id": "poulenc-oboe-sonata",
+      "prepared_performance_id": "poulenc-oboe-sonata-bebbington",
+      "composer_id": "francis-poulenc",
+      "decision": "prepared_addition_not_applied",
+      "primary_evidence": [
+        "https://www.resonusclassics.com/products/poulenc-piano-concerto-concert-champetre-mark-bebbington-royal-philharmonic-orchestra-res10256"
+      ],
+      "source_album": {
+        "id": "139837484",
+        "title": "Francis Poulenc: Piano Concerto & Concert Champêtre",
+        "barcode": "5060262792148",
+        "release_date": "2020-03-06"
+      },
+      "coverage": "complete_selected_work",
+      "tracks": [
+        {
+          "position": 329,
+          "id": "139837494",
+          "isrc": "GBC3S2025610",
+          "title": "Sonata for Oboe & Piano, FP 185: I. Élégie"
+        },
+        {
+          "position": 330,
+          "id": "139837495",
+          "isrc": "GBC3S2025611",
+          "title": "Sonata for Oboe & Piano, FP 185: II. Scherzo"
+        },
+        {
+          "position": 331,
+          "id": "139837496",
+          "isrc": "GBC3S2025612",
+          "title": "Sonata for Oboe & Piano, FP 185: III. Déploration"
+        }
+      ]
+    }
+  ],
+  "staged_validation": {
+    "error_count": 0,
+    "action_required_count": 0,
+    "background_suspicion_count": 118,
+    "new_entity_findings": []
+  },
+  "staged_publication": {
+    "validation_passed": true,
+    "prepared_works_present": 32,
+    "prepared_performances_present": 33,
+    "excerpt_and_realisation_text_checked": true,
+    "generated_pages": 1551
+  }
+}

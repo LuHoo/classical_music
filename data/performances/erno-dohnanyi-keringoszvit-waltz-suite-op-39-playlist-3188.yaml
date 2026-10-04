@@ -1,0 +1,13 @@
+id: erno-dohnanyi-keringoszvit-waltz-suite-op-39-playlist-3188
+work_id: erno-dohnanyi-keringoszvit-waltz-suite-op-39
+performers:
+- name: Miskolc Symphony Orchestra
+- name: László Kovács
+links:
+  tidal:
+    url: https://tidal.com/track/283273337
+release:
+  album_title: 'Dohnanyi: Zrinyi Overture - Symphony in F major - Waltz Suite'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

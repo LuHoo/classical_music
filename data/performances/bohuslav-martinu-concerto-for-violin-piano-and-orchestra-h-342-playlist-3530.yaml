@@ -1,0 +1,15 @@
+id: bohuslav-martinu-concerto-for-violin-piano-and-orchestra-h-342-playlist-3530
+work_id: bohuslav-martinu-concerto-for-violin-piano-and-orchestra-h-342
+performers:
+- name: Miroslav Sekera
+- name: Prague Radio Symphony Orchestra
+- name: Josef Špaček
+links:
+  tidal:
+    url: https://tidal.com/track/310460424
+release:
+  album_title: 'Martinů: Concerto for Violin, Piano and Orchestra, Violin Sonata No. 3, Five Short Pieces'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+version_assignment: unspecified

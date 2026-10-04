@@ -1,0 +1,8 @@
+id: erno-dohnanyi-ruralia-hungarica-op-32b
+work_group_id: erno-dohnanyi-ruralia-hungarica-op-32b-group
+composer_id: erno-dohnanyi
+title: Ruralia hungarica, Op. 32b
+source:
+  file: docs/dohnanyi.md
+catalogue:
+  op: 32b

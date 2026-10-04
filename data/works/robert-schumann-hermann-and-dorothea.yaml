@@ -1,0 +1,10 @@
+id: robert-schumann-hermann-and-dorothea
+work_group_id: robert-schumann-hermann-and-dorothea-group
+composer_id: robert-schumann
+title: Hermann and Dorothea
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url:
+    https://bis.eclassical.com/conductors/dausgaard-thomas/schumann-the-symphonies-and-overtures.html
+catalogue:
+  op: '136'

@@ -1,0 +1,15 @@
+id: john-adams-gnarly-buttons-playlist-3140
+work_id: john-adams-gnarly-buttons
+performers:
+- name: London Sinfonietta
+- name: Michael Collins
+  artist_id: michael-collins
+  role: soloist
+links:
+  tidal:
+    url: https://tidal.com/track/290040
+release:
+  album_title: Gnarly Buttons/John's Book Of Alleged Dances
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

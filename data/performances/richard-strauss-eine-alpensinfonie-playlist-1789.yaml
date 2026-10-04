@@ -1,0 +1,15 @@
+id: richard-strauss-eine-alpensinfonie-playlist-1789
+work_id: richard-strauss-eine-alpensinfonie
+performers:
+- name: Radio-Symphonie-Orchester Berlin
+  role: performer
+- name: Vladimir Jurowski
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/190698772
+release:
+  album_title: 'Strauss: Eine Alpensinfonie, Op. 64, TrV 233 (Live)'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
