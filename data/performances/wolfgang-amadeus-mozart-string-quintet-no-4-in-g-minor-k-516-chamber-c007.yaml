@@ -1,0 +1,13 @@
+id: wolfgang-amadeus-mozart-string-quintet-no-4-in-g-minor-k-516-chamber-c007
+work_id: wolfgang-amadeus-mozart-string-quintet-no-4-in-g-minor-k-516
+performers:
+  - name: Quatuor Ébène
+  - name: Antoine Tamestit
+links:
+  tidal:
+    url: https://tidal.com/track/273502882
+release:
+  album_title: 'Mozart: String Quintets K. 515 & 516'
+source:
+  file: reports/playlist-import/chamber/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/a2327106-07fd-4433-8bd3-d8a5c251c69a

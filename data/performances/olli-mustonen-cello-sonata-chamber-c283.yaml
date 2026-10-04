@@ -1,0 +1,15 @@
+id: olli-mustonen-cello-sonata-chamber-c283
+work_id: olli-mustonen-cello-sonata
+performers:
+  - name: Steven Isserlis
+    role: cello
+  - name: Olli Mustonen
+    role: piano
+links:
+  tidal:
+    url: https://tidal.com/track/28666362
+release:
+  album_title: 'Martinů: Cello Sonatas Nos. 1-3'
+source:
+  file: reports/playlist-import/chamber/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/a2327106-07fd-4433-8bd3-d8a5c251c69a

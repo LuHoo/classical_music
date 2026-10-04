@@ -1,0 +1,12 @@
+id: paul-dukas-lapprenti-sorcier-linos-piano-trio-arrangement-chamber-c168
+work_id: paul-dukas-lapprenti-sorcier-linos-piano-trio-arrangement
+performers:
+  - name: Linos Piano Trio
+links:
+  tidal:
+    url: https://tidal.com/track/280629652
+release:
+  album_title: Stolen Music
+source:
+  file: reports/playlist-import/chamber/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/a2327106-07fd-4433-8bd3-d8a5c251c69a

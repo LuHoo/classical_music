@@ -1,0 +1,12 @@
+id: samuel-barber-string-quartet-op-11-revised-finale-version-chamber-c171
+work_id: samuel-barber-string-quartet-op-11-revised-finale-version
+performers:
+  - name: Escher String Quartet
+links:
+  tidal:
+    url: https://tidal.com/track/190698277
+release:
+  album_title: 'Barber & Ives: String Quartets'
+source:
+  file: reports/playlist-import/chamber/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/a2327106-07fd-4433-8bd3-d8a5c251c69a

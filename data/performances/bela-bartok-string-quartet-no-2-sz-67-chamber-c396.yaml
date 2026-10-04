@@ -1,0 +1,12 @@
+id: bela-bartok-string-quartet-no-2-sz-67-chamber-c396
+work_id: bela-bartok-string-quartet-no-2-sz-67
+performers:
+  - name: Benyounes Quartet
+links:
+  tidal:
+    url: https://tidal.com/track/103745021
+release:
+  album_title: 'Bartók, Beethoven, Debussy: Innovators'
+source:
+  file: reports/playlist-import/chamber/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/a2327106-07fd-4433-8bd3-d8a5c251c69a

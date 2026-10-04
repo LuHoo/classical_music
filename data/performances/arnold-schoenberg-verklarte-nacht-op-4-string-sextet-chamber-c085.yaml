@@ -1,0 +1,17 @@
+id: arnold-schoenberg-verklarte-nacht-op-4-string-sextet-chamber-c085
+work_id: arnold-schoenberg-verklarte-nacht-op-4-string-sextet
+performers:
+  - name: Janine Jansen
+  - name: Boris Brovtsyn
+  - name: Amihai Grosz
+  - name: Maxim Rysanov
+  - name: Torleif Thedéen
+  - name: Jens-Peter Maintz
+links:
+  tidal:
+    url: https://tidal.com/track/17938825
+release:
+  album_title: 'Schubert: String Quintet -  Schoenberg: Verklärte Nacht'
+source:
+  file: reports/playlist-import/chamber/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/a2327106-07fd-4433-8bd3-d8a5c251c69a

@@ -1,0 +1,13 @@
+id: robert-schumann-violin-sonata-no-3-in-a-minor-woo-2-27-chamber-c324
+work_id: robert-schumann-violin-sonata-no-3-in-a-minor-woo-2-27
+performers:
+  - name: Alina Ibragimova
+  - name: Cédric Tiberghien
+links:
+  tidal:
+    url: https://tidal.com/track/413528770
+release:
+  album_title: 'Schumann: Violin Sonatas'
+source:
+  file: reports/playlist-import/chamber/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/a2327106-07fd-4433-8bd3-d8a5c251c69a

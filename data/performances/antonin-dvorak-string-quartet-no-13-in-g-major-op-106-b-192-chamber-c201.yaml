@@ -1,0 +1,12 @@
+id: antonin-dvorak-string-quartet-no-13-in-g-major-op-106-b-192-chamber-c201
+work_id: antonin-dvorak-string-quartet-no-13-in-g-major-op-106-b-192
+performers:
+  - name: Vogler Quartett
+links:
+  tidal:
+    url: https://tidal.com/track/54059923
+release:
+  album_title: 'Dvořák: String Quartets, Vol. 2'
+source:
+  file: reports/playlist-import/chamber/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/a2327106-07fd-4433-8bd3-d8a5c251c69a
