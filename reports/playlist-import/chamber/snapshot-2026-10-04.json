@@ -1423,9 +1423,9 @@
   "base_commit": "f03bf06",
   "summary": {
     "import_new": {
-      "units": 292,
-      "track_occurrences": 932,
-      "distinct_performances": 292
+      "units": 293,
+      "track_occurrences": 935,
+      "distinct_performances": 293
     },
     "reuse_existing": {
       "units": 92,
@@ -1433,13 +1433,18 @@
       "distinct_performances": 91
     },
     "recommendation_choice": {
-      "units": 23,
-      "track_occurrences": 72,
+      "units": 21,
+      "track_occurrences": 66,
       "distinct_performances": 0
     },
     "identity_unresolved": {
       "units": 18,
       "track_occurrences": 46,
+      "distinct_performances": 0
+    },
+    "not_selected": {
+      "units": 1,
+      "track_occurrences": 3,
       "distinct_performances": 0
     }
   },
@@ -5888,6 +5893,11 @@
       "id": "johann-sebastian-bach-concerto-for-harpsichord-and-orchestra-no-5-in-f-min-work-chamber-c417",
       "entity": "performances",
       "path": "data/performances/johann-sebastian-bach-concerto-for-harpsichord-and-orchestra-no-5-in-f-min-work-chamber-c417.yaml"
+    },
+    {
+      "id": "bohuslav-martinu-cello-sonata-no-1-h-277-chamber-c337",
+      "entity": "performances",
+      "path": "data/performances/bohuslav-martinu-cello-sonata-no-1-h-277-chamber-c337.yaml"
     }
   ],
   "changed_existing": [],
@@ -6005,18 +6015,6 @@
       ],
       "existing_performances": [],
       "issue_url": "https://github.com/LuHoo/classical_music/issues/253",
-      "decision": null
-    },
-    {
-      "work_id": "bohuslav-martinu-cello-sonata-no-1-h-277",
-      "title": "Cello Sonata No. 1, H. 277",
-      "composer": "Bohuslav Martinů",
-      "units": [
-        "C282",
-        "C337"
-      ],
-      "existing_performances": [],
-      "issue_url": "https://github.com/LuHoo/classical_music/issues/254",
       "decision": null
     },
     {
@@ -33400,7 +33398,7 @@
         901,
         902
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "not_selected",
       "work_id": "bohuslav-martinu-cello-sonata-no-1-h-277",
       "performers": [
         {
@@ -33421,8 +33419,8 @@
           "url": "https://www.naxos.com/CatalogueDetail/?id=BIS-2042"
         }
       ],
-      "reason": "Alternative interpretation of this Work; explicit curator choice required before any recommendation is added or replaced.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected C337; retain C282 as source evidence.",
+      "review_classification": "curator_not_selected",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/254",
       "tracks": [
         {
@@ -33482,7 +33480,8 @@
           "export_position": 915,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/254#issuecomment-5989259705"
     },
     {
       "unit_id": "C283",
@@ -38811,7 +38810,7 @@
         1076,
         1077
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "import_new",
       "work_id": "bohuslav-martinu-cello-sonata-no-1-h-277",
       "performers": [
         {
@@ -38826,8 +38825,8 @@
           "url": "https://www.supraphonline.cz/album/879901-martinu-kompletni-dilo-pro-violoncello-a-klavir/cd?annotation=1"
         }
       ],
-      "reason": "Alternative interpretation of this Work; explicit curator choice required before any recommendation is added or replaced.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected C337 for all three movements.",
+      "review_classification": "curator_accepted",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/254",
       "tracks": [
         {
@@ -38890,7 +38889,9 @@
           "export_position": null,
           "archive_match": null
         }
-      ]
+      ],
+      "performance_id": "bohuslav-martinu-cello-sonata-no-1-h-277-chamber-c337",
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/254#issuecomment-5989259705"
     },
     {
       "unit_id": "C338",
@@ -47516,6 +47517,37 @@
         ],
         "implementation_report": "reports/curator-decisions/original-arrangement-2026-10-04.json",
         "implementation_pr": "https://github.com/LuHoo/classical_music/pull/297"
+      }
+    },
+    {
+      "work_id": "bohuslav-martinu-cello-sonata-no-1-h-277",
+      "title": "Cello Sonata No. 1, H. 277",
+      "composer": "Bohuslav Martinů",
+      "units": [
+        "C282",
+        "C337"
+      ],
+      "existing_performances": [],
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/254",
+      "decision": {
+        "choice": "selected_performance",
+        "selected_units": [
+          "C337"
+        ],
+        "not_selected_units": [
+          "C282"
+        ],
+        "comment_url": "https://github.com/LuHoo/classical_music/issues/254#issuecomment-5989259705",
+        "performances": [
+          {
+            "performance_id": "bohuslav-martinu-cello-sonata-no-1-h-277-chamber-c337",
+            "profile": null,
+            "unit_id": "C337",
+            "tidal_url": "https://tidal.com/track/440529062"
+          }
+        ],
+        "implementation_report": "reports/playlist-import/chamber/snapshot-2026-10-04.json",
+        "implementation_record": "reports/curator-decisions/c337-2026-10-05.json"
       }
     }
   ]

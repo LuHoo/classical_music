@@ -4,16 +4,17 @@ All **1,368 source occurrences** from the complete 4 October 2026 [snapshot](htt
 
 | Result | Work/recording groups | Source occurrences |
 |---|---:|---:|
-| import_new | 292 | 932 |
+| import_new | 293 | 935 |
 | reuse_existing | 92 | 318 |
-| recommendation_choice | 23 | 72 |
+| recommendation_choice | 21 | 66 |
+| not_selected | 1 | 3 |
 | identity_unresolved | 18 | 46 |
 
-New canonical records: {'persons': 27, 'work-groups': 279, 'works': 291, 'performances': 292}. Reuse covers 91 existing Performances. Groups are not unique Work counts: separate versions, alternative readings and two reused Brahms song excerpts are counted separately.
+New canonical records: {'persons': 27, 'work-groups': 279, 'works': 291, 'performances': 293}. Reuse covers 91 existing Performances. Groups are not unique Work counts: separate versions, alternative readings and two reused Brahms song excerpts are counted separately.
 
 ## Curator choices
 
-**13 pending Work-level decisions**; eight original/arrangement decisions have been implemented with explicit profiles. Respond in an issue or the import chat with the issue number plus a C-code (or `existing`, `geen`, `unresolved` where offered). One answer covers all movements. A short explanation is needed only for doubt, exceptions or an additional comparison profile.
+**12 pending Work-level decisions**; eight original/arrangement decisions have been implemented with explicit profiles. Respond in an issue or the import chat with the issue number plus a C-code (or `existing`, `geen`, `unresolved` where offered). One answer covers all movements. A short explanation is needed only for doubt, exceptions or an additional comparison profile.
 
 Undecided alternatives are excluded from canonical Performance data. Accepted originals and arrangements occupy distinct explicit profiles; existing listening links remain unchanged. Neither playlist order nor ISRC similarity selects a preferred interpretation. An issue is not permission to apply a choice automatically.
 
@@ -33,7 +34,7 @@ Undecided alternatives are excluded from canonical Performance data. Accepted or
 | [#241](https://github.com/LuHoo/classical_music/issues/241) | Wolfgang Amadeus Mozart — Serenade in C Minor, K. 388 | C210, C298 |
 | [#252](https://github.com/LuHoo/classical_music/issues/252) | Igor Stravinsky — Octet | C230, C307; existing |
 | [#253](https://github.com/LuHoo/classical_music/issues/253) | César Franck — Piano Quintet in F Minor, FWV 7 | C276, C364 |
-| [#254](https://github.com/LuHoo/classical_music/issues/254) | Bohuslav Martinů — Cello Sonata No. 1, H. 277 | C282, C337 |
+| [#254](https://github.com/LuHoo/classical_music/issues/254) | Bohuslav Martinů — Cello Sonata No. 1, H. 277 | C282, C337 **Resolved: C337** |
 | [#255](https://github.com/LuHoo/classical_music/issues/255) | Bohuslav Martinů — Cello Sonata No. 2, H. 286 | C284, C339 |
 | [#256](https://github.com/LuHoo/classical_music/issues/256) | Bohuslav Martinů — Cello Sonata No. 3, H. 340 | C286, C340 |
 | [#257](https://github.com/LuHoo/classical_music/issues/257) | Igor Stravinsky — Concerto in E-Flat Major, K060 "Dumbarton Oaks" | C302; existing |
@@ -61,3 +62,7 @@ Run `python scripts/check_chamber_import.py` for full occurrence coverage, one-r
 ## Original and arrangement decisions — 4 October 2026
 
 Lucas extended the decision in #287 to other original/arrangement comparisons. Issues #244, #245, #249–#251 and #258–#260 are resolved in `resolved_choices`, with decision-comment URLs, explicit profiles, all source tracks and unchanged excerpt coverage. [Implementation report](../../curator-decisions/original-arrangement-2026-10-04.json) also covers the seven Mendelssohn Piano decisions (#286–#292). Undecided comparisons within the same profile remain pending.
+
+## C337 decision — 5 October 2026
+
+Issue #254 selects Vilém Vlček and Denis Linnik for all three movements of Martinů’s Cello Sonata No. 1, H. 277. C282 remains traceable as not selected. See the [decision record](../../curator-decisions/c337-2026-10-05.json).

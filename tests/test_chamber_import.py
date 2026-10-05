@@ -83,3 +83,23 @@ def test_resolved_profile_choice_requires_traceable_curator_decision(inventory):
     unit['curator_decision'] = None
     with pytest.raises(AssertionError, match='Missing curator decision'):
         audit.check_inventory(manifest, data)
+
+
+def test_c337_covers_all_movements_and_excludes_c282(inventory):
+    manifest, data = inventory
+    choice = next(c for c in manifest['resolved_choices'] if c['issue_url'].endswith('/254'))
+    selected = next(u for u in manifest['units'] if u['unit_id'] == 'C337')
+    rejected = next(u for u in manifest['units'] if u['unit_id'] == 'C282')
+    assert selected['positions'] == [1075, 1076, 1077]
+    assert selected['disposition'] == 'import_new'
+    assert rejected['disposition'] == 'not_selected'
+    assert selected['curator_decision'] == rejected['curator_decision'] == choice['decision']['comment_url']
+    assert data['performances'][selected['performance_id']]['links']['tidal']['url'] == 'https://tidal.com/track/440529062'
+
+
+def test_rejected_chamber_recording_cannot_be_recommended(inventory):
+    manifest, data = deepcopy(inventory)
+    rejected = next(u for u in manifest['units'] if u['unit_id'] == 'C282')
+    rejected['performance_id'] = 'unselected-recording'
+    with pytest.raises(AssertionError, match='Unselected candidate became'):
+        audit.check_inventory(manifest, data)
