@@ -1423,9 +1423,9 @@
   "base_commit": "f03bf06",
   "summary": {
     "import_new": {
-      "units": 293,
-      "track_occurrences": 935,
-      "distinct_performances": 293
+      "units": 294,
+      "track_occurrences": 939,
+      "distinct_performances": 294
     },
     "reuse_existing": {
       "units": 92,
@@ -1433,8 +1433,8 @@
       "distinct_performances": 91
     },
     "recommendation_choice": {
-      "units": 21,
-      "track_occurrences": 66,
+      "units": 19,
+      "track_occurrences": 58,
       "distinct_performances": 0
     },
     "identity_unresolved": {
@@ -1443,8 +1443,8 @@
       "distinct_performances": 0
     },
     "not_selected": {
-      "units": 1,
-      "track_occurrences": 3,
+      "units": 2,
+      "track_occurrences": 7,
       "distinct_performances": 0
     }
   },
@@ -5898,22 +5898,15 @@
       "id": "bohuslav-martinu-cello-sonata-no-1-h-277-chamber-c337",
       "entity": "performances",
       "path": "data/performances/bohuslav-martinu-cello-sonata-no-1-h-277-chamber-c337.yaml"
+    },
+    {
+      "id": "arthur-bliss-clarinet-quintet-f-20-chamber-c003",
+      "path": "data/performances/arthur-bliss-clarinet-quintet-f-20-chamber-c003.yaml",
+      "entity": "performances"
     }
   ],
   "changed_existing": [],
   "recommendation_choices": [
-    {
-      "work_id": "arthur-bliss-clarinet-quintet-f-20",
-      "title": "Clarinet Quintet, F. 20",
-      "composer": "Arthur Bliss",
-      "units": [
-        "C003",
-        "C287"
-      ],
-      "existing_performances": [],
-      "issue_url": "https://github.com/LuHoo/classical_music/issues/240",
-      "decision": null
-    },
     {
       "work_id": "brahms-piano-quartet-no-3-in-c-minor-werther-quartet-1875-op-60-work",
       "title": "Piano Quartet No. 3 in C Minor, Op. 60",
@@ -6323,7 +6316,7 @@
         13,
         14
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "import_new",
       "work_id": "arthur-bliss-clarinet-quintet-f-20",
       "performers": [
         {
@@ -6336,8 +6329,8 @@
           "locator": "Chamber sheet; join by exact track ID or unique ISRC, never by live position."
         }
       ],
-      "reason": "Alternative interpretation of this Work; explicit curator choice required before any recommendation is added or replaced.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected C003 for all four movements.",
+      "review_classification": "curator_accepted",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/240",
       "tracks": [
         {
@@ -6416,7 +6409,9 @@
           "export_position": 14,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/240#issuecomment-5979903521",
+      "performance_id": "arthur-bliss-clarinet-quintet-f-20-chamber-c003"
     },
     {
       "unit_id": "C004",
@@ -33846,7 +33841,7 @@
         916,
         917
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "not_selected",
       "work_id": "arthur-bliss-clarinet-quintet-f-20",
       "performers": [
         {
@@ -33859,8 +33854,8 @@
           "locator": "Chamber sheet; join by exact track ID or unique ISRC, never by live position."
         }
       ],
-      "reason": "Alternative interpretation of this Work; explicit curator choice required before any recommendation is added or replaced.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected C003; retain C287 as source evidence. Curator reports B is no longer playable.",
+      "review_classification": "curator_not_selected",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/240",
       "tracks": [
         {
@@ -33939,7 +33934,8 @@
           "export_position": 930,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "curator_decision": "https://github.com/LuHoo/classical_music/issues/240#issuecomment-5979903521"
     },
     {
       "unit_id": "C288",
@@ -47548,6 +47544,37 @@
         ],
         "implementation_report": "reports/playlist-import/chamber/snapshot-2026-10-04.json",
         "implementation_record": "reports/curator-decisions/c337-2026-10-05.json"
+      }
+    },
+    {
+      "work_id": "arthur-bliss-clarinet-quintet-f-20",
+      "title": "Clarinet Quintet, F. 20",
+      "composer": "Arthur Bliss",
+      "units": [
+        "C003",
+        "C287"
+      ],
+      "existing_performances": [],
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/240",
+      "decision": {
+        "choice": "selected_performance",
+        "selected_units": [
+          "C003"
+        ],
+        "not_selected_units": [
+          "C287"
+        ],
+        "comment_url": "https://github.com/LuHoo/classical_music/issues/240#issuecomment-5979903521",
+        "performances": [
+          {
+            "performance_id": "arthur-bliss-clarinet-quintet-f-20-chamber-c003",
+            "profile": null,
+            "unit_id": "C003",
+            "tidal_url": "https://tidal.com/track/338572173"
+          }
+        ],
+        "implementation_report": "reports/playlist-import/chamber/snapshot-2026-10-04.json",
+        "implementation_record": "reports/curator-decisions/c003-2026-10-06.json"
       }
     }
   ]

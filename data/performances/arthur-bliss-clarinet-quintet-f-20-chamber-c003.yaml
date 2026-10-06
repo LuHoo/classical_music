@@ -1,0 +1,14 @@
+id: arthur-bliss-clarinet-quintet-f-20-chamber-c003
+work_id: arthur-bliss-clarinet-quintet-f-20
+performers:
+  - name: Wigmore Soloists
+links:
+  tidal:
+    url: https://tidal.com/track/338572173
+release:
+  album_title: 'Ferguson, Bliss & Holloway: Chamber Music'
+source:
+  file: reports/playlist-import/chamber/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/a2327106-07fd-4433-8bd3-d8a5c251c69a
+  unit_id: C003
+  curator_decision: https://github.com/LuHoo/classical_music/issues/240#issuecomment-5979903521
