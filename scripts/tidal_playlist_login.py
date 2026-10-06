@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Local OAuth+PKCE login; token stays in memory; run the disposable pilot or explicitly approved repairs."""
+"""Local OAuth+PKCE login for pilots, repairs or secure curator grant setup."""
 import argparse
 import base64
 import hashlib
@@ -7,6 +7,7 @@ import hmac
 import json
 import os
 import secrets
+import subprocess
 import time
 import webbrowser
 from http.server import BaseHTTPRequestHandler, HTTPServer
@@ -20,10 +21,25 @@ from classical_music.tidal_auth import NoAuthRedirects
 REDIRECT_URI = 'http://127.0.0.1:8765/callback'
 
 
+def save_curator_grant(doc):
+    """Pipe the credential to gh; never print it, put it in argv or write a file."""
+    refresh = doc.get('refresh_token')
+    if not isinstance(refresh, str) or not refresh or any(c.isspace() for c in refresh):
+        raise ValueError('TIDAL did not return a usable refresh grant; no secret saved')
+    try:
+        subprocess.run(['gh', 'secret', 'set', 'TIDAL_USER_REFRESH_TOKEN',
+                        '--repo', 'LuHoo/classical_music'],
+                       input=refresh, text=True, capture_output=True, check=True)
+    except (OSError, subprocess.CalledProcessError):
+        raise ValueError('Could not store the refresh grant. Check gh login/repository permissions and repeat setup') from None
+    print('TIDAL_USER_REFRESH_TOKEN saved. Automatic issue playlists can run after the workflow is merged.')
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--client-id', default=os.environ.get('TIDAL_CLIENT_ID', ''))
     modes = parser.add_mutually_exclusive_group()
+    modes.add_argument('--setup-curator-playlists', action='store_true', help='Authorize comparison playlists and save the refresh grant as a GitHub repository secret')
     modes.add_argument('--repair-spartacus', action='store_true', help='Apply the 29 approved Spartacus replacements')
     modes.add_argument('--repair-one-second', action='store_true', help='Apply the 108 approved one-second duration differences')
     modes.add_argument('--repair-confirmed', action='store_true', help='Apply the 609 approved occurrences to Best Classical')
@@ -61,7 +77,9 @@ def main():
             'scope':'playlists.read playlists.write', 'state':state,
             'code_challenge':challenge, 'code_challenge_method':'S256'})
         print('Opening TIDAL login. Required registered redirect URI: ' + REDIRECT_URI)
-        if args.repair_spartacus:
+        if args.setup_curator_playlists:
+            print('Authorizing automatic curator comparison playlists; the refresh grant will be stored in the LuHoo/classical_music GitHub secret.')
+        elif args.repair_spartacus:
             print('Applying the 29 approved Spartacus replacements to Best Classical after fresh validation.')
         elif args.repair_one_second:
             print('Applying the 108 approved one-second replacements to Best Classical after fresh validation.')
@@ -99,6 +117,9 @@ def main():
     granted = doc.get('scope')
     if granted is not None and 'playlists.write' not in granted.split():
         raise ValueError('TIDAL did not grant playlists.write')
+    if args.setup_curator_playlists:
+        save_curator_grant(doc)
+        return 0
     prior = os.environ.get('TIDAL_USER_ACCESS_TOKEN')
     os.environ['TIDAL_USER_ACCESS_TOKEN']=token
     try:

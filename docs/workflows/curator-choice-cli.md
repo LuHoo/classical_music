@@ -113,3 +113,11 @@ that C287's manual action contains 12423579, 12423580, 12423581 and 12423582.
   tests/test_original_arrangement_decisions.py --no-cov
 .venv/bin/python scripts/check_chamber_import.py
 ```
+
+## Listening before choosing
+
+The [issue listening-playlist workflow](curator-listening-playlists.md) creates
+a separate comparison playlist when a registered curator issue opens. It posts
+one verified link and candidate track ranges in the issue, without changing the
+source playlists or applying any choice. This planning step supports multiple
+collections independently of the decision CLI's current Chamber scope.

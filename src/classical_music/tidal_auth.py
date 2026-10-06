@@ -67,3 +67,44 @@ def access_token() -> str:
         # The runner consumes this command and redacts the ephemeral credential.
         print("::add-mask::" + token)
     return token
+
+
+def user_access_token() -> str:
+    """Use a user token or refresh a user's grant; never substitute an app token."""
+    supplied = os.environ.get('TIDAL_USER_ACCESS_TOKEN', '')
+    if supplied:
+        if any(c.isspace() for c in supplied):
+            raise ValueError('Invalid TIDAL user access token')
+        return supplied
+    refresh = os.environ.get('TIDAL_USER_REFRESH_TOKEN', '')
+    client_id = os.environ.get('TIDAL_CLIENT_ID', '')
+    if not refresh or not client_id:
+        raise ValueError('Configure TIDAL_USER_REFRESH_TOKEN with the curator playlist login command')
+    headers = {'Content-Type': 'application/x-www-form-urlencoded', 'Accept': 'application/json'}
+    secret = os.environ.get('TIDAL_CLIENT_SECRET', '')
+    if secret:
+        headers['Authorization'] = 'Basic ' + base64.b64encode(f'{client_id}:{secret}'.encode()).decode()
+    request = Request(TOKEN_URL, method='POST', headers=headers, data=urlencode({
+        'grant_type': 'refresh_token', 'refresh_token': refresh, 'client_id': client_id}).encode())
+    try:
+        with build_opener(NoAuthRedirects()).open(request, timeout=20) as response:
+            raw = response.read(MAX_TOKEN_RESPONSE_BYTES + 1)
+        if len(raw) > MAX_TOKEN_RESPONSE_BYTES:
+            raise ValueError('Invalid user token response')
+        doc = json.loads(raw)
+        token = doc.get('access_token')
+        if (not isinstance(token, str) or not token or any(c.isspace() for c in token)
+                or str(doc.get('token_type', '')).lower() != 'bearer'
+                or not {'playlists.read', 'playlists.write'}.issubset(doc.get('scope', '').split())):
+            raise ValueError('Invalid user token response or missing playlist read/write scopes')
+        if doc.get('refresh_token', refresh) != refresh:
+            raise ValueError('TIDAL rotated the refresh grant; repeat the local login setup')
+    except HTTPError as exc:
+        raise ValueError(f'TIDAL user login needs renewal (HTTP {exc.code})') from None
+    except (URLError, OSError):
+        raise ValueError('TIDAL user token refresh failed (network error)') from None
+    except (json.JSONDecodeError, UnicodeError, AttributeError, TypeError):
+        raise ValueError('Invalid user token response') from None
+    if os.environ.get('GITHUB_ACTIONS') == 'true':
+        print('::add-mask::' + token)
+    return token

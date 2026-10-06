@@ -48,3 +48,7 @@ change. See [the local workflow and recovery rules](docs/workflows/tidal-link-ma
 Preview a reviewed curator choice with `./curator 246 C093`; add `--apply` to
 record it after validation. See [curator CLI](docs/workflows/curator-choice-cli.md)
 for A/B aliases, existing recommendations and manual playlist confirmation.
+
+New curator issues can also receive an automatic comparison playlist with all
+candidate movements. See [listening-playlist setup](docs/workflows/curator-listening-playlists.md)
+for the one-time TIDAL user authorization and issue-triggered workflow.
