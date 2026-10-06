@@ -5982,7 +5982,11 @@
       ],
       "existing_performances": [],
       "issue_url": "https://github.com/LuHoo/classical_music/issues/241",
-      "decision": null
+      "decision": null,
+      "choice_aliases": {
+        "A": "C210",
+        "B": "C298"
+      }
     },
     {
       "work_id": "igor-stravinsky-octet-k-041-work",
@@ -47575,6 +47579,10 @@
         ],
         "implementation_report": "reports/playlist-import/chamber/snapshot-2026-10-04.json",
         "implementation_record": "reports/curator-decisions/c003-2026-10-06.json"
+      },
+      "choice_aliases": {
+        "A": "C003",
+        "B": "C287"
       }
     }
   ]

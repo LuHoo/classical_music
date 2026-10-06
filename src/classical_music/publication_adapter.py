@@ -88,8 +88,9 @@ class PublicationDataAdapter:
             self.errors.append(f"{entity_type} directory not found: {directory}")
             return entities
 
-        yaml = YAML()
-        yaml.preserve_quotes = True
+        # Publication only reads values; round-trip comment/quote objects are
+        # unnecessary and costly when validating thousands of canonical files.
+        yaml = YAML(typ="safe")
 
         for yaml_file in sorted(directory.glob("**/*.yaml")):
             try:
