@@ -4,23 +4,23 @@ All **1,368 source occurrences** from the complete 4 October 2026 [snapshot](htt
 
 | Result | Work/recording groups | Source occurrences |
 |---|---:|---:|
-| import_new | 293 | 935 |
+| import_new | 294 | 939 |
 | reuse_existing | 92 | 318 |
-| recommendation_choice | 21 | 66 |
-| not_selected | 1 | 3 |
+| recommendation_choice | 19 | 58 |
+| not_selected | 2 | 7 |
 | identity_unresolved | 18 | 46 |
 
-New canonical records: {'persons': 27, 'work-groups': 279, 'works': 291, 'performances': 293}. Reuse covers 91 existing Performances. Groups are not unique Work counts: separate versions, alternative readings and two reused Brahms song excerpts are counted separately.
+New canonical records: {'persons': 27, 'work-groups': 279, 'works': 291, 'performances': 294}. Reuse covers 91 existing Performances. Groups are not unique Work counts: separate versions, alternative readings and two reused Brahms song excerpts are counted separately.
 
 ## Curator choices
 
-**12 pending Work-level decisions**; eight original/arrangement decisions have been implemented with explicit profiles. Respond in an issue or the import chat with the issue number plus a C-code (or `existing`, `geen`, `unresolved` where offered). One answer covers all movements. A short explanation is needed only for doubt, exceptions or an additional comparison profile.
+**11 pending Work-level decisions**; eight original/arrangement decisions have been implemented with explicit profiles. Respond in an issue or the import chat with the issue number plus a C-code (or `existing`, `geen`, `unresolved` where offered). One answer covers all movements. A short explanation is needed only for doubt, exceptions or an additional comparison profile.
 
 Undecided alternatives are excluded from canonical Performance data. Accepted originals and arrangements occupy distinct explicit profiles; existing listening links remain unchanged. Neither playlist order nor ISRC similarity selects a preferred interpretation. An issue is not permission to apply a choice automatically.
 
 | Issue | Composer — Work | Candidates |
 |---|---|---|
-| [#240](https://github.com/LuHoo/classical_music/issues/240) | Arthur Bliss — Clarinet Quintet, F. 20 | C003, C287 |
+| [#240](https://github.com/LuHoo/classical_music/issues/240) | Arthur Bliss — Clarinet Quintet, F. 20 | C003, C287 **Resolved: C003 (Wigmore Soloists)** |
 | [#242](https://github.com/LuHoo/classical_music/issues/242) | Johannes Brahms — Piano Quartet No. 3 in C Minor, Op. 60 | C035, C400; existing |
 | [#243](https://github.com/LuHoo/classical_music/issues/243) | Johannes Brahms — Piano Quartet No. 2 in A Major, Op. 26 | C036, C401; existing |
 | [#244](https://github.com/LuHoo/classical_music/issues/244) | César Franck — Violin Sonata in A Major, FWV 8 | C069, C098  **Resolved: both, distinct profiles** |
