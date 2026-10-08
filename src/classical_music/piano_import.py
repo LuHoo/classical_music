@@ -138,21 +138,23 @@ def check_inventory(manifest: dict, data: dict) -> None:
             assert data['performances'][p['performance_id']].get('profile') == p['profile']
 
 
-def audit(root: Path = ROOT) -> dict:
+def audit(root: Path = ROOT, *, data=None, generated=None) -> dict:
     manifest = json.loads((root / MANIFEST).read_text())
     yaml = YAML(typ='safe')
-    data = {}
-    for kind in ('persons', 'work-groups', 'works', 'performances'):
-        data[kind] = {}
-        for path in (root / 'data' / kind).rglob('*.yaml'):
-            record = yaml.load(path.read_text())
-            assert record['id'] not in data[kind]
-            data[kind][record['id']] = record
+    if data is None:
+        data = {}
+        for kind in ('persons', 'work-groups', 'works', 'performances'):
+            data[kind] = {}
+            for path in (root / 'data' / kind).rglob('*.yaml'):
+                record = yaml.load(path.read_text())
+                assert record['id'] not in data[kind]
+                data[kind][record['id']] = record
     check_inventory(manifest, data)
     validate_decision_records(manifest, root)
     for record in manifest['new_records']:
         assert yaml.load((root / record['path']).read_text())['id'] == record['id']
-    generated = PublicationSiteGenerator(root).generate()
+    if generated is None:
+        generated = PublicationSiteGenerator(root).generate()
     for u in manifest['units']:
         if u['disposition'] != 'import_new':
             continue

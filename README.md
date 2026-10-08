@@ -45,8 +45,9 @@ change. See [the local workflow and recovery rules](docs/workflows/tidal-link-ma
 
 ## Curator decisions
 
-Preview a reviewed curator choice with `./curator 246 C093`; add `--apply` to
-record it after validation. See [curator CLI](docs/workflows/curator-choice-cli.md)
+Record a reviewed curator choice with `./curator 246 C093` (default curator LAH).
+After all decisions, run `./curator finish` for validation and batch tests.
+Use `--dry-run` for an optional preview without saving. See [curator CLI](docs/workflows/curator-choice-cli.md)
 for A/B aliases, existing recommendations and manual playlist confirmation.
 
 New curator issues can also receive an automatic comparison playlist with all
@@ -56,4 +57,4 @@ for the one-time TIDAL user authorization and issue-triggered workflow.
 ## Scripts and curator workflow
 
 See the [User Manual](docs/workflows/scripts-user-manual.md) for playlist support,
-all script parameters, safe preview/apply examples and the fully manual Git workflow.
+all script parameters, decision/finish examples and the fully manual Git workflow.

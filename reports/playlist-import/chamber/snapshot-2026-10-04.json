@@ -1423,18 +1423,18 @@
   "base_commit": "f03bf06",
   "summary": {
     "import_new": {
-      "units": 294,
-      "track_occurrences": 939,
-      "distinct_performances": 294
+      "units": 298,
+      "track_occurrences": 950,
+      "distinct_performances": 298
     },
     "reuse_existing": {
-      "units": 92,
-      "track_occurrences": 318,
-      "distinct_performances": 91
+      "units": 91,
+      "track_occurrences": 315,
+      "distinct_performances": 90
     },
     "recommendation_choice": {
-      "units": 19,
-      "track_occurrences": 58,
+      "units": 9,
+      "track_occurrences": 27,
       "distinct_performances": 0
     },
     "identity_unresolved": {
@@ -1443,8 +1443,8 @@
       "distinct_performances": 0
     },
     "not_selected": {
-      "units": 2,
-      "track_occurrences": 7,
+      "units": 9,
+      "track_occurrences": 30,
       "distinct_performances": 0
     }
   },
@@ -5903,50 +5903,38 @@
       "id": "arthur-bliss-clarinet-quintet-f-20-chamber-c003",
       "path": "data/performances/arthur-bliss-clarinet-quintet-f-20-chamber-c003.yaml",
       "entity": "performances"
+    },
+    {
+      "id": "bohuslav-martinu-cello-sonata-no-3-h-340-chamber-c340",
+      "path": "data/performances/bohuslav-martinu-cello-sonata-no-3-h-340-chamber-c340.yaml",
+      "entity": "performances"
+    },
+    {
+      "id": "bohuslav-martinu-cello-sonata-no-2-h-286-chamber-c339",
+      "path": "data/performances/bohuslav-martinu-cello-sonata-no-2-h-286-chamber-c339.yaml",
+      "entity": "performances"
+    },
+    {
+      "id": "jacques-ibert-trois-pieces-breves-chamber-c372",
+      "path": "data/performances/jacques-ibert-trois-pieces-breves-chamber-c372.yaml",
+      "entity": "performances"
+    },
+    {
+      "id": "igor-stravinsky-octet-k-041-work-chamber-c230",
+      "path": "data/performances/igor-stravinsky-octet-k-041-work-chamber-c230.yaml",
+      "entity": "performances"
     }
   ],
-  "changed_existing": [],
+  "changed_existing": [
+    {
+      "id": "igor-stravinsky-octet-k-041-work-juilliard-school-ensemble-royal-academy-of-music-barbara-hannigan",
+      "entity": "performances",
+      "path": "data/performances/igor-stravinsky-octet-k-041-work-juilliard-school-ensemble-royal-academy-of-music-barbara-hannigan.yaml",
+      "action": "removed_by_curator",
+      "decision_record": "reports/curator-decisions/issue-252.json"
+    }
+  ],
   "recommendation_choices": [
-    {
-      "work_id": "brahms-piano-quartet-no-3-in-c-minor-werther-quartet-1875-op-60-work",
-      "title": "Piano Quartet No. 3 in C Minor, Op. 60",
-      "composer": "Johannes Brahms",
-      "units": [
-        "C035",
-        "C400"
-      ],
-      "existing_performances": [
-        "brahms-piano-quartet-no-3-in-c-minor-werther-quartet-1875-op-60-work-maria-nowak-katarzyna-budnik-yuya-okamoto-krystian-zimerman"
-      ],
-      "issue_url": "https://github.com/LuHoo/classical_music/issues/242",
-      "decision": null
-    },
-    {
-      "work_id": "brahms-piano-quartet-no-2-in-a-major-1861-op-26-work",
-      "title": "Piano Quartet No. 2 in A Major, Op. 26",
-      "composer": "Johannes Brahms",
-      "units": [
-        "C036",
-        "C401"
-      ],
-      "existing_performances": [
-        "brahms-piano-quartet-no-2-in-a-major-1861-op-26-work-maria-nowak-katarzyna-budnik-yuya-okamoto-krystian-zimerman"
-      ],
-      "issue_url": "https://github.com/LuHoo/classical_music/issues/243",
-      "decision": null
-    },
-    {
-      "work_id": "jacques-ibert-trois-pieces-breves",
-      "title": "Trois pièces brèves",
-      "composer": "Jacques Ibert",
-      "units": [
-        "C093",
-        "C372"
-      ],
-      "existing_performances": [],
-      "issue_url": "https://github.com/LuHoo/classical_music/issues/246",
-      "decision": null
-    },
     {
       "work_id": "albert-roussel-divertissement-op-6",
       "title": "Divertissement, Op. 6",
@@ -5989,20 +5977,6 @@
       }
     },
     {
-      "work_id": "igor-stravinsky-octet-k-041-work",
-      "title": "Octet",
-      "composer": "Igor Stravinsky",
-      "units": [
-        "C230",
-        "C307"
-      ],
-      "existing_performances": [
-        "igor-stravinsky-octet-k-041-work-juilliard-school-ensemble-royal-academy-of-music-barbara-hannigan"
-      ],
-      "issue_url": "https://github.com/LuHoo/classical_music/issues/252",
-      "decision": null
-    },
-    {
       "work_id": "cesar-franck-franck-piano-quintet-in-f-minor-fwv-7",
       "title": "Piano Quintet in F Minor, FWV 7",
       "composer": "César Franck",
@@ -6012,43 +5986,6 @@
       ],
       "existing_performances": [],
       "issue_url": "https://github.com/LuHoo/classical_music/issues/253",
-      "decision": null
-    },
-    {
-      "work_id": "bohuslav-martinu-cello-sonata-no-2-h-286",
-      "title": "Cello Sonata No. 2, H. 286",
-      "composer": "Bohuslav Martinů",
-      "units": [
-        "C284",
-        "C339"
-      ],
-      "existing_performances": [],
-      "issue_url": "https://github.com/LuHoo/classical_music/issues/255",
-      "decision": null
-    },
-    {
-      "work_id": "bohuslav-martinu-cello-sonata-no-3-h-340",
-      "title": "Cello Sonata No. 3, H. 340",
-      "composer": "Bohuslav Martinů",
-      "units": [
-        "C286",
-        "C340"
-      ],
-      "existing_performances": [],
-      "issue_url": "https://github.com/LuHoo/classical_music/issues/256",
-      "decision": null
-    },
-    {
-      "work_id": "igor-stravinsky-concerto-in-e-flat-dumbarton-oaks-k-060-work",
-      "title": "Concerto in E-Flat Major, K060 \"Dumbarton Oaks\"",
-      "composer": "Igor Stravinsky",
-      "units": [
-        "C302"
-      ],
-      "existing_performances": [
-        "igor-stravinsky-concerto-in-e-flat-dumbarton-oaks-k-060-work-nieuw-sinfonietta-amsterdam-lev-markiz"
-      ],
-      "issue_url": "https://github.com/LuHoo/classical_music/issues/257",
       "decision": null
     }
   ],
@@ -9609,7 +9546,7 @@
         126,
         127
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "not_selected",
       "work_id": "brahms-piano-quartet-no-3-in-c-minor-werther-quartet-1875-op-60-work",
       "performers": [
         {
@@ -9631,8 +9568,8 @@
           "locator": "Chamber sheet; join by exact track ID or unique ISRC, never by live position."
         }
       ],
-      "reason": "Alternative interpretation of this Work; explicit curator choice required before any recommendation is added or replaced.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected C400; retained as historical source evidence.",
+      "review_classification": "curator_not_selected",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/242",
       "tracks": [
         {
@@ -9723,7 +9660,8 @@
           "export_position": 127,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "curator_decision": "reports/curator-decisions/issue-242.json"
     },
     {
       "unit_id": "C036",
@@ -9736,7 +9674,7 @@
         130,
         131
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "not_selected",
       "work_id": "brahms-piano-quartet-no-2-in-a-major-1861-op-26-work",
       "performers": [
         {
@@ -9758,8 +9696,8 @@
           "locator": "Chamber sheet; join by exact track ID or unique ISRC, never by live position."
         }
       ],
-      "reason": "Alternative interpretation of this Work; explicit curator choice required before any recommendation is added or replaced.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected C401; retained as historical source evidence.",
+      "review_classification": "curator_not_selected",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/243",
       "tracks": [
         {
@@ -9850,7 +9788,8 @@
           "export_position": 131,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "curator_decision": "reports/curator-decisions/issue-243.json"
     },
     {
       "unit_id": "C037",
@@ -15429,7 +15368,7 @@
         306,
         307
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "not_selected",
       "work_id": "jacques-ibert-trois-pieces-breves",
       "performers": [
         {
@@ -15442,8 +15381,8 @@
           "locator": "Chamber sheet; join by exact track ID or unique ISRC, never by live position."
         }
       ],
-      "reason": "Alternative interpretation of this Work; explicit curator choice required before any recommendation is added or replaced.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected C372; retained as historical source evidence.",
+      "review_classification": "curator_not_selected",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/246",
       "tracks": [
         {
@@ -15506,7 +15445,8 @@
           "export_position": 307,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "curator_decision": "reports/curator-decisions/issue-246.json"
     },
     {
       "unit_id": "C094",
@@ -28343,7 +28283,7 @@
         736,
         737
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "import_new",
       "work_id": "igor-stravinsky-octet-k-041-work",
       "performers": [
         {
@@ -28360,8 +28300,8 @@
           "locator": "Chamber sheet; join by exact track ID or unique ISRC, never by live position."
         }
       ],
-      "reason": "Alternative interpretation of this Work; explicit curator choice required before any recommendation is added or replaced.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected C230; all source movements included.",
+      "review_classification": "curator_accepted",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/252",
       "tracks": [
         {
@@ -28404,7 +28344,9 @@
           "export_position": 742,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "curator_decision": "reports/curator-decisions/issue-252.json",
+      "performance_id": "igor-stravinsky-octet-k-041-work-chamber-c230"
     },
     {
       "unit_id": "C231",
@@ -33604,7 +33546,7 @@
         908,
         909
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "not_selected",
       "work_id": "bohuslav-martinu-cello-sonata-no-2-h-286",
       "performers": [
         {
@@ -33625,8 +33567,8 @@
           "url": "https://www.naxos.com/CatalogueDetail/?id=BIS-2042"
         }
       ],
-      "reason": "Alternative interpretation of this Work; explicit curator choice required before any recommendation is added or replaced.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected C339; retained as historical source evidence.",
+      "review_classification": "curator_not_selected",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/255",
       "tracks": [
         {
@@ -33686,7 +33628,8 @@
           "export_position": 922,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "curator_decision": "reports/curator-decisions/issue-255.json"
     },
     {
       "unit_id": "C285",
@@ -33750,7 +33693,7 @@
         912,
         913
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "not_selected",
       "work_id": "bohuslav-martinu-cello-sonata-no-3-h-340",
       "performers": [
         {
@@ -33771,8 +33714,8 @@
           "url": "https://www.naxos.com/CatalogueDetail/?id=BIS-2042"
         }
       ],
-      "reason": "Alternative interpretation of this Work; explicit curator choice required before any recommendation is added or replaced.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected C340; retained as historical source evidence.",
+      "review_classification": "curator_not_selected",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/256",
       "tracks": [
         {
@@ -33832,7 +33775,8 @@
           "export_position": 926,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "curator_decision": "reports/curator-decisions/issue-256.json"
     },
     {
       "unit_id": "C287",
@@ -35750,7 +35694,7 @@
         984,
         985
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "not_selected",
       "work_id": "igor-stravinsky-concerto-in-e-flat-dumbarton-oaks-k-060-work",
       "performers": [
         {
@@ -35769,8 +35713,8 @@
           "locator": "Chamber sheet; join by exact track ID or unique ISRC, never by live position."
         }
       ],
-      "reason": "Alternative interpretation of this Work; explicit curator choice required before any recommendation is added or replaced.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected existing; retained as historical source evidence.",
+      "review_classification": "curator_not_selected",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/257",
       "tracks": [
         {
@@ -35836,7 +35780,8 @@
           "export_position": 998,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "curator_decision": "reports/curator-decisions/issue-257.json"
     },
     {
       "unit_id": "C303",
@@ -36266,9 +36211,8 @@
         998,
         999
       ],
-      "disposition": "reuse_existing",
+      "disposition": "not_selected",
       "work_id": "igor-stravinsky-octet-k-041-work",
-      "performance_id": "igor-stravinsky-octet-k-041-work-juilliard-school-ensemble-royal-academy-of-music-barbara-hannigan",
       "performers": [
         {
           "name": "Barbara Hannigan"
@@ -36364,7 +36308,10 @@
           "export_position": 1012,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "review_classification": "curator_not_selected",
+      "reason": "Curator selected C230; retained as historical source evidence.",
+      "curator_decision": "reports/curator-decisions/issue-252.json"
     },
     {
       "unit_id": "C308",
@@ -38950,7 +38897,7 @@
         1080,
         1081
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "import_new",
       "work_id": "bohuslav-martinu-cello-sonata-no-2-h-286",
       "performers": [
         {
@@ -38965,8 +38912,8 @@
           "url": "https://www.supraphonline.cz/album/879901-martinu-kompletni-dilo-pro-violoncello-a-klavir/cd?annotation=1"
         }
       ],
-      "reason": "Alternative interpretation of this Work; explicit curator choice required before any recommendation is added or replaced.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected C339; all source movements included.",
+      "review_classification": "curator_accepted",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/255",
       "tracks": [
         {
@@ -39029,7 +38976,9 @@
           "export_position": null,
           "archive_match": null
         }
-      ]
+      ],
+      "curator_decision": "reports/curator-decisions/issue-255.json",
+      "performance_id": "bohuslav-martinu-cello-sonata-no-2-h-286-chamber-c339"
     },
     {
       "unit_id": "C340",
@@ -39041,7 +38990,7 @@
         1083,
         1084
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "import_new",
       "work_id": "bohuslav-martinu-cello-sonata-no-3-h-340",
       "performers": [
         {
@@ -39056,8 +39005,8 @@
           "url": "https://www.supraphonline.cz/album/879901-martinu-kompletni-dilo-pro-violoncello-a-klavir/cd?annotation=1"
         }
       ],
-      "reason": "Alternative interpretation of this Work; explicit curator choice required before any recommendation is added or replaced.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected C340; all source movements included.",
+      "review_classification": "curator_accepted",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/256",
       "tracks": [
         {
@@ -39120,7 +39069,9 @@
           "export_position": null,
           "archive_match": null
         }
-      ]
+      ],
+      "curator_decision": "reports/curator-decisions/issue-256.json",
+      "performance_id": "bohuslav-martinu-cello-sonata-no-3-h-340-chamber-c340"
     },
     {
       "unit_id": "C341",
@@ -42452,7 +42403,7 @@
         1213,
         1214
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "import_new",
       "work_id": "jacques-ibert-trois-pieces-breves",
       "performers": [
         {
@@ -42464,8 +42415,8 @@
           "url": "https://www.farao-classics.de/index.php?id=3"
         }
       ],
-      "reason": "Alternative interpretation of this Work; explicit curator choice required before any recommendation is added or replaced.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected C372; all source movements included.",
+      "review_classification": "curator_accepted",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/246",
       "tracks": [
         {
@@ -42525,7 +42476,9 @@
           "export_position": null,
           "archive_match": null
         }
-      ]
+      ],
+      "curator_decision": "reports/curator-decisions/issue-246.json",
+      "performance_id": "jacques-ibert-trois-pieces-breves-chamber-c372"
     },
     {
       "unit_id": "C373",
@@ -45660,7 +45613,10 @@
           "export_position": null,
           "archive_match": null
         }
-      ]
+      ],
+      "review_classification": "curator_accepted",
+      "reason": "Curator selected C400; all source movements included.",
+      "curator_decision": "reports/curator-decisions/issue-242.json"
     },
     {
       "unit_id": "C401",
@@ -45788,7 +45744,10 @@
           "export_position": null,
           "archive_match": null
         }
-      ]
+      ],
+      "review_classification": "curator_accepted",
+      "reason": "Curator selected C401; all source movements included.",
+      "curator_decision": "reports/curator-decisions/issue-243.json"
     },
     {
       "unit_id": "C402",
@@ -47583,6 +47542,228 @@
       "choice_aliases": {
         "A": "C003",
         "B": "C287"
+      }
+    },
+    {
+      "work_id": "igor-stravinsky-concerto-in-e-flat-dumbarton-oaks-k-060-work",
+      "title": "Concerto in E-Flat Major, K060 \"Dumbarton Oaks\"",
+      "composer": "Igor Stravinsky",
+      "units": [
+        "C302"
+      ],
+      "existing_performances": [
+        "igor-stravinsky-concerto-in-e-flat-dumbarton-oaks-k-060-work-nieuw-sinfonietta-amsterdam-lev-markiz"
+      ],
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/257",
+      "decision": {
+        "choice": "selected_performance",
+        "selected_units": [],
+        "not_selected_units": [
+          "C302"
+        ],
+        "performances": [
+          {
+            "performance_id": "igor-stravinsky-concerto-in-e-flat-dumbarton-oaks-k-060-work-nieuw-sinfonietta-amsterdam-lev-markiz",
+            "profile": null,
+            "unit_id": null,
+            "tidal_url": "http://www.tidal.com/track/45280439"
+          }
+        ],
+        "implementation_report": "reports/playlist-import/chamber/snapshot-2026-10-04.json",
+        "implementation_record": "reports/curator-decisions/issue-257.json",
+        "decision_record": "reports/curator-decisions/issue-257.json"
+      }
+    },
+    {
+      "work_id": "bohuslav-martinu-cello-sonata-no-3-h-340",
+      "title": "Cello Sonata No. 3, H. 340",
+      "composer": "Bohuslav Martinů",
+      "units": [
+        "C286",
+        "C340"
+      ],
+      "existing_performances": [],
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/256",
+      "decision": {
+        "choice": "selected_performance",
+        "selected_units": [
+          "C340"
+        ],
+        "not_selected_units": [
+          "C286"
+        ],
+        "performances": [
+          {
+            "performance_id": "bohuslav-martinu-cello-sonata-no-3-h-340-chamber-c340",
+            "profile": null,
+            "unit_id": "C340",
+            "tidal_url": "https://tidal.com/track/440529069"
+          }
+        ],
+        "implementation_report": "reports/playlist-import/chamber/snapshot-2026-10-04.json",
+        "implementation_record": "reports/curator-decisions/issue-256.json",
+        "decision_record": "reports/curator-decisions/issue-256.json"
+      }
+    },
+    {
+      "work_id": "bohuslav-martinu-cello-sonata-no-2-h-286",
+      "title": "Cello Sonata No. 2, H. 286",
+      "composer": "Bohuslav Martinů",
+      "units": [
+        "C284",
+        "C339"
+      ],
+      "existing_performances": [],
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/255",
+      "decision": {
+        "choice": "selected_performance",
+        "selected_units": [
+          "C339"
+        ],
+        "not_selected_units": [
+          "C284"
+        ],
+        "performances": [
+          {
+            "performance_id": "bohuslav-martinu-cello-sonata-no-2-h-286-chamber-c339",
+            "profile": null,
+            "unit_id": "C339",
+            "tidal_url": "https://tidal.com/track/440529066"
+          }
+        ],
+        "implementation_report": "reports/playlist-import/chamber/snapshot-2026-10-04.json",
+        "implementation_record": "reports/curator-decisions/issue-255.json",
+        "decision_record": "reports/curator-decisions/issue-255.json"
+      }
+    },
+    {
+      "work_id": "jacques-ibert-trois-pieces-breves",
+      "title": "Trois pièces brèves",
+      "composer": "Jacques Ibert",
+      "units": [
+        "C093",
+        "C372"
+      ],
+      "existing_performances": [],
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/246",
+      "decision": {
+        "choice": "selected_performance",
+        "selected_units": [
+          "C372"
+        ],
+        "not_selected_units": [
+          "C093"
+        ],
+        "performances": [
+          {
+            "performance_id": "jacques-ibert-trois-pieces-breves-chamber-c372",
+            "profile": null,
+            "unit_id": "C372",
+            "tidal_url": "https://tidal.com/track/198744929"
+          }
+        ],
+        "implementation_report": "reports/playlist-import/chamber/snapshot-2026-10-04.json",
+        "implementation_record": "reports/curator-decisions/issue-246.json",
+        "decision_record": "reports/curator-decisions/issue-246.json"
+      }
+    },
+    {
+      "work_id": "igor-stravinsky-octet-k-041-work",
+      "title": "Octet",
+      "composer": "Igor Stravinsky",
+      "units": [
+        "C230",
+        "C307"
+      ],
+      "existing_performances": [
+        "igor-stravinsky-octet-k-041-work-juilliard-school-ensemble-royal-academy-of-music-barbara-hannigan"
+      ],
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/252",
+      "decision": {
+        "choice": "selected_performance",
+        "selected_units": [
+          "C230"
+        ],
+        "not_selected_units": [
+          "C307"
+        ],
+        "performances": [
+          {
+            "performance_id": "igor-stravinsky-octet-k-041-work-chamber-c230",
+            "profile": null,
+            "unit_id": "C230",
+            "tidal_url": "https://tidal.com/track/245886114"
+          }
+        ],
+        "implementation_report": "reports/playlist-import/chamber/snapshot-2026-10-04.json",
+        "implementation_record": "reports/curator-decisions/issue-252.json",
+        "decision_record": "reports/curator-decisions/issue-252.json"
+      }
+    },
+    {
+      "work_id": "brahms-piano-quartet-no-2-in-a-major-1861-op-26-work",
+      "title": "Piano Quartet No. 2 in A Major, Op. 26",
+      "composer": "Johannes Brahms",
+      "units": [
+        "C036",
+        "C401"
+      ],
+      "existing_performances": [
+        "brahms-piano-quartet-no-2-in-a-major-1861-op-26-work-maria-nowak-katarzyna-budnik-yuya-okamoto-krystian-zimerman"
+      ],
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/243",
+      "decision": {
+        "choice": "selected_performance",
+        "selected_units": [
+          "C401"
+        ],
+        "not_selected_units": [
+          "C036"
+        ],
+        "performances": [
+          {
+            "performance_id": "brahms-piano-quartet-no-2-in-a-major-1861-op-26-work-maria-nowak-katarzyna-budnik-yuya-okamoto-krystian-zimerman",
+            "profile": null,
+            "unit_id": "C401",
+            "tidal_url": "https://tidal.com/track/426702633"
+          }
+        ],
+        "implementation_report": "reports/playlist-import/chamber/snapshot-2026-10-04.json",
+        "implementation_record": "reports/curator-decisions/issue-243.json",
+        "decision_record": "reports/curator-decisions/issue-243.json"
+      }
+    },
+    {
+      "work_id": "brahms-piano-quartet-no-3-in-c-minor-werther-quartet-1875-op-60-work",
+      "title": "Piano Quartet No. 3 in C Minor, Op. 60",
+      "composer": "Johannes Brahms",
+      "units": [
+        "C035",
+        "C400"
+      ],
+      "existing_performances": [
+        "brahms-piano-quartet-no-3-in-c-minor-werther-quartet-1875-op-60-work-maria-nowak-katarzyna-budnik-yuya-okamoto-krystian-zimerman"
+      ],
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/242",
+      "decision": {
+        "choice": "selected_performance",
+        "selected_units": [
+          "C400"
+        ],
+        "not_selected_units": [
+          "C035"
+        ],
+        "performances": [
+          {
+            "performance_id": "brahms-piano-quartet-no-3-in-c-minor-werther-quartet-1875-op-60-work-maria-nowak-katarzyna-budnik-yuya-okamoto-krystian-zimerman",
+            "profile": null,
+            "unit_id": "C400",
+            "tidal_url": "https://tidal.com/track/426702629"
+          }
+        ],
+        "implementation_report": "reports/playlist-import/chamber/snapshot-2026-10-04.json",
+        "implementation_record": "reports/curator-decisions/issue-242.json",
+        "decision_record": "reports/curator-decisions/issue-242.json"
       }
     }
   ]

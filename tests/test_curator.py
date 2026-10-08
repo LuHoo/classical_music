@@ -218,14 +218,16 @@ def test_ambiguous_removal_ids_require_manual_review(tmp_path, inventory):
         curator.plan_decision(tmp_path, 246, 'C093', curator='Test', playlist_remove=True)
 
 
-def test_cli_defaults_to_preview_and_rejects_conflicting_modes(monkeypatch, capsys):
+def test_cli_defaults_to_apply_and_rejects_conflicting_modes(monkeypatch, capsys):
     calls = []
     def execute(*args, **kwargs):
         calls.append((args, kwargs))
         return 'preview'
-    monkeypatch.setattr(curator, 'execute', execute)
+    from classical_music import curator_batch
+    monkeypatch.setattr(curator_batch, 'record_decision', execute)
     assert curator.main(['246', 'C093']) == 0
-    assert calls[0][1]['apply'] is False
+    assert calls[0][1]['apply'] is True
+    assert calls[0][1]['curator'] == 'LAH'
     with pytest.raises(SystemExit) as error:
         curator.main(['246', 'C093', '--dry-run', '--apply'])
     assert error.value.code == 2 and len(calls) == 1
@@ -243,3 +245,12 @@ def test_confirmation_requires_a_recorded_playlist_action(tmp_path):
     path.write_bytes(curator.json_bytes(record))
     with pytest.raises(curator.CuratorError, match='No manual playlist'):
         curator.plan_playlist_done(tmp_path, 240, curator='Test', note='done')
+
+
+@pytest.fixture(scope='module', autouse=True)
+def fixed_pending_choices(pending_curator_repository):
+    """Production decisions must not change the preconditions of these tests."""
+    import sys
+    with pytest.MonkeyPatch.context() as patch:
+        patch.setattr(sys.modules[__name__], 'ROOT', pending_curator_repository)
+        yield

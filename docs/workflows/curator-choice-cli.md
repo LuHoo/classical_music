@@ -1,16 +1,12 @@
 # Curator choices from the command line
 
-`./curator <issue-number> <choice>` previews a single recommendation decision.
-It uses the existing reviewed playlist manifests, canonical YAML and
-`reports/curator-decisions/`; it does not maintain a second catalogue.
-Python 3.13+ and the project dependencies are required:
+`./curator ISSUE CHOICE` saves a local decision immediately, with curator **LAH**.
+Enter several decisions, then run `./curator finish` once:
 
 ```bash
-python3.13 -m venv .venv
-.venv/bin/python -m pip install -e '.[dev]'
-./curator 246 C093                       # preview, no repository writes
-./curator 246 C093 --dry-run             # same explicit preview
-./curator 246 C093 --apply --curator Lucas
+./curator 246 C093
+./curator 263 P078
+./curator finish
 ```
 
 Run from a working branch. Review the resulting diff and commit/open a PR as

@@ -1,0 +1,17 @@
+{
+  "issue_url": "https://github.com/LuHoo/classical_music/issues/242",
+  "decision_source": "curator_cli",
+  "curator": "LAH",
+  "recorded_at": "2026-10-08T14:08:16.744785+00:00",
+  "requested_choice": "C400",
+  "choice": "C400",
+  "selected_units": [
+    "C400"
+  ],
+  "not_selected_units": [
+    "C035"
+  ],
+  "performance_id": "brahms-piano-quartet-no-3-in-c-minor-werther-quartet-1875-op-60-work-maria-nowak-katarzyna-budnik-yuya-okamoto-krystian-zimerman",
+  "implementation_pr": null,
+  "replaced_performances": []
+}

@@ -1,14 +1,14 @@
-"""Offline, preview-first curator decisions using reviewed playlist manifests.
+"""Record curator decisions locally; run ./curator finish to validate the batch.
 
-No GitHub or TIDAL writes. All proposed canonical changes are validated in a
-scratch copy before installation; historical source occurrences are immutable.
+Defaults: apply locally, curator LAH. Use --dry-run for a write-free plan.
+No Git, GitHub or TIDAL writes; historical source occurrences are immutable.
 """
 from __future__ import annotations
 
 import argparse
 from collections import Counter
 from copy import deepcopy
-from contextlib import redirect_stdout
+from contextlib import contextmanager, redirect_stdout
 from datetime import datetime, timezone
 import getpass
 import io
@@ -18,6 +18,9 @@ from pathlib import Path
 import re
 import shutil
 import tempfile
+import sys
+import threading
+import time
 
 from ruamel.yaml import YAML
 
@@ -375,12 +378,46 @@ def input_snapshot(root):
             for p in (root / directory).rglob('*') if p.is_file()}
 
 
+
+@contextmanager
+def cli_progress(interval=10):
+    """Flush phase changes and periodic liveness messages to stderr, even in a pipe."""
+    stopped = threading.Event()
+    lock = threading.Lock()
+    started = time.monotonic()
+    phase = ['Voorbereiden']
+
+    def report(message):
+        with lock:
+            phase[0] = message
+            print(f'curator: {message}', file=sys.stderr, flush=True)
+
+    def heartbeat():
+        while not stopped.wait(interval):
+            with lock:
+                elapsed = int(time.monotonic() - started)
+                print(f'curator: nog bezig — {phase[0]} (totaal {elapsed} s)',
+                      file=sys.stderr, flush=True)
+
+    worker = threading.Thread(target=heartbeat, name='curator-progress', daemon=True)
+    worker.start()
+    try:
+        yield report
+    finally:
+        stopped.set()
+        worker.join()
+
+
 def execute(root, issue, token, *, apply=False, curator=None, decision_url=None,
-            replace_existing=False, playlist_remove=False, note=None):
+            replace_existing=False, playlist_remove=False, note=None, progress=None):
+    report = progress or (lambda message: None)
+    report("Apply voorbereiden; schrijven gebeurt pas na geslaagde controles." if apply else
+           "Preview gestart; er wordt niets opgeslagen.")
     require(__debug__, 'Python optimization disables repository audit assertions; run without -O.')
     curator = curator or getpass.getuser()
     require(curator.strip(), 'Curator identity is required.')
     root = root.resolve()
+    report(f'Issue #{issue} en keuze {token} opzoeken')
     intake, manifest_path, _ = locate(root, issue)
     # Serialize CLI writers. Preview itself leaves no persistent files in the repository.
     lock = root / '.curator.lock'
@@ -391,12 +428,14 @@ def execute(root, issue, token, *, apply=False, curator=None, decision_url=None,
                 descriptor = os.open(lock, os.O_CREAT | os.O_EXCL | os.O_WRONLY, 0o600)
             except FileExistsError as exc:
                 raise CuratorError('Another curator apply is running (.curator.lock).') from exc
+        report('Brongegevens lezen')
         if token == 'playlist-done':
             baseline = {str(manifest_path): (root / manifest_path).read_bytes()}
             baseline.update({str(p.relative_to(root)): p.read_bytes()
                              for p in (root / 'reports/curator-decisions').glob('*.json')})
         else:
             baseline = input_snapshot(root)
+        report('Voorgestelde wijzigingen bepalen')
         if token == 'playlist-done':
             require(not (decision_url or replace_existing or playlist_remove), 'Decision flags do not apply to playlist-done.')
             changes, record, message = plan_playlist_done(root, issue, curator=curator, note=note)
@@ -409,6 +448,7 @@ def execute(root, issue, token, *, apply=False, curator=None, decision_url=None,
         expected = dict(baseline)
         for relative in changes:
             expected.setdefault(relative, None)
+        report('Tijdelijke validatiebestanden voorbereiden')
         with tempfile.TemporaryDirectory(prefix='curator-preview-') as folder:
             stage = Path(folder)
             for relative, content in expected.items():
@@ -424,6 +464,8 @@ def execute(root, issue, token, *, apply=False, curator=None, decision_url=None,
                 else:
                     path.write_bytes(content)
             # Reuse the inventory/publication fast path, without the broad identity scan.
+            report('Beslisrecord controleren' if token == 'playlist-done' else
+                   'Brongegevens en publicatie controleren; dit kan enkele minuten duren')
             if token == 'playlist-done':
                 validate_decision_records(json.loads((stage / manifest_path).read_text()), stage)
             else:
@@ -432,6 +474,7 @@ def execute(root, issue, token, *, apply=False, curator=None, decision_url=None,
                         audit(stage)
                     else:
                         intake.audit(stage, manifest_path)
+            report('Resultaten vergelijken')
             for path in (stage / 'publication').rglob('*.md'):
                 relative = str(path.relative_to(stage))
                 target = safe_path(root, relative)
@@ -447,8 +490,10 @@ def execute(root, issue, token, *, apply=False, curator=None, decision_url=None,
                 for perf in choice['decision']['performances']:
                     require(perf['tidal_url'] in page.read_text(), 'Selected recommendation missing from publication.')
             if apply:
+                report('Controleren of bronbestanden intussen zijn gewijzigd')
                 if token != 'playlist-done':
                     require(input_snapshot(root) == baseline, 'Repository inputs changed during validation; rerun.')
+                report('Gevalideerde wijzigingen opslaan')
                 install_changes(root, changes, expected)
         files = [p for p in changes if not p.startswith('publication/')]
         return ('Applied: ' if apply else 'Preview only: ') + message + '\n' + \
@@ -463,21 +508,40 @@ def execute(root, issue, token, *, apply=False, curator=None, decision_url=None,
 
 def main(argv=None):
     parser = argparse.ArgumentParser(prog='./curator', description=__doc__)
-    parser.add_argument('issue', type=int)
-    parser.add_argument('choice', help='Registered alias, source unit (C/P/etc.), existing, or playlist-done')
+    parser.add_argument('issue', help='Issue number, or finish to validate the batch')
+    parser.add_argument('choice', nargs='?', help='Registered alias, source unit (C/P/etc.), existing, or playlist-done')
     mode = parser.add_mutually_exclusive_group()
-    mode.add_argument('--apply', action='store_true', help='Write after successful staged validation')
-    mode.add_argument('--dry-run', action='store_true', help='Preview only (default)')
-    parser.add_argument('--curator', help='Decision/confirmation author (default: local username)')
+    mode.add_argument('--apply', action='store_true', help='Record locally (default); validate later with finish')
+    mode.add_argument('--dry-run', action='store_true', help='Plan only; do not write or run the final checks')
+    parser.add_argument('--curator', default='LAH', help='Decision/confirmation author (default: LAH)')
     parser.add_argument('--decision-url', help='Optional existing decision comment on this issue')
     parser.add_argument('--replace-existing', action='store_true')
     parser.add_argument('--playlist-remove-unselected', action='store_true', help='Record manual removal instructions; never call TIDAL')
     parser.add_argument('--note', help='Required verification note for playlist-done')
     args = parser.parse_args(argv)
+    from classical_music.curator_batch import record_decision, finish
+    if args.issue == 'finish':
+        if (args.choice or args.apply or args.dry_run or args.decision_url or
+                args.replace_existing or args.playlist_remove_unselected or args.note):
+            parser.error('finish takes no choice or decision flags')
+        issue = None
+    else:
+        try:
+            issue = int(args.issue)
+        except ValueError:
+            parser.error('Supply a positive issue number or finish')
+        if issue <= 0 or args.choice is None:
+            parser.error('Supply a positive issue number and a choice')
     try:
-        print(execute(Path(__file__).resolve().parents[2], args.issue, args.choice,
-            apply=args.apply, curator=args.curator, decision_url=args.decision_url,
-            replace_existing=args.replace_existing, playlist_remove=args.playlist_remove_unselected, note=args.note))
+        with cli_progress() as progress:
+            if issue is None:
+                result = finish(Path(__file__).resolve().parents[2], progress=progress)
+            else:
+                result = record_decision(Path(__file__).resolve().parents[2], issue, args.choice,
+                    apply=not args.dry_run, curator=args.curator, decision_url=args.decision_url,
+                    replace_existing=args.replace_existing, playlist_remove=args.playlist_remove_unselected,
+                    note=args.note, progress=progress)
+        print(result)
     except (ValueError, AssertionError, OSError, KeyError, RuntimeError) as exc:
         parser.exit(2, f'curator: {exc}\n')
     return 0
