@@ -1,4 +1,4 @@
-"""Offline, preview-first curator decisions using the reviewed Chamber manifest.
+"""Offline, preview-first curator decisions using reviewed playlist manifests.
 
 No GitHub or TIDAL writes. All proposed canonical changes are validated in a
 scratch copy before installation; historical source occurrences are immutable.
@@ -21,13 +21,21 @@ import tempfile
 
 from ruamel.yaml import YAML
 
-from classical_music.chamber_import import MANIFEST, audit, validate_decision_records
+from classical_music.chamber_import import audit, validate_decision_records
+from classical_music.playlist_choices import locate as locate_intake, refresh_window, update_report
 
 ISSUES = 'https://github.com/LuHoo/classical_music/issues/'
 
 
 class CuratorError(ValueError):
     """An unsafe, ambiguous or unsupported decision."""
+
+
+def locate(root, issue):
+    try:
+        return locate_intake(root, issue)
+    except ValueError as exc:
+        raise CuratorError(str(exc)) from exc
 
 
 def require(condition, message):
@@ -90,6 +98,19 @@ def update_readme(text, manifest, issue, selected):
                          f"| {status} | {summary['units']} | {summary['track_occurrences']} |", text, flags=re.M)
         require(n == 1, f'Cannot locate README summary row {status}.')
     counts = dict(Counter(r['entity'] for r in manifest['new_records']))
+    if 'version_choice_issues' in manifest:
+        text, n = re.subn(r"New records: .*?\. Existing recordings reused: \d+\.",
+            f"New records: {counts}. Existing recordings reused: {manifest['summary']['reuse_existing']['distinct_performances']}.", text)
+        require(n == 1, 'Cannot locate Piano README canonical counts.')
+        text, n = re.subn(r'\*\*\d+ pending Work-level issues:\*\*.*? Answer',
+            f"**{len(manifest['recommendation_choices']) + len(manifest['version_choice_issues'])} pending Work-level issues:** "
+            f"{len(manifest['recommendation_choices'])} recommendation comparisons and "
+            f"{len(manifest['version_choice_issues'])} version research issues. Answer", text)
+        require(n == 1, 'Cannot locate Piano README pending count.')
+        pattern = r'^(\| \[#' + str(issue) + r'\].*?) \|$'
+        text, n = re.subn(pattern, lambda m: m[1] + f' **Resolved: {selected}** |', text, flags=re.M)
+        require(n == 1, 'Cannot locate Piano README issue row.')
+        return text
     text, n = re.subn(r"New canonical records: .*?\. Reuse covers \d+ existing Performances\.",
         f"New canonical records: {counts}. Reuse covers {manifest['summary']['reuse_existing']['distinct_performances']} existing Performances.", text)
     require(n == 1, 'Cannot locate README canonical counts.')
@@ -104,13 +125,19 @@ def update_readme(text, manifest, issue, selected):
 
 def plan_decision(root, issue, token, *, curator, decision_url=None,
                   replace_existing=False, playlist_remove=False):
-    manifest = json.loads((root / MANIFEST).read_text())
+    intake, manifest_path, manifest = locate(root, issue)
     choice, resolved = find_choice(manifest, issue)
+    require(len(choice['units']) == len(set(choice['units'])), 'Repeated candidate units.')
     selected = resolve_choice(choice, token)
-    units = {u['unit_id']: u for u in manifest['units']}
+    units = {u['unit_id']: u for u in manifest['units'] if u.get('unit_id')}
+    require(len(units) == len(manifest['units']) if intake.format != 'window' else
+            len([u['unit_id'] for u in manifest['units'] if u.get('unit_id')]) ==
+            len({u['unit_id'] for u in manifest['units'] if u.get('unit_id')}), 'Duplicate unit IDs.')
     candidates = [units[uid] for uid in choice['units']]
     require(all(u['work_id'] == choice['work_id'] and u.get('curator_issue') == choice['issue_url']
                 for u in candidates), 'Candidate Work/issue mismatch.')
+    source_url = manifest['source'].get('url') or 'https://tidal.com/playlist/' + manifest['source']['playlist_id']
+    source_name = manifest['source'].get('name', intake.key)
     existing = choice['existing_performances']
     if selected == 'existing':
         require(len(existing) == 1, 'Multiple existing recommendations require a profiled decision.')
@@ -124,9 +151,12 @@ def plan_decision(root, issue, token, *, curator, decision_url=None,
                 'Issue already resolved with a different decision; review it manually.')
         record_path = safe_path(root, decision['implementation_record'])
         record = json.loads(record_path.read_text())
+        require(record.get('issue_url') == choice['issue_url'],
+                'Legacy grouped decision requires manual review; it is not an individual CLI record.')
         require(not playlist_remove or record.get('playlist_change'),
                 'Decision already recorded without a playlist action; do not silently add one on retry.')
         return {}, record, 'Already recorded; no changes.'
+    require(len(existing) <= 1, 'Multiple existing recommendations require a profiled decision.')
     require(all(u['disposition'] in ('recommendation_choice', 'reuse_existing') for u in candidates),
             'Candidate is not pending or reusable.')
     require(not choice.get('decision'), 'Pending choice already contains a decision.')
@@ -151,14 +181,24 @@ def plan_decision(root, issue, token, *, curator, decision_url=None,
     removed = set(existing) - ({reuse_id} if reuse_id else set())
     require(not removed or replace_existing,
             'This replaces an existing recommendation. Review the choice and pass --replace-existing explicitly.')
+    other_source_track_ids = []
     # Refuse to invalidate another intake or another unit that shares the record.
     for path in (root / 'reports/playlist-import').rglob('*.json'):
         other = json.loads(path.read_text())
         if not isinstance(other, dict):
             continue
+        other_source = other.get('source', {})
+        other_url = other_source.get('url') or ('https://tidal.com/playlist/' + other_source['playlist_id']
+                                               if other_source.get('playlist_id') else None)
+        if path != root / manifest_path and other_url == source_url:
+            other_source_track_ids.extend(t['id'] for u in other.get('units', []) for t in u.get('tracks', []))
         for unit in other.get('units', []):
-            if path == root / MANIFEST and unit.get('unit_id') in choice['units']:
+            if path == root / manifest_path and unit.get('unit_id') in choice['units']:
                 continue
+            require(not (intake.format == 'window' and path.parent == (root / manifest_path).parent
+                         and unit.get('work_id') == choice['work_id'] and
+                         unit.get('disposition') == 'recommendation_choice'),
+                    'Work has candidates in another window; register a reviewed consolidated intake first.')
             require(unit.get('performance_id') not in removed,
                     'Replaced Performance is referenced by another import unit; manual review required.')
     changes = {}
@@ -166,27 +206,33 @@ def plan_decision(root, issue, token, *, curator, decision_url=None,
     for pid in sorted(removed):
         archived.append(performances[pid])
         changes[str(performance_paths[pid])] = None
-        manifest['changed_existing'].append(dict(id=pid, entity='performances',
+        manifest['changed_existing'].append(dict(id=pid,
+            **{('entity_type' if intake.format == 'window' else 'entity'): 'performances'},
             path=str(performance_paths[pid]), action='removed_by_curator', decision_record=record_relative))
     if reuse_id:
         perf = performances[reuse_id]
         pid = reuse_id
     else:
         require(selected_unit is not None, 'No selected source unit.')
-        pid = choice['work_id'] + '-chamber-' + selected.lower()
+        pid = choice['work_id'] + '-' + intake.key + '-' + selected.lower()
         require(re.fullmatch(r'[a-z0-9-]+', pid), 'Unsafe Performance ID.')
         path = f'data/performances/{pid}.yaml'
         require(not (root / path).exists() and pid not in performances, 'Performance already exists.')
-        perf = dict(id=pid, work_id=choice['work_id'], performers=deepcopy(selected_unit['performers']),
-                    links={'tidal': {'url': 'https://tidal.com/track/' + selected_unit['tracks'][0]['id']}},
+        perf = dict(id=pid, work_id=choice['work_id'], performers=deepcopy(selected_unit.get('performers') or selected_unit.get('candidate_performers')),
+                    links={'tidal': {'url': 'https://tidal.com/track/' + selected_unit.get('listening_track_id', selected_unit['tracks'][0]['id'])}},
                     release={'album_title': selected_unit['tracks'][0]['album_titles'][0]},
-                    source={'file': str(MANIFEST), 'url': manifest['source']['url'],
+                    source={'file': str(manifest_path), 'url': source_url,
                             'unit_id': selected, 'curator_decision': reference})
-        for field in ('excerpt', 'profile'):
+        for field in ('excerpt', 'profile', 'version_assignment'):
             if selected_unit.get(field):
                 perf[field] = selected_unit[field]
+        require(perf['performers'] and all(isinstance(p, dict) and p.get('name') for p in perf['performers']),
+                'Candidate needs reviewed performers (names and optional roles).')
+        require(selected_unit.get('listening_track_id', selected_unit['tracks'][0]['id']) in
+                {t['id'] for t in selected_unit['tracks']}, 'Listening anchor outside source unit.')
         changes[path] = yaml_bytes(perf)
-        manifest['new_records'].append(dict(id=pid, path=path, entity='performances'))
+        manifest['new_records'].append(dict(id=pid, path=path,
+            **{('entity_type' if intake.format == 'window' else 'entity'): 'performances'}))
     not_selected = [uid for uid in choice['units'] if uid not in selected_units]
     for unit in candidates:
         accepted = unit['unit_id'] in selected_units
@@ -203,7 +249,7 @@ def plan_decision(root, issue, token, *, curator, decision_url=None,
                     performances=[dict(performance_id=pid, profile=perf.get('profile'),
                         unit_id=selected_units[0] if selected_units else None,
                         tidal_url=perf['links']['tidal']['url'])],
-                    implementation_report=str(MANIFEST), implementation_record=record_relative,
+                    implementation_report=str(manifest_path), implementation_record=record_relative,
                     decision_record=record_relative)
     if decision_url:
         decision['comment_url'] = decision_url
@@ -222,32 +268,40 @@ def plan_decision(root, issue, token, *, curator, decision_url=None,
         removed_ids = [t['id'] for u in rejected for t in u['tracks']]
         require(len(removed_ids) == len(set(removed_ids)),
                 'Repeated removal IDs require manual occurrence-level review.')
-        preserved_ids = [t['id'] for u in manifest['units'] if u['unit_id'] not in not_selected for t in u['tracks']]
-        require(not set(removed_ids) & set(preserved_ids),
+        preserved_ids = [t['id'] for u in manifest['units'] if u.get('unit_id') not in not_selected for t in u['tracks']]
+        require(not set(removed_ids) & set(preserved_ids + other_source_track_ids),
                 'Removal shares track IDs with preserved occurrences; manual occurrence-level review required.')
         record['playlist_change'] = dict(status='pending', method='manual',
             authorization='Curator requested manual removal instructions with --playlist-remove-unselected.',
-            playlist_url=manifest['source']['url'], playlist_name=manifest['source']['name'],
+            playlist_url=source_url, playlist_name=source_name,
             work=choice['title'],
-            actions=[dict(unit_id=u['unit_id'], performers=u['performers'],
+            actions=[dict(unit_id=u['unit_id'], performers=u.get('performers') or u.get('candidate_performers'),
                           track_ids=[t['id'] for t in u['tracks']], source_snapshot_positions=u['positions']) for u in rejected],
             planned_removed_track_ids=removed_ids,
             preserved_selected_track_ids=[t['id'] for uid in selected_units for t in units[uid]['tracks']])
-    refresh_summary(manifest)
-    changes[str(MANIFEST)] = json_bytes(manifest)
+    if intake.format == 'window':
+        refresh_window(manifest)
+    else:
+        refresh_summary(manifest)
+    changes[str(manifest_path)] = json_bytes(manifest)
     changes[record_relative] = json_bytes(record)
-    readme = str(MANIFEST.parent / 'README.md')
-    changes[readme] = update_readme((root / readme).read_text(), manifest, issue, selected).encode()
+    readme = str(intake.report(manifest_path))
+    text = (root / readme).read_text()
+    changes[readme] = (update_report(text, manifest, intake) if intake.format == 'window' else
+                       update_readme(text, manifest, issue, selected)).encode()
     return changes, record, (f'Issue #{issue}: {token} → {selected}; recommendation {pid}\n'
                              f'Not selected: {", ".join(not_selected) or "none"}')
 
 
 def plan_playlist_done(root, issue, *, curator, note):
-    manifest = json.loads((root / MANIFEST).read_text())
+    intake, manifest_path, manifest = locate(root, issue)
     choice, resolved = find_choice(manifest, issue)
     require(resolved, 'Record a curator decision before confirming the playlist action.')
-    relative = choice['decision']['implementation_record']
+    relative = choice['decision'].get('implementation_record', '')
+    require(relative, 'No individual decision record; review the legacy decision manually.')
     record = json.loads(safe_path(root, relative).read_text())
+    require(record.get('issue_url') == choice['issue_url'],
+            'Legacy grouped decision requires manual review; it is not an individual CLI record.')
     action = record.get('playlist_change', {})
     require(action, 'No manual playlist action was recorded.')
     if action.get('status') == 'done' or action.get('removed_track_ids') and not action.get('status'):
@@ -317,7 +371,7 @@ def install_changes(root, changes, expected):
 
 def input_snapshot(root):
     return {str(p.relative_to(root)): p.read_bytes() for directory in
-            ('data', 'reports/curator-decisions', str(MANIFEST.parent))
+            ('data', 'reports/curator-decisions', 'reports/playlist-import', 'docs', 'side materials')
             for p in (root / directory).rglob('*') if p.is_file()}
 
 
@@ -327,6 +381,7 @@ def execute(root, issue, token, *, apply=False, curator=None, decision_url=None,
     curator = curator or getpass.getuser()
     require(curator.strip(), 'Curator identity is required.')
     root = root.resolve()
+    intake, manifest_path, _ = locate(root, issue)
     # Serialize CLI writers. Preview itself leaves no persistent files in the repository.
     lock = root / '.curator.lock'
     descriptor = None
@@ -337,7 +392,7 @@ def execute(root, issue, token, *, apply=False, curator=None, decision_url=None,
             except FileExistsError as exc:
                 raise CuratorError('Another curator apply is running (.curator.lock).') from exc
         if token == 'playlist-done':
-            baseline = {str(MANIFEST): (root / MANIFEST).read_bytes()}
+            baseline = {str(manifest_path): (root / manifest_path).read_bytes()}
             baseline.update({str(p.relative_to(root)): p.read_bytes()
                              for p in (root / 'reports/curator-decisions').glob('*.json')})
         else:
@@ -370,10 +425,13 @@ def execute(root, issue, token, *, apply=False, curator=None, decision_url=None,
                     path.write_bytes(content)
             # Reuse the inventory/publication fast path, without the broad identity scan.
             if token == 'playlist-done':
-                validate_decision_records(json.loads((stage / MANIFEST).read_text()), stage)
+                validate_decision_records(json.loads((stage / manifest_path).read_text()), stage)
             else:
                 with redirect_stdout(io.StringIO()):
-                    audit(stage)
+                    if intake.key == 'chamber':
+                        audit(stage)
+                    else:
+                        intake.audit(stage, manifest_path)
             for path in (stage / 'publication').rglob('*.md'):
                 relative = str(path.relative_to(stage))
                 target = safe_path(root, relative)
@@ -382,7 +440,7 @@ def execute(root, issue, token, *, apply=False, curator=None, decision_url=None,
                     expected[relative] = before
                     changes[relative] = path.read_bytes()
             # Also check that the affected Work renders the chosen anchor, including reuse.
-            manifest = json.loads((stage / MANIFEST).read_text())
+            manifest = json.loads((stage / manifest_path).read_text())
             choice, _ = find_choice(manifest, issue)
             page = stage / 'publication/works' / (choice['work_id'] + '.md')
             if token != 'playlist-done':
@@ -406,7 +464,7 @@ def execute(root, issue, token, *, apply=False, curator=None, decision_url=None,
 def main(argv=None):
     parser = argparse.ArgumentParser(prog='./curator', description=__doc__)
     parser.add_argument('issue', type=int)
-    parser.add_argument('choice', help='A/B (registered aliases), C-unit, existing, or playlist-done')
+    parser.add_argument('choice', help='Registered alias, source unit (C/P/etc.), existing, or playlist-done')
     mode = parser.add_mutually_exclusive_group()
     mode.add_argument('--apply', action='store_true', help='Write after successful staged validation')
     mode.add_argument('--dry-run', action='store_true', help='Preview only (default)')

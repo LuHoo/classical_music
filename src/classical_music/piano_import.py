@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Read-only audit of the complete, reviewed Chamber source intake."""
+"""Read-only audit of the complete, reviewed Piano source intake."""
 from __future__ import annotations
 
 import hashlib
@@ -10,9 +10,11 @@ from pathlib import Path
 from ruamel.yaml import YAML
 
 ROOT = Path(__file__).resolve().parents[2]
-from classical_music.publication_site import PublicationSiteGenerator
 
-MANIFEST = Path('reports/playlist-import/chamber/snapshot-2026-10-04.json')
+from classical_music.publication_site import PublicationSiteGenerator
+from classical_music.chamber_import import decision_reference, validate_decision_records
+
+MANIFEST = Path('reports/playlist-import/piano/snapshot-2026-10-04.json')
 
 
 def occurrence_fingerprint(tracks: list[dict]) -> str:
@@ -21,8 +23,10 @@ def occurrence_fingerprint(tracks: list[dict]) -> str:
     return hashlib.sha256(json.dumps(rows, separators=(',', ':')).encode()).hexdigest()
 
 
-def decision_reference(decision: dict) -> str:
-    return decision.get('comment_url') or decision.get('decision_record', '')
+def metadata_fingerprint(tracks: list[dict]) -> str:
+    fields = ('position', 'item_id', 'id', 'isrc', 'title', 'duration', 'artists', 'album_ids', 'album_titles')
+    rows = [{k: t[k] for k in fields} for t in sorted(tracks, key=lambda t: t['position'])]
+    return hashlib.sha256(json.dumps(rows, ensure_ascii=False, sort_keys=True, separators=(',', ':')).encode()).hexdigest()
 
 
 def check_inventory(manifest: dict, data: dict) -> None:
@@ -32,7 +36,14 @@ def check_inventory(manifest: dict, data: dict) -> None:
     assert source['source_complete'] is True
     assert sorted(t['position'] for t in tracks) == list(range(1, source['track_count'] + 1)), 'Missing/duplicated source occurrence'
     assert occurrence_fingerprint(tracks) == source['ordered_occurrences_sha256'], 'Source identity/order changed'
+    assert metadata_fingerprint(tracks) == source['raw_metadata_sha256'], 'Raw source metadata changed'
     assert len({u['unit_id'] for u in units}) == len(units)
+    for change in manifest['changed_existing']:
+        if change.get('action') == 'removed_by_curator':
+            assert change['id'] not in data[change['entity']]
+            continue
+        assert data[change['entity']][change['id']] == change['after']
+        assert {k for k in set(change['before']) | set(change['after']) if change['before'].get(k) != change['after'].get(k)} <= {'title', 'source'}, 'Unauthorised existing-data change'
     new_ids = {r['id'] for r in manifest['new_records']}
     new_performance_ids = {r['id'] for r in manifest['new_records'] if r['entity'] == 'performances'}
     choices = {c['work_id']: c for c in manifest['recommendation_choices']}
@@ -47,6 +58,7 @@ def check_inventory(manifest: dict, data: dict) -> None:
         if status == 'identity_unresolved':
             assert not u.get('work_id') and not u.get('performance_id')
             assert u['reason'] and u['review_classification'] == 'authority_evidence_required'
+            assert u['research_issue'].startswith('https://github.com/LuHoo/classical_music/issues/')
             continue
         work = data['works'][u['work_id']]
         assert work['composer_id'] == u['composer_id']
@@ -64,7 +76,7 @@ def check_inventory(manifest: dict, data: dict) -> None:
             choice = choices[work['id']]
             assert u['unit_id'] in choice['units']
             assert choice['decision'] is None and u['curator_issue'] == choice['issue_url']
-            assert not any(p['work_id'] == work['id'] and p['id'] in new_ids for p in data['performances'].values()), 'Pending curator choice leaked into recommendations'
+            assert {p['id'] for p in data['performances'].values() if p['work_id'] == work['id']} == set(choice['existing_performances']), 'Pending curator choice leaked into recommendations'
         if status == 'recommendation_choice':
             assert u['work_id'] in choices and not u.get('performance_id')
             assert u['reason'] and u['review_classification'] == 'curator_required'
@@ -80,10 +92,13 @@ def check_inventory(manifest: dict, data: dict) -> None:
                 assert u['curator_decision'] == decision_reference(decision), 'Missing curator decision'
                 assert perf['source']['curator_decision'] == decision_reference(decision)
                 assert u.get('profile') == perf.get('profile')
-            assert perf['source']['file'] == str(MANIFEST)
-            assert perf['links']['tidal']['url'] == 'https://tidal.com/track/' + u['tracks'][0]['id']
+                assert perf['source']['file'] == decision['implementation_report']
+            else:
+                assert perf['source']['file'] == str(MANIFEST)
+            assert perf['links']['tidal']['url'] == 'https://tidal.com/track/' + u.get('listening_track_id', u['tracks'][0]['id'])
             assert perf.get('excerpt') == u.get('excerpt')
             assert perf['performers'] and 'year' not in perf
+            assert u.get('listening_track_id', u['tracks'][0]['id']) in {t['id'] for t in u['tracks']}, 'Listening anchor outside selection'
             evidence = work.get('source', {}) if work['id'] in new_ids else u['evidence'][0]
             assert (evidence.get('url') and 'tidal.com' not in evidence['url']) or evidence.get('file', '').startswith(('docs/', 'side materials/')), 'Missing independent Work evidence'
         else:
@@ -93,6 +108,9 @@ def check_inventory(manifest: dict, data: dict) -> None:
     for status, summary in manifest['summary'].items():
         selected = [u for u in units if u['disposition'] == status]
         assert summary == {'units': len(selected), 'track_occurrences': sum(len(u['positions']) for u in selected), 'distinct_performances': len({u['performance_id'] for u in selected if u.get('performance_id')})}
+    held_codes = {u['unit_id'] for u in units if u['disposition'] == 'identity_unresolved'}
+    for version_choice in manifest['version_choice_issues']:
+        assert version_choice['decision'] is None and set(version_choice['units']) <= held_codes
     for choice in choices.values():
         matching = [u for u in units if u.get('work_id') == choice['work_id']]
         assert {u['unit_id'] for u in matching} == set(choice['units'])
@@ -111,48 +129,13 @@ def check_inventory(manifest: dict, data: dict) -> None:
             assert {u['unit_id'] for u in matching if u['disposition'] == 'not_selected'} == set(decision['not_selected_units'])
             assert len(decision['performances']) == 1
         else:
-            assert all(u['disposition'] in ('import_new', 'reuse_existing') for u in matching)
+            assert all(u['disposition'] == 'import_new' for u in matching)
         assigned = decision['performances']
         assert len({p['profile'] for p in assigned}) == len(assigned), 'Duplicate comparison profile'
         actual = [p for p in data['performances'].values() if p['work_id'] == choice['work_id']]
         assert {p['id'] for p in actual} == {p['performance_id'] for p in assigned}, 'Decision and recommendations differ'
         for p in assigned:
             assert data['performances'][p['performance_id']].get('profile') == p['profile']
-
-
-def validate_decision_records(manifest: dict, root: Path) -> None:
-    """Validate local CLI evidence without regenerating unchanged publication."""
-    for choice in manifest.get('resolved_choices', []):
-        decision = choice['decision']
-        if decision.get('decision_record'):
-            relative = Path(decision['decision_record'])
-            assert not relative.is_absolute() and '..' not in relative.parts
-            record = json.loads((root / relative).read_text())
-            assert record['issue_url'] == choice['issue_url']
-            assert record.get('comment_url') == decision.get('comment_url')
-            assert record['selected_units'] == decision['selected_units']
-            assert record['not_selected_units'] == decision['not_selected_units']
-            assert record['decision_source'] == 'curator_cli' and record['curator']
-            assert record['performance_id'] == decision['performances'][0]['performance_id']
-            action = record.get('playlist_change')
-            if action:
-                assert action['playlist_url'] == (manifest['source'].get('url') or
-                    'https://tidal.com/playlist/' + manifest['source']['playlist_id'])
-                units = {u['unit_id']: u for u in manifest['units'] if u.get('unit_id')}
-                rejected = [units[uid] for uid in decision['not_selected_units']]
-                assert action['planned_removed_track_ids'] == [t['id'] for u in rejected for t in u['tracks']]
-                assert [a['unit_id'] for a in action['actions']] == decision['not_selected_units']
-                for item, unit in zip(action['actions'], rejected):
-                    assert item['track_ids'] == [t['id'] for t in unit['tracks']]
-                    assert item['performers'] == (unit.get('performers') or unit.get('candidate_performers'))
-                assert action['preserved_selected_track_ids'] == [
-                    t['id'] for uid in decision['selected_units'] for t in units[uid]['tracks']]
-                assert not set(action['planned_removed_track_ids']) & set(action['preserved_selected_track_ids'])
-                assert action['status'] in ('pending', 'done')
-                if action['status'] == 'done':
-                    assert action['removed_track_ids'] == action['planned_removed_track_ids']
-                    assert action['confirmed_by'] and action['verification']
-                    assert action['verification_type'] == 'curator_reported'
 
 
 def audit(root: Path = ROOT) -> dict:
@@ -174,10 +157,10 @@ def audit(root: Path = ROOT) -> dict:
         if u['disposition'] != 'import_new':
             continue
         page = (generated.output_dir / 'works' / (u['work_id'] + '.md')).read_text()
-        assert 'https://tidal.com/track/' + u['tracks'][0]['id'] in page
+        assert 'https://tidal.com/track/' + u.get('listening_track_id', u['tracks'][0]['id']) in page
         if u.get('excerpt'):
             assert escape(u['excerpt']) in page
-    return {'source_occurrences': manifest['source']['track_count'], 'dispositions': manifest['summary'], 'curator_issues': len(manifest['recommendation_choices']), 'canonical_and_publication_checks': 'passed', 'publication_works': generated.work_count}
+    return {'source_occurrences': manifest['source']['track_count'], 'dispositions': manifest['summary'], 'curator_issues': len(manifest['recommendation_choices']) + len(manifest['version_choice_issues']), 'canonical_and_publication_checks': 'passed', 'publication_works': generated.work_count}
 
 
 if __name__ == '__main__':
