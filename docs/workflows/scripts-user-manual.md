@@ -2,8 +2,8 @@
 
 Dit handboek beschrijft de scripts in PR #301 en de uitbreiding naar Chamber,
 Piano en Best Classical. Voer voorbeelden uit vanuit de repositoryroot.
-Voorbeelden zijn opdrachten die **jij** uitvoert; ze leggen geen curatorbeslissing vast
-zolang je ze niet met `--apply` uitvoert. Nummers en keuzecodes moeten passen bij
+Voorbeelden zijn opdrachten die **jij** uitvoert. **Beslissingen worden standaard
+meteen lokaal opgeslagen**, met curator `LAH`. Gebruik `--dry-run` om alleen te kijken. Nummers en keuzecodes moeten passen bij
 het manifest in jouw checkout.
 
 ## 1. Wat is klaar en wat vraagt nog voorbereiding?
@@ -44,45 +44,51 @@ Gebruik geen Python `-O`: die schakelt auditasserties uit en wordt door curator 
 
 De voorbeelden gebruiken `git checkout`, passend bij Lucas' lokale Git 2.10.1.
 
-1. Bekijk je huidige branch en eventuele lokale wijzigingen. Maak **zelf** je
-   werkbranch vanaf de gewenste, actuele basis.
-2. Luister naar de alternatieven en lees het issue en de bronregistratie.
-3. Draai een preview. Controleer gekozen uitvoering, afwijzingen en eventuele
-   vervanging van een bestaande aanbeveling.
-4. Herhaal met `--apply` als de preview klopt. Dit past lokale bestanden aan.
-5. Herhaal stappen 2–4 voor andere issues op dezelfde branch. Een schone Git-status
-   is tussen beslissingen niet vereist; de volgende beslissing ziet de eerdere wijzigingen.
-6. Controleer de gezamenlijke diff en nieuwe bestanden. Doe eventuele bronplaylistacties
-   zelf in TIDAL en registreer de voltooiing afzonderlijk.
-7. Doe zelf `add`, `commit`, `push`, PR-review en merge. Controleer daarna de normale
-   publicatieworkflow. De CLI deployt geen website en sluit geen issues.
+1. Werk in je bestaande checkout op een werkbranch vanaf bijgewerkte `main`, met upstream.
+   Behoud eventueel bestaand werk; wissel niet van branch met onafgeronde wijzigingen.
+2. Luister naar de alternatieven en voer je keuze in. Een preview met `--dry-run` is optioneel.
+3. Voer andere beslissingen in op dezelfde branch. Iedere keuze wordt direct lokaal
+   opgeslagen met curator `LAH`; publicatiebouw en uitgebreide controles wachten.
+4. Doe eventuele TIDAL-acties zelf en registreer ze met `playlist-done`.
+5. Voer na de laatste beslissing `./curator finish` uit. Alleen **Finish geslaagd**
+   bevestigt dat de gezamenlijke eindcontrole is geslaagd.
+6. Review de diff én nieuwe bestanden. Doe zelf add, commit, push, PR-review en merge.
+   De CLI deployt geen website en sluit geen issues.
+
+Een nieuwe branch maak en publiceer je zelf, uitsluitend als je huidige werk is afgerond:
 
 ```bash
-# Zelf uitvoeren in jouw checkout; kies zelf basis en branchnaam.
 git status
+git checkout main
+git pull --ff-only
 git checkout -b curator-beslissingen
+git push -u origin curator-beslissingen
+```
 
+Op je bestaande werkbranch met upstream:
+
+```bash
 ./curator 246 C093
-./curator 246 C093 --apply --curator Lucas
 ./curator 263 P078
-./curator 263 P078 --apply --curator Lucas
+./curator finish
 
 git status --short
 git diff --check
 git diff
-# Kies expliciet de bestanden uit git status, inclusief nieuwe Performance/decision-bestanden.
+# Selecteer gecontroleerde bestanden, inclusief nieuwe Performance/decision-bestanden
+# en reports/curator-decisions/batch-status.json.
 git add <gecontroleerde-bestanden>
 git diff --cached
 git commit -m "Record reviewed curator decisions"
-git push -u origin curator-beslissingen
+git push
 # Open, review en merge vervolgens zelf de PR.
 ```
 
-Een fout bij de tweede beslissing draait de eerste geslaagde beslissing niet
-terug. Er is geen batchtransactie over meerdere commando's. Bestanden onder
-`publication/` kunnen gegenereerd en Git-ignored zijn; volg de bestaande
-publicatieworkflow en forceer ze niet automatisch in Git. Gebruik `git status`
-om ook nieuwe, nog niet getrackte bestanden te bekijken: `git diff` toont die niet.
+Een fout bij een volgende beslissing draait eerdere opgeslagen beslissingen niet terug.
+Ook een mislukte `finish` bewaart je keuzes. Herstel de gemelde fout en herhaal `finish`
+voordat je commit. Gegenereerde bestanden onder `publication/` zijn mogelijk Git-ignored;
+forceer ze niet in Git. `git diff` toont geen nieuwe, nog niet getrackte bestanden:
+bekijk die afzonderlijk via `git status` of na selectief stagen met `git diff --cached`.
 
 ## 4. Volledige referentie van `./curator`
 
@@ -90,20 +96,22 @@ om ook nieuwe, nog niet getrackte bestanden te bekijken: `git diff` toont die ni
 ./curator ISSUE CHOICE [--dry-run | --apply] [--curator NAME]
   [--decision-url URL] [--replace-existing] [--playlist-remove-unselected]
 ./curator ISSUE playlist-done [--dry-run | --apply] [--curator NAME] [--note TEXT]
+./curator finish
 ```
 
 | Parameter | Betekenis / standaard |
 |---|---|
 | `ISSUE` | Verplicht positief bedoeld issuenummer, zonder `#`; moet precies één geregistreerde keuze aanwijzen |
 | `CHOICE` | Verplichte unitcode (`C093`, `P078`, geregistreerde Best Classical-code), expliciete alias of `existing` |
-| `--dry-run` | Expliciete preview; ook de standaard zonder modusflag. Geen blijvende repositorywijzigingen |
-| `--apply` | Schrijft na geslaagde validatie; kan niet samen met `--dry-run` |
-| `--curator NAME` | Auteur van beslissing/bevestiging; standaard lokale gebruikersnaam |
+| `--dry-run` | Alleen het wijzigingsplan bekijken; geen opslag, publicatiebouw of eindcontrole |
+| `--apply` | Optioneel: lokaal opslaan is al de standaard. Eindcontrole volgt met `finish`; niet samen met `--dry-run` |
+| `--curator NAME` | Auteur van beslissing/bevestiging; standaard `LAH` |
 | `--decision-url URL` | Optionele bestaande `https://github.com/LuHoo/classical_music/issues/ISSUE#issuecomment-N` als bron; alleen de vorm en issuekoppeling worden gecontroleerd, niet de inhoud/auteur |
 | `--replace-existing` | Expliciete toestemming om een bestaande aanbeveling te vervangen; de oude volledige Performance wordt in het beslisrecord bewaard |
 | `--playlist-remove-unselected` | Registreert exacte track-ID's voor **handmatige** verwijdering uit de bronplaylist; doet geen TIDAL-aanroep |
 | `playlist-done` | Aparte actie voor het bevestigen van een eerder vastgelegde handmatige playlistactie |
 | `--note TEXT` | Verplicht bij eerste `playlist-done`; beschrijf wat je werkelijk hebt gecontroleerd. Alleen geldig bij deze actie |
+| `finish` | Controleert alle geregistreerde intakes, bouwt eenmaal de publicatie en draait de gerichte batchtests; geen keuzeparameters nodig |
 | `-h`, `--help` | Toon gebruiksinformatie |
 
 A/B worden uitsluitend uit `choice_aliases` gelezen; nooit uit arrayvolgorde.
@@ -113,16 +121,15 @@ zijn geen ondersteunde CLI-beslissingen. Gebruik daarvoor een beoordeelde wijzig
 
 ```bash
 ./curator 240 A                         # bestaande Chamber-beslissing: geen wijziging
-./curator 263 P078                      # Piano-preview
+./curator 263 P078                      # Piano-beslissing opslaan (LAH)
 ./curator 264 P182 --dry-run             # expliciete preview
 ./curator 242 existing                  # bestaande aanbeveling behouden
-./curator 242 C035 --replace-existing    # vervanging alleen bekijken
-./curator 242 C035 --replace-existing --apply --curator Lucas
+./curator 242 C035 --replace-existing --dry-run # vervanging bekijken
+./curator 242 C035 --replace-existing --curator LAH
 ```
 
 Bij nieuwe besluiten worden Performance YAML, het oorspronkelijke manifest,
-`reports/curator-decisions/issue-ISSUE.json`, rapporttellingen en gegenereerde
-publicatie bijgewerkt. Historische brontracks, posities en ruwe metadata blijven
+`reports/curator-decisions/issue-ISSUE.json`, rapporttellingen bijgewerkt. De publicatie wordt pas bij `finish` bijgewerkt. Historische brontracks, posities en ruwe metadata blijven
 behouden. Piano's expliciet beoordeelde `listening_track_id` blijft de luisterlink;
 anders is dat de eerste opgenomen track. Excerpt, profiel en versieaanduiding
 worden overgenomen, niet bedacht. Best Classical krijgt actuele tellingen boven
@@ -133,15 +140,39 @@ voor hetzelfde afgesloten issue stopt. Oude, handmatig vastgelegde groepsbesluit
 zijn niet automatisch omzetbaar naar individuele CLI-records. Een latere retry kan
 geen playlistactie toevoegen aan een besluit dat zonder die actie is vastgelegd.
 
+### Eindcontrole, status en voortgang
+
+Bij iedere invoer blijven noodzakelijke invoerbeveiligingen actief: geldige keuze,
+vervangingsbevoegdheid, conflicterende bronverwijzingen en veilig schrijven. De zware
+broncontroles, publicatievalidatie en tests worden uitgesteld tot `finish`.
+
+`finish` laadt de actuele gegevens en bouwt de volledige canonieke publicatie eenmaal.
+Chamber, Piano en geregistreerde Best Classical-keuzes delen die bouw. Daarna draait
+`tests/test_curator_batch.py` met dezelfde Python-interpreter. Dit is een gerichte
+regressiesuite, niet de volledige repositorytestsuite, brede identiteitsanalyse,
+live TIDAL-controle of controle van een gedeployde Jekyll-site.
+
+`reports/curator-decisions/batch-status.json` krijgt status `pending`, `validated` of
+`failed`. Een nieuwe beslissing verwijdert het eerdere validatiestempel. Het rapport
+bevat na succes een fingerprint van de gecontroleerde invoer en het testresultaat.
+Handmatige wijzigingen na `finish` vereisen opnieuw `finish`; een oud rapport is geen
+bewijs voor nieuw gewijzigde bestanden. Ook beslissingen van vóór deze workflow worden
+meegenomen als er nog geen batchrapport bestaat.
+
+Tijdens `finish` verschijnt iedere 10 seconden de huidige stap en verstreken tijd.
+Voortgang gaat naar stderr, de samenvatting naar stdout. Bij falen blijven keuzes
+bewaard en wordt geen nieuwe publicatie geïnstalleerd. Herstel de genoemde fout en
+herhaal `finish`. Ontbreekt pytest, installeer de ontwikkelafhankelijkheden in dezelfde
+Python-omgeving. Alleen **Finish geslaagd** bevestigt een geslaagde eindcontrole.
+Een waarschuwing bij de terminaltitel in VS Code kan afzonderlijk van een extensie komen.
+
 ## 5. Bronplaylist handmatig bijwerken
 
 ```bash
 ./curator 263 P078 --playlist-remove-unselected
-./curator 263 P078 --playlist-remove-unselected --apply --curator Lucas
 # Verwijder nu zelf de genoemde IDs in TIDAL en behoud de gekozen uitvoering.
 ./curator 263 playlist-done --note "Afgewezen ID verwijderd; gekozen ID behouden"
-./curator 263 playlist-done --apply --curator Lucas \
-  --note "Afgewezen ID verwijderd; gekozen ID behouden"
+./curator finish
 ```
 
 Controleer de huidige playlist: snapshotposities zijn historisch. Gedeelde of
@@ -219,15 +250,12 @@ gegenereerde `publication/` vernieuwen. Zij voeren geen Git-opdrachten uit.
 .venv/bin/python scripts/validate_data.py --json > reports/validation/local.json
 ```
 
-Maak de uitvoermap voor shellredirecties zelf eerst aan. `./curator` doet staged
-validatie voor iedere beslissing: daarvoor hoef je niet iedere keer de volledige
-testsuite of brede identiteitsanalyse te draaien. Gerichte regressies voor deze route:
+Maak de uitvoermap voor shellredirecties zelf eerst aan. Gebruik na een reeks keuzes
+`./curator finish`; aparte controles per keuze zijn niet nodig. De batchtests kun je
+ook afzonderlijk draaien, zonder publicatie-eindcontrole:
 
 ```bash
-.venv/bin/python -m pytest tests/test_curator.py tests/test_curator_collections.py \
-  tests/test_chamber_import.py tests/test_piano_import.py \
-  tests/test_original_arrangement_decisions.py tests/test_curator_listening.py \
-  --no-cov -o addopts='' -q
+.venv/bin/python -m pytest tests/test_curator_batch.py -o addopts='' -p no:cacheprovider -q
 ```
 
 ## 8. Overige onderhouds- en migratiescripts
@@ -305,7 +333,8 @@ stilzwijgend als curatorbewijs gepromoveerd.
 
 Architectuur: `playlist_choices.py` bevat `Intake` en de expliciete `INTAKES`-registratie,
 issue-resolutie, windowtellingen en keuzevalidatie. `curator.py` bevat de gedeelde
-beslis- en schrijflogica. `chamber_import.py`, `piano_import.py` en
+beslis- en schrijflogica. `curator_batch.py` beheert snelle opslag, batchstatus en
+de gezamenlijke eindcontrole. Audits accepteren gedeelde data en publicatie-uitvoer. `chamber_import.py`, `piano_import.py` en
 `best_classical_import.py` bewaken hun eigen bronregels. Voor Contemporary, Opera
 of Lieder: voeg een beoordeeld manifest, registratiepatroon, rapportadapter en
 specifieke audit toe; test bronbehoud, alle gebruikte beslismodi, preview/apply,
@@ -315,13 +344,13 @@ luisterondersteuning bewijst op zichzelf geen ondersteuning voor toepassen.
 
 ### Gerichte validatie versus historisch vensterrapport
 
-Best Classical valideert bij een beslissing de venstertellingen, geregistreerde
+Best Classical valideert bij `finish` de venstertellingen, geregistreerde
 keuzes en de huidige canonieke publicatie. De zelfstandige
 `check_tidal_window_import.py` blijft de volledige historische import controleren.
 Die kan al vóór een nieuwe beslissing falen door latere cataloguswijzigingen:
 op de PR-basis verwijst venster 333–1998 bijvoorbeeld naar het inmiddels ontbrekende
 `gustav-holst-hammersmith-playlist-1508.yaml`. De CLI herstelt of verbergt die
-historische verwijzing niet. Een geslaagde curator-preview is daarom geen bewijs
+historische verwijzing niet. Een geslaagde `finish` is daarom geen bewijs
 dat elk oud importrecord nog naar een bestaande aanbeveling verwijst.
 
 ## 10. Fouten, herstel en beperkingen
@@ -334,9 +363,9 @@ dat elk oud importrecord nog naar een bestaande aanbeveling verwijst.
 | `--replace-existing` vereist | Bekijk het te vervangen record en geef de flag pas na die controle |
 | Verwijzing vanuit andere intake | Vervanging zou bronverwijzingen breken; gezamenlijke handmatige beoordeling nodig |
 | Kandidaten in ander venster | Geen gedeeltelijke Work-keuze toepassen; consolideer en beoordeel eerst |
-| `.curator.lock` bestaat | Controleer of een andere apply loopt. Verwijder alleen een achtergebleven lock nadat vaststaat dat er geen schrijver actief is |
-| Inputs gewijzigd tijdens validatie | Preview opnieuw; geen oude berekening forceren |
-| Audit of publicatie faalt | De voorgestelde lokale wijziging wordt niet geïnstalleerd; herstel de concrete bron-/canonieke fout |
+| `.curator.lock` bestaat | Controleer of een andere apply of finish loopt. Verwijder alleen een achtergebleven lock nadat vaststaat dat er geen schrijver actief is |
+| Inputs gewijzigd tijdens validatie | Herhaal `finish` na je wijzigingen; geen oude berekening forceren |
+| Audit of publicatie faalt | Opgeslagen keuzes blijven staan; publicatie wordt niet vervangen. Herstel de fout en herhaal `finish` |
 | Computer crasht tijdens apply | Controleer Git-diff, nieuwe bestanden en beslisrecord voordat je herhaalt. Meerdere bestanden vormen geen crashbestendige database-transactie |
 
 De CLI gebruikt tijdelijke bestanden voor validatie, een schrijverslot, controle

@@ -135,7 +135,7 @@ def audit(manifest_path: Path, root: Path = ROOT) -> dict:
     }
 
 
-def audit_decisions(manifest_path: Path, root: Path = ROOT) -> dict:
+def audit_decisions(manifest_path: Path, root: Path = ROOT, *, data=None, generated=None) -> dict:
     """Validate registered decisions without re-auditing historical unrelated imports.
 
 Legacy windows can refer to recommendations removed by subsequent reviewed work.
@@ -154,15 +154,17 @@ window accounting and the complete current canonical/publication dataset.
     for unit in units:
         assert unit['positions'] == [t['position'] for t in unit['tracks']]
     yaml = YAML(typ='safe')
-    data = {}
-    for kind in ('persons', 'work-groups', 'works', 'performances'):
-        data[kind] = {}
-        for path in (root / 'data' / kind).glob('*.yaml'):
-            record = yaml.load(path.read_text())
-            assert record['id'] not in data[kind]
-            data[kind][record['id']] = record
+    if data is None:
+        data = {}
+        for kind in ('persons', 'work-groups', 'works', 'performances'):
+            data[kind] = {}
+            for path in (root / 'data' / kind).glob('*.yaml'):
+                record = yaml.load(path.read_text())
+                assert record['id'] not in data[kind]
+                data[kind][record['id']] = record
     validate_choices(manifest, data, root)
-    generated = PublicationSiteGenerator(root).generate()
+    if generated is None:
+        generated = PublicationSiteGenerator(root).generate()
     by_id = {u['unit_id']: u for u in units if u.get('unit_id')}
     for choice in manifest.get('resolved_choices', []):
         for uid in choice['units']:

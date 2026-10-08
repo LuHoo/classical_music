@@ -1,0 +1,15 @@
+{
+  "issue_url": "https://github.com/LuHoo/classical_music/issues/257",
+  "decision_source": "curator_cli",
+  "curator": "LAH",
+  "recorded_at": "2026-10-08T13:46:27.340904+00:00",
+  "requested_choice": "existing",
+  "choice": "existing",
+  "selected_units": [],
+  "not_selected_units": [
+    "C302"
+  ],
+  "performance_id": "igor-stravinsky-concerto-in-e-flat-dumbarton-oaks-k-060-work-nieuw-sinfonietta-amsterdam-lev-markiz",
+  "implementation_pr": null,
+  "replaced_performances": []
+}
