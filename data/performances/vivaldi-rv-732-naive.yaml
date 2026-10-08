@@ -1,0 +1,19 @@
+id: 25ec1d8d88b4494ca6250f04e492839c
+work_id: fb482c19e9fc44ffb470eeb17b227ddc
+performers:
+- name: Accademia Bizantina
+  role: ensemble
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP30443
+  album_title: Arie ritrovate
+source:
+  url: https://vivaldiedition.net/portfolio/vol-30-arie-ritrovate-2007/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: The Vivaldi Edition, volume 30. Album page verified 2026-09-28. Catalogusnummer OP30443. Inclusief de
+  instrumentale werken RV 136 en 369; opera-RV-nummers verwijzen naar aria’s. RV 819 volgt de huidige
+  trackmetadata voor Orlando 1714.
+links:
+  tidal:
+    url: https://tidal.com/album/91195549
+excerpt: 'Excerpts: opera arias and/or sinfonia; this album does not contain the complete opera.'

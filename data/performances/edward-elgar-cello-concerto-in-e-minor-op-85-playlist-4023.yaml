@@ -1,0 +1,21 @@
+id: edward-elgar-cello-concerto-in-e-minor-op-85-playlist-4023
+work_id: edward-elgar-cello-concerto-in-e-minor-op-85
+performers:
+- name: Gautier Capuçon
+  artist_id: gautier-capucon
+  role: soloist
+- name: Antonio Pappano
+  artist_id: antonio-pappano
+  role: conductor
+- name: London Symphony Orchestra
+  artist_id: london-symphony-orchestra
+  role: orchestra
+links:
+  tidal:
+    url: https://tidal.com/track/389718046
+release:
+  album_title: 'Elgar & Walton: Cello Concertos'
+source:
+  file: reports/playlist-import/best-classical/window-4001-5518.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+version_assignment: unspecified

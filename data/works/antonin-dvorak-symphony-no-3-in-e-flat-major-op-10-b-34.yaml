@@ -1,0 +1,8 @@
+id: antonin-dvorak-symphony-no-3-in-e-flat-major-op-10-b-34
+work_group_id: antonin-dvorak-symphony-no-3-in-e-flat-major-op-10-b-34-group
+composer_id: antonin-dvorak
+title: Symphony No. 3 in E-Flat Major, Op. 10, B. 34
+source:
+  file: docs/dvorak.md
+catalogue:
+  op: '10'

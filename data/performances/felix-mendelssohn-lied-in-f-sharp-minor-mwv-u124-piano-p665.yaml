@@ -1,0 +1,13 @@
+id: felix-mendelssohn-lied-in-f-sharp-minor-mwv-u124-piano-p665
+work_id: felix-mendelssohn-lied-in-f-sharp-minor-mwv-u124
+performers:
+  - name: Howard Shelley
+    role: piano
+links:
+  tidal:
+    url: https://tidal.com/track/338434271
+release:
+  album_title: 'Mendelssohn: The Complete Solo Piano Music 3'
+source:
+  file: reports/playlist-import/piano/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/82853f8e-4fd6-42b6-b0a7-230da5ee86a1

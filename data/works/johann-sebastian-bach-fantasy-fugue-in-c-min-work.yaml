@@ -1,0 +1,12 @@
+id: johann-sebastian-bach-fantasy-fugue-in-c-min-work
+work_group_id: johann-sebastian-bach-fantasy-fugue-in-c-min-group
+composer_id: johann-sebastian-bach
+title: Fantasia and Fugue in C minor (Elgar orchestration)
+source:
+  file: docs/bachJS.md
+  line: '82'
+  url: https://ci.nii.ac.jp/ncid/BA50788723
+catalogue:
+  bwv: BWV 537
+category: Orchestral arrangements
+version: Orchestration by Edward Elgar

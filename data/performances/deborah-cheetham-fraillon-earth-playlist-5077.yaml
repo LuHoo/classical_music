@@ -1,0 +1,16 @@
+id: deborah-cheetham-fraillon-earth-playlist-5077
+work_id: deborah-cheetham-fraillon-earth
+performers:
+- name: Deborah Cheetham Fraillon
+- name: Melbourne Symphony Orchestra
+  artist_id: melbourne-symphony-orchestra
+  role: orchestra
+- name: Jaime Martín
+links:
+  tidal:
+    url: https://tidal.com/track/439102729
+release:
+  album_title: 'Holst: The Planets – Deborah Cheetham Fraillon: Earth'
+source:
+  file: reports/playlist-import/best-classical/window-4001-5518.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-trio-for-clarinet-cello-and-piano-in-e-flat-major-op-38-group"
+composer_id: "ludwig-van-beethoven"
+title: "Trio for clarinet, cello, and piano in E♭ major"
+source:
+  file: "docs/beethoven.md"
+  line: "208"
+catalogue:
+  opus: "Op. 38"

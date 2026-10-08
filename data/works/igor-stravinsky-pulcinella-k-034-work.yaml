@@ -1,0 +1,11 @@
+id: "igor-stravinsky-pulcinella-k-034-work"
+work_group_id: "igor-stravinsky-pulcinella-k-034-group"
+composer_id: "igor-stravinsky"
+title: "Pulcinella"
+source:
+  file: "docs/stravinsky.md"
+  line: "39"
+catalogue:
+  k: "K 034"
+date_text: "1920"
+category: "Ballet"

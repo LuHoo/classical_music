@@ -1,0 +1,17 @@
+id: francis-poulenc-sextuor-for-piano-flute-oboe-clarinet-bassoon-horn-fp-100-chamber-c078
+work_id: francis-poulenc-sextuor-for-piano-flute-oboe-clarinet-bassoon-horn-fp-100
+performers:
+  - name: Pascal Rogé
+  - name: Patrick Gallois
+  - name: Maurice Bourgue
+  - name: Michel Portal
+  - name: Amaury Wallez
+  - name: André Cazalet
+links:
+  tidal:
+    url: https://tidal.com/track/4471747
+release:
+  album_title: 'Poulenc: Piano Concerto/Organ Concerto/Gloria etc.'
+source:
+  file: reports/playlist-import/chamber/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/a2327106-07fd-4433-8bd3-d8a5c251c69a

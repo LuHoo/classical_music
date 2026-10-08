@@ -1,0 +1,10 @@
+id: "johann-sebastian-bach-concerto-for-harpsichord-and-orchestra-no-3-in-d-maj-work-francesco-corti-il-pomo-d-oro"
+work_id: "johann-sebastian-bach-concerto-for-harpsichord-and-orchestra-no-3-in-d-maj-work"
+source:
+  file: "docs/bachJS.md"
+  line: "44"
+links:
+- platform: "tidal"
+  url: "https://tidal.com/browse/track/305308956?u"
+performers:
+- name: "Francesco Corti, Il Pomo d'Oro"

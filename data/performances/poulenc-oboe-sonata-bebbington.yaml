@@ -1,0 +1,17 @@
+id: poulenc-oboe-sonata-bebbington
+links:
+  tidal:
+    url: https://tidal.com/track/139837494
+performers:
+- name: John Roberts
+  role: oboe
+- name: Mark Bebbington
+  role: piano
+release:
+  album_title: 'Francis Poulenc: Piano Concerto & Concert Champêtre'
+  catalogue_number: RES10256
+  label: Resonus Classics
+source:
+  file: reports/playlist-import/best-classical/prepared-120.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+work_id: poulenc-oboe-sonata

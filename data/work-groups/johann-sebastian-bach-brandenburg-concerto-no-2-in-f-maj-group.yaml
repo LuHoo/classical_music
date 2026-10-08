@@ -1,0 +1,8 @@
+id: "johann-sebastian-bach-brandenburg-concerto-no-2-in-f-maj-group"
+composer_id: "johann-sebastian-bach"
+title: "Brandenburg Concerto No. 2 in F maj."
+source:
+  file: "docs/bachJS.md"
+  line: "26"
+catalogue:
+  bwv: "BWV 1047"

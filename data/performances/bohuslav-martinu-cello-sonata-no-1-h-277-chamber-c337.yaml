@@ -1,0 +1,16 @@
+id: bohuslav-martinu-cello-sonata-no-1-h-277-chamber-c337
+work_id: bohuslav-martinu-cello-sonata-no-1-h-277
+performers:
+  - name: Vilém Vlček
+  - name: Denis Linnik
+links:
+  tidal:
+    url: https://tidal.com/track/440529062
+release:
+  album_title: The Complete Works for Cello and Piano
+source:
+  file: reports/playlist-import/chamber/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/a2327106-07fd-4433-8bd3-d8a5c251c69a
+  unit_id: C337
+  curator_decision: 
+    https://github.com/LuHoo/classical_music/issues/254#issuecomment-5989259705

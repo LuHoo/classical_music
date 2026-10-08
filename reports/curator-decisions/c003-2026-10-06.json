@@ -1,0 +1,39 @@
+{
+  "issue_url": "https://github.com/LuHoo/classical_music/issues/240",
+  "comment_url": "https://github.com/LuHoo/classical_music/issues/240#issuecomment-5979903521",
+  "selected_units": [
+    "C003"
+  ],
+  "not_selected_units": [
+    "C287"
+  ],
+  "performance_id": "arthur-bliss-clarinet-quintet-f-20-chamber-c003",
+  "implementation_pr": "https://github.com/LuHoo/classical_music/pull/300",
+  "playlist_change": {
+    "date": "2026-10-06",
+    "authorization": "Explicit user request to complete issue #240 and remove C287 from Chamber, separate from the historical import authorization.",
+    "playlist_url": "https://tidal.com/playlist/a2327106-07fd-4433-8bd3-d8a5c251c69a",
+    "removed_track_ids": [
+      "12423579",
+      "12423580",
+      "12423581",
+      "12423582"
+    ],
+    "source_snapshot_positions": [
+      914,
+      915,
+      916,
+      917
+    ],
+    "before_track_count": 1368,
+    "after_track_count": 1364,
+    "method": "TIDAL desktop: filtered by exact Work title; verified artist, album and each track ID through its track-radio link; removed individually in reverse order.",
+    "verification": "Work filter displays all four Wigmore Soloists movements and no Janet Hilton movements; playlist count decreased by exactly four.",
+    "preserved_selected_track_ids": [
+      "338572173",
+      "338572175",
+      "338572176",
+      "338572177"
+    ]
+  }
+}

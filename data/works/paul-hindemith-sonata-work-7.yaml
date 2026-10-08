@@ -1,0 +1,9 @@
+id: "paul-hindemith-sonata-work-7"
+work_group_id: "paul-hindemith-sonata-group-7"
+composer_id: "paul-hindemith"
+title: "Sonata"
+source:
+  file: "docs/hindemith.md"
+  line: "312"
+date_text: "1938"
+category: "Instrumental"

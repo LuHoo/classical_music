@@ -1,0 +1,13 @@
+id: erich-wolfgang-korngold-string-sextet-op-10-chamber-c045
+work_id: erich-wolfgang-korngold-string-sextet-op-10
+performers:
+  - name: John Wilson
+  - name: Sinfonia of London Chamber Ensemble
+links:
+  tidal:
+    url: https://tidal.com/track/196816639
+release:
+  album_title: 'Korngold: Violin Concerto & String Sextet'
+source:
+  file: reports/playlist-import/chamber/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/a2327106-07fd-4433-8bd3-d8a5c251c69a

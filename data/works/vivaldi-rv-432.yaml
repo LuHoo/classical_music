@@ -1,0 +1,9 @@
+id: 8a122db5b51546da93d2b4a2e9c723f9
+work_group_id: 92055288b33043608fbaf57db72e56f2
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Flute Concerto, RV 432
+catalogue:
+  rv: RV 432
+source:
+  url: https://vivaldiedition.net/portfolio/vol-3-concerti-per-flauto-2002/
+  file: reports/vivaldi-naive-edition/catalogue.json

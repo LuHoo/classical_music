@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "status": "validated",
+  "issues": [
+    242,
+    243,
+    246,
+    252,
+    255
+  ],
+  "updated_at": "2026-10-08T14:08:31.046518+00:00",
+  "validated_at": "2026-10-08T14:09:54.645858+00:00",
+  "inputs_sha256": "cc68ee52da4713623d45341fcea282dad48c78a99c76b86105027e041d605b94",
+  "manifests": [
+    "reports/playlist-import/chamber/snapshot-2026-10-04.json",
+    "reports/playlist-import/piano/snapshot-2026-10-04.json",
+    "reports/playlist-import/best-classical/window-1999-4000.json",
+    "reports/playlist-import/best-classical/window-333-1998.json",
+    "reports/playlist-import/best-classical/window-4001-5518.json"
+  ],
+  "tests": [
+    "tests/test_curator_batch.py"
+  ],
+  "test_result": "................                                                         [100%]\n16 passed in 0.18s"
+}

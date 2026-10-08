@@ -1,0 +1,2748 @@
+{
+  "schema_version": 1,
+  "source_sha256": "69df2e1057b47405ba9c61e70e766b6bc9de66d1a156e108c16ddc2ab825f237",
+  "source_run": "https://github.com/LuHoo/classical_music/actions/runs/37024628787",
+  "baseline_main_sha": "f3c1e24faf0dfc4edada28bbcd6fa77245ca7de9",
+  "positions": [
+    34,
+    333
+  ],
+  "canonical_files_changed": 0,
+  "reuse_count": 33,
+  "reuse_track_count": 142,
+  "remaining_unit_count": 44,
+  "remaining_track_count": 158,
+  "decisions": [
+    {
+      "unit": 7,
+      "positions": [
+        70,
+        72
+      ],
+      "source_title": "Piano Concerto No. 9 in E-Flat Major, K. 271 \"Jeunehomme\"",
+      "action": "reuse_existing_no_canonical_change",
+      "performance_id": "wolfgang-amadeus-mozart-piano-concerto-no-9-in-e-major-jenamy-work-lars-vogt-orchestre-de-chambre-de-paris",
+      "work_id": "wolfgang-amadeus-mozart-piano-concerto-no-9-in-e-major-jenamy-work",
+      "canonical_title": "Piano concerto No. 9 in E♭ major \"Jenamy\"",
+      "composer_id": "wolfgang-amadeus-mozart",
+      "catalogue": {
+        "k": "K. 271"
+      },
+      "canonical_performers": [
+        {
+          "name": "Lars Vogt",
+          "role": "performer"
+        },
+        {
+          "name": "Orchestre de Chambre de Paris",
+          "role": "performer"
+        }
+      ],
+      "source_artists": [
+        "Lars Vogt",
+        "Orchestre De Chambre De Paris"
+      ],
+      "recording_evidence": [
+        {
+          "kind": "exact_selected_track",
+          "canonical_url": "http://www.tidal.com/track/307469358",
+          "track_id": "307469358"
+        },
+        {
+          "kind": "canonical_track_resolves_to_same_source_album",
+          "canonical_url": "http://www.tidal.com/track/307469358",
+          "track_id": "307469358",
+          "album_id": "307469356"
+        }
+      ],
+      "trusted_repository_source": {
+        "file": "docs/mozart.md",
+        "line": "91"
+      },
+      "tracks": [
+        {
+          "position": 70,
+          "id": "307469358",
+          "isrc": "FINDE2300045"
+        },
+        {
+          "position": 71,
+          "id": "307469359",
+          "isrc": "FINDE2300046"
+        },
+        {
+          "position": 72,
+          "id": "307469360",
+          "isrc": "FINDE2300047"
+        }
+      ]
+    },
+    {
+      "unit": 8,
+      "positions": [
+        73,
+        75
+      ],
+      "source_title": "Piano Concerto No. 24 in C Minor, K. 491",
+      "action": "reuse_existing_no_canonical_change",
+      "performance_id": "wolfgang-amadeus-mozart-piano-concerto-no-24-in-c-major-work-lars-vogt-orchestre-de-chambre-de-paris",
+      "work_id": "wolfgang-amadeus-mozart-piano-concerto-no-24-in-c-major-work",
+      "canonical_title": "Piano Concerto No. 24 in C major",
+      "composer_id": "wolfgang-amadeus-mozart",
+      "catalogue": {
+        "k": "K. 491"
+      },
+      "canonical_performers": [
+        {
+          "name": "Lars Vogt",
+          "role": "performer"
+        },
+        {
+          "name": "Orchestre de Chambre de Paris",
+          "role": "performer"
+        }
+      ],
+      "source_artists": [
+        "Lars Vogt",
+        "Orchestre De Chambre De Paris"
+      ],
+      "recording_evidence": [
+        {
+          "kind": "exact_selected_track",
+          "canonical_url": "http://www.tidal.com/track/307469361",
+          "track_id": "307469361"
+        },
+        {
+          "kind": "canonical_track_resolves_to_same_source_album",
+          "canonical_url": "http://www.tidal.com/track/307469361",
+          "track_id": "307469361",
+          "album_id": "307469356"
+        }
+      ],
+      "trusted_repository_source": {
+        "file": "docs/mozart.md",
+        "line": "107"
+      },
+      "tracks": [
+        {
+          "position": 73,
+          "id": "307469361",
+          "isrc": "FINDE2300048"
+        },
+        {
+          "position": 74,
+          "id": "307469362",
+          "isrc": "FINDE2300049"
+        },
+        {
+          "position": 75,
+          "id": "307469363",
+          "isrc": "FINDE2300050"
+        }
+      ]
+    },
+    {
+      "unit": 9,
+      "positions": [
+        76,
+        80
+      ],
+      "source_title": "Symphony No. 6 in F Major, Op. 68 \"Pastoral\"",
+      "action": "reuse_existing_no_canonical_change",
+      "performance_id": "ludwig-van-beethoven-symphony-no-6-pastoral-in-f-major-op-68-work-le-concert-des-nations-jordi-savall",
+      "work_id": "ludwig-van-beethoven-symphony-no-6-pastoral-in-f-major-op-68-work",
+      "canonical_title": "Symphony No. 6 \"Pastoral\" in F major",
+      "composer_id": "ludwig-van-beethoven",
+      "catalogue": {
+        "opus": "Op. 68"
+      },
+      "canonical_performers": [
+        {
+          "name": "Le Concert des Nations",
+          "role": "orchestra"
+        },
+        {
+          "name": "Jordi Savall",
+          "role": "conductor"
+        }
+      ],
+      "source_artists": [
+        "Jordi Savall",
+        "Le Concert des Nations"
+      ],
+      "recording_evidence": [
+        {
+          "kind": "exact_selected_track",
+          "canonical_url": "http://www.tidal.com/track/213891370",
+          "track_id": "213891370"
+        },
+        {
+          "kind": "canonical_track_resolves_to_same_source_album",
+          "canonical_url": "http://www.tidal.com/track/213891370",
+          "track_id": "213891370",
+          "album_id": "213891369"
+        }
+      ],
+      "trusted_repository_source": {
+        "file": "docs/beethoven.md",
+        "line": "58"
+      },
+      "tracks": [
+        {
+          "position": 76,
+          "id": "213891370",
+          "isrc": "CH4212100158"
+        },
+        {
+          "position": 77,
+          "id": "213891371",
+          "isrc": "CH4212100159"
+        },
+        {
+          "position": 78,
+          "id": "213891372",
+          "isrc": "CH4212100160"
+        },
+        {
+          "position": 79,
+          "id": "213891373",
+          "isrc": "CH4212100161"
+        },
+        {
+          "position": 80,
+          "id": "213891374",
+          "isrc": "CH4212100162"
+        }
+      ]
+    },
+    {
+      "unit": 10,
+      "positions": [
+        81,
+        84
+      ],
+      "source_title": "Symphony No. 7 in A Major, Op. 92",
+      "action": "reuse_existing_no_canonical_change",
+      "performance_id": "ludwig-van-beethoven-symphony-no-7-in-a-major-op-92-work-le-concert-des-nations-jordi-savall",
+      "work_id": "ludwig-van-beethoven-symphony-no-7-in-a-major-op-92-work",
+      "canonical_title": "Symphony No. 7 in A major",
+      "composer_id": "ludwig-van-beethoven",
+      "catalogue": {
+        "opus": "Op. 92"
+      },
+      "canonical_performers": [
+        {
+          "name": "Le Concert des Nations",
+          "role": "orchestra"
+        },
+        {
+          "name": "Jordi Savall",
+          "role": "conductor"
+        }
+      ],
+      "source_artists": [
+        "Jordi Savall",
+        "Le Concert des Nations"
+      ],
+      "recording_evidence": [
+        {
+          "kind": "canonical_track_resolves_to_same_source_album",
+          "canonical_url": "http://www.tidal.com/track/213891370",
+          "track_id": "213891370",
+          "album_id": "213891369"
+        }
+      ],
+      "trusted_repository_source": {
+        "file": "docs/beethoven.md",
+        "line": "70"
+      },
+      "tracks": [
+        {
+          "position": 81,
+          "id": "213891375",
+          "isrc": "CH4212100163"
+        },
+        {
+          "position": 82,
+          "id": "213891376",
+          "isrc": "CH4212100164"
+        },
+        {
+          "position": 83,
+          "id": "213891377",
+          "isrc": "CH4212100165"
+        },
+        {
+          "position": 84,
+          "id": "213891378",
+          "isrc": "CH4212100166"
+        }
+      ]
+    },
+    {
+      "unit": 11,
+      "positions": [
+        85,
+        88
+      ],
+      "source_title": "Symphony No. 8 in F Major, Op. 93",
+      "action": "reuse_existing_no_canonical_change",
+      "performance_id": "ludwig-van-beethoven-symphony-no-8-in-f-major-op-93-work-le-concert-des-nations-jordi-savall",
+      "work_id": "ludwig-van-beethoven-symphony-no-8-in-f-major-op-93-work",
+      "canonical_title": "Symphony No. 8 in F major",
+      "composer_id": "ludwig-van-beethoven",
+      "catalogue": {
+        "opus": "Op. 93"
+      },
+      "canonical_performers": [
+        {
+          "name": "Le Concert des Nations",
+          "role": "orchestra"
+        },
+        {
+          "name": "Jordi Savall",
+          "role": "conductor"
+        }
+      ],
+      "source_artists": [
+        "Jordi Savall",
+        "Le Concert des Nations"
+      ],
+      "recording_evidence": [
+        {
+          "kind": "canonical_track_resolves_to_same_source_album",
+          "canonical_url": "http://www.tidal.com/track/213891370",
+          "track_id": "213891370",
+          "album_id": "213891369"
+        }
+      ],
+      "trusted_repository_source": {
+        "file": "docs/beethoven.md",
+        "line": "72"
+      },
+      "tracks": [
+        {
+          "position": 85,
+          "id": "213891379",
+          "isrc": "CH4212100167"
+        },
+        {
+          "position": 86,
+          "id": "213891380",
+          "isrc": "CH4212100168"
+        },
+        {
+          "position": 87,
+          "id": "213891381",
+          "isrc": "CH4212100169"
+        },
+        {
+          "position": 88,
+          "id": "213891382",
+          "isrc": "CH4212100170"
+        }
+      ]
+    },
+    {
+      "unit": 12,
+      "positions": [
+        89,
+        95
+      ],
+      "source_title": "Symphony No. 9 in D Minor, Op. 125 \"Choral\"",
+      "action": "reuse_existing_no_canonical_change",
+      "performance_id": "ludwig-van-beethoven-symphony-no-9-choral-in-d-minor-op-125-work-le-concert-des-nations-jordi-savall",
+      "work_id": "ludwig-van-beethoven-symphony-no-9-choral-in-d-minor-op-125-work",
+      "canonical_title": "Symphony No. 9 \"Choral\" in D minor",
+      "composer_id": "ludwig-van-beethoven",
+      "catalogue": {
+        "opus": "Op. 125"
+      },
+      "canonical_performers": [
+        {
+          "name": "Le Concert des Nations",
+          "role": "orchestra"
+        },
+        {
+          "name": "Jordi Savall",
+          "role": "conductor"
+        }
+      ],
+      "source_artists": [
+        "Jordi Savall",
+        "Le Concert des Nations"
+      ],
+      "recording_evidence": [
+        {
+          "kind": "canonical_track_resolves_to_same_source_album",
+          "canonical_url": "http://www.tidal.com/track/213891370",
+          "track_id": "213891370",
+          "album_id": "213891369"
+        }
+      ],
+      "trusted_repository_source": {
+        "file": "docs/beethoven.md",
+        "line": "92"
+      },
+      "tracks": [
+        {
+          "position": 89,
+          "id": "213891383",
+          "isrc": "CH4212100171"
+        },
+        {
+          "position": 90,
+          "id": "213891384",
+          "isrc": "CH4212100172"
+        },
+        {
+          "position": 91,
+          "id": "213891385",
+          "isrc": "CH4212100173"
+        },
+        {
+          "position": 92,
+          "id": "213891386",
+          "isrc": "CH4212100174"
+        },
+        {
+          "position": 93,
+          "id": "213891387",
+          "isrc": "CH4212100175"
+        },
+        {
+          "position": 94,
+          "id": "213891389",
+          "isrc": "CH4212100176"
+        },
+        {
+          "position": 95,
+          "id": "213891390",
+          "isrc": "CH4212100177"
+        }
+      ]
+    },
+    {
+      "unit": 28,
+      "positions": [
+        140,
+        146
+      ],
+      "source_title": "Serenade No. 10 in B-Flat Major, K. 361 \"Gran partita\"",
+      "action": "reuse_existing_no_canonical_change",
+      "performance_id": "wolfgang-amadeus-mozart-serenade-no-10-gran-partita-work-mark-simpson-fraser-langton-cl-nicholas-daniel-emma-feilding-ob-amy-harman-dom-tyler-bn-ol",
+      "work_id": "wolfgang-amadeus-mozart-serenade-no-10-gran-partita-work",
+      "canonical_title": "Serenade No. 10 'Gran Partita'",
+      "composer_id": "wolfgang-amadeus-mozart",
+      "catalogue": {
+        "k": "K. 361"
+      },
+      "canonical_performers": [
+        {
+          "name": "Mark Simpson",
+          "role": "performer"
+        },
+        {
+          "name": "Fraser Langton (cl)",
+          "role": "performer"
+        },
+        {
+          "name": "Nicholas Daniel",
+          "role": "performer"
+        },
+        {
+          "name": "Emma Feilding (ob)",
+          "role": "performer"
+        },
+        {
+          "name": "Amy Harman",
+          "role": "performer"
+        },
+        {
+          "name": "Dom Tyler (bn)",
+          "role": "performer"
+        },
+        {
+          "name": "Oliver Pashley",
+          "role": "performer"
+        },
+        {
+          "name": "Ausiàs Garrigós Morant (basset hn)",
+          "role": "performer"
+        },
+        {
+          "name": "Ben Goldscheider",
+          "role": "performer"
+        },
+        {
+          "name": "Angela Barnes",
+          "role": "performer"
+        },
+        {
+          "name": "James Pillai",
+          "role": "performer"
+        },
+        {
+          "name": "Fabian van de Geest (hn)",
+          "role": "performer"
+        },
+        {
+          "name": "David Stark (db)",
+          "role": "performer"
+        }
+      ],
+      "source_artists": [
+        "Mark Simpson"
+      ],
+      "recording_evidence": [
+        {
+          "kind": "exact_selected_track",
+          "canonical_url": "https://tidal.com/browse/track/160324011?u",
+          "track_id": "160324011"
+        },
+        {
+          "kind": "canonical_track_resolves_to_same_source_album",
+          "canonical_url": "https://tidal.com/browse/track/160324011?u",
+          "track_id": "160324011",
+          "album_id": "160324009"
+        }
+      ],
+      "trusted_repository_source": {
+        "file": "docs/mozart.md",
+        "line": "154"
+      },
+      "tracks": [
+        {
+          "position": 140,
+          "id": "160324011",
+          "isrc": "GBYDS2000299"
+        },
+        {
+          "position": 141,
+          "id": "160324012",
+          "isrc": "GBYDS2000300"
+        },
+        {
+          "position": 142,
+          "id": "160324013",
+          "isrc": "GBYDS2000301"
+        },
+        {
+          "position": 143,
+          "id": "160324014",
+          "isrc": "GBYDS2000302"
+        },
+        {
+          "position": 144,
+          "id": "160324015",
+          "isrc": "GBYDS2000303"
+        },
+        {
+          "position": 145,
+          "id": "160324016",
+          "isrc": "GBYDS2000304"
+        },
+        {
+          "position": 146,
+          "id": "160324017",
+          "isrc": "GBYDS2000305"
+        }
+      ]
+    },
+    {
+      "unit": 29,
+      "positions": [
+        147,
+        150
+      ],
+      "source_title": "Shostakovich: Symphony No. 1 in F Minor, Op. 10",
+      "action": "reuse_existing_no_canonical_change",
+      "performance_id": "dmitri-shostakovich-symphony-no-1-in-f-minor-work-boston-so-andris-nelsons",
+      "work_id": "dmitri-shostakovich-symphony-no-1-in-f-minor-work",
+      "canonical_title": "Symphony No. 1 in F minor",
+      "composer_id": "dmitri-shostakovich",
+      "catalogue": {
+        "op": "Op. 10"
+      },
+      "canonical_performers": [
+        {
+          "name": "Boston SO",
+          "role": "performer"
+        },
+        {
+          "name": "Andris Nelsons",
+          "role": "performer"
+        }
+      ],
+      "source_artists": [
+        "Andris Nelsons",
+        "Boston Symphony Orchestra"
+      ],
+      "recording_evidence": [
+        {
+          "kind": "exact_selected_track",
+          "canonical_url": "http://www.tidal.com/track/188218278",
+          "track_id": "188218278"
+        },
+        {
+          "kind": "canonical_track_resolves_to_same_source_album",
+          "canonical_url": "http://www.tidal.com/track/188218278",
+          "track_id": "188218278",
+          "album_id": "188218275"
+        }
+      ],
+      "trusted_repository_source": {
+        "file": "docs/shostakovich.md",
+        "line": "18"
+      },
+      "tracks": [
+        {
+          "position": 147,
+          "id": "188218278",
+          "isrc": "DEN961803721"
+        },
+        {
+          "position": 148,
+          "id": "188218279",
+          "isrc": "DEN961803722"
+        },
+        {
+          "position": 149,
+          "id": "188218281",
+          "isrc": "DEN961803723"
+        },
+        {
+          "position": 150,
+          "id": "188218282",
+          "isrc": "DEN961803724"
+        }
+      ]
+    },
+    {
+      "unit": 30,
+      "positions": [
+        151,
+        155
+      ],
+      "source_title": "Shostakovich: Chamber Symphony, Op. 110a (Orch. Barshai After String Quartet No. 8)",
+      "action": "reuse_existing_no_canonical_change",
+      "performance_id": "dmitri-shostakovich-chamber-symphony-in-c-minor-work-boston-so-andris-nelsons",
+      "work_id": "dmitri-shostakovich-chamber-symphony-in-c-minor-work",
+      "canonical_title": "Chamber Symphony in C minor",
+      "composer_id": "dmitri-shostakovich",
+      "catalogue": {
+        "op": "Op. 110a"
+      },
+      "canonical_performers": [
+        {
+          "name": "Boston SO",
+          "role": "performer"
+        },
+        {
+          "name": "Andris Nelsons",
+          "role": "performer"
+        }
+      ],
+      "source_artists": [
+        "Andris Nelsons",
+        "Boston Symphony Orchestra"
+      ],
+      "recording_evidence": [
+        {
+          "kind": "explicit_same_album",
+          "canonical_url": "https://tidal.com/album/188218275/track/188218278",
+          "album_id": "188218275"
+        },
+        {
+          "kind": "canonical_track_resolves_to_same_source_album",
+          "canonical_url": "https://tidal.com/album/188218275/track/188218278",
+          "track_id": "188218278",
+          "album_id": "188218275"
+        }
+      ],
+      "trusted_repository_source": {
+        "file": "docs/shostakovich.md",
+        "line": "128"
+      },
+      "tracks": [
+        {
+          "position": 151,
+          "id": "188218300",
+          "isrc": "DEN962001771"
+        },
+        {
+          "position": 152,
+          "id": "188218301",
+          "isrc": "DEN962001772"
+        },
+        {
+          "position": 153,
+          "id": "188218302",
+          "isrc": "DEN962001773"
+        },
+        {
+          "position": 154,
+          "id": "188218303",
+          "isrc": "DEN962001774"
+        },
+        {
+          "position": 155,
+          "id": "188218304",
+          "isrc": "DEN962001775"
+        }
+      ]
+    },
+    {
+      "unit": 31,
+      "positions": [
+        156,
+        160
+      ],
+      "source_title": "Shostakovich: Symphony No. 9 in E-Flat Major , Op. 70",
+      "action": "reuse_existing_no_canonical_change",
+      "performance_id": "dmitri-shostakovich-symphony-no-9-in-e-flat-major-work-boston-so-andris-nelsons",
+      "work_id": "dmitri-shostakovich-symphony-no-9-in-e-flat-major-work",
+      "canonical_title": "Symphony No. 9 in E-flat major",
+      "composer_id": "dmitri-shostakovich",
+      "catalogue": {
+        "op": "Op. 70"
+      },
+      "canonical_performers": [
+        {
+          "name": "Boston SO",
+          "role": "performer"
+        },
+        {
+          "name": "Andris Nelsons",
+          "role": "performer"
+        }
+      ],
+      "source_artists": [
+        "Andris Nelsons",
+        "Boston Symphony Orchestra"
+      ],
+      "recording_evidence": [
+        {
+          "kind": "exact_selected_track",
+          "canonical_url": "http://www.tidal.com/track/77611685",
+          "track_id": "77611685"
+        },
+        {
+          "kind": "canonical_track_resolves_to_same_source_album",
+          "canonical_url": "http://www.tidal.com/track/77611685",
+          "track_id": "77611685",
+          "album_id": "77611684"
+        }
+      ],
+      "trusted_repository_source": {
+        "file": "docs/shostakovich.md",
+        "line": "92"
+      },
+      "tracks": [
+        {
+          "position": 156,
+          "id": "77611685",
+          "isrc": "DEN961501771"
+        },
+        {
+          "position": 157,
+          "id": "77611686",
+          "isrc": "DEN961501772"
+        },
+        {
+          "position": 158,
+          "id": "77611687",
+          "isrc": "DEN961501773"
+        },
+        {
+          "position": 159,
+          "id": "77611688",
+          "isrc": "DEN961501774"
+        },
+        {
+          "position": 160,
+          "id": "77611689",
+          "isrc": "DEN961501775"
+        }
+      ]
+    },
+    {
+      "unit": 32,
+      "positions": [
+        161,
+        166
+      ],
+      "source_title": "Shostakovich: Hamlet, Suite to Incidental Music, Op. 32a",
+      "action": "reuse_existing_no_canonical_change",
+      "performance_id": "dmitri-shostakovich-suite-from-hamlet-work-boston-so-andris-nelsons",
+      "work_id": "dmitri-shostakovich-suite-from-hamlet-work",
+      "canonical_title": "Suite from Hamlet",
+      "composer_id": "dmitri-shostakovich",
+      "catalogue": {
+        "op": "Op. 32a"
+      },
+      "canonical_performers": [
+        {
+          "artist_id": "boston-symphony-orchestra",
+          "name": "Boston SO",
+          "role": "performer"
+        },
+        {
+          "artist_id": "andris-nelsons",
+          "name": "Andris Nelsons",
+          "role": "conductor"
+        }
+      ],
+      "source_artists": [
+        "Andris Nelsons",
+        "Boston Symphony Orchestra"
+      ],
+      "recording_evidence": [
+        {
+          "kind": "canonical_track_resolves_to_same_source_album",
+          "canonical_url": "http://www.tidal.com/track/77611685",
+          "track_id": "77611685",
+          "album_id": "77611684"
+        }
+      ],
+      "trusted_repository_source": {
+        "file": "/Users/Lucas_new/.codex/.chatgpt-projects/g-p-6a500123ac548191ab37db95c0d285a2/classical_music/docs/shostakovich.md",
+        "line": "50"
+      },
+      "tracks": [
+        {
+          "position": 161,
+          "id": "77611695",
+          "isrc": "DEN961600002"
+        },
+        {
+          "position": 162,
+          "id": "77611696",
+          "isrc": "DEN961600003"
+        },
+        {
+          "position": 163,
+          "id": "77611697",
+          "isrc": "DEN961600004"
+        },
+        {
+          "position": 164,
+          "id": "77611698",
+          "isrc": "DEN961600005"
+        },
+        {
+          "position": 165,
+          "id": "77611699",
+          "isrc": "DEN961600006"
+        },
+        {
+          "position": 166,
+          "id": "77611700",
+          "isrc": "DEN961600007"
+        }
+      ]
+    },
+    {
+      "unit": 33,
+      "positions": [
+        167,
+        171
+      ],
+      "source_title": "Shostakovich: Symphony No. 8 in C Minor, Op. 65",
+      "action": "reuse_existing_no_canonical_change",
+      "performance_id": "dmitri-shostakovich-symphony-no-8-in-c-minor-work-boston-so-andris-nelsons",
+      "work_id": "dmitri-shostakovich-symphony-no-8-in-c-minor-work",
+      "canonical_title": "Symphony No. 8 in C minor",
+      "composer_id": "dmitri-shostakovich",
+      "catalogue": {
+        "op": "Op. 65"
+      },
+      "canonical_performers": [
+        {
+          "name": "Boston SO",
+          "role": "performer"
+        },
+        {
+          "name": "Andris Nelsons",
+          "role": "performer"
+        }
+      ],
+      "source_artists": [
+        "Andris Nelsons",
+        "Boston Symphony Orchestra"
+      ],
+      "recording_evidence": [
+        {
+          "kind": "exact_selected_track",
+          "canonical_url": "http://www.tidal.com/track/77611701",
+          "track_id": "77611701"
+        },
+        {
+          "kind": "canonical_track_resolves_to_same_source_album",
+          "canonical_url": "http://www.tidal.com/track/77611701",
+          "track_id": "77611701",
+          "album_id": "77611684"
+        }
+      ],
+      "trusted_repository_source": {
+        "file": "docs/shostakovich.md",
+        "line": "88"
+      },
+      "tracks": [
+        {
+          "position": 167,
+          "id": "77611701",
+          "isrc": "DEN961600011"
+        },
+        {
+          "position": 168,
+          "id": "77611702",
+          "isrc": "DEN961600012"
+        },
+        {
+          "position": 169,
+          "id": "77611703",
+          "isrc": "DEN961600013"
+        },
+        {
+          "position": 170,
+          "id": "77611704",
+          "isrc": "DEN961600014"
+        },
+        {
+          "position": 171,
+          "id": "77611705",
+          "isrc": "DEN961600015"
+        }
+      ]
+    },
+    {
+      "unit": 34,
+      "positions": [
+        172,
+        172
+      ],
+      "source_title": "Shostakovich: Lady Macbeth of Mtsensk District, Op. 29: Passacaglia",
+      "action": "reuse_existing_no_canonical_change",
+      "performance_id": "dmitri-shostakovich-lady-macbeth-of-mtsensk-district-work-boston-so-andris-nelsons",
+      "work_id": "dmitri-shostakovich-lady-macbeth-of-mtsensk-district-work",
+      "canonical_title": "Lady MacBeth of Mtsensk District",
+      "composer_id": "dmitri-shostakovich",
+      "catalogue": {
+        "op": "Op. 29"
+      },
+      "canonical_performers": [
+        {
+          "name": "Boston SO",
+          "role": "performer"
+        },
+        {
+          "name": "Andris Nelsons",
+          "role": "performer"
+        }
+      ],
+      "source_artists": [
+        "Andris Nelsons",
+        "Boston Symphony Orchestra"
+      ],
+      "recording_evidence": [
+        {
+          "kind": "exact_selected_track",
+          "canonical_url": "https://tidal.com/album/59709611/track/59709612",
+          "track_id": "59709612"
+        },
+        {
+          "kind": "explicit_same_album",
+          "canonical_url": "https://tidal.com/album/59709611/track/59709612",
+          "album_id": "59709611"
+        },
+        {
+          "kind": "canonical_track_resolves_to_same_source_album",
+          "canonical_url": "https://tidal.com/album/59709611/track/59709612",
+          "track_id": "59709612",
+          "album_id": "59709611"
+        }
+      ],
+      "trusted_repository_source": {
+        "file": "docs/shostakovich.md",
+        "line": "40"
+      },
+      "tracks": [
+        {
+          "position": 172,
+          "id": "59709612",
+          "isrc": "DEN961500350"
+        }
+      ]
+    },
+    {
+      "unit": 35,
+      "positions": [
+        173,
+        176
+      ],
+      "source_title": "Shostakovich: Symphony No. 10 in E Minor, Op. 93",
+      "action": "reuse_existing_no_canonical_change",
+      "performance_id": "dmitri-shostakovich-symphony-no-10-in-e-minor-work-boston-so-andris-nelsons",
+      "work_id": "dmitri-shostakovich-symphony-no-10-in-e-minor-work",
+      "canonical_title": "Symphony No. 10 in E minor",
+      "composer_id": "dmitri-shostakovich",
+      "catalogue": {
+        "op": "Op. 93"
+      },
+      "canonical_performers": [
+        {
+          "name": "Boston SO",
+          "role": "performer"
+        },
+        {
+          "name": "Andris Nelsons",
+          "role": "performer"
+        }
+      ],
+      "source_artists": [
+        "Andris Nelsons",
+        "Boston Symphony Orchestra"
+      ],
+      "recording_evidence": [
+        {
+          "kind": "explicit_same_album",
+          "canonical_url": "https://tidal.com/album/59709611/track/59709612",
+          "album_id": "59709611"
+        },
+        {
+          "kind": "canonical_track_resolves_to_same_source_album",
+          "canonical_url": "https://tidal.com/album/59709611/track/59709612",
+          "track_id": "59709612",
+          "album_id": "59709611"
+        }
+      ],
+      "trusted_repository_source": {
+        "file": "docs/shostakovich.md",
+        "line": "108"
+      },
+      "tracks": [
+        {
+          "position": 173,
+          "id": "59709613",
+          "isrc": "DEN961500361"
+        },
+        {
+          "position": 174,
+          "id": "59709614",
+          "isrc": "DEN961500362"
+        },
+        {
+          "position": 175,
+          "id": "59709615",
+          "isrc": "DEN961500363"
+        },
+        {
+          "position": 176,
+          "id": "59709616",
+          "isrc": "DEN961500364"
+        }
+      ]
+    },
+    {
+      "unit": 36,
+      "positions": [
+        177,
+        178
+      ],
+      "source_title": "Shostakovich: Symphony No. 2 in B Major, Op. 14 \"To October\"",
+      "action": "reuse_existing_no_canonical_change",
+      "performance_id": "dmitri-shostakovich-symphony-no-2-in-b-major-to-october-work-boston-so-andris-nelsons",
+      "work_id": "dmitri-shostakovich-symphony-no-2-in-b-major-to-october-work",
+      "canonical_title": "Symphony No. 2 in B major, To October",
+      "composer_id": "dmitri-shostakovich",
+      "catalogue": {
+        "op": "Op. 14"
+      },
+      "canonical_performers": [
+        {
+          "name": "Boston SO",
+          "role": "performer"
+        },
+        {
+          "name": "Andris Nelsons",
+          "role": "performer"
+        }
+      ],
+      "source_artists": [
+        "Andris Nelsons",
+        "Boston Symphony Orchestra",
+        "Tanglewood Festival Chorus"
+      ],
+      "recording_evidence": [
+        {
+          "kind": "exact_selected_track",
+          "canonical_url": "https://tidal.com/album/321521913/track/321521914",
+          "track_id": "321521914"
+        },
+        {
+          "kind": "explicit_same_album",
+          "canonical_url": "https://tidal.com/album/321521913/track/321521914",
+          "album_id": "321521913"
+        },
+        {
+          "kind": "canonical_track_resolves_to_same_source_album",
+          "canonical_url": "https://tidal.com/album/321521913/track/321521914",
+          "track_id": "321521914",
+          "album_id": "321521913"
+        }
+      ],
+      "trusted_repository_source": {
+        "file": "docs/shostakovich.md",
+        "line": "20"
+      },
+      "tracks": [
+        {
+          "position": 177,
+          "id": "321521914",
+          "isrc": "DEN962302051"
+        },
+        {
+          "position": 178,
+          "id": "321521915",
+          "isrc": "DEN962302052"
+        }
+      ]
+    },
+    {
+      "unit": 37,
+      "positions": [
+        179,
+        182
+      ],
+      "source_title": "Shostakovich: Symphony No. 3 in E-Flat Major, Op. 20 \"1st of May\"",
+      "action": "reuse_existing_no_canonical_change",
+      "performance_id": "dmitri-shostakovich-symphony-no-3-in-e-flat-major-work-boston-so-andris-nelsons",
+      "work_id": "dmitri-shostakovich-symphony-no-3-in-e-flat-major-work",
+      "canonical_title": "Symphony No. 3 in E-flat major",
+      "composer_id": "dmitri-shostakovich",
+      "catalogue": {
+        "op": "Op. 20"
+      },
+      "canonical_performers": [
+        {
+          "name": "Boston SO",
+          "role": "performer"
+        },
+        {
+          "name": "Andris Nelsons",
+          "role": "performer"
+        }
+      ],
+      "source_artists": [
+        "Andris Nelsons",
+        "Boston Symphony Orchestra",
+        "Tanglewood Festival Chorus"
+      ],
+      "recording_evidence": [
+        {
+          "kind": "explicit_same_album",
+          "canonical_url": "https://tidal.com/album/321521913/track/321521914",
+          "album_id": "321521913"
+        },
+        {
+          "kind": "canonical_track_resolves_to_same_source_album",
+          "canonical_url": "https://tidal.com/album/321521913/track/321521914",
+          "track_id": "321521914",
+          "album_id": "321521913"
+        }
+      ],
+      "trusted_repository_source": {
+        "file": "docs/shostakovich.md",
+        "line": "26"
+      },
+      "tracks": [
+        {
+          "position": 179,
+          "id": "321521916",
+          "isrc": "DEN962302061"
+        },
+        {
+          "position": 180,
+          "id": "321521917",
+          "isrc": "DEN962302062"
+        },
+        {
+          "position": 181,
+          "id": "321521918",
+          "isrc": "DEN962302063"
+        },
+        {
+          "position": 182,
+          "id": "321521919",
+          "isrc": "DEN962302064"
+        }
+      ]
+    },
+    {
+      "unit": 38,
+      "positions": [
+        183,
+        187
+      ],
+      "source_title": "Shostakovich: Symphony No. 13 in B-Flat Minor, Op. 113 \"Babi Yar\"",
+      "action": "reuse_existing_no_canonical_change",
+      "performance_id": "dmitri-shostakovich-symphony-no-13-in-b-flat-minor-work-boston-so-andris-nelsons",
+      "work_id": "dmitri-shostakovich-symphony-no-13-in-b-flat-minor-work",
+      "canonical_title": "Symphony No. 13 in B-flat minor",
+      "composer_id": "dmitri-shostakovich",
+      "catalogue": {
+        "op": "Op. 113"
+      },
+      "canonical_performers": [
+        {
+          "name": "Boston SO",
+          "role": "performer"
+        },
+        {
+          "name": "Andris Nelsons",
+          "role": "performer"
+        }
+      ],
+      "source_artists": [
+        "Andris Nelsons",
+        "Boston Symphony Orchestra",
+        "Matthias Goerne",
+        "New England Conservatory Symphonic Choir",
+        "Tanglewood Festival Chorus"
+      ],
+      "recording_evidence": [
+        {
+          "kind": "explicit_same_album",
+          "canonical_url": "https://tidal.com/album/321521913/track/321521914",
+          "album_id": "321521913"
+        },
+        {
+          "kind": "canonical_track_resolves_to_same_source_album",
+          "canonical_url": "https://tidal.com/album/321521913/track/321521914",
+          "track_id": "321521914",
+          "album_id": "321521913"
+        }
+      ],
+      "trusted_repository_source": {
+        "file": "docs/shostakovich.md",
+        "line": "136"
+      },
+      "tracks": [
+        {
+          "position": 183,
+          "id": "321521924",
+          "isrc": "DEN962302081"
+        },
+        {
+          "position": 184,
+          "id": "321521925",
+          "isrc": "DEN962302082"
+        },
+        {
+          "position": 185,
+          "id": "321521926",
+          "isrc": "DEN962302083"
+        },
+        {
+          "position": 186,
+          "id": "321521927",
+          "isrc": "DEN962302084"
+        },
+        {
+          "position": 187,
+          "id": "321521928",
+          "isrc": "DEN962302085"
+        }
+      ]
+    },
+    {
+      "unit": 39,
+      "positions": [
+        188,
+        198
+      ],
+      "source_title": "Shostakovich: King Lear, Incidental Music, Op. 58a",
+      "action": "reuse_existing_no_canonical_change",
+      "performance_id": "dmitri-shostakovich-music-to-the-play-king-lear-by-shakespeare-work-boston-so-andris-nelsons",
+      "work_id": "dmitri-shostakovich-music-to-the-play-king-lear-by-shakespeare-work",
+      "canonical_title": "Music to the play King Lear by Shakespeare",
+      "composer_id": "dmitri-shostakovich",
+      "catalogue": {
+        "op": "Op. 58a"
+      },
+      "canonical_performers": [
+        {
+          "name": "Boston SO",
+          "role": "performer"
+        },
+        {
+          "name": "Andris Nelsons",
+          "role": "performer"
+        }
+      ],
+      "source_artists": [
+        "Andris Nelsons",
+        "Boston Symphony Orchestra",
+        "William R. Hudgins"
+      ],
+      "recording_evidence": [
+        {
+          "kind": "exact_selected_track",
+          "canonical_url": "http://www.tidal.com/track/104156169",
+          "track_id": "104156169"
+        },
+        {
+          "kind": "canonical_track_resolves_to_same_source_album",
+          "canonical_url": "http://www.tidal.com/track/104156169",
+          "track_id": "104156169",
+          "album_id": "104156165"
+        }
+      ],
+      "trusted_repository_source": {
+        "file": "docs/shostakovich.md",
+        "line": "78"
+      },
+      "tracks": [
+        {
+          "position": 188,
+          "id": "104156169",
+          "isrc": "DEN961731701"
+        },
+        {
+          "position": 189,
+          "id": "104156170",
+          "isrc": "DEN961731702"
+        },
+        {
+          "position": 190,
+          "id": "104156171",
+          "isrc": "DEN961731703"
+        },
+        {
+          "position": 191,
+          "id": "104156172",
+          "isrc": "DEN961731704"
+        },
+        {
+          "position": 192,
+          "id": "104156173",
+          "isrc": "DEN961731705"
+        },
+        {
+          "position": 193,
+          "id": "104156174",
+          "isrc": "DEN961731706"
+        },
+        {
+          "position": 194,
+          "id": "104156175",
+          "isrc": "DEN961731707"
+        },
+        {
+          "position": 195,
+          "id": "104156176",
+          "isrc": "DEN961731708"
+        },
+        {
+          "position": 196,
+          "id": "104156177",
+          "isrc": "DEN961731709"
+        },
+        {
+          "position": 197,
+          "id": "104156178",
+          "isrc": "DEN961731710"
+        },
+        {
+          "position": 198,
+          "id": "104156179",
+          "isrc": "DEN961731711"
+        }
+      ]
+    },
+    {
+      "unit": 40,
+      "positions": [
+        199,
+        199
+      ],
+      "source_title": "Shostakovich: Festive Overture, Op. 96",
+      "action": "reuse_existing_no_canonical_change",
+      "performance_id": "dmitri-shostakovich-festive-overture-in-a-major-work-boston-so-andris-nelsons",
+      "work_id": "dmitri-shostakovich-festive-overture-in-a-major-work",
+      "canonical_title": "Festive Overture in A major",
+      "composer_id": "dmitri-shostakovich",
+      "catalogue": {
+        "op": "Op. 96"
+      },
+      "canonical_performers": [
+        {
+          "name": "Boston SO",
+          "role": "performer"
+        },
+        {
+          "name": "Andris Nelsons",
+          "role": "performer"
+        }
+      ],
+      "source_artists": [
+        "Andris Nelsons",
+        "Boston Symphony Orchestra"
+      ],
+      "recording_evidence": [
+        {
+          "kind": "canonical_track_resolves_to_same_source_album",
+          "canonical_url": "http://www.tidal.com/track/104156169",
+          "track_id": "104156169",
+          "album_id": "104156165"
+        }
+      ],
+      "trusted_repository_source": {
+        "file": "docs/shostakovich.md",
+        "line": "114"
+      },
+      "tracks": [
+        {
+          "position": 199,
+          "id": "104156180",
+          "isrc": "DEN961702210"
+        }
+      ]
+    },
+    {
+      "unit": 41,
+      "positions": [
+        200,
+        203
+      ],
+      "source_title": "Shostakovich: Symphony No. 7 in C Major, Op. 60 \"Leningrad\"",
+      "action": "reuse_existing_no_canonical_change",
+      "performance_id": "dmitri-shostakovich-symphony-no-7-in-c-major-work-boston-so-andris-nelsons",
+      "work_id": "dmitri-shostakovich-symphony-no-7-in-c-major-work",
+      "canonical_title": "Symphony No. 7 in C major",
+      "composer_id": "dmitri-shostakovich",
+      "catalogue": {
+        "op": "Op. 60"
+      },
+      "canonical_performers": [
+        {
+          "name": "Boston SO",
+          "role": "performer"
+        },
+        {
+          "name": "Andris Nelsons",
+          "role": "performer"
+        }
+      ],
+      "source_artists": [
+        "Andris Nelsons",
+        "Boston Symphony Orchestra"
+      ],
+      "recording_evidence": [
+        {
+          "kind": "canonical_track_resolves_to_same_source_album",
+          "canonical_url": "http://www.tidal.com/track/104156169",
+          "track_id": "104156169",
+          "album_id": "104156165"
+        }
+      ],
+      "trusted_repository_source": {
+        "file": "docs/shostakovich.md",
+        "line": "80"
+      },
+      "tracks": [
+        {
+          "position": 200,
+          "id": "104156181",
+          "isrc": "DEN961702221"
+        },
+        {
+          "position": 201,
+          "id": "104156182",
+          "isrc": "DEN961702222"
+        },
+        {
+          "position": 202,
+          "id": "104156183",
+          "isrc": "DEN961702223"
+        },
+        {
+          "position": 203,
+          "id": "104156184",
+          "isrc": "DEN961702224"
+        }
+      ]
+    },
+    {
+      "unit": 42,
+      "positions": [
+        204,
+        207
+      ],
+      "source_title": "Shostakovich: Violin Concerto No. 1 in A Minor, Op. 77 (Formerly Op. 99)",
+      "action": "reuse_existing_no_canonical_change",
+      "performance_id": "dmitri-shostakovich-violin-concerto-no-1-in-a-minor-work-alina-ibragimova-state-academic-so-evgeny-svetlanov-vladimir-jurowski",
+      "work_id": "dmitri-shostakovich-violin-concerto-no-1-in-a-minor-work",
+      "canonical_title": "Violin Concerto No. 1 in A minor",
+      "composer_id": "dmitri-shostakovich",
+      "catalogue": {
+        "op": "Op. 77"
+      },
+      "canonical_performers": [
+        {
+          "name": "Alina Ibragimova",
+          "role": "performer"
+        },
+        {
+          "name": "State Academic SO \"Evgeny Svetlanov\"",
+          "role": "performer"
+        },
+        {
+          "name": "Vladimir Jurowski",
+          "role": "performer"
+        }
+      ],
+      "source_artists": [
+        "Alina Ibragimova",
+        "State Academic Symphony Orchestra \"Evgeny Svetlanov\"",
+        "Vladimir Jurowski"
+      ],
+      "recording_evidence": [
+        {
+          "kind": "exact_selected_track",
+          "canonical_url": "http://www.tidal.com/track/306149648",
+          "track_id": "306149648"
+        },
+        {
+          "kind": "canonical_track_resolves_to_same_source_album",
+          "canonical_url": "http://www.tidal.com/track/306149648",
+          "track_id": "306149648",
+          "album_id": "306149647"
+        }
+      ],
+      "trusted_repository_source": {
+        "file": "docs/shostakovich.md",
+        "line": "96"
+      },
+      "tracks": [
+        {
+          "position": 204,
+          "id": "306149648",
+          "isrc": "GBAJY2031301"
+        },
+        {
+          "position": 205,
+          "id": "306149649",
+          "isrc": "GBAJY2031302"
+        },
+        {
+          "position": 206,
+          "id": "306149650",
+          "isrc": "GBAJY2031303"
+        },
+        {
+          "position": 207,
+          "id": "306149651",
+          "isrc": "GBAJY2031304"
+        }
+      ]
+    },
+    {
+      "unit": 51,
+      "positions": [
+        236,
+        236
+      ],
+      "source_title": "Grande Ouverture des francs-juges, Op. 3",
+      "action": "reuse_existing_no_canonical_change",
+      "performance_id": "berlioz-op3-les-siecles-francois-xavier-roth",
+      "work_id": "berlioz-op3",
+      "canonical_title": "Grande Ouverture des franc-juges",
+      "composer_id": "hector-berlioz",
+      "catalogue": {
+        "opus": "Op. 3"
+      },
+      "canonical_performers": [
+        {
+          "artist_id": "les-siecles",
+          "name": "Les Siècles",
+          "role": "performer"
+        },
+        {
+          "artist_id": "francois-xavier-roth",
+          "name": "François-Xavier Roth",
+          "role": "conductor"
+        }
+      ],
+      "source_artists": [
+        "François-Xavier Roth",
+        "Les Siècles"
+      ],
+      "recording_evidence": [
+        {
+          "kind": "exact_selected_track",
+          "canonical_url": "http://www.tidal.com/track/118267645",
+          "track_id": "118267645"
+        },
+        {
+          "kind": "canonical_track_resolves_to_same_source_album",
+          "canonical_url": "http://www.tidal.com/track/118267645",
+          "track_id": "118267645",
+          "album_id": "118267639"
+        }
+      ],
+      "trusted_repository_source": {
+        "file": "/Users/Lucas_new/.codex/.chatgpt-projects/g-p-6a500123ac548191ab37db95c0d285a2/classical_music/docs/berlioz.md",
+        "line": "12"
+      },
+      "tracks": [
+        {
+          "position": 236,
+          "id": "118267645",
+          "isrc": "FR4KC1904006"
+        }
+      ]
+    },
+    {
+      "unit": 52,
+      "positions": [
+        237,
+        243
+      ],
+      "source_title": "Prokofiev: Alexander Nevsky, Op. 78",
+      "action": "reuse_existing_no_canonical_change",
+      "performance_id": "sergei-prokofiev-alexander-nevsky-work-olga-borodina-kirov-chorus-st-petersburg-mariinsky-orchestra-valery-gergiev",
+      "work_id": "sergei-prokofiev-alexander-nevsky-work",
+      "canonical_title": "Alexander Nevsky",
+      "composer_id": "sergei-prokofiev",
+      "catalogue": {
+        "op": "Op. 78"
+      },
+      "canonical_performers": [
+        {
+          "name": "Olga Borodina",
+          "role": "performer"
+        },
+        {
+          "name": "Kirov Chorus St Petersburg",
+          "role": "performer"
+        },
+        {
+          "name": "Mariinsky Orchestra",
+          "role": "performer"
+        },
+        {
+          "name": "Valery Gergiev",
+          "role": "performer"
+        }
+      ],
+      "source_artists": [
+        "Mariinsky Chorus",
+        "Mariinsky Orchestra",
+        "Olga Borodina",
+        "Valery Gergiev"
+      ],
+      "recording_evidence": [
+        {
+          "kind": "explicit_same_album",
+          "canonical_url": "https://tidal.com/album/7232589",
+          "album_id": "7232589"
+        }
+      ],
+      "trusted_repository_source": {
+        "file": "docs/prokofiev.md",
+        "line": "138"
+      },
+      "tracks": [
+        {
+          "position": 237,
+          "id": "7232594",
+          "isrc": "GBBBA0200391"
+        },
+        {
+          "position": 238,
+          "id": "7232595",
+          "isrc": "GBBBA0200392"
+        },
+        {
+          "position": 239,
+          "id": "7232596",
+          "isrc": "GBBBA0200393"
+        },
+        {
+          "position": 240,
+          "id": "7232597",
+          "isrc": "GBBBA0200394"
+        },
+        {
+          "position": 241,
+          "id": "7232598",
+          "isrc": "GBBBA0200395"
+        },
+        {
+          "position": 242,
+          "id": "7232599",
+          "isrc": "GBBBA0200396"
+        },
+        {
+          "position": 243,
+          "id": "7232600",
+          "isrc": "GBBBA0200397"
+        }
+      ]
+    },
+    {
+      "unit": 53,
+      "positions": [
+        244,
+        247
+      ],
+      "source_title": "Symphony No. 1 in D Major, Op. 25 \"Classical\"",
+      "action": "reuse_existing_no_canonical_change",
+      "performance_id": "sergei-prokofiev-symphony-no-1-in-d-classical-work-gurzenich-orchester-koln-dmitri-kitayenko",
+      "work_id": "sergei-prokofiev-symphony-no-1-in-d-classical-work",
+      "canonical_title": "Symphony No. 1 in D, Classical",
+      "composer_id": "sergei-prokofiev",
+      "catalogue": {
+        "op": "Op. 25"
+      },
+      "canonical_performers": [
+        {
+          "name": "Gürzenich-Orchester Köln",
+          "role": "performer"
+        },
+        {
+          "name": "Dmitri Kitayenko",
+          "role": "performer"
+        }
+      ],
+      "source_artists": [
+        "Dmitri Kitayenko",
+        "Gürzenich-Orchester Köln"
+      ],
+      "recording_evidence": [
+        {
+          "kind": "explicit_same_album",
+          "canonical_url": "https://tidal.com/album/285264999",
+          "album_id": "285264999"
+        }
+      ],
+      "trusted_repository_source": {
+        "file": "docs/prokofiev.md",
+        "line": "41"
+      },
+      "tracks": [
+        {
+          "position": 244,
+          "id": "285265000",
+          "isrc": "ATPD50800681"
+        },
+        {
+          "position": 245,
+          "id": "285265001",
+          "isrc": "ATPD50800682"
+        },
+        {
+          "position": 246,
+          "id": "285265002",
+          "isrc": "ATPD50800683"
+        },
+        {
+          "position": 247,
+          "id": "285265003",
+          "isrc": "ATPD50800684"
+        }
+      ]
+    },
+    {
+      "unit": 54,
+      "positions": [
+        248,
+        251
+      ],
+      "source_title": "Symphony No. 7 in C-Sharp Minor, Op. 131",
+      "action": "reuse_existing_no_canonical_change",
+      "performance_id": "sergei-prokofiev-symphony-no-7-in-c-sharp-minor-work-gurzenich-orchester-koln-dmitri-kitayenko",
+      "work_id": "sergei-prokofiev-symphony-no-7-in-c-sharp-minor-work",
+      "canonical_title": "Symphony No. 7 in C-sharp minor",
+      "composer_id": "sergei-prokofiev",
+      "catalogue": {
+        "op": "Op. 131"
+      },
+      "canonical_performers": [
+        {
+          "name": "Gürzenich-Orchester Köln",
+          "role": "performer"
+        },
+        {
+          "name": "Dmitri Kitayenko",
+          "role": "performer"
+        }
+      ],
+      "source_artists": [
+        "Dmitri Kitayenko",
+        "Gürzenich-Orchester Köln"
+      ],
+      "recording_evidence": [
+        {
+          "kind": "explicit_same_album",
+          "canonical_url": "https://tidal.com/album/285264999",
+          "album_id": "285264999"
+        }
+      ],
+      "trusted_repository_source": {
+        "file": "docs/prokofiev.md",
+        "line": "229"
+      },
+      "tracks": [
+        {
+          "position": 248,
+          "id": "285265004",
+          "isrc": "ATPD50800685"
+        },
+        {
+          "position": 249,
+          "id": "285265006",
+          "isrc": "ATPD50800686"
+        },
+        {
+          "position": 250,
+          "id": "285265007",
+          "isrc": "ATPD50800687"
+        },
+        {
+          "position": 251,
+          "id": "285265008",
+          "isrc": "ATPD50800688"
+        }
+      ]
+    },
+    {
+      "unit": 55,
+      "positions": [
+        252,
+        259
+      ],
+      "source_title": "Symphony No. 2 in D Minor, Op. 40",
+      "action": "reuse_existing_no_canonical_change",
+      "performance_id": "sergei-prokofiev-symphony-no-2-in-d-minor-work-gurzenich-orchester-koln-dmitri-kitayenko",
+      "work_id": "sergei-prokofiev-symphony-no-2-in-d-minor-work",
+      "canonical_title": "Symphony No. 2 in D minor",
+      "composer_id": "sergei-prokofiev",
+      "catalogue": {
+        "op": "Op. 40"
+      },
+      "canonical_performers": [
+        {
+          "name": "Gürzenich-Orchester Köln",
+          "role": "performer"
+        },
+        {
+          "name": "Dmitri Kitayenko",
+          "role": "performer"
+        }
+      ],
+      "source_artists": [
+        "Dmitri Kitayenko",
+        "Gürzenich-Orchester Köln"
+      ],
+      "recording_evidence": [
+        {
+          "kind": "explicit_same_album",
+          "canonical_url": "https://tidal.com/album/285264999",
+          "album_id": "285264999"
+        }
+      ],
+      "trusted_repository_source": {
+        "file": "docs/prokofiev.md",
+        "line": "63"
+      },
+      "tracks": [
+        {
+          "position": 252,
+          "id": "285265009",
+          "isrc": "ATPD50800689"
+        },
+        {
+          "position": 253,
+          "id": "285265010",
+          "isrc": "ATPD50800690"
+        },
+        {
+          "position": 254,
+          "id": "285265011",
+          "isrc": "ATPD50800691"
+        },
+        {
+          "position": 255,
+          "id": "285265012",
+          "isrc": "ATPD50800692"
+        },
+        {
+          "position": 256,
+          "id": "285265013",
+          "isrc": "ATPD50800693"
+        },
+        {
+          "position": 257,
+          "id": "285265015",
+          "isrc": "ATPD50800694"
+        },
+        {
+          "position": 258,
+          "id": "285265017",
+          "isrc": "ATPD50800695"
+        },
+        {
+          "position": 259,
+          "id": "285265018",
+          "isrc": "ATPD50800696"
+        }
+      ]
+    },
+    {
+      "unit": 56,
+      "positions": [
+        260,
+        263
+      ],
+      "source_title": "Symphony No. 3 in C Minor, Op. 44",
+      "action": "reuse_existing_no_canonical_change",
+      "performance_id": "sergei-prokofiev-symphony-no-3-in-c-minor-work-gurzenich-orchester-koln-dmitri-kitayenko",
+      "work_id": "sergei-prokofiev-symphony-no-3-in-c-minor-work",
+      "canonical_title": "Symphony No. 3 in C minor",
+      "composer_id": "sergei-prokofiev",
+      "catalogue": {
+        "op": "Op. 44"
+      },
+      "canonical_performers": [
+        {
+          "name": "Gürzenich-Orchester Köln",
+          "role": "performer"
+        },
+        {
+          "name": "Dmitri Kitayenko",
+          "role": "performer"
+        }
+      ],
+      "source_artists": [
+        "Dmitri Kitayenko",
+        "Gürzenich-Orchester Köln"
+      ],
+      "recording_evidence": [
+        {
+          "kind": "explicit_same_album",
+          "canonical_url": "https://tidal.com/album/285264999",
+          "album_id": "285264999"
+        }
+      ],
+      "trusted_repository_source": {
+        "file": "docs/prokofiev.md",
+        "line": "75"
+      },
+      "tracks": [
+        {
+          "position": 260,
+          "id": "285265019",
+          "isrc": "ATPD50800697"
+        },
+        {
+          "position": 261,
+          "id": "285265020",
+          "isrc": "ATPD50800698"
+        },
+        {
+          "position": 262,
+          "id": "285265021",
+          "isrc": "ATPD50800699"
+        },
+        {
+          "position": 263,
+          "id": "285265022",
+          "isrc": "ATPD50800700"
+        }
+      ]
+    },
+    {
+      "unit": 57,
+      "positions": [
+        264,
+        267
+      ],
+      "source_title": "Symphony No. 4 in C Major, Op. 47 (Original 1930 Version)",
+      "action": "reuse_existing_no_canonical_change",
+      "performance_id": "sergei-prokofiev-symphony-no-4-in-c-original-version-work-gurzenich-orchester-koln-dmitri-kitayenko",
+      "work_id": "sergei-prokofiev-symphony-no-4-in-c-original-version-work",
+      "canonical_title": "Symphony No. 4 in C (original version)",
+      "composer_id": "sergei-prokofiev",
+      "catalogue": {
+        "op": "Op. 47"
+      },
+      "canonical_performers": [
+        {
+          "artist_id": "gurzenich-orchester-koln",
+          "name": "Gürzenich-Orchester Köln",
+          "role": "performer"
+        },
+        {
+          "artist_id": "dmitri-kitayenko",
+          "name": "Dmitri Kitayenko",
+          "role": "performer"
+        }
+      ],
+      "source_artists": [
+        "Dmitri Kitayenko",
+        "Gürzenich-Orchester Köln"
+      ],
+      "recording_evidence": [
+        {
+          "kind": "explicit_same_album",
+          "canonical_url": "https://tidal.com/album/285264999",
+          "album_id": "285264999"
+        }
+      ],
+      "trusted_repository_source": {
+        "file": "/Users/Lucas_new/.codex/.chatgpt-projects/g-p-6a500123ac548191ab37db95c0d285a2/classical_music/docs/prokofiev.md",
+        "line": "81"
+      },
+      "tracks": [
+        {
+          "position": 264,
+          "id": "285265023",
+          "isrc": "ATPD50800701"
+        },
+        {
+          "position": 265,
+          "id": "285265024",
+          "isrc": "ATPD50800702"
+        },
+        {
+          "position": 266,
+          "id": "285265025",
+          "isrc": "ATPD50800703"
+        },
+        {
+          "position": 267,
+          "id": "285265026",
+          "isrc": "ATPD50800704"
+        }
+      ]
+    },
+    {
+      "unit": 58,
+      "positions": [
+        268,
+        271
+      ],
+      "source_title": "Symphony No. 4 in C Major, Op. 112 (Revised 1947 Version)",
+      "action": "reuse_existing_no_canonical_change",
+      "performance_id": "sergei-prokofiev-symphony-no-4-in-c-revised-version-work-gurzenich-orchester-koln-dmitri-kitayenko",
+      "work_id": "sergei-prokofiev-symphony-no-4-in-c-revised-version-work",
+      "canonical_title": "Symphony No. 4 in C (revised version)",
+      "composer_id": "sergei-prokofiev",
+      "catalogue": {
+        "op": "Op. 112"
+      },
+      "canonical_performers": [
+        {
+          "artist_id": "gurzenich-orchester-koln",
+          "name": "Gürzenich-Orchester Köln",
+          "role": "performer"
+        },
+        {
+          "artist_id": "dmitri-kitayenko",
+          "name": "Dmitri Kitayenko",
+          "role": "performer"
+        }
+      ],
+      "source_artists": [
+        "Dmitri Kitayenko",
+        "Gürzenich-Orchester Köln"
+      ],
+      "recording_evidence": [
+        {
+          "kind": "explicit_same_album",
+          "canonical_url": "https://tidal.com/album/285264999",
+          "album_id": "285264999"
+        }
+      ],
+      "trusted_repository_source": {
+        "file": "/Users/Lucas_new/.codex/.chatgpt-projects/g-p-6a500123ac548191ab37db95c0d285a2/classical_music/docs/prokofiev.md",
+        "line": "192"
+      },
+      "tracks": [
+        {
+          "position": 268,
+          "id": "285265027",
+          "isrc": "ATPD50800705"
+        },
+        {
+          "position": 269,
+          "id": "285265028",
+          "isrc": "ATPD50800706"
+        },
+        {
+          "position": 270,
+          "id": "285265029",
+          "isrc": "ATPD50800707"
+        },
+        {
+          "position": 271,
+          "id": "285265030",
+          "isrc": "ATPD50800708"
+        }
+      ]
+    },
+    {
+      "unit": 59,
+      "positions": [
+        272,
+        275
+      ],
+      "source_title": "Symphony No. 5 in B-Flat Major, Op. 100",
+      "action": "reuse_existing_no_canonical_change",
+      "performance_id": "sergei-prokofiev-symphony-no-5-in-b-flat-work-gurzenich-orchester-koln-dmitri-kitayenko",
+      "work_id": "sergei-prokofiev-symphony-no-5-in-b-flat-work",
+      "canonical_title": "Symphony No. 5 in B-flat",
+      "composer_id": "sergei-prokofiev",
+      "catalogue": {
+        "op": "Op. 100"
+      },
+      "canonical_performers": [
+        {
+          "name": "Gürzenich-Orchester Köln",
+          "role": "performer"
+        },
+        {
+          "name": "Dmitri Kitayenko",
+          "role": "performer"
+        }
+      ],
+      "source_artists": [
+        "Dmitri Kitayenko",
+        "Gürzenich-Orchester Köln"
+      ],
+      "recording_evidence": [
+        {
+          "kind": "explicit_same_album",
+          "canonical_url": "https://tidal.com/album/285264999",
+          "album_id": "285264999"
+        }
+      ],
+      "trusted_repository_source": {
+        "file": "docs/prokofiev.md",
+        "line": "172"
+      },
+      "tracks": [
+        {
+          "position": 272,
+          "id": "285265031",
+          "isrc": "ATPD50800709"
+        },
+        {
+          "position": 273,
+          "id": "285265032",
+          "isrc": "ATPD50800710"
+        },
+        {
+          "position": 274,
+          "id": "285265033",
+          "isrc": "ATPD50800711"
+        },
+        {
+          "position": 275,
+          "id": "285265034",
+          "isrc": "ATPD50800712"
+        }
+      ]
+    },
+    {
+      "unit": 60,
+      "positions": [
+        276,
+        278
+      ],
+      "source_title": "Symphony No. 6 in E-Flat Minor, Op. 111",
+      "action": "reuse_existing_no_canonical_change",
+      "performance_id": "sergei-prokofiev-symphony-no-6-in-e-flat-minor-work-gurzenich-orchester-koln-dmitri-kitayenko",
+      "work_id": "sergei-prokofiev-symphony-no-6-in-e-flat-minor-work",
+      "canonical_title": "Symphony No. 6 in E-flat minor",
+      "composer_id": "sergei-prokofiev",
+      "catalogue": {
+        "op": "Op. 111"
+      },
+      "canonical_performers": [
+        {
+          "name": "Gürzenich-Orchester Köln",
+          "role": "performer"
+        },
+        {
+          "name": "Dmitri Kitayenko",
+          "role": "performer"
+        }
+      ],
+      "source_artists": [
+        "Dmitri Kitayenko",
+        "Gürzenich-Orchester Köln"
+      ],
+      "recording_evidence": [
+        {
+          "kind": "explicit_same_album",
+          "canonical_url": "https://tidal.com/album/285264999",
+          "album_id": "285264999"
+        }
+      ],
+      "trusted_repository_source": {
+        "file": "docs/prokofiev.md",
+        "line": "190"
+      },
+      "tracks": [
+        {
+          "position": 276,
+          "id": "285265035",
+          "isrc": "ATPD50800713"
+        },
+        {
+          "position": 277,
+          "id": "285265036",
+          "isrc": "ATPD50800714"
+        },
+        {
+          "position": 278,
+          "id": "285265037",
+          "isrc": "ATPD50800715"
+        }
+      ]
+    },
+    {
+      "unit": 71,
+      "positions": [
+        316,
+        319
+      ],
+      "source_title": "Symphony No. 1 in D Major \"Titan\"",
+      "action": "reuse_existing_no_canonical_change",
+      "performance_id": "gustav-mahler-symphony-no-1-in-d-work-czech-philharmonic-semyon-bychkov",
+      "work_id": "gustav-mahler-symphony-no-1-in-d-work",
+      "canonical_title": "Symphony No. 1 in D",
+      "composer_id": "gustav-mahler",
+      "catalogue": null,
+      "canonical_performers": [
+        {
+          "name": "Czech Philharmonic, Semyon Bychkov"
+        }
+      ],
+      "source_artists": [
+        "Czech Philharmonic",
+        "Semyon Bychkov"
+      ],
+      "recording_evidence": [
+        {
+          "kind": "exact_selected_track",
+          "canonical_url": "http://www.tidal.com/track/314323056",
+          "track_id": "314323056"
+        },
+        {
+          "kind": "canonical_track_resolves_to_same_source_album",
+          "canonical_url": "http://www.tidal.com/track/314323056",
+          "track_id": "314323056",
+          "album_id": "314323055"
+        }
+      ],
+      "trusted_repository_source": {
+        "file": "docs/mahler.md",
+        "line": "32"
+      },
+      "tracks": [
+        {
+          "position": 316,
+          "id": "314323056",
+          "isrc": "NLE422304301"
+        },
+        {
+          "position": 317,
+          "id": "314323057",
+          "isrc": "NLE422304302"
+        },
+        {
+          "position": 318,
+          "id": "314323058",
+          "isrc": "NLE422304303"
+        },
+        {
+          "position": 319,
+          "id": "314323059",
+          "isrc": "NLE422304304"
+        }
+      ]
+    },
+    {
+      "unit": 76,
+      "positions": [
+        332,
+        332
+      ],
+      "source_title": "Hindemith: Trauermusik for Viola and String Orchestra",
+      "action": "reuse_existing_no_canonical_change",
+      "performance_id": "paul-hindemith-trauermusik-work-geraldine-walther-san-francisco-symphnoy-herbert-blomstedt",
+      "work_id": "paul-hindemith-trauermusik-work",
+      "canonical_title": "Trauermusik",
+      "composer_id": "paul-hindemith",
+      "catalogue": null,
+      "canonical_performers": [
+        {
+          "name": "Geraldine Walther",
+          "role": "performer"
+        },
+        {
+          "name": "San Francisco Symphnoy",
+          "role": "orchestra"
+        },
+        {
+          "name": "Herbert Blomstedt",
+          "role": "conductor"
+        }
+      ],
+      "source_artists": [
+        "Geraldine Walther",
+        "Herbert Blomstedt",
+        "San Francisco Symphony"
+      ],
+      "recording_evidence": [
+        {
+          "kind": "exact_selected_track",
+          "canonical_url": "https://tidal.com/album/4328135/track/4328139",
+          "track_id": "4328139"
+        },
+        {
+          "kind": "explicit_same_album",
+          "canonical_url": "https://tidal.com/album/4328135/track/4328139",
+          "album_id": "4328135"
+        },
+        {
+          "kind": "canonical_track_resolves_to_same_source_album",
+          "canonical_url": "https://tidal.com/album/4328135/track/4328139",
+          "track_id": "4328139",
+          "album_id": "4328135"
+        }
+      ],
+      "trusted_repository_source": {
+        "file": "docs/hindemith.md",
+        "line": "124"
+      },
+      "tracks": [
+        {
+          "position": 332,
+          "id": "4328139",
+          "isrc": "GBF078710220"
+        }
+      ]
+    }
+  ],
+  "remaining": [
+    {
+      "unit": 1,
+      "positions": [
+        34,
+        35
+      ],
+      "source_title": "Tabula Rasa",
+      "status": "absent_work_identity_review_required"
+    },
+    {
+      "unit": 2,
+      "positions": [
+        36,
+        42
+      ],
+      "source_title": "Zemlinsky: Lyrische Symphonie, Op. 18",
+      "status": "absent_work_identity_review_required"
+    },
+    {
+      "unit": 3,
+      "positions": [
+        43,
+        49
+      ],
+      "source_title": "Zemlinsky: Sinfonische Gesänge. Op. 20",
+      "status": "absent_work_identity_review_required"
+    },
+    {
+      "unit": 4,
+      "positions": [
+        50,
+        50
+      ],
+      "source_title": "Zemlinsky: Psalm 83",
+      "status": "absent_work_identity_review_required"
+    },
+    {
+      "unit": 5,
+      "positions": [
+        51,
+        63
+      ],
+      "source_title": "The Wooden Prince, Op. 13 Sz. 60",
+      "status": "absent_work_identity_review_required"
+    },
+    {
+      "unit": 6,
+      "positions": [
+        64,
+        69
+      ],
+      "source_title": "Dance Suite, Sz. 77",
+      "status": "absent_work_identity_review_required"
+    },
+    {
+      "unit": 13,
+      "positions": [
+        96,
+        99
+      ],
+      "source_title": "Sibelius: Symphony No. 1 in E Minor, Op. 39",
+      "status": "absent_work_identity_review_required"
+    },
+    {
+      "unit": 14,
+      "positions": [
+        100,
+        103
+      ],
+      "source_title": "Sibelius: Symphony No. 2 in D Major, Op. 43",
+      "status": "absent_work_identity_review_required"
+    },
+    {
+      "unit": 15,
+      "positions": [
+        104,
+        104
+      ],
+      "source_title": "Sibelius: Symphony No. 3 in C Major, Op. 52",
+      "status": "absent_work_identity_review_required"
+    },
+    {
+      "unit": 16,
+      "positions": [
+        105,
+        107
+      ],
+      "source_title": "Sibelius: Symphony No. 5 in E-Flat Major, Op. 82",
+      "status": "absent_work_identity_review_required"
+    },
+    {
+      "unit": 17,
+      "positions": [
+        108,
+        111
+      ],
+      "source_title": "Sibelius: Symphony No. 6 in D Minor, Op. 104",
+      "status": "absent_work_identity_review_required"
+    },
+    {
+      "unit": 18,
+      "positions": [
+        112,
+        115
+      ],
+      "source_title": "Sibelius: Symphony No. 7 in C Major, Op. 105",
+      "status": "absent_work_identity_review_required"
+    },
+    {
+      "unit": 19,
+      "positions": [
+        116,
+        116
+      ],
+      "source_title": "Sibelius: Tapiola, Op. 112",
+      "status": "absent_work_identity_review_required"
+    },
+    {
+      "unit": 20,
+      "positions": [
+        117,
+        119
+      ],
+      "source_title": "Sibelius: 3 Late Fragments (Compl. Virtanen)",
+      "status": "absent_work_identity_review_required"
+    },
+    {
+      "unit": 21,
+      "positions": [
+        120,
+        121
+      ],
+      "source_title": "Symphony No. 8 in B Minor, D. 759 'Unfinished'",
+      "status": "absent_work_identity_review_required"
+    },
+    {
+      "unit": 22,
+      "positions": [
+        122,
+        125
+      ],
+      "source_title": "Symphony No. 9 in C Major D. 944 'The Great'",
+      "status": "absent_work_identity_review_required"
+    },
+    {
+      "unit": 23,
+      "positions": [
+        126,
+        128
+      ],
+      "source_title": "Violin Concerto No. 2, H. 293",
+      "status": "absent_work_identity_review_required"
+    },
+    {
+      "unit": 24,
+      "positions": [
+        129,
+        131
+      ],
+      "source_title": "Violin Concerto No. 1, H. 226",
+      "status": "absent_work_identity_review_required"
+    },
+    {
+      "unit": 25,
+      "positions": [
+        132,
+        135
+      ],
+      "source_title": "Rachmaninoff: Symphony No. 1 in D Minor, Op. 13",
+      "status": "absent_work_identity_review_required"
+    },
+    {
+      "unit": 26,
+      "positions": [
+        136,
+        138
+      ],
+      "source_title": "Rachmaninoff: Symphonic Dances, Op. 45",
+      "status": "absent_work_identity_review_required"
+    },
+    {
+      "unit": 27,
+      "positions": [
+        139,
+        139
+      ],
+      "source_title": "Geysir",
+      "status": "absent_work_identity_review_required"
+    },
+    {
+      "unit": 43,
+      "positions": [
+        208,
+        210
+      ],
+      "source_title": "Shostakovich: Violin Concerto No. 2 in C-Sharp Minor, Op. 129",
+      "status": "work_present_performance_absent"
+    },
+    {
+      "unit": 44,
+      "positions": [
+        211,
+        214
+      ],
+      "source_title": "Schmidt: Symphony No. 1 in E Major",
+      "status": "absent_work_identity_review_required"
+    },
+    {
+      "unit": 45,
+      "positions": [
+        215,
+        217
+      ],
+      "source_title": "Schmidt: Symphony No. 2 in E Flat Major",
+      "status": "absent_work_identity_review_required"
+    },
+    {
+      "unit": 46,
+      "positions": [
+        218,
+        218
+      ],
+      "source_title": "Schmidt: Notre Dame: Intermezzo",
+      "status": "absent_work_identity_review_required"
+    },
+    {
+      "unit": 47,
+      "positions": [
+        219,
+        222
+      ],
+      "source_title": "Schmidt: Symphony No. 3 in A Major",
+      "status": "absent_work_identity_review_required"
+    },
+    {
+      "unit": 48,
+      "positions": [
+        223,
+        226
+      ],
+      "source_title": "Schmidt: Symphony No. 4 in C Major",
+      "status": "absent_work_identity_review_required"
+    },
+    {
+      "unit": 49,
+      "positions": [
+        227,
+        231
+      ],
+      "source_title": "Vaughan Williams: Sinfonia antartica \"Symphony No. 7\"",
+      "status": "absent_work_identity_review_required"
+    },
+    {
+      "unit": 50,
+      "positions": [
+        232,
+        235
+      ],
+      "source_title": "Vaughan Williams: Symphony No. 9 in E Minor",
+      "status": "absent_work_identity_review_required"
+    },
+    {
+      "unit": 61,
+      "positions": [
+        279,
+        282
+      ],
+      "source_title": "Symphony No. 5 in B-Flat Major, WAB 105 \"Phantastische\" (1878 Version, L. Nowak Edition)",
+      "status": "version_review_required"
+    },
+    {
+      "unit": 62,
+      "positions": [
+        283,
+        286
+      ],
+      "source_title": "Symphony No. 4 in E-Flat Major, WAB 104 \"Romantic\" (1888 Version, Korstvedt Edition)",
+      "status": "version_review_required"
+    },
+    {
+      "unit": 63,
+      "positions": [
+        287,
+        290
+      ],
+      "source_title": "Symphony in D Minor, WAB 100 \"Die Nullte\"",
+      "status": "version_review_required"
+    },
+    {
+      "unit": 64,
+      "positions": [
+        291,
+        294
+      ],
+      "source_title": "Symphony No. 8 in C Minor, WAB 108 \"Apocalyptic\" (1890 Version)",
+      "status": "version_review_required"
+    },
+    {
+      "unit": 65,
+      "positions": [
+        295,
+        298
+      ],
+      "source_title": "Symphony No. 6 in A Major, WAB 106",
+      "status": "version_review_required"
+    },
+    {
+      "unit": 66,
+      "positions": [
+        299,
+        302
+      ],
+      "source_title": "Symphony No. 3 in D Minor, WAB 103 \"Wagner\" (1873 Version, Ed. L. Nowak)",
+      "status": "version_review_required"
+    },
+    {
+      "unit": 67,
+      "positions": [
+        303,
+        306
+      ],
+      "source_title": "Symphony No. 4 in E-Flat Major, WAB 104 \"Romantic\" (2nd Version)",
+      "status": "version_review_required"
+    },
+    {
+      "unit": 68,
+      "positions": [
+        307,
+        307
+      ],
+      "source_title": "Symphony No. 4 in E-Flat Major, WAB 104 \"Romantic\" (1878 Version)",
+      "status": "version_review_required"
+    },
+    {
+      "unit": 69,
+      "positions": [
+        308,
+        311
+      ],
+      "source_title": "Symphony No. 8 in C Minor, WAB 108 (1887 Version)",
+      "status": "version_review_required"
+    },
+    {
+      "unit": 70,
+      "positions": [
+        312,
+        315
+      ],
+      "source_title": "Symphony No. 2 in C Minor, WAB 102 (1877 Version, Ed. W. Carragan)",
+      "status": "version_review_required"
+    },
+    {
+      "unit": 72,
+      "positions": [
+        320,
+        322
+      ],
+      "source_title": "Concerto for Piano & Orchestra, FP 146",
+      "status": "absent_work_identity_review_required"
+    },
+    {
+      "unit": 73,
+      "positions": [
+        323,
+        325
+      ],
+      "source_title": "Trio for Piano, Oboe & Bassoon, FP 43",
+      "status": "absent_work_identity_review_required"
+    },
+    {
+      "unit": 74,
+      "positions": [
+        326,
+        328
+      ],
+      "source_title": "Concert champêtre, FP 49",
+      "status": "absent_work_identity_review_required"
+    },
+    {
+      "unit": 75,
+      "positions": [
+        329,
+        331
+      ],
+      "source_title": "Sonata for Oboe & Piano, FP 185",
+      "status": "absent_work_identity_review_required"
+    },
+    {
+      "unit": 77,
+      "positions": [
+        333,
+        333
+      ],
+      "source_title": "Kammermusik No. 1, Op. 24 No. 1",
+      "status": "boundary_deferred"
+    }
+  ],
+  "metadata_notes": [
+    {
+      "unit": 8,
+      "note": "Canonical K.491 title says C major; source says C minor. Catalogue plus exact recording link establishes identity; title correction is outside this step."
+    }
+  ],
+  "availability_note": "Curator reports these selections were playable. Empty API rights are not an import blocker or proof of unavailable NL playback."
+}

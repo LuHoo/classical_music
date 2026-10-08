@@ -1,0 +1,10 @@
+id: debff59b352d4c17a35908b40f4f73c6
+work_group_id: 1394be91586e42dbae169acb5f912808
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Sonata, RV 33
+catalogue:
+  rv: RV 33
+  opus: Op. 5
+source:
+  file: docs/vivaldi.md
+  line: '20'

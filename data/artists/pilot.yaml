@@ -1,0 +1,207 @@
+artists:
+  - id: royal-concertgebouw-orchestra
+    type: orchestra
+    canonical_name: Royal Concertgebouw Orchestra
+    display_names:
+      en: Royal Concertgebouw Orchestra
+      nl: Koninklijk Concertgebouworkest
+    aliases:
+      - Concertgebouw Orchestra
+      - Royal Concertgebouw Orch.
+      - Koninklijk Concertgebouw Orkest
+      - Concertgebouworkest
+      - RCO
+    country: Netherlands
+    city: Amsterdam
+    authorities:
+      musicbrainz_artist_id:
+      wikidata:
+
+  - id: bernard-haitink
+    type: conductor
+    canonical_name: Bernard Haitink
+    display_names:
+      en: Bernard Haitink
+      nl: Bernard Haitink
+    aliases:
+      - B. Haitink
+      - Haitink
+      - Bernard Johan Herman Haitink
+    country: Netherlands
+    authorities:
+      musicbrainz_artist_id:
+      wikidata:
+
+  - id: dmitri-shostakovich
+    type: composer
+    canonical_name: Dmitri Shostakovich
+    display_names:
+      en: Dmitri Shostakovich
+      nl: Dmitri Sjostakovitsj
+      de: Dmitri Schostakowitsch
+      ru: Дмитрий Шостакович
+    aliases:
+      - Dmitry Shostakovich
+      - Dmitri Dmitriyevich Shostakovich
+      - Dmitri Sjostakovitsj
+      - Dmitri Schostakowitsch
+      - Shostakovich
+      - Sjostakovitsj
+      - Шостакович
+      - Дмитрий Дмитриевич Шостакович
+    country: Russia
+    authorities:
+      musicbrainz_artist_id:
+      wikidata:
+
+  - id: akademie-fuer-alte-musik-berlin
+    type: ensemble
+    canonical_name: Akademie für Alte Musik Berlin
+    display_names:
+      de: Akademie für Alte Musik Berlin
+      en: Academy for Early Music Berlin
+      nl: Akademie für Alte Musik Berlin
+    aliases:
+      - Akademie fuer Alte Musik Berlin
+      - Academy for Ancient Music Berlin
+      - Academy for Early Music Berlin
+      - Akamus
+      - AKAMUS
+    country: Germany
+    city: Berlin
+    authorities:
+      musicbrainz_artist_id:
+      wikidata:
+
+  - id: collegium-vocale-gent
+    type: choir
+    canonical_name: Collegium Vocale Gent
+    display_names:
+      nl: Collegium Vocale Gent
+      en: Collegium Vocale Ghent
+    aliases:
+      - Collegium Vocale Ghent
+      - Collegium Vocale
+      - CVG
+    country: Belgium
+    city: Ghent
+    authorities:
+      musicbrainz_artist_id:
+      wikidata:
+
+  - id: bach-collegium-japan
+    type: ensemble
+    canonical_name: Bach Collegium Japan
+    display_names:
+      en: Bach Collegium Japan
+      ja: バッハ・コレギウム・ジャパン
+      nl: Bach Collegium Japan
+    aliases:
+      - BCJ
+      - Bach Collegium of Japan
+      - バッハ・コレギウム・ジャパン
+    country: Japan
+    authorities:
+      musicbrainz_artist_id:
+      wikidata:
+
+  - id: chiaroscuro-quartet
+    type: ensemble
+    canonical_name: Chiaroscuro Quartet
+    display_names:
+      en: Chiaroscuro Quartet
+      nl: Chiaroscuro Quartet
+    aliases:
+      - Chiaroscuro Quartett
+      - Chiaroscuro String Quartet
+      - The Chiaroscuro Quartet
+    authorities:
+      musicbrainz_artist_id:
+      wikidata:
+
+  - id: cathy-berberian
+    type: singer
+    canonical_name: Cathy Berberian
+    display_names:
+      en: Cathy Berberian
+      it: Cathy Berberian
+      nl: Cathy Berberian
+    aliases:
+      - Catherine Anahid Berberian
+      - C. Berberian
+      - Berberian
+    voice: mezzo-soprano
+    country: United States
+    authorities:
+      musicbrainz_artist_id:
+      wikidata:
+
+  - id: simone-dinnerstein
+    type: instrumentalist
+    canonical_name: Simone Dinnerstein
+    display_names:
+      en: Simone Dinnerstein
+      nl: Simone Dinnerstein
+    aliases:
+      - S. Dinnerstein
+      - Dinnerstein
+    instruments:
+      - piano
+    country: United States
+    authorities:
+      musicbrainz_artist_id:
+      wikidata:
+
+  - id: gidon-kremer
+    type: instrumentalist
+    canonical_name: Gidon Kremer
+    display_names:
+      en: Gidon Kremer
+      de: Gidon Kremer
+      lv: Gidons Krēmers
+      ru: Гидон Кремер
+      nl: Gidon Kremer
+    aliases:
+      - Gidons Kremers
+      - Gidon Kremers
+      - G. Kremer
+      - Kremer
+      - Гидон Кремер
+    instruments:
+      - violin
+    country: Latvia
+    authorities:
+      musicbrainz_artist_id:
+      wikidata:
+
+  - id: san-francisco-symphony
+    type: orchestra
+    canonical_name: San Francisco Symphony
+    display_names:
+      en: San Francisco Symphony
+      nl: San Francisco Symphony
+    aliases:
+      - San Francisco Symphony Orchestra
+      - SFS
+      - SFSO
+    country: United States
+    city: San Francisco
+    authorities:
+      musicbrainz_artist_id:
+      wikidata:
+
+  - id: john-eliot-gardiner
+    type: conductor
+    canonical_name: John Eliot Gardiner
+    display_names:
+      en: John Eliot Gardiner
+      nl: John Eliot Gardiner
+    aliases:
+      - Sir John Eliot Gardiner
+      - J. E. Gardiner
+      - John E. Gardiner
+      - Gardiner
+    country: United Kingdom
+    authorities:
+      musicbrainz_artist_id:
+      wikidata:

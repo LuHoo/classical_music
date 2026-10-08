@@ -1,0 +1,10 @@
+id: 355d6e6a00cf4fe0be195eaace691b6b
+work_group_id: 504cd056b8b24bcb93143b0690d035b2
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 239
+catalogue:
+  rv: RV 239
+  opus: Op. 6
+source:
+  file: docs/vivaldi.md
+  line: '22'

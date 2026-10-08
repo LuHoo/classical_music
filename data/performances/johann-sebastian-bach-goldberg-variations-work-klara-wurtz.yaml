@@ -1,0 +1,12 @@
+id: "johann-sebastian-bach-goldberg-variations-work-klara-wurtz"
+work_id: "johann-sebastian-bach-goldberg-variations-work"
+source:
+  file: "docs/bachJS.md"
+  line: "118"
+  curator_decision: https://github.com/LuHoo/classical_music/issues/258#issuecomment-5984118267
+links:
+  tidal:
+    url: http://www.tidal.com/track/210117464
+performers:
+- name: "Klára Würtz"
+profile: original keyboard (piano)

@@ -1,0 +1,8 @@
+id: "paul-hindemith-konzertmusik-for-wind-orchestra-op-41-group"
+composer_id: "paul-hindemith"
+title: "Konzertmusik for wind orchestra"
+source:
+  file: "docs/hindemith.md"
+  line: "64"
+catalogue:
+  opus: "Op. 41"

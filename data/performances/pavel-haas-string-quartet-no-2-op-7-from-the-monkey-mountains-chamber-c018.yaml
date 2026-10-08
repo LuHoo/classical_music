@@ -1,0 +1,13 @@
+id: pavel-haas-string-quartet-no-2-op-7-from-the-monkey-mountains-chamber-c018
+work_id: pavel-haas-string-quartet-no-2-op-7-from-the-monkey-mountains
+performers:
+  - name: Escher String Quartet
+  - name: Colin Currie
+links:
+  tidal:
+    url: https://tidal.com/track/283868529
+release:
+  album_title: 'Janáček & Haas: String Quartets'
+source:
+  file: reports/playlist-import/chamber/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/a2327106-07fd-4433-8bd3-d8a5c251c69a

@@ -1,0 +1,9 @@
+id: "gustav-mahler-des-knaben-wunderhorn-work"
+work_group_id: "gustav-mahler-des-knaben-wunderhorn-group"
+composer_id: "gustav-mahler"
+title: "Des Knaben Wunderhorn"
+source:
+  file: "docs/mahler.md"
+  line: "38"
+date_text: "12 songs"
+category: "Wunderhorn period"

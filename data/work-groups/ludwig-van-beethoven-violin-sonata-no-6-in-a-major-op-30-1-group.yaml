@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-violin-sonata-no-6-in-a-major-op-30-1-group"
+composer_id: "ludwig-van-beethoven"
+title: "Violin Sonata No. 6 in A major"
+source:
+  file: "docs/beethoven.md"
+  line: "198"
+catalogue:
+  opus: "Op. 30/1"

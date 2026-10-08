@@ -1,0 +1,11 @@
+id: "igor-stravinsky-danses-concertantes-k-063-work-orpheus-chamber-orchestra"
+work_id: "igor-stravinsky-danses-concertantes-k-063-work"
+performers:
+  - name: "Orpheus Chamber Orchestra"
+    role: "orchestra"
+links:
+  tidal:
+    url: "https://tidal.com/browse/track/4838824?u"
+source:
+  file: "docs/stravinsky.md"
+  line: "47"

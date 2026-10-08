@@ -1,0 +1,8 @@
+id: "johann-sebastian-bach-fugue-in-g-minor-group"
+composer_id: "johann-sebastian-bach"
+title: "Fugue in G Minor"
+source:
+  file: "docs/bachJS.md"
+  line: "88"
+catalogue:
+  bwv: "BWV 578"

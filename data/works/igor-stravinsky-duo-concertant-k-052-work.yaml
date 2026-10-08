@@ -1,0 +1,11 @@
+id: "igor-stravinsky-duo-concertant-k-052-work"
+work_group_id: "igor-stravinsky-duo-concertant-k-052-group"
+composer_id: "igor-stravinsky"
+title: "Duo Concertant"
+source:
+  file: "docs/stravinsky.md"
+  line: "135"
+catalogue:
+  k: "K 052"
+date_text: "1932"
+category: "Chamber"

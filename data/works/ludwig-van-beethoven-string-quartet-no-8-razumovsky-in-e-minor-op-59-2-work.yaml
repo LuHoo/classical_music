@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-string-quartet-no-8-razumovsky-in-e-minor-op-59-2-work"
+work_group_id: "ludwig-van-beethoven-string-quartet-no-8-razumovsky-in-e-minor-op-59-2-group"
+composer_id: "ludwig-van-beethoven"
+title: "String Quartet No. 8 \"Razumovsky\" in E minor"
+source:
+  file: "docs/beethoven.md"
+  line: "220"
+catalogue:
+  opus: "Op. 59/2"
+date_text: "1806"
+category: "Chamber"

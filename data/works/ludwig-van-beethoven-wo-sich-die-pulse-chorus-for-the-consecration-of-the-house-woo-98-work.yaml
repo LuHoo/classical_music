@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-wo-sich-die-pulse-chorus-for-the-consecration-of-the-house-woo-98-work"
+work_group_id: "ludwig-van-beethoven-wo-sich-die-pulse-chorus-for-the-consecration-of-the-house-woo-98-group"
+composer_id: "ludwig-van-beethoven"
+title: "\"Wo sich die Pulse\" chorus for \"The Consecration of the House\""
+source:
+  file: "docs/beethoven.md"
+  line: "90"
+catalogue:
+  woo: "WoO 98"
+date_text: "1822"
+category: "Orchestral"

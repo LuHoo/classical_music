@@ -1,0 +1,16 @@
+id: sergei-prokofiev-sinfonietta-in-a-original-version-work
+work_group_id: sergei-prokofiev-sinfonietta-in-a-group
+composer_id: sergei-prokofiev
+title: Sinfonietta in A (original version)
+source:
+  file: docs/prokofiev.md
+  line: '16'
+catalogue:
+  op: Op. 5
+date_text: '1909'
+category: Orchestral
+external_ids:
+  musicbrainz: 7677e1ea-d10e-4af5-b264-3099b8aec3a5
+notes: MusicBrainz identifies the original Sinfonietta as Op. 5; the local source
+  identifies Op. 48 as the revised version of Op. 5. Keep separate Works in one Work
+  Group.

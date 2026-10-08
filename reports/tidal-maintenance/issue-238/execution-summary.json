@@ -1,0 +1,3488 @@
+{
+  "started_at": "2026-10-04T11:56:25.984443+00:00",
+  "finished_at": "2026-10-04T12:02:44.750333+00:00",
+  "status": "passed",
+  "completed_replacements": 217,
+  "completed_removals": 14,
+  "held_groups": [
+    "W22",
+    "W64"
+  ],
+  "catalogue_validation": "all 217 approved replacement metadata and NL STREAM verified",
+  "playlist_id": "c11f614b-c011-43b2-be10-639f5cf7e5e3",
+  "initial_item_count": 5539,
+  "final_item_count": 5525,
+  "prior_spartacus_verified": 29,
+  "unchanged_occurrences_verified": 5308,
+  "full_order_verified": true,
+  "source_snapshot_sha256": "1d95bce62529e3736ec9f748bf8c2dd76dfb8fbd2995457d954946ceb9ce2765",
+  "final_snapshot_sha256": "b8b0c3a4e222f75c253a5cd9cfa5b835bb12bde61add3805ab27523d1177d303",
+  "private_journal_sha256": "7b429c84981f8f948657cfee7d99e5bca44a0afd55f39053bb00fae4e37ee698",
+  "execution_status_counts": {
+    "verified-replaced": 217,
+    "verified-prior-repair": 29,
+    "verified-removed": 14,
+    "held-authority-evidence-required": 2,
+    "recommendation-removed": 48,
+    "no-canonical-recommendation": 12
+  },
+  "operations": [
+    {
+      "groups": [
+        "W01"
+      ],
+      "action": "replace",
+      "rows": [
+        {
+          "old_id": "22820331",
+          "item_id": "03039965-1f95-41e3-a73d-a074adb5415b",
+          "replacement_id": "284291002"
+        }
+      ],
+      "state": "verified",
+      "inserted_occurrences": [
+        {
+          "id": "284291002",
+          "type": "tracks",
+          "meta": {
+            "itemId": "be5d8e60-3ff9-4e79-b314-dd7242d7a5d0",
+            "addedAt": "2026-10-04T11:56:27.324587Z"
+          }
+        }
+      ]
+    },
+    {
+      "groups": [
+        "W02",
+        "W03"
+      ],
+      "action": "replace",
+      "rows": [
+        {
+          "old_id": "12415262",
+          "item_id": "ab1d8cfe-f5f8-48fb-bd13-6ef6b2a34729",
+          "replacement_id": "376353399"
+        },
+        {
+          "old_id": "12415263",
+          "item_id": "ad1efa0c-2d74-48c6-8505-a1bcec534587",
+          "replacement_id": "376353400"
+        },
+        {
+          "old_id": "12415264",
+          "item_id": "db6d4c9e-d111-4cb1-9f00-1e5db4c36c2d",
+          "replacement_id": "376353402"
+        },
+        {
+          "old_id": "12415265",
+          "item_id": "85f7ad70-dcba-4553-aefe-0ef658467780",
+          "replacement_id": "376353404"
+        },
+        {
+          "old_id": "12415266",
+          "item_id": "6c741bb8-09c8-4945-a430-f7870b78db9a",
+          "replacement_id": "376353407"
+        },
+        {
+          "old_id": "12415267",
+          "item_id": "9f3f3474-892e-44fd-9558-76c83bdda544",
+          "replacement_id": "376353408"
+        },
+        {
+          "old_id": "12415268",
+          "item_id": "ca07b2b9-cc7b-4ea2-a1f0-0b2ed4a447cd",
+          "replacement_id": "376353409"
+        }
+      ],
+      "state": "verified",
+      "inserted_occurrences": [
+        {
+          "id": "376353399",
+          "type": "tracks",
+          "meta": {
+            "itemId": "ee3b9ee4-aabc-4334-87ed-91b9981b7453",
+            "addedAt": "2026-10-04T11:56:31.352849Z"
+          }
+        },
+        {
+          "id": "376353400",
+          "type": "tracks",
+          "meta": {
+            "itemId": "01c8d447-cb49-48f9-94b1-205730d2541e",
+            "addedAt": "2026-10-04T11:56:31.352849Z"
+          }
+        },
+        {
+          "id": "376353402",
+          "type": "tracks",
+          "meta": {
+            "itemId": "2d4bb882-4d01-49f8-b3e8-36feebaedab6",
+            "addedAt": "2026-10-04T11:56:31.352849Z"
+          }
+        },
+        {
+          "id": "376353404",
+          "type": "tracks",
+          "meta": {
+            "itemId": "7cbaeea0-831b-4403-b855-9b5a0e49e56b",
+            "addedAt": "2026-10-04T11:56:31.352849Z"
+          }
+        },
+        {
+          "id": "376353407",
+          "type": "tracks",
+          "meta": {
+            "itemId": "50a07631-e334-451b-886b-5374254008b7",
+            "addedAt": "2026-10-04T11:56:31.352849Z"
+          }
+        },
+        {
+          "id": "376353408",
+          "type": "tracks",
+          "meta": {
+            "itemId": "c20ada7a-297f-49f7-8cee-af310a034ae1",
+            "addedAt": "2026-10-04T11:56:31.352849Z"
+          }
+        },
+        {
+          "id": "376353409",
+          "type": "tracks",
+          "meta": {
+            "itemId": "28f421ff-ca7c-4daf-ac51-dcc40c1a0afe",
+            "addedAt": "2026-10-04T11:56:31.352849Z"
+          }
+        }
+      ]
+    },
+    {
+      "groups": [
+        "W04"
+      ],
+      "action": "replace",
+      "rows": [
+        {
+          "old_id": "12412286",
+          "item_id": "93585ce1-37bc-4922-8961-23ebfad0475c",
+          "replacement_id": "377598092"
+        },
+        {
+          "old_id": "12412287",
+          "item_id": "a0651baf-d16e-404d-9785-8f932c71a838",
+          "replacement_id": "376439736"
+        },
+        {
+          "old_id": "12412289",
+          "item_id": "6ac018a4-8a2b-4bc7-8a48-30e2e611f00f",
+          "replacement_id": "376439737"
+        }
+      ],
+      "state": "verified",
+      "inserted_occurrences": [
+        {
+          "id": "377598092",
+          "type": "tracks",
+          "meta": {
+            "itemId": "856d40aa-83de-4edc-9bbd-11f8ab563249",
+            "addedAt": "2026-10-04T11:56:35.315256Z"
+          }
+        },
+        {
+          "id": "376439736",
+          "type": "tracks",
+          "meta": {
+            "itemId": "e82a89f3-f1fe-41a4-b806-c7cfa6b4ff5b",
+            "addedAt": "2026-10-04T11:56:35.315256Z"
+          }
+        },
+        {
+          "id": "376439737",
+          "type": "tracks",
+          "meta": {
+            "itemId": "d908997e-d9d5-4dec-83df-041051010078",
+            "addedAt": "2026-10-04T11:56:35.315256Z"
+          }
+        }
+      ]
+    },
+    {
+      "groups": [
+        "W05"
+      ],
+      "action": "replace",
+      "rows": [
+        {
+          "old_id": "245885685",
+          "item_id": "64d80f2c-7b20-4399-ac78-07c0619c0895",
+          "replacement_id": "376279946"
+        }
+      ],
+      "state": "verified",
+      "inserted_occurrences": [
+        {
+          "id": "376279946",
+          "type": "tracks",
+          "meta": {
+            "itemId": "a2e5731e-9b99-4d97-821f-3ac9ba4e3d0a",
+            "addedAt": "2026-10-04T11:56:39.272213Z"
+          }
+        }
+      ]
+    },
+    {
+      "groups": [
+        "W06",
+        "W07"
+      ],
+      "action": "replace",
+      "rows": [
+        {
+          "old_id": "12212032",
+          "item_id": "bb86c659-b8da-4bdd-958d-2e7bcd300f58",
+          "replacement_id": "285244511"
+        },
+        {
+          "old_id": "12212033",
+          "item_id": "4eff10df-3e9e-4139-ba5e-1a246685a7f0",
+          "replacement_id": "285244512"
+        },
+        {
+          "old_id": "12212034",
+          "item_id": "543728e6-297f-4cea-abe3-d8d459760a1e",
+          "replacement_id": "285244513"
+        },
+        {
+          "old_id": "12212035",
+          "item_id": "46b050b6-7c23-4d3d-8ef2-b1adf26369b6",
+          "replacement_id": "285244514"
+        },
+        {
+          "old_id": "208666799",
+          "item_id": "c5c6c062-2223-49d6-8e79-ff459415eb76",
+          "replacement_id": "377603471"
+        },
+        {
+          "old_id": "208666802",
+          "item_id": "2c7c2780-d931-410e-9f57-af367a7d77b4",
+          "replacement_id": "377603472"
+        },
+        {
+          "old_id": "208666804",
+          "item_id": "ae3e4e93-20ba-4a25-8338-15a212a6d464",
+          "replacement_id": "377603474"
+        },
+        {
+          "old_id": "208666806",
+          "item_id": "a22baa2f-dda6-4c22-87c3-7fd55ae55e61",
+          "replacement_id": "377603475"
+        },
+        {
+          "old_id": "208666809",
+          "item_id": "df5b4703-d65b-41f0-a94b-aaaca5ebd851",
+          "replacement_id": "377603476"
+        }
+      ],
+      "state": "verified",
+      "inserted_occurrences": [
+        {
+          "id": "285244511",
+          "type": "tracks",
+          "meta": {
+            "itemId": "25cb18c0-debc-4fa7-957e-4b9a6f0ec528",
+            "addedAt": "2026-10-04T11:56:43.245785Z"
+          }
+        },
+        {
+          "id": "285244512",
+          "type": "tracks",
+          "meta": {
+            "itemId": "f7ee0497-e2da-486d-bd99-7b8706ee673f",
+            "addedAt": "2026-10-04T11:56:43.245785Z"
+          }
+        },
+        {
+          "id": "285244513",
+          "type": "tracks",
+          "meta": {
+            "itemId": "45e099ad-dab2-4aa5-963a-de1ad57c2f8a",
+            "addedAt": "2026-10-04T11:56:43.245785Z"
+          }
+        },
+        {
+          "id": "285244514",
+          "type": "tracks",
+          "meta": {
+            "itemId": "13d0cc8d-366a-46a7-b520-4c11fb34cff6",
+            "addedAt": "2026-10-04T11:56:43.245785Z"
+          }
+        },
+        {
+          "id": "377603471",
+          "type": "tracks",
+          "meta": {
+            "itemId": "9d7300fb-3b86-44fe-8b0e-1397fc1a8edf",
+            "addedAt": "2026-10-04T11:56:43.245785Z"
+          }
+        },
+        {
+          "id": "377603472",
+          "type": "tracks",
+          "meta": {
+            "itemId": "a05230a1-7e43-44f8-aa6d-06a1b2891de4",
+            "addedAt": "2026-10-04T11:56:43.245785Z"
+          }
+        },
+        {
+          "id": "377603474",
+          "type": "tracks",
+          "meta": {
+            "itemId": "7c299599-63e6-48cd-a7c6-c0d9adc55f9d",
+            "addedAt": "2026-10-04T11:56:43.245785Z"
+          }
+        },
+        {
+          "id": "377603475",
+          "type": "tracks",
+          "meta": {
+            "itemId": "19967f68-8483-417f-85f2-cc9295f74568",
+            "addedAt": "2026-10-04T11:56:43.245785Z"
+          }
+        },
+        {
+          "id": "377603476",
+          "type": "tracks",
+          "meta": {
+            "itemId": "1760b192-4ed2-4262-94e5-2f5cd24f2e5b",
+            "addedAt": "2026-10-04T11:56:43.245785Z"
+          }
+        }
+      ]
+    },
+    {
+      "groups": [
+        "W08"
+      ],
+      "action": "replace",
+      "rows": [
+        {
+          "old_id": "208666824",
+          "item_id": "c0fe97a0-7f5e-43c3-97ea-81877e663c69",
+          "replacement_id": "538668866"
+        }
+      ],
+      "state": "verified",
+      "inserted_occurrences": [
+        {
+          "id": "538668866",
+          "type": "tracks",
+          "meta": {
+            "itemId": "63afdaaf-4d45-49de-afd8-6e0faa067dc2",
+            "addedAt": "2026-10-04T11:56:47.205871Z"
+          }
+        }
+      ]
+    },
+    {
+      "groups": [
+        "W09",
+        "W10",
+        "W11",
+        "W12"
+      ],
+      "action": "remove",
+      "rows": [
+        {
+          "old_id": "22486408",
+          "item_id": "d7f2d31e-8b61-4647-b33f-113232c0f5f8",
+          "replacement_id": null
+        },
+        {
+          "old_id": "22486409",
+          "item_id": "9a3e2f03-2320-4afd-8d4e-88791d5b0eb8",
+          "replacement_id": null
+        },
+        {
+          "old_id": "22486410",
+          "item_id": "dc67af5c-3128-472f-84fc-75a0e787d8ed",
+          "replacement_id": null
+        },
+        {
+          "old_id": "22486411",
+          "item_id": "4be2e557-0dc7-4dd6-a4da-6e6728158eea",
+          "replacement_id": null
+        },
+        {
+          "old_id": "22486412",
+          "item_id": "4e47934a-2ac6-4854-8ec5-10f6941e1b12",
+          "replacement_id": null
+        },
+        {
+          "old_id": "22486413",
+          "item_id": "a15db3b7-6e37-4385-a02b-8b5cac5f16a8",
+          "replacement_id": null
+        },
+        {
+          "old_id": "12123311",
+          "item_id": "ece84d86-7617-4876-81fa-6b291b3091b2",
+          "replacement_id": null
+        },
+        {
+          "old_id": "12123312",
+          "item_id": "91f83588-f8b5-4b4c-aece-d1110b129ac8",
+          "replacement_id": null
+        },
+        {
+          "old_id": "12123313",
+          "item_id": "9e51df84-a3f7-459e-a3b5-0ff2cb5be8ab",
+          "replacement_id": null
+        },
+        {
+          "old_id": "12123314",
+          "item_id": "ba598405-3142-43c1-bbae-add699c6bddf",
+          "replacement_id": null
+        },
+        {
+          "old_id": "12123315",
+          "item_id": "52250347-272b-4361-a477-d99c9ff660c3",
+          "replacement_id": null
+        },
+        {
+          "old_id": "12123316",
+          "item_id": "b0769908-e016-407a-8cc1-dcec0d019e02",
+          "replacement_id": null
+        },
+        {
+          "old_id": "12123317",
+          "item_id": "dfd23efa-b069-483f-aa33-00e717c9cf9a",
+          "replacement_id": null
+        },
+        {
+          "old_id": "12123318",
+          "item_id": "07644780-a307-475f-807f-ff90f2114b77",
+          "replacement_id": null
+        }
+      ],
+      "state": "verified",
+      "inserted_occurrences": []
+    },
+    {
+      "groups": [
+        "W13",
+        "W14",
+        "W15",
+        "W16",
+        "W17"
+      ],
+      "action": "replace",
+      "rows": [
+        {
+          "old_id": "12668762",
+          "item_id": "453ea497-0949-4f7e-94ea-f2c610c398a9",
+          "replacement_id": "284651752"
+        },
+        {
+          "old_id": "12668763",
+          "item_id": "27f8db2a-4dfb-41ac-9e9f-de9ac5dcae59",
+          "replacement_id": "284651753"
+        },
+        {
+          "old_id": "12668764",
+          "item_id": "872b3f49-13f6-416e-9df0-aea5f576e34f",
+          "replacement_id": "284651754"
+        },
+        {
+          "old_id": "12668765",
+          "item_id": "f979682e-2d32-4005-9cb5-3fa082ffdaf4",
+          "replacement_id": "284651755"
+        },
+        {
+          "old_id": "12668766",
+          "item_id": "f017b527-55ae-4235-acd0-3383903832fd",
+          "replacement_id": "284651756"
+        },
+        {
+          "old_id": "12668767",
+          "item_id": "ff9fc673-b77a-489a-a7b4-e5b49329d055",
+          "replacement_id": "284651757"
+        },
+        {
+          "old_id": "12668768",
+          "item_id": "a022bd2e-0a54-4ad8-b33a-38a54c9bfa51",
+          "replacement_id": "284651758"
+        },
+        {
+          "old_id": "12668769",
+          "item_id": "0a7c5d61-4123-4ade-8281-acab960a6f73",
+          "replacement_id": "284651759"
+        },
+        {
+          "old_id": "12668770",
+          "item_id": "bd80df86-9bee-4198-b7e5-ba31b977dc7d",
+          "replacement_id": "284651762"
+        },
+        {
+          "old_id": "12668771",
+          "item_id": "6acfe71a-00ca-4a54-861e-1eed5e719d70",
+          "replacement_id": "284651763"
+        },
+        {
+          "old_id": "12668772",
+          "item_id": "1c893082-8e23-4e6d-b1fe-5c01ac19f21c",
+          "replacement_id": "284651766"
+        },
+        {
+          "old_id": "12668773",
+          "item_id": "d310883e-fd75-4581-86e6-52982b3ca05d",
+          "replacement_id": "284432107"
+        },
+        {
+          "old_id": "12668774",
+          "item_id": "65bcd3e5-a08c-4b14-95c3-7a3b724893f2",
+          "replacement_id": "284651761"
+        },
+        {
+          "old_id": "12668775",
+          "item_id": "76fa6f06-6644-4074-a828-717aab5ef08f",
+          "replacement_id": "284432111"
+        },
+        {
+          "old_id": "12668776",
+          "item_id": "3963e830-f09a-4bb6-8023-e8dd6dde1cb7",
+          "replacement_id": "284651765"
+        },
+        {
+          "old_id": "12668777",
+          "item_id": "f0834a93-ac2c-4194-961f-7b7584ac488e",
+          "replacement_id": "284651768"
+        }
+      ],
+      "state": "verified",
+      "inserted_occurrences": [
+        {
+          "id": "284651752",
+          "type": "tracks",
+          "meta": {
+            "itemId": "cce84efb-ea67-4dc6-8318-711385da3d5d",
+            "addedAt": "2026-10-04T11:56:53.144795Z"
+          }
+        },
+        {
+          "id": "284651753",
+          "type": "tracks",
+          "meta": {
+            "itemId": "cda6ca68-fdb7-44b7-b73f-ded2e11ab84b",
+            "addedAt": "2026-10-04T11:56:53.144795Z"
+          }
+        },
+        {
+          "id": "284651754",
+          "type": "tracks",
+          "meta": {
+            "itemId": "16a2a474-9b44-47c0-a6c4-17b7821b1b28",
+            "addedAt": "2026-10-04T11:56:53.144795Z"
+          }
+        },
+        {
+          "id": "284651755",
+          "type": "tracks",
+          "meta": {
+            "itemId": "07e37ac1-7946-45ca-acbf-08052b8e242c",
+            "addedAt": "2026-10-04T11:56:53.144795Z"
+          }
+        },
+        {
+          "id": "284651756",
+          "type": "tracks",
+          "meta": {
+            "itemId": "b2b322cb-196b-43a0-9029-5d1d12f504fb",
+            "addedAt": "2026-10-04T11:56:53.144795Z"
+          }
+        },
+        {
+          "id": "284651757",
+          "type": "tracks",
+          "meta": {
+            "itemId": "4c00081e-cf53-4ced-8d7b-ec09e41a1abe",
+            "addedAt": "2026-10-04T11:56:53.144795Z"
+          }
+        },
+        {
+          "id": "284651758",
+          "type": "tracks",
+          "meta": {
+            "itemId": "c8fe864c-3959-4b79-948a-de89ee00fd7b",
+            "addedAt": "2026-10-04T11:56:53.144795Z"
+          }
+        },
+        {
+          "id": "284651759",
+          "type": "tracks",
+          "meta": {
+            "itemId": "8d94db28-3b14-4760-a562-246cd7ec0a27",
+            "addedAt": "2026-10-04T11:56:53.144795Z"
+          }
+        },
+        {
+          "id": "284651762",
+          "type": "tracks",
+          "meta": {
+            "itemId": "9719341e-8897-4367-83ad-51abd82a6921",
+            "addedAt": "2026-10-04T11:56:53.144795Z"
+          }
+        },
+        {
+          "id": "284651763",
+          "type": "tracks",
+          "meta": {
+            "itemId": "368bfd9d-aafb-4892-a789-69151ad177af",
+            "addedAt": "2026-10-04T11:56:53.144795Z"
+          }
+        },
+        {
+          "id": "284651766",
+          "type": "tracks",
+          "meta": {
+            "itemId": "a94027a3-e44a-471a-b44a-e594b5c5a6f4",
+            "addedAt": "2026-10-04T11:56:53.144795Z"
+          }
+        },
+        {
+          "id": "284432107",
+          "type": "tracks",
+          "meta": {
+            "itemId": "a95689b9-5706-451d-9b35-9031bf9a49db",
+            "addedAt": "2026-10-04T11:56:53.144795Z"
+          }
+        },
+        {
+          "id": "284651761",
+          "type": "tracks",
+          "meta": {
+            "itemId": "c1f4245c-9635-443f-a79c-094d66f42502",
+            "addedAt": "2026-10-04T11:56:53.144795Z"
+          }
+        },
+        {
+          "id": "284432111",
+          "type": "tracks",
+          "meta": {
+            "itemId": "0328dde5-7561-48bc-a099-2f495248c94b",
+            "addedAt": "2026-10-04T11:56:53.144795Z"
+          }
+        },
+        {
+          "id": "284651765",
+          "type": "tracks",
+          "meta": {
+            "itemId": "121b23c2-d03b-438c-92b1-8bf236049ac3",
+            "addedAt": "2026-10-04T11:56:53.144795Z"
+          }
+        },
+        {
+          "id": "284651768",
+          "type": "tracks",
+          "meta": {
+            "itemId": "69b4c50c-ea6e-480c-a22c-ff0b8c581ffb",
+            "addedAt": "2026-10-04T11:56:53.144795Z"
+          }
+        }
+      ]
+    },
+    {
+      "groups": [
+        "W18"
+      ],
+      "action": "replace",
+      "rows": [
+        {
+          "old_id": "12668784",
+          "item_id": "ba771350-f4fb-45e3-a65f-0075fc659776",
+          "replacement_id": "282802784"
+        }
+      ],
+      "state": "verified",
+      "inserted_occurrences": [
+        {
+          "id": "282802784",
+          "type": "tracks",
+          "meta": {
+            "itemId": "f91fd940-175e-440c-af97-8598f1e25ba9",
+            "addedAt": "2026-10-04T11:56:57.252835Z"
+          }
+        }
+      ]
+    },
+    {
+      "groups": [
+        "W19"
+      ],
+      "action": "replace",
+      "rows": [
+        {
+          "old_id": "29073650",
+          "item_id": "a679ad2f-9bf5-48f3-a360-47f8a22a6c1d",
+          "replacement_id": "282802781"
+        },
+        {
+          "old_id": "29073651",
+          "item_id": "dc3461d1-8a0e-4126-adbd-25eed9bc46d9",
+          "replacement_id": "284292934"
+        },
+        {
+          "old_id": "29073652",
+          "item_id": "ea223da9-e8d2-4526-979c-23a2c48ff43e",
+          "replacement_id": "284292936"
+        }
+      ],
+      "state": "verified",
+      "inserted_occurrences": [
+        {
+          "id": "282802781",
+          "type": "tracks",
+          "meta": {
+            "itemId": "361b6c9a-bacc-4cfe-9944-d35f178cfa53",
+            "addedAt": "2026-10-04T11:57:01.379993Z"
+          }
+        },
+        {
+          "id": "284292934",
+          "type": "tracks",
+          "meta": {
+            "itemId": "28a7359b-69b7-48b4-bdb3-8e172fc2d886",
+            "addedAt": "2026-10-04T11:57:01.379993Z"
+          }
+        },
+        {
+          "id": "284292936",
+          "type": "tracks",
+          "meta": {
+            "itemId": "dee1abf4-3a2f-4d7b-97c5-971a77da54e7",
+            "addedAt": "2026-10-04T11:57:01.379993Z"
+          }
+        }
+      ]
+    },
+    {
+      "groups": [
+        "W20",
+        "W21"
+      ],
+      "action": "replace",
+      "rows": [
+        {
+          "old_id": "12665535",
+          "item_id": "98048eaf-2bf7-4630-ac68-017c7dc6fca8",
+          "replacement_id": "284435863"
+        },
+        {
+          "old_id": "12665536",
+          "item_id": "38cbd963-7659-4f38-a779-028acfdb989d",
+          "replacement_id": "284435866"
+        }
+      ],
+      "state": "verified",
+      "inserted_occurrences": [
+        {
+          "id": "284435863",
+          "type": "tracks",
+          "meta": {
+            "itemId": "802db02d-a23c-4933-abf6-09243b3f9046",
+            "addedAt": "2026-10-04T11:57:05.271364Z"
+          }
+        },
+        {
+          "id": "284435866",
+          "type": "tracks",
+          "meta": {
+            "itemId": "89cf081a-ec2d-4a66-abb2-28c5a42a9e53",
+            "addedAt": "2026-10-04T11:57:05.271364Z"
+          }
+        }
+      ]
+    },
+    {
+      "groups": [
+        "W26"
+      ],
+      "action": "replace",
+      "rows": [
+        {
+          "old_id": "196695890",
+          "item_id": "aa05093c-ec1e-43f0-9f2c-b2b25112c76a",
+          "replacement_id": "376280389"
+        }
+      ],
+      "state": "verified",
+      "inserted_occurrences": [
+        {
+          "id": "376280389",
+          "type": "tracks",
+          "meta": {
+            "itemId": "6cca4303-af23-4fc3-a08c-729d3b8e15cf",
+            "addedAt": "2026-10-04T11:57:09.164330Z"
+          }
+        }
+      ]
+    },
+    {
+      "groups": [
+        "W27"
+      ],
+      "action": "replace",
+      "rows": [
+        {
+          "old_id": "190698772",
+          "item_id": "c510183b-192a-4b27-907e-4c8a9748f2eb",
+          "replacement_id": "305933343"
+        },
+        {
+          "old_id": "190698773",
+          "item_id": "192bbddc-121c-417c-95ee-92b5b8c69cba",
+          "replacement_id": "305933344"
+        },
+        {
+          "old_id": "190698774",
+          "item_id": "2cd958e7-5d2a-4d74-af49-67e06feec8b8",
+          "replacement_id": "305933345"
+        },
+        {
+          "old_id": "190698776",
+          "item_id": "9dafe552-bf6d-46fe-912c-417cc5c1ce68",
+          "replacement_id": "305933346"
+        },
+        {
+          "old_id": "190698777",
+          "item_id": "e65570ee-74eb-41b1-ac5a-e066355bacc4",
+          "replacement_id": "305933347"
+        },
+        {
+          "old_id": "190698778",
+          "item_id": "c4a9c9d9-1667-4fc0-8b0d-0cdfc9ac193e",
+          "replacement_id": "305933348"
+        },
+        {
+          "old_id": "190698779",
+          "item_id": "0770bdc7-d277-47cd-8219-9ba2628bf0e0",
+          "replacement_id": "305933349"
+        },
+        {
+          "old_id": "190698780",
+          "item_id": "b8bfed80-a345-42e6-87c0-8c540093e3e7",
+          "replacement_id": "305933350"
+        },
+        {
+          "old_id": "190698781",
+          "item_id": "d78b5f7f-feff-43d8-884c-3406cc514630",
+          "replacement_id": "305933351"
+        },
+        {
+          "old_id": "190698782",
+          "item_id": "4b340694-5181-4895-a8b9-314791dd5e8b",
+          "replacement_id": "305933352"
+        },
+        {
+          "old_id": "190698783",
+          "item_id": "fafc0bc1-3914-4790-bf55-63efb1580f93",
+          "replacement_id": "305933353"
+        },
+        {
+          "old_id": "190698784",
+          "item_id": "ec7ec7e0-821e-42af-90c6-9f3e17c52138",
+          "replacement_id": "305933354"
+        },
+        {
+          "old_id": "190698785",
+          "item_id": "6ad800c6-ca89-435f-87cc-25dd41eb2363",
+          "replacement_id": "305933355"
+        },
+        {
+          "old_id": "190698786",
+          "item_id": "32a99705-1db9-4a2e-8f1e-5d856bf0f538",
+          "replacement_id": "305933356"
+        },
+        {
+          "old_id": "190698787",
+          "item_id": "59110605-42db-464b-8ca1-f6534d66166d",
+          "replacement_id": "305933357"
+        },
+        {
+          "old_id": "190698788",
+          "item_id": "341ad696-7ced-4e2b-85b6-b1ae35160cf1",
+          "replacement_id": "305933358"
+        },
+        {
+          "old_id": "190698789",
+          "item_id": "036af05a-ca84-4319-b2f8-161e3e2e80b1",
+          "replacement_id": "305933359"
+        },
+        {
+          "old_id": "190698790",
+          "item_id": "18bc3912-0d98-4f21-8efe-b78cef27d956",
+          "replacement_id": "305933360"
+        },
+        {
+          "old_id": "190698791",
+          "item_id": "4a95e03d-e574-4618-a624-7e1841b9b72a",
+          "replacement_id": "305933361"
+        },
+        {
+          "old_id": "190698792",
+          "item_id": "9c263be2-0890-4685-8211-8886a302e449",
+          "replacement_id": "305933362"
+        },
+        {
+          "old_id": "190698793",
+          "item_id": "9ea66e65-3863-49c0-b164-ea9707e2ff10",
+          "replacement_id": "305933363"
+        },
+        {
+          "old_id": "190698794",
+          "item_id": "7cd54446-261c-4ebb-9b8c-e5eee18642e0",
+          "replacement_id": "305933364"
+        }
+      ],
+      "state": "verified",
+      "inserted_occurrences": [
+        {
+          "id": "305933343",
+          "type": "tracks",
+          "meta": {
+            "itemId": "8337287d-d52c-4658-a251-313b0444bbd1",
+            "addedAt": "2026-10-04T11:57:13.240474Z"
+          }
+        },
+        {
+          "id": "305933344",
+          "type": "tracks",
+          "meta": {
+            "itemId": "3257fe63-1ded-4a2e-ad86-a1d2068ecc01",
+            "addedAt": "2026-10-04T11:57:13.240474Z"
+          }
+        },
+        {
+          "id": "305933345",
+          "type": "tracks",
+          "meta": {
+            "itemId": "b067341a-fdbd-471b-9350-6c42701bd982",
+            "addedAt": "2026-10-04T11:57:13.240474Z"
+          }
+        },
+        {
+          "id": "305933346",
+          "type": "tracks",
+          "meta": {
+            "itemId": "73ca1307-e22e-4294-8dfc-fcdd3e5113ef",
+            "addedAt": "2026-10-04T11:57:13.240474Z"
+          }
+        },
+        {
+          "id": "305933347",
+          "type": "tracks",
+          "meta": {
+            "itemId": "a4cee3a9-e9ed-4155-9fe9-ff37928aae8c",
+            "addedAt": "2026-10-04T11:57:13.240474Z"
+          }
+        },
+        {
+          "id": "305933348",
+          "type": "tracks",
+          "meta": {
+            "itemId": "b0304491-161f-4c9c-87d2-4cebf0f045e5",
+            "addedAt": "2026-10-04T11:57:13.240474Z"
+          }
+        },
+        {
+          "id": "305933349",
+          "type": "tracks",
+          "meta": {
+            "itemId": "0375a86f-18f6-4f20-a15e-0c8ae56a729d",
+            "addedAt": "2026-10-04T11:57:13.240474Z"
+          }
+        },
+        {
+          "id": "305933350",
+          "type": "tracks",
+          "meta": {
+            "itemId": "e196926c-923b-478b-bf7e-4d50409a5ce6",
+            "addedAt": "2026-10-04T11:57:13.240474Z"
+          }
+        },
+        {
+          "id": "305933351",
+          "type": "tracks",
+          "meta": {
+            "itemId": "5ec15f95-70be-4e50-8e4e-7dac966ef27e",
+            "addedAt": "2026-10-04T11:57:13.240474Z"
+          }
+        },
+        {
+          "id": "305933352",
+          "type": "tracks",
+          "meta": {
+            "itemId": "d7aecdd5-99df-4abd-bc05-a05d8c0ee8e2",
+            "addedAt": "2026-10-04T11:57:13.240474Z"
+          }
+        },
+        {
+          "id": "305933353",
+          "type": "tracks",
+          "meta": {
+            "itemId": "8773210f-265e-4ae6-96be-578a22aa1c30",
+            "addedAt": "2026-10-04T11:57:13.240474Z"
+          }
+        },
+        {
+          "id": "305933354",
+          "type": "tracks",
+          "meta": {
+            "itemId": "5d8d5846-d321-4199-a4c5-f88a2cc54e21",
+            "addedAt": "2026-10-04T11:57:13.240474Z"
+          }
+        },
+        {
+          "id": "305933355",
+          "type": "tracks",
+          "meta": {
+            "itemId": "1a85bedc-86fd-4535-ae2c-3eeb7af49d80",
+            "addedAt": "2026-10-04T11:57:13.240474Z"
+          }
+        },
+        {
+          "id": "305933356",
+          "type": "tracks",
+          "meta": {
+            "itemId": "1298432d-3604-410a-8f89-61e22af27f5d",
+            "addedAt": "2026-10-04T11:57:13.240474Z"
+          }
+        },
+        {
+          "id": "305933357",
+          "type": "tracks",
+          "meta": {
+            "itemId": "016f7c6f-5193-402d-8d8c-0ddbb00876dc",
+            "addedAt": "2026-10-04T11:57:13.240474Z"
+          }
+        },
+        {
+          "id": "305933358",
+          "type": "tracks",
+          "meta": {
+            "itemId": "6826fbf6-2d43-430c-84db-6b3acf57a489",
+            "addedAt": "2026-10-04T11:57:13.240474Z"
+          }
+        },
+        {
+          "id": "305933359",
+          "type": "tracks",
+          "meta": {
+            "itemId": "33dbb352-0e88-4b87-bc2d-9dce4b70c04c",
+            "addedAt": "2026-10-04T11:57:13.240474Z"
+          }
+        },
+        {
+          "id": "305933360",
+          "type": "tracks",
+          "meta": {
+            "itemId": "672a453e-b8a7-4c17-8e4c-7ae54f50c80b",
+            "addedAt": "2026-10-04T11:57:13.240474Z"
+          }
+        },
+        {
+          "id": "305933361",
+          "type": "tracks",
+          "meta": {
+            "itemId": "24125b6e-62ad-46ac-ac50-fa561ad19486",
+            "addedAt": "2026-10-04T11:57:13.240474Z"
+          }
+        },
+        {
+          "id": "305933362",
+          "type": "tracks",
+          "meta": {
+            "itemId": "9d96d82d-bfe0-431d-87e5-382a7aba6fc4",
+            "addedAt": "2026-10-04T11:57:13.240474Z"
+          }
+        },
+        {
+          "id": "305933363",
+          "type": "tracks",
+          "meta": {
+            "itemId": "17af2d93-37f7-408d-b39b-a94845f63ad2",
+            "addedAt": "2026-10-04T11:57:13.240474Z"
+          }
+        },
+        {
+          "id": "305933364",
+          "type": "tracks",
+          "meta": {
+            "itemId": "88625f5d-0da9-4ce6-8481-5d9ebb35ca87",
+            "addedAt": "2026-10-04T11:57:13.240474Z"
+          }
+        }
+      ]
+    },
+    {
+      "groups": [
+        "W28"
+      ],
+      "action": "replace",
+      "rows": [
+        {
+          "old_id": "12433870",
+          "item_id": "e32d4942-af0f-43bd-b755-3a449fc26e71",
+          "replacement_id": "376350497"
+        }
+      ],
+      "state": "verified",
+      "inserted_occurrences": [
+        {
+          "id": "376350497",
+          "type": "tracks",
+          "meta": {
+            "itemId": "2d7c8026-c15b-4ac1-8efd-8362c6ac5c59",
+            "addedAt": "2026-10-04T11:57:17.311695Z"
+          }
+        }
+      ]
+    },
+    {
+      "groups": [
+        "W29",
+        "W30"
+      ],
+      "action": "replace",
+      "rows": [
+        {
+          "old_id": "12433872",
+          "item_id": "238eae52-8f7e-43ed-b925-f9e17bd83d57",
+          "replacement_id": "376350499"
+        },
+        {
+          "old_id": "12433873",
+          "item_id": "0d9f8816-faf3-46f6-8739-ea1e4ee1b56d",
+          "replacement_id": "376350500"
+        },
+        {
+          "old_id": "12433874",
+          "item_id": "e522631b-d8b3-4bdc-b551-725d5462eaef",
+          "replacement_id": "376350501"
+        },
+        {
+          "old_id": "12433875",
+          "item_id": "67276450-e9b5-4810-a32a-50d83cc20388",
+          "replacement_id": "376350502"
+        },
+        {
+          "old_id": "12433876",
+          "item_id": "5d714556-445d-4311-b1ec-d6a1987fb1ee",
+          "replacement_id": "376350503"
+        },
+        {
+          "old_id": "12433877",
+          "item_id": "b1f956d8-3c71-45ab-95f5-075c6f6945a9",
+          "replacement_id": "376350504"
+        },
+        {
+          "old_id": "12433878",
+          "item_id": "25086af1-f4df-4e07-bef8-6305ed64f914",
+          "replacement_id": "376350505"
+        },
+        {
+          "old_id": "12433879",
+          "item_id": "ecef2de3-8bcc-4157-a808-b32f8acc1995",
+          "replacement_id": "376350506"
+        },
+        {
+          "old_id": "12433880",
+          "item_id": "845f2c09-87cd-4272-a0e5-fc0c2bde8bc3",
+          "replacement_id": "376350508"
+        }
+      ],
+      "state": "verified",
+      "inserted_occurrences": [
+        {
+          "id": "376350499",
+          "type": "tracks",
+          "meta": {
+            "itemId": "5d3fd02b-3898-45c5-91c1-1ba4e3d21280",
+            "addedAt": "2026-10-04T11:57:21.338960Z"
+          }
+        },
+        {
+          "id": "376350500",
+          "type": "tracks",
+          "meta": {
+            "itemId": "b6fe7700-60e1-46dc-a58a-46a7ca40760d",
+            "addedAt": "2026-10-04T11:57:21.338960Z"
+          }
+        },
+        {
+          "id": "376350501",
+          "type": "tracks",
+          "meta": {
+            "itemId": "f5e50e89-c2e9-4d18-890a-7f7cd02d5084",
+            "addedAt": "2026-10-04T11:57:21.338960Z"
+          }
+        },
+        {
+          "id": "376350502",
+          "type": "tracks",
+          "meta": {
+            "itemId": "6cb80002-6374-4df1-9134-bf46a561c13f",
+            "addedAt": "2026-10-04T11:57:21.338960Z"
+          }
+        },
+        {
+          "id": "376350503",
+          "type": "tracks",
+          "meta": {
+            "itemId": "ea1914e3-1da2-45ff-b638-d9fd0a3a44be",
+            "addedAt": "2026-10-04T11:57:21.338960Z"
+          }
+        },
+        {
+          "id": "376350504",
+          "type": "tracks",
+          "meta": {
+            "itemId": "d4b332b9-8a87-4ac9-9b7a-81b9d490bfec",
+            "addedAt": "2026-10-04T11:57:21.338960Z"
+          }
+        },
+        {
+          "id": "376350505",
+          "type": "tracks",
+          "meta": {
+            "itemId": "1a71a9b4-f65b-485d-91bd-29a9bc0e9961",
+            "addedAt": "2026-10-04T11:57:21.338960Z"
+          }
+        },
+        {
+          "id": "376350506",
+          "type": "tracks",
+          "meta": {
+            "itemId": "81dd97a5-54f3-463b-8b53-b46f94f17bc2",
+            "addedAt": "2026-10-04T11:57:21.338960Z"
+          }
+        },
+        {
+          "id": "376350508",
+          "type": "tracks",
+          "meta": {
+            "itemId": "b6c6342b-0ea5-4071-bd56-f15d01062143",
+            "addedAt": "2026-10-04T11:57:21.338960Z"
+          }
+        }
+      ]
+    },
+    {
+      "groups": [
+        "W32"
+      ],
+      "action": "replace",
+      "rows": [
+        {
+          "old_id": "150859124",
+          "item_id": "b8c445eb-400b-4884-8699-b93cf8062036",
+          "replacement_id": "357225184"
+        },
+        {
+          "old_id": "150859125",
+          "item_id": "2a48b623-b80b-4f99-a831-d3a9b21a6cba",
+          "replacement_id": "357225185"
+        },
+        {
+          "old_id": "150859126",
+          "item_id": "1a3831be-235b-44d8-80a9-bb941b6d13bf",
+          "replacement_id": "357225187"
+        },
+        {
+          "old_id": "150859127",
+          "item_id": "d8c25ae7-d3ed-4551-9bea-a998faf0a1f4",
+          "replacement_id": "357225188"
+        },
+        {
+          "old_id": "150859128",
+          "item_id": "81614817-de58-4192-b7af-51d507901e17",
+          "replacement_id": "357225189"
+        },
+        {
+          "old_id": "150859129",
+          "item_id": "5a33dffd-f367-449c-a997-7437d9f7f132",
+          "replacement_id": "357225190"
+        }
+      ],
+      "state": "verified",
+      "inserted_occurrences": [
+        {
+          "id": "357225184",
+          "type": "tracks",
+          "meta": {
+            "itemId": "26ff1fea-785f-40af-9fec-59da880edc2a",
+            "addedAt": "2026-10-04T11:57:25.257514Z"
+          }
+        },
+        {
+          "id": "357225185",
+          "type": "tracks",
+          "meta": {
+            "itemId": "60d3a5e3-a598-4a9f-a868-6e8f499f33fa",
+            "addedAt": "2026-10-04T11:57:25.257514Z"
+          }
+        },
+        {
+          "id": "357225187",
+          "type": "tracks",
+          "meta": {
+            "itemId": "c01ded0f-df43-4a0d-b702-1fd24891c3ae",
+            "addedAt": "2026-10-04T11:57:25.257514Z"
+          }
+        },
+        {
+          "id": "357225188",
+          "type": "tracks",
+          "meta": {
+            "itemId": "84c404e1-689f-4b75-8cc5-c14706218034",
+            "addedAt": "2026-10-04T11:57:25.257514Z"
+          }
+        },
+        {
+          "id": "357225189",
+          "type": "tracks",
+          "meta": {
+            "itemId": "9e5230e6-06d7-463d-a248-90c9980125ac",
+            "addedAt": "2026-10-04T11:57:25.257514Z"
+          }
+        },
+        {
+          "id": "357225190",
+          "type": "tracks",
+          "meta": {
+            "itemId": "1f6103e1-6279-4c45-82f9-840c106c2509",
+            "addedAt": "2026-10-04T11:57:25.257514Z"
+          }
+        }
+      ]
+    },
+    {
+      "groups": [
+        "W33"
+      ],
+      "action": "replace",
+      "rows": [
+        {
+          "old_id": "140474046",
+          "item_id": "34e45413-efd0-4fc2-8fdf-6e8b5cde1e68",
+          "replacement_id": "284356912"
+        },
+        {
+          "old_id": "140474047",
+          "item_id": "cb2438f1-0873-4d5d-ab05-e8fbac76012e",
+          "replacement_id": "284356917"
+        },
+        {
+          "old_id": "140474048",
+          "item_id": "efe5b4fd-c918-45f6-a671-3f6021ff635e",
+          "replacement_id": "284356913"
+        },
+        {
+          "old_id": "140474049",
+          "item_id": "2df533a8-905a-4cf6-9906-4f9f59409051",
+          "replacement_id": "284356918"
+        },
+        {
+          "old_id": "140474050",
+          "item_id": "ae822aae-004a-424f-9ab1-4aa817f7902a",
+          "replacement_id": "284356919"
+        },
+        {
+          "old_id": "140474051",
+          "item_id": "9ca45d42-0d8f-4355-a944-14f8ae25edfd",
+          "replacement_id": "284356914"
+        },
+        {
+          "old_id": "140474052",
+          "item_id": "c863e3c3-cc64-4dee-9da9-d03453c48fa7",
+          "replacement_id": "284356916"
+        },
+        {
+          "old_id": "140474053",
+          "item_id": "551a2796-6040-4def-9b94-02d535f472e7",
+          "replacement_id": "284356920"
+        }
+      ],
+      "state": "verified",
+      "inserted_occurrences": [
+        {
+          "id": "284356912",
+          "type": "tracks",
+          "meta": {
+            "itemId": "f8c8e155-3a78-48a4-8cf5-174be70e7610",
+            "addedAt": "2026-10-04T11:57:29.301246Z"
+          }
+        },
+        {
+          "id": "284356917",
+          "type": "tracks",
+          "meta": {
+            "itemId": "9725206d-6266-4903-9c1c-eb90db68db67",
+            "addedAt": "2026-10-04T11:57:29.301246Z"
+          }
+        },
+        {
+          "id": "284356913",
+          "type": "tracks",
+          "meta": {
+            "itemId": "525bdaa9-461c-42eb-b9cc-004ebb67cb6f",
+            "addedAt": "2026-10-04T11:57:29.301246Z"
+          }
+        },
+        {
+          "id": "284356918",
+          "type": "tracks",
+          "meta": {
+            "itemId": "d5629f94-6236-4502-a5c9-762b855501e9",
+            "addedAt": "2026-10-04T11:57:29.301246Z"
+          }
+        },
+        {
+          "id": "284356919",
+          "type": "tracks",
+          "meta": {
+            "itemId": "6f154021-0698-4c18-955d-83f0aed2d0fe",
+            "addedAt": "2026-10-04T11:57:29.301246Z"
+          }
+        },
+        {
+          "id": "284356914",
+          "type": "tracks",
+          "meta": {
+            "itemId": "28113935-492a-4281-9ab0-de94cdde6cd5",
+            "addedAt": "2026-10-04T11:57:29.301246Z"
+          }
+        },
+        {
+          "id": "284356916",
+          "type": "tracks",
+          "meta": {
+            "itemId": "bbb2eba2-a467-452f-b791-70d954faf6c6",
+            "addedAt": "2026-10-04T11:57:29.301246Z"
+          }
+        },
+        {
+          "id": "284356920",
+          "type": "tracks",
+          "meta": {
+            "itemId": "36190a11-794e-47d9-b844-346e07950e9b",
+            "addedAt": "2026-10-04T11:57:29.301246Z"
+          }
+        }
+      ]
+    },
+    {
+      "groups": [
+        "W35"
+      ],
+      "action": "replace",
+      "rows": [
+        {
+          "old_id": "18768309",
+          "item_id": "fc757fb2-b8f5-4bcb-ab7c-b6459d818d54",
+          "replacement_id": "284409120"
+        },
+        {
+          "old_id": "18768310",
+          "item_id": "cbaa4330-9c72-40c0-8192-a72a60d0960c",
+          "replacement_id": "284409113"
+        },
+        {
+          "old_id": "18768311",
+          "item_id": "59873d91-8f5c-4e6a-b8d9-ecf7573caa1d",
+          "replacement_id": "284409114"
+        },
+        {
+          "old_id": "18768312",
+          "item_id": "1cfb0208-8afa-442b-8edd-76168194cfc3",
+          "replacement_id": "284409115"
+        },
+        {
+          "old_id": "18768313",
+          "item_id": "eabf0f24-e321-46c4-bb41-768f64fd9d83",
+          "replacement_id": "284409116"
+        }
+      ],
+      "state": "verified",
+      "inserted_occurrences": [
+        {
+          "id": "284409120",
+          "type": "tracks",
+          "meta": {
+            "itemId": "2efc2b2f-6e67-4437-b8b1-c800fcf17548",
+            "addedAt": "2026-10-04T11:57:33.216295Z"
+          }
+        },
+        {
+          "id": "284409113",
+          "type": "tracks",
+          "meta": {
+            "itemId": "80361ff2-ceb2-44a7-9800-8e5a8a2a3f49",
+            "addedAt": "2026-10-04T11:57:33.216295Z"
+          }
+        },
+        {
+          "id": "284409114",
+          "type": "tracks",
+          "meta": {
+            "itemId": "397532f6-201f-4e3e-ab85-d9269b6b810d",
+            "addedAt": "2026-10-04T11:57:33.216295Z"
+          }
+        },
+        {
+          "id": "284409115",
+          "type": "tracks",
+          "meta": {
+            "itemId": "8fbee76d-9b69-4591-81a5-f08080487203",
+            "addedAt": "2026-10-04T11:57:33.216295Z"
+          }
+        },
+        {
+          "id": "284409116",
+          "type": "tracks",
+          "meta": {
+            "itemId": "24312c4e-e4f4-491f-8554-4876d2f4c314",
+            "addedAt": "2026-10-04T11:57:33.216295Z"
+          }
+        }
+      ]
+    },
+    {
+      "groups": [
+        "W40",
+        "W41"
+      ],
+      "action": "replace",
+      "rows": [
+        {
+          "old_id": "12432545",
+          "item_id": "0ad2a33c-c8f3-4637-b0ef-7a3ea63183f7",
+          "replacement_id": "376379176"
+        },
+        {
+          "old_id": "12432546",
+          "item_id": "e3dd82eb-361f-464e-9a72-cb981a317743",
+          "replacement_id": "376379177"
+        },
+        {
+          "old_id": "12432547",
+          "item_id": "39896c21-296c-46f1-8b4d-487efdd5a979",
+          "replacement_id": "376379178"
+        },
+        {
+          "old_id": "12432548",
+          "item_id": "8b956ede-780a-45b5-a27c-5b456eea68e3",
+          "replacement_id": "376379179"
+        },
+        {
+          "old_id": "12432549",
+          "item_id": "e511a7a5-0b7a-4070-a0dd-cd4cda722423",
+          "replacement_id": "376379180"
+        },
+        {
+          "old_id": "12432550",
+          "item_id": "6ce90c81-75a5-42bc-b467-647bc3f7c20b",
+          "replacement_id": "376379181"
+        },
+        {
+          "old_id": "12432551",
+          "item_id": "358d9fd1-013f-4db4-b970-c88e12f76e8c",
+          "replacement_id": "376379182"
+        }
+      ],
+      "state": "verified",
+      "inserted_occurrences": [
+        {
+          "id": "376379176",
+          "type": "tracks",
+          "meta": {
+            "itemId": "194dd904-8640-41b8-8364-22d3db8b3a8b",
+            "addedAt": "2026-10-04T11:57:37.135154Z"
+          }
+        },
+        {
+          "id": "376379177",
+          "type": "tracks",
+          "meta": {
+            "itemId": "211a2c47-03ac-4612-8122-b5825b77de18",
+            "addedAt": "2026-10-04T11:57:37.135154Z"
+          }
+        },
+        {
+          "id": "376379178",
+          "type": "tracks",
+          "meta": {
+            "itemId": "92d28d95-122f-4971-802f-4d011bb535f2",
+            "addedAt": "2026-10-04T11:57:37.135154Z"
+          }
+        },
+        {
+          "id": "376379179",
+          "type": "tracks",
+          "meta": {
+            "itemId": "fa39f92b-103f-4f83-b743-5bc6994fff49",
+            "addedAt": "2026-10-04T11:57:37.135154Z"
+          }
+        },
+        {
+          "id": "376379180",
+          "type": "tracks",
+          "meta": {
+            "itemId": "dff26a8a-77c6-4c7e-a6c2-3290d9f11877",
+            "addedAt": "2026-10-04T11:57:37.135154Z"
+          }
+        },
+        {
+          "id": "376379181",
+          "type": "tracks",
+          "meta": {
+            "itemId": "a6100297-a017-4c0b-a578-50afa3066e93",
+            "addedAt": "2026-10-04T11:57:37.135154Z"
+          }
+        },
+        {
+          "id": "376379182",
+          "type": "tracks",
+          "meta": {
+            "itemId": "de36b374-d479-489e-9bef-f91340d9f1c3",
+            "addedAt": "2026-10-04T11:57:37.135154Z"
+          }
+        }
+      ]
+    },
+    {
+      "groups": [
+        "W42",
+        "W43",
+        "W44"
+      ],
+      "action": "replace",
+      "rows": [
+        {
+          "old_id": "12436254",
+          "item_id": "f927bc45-ccf1-4d18-9190-ac42ef19642a",
+          "replacement_id": "376251363"
+        },
+        {
+          "old_id": "12436255",
+          "item_id": "325d6c4f-89a9-4ca9-8be3-338c04e7f45c",
+          "replacement_id": "376251364"
+        },
+        {
+          "old_id": "12436256",
+          "item_id": "57c0ff34-f7a3-4d88-b65c-f5449d77f13d",
+          "replacement_id": "376251365"
+        },
+        {
+          "old_id": "12436257",
+          "item_id": "d873c285-34ce-4542-95dc-63e1e0681f3b",
+          "replacement_id": "376251366"
+        },
+        {
+          "old_id": "12436258",
+          "item_id": "89abd5c7-6e99-4125-8320-26f8295e4576",
+          "replacement_id": "376251367"
+        },
+        {
+          "old_id": "12436259",
+          "item_id": "d093c1fd-5e33-401d-9b47-14f00d96bf99",
+          "replacement_id": "376251368"
+        },
+        {
+          "old_id": "12436260",
+          "item_id": "6058bec1-b3ae-4db4-a055-705c77146f26",
+          "replacement_id": "376251369"
+        },
+        {
+          "old_id": "12436261",
+          "item_id": "48f411f2-fffc-4f47-bf75-ae4b50a90469",
+          "replacement_id": "376251370"
+        }
+      ],
+      "state": "verified",
+      "inserted_occurrences": [
+        {
+          "id": "376251363",
+          "type": "tracks",
+          "meta": {
+            "itemId": "0bfdf2cc-c9c8-4be9-a35c-a8c7688dd9df",
+            "addedAt": "2026-10-04T11:57:41.021857Z"
+          }
+        },
+        {
+          "id": "376251364",
+          "type": "tracks",
+          "meta": {
+            "itemId": "2c7c41f7-6a80-4539-99c2-1038626ef43a",
+            "addedAt": "2026-10-04T11:57:41.021857Z"
+          }
+        },
+        {
+          "id": "376251365",
+          "type": "tracks",
+          "meta": {
+            "itemId": "665b2465-dbdf-48fe-8070-beebfc0c5d8c",
+            "addedAt": "2026-10-04T11:57:41.021857Z"
+          }
+        },
+        {
+          "id": "376251366",
+          "type": "tracks",
+          "meta": {
+            "itemId": "517833c3-cd6b-4a37-8d94-b44caa21ac01",
+            "addedAt": "2026-10-04T11:57:41.021857Z"
+          }
+        },
+        {
+          "id": "376251367",
+          "type": "tracks",
+          "meta": {
+            "itemId": "a29401a7-be23-428b-a659-28fdba07b318",
+            "addedAt": "2026-10-04T11:57:41.021857Z"
+          }
+        },
+        {
+          "id": "376251368",
+          "type": "tracks",
+          "meta": {
+            "itemId": "ac6f0e00-d140-4d7e-b219-e4dd72d789de",
+            "addedAt": "2026-10-04T11:57:41.021857Z"
+          }
+        },
+        {
+          "id": "376251369",
+          "type": "tracks",
+          "meta": {
+            "itemId": "f0adc1e3-864e-40a3-9fe2-9c0d8b33bb70",
+            "addedAt": "2026-10-04T11:57:41.021857Z"
+          }
+        },
+        {
+          "id": "376251370",
+          "type": "tracks",
+          "meta": {
+            "itemId": "02894e42-f96b-4763-9598-d1ab35287d81",
+            "addedAt": "2026-10-04T11:57:41.021857Z"
+          }
+        }
+      ]
+    },
+    {
+      "groups": [
+        "W45",
+        "W46"
+      ],
+      "action": "replace",
+      "rows": [
+        {
+          "old_id": "12444898",
+          "item_id": "5ae338e1-435e-4339-b148-12995497d132",
+          "replacement_id": "376442694"
+        },
+        {
+          "old_id": "12444899",
+          "item_id": "e7c41ede-a1db-4e1f-a25b-4f8f2f7d1c05",
+          "replacement_id": "376442695"
+        }
+      ],
+      "state": "verified",
+      "inserted_occurrences": [
+        {
+          "id": "376442694",
+          "type": "tracks",
+          "meta": {
+            "itemId": "92bfbf8a-2098-4487-a76c-d0dd95f69054",
+            "addedAt": "2026-10-04T11:57:45.224843Z"
+          }
+        },
+        {
+          "id": "376442695",
+          "type": "tracks",
+          "meta": {
+            "itemId": "013c7d6e-855e-4a06-a2ef-807b5be1e2c0",
+            "addedAt": "2026-10-04T11:57:45.224843Z"
+          }
+        }
+      ]
+    },
+    {
+      "groups": [
+        "W46",
+        "W47"
+      ],
+      "action": "replace",
+      "rows": [
+        {
+          "old_id": "12444902",
+          "item_id": "29c24020-81a5-4ff4-ade9-4cd9fa1114f1",
+          "replacement_id": "376442698"
+        },
+        {
+          "old_id": "12444903",
+          "item_id": "66ec1df4-3ee0-46d5-a423-8ac1690a5cd1",
+          "replacement_id": "376442699"
+        }
+      ],
+      "state": "verified",
+      "inserted_occurrences": [
+        {
+          "id": "376442698",
+          "type": "tracks",
+          "meta": {
+            "itemId": "107b55d1-b163-48a7-9d6e-9e2be674dd47",
+            "addedAt": "2026-10-04T11:57:49.102333Z"
+          }
+        },
+        {
+          "id": "376442699",
+          "type": "tracks",
+          "meta": {
+            "itemId": "9cd99584-d047-46f4-b6d2-932f64d69d49",
+            "addedAt": "2026-10-04T11:57:49.102333Z"
+          }
+        }
+      ]
+    },
+    {
+      "groups": [
+        "W48",
+        "W49",
+        "W50",
+        "W51",
+        "W52"
+      ],
+      "action": "replace",
+      "rows": [
+        {
+          "old_id": "12444907",
+          "item_id": "53961d71-4356-4642-a13e-0ae911da4a38",
+          "replacement_id": "376442703"
+        },
+        {
+          "old_id": "12447311",
+          "item_id": "7c7691ca-759b-4e36-add5-d85e0bb6fe0e",
+          "replacement_id": "376430406"
+        },
+        {
+          "old_id": "12447312",
+          "item_id": "4f5d9062-30a1-4334-b80e-2d2a9bc90bf7",
+          "replacement_id": "376430407"
+        },
+        {
+          "old_id": "12447313",
+          "item_id": "3a8c3c38-023f-4453-9780-96ef6aafb503",
+          "replacement_id": "376430408"
+        },
+        {
+          "old_id": "12447314",
+          "item_id": "41b404df-379f-4e44-a108-df3c5df08a43",
+          "replacement_id": "376430409"
+        },
+        {
+          "old_id": "12447315",
+          "item_id": "4f452483-a128-48ae-be8f-93c5b852b0b1",
+          "replacement_id": "376430410"
+        },
+        {
+          "old_id": "12447316",
+          "item_id": "543d463b-30f3-442a-9467-b18431bedc66",
+          "replacement_id": "376430411"
+        },
+        {
+          "old_id": "12447317",
+          "item_id": "0d459889-750b-4633-a7d1-8df8b0bcbb67",
+          "replacement_id": "376430412"
+        },
+        {
+          "old_id": "12447318",
+          "item_id": "c4570de4-9d35-4249-9b19-e9adfa488389",
+          "replacement_id": "376430413"
+        },
+        {
+          "old_id": "12447320",
+          "item_id": "cc43204f-fea7-4a17-bc81-1e31aa1a28b2",
+          "replacement_id": "376430414"
+        },
+        {
+          "old_id": "12447321",
+          "item_id": "345c3cae-5f2c-4887-9767-a533f4e1563e",
+          "replacement_id": "376430415"
+        }
+      ],
+      "state": "verified",
+      "inserted_occurrences": [
+        {
+          "id": "376442703",
+          "type": "tracks",
+          "meta": {
+            "itemId": "6d9a21d7-ea0f-44fe-8f30-54cc94b5af31",
+            "addedAt": "2026-10-04T11:57:53.181245Z"
+          }
+        },
+        {
+          "id": "376430406",
+          "type": "tracks",
+          "meta": {
+            "itemId": "59659a2b-ba3a-4847-883e-bc38e1cd7157",
+            "addedAt": "2026-10-04T11:57:53.181245Z"
+          }
+        },
+        {
+          "id": "376430407",
+          "type": "tracks",
+          "meta": {
+            "itemId": "707c522c-53b5-46e5-8faa-12210ea6781e",
+            "addedAt": "2026-10-04T11:57:53.181245Z"
+          }
+        },
+        {
+          "id": "376430408",
+          "type": "tracks",
+          "meta": {
+            "itemId": "31eca954-49dd-4814-b094-1760b67c1122",
+            "addedAt": "2026-10-04T11:57:53.181245Z"
+          }
+        },
+        {
+          "id": "376430409",
+          "type": "tracks",
+          "meta": {
+            "itemId": "0138ca4b-f4cc-4332-9e15-549531706b7e",
+            "addedAt": "2026-10-04T11:57:53.181245Z"
+          }
+        },
+        {
+          "id": "376430410",
+          "type": "tracks",
+          "meta": {
+            "itemId": "2d4e4eb3-0978-4351-9578-bd2408a914cd",
+            "addedAt": "2026-10-04T11:57:53.181245Z"
+          }
+        },
+        {
+          "id": "376430411",
+          "type": "tracks",
+          "meta": {
+            "itemId": "45e57c8e-be2c-404c-af7c-b1f3b3a1c364",
+            "addedAt": "2026-10-04T11:57:53.181245Z"
+          }
+        },
+        {
+          "id": "376430412",
+          "type": "tracks",
+          "meta": {
+            "itemId": "4d823cf8-b445-479e-b334-0f5b8bcd7c55",
+            "addedAt": "2026-10-04T11:57:53.181245Z"
+          }
+        },
+        {
+          "id": "376430413",
+          "type": "tracks",
+          "meta": {
+            "itemId": "7d4d5ba7-3314-4bc9-b062-a0b5e19ea22a",
+            "addedAt": "2026-10-04T11:57:53.181245Z"
+          }
+        },
+        {
+          "id": "376430414",
+          "type": "tracks",
+          "meta": {
+            "itemId": "d4f0d0db-b04c-4de9-be36-140c6e466d12",
+            "addedAt": "2026-10-04T11:57:53.181245Z"
+          }
+        },
+        {
+          "id": "376430415",
+          "type": "tracks",
+          "meta": {
+            "itemId": "20abbffb-0814-4ebb-829e-73afead8e474",
+            "addedAt": "2026-10-04T11:57:53.181245Z"
+          }
+        }
+      ]
+    },
+    {
+      "groups": [
+        "W53",
+        "W54",
+        "W55"
+      ],
+      "action": "replace",
+      "rows": [
+        {
+          "old_id": "120794950",
+          "item_id": "2170113f-a628-4760-89e4-fc829ce3a54f",
+          "replacement_id": "376421982"
+        },
+        {
+          "old_id": "120794951",
+          "item_id": "0657675d-4f7e-4b0c-ae3a-e32dae075ff0",
+          "replacement_id": "376399367"
+        },
+        {
+          "old_id": "120794952",
+          "item_id": "7eef621e-a446-4ee7-b39d-664aea88967f",
+          "replacement_id": "376421984"
+        },
+        {
+          "old_id": "120794953",
+          "item_id": "cd282afc-2996-4db9-b540-5ee2a3a02209",
+          "replacement_id": "376421985"
+        },
+        {
+          "old_id": "120794954",
+          "item_id": "2a1ac954-bc00-486a-bbdc-d45aaa0cc0e7",
+          "replacement_id": "376421986"
+        },
+        {
+          "old_id": "120794955",
+          "item_id": "d74e876a-dbd8-4a4b-8c4b-c316f54155f4",
+          "replacement_id": "376421987"
+        },
+        {
+          "old_id": "120794956",
+          "item_id": "4fa52928-1a6f-44a1-87d3-40672d9d6ed4",
+          "replacement_id": "376421988"
+        },
+        {
+          "old_id": "120794957",
+          "item_id": "4a9f919a-215b-4350-b0fe-05715242cf16",
+          "replacement_id": "376421989"
+        },
+        {
+          "old_id": "120794958",
+          "item_id": "e7b5b22d-4145-48b5-9a2a-a40f0b3930eb",
+          "replacement_id": "376421990"
+        },
+        {
+          "old_id": "120794959",
+          "item_id": "fec22513-202b-4ba2-9073-d892324f3ef9",
+          "replacement_id": "376421991"
+        },
+        {
+          "old_id": "120794960",
+          "item_id": "7ef42e1d-5c9b-4719-8d3e-2d04485a0ff8",
+          "replacement_id": "376421992"
+        },
+        {
+          "old_id": "120794961",
+          "item_id": "ef795451-b81d-470d-bec0-92735437b381",
+          "replacement_id": "376421993"
+        },
+        {
+          "old_id": "120794962",
+          "item_id": "a75949f6-88ab-470b-981c-006c70e5cccd",
+          "replacement_id": "376421994"
+        },
+        {
+          "old_id": "120794963",
+          "item_id": "67728332-14b6-45e8-bf35-1fa36892a8ce",
+          "replacement_id": "376421995"
+        }
+      ],
+      "state": "verified",
+      "inserted_occurrences": [
+        {
+          "id": "376421982",
+          "type": "tracks",
+          "meta": {
+            "itemId": "a5f4c44b-0304-44d2-851e-d5d600f892ee",
+            "addedAt": "2026-10-04T11:57:57.066166Z"
+          }
+        },
+        {
+          "id": "376399367",
+          "type": "tracks",
+          "meta": {
+            "itemId": "c4659e78-a1cc-4eec-a55e-cabdf8768501",
+            "addedAt": "2026-10-04T11:57:57.066166Z"
+          }
+        },
+        {
+          "id": "376421984",
+          "type": "tracks",
+          "meta": {
+            "itemId": "f76aa86d-1b89-4ea2-b8c3-a76ee8b709e8",
+            "addedAt": "2026-10-04T11:57:57.066166Z"
+          }
+        },
+        {
+          "id": "376421985",
+          "type": "tracks",
+          "meta": {
+            "itemId": "2a7ce145-e7d6-4cbf-9f0b-eba9c3017edd",
+            "addedAt": "2026-10-04T11:57:57.066166Z"
+          }
+        },
+        {
+          "id": "376421986",
+          "type": "tracks",
+          "meta": {
+            "itemId": "c02bb726-a210-4bc2-ac83-3fd11ebbdbc5",
+            "addedAt": "2026-10-04T11:57:57.066166Z"
+          }
+        },
+        {
+          "id": "376421987",
+          "type": "tracks",
+          "meta": {
+            "itemId": "edb3bcba-b970-4ad9-9d5c-4b76f88cbe24",
+            "addedAt": "2026-10-04T11:57:57.066166Z"
+          }
+        },
+        {
+          "id": "376421988",
+          "type": "tracks",
+          "meta": {
+            "itemId": "b3bce665-3f74-4579-92ac-33dd2463f4dd",
+            "addedAt": "2026-10-04T11:57:57.066166Z"
+          }
+        },
+        {
+          "id": "376421989",
+          "type": "tracks",
+          "meta": {
+            "itemId": "8c686ce9-c321-44a5-9294-d10b8c7bb066",
+            "addedAt": "2026-10-04T11:57:57.066166Z"
+          }
+        },
+        {
+          "id": "376421990",
+          "type": "tracks",
+          "meta": {
+            "itemId": "18f87161-2144-4e3c-9246-7189c4c127cd",
+            "addedAt": "2026-10-04T11:57:57.066166Z"
+          }
+        },
+        {
+          "id": "376421991",
+          "type": "tracks",
+          "meta": {
+            "itemId": "c14e6de8-ab0c-4ac4-91d2-dbb65d4683c8",
+            "addedAt": "2026-10-04T11:57:57.066166Z"
+          }
+        },
+        {
+          "id": "376421992",
+          "type": "tracks",
+          "meta": {
+            "itemId": "f7c498f9-a050-48c0-a7f5-03f2a3a364f4",
+            "addedAt": "2026-10-04T11:57:57.066166Z"
+          }
+        },
+        {
+          "id": "376421993",
+          "type": "tracks",
+          "meta": {
+            "itemId": "3d42dcaf-e024-45a5-9d54-cad50f4852f4",
+            "addedAt": "2026-10-04T11:57:57.066166Z"
+          }
+        },
+        {
+          "id": "376421994",
+          "type": "tracks",
+          "meta": {
+            "itemId": "80a725d0-f5ca-4800-a609-d9d6683bb950",
+            "addedAt": "2026-10-04T11:57:57.066166Z"
+          }
+        },
+        {
+          "id": "376421995",
+          "type": "tracks",
+          "meta": {
+            "itemId": "494e7b4c-3a73-45e6-9563-1e2cb6f83f88",
+            "addedAt": "2026-10-04T11:57:57.066166Z"
+          }
+        }
+      ]
+    },
+    {
+      "groups": [
+        "W56"
+      ],
+      "action": "replace",
+      "rows": [
+        {
+          "old_id": "12421747",
+          "item_id": "2c39b6f9-b72f-4696-8664-2dbc41f989fe",
+          "replacement_id": "376373903"
+        },
+        {
+          "old_id": "12421748",
+          "item_id": "220398ff-6222-4095-82f3-447027610dd5",
+          "replacement_id": "376373904"
+        },
+        {
+          "old_id": "12421749",
+          "item_id": "bd0e19d5-b15d-400b-9bd9-7f895845ab10",
+          "replacement_id": "376373905"
+        },
+        {
+          "old_id": "12421750",
+          "item_id": "ee3e35e3-3dc8-473d-aa33-c73b8c0c9aca",
+          "replacement_id": "376373906"
+        }
+      ],
+      "state": "verified",
+      "inserted_occurrences": [
+        {
+          "id": "376373903",
+          "type": "tracks",
+          "meta": {
+            "itemId": "3db2a03d-ffd2-4a85-8d59-3d40702438b8",
+            "addedAt": "2026-10-04T11:58:01.019120Z"
+          }
+        },
+        {
+          "id": "376373904",
+          "type": "tracks",
+          "meta": {
+            "itemId": "5623facc-230d-470e-9858-cda3f4b553a8",
+            "addedAt": "2026-10-04T11:58:01.019120Z"
+          }
+        },
+        {
+          "id": "376373905",
+          "type": "tracks",
+          "meta": {
+            "itemId": "0bd40975-9730-47f6-9157-22240aa6d8a2",
+            "addedAt": "2026-10-04T11:58:01.019120Z"
+          }
+        },
+        {
+          "id": "376373906",
+          "type": "tracks",
+          "meta": {
+            "itemId": "93c7c407-fa82-4753-a55c-b650216dae13",
+            "addedAt": "2026-10-04T11:58:01.019120Z"
+          }
+        }
+      ]
+    },
+    {
+      "groups": [
+        "W57"
+      ],
+      "action": "replace",
+      "rows": [
+        {
+          "old_id": "12421752",
+          "item_id": "b13c13fc-ed25-495d-82a2-bcb5b5815096",
+          "replacement_id": "376373908"
+        }
+      ],
+      "state": "verified",
+      "inserted_occurrences": [
+        {
+          "id": "376373908",
+          "type": "tracks",
+          "meta": {
+            "itemId": "3dc072e7-8d1d-4272-b80b-f3117351f2bd",
+            "addedAt": "2026-10-04T11:58:04.959523Z"
+          }
+        }
+      ]
+    },
+    {
+      "groups": [
+        "W58"
+      ],
+      "action": "replace",
+      "rows": [
+        {
+          "old_id": "17696864",
+          "item_id": "ca396876-fb93-4b13-95e0-81f8342796c6",
+          "replacement_id": "284693360"
+        },
+        {
+          "old_id": "17696865",
+          "item_id": "d03acb85-9ade-452c-b37b-a0089c9e12c2",
+          "replacement_id": "284693361"
+        },
+        {
+          "old_id": "17696866",
+          "item_id": "48aa12cd-761a-46bf-b561-535c82bd1597",
+          "replacement_id": "284693362"
+        }
+      ],
+      "state": "verified",
+      "inserted_occurrences": [
+        {
+          "id": "284693360",
+          "type": "tracks",
+          "meta": {
+            "itemId": "0b1ec040-47e5-4419-a3cd-b98de6515a9b",
+            "addedAt": "2026-10-04T11:58:08.871603Z"
+          }
+        },
+        {
+          "id": "284693361",
+          "type": "tracks",
+          "meta": {
+            "itemId": "4554082e-d27b-4c55-90e0-94b66dc0a790",
+            "addedAt": "2026-10-04T11:58:08.871603Z"
+          }
+        },
+        {
+          "id": "284693362",
+          "type": "tracks",
+          "meta": {
+            "itemId": "6137d73a-1449-4fa8-9a7f-7a02d5fe574d",
+            "addedAt": "2026-10-04T11:58:08.871603Z"
+          }
+        }
+      ]
+    },
+    {
+      "groups": [
+        "W59"
+      ],
+      "action": "replace",
+      "rows": [
+        {
+          "old_id": "55841803",
+          "item_id": "d1d78272-fb92-4a93-ab3d-ed3a6d6cea8f",
+          "replacement_id": "282740112"
+        }
+      ],
+      "state": "verified",
+      "inserted_occurrences": [
+        {
+          "id": "282740112",
+          "type": "tracks",
+          "meta": {
+            "itemId": "cd1f3178-9fec-4a33-b6e9-55f8c43f3856",
+            "addedAt": "2026-10-04T11:58:12.823048Z"
+          }
+        }
+      ]
+    },
+    {
+      "groups": [
+        "W60"
+      ],
+      "action": "replace",
+      "rows": [
+        {
+          "old_id": "12412296",
+          "item_id": "a4e4406e-0ffa-46ce-8ad2-46756338f225",
+          "replacement_id": "377598100"
+        },
+        {
+          "old_id": "12412297",
+          "item_id": "1c56e85c-a5de-4beb-b5e8-13945cfa449d",
+          "replacement_id": "377598101"
+        },
+        {
+          "old_id": "12412298",
+          "item_id": "247ec440-6372-47ef-a30b-95473c7b9e7e",
+          "replacement_id": "377598102"
+        }
+      ],
+      "state": "verified",
+      "inserted_occurrences": [
+        {
+          "id": "377598100",
+          "type": "tracks",
+          "meta": {
+            "itemId": "45d2c4e6-8463-4862-94ba-4179b44b820a",
+            "addedAt": "2026-10-04T11:58:16.937276Z"
+          }
+        },
+        {
+          "id": "377598101",
+          "type": "tracks",
+          "meta": {
+            "itemId": "1002257a-812b-4a3b-b91f-83db0775f4c2",
+            "addedAt": "2026-10-04T11:58:16.937276Z"
+          }
+        },
+        {
+          "id": "377598102",
+          "type": "tracks",
+          "meta": {
+            "itemId": "8e3f2fbc-84b2-444f-b968-f1d2812aac9f",
+            "addedAt": "2026-10-04T11:58:16.937276Z"
+          }
+        }
+      ]
+    },
+    {
+      "groups": [
+        "W61"
+      ],
+      "action": "replace",
+      "rows": [
+        {
+          "old_id": "211442019",
+          "item_id": "2a7f4450-302a-4bcb-b976-87f53566775c",
+          "replacement_id": "376370064"
+        }
+      ],
+      "state": "verified",
+      "inserted_occurrences": [
+        {
+          "id": "376370064",
+          "type": "tracks",
+          "meta": {
+            "itemId": "988f1d7e-cd12-4f29-b28a-121996444707",
+            "addedAt": "2026-10-04T11:58:21.049105Z"
+          }
+        }
+      ]
+    },
+    {
+      "groups": [
+        "W62",
+        "W63"
+      ],
+      "action": "replace",
+      "rows": [
+        {
+          "old_id": "31672205",
+          "item_id": "315cc1a9-7000-47fe-a31e-b221477b2dbc",
+          "replacement_id": "283273343"
+        },
+        {
+          "old_id": "31672206",
+          "item_id": "1224fc64-a87a-481d-b63d-7d906b3bfb70",
+          "replacement_id": "283273339"
+        }
+      ],
+      "state": "verified",
+      "inserted_occurrences": [
+        {
+          "id": "283273343",
+          "type": "tracks",
+          "meta": {
+            "itemId": "3c8575a4-70dc-46f9-a68c-388c4e2c43d0",
+            "addedAt": "2026-10-04T11:58:25.029031Z"
+          }
+        },
+        {
+          "id": "283273339",
+          "type": "tracks",
+          "meta": {
+            "itemId": "ffe15226-b5c1-485c-8007-9b8e99836f70",
+            "addedAt": "2026-10-04T11:58:25.029031Z"
+          }
+        }
+      ]
+    },
+    {
+      "groups": [
+        "W65",
+        "W66"
+      ],
+      "action": "replace",
+      "rows": [
+        {
+          "old_id": "12444400",
+          "item_id": "d49f3f99-9746-4ed8-bd81-b1452dbbe082",
+          "replacement_id": "376444284"
+        },
+        {
+          "old_id": "12444401",
+          "item_id": "9a0af642-fd28-4500-9e09-123e1a492aa2",
+          "replacement_id": "376444285"
+        },
+        {
+          "old_id": "12444402",
+          "item_id": "6ca71474-8c1e-4b1e-845f-1b3f9183df4f",
+          "replacement_id": "376444286"
+        },
+        {
+          "old_id": "12444403",
+          "item_id": "6998fb27-c528-4608-b43e-9b0ff6c2f64a",
+          "replacement_id": "376444287"
+        },
+        {
+          "old_id": "12444404",
+          "item_id": "96e69804-3c52-4b0f-9125-f5d60ecee709",
+          "replacement_id": "376444288"
+        }
+      ],
+      "state": "verified",
+      "inserted_occurrences": [
+        {
+          "id": "376444284",
+          "type": "tracks",
+          "meta": {
+            "itemId": "dc3cbbec-b7c3-4662-9f52-0872c352a2d1",
+            "addedAt": "2026-10-04T11:58:28.980956Z"
+          }
+        },
+        {
+          "id": "376444285",
+          "type": "tracks",
+          "meta": {
+            "itemId": "c7950aa9-7e39-432f-aa93-62eebc96138a",
+            "addedAt": "2026-10-04T11:58:28.980956Z"
+          }
+        },
+        {
+          "id": "376444286",
+          "type": "tracks",
+          "meta": {
+            "itemId": "c5fade8f-7447-4630-93f2-931dc1b44cf2",
+            "addedAt": "2026-10-04T11:58:28.980956Z"
+          }
+        },
+        {
+          "id": "376444287",
+          "type": "tracks",
+          "meta": {
+            "itemId": "c7a019e2-2f74-433d-be9d-6d308f7a5774",
+            "addedAt": "2026-10-04T11:58:28.980956Z"
+          }
+        },
+        {
+          "id": "376444288",
+          "type": "tracks",
+          "meta": {
+            "itemId": "11cd1110-8dc5-4519-bb54-90dcaca16820",
+            "addedAt": "2026-10-04T11:58:28.980956Z"
+          }
+        }
+      ]
+    },
+    {
+      "groups": [
+        "W67",
+        "W68"
+      ],
+      "action": "replace",
+      "rows": [
+        {
+          "old_id": "19318112",
+          "item_id": "2f87933a-5475-4f3d-80b3-bc805bc89402",
+          "replacement_id": "282915724"
+        },
+        {
+          "old_id": "19318115",
+          "item_id": "745c65c4-ad5a-4293-8b9d-5d29353b5f3b",
+          "replacement_id": "282915727"
+        },
+        {
+          "old_id": "19318116",
+          "item_id": "16dbd40a-a1d8-4383-a901-0f24001a540c",
+          "replacement_id": "282915728"
+        }
+      ],
+      "state": "verified",
+      "inserted_occurrences": [
+        {
+          "id": "282915724",
+          "type": "tracks",
+          "meta": {
+            "itemId": "109f30f1-4639-4e28-a9d8-8ca8e6a9d30a",
+            "addedAt": "2026-10-04T11:58:32.949124Z"
+          }
+        },
+        {
+          "id": "282915727",
+          "type": "tracks",
+          "meta": {
+            "itemId": "c02b1630-09c9-46e4-8735-3dd708400398",
+            "addedAt": "2026-10-04T11:58:32.949124Z"
+          }
+        },
+        {
+          "id": "282915728",
+          "type": "tracks",
+          "meta": {
+            "itemId": "cb123faf-9d33-45af-8f02-f019349bbd56",
+            "addedAt": "2026-10-04T11:58:32.949124Z"
+          }
+        }
+      ]
+    },
+    {
+      "groups": [
+        "W69",
+        "W70",
+        "W71"
+      ],
+      "action": "replace",
+      "rows": [
+        {
+          "old_id": "74080288",
+          "item_id": "c5707b63-72a4-410c-8b39-7e5bbc9b6f4a",
+          "replacement_id": "284342136"
+        },
+        {
+          "old_id": "74080289",
+          "item_id": "59d5bd6b-44de-4872-8ba5-1c310f59a3cf",
+          "replacement_id": "284342139"
+        },
+        {
+          "old_id": "83931281",
+          "item_id": "d843c6ef-fe29-40fd-9f6a-7566e9e7b54f",
+          "replacement_id": "305363144"
+        },
+        {
+          "old_id": "83931282",
+          "item_id": "ed1e13a1-6592-49bf-8b33-d69e4fc35cc9",
+          "replacement_id": "305363145"
+        }
+      ],
+      "state": "verified",
+      "inserted_occurrences": [
+        {
+          "id": "284342136",
+          "type": "tracks",
+          "meta": {
+            "itemId": "c3b67fa0-ccc4-47d1-a5e7-657bc4e71470",
+            "addedAt": "2026-10-04T11:58:36.895718Z"
+          }
+        },
+        {
+          "id": "284342139",
+          "type": "tracks",
+          "meta": {
+            "itemId": "f068e351-6de7-4262-8f91-0f339e39f095",
+            "addedAt": "2026-10-04T11:58:36.895718Z"
+          }
+        },
+        {
+          "id": "305363144",
+          "type": "tracks",
+          "meta": {
+            "itemId": "60620ec2-83e0-40bf-8351-24351cdee415",
+            "addedAt": "2026-10-04T11:58:36.895718Z"
+          }
+        },
+        {
+          "id": "305363145",
+          "type": "tracks",
+          "meta": {
+            "itemId": "a5304df4-dae1-4c84-8ed6-46febb01e24f",
+            "addedAt": "2026-10-04T11:58:36.895718Z"
+          }
+        }
+      ]
+    },
+    {
+      "groups": [
+        "W72",
+        "W73"
+      ],
+      "action": "replace",
+      "rows": [
+        {
+          "old_id": "30592037",
+          "item_id": "4cea5a6b-cd80-490b-b11b-ab1474a0c232",
+          "replacement_id": "284120161"
+        },
+        {
+          "old_id": "30592038",
+          "item_id": "ef2f00b9-2ee0-418c-bcfa-7bd2a3bff007",
+          "replacement_id": "284120162"
+        },
+        {
+          "old_id": "30592039",
+          "item_id": "a6927024-178a-496e-b9b8-0432828a2ca2",
+          "replacement_id": "284120163"
+        },
+        {
+          "old_id": "30592040",
+          "item_id": "c3a1f206-dfd4-4837-b6c5-30baae348f38",
+          "replacement_id": "284120164"
+        },
+        {
+          "old_id": "30592041",
+          "item_id": "4317ec79-1376-447c-bb38-617941c88001",
+          "replacement_id": "284120165"
+        },
+        {
+          "old_id": "30592042",
+          "item_id": "5dd16f58-4509-426d-84b8-5115363ea304",
+          "replacement_id": "284120166"
+        },
+        {
+          "old_id": "30592043",
+          "item_id": "82624a60-4fc9-415e-92ce-dbb82b475a28",
+          "replacement_id": "284120167"
+        },
+        {
+          "old_id": "30592044",
+          "item_id": "d3286798-c5bc-4a9b-a0ba-a3a6f4cfdc0d",
+          "replacement_id": "446945309"
+        },
+        {
+          "old_id": "30592045",
+          "item_id": "187165c4-55aa-4927-bc73-6ae84695f87c",
+          "replacement_id": "284120169"
+        },
+        {
+          "old_id": "30592046",
+          "item_id": "28b56a34-587b-4d1b-9634-ff745bd173a7",
+          "replacement_id": "284120170"
+        },
+        {
+          "old_id": "30592047",
+          "item_id": "a8f2b99f-6773-4a30-9a9d-ee3dffd0e247",
+          "replacement_id": "284120171"
+        },
+        {
+          "old_id": "30592048",
+          "item_id": "0f78612f-1c04-44e1-a62e-145dc72183bd",
+          "replacement_id": "283431828"
+        },
+        {
+          "old_id": "30592049",
+          "item_id": "bcc91bd3-a0d1-4d6b-8d71-521ffaf0dd39",
+          "replacement_id": "284120173"
+        },
+        {
+          "old_id": "30592050",
+          "item_id": "1c7994a1-673d-415e-b0ca-d5ea14a5beb1",
+          "replacement_id": "284120174"
+        },
+        {
+          "old_id": "30592051",
+          "item_id": "1f4ab5e0-7839-480e-b108-e68cdf5692ec",
+          "replacement_id": "284120175"
+        },
+        {
+          "old_id": "30592052",
+          "item_id": "d6655646-d6ab-4317-81b5-b2333a09e62c",
+          "replacement_id": "284120176"
+        }
+      ],
+      "state": "verified",
+      "inserted_occurrences": [
+        {
+          "id": "284120161",
+          "type": "tracks",
+          "meta": {
+            "itemId": "ab6f0c87-fd5b-40b1-b2b4-697326b36c86",
+            "addedAt": "2026-10-04T11:58:40.880303Z"
+          }
+        },
+        {
+          "id": "284120162",
+          "type": "tracks",
+          "meta": {
+            "itemId": "1efbc187-0424-434d-a276-72235f2cb141",
+            "addedAt": "2026-10-04T11:58:40.880303Z"
+          }
+        },
+        {
+          "id": "284120163",
+          "type": "tracks",
+          "meta": {
+            "itemId": "931127d3-612f-41c0-b4c0-ed835475e022",
+            "addedAt": "2026-10-04T11:58:40.880303Z"
+          }
+        },
+        {
+          "id": "284120164",
+          "type": "tracks",
+          "meta": {
+            "itemId": "44735b76-ea5e-4f49-998e-4a4986df07be",
+            "addedAt": "2026-10-04T11:58:40.880303Z"
+          }
+        },
+        {
+          "id": "284120165",
+          "type": "tracks",
+          "meta": {
+            "itemId": "08950c7a-140f-44fb-a51c-d1320ccf5bc2",
+            "addedAt": "2026-10-04T11:58:40.880303Z"
+          }
+        },
+        {
+          "id": "284120166",
+          "type": "tracks",
+          "meta": {
+            "itemId": "1f3c7f32-57a0-4501-9e45-92bb091d1141",
+            "addedAt": "2026-10-04T11:58:40.880303Z"
+          }
+        },
+        {
+          "id": "284120167",
+          "type": "tracks",
+          "meta": {
+            "itemId": "75729231-5936-4b66-a172-0a215a6a8889",
+            "addedAt": "2026-10-04T11:58:40.880303Z"
+          }
+        },
+        {
+          "id": "446945309",
+          "type": "tracks",
+          "meta": {
+            "itemId": "a7d1e9ba-f6e9-4c53-a4f0-fb602f835abc",
+            "addedAt": "2026-10-04T11:58:40.880303Z"
+          }
+        },
+        {
+          "id": "284120169",
+          "type": "tracks",
+          "meta": {
+            "itemId": "226ce5be-306a-4221-9760-6ab9c20b2422",
+            "addedAt": "2026-10-04T11:58:40.880303Z"
+          }
+        },
+        {
+          "id": "284120170",
+          "type": "tracks",
+          "meta": {
+            "itemId": "10248712-809b-4756-915b-6142d0ce2439",
+            "addedAt": "2026-10-04T11:58:40.880303Z"
+          }
+        },
+        {
+          "id": "284120171",
+          "type": "tracks",
+          "meta": {
+            "itemId": "b5c51b88-24db-4201-aabe-16f938f520fd",
+            "addedAt": "2026-10-04T11:58:40.880303Z"
+          }
+        },
+        {
+          "id": "283431828",
+          "type": "tracks",
+          "meta": {
+            "itemId": "d47c8208-3bd8-410a-a2d7-e2411a5be933",
+            "addedAt": "2026-10-04T11:58:40.880303Z"
+          }
+        },
+        {
+          "id": "284120173",
+          "type": "tracks",
+          "meta": {
+            "itemId": "4d6773fc-5022-41fd-bb6a-d2a4f2034205",
+            "addedAt": "2026-10-04T11:58:40.880303Z"
+          }
+        },
+        {
+          "id": "284120174",
+          "type": "tracks",
+          "meta": {
+            "itemId": "b3f5852c-f480-4b2a-bc2c-914eedb6ac76",
+            "addedAt": "2026-10-04T11:58:40.880303Z"
+          }
+        },
+        {
+          "id": "284120175",
+          "type": "tracks",
+          "meta": {
+            "itemId": "cbfd9581-f5c8-40c1-8475-1da671584c14",
+            "addedAt": "2026-10-04T11:58:40.880303Z"
+          }
+        },
+        {
+          "id": "284120176",
+          "type": "tracks",
+          "meta": {
+            "itemId": "090f9137-d3d6-4575-b9d8-a51aac248447",
+            "addedAt": "2026-10-04T11:58:40.880303Z"
+          }
+        }
+      ]
+    },
+    {
+      "groups": [
+        "W75"
+      ],
+      "action": "replace",
+      "rows": [
+        {
+          "old_id": "264899995",
+          "item_id": "39b9b483-1a78-4a89-b6a6-e15107452751",
+          "replacement_id": "357225235"
+        },
+        {
+          "old_id": "264899996",
+          "item_id": "b7ed5ba7-5ee1-45ce-a96c-eec313c57374",
+          "replacement_id": "357225236"
+        },
+        {
+          "old_id": "264899997",
+          "item_id": "3b22ba02-2de2-4632-955d-0749e16e9bdb",
+          "replacement_id": "357225237"
+        },
+        {
+          "old_id": "264899999",
+          "item_id": "7bc79570-b1ca-4b14-81c8-a791749eee1f",
+          "replacement_id": "357225238"
+        }
+      ],
+      "state": "verified",
+      "inserted_occurrences": [
+        {
+          "id": "357225235",
+          "type": "tracks",
+          "meta": {
+            "itemId": "5573381e-1bdc-4604-b4db-2a1daa18c2e8",
+            "addedAt": "2026-10-04T11:58:44.844641Z"
+          }
+        },
+        {
+          "id": "357225236",
+          "type": "tracks",
+          "meta": {
+            "itemId": "c4ca969a-bb3c-479f-8637-ffcfa32029e6",
+            "addedAt": "2026-10-04T11:58:44.844641Z"
+          }
+        },
+        {
+          "id": "357225237",
+          "type": "tracks",
+          "meta": {
+            "itemId": "452bb18a-fd47-474c-83f8-5b2bbb2f0024",
+            "addedAt": "2026-10-04T11:58:44.844641Z"
+          }
+        },
+        {
+          "id": "357225238",
+          "type": "tracks",
+          "meta": {
+            "itemId": "ed1cdb9e-ac58-4146-9f14-e5d455cb99bc",
+            "addedAt": "2026-10-04T11:58:44.844641Z"
+          }
+        }
+      ]
+    },
+    {
+      "groups": [
+        "W75"
+      ],
+      "action": "replace",
+      "rows": [
+        {
+          "old_id": "264900001",
+          "item_id": "dbdb2424-fe2f-4425-8f15-a000ab440d96",
+          "replacement_id": "357225240"
+        },
+        {
+          "old_id": "264900002",
+          "item_id": "921fdec0-e209-4e80-b1e0-d1231e3f773a",
+          "replacement_id": "357225241"
+        },
+        {
+          "old_id": "264900003",
+          "item_id": "97a95cda-eb24-499c-a820-5847359ce48d",
+          "replacement_id": "357225242"
+        }
+      ],
+      "state": "verified",
+      "inserted_occurrences": [
+        {
+          "id": "357225240",
+          "type": "tracks",
+          "meta": {
+            "itemId": "594f8925-acb1-4bfb-907d-019512f1140d",
+            "addedAt": "2026-10-04T11:58:48.824960Z"
+          }
+        },
+        {
+          "id": "357225241",
+          "type": "tracks",
+          "meta": {
+            "itemId": "ba4816e4-01d8-425b-a3f9-b3e88a95aeba",
+            "addedAt": "2026-10-04T11:58:48.824960Z"
+          }
+        },
+        {
+          "id": "357225242",
+          "type": "tracks",
+          "meta": {
+            "itemId": "b94a3a70-85ee-47c1-8e27-d464665e16d1",
+            "addedAt": "2026-10-04T11:58:48.824960Z"
+          }
+        }
+      ]
+    },
+    {
+      "groups": [
+        "W75"
+      ],
+      "action": "replace",
+      "rows": [
+        {
+          "old_id": "264900006",
+          "item_id": "8d1e8a33-c7eb-4ae4-aaf8-c47f65813963",
+          "replacement_id": "357225245"
+        }
+      ],
+      "state": "verified",
+      "inserted_occurrences": [
+        {
+          "id": "357225245",
+          "type": "tracks",
+          "meta": {
+            "itemId": "9e471ccd-e833-4c6d-a3cd-a619f1641e93",
+            "addedAt": "2026-10-04T11:58:52.788084Z"
+          }
+        }
+      ]
+    },
+    {
+      "groups": [
+        "W75"
+      ],
+      "action": "replace",
+      "rows": [
+        {
+          "old_id": "264900008",
+          "item_id": "a45d41eb-f0a6-428f-b716-95119f6b18ef",
+          "replacement_id": "357225247"
+        },
+        {
+          "old_id": "264900009",
+          "item_id": "d6d5244b-9808-4d22-b98c-2e4f83f5fa16",
+          "replacement_id": "357225248"
+        },
+        {
+          "old_id": "264900010",
+          "item_id": "b5d5e0d9-59dc-467f-9c8c-51d8507c5490",
+          "replacement_id": "357225249"
+        },
+        {
+          "old_id": "264900011",
+          "item_id": "de283402-0fa8-40b3-8a59-985ea849e812",
+          "replacement_id": "357225250"
+        }
+      ],
+      "state": "verified",
+      "inserted_occurrences": [
+        {
+          "id": "357225247",
+          "type": "tracks",
+          "meta": {
+            "itemId": "5c17aad1-c44e-4ef2-954b-bccbab065311",
+            "addedAt": "2026-10-04T11:58:56.748576Z"
+          }
+        },
+        {
+          "id": "357225248",
+          "type": "tracks",
+          "meta": {
+            "itemId": "ee865d98-1249-4299-94ac-4d0d41ae815e",
+            "addedAt": "2026-10-04T11:58:56.748576Z"
+          }
+        },
+        {
+          "id": "357225249",
+          "type": "tracks",
+          "meta": {
+            "itemId": "b7bed171-0eb3-4fe3-b3ea-c39b3296f17b",
+            "addedAt": "2026-10-04T11:58:56.748576Z"
+          }
+        },
+        {
+          "id": "357225250",
+          "type": "tracks",
+          "meta": {
+            "itemId": "ce0e68f3-69c8-405e-8723-8e8197f1125e",
+            "addedAt": "2026-10-04T11:58:56.748576Z"
+          }
+        }
+      ]
+    },
+    {
+      "groups": [
+        "W79"
+      ],
+      "action": "replace",
+      "rows": [
+        {
+          "old_id": "92510053",
+          "item_id": "ee37f391-7e9d-4886-8bd2-902039fbfaa2",
+          "replacement_id": "285138294"
+        }
+      ],
+      "state": "verified",
+      "inserted_occurrences": [
+        {
+          "id": "285138294",
+          "type": "tracks",
+          "meta": {
+            "itemId": "ca138321-a61c-413c-91d3-42a13e2a88cd",
+            "addedAt": "2026-10-04T11:59:00.876066Z"
+          }
+        }
+      ]
+    },
+    {
+      "groups": [
+        "W90"
+      ],
+      "action": "replace",
+      "rows": [
+        {
+          "old_id": "19480811",
+          "item_id": "3dc990fe-8eeb-4552-940a-f04471e895e1",
+          "replacement_id": "282839032"
+        }
+      ],
+      "state": "verified",
+      "inserted_occurrences": [
+        {
+          "id": "282839032",
+          "type": "tracks",
+          "meta": {
+            "itemId": "d9566a1a-acf7-44b3-a511-9e9e8cf97e02",
+            "addedAt": "2026-10-04T11:59:04.828987Z"
+          }
+        }
+      ]
+    },
+    {
+      "groups": [
+        "W91"
+      ],
+      "action": "replace",
+      "rows": [
+        {
+          "old_id": "19480813",
+          "item_id": "d319b530-05c6-484d-931f-d80d42a0777a",
+          "replacement_id": "282839036"
+        }
+      ],
+      "state": "verified",
+      "inserted_occurrences": [
+        {
+          "id": "282839036",
+          "type": "tracks",
+          "meta": {
+            "itemId": "814300d6-b115-4d84-aed8-6018dedc8160",
+            "addedAt": "2026-10-04T11:59:08.810245Z"
+          }
+        }
+      ]
+    },
+    {
+      "groups": [
+        "W94"
+      ],
+      "action": "replace",
+      "rows": [
+        {
+          "old_id": "13402414",
+          "item_id": "62343897-dbd8-44ab-9cd8-e0f291485b1b",
+          "replacement_id": "284434622"
+        }
+      ],
+      "state": "verified",
+      "inserted_occurrences": [
+        {
+          "id": "284434622",
+          "type": "tracks",
+          "meta": {
+            "itemId": "2ff5a4b1-3216-45ec-82a7-df3ed60c5242",
+            "addedAt": "2026-10-04T11:59:12.805528Z"
+          }
+        }
+      ]
+    },
+    {
+      "groups": [
+        "W95"
+      ],
+      "action": "replace",
+      "rows": [
+        {
+          "old_id": "13402417",
+          "item_id": "b01235cb-42af-4e3d-83e2-86f3d0c9ac65",
+          "replacement_id": "284434625"
+        }
+      ],
+      "state": "verified",
+      "inserted_occurrences": [
+        {
+          "id": "284434625",
+          "type": "tracks",
+          "meta": {
+            "itemId": "56ce5400-9583-4673-8038-fdfbc9aa5dff",
+            "addedAt": "2026-10-04T11:59:16.754555Z"
+          }
+        }
+      ]
+    },
+    {
+      "groups": [
+        "W100"
+      ],
+      "action": "replace",
+      "rows": [
+        {
+          "old_id": "12611548",
+          "item_id": "21cd000b-b8cc-4772-83a0-95bea58889ad",
+          "replacement_id": "432513337"
+        }
+      ],
+      "state": "verified",
+      "inserted_occurrences": [
+        {
+          "id": "432513337",
+          "type": "tracks",
+          "meta": {
+            "itemId": "f14b3b32-ad5c-4fd1-8327-fa156dfff3cb",
+            "addedAt": "2026-10-04T11:59:20.714869Z"
+          }
+        }
+      ]
+    },
+    {
+      "groups": [
+        "W101"
+      ],
+      "action": "replace",
+      "rows": [
+        {
+          "old_id": "64473232",
+          "item_id": "8820b1dd-aae7-4cc1-82a8-924b2e702655",
+          "replacement_id": "282956952"
+        }
+      ],
+      "state": "verified",
+      "inserted_occurrences": [
+        {
+          "id": "282956952",
+          "type": "tracks",
+          "meta": {
+            "itemId": "4bb3d6fd-0ab8-4841-ad1e-b1fe079eeaa3",
+            "addedAt": "2026-10-04T11:59:24.823776Z"
+          }
+        }
+      ]
+    },
+    {
+      "groups": [
+        "W102"
+      ],
+      "action": "replace",
+      "rows": [
+        {
+          "old_id": "324465637",
+          "item_id": "75b2a25c-0ead-4320-ae31-e609232c3c94",
+          "replacement_id": "510442098"
+        },
+        {
+          "old_id": "324465638",
+          "item_id": "16cd708f-9b04-4b7d-97b2-641279707655",
+          "replacement_id": "510442099"
+        },
+        {
+          "old_id": "324465639",
+          "item_id": "6ac9f927-5c6e-41fb-9fca-de89b791a687",
+          "replacement_id": "510442100"
+        }
+      ],
+      "state": "verified",
+      "inserted_occurrences": [
+        {
+          "id": "510442098",
+          "type": "tracks",
+          "meta": {
+            "itemId": "64895b96-2b2d-43b1-a06c-021d7d31fc56",
+            "addedAt": "2026-10-04T11:59:28.751994Z"
+          }
+        },
+        {
+          "id": "510442099",
+          "type": "tracks",
+          "meta": {
+            "itemId": "5c8c3a9b-3ce0-47b9-978f-acef43759216",
+            "addedAt": "2026-10-04T11:59:28.751994Z"
+          }
+        },
+        {
+          "id": "510442100",
+          "type": "tracks",
+          "meta": {
+            "itemId": "9039d678-3ac6-4975-be38-2a0e0be09816",
+            "addedAt": "2026-10-04T11:59:28.751994Z"
+          }
+        }
+      ]
+    },
+    {
+      "groups": [
+        "W103"
+      ],
+      "action": "replace",
+      "rows": [
+        {
+          "old_id": "74079495",
+          "item_id": "ec65c383-2585-4113-934b-d62ff22d11b0",
+          "replacement_id": "282798318"
+        },
+        {
+          "old_id": "74079500",
+          "item_id": "43596201-c328-4e94-810b-8ede10ab534a",
+          "replacement_id": "282798323"
+        },
+        {
+          "old_id": "74079503",
+          "item_id": "a770af4a-a6b5-48fb-920c-77b530f0d886",
+          "replacement_id": "282798325"
+        }
+      ],
+      "state": "verified",
+      "inserted_occurrences": [
+        {
+          "id": "282798318",
+          "type": "tracks",
+          "meta": {
+            "itemId": "bcb09372-2299-4697-ac5f-c45416574c1d",
+            "addedAt": "2026-10-04T11:59:32.811384Z"
+          }
+        },
+        {
+          "id": "282798323",
+          "type": "tracks",
+          "meta": {
+            "itemId": "d89a19a3-8975-49bd-8aa6-5388f6ed41af",
+            "addedAt": "2026-10-04T11:59:32.811384Z"
+          }
+        },
+        {
+          "id": "282798325",
+          "type": "tracks",
+          "meta": {
+            "itemId": "824201f0-bd92-4952-919a-82d244a45b8a",
+            "addedAt": "2026-10-04T11:59:32.811384Z"
+          }
+        }
+      ]
+    },
+    {
+      "groups": [
+        "W104"
+      ],
+      "action": "replace",
+      "rows": [
+        {
+          "old_id": "74079499",
+          "item_id": "71f60e72-67ad-4fd7-a2b1-8966677d2ac9",
+          "replacement_id": "282798319"
+        },
+        {
+          "old_id": "74079502",
+          "item_id": "fff711fe-ae8a-4897-aa7a-63bc33febfc3",
+          "replacement_id": "282798322"
+        },
+        {
+          "old_id": "74079505",
+          "item_id": "1d05655c-02d4-463c-b3d4-7ea27d6951b4",
+          "replacement_id": "282798327"
+        },
+        {
+          "old_id": "74079506",
+          "item_id": "77c982c3-1338-44dd-b808-6d42fde8a293",
+          "replacement_id": "282798329"
+        },
+        {
+          "old_id": "74079507",
+          "item_id": "c4992f53-1402-40ad-9067-42984eb49066",
+          "replacement_id": "282798330"
+        },
+        {
+          "old_id": "74079508",
+          "item_id": "90e2bb48-536f-4c5f-93a7-e714d00d875c",
+          "replacement_id": "282798331"
+        },
+        {
+          "old_id": "74079509",
+          "item_id": "e85d7dea-9f58-45c8-aa7c-95e5e32464fa",
+          "replacement_id": "282798332"
+        },
+        {
+          "old_id": "74079510",
+          "item_id": "8b39cf4e-a7e0-4712-a7c9-88ec54bc4971",
+          "replacement_id": "282798333"
+        },
+        {
+          "old_id": "74079511",
+          "item_id": "0e66c366-52dd-41e7-89e3-79e21b852282",
+          "replacement_id": "282798334"
+        }
+      ],
+      "state": "verified",
+      "inserted_occurrences": [
+        {
+          "id": "282798319",
+          "type": "tracks",
+          "meta": {
+            "itemId": "41f6e382-d68e-4148-b96d-0feef26f807b",
+            "addedAt": "2026-10-04T11:59:36.718298Z"
+          }
+        },
+        {
+          "id": "282798322",
+          "type": "tracks",
+          "meta": {
+            "itemId": "77373a49-8d63-42de-a44a-d01058c62870",
+            "addedAt": "2026-10-04T11:59:36.718298Z"
+          }
+        },
+        {
+          "id": "282798327",
+          "type": "tracks",
+          "meta": {
+            "itemId": "cc914e48-4eb0-484d-8b02-743ff3e0f331",
+            "addedAt": "2026-10-04T11:59:36.718298Z"
+          }
+        },
+        {
+          "id": "282798329",
+          "type": "tracks",
+          "meta": {
+            "itemId": "4ff7d588-661f-4201-a3fa-7c590beba371",
+            "addedAt": "2026-10-04T11:59:36.718298Z"
+          }
+        },
+        {
+          "id": "282798330",
+          "type": "tracks",
+          "meta": {
+            "itemId": "45b64cea-2f4b-4fc0-bc39-080a1cd3507c",
+            "addedAt": "2026-10-04T11:59:36.718298Z"
+          }
+        },
+        {
+          "id": "282798331",
+          "type": "tracks",
+          "meta": {
+            "itemId": "08630934-96cc-4ccc-873d-e2517088566c",
+            "addedAt": "2026-10-04T11:59:36.718298Z"
+          }
+        },
+        {
+          "id": "282798332",
+          "type": "tracks",
+          "meta": {
+            "itemId": "570430c8-e148-4483-a645-1ecc2434a7a5",
+            "addedAt": "2026-10-04T11:59:36.718298Z"
+          }
+        },
+        {
+          "id": "282798333",
+          "type": "tracks",
+          "meta": {
+            "itemId": "48a9a888-e488-4142-9d33-14243900c9c9",
+            "addedAt": "2026-10-04T11:59:36.718298Z"
+          }
+        },
+        {
+          "id": "282798334",
+          "type": "tracks",
+          "meta": {
+            "itemId": "56eaaddf-28be-4919-92fd-59737b3db0f8",
+            "addedAt": "2026-10-04T11:59:36.718298Z"
+          }
+        }
+      ]
+    }
+  ]
+}

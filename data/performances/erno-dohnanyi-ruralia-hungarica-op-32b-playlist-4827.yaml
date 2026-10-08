@@ -1,0 +1,13 @@
+id: erno-dohnanyi-ruralia-hungarica-op-32b-playlist-4827
+work_id: erno-dohnanyi-ruralia-hungarica-op-32b
+performers:
+- name: Matthias Bamert
+- name: BBC Philharmonic Orchestra
+links:
+  tidal:
+    url: https://tidal.com/track/376370051
+release:
+  album_title: 'Dohnanyi: Piano Concerto No. 1 & Ruralia Hingarica'
+source:
+  file: reports/playlist-import/best-classical/window-4001-5518.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

@@ -1,0 +1,16 @@
+id: 
+  sergei-prokofiev-violin-concerto-no-2-in-g-minor-work-lisa-batiashvili-chamber-orchestra-of-europe-yannick-nezet-seguin
+work_id: sergei-prokofiev-violin-concerto-no-2-in-g-minor-work
+source:
+  file: docs/prokofiev.md
+  line: '110'
+links:
+  tidal:
+    url: https://tidal.com/album/84165949
+performers:
+- name: Lisa Batiashvili
+  role: performer
+- name: Chamber Orchestra of Europe
+  role: performer
+- name: Yannick Nézet-Séguin
+  role: performer

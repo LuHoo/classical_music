@@ -1,0 +1,11 @@
+id: dmitri-shostakovich-symphony-no-8-in-c-minor-work
+work_group_id: dmitri-shostakovich-symphony-no-8-in-c-minor-group
+composer_id: dmitri-shostakovich
+title: Symphony No. 8 in C minor
+source:
+  file: docs/shostakovich.md
+  line: '88'
+catalogue:
+  op: Op. 65
+date_text: '1943'
+category: Orchestral

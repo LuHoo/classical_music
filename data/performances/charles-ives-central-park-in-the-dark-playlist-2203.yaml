@@ -1,0 +1,13 @@
+id: charles-ives-central-park-in-the-dark-playlist-2203
+work_id: charles-ives-central-park-in-the-dark
+performers:
+- name: The Gulbenkian Orchestra
+- name: Michel Swierczewski
+links:
+  tidal:
+    url: https://tidal.com/track/57432500
+release:
+  album_title: 'Ives: Orchestral Works'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

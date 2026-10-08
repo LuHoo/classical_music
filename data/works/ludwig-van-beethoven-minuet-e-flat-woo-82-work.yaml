@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-minuet-e-flat-woo-82-work"
+work_group_id: "ludwig-van-beethoven-minuet-e-flat-woo-82-group"
+composer_id: "ludwig-van-beethoven"
+title: "Minuet, E♭"
+source:
+  file: "docs/beethoven.md"
+  line: "450"
+catalogue:
+  woo: "WoO 82"
+date_text: "c. 1803"
+category: "Piano"

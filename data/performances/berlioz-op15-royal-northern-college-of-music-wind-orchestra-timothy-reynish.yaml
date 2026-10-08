@@ -1,0 +1,16 @@
+id: berlioz-op15-royal-northern-college-of-music-wind-orchestra-timothy-reynish
+work_id: berlioz-op15
+performers:
+- artist_id: royal-northern-college-of-music-wind-orchestra
+  name: Royal Northern College of Music Wind Orchestra
+  role: performer
+- artist_id: timothy-reynish
+  name: Timothy Reynish
+  role: conductor
+source_performer_text: Royal Northern College of Music Wind Orchestra, Timothy Reynish
+links:
+  tidal:
+    url: https://tidal.com/track/376347172
+source:
+  file: /Users/Lucas_new/.codex/.chatgpt-projects/g-p-6a500123ac548191ab37db95c0d285a2/classical_music/docs/berlioz.md
+  line: '26'

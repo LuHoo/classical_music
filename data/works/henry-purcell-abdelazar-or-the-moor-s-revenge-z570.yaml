@@ -1,0 +1,9 @@
+id: henry-purcell-abdelazar-or-the-moor-s-revenge-z570
+work_group_id: henry-purcell-abdelazar-or-the-moor-s-revenge-z570-group
+composer_id: henry-purcell
+title: Abdelazar or The Moor's Revenge, Z570
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://catalogue.bnf.fr/ark:/12148/cb38315848m
+catalogue:
+  z: '570'

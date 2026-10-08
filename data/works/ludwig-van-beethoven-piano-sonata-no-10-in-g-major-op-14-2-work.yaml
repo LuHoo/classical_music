@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-piano-sonata-no-10-in-g-major-op-14-2-work"
+work_group_id: "ludwig-van-beethoven-piano-sonata-no-10-in-g-major-op-14-2-group"
+composer_id: "ludwig-van-beethoven"
+title: "Piano Sonata No. 10 in G major"
+source:
+  file: "docs/beethoven.md"
+  line: "332"
+catalogue:
+  opus: "Op. 14/2"
+date_text: "1799"
+category: "Piano"

@@ -1,0 +1,8 @@
+id: dmitri-shostakovich-scherzo-in-e-flat-major-group
+composer_id: dmitri-shostakovich
+title: Scherzo in E-flat major
+source:
+  file: docs/shostakovich.md
+  line: '16'
+catalogue:
+  op: Op. 7

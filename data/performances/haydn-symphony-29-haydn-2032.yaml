@@ -1,0 +1,19 @@
+id: af0bd2e666254fad9e77c5a090438ead
+work_id: 77c251c67d9c4a519bb74f992d240f73
+performers:
+- name: Kammerorchester Basel
+  role: orchestra
+- name: Giovanni Antonini
+  role: conductor
+release:
+  label: Alpha Classics
+  catalogue_number: ALPHA1092
+  album_title: 'Haydn 2032, Vol. 18: Il maestro di scuola'
+source:
+  url: https://www.prestomusic.com/classical/products/9827138--haydn-2032-vol-18-il-maestro-di-scuola
+  file: reports/haydn-2032/catalogue.json
+links:
+  tidal:
+    url: https://tidal.com/album/467075961
+notes: Haydn 2032, volume 18. Sources and Tidal album metadata checked 2026-09-30. Album link covers this
+  work; it is not a work-specific track link.

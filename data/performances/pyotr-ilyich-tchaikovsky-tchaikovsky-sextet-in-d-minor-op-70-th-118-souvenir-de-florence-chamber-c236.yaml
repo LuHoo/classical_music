@@ -1,0 +1,13 @@
+id:
+  pyotr-ilyich-tchaikovsky-tchaikovsky-sextet-in-d-minor-op-70-th-118-souvenir-de-florence-chamber-c236
+work_id: pyotr-ilyich-tchaikovsky-tchaikovsky-sextet-in-d-minor-op-70-th-118-souvenir-de-florence
+performers:
+  - name: The Nash Ensemble
+links:
+  tidal:
+    url: https://tidal.com/track/347041435
+release:
+  album_title: 'Tchaikovsky, Korngold: String Sextets'
+source:
+  file: reports/playlist-import/chamber/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/a2327106-07fd-4433-8bd3-d8a5c251c69a

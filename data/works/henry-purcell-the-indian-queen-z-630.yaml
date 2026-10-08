@@ -1,0 +1,9 @@
+id: henry-purcell-the-indian-queen-z-630
+work_group_id: henry-purcell-the-indian-queen-z-630-group
+composer_id: henry-purcell
+title: The Indian Queen, Z. 630
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://catalogue.bnf.fr/ark:/12148/cb38315848m
+catalogue:
+  z: '630'

@@ -1,0 +1,18 @@
+id: jean-sibelius-king-christian-op-27-suite-playlist-2290
+work_id: jean-sibelius-king-christian-op-27-suite
+performers:
+- name: Gothenburg Symphony Orchestra
+  artist_id: gothenburg-symphony-orchestra
+  role: orchestra
+- name: Neeme Järvi
+  artist_id: neeme-jarvi
+  role: conductor
+- name: Gothenburg SO
+links:
+  tidal:
+    url: https://tidal.com/track/10212897
+release:
+  album_title: 'Sibelius: The Symphonies; Tone Poems'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

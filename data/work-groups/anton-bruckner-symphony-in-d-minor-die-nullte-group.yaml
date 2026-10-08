@@ -1,0 +1,8 @@
+id: "anton-bruckner-symphony-in-d-minor-die-nullte-group"
+composer_id: "anton-bruckner"
+title: "Symphony in D minor \"Die Nullte\""
+source:
+  file: "docs/bruckner.md"
+  line: "22"
+catalogue:
+  wab: "WAB 100"

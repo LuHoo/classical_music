@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-bagatelle-b-flat-woo-60-work"
+work_group_id: "ludwig-van-beethoven-bagatelle-b-flat-woo-60-group"
+composer_id: "ludwig-van-beethoven"
+title: "Bagatelle, B♭"
+source:
+  file: "docs/beethoven.md"
+  line: "458"
+catalogue:
+  woo: "WoO 60"
+date_text: "1818"
+category: "Piano"

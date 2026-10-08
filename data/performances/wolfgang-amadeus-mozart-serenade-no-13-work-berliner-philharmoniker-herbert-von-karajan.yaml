@@ -1,0 +1,14 @@
+id: 
+  wolfgang-amadeus-mozart-serenade-no-13-work-berliner-philharmoniker-herbert-von-karajan
+work_id: wolfgang-amadeus-mozart-serenade-no-13-work
+source:
+  file: docs/mozart.md
+  line: '156'
+links:
+  tidal:
+    url: http://www.tidal.com/track/171967223
+performers:
+- name: Berliner Philharmoniker
+  role: performer
+- name: Herbert von Karajan
+  role: performer

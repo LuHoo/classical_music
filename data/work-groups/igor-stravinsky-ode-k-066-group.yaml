@@ -1,0 +1,8 @@
+id: "igor-stravinsky-ode-k-066-group"
+composer_id: "igor-stravinsky"
+title: "Ode"
+source:
+  file: "docs/stravinsky.md"
+  line: "49"
+catalogue:
+  k: "K 066"

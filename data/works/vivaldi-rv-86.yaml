@@ -1,0 +1,9 @@
+id: 01b5fb6154444ac9be24a1528bfa2cb6
+work_group_id: 92f07a017736429e9e9bca13d5a56147
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Chamber Sonata, RV 86
+catalogue:
+  rv: RV 86
+source:
+  url: https://vivaldiedition.net/portfolio/vol-12-sonate-da-camera-2003/
+  file: reports/vivaldi-naive-edition/catalogue.json

@@ -1,0 +1,8 @@
+id: wolfgang-amadeus-mozart-symphony-no-28-in-c-group
+composer_id: wolfgang-amadeus-mozart
+title: Symphony No. 28 in C
+source:
+  file: docs/mozart.md
+  line: '67'
+catalogue:
+  k: K. 200

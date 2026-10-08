@@ -1,0 +1,9 @@
+id: samuel-barber-music-for-a-scene-from-shelley
+work_group_id: samuel-barber-music-for-a-scene-from-shelley-group
+composer_id: samuel-barber
+title: Music for a Scene from Shelley
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://www.naxos.com/CatalogueDetail/?id=VOX-NX-2213
+catalogue:
+  opus: Op. 7

@@ -1,0 +1,9 @@
+id: "paul-hindemith-morgenmusik-work"
+work_group_id: "paul-hindemith-morgenmusik-group"
+composer_id: "paul-hindemith"
+title: "\"Morgenmusik\""
+source:
+  file: "docs/hindemith.md"
+  line: "243"
+date_text: "1932"
+category: "Chamber"

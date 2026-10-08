@@ -1,0 +1,17 @@
+id: camille-saint-saens-l-assassinat-du-duc-de-guise-playlist-492
+work_id: camille-saint-saens-l-assassinat-du-duc-de-guise
+performers:
+- name: Les Siècles
+  role: orchestra
+  artist_id: les-siecles
+- name: François-Xavier Roth
+  role: conductor
+  artist_id: francois-xavier-roth
+links:
+  tidal:
+    url: https://tidal.com/track/328375853
+release:
+  album_title: "Saint-Saëns: Symphonic Poems - Le Carnaval des animaux - L'Assassinat du duc de Guise"
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

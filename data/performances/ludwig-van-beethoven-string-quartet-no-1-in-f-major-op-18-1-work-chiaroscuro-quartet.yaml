@@ -1,0 +1,14 @@
+id: "ludwig-van-beethoven-string-quartet-no-1-in-f-major-op-18-1-work-chiaroscuro-quartet"
+work_id: "ludwig-van-beethoven-string-quartet-no-1-in-f-major-op-18-1-work"
+performers:
+  - name: "Chiaroscuro Quartet"
+    role: "ensemble"
+links:
+  tidal:
+    url: "http://www.tidal.com/track/341644410"
+source:
+  file: "docs/beethoven.md"
+  line: "172"
+reviews:
+  gramophone:
+    issue: "2021-12"

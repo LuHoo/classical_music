@@ -1,0 +1,9 @@
+id: 42dd908e4c5243efbd9250220bea7a96
+work_group_id: 66da5cec32354dc3962a2a9f4cf3f24e
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Chamber Concerto, RV 87
+catalogue:
+  rv: RV 87
+source:
+  url: https://vivaldiedition.net/portfolio/vol-19-concerti-e-cantata-iii-2005/
+  file: reports/vivaldi-naive-edition/catalogue.json

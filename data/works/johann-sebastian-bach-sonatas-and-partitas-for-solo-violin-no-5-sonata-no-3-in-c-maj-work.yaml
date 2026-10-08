@@ -1,0 +1,11 @@
+id: "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-5-sonata-no-3-in-c-maj-work"
+work_group_id: "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-5-sonata-no-3-in-c-maj-group"
+composer_id: "johann-sebastian-bach"
+title: "Sonatas and partitas for solo violin No. 5: Sonata No. 3 in C maj."
+source:
+  file: "docs/bachJS.md"
+  line: "106"
+catalogue:
+  bwv: "BWV 1005"
+date_text: "1720"
+category: "Chamber"

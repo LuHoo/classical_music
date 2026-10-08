@@ -1,0 +1,15 @@
+id: "anton-bruckner-symphony-no-6-in-a-major-work-bruckner-orchester-linz-markus-poschner"
+work_id: "anton-bruckner-symphony-no-6-in-a-major-work"
+source:
+  file: "docs/bruckner.md"
+  line: "52"
+  url: https://cdn.naxos.com/sharedfiles/PDF/Capriccio.pdf
+notes: >
+  Edition Robert Haas, prepared by John Williamson, as identified for C8080 in
+  the Naxos 2023 Capriccio catalogue. The cycle booklet's Williamson attribution
+  and the catalogue's Haas attribution describe this editorial preparation.
+links:
+- platform: "tidal"
+  url: "https://tidal.com/browse/track/384348637?u"
+performers:
+- name: "Bruckner Orchester Linz, Markus Poschner"

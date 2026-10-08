@@ -1,0 +1,9 @@
+id: "gustav-mahler-lieder-eines-fahrenden-gesellen-work"
+work_group_id: "gustav-mahler-lieder-eines-fahrenden-gesellen-group"
+composer_id: "gustav-mahler"
+title: "Lieder eines fahrenden Gesellen"
+source:
+  file: "docs/mahler.md"
+  line: "20"
+date_text: "1885–86"
+category: "Early works"

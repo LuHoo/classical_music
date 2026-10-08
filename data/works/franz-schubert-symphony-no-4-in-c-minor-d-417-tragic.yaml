@@ -1,0 +1,9 @@
+id: franz-schubert-symphony-no-4-in-c-minor-d-417-tragic
+work_group_id: franz-schubert-symphony-no-4-in-c-minor-d-417-tragic-group
+composer_id: franz-schubert
+title: Symphony No. 4 in C Minor, D. 417 "Tragic"
+source:
+  file: docs/schubert.md
+  url: https://en.wikipedia.org/wiki/List_of_compositions_by_Franz_Schubert_by_genre
+catalogue:
+  d: '417'

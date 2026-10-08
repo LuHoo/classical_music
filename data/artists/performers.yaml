@@ -1,0 +1,627 @@
+artists:
+- id: alessandro-carbonare
+  type: soloist
+  canonical_name: Alessandro Carbonare
+  source:
+    file: docs/brahms.md
+  instruments:
+  - clarinet
+- id: amy-norrington
+  type: soloist
+  canonical_name: Amy Norrington
+  source:
+    file: docs/brahms.md
+  instruments:
+  - cello
+  authorities:
+    musicbrainz_artist_id: 74fc97c4-658d-4a89-aacf-c8b7ed42ffc1
+- id: andras-schiff
+  type: soloist
+  canonical_name: András Schiff
+  source:
+    file: docs/brahms.md
+  instruments:
+  - piano
+- id: andreas-ottensamer
+  type: soloist
+  canonical_name: Andreas Ottensamer
+  source:
+    file: docs/brahms.md
+  instruments:
+  - clarinet
+- id: andris-nelsons
+  type: conductor
+  canonical_name: Andris Nelsons
+  source:
+    file: docs/shostakovich.md
+- id: anne-sofie-von-otter
+  type: singer
+  canonical_name: Anne Sofie von Otter
+  source:
+    file: docs/mozart.md
+- id: antonio-pappano
+  type: conductor
+  canonical_name: Antonio Pappano
+  source:
+    file: docs/brahms.md
+- id: bach-collegium-japan-chorus
+  type: choir
+  canonical_name: Bach Collegium Japan Chorus
+  source:
+    file: docs/mozart.md
+- id: barbara-bonney
+  type: singer
+  canonical_name: Barbara Bonney
+  source:
+    file: docs/mozart.md
+- id: belcea-quartet
+  type: ensemble
+  canonical_name: Belcea Quartet
+  source:
+    file: docs/brahms.md
+- id: bbc-po
+  type: orchestra
+  canonical_name: BBC Philharmonic
+  aliases:
+  - BBC PO
+  source:
+    file: docs/prokofiev.md
+- id: boston-symphony-orchestra
+  type: orchestra
+  canonical_name: Boston Symphony Orchestra
+  aliases:
+  - Boston SO
+  source:
+    file: docs/shostakovich.md
+- id: bruckner-orchester-linz
+  type: orchestra
+  canonical_name: Bruckner Orchester Linz
+  source:
+    file: docs/bruckner.md
+- id: carolyn-sampson
+  type: singer
+  canonical_name: Carolyn Sampson
+  source:
+    file: docs/mozart.md
+- id: chamber-orchestra-of-europe
+  type: orchestra
+  canonical_name: Chamber Orchestra of Europe
+  source:
+    file: docs/brahms.md
+- id: christian-tetzlaff
+  type: soloist
+  canonical_name: Christian Tetzlaff
+  source:
+    file: docs/brahms.md
+  instruments:
+  - violin
+- id: claudio-abbado
+  type: conductor
+  canonical_name: Claudio Abbado
+  source:
+    file: docs/brahms.md
+- id: deutsches-symphonie-orchester-berlin
+  type: orchestra
+  canonical_name: Deutsches Symphonie-Orchester Berlin
+  source:
+    file: docs/brahms.md
+- id: dmitri-kitayenko
+  type: conductor
+  canonical_name: Dmitri Kitayenko
+  source:
+    file: docs/prokofiev.md
+- id: english-baroque-soloists
+  type: ensemble
+  canonical_name: English Baroque Soloists
+  source:
+    file: docs/mozart.md
+- id: emanuel-ax
+  type: soloist
+  canonical_name: Emanuel Ax
+  source:
+    file: docs/brahms.md
+- id: esa-pekka-salonen
+  type: conductor
+  canonical_name: Esa-Pekka Salonen
+  source:
+    file: docs/bachJS.md
+- id: florian-krumpock
+  type: conductor
+  canonical_name: Florian Krumpöck
+  source:
+    file: docs/brahms.md
+- id: francesco-corti
+  type: soloist
+  canonical_name: Francesco Corti
+  source:
+    file: docs/bachJS.md
+  instruments:
+  - harpsichord
+- id: gautier-capucon
+  type: soloist
+  canonical_name: Gautier Capuçon
+  source:
+    file: docs/brahms.md
+  instruments:
+  - cello
+- id: gianandrea-noseda
+  type: conductor
+  canonical_name: Gianandrea Noseda
+  source:
+    file: docs/prokofiev.md
+- id: gothenburg-symphony-orchestra
+  type: orchestra
+  canonical_name: Gothenburg Symphony Orchestra
+  aliases:
+  - Gothenburg SO
+  source:
+    file: docs/shostakovich.md
+- id: hans-peter-blochwitz
+  type: singer
+  canonical_name: Hans Peter Blochwitz
+  source:
+    file: docs/mozart.md
+- id: gurzenich-orchester-koln
+  type: orchestra
+  canonical_name: Gürzenich-Orchester Köln
+  source:
+    file: docs/prokofiev.md
+- id: gil-garburg
+  type: soloist
+  canonical_name: Gil Garburg
+  source:
+    file: docs/brahms.md
+  instruments:
+  - piano
+- id: isaac-stern
+  type: soloist
+  canonical_name: Isaac Stern
+  source:
+    file: docs/brahms.md
+- id: istvan-kertesz
+  type: conductor
+  canonical_name: István Kertész
+  source:
+    file: docs/brahms.md
+- id: il-pomo-d-oro
+  type: ensemble
+  canonical_name: Il Pomo d'Oro
+  source:
+    file: docs/bachJS.md
+- id: jaime-laredo
+  type: soloist
+  canonical_name: Jaime Laredo
+  source:
+    file: docs/brahms.md
+- id: jean-efflam-bavouzet
+  type: soloist
+  canonical_name: Jean-Efflam Bavouzet
+  source:
+    file: docs/prokofiev.md
+  instruments:
+  - piano
+- id: janine-jansen
+  type: soloist
+  canonical_name: Janine Jansen
+  source:
+    file: docs/brahms.md
+  instruments:
+  - violin
+- id: jean-guihen-queyras
+  type: soloist
+  canonical_name: Jean-Guihen Queyras
+  source:
+    file: docs/brahms.md
+  instruments:
+  - cello
+- id: john-york
+  type: soloist
+  canonical_name: John York
+  source:
+    file: docs/brahms.md
+  instruments:
+  - piano
+- id: jonathan-plowright
+  type: soloist
+  canonical_name: Jonathan Plowright
+  source:
+    file: docs/brahms.md
+  instruments:
+  - piano
+- id: katarzyna-budnik
+  type: soloist
+  canonical_name: Katarzyna Budnik
+  source:
+    file: docs/brahms.md
+- id: krystian-zimerman
+  type: soloist
+  canonical_name: Krystian Zimerman
+  source:
+    file: docs/brahms.md
+- id: leonidas-kavakos
+  type: soloist
+  canonical_name: Leonidas Kavakos
+  source:
+    file: docs/brahms.md
+  instruments:
+  - violin
+- id: linos-ensemble
+  type: ensemble
+  canonical_name: Linos Ensemble
+  source:
+    file: docs/brahms.md
+- id: london-symphony-orchestra
+  type: orchestra
+  canonical_name: London Symphony Orchestra
+  aliases:
+  - LSO
+  source:
+    file: docs/brahms.md
+- id: latvian-radio-choir
+  type: choir
+  canonical_name: Latvian Radio Choir
+  source:
+    file: docs/bruckner.md
+- id: los-angeles-philharmonic
+  type: orchestra
+  canonical_name: Los Angeles Philharmonic
+  source:
+    file: docs/bachJS.md
+- id: luzerner-sinfonieorchester
+  type: orchestra
+  canonical_name: Luzerner Sinfonieorchester
+  source:
+    file: docs/brahms.md
+- id: maria-nowak
+  type: soloist
+  canonical_name: Maria Nowak
+  source:
+    file: docs/brahms.md
+- id: markus-poschner
+  type: conductor
+  canonical_name: Markus Poschner
+  source:
+    file: docs/bruckner.md
+- id: masaaki-suzuki
+  type: conductor
+  canonical_name: Masaaki Suzuki
+  source:
+    file: docs/mozart.md
+- id: michael-collins
+  type: soloist
+  canonical_name: Michael Collins
+  source:
+    file: docs/brahms.md
+  instruments:
+  - clarinet
+- id: michael-sanderling
+  type: conductor
+  canonical_name: Michael Sanderling
+  source:
+    file: docs/brahms.md
+- id: monteverdi-choir
+  type: choir
+  canonical_name: Monteverdi Choir
+  source:
+    file: docs/brahms.md
+- id: michail-jurowski
+  type: conductor
+  canonical_name: Michail Jurowski
+  source:
+    file: docs/prokofiev.md
+- id: neeme-jarvi
+  type: conductor
+  canonical_name: Neeme Järvi
+  source:
+    file: docs/shostakovich.md
+- id: nathalie-stutzmann
+  type: singer
+  canonical_name: Nathalie Stutzmann
+  source:
+    file: docs/brahms.md
+  roles:
+  - singer
+  - conductor
+  voice: contralto
+- id: nikolaus-harnoncourt
+  type: conductor
+  canonical_name: Nikolaus Harnoncourt
+  source:
+    file: docs/brahms.md
+- id: orchestra-dell-accademia-nazionale-di-santa-cecilia
+  type: orchestra
+  canonical_name: Orchestra dell'Accademia Nazionale di Santa Cecilia
+  source:
+    file: docs/brahms.md
+- id: orchestra-of-the-age-of-enlightenment
+  type: orchestra
+  canonical_name: Orchestra of the Age of Enlightenment
+  source:
+    file: docs/brahms.md
+- id: orf-vienna-rso
+  type: orchestra
+  canonical_name: ORF Vienna Radio Symphony Orchestra
+  aliases:
+  - ORF Vienna RSO
+  source:
+    file: docs/bruckner.md
+- id: philharmonia-orchestra
+  type: orchestra
+  canonical_name: Philharmonia Orchestra
+  source:
+    file: docs/prokofiev.md
+- id: orchestre-revolutionnaire-et-romantique
+  type: orchestra
+  canonical_name: Orchestre Révolutionnaire et Romantique
+  source:
+    file: docs/brahms.md
+- id: paavo-berglund
+  type: conductor
+  canonical_name: Paavo Berglund
+  source:
+    file: docs/brahms.md
+- id: paavo-jarvi
+  type: conductor
+  canonical_name: Paavo Järvi
+  source:
+    file: docs/brahms.md
+- id: paul-lewis
+  type: soloist
+  canonical_name: Paul Lewis
+  source:
+    file: docs/brahms.md
+  instruments:
+  - piano
+- id: piet-kuijken
+  type: soloist
+  canonical_name: Piet Kuijken
+  source:
+    file: docs/brahms.md
+  instruments:
+  - piano
+  authorities:
+    musicbrainz_artist_id: 6a46a3f0-a189-4766-9b22-d4be5a4aa232
+- id: pittsburgh-symphony-orchestra
+  type: orchestra
+  canonical_name: Pittsburgh Symphony Orchestra
+  source:
+    file: docs/brahms.md
+- id: quartetto-adorno
+  type: ensemble
+  canonical_name: Quartetto Adorno
+  source:
+    file: docs/brahms.md
+- id: quatuor-agate
+  type: ensemble
+  canonical_name: Quatuor Agate
+  source:
+    file: docs/brahms.md
+- id: royal-scottish-national-orchestra
+  type: orchestra
+  canonical_name: Royal Scottish National Orchestra
+  source:
+    file: docs/shostakovich.md
+- id: raphael-wallfisch
+  type: soloist
+  canonical_name: Raphael Wallfisch
+  source:
+    file: docs/brahms.md
+  instruments:
+  - cello
+- id: seong-jin-cho
+  type: soloist
+  canonical_name: Seong-Jin Cho
+  source:
+    file: docs/brahms.md
+  instruments:
+  - piano
+- id: sivan-silver
+  type: soloist
+  canonical_name: Sivan Silver
+  source:
+    file: docs/brahms.md
+  instruments:
+  - piano
+- id: sigvards-klava
+  type: conductor
+  canonical_name: Sigvards Klava
+  source:
+    file: docs/bruckner.md
+- id: stephen-hough
+  type: soloist
+  canonical_name: Stephen Hough
+  source:
+    file: docs/brahms.md
+  instruments:
+  - piano
+- id: susan-addison
+  type: singer
+  canonical_name: Susan Addison
+  source:
+    file: docs/mozart.md
+- id: tabea-zimmermann
+  type: soloist
+  canonical_name: Tabea Zimmermann
+  source:
+    file: docs/brahms.md
+  instruments:
+  - viola
+- id: ussr-state-so
+  type: orchestra
+  canonical_name: USSR State Symphony Orchestra
+  aliases:
+  - USSR State SO
+  source:
+    file: docs/prokofiev.md
+- id: valeri-polyansky
+  type: conductor
+  canonical_name: Valeri Polyansky
+  source:
+    file: docs/prokofiev.md
+- id: wdr-sinfonieorchester-koln
+  type: orchestra
+  canonical_name: WDR Sinfonieorchester Köln
+  source:
+    file: docs/prokofiev.md
+- id: willard-white
+  type: singer
+  canonical_name: Willard White
+  source:
+    file: docs/mozart.md
+- id: tanja-tetzlaff
+  type: soloist
+  canonical_name: Tanja Tetzlaff
+  source:
+    file: docs/brahms.md
+  instruments:
+  - cello
+- id: wiener-philharmoniker
+  type: orchestra
+  canonical_name: Wiener Philharmoniker
+  source:
+    file: docs/brahms.md
+- id: wiener-symphoniker
+  type: orchestra
+  canonical_name: Wiener Symphoniker
+  source:
+    file: docs/brahms.md
+- id: william-steinberg
+  type: conductor
+  canonical_name: William Steinberg
+  source:
+    file: docs/brahms.md
+- id: yo-yo-ma
+  type: soloist
+  canonical_name: Yo-Yo Ma
+  source:
+    file: docs/brahms.md
+- id: yuja-wang
+  type: soloist
+  canonical_name: Yuja Wang
+  source:
+    file: docs/brahms.md
+  instruments:
+  - piano
+- id: yuya-okamoto
+  type: soloist
+  canonical_name: Yuya Okamoto
+  source:
+    file: docs/brahms.md
+- id: zehetmaier-quartett
+  type: ensemble
+  canonical_name: Zehetmaier Quartett
+  source:
+    file: docs/brahms.md
+- id: international-mahler-orchestra
+  type: orchestra
+  canonical_name: International Mahler Orchestra
+  source:
+    file: docs/mahler.md
+- id: yoel-gamzou
+  type: conductor
+  canonical_name: Yoel Gamzou
+  source:
+    file: docs/mahler.md
+- id: andrew-davis
+  type: conductor
+  canonical_name: Andrew Davis
+  source:
+    file: docs/berlioz.md
+- id: anima-eterna
+  type: orchestra
+  canonical_name: Anima Eterna
+  source:
+    file: docs/berlioz.md
+- id: chetham-s-school-of-music-brass-ensemble
+  type: ensemble
+  canonical_name: Chetham's School of Music Brass Ensemble
+  source:
+    file: docs/berlioz.md
+- id: colin-davis
+  type: conductor
+  canonical_name: Colin Davis
+  aliases:
+  - Sir Colin Davis
+  source:
+    file: docs/berlioz.md
+- id: francois-xavier-roth
+  type: conductor
+  canonical_name: François-Xavier Roth
+  source:
+    file: docs/berlioz.md
+- id: gabrieli-consort-and-players
+  type: ensemble
+  canonical_name: Gabrieli Consort and Players
+  source:
+    file: docs/berlioz.md
+- id: james-ehnes
+  type: soloist
+  canonical_name: James Ehnes
+  source:
+    file: docs/berlioz.md
+  instruments:
+  - violin
+- id: jos-van-immerseel
+  type: conductor
+  canonical_name: Jos van Immerseel
+  source:
+    file: docs/berlioz.md
+- id: kazuki-yamada
+  type: conductor
+  canonical_name: Kazuki Yamada
+  source:
+    file: docs/berlioz.md
+- id: les-siecles
+  type: orchestra
+  canonical_name: Les Siècles
+  source:
+    file: docs/berlioz.md
+- id: marie-nicole-lemieux
+  type: singer
+  canonical_name: Marie-Nicole Lemieux
+  source:
+    file: docs/berlioz.md
+- id: melbourne-symphony-orchestra
+  type: orchestra
+  canonical_name: Melbourne Symphony Orchestra
+  aliases:
+  - Melbourne SO
+  source:
+    file: docs/berlioz.md
+- id: orchestre-philharmonique-de-monte-carlo
+  type: orchestra
+  canonical_name: Orchestre Philharmonique de Monte Carlo
+  source:
+    file: docs/berlioz.md
+- id: paull-mccreesh
+  type: conductor
+  canonical_name: Paull McCreesh
+  source:
+    file: docs/berlioz.md
+- id: robert-murray
+  type: singer
+  canonical_name: Robert Murray
+  source:
+    file: docs/berlioz.md
+- id: royal-northern-college-of-music-wind-orchestra
+  type: orchestra
+  canonical_name: Royal Northern College of Music Wind Orchestra
+  source:
+    file: docs/berlioz.md
+- id: timothy-reynish
+  type: conductor
+  canonical_name: Timothy Reynish
+  source:
+    file: docs/berlioz.md
+- id: wroclaw-philharmonic-choir-orchestra
+  type: ensemble
+  canonical_name: Wroclaw Philharmonic Choir & Orchestra
+  aliases:
+  - Wroclaw Philharmonic Choir \& Orchestra
+  source:
+    file: docs/berlioz.md
+- id: netherlands-wind-ensemble
+  type: ensemble
+  canonical_name: Netherlands Wind Ensemble
+  source:
+    file: docs/mozart.md

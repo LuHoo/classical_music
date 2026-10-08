@@ -1,0 +1,8 @@
+id: dmitri-shostakovich-love-and-hate-group
+composer_id: dmitri-shostakovich
+title: Love and Hate
+source:
+  file: docs/shostakovich.md
+  line: '60'
+catalogue:
+  op: Op. 38

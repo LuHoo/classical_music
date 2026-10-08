@@ -1,0 +1,11 @@
+id: a181b536f3ff4fc39f87f33b1d63a5fd
+work_group_id: b8d655005c874dc99ff9aeacb7f795c1
+composer_id: cb25dd190f9643b7a9dfdb60f14ad8b3
+title: Symphony No. 6 in D major “Le Matin”
+category: Symphonies
+source:
+  url: https://www.prestomusic.com/classical/products/8917718--haydn-2032-vol-10-les-heures-du-jour
+  file: reports/haydn-2032/catalogue.json
+catalogue:
+  hoboken: Hob. I:6
+key: D major

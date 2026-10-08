@@ -1,0 +1,362 @@
+from __future__ import annotations
+
+from pathlib import Path
+
+from classical_music.validation.validator import DataValidator
+
+
+def _write(path: Path, content: str) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(content, encoding="utf-8")
+
+
+def test_valid_minimal_dataset_has_no_errors(tmp_path: Path) -> None:
+    _write(
+        tmp_path / "data/persons/ludwig-van-beethoven.yaml",
+        "id: ludwig-van-beethoven\nname: Ludwig van Beethoven\n",
+    )
+    _write(
+        tmp_path / "data/work-groups/beethoven-symphony-5.yaml",
+        (
+            "id: beethoven-symphony-5\n"
+            "composer_id: ludwig-van-beethoven\n"
+            "title: Symphony No. 5\n"
+        ),
+    )
+    _write(
+        tmp_path / "data/works/beethoven-symphony-5-work.yaml",
+        (
+            "id: beethoven-symphony-5-work\n"
+            "work_group_id: beethoven-symphony-5\n"
+            "composer_id: ludwig-van-beethoven\n"
+            "title: Symphony No. 5 in C minor\n"
+        ),
+    )
+    _write(
+        tmp_path / "data/performances/beethoven-symphony-5-kleiber.yaml",
+        (
+            "id: beethoven-symphony-5-kleiber\n"
+            "work_id: beethoven-symphony-5-work\n"
+            "performers:\n"
+            "  - name: Carlos Kleiber\n"
+            "    role: conductor\n"
+        ),
+    )
+
+    report = DataValidator(tmp_path).run()
+
+    assert report.error_count == 0
+
+
+def test_performer_artist_id_must_reference_global_artist(tmp_path: Path) -> None:
+    _write(
+        tmp_path / "data/persons/ludwig-van-beethoven.yaml",
+        "id: ludwig-van-beethoven\nname: Ludwig van Beethoven\n",
+    )
+    _write(
+        tmp_path / "data/work-groups/beethoven-symphony-5.yaml",
+        (
+            "id: beethoven-symphony-5\n"
+            "composer_id: ludwig-van-beethoven\n"
+            "title: Symphony No. 5\n"
+        ),
+    )
+    _write(
+        tmp_path / "data/works/beethoven-symphony-5-work.yaml",
+        (
+            "id: beethoven-symphony-5-work\n"
+            "work_group_id: beethoven-symphony-5\n"
+            "composer_id: ludwig-van-beethoven\n"
+            "title: Symphony No. 5 in C minor\n"
+        ),
+    )
+    _write(
+        tmp_path / "data/performances/beethoven-symphony-5-kleiber.yaml",
+        (
+            "id: beethoven-symphony-5-kleiber\n"
+            "work_id: beethoven-symphony-5-work\n"
+            "performers:\n"
+            "  - artist_id: carlos-kleiber\n"
+            "    name: Carlos Kleiber\n"
+            "    role: conductor\n"
+        ),
+    )
+
+    report = DataValidator(tmp_path).run()
+
+    assert any(f.rule_id == "REF-008" for f in report.findings)
+
+
+def test_global_artist_can_be_reused_across_composer_contexts(tmp_path: Path) -> None:
+    _write(
+        tmp_path / "data/artists/performers.yaml",
+        (
+            "artists:\n"
+            "  - id: leonidas-kavakos\n"
+            "    type: instrumentalist\n"
+            "    canonical_name: Leonidas Kavakos\n"
+            "    instruments:\n"
+            "      - violin\n"
+        ),
+    )
+    for composer_id, composer_name, work_title in (
+        ("johannes-brahms", "Johannes Brahms", "Violin Sonata No. 1"),
+        ("ludwig-van-beethoven", "Ludwig van Beethoven", "Violin Sonata No. 5"),
+    ):
+        _write(
+            tmp_path / f"data/persons/{composer_id}.yaml",
+            f"id: {composer_id}\nname: {composer_name}\n",
+        )
+        _write(
+            tmp_path / f"data/work-groups/{composer_id}-sonata.yaml",
+            f"id: {composer_id}-sonata\ncomposer_id: {composer_id}\ntitle: {work_title}\n",
+        )
+        _write(
+            tmp_path / f"data/works/{composer_id}-sonata-work.yaml",
+            (
+                f"id: {composer_id}-sonata-work\n"
+                f"work_group_id: {composer_id}-sonata\n"
+                f"composer_id: {composer_id}\n"
+                f"title: {work_title}\n"
+            ),
+        )
+        _write(
+            tmp_path / f"data/performances/{composer_id}-sonata-kavakos.yaml",
+            (
+                f"id: {composer_id}-sonata-kavakos\n"
+                f"work_id: {composer_id}-sonata-work\n"
+                "performers:\n"
+                "  - artist_id: leonidas-kavakos\n"
+                "    name: Leonidas Kavakos\n"
+                "    role: violin\n"
+            ),
+        )
+
+    report = DataValidator(tmp_path).run()
+
+    assert report.error_count == 0
+
+
+def test_global_artist_supports_multiple_roles_without_fixing_performance_role(
+    tmp_path: Path,
+) -> None:
+    _write(
+        tmp_path / "data/artists/performers.yaml",
+        (
+            "artists:\n"
+            "  - id: nathalie-stutzmann\n"
+            "    type: singer\n"
+            "    canonical_name: Nathalie Stutzmann\n"
+            "    roles:\n"
+            "      - singer\n"
+            "      - conductor\n"
+            "    voice: contralto\n"
+        ),
+    )
+    _write(
+        tmp_path / "data/persons/johannes-brahms.yaml",
+        "id: johannes-brahms\nname: Johannes Brahms\n",
+    )
+    for suffix, title, role in (
+        ("alto-rhapsody", "Alto Rhapsody", "contralto"),
+        ("symphony", "Symphony No. 1", "conductor"),
+    ):
+        _write(
+            tmp_path / f"data/work-groups/brahms-{suffix}.yaml",
+            f"id: brahms-{suffix}\ncomposer_id: johannes-brahms\ntitle: {title}\n",
+        )
+        _write(
+            tmp_path / f"data/works/brahms-{suffix}-work.yaml",
+            (
+                f"id: brahms-{suffix}-work\n"
+                f"work_group_id: brahms-{suffix}\n"
+                "composer_id: johannes-brahms\n"
+                f"title: {title}\n"
+            ),
+        )
+        _write(
+            tmp_path / f"data/performances/brahms-{suffix}-stutzmann.yaml",
+            (
+                f"id: brahms-{suffix}-stutzmann\n"
+                f"work_id: brahms-{suffix}-work\n"
+                "performers:\n"
+                "  - artist_id: nathalie-stutzmann\n"
+                "    name: Nathalie Stutzmann\n"
+                f"    role: {role}\n"
+            ),
+        )
+
+    report = DataValidator(tmp_path).run()
+
+    assert report.error_count == 0
+
+
+def test_performance_referencing_work_group_is_error(tmp_path: Path) -> None:
+    _write(tmp_path / "data/persons/w-a-mozart.yaml", "id: w-a-mozart\nname: W. A. Mozart\n")
+    _write(
+        tmp_path / "data/work-groups/mozart-k550.yaml",
+        "id: mozart-k550\ncomposer_id: w-a-mozart\ntitle: Symphony No. 40\n",
+    )
+    _write(
+        tmp_path / "data/works/mozart-k550-work.yaml",
+        "id: mozart-k550-work\nwork_group_id: mozart-k550\ncomposer_id: w-a-mozart\ntitle: Symphony No. 40 in G minor\n",
+    )
+    _write(
+        tmp_path / "data/performances/mozart-k550-bad.yaml",
+        (
+            "id: mozart-k550-bad\n"
+            "work_id: mozart-k550\n"
+            "performers:\n"
+            "  - name: SCO\n"
+            "    role: orchestra\n"
+        ),
+    )
+
+    report = DataValidator(tmp_path).run()
+    assert any(f.rule_id == "REF-005" for f in report.findings)
+
+
+def test_gem_on_performance_is_error(tmp_path: Path) -> None:
+    _write(tmp_path / "data/persons/js-bach.yaml", "id: js-bach\nname: J. S. Bach\n")
+    _write(
+        tmp_path / "data/work-groups/bach-bwv-1052.yaml",
+        "id: bach-bwv-1052\ncomposer_id: js-bach\ntitle: Keyboard Concerto BWV 1052\n",
+    )
+    _write(
+        tmp_path / "data/works/bach-bwv-1052-work.yaml",
+        "id: bach-bwv-1052-work\nwork_group_id: bach-bwv-1052\ncomposer_id: js-bach\ntitle: Keyboard Concerto in D minor\ngem: true\n",
+    )
+    _write(
+        tmp_path / "data/performances/bach-err.yaml",
+        (
+            "id: bach-err\n"
+            "work_id: bach-bwv-1052-work\n"
+            "gem: true\n"
+            "performers:\n"
+            "  - name: Il Pomo d'Oro\n"
+            "    role: orchestra\n"
+        ),
+    )
+
+    report = DataValidator(tmp_path).run()
+    assert any(f.rule_id == "REC-021" for f in report.findings)
+
+
+def test_invalid_url_and_gramophone_issue_are_errors(tmp_path: Path) -> None:
+    _write(tmp_path / "data/persons/gm.yaml", "id: gm\nname: Gustav Mahler\n")
+    _write(
+        tmp_path / "data/work-groups/mahler-5.yaml",
+        "id: mahler-5\ncomposer_id: gm\ntitle: Symphony No. 5\n",
+    )
+    _write(
+        tmp_path / "data/works/mahler-5-work.yaml",
+        "id: mahler-5-work\nwork_group_id: mahler-5\ncomposer_id: gm\ntitle: Symphony No. 5\n",
+    )
+    _write(
+        tmp_path / "data/performances/mahler-5-perf.yaml",
+        (
+            "id: mahler-5-perf\n"
+            "work_id: mahler-5-work\n"
+            "performers:\n"
+            "  - name: BPO\n"
+            "    role: orchestra\n"
+            "links:\n"
+            "  tidal:\n"
+            "    url: tidal.com/track/123\n"
+            "reviews:\n"
+            "  gramophone:\n"
+            "    issue: 2024/06\n"
+        ),
+    )
+
+    report = DataValidator(tmp_path).run()
+    assert any(f.rule_id == "SCH-006" for f in report.findings)
+    assert any(f.rule_id == "SCH-007" for f in report.findings)
+
+
+def test_grouped_works_yaml_is_flagged_as_non_canonical(tmp_path: Path) -> None:
+    _write(tmp_path / "data/persons/lvb.yaml", "id: lvb\nname: Ludwig van Beethoven\n")
+    _write(
+        tmp_path / "data/work-groups/lvb-op67-group.yaml",
+        "id: lvb-op67-group\ncomposer_id: lvb\ntitle: Symphony No. 5\n",
+    )
+    _write(
+        tmp_path / "data/works/ludwig-van-beethoven/works.yaml",
+        (
+            "composer_id: lvb\n"
+            "works:\n"
+            "  - id: lvb-op67-work\n"
+            "    work_group_id: lvb-op67-group\n"
+            "    title: Symphony No. 5 in C minor\n"
+        ),
+    )
+
+    report = DataValidator(tmp_path).run()
+    assert any(f.rule_id == "CAN-002" for f in report.findings)
+
+
+def test_relationship_work_reference_and_work_group_domain_rules(tmp_path: Path) -> None:
+    _write(tmp_path / "data/persons/jsb.yaml", "id: jsb\nname: J. S. Bach\n")
+    _write(
+        tmp_path / "data/work-groups/bwv-1052.yaml",
+        (
+            "id: bwv-1052\n"
+            "composer_id: jsb\n"
+            "title: Keyboard Concerto BWV 1052\n"
+            "recommended: true\n"
+        ),
+    )
+    _write(
+        tmp_path / "data/works/bwv-1052-work.yaml",
+        (
+            "id: bwv-1052-work\n"
+            "work_group_id: bwv-1052\n"
+            "composer_id: jsb\n"
+            "title: Keyboard Concerto in D minor\n"
+            "relationships:\n"
+            "  - type: revision_of\n"
+            "    work_id: missing-work\n"
+        ),
+    )
+    _write(
+        tmp_path / "data/performances/bwv-1052-perf.yaml",
+        (
+            "id: bwv-1052-perf\n"
+            "work_id: bwv-1052-work\n"
+            "performers:\n"
+            "  - name: Il Pomo d'Oro\n"
+            "    role: orchestra\n"
+        ),
+    )
+
+    report = DataValidator(tmp_path).run()
+    assert any(f.rule_id == "DOM-003" for f in report.findings)
+    assert any(f.rule_id == "REF-006" for f in report.findings)
+
+
+def test_duplicate_title_is_background_unless_identity_gate_is_activated(tmp_path: Path) -> None:
+    _write(tmp_path / "data/persons/composer.yaml", "id: composer\nname: Composer\n")
+    for suffix in ("one", "two"):
+        _write(
+            tmp_path / f"data/work-groups/work-group-{suffix}.yaml",
+            "id: work-group-{}\ncomposer_id: composer\ntitle: A Work\n".format(suffix),
+        )
+        _write(
+            tmp_path / f"data/works/work-{suffix}.yaml",
+            "id: work-{}\nwork_group_id: work-group-{}\ncomposer_id: composer\ntitle: A Work\n".format(suffix, suffix),
+        )
+
+    report = DataValidator(tmp_path).run()
+    duplicate = next(f for f in report.findings if f.rule_id == "DUP-003")
+    assert duplicate.status == "background_suspicion"
+    assert report.action_required_count == 0
+
+    gated = DataValidator(tmp_path).run(identity_gate_ids={"work-two"})
+    duplicate = next(f for f in gated.findings if f.rule_id == "DUP-003")
+    assert duplicate.status == "action_required"
+    assert gated.action_required_count == 1
+
+    first_gated = DataValidator(tmp_path).run(identity_gate_ids={"work-one"})
+    duplicate = next(f for f in first_gated.findings if f.rule_id == "DUP-003")
+    assert duplicate.status == "action_required"
+    assert first_gated.action_required_count == 1

@@ -1,0 +1,12 @@
+id: johann-sebastian-bach-prelude-fugue-in-e-flat-major-work
+work_group_id: johann-sebastian-bach-prelude-fugue-in-e-flat-major-group
+composer_id: johann-sebastian-bach
+title: Prelude and Fugue in E-flat major (Schoenberg orchestration)
+source:
+  file: docs/bachJS.md
+  line: '84'
+  url: https://ci.nii.ac.jp/ncid/BA50788723
+catalogue:
+  bwv: BWV 552
+category: Orchestral arrangements
+version: Orchestration by Arnold Schoenberg

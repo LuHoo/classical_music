@@ -1,0 +1,13 @@
+id: "paul-hindemith-lustige-sinfonietta-op-4-work-queensland-so-werner-andreas-albert"
+work_id: "paul-hindemith-lustige-sinfonietta-op-4-work"
+performers:
+  - name: "Queensland SO"
+    role: "orchestra"
+  - name: "Werner Andreas Albert"
+    role: "conductor"
+links:
+  tidal:
+    url: "http://www.tidal.com/track/284340818"
+source:
+  file: "docs/hindemith.md"
+  line: "58"

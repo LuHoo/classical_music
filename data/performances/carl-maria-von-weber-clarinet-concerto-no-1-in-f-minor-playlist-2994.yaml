@@ -1,0 +1,17 @@
+id: carl-maria-von-weber-clarinet-concerto-no-1-in-f-minor-playlist-2994
+work_id: carl-maria-von-weber-clarinet-concerto-no-1-in-f-minor
+performers:
+- name: Andreas Ottensamer
+  artist_id: andreas-ottensamer
+  role: soloist
+- name: Berliner Philharmoniker
+- name: Mariss Jansons
+links:
+  tidal:
+    url: https://tidal.com/track/105044316
+release:
+  album_title: Blue Hour – Weber, Brahms, Mendelssohn
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+version_assignment: unspecified

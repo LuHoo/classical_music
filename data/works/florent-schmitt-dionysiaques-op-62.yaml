@@ -1,0 +1,9 @@
+id: florent-schmitt-dionysiaques-op-62
+work_group_id: florent-schmitt-dionysiaques-op-62-group
+composer_id: florent-schmitt
+title: Dionysiaques, Op. 62
+source:
+  file: reports/playlist-import/best-classical/window-4001-5518.json
+  url: https://www.chandos.net/products/catalogue/CHAN%209897
+catalogue:
+  op: '62'

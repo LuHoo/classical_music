@@ -1,0 +1,17 @@
+id: ferruccio-busoni-orchestral-suite-no-2-op-34a-bv-242-geharnischte-suite-playlist-3960
+work_id: ferruccio-busoni-orchestral-suite-no-2-op-34a-bv-242-geharnischte-suite
+performers:
+- name: Neeme Järvi
+  artist_id: neeme-jarvi
+  role: conductor
+- name: BBC Philharmonic Orchestra
+- name: BBC PO
+links:
+  tidal:
+    url: https://tidal.com/track/376325827
+release:
+  album_title: 'Busoni: Geharnischte Suite, Berceuse élégiaque, Clarinet Concertino, Sarabande and Cortège
+    & Tanzwalzer'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

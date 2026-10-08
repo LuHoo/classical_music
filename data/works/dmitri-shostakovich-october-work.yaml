@@ -1,0 +1,11 @@
+id: dmitri-shostakovich-october-work
+work_group_id: dmitri-shostakovich-october-group
+composer_id: dmitri-shostakovich
+title: October
+source:
+  file: docs/shostakovich.md
+  line: '153'
+catalogue:
+  op: Op. 131
+date_text: '1967'
+category: Orchestral

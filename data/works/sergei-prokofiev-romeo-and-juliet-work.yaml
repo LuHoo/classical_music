@@ -1,0 +1,16 @@
+id: sergei-prokofiev-romeo-and-juliet-work
+work_group_id: sergei-prokofiev-romeo-and-juliet-group
+composer_id: sergei-prokofiev
+title: Romeo and Juliet
+source:
+  file: docs/prokofiev.md
+  line: '112'
+catalogue:
+  op: Op. 64
+date_text: 1935, classified as a Soviet choreodrama, or drambalet
+category: Orchestral
+external_ids:
+  musicbrainz: 91ceabb1-a48f-4ef2-ba9f-d30204e8e8fb
+notes: MusicBrainz identifies Romeo and Juliet Op. 64 as the ballet and links suites
+  as based-on Works; suites should be separate Works inside the same artistic family
+  when represented.

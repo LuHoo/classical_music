@@ -1,0 +1,14 @@
+id: hans-gal-gal-serenade-for-clarinet-violin-and-cello-op-93-chamber-c241
+work_id: hans-gal-gal-serenade-for-clarinet-violin-and-cello-op-93
+performers:
+  - name: Kilian Herold
+  - name: Florian Donderer
+  - name: Tanja Tetzlaff
+links:
+  tidal:
+    url: https://tidal.com/track/358206568
+release:
+  album_title: Serenade - Works for Clarinet and Strings by Krenek, Gál and Penderecki
+source:
+  file: reports/playlist-import/chamber/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/a2327106-07fd-4433-8bd3-d8a5c251c69a

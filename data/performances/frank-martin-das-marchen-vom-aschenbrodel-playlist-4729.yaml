@@ -1,0 +1,17 @@
+id: frank-martin-das-marchen-vom-aschenbrodel-playlist-4729
+work_id: frank-martin-das-marchen-vom-aschenbrodel
+performers:
+- name: Orchestre de la Haute école de musique de Genève
+- name: Gábor Takács-Nagy
+- name: Alexandra Hewson
+- name: Clémence Tilquin
+- name: David Hernandez Anfruns
+- name: Varduhi Khachatryan
+links:
+  tidal:
+    url: https://tidal.com/track/21250353
+release:
+  album_title: 'Frank Martin: Das Märchen vom Aschenbrödel (Le conte de Cendrillon)'
+source:
+  file: reports/playlist-import/best-classical/window-4001-5518.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

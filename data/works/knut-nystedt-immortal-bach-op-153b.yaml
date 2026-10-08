@@ -1,0 +1,9 @@
+id: knut-nystedt-immortal-bach-op-153b
+work_group_id: knut-nystedt-immortal-bach-op-153b-group
+composer_id: knut-nystedt
+title: Immortal Bach, Op. 153b
+source:
+  file: reports/playlist-import/best-classical/window-4001-5518.json
+  url: https://www.knutnystedt.com/works/choir/mixed-choir/
+catalogue:
+  op: 153b

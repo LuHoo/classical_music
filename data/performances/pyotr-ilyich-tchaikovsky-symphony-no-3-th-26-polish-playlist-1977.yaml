@@ -1,0 +1,16 @@
+id: pyotr-ilyich-tchaikovsky-symphony-no-3-th-26-polish-playlist-1977
+work_id: pyotr-ilyich-tchaikovsky-symphony-no-3-th-26-polish
+performers:
+- name: Semyon Bychkov
+  role: performer
+- name: Czech Philharmonic
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/116137604
+release:
+  album_title: 'Tchaikovsky: Complete Symphonies and Piano Concertos'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+excerpt: Movements I, II, IV and V only

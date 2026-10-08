@@ -1,0 +1,11 @@
+id: "igor-stravinsky-scenes-de-ballet-k-069-work"
+work_group_id: "igor-stravinsky-scenes-de-ballet-k-069-group"
+composer_id: "igor-stravinsky"
+title: "Scènes de ballet"
+source:
+  file: "docs/stravinsky.md"
+  line: "51"
+catalogue:
+  k: "K 069"
+date_text: "1944"
+category: "Ballet"

@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-canon-for-two-violins-in-a-major-woo-35-work"
+work_group_id: "ludwig-van-beethoven-canon-for-two-violins-in-a-major-woo-35-group"
+composer_id: "ludwig-van-beethoven"
+title: "Canon for two violins in A major"
+source:
+  file: "docs/beethoven.md"
+  line: "276"
+catalogue:
+  woo: "WoO 35"
+date_text: "August 1825"
+category: "Chamber"

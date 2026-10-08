@@ -1,0 +1,15 @@
+id: "paul-hindemith-trauermusik-work-geraldine-walther-san-francisco-symphnoy-herbert-blomstedt"
+work_id: "paul-hindemith-trauermusik-work"
+performers:
+  - name: "Geraldine Walther"
+    role: "performer"
+  - name: "San Francisco Symphnoy"
+    role: "orchestra"
+  - name: "Herbert Blomstedt"
+    role: "conductor"
+links:
+  tidal:
+    url: "https://tidal.com/album/4328135/track/4328139"
+source:
+  file: "docs/hindemith.md"
+  line: "124"

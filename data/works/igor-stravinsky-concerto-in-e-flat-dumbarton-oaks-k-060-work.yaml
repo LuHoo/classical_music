@@ -1,0 +1,12 @@
+id: "igor-stravinsky-concerto-in-e-flat-dumbarton-oaks-k-060-work"
+work_group_id: "igor-stravinsky-concerto-in-e-flat-dumbarton-oaks-k-060-group"
+composer_id: "igor-stravinsky"
+title: "Concerto in E-flat Dumbarton Oaks"
+source:
+  file: "docs/stravinsky.md"
+  line: "83"
+catalogue:
+  k: "K 060"
+date_text: "1938"
+category: "Orchestral"
+gem: true

@@ -1,0 +1,11 @@
+id: "igor-stravinsky-piano-sonata-in-f-sharp-k-048-work"
+work_group_id: "igor-stravinsky-piano-sonata-in-f-sharp-k-048-group"
+composer_id: "igor-stravinsky"
+title: "Piano Sonata in F-sharp"
+source:
+  file: "docs/stravinsky.md"
+  line: "226"
+catalogue:
+  k: "K 048"
+date_text: "1924"
+category: "Keyboard"

@@ -1,0 +1,17 @@
+id: fanny-hensel-gondellied-orchestrated-by-sandor-balogh-playlist-901
+work_id: fanny-hensel-gondellied-orchestrated-by-sandor-balogh
+performers:
+- name: Iván Fischer
+  role: performer
+- name: Budapest Festival Orchestra
+  role: performer
+- name: Anna Lucia Richter
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/269503206
+release:
+  album_title: "Mendelssohn: Overture & Incidental Music to A Midsummer Night's Dream"
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

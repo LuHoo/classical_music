@@ -1,0 +1,12 @@
+id: david-diamond-elegy-in-memory-of-maurice-ravel-playlist-2213
+work_id: david-diamond-elegy-in-memory-of-maurice-ravel
+performers:
+- name: Orchestra Of St Luke's
+links:
+  tidal:
+    url: https://tidal.com/track/294050
+release:
+  album_title: American Elegies
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

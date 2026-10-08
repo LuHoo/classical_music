@@ -1,0 +1,17 @@
+id: cb25dd190f9643b7a9dfdb60f14ad8b3-salve-regina-in-g-minor-hob-xxiiib-2-playlist-1999
+work_id: cb25dd190f9643b7a9dfdb60f14ad8b3-salve-regina-in-g-minor-hob-xxiiib-2
+performers:
+- name: Le Parlement de Musique
+- name: Martin Gester
+- name: Monique Zanetti
+- name: Jennifer Lane
+- name: Jean-Paul Fouchécourt
+- name: Bernard Deletre
+links:
+  tidal:
+    url: https://tidal.com/track/71704404
+release:
+  album_title: 'Haydn: Salve Regina, concertos et pièces pour orgue'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

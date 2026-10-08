@@ -1,0 +1,15 @@
+id: john-adams-harmonielehre-playlist-3118
+work_id: john-adams-harmonielehre
+performers:
+- name: San Francisco Symphony
+  artist_id: san-francisco-symphony
+  role: orchestra
+- name: Michael Tilson Thomas
+links:
+  tidal:
+    url: https://tidal.com/track/145452181
+release:
+  album_title: 'Adams: Harmonielehre & Short Ride in a Fast Machine'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

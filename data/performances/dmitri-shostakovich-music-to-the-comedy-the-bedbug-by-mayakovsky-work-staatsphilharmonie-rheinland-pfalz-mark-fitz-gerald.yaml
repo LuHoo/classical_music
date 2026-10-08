@@ -1,0 +1,14 @@
+id: 
+  dmitri-shostakovich-music-to-the-comedy-the-bedbug-by-mayakovsky-work-staatsphilharmonie-rheinland-pfalz-mark-fitz-gerald
+work_id: dmitri-shostakovich-music-to-the-comedy-the-bedbug-by-mayakovsky-work
+source:
+  file: docs/shostakovich.md
+  line: '24'
+links:
+  tidal:
+    url: https://tidal.com/browse/album/283832994
+performers:
+- name: Staatsphilharmonie Rheinland-Pfalz
+  role: performer
+- name: Mark Fitz-Gerald
+  role: performer

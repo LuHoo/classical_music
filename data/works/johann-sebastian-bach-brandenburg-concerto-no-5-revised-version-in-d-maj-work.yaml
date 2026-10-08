@@ -1,0 +1,14 @@
+id: "johann-sebastian-bach-brandenburg-concerto-no-5-revised-version-in-d-maj-work"
+work_group_id: "johann-sebastian-bach-brandenburg-concerto-no-5-in-d-maj-group"
+composer_id: "johann-sebastian-bach"
+title: "Brandenburg Concerto No. 5 (revised version) in D maj."
+source:
+  file: "docs/bachJS.md"
+  line: "34"
+catalogue:
+  bwv: "BWV 1050.1"
+date_text: "1720–1721"
+category: "Orchestral"
+external_ids:
+  musicbrainz: "dbb7157a-5dc3-41c4-aacc-4e3d4705e132"
+notes: "MusicBrainz identifies BWV 1050 as another version of BWV 1050a; group with the early Brandenburg Concerto No. 5 Work."

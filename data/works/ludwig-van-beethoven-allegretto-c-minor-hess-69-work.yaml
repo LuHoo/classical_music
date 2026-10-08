@@ -1,0 +1,12 @@
+id: "ludwig-van-beethoven-allegretto-c-minor-hess-69-work"
+work_group_id: "ludwig-van-beethoven-allegretto-c-minor-hess-69-group"
+composer_id: "ludwig-van-beethoven"
+title: "Allegretto, C minor"
+source:
+  file: "docs/beethoven.md"
+  line: "434"
+catalogue:
+  hess: "Hess 69"
+date_text: "c. 1795–96, rev. 1822"
+category: "Piano"
+notes: "Pilot migration: source text suggests a version, arrangement, revision, suite, or completion boundary that should be reviewed."

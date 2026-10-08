@@ -1,0 +1,1581 @@
+{
+  "source_commit": "cae719beba76ef7bfafbe3e8f5e2fddb5adcbe5b",
+  "manifests": [
+    {
+      "path": "reports/playlist-import/chamber/snapshot-2026-10-04.json",
+      "choices": [
+        {
+          "work_id": "brahms-piano-quartet-no-3-in-c-minor-werther-quartet-1875-op-60-work",
+          "title": "Piano Quartet No. 3 in C Minor, Op. 60",
+          "composer": "Johannes Brahms",
+          "units": [
+            "C035",
+            "C400"
+          ],
+          "existing_performances": [
+            "brahms-piano-quartet-no-3-in-c-minor-werther-quartet-1875-op-60-work-maria-nowak-katarzyna-budnik-yuya-okamoto-krystian-zimerman"
+          ],
+          "issue_url": "https://github.com/LuHoo/classical_music/issues/242",
+          "decision": null
+        },
+        {
+          "work_id": "jacques-ibert-trois-pieces-breves",
+          "title": "Trois pièces brèves",
+          "composer": "Jacques Ibert",
+          "units": [
+            "C093",
+            "C372"
+          ],
+          "existing_performances": [],
+          "issue_url": "https://github.com/LuHoo/classical_music/issues/246",
+          "decision": null
+        },
+        {
+          "work_id": "albert-roussel-divertissement-op-6",
+          "title": "Divertissement, Op. 6",
+          "composer": "Albert Roussel",
+          "units": [
+            "C108",
+            "C325",
+            "C331"
+          ],
+          "existing_performances": [],
+          "issue_url": "https://github.com/LuHoo/classical_music/issues/247",
+          "decision": null
+        },
+        {
+          "work_id": "wolfgang-amadeus-mozart-serenade-in-c-minor-k-388",
+          "title": "Serenade in C Minor, K. 388",
+          "composer": "Wolfgang Amadeus Mozart",
+          "units": [
+            "C210",
+            "C298"
+          ],
+          "existing_performances": [],
+          "issue_url": "https://github.com/LuHoo/classical_music/issues/241",
+          "decision": null,
+          "choice_aliases": {
+            "A": "C210",
+            "B": "C298"
+          }
+        },
+        {
+          "work_id": "igor-stravinsky-octet-k-041-work",
+          "title": "Octet",
+          "composer": "Igor Stravinsky",
+          "units": [
+            "C230",
+            "C307"
+          ],
+          "existing_performances": [
+            "igor-stravinsky-octet-k-041-work-juilliard-school-ensemble-royal-academy-of-music-barbara-hannigan"
+          ],
+          "issue_url": "https://github.com/LuHoo/classical_music/issues/252",
+          "decision": null
+        },
+        {
+          "work_id": "igor-stravinsky-concerto-in-e-flat-dumbarton-oaks-k-060-work",
+          "title": "Concerto in E-Flat Major, K060 \"Dumbarton Oaks\"",
+          "composer": "Igor Stravinsky",
+          "units": [
+            "C302"
+          ],
+          "existing_performances": [
+            "igor-stravinsky-concerto-in-e-flat-dumbarton-oaks-k-060-work-nieuw-sinfonietta-amsterdam-lev-markiz"
+          ],
+          "issue_url": "https://github.com/LuHoo/classical_music/issues/257",
+          "decision": null
+        }
+      ],
+      "units": [
+        {
+          "unit_id": "C035",
+          "composer": "Johannes Brahms",
+          "composer_id": "johannes-brahms",
+          "title": "Piano Quartet No. 3 in C Minor, Op. 60",
+          "positions": [
+            124,
+            125,
+            126,
+            127
+          ],
+          "disposition": "recommendation_choice",
+          "work_id": "brahms-piano-quartet-no-3-in-c-minor-werther-quartet-1875-op-60-work",
+          "performers": [
+            {
+              "name": "Yo-Yo Ma"
+            },
+            {
+              "name": "Emanuel Ax"
+            },
+            {
+              "name": "Isaac Stern"
+            },
+            {
+              "name": "Jaime Laredo"
+            }
+          ],
+          "evidence": [
+            {
+              "file": "side materials/Music collection/Chamber Tidal.xlsx",
+              "locator": "Chamber sheet; join by exact track ID or unique ISRC, never by live position."
+            }
+          ],
+          "reason": "Alternative interpretation of this Work; explicit curator choice required before any recommendation is added or replaced.",
+          "review_classification": "curator_required",
+          "curator_issue": "https://github.com/LuHoo/classical_music/issues/242",
+          "tracks": [
+            {
+              "position": 124,
+              "id": "1877909",
+              "item_id": "f957e110-a6b2-4ddd-8494-4fdcae362437",
+              "title": "Piano Quartet No. 3 in C Minor, Op. 60: I. Allegro ma non troppo",
+              "isrc": "USSM10028834",
+              "duration": "PT10M55S",
+              "artists": [
+                "Yo-Yo Ma",
+                "Emanuel Ax",
+                "Isaac Stern",
+                "Jaime Laredo"
+              ],
+              "album_titles": [
+                "Brahms: The Piano Quartets, Opp. 25, 26 & 60"
+              ],
+              "album_ids": [
+                "1876888"
+              ],
+              "export_position": 124,
+              "archive_match": "exact_track_id"
+            },
+            {
+              "position": 125,
+              "id": "1877272",
+              "item_id": "1086ef21-e5de-48ea-8a49-57e93b18dc12",
+              "title": "Piano Quartet No. 3 in C Minor, Op. 60: II. Scherzo. Allegro",
+              "isrc": "USSM10028835",
+              "duration": "PT4M12S",
+              "artists": [
+                "Yo-Yo Ma",
+                "Emanuel Ax",
+                "Isaac Stern",
+                "Jaime Laredo"
+              ],
+              "album_titles": [
+                "Brahms: The Piano Quartets, Opp. 25, 26 & 60"
+              ],
+              "album_ids": [
+                "1876888"
+              ],
+              "export_position": 125,
+              "archive_match": "exact_track_id"
+            },
+            {
+              "position": 126,
+              "id": "1877203",
+              "item_id": "63437814-77fd-4ddc-9b3e-7512f693cab0",
+              "title": "Piano Quartet No. 3 in C Minor, Op. 60: III. Andante",
+              "isrc": "USSM10028836",
+              "duration": "PT9M9S",
+              "artists": [
+                "Yo-Yo Ma",
+                "Emanuel Ax",
+                "Isaac Stern",
+                "Jaime Laredo"
+              ],
+              "album_titles": [
+                "Brahms: The Piano Quartets, Opp. 25, 26 & 60"
+              ],
+              "album_ids": [
+                "1876888"
+              ],
+              "export_position": 126,
+              "archive_match": "exact_track_id"
+            },
+            {
+              "position": 127,
+              "id": "1877180",
+              "item_id": "c7fca368-2cac-49f8-9949-29dacd245caf",
+              "title": "Piano Quartet No. 3 in C Minor, Op. 60: IV. Allegro comodo",
+              "isrc": "USSM10028837",
+              "duration": "PT10M57S",
+              "artists": [
+                "Yo-Yo Ma",
+                "Emanuel Ax",
+                "Isaac Stern",
+                "Jaime Laredo"
+              ],
+              "album_titles": [
+                "Brahms: The Piano Quartets, Opp. 25, 26 & 60"
+              ],
+              "album_ids": [
+                "1876888"
+              ],
+              "export_position": 127,
+              "archive_match": "exact_track_id"
+            }
+          ]
+        },
+        {
+          "unit_id": "C093",
+          "composer": "Jacques Ibert",
+          "composer_id": "jacques-ibert",
+          "title": "Trois pièces brèves",
+          "positions": [
+            305,
+            306,
+            307
+          ],
+          "disposition": "recommendation_choice",
+          "work_id": "jacques-ibert-trois-pieces-breves",
+          "performers": [
+            {
+              "name": "Pro Arte Wind Quintet"
+            }
+          ],
+          "evidence": [
+            {
+              "file": "side materials/Music collection/Chamber Tidal.xlsx",
+              "locator": "Chamber sheet; join by exact track ID or unique ISRC, never by live position."
+            }
+          ],
+          "reason": "Alternative interpretation of this Work; explicit curator choice required before any recommendation is added or replaced.",
+          "review_classification": "curator_required",
+          "curator_issue": "https://github.com/LuHoo/classical_music/issues/246",
+          "tracks": [
+            {
+              "position": 305,
+              "id": "59657141",
+              "item_id": "2fceb1cd-570c-461e-bf0e-2ed034ca1051",
+              "title": "Trois pièces brèves: I. Allegro",
+              "isrc": "GBAJU0600460",
+              "duration": "PT2M28S",
+              "artists": [
+                "Pro Arte Wind Quintet",
+                "Jacques Ibert"
+              ],
+              "album_titles": [
+                "French Wind Music"
+              ],
+              "album_ids": [
+                "59657140"
+              ],
+              "export_position": 305,
+              "archive_match": "exact_track_id"
+            },
+            {
+              "position": 306,
+              "id": "59657142",
+              "item_id": "a156b822-069f-4f8b-af79-39a072bd70d0",
+              "title": "Trois pièces brèves: II. Andante",
+              "isrc": "GBAJU0600461",
+              "duration": "PT1M33S",
+              "artists": [
+                "Pro Arte Wind Quintet",
+                "Jacques Ibert"
+              ],
+              "album_titles": [
+                "French Wind Music"
+              ],
+              "album_ids": [
+                "59657140"
+              ],
+              "export_position": 306,
+              "archive_match": "exact_track_id"
+            },
+            {
+              "position": 307,
+              "id": "59657143",
+              "item_id": "0e48811b-c5e9-4bb4-bddc-9e2e3514eda9",
+              "title": "Trois pièces brèves: III. Assez lent - Allegro scherzando",
+              "isrc": "GBAJU0600462",
+              "duration": "PT3M1S",
+              "artists": [
+                "Pro Arte Wind Quintet",
+                "Jacques Ibert"
+              ],
+              "album_titles": [
+                "French Wind Music"
+              ],
+              "album_ids": [
+                "59657140"
+              ],
+              "export_position": 307,
+              "archive_match": "exact_track_id"
+            }
+          ]
+        },
+        {
+          "unit_id": "C108",
+          "composer": "Albert Roussel",
+          "composer_id": "albert-roussel",
+          "title": "Divertissement, Op. 6",
+          "positions": [
+            368
+          ],
+          "disposition": "recommendation_choice",
+          "work_id": "albert-roussel-divertissement-op-6",
+          "performers": [
+            {
+              "name": "Orsino Ensemble"
+            },
+            {
+              "name": "Pavel Kolesnikov"
+            }
+          ],
+          "evidence": [
+            {
+              "file": "side materials/Music collection/Chamber Tidal.xlsx",
+              "locator": "Chamber sheet; join by exact track ID or unique ISRC, never by live position."
+            },
+            {
+              "url": "https://eclassical.textalk.se/shop/17115/art98/5067398-62ea49-095115528228.pdf"
+            }
+          ],
+          "reason": "Alternative interpretation of this Work; explicit curator choice required before any recommendation is added or replaced.",
+          "review_classification": "curator_required",
+          "curator_issue": "https://github.com/LuHoo/classical_music/issues/247",
+          "tracks": [
+            {
+              "position": 368,
+              "id": "196695284",
+              "item_id": "e0220e6b-7789-40ac-a432-22f6c3a09c70",
+              "title": "Divertissement for Wind Quintet and Piano, Op. 6",
+              "isrc": "GBLWD2101701",
+              "duration": "PT7M8S",
+              "artists": [
+                "Orsino Ensemble",
+                "Pavel Kolesnikov"
+              ],
+              "album_titles": [
+                "Belle Époque - French Music for Wind"
+              ],
+              "album_ids": [
+                "196695283"
+              ],
+              "export_position": 368,
+              "archive_match": "exact_track_id"
+            }
+          ]
+        },
+        {
+          "unit_id": "C210",
+          "composer": "Wolfgang Amadeus Mozart",
+          "composer_id": "wolfgang-amadeus-mozart",
+          "title": "Serenade in C Minor, K. 388",
+          "positions": [
+            691,
+            692,
+            693,
+            694
+          ],
+          "disposition": "recommendation_choice",
+          "work_id": "wolfgang-amadeus-mozart-serenade-in-c-minor-k-388",
+          "performers": [
+            {
+              "name": "MIB Wind Ensemble"
+            }
+          ],
+          "evidence": [
+            {
+              "file": "side materials/Music collection/Chamber Tidal.xlsx",
+              "locator": "Chamber sheet; join by exact track ID or unique ISRC, never by live position."
+            }
+          ],
+          "reason": "Alternative interpretation of this Work; explicit curator choice required before any recommendation is added or replaced.",
+          "review_classification": "curator_required",
+          "curator_issue": "https://github.com/LuHoo/classical_music/issues/241",
+          "tracks": [
+            {
+              "position": 691,
+              "id": "269512251",
+              "item_id": "37cd8d9f-c453-4963-b32e-7aea9a69e5be",
+              "title": "Serenade in C Minor, K. 388/384a: I. Allegro",
+              "isrc": "NLA460915040",
+              "duration": "PT8M30S",
+              "artists": [
+                "MIB Wind Ensemble"
+              ],
+              "album_titles": [
+                "Beethoven: Rondino & Wind Octet - Mozart: Serenade"
+              ],
+              "album_ids": [
+                "269512248"
+              ],
+              "export_position": 691,
+              "archive_match": "exact_track_id"
+            },
+            {
+              "position": 692,
+              "id": "269512252",
+              "item_id": "c6e2fcea-8414-480c-8dfd-e74e04412823",
+              "title": "Serenade in C Minor, K. 388/384a: II. Andante",
+              "isrc": "NLA460915041",
+              "duration": "PT4M",
+              "artists": [
+                "MIB Wind Ensemble"
+              ],
+              "album_titles": [
+                "Beethoven: Rondino & Wind Octet - Mozart: Serenade"
+              ],
+              "album_ids": [
+                "269512248"
+              ],
+              "export_position": 692,
+              "archive_match": "exact_track_id"
+            },
+            {
+              "position": 693,
+              "id": "269512254",
+              "item_id": "eeb74478-1f44-4570-b74b-f98c3ed6b62a",
+              "title": "Serenade in C Minor, K. 388/384a: III. Menuetto",
+              "isrc": "NLA460915042",
+              "duration": "PT4M4S",
+              "artists": [
+                "MIB Wind Ensemble"
+              ],
+              "album_titles": [
+                "Beethoven: Rondino & Wind Octet - Mozart: Serenade"
+              ],
+              "album_ids": [
+                "269512248"
+              ],
+              "export_position": 693,
+              "archive_match": "exact_track_id"
+            },
+            {
+              "position": 694,
+              "id": "269512255",
+              "item_id": "774b03f0-448b-41c7-a9ad-b80c69910c7b",
+              "title": "Serenade in C Minor, K. 388/384a: IV. Allegro",
+              "isrc": "NLA460915043",
+              "duration": "PT6M35S",
+              "artists": [
+                "MIB Wind Ensemble"
+              ],
+              "album_titles": [
+                "Beethoven: Rondino & Wind Octet - Mozart: Serenade"
+              ],
+              "album_ids": [
+                "269512248"
+              ],
+              "export_position": 694,
+              "archive_match": "exact_track_id"
+            }
+          ]
+        },
+        {
+          "unit_id": "C230",
+          "composer": "Igor Stravinsky",
+          "composer_id": "igor-stravinsky",
+          "title": "Octet",
+          "positions": [
+            736,
+            737
+          ],
+          "disposition": "recommendation_choice",
+          "work_id": "igor-stravinsky-octet-k-041-work",
+          "performers": [
+            {
+              "name": "Thierry Fischer"
+            },
+            {
+              "name": "Netherlands Wind Ensemble"
+            }
+          ],
+          "excerpt": "Movements I and II only",
+          "evidence": [
+            {
+              "file": "side materials/Music collection/Chamber Tidal.xlsx",
+              "locator": "Chamber sheet; join by exact track ID or unique ISRC, never by live position."
+            }
+          ],
+          "reason": "Alternative interpretation of this Work; explicit curator choice required before any recommendation is added or replaced.",
+          "review_classification": "curator_required",
+          "curator_issue": "https://github.com/LuHoo/classical_music/issues/252",
+          "tracks": [
+            {
+              "position": 736,
+              "id": "245886114",
+              "item_id": "55939626-116e-46dd-a6cb-a2c2f905f4fd",
+              "title": "Octet: I. Sinfonia",
+              "isrc": "GBLWD9803114",
+              "duration": "PT4M12S",
+              "artists": [
+                "Thierry Fischer",
+                "Netherlands Wind Ensemble"
+              ],
+              "album_titles": [
+                "Stravinsky: Mavra, Concertino, Symphonies of Wind Instruments & Octet for Wind Instruments"
+              ],
+              "album_ids": [
+                "245886100"
+              ],
+              "export_position": 741,
+              "archive_match": "exact_track_id"
+            },
+            {
+              "position": 737,
+              "id": "245886115",
+              "item_id": "a6edc95c-4fe0-4ab4-98de-ee360a45d0f4",
+              "title": "Octet: II. Theme and variations",
+              "isrc": "GBLWD9803115",
+              "duration": "PT11M42S",
+              "artists": [
+                "Thierry Fischer",
+                "Netherlands Wind Ensemble"
+              ],
+              "album_titles": [
+                "Stravinsky: Mavra, Concertino, Symphonies of Wind Instruments & Octet for Wind Instruments"
+              ],
+              "album_ids": [
+                "245886100"
+              ],
+              "export_position": 742,
+              "archive_match": "exact_track_id"
+            }
+          ]
+        },
+        {
+          "unit_id": "C298",
+          "composer": "Wolfgang Amadeus Mozart",
+          "composer_id": "wolfgang-amadeus-mozart",
+          "title": "Serenade in C Minor, K. 388",
+          "positions": [
+            960,
+            961,
+            962,
+            963
+          ],
+          "disposition": "recommendation_choice",
+          "work_id": "wolfgang-amadeus-mozart-serenade-in-c-minor-k-388",
+          "performers": [
+            {
+              "name": "Oslo kammerakademi"
+            }
+          ],
+          "evidence": [
+            {
+              "file": "side materials/Music collection/Chamber Tidal.xlsx",
+              "locator": "Chamber sheet; join by exact track ID or unique ISRC, never by live position."
+            }
+          ],
+          "reason": "Alternative interpretation of this Work; explicit curator choice required before any recommendation is added or replaced.",
+          "review_classification": "curator_required",
+          "curator_issue": "https://github.com/LuHoo/classical_music/issues/241",
+          "tracks": [
+            {
+              "position": 960,
+              "id": "123223275",
+              "item_id": "58549989-a741-4181-80c3-e793c5966ee0",
+              "title": "Serenade in C minor, KV 388: I. Allegro",
+              "isrc": "NOEHX1723060",
+              "duration": "PT7M51S",
+              "artists": [
+                "Oslo kammerakademi"
+              ],
+              "album_titles": [
+                "Mozart for Wind Octet"
+              ],
+              "album_ids": [
+                "123223269"
+              ],
+              "export_position": 973,
+              "archive_match": "exact_track_id"
+            },
+            {
+              "position": 961,
+              "id": "123223276",
+              "item_id": "24b6879f-997e-4775-935c-87d2013adddb",
+              "title": "Serenade in C minor, KV 388: II. Andante",
+              "isrc": "NOEHX1723070",
+              "duration": "PT3M51S",
+              "artists": [
+                "Oslo kammerakademi"
+              ],
+              "album_titles": [
+                "Mozart for Wind Octet"
+              ],
+              "album_ids": [
+                "123223269"
+              ],
+              "export_position": 974,
+              "archive_match": "exact_track_id"
+            },
+            {
+              "position": 962,
+              "id": "123223277",
+              "item_id": "1ab00d5f-a647-4d81-9147-894694053da1",
+              "title": "Serenade in C minor, KV 388: III. Menuetto – Trio",
+              "isrc": "NOEHX1723080",
+              "duration": "PT4M1S",
+              "artists": [
+                "Oslo kammerakademi"
+              ],
+              "album_titles": [
+                "Mozart for Wind Octet"
+              ],
+              "album_ids": [
+                "123223269"
+              ],
+              "export_position": 975,
+              "archive_match": "exact_track_id"
+            },
+            {
+              "position": 963,
+              "id": "123223278",
+              "item_id": "3f3cb8af-71e3-4767-a01e-a6d98f234af4",
+              "title": "Serenade in C minor, KV 388: IV. Allegro",
+              "isrc": "NOEHX1723090",
+              "duration": "PT6M32S",
+              "artists": [
+                "Oslo kammerakademi"
+              ],
+              "album_titles": [
+                "Mozart for Wind Octet"
+              ],
+              "album_ids": [
+                "123223269"
+              ],
+              "export_position": 976,
+              "archive_match": "exact_track_id"
+            }
+          ]
+        },
+        {
+          "unit_id": "C302",
+          "composer": "Igor Stravinsky",
+          "composer_id": "igor-stravinsky",
+          "title": "Concerto in E-Flat Major, K060 \"Dumbarton Oaks\"",
+          "positions": [
+            983,
+            984,
+            985
+          ],
+          "disposition": "recommendation_choice",
+          "work_id": "igor-stravinsky-concerto-in-e-flat-dumbarton-oaks-k-060-work",
+          "performers": [
+            {
+              "name": "Barbara Hannigan"
+            },
+            {
+              "name": "Royal Academy of Music"
+            },
+            {
+              "name": "Juilliard School Ensemble"
+            }
+          ],
+          "evidence": [
+            {
+              "file": "side materials/Music collection/Chamber Tidal.xlsx",
+              "locator": "Chamber sheet; join by exact track ID or unique ISRC, never by live position."
+            }
+          ],
+          "reason": "Alternative interpretation of this Work; explicit curator choice required before any recommendation is added or replaced.",
+          "review_classification": "curator_required",
+          "curator_issue": "https://github.com/LuHoo/classical_music/issues/257",
+          "tracks": [
+            {
+              "position": 983,
+              "id": "378000311",
+              "item_id": "d18bd2c1-ce74-494f-95f8-8b05a6a36267",
+              "title": "Concerto in E-Flat Major, K060 \"Dumbarton Oaks\": I. Tempo giusto",
+              "isrc": "GBASH2472201",
+              "duration": "PT4M48S",
+              "artists": [
+                "Barbara Hannigan",
+                "Royal Academy of Music",
+                "Juilliard School Ensemble"
+              ],
+              "album_titles": [
+                "Stravinsky: Chamber Works"
+              ],
+              "album_ids": [
+                "378000310"
+              ],
+              "export_position": 996,
+              "archive_match": "exact_track_id"
+            },
+            {
+              "position": 984,
+              "id": "378000312",
+              "item_id": "dc842796-ddda-4b91-a24f-a22eed877d5d",
+              "title": "Concerto in E-Flat Major, K060 \"Dumbarton Oaks\": II. Allegretto",
+              "isrc": "GBASH2472202",
+              "duration": "PT4M21S",
+              "artists": [
+                "Barbara Hannigan",
+                "Royal Academy of Music",
+                "Juilliard School Ensemble"
+              ],
+              "album_titles": [
+                "Stravinsky: Chamber Works"
+              ],
+              "album_ids": [
+                "378000310"
+              ],
+              "export_position": 997,
+              "archive_match": "exact_track_id"
+            },
+            {
+              "position": 985,
+              "id": "378000313",
+              "item_id": "2d2644c4-07ed-4f97-b6e5-5f2aa2c87eb0",
+              "title": "Concerto in E-Flat Major, K060 \"Dumbarton Oaks\": III. Con moto",
+              "isrc": "GBASH2472203",
+              "duration": "PT5M32S",
+              "artists": [
+                "Barbara Hannigan",
+                "Royal Academy of Music",
+                "Juilliard School Ensemble"
+              ],
+              "album_titles": [
+                "Stravinsky: Chamber Works"
+              ],
+              "album_ids": [
+                "378000310"
+              ],
+              "export_position": 998,
+              "archive_match": "exact_track_id"
+            }
+          ]
+        },
+        {
+          "unit_id": "C307",
+          "composer": "Igor Stravinsky",
+          "composer_id": "igor-stravinsky",
+          "title": "Octet, K041",
+          "positions": [
+            997,
+            998,
+            999
+          ],
+          "disposition": "reuse_existing",
+          "work_id": "igor-stravinsky-octet-k-041-work",
+          "performance_id": "igor-stravinsky-octet-k-041-work-juilliard-school-ensemble-royal-academy-of-music-barbara-hannigan",
+          "performers": [
+            {
+              "name": "Barbara Hannigan"
+            },
+            {
+              "name": "Royal Academy of Music"
+            },
+            {
+              "name": "Juilliard School Ensemble"
+            }
+          ],
+          "evidence": [
+            {
+              "file": "side materials/Music collection/Chamber Tidal.xlsx",
+              "locator": "Chamber sheet; join by exact track ID or unique ISRC, never by live position."
+            }
+          ],
+          "recording_evidence": [
+            {
+              "position": 997,
+              "type": "id",
+              "value": "378000325"
+            },
+            {
+              "position": 997,
+              "type": "archived_track_same_isrc",
+              "value": "GBASH2472215",
+              "archived_track_id": "378000325"
+            }
+          ],
+          "curator_issue": "https://github.com/LuHoo/classical_music/issues/252",
+          "tracks": [
+            {
+              "position": 997,
+              "id": "378000325",
+              "item_id": "6a5dd9a2-e75a-466f-87b9-43eaa4c0a383",
+              "title": "Octet, K041: I. Sinfonia",
+              "isrc": "GBASH2472215",
+              "duration": "PT4M4S",
+              "artists": [
+                "Barbara Hannigan",
+                "Royal Academy of Music",
+                "Juilliard School Ensemble"
+              ],
+              "album_titles": [
+                "Stravinsky: Chamber Works"
+              ],
+              "album_ids": [
+                "378000310"
+              ],
+              "export_position": 1010,
+              "archive_match": "exact_track_id"
+            },
+            {
+              "position": 998,
+              "id": "378000326",
+              "item_id": "5b95263e-a979-4e0a-89d3-78f214c0be18",
+              "title": "Octet, K041: II. Tema con variazioni",
+              "isrc": "GBASH2472216",
+              "duration": "PT8M10S",
+              "artists": [
+                "Barbara Hannigan",
+                "Royal Academy of Music",
+                "Juilliard School Ensemble"
+              ],
+              "album_titles": [
+                "Stravinsky: Chamber Works"
+              ],
+              "album_ids": [
+                "378000310"
+              ],
+              "export_position": 1011,
+              "archive_match": "exact_track_id"
+            },
+            {
+              "position": 999,
+              "id": "378000327",
+              "item_id": "b7e37504-7064-4f27-aea9-98ab5b1d198a",
+              "title": "Octet, K041: III. Finale",
+              "isrc": "GBASH2472217",
+              "duration": "PT3M45S",
+              "artists": [
+                "Barbara Hannigan",
+                "Royal Academy of Music",
+                "Juilliard School Ensemble"
+              ],
+              "album_titles": [
+                "Stravinsky: Chamber Works"
+              ],
+              "album_ids": [
+                "378000310"
+              ],
+              "export_position": 1012,
+              "archive_match": "exact_track_id"
+            }
+          ]
+        },
+        {
+          "unit_id": "C325",
+          "composer": "Albert Roussel",
+          "composer_id": "albert-roussel",
+          "title": "Divertissement, Op. 6",
+          "positions": [
+            1049
+          ],
+          "disposition": "recommendation_choice",
+          "work_id": "albert-roussel-divertissement-op-6",
+          "performers": [
+            {
+              "name": "Jean-Pierre Rampal"
+            },
+            {
+              "name": "Jacques Lancelot"
+            },
+            {
+              "name": "Paul Hongne"
+            },
+            {
+              "name": "Gilbert Coursier"
+            },
+            {
+              "name": "Robert Veyron-Lacroix"
+            },
+            {
+              "name": "Pierre Pierlot"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://eclassical.textalk.se/shop/17115/art98/5067398-62ea49-095115528228.pdf"
+            }
+          ],
+          "reason": "Alternative interpretation of this Work; explicit curator choice required before any recommendation is added or replaced.",
+          "review_classification": "curator_required",
+          "curator_issue": "https://github.com/LuHoo/classical_music/issues/247",
+          "tracks": [
+            {
+              "position": 1049,
+              "id": "54297847",
+              "item_id": "b62267b7-d248-402d-871d-6636e68a64ab",
+              "title": "Roussel Divertissement, Op 6: Animé - lent - animé - lent - animé",
+              "isrc": "GBFYK1202608",
+              "duration": "PT6M54S",
+              "artists": [
+                "Albert Roussel",
+                "Jean-Pierre Rampal",
+                "Jacques Lancelot",
+                "Paul Hongne",
+                "Gilbert Coursier",
+                "Robert Veyron-Lacroix",
+                "Pierre Pierlot"
+              ],
+              "album_titles": [
+                "The French Accent"
+              ],
+              "album_ids": [
+                "54297839"
+              ],
+              "export_position": null,
+              "archive_match": null
+            }
+          ]
+        },
+        {
+          "unit_id": "C331",
+          "composer": "Albert Roussel",
+          "composer_id": "albert-roussel",
+          "title": "Divertissement, Op. 6",
+          "positions": [
+            1060
+          ],
+          "disposition": "recommendation_choice",
+          "work_id": "albert-roussel-divertissement-op-6",
+          "performers": [
+            {
+              "name": "Michel Moragues, Claire Desert Et Quintette À Vent Moragues"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://eclassical.textalk.se/shop/17115/art98/5067398-62ea49-095115528228.pdf"
+            }
+          ],
+          "reason": "Alternative interpretation of this Work; explicit curator choice required before any recommendation is added or replaced.",
+          "review_classification": "curator_required",
+          "curator_issue": "https://github.com/LuHoo/classical_music/issues/247",
+          "tracks": [
+            {
+              "position": 1060,
+              "id": "12733657",
+              "item_id": "484fdded-ba76-4530-aaac-acab2011e2d3",
+              "title": "Divertissement Op 6 Pour Quintette À Vent Et Piano (Albert Roussel)",
+              "isrc": "FR48T0117010",
+              "duration": "PT6M35S",
+              "artists": [
+                "Michel Moragues, Claire Desert Et Quintette À Vent Moragues"
+              ],
+              "album_titles": [
+                "Intégrale Des Œuvres Pour Flûte"
+              ],
+              "album_ids": [
+                "12733647"
+              ],
+              "export_position": null,
+              "archive_match": null
+            }
+          ]
+        },
+        {
+          "unit_id": "C372",
+          "composer": "Jacques Ibert",
+          "composer_id": "jacques-ibert",
+          "title": "Trois pièces brèves",
+          "positions": [
+            1212,
+            1213,
+            1214
+          ],
+          "disposition": "recommendation_choice",
+          "work_id": "jacques-ibert-trois-pieces-breves",
+          "performers": [
+            {
+              "name": "Ensemble Arabesques"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.farao-classics.de/index.php?id=3"
+            }
+          ],
+          "reason": "Alternative interpretation of this Work; explicit curator choice required before any recommendation is added or replaced.",
+          "review_classification": "curator_required",
+          "curator_issue": "https://github.com/LuHoo/classical_music/issues/246",
+          "tracks": [
+            {
+              "position": 1212,
+              "id": "198744929",
+              "item_id": "2a69aa06-b0fc-4b79-92e3-553ae88fae2b",
+              "title": "Trois pièces brèves - Flute, Oboe, Clarinet, Horn, Bassoon: I. Allegro",
+              "isrc": "DEH142100206",
+              "duration": "PT2M28S",
+              "artists": [
+                "Ensemble Arabesques"
+              ],
+              "album_titles": [
+                "Jacques Ibert Kammermusik"
+              ],
+              "album_ids": [
+                "198744923"
+              ],
+              "export_position": null,
+              "archive_match": null
+            },
+            {
+              "position": 1213,
+              "id": "198744930",
+              "item_id": "f26de8a0-9140-4c52-b597-6f0a071a184c",
+              "title": "Trois pièces brèves - Flute, Oboe, Clarinet, Horn, Bassoon: II. Andante",
+              "isrc": "DEH142100207",
+              "duration": "PT1M44S",
+              "artists": [
+                "Ensemble Arabesques"
+              ],
+              "album_titles": [
+                "Jacques Ibert Kammermusik"
+              ],
+              "album_ids": [
+                "198744923"
+              ],
+              "export_position": null,
+              "archive_match": null
+            },
+            {
+              "position": 1214,
+              "id": "198744931",
+              "item_id": "01b015d7-e06b-436c-b80f-c17b5ceaeffe",
+              "title": "Trois pièces brèves - Flute, Oboe, Clarinet, Horn, Bassoon: III. Assez lent – Allegro scherzando",
+              "isrc": "DEH142100208",
+              "duration": "PT2M58S",
+              "artists": [
+                "Ensemble Arabesques"
+              ],
+              "album_titles": [
+                "Jacques Ibert Kammermusik"
+              ],
+              "album_ids": [
+                "198744923"
+              ],
+              "export_position": null,
+              "archive_match": null
+            }
+          ]
+        },
+        {
+          "unit_id": "C400",
+          "composer": "Johannes Brahms",
+          "composer_id": "johannes-brahms",
+          "title": "Piano Quartet No. 3, Op. 60",
+          "positions": [
+            1321,
+            1322,
+            1323,
+            1324
+          ],
+          "disposition": "reuse_existing",
+          "work_id": "brahms-piano-quartet-no-3-in-c-minor-werther-quartet-1875-op-60-work",
+          "performance_id": "brahms-piano-quartet-no-3-in-c-minor-werther-quartet-1875-op-60-work-maria-nowak-katarzyna-budnik-yuya-okamoto-krystian-zimerman",
+          "performers": [
+            {
+              "name": "Krystian Zimerman"
+            },
+            {
+              "name": "Maria Nowak"
+            },
+            {
+              "name": "Katarzyna Budnik"
+            },
+            {
+              "name": "Yuya Okamoto"
+            }
+          ],
+          "evidence": [],
+          "recording_evidence": [
+            {
+              "position": 1321,
+              "type": "id",
+              "value": "426702629"
+            }
+          ],
+          "curator_issue": "https://github.com/LuHoo/classical_music/issues/242",
+          "tracks": [
+            {
+              "position": 1321,
+              "id": "426702629",
+              "item_id": "8ed8dd30-a7ab-4224-a0aa-e969cc30e250",
+              "title": "Brahms: Piano Quartet No. 3 in C Minor, Op. 60: I. Allegro non troppo",
+              "isrc": "DEN962301961",
+              "duration": "PT10M8S",
+              "artists": [
+                "Krystian Zimerman",
+                "Maria Nowak",
+                "Katarzyna Budnik",
+                "Yuya Okamoto"
+              ],
+              "album_titles": [
+                "Brahms: Piano Quartets Nos. 2 & 3"
+              ],
+              "album_ids": [
+                "426702628"
+              ],
+              "export_position": null,
+              "archive_match": null
+            },
+            {
+              "position": 1322,
+              "id": "426702630",
+              "item_id": "70d528e8-2c1d-4422-9655-69df8d470ec7",
+              "title": "Brahms: Piano Quartet No. 3 in C Minor, Op. 60: II. Scherzo. Allegro",
+              "isrc": "DEN962301962",
+              "duration": "PT3M41S",
+              "artists": [
+                "Krystian Zimerman",
+                "Maria Nowak",
+                "Katarzyna Budnik",
+                "Yuya Okamoto"
+              ],
+              "album_titles": [
+                "Brahms: Piano Quartets Nos. 2 & 3"
+              ],
+              "album_ids": [
+                "426702628"
+              ],
+              "export_position": null,
+              "archive_match": null
+            },
+            {
+              "position": 1323,
+              "id": "426702631",
+              "item_id": "8e876979-7ada-4695-9c01-efc75da41285",
+              "title": "Brahms: Piano Quartet No. 3 in C Minor, Op. 60: III. Andante",
+              "isrc": "DEN962301963",
+              "duration": "PT9M47S",
+              "artists": [
+                "Krystian Zimerman",
+                "Maria Nowak",
+                "Katarzyna Budnik",
+                "Yuya Okamoto"
+              ],
+              "album_titles": [
+                "Brahms: Piano Quartets Nos. 2 & 3"
+              ],
+              "album_ids": [
+                "426702628"
+              ],
+              "export_position": null,
+              "archive_match": null
+            },
+            {
+              "position": 1324,
+              "id": "426702632",
+              "item_id": "6649be4e-cce5-4458-b89f-59d87dfa2812",
+              "title": "Brahms: Piano Quartet No. 3 in C Minor, Op. 60: IV. Finale. Allegro comodo",
+              "isrc": "DEN962301964",
+              "duration": "PT9M56S",
+              "artists": [
+                "Krystian Zimerman",
+                "Maria Nowak",
+                "Katarzyna Budnik",
+                "Yuya Okamoto"
+              ],
+              "album_titles": [
+                "Brahms: Piano Quartets Nos. 2 & 3"
+              ],
+              "album_ids": [
+                "426702628"
+              ],
+              "export_position": null,
+              "archive_match": null
+            }
+          ]
+        }
+      ],
+      "performances": {
+        "data/performances/igor-stravinsky-concerto-in-e-flat-dumbarton-oaks-k-060-work-nieuw-sinfonietta-amsterdam-lev-markiz.yaml": "id: \"igor-stravinsky-concerto-in-e-flat-dumbarton-oaks-k-060-work-nieuw-sinfonietta-amsterdam-lev-markiz\"\nwork_id: \"igor-stravinsky-concerto-in-e-flat-dumbarton-oaks-k-060-work\"\nperformers:\n  - name: \"Nieuw Sinfonietta Amsterdam\"\n    role: \"orchestra\"\n  - name: \"Lev Markiz\"\n    role: \"conductor\"\nlinks:\n  tidal:\n    url: \"http://www.tidal.com/track/45280439\"\nsource:\n  file: \"docs/stravinsky.md\"\n  line: \"83\"\n",
+        "data/performances/igor-stravinsky-octet-k-041-work-juilliard-school-ensemble-royal-academy-of-music-barbara-hannigan.yaml": "id: \"igor-stravinsky-octet-k-041-work-juilliard-school-ensemble-royal-academy-of-music-barbara-hannigan\"\nwork_id: \"igor-stravinsky-octet-k-041-work\"\nperformers:\n  - name: \"Juilliard School Ensemble\"\n    role: \"ensemble\"\n  - name: \"Royal Academy of Music\"\n    role: \"ensemble\"\n  - name: \"Barbara Hannigan\"\n    role: \"conductor\"\nlinks:\n  tidal:\n    url: \"https://tidal.com/browse/track/378000325?u\"\nsource:\n  file: \"docs/stravinsky.md\"\n  line: \"131\"\n",
+        "data/performances/brahms-piano-quartet-no-3-in-c-minor-werther-quartet-1875-op-60-work-maria-nowak-katarzyna-budnik-yuya-okamoto-krystian-zimerman.yaml": "id: brahms-piano-quartet-no-3-in-c-minor-werther-quartet-1875-op-60-work-maria-nowak-katarzyna-budnik-yuya-okamoto-krystian-zimerman\nwork_id: brahms-piano-quartet-no-3-in-c-minor-werther-quartet-1875-op-60-work\nperformers:\n- artist_id: maria-nowak\n  name: Maria Nowak\n  role: performer\n- artist_id: katarzyna-budnik\n  name: Katarzyna Budnik\n  role: performer\n- artist_id: yuya-okamoto\n  name: Yuya Okamoto\n  role: performer\n- artist_id: krystian-zimerman\n  name: Krystian Zimerman\n  role: performer\nlinks:\n  tidal:\n    url: https://tidal.com/track/426702629\nsource:\n  file: /Users/Lucas_new/.codex/.chatgpt-projects/g-p-6a500123ac548191ab37db95c0d285a2/classical_music/docs/brahms.md\n  line: '83'\nsource_performer_text: Maria Nowak, Katarzyna Budnik, Yuya Okamoto, Krystian Zimerman\n"
+      },
+      "new_records": [],
+      "readme": "# Chamber — complete source intake\n\nAll **1,368 source occurrences** from the complete 4 October 2026 [snapshot](https://github.com/LuHoo/classical_music/actions/runs/37201308716) are accounted for. The playlist ends at position 1368; there is no unprocessed tail. Source duration: 137h 53m 36s. The curator explicitly authorised one full-playlist import.\n\n| Result | Work/recording groups | Source occurrences |\n|---|---:|---:|\n| import_new | 294 | 939 |\n| reuse_existing | 92 | 318 |\n| recommendation_choice | 19 | 58 |\n| not_selected | 2 | 7 |\n| identity_unresolved | 18 | 46 |\n\nNew canonical records: {'persons': 27, 'work-groups': 279, 'works': 291, 'performances': 294}. Reuse covers 91 existing Performances. Groups are not unique Work counts: separate versions, alternative readings and two reused Brahms song excerpts are counted separately.\n\n## Curator choices\n\n**11 pending Work-level decisions**; eight original/arrangement decisions have been implemented with explicit profiles. Respond in an issue or the import chat with the issue number plus a C-code (or `existing`, `geen`, `unresolved` where offered). One answer covers all movements. A short explanation is needed only for doubt, exceptions or an additional comparison profile.\n\nUndecided alternatives are excluded from canonical Performance data. Accepted originals and arrangements occupy distinct explicit profiles; existing listening links remain unchanged. Neither playlist order nor ISRC similarity selects a preferred interpretation. An issue is not permission to apply a choice automatically.\n\n| Issue | Composer — Work | Candidates |\n|---|---|---|\n| [#240](https://github.com/LuHoo/classical_music/issues/240) | Arthur Bliss — Clarinet Quintet, F. 20 | C003, C287 **Resolved: C003 (Wigmore Soloists)** |\n| [#242](https://github.com/LuHoo/classical_music/issues/242) | Johannes Brahms — Piano Quartet No. 3 in C Minor, Op. 60 | C035, C400; existing |\n| [#243](https://github.com/LuHoo/classical_music/issues/243) | Johannes Brahms — Piano Quartet No. 2 in A Major, Op. 26 | C036, C401; existing |\n| [#244](https://github.com/LuHoo/classical_music/issues/244) | César Franck — Violin Sonata in A Major, FWV 8 | C069, C098  **Resolved: both, distinct profiles** |\n| [#245](https://github.com/LuHoo/classical_music/issues/245) | Camille Saint-Saëns — Le Carnaval des Animaux, R. 125 | C073; existing  **Resolved: both, distinct profiles** |\n| [#246](https://github.com/LuHoo/classical_music/issues/246) | Jacques Ibert — Trois pièces brèves | C093, C372 |\n| [#247](https://github.com/LuHoo/classical_music/issues/247) | Albert Roussel — Divertissement, Op. 6 | C108, C325, C331 |\n| [#248](https://github.com/LuHoo/classical_music/issues/248) | Arnold Schoenberg — Verklärte Nacht, Op. 4 (Steuermann piano trio arrangement) | C170, C278 |\n| [#249](https://github.com/LuHoo/classical_music/issues/249) | Johann Sebastian Bach — Violin Sonata No. 3 in C Major, BWV 1005 (Excerpts Arr. J. Lindberg for Lute) | C204, C359; existing  **Resolved: both, distinct profiles** |\n| [#250](https://github.com/LuHoo/classical_music/issues/250) | Johann Sebastian Bach — Violin Sonata No. 1 in G Minor, BWV 1001 (Arr. J. Lindberg for Lute) | C207, C361; existing  **Resolved: both, distinct profiles** |\n| [#251](https://github.com/LuHoo/classical_music/issues/251) | Johann Sebastian Bach — Violin Partita No. 2 in D Minor, BWV 1004 | C208, C363; existing  **Resolved: both, distinct profiles** |\n| [#241](https://github.com/LuHoo/classical_music/issues/241) | Wolfgang Amadeus Mozart — Serenade in C Minor, K. 388 | C210, C298 |\n| [#252](https://github.com/LuHoo/classical_music/issues/252) | Igor Stravinsky — Octet | C230, C307; existing |\n| [#253](https://github.com/LuHoo/classical_music/issues/253) | César Franck — Piano Quintet in F Minor, FWV 7 | C276, C364 |\n| [#254](https://github.com/LuHoo/classical_music/issues/254) | Bohuslav Martinů — Cello Sonata No. 1, H. 277 | C282, C337 **Resolved: C337** |\n| [#255](https://github.com/LuHoo/classical_music/issues/255) | Bohuslav Martinů — Cello Sonata No. 2, H. 286 | C284, C339 |\n| [#256](https://github.com/LuHoo/classical_music/issues/256) | Bohuslav Martinů — Cello Sonata No. 3, H. 340 | C286, C340 |\n| [#257](https://github.com/LuHoo/classical_music/issues/257) | Igor Stravinsky — Concerto in E-Flat Major, K060 \"Dumbarton Oaks\" | C302; existing |\n| [#258](https://github.com/LuHoo/classical_music/issues/258) | Johann Sebastian Bach — Goldberg Variations, BWV 988 | C402; existing  **Resolved: both, distinct profiles** |\n| [#259](https://github.com/LuHoo/classical_music/issues/259) | Johann Sebastian Bach — Orchestral Suite No. 3, BWV 1068 | C406; existing  **Resolved: both, distinct profiles** |\n| [#260](https://github.com/LuHoo/classical_music/issues/260) | Johann Sebastian Bach — Keyboard Concerto No. 5, BWV 1056 | C417; existing  **Resolved: both, distinct profiles** |\n\n## Evidence gaps\n\n18 groups remain outside canonical data pending source/version research. These are **authority_evidence_required**, not demands for listening decisions. [Research issue #261](https://github.com/LuHoo/classical_music/issues/261) and [concrete research list](identity-research.md). All raw titles, artists, track IDs, ISRCs, positions and reasons are in the [machine-readable manifest](snapshot-2026-10-04.json). No decision or track is silently dropped.\n\n## Traceability and limits\n\n- The live snapshot is authoritative for membership and order. The older spreadsheet is corroborating Work evidence, joined by exact ID or unique ISRC; it does not supply 2026 positions.\n- Duplicate occurrences and non-adjacent movements are preserved. Raw titles remain beside reviewed identities. Excerpts are explicit; unselected album tracks are not inferred.\n- Attribution corrections include Bartók’s solo violin sonata and Koechlin’s nocturnes. Label/artist evidence corrects the Webern arrangement of Schönberg Op. 9; specific arrangements and reconstructions receive their own Works within the known family.\n- Exact trusted tracks/ISRCs, and documented same-release matches with compatible Work identity, support reuse. The manifest retains that evidence, including older anchors that point to another Work on the same album. These anchors are not silently rewritten by this import.\n- NL usage-rule evidence is retained separately from musical acceptance. No successful playback is claimed. This import does not alter the Tidal playlist.\n- Source artifact is not committed. The manifest preserves identifiers and source fingerprints without API credentials.\n\n## Verification\n\nRun `python scripts/check_chamber_import.py` for full occurrence coverage, one-recommendation gates, canonical references and generated public links/excerpts. Run the canonical validator and test suite as usual. See [review and validation notes](review.md).\n\n## Original and arrangement decisions — 4 October 2026\n\nLucas extended the decision in #287 to other original/arrangement comparisons. Issues #244, #245, #249–#251 and #258–#260 are resolved in `resolved_choices`, with decision-comment URLs, explicit profiles, all source tracks and unchanged excerpt coverage. [Implementation report](../../curator-decisions/original-arrangement-2026-10-04.json) also covers the seven Mendelssohn Piano decisions (#286–#292). Undecided comparisons within the same profile remain pending.\n\n## C337 decision — 5 October 2026\n\nIssue #254 selects Vilém Vlček and Denis Linnik for all three movements of Martinů’s Cello Sonata No. 1, H. 277. C282 remains traceable as not selected. See the [decision record](../../curator-decisions/c337-2026-10-05.json).\n"
+    },
+    {
+      "path": "reports/playlist-import/piano/snapshot-2026-10-04.json",
+      "choices": [
+        {
+          "work_id": "frederic-mompou-canco-de-bressol-chanson-de-berceau",
+          "title": "Cançó de bressol (Chanson de berceau)",
+          "composer": "Frederic Mompou",
+          "units": [
+            "P078",
+            "P081"
+          ],
+          "existing_performances": [],
+          "issue_url": "https://github.com/LuHoo/classical_music/issues/263",
+          "decision": null
+        },
+        {
+          "work_id": "cb25dd190f9643b7a9dfdb60f14ad8b3-piano-sonata-in-b-minor-hob-xvi-32",
+          "title": "Piano Sonata in B Minor, Hob.XVI.32",
+          "composer": "Joseph Haydn",
+          "units": [
+            "P093",
+            "P182"
+          ],
+          "existing_performances": [],
+          "issue_url": "https://github.com/LuHoo/classical_music/issues/264",
+          "decision": null
+        }
+      ],
+      "units": [
+        {
+          "unit_id": "P078",
+          "composer": "Frederic Mompou",
+          "composer_id": "frederic-mompou",
+          "title": "Cançó de bressol (Chanson de berceau)",
+          "positions": [
+            379
+          ],
+          "disposition": "recommendation_choice",
+          "work_id": "frederic-mompou-canco-de-bressol-chanson-de-berceau",
+          "performers": [
+            {
+              "name": "Frederic Mompou",
+              "role": "piano"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.naxos.com/CatalogueDetail/?id=8.554448",
+              "note": "Publisher lists the independently identified Chanson de berceau; the archive supplies each selected recording."
+            },
+            {
+              "file": "side materials/Music collection/Piano Tidal.xlsx",
+              "sheet": "Piano",
+              "archive_positions": [
+                379
+              ]
+            }
+          ],
+          "reason": "A different interpretation of this Work is already recommended or also selected in Piano. Explicit curator choice required.",
+          "review_classification": "curator_required",
+          "curator_issue": "https://github.com/LuHoo/classical_music/issues/263",
+          "tracks": [
+            {
+              "position": 379,
+              "id": "31353039",
+              "item_id": "ebff4298-e1df-4764-8460-416d564c430c",
+              "title": "Cançó de bressol",
+              "isrc": "ES5881100093",
+              "duration": "PT4M27S",
+              "artists": [
+                "Frederic Mompou"
+              ],
+              "album_titles": [
+                "Mompou: Complete Works for Piano"
+              ],
+              "album_ids": [
+                "31352945"
+              ],
+              "nl_usage_rules": {
+                "countryCode": "NL",
+                "paid": [],
+                "subscription": [
+                  "STREAM",
+                  "DJ"
+                ],
+                "free": [],
+                "validFrom": "2013-01-01T00:00:00Z"
+              },
+              "export_position": 379,
+              "archive_match": "exact_track_id"
+            }
+          ]
+        },
+        {
+          "unit_id": "P081",
+          "composer": "Frederic Mompou",
+          "composer_id": "frederic-mompou",
+          "title": "Cançó de bressol (Chanson de berceau)",
+          "positions": [
+            417
+          ],
+          "disposition": "recommendation_choice",
+          "work_id": "frederic-mompou-canco-de-bressol-chanson-de-berceau",
+          "performers": [
+            {
+              "name": "Martin Jones",
+              "role": "piano"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.naxos.com/CatalogueDetail/?id=8.554448",
+              "note": "Publisher lists the independently identified Chanson de berceau; the archive supplies each selected recording."
+            },
+            {
+              "file": "side materials/Music collection/Piano Tidal.xlsx",
+              "sheet": "Piano",
+              "archive_positions": [
+                417
+              ]
+            }
+          ],
+          "reason": "A different interpretation of this Work is already recommended or also selected in Piano. Explicit curator choice required.",
+          "review_classification": "curator_required",
+          "curator_issue": "https://github.com/LuHoo/classical_music/issues/263",
+          "tracks": [
+            {
+              "position": 417,
+              "id": "59425946",
+              "item_id": "4f23b785-6e32-4218-9366-b3960a4bee98",
+              "title": "Chanson de Berceau",
+              "isrc": "GBAJU0300598",
+              "duration": "PT4M39S",
+              "artists": [
+                "Martin Jones",
+                "Federico Mompou"
+              ],
+              "album_titles": [
+                "Mompou: The Piano Music"
+              ],
+              "album_ids": [
+                "59425857"
+              ],
+              "nl_usage_rules": {
+                "countryCode": "NL",
+                "paid": [],
+                "subscription": [
+                  "STREAM",
+                  "DJ"
+                ],
+                "free": [],
+                "validFrom": "2015-11-01T00:00:00Z"
+              },
+              "export_position": 417,
+              "archive_match": "exact_track_id"
+            }
+          ]
+        },
+        {
+          "unit_id": "P093",
+          "composer": "Joseph Haydn",
+          "composer_id": "cb25dd190f9643b7a9dfdb60f14ad8b3",
+          "title": "Piano Sonata in B Minor, Hob.XVI.32",
+          "positions": [
+            446,
+            447,
+            448
+          ],
+          "disposition": "recommendation_choice",
+          "work_id": "cb25dd190f9643b7a9dfdb60f14ad8b3-piano-sonata-in-b-minor-hob-xvi-32",
+          "performers": [
+            {
+              "name": "Víkingur Ólafsson",
+              "role": "piano"
+            }
+          ],
+          "evidence": [
+            {
+              "file": "side materials/Music collection/Piano Tidal.xlsx",
+              "sheet": "Piano",
+              "archive_positions": [
+                446,
+                447,
+                448
+              ]
+            }
+          ],
+          "reason": "A different interpretation of this Work is already recommended or also selected in Piano. Explicit curator choice required.",
+          "review_classification": "curator_required",
+          "curator_issue": "https://github.com/LuHoo/classical_music/issues/264",
+          "tracks": [
+            {
+              "position": 446,
+              "id": "195406383",
+              "item_id": "0411a369-8e27-42df-828e-f9980d514850",
+              "title": "Haydn: Piano Sonata in B Minor, Hob.XVI:32: I. Allegro moderato",
+              "isrc": "DEN962100670",
+              "duration": "PT3M4S",
+              "artists": [
+                "Víkingur Ólafsson"
+              ],
+              "album_titles": [
+                "Mozart & Contemporaries"
+              ],
+              "album_ids": [
+                "195406375"
+              ],
+              "nl_usage_rules": {
+                "countryCode": "NL",
+                "paid": [],
+                "subscription": [
+                  "STREAM",
+                  "DJ"
+                ],
+                "free": [],
+                "validFrom": "2021-09-03T00:00:00Z"
+              },
+              "export_position": 446,
+              "archive_match": "exact_track_id"
+            },
+            {
+              "position": 447,
+              "id": "195406384",
+              "item_id": "945e69bd-fc4c-4ab4-945a-98c26244cefa",
+              "title": "Haydn: Piano Sonata in B Minor, Hob.XVI:32: II. Menuet",
+              "isrc": "DEN962100680",
+              "duration": "PT2M41S",
+              "artists": [
+                "Víkingur Ólafsson"
+              ],
+              "album_titles": [
+                "Mozart & Contemporaries"
+              ],
+              "album_ids": [
+                "195406375"
+              ],
+              "nl_usage_rules": {
+                "countryCode": "NL",
+                "paid": [],
+                "subscription": [
+                  "STREAM",
+                  "DJ"
+                ],
+                "free": [],
+                "validFrom": "2021-09-03T00:00:00Z"
+              },
+              "export_position": 447,
+              "archive_match": "exact_track_id"
+            },
+            {
+              "position": 448,
+              "id": "195406385",
+              "item_id": "e15d62c8-4e22-4a73-84d5-8424873b88e4",
+              "title": "Haydn: Piano Sonata in B Minor, Hob.XVI:32: III. Finale. Presto",
+              "isrc": "DEN962100690",
+              "duration": "PT2M9S",
+              "artists": [
+                "Víkingur Ólafsson"
+              ],
+              "album_titles": [
+                "Mozart & Contemporaries"
+              ],
+              "album_ids": [
+                "195406375"
+              ],
+              "nl_usage_rules": {
+                "countryCode": "NL",
+                "paid": [],
+                "subscription": [
+                  "STREAM",
+                  "DJ"
+                ],
+                "free": [],
+                "validFrom": "2021-09-03T00:00:00Z"
+              },
+              "export_position": 448,
+              "archive_match": "exact_track_id"
+            }
+          ]
+        },
+        {
+          "unit_id": "P182",
+          "composer": "Joseph Haydn",
+          "composer_id": "cb25dd190f9643b7a9dfdb60f14ad8b3",
+          "title": "Sonata No. 47 in B Minor, Hob. XVI.32",
+          "positions": [
+            651,
+            652,
+            653
+          ],
+          "disposition": "recommendation_choice",
+          "work_id": "cb25dd190f9643b7a9dfdb60f14ad8b3-piano-sonata-in-b-minor-hob-xvi-32",
+          "performers": [
+            {
+              "name": "Jean-Efflam Bavouzet",
+              "role": "piano"
+            }
+          ],
+          "evidence": [
+            {
+              "file": "side materials/Music collection/Piano Tidal.xlsx",
+              "sheet": "Piano",
+              "archive_positions": [
+                663,
+                664,
+                665
+              ]
+            }
+          ],
+          "reason": "A different interpretation of this Work is already recommended or also selected in Piano. Explicit curator choice required.",
+          "review_classification": "curator_required",
+          "curator_issue": "https://github.com/LuHoo/classical_music/issues/264",
+          "tracks": [
+            {
+              "position": 651,
+              "id": "196691837",
+              "item_id": "1dc57ba2-78f3-4693-83b5-9b8973ee0e24",
+              "title": "Sonata No. 47 in B Minor, Hob. XVI: 32: I. Allegro moderato",
+              "isrc": "GBLWD1001904",
+              "duration": "PT6M33S",
+              "artists": [
+                "Jean-Efflam Bavouzet"
+              ],
+              "album_titles": [
+                "Haydn: Piano Sonatas, Vol. 1"
+              ],
+              "album_ids": [
+                "196691833"
+              ],
+              "nl_usage_rules": {
+                "countryCode": "NL",
+                "paid": [],
+                "subscription": [],
+                "free": []
+              },
+              "export_position": 663,
+              "archive_match": "exact_isrc"
+            },
+            {
+              "position": 652,
+              "id": "196691838",
+              "item_id": "d473310a-8c43-4a15-88d8-2487f02c9d1a",
+              "title": "Sonata No. 47 in B Minor, Hob. XVI: 32: II. Menuet",
+              "isrc": "GBLWD1001905",
+              "duration": "PT3M56S",
+              "artists": [
+                "Jean-Efflam Bavouzet"
+              ],
+              "album_titles": [
+                "Haydn: Piano Sonatas, Vol. 1"
+              ],
+              "album_ids": [
+                "196691833"
+              ],
+              "nl_usage_rules": {
+                "countryCode": "NL",
+                "paid": [],
+                "subscription": [],
+                "free": []
+              },
+              "export_position": 664,
+              "archive_match": "exact_isrc"
+            },
+            {
+              "position": 653,
+              "id": "196691839",
+              "item_id": "f1738cd1-c5ca-42b2-a11b-6b4c90855e12",
+              "title": "Sonata No. 47 in B Minor, Hob. XVI: 32: III. Finale. Presto",
+              "isrc": "GBLWD1001906",
+              "duration": "PT4M24S",
+              "artists": [
+                "Jean-Efflam Bavouzet"
+              ],
+              "album_titles": [
+                "Haydn: Piano Sonatas, Vol. 1"
+              ],
+              "album_ids": [
+                "196691833"
+              ],
+              "nl_usage_rules": {
+                "countryCode": "NL",
+                "paid": [],
+                "subscription": [],
+                "free": []
+              },
+              "export_position": 665,
+              "archive_match": "exact_isrc"
+            }
+          ]
+        }
+      ],
+      "performances": {},
+      "new_records": [],
+      "readme": "# Piano — complete playlist intake\n\nAll **2,119 source occurrences** in the complete [4 October 2026 snapshot](https://github.com/LuHoo/classical_music/actions/runs/37204697629) are accounted for. The final position is 2119; no unprocessed tail remains. Of these occurrences, 2,076 join the older Piano spreadsheet; the other 43 are independently supported by the labels. The user authorised this complete playlist as accepted curation, subject to identity checks and explicit choices for alternatives.\n\n| Result | Work/recording groups | Source occurrences |\n|---|---:|---:|\n| import_new | 669 | 1688 |\n| reuse_existing | 53 | 385 |\n| recommendation_choice | 4 | 8 |\n| not_selected | 22 | 22 |\n| identity_unresolved | 7 | 16 |\n\nNew records: {'persons': 8, 'work-groups': 655, 'works': 664, 'performances': 669}. Existing recordings reused: 53. A group is one Work/interpretation, not one track. Hough’s embellished Op. 9 No. 2 is an additional take in the same Work choice.\n\n## Curator choices\n\n**3 pending Work-level issues:** two confirmed Work comparisons (Mompou and Haydn), plus Mozart K. 397 requiring version research before the choice. Answer with the issue number and a P-code, `existing` where offered, `geen`, or `unresolved`. One decision covers all movements; only exceptions or doubt need a short explanation. No CSV editing or per-track report is required. Different performance profiles require an explicit decision.\n\n| Issue | Composer — Work | Piano alternatives |\n|---|---|---|\n| [#263](https://github.com/LuHoo/classical_music/issues/263) | Frederic Mompou — Cançó de bressol (Chanson de berceau) | P078, P081 |\n| [#264](https://github.com/LuHoo/classical_music/issues/264) | Joseph Haydn — Piano Sonata in B Minor, Hob.XVI.32 | P093, P182 |\n| [#265](https://github.com/LuHoo/classical_music/issues/265) | Frédéric Chopin — Nocturne, Op. 9 No. 1 | P313, P564  **Resolved: Goerner** |\n| [#266](https://github.com/LuHoo/classical_music/issues/266) | Frédéric Chopin — Nocturne, Op. 9 No. 2 | P314, P565, P586  **Resolved: Goerner** |\n| [#267](https://github.com/LuHoo/classical_music/issues/267) | Frédéric Chopin — Nocturne, Op. 9 No. 3 | P315, P566  **Resolved: Goerner** |\n| [#268](https://github.com/LuHoo/classical_music/issues/268) | Frédéric Chopin — Nocturne, Op. 15 No. 1 | P316, P567  **Resolved: Goerner** |\n| [#269](https://github.com/LuHoo/classical_music/issues/269) | Frédéric Chopin — Nocturne, Op. 15 No. 2 | P317, P568  **Resolved: Goerner** |\n| [#270](https://github.com/LuHoo/classical_music/issues/270) | Frédéric Chopin — Nocturne, Op. 15 No. 3 | P318, P569  **Resolved: Goerner** |\n| [#271](https://github.com/LuHoo/classical_music/issues/271) | Frédéric Chopin — Nocturne, Op. 27 No. 1 | P319, P570  **Resolved: Goerner** |\n| [#272](https://github.com/LuHoo/classical_music/issues/272) | Frédéric Chopin — Nocturne, Op. 27 No. 2 | P320, P571  **Resolved: Goerner** |\n| [#273](https://github.com/LuHoo/classical_music/issues/273) | Frédéric Chopin — Nocturne, Op. 32 No. 1 | P321, P572  **Resolved: Goerner** |\n| [#274](https://github.com/LuHoo/classical_music/issues/274) | Frédéric Chopin — Nocturne, Op. 32 No. 2 | P322, P573  **Resolved: Goerner** |\n| [#275](https://github.com/LuHoo/classical_music/issues/275) | Frédéric Chopin — Nocturne, Op. 37 No. 1 | P323, P574  **Resolved: Goerner** |\n| [#276](https://github.com/LuHoo/classical_music/issues/276) | Frédéric Chopin — Nocturne, Op. 37 No. 2 | P324, P575  **Resolved: Goerner** |\n| [#277](https://github.com/LuHoo/classical_music/issues/277) | Frédéric Chopin — Nocturne, Op. 48 No. 1 | P325, P576  **Resolved: Goerner** |\n| [#278](https://github.com/LuHoo/classical_music/issues/278) | Frédéric Chopin — Nocturne, Op. 48 No. 2 | P326, P577  **Resolved: Goerner** |\n| [#279](https://github.com/LuHoo/classical_music/issues/279) | Frédéric Chopin — Nocturne, Op. 55 No. 1 | P327, P578  **Resolved: Goerner** |\n| [#280](https://github.com/LuHoo/classical_music/issues/280) | Frédéric Chopin — Nocturne, Op. 55 No. 2 | P328, P579  **Resolved: Goerner** |\n| [#281](https://github.com/LuHoo/classical_music/issues/281) | Frédéric Chopin — Nocturne, Op. 62 No. 1 | P329, P580  **Resolved: Goerner** |\n| [#282](https://github.com/LuHoo/classical_music/issues/282) | Frédéric Chopin — Nocturne, Op. 62 No. 2 | P330, P581  **Resolved: Goerner** |\n| [#283](https://github.com/LuHoo/classical_music/issues/283) | Frédéric Chopin — Nocturne, Op. 72 No. 1 | P331, P583  **Resolved: Goerner** |\n| [#284](https://github.com/LuHoo/classical_music/issues/284) | Frédéric Chopin — Nocturne in C-Sharp Minor, KK IVa/16 | P332, P582  **Resolved: Goerner** |\n| [#285](https://github.com/LuHoo/classical_music/issues/285) | Frédéric Chopin — Nocturne in C Minor, KK IVb/8 (attributed to Chopin) | P333, P584  **Resolved: Goerner** |\n| [#286](https://github.com/LuHoo/classical_music/issues/286) | Felix Mendelssohn — Song Without Words, MWV U 98 | P608; existing  **Resolved: both, distinct profiles** |\n| [#287](https://github.com/LuHoo/classical_music/issues/287) | Felix Mendelssohn — Song Without Words, MWV U 110 | P610; existing  **Resolved: both, distinct profiles** |\n| [#288](https://github.com/LuHoo/classical_music/issues/288) | Felix Mendelssohn — Song Without Words, MWV U 145 | P629; existing  **Resolved: both, distinct profiles** |\n| [#289](https://github.com/LuHoo/classical_music/issues/289) | Felix Mendelssohn — Song Without Words, MWV U 102 | P630; existing  **Resolved: both, distinct profiles** |\n| [#290](https://github.com/LuHoo/classical_music/issues/290) | Felix Mendelssohn — Song Without Words, MWV U 190 | P645; existing  **Resolved: both, distinct profiles** |\n| [#291](https://github.com/LuHoo/classical_music/issues/291) | Felix Mendelssohn — Song Without Words, MWV U 155 | P647; existing  **Resolved: both, distinct profiles** |\n| [#292](https://github.com/LuHoo/classical_music/issues/292) | Felix Mendelssohn — Song Without Words, MWV U 162 | P648; existing  **Resolved: both, distinct profiles** |\n| [Mozart K. 397](https://github.com/LuHoo/classical_music/issues/293) | Fragment / completed ending: research before selection | P090, P379 |\n\nUnchosen alternatives remain outside canonical Performance data. Existing recommendations stay in place. Neither an issue nor playlist membership authorises automatically choosing between alternatives. Applying a later decision requires its explicit source and a separate reviewed change. No Tidal playlist writes are made.\n\n## Source questions\n\n[Five additional source/version cases](https://github.com/LuHoo/classical_music/issues/294) cover Satie’s Nocturnes, Schubert D. 459/459A, two Haydn variants and the anonymous Nocturne oublié. Together with the two K. 397 recordings, seven units remain outside canonical data. [Concrete research list](identity-research.md).\n\n## Identity and coverage review\n\n- Corrected attributions: Casella’s Ravel pastiche, Nicoara’s Quasi sonatina, Johann Strauss’s Schatz-Walzer, Schumann’s canonic studies and Schubert’s Valses nobles transcription. Source credits are retained unchanged in the manifest.\n- Known independent arrangements have specific Works, reusing the family when it exists. Scharwenka/Beethoven interpretations reuse the existing arrangement Works. Orchestral Ravel/Grieg recommendations are not replaced by solo versions.\n- Non-adjacent movements are gathered into their Work, including Debussy, Busoni and Poulenc. All source positions remain intact; selected opening movements supply listening links when they occur later in the playlist.\n- Debussy’s first Arabesque appears twice as different release IDs with the same ISRC. Both occurrences belong to the same interpretation; this is not a musical choice.\n- Excerpts are explicit, including the lone Bach–Busoni Toccata and the incomplete selection from Dohnányi’s Suite en valse. Unselected album tracks are not imported.\n- Three erroneous legacy Brahms opus-set titles (117, 118, 119) and their family titles are corrected using the label track list. Stable IDs, performers and existing recommendation links are preserved.\n- Exact trusted tracks or a reviewed same-release anchor plus compatible Work identity support reuse. Legacy anchors sometimes point to another Work on the same album; those links are not rewritten here.\n- Usage rules for NL are retained as catalogue evidence; playback was not tested. No publication or merge is performed by this import.\n\n## Verification\n\n`python scripts/check_piano_import.py` checks complete membership, metadata fingerprints, canonical references, curator gates and generated links/excerpts. Use the canonical validator and focused regression tests as described in [review notes](review.md). The [machine-readable manifest](snapshot-2026-10-04.json) records every source occurrence, Work/recording assignment and issue. Raw API output remains in the workflow artifact, outside canonical data.\n\n## Original and arrangement decisions — 4 October 2026\n\n[#297](https://github.com/LuHoo/classical_music/pull/297) applies Lucas's decision in #287 and his extension to equivalent cases. The seven Mendelssohn comparisons (#286–#292) now retain Shelley's original solo piano performances and Ottensamer/Wang's clarinet and piano arrangements in distinct explicit profiles. `resolved_choices` links all source occurrences to decision comments and the [implementation report](../../curator-decisions/original-arrangement-2026-10-04.json).\n\n## Goerner decisions — 4 October 2026\n\nLucas selected Nelson Goerner in all issues #265–#285. Each decision is linked to its issue comment in `resolved_choices`. The 21 Goerner performances are recommended; 22 alternative units remain traceable with disposition `not_selected`, including the additional embellished Hough take of Op. 9 No. 2. All 2,119 original source occurrences and their raw metadata remain unchanged.\n"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+id: "igor-stravinsky-feu-dartifice-op-4-k-007-work"
+work_group_id: "igor-stravinsky-feu-dartifice-op-4-k-007-group"
+composer_id: "igor-stravinsky"
+title: "Feu d'artifice"
+source:
+  file: "docs/stravinsky.md"
+  line: "63"
+catalogue:
+  opus: "Op. 4"
+  k: "K 007"
+date_text: "1908"
+category: "Orchestral"

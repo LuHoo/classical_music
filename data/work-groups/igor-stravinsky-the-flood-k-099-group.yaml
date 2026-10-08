@@ -1,0 +1,8 @@
+id: "igor-stravinsky-the-flood-k-099-group"
+composer_id: "igor-stravinsky"
+title: "The Flood"
+source:
+  file: "docs/stravinsky.md"
+  line: "174"
+catalogue:
+  k: "K 099"

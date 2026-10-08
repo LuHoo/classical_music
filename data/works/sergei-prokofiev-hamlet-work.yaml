@@ -1,0 +1,11 @@
+id: sergei-prokofiev-hamlet-work
+work_group_id: sergei-prokofiev-hamlet-group
+composer_id: sergei-prokofiev
+title: Hamlet
+source:
+  file: docs/prokofiev.md
+  line: '136'
+catalogue:
+  op: Op. 77
+date_text: 1937–38
+category: Orchestral

@@ -1,0 +1,16 @@
+id: johann-sebastian-bach-concerto-for-flute-violin-harpsichord-and-orchestra-triple-concerto-in-a-min-work-francesco-corti-il-pomo-d-oro
+work_id: johann-sebastian-bach-concerto-for-flute-violin-harpsichord-and-orchestra-triple-concerto-in-a-min-work
+performers:
+- artist_id: francesco-corti
+  name: Francesco Corti
+  role: performer
+- artist_id: il-pomo-d-oro
+  name: Il Pomo d'Oro
+  role: performer
+source_performer_text: Francesco Corti, Il Pomo d'Oro
+links:
+  tidal:
+    url: https://tidal.com/browse/track/305308966?u
+source:
+  file: /Users/Lucas_new/.codex/.chatgpt-projects/g-p-6a500123ac548191ab37db95c0d285a2/classical_music/docs/bachJS.md
+  line: '18'

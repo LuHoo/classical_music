@@ -1,0 +1,11 @@
+id: sergei-prokofiev-suite-from-egyptian-nights-work
+work_group_id: sergei-prokofiev-suite-from-egyptian-nights-group
+composer_id: sergei-prokofiev
+title: Suite from Egyptian Nights
+source:
+  file: docs/prokofiev.md
+  line: '108'
+catalogue:
+  op: Op. 61
+date_text: '1938'
+category: Orchestral

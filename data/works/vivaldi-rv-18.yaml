@@ -1,0 +1,10 @@
+id: 03dd4162171241d691970dfe3ec53d2c
+work_group_id: 61839befc82c4a6abf0536182f609596
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Sonata, RV 18
+catalogue:
+  rv: RV 18
+  opus: Op. 5
+source:
+  file: docs/vivaldi.md
+  line: '20'

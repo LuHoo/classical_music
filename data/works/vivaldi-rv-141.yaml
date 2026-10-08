@@ -1,0 +1,9 @@
+id: ee3ca8030067406689a455bb620324e8
+work_group_id: c234df0529794238ab7275c318e5a7e1
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Concerto for strings, RV 141
+catalogue:
+  rv: RV 141
+source:
+  url: https://vivaldiedition.net/portfolio/vol-13-concerti-per-archi-2004/
+  file: reports/vivaldi-naive-edition/catalogue.json

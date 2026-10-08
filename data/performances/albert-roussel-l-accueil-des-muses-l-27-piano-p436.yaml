@@ -1,0 +1,13 @@
+id: albert-roussel-l-accueil-des-muses-l-27-piano-p436
+work_id: albert-roussel-l-accueil-des-muses-l-27
+performers:
+  - name: Tomer Lev
+    role: piano
+links:
+  tidal:
+    url: https://tidal.com/track/162848500
+release:
+  album_title: Le tombeau de Claude Debussy
+source:
+  file: reports/playlist-import/piano/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/82853f8e-4fd6-42b6-b0a7-230da5ee86a1

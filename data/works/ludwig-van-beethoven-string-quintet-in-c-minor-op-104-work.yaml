@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-string-quintet-in-c-minor-op-104-work"
+work_group_id: "ludwig-van-beethoven-string-quintet-in-c-minor-op-104-group"
+composer_id: "ludwig-van-beethoven"
+title: "String Quintet in C minor"
+source:
+  file: "docs/beethoven.md"
+  line: "264"
+catalogue:
+  opus: "Op. 104"
+date_text: "1817–10 December 1818"
+category: "Chamber"

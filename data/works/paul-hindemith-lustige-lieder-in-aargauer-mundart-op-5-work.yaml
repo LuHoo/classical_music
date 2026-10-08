@@ -1,0 +1,11 @@
+id: "paul-hindemith-lustige-lieder-in-aargauer-mundart-op-5-work"
+work_group_id: "paul-hindemith-lustige-lieder-in-aargauer-mundart-op-5-group"
+composer_id: "paul-hindemith"
+title: "Lustige Lieder in Aargauer Mundart"
+source:
+  file: "docs/hindemith.md"
+  line: "146"
+catalogue:
+  opus: "Op. 5"
+date_text: "1914–16"
+category: "Vocal -- selection"

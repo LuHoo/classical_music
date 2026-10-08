@@ -1,0 +1,13 @@
+id: arthur-honegger-symphony-no-3-liturgique-playlist-1743
+work_id: arthur-honegger-symphony-no-3-liturgique
+performers:
+- name: Charles Dutoit
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/483247
+release:
+  album_title: 'Honegger : Symphonies Nos 1 - 5, Pacific 231 & Rugby  -  Apex'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

@@ -1,0 +1,13 @@
+id: claude-debussy-children-s-corner-arr-a-caplet-for-orchestra-playlist-2610
+work_id: claude-debussy-children-s-corner-arr-a-caplet-for-orchestra
+performers:
+- name: Orchestre National des Pays de la Loire
+- name: Pascal Rophé
+links:
+  tidal:
+    url: https://tidal.com/track/338576446
+release:
+  album_title: Debussy Orchestrated
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

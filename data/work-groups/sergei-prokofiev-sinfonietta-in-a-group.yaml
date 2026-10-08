@@ -1,0 +1,7 @@
+id: sergei-prokofiev-sinfonietta-in-a-group
+composer_id: sergei-prokofiev
+title: Sinfonietta in A
+source:
+  file: docs/prokofiev.md
+  line: '16'
+description: Groups the original and revised versions of Prokofiev's Sinfonietta.

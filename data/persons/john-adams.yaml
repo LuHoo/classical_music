@@ -1,0 +1,7 @@
+id: john-adams
+name: John Adams
+roles:
+- composer
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://www.nonesuch.com/albums/collected-works

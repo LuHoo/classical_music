@@ -1,0 +1,13 @@
+id: "ludwig-van-beethoven-symphony-no-6-pastoral-in-f-major-op-68-work-2-tessa-uys-ben-schoeman"
+work_id: "ludwig-van-beethoven-symphony-no-6-pastoral-in-f-major-op-68-work-2"
+performers:
+  - name: "Tessa Uys"
+    role: "performer"
+  - name: "Ben Schoeman"
+    role: "conductor"
+links:
+  tidal:
+    url: "https://tidal.com/browse/track/313838730"
+source:
+  file: "docs/beethoven.md"
+  line: "494"

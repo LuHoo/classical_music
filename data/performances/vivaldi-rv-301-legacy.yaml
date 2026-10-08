@@ -1,0 +1,14 @@
+id: d84ce88fb8e94d8ebe107881a88fdca8
+work_id: e8712f7b631e40868fa8991030df1e8a
+performers:
+- name: Rachel Podger
+  role: performer
+- name: Arte dei Suonatori
+  role: performer
+links:
+  tidal:
+    url: http://www.tidal.com/track/269505628
+source:
+  file: docs/vivaldi.md
+  line: '18'
+notes: Existing curator recommendation retained pending comparison with the Naïve Edition where applicable.

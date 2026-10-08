@@ -1,0 +1,17 @@
+id: erich-wolfgang-korngold-violin-concerto-playlist-679
+work_id: erich-wolfgang-korngold-violin-concerto
+performers:
+- name: John Wilson
+  role: performer
+- name: RTÉ Concert Orchestra
+  role: performer
+- name: Andrew Haveron
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/196816636
+release:
+  album_title: 'Korngold: Violin Concerto & String Sextet'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

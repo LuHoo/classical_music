@@ -1,0 +1,11 @@
+id: wolfgang-amadeus-mozart-serenade-colloredo-work
+work_group_id: wolfgang-amadeus-mozart-serenade-colloredo-group
+composer_id: wolfgang-amadeus-mozart
+title: Serenade Colloredo
+source:
+  file: docs/mozart.md
+  line: '150'
+catalogue:
+  k: K. 203
+date_text: https://tidal.com/browse/track/294065326?u
+category: Serenades

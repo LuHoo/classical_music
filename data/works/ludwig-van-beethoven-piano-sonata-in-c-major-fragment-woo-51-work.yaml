@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-piano-sonata-in-c-major-fragment-woo-51-work"
+work_group_id: "ludwig-van-beethoven-piano-sonata-in-c-major-fragment-woo-51-group"
+composer_id: "ludwig-van-beethoven"
+title: "Piano Sonata in C major, (fragment)"
+source:
+  file: "docs/beethoven.md"
+  line: "326"
+catalogue:
+  woo: "WoO 51"
+date_text: "1797–1798"
+category: "Piano"

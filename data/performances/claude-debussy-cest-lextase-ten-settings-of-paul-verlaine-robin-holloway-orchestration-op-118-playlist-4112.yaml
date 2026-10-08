@@ -1,0 +1,16 @@
+id: 
+  claude-debussy-cest-lextase-ten-settings-of-paul-verlaine-robin-holloway-orchestration-op-118-playlist-4112
+work_id: 
+  claude-debussy-cest-lextase-ten-settings-of-paul-verlaine-robin-holloway-orchestration-op-118
+performers:
+- name: Vannina Santoni
+- name: Orchestre philharmonique de Radio France
+- name: Mikko Franck
+links:
+  tidal:
+    url: https://tidal.com/track/288989768
+release:
+  album_title: "Debussy: C'est l'extase - La mer"
+source:
+  file: reports/playlist-import/best-classical/window-4001-5518.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

@@ -1,0 +1,10 @@
+id: 97bba43e4ef34a7985e9d4c8765d6cb0
+work_group_id: 0830632873334b89a5ca9d1c573e2d6e
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 374
+catalogue:
+  rv: RV 374
+  opus: Op. 7
+source:
+  file: docs/vivaldi.md
+  line: '24'

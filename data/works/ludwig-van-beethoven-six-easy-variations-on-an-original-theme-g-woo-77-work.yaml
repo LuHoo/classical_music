@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-six-easy-variations-on-an-original-theme-g-woo-77-work"
+work_group_id: "ludwig-van-beethoven-six-easy-variations-on-an-original-theme-g-woo-77-group"
+composer_id: "ludwig-van-beethoven"
+title: "Six easy variations on an original theme, G"
+source:
+  file: "docs/beethoven.md"
+  line: "400"
+catalogue:
+  woo: "WoO 77"
+date_text: "1800"
+category: "Piano"

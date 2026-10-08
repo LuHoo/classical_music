@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-variations-for-cello-and-piano-on-bei-mannern-welche-liebe-fuhlen-woo-group"
+composer_id: "ludwig-van-beethoven"
+title: "Variations for cello and piano on \"Bei Männern, welche Liebe fühlen\""
+source:
+  file: "docs/beethoven.md"
+  line: "194"
+catalogue:
+  woo: "WoO 46"

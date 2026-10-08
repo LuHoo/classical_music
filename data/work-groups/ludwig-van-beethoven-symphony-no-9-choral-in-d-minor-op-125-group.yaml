@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-symphony-no-9-choral-in-d-minor-op-125-group"
+composer_id: "ludwig-van-beethoven"
+title: "Symphony No. 9 \"Choral\" in D minor"
+source:
+  file: "docs/beethoven.md"
+  line: "92"
+catalogue:
+  opus: "Op. 125"

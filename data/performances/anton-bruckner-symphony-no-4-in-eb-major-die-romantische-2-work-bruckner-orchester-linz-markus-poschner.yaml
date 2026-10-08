@@ -1,0 +1,21 @@
+id: anton-bruckner-symphony-no-4-in-eb-major-die-romantische-2-work-bruckner-orchester-linz-markus-poschner
+work_id: anton-bruckner-symphony-no-4-in-eb-major-die-romantische-3-work
+performers:
+- artist_id: bruckner-orchester-linz
+  name: Bruckner Orchester Linz
+  role: performer
+- artist_id: markus-poschner
+  name: Markus Poschner
+  role: conductor
+source_performer_text: Bruckner Orchester Linz, Markus Poschner
+links:
+  tidal:
+    url: https://tidal.com/browse/track/384348624?u
+source:
+  file: docs/bruckner.md
+  line: '44'
+  url: https://capriccio.at/bruckner24-4-the-complete-versions-edition
+notes: >
+  Complete second version (1878–1880, 1881 performance text), edition Benjamin
+  Korstvedt. The historical Performance ID is retained after correcting its
+  Work assignment; it does not identify the Volksfest-finale version.

@@ -1,0 +1,15 @@
+id: "ludwig-van-beethoven-violin-concerto-in-c-major-woo-5-work-veronika-eberle-lso-sir-simon-rattle"
+work_id: "ludwig-van-beethoven-violin-concerto-in-c-major-woo-5-work"
+performers:
+  - name: "Veronika Eberle"
+    role: "performer"
+  - name: "LSO"
+    role: "orchestra"
+  - name: "Sir Simon Rattle"
+    role: "conductor"
+links:
+  tidal:
+    url: "http://www.tidal.com/track/277633824"
+source:
+  file: "docs/beethoven.md"
+  line: "16"

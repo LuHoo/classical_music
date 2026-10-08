@@ -1,0 +1,11 @@
+id: "johann-sebastian-bach-chorale-setting-herr-gott-nun-schleu-den-himmel-auf-work"
+work_group_id: "johann-sebastian-bach-chorale-setting-herr-gott-nun-schleu-den-himmel-auf-group"
+composer_id: "johann-sebastian-bach"
+title: "Chorale setting \"Herr Gott, nun schleuß den Himmel auf\""
+source:
+  file: "docs/bachJS.md"
+  line: "90"
+catalogue:
+  bwv: "BWV 617"
+date_text: "Orgelbüchlein No. 19"
+category: "Orchestral arrangements"

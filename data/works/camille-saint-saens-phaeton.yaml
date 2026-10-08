@@ -1,0 +1,9 @@
+id: camille-saint-saens-phaeton
+work_group_id: camille-saint-saens-phaeton-group
+composer_id: camille-saint-saens
+title: Phaéton
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://www.harmoniamundi.com/en/albums/saint-saens-symphonic-poems/
+catalogue:
+  opus: Op. 39

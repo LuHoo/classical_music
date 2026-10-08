@@ -1,0 +1,14 @@
+id: franz-schubert-piano-sonata-no-6-in-e-minor-d-566-piano-p043
+work_id: franz-schubert-piano-sonata-no-6-in-e-minor-d-566
+performers:
+  - name: William Youn
+    role: piano
+links:
+  tidal:
+    url: https://tidal.com/track/251519218
+release:
+  album_title: 'Schubert: Piano Sonatas III'
+source:
+  file: reports/playlist-import/piano/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/82853f8e-4fd6-42b6-b0a7-230da5ee86a1
+excerpt: Two selected movements

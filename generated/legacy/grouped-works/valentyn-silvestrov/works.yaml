@@ -1,0 +1,588 @@
+composer_id: valentyn-silvestrov
+source_note: >-
+  Data-first pilot for a composer not yet represented by a markdown page in the collection.
+  Work selection is based on commonly listed principal works and can be refined before
+  generating docs/silvestrov.md.
+works:
+  - id: silvestrov-symphony-1
+    composer_id: valentyn-silvestrov
+    canonical_title: Symphony No. 1
+    localized_titles:
+      en: Symphony No. 1
+      nl: Symfonie nr. 1
+    year: 1963, rev. 1974
+    category: orchestral
+    aliases:
+      - Symphony No. 1
+      - Symphony 1
+      - First Symphony
+      - Symfonie nr. 1
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: silvestrov-classical-overture
+    composer_id: valentyn-silvestrov
+    canonical_title: Classical Overture
+    localized_titles:
+      en: Classical Overture
+      nl: Classical Overture
+    year: 1964
+    category: orchestral
+    aliases:
+      - Classical Overture
+      - Klassieke ouverture
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: silvestrov-monodia
+    composer_id: valentyn-silvestrov
+    canonical_title: Monodia
+    localized_titles:
+      en: Monodia
+      nl: Monodia
+    year: 1965
+    category: orchestral
+    aliases:
+      - Monodia
+      - Monodia for piano and orchestra
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: silvestrov-spectres
+    composer_id: valentyn-silvestrov
+    canonical_title: Spectres
+    localized_titles:
+      en: Spectres
+      nl: Spectres
+    year: 1965
+    category: chamber-orchestra
+    aliases:
+      - Spectres
+      - Spektra
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: silvestrov-symphony-2
+    composer_id: valentyn-silvestrov
+    canonical_title: Symphony No. 2
+    localized_titles:
+      en: Symphony No. 2
+      nl: Symfonie nr. 2
+    year: 1965
+    category: chamber-orchestra
+    aliases:
+      - Symphony No. 2
+      - Symphony 2
+      - Second Symphony
+      - Symphony No. 2 for flute, timpani, piano, and string orchestra
+      - Symfonie nr. 2
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: silvestrov-symphony-3-eschatophony
+    composer_id: valentyn-silvestrov
+    canonical_title: Symphony No. 3, Eschatophony
+    localized_titles:
+      en: Symphony No. 3, Eschatophony
+      nl: Symfonie nr. 3, Eschatophony
+    year: 1966
+    category: orchestral
+    aliases:
+      - Symphony No. 3
+      - Symphony 3
+      - Third Symphony
+      - Eschatophony
+      - Eschatophonie
+      - Symphony No. 3, Eschatophony
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: silvestrov-hymn
+    composer_id: valentyn-silvestrov
+    canonical_title: Hymn
+    localized_titles:
+      en: Hymn
+      nl: Hymne
+    year: 1968
+    category: orchestral
+    aliases:
+      - Hymn
+      - Hymne
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: silvestrov-poem-liatoshynsky
+    composer_id: valentyn-silvestrov
+    canonical_title: Poem
+    localized_titles:
+      en: Poem
+      nl: Poem
+    year: 1968
+    category: orchestral
+    aliases:
+      - Poem
+      - Poem in memoriam B. N. Liatoshynsky
+      - Poem in memory of Borys Lyatoshynsky
+      - Poem in memoriam Liatoshynsky
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: silvestrov-meditation
+    composer_id: valentyn-silvestrov
+    canonical_title: Meditation
+    localized_titles:
+      en: Meditation
+      nl: Meditatie
+    year: 1972
+    category: orchestral
+    aliases:
+      - Meditation
+      - Meditation for chamber orchestra
+      - Meditatie
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: silvestrov-postludium-piano-orchestra
+    composer_id: valentyn-silvestrov
+    canonical_title: Postludium
+    localized_titles:
+      en: Postludium
+      nl: Postludium
+    year: 1974
+    category: orchestral
+    aliases:
+      - Postludium
+      - Postludium for piano and orchestra
+      - Postlude for piano and orchestra
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: silvestrov-symphony-4
+    composer_id: valentyn-silvestrov
+    canonical_title: Symphony No. 4
+    localized_titles:
+      en: Symphony No. 4
+      nl: Symfonie nr. 4
+    year: 1976
+    category: orchestral
+    aliases:
+      - Symphony No. 4
+      - Symphony 4
+      - Fourth Symphony
+      - Symphony No. 4 for brass instruments and strings
+      - Symfonie nr. 4
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: silvestrov-serenade-chamber-orchestra
+    composer_id: valentyn-silvestrov
+    canonical_title: Serenade for Chamber Orchestra
+    localized_titles:
+      en: Serenade for Chamber Orchestra
+      nl: Serenade for kamerorkest
+    year: 1978
+    category: orchestral
+    aliases:
+      - Serenade for Chamber Orchestra
+      - Serenade
+      - Serenade for chamber orchestra
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: silvestrov-symphony-5
+    composer_id: valentyn-silvestrov
+    canonical_title: Symphony No. 5
+    localized_titles:
+      en: Symphony No. 5
+      nl: Symfonie nr. 5
+    year: 1980-1982
+    category: orchestral
+    aliases:
+      - Symphony No. 5
+      - Symphony 5
+      - Fifth Symphony
+      - Symfonie nr. 5
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: silvestrov-metamusik
+    composer_id: valentyn-silvestrov
+    canonical_title: Metamusik
+    localized_titles:
+      en: Metamusik
+      de: Metamusik
+      nl: Metamusik
+    year: 1992
+    category: orchestral
+    aliases:
+      - Metamusik
+      - Metamusic
+      - Metamusik for piano and orchestra
+      - Metamusic for piano and orchestra
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: silvestrov-symphony-6
+    composer_id: valentyn-silvestrov
+    canonical_title: Symphony No. 6
+    localized_titles:
+      en: Symphony No. 6
+      nl: Symfonie nr. 6
+    year: 1994-1995
+    category: orchestral
+    aliases:
+      - Symphony No. 6
+      - Symphony 6
+      - Sixth Symphony
+      - Symfonie nr. 6
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: silvestrov-dedication-symphony
+    composer_id: valentyn-silvestrov
+    canonical_title: Dedication Symphony
+    localized_titles:
+      en: Dedication Symphony
+      nl: Dedication Symphony
+    year: 1990-1991
+    category: orchestral
+    aliases:
+      - Dedication Symphony
+      - Dedication
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: silvestrov-symphony-7
+    composer_id: valentyn-silvestrov
+    canonical_title: Symphony No. 7
+    localized_titles:
+      en: Symphony No. 7
+      nl: Symfonie nr. 7
+    year: 2002-2003
+    category: orchestral
+    aliases:
+      - Symphony No. 7
+      - Symphony 7
+      - Seventh Symphony
+      - Symfonie nr. 7
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: silvestrov-requiem-for-larissa
+    composer_id: valentyn-silvestrov
+    canonical_title: Requiem for Larissa
+    localized_titles:
+      en: Requiem for Larissa
+      nl: Requiem for Larissa
+    year: 1997-1999
+    category: vocal-and-choral
+    aliases:
+      - Requiem for Larissa
+      - Requiem für Larissa
+      - Requiem pour Larissa
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: silvestrov-silent-songs
+    composer_id: valentyn-silvestrov
+    canonical_title: Silent Songs
+    localized_titles:
+      en: Silent Songs
+      nl: Silent Songs
+    year: 1974-1977
+    category: vocal
+    aliases:
+      - Silent Songs
+      - Stille Lieder
+      - Quiet Songs
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: silvestrov-simple-songs
+    composer_id: valentyn-silvestrov
+    canonical_title: Simple Songs
+    localized_titles:
+      en: Simple Songs
+      nl: Simple Songs
+    category: vocal
+    aliases:
+      - Simple Songs
+      - Simple Songs cycle
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: silvestrov-stufen
+    composer_id: valentyn-silvestrov
+    canonical_title: Stufen
+    localized_titles:
+      de: Stufen
+      en: Steps
+      nl: Stufen
+    category: vocal
+    aliases:
+      - Stufen
+      - Steps
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: silvestrov-maidan-2014
+    composer_id: valentyn-silvestrov
+    canonical_title: Maidan-2014
+    localized_titles:
+      en: Maidan-2014
+      nl: Maidan-2014
+    year: 2014
+    category: vocal-and-choral
+    aliases:
+      - Maidan
+      - Maidan-2014
+      - Maidan 2014
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: silvestrov-prayer-for-ukraine
+    composer_id: valentyn-silvestrov
+    canonical_title: Prayer for Ukraine
+    localized_titles:
+      en: Prayer for Ukraine
+      uk: Молитва за Україну
+      nl: Gebed voor Oekraïne
+    year: 2014
+    category: choral
+    aliases:
+      - Prayer for Ukraine
+      - Gebed voor Oekraïne
+      - Gebet für die Ukraine
+      - Molytva za Ukrayinu
+      - Молитва за Україну
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: silvestrov-diptych
+    composer_id: valentyn-silvestrov
+    canonical_title: Diptych
+    localized_titles:
+      en: Diptych
+      nl: Diptiek
+    category: choral
+    aliases:
+      - Diptych
+      - Diptiek
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: silvestrov-string-quartet-1
+    composer_id: valentyn-silvestrov
+    canonical_title: String Quartet No. 1
+    localized_titles:
+      en: String Quartet No. 1
+      nl: Strijkkwartet nr. 1
+    year: 1974
+    category: chamber
+    aliases:
+      - String Quartet No. 1
+      - String Quartet 1
+      - First String Quartet
+      - Strijkkwartet nr. 1
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: silvestrov-string-quartet-2
+    composer_id: valentyn-silvestrov
+    canonical_title: String Quartet No. 2
+    localized_titles:
+      en: String Quartet No. 2
+      nl: Strijkkwartet nr. 2
+    year: 1988
+    category: chamber
+    aliases:
+      - String Quartet No. 2
+      - String Quartet 2
+      - Second String Quartet
+      - Strijkkwartet nr. 2
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: silvestrov-string-quartet-3
+    composer_id: valentyn-silvestrov
+    canonical_title: String Quartet No. 3
+    localized_titles:
+      en: String Quartet No. 3
+      nl: Strijkkwartet nr. 3
+    year: 2011
+    category: chamber
+    aliases:
+      - String Quartet No. 3
+      - String Quartet 3
+      - Third String Quartet
+      - Strijkkwartet nr. 3
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: silvestrov-piano-quintet
+    composer_id: valentyn-silvestrov
+    canonical_title: Piano Quintet
+    localized_titles:
+      en: Piano Quintet
+      nl: Pianokwintet
+    year: 1961
+    category: chamber
+    aliases:
+      - Piano Quintet
+      - Pianokwintet
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: silvestrov-post-scriptum
+    composer_id: valentyn-silvestrov
+    canonical_title: Post Scriptum
+    localized_titles:
+      en: Post Scriptum
+      nl: Post Scriptum
+    year: 1990
+    category: chamber
+    aliases:
+      - Post Scriptum
+      - Postscriptum
+      - Sonata for violin and piano
+      - Post Scriptum for violin and piano
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: silvestrov-melodies-of-the-moments
+    composer_id: valentyn-silvestrov
+    canonical_title: Melodies of the Moments
+    localized_titles:
+      en: Melodies of the Moments
+      nl: Melodies of the Moments
+    category: piano
+    aliases:
+      - Melodies of the Moments
+      - Melodien der Augenblicke
+      - Melodii momentov
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: silvestrov-bagatelles
+    composer_id: valentyn-silvestrov
+    canonical_title: Bagatelles
+    localized_titles:
+      en: Bagatelles
+      nl: Bagatelles
+    category: piano
+    aliases:
+      - Bagatelles
+      - Bagatellen
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: silvestrov-kitsch-music
+    composer_id: valentyn-silvestrov
+    canonical_title: Kitsch-Music
+    localized_titles:
+      en: Kitsch-Music
+      nl: Kitsch-Music
+    year: 1977
+    category: piano
+    aliases:
+      - Kitsch-Music
+      - Kitsch Music
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: silvestrov-piano-sonata-1
+    composer_id: valentyn-silvestrov
+    canonical_title: Piano Sonata No. 1
+    localized_titles:
+      en: Piano Sonata No. 1
+      nl: Pianosonate nr. 1
+    year: 1972
+    category: piano
+    aliases:
+      - Piano Sonata No. 1
+      - Piano Sonata 1
+      - First Piano Sonata
+      - Pianosonate nr. 1
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: silvestrov-piano-sonata-2
+    composer_id: valentyn-silvestrov
+    canonical_title: Piano Sonata No. 2
+    localized_titles:
+      en: Piano Sonata No. 2
+      nl: Pianosonate nr. 2
+    year: 1975
+    category: piano
+    aliases:
+      - Piano Sonata No. 2
+      - Piano Sonata 2
+      - Second Piano Sonata
+      - Pianosonate nr. 2
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: silvestrov-piano-sonata-3
+    composer_id: valentyn-silvestrov
+    canonical_title: Piano Sonata No. 3
+    localized_titles:
+      en: Piano Sonata No. 3
+      nl: Pianosonate nr. 3
+    year: 1979
+    category: piano
+    aliases:
+      - Piano Sonata No. 3
+      - Piano Sonata 3
+      - Third Piano Sonata
+      - Pianosonate nr. 3
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: silvestrov-naive-music
+    composer_id: valentyn-silvestrov
+    canonical_title: Naive Music
+    localized_titles:
+      en: Naive Music
+      nl: Naive Music
+    category: piano
+    aliases:
+      - Naive Music
+      - Naïve Music
+    authorities:
+      musicbrainz_work_id:
+      wikidata:

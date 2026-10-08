@@ -1,0 +1,9 @@
+id: "gustav-mahler-das-himmlische-leben-work"
+work_group_id: "gustav-mahler-das-himmlische-leben-group"
+composer_id: "gustav-mahler"
+title: "Das himmlische Leben"
+source:
+  file: "docs/mahler.md"
+  line: "36"
+date_text: "Wunderhorn setting later used in Symphony No. 4"
+category: "Wunderhorn period"

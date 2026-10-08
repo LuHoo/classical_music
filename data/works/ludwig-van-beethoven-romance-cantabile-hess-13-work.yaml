@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-romance-cantabile-hess-13-work"
+work_group_id: "ludwig-van-beethoven-romance-cantabile-hess-13-group"
+composer_id: "ludwig-van-beethoven"
+title: "Romance Cantabile"
+source:
+  file: "docs/beethoven.md"
+  line: "20"
+catalogue:
+  hess: "Hess 13"
+date_text: "1786?"
+category: "Orchestral"

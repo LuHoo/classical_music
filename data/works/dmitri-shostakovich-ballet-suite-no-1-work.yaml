@@ -1,0 +1,9 @@
+id: dmitri-shostakovich-ballet-suite-no-1-work
+work_group_id: dmitri-shostakovich-ballet-suite-no-1-group
+composer_id: dmitri-shostakovich
+title: Ballet Suite No. 1
+source:
+  file: docs/shostakovich.md
+  line: '100'
+date_text: 1949, arranged by Levon Atovmyan
+category: Orchestral

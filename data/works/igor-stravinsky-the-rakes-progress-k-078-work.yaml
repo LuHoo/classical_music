@@ -1,0 +1,11 @@
+id: "igor-stravinsky-the-rakes-progress-k-078-work"
+work_group_id: "igor-stravinsky-the-rakes-progress-k-078-group"
+composer_id: "igor-stravinsky"
+title: "The Rake's Progress"
+source:
+  file: "docs/stravinsky.md"
+  line: "25"
+catalogue:
+  k: "K 078"
+date_text: "1951"
+category: "Opera/Theatre"

@@ -1,0 +1,13 @@
+id: henriette-bosmans-cello-sonata-chamber-c377
+work_id: henriette-bosmans-cello-sonata
+performers:
+  - name: Raphael Wallfisch
+  - name: Ed Spanjaard
+links:
+  tidal:
+    url: https://tidal.com/track/439630712
+release:
+  album_title: 'Bosmans: Cello Sonata, Nocturne & Impressions'
+source:
+  file: reports/playlist-import/chamber/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/a2327106-07fd-4433-8bd3-d8a5c251c69a

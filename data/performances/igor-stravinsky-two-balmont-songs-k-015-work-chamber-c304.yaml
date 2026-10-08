@@ -1,0 +1,15 @@
+id: igor-stravinsky-two-balmont-songs-k-015-work-chamber-c304
+work_id: igor-stravinsky-two-balmont-songs-k-015-work
+performers:
+  - name: Alexandra Heath
+  - name: Barbara Hannigan
+  - name: Royal Academy of Music
+  - name: Juilliard School Ensemble
+links:
+  tidal:
+    url: https://tidal.com/track/378000317
+release:
+  album_title: 'Stravinsky: Chamber Works'
+source:
+  file: reports/playlist-import/chamber/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/a2327106-07fd-4433-8bd3-d8a5c251c69a

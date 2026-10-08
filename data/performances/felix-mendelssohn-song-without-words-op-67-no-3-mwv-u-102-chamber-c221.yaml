@@ -1,0 +1,15 @@
+id: felix-mendelssohn-song-without-words-op-67-no-3-mwv-u-102-chamber-c221
+work_id: felix-mendelssohn-song-without-words-op-67-no-3-mwv-u-102
+performers:
+  - name: Andreas Ottensamer
+  - name: Yuja Wang
+links:
+  tidal:
+    url: https://tidal.com/track/105044323
+release:
+  album_title: Blue Hour – Weber, Brahms, Mendelssohn
+source:
+  file: reports/playlist-import/chamber/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/a2327106-07fd-4433-8bd3-d8a5c251c69a
+  curator_decision: https://github.com/LuHoo/classical_music/issues/289#issuecomment-5984118879
+profile: clarinet and piano arrangement

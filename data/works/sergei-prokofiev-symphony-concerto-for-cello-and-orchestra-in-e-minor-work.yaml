@@ -1,0 +1,11 @@
+id: sergei-prokofiev-symphony-concerto-for-cello-and-orchestra-in-e-minor-work
+work_group_id: sergei-prokofiev-symphony-concerto-for-cello-and-orchestra-in-e-minor-group
+composer_id: sergei-prokofiev
+title: Symphony-Concerto for Cello and Orchestra in E minor
+source:
+  file: docs/prokofiev.md
+  line: '214'
+catalogue:
+  op: Op. 125
+date_text: 1950–52
+category: Orchestral

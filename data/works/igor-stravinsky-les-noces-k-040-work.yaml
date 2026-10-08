@@ -1,0 +1,11 @@
+id: "igor-stravinsky-les-noces-k-040-work"
+work_group_id: "igor-stravinsky-les-noces-k-040-group"
+composer_id: "igor-stravinsky"
+title: "Les Noces"
+source:
+  file: "docs/stravinsky.md"
+  line: "37"
+catalogue:
+  k: "K 040"
+date_text: "1914–17 and 1919–23"
+category: "Ballet"

@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-cello-sonata-no-2-in-g-minor-op-5-2-work"
+work_group_id: "ludwig-van-beethoven-cello-sonata-no-2-in-g-minor-op-5-2-group"
+composer_id: "ludwig-van-beethoven"
+title: "Cello Sonata No. 2 in G minor"
+source:
+  file: "docs/beethoven.md"
+  line: "136"
+catalogue:
+  opus: "Op. 5/2"
+date_text: "1796"
+category: "Chamber"

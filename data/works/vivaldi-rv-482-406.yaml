@@ -1,0 +1,10 @@
+id: 59a113f75f7d42e08a3e4687a7308a8d
+work_group_id: bf2ef2da078e4733944164e7226698e6
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Bassoon Concerto (reconstruction), RV 482/406
+catalogue:
+  rv: RV 482/406
+source:
+  url: https://vivaldiedition.net/portfolio/concerti-per-vari-strumenti-ii-2/
+  file: reports/vivaldi-naive-edition/catalogue.json
+version: Reconstruction combining RV 482 and RV 406

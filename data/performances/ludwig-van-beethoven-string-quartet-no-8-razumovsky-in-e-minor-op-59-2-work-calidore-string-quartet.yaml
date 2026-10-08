@@ -1,0 +1,14 @@
+id: "ludwig-van-beethoven-string-quartet-no-8-razumovsky-in-e-minor-op-59-2-work-calidore-string-quartet"
+work_id: "ludwig-van-beethoven-string-quartet-no-8-razumovsky-in-e-minor-op-59-2-work"
+performers:
+  - name: "Calidore String Quartet"
+    role: "ensemble"
+links:
+  tidal:
+    url: "http://www.tidal.com/track/369019684"
+source:
+  file: "docs/beethoven.md"
+  line: "220"
+reviews:
+  gramophone:
+    issue: "2024-10"

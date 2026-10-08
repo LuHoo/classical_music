@@ -1,0 +1,10 @@
+id: 3ba5316df90249cebc56421a9c429cc3
+work_group_id: 58589176cfe9490499dfa6abef6b0399
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 294a
+catalogue:
+  rv: RV 294a
+  opus: Op. 7
+source:
+  file: docs/vivaldi.md
+  line: '24'

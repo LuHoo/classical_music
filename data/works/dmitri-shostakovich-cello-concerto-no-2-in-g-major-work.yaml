@@ -1,0 +1,11 @@
+id: dmitri-shostakovich-cello-concerto-no-2-in-g-major-work
+work_group_id: dmitri-shostakovich-cello-concerto-no-2-in-g-major-group
+composer_id: dmitri-shostakovich
+title: Cello Concerto No. 2 in G major
+source:
+  file: docs/shostakovich.md
+  line: '146'
+catalogue:
+  op: Op. 126
+date_text: '1966'
+category: Orchestral

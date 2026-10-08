@@ -1,0 +1,16 @@
+id: "ludwig-van-beethoven-violin-sonata-no-8-in-g-major-op-30-3-work-antje-weithaas-denes-varjon"
+work_id: "ludwig-van-beethoven-violin-sonata-no-8-in-g-major-op-30-3-work"
+performers:
+  - name: "Antje Weithaas"
+    role: "performer"
+  - name: "Dénes Várjon"
+    role: "conductor"
+links:
+  tidal:
+    url: "http://www.tidal.com/track/322929064"
+source:
+  file: "docs/beethoven.md"
+  line: "202"
+reviews:
+  gramophone:
+    issue: "2024-01"

@@ -1,0 +1,14 @@
+id: 
+  sergei-prokofiev-two-poems-for-female-chorus-and-orchestra-work-bournemouth-symphony-orchestra-kirill-karabits
+work_id: sergei-prokofiev-two-poems-for-female-chorus-and-orchestra-work
+source:
+  file: docs/prokofiev.md
+  line: '20'
+links:
+  tidal:
+    url: https://tidal.com/album/51997314
+performers:
+- name: Bournemouth Symphony Orchestra
+  role: performer
+- name: Kirill Karabits
+  role: performer

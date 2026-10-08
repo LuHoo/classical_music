@@ -1,0 +1,9 @@
+id: "gustav-mahler-symphony-no-3-work"
+work_group_id: "gustav-mahler-symphony-no-3-group"
+composer_id: "gustav-mahler"
+title: "Symphony No. 3"
+source:
+  file: "docs/mahler.md"
+  line: "40"
+date_text: "1894–96"
+category: "Wunderhorn period"

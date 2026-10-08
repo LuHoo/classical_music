@@ -1,0 +1,15 @@
+id: samuel-barber-serenade-op-1-playlist-3146
+work_id: samuel-barber-serenade-op-1
+performers:
+- name: Royal Scottish National Orchestra
+  artist_id: royal-scottish-national-orchestra
+  role: orchestra
+- name: Marin Alsop
+links:
+  tidal:
+    url: https://tidal.com/track/283343158
+release:
+  album_title: 'Barber: Violin Concerto, Music for a Scene from Shelley, Souvenirs & Serenade'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

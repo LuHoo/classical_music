@@ -1,0 +1,10 @@
+id: 00c384c133234a1e901ee111b919b2db
+work_group_id: 2accae3a3c5a415796d26c3b0214c5ac
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Sonata, RV 30
+catalogue:
+  rv: RV 30
+  opus: Op. 5
+source:
+  file: docs/vivaldi.md
+  line: '20'

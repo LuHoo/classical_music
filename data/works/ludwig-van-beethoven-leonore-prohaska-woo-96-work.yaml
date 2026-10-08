@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-leonore-prohaska-woo-96-work"
+work_group_id: "ludwig-van-beethoven-leonore-prohaska-woo-96-group"
+composer_id: "ludwig-van-beethoven"
+title: "\"Leonore Prohaska\""
+source:
+  file: "docs/beethoven.md"
+  line: "84"
+catalogue:
+  woo: "WoO 96"
+date_text: "1815"
+category: "Orchestral"

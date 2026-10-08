@@ -1,0 +1,13 @@
+id: karol-szymanowski-mandragora-playlist-676
+work_id: karol-szymanowski-mandragora
+performers:
+- name: Kazimierz Pustelak/Jan Harazim/Polish Radio Orchestra of Krakow/Antoni Wit
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/2977288
+release:
+  album_title: 'Szymanowski : Mandragora/Stabat mater/Litania do Marii Panny/Demeter'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

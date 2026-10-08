@@ -1,0 +1,14 @@
+id: felix-mendelssohn-piano-trio-no-2-op-66-chamber-c395
+work_id: felix-mendelssohn-piano-trio-no-2-op-66
+performers:
+  - name: Joshua Bell
+  - name: Steven Isserlis
+  - name: Jeremy Denk
+links:
+  tidal:
+    url: https://tidal.com/track/380129770
+release:
+  album_title: Mendelssohn Piano Trios
+source:
+  file: reports/playlist-import/chamber/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/a2327106-07fd-4433-8bd3-d8a5c251c69a

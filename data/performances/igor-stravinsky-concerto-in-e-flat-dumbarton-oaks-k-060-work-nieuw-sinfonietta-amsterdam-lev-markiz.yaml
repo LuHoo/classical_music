@@ -1,0 +1,13 @@
+id: "igor-stravinsky-concerto-in-e-flat-dumbarton-oaks-k-060-work-nieuw-sinfonietta-amsterdam-lev-markiz"
+work_id: "igor-stravinsky-concerto-in-e-flat-dumbarton-oaks-k-060-work"
+performers:
+  - name: "Nieuw Sinfonietta Amsterdam"
+    role: "orchestra"
+  - name: "Lev Markiz"
+    role: "conductor"
+links:
+  tidal:
+    url: "http://www.tidal.com/track/45280439"
+source:
+  file: "docs/stravinsky.md"
+  line: "83"

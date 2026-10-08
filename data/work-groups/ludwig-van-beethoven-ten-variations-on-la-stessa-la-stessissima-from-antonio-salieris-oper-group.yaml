@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-ten-variations-on-la-stessa-la-stessissima-from-antonio-salieris-oper-group"
+composer_id: "ludwig-van-beethoven"
+title: "Ten variations on \"La stessa, la stessissima\" from Antonio Salieri's opera Falstaff, B♭"
+source:
+  file: "docs/beethoven.md"
+  line: "394"
+catalogue:
+  woo: "WoO 73"

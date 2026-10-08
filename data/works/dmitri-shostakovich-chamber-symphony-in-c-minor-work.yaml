@@ -1,0 +1,15 @@
+id: dmitri-shostakovich-chamber-symphony-in-c-minor-work
+work_group_id: dmitri-shostakovich-chamber-symphony-in-c-minor-group
+composer_id: dmitri-shostakovich
+title: Chamber Symphony in C minor
+source:
+  file: docs/shostakovich.md
+  line: '128'
+catalogue:
+  op: Op. 110a
+date_text: https://tidal.com/album/188218275/track/188218278
+category: Orchestral
+external_ids:
+  musicbrainz: d2b4f15b-c7eb-4e0b-b8ce-3ee506b2ee8e
+notes: MusicBrainz identifies Chamber Symphony Op. 110a as an orchestration of String
+  Quartet No. 8 Op. 110; keep as related Work rather than performance-profile evidence.

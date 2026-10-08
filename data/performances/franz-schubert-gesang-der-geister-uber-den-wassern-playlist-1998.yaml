@@ -1,0 +1,20 @@
+id: franz-schubert-gesang-der-geister-uber-den-wassern-playlist-1998
+work_id: franz-schubert-gesang-der-geister-uber-den-wassern
+performers:
+- name: Monteverdi Choir
+  role: choir
+  artist_id: monteverdi-choir
+- name: John Eliot Gardiner
+  role: conductor
+  artist_id: john-eliot-gardiner
+- name: Orchestre Révolutionnaire et Romantique
+  role: orchestra
+  artist_id: orchestre-revolutionnaire-et-romantique
+links:
+  tidal:
+    url: https://tidal.com/track/79497951
+release:
+  album_title: 'Brahms: Symphony No. 2 & Alto Rhapsody'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

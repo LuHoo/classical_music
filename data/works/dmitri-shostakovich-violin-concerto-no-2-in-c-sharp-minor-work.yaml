@@ -1,0 +1,11 @@
+id: dmitri-shostakovich-violin-concerto-no-2-in-c-sharp-minor-work
+work_group_id: dmitri-shostakovich-violin-concerto-no-2-in-c-sharp-minor-group
+composer_id: dmitri-shostakovich
+title: Violin Concerto No. 2 in C-sharp minor
+source:
+  file: docs/shostakovich.md
+  line: '148'
+catalogue:
+  op: Op. 129
+date_text: '1967'
+category: Orchestral

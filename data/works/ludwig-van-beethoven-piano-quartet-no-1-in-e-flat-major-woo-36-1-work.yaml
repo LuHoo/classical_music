@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-piano-quartet-no-1-in-e-flat-major-woo-36-1-work"
+work_group_id: "ludwig-van-beethoven-piano-quartet-no-1-in-e-flat-major-woo-36-1-group"
+composer_id: "ludwig-van-beethoven"
+title: "Piano Quartet No. 1 in E♭ major"
+source:
+  file: "docs/beethoven.md"
+  line: "96"
+catalogue:
+  woo: "WoO 36/1"
+date_text: "1785"
+category: "Chamber"

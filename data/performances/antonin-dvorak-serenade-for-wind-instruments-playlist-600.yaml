@@ -1,0 +1,13 @@
+id: antonin-dvorak-serenade-for-wind-instruments-playlist-600
+work_id: antonin-dvorak-serenade-for-wind-instruments
+performers:
+- name: Orpheus Chamber Orchestra
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/4849438
+release:
+  album_title: 'Dvorak: Serenades opp. 22&44'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

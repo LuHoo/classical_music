@@ -1,0 +1,13 @@
+id: "igor-stravinsky-funeral-song-op-5-k-008-work-orchestre-philharmonique-du-luxembourg-gustavo-gimeno"
+work_id: "igor-stravinsky-funeral-song-op-5-k-008-work"
+performers:
+  - name: "Orchestre Philharmonique du Luxembourg"
+    role: "performer"
+  - name: "Gustavo Gimeno"
+    role: "conductor"
+links:
+  tidal:
+    url: "https://tidal.com/browse/track/366820118?u"
+source:
+  file: "docs/stravinsky.md"
+  line: "65"

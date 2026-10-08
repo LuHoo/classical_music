@@ -1,0 +1,9 @@
+id: sergei-prokofiev-tonya-work
+work_group_id: sergei-prokofiev-tonya-group
+composer_id: sergei-prokofiev
+title: Tonya
+source:
+  file: docs/prokofiev.md
+  line: '146'
+date_text: '1942'
+category: Orchestral

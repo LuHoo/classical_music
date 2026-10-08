@@ -1,0 +1,14 @@
+id: erno-dohnanyi-symphonic-minutes-op-36-playlist-3976
+work_id: erno-dohnanyi-symphonic-minutes-op-36
+performers:
+- name: Matthias Bamert
+- name: BBC Philharmonic Orchestra
+- name: BBC PO
+links:
+  tidal:
+    url: https://tidal.com/track/376256744
+release:
+  album_title: 'Dohnanyi: Symphony No. 2 & Symphonic Minutes'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

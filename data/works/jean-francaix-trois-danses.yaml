@@ -1,0 +1,9 @@
+id: jean-francaix-trois-danses
+work_group_id: jean-francaix-trois-danses-group
+composer_id: jean-francaix
+title: Trois Danses
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://www.naxos.com/CatalogueDetail/?id=CHSA5252
+catalogue:
+  opus: Op. 6

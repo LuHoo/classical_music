@@ -1,0 +1,13 @@
+id: "igor-stravinsky-scherzo-a-la-russe-k-070-work-bbc-philharmonic-andrew-davis"
+work_id: "igor-stravinsky-scherzo-a-la-russe-k-070-work"
+performers:
+  - name: "BBC Philharmonic"
+    role: "orchestra"
+  - name: "Andrew Davis"
+    role: "conductor"
+links:
+  tidal:
+    url: "https://tidal.com/browse/track/376355656?u"
+source:
+  file: "docs/stravinsky.md"
+  line: "93"

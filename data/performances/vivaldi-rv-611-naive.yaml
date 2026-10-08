@@ -1,0 +1,18 @@
+id: 34a268efcdef494ea828dfe5c8246d5a
+work_id: a71d8700c94f466ebc47e9c4a7f7fbaa
+performers:
+- name: Coro e Orchestra Ghislieri
+  role: ensemble
+- name: Giulio Prandi
+  role: conductor
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP8564
+  album_title: Musica sacra per coro e orchestra I
+source:
+  url: https://vivaldiedition.net/portfolio/vol-72-musica-sacra-per-coro-e-orchestra/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: 'The Vivaldi Edition, volume 72. Album page verified 2026-09-28. '
+links:
+  tidal:
+    url: https://tidal.com/album/382776448

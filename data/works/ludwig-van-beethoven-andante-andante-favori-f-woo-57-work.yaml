@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-andante-andante-favori-f-woo-57-work"
+work_group_id: "ludwig-van-beethoven-andante-andante-favori-f-woo-57-group"
+composer_id: "ludwig-van-beethoven"
+title: "Andante (\"Andante favori\"), F"
+source:
+  file: "docs/beethoven.md"
+  line: "448"
+catalogue:
+  woo: "WoO 57"
+date_text: "1803"
+category: "Piano"

@@ -1,0 +1,14 @@
+id: 
+  wolfgang-amadeus-mozart-la-finta-giardiniera-work-overture-manchester-camerata-gabor-takacs-nagy
+work_id: wolfgang-amadeus-mozart-la-finta-giardiniera-work
+source:
+  file: docs/mozart.md
+  line: '38'
+links:
+  tidal:
+    url: http://www.tidal.com/track/376332011
+performers:
+- name: 'Overture: Manchester Camerata'
+  role: performer
+- name: Gábor Takács-Nagy
+  role: performer

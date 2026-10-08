@@ -1,0 +1,18 @@
+id: ferruccio-busoni-eine-lustspielouverture-op-38-bv-245-playlist-3201
+work_id: ferruccio-busoni-eine-lustspielouverture-op-38-bv-245
+performers:
+- name: Neeme Järvi
+  artist_id: neeme-jarvi
+  role: conductor
+- name: BBC Philharmonic
+  artist_id: bbc-po
+  role: orchestra
+- name: BBC PO
+links:
+  tidal:
+    url: https://tidal.com/track/376415118
+release:
+  album_title: 'Busoni: Orchestral Works, Vol. 2'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

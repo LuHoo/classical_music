@@ -1,0 +1,12 @@
+id: "ludwig-van-beethoven-string-quartet-no-16-in-f-major-op-135-work"
+work_group_id: "ludwig-van-beethoven-string-quartet-no-16-in-f-major-op-135-group"
+composer_id: "ludwig-van-beethoven"
+title: "String Quartet No. 16 in F major"
+source:
+  file: "docs/beethoven.md"
+  line: "286"
+catalogue:
+  opus: "Op. 135"
+date_text: "1826–23 March 1828"
+category: "Chamber"
+gem: true

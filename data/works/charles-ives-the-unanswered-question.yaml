@@ -1,0 +1,8 @@
+id: charles-ives-the-unanswered-question
+work_group_id: charles-ives-the-unanswered-question-group
+composer_id: charles-ives
+title: The Unanswered Question
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url:
+    https://charlesives.org/discography?f%5B0%5D=genre_level_2%3A24&f%5B1%5D=genre_level_2%3A26&page=27

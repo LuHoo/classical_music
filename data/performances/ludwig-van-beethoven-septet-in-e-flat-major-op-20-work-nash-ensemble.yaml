@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-septet-in-e-flat-major-op-20-work-nash-ensemble"
+work_id: "ludwig-van-beethoven-septet-in-e-flat-major-op-20-work"
+performers:
+  - name: "Nash Ensemble"
+    role: "ensemble"
+links:
+  tidal:
+    url: "http://www.tidal.com/track/1565655"
+source:
+  file: "docs/beethoven.md"
+  line: "184"

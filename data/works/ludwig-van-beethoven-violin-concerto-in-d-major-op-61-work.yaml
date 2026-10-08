@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-violin-concerto-in-d-major-op-61-work"
+work_group_id: "ludwig-van-beethoven-violin-concerto-in-d-major-op-61-group"
+composer_id: "ludwig-van-beethoven"
+title: "Violin Concerto in D major"
+source:
+  file: "docs/beethoven.md"
+  line: "50"
+catalogue:
+  opus: "Op. 61"
+date_text: "1806"
+category: "Orchestral"

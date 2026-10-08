@@ -1,0 +1,7 @@
+id: julius-rontgen
+name: Julius Röntgen
+roles:
+- composer
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://www.prestomusic.com/classical/products/9253570--rontgen-orchestral-works

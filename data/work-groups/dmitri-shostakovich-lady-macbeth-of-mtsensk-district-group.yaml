@@ -1,0 +1,8 @@
+id: dmitri-shostakovich-lady-macbeth-of-mtsensk-district-group
+composer_id: dmitri-shostakovich
+title: Lady MacBeth of Mtsensk District
+source:
+  file: docs/shostakovich.md
+  line: '40'
+catalogue:
+  op: Op. 29

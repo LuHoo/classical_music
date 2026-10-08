@@ -1,0 +1,9 @@
+id: "paul-hindemith-symphonia-serena-work"
+work_group_id: "paul-hindemith-symphonia-serena-group"
+composer_id: "paul-hindemith"
+title: "Symphonia Serena"
+source:
+  file: "docs/hindemith.md"
+  line: "84"
+date_text: "1946"
+category: "Orchestral"

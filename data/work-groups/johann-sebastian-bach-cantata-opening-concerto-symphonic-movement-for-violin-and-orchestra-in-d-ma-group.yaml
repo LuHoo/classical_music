@@ -1,0 +1,8 @@
+id: "johann-sebastian-bach-cantata-opening-concerto-symphonic-movement-for-violin-and-orchestra-in-d-ma-group"
+composer_id: "johann-sebastian-bach"
+title: "Cantata opening: \"Concerto\" (Symphonic movement for violin and orchestra) in D maj."
+source:
+  file: "docs/bachJS.md"
+  line: "20"
+catalogue:
+  bwv: "BWV 1045"

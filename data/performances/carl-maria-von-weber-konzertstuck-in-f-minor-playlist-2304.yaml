@@ -1,0 +1,13 @@
+id: carl-maria-von-weber-konzertstuck-in-f-minor-playlist-2304
+work_id: carl-maria-von-weber-konzertstuck-in-f-minor
+performers:
+- name: Die Kölner Akademie
+- name: Michael Alexander Willens
+links:
+  tidal:
+    url: https://tidal.com/track/341648422
+release:
+  album_title: 'Weber: Complete Works for Piano & Orchestra'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

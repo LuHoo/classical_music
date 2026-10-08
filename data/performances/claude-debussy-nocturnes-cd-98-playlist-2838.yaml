@@ -1,0 +1,14 @@
+id: claude-debussy-nocturnes-cd-98-playlist-2838
+work_id: claude-debussy-nocturnes-cd-98
+performers:
+- name: Orchestre philharmonique de Radio France
+- name: Mikko Franck
+- name: Maîtrise de Radio France
+links:
+  tidal:
+    url: https://tidal.com/track/215749048
+release:
+  album_title: 'Debussy: La Damoiselle élue, Le martyre de Saint Sébastien & Nocturnes'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

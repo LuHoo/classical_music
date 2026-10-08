@@ -1,0 +1,16 @@
+id: leos-janacek-sinfonietta-playlist-567
+work_id: leos-janacek-sinfonietta
+performers:
+- name: Wiener Philharmoniker
+  role: orchestra
+  artist_id: wiener-philharmoniker
+- name: Sir Charles Mackerras
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/4471563
+release:
+  album_title: 'Janácek: Sinfonietta/Taras Bulba/Mládi etc.'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

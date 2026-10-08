@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-piano-concerto-no-0-in-e-flat-major-woo-4-group"
+composer_id: "ludwig-van-beethoven"
+title: "Piano Concerto No. 0 in E♭ major"
+source:
+  file: "docs/beethoven.md"
+  line: "14"
+catalogue:
+  woo: "WoO 4"

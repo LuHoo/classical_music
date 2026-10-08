@@ -1,0 +1,18 @@
+id: frederick-delius-songs-of-sunset-rt-ii-5-playlist-2854
+work_id: frederick-delius-songs-of-sunset-rt-ii-5
+performers:
+- name: Sally Burgess
+- name: Bryn Terfel
+- name: Waynflete Singers
+- name: Southern Voices
+- name: Bournemouth Symphony Chorus
+- name: Bournemouth Symphony Orchestra
+- name: Richard Hickox
+links:
+  tidal:
+    url: https://tidal.com/track/376421988
+release:
+  album_title: 'Delius: Sea Drift, Songs of Farewell & Songs of Sunset'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

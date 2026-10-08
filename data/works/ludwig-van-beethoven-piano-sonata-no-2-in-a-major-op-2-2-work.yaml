@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-piano-sonata-no-2-in-a-major-op-2-2-work"
+work_group_id: "ludwig-van-beethoven-piano-sonata-no-2-in-a-major-op-2-2-group"
+composer_id: "ludwig-van-beethoven"
+title: "Piano Sonata No. 2 in A major"
+source:
+  file: "docs/beethoven.md"
+  line: "310"
+catalogue:
+  opus: "Op. 2/2"
+date_text: "1794–1795"
+category: "Piano"

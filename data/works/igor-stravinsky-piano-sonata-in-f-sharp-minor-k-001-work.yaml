@@ -1,0 +1,11 @@
+id: "igor-stravinsky-piano-sonata-in-f-sharp-minor-k-001-work"
+work_group_id: "igor-stravinsky-piano-sonata-in-f-sharp-minor-k-001-group"
+composer_id: "igor-stravinsky"
+title: "Piano Sonata in F-sharp minor"
+source:
+  file: "docs/stravinsky.md"
+  line: "214"
+catalogue:
+  k: "K 001"
+date_text: "1903–04"
+category: "Keyboard"

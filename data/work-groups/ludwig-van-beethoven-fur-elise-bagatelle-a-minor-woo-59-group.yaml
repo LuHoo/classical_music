@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-fur-elise-bagatelle-a-minor-woo-59-group"
+composer_id: "ludwig-van-beethoven"
+title: "Für Elise (Bagatelle), A minor"
+source:
+  file: "docs/beethoven.md"
+  line: "454"
+catalogue:
+  woo: "WoO 59"

@@ -1,0 +1,9 @@
+id: boris-blacher-hamlet-symphonic-poem-op-17
+work_group_id: boris-blacher-hamlet-symphonic-poem-op-17-group
+composer_id: boris-blacher
+title: Hamlet (symphonic poem), Op. 17
+source:
+  file: reports/playlist-import/best-classical/window-4001-5518.json
+  url: https://www.naxos.com/CatalogueDetail/?id=C5349
+catalogue:
+  op: '17'

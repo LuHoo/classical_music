@@ -1,0 +1,8 @@
+id: "johann-sebastian-bach-concerto-for-violin-and-orchestra-no-1-in-a-min-group"
+composer_id: "johann-sebastian-bach"
+title: "Concerto for violin and orchestra No. 1 in A min."
+source:
+  file: "docs/bachJS.md"
+  line: "12"
+catalogue:
+  bwv: "BWV 1041"

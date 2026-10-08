@@ -1,0 +1,8 @@
+id: "anton-bruckner-symphony-no-5-in-bb-major-2-group"
+composer_id: "anton-bruckner"
+title: "Symphony No. 5 in B♭ major"
+source:
+  file: "docs/bruckner.md"
+  line: "50"
+catalogue:
+  wab: "WAB 105"

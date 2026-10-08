@@ -1,0 +1,14 @@
+id: sergei-rachmaninoff-vocalise-op-34-no-14-orchestral-version-playlist-4879
+work_id: sergei-rachmaninoff-vocalise-op-34-no-14-orchestral-version
+performers:
+- name: Paavo Järvi
+  artist_id: paavo-jarvi
+  role: conductor
+links:
+  tidal:
+    url: https://tidal.com/track/51563295
+release:
+  album_title: 'Rachmaninov: Symphony No. 3, Symphonic Dances'
+source:
+  file: reports/playlist-import/best-classical/window-4001-5518.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

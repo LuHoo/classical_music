@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-five-variations-on-rule-britannia-d-woo-79-work"
+work_group_id: "ludwig-van-beethoven-five-variations-on-rule-britannia-d-woo-79-group"
+composer_id: "ludwig-van-beethoven"
+title: "Five variations on \"Rule, Britannia!\", D"
+source:
+  file: "docs/beethoven.md"
+  line: "408"
+catalogue:
+  woo: "WoO 79"
+date_text: "1803"
+category: "Piano"

@@ -1,0 +1,8 @@
+id: boris-blacher-symphony-op-13
+work_group_id: boris-blacher-symphony-op-13-group
+composer_id: boris-blacher
+title: Symphony, Op. 13
+source:
+  file: docs/blacher.md
+catalogue:
+  op: '13'

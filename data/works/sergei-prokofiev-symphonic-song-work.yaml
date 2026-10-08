@@ -1,0 +1,11 @@
+id: sergei-prokofiev-symphonic-song-work
+work_group_id: sergei-prokofiev-symphonic-song-group
+composer_id: sergei-prokofiev
+title: Symphonic Song
+source:
+  file: docs/prokofiev.md
+  line: '98'
+catalogue:
+  op: Op. 57
+date_text: '1933'
+category: Orchestral

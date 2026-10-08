@@ -1,0 +1,13 @@
+id: sergei-prokofiev-flourish-mighty-land-work-ussr-state-so-valeri-polyansky
+work_id: sergei-prokofiev-flourish-mighty-land-work
+source:
+  file: docs/prokofiev.md
+  line: '196'
+links:
+  tidal:
+    url: https://tidal.com/browse/album/377109596
+performers:
+- name: USSR State SO
+  role: performer
+- name: Valeri Polyansky
+  role: performer

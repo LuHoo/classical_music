@@ -1,0 +1,11 @@
+id: dmitri-shostakovich-funeral-triumphal-prelude-work
+work_group_id: dmitri-shostakovich-funeral-triumphal-prelude-group
+composer_id: dmitri-shostakovich
+title: Funeral-Triumphal Prelude
+source:
+  file: docs/shostakovich.md
+  line: '151'
+catalogue:
+  op: Op. 130
+date_text: '1967'
+category: Orchestral

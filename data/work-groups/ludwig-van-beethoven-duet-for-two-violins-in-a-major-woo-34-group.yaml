@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-duet-for-two-violins-in-a-major-woo-34-group"
+composer_id: "ludwig-van-beethoven"
+title: "Duet for two violins in A major"
+source:
+  file: "docs/beethoven.md"
+  line: "272"
+catalogue:
+  woo: "WoO 34"

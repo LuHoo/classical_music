@@ -1,0 +1,8 @@
+id: "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-3-sonata-no-2-in-a-min-group"
+composer_id: "johann-sebastian-bach"
+title: "Sonatas and partitas for solo violin No. 3: Sonata No. 2 in A min."
+source:
+  file: "docs/bachJS.md"
+  line: "102"
+catalogue:
+  bwv: "BWV 1003"

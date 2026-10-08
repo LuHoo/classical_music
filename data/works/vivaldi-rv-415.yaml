@@ -1,0 +1,9 @@
+id: 36ffdb89f8324dcab0b3a713ae4a76cb
+work_group_id: 52a6d915f6da4d48975bf06bef53e45c
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Cello Concerto, RV 415
+catalogue:
+  rv: RV 415
+source:
+  url: https://vivaldiedition.net/portfolio/vol-61-concerti-per-violoncello-iii-2019/
+  file: reports/vivaldi-naive-edition/catalogue.json

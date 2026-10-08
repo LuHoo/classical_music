@@ -1,0 +1,11 @@
+id: sergei-prokofiev-andante-from-piano-sonata-no-4-arranged-for-orchestra-work
+work_group_id: sergei-prokofiev-andante-from-piano-sonata-no-4-arranged-for-orchestra-group
+composer_id: sergei-prokofiev
+title: Andante from Piano Sonata No. 4, arranged for orchestra
+source:
+  file: docs/prokofiev.md
+  line: '45'
+catalogue:
+  op: Op. 29bis
+date_text: '1934'
+category: Orchestral

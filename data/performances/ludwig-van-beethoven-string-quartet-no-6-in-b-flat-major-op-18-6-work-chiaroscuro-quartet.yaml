@@ -1,0 +1,14 @@
+id: "ludwig-van-beethoven-string-quartet-no-6-in-b-flat-major-op-18-6-work-chiaroscuro-quartet"
+work_id: "ludwig-van-beethoven-string-quartet-no-6-in-b-flat-major-op-18-6-work"
+performers:
+  - name: "Chiaroscuro Quartet"
+    role: "ensemble"
+links:
+  tidal:
+    url: "http://www.tidal.com/track/339837639"
+source:
+  file: "docs/beethoven.md"
+  line: "182"
+reviews:
+  gramophone:
+    issue: "2022-06"

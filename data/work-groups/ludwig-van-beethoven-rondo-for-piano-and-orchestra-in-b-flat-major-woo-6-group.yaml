@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-rondo-for-piano-and-orchestra-in-b-flat-major-woo-6-group"
+composer_id: "ludwig-van-beethoven"
+title: "Rondo for Piano and Orchestra in B♭ major"
+source:
+  file: "docs/beethoven.md"
+  line: "26"
+catalogue:
+  woo: "WoO 6"

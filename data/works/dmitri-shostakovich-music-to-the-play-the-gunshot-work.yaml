@@ -1,0 +1,11 @@
+id: dmitri-shostakovich-music-to-the-play-the-gunshot-work
+work_group_id: dmitri-shostakovich-music-to-the-play-the-gunshot-group
+composer_id: dmitri-shostakovich
+title: Music to the play The Gunshot
+source:
+  file: docs/shostakovich.md
+  line: '32'
+catalogue:
+  op: Op. 24
+date_text: '1929'
+category: Orchestral

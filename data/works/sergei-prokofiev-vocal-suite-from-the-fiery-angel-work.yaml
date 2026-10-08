@@ -1,0 +1,11 @@
+id: sergei-prokofiev-vocal-suite-from-the-fiery-angel-work
+work_group_id: sergei-prokofiev-vocal-suite-from-the-fiery-angel-group
+composer_id: sergei-prokofiev
+title: Vocal Suite from The Fiery Angel
+source:
+  file: docs/prokofiev.md
+  line: '59'
+catalogue:
+  op: Op. 37bis
+date_text: 1923, incomplete
+category: Orchestral

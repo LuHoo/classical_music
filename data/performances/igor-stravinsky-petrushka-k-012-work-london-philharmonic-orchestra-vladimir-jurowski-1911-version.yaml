@@ -1,0 +1,17 @@
+id: "igor-stravinsky-petrushka-k-012-work-london-philharmonic-orchestra-vladimir-jurowski-1911-version"
+work_id: "igor-stravinsky-petrushka-k-012-work"
+performers:
+  - name: "London Philharmonic Orchestra"
+    role: "orchestra"
+  - name: "Vladimir Jurowski"
+    role: "conductor"
+links:
+  tidal:
+    url: "https://tidal.com/browse/track/205310046?u"
+source:
+  file: "docs/stravinsky.md"
+  line: "33"
+reviews:
+  gramophone:
+    issue: "2001-01"
+notes: "Pilot migration: link label from source was \"1911 version\"; review whether this indicates a Work version or performance profile."

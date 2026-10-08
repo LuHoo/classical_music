@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-piano-sonata-no-7-in-d-major-op-10-3-group"
+composer_id: "ludwig-van-beethoven"
+title: "Piano Sonata No. 7 in D major"
+source:
+  file: "docs/beethoven.md"
+  line: "324"
+catalogue:
+  opus: "Op. 10/3"

@@ -1,0 +1,14 @@
+id: "ludwig-van-beethoven-string-quartet-no-3-in-d-major-op-18-3-work-chiaroscuro-quartet"
+work_id: "ludwig-van-beethoven-string-quartet-no-3-in-d-major-op-18-3-work"
+performers:
+  - name: "Chiaroscuro Quartet"
+    role: "ensemble"
+links:
+  tidal:
+    url: "http://www.tidal.com/track/341644418"
+source:
+  file: "docs/beethoven.md"
+  line: "176"
+reviews:
+  gramophone:
+    issue: "2021-12"

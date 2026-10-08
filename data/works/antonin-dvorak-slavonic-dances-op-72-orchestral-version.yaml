@@ -1,0 +1,8 @@
+id: antonin-dvorak-slavonic-dances-op-72-orchestral-version
+work_group_id: antonin-dvorak-slavonic-dances-op-72-orchestral-version-group
+composer_id: antonin-dvorak
+title: Slavonic Dances, Op. 72 (orchestral version)
+source:
+  file: docs/dvorak.md
+catalogue:
+  op: '72'

@@ -1,0 +1,16 @@
+id: 
+  dmitri-shostakovich-suite-on-verses-of-michelangelo-buonarroti-work-matthias-goerne-orchestre-philharmonique-de-radio-france-mikko-franck
+work_id: dmitri-shostakovich-suite-on-verses-of-michelangelo-buonarroti-work
+source:
+  file: docs/shostakovich.md
+  line: '163'
+links:
+  tidal:
+    url: https://tidal.com/browse/album/409492660
+performers:
+- name: Matthias Goerne
+  role: performer
+- name: Orchestre Philharmonique de Radio France
+  role: performer
+- name: Mikko Franck
+  role: performer

@@ -1,0 +1,14 @@
+id: john-adams-china-gates-playlist-2475
+work_id: john-adams-china-gates
+performers:
+- name: Yuja Wang
+  artist_id: yuja-wang
+  role: soloist
+links:
+  tidal:
+    url: https://tidal.com/track/137025519
+release:
+  album_title: 'John Adams: Must the Devil Have All the Good Tunes?'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

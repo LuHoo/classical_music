@@ -1,0 +1,12 @@
+id: dmitri-shostakovich-symphony-no-15-in-a-major-work
+work_group_id: dmitri-shostakovich-symphony-no-15-in-a-major-group
+composer_id: dmitri-shostakovich
+title: Symphony No. 15 in A major
+source:
+  file: docs/shostakovich.md
+  line: '159'
+catalogue:
+  op: Op. 141
+date_text: '1971'
+category: Orchestral
+gem: true

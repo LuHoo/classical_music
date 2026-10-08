@@ -1,0 +1,19 @@
+id: "ludwig-van-beethoven-triple-concerto-for-violin-cello-and-piano-in-c-major-op-56-work-isabelle-faust-jean-guihen-queyras-alexander-melnikov-freiburger-barockorchester-pablo-heras-casado"
+work_id: "ludwig-van-beethoven-triple-concerto-for-violin-cello-and-piano-in-c-major-op-56-work"
+performers:
+  - name: "Isabelle Faust"
+    role: "performer"
+  - name: "Jean-Guihen Queyras"
+    role: "performer"
+  - name: "Alexander Melnikov"
+    role: "performer"
+  - name: "Freiburger Barockorchester"
+    role: "orchestra"
+  - name: "Pablo Heras-Casado"
+    role: "conductor"
+links:
+  tidal:
+    url: "http://www.tidal.com/track/171560420"
+source:
+  file: "docs/beethoven.md"
+  line: "42"

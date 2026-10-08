@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-cello-sonata-no-1-in-f-major-op-5-1-work"
+work_group_id: "ludwig-van-beethoven-cello-sonata-no-1-in-f-major-op-5-1-group"
+composer_id: "ludwig-van-beethoven"
+title: "Cello Sonata No. 1 in F major"
+source:
+  file: "docs/beethoven.md"
+  line: "134"
+catalogue:
+  opus: "Op. 5/1"
+date_text: "1796"
+category: "Chamber"

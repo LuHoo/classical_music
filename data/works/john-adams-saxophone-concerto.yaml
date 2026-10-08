@@ -1,0 +1,7 @@
+id: john-adams-saxophone-concerto
+work_group_id: john-adams-saxophone-concerto-group
+composer_id: john-adams
+title: Saxophone Concerto
+source:
+  file: docs/adams.md
+  url: https://en.wikipedia.org/wiki/John_Adams_(composer

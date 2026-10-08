@@ -1,0 +1,18 @@
+id: 7d0013aab0924aada3b0ae38c3857491
+work_id: 4a61c2bb13d54c0096bc4decd6984f48
+performers:
+- name: Zefiro
+  role: ensemble
+- name: Alfredo Bernardini
+  role: director
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP30409
+  album_title: Concerti per vari strumenti
+source:
+  url: https://vivaldiedition.net/portfolio/vol-18-concerti-per-vari-strumenti-2004/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: 'The Vivaldi Edition, volume 18. Album page verified 2026-09-28. '
+links:
+  tidal:
+    url: https://tidal.com/album/92206835

@@ -1,0 +1,18 @@
+id: c1f76d96b9e64a7d83a603e4fcedce33
+work_id: 15c716a78f4d475490084e2287037050
+performers:
+- name: Zefiro
+  role: ensemble
+- name: Alfredo Bernardini
+  role: oboe
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP30478
+  album_title: Concerti per oboe
+source:
+  url: https://vivaldiedition.net/portfolio/vol-35-concerti-per-oboe-2008/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: 'The Vivaldi Edition, volume 35. Album page verified 2026-09-28. '
+links:
+  tidal:
+    url: https://tidal.com/album/78146110
