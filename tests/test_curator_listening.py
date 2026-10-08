@@ -382,3 +382,12 @@ def test_workflow_uses_trusted_default_branch_and_serializes_per_issue():
     assert 'matrix.issue' in job['concurrency']['group']
     assert job['steps'][0]['with']['ref'] == '${{ github.event.repository.default_branch }}'
     assert job['steps'][0]['with']['persist-credentials'] is False
+
+
+@pytest.fixture(scope='module', autouse=True)
+def fixed_pending_choices(pending_curator_repository):
+    """Production decisions must not change the preconditions of these tests."""
+    import sys
+    with pytest.MonkeyPatch.context() as patch:
+        patch.setattr(sys.modules[__name__], 'ROOT', pending_curator_repository)
+        yield

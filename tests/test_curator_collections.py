@@ -131,3 +131,12 @@ def test_validation_of_another_intake_sees_concurrent_changes(checkout, monkeypa
     with pytest.raises(ValueError, match='inputs changed'):
         curator.execute(checkout, 246, 'C093', curator='Test', apply=True)
     assert not (checkout / 'reports/curator-decisions/issue-246.json').exists()
+
+
+@pytest.fixture(scope='module', autouse=True)
+def fixed_pending_choices(pending_curator_repository):
+    """Production decisions must not change the preconditions of these tests."""
+    import sys
+    with pytest.MonkeyPatch.context() as patch:
+        patch.setattr(sys.modules[__name__], 'ROOT', pending_curator_repository)
+        yield

@@ -245,3 +245,12 @@ def test_confirmation_requires_a_recorded_playlist_action(tmp_path):
     path.write_bytes(curator.json_bytes(record))
     with pytest.raises(curator.CuratorError, match='No manual playlist'):
         curator.plan_playlist_done(tmp_path, 240, curator='Test', note='done')
+
+
+@pytest.fixture(scope='module', autouse=True)
+def fixed_pending_choices(pending_curator_repository):
+    """Production decisions must not change the preconditions of these tests."""
+    import sys
+    with pytest.MonkeyPatch.context() as patch:
+        patch.setattr(sys.modules[__name__], 'ROOT', pending_curator_repository)
+        yield
