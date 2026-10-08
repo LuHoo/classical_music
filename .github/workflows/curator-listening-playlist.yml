@@ -1,0 +1,86 @@
+name: Curator listening playlist
+
+on:
+  issues:
+    types: [opened, reopened, labeled, edited]
+  push:
+    branches: [main]
+    paths:
+      - 'reports/playlist-import/**'
+  workflow_dispatch:
+    inputs:
+      issue_number:
+        description: 'Curator issue number (also retries an incomplete request)'
+        required: true
+        type: number
+      recover_playlist_id:
+        description: 'Only for a creation whose response was lost: matching comparison playlist UUID'
+        required: false
+        type: string
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  discover:
+    permissions:
+      contents: read
+      issues: read
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      issues: ${{ steps.find.outputs.issues }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+      - id: find
+        name: Find new or previously requested curator playlists
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          INPUT_ISSUE: ${{ inputs.issue_number }}
+        run: python scripts/create_curator_listening_playlist.py --discover
+
+  playlist:
+    needs: discover
+    if: needs.discover.outputs.issues != '[]'
+    strategy:
+      fail-fast: false
+      matrix:
+        issue: ${{ fromJSON(needs.discover.outputs.issues) }}
+    # Issue, edit, dispatch and manifest-push triggers share the same writer lock.
+    concurrency:
+      group: curator-listening-playlist-${{ matrix.issue }}
+      cancel-in-progress: false
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+      - name: Install repository dependencies
+        run: python -m pip install -e .
+      - name: Create and verify comparison playlist
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          TIDAL_CLIENT_ID: ${{ secrets.TIDAL_CLIENT_ID }}
+          TIDAL_CLIENT_SECRET: ${{ secrets.TIDAL_CLIENT_SECRET }}
+          TIDAL_USER_REFRESH_TOKEN: ${{ secrets.TIDAL_USER_REFRESH_TOKEN }}
+          ISSUE_NUMBER: ${{ matrix.issue }}
+          RECOVER_PLAYLIST_ID: ${{ inputs.recover_playlist_id }}
+        shell: bash
+        run: |
+          args=("$ISSUE_NUMBER" --apply)
+          if [ -n "$RECOVER_PLAYLIST_ID" ]; then
+            args+=(--recover-playlist-id "$RECOVER_PLAYLIST_ID")
+          fi
+          python scripts/create_curator_listening_playlist.py "${args[@]}"

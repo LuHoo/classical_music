@@ -42,3 +42,13 @@ produced by Jekyll, including on the repository's configured base URL.
 Run `python scripts/check_tidal_links.py` for an operational JSON/Markdown report.
 Verified URL repairs require explicit `--apply`; musical recommendations never
 change. See [the local workflow and recovery rules](docs/workflows/tidal-link-maintenance.md).
+
+## Curator decisions
+
+Preview a reviewed curator choice with `./curator 246 C093`; add `--apply` to
+record it after validation. See [curator CLI](docs/workflows/curator-choice-cli.md)
+for A/B aliases, existing recommendations and manual playlist confirmation.
+
+New curator issues can also receive an automatic comparison playlist with all
+candidate movements. See [listening-playlist setup](docs/workflows/curator-listening-playlists.md)
+for the one-time TIDAL user authorization and issue-triggered workflow.
