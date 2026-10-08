@@ -52,3 +52,8 @@ for A/B aliases, existing recommendations and manual playlist confirmation.
 New curator issues can also receive an automatic comparison playlist with all
 candidate movements. See [listening-playlist setup](docs/workflows/curator-listening-playlists.md)
 for the one-time TIDAL user authorization and issue-triggered workflow.
+
+## Scripts and curator workflow
+
+See the [User Manual](docs/workflows/scripts-user-manual.md) for playlist support,
+all script parameters, safe preview/apply examples and the fully manual Git workflow.

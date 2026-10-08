@@ -1,7 +1,7 @@
 # Curator choices from the command line
 
 `./curator <issue-number> <choice>` previews a single recommendation decision.
-It uses the existing reviewed Chamber snapshot, canonical YAML and
+It uses the existing reviewed playlist manifests, canonical YAML and
 `reports/curator-decisions/`; it does not maintain a second catalogue.
 Python 3.13+ and the project dependencies are required:
 
@@ -21,7 +21,7 @@ still happens through the normal merged PR workflow.
 ## Choices and evidence
 
 The issue must occur exactly once in the manifest's pending/resolved choices.
-C-unit codes are accepted directly. A/B aliases are explicit `choice_aliases`
+Registered unit codes (C/P/etc.) are accepted directly. A/B aliases are explicit `choice_aliases`
 on that same choice object, never inferred from array order. This first version
 registers the labels already published in #240 (A=C003, B=C287) and #241
 (A=C210, B=C298). Other current issues use their published C-codes, including
@@ -86,7 +86,7 @@ action to a decision made without one.
 
 ## Validation and limits
 
-Preview and apply build a scratch copy and reuse the Chamber inventory audit,
+Preview and apply build a scratch copy and reuse the selected intake inventory audit,
 canonical publication validator and publication generator. The affected Work's
 selected link is checked as well. No broad identity/duplicate scan or network
 link check is needed for this path. Apply installs changes only after validation,
@@ -96,11 +96,13 @@ the decision records because it does not change canonical or publication data. M
 crash-proof database transaction: use Git to review/recover after a machine
 crash; remove a stale lock only after verifying no CLI process is running.
 
-V1 supports the current **Chamber single-recommendation** issues. It deliberately
-rejects `geen`, `unresolved`, multi-profile decisions and changes to an already
-resolved choice, whose semantics require further review. Other playlist
-manifest schemas are not implicitly imported. No existing curator issue is
-resolved merely by installing this CLI.
+The CLI supports **Chamber and Piano single-recommendation** issues and
+**registered Best Classical window choices**. The legacy Best Classical windows
+still need reviewed issue bindings and stable candidate codes; no registrations
+or decisions are invented. Cross-window choices, `geen`, `unresolved`,
+multi-profile operations and revisions to resolved choices fail closed.
+See the [detailed User Manual](scripts-user-manual.md) for all scripts, parameters,
+manual Git batch workflow, intake registration and future collection adapters.
 
 #240 / PR #300 is the regression reference. On today's repository
 `./curator 240 A` reports the existing decision without rewriting it or asking
@@ -120,4 +122,4 @@ The [issue listening-playlist workflow](curator-listening-playlists.md) creates
 a separate comparison playlist when a registered curator issue opens. It posts
 one verified link and candidate track ranges in the issue, without changing the
 source playlists or applying any choice. This planning step supports multiple
-collections independently of the decision CLI's current Chamber scope.
+collections using the same reviewed choice contract as the decision CLI.

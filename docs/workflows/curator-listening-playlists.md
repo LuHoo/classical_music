@@ -72,8 +72,9 @@ same manifest fields. A Best Classical choice can be registered in its existing
 window manifest with `recommendation_choices` and stable `unit_id` values for
 the competing units; `candidate_performers` is supported as well as `performers`.
 There is no second candidate database or inference from free-form issue text.
-The decision-application CLI itself still has the V1 Chamber scope documented
-in [curator-choice-cli.md](curator-choice-cli.md).
+The decision CLI supports Chamber, Piano and registered Best Classical window
+choices. See the [User Manual](scripts-user-manual.md) for registration requirements
+and the separate limits of listening and applying decisions.
 
 A/B labels are taken only from explicit `choice_aliases`; otherwise the reviewed
 unit codes are shown. Movement order, duplicate occurrences and stated excerpts
