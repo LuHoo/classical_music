@@ -9,23 +9,32 @@ and validates the Person -> WorkGroup -> Work -> Performance hierarchy.
 import json
 from pathlib import Path
 from typing import Dict, List, Any, Optional
-from ruamel.yaml import YAML
+
+from classical_music.catalog_snapshot import CatalogSnapshot
 
 
 class PublicationDataAdapter:
     """Adapt canonical YAML to publication data model."""
 
-    def __init__(self, repo_root: Optional[Path] = None):
+    def __init__(
+        self,
+        repo_root: Optional[Path] = None,
+        snapshot: Optional[CatalogSnapshot] = None,
+    ):
         """Initialize adapter.
 
         Args:
             repo_root: Repository root. Defaults to current working directory.
+            snapshot: Shared raw catalog snapshot to reuse. When omitted, every
+                call to :meth:`load_canonical_data` parses ``data/`` again, so
+                consecutive invocations always observe the current files.
         """
         if repo_root is None:
             repo_root = Path.cwd()
 
         self.repo_root = repo_root
         self.data_dir = repo_root / "data"
+        self.snapshot = snapshot
 
         # Canonical data (internal)
         self._persons: Dict[str, Any] = {}
@@ -43,27 +52,49 @@ class PublicationDataAdapter:
         self.errors: List[str] = []
         self.warnings: List[str] = []
 
+    def _reset(self) -> None:
+        """Drop all canonical data, publication data and findings."""
+        self._persons = {}
+        self._work_groups = {}
+        self._works = {}
+        self._performances = {}
+
+        self.persons = {}
+        self.work_groups = {}
+        self.works = {}
+        self.performances = {}
+
+        self.errors = []
+        self.warnings = []
+
     def load_canonical_data(self) -> bool:
         """Load all canonical YAML from data/ directory.
+
+        Reuses the injected shared snapshot when present; otherwise a fresh
+        snapshot is parsed for this call only.
+
+        Previously collected state is discarded first: a load starts a new
+        logical operation, so results of an earlier load must never survive
+        into it and report a stale success.
 
         Returns:
             True if all data loaded successfully
         """
         print("Loading canonical data...")
 
+        self._reset()
+
+        snapshot = (
+            self.snapshot
+            if self.snapshot is not None
+            else CatalogSnapshot.load(self.repo_root)
+        )
+
         # Load all entity types
-        self._persons = self._load_yaml_directory(
-            self.data_dir / "persons", "Person"
-        )
-        self._work_groups = self._load_yaml_directory(
-            self.data_dir / "work-groups", "WorkGroup"
-        )
-        self._works = self._load_yaml_directory(
-            self.data_dir / "works", "Work"
-        )
-        self._performances = self._load_yaml_directory(
-            self.data_dir / "performances", "Performance"
-        )
+        self._persons = self._index_records(snapshot, "Person")
+        self._work_groups = self._index_records(snapshot, "WorkGroup")
+        self._works = self._index_records(snapshot, "Work")
+        self._performances = self._index_records(snapshot, "Performance")
 
         print(f"  Persons: {len(self._persons)}")
         print(f"  Work Groups: {len(self._work_groups)}")
@@ -72,34 +103,37 @@ class PublicationDataAdapter:
 
         return len(self.errors) == 0
 
-    def _load_yaml_directory(self, directory: Path, entity_type: str) -> Dict[str, Any]:
-        """Load all YAML files from a directory (recursively).
+    def _index_records(
+        self, snapshot: CatalogSnapshot, entity_type: str
+    ) -> Dict[str, Any]:
+        """Index the snapshot records of one entity type by their ``id``.
 
         Args:
-            directory: Directory to load from
+            snapshot: Shared raw catalog snapshot
             entity_type: Type of entity (for error messages)
 
         Returns:
-            Dict mapping IDs to parsed YAML
+            Dict mapping IDs to the frozen parsed documents
         """
-        entities = {}
+        entities: Dict[str, Any] = {}
 
-        if not directory.exists():
-            self.errors.append(f"{entity_type} directory not found: {directory}")
+        missing_directory = snapshot.missing_directory(entity_type)
+        if missing_directory is not None:
+            self.errors.append(
+                f"{entity_type} directory not found: {missing_directory}"
+            )
             return entities
 
-        # Publication only reads values; round-trip comment/quote objects are
-        # unnecessary and costly when validating thousands of canonical files.
-        yaml = YAML(typ="safe")
-
-        for yaml_file in sorted(directory.glob("**/*.yaml")):
+        for record in snapshot.records_for(entity_type):
+            if record.error is not None:
+                self.errors.append(f"Failed to load {record.path}: {record.error}")
+                continue
             try:
-                with open(yaml_file) as f:
-                    data = yaml.load(f)
-                    if data and "id" in data:
-                        entities[data["id"]] = data
+                data = record.data
+                if data and "id" in data:
+                    entities[data["id"]] = data
             except Exception as e:
-                self.errors.append(f"Failed to load {yaml_file}: {e}")
+                self.errors.append(f"Failed to load {record.path}: {e}")
 
         return entities
 

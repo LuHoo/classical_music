@@ -119,6 +119,66 @@ Controleer de duurste fase vóór zwaarder profileren. Gebruik timing en tellers
 #306 en #307 af te bakenen; verander in #305 geen testgaranties of productiealgoritmen.
 De nieuwe failure/skip/collection-tests verifiëren de meetketen met kleine fixtures.
 
+## Catalog snapshot benchmark — issue #306
+
+`scripts/benchmark_catalog_snapshot.py` measures the catalog-loading paths that
+issue #306 changed. It is a measurement harness: it temporarily wraps
+`ruamel.yaml.YAML.load`, `PublicationDataAdapter.load_canonical_data` and
+`CatalogSnapshot.load` to count invocations and accumulate parse time, and it
+restores them afterwards. It does not alter production behaviour and it writes
+the generated site to a temporary directory.
+
+Run it from the existing checkout, with the project environment:
+
+```bash
+.venv/bin/python scripts/benchmark_catalog_snapshot.py --runs 3 \
+  --output ci-metrics/snapshot-benchmark.json
+```
+
+Three scenarios are measured, each repeated `--runs` times:
+
+- `validate` — `PublicationValidator(repo).validate()`;
+- `build` — `PublicationSiteGenerator(repo, tmp).generate(validate=False)`;
+- `validate+build` — `PublicationSiteGenerator(repo, tmp).generate(validate=True)`.
+
+The report records, per scenario, the number of `YAML.load` calls, the number of
+distinct files parsed, the number of catalog loads and snapshot loads, and the
+median, minimum and maximum of parse time, wall-clock time and CPU time. The
+environment block captures the Python version, platform, commit, branch, the
+`data` tree ID and whether the working tree was dirty. Compare only reports whose
+environment and `data` tree ID match; wall-clock and CPU time are reported
+separately and must not be presented interchangeably.
+
+To compare a baseline with a change, run the command on the unmodified revision
+first, keep the JSON report, then run it again after the change.
+
+Publication equivalence is verified separately by hashing every generated file
+and comparing the resulting tree digest between the two revisions, and by
+comparing the full `ValidationResult` error and warning lists.
+
+### Local observations, 2026-10-11
+
+Python 3.14.3, macOS arm64, `data` tree of commit `ea36428a`, three runs per
+scenario, medians:
+
+| Scenario | YAML loads | Distinct files | Parse (s) | Wall (s) | CPU (s) |
+|---|---:|---:|---:|---:|---:|
+| `validate` before | 39,612 | 10,044 | 27.56 | 49.16 | 31.86 |
+| `validate` after | 10,044 | 10,044 | 5.54 | 10.55 | 6.53 |
+| `validate+build` before | 49,657 | 10,045 | 34.63 | 62.73 | 40.39 |
+| `validate+build` after | 10,045 | 10,045 | 5.83 | 11.66 | 7.43 |
+| `build` before | 10,045 | 10,045 | 5.26 | 10.81 | 6.77 |
+| `build` after | 10,045 | 10,045 | 5.60 | 11.97 | 7.20 |
+
+The gain comes from removing repeated parser invocations, not from faster
+parsing: the publication validator parsed the work-group, work and performance
+directories three times each on top of the adapter's own load. A build without
+validation parses the same number of files as before and is slightly slower,
+because the snapshot additionally freezes the parsed documents.
+
+These are local measurements. They say nothing about GitHub Actions duration;
+CI figures must be collected from an actual workflow run as described above.
+
 ## Resultaat en streefdoel
 
 Het resultaat van #305 is inzicht, niet een geclaimde kortere CI-run. De definitieve

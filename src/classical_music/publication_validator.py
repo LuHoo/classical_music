@@ -16,8 +16,10 @@ prevent publication).
 """
 
 from pathlib import Path
-from typing import Any, List, Dict, Tuple
+from typing import Any, List, Dict, Optional, Tuple
 from dataclasses import dataclass, field
+
+from classical_music.catalog_snapshot import CatalogSnapshot
 
 
 @dataclass
@@ -75,23 +77,29 @@ class PublicationValidator:
     5. No Performance directly references a WorkGroup
     6. Each Performance has performers (requirement for safe rendering)
 
-    Validation is based on the PublicationDataAdapter's loaded data.
+    Reference checks read the raw catalog snapshot, not the adapter's
+    publication model: the publication model drops records the source
+    validation must still be able to see.
     """
 
-    def __init__(self, repo_root: Path = None):
+    def __init__(self, repo_root: Path = None, snapshot: Optional[CatalogSnapshot] = None):
         """Initialize validator with optional custom repo root.
 
         Args:
             repo_root: Path to repository root. If None, inferred from file location.
+            snapshot: Shared raw catalog snapshot to reuse. When omitted, every
+                call to :meth:`validate` parses ``data/`` again, so consecutive
+                invocations always observe the current files.
         """
         if repo_root is None:
             repo_root = Path(__file__).parent.parent.parent
         self.repo_root = repo_root
+        self.snapshot = snapshot
 
         # Import here to allow testing without full project setup
         from classical_music.publication_adapter import PublicationDataAdapter
 
-        self.adapter = PublicationDataAdapter(repo_root)
+        self.adapter = PublicationDataAdapter(repo_root, snapshot=snapshot)
         self.result = ValidationResult(passed=True, errors=[], warnings=[])
 
     def validate(self) -> ValidationResult:
@@ -102,6 +110,23 @@ class PublicationValidator:
         """
         self.result = ValidationResult(passed=True, errors=[], warnings=[])
 
+        # A snapshot that was not injected is scoped to this call only, so a
+        # second validation never reuses stale catalog content.
+        snapshot = (
+            self.snapshot
+            if self.snapshot is not None
+            else CatalogSnapshot.load(self.repo_root)
+        )
+        self.adapter.snapshot = snapshot
+
+        try:
+            return self._validate_with_snapshot(snapshot)
+        finally:
+            # The snapshot's lifetime ends with this validation.
+            self.adapter.snapshot = self.snapshot
+
+    def _validate_with_snapshot(self, snapshot: CatalogSnapshot) -> ValidationResult:
+        """Run the publication checks against one shared raw catalog snapshot."""
         # Load canonical data. Publication validation must fail closed when the
         # canonical publication model cannot be built.
         if not self.adapter.adapt():
@@ -129,12 +154,12 @@ class PublicationValidator:
             return self.result
 
         # Run validation checks
-        self._validate_work_group_references()  # REF-001
-        self._validate_work_composer_references()  # REF-002
-        self._validate_work_work_group_references()  # REF-003
-        self._validate_performance_work_references()  # REF-004
-        self._validate_no_direct_wg_performance_references()  # REF-005
-        self._validate_performance_has_performers()  # DOM-044
+        self._validate_work_group_references(snapshot)  # REF-001
+        self._validate_work_composer_references(snapshot)  # REF-002
+        self._validate_work_work_group_references(snapshot)  # REF-003
+        self._validate_performance_work_references(snapshot)  # REF-004
+        self._validate_no_direct_wg_performance_references(snapshot)  # REF-005
+        self._validate_performance_has_performers(snapshot)  # DOM-044
 
         # Determine if validation passed
         # Passed only if no blocking errors (warnings don't block)
@@ -174,273 +199,158 @@ class PublicationValidator:
             )
         )
 
-    def _validate_work_group_references(self):
+    def _validate_work_group_references(self, snapshot: CatalogSnapshot):
         """REF-001: WorkGroup.composer_id MUST reference existing Person.
 
-        Load WorkGroups and verify each references a valid composer.
+        Verify each WorkGroup references a valid composer.
         """
         if not hasattr(self.adapter, "persons"):
             return
 
         person_ids = {p["id"] for p in self.adapter.persons.values()}
-        wg_path = self.repo_root / "data" / "work-groups"
 
-        if not wg_path.exists():
+        if snapshot.missing_directory("WorkGroup") is not None:
             return
 
-        for wg_file in wg_path.glob("*.yaml"):
-            try:
-                from ruamel.yaml import YAML
+        for record in snapshot.mappings("WorkGroup"):
+            wg = record.mapping
+            wg_id = wg.get("id")
+            composer_id = wg.get("composer_id")
 
-                yaml = YAML()
-                with open(wg_file) as f:
-                    wg = yaml.load(f)
+            if not composer_id:
+                self._add_error(
+                    "REF-001", "work_group", wg_id, "composer_id", "WorkGroup missing composer_id", str(record.path)
+                )
+            elif composer_id not in person_ids:
+                self._add_error(
+                    "REF-001",
+                    "work_group",
+                    wg_id,
+                    "composer_id",
+                    f"WorkGroup references non-existent Person: {composer_id}",
+                    str(record.path),
+                )
 
-                if not wg:
-                    continue
-
-                wg_id = wg.get("id")
-                composer_id = wg.get("composer_id")
-
-                if not composer_id:
-                    self._add_error(
-                        "REF-001", "work_group", wg_id, "composer_id", "WorkGroup missing composer_id", str(wg_file)
-                    )
-                elif composer_id not in person_ids:
-                    self._add_error(
-                        "REF-001",
-                        "work_group",
-                        wg_id,
-                        "composer_id",
-                        f"WorkGroup references non-existent Person: {composer_id}",
-                        str(wg_file),
-                    )
-            except Exception as e:
-                # Skip files with syntax errors (caught by repository validation)
-                pass
-
-    def _validate_work_composer_references(self):
+    def _validate_work_composer_references(self, snapshot: CatalogSnapshot):
         """REF-002: Work.composer_id MUST reference existing Person."""
         if not hasattr(self.adapter, "persons"):
             return
 
         person_ids = {p["id"] for p in self.adapter.persons.values()}
-        works_path = self.repo_root / "data" / "works"
 
-        if not works_path.exists():
+        if snapshot.missing_directory("Work") is not None:
             return
 
-        for work_file in works_path.glob("**/*.yaml"):
-            try:
-                from ruamel.yaml import YAML
+        for record in snapshot.mappings("Work"):
+            work = record.mapping
+            work_id = work.get("id")
+            composer_id = work.get("composer_id")
 
-                yaml = YAML()
-                with open(work_file) as f:
-                    work = yaml.load(f)
+            if not composer_id:
+                self._add_error("REF-002", "work", work_id, "composer_id", "Work missing composer_id", str(record.path))
+            elif composer_id not in person_ids:
+                self._add_error(
+                    "REF-002",
+                    "work",
+                    work_id,
+                    "composer_id",
+                    f"Work references non-existent Person: {composer_id}",
+                    str(record.path),
+                )
 
-                if not work:
-                    continue
-
-                work_id = work.get("id")
-                composer_id = work.get("composer_id")
-
-                if not composer_id:
-                    self._add_error("REF-002", "work", work_id, "composer_id", "Work missing composer_id", str(work_file))
-                elif composer_id not in person_ids:
-                    self._add_error(
-                        "REF-002",
-                        "work",
-                        work_id,
-                        "composer_id",
-                        f"Work references non-existent Person: {composer_id}",
-                        str(work_file),
-                    )
-            except Exception as e:
-                pass
-
-    def _validate_work_work_group_references(self):
+    def _validate_work_work_group_references(self, snapshot: CatalogSnapshot):
         """REF-003: Work.work_group_id MUST reference existing WorkGroup."""
-        # Load all work groups first
-        wg_ids = set()
-        wg_path = self.repo_root / "data" / "work-groups"
+        wg_ids = snapshot.ids("WorkGroup")
 
-        if wg_path.exists():
-            from ruamel.yaml import YAML
-
-            yaml = YAML()
-            for wg_file in wg_path.glob("*.yaml"):
-                try:
-                    with open(wg_file) as f:
-                        wg = yaml.load(f)
-                        if wg and wg.get("id"):
-                            wg_ids.add(wg["id"])
-                except Exception:
-                    pass
-
-        # Now validate works
-        works_path = self.repo_root / "data" / "works"
-        if not works_path.exists():
+        if snapshot.missing_directory("Work") is not None:
             return
 
-        yaml = YAML()
-        for work_file in works_path.glob("**/*.yaml"):
-            try:
-                with open(work_file) as f:
-                    work = yaml.load(f)
+        for record in snapshot.mappings("Work"):
+            work = record.mapping
+            work_id = work.get("id")
+            wg_id = work.get("work_group_id")
 
-                if not work:
-                    continue
+            if not wg_id:
+                self._add_error("REF-003", "work", work_id, "work_group_id", "Work missing work_group_id", str(record.path))
+            elif wg_id not in wg_ids:
+                self._add_error(
+                    "REF-003",
+                    "work",
+                    work_id,
+                    "work_group_id",
+                    f"Work references non-existent WorkGroup: {wg_id}",
+                    str(record.path),
+                )
 
-                work_id = work.get("id")
-                wg_id = work.get("work_group_id")
-
-                if not wg_id:
-                    self._add_error("REF-003", "work", work_id, "work_group_id", "Work missing work_group_id", str(work_file))
-                elif wg_id not in wg_ids:
-                    self._add_error(
-                        "REF-003",
-                        "work",
-                        work_id,
-                        "work_group_id",
-                        f"Work references non-existent WorkGroup: {wg_id}",
-                        str(work_file),
-                    )
-            except Exception:
-                pass
-
-    def _validate_performance_work_references(self):
+    def _validate_performance_work_references(self, snapshot: CatalogSnapshot):
         """REF-004: Performance.work_id MUST reference existing Work."""
-        # Load all works first
-        work_ids = set()
-        works_path = self.repo_root / "data" / "works"
+        work_ids = snapshot.ids("Work")
 
-        if works_path.exists():
-            from ruamel.yaml import YAML
-
-            yaml = YAML()
-            for work_file in works_path.glob("**/*.yaml"):
-                try:
-                    with open(work_file) as f:
-                        work = yaml.load(f)
-                        if work and work.get("id"):
-                            work_ids.add(work["id"])
-                except Exception:
-                    pass
-
-        # Now validate performances
-        perf_path = self.repo_root / "data" / "performances"
-        if not perf_path.exists():
+        if snapshot.missing_directory("Performance") is not None:
             return
 
-        yaml = YAML()
-        for perf_file in perf_path.glob("*.yaml"):
-            try:
-                with open(perf_file) as f:
-                    perf = yaml.load(f)
+        for record in snapshot.mappings("Performance"):
+            perf = record.mapping
+            perf_id = perf.get("id")
+            work_id = perf.get("work_id")
 
-                if not perf:
-                    continue
+            if not work_id:
+                self._add_error("REF-004", "performance", perf_id, "work_id", "Performance missing work_id", str(record.path))
+            elif work_id not in work_ids:
+                self._add_error(
+                    "REF-004",
+                    "performance",
+                    perf_id,
+                    "work_id",
+                    f"Performance references non-existent Work: {work_id}",
+                    str(record.path),
+                )
 
-                perf_id = perf.get("id")
-                work_id = perf.get("work_id")
-
-                if not work_id:
-                    self._add_error("REF-004", "performance", perf_id, "work_id", "Performance missing work_id", str(perf_file))
-                elif work_id not in work_ids:
-                    self._add_error(
-                        "REF-004",
-                        "performance",
-                        perf_id,
-                        "work_id",
-                        f"Performance references non-existent Work: {work_id}",
-                        str(perf_file),
-                    )
-            except Exception:
-                pass
-
-    def _validate_no_direct_wg_performance_references(self):
+    def _validate_no_direct_wg_performance_references(self, snapshot: CatalogSnapshot):
         """REF-005: Performance MUST NOT reference WorkGroup.
 
         A Performance must reference a Work, never a WorkGroup directly.
         """
-        # Load all work group ids
-        wg_ids = set()
-        wg_path = self.repo_root / "data" / "work-groups"
+        wg_ids = snapshot.ids("WorkGroup")
 
-        if wg_path.exists():
-            from ruamel.yaml import YAML
-
-            yaml = YAML()
-            for wg_file in wg_path.glob("*.yaml"):
-                try:
-                    with open(wg_file) as f:
-                        wg = yaml.load(f)
-                        if wg and wg.get("id"):
-                            wg_ids.add(wg["id"])
-                except Exception:
-                    pass
-
-        # Check performances don't reference WGs
-        perf_path = self.repo_root / "data" / "performances"
-        if not perf_path.exists():
+        if snapshot.missing_directory("Performance") is not None:
             return
 
-        yaml = YAML()
-        for perf_file in perf_path.glob("*.yaml"):
-            try:
-                with open(perf_file) as f:
-                    perf = yaml.load(f)
+        for record in snapshot.mappings("Performance"):
+            perf = record.mapping
+            perf_id = perf.get("id")
+            work_id = perf.get("work_id")
 
-                if not perf:
-                    continue
+            # If work_id points to a work_group, it's an error
+            if work_id and work_id in wg_ids:
+                self._add_error(
+                    "REF-005",
+                    "performance",
+                    perf_id,
+                    "work_id",
+                    f"Performance references WorkGroup {work_id}, must reference Work",
+                    str(record.path),
+                )
 
-                perf_id = perf.get("id")
-                work_id = perf.get("work_id")
-
-                # If work_id points to a work_group, it's an error
-                if work_id and work_id in wg_ids:
-                    self._add_error(
-                        "REF-005",
-                        "performance",
-                        perf_id,
-                        "work_id",
-                        f"Performance references WorkGroup {work_id}, must reference Work",
-                        str(perf_file),
-                    )
-            except Exception:
-                pass
-
-    def _validate_performance_has_performers(self):
+    def _validate_performance_has_performers(self, snapshot: CatalogSnapshot):
         """DOM-044: Performance MUST have at least one performer.
 
         This is required for safe rendering on the public website.
         """
-        perf_path = self.repo_root / "data" / "performances"
-        if not perf_path.exists():
+        if snapshot.missing_directory("Performance") is not None:
             return
 
-        from ruamel.yaml import YAML
+        for record in snapshot.mappings("Performance"):
+            perf = record.mapping
+            perf_id = perf.get("id")
+            performers = perf.get("performers", [])
 
-        yaml = YAML()
-        for perf_file in perf_path.glob("*.yaml"):
-            try:
-                with open(perf_file) as f:
-                    perf = yaml.load(f)
-
-                if not perf:
-                    continue
-
-                perf_id = perf.get("id")
-                performers = perf.get("performers", [])
-
-                if not performers or len(performers) == 0:
-                    self._add_error(
-                        "DOM-044",
-                        "performance",
-                        perf_id,
-                        "performers",
-                        "Performance must have at least one performer",
-                        str(perf_file),
-                    )
-            except Exception:
-                pass
+            if not performers or len(performers) == 0:
+                self._add_error(
+                    "DOM-044",
+                    "performance",
+                    perf_id,
+                    "performers",
+                    "Performance must have at least one performer",
+                    str(record.path),
+                )

@@ -11,6 +11,7 @@ import re
 from ruamel.yaml import YAML
 from typing import Any
 
+from classical_music.catalog_snapshot import CatalogSnapshot
 from classical_music.publication_adapter import PublicationDataAdapter
 from classical_music.publication_validator import PublicationValidator
 
@@ -38,16 +39,25 @@ class PublicationSiteGenerator:
 
     def generate(self, validate: bool = True) -> SiteGenerationResult:
         """Generate deterministic Jekyll markdown pages."""
+        # One snapshot per build: validation and generation share a single
+        # parse of data/, while every new build re-reads the current files.
+        snapshot = CatalogSnapshot.load(self.repo_root)
+
         if validate:
-            validation = PublicationValidator(self.repo_root).validate()
+            validation = PublicationValidator(self.repo_root, snapshot=snapshot).validate()
             if not validation.passed:
                 details = "; ".join(error.message for error in validation.errors[:5])
                 raise RuntimeError(f"Publication validation failed: {details}")
 
-        if not self.adapter.load_canonical_data():
-            details = "; ".join(self.adapter.errors[:5])
-            raise RuntimeError(f"Could not load canonical publication data: {details}")
-        self.adapter.adapt_to_publication_model()
+        self.adapter.snapshot = snapshot
+        try:
+            if not self.adapter.load_canonical_data():
+                details = "; ".join(self.adapter.errors[:5])
+                raise RuntimeError(f"Could not load canonical publication data: {details}")
+            self.adapter.adapt_to_publication_model()
+        finally:
+            # The snapshot's lifetime ends with this build.
+            self.adapter.snapshot = None
 
         self._reset_output_dir()
 
