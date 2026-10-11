@@ -25,18 +25,33 @@ jobs:
           python -m pip install -e '.[dev]'
 
       - name: Run validator (human-readable)
-        run: python scripts/validate_data.py
+        run: python scripts/measure_ci.py --label validator-human -- python scripts/validate_data.py
 
       - name: Run validator (JSON artifact)
         if: always()
-        run: python scripts/validate_data.py --json > validation-report.json || true
+        run: |
+          python scripts/measure_ci.py --label validator-json -- python scripts/validate_data.py --json
+        # The measured log contains the unchanged JSON stdout of the validator.
+
+      - name: Preserve JSON report
+        if: always()
+        run: |
+          if [ -f ci-metrics/validator-json.log ]; then
+            cp ci-metrics/validator-json.log validation-report.json
+          fi
 
       - name: Add validation summary
         if: always()
         run: python scripts/summarize_validation_report.py validation-report.json >> "$GITHUB_STEP_SUMMARY"
 
       - name: Run tests
-        run: python -m pytest
+        env:
+          CI_METRICS_DIR: ci-metrics
+        run: >-
+          python scripts/measure_ci.py --label pytest --
+          python -m pytest -p classical_music.pytest_metrics
+          --durations=30 --junitxml=ci-metrics/junit.xml
+          --cov-report=xml:ci-metrics/coverage.xml
 
       - name: Upload validation report
         if: always()
@@ -44,3 +59,15 @@ jobs:
         with:
           name: validation-report
           path: validation-report.json
+
+      - name: Summarize test measurements
+        if: always()
+        run: python scripts/summarize_ci_metrics.py ci-metrics >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload test measurements
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: ci-metrics-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ci-metrics/
+          if-no-files-found: warn

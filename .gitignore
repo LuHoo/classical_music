@@ -54,3 +54,7 @@ _data_generated/
 # Operational Tidal checks and identity fingerprints (not canonical knowledge).
 /reports/tidal-maintenance/
 /reports/tidal-playlist/
+
+# Local/CI measurement artifacts
+/ci-metrics/
+/validation-report.json
