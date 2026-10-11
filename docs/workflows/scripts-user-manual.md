@@ -379,3 +379,8 @@ melding. De brede standalone audits gebruiken asserties en kunnen bij falen een
 traceback/exit 1 geven. Geen van deze curatorcommando's maakt een branch, commit,
 push, PR of merge. Handmatige TIDAL-acties en de externe luisterplaylistworkflow
 hebben hun eigen, hierboven beschreven effecten.
+
+## CI-tijden onderzoeken
+
+Zie [de reproduceerbare CI-nulmeting](ci-benchmark.md) voor testtimings, artifacts,
+YAML/buildtellers, foutafhandeling en het vergelijken van drie CI-runs (issue #305).
