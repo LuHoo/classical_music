@@ -153,6 +153,72 @@ The formal validation schema is deferred. The architectural requirement is that 
 
 The minimal YAML shape needed for migration is defined in `minimal-yaml-schemas.md`.
 
+## Shared catalog snapshot
+
+Publication validation and website generation both need every canonical record
+under `data/`. They used to discover, read and parse the same files
+independently, so a single validation parsed roughly 39,600 YAML documents for
+about 10,000 source files, and a validation plus build parsed about 49,700.
+
+`classical_music.catalog_snapshot.CatalogSnapshot` removes that duplication. It
+parses each catalog file exactly once and is then shared by the consumers of one
+logical operation.
+
+### Raw, not filtered
+
+The snapshot stores the parsed source documents, including documents without an
+`id`, documents whose root node is not a mapping, and documents that failed to
+parse. It is deliberately not the publication model.
+
+The publication model is produced by `PublicationDataAdapter`. It indexes records
+by `id` and drops everything it cannot map, so duplicate identifiers collapse and
+malformed records disappear. Source validation must therefore never read the
+publication model alone: a filtered model would conceal exactly the defects
+validation exists to find. `PublicationValidator` keeps reading the raw snapshot
+records and reports the originating source path for every finding.
+
+### Immutability
+
+Parsed documents are frozen recursively into `FrozenDict` and `FrozenList`. Both
+subclass the builtin container, so equality comparison, iteration and JSON
+serialisation keep working without wrapper overhead, while every mutating method
+raises `TypeError`. One consumer can therefore not change what another consumer
+reads, and no defensive copy per consumer is needed.
+
+The publication model that `PublicationDataAdapter` derives is a fresh, ordinary
+structure and remains writable; the nested values it borrows from the snapshot
+stay read-only.
+
+### Lifetime
+
+A snapshot is scoped to one logical validation or publication build. There is no
+process-global cache, no persistent cache and no invalidation logic based on
+modification times.
+
+- `PublicationSiteGenerator.generate()` constructs one snapshot per call and
+  passes it to the validator and the adapter, then releases it.
+- `PublicationValidator.validate()` and
+  `PublicationDataAdapter.load_canonical_data()` construct a snapshot per call
+  unless one was injected.
+- A load discards all previously collected records, publication data and
+  findings, so a repeated call on the same object cannot report a stale success.
+
+Every new curator decision, validation or publication build therefore observes
+the current contents of `data/`.
+
+### Loader semantics
+
+The snapshot uses `YAML(typ="safe")` with `allow_duplicate_keys = False`, the
+loader the publication adapter already used. Duplicate mapping keys and syntax
+errors raise and are preserved per record in `CatalogRecord.error` rather than
+discarded, so malformed sources stay visible to validation.
+
+### Remaining repeated reads
+
+Optional editorial layout files `data/publication/<composer-id>.yaml` are read by
+the site generator outside the snapshot. They are presentation metadata rather
+than canonical entities, and each is read at most once per build.
+
 ## `sources/`: retained source material
 
 The `sources/` directory contains material used to construct, verify or enrich the collection but not itself part of canonical data.
