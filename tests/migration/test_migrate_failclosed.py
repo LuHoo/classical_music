@@ -23,34 +23,33 @@ from classical_music.migration.parser import SourceRecord
 
 
 @pytest.fixture
-def mock_entity_matcher(data_root: Path):
+def mock_entity_matcher(canonical_matcher):
     """Create a mock EntityMatcher with controlled behavior."""
-    matcher = EntityMatcher(data_root)
-    return matcher
+    return canonical_matcher
 
 
-def test_unknown_composer_creates_no_candidates(data_root: Path):
+def test_unknown_composer_creates_no_candidates(canonical_matcher):
     """
     Test: unknown composer slug → no WorkCandidate, no PerformanceCandidate
     
     Required: unknown composer returns None from resolve_composer_id(),
     and migration skips creating any candidates for that record.
     """
-    matcher = EntityMatcher(data_root)
+    matcher = canonical_matcher
     
     # Unknown composer should fail closed
     result = matcher.resolve_composer_id("unknown-composer-xyz")
     assert result is None, "Unknown composer must return None (fail-closed)"
 
 
-def test_unresolved_work_creates_no_candidates(data_root: Path):
+def test_unresolved_work_creates_no_candidates(data_root: Path, canonical_matcher):
     """
     Test: UNRESOLVED identity → no new WorkCandidate, no PerformanceCandidate
     
     Required: WorkIdentityResolution.UNRESOLVED must not result in creating
     a new WorkCandidate. A review item should be created instead.
     """
-    matcher = EntityMatcher(data_root)
+    matcher = canonical_matcher
     
     # Create a scenario that produces UNRESOLVED
     # Multiple candidates without version evidence to disambiguate
@@ -81,14 +80,14 @@ def test_unresolved_work_creates_no_candidates(data_root: Path):
     # This result must NOT create a WorkCandidate in migration
 
 
-def test_matched_identity_reuses_canonical_id(data_root: Path):
+def test_matched_identity_reuses_canonical_id(data_root: Path, canonical_matcher):
     """
     Test: MATCHED identity → use canonical work_id (no duplicate WorkCandidate)
     
     Required: When identity_result.status == MATCHED, reuse the matched_work_id
     and do NOT create a new WorkCandidate with a different ID.
     """
-    matcher = EntityMatcher(data_root)
+    matcher = canonical_matcher
     
     canonical_work = ExistingEntity(
         entity_type="work",
@@ -113,14 +112,14 @@ def test_matched_identity_reuses_canonical_id(data_root: Path):
     # Migration must use this work_id directly (not create a new WorkCandidate)
 
 
-def test_new_identity_creates_only_new_candidate(data_root: Path):
+def test_new_identity_creates_only_new_candidate(canonical_matcher):
     """
     Test: NEW_IDENTITY status → WorkCandidate is created
     
     Required: Only NEW_IDENTITY permits creating a new WorkCandidate.
     MATCHED reuses existing. UNRESOLVED/BACKGROUND_ONLY skip it.
     """
-    matcher = EntityMatcher(data_root)
+    matcher = canonical_matcher
     
     # No candidates found with positive evidence for new Work → NEW_IDENTITY
     result = matcher.resolve_work_identity(

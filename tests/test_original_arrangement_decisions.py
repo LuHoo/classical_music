@@ -2,19 +2,17 @@
 import json
 from pathlib import Path
 
-from ruamel.yaml import YAML
-
 from classical_music.publication_site import PublicationSiteGenerator
 
 ROOT = Path(__file__).resolve().parents[1]
 
 
-def test_decisions_match_recommendations_and_publication():
+def test_decisions_match_recommendations_and_publication(tmp_path, canonical_records):
     report = json.loads((ROOT / 'reports/curator-decisions/original-arrangement-2026-10-04.json').read_text())
-    yaml = YAML(typ='safe')
-    records = [yaml.load(path.read_text()) for path in (ROOT / 'data/performances').glob('*.yaml')]
-    performances = {p['id']: p for p in records}
-    generated = PublicationSiteGenerator(ROOT).generate()
+    performances = canonical_records['performances']
+    records = list(performances.values())
+    # Generated pages belong in the test's temporary directory, never in the checkout.
+    generated = PublicationSiteGenerator(ROOT, tmp_path / 'publication').generate()
     assert len(report['decisions']) == 15
     for decision in report['decisions']:
         assert decision['decision_comment'].startswith(decision['issue_url'] + '#issuecomment-')

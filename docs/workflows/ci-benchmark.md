@@ -187,3 +187,108 @@ in de draft PR en dit document ingevuld. Voorlopig richt #306 zich op eliminatie
 herhaalde loads; hoeveel dat van de volledige jobtijd bespaart is nog niet gemeten.
 #305 blijft open zolang de drie runs en hun analyse ontbreken. De draft PR benoemt
 expliciet wat al is geïmplementeerd/getest en wat nog niet is gemeten.
+
+## Deterministic fixtures and shared real-catalog reads — issue #307
+
+Issue #307 reduces redundant full-catalog work *inside the test suite*, reusing the
+shared snapshot from #306 rather than introducing a second measurement mechanism.
+
+### What was duplicated
+
+Before #307, several test modules independently parsed the complete real catalog,
+each with its own `PublicationDataAdapter`, `PublicationValidator`, `EntityMatcher`
+or manual YAML glob:
+
+- `tests/test_publication_adapter.py` built a fresh adapter per test method (18 full
+  loads for one module);
+- `tests/test_publication_validator.py::TestPublicationWithRealData` (3 loads);
+- `tests/test_chamber_import.py` and `tests/test_piano_import.py` each loaded the
+  catalog in a module-scoped fixture with a hand-written YAML loader (2 loads);
+- `tests/migration/test_entity_matcher.py` and `test_migrate_failclosed.py`
+  constructed a new `EntityMatcher` per test (46 loads);
+- `tests/test_original_arrangement_decisions.py` loaded the catalog and additionally
+  called `PublicationSiteGenerator(ROOT).generate()` with the **default output
+  directory**, writing ~3,678 generated pages directly into the checkout at
+  `<repo>/publication/` and deleting whatever was there before (masked only because
+  `/publication/` is gitignored).
+
+### What changed
+
+`tests/conftest.py` adds three session-scoped fixtures built on top of #306:
+
+- `catalog_snapshot` — one `CatalogSnapshot.load(repository_root)` per test session;
+- `canonical_matcher` — one `EntityMatcher` over the real `data/` directory;
+- `canonical_records` — the snapshot's records thawed into ordinary, per-test-safe
+  mutable dicts (`thaw()`), because frozen snapshot records reject both mutation
+  and `deepcopy`.
+
+Every test above now receives the adapter/validator/matcher/record set through
+these fixtures instead of constructing its own. The assertions, inputs and
+guarantees are unchanged; only the repeated parsing was removed. This is *doing
+less work*, not *doing the same work faster*: the snapshot's parser, loader
+configuration and record contents are identical to what each test built itself.
+
+`test_original_arrangement_decisions.py` now passes an explicit `tmp_path`
+output directory to `PublicationSiteGenerator`, so a run never writes into the
+checkout. `tests/test_suite_isolation.py` adds an explicit regression test for
+this: it records a hash of the real `data/`, `reports/`, `docs/`,
+`side materials/` and `_data_generated/` trees before and after a full
+publication build, and fails if anything in the checkout changed.
+
+### What was deliberately not changed
+
+`tests/test_curator.py` and `tests/test_curator_collections.py` still construct a
+function-scoped `shutil.copytree` of the real `data/`, `reports/playlist-import/`,
+`reports/curator-decisions/`, `docs/` and `side materials/` trees per test, because
+each test calls `curator.execute()`/`curator.plan_decision()`, which mutates its
+copy and revalidates it end to end (including a full publication build through
+`chamber_import.audit`/`check_inventory`). These assertions are collection-wide
+(no leaked pending choice, no competing recommendation, decision-vs-recommendation
+equality across the *entire* performance set) and a reduced synthetic manifest
+would weaken exactly the guarantees #307 must preserve. These tests remain the
+Chamber, Piano and Best Classical full-catalog end-to-end controls. Converting
+the copy to hardlinks was considered and rejected: any test that wrote through a
+hardlink in place (rather than via `os.replace`) could silently corrupt the real
+checkout, which is an unacceptable risk for a timing optimization.
+
+### Measurement: before/after, same commit, same dataset
+
+Both runs used commit `5e2591a8` (`data` tree `615af880`, clean working tree),
+Python 3.14.3, macOS arm64, 10 CPUs, the full command used in `validate.yml`:
+
+```bash
+CI_METRICS_DIR=ci-metrics .venv/bin/python scripts/measure_ci.py --label pytest -- \
+  .venv/bin/python -m pytest -p classical_music.pytest_metrics --durations=30 \
+  --junitxml=ci-metrics/junit.xml --cov-report=xml:ci-metrics/coverage.xml
+```
+
+| Metric | Before | After | Difference |
+|---|---:|---:|---:|
+| YAML parser calls (session total) | 779,266 | 294,267 | −62% |
+| Full-catalog loads in read-only modules (adapter/validator/chamber/piano/matcher) | ~24 | 2 shared + 2 per-build | −83% |
+| Tests collected/passed | 398 / 398 | 402 / 402 | +4 (new isolation tests) |
+| Failures / skips | 0 / 0 | 0 / 0 | none |
+| Pytest duration | 3084.95 s | 2609.31 s | −15% |
+| Coverage, `validation` + `migration` | 895/1080 = 82.87% | 895/1080 = 82.87% | 0 (identical lines) |
+
+The remaining ~2,497 s is dominated by `tests/test_curator.py` (893 s) and
+`tests/test_curator_collections.py` (1,403 s), which is filesystem copy and
+decision-validation cost, not redundant YAML parsing — the deliberately retained
+full-catalog controls described above. The 2 remaining per-build full parses are
+`PublicationSiteGenerator.generate()`'s own internal `CatalogSnapshot.load()`,
+scoped to one build by #306's design; sharing that internal snapshot across tests
+would require widening `PublicationSiteGenerator`'s public API beyond this issue's
+scope, for a saving of one parse (~6 s).
+
+Order independence was checked by running the affected modules standalone, in
+reversed module order, and inside the full suite; all three produce the same
+pass count. `pytest-randomly` was not added: the repository has no existing
+dependency for randomized ordering, and the manual checks above establish the
+same guarantee for the changed modules without a new dependency.
+
+### GitHub CI measurements
+
+Not yet measured. CI figures must come from an actual GitHub Actions run after
+Lucas pushes this branch; see "Reproduceerbare baseline op GitHub" above for the
+three-run comparison protocol. Local before/after figures in this section are not
+substitutes for CI wall-clock numbers.

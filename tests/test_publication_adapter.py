@@ -27,11 +27,9 @@ class TestPublicationDataAdapter:
     """Test suite for PublicationDataAdapter."""
 
     @pytest.fixture
-    def adapter(self):
-        """Create adapter instance."""
-        # Get repo root: tests/ is directly under repo root
-        repo_root = Path(__file__).parent.parent
-        return PublicationDataAdapter(repo_root)
+    def adapter(self, repository_root, catalog_snapshot):
+        """Adapter over the real catalog, reusing the shared snapshot."""
+        return PublicationDataAdapter(repository_root, snapshot=catalog_snapshot)
 
     def test_reads_only_from_data_directory(self, adapter):
         """Verify that adapter reads only from data/ directory, not docs/."""
@@ -293,10 +291,9 @@ class TestPublicationDataIntegrity:
     """Test data integrity of publication model."""
 
     @pytest.fixture
-    def adapter(self):
-        """Create adapter instance."""
-        repo_root = Path(__file__).parent.parent
-        return PublicationDataAdapter(repo_root)
+    def adapter(self, repository_root, catalog_snapshot):
+        """Adapter over the real catalog, reusing the shared snapshot."""
+        return PublicationDataAdapter(repository_root, snapshot=catalog_snapshot)
 
     def test_all_compositions_belong_to_composer(self, adapter):
         """Verify all works belong to a composer."""

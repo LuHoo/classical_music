@@ -5,7 +5,6 @@ import json
 from pathlib import Path
 
 import pytest
-from ruamel.yaml import YAML
 
 ROOT = Path(__file__).resolve().parents[1]
 spec = importlib.util.spec_from_file_location('chamber_audit', ROOT / 'scripts/check_chamber_import.py')
@@ -14,14 +13,15 @@ spec.loader.exec_module(audit)
 
 
 @pytest.fixture(scope='module')
-def inventory():
+def inventory(canonical_records):
+    """Real manifest plus the complete real catalog, parsed once per session.
+
+    check_inventory asserts collection-wide properties (no leaked pending
+    choice, no competing recommendation, decision equals recommendations), so
+    the complete record set is required; only the repeated parsing is removed.
+    """
     manifest = json.loads((ROOT / audit.MANIFEST).read_text())
-    yaml = YAML(typ='safe')
-    data = {}
-    for kind in ('persons', 'work-groups', 'works', 'performances'):
-        records = [yaml.load(p.read_text()) for p in (ROOT / 'data' / kind).glob('*.yaml')]
-        data[kind] = {r['id']: r for r in records}
-    return manifest, data
+    return manifest, {kind: dict(records) for kind, records in canonical_records.items()}
 
 
 def test_complete_snapshot_and_curator_gates(inventory):

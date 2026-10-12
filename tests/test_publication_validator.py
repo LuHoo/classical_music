@@ -14,10 +14,9 @@ from classical_music.publication_validator import PublicationValidator, Validati
 
 
 @pytest.fixture
-def validator():
-    """Create validator with actual project data."""
-    repo_root = Path(__file__).parent.parent
-    return PublicationValidator(repo_root)
+def validator(repository_root, catalog_snapshot):
+    """Validator over the real catalog, reusing the shared snapshot."""
+    return PublicationValidator(repository_root, snapshot=catalog_snapshot)
 
 
 @pytest.fixture
