@@ -248,9 +248,9 @@ def test_writer_preserves_source_performer_text(tmp_path: Path):
     assert "source_performer_text: Amy Norrington, Piet Kuijken" in text
 
 
-def test_entity_matcher_loads_canonical_data(data_root: Path):
+def test_entity_matcher_loads_canonical_data(canonical_matcher):
     """Test that EntityMatcher loads canonical entities."""
-    matcher = EntityMatcher(data_root)
+    matcher = canonical_matcher
     
     # Verify counts
     assert len(matcher.works) > 0
@@ -258,9 +258,9 @@ def test_entity_matcher_loads_canonical_data(data_root: Path):
     assert len(matcher.persons) > 0
 
 
-def test_candidate_discovery_bruckner_exact_match(data_root: Path):
+def test_candidate_discovery_bruckner_exact_match(canonical_matcher):
     """Test finding candidates for exact Bruckner work."""
-    matcher = EntityMatcher(data_root)
+    matcher = canonical_matcher
     
     # Find candidates for exact title
     candidates = matcher.find_work_candidates(
@@ -273,9 +273,9 @@ def test_candidate_discovery_bruckner_exact_match(data_root: Path):
     assert any("symphony" in c.entity_id.lower() for c in candidates)
 
 
-def test_identity_resolution_with_version_evidence(data_root: Path):
+def test_identity_resolution_with_version_evidence(canonical_matcher):
     """Test identity resolution disambiguates using version evidence."""
-    matcher = EntityMatcher(data_root)
+    matcher = canonical_matcher
     
     # Title with version info disambiguates between three versions
     title_with_version = 'Symphony No. 1 in C minor "Das kecke Beserl" (1865 version)'
@@ -289,9 +289,9 @@ def test_identity_resolution_with_version_evidence(data_root: Path):
     assert result.matched_work_id is not None
 
 
-def test_identity_resolution_multiple_candidates_no_version(data_root: Path):
+def test_identity_resolution_multiple_candidates_no_version(canonical_matcher):
     """Test that multiple candidates without version evidence = unresolved."""
-    matcher = EntityMatcher(data_root)
+    matcher = canonical_matcher
     
     # A shared catalogue finds all three versions even when a canonical title
     # explicitly names its version. The source supplies no version evidence.
@@ -308,9 +308,9 @@ def test_identity_resolution_multiple_candidates_no_version(data_root: Path):
     assert result.candidates_count == 3
 
 
-def test_version_text_in_candidates(data_root: Path):
+def test_version_text_in_candidates(canonical_matcher):
     """Test that version text is preserved during candidate discovery."""
-    matcher = EntityMatcher(data_root)
+    matcher = canonical_matcher
     
     # Legacy Markdown has version info in parentheses
     candidates = matcher.find_work_candidates(
@@ -322,9 +322,9 @@ def test_version_text_in_candidates(data_root: Path):
     assert len(candidates) > 0
 
 
-def test_version_evidence_used_in_resolution(data_root: Path):
+def test_version_evidence_used_in_resolution(canonical_matcher):
     """Test that version evidence is captured and used."""
-    matcher = EntityMatcher(data_root)
+    matcher = canonical_matcher
     
     title_with_version = 'Symphony No. 1 in C minor "Das kecke Beserl" (1865 version)'
     
@@ -335,9 +335,9 @@ def test_version_evidence_used_in_resolution(data_root: Path):
     assert any("version" in evidence for evidence in result.evidence_used)
 
 
-def test_no_match_means_unresolved_not_new_identity(data_root: Path):
+def test_no_match_means_unresolved_not_new_identity(canonical_matcher):
     """Test that NO_MATCH != NEW_WORK (fundamental rule)."""
-    matcher = EntityMatcher(data_root)
+    matcher = canonical_matcher
     
     # Non-existent work
     candidates = matcher.find_work_candidates(
@@ -357,8 +357,8 @@ def test_no_match_means_unresolved_not_new_identity(data_root: Path):
     assert result.requires_curator_action
 
 
-def test_bruckner_tantum_ergo_catalogue_collisions_resolve_distinct_works(data_root: Path):
-    matcher = EntityMatcher(data_root)
+def test_bruckner_tantum_ergo_catalogue_collisions_resolve_distinct_works(canonical_matcher):
+    matcher = canonical_matcher
 
     expected = {
         ("Tantum ergo (c. 1845)", "WAB.32"): "anton-bruckner-tantum-ergo-work",
@@ -382,8 +382,8 @@ def test_bruckner_tantum_ergo_catalogue_collisions_resolve_distinct_works(data_r
         assert result.matched_work_id == expected[(title, catalogue)]
 
 
-def test_source_provenance_selects_bruckner_symphony_no_5_versions(data_root: Path):
-    matcher = EntityMatcher(data_root)
+def test_source_provenance_selects_bruckner_symphony_no_5_versions(canonical_matcher):
+    matcher = canonical_matcher
 
     cases = {
         48: "anton-bruckner-symphony-no-5-in-bb-major-work",
@@ -411,8 +411,8 @@ def test_source_provenance_selects_bruckner_symphony_no_5_versions(data_root: Pa
         assert result.matched_work_id == expected_id
 
 
-def test_source_version_text_selects_mahler_gamzou_realisation(data_root: Path):
-    matcher = EntityMatcher(data_root)
+def test_source_version_text_selects_mahler_gamzou_realisation(canonical_matcher):
+    matcher = canonical_matcher
     work_title = (
         "Symphony No. 10 in F sharp (unfinished; continuous draft score) (1910) "
         "(Realisation and elaboration of the unfinished drafts by Yoel Gamzou)"
@@ -440,8 +440,8 @@ def test_source_version_text_selects_mahler_gamzou_realisation(data_root: Path):
     assert "version_text_match" in result.evidence_used
 
 
-def test_prokofiev_opus_resolves_original_and_revised_versions(data_root: Path):
-    matcher = EntityMatcher(data_root)
+def test_prokofiev_opus_resolves_original_and_revised_versions(canonical_matcher):
+    matcher = canonical_matcher
 
     cases = {
         ("Sinfonietta in A (original version)", "Op.5"): "sergei-prokofiev-sinfonietta-in-a-original-version-work",
@@ -462,18 +462,18 @@ def test_prokofiev_opus_resolves_original_and_revised_versions(data_root: Path):
         assert result.matched_work_id == expected_id
 
 
-def test_composer_mapping(data_root: Path):
+def test_composer_mapping(canonical_matcher):
     """Test doc slug to canonical composer_id mapping."""
-    matcher = EntityMatcher(data_root)
+    matcher = canonical_matcher
     
     # Slug "bruckner" should resolve to "anton-bruckner"
     canonical_id = matcher.resolve_composer_id("bruckner")
     assert canonical_id == "anton-bruckner"
 
 
-def test_unresolved_composer_fails_closed(data_root: Path):
+def test_unresolved_composer_fails_closed(canonical_matcher):
     """Test that unknown composer slug doesn't fallback."""
-    matcher = EntityMatcher(data_root)
+    matcher = canonical_matcher
     
     # Unknown composer should return None, not fallback
     canonical_id = matcher.resolve_composer_id("completely-unknown-composer")
@@ -542,9 +542,9 @@ def test_curated_composer_source_with_no_existing_work_creates_new_identity(tmp_
     assert "curated_source_provenance" in result.evidence_used
 
 
-def test_uncurated_no_match_still_fails_closed(data_root: Path):
+def test_uncurated_no_match_still_fails_closed(canonical_matcher):
     """A random no-candidate title must not become a new Work."""
-    matcher = EntityMatcher(data_root)
+    matcher = canonical_matcher
     result = matcher.resolve_work_identity(
         "Completely Fake Symphony in Z Major",
         "anton-bruckner",
@@ -557,8 +557,8 @@ def test_uncurated_no_match_still_fails_closed(data_root: Path):
     assert result.requires_curator_action is True
 
 
-def test_tidal_source_with_no_existing_performance_creates_new_performance(data_root: Path):
-    matcher = EntityMatcher(data_root)
+def test_tidal_source_with_no_existing_performance_creates_new_performance(canonical_matcher):
+    matcher = canonical_matcher
 
     result = matcher.resolve_performance_identity(
         "johannes-brahms-symphony-no-1-work",
@@ -572,9 +572,9 @@ def test_tidal_source_with_no_existing_performance_creates_new_performance(data_
     assert result.evidence_used == ["tidal_url"]
 
 
-def test_matches_summary(data_root: Path):
+def test_matches_summary(canonical_matcher):
     """Test that matches summary reports loaded entity counts."""
-    matcher = EntityMatcher(data_root)
+    matcher = canonical_matcher
     summary = matcher.matches_summary()
     
     assert summary["persons"] > 0
@@ -583,14 +583,14 @@ def test_matches_summary(data_root: Path):
     assert summary["performances"] > 0
 
 
-def test_single_candidate_requires_positive_version_evidence(data_root: Path):
+def test_single_candidate_requires_positive_version_evidence(data_root: Path, canonical_matcher):
     """
     Requirement #2: Single candidate + source version must have positive evidence.
     
     Test: source says 1865, canonical has no version evidence → UNRESOLVED
     (not MATCHED by absence of contradiction)
     """
-    matcher = EntityMatcher(data_root)
+    matcher = canonical_matcher
     
     # Create a synthetic candidate with no version evidence
     from classical_music.migration.entity_matcher import ExistingEntity
@@ -618,11 +618,11 @@ def test_single_candidate_requires_positive_version_evidence(data_root: Path):
     assert result.requires_curator_action is True
 
 
-def test_single_candidate_with_positive_version_evidence(data_root: Path):
+def test_single_candidate_with_positive_version_evidence(data_root: Path, canonical_matcher):
     """
     Test: source says 1865, canonical has explicit version_year 1865 → MATCHED
     """
-    matcher = EntityMatcher(data_root)
+    matcher = canonical_matcher
     
     from classical_music.migration.entity_matcher import ExistingEntity
     candidate = ExistingEntity(
@@ -648,11 +648,11 @@ def test_single_candidate_with_positive_version_evidence(data_root: Path):
     assert result.requires_curator_action is False
 
 
-def test_single_candidate_with_positive_version_field_evidence(data_root: Path):
+def test_single_candidate_with_positive_version_field_evidence(data_root: Path, canonical_matcher):
     """
     Test: source says 1911, canonical version text explicitly says 1911 original version.
     """
-    matcher = EntityMatcher(data_root)
+    matcher = canonical_matcher
 
     from classical_music.migration.entity_matcher import ExistingEntity
 
@@ -678,8 +678,8 @@ def test_single_candidate_with_positive_version_field_evidence(data_root: Path):
     assert result.requires_curator_action is False
 
 
-def test_multiple_candidates_disambiguate_by_explicit_year_in_title(data_root: Path):
-    matcher = EntityMatcher(data_root)
+def test_multiple_candidates_disambiguate_by_explicit_year_in_title(data_root: Path, canonical_matcher):
+    matcher = canonical_matcher
 
     from classical_music.migration.entity_matcher import ExistingEntity
 
@@ -708,12 +708,12 @@ def test_multiple_candidates_disambiguate_by_explicit_year_in_title(data_root: P
     assert result.matched_work_id == "symphony-1902"
 
 
-def test_single_candidate_contradictory_version(data_root: Path):
+def test_single_candidate_contradictory_version(data_root: Path, canonical_matcher):
     """
     Test: source says 1865, canonical explicitly says 1889 → UNRESOLVED
     (contradictory explicit evidence means not this version)
     """
-    matcher = EntityMatcher(data_root)
+    matcher = canonical_matcher
     
     from classical_music.migration.entity_matcher import ExistingEntity
     candidate = ExistingEntity(
@@ -738,13 +738,13 @@ def test_single_candidate_contradictory_version(data_root: Path):
     assert result.requires_curator_action is True
 
 
-def test_catalogue_evidence_does_not_override_version(data_root: Path):
+def test_catalogue_evidence_does_not_override_version(data_root: Path, canonical_matcher):
     """
     Requirement: Catalogue evidence must not override contradictory version evidence.
     
     Test: same WAB family + source 1873 + candidate explicitly 1889 → UNRESOLVED
     """
-    matcher = EntityMatcher(data_root)
+    matcher = canonical_matcher
     
     from classical_music.migration.entity_matcher import ExistingEntity
     # Candidate in same WAB family but different version
@@ -772,13 +772,13 @@ def test_catalogue_evidence_does_not_override_version(data_root: Path):
     assert result.requires_curator_action is True
 
 
-def test_find_performance_candidates_by_tidal_url(data_root: Path):
+def test_find_performance_candidates_by_tidal_url(canonical_matcher):
     """
     Test: Performance candidate discovery by Tidal URL.
     
     For a given Work, find canonical Performance with matching Tidal URL.
     """
-    matcher = EntityMatcher(data_root)
+    matcher = canonical_matcher
     
     # Try finding performances for a known Bruckner work
     from classical_music.migration.entity_matcher import ExistingEntity
@@ -798,13 +798,13 @@ def test_find_performance_candidates_by_tidal_url(data_root: Path):
     assert isinstance(candidates, list)
 
 
-def test_resolve_performance_identity_with_tidal_url(data_root: Path):
+def test_resolve_performance_identity_with_tidal_url(data_root: Path, canonical_matcher):
     """
     Test: Performance identity resolution with exact Tidal URL match.
     
     Same Tidal URL + same Work → MATCHED_EXISTING
     """
-    matcher = EntityMatcher(data_root)
+    matcher = canonical_matcher
     from classical_music.migration.entity_matcher import ExistingEntity
     from classical_music.migration.models import PerformanceIdentityResolution
     
@@ -835,12 +835,12 @@ def test_resolve_performance_identity_with_tidal_url(data_root: Path):
     assert result.requires_curator_action is False
 
 
-def test_resolve_performance_identity_no_candidates(data_root: Path):
+def test_resolve_performance_identity_no_candidates(canonical_matcher):
     """
     Test: Performance identity with no candidates → UNRESOLVED
     (not automatically NEW_PERFORMANCE without positive evidence)
     """
-    matcher = EntityMatcher(data_root)
+    matcher = canonical_matcher
     from classical_music.migration.models import PerformanceIdentityResolution
     
     result = matcher.resolve_performance_identity(
