@@ -238,10 +238,12 @@ gegenereerde `publication/` vernieuwen. Zij voeren geen Git-opdrachten uit.
 | `check_chamber_import.py` | Geen parameters | Volledige Chamber-broncontrole, curatorrecords en publicatiegeneratie |
 | `check_piano_import.py` | Geen parameters | Piano-controle inclusief ruwe metadatafingerprint, luisterankers, versieonderzoek en curatorrecords |
 | `check_tidal_window_import.py` | `--manifest PATH`, standaard `reports/playlist-import/best-classical/window-333-1998.json` | Controle van één Best Classical-venster, canonieke verwijzingen, geregistreerde keuzes en publicatie |
-| `validate_data.py` | `--json`; herhaalbaar `--identity-gate-id ID` | Brede canonieke validatie; JSON naar stdout of leesbare tabel. Exit 1 bij fouten |
+| `validate_data.py` | `--json`; `--json-output PATH`; herhaalbaar `--identity-gate-id ID` | Brede canonieke validatie; JSON naar stdout, leesbare tabel, en/of JSON naar een bestand uit dezelfde run. Exit 1 bij fouten |
 | `generate_publication_site.py` | Geen parameters | Valideert en bouwt `publication/` opnieuw; vervangt de bestaande gegenereerde inhoud |
 | `check_publication_links.py` | `--site-dir _site`; `--config _config.yml` | Controleert lokale links in een eerder gebouwde Jekyll-site |
 | `summarize_validation_report.py` | `REPORT`; `--limit 10` | Vat opgeslagen validatie-JSON samen |
+| `classify_pr_changes.py` | `--event-name`; `--repository`; `--pr-number`; `--force-full`; `--output PATH` | CI-only: classificeert gewijzigde PR-bestanden (issue #308); schrijft `data-only`/`full` plus reden naar JSON en GitHub Actions outputs. Faalt nooit; een onzekere classificatie valt terug op `full` |
+| `summarize_classification.py` | `PATH` | Rendert de classificatiebeslissing als GitHub-jobsamenvatting |
 
 ```bash
 .venv/bin/python scripts/fetch_tidal_playlist.py <playlist-id> --limit 100 --country NL --output reports/tidal-playlist/source.json

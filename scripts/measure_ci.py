@@ -70,7 +70,8 @@ def measure(command, output, label):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path, default=Path('ci-metrics'))
-    parser.add_argument('--label', required=True, choices=['pytest', 'validator-human', 'validator-json'])
+    parser.add_argument('--label', required=True,
+                         choices=['pytest', 'validator', 'classify', 'validator-human', 'validator-json'])
     parser.add_argument('command', nargs=argparse.REMAINDER)
     args = parser.parse_args()
     command = args.command[1:] if args.command[:1] == ['--'] else args.command

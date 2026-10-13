@@ -23,7 +23,10 @@ console = Console()
 
 @app.command()
 def main(
-    json_output: bool = typer.Option(False, "--json", help="Emit JSON report."),
+    json_output: bool = typer.Option(False, "--json", help="Emit JSON report to stdout instead of a table."),
+    json_output_path: Path | None = typer.Option(
+        None, "--json-output", help="Also write the JSON report to this path, in addition to console output."
+    ),
     identity_gate_id: list[str] = typer.Option(
         [], "--identity-gate-id", help="Activate review for a changed entity ID."
     ),
@@ -31,16 +34,17 @@ def main(
     validator = DataValidator(repository_root=ROOT)
     report = validator.run(identity_gate_ids=set(identity_gate_id))
 
+    payload = {
+        "error_count": report.error_count,
+        "warning_count": report.warning_count,
+        "info_count": report.info_count,
+        "action_required_count": report.action_required_count,
+        "background_suspicion_count": report.background_suspicion_count,
+        "auto_resolved_count": report.auto_resolved_count,
+        "findings": [finding.model_dump() for finding in report.findings],
+    }
+
     if json_output:
-        payload = {
-            "error_count": report.error_count,
-            "warning_count": report.warning_count,
-            "info_count": report.info_count,
-            "action_required_count": report.action_required_count,
-            "background_suspicion_count": report.background_suspicion_count,
-            "auto_resolved_count": report.auto_resolved_count,
-            "findings": [finding.model_dump() for finding in report.findings],
-        }
         print(json.dumps(payload, indent=2))
     else:
         table = Table(title="Canonical Data Validation")
@@ -64,7 +68,12 @@ def main(
             f"Errors: {report.error_count} | Warnings: {report.warning_count} | Info: {report.info_count}"
         )
 
+    if json_output_path is not None:
+        json_output_path.parent.mkdir(parents=True, exist_ok=True)
+        json_output_path.write_text(json.dumps(payload, indent=2) + "\n")
+
     raise typer.Exit(code=1 if report.has_errors else 0)
+
 
 
 if __name__ == "__main__":

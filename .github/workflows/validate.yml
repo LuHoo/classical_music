@@ -5,6 +5,24 @@ on:
     branches: [main]
   pull_request:
   workflow_dispatch:
+    inputs:
+      force_full:
+        description: >-
+          Force the full validation route regardless of file classification.
+          Push and manual runs always use the full route independent of this flag.
+        type: boolean
+        default: false
+
+# Only the same pull request's own superseded runs are cancelled. Different
+# PRs never share a group, and push-to-main / manual runs are never
+# auto-cancelled (see docs/workflows/ci-benchmark.md).
+concurrency:
+  group: validate-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+permissions:
+  contents: read
+  pull-requests: read
 
 jobs:
   validate:
@@ -24,25 +42,33 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install -e '.[dev]'
 
-      - name: Run validator (human-readable)
-        run: python scripts/measure_ci.py --label validator-human -- python scripts/validate_data.py
+      - name: Classify changed files
+        id: classify
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: >-
+          python scripts/measure_ci.py --label classify --
+          python scripts/classify_pr_changes.py
+          --event-name "${{ github.event_name }}"
+          --repository "${{ github.repository }}"
+          --pr-number "${{ github.event.pull_request.number }}"
+          --force-full "${{ github.event.inputs.force_full }}"
+          --output ci-metrics/classification.json
+        # Never fails this step: an unreliable classification degrades to the
+        # full route, which is always sufficient on its own.
 
-      - name: Run validator (JSON artifact)
-        if: always()
-        run: |
-          python scripts/measure_ci.py --label validator-json -- python scripts/validate_data.py --json
-        # The measured log contains the unchanged JSON stdout of the validator.
-
-      - name: Preserve JSON report
-        if: always()
-        run: |
-          if [ -f ci-metrics/validator-json.log ]; then
-            cp ci-metrics/validator-json.log validation-report.json
-          fi
+      - name: Run validator (single pass; console and JSON)
+        run: >-
+          python scripts/measure_ci.py --label validator --
+          python scripts/validate_data.py --json-output validation-report.json
 
       - name: Add validation summary
         if: always()
         run: python scripts/summarize_validation_report.py validation-report.json >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Add validation-policy summary
+        if: always()
+        run: python scripts/summarize_classification.py ci-metrics/classification.json >> "$GITHUB_STEP_SUMMARY"
 
       - name: Run tests
         env:
@@ -52,6 +78,11 @@ jobs:
           python -m pytest -p classical_music.pytest_metrics
           --durations=30 --junitxml=ci-metrics/junit.xml
           --cov-report=xml:ci-metrics/coverage.xml
+          ${{ steps.classify.outputs.pytest_targets }}
+        # steps.classify.outputs.pytest_targets is empty on the full route,
+        # which runs pytest's configured default (testpaths = tests/).
+        # Canonical and publication validation above always run in full,
+        # regardless of route; only this pytest scope narrows.
 
       - name: Upload validation report
         if: always()
