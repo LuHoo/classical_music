@@ -58,3 +58,5 @@ _data_generated/
 # Local/CI measurement artifacts
 /ci-metrics/
 /validation-report.json
+/ci-baseline/
+
