@@ -1,0 +1,9 @@
+id: 5f6b75f410a24fc1ad9f15b63beb873b
+work_group_id: e00824e46008413684646eb4adc1f364
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Sinfonia, RV 146
+catalogue:
+  rv: RV 146
+source:
+  url: https://vivaldiedition.net/portfolio/vol-21-tito-manlio-2005/
+  file: reports/vivaldi-naive-edition/catalogue.json

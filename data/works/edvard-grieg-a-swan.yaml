@@ -1,0 +1,11 @@
+id: edvard-grieg-a-swan
+work_group_id: edvard-grieg-a-swan-group
+composer_id: edvard-grieg
+title: A Swan (orchestral version)
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url:
+    https://www.deutschegrammophon.com/en/catalogue/products/grieg-complete-music-with-orchestra-jaervi-11417
+catalogue:
+  opus: Op. 25 No. 2
+version: Orchestral version

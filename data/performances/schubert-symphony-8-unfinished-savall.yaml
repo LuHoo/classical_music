@@ -1,0 +1,18 @@
+id: schubert-symphony-8-unfinished-savall
+links:
+  tidal:
+    url: https://tidal.com/track/250180588
+performers:
+- name: Le Concert des Nations
+  role: orchestra
+- name: Jordi Savall
+  role: conductor
+release:
+  album_title: 'Schubert: Symphonies Nos. 8 & 9'
+  catalogue_number: AVSA9950
+  label: Alia Vox
+source:
+  file: reports/playlist-import/best-classical/prepared-120.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+work_id: schubert-symphony-8-unfinished
+year: 2021

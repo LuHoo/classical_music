@@ -1,0 +1,12 @@
+id: johann-sebastian-bach-fugue-in-g-minor-work
+work_group_id: johann-sebastian-bach-fugue-in-g-minor-group
+composer_id: johann-sebastian-bach
+title: Fugue in G minor (Stokowski orchestration)
+source:
+  file: docs/bachJS.md
+  line: '88'
+  url: https://ci.nii.ac.jp/ncid/BA50788723
+catalogue:
+  bwv: BWV 578
+category: Orchestral arrangements
+version: Orchestration by Leopold Stokowski

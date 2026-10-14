@@ -1,0 +1,17 @@
+id: "paul-hindemith-quartet-work-sharon-kam-antje-weithaas-julian-steckel-enrico-pace"
+work_id: "paul-hindemith-quartet-work"
+performers:
+  - name: "Sharon Kam"
+    role: "performer"
+  - name: "Antje Weithaas"
+    role: "performer"
+  - name: "Julian Steckel"
+    role: "performer"
+  - name: "Enrico Pace"
+    role: "orchestra"
+links:
+  tidal:
+    url: "https://tidal.com/album/201678139/track/201678141"
+source:
+  file: "docs/hindemith.md"
+  line: "213"

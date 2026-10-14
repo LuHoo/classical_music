@@ -1,0 +1,10 @@
+id: richard-strauss-eine-alpensinfonie
+work_group_id: richard-strauss-eine-alpensinfonie-group
+composer_id: richard-strauss
+title: Eine Alpensinfonie
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://www.pentatonemusic.com/product/strauss-eine-alpensinfonie/
+catalogue:
+  opus: Op. 64
+  trv: TrV 233

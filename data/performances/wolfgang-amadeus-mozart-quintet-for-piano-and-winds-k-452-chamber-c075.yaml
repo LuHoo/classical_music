@@ -1,0 +1,21 @@
+id: wolfgang-amadeus-mozart-quintet-for-piano-and-winds-k-452-chamber-c075
+work_id: wolfgang-amadeus-mozart-quintet-for-piano-and-winds-k-452
+performers:
+  - name: Jean-Efflam Bavouzet
+    role: piano
+  - name: Rachael Clegg
+    role: oboe
+  - name: Fiona Cross
+    role: clarinet
+  - name: Ben Hudson
+    role: bassoon
+  - name: Naomi Atherton
+    role: horn
+links:
+  tidal:
+    url: https://tidal.com/track/196950634
+release:
+  album_title: 'Mozart: Piano Concertos, Vol. 3'
+source:
+  file: reports/playlist-import/chamber/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/a2327106-07fd-4433-8bd3-d8a5c251c69a

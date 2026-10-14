@@ -1,0 +1,9 @@
+id: 14c4bce0665d47b0a4ad79b9a3a64369
+work_group_id: f60282e40f2841c98710080e6e1da037
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 186
+catalogue:
+  rv: RV 186
+source:
+  url: https://vivaldiedition.net/portfolio/vol-57-concerti-per-violino-vi-la-boemia-2018/
+  file: reports/vivaldi-naive-edition/catalogue.json

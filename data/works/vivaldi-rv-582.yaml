@@ -1,0 +1,9 @@
+id: 0d8f41e5a2b642a981fbf31d25d163c3
+work_group_id: 5dcd7a3ab59848faadcb7b75890a5687
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 582
+catalogue:
+  rv: RV 582
+source:
+  url: https://vivaldiedition.net/portfolio/vol-59-musica-sacra-per-alto-2019/
+  file: reports/vivaldi-naive-edition/catalogue.json

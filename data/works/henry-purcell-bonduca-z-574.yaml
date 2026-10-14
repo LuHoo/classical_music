@@ -1,0 +1,9 @@
+id: henry-purcell-bonduca-z-574
+work_group_id: henry-purcell-bonduca-z-574-group
+composer_id: henry-purcell
+title: Bonduca, Z. 574
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://imslp.org/wiki/Bonduca,_Z.574_(Purcell,_Henry)
+catalogue:
+  z: '574'

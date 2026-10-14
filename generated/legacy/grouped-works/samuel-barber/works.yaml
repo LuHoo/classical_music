@@ -1,0 +1,1096 @@
+composer_id: samuel-barber
+works:
+  - id: barber-op32
+    composer_id: samuel-barber
+    canonical_title: Vanessa
+    localized_titles:
+      en: Vanessa
+      nl: Vanessa
+    year: 1956-1957, 1964
+    category: opera
+    catalogue:
+      opus: Op. 32
+    aliases:
+      - Vanessa
+      - Vanessa, Op. 32
+      - Op. 32
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-op35
+    composer_id: samuel-barber
+    canonical_title: A Hand of Bridge
+    localized_titles:
+      en: A Hand of Bridge
+      nl: A Hand of Bridge
+    year: 1959
+    category: opera
+    catalogue:
+      opus: Op. 35
+    aliases:
+      - A Hand of Bridge
+      - A Hand of Bridge, Op. 35
+      - Op. 35
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-op40
+    composer_id: samuel-barber
+    canonical_title: Antony and Cleopatra
+    localized_titles:
+      en: Antony and Cleopatra
+      nl: Antony and Cleopatra
+    year: 1966, 1975
+    category: opera
+    catalogue:
+      opus: Op. 40
+    aliases:
+      - Antony and Cleopatra
+      - Antony and Cleopatra, Op. 40
+      - Op. 40
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-serpent-heart
+    composer_id: samuel-barber
+    canonical_title: Serpent Heart
+    localized_titles:
+      en: Serpent Heart
+      nl: Serpent Heart
+    year: 1946
+    category: ballet
+    aliases:
+      - Serpent Heart
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-cave-of-the-heart
+    composer_id: samuel-barber
+    canonical_title: Cave of the Heart
+    localized_titles:
+      en: Cave of the Heart
+      nl: Cave of the Heart
+    year: 1947
+    category: ballet
+    aliases:
+      - Cave of the Heart
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-op28-ballet
+    composer_id: samuel-barber
+    canonical_title: Souvenirs
+    localized_titles:
+      en: Souvenirs
+      nl: Souvenirs
+    year: 1955
+    category: ballet
+    catalogue:
+      opus: Op. 28
+    aliases:
+      - Souvenirs
+      - Souvenirs, Op. 28
+      - Op. 28
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+    notes: >-
+      Ballet entry from the current Barber collection page; related piano-suite versions are modelled separately.
+
+  - id: barber-op1-string-orchestra
+    composer_id: samuel-barber
+    canonical_title: Serenade
+    localized_titles:
+      en: Serenade
+      nl: Serenade
+    year: 1944
+    category: orchestral
+    catalogue:
+      opus: Op. 1
+    aliases:
+      - Serenade
+      - Serenade, Op. 1
+      - Serenade for string orchestra
+      - str-orch
+      - Op. 1
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+    notes: >-
+      String-orchestra version, modelled separately from the chamber Serenade listed under chamber music.
+
+  - id: barber-op5
+    composer_id: samuel-barber
+    canonical_title: Overture to The School for Scandal
+    localized_titles:
+      en: Overture to The School for Scandal
+      nl: Overture to The School for Scandal
+    year: 1931
+    category: orchestral
+    catalogue:
+      opus: Op. 5
+    aliases:
+      - Overture to The School for Scandal
+      - The School for Scandal Overture
+      - Overture to "The School for Scandal"
+      - Op. 5
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-op7
+    composer_id: samuel-barber
+    canonical_title: Music for a Scene from Shelley
+    localized_titles:
+      en: Music for a Scene from Shelley
+      nl: Music for a Scene from Shelley
+    year: 1933
+    category: orchestral
+    catalogue:
+      opus: Op. 7
+    aliases:
+      - Music for a Scene from Shelley
+      - Music for a Scene from Shelley, Op. 7
+      - Op. 7
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-op9
+    composer_id: samuel-barber
+    canonical_title: First Symphony
+    localized_titles:
+      en: First Symphony
+      nl: Eerste symfonie
+    year: 1935-1936, 1942-1943
+    category: orchestral
+    catalogue:
+      opus: Op. 9
+    aliases:
+      - First Symphony
+      - Symphony No. 1
+      - First Symphony in One Movement
+      - Symphony in One Movement
+      - Op. 9
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-op11a
+    composer_id: samuel-barber
+    canonical_title: Adagio for Strings
+    localized_titles:
+      en: Adagio for Strings
+      nl: Adagio for Strings
+    year: 1936
+    category: orchestral
+    catalogue:
+      opus: Op. 11a
+    aliases:
+      - Adagio for Strings
+      - Adagio for Strings, Op. 11a
+      - Op. 11a
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+    notes: >-
+      Orchestral arrangement associated with the String Quartet, Op. 11.
+
+  - id: barber-op12
+    composer_id: samuel-barber
+    canonical_title: Essay for Orchestra
+    localized_titles:
+      en: Essay for Orchestra
+      nl: Essay for Orchestra
+    year: 1938
+    category: orchestral
+    catalogue:
+      opus: Op. 12
+    aliases:
+      - Essay for Orchestra
+      - First Essay for Orchestra
+      - Essay for Orchestra No. 1
+      - Op. 12
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-op17
+    composer_id: samuel-barber
+    canonical_title: Second Essay for Orchestra
+    localized_titles:
+      en: Second Essay for Orchestra
+      nl: Second Essay for Orchestra
+    year: 1942
+    category: orchestral
+    catalogue:
+      opus: Op. 17
+    aliases:
+      - Second Essay for Orchestra
+      - Essay for Orchestra No. 2
+      - Op. 17
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-op19
+    composer_id: samuel-barber
+    canonical_title: Symphony No. 2
+    localized_titles:
+      en: Symphony No. 2
+      nl: Tweede symfonie
+    year: 1944, 1947
+    category: orchestral
+    catalogue:
+      opus: Op. 19
+    aliases:
+      - Symphony No. 2
+      - Second Symphony
+      - Op. 19
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-op19a
+    composer_id: samuel-barber
+    canonical_title: Night Flight
+    localized_titles:
+      en: Night Flight
+      nl: Night Flight
+    year: 1964
+    category: orchestral
+    catalogue:
+      opus: Op. 19a
+    aliases:
+      - Night Flight
+      - Night Flight, Tone Poem
+      - Night Flight, Op. 19a
+      - Op. 19a
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-horizon
+    composer_id: samuel-barber
+    canonical_title: Horizon
+    localized_titles:
+      en: Horizon
+      nl: Horizon
+    year: 1945
+    category: orchestral
+    aliases:
+      - Horizon
+      - Horizon for chamber orchestra
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-op23-suite
+    composer_id: samuel-barber
+    canonical_title: Medea, Suite
+    localized_titles:
+      en: Medea, Suite
+      nl: Medea, suite
+    year: 1947
+    category: orchestral
+    catalogue:
+      opus: Op. 23
+    aliases:
+      - Medea, Suite
+      - Medea Suite
+      - Medea, Op. 23
+      - Op. 23
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-op23a
+    composer_id: samuel-barber
+    canonical_title: Medea's Dance of Vengeance
+    localized_titles:
+      en: Medea's Dance of Vengeance
+      nl: Medea's Dance of Vengeance
+    year: 1955
+    category: orchestral
+    catalogue:
+      opus: Op. 23a
+    aliases:
+      - Medea's Dance of Vengeance
+      - Medeas Dance of Vengeance
+      - Medea's Meditation and Dance of Vengeance
+      - Op. 23a
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-vanessa-intermezzo
+    composer_id: samuel-barber
+    canonical_title: Intermezzo from Vanessa
+    localized_titles:
+      en: Intermezzo from Vanessa
+      nl: Intermezzo from Vanessa
+    year: 1958
+    category: orchestral
+    aliases:
+      - Intermezzo from Vanessa
+      - Intermezzo from the Opera Vanessa
+      - Vanessa Intermezzo
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-op37
+    composer_id: samuel-barber
+    canonical_title: Die Natali
+    localized_titles:
+      en: Die Natali
+      nl: Die Natali
+    year: 1960
+    category: orchestral
+    catalogue:
+      opus: Op. 37
+    aliases:
+      - Die Natali
+      - Die Natali, Chorale Preludes for Christmas
+      - Chorale Preludes for Christmas
+      - Op. 37
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-op44
+    composer_id: samuel-barber
+    canonical_title: A Fadograph of a Yestern Scene
+    localized_titles:
+      en: A Fadograph of a Yestern Scene
+      nl: A Fadograph of a Yestern Scene
+    year: 1971
+    category: orchestral
+    catalogue:
+      opus: Op. 44
+    aliases:
+      - A Fadograph of a Yestern Scene
+      - Fadograph of a Yestern Scene
+      - Op. 44
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-op47
+    composer_id: samuel-barber
+    canonical_title: Third Essay for Orchestra
+    localized_titles:
+      en: Third Essay for Orchestra
+      nl: Third Essay for Orchestra
+    year: 1978
+    category: orchestral
+    catalogue:
+      opus: Op. 47
+    aliases:
+      - Third Essay for Orchestra
+      - Essay for Orchestra No. 3
+      - Op. 47
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-commando-march
+    composer_id: samuel-barber
+    canonical_title: Commando March
+    localized_titles:
+      en: Commando March
+      nl: Commando March
+    year: 1943
+    category: concert-band
+    aliases:
+      - Commando March
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-funeral-march
+    composer_id: samuel-barber
+    canonical_title: Funeral March
+    localized_titles:
+      en: Funeral March
+      nl: Treurmars
+    year: 1943
+    category: concert-band
+    aliases:
+      - Funeral March
+      - Treurmars
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-op14
+    composer_id: samuel-barber
+    canonical_title: Violin Concerto
+    localized_titles:
+      en: Violin Concerto
+      nl: Vioolconcert
+    year: 1939-1940
+    category: concertante
+    catalogue:
+      opus: Op. 14
+    aliases:
+      - Violin Concerto
+      - Violin Concerto, Op. 14
+      - Vioolconcert
+      - Op. 14
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-op21
+    composer_id: samuel-barber
+    canonical_title: Capricorn Concerto
+    localized_titles:
+      en: Capricorn Concerto
+      nl: Capricorn Concerto
+    year: 1944
+    category: concertante
+    catalogue:
+      opus: Op. 21
+    aliases:
+      - Capricorn Concerto
+      - Capricorn Concerto, Op. 21
+      - Op. 21
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-op22
+    composer_id: samuel-barber
+    canonical_title: Cello Concerto
+    localized_titles:
+      en: Cello Concerto
+      nl: Celloconcert
+    year: 1945
+    category: concertante
+    catalogue:
+      opus: Op. 22
+    aliases:
+      - Cello Concerto
+      - Cello Concerto, Op. 22
+      - Celloconcert
+      - Op. 22
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-op36
+    composer_id: samuel-barber
+    canonical_title: Toccata Festiva
+    localized_titles:
+      en: Toccata Festiva
+      nl: Toccata Festiva
+    year: 1960
+    category: concertante
+    catalogue:
+      opus: Op. 36
+    aliases:
+      - Toccata Festiva
+      - Toccata Festiva, Op. 36
+      - Op. 36
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-op38
+    composer_id: samuel-barber
+    canonical_title: Piano Concerto
+    localized_titles:
+      en: Piano Concerto
+      nl: Pianoconcert
+    year: 1961-1962
+    category: concertante
+    catalogue:
+      opus: Op. 38
+    aliases:
+      - Piano Concerto
+      - Piano Concerto, Op. 38
+      - Pianoconcert
+      - Op. 38
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-op48
+    composer_id: samuel-barber
+    canonical_title: Oboe Concerto
+    localized_titles:
+      en: Oboe Concerto
+      nl: Hoboconcert
+    year: 1977-1978
+    category: concertante
+    catalogue:
+      opus: Op. 48
+    aliases:
+      - Oboe Concerto
+      - Oboe Concerto, Op. 48
+      - Hoboconcert
+      - Op. 48
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-gypsy-dance-from-the-rose-tree
+    composer_id: samuel-barber
+    canonical_title: Gypsy Dance from The Rose Tree
+    localized_titles:
+      en: Gypsy Dance from The Rose Tree
+      nl: Gypsy Dance from The Rose Tree
+    year: 1922
+    category: chamber
+    aliases:
+      - Gypsy Dance from The Rose Tree
+      - Gypsy Dance
+      - The Rose Tree
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-op1-chamber
+    composer_id: samuel-barber
+    canonical_title: Serenade
+    localized_titles:
+      en: Serenade
+      nl: Serenade
+    year: 1928
+    category: chamber
+    catalogue:
+      opus: Op. 1
+    aliases:
+      - Serenade
+      - Serenade, Op. 1
+      - Op. 1
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+    notes: >-
+      Chamber-music Serenade, modelled separately from the string-orchestra version.
+
+  - id: barber-op4
+    composer_id: samuel-barber
+    canonical_title: Violin Sonata
+    localized_titles:
+      en: Violin Sonata
+      nl: Vioolsonate
+    year: 1928
+    category: chamber
+    catalogue:
+      opus: Op. 4
+    aliases:
+      - Violin Sonata
+      - Violin Sonata, Op. 4
+      - Vioolsonate
+      - Op. 4
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-op6
+    composer_id: samuel-barber
+    canonical_title: Cello Sonata
+    localized_titles:
+      en: Cello Sonata
+      nl: Cellosonate
+    year: 1932
+    category: chamber
+    catalogue:
+      opus: Op. 6
+    aliases:
+      - Cello Sonata
+      - Cello Sonata, Op. 6
+      - Cellosonate
+      - Op. 6
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-op11
+    composer_id: samuel-barber
+    canonical_title: String Quartet
+    localized_titles:
+      en: String Quartet
+      nl: Strijkkwartet
+    year: 1936
+    category: chamber
+    catalogue:
+      opus: Op. 11
+    aliases:
+      - String Quartet
+      - String Quartet, Op. 11
+      - Strijkkwartet
+      - Op. 11
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-commemorative-march
+    composer_id: samuel-barber
+    canonical_title: Commemorative March
+    localized_titles:
+      en: Commemorative March
+      nl: Commemorative March
+    year: 1941
+    category: chamber
+    aliases:
+      - Commemorative March
+      - Commemorative March for violin, cello and piano
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-string-quartet-1947
+    composer_id: samuel-barber
+    canonical_title: String Quartet
+    localized_titles:
+      en: String Quartet
+      nl: Strijkkwartet
+    year: 1947
+    category: chamber
+    aliases:
+      - String Quartet
+      - String Quartet, 1947
+      - Strijkkwartet
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-adventure
+    composer_id: samuel-barber
+    canonical_title: Adventure
+    localized_titles:
+      en: Adventure
+      nl: Adventure
+    year: 1954
+    category: chamber
+    aliases:
+      - Adventure
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-op31
+    composer_id: samuel-barber
+    canonical_title: Summer Music for Wind Quintet
+    localized_titles:
+      en: Summer Music for Wind Quintet
+      nl: Summer Music for Wind Quintet
+    year: 1956
+    category: chamber
+    catalogue:
+      opus: Op. 31
+    aliases:
+      - Summer Music for Wind Quintet
+      - Summer Music
+      - Summer Music, Op. 31
+      - Op. 31
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-chorale-for-washington-cathedral
+    composer_id: samuel-barber
+    canonical_title: Chorale for Washington Cathedral
+    localized_titles:
+      en: Chorale for Washington Cathedral
+      nl: Chorale for Washington Cathedral
+    year: 1960s
+    category: chamber
+    aliases:
+      - Chorale for Washington Cathedral
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-op38a
+    composer_id: samuel-barber
+    canonical_title: Canzone
+    localized_titles:
+      en: Canzone
+      nl: Canzone
+    year: 1961
+    category: chamber
+    catalogue:
+      opus: Op. 38a
+    aliases:
+      - Canzone
+      - Canzone, Op. 38a
+      - Canzone for flute or violin and piano
+      - Op. 38a
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-mutations-from-bach
+    composer_id: samuel-barber
+    canonical_title: Mutations from Bach
+    localized_titles:
+      en: Mutations from Bach
+      nl: Mutations from Bach
+    year: 1967
+    category: chamber
+    aliases:
+      - Mutations from Bach
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-suite-for-carillon
+    composer_id: samuel-barber
+    canonical_title: Suite for carillon
+    localized_titles:
+      en: Suite for carillon
+      nl: Suite for carillon
+    year: 1931
+    category: carillon
+    aliases:
+      - Suite for carillon
+      - Suite for Carillon
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-melody-in-f
+    composer_id: samuel-barber
+    canonical_title: Melody in F
+    localized_titles:
+      en: Melody in F
+      nl: Melody in F
+    year: 1917
+    category: piano
+    aliases:
+      - Melody in F
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-sadness
+    composer_id: samuel-barber
+    canonical_title: Sadness
+    localized_titles:
+      en: Sadness
+      nl: Sadness
+    year: 1917
+    category: piano
+    aliases:
+      - Sadness
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-largo
+    composer_id: samuel-barber
+    canonical_title: Largo
+    localized_titles:
+      en: Largo
+      nl: Largo
+    year: 1918
+    category: piano
+    aliases:
+      - Largo
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-war-song
+    composer_id: samuel-barber
+    canonical_title: War Song
+    localized_titles:
+      en: War Song
+      nl: War Song
+    year: 1918
+    category: piano
+    aliases:
+      - War Song
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-at-twilight
+    composer_id: samuel-barber
+    canonical_title: At Twilight
+    localized_titles:
+      en: At Twilight
+      nl: At Twilight
+    year: 1919
+    category: piano
+    aliases:
+      - At Twilight
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-lullaby
+    composer_id: samuel-barber
+    canonical_title: Lullaby
+    localized_titles:
+      en: Lullaby
+      nl: Lullaby
+    year: 1919
+    category: piano
+    aliases:
+      - Lullaby
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-three-sketches
+    composer_id: samuel-barber
+    canonical_title: Three Sketches
+    localized_titles:
+      en: Three Sketches
+      nl: Three Sketches
+    year: 1923-1924
+    category: piano
+    aliases:
+      - Three Sketches
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-fantasie-haydn-style
+    composer_id: samuel-barber
+    canonical_title: Fantasie
+    localized_titles:
+      en: Fantasie
+      nl: Fantasie
+    year: 1924
+    category: piano
+    aliases:
+      - Fantasie
+      - Fantasie in the style of Joseph Haydn
+      - Fantasie for two pianos
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-prelude-to-a-tragic-drama
+    composer_id: samuel-barber
+    canonical_title: Prelude to a Tragic Drama
+    localized_titles:
+      en: Prelude to a Tragic Drama
+      nl: Prelude to a Tragic Drama
+    year: 1925
+    category: piano
+    aliases:
+      - Prelude to a Tragic Drama
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-fresh-from-west-chester
+    composer_id: samuel-barber
+    canonical_title: Fresh from West Chester
+    localized_titles:
+      en: Fresh from West Chester
+      nl: Fresh from West Chester
+    year: 1925-1926
+    category: piano
+    aliases:
+      - Fresh from West Chester
+      - Some Jazzing
+      - Fresh from West Chester (Some Jazzing)
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-essay-iii
+    composer_id: samuel-barber
+    canonical_title: Essay III
+    localized_titles:
+      en: Essay III
+      nl: Essay III
+    year: 1926
+    category: piano
+    aliases:
+      - Essay III
+      - Essay 3
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-interlude-no1
+    composer_id: samuel-barber
+    canonical_title: Interlude No. 1
+    localized_titles:
+      en: Interlude No. 1
+      nl: Interlude No. 1
+    year: 1931
+    category: piano
+    aliases:
+      - Interlude No. 1
+      - Adagio for Jeanne
+      - Interlude No. 1 (Adagio for Jeanne)
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-interlude-no2
+    composer_id: samuel-barber
+    canonical_title: Interlude No. 2
+    localized_titles:
+      en: Interlude No. 2
+      nl: Interlude No. 2
+    year: 1932
+    category: piano
+    aliases:
+      - Interlude No. 2
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-op20
+    composer_id: samuel-barber
+    canonical_title: Excursions
+    localized_titles:
+      en: Excursions
+      nl: Excursions
+    year: 1944
+    category: piano
+    catalogue:
+      opus: Op. 20
+    aliases:
+      - Excursions
+      - Excursions, Op. 20
+      - Op. 20
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-op26
+    composer_id: samuel-barber
+    canonical_title: Piano Sonata
+    localized_titles:
+      en: Piano Sonata
+      nl: Pianosonate
+    year: 1948
+    category: piano
+    catalogue:
+      opus: Op. 26
+    aliases:
+      - Piano Sonata
+      - Piano Sonata, Op. 26
+      - Pianosonate
+      - Op. 26
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-op28-piano-four-hands
+    composer_id: samuel-barber
+    canonical_title: Souvenirs, Suite
+    localized_titles:
+      en: Souvenirs, Suite
+      nl: Souvenirs, suite
+    year: 1952
+    category: piano
+    catalogue:
+      opus: Op. 28
+    aliases:
+      - Souvenirs, Suite
+      - Souvenirs Suite
+      - Souvenirs for piano four hands
+      - Souvenirs, Suite, pf-4h
+      - Op. 28
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-op28-piano-suite
+    composer_id: samuel-barber
+    canonical_title: Souvenirs, Suite
+    localized_titles:
+      en: Souvenirs, Suite
+      nl: Souvenirs, suite
+    year: 1954
+    category: piano
+    catalogue:
+      opus: Op. 28
+    aliases:
+      - Souvenirs, Suite
+      - Souvenirs Suite
+      - Souvenirs, Op. 28
+      - Op. 28
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-op33
+    composer_id: samuel-barber
+    canonical_title: Nocturne
+    localized_titles:
+      en: Nocturne
+      nl: Nocturne
+    year: 1959
+    category: piano
+    catalogue:
+      opus: Op. 33
+    aliases:
+      - Nocturne
+      - Nocturne, Op. 33
+      - Homage to John Field
+      - Nocturne (Homage to John Field)
+      - Op. 33
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-after-the-concert
+    composer_id: samuel-barber
+    canonical_title: After the Concert
+    localized_titles:
+      en: After the Concert
+      nl: After the Concert
+    year: 1960s
+    category: piano
+    aliases:
+      - After the Concert
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-op46
+    composer_id: samuel-barber
+    canonical_title: Ballade
+    localized_titles:
+      en: Ballade
+      nl: Ballade
+    year: 1977
+    category: piano
+    catalogue:
+      opus: Op. 46
+    aliases:
+      - Ballade
+      - Ballade, Op. 46
+      - Op. 46
+    authorities:
+      musicbrainz_work_id:
+      wikidata:
+
+  - id: barber-op24
+    composer_id: samuel-barber
+    canonical_title: 'Knoxville: Summer of 1915'
+    localized_titles:
+      en: 'Knoxville: Summer of 1915'
+      nl: 'Knoxville: Summer of 1915'
+    year: 1947
+    category: vocal
+    catalogue:
+      opus: Op. 24
+    aliases:
+      - 'Knoxville: Summer of 1915'
+      - Knoxville Summer of 1915
+      - Knoxville, Summer of 1915
+      - Op. 24
+    authorities:
+      musicbrainz_work_id:
+      wikidata:

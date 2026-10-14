@@ -1,0 +1,7 @@
+id: clara-schumann
+name: Clara Schumann
+roles:
+- composer
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://www.warnerclassics.com/fr/release/schumann-rana

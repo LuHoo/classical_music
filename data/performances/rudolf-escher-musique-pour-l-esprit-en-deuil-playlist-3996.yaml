@@ -1,0 +1,15 @@
+id: rudolf-escher-musique-pour-l-esprit-en-deuil-playlist-3996
+work_id: rudolf-escher-musique-pour-l-esprit-en-deuil
+performers:
+- name: Royal Concertgebouw Orchestra
+  artist_id: royal-concertgebouw-orchestra
+  role: orchestra
+- name: Riccardo Chailly
+links:
+  tidal:
+    url: https://tidal.com/track/255383528
+release:
+  album_title: Concerto for String Orchestra / Musique pour l'esprit en deuil
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

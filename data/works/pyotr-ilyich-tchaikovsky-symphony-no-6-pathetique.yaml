@@ -1,0 +1,9 @@
+id: pyotr-ilyich-tchaikovsky-symphony-no-6-pathetique
+work_group_id: pyotr-ilyich-tchaikovsky-symphony-no-6-pathetique-group
+composer_id: pyotr-ilyich-tchaikovsky
+title: Symphony No. 6, "Pathétique"
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://www.claves.ch/products/pyotr-ilyich-tchaikovsky-symphony-no-5-no-6
+catalogue:
+  opus: Op. 74

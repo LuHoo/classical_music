@@ -1,0 +1,18 @@
+id: 213e9ca1f2754b74823b47d0a0c9c98e
+work_id: 2e947dfcba644b038d88705cbb60320d
+performers:
+- name: L’Aura Soave Cremona
+  role: ensemble
+- name: Sergio Azzolini
+  role: bassoon
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP30539
+  album_title: Concerti per fagotto III
+source:
+  url: https://vivaldiedition.net/portfolio/vol-48-concerti-per-fagot%e2%80%90-to-iii-2012-2/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: The Vivaldi Edition, volume 48. Album page verified 2026-09-28. Deze uitgave bevat zes fagotconcerten.
+links:
+  tidal:
+    url: https://tidal.com/album/65273521

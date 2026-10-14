@@ -1,0 +1,14 @@
+id: kurt-weill-symphony-no-1-berliner-sinfonie-playlist-3306
+work_id: kurt-weill-symphony-no-1-berliner-sinfonie
+performers:
+- name: Konzerthausorchester Berlin
+- name: Joana Mallwitz
+links:
+  tidal:
+    url: https://tidal.com/track/377518697
+release:
+  album_title: The Kurt Weill Album
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+version_assignment: unspecified

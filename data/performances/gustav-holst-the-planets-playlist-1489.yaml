@@ -1,0 +1,16 @@
+id: gustav-holst-the-planets-playlist-1489
+work_id: gustav-holst-the-planets
+performers:
+- name: Sir Adrian Boult
+  role: performer
+- name: Geoffrey Mitchell Choir
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/4100474
+release:
+  album_title: "Holst: The Planets, Egdon Heath, The Perfect Fool, Book Green Suite, St Paul's Suite,
+    Choral Fantasia & The Rig Veda"
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

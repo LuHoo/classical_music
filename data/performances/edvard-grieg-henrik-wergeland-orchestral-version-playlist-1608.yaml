@@ -1,0 +1,19 @@
+id: edvard-grieg-henrik-wergeland-orchestral-version-playlist-1608
+work_id: edvard-grieg-henrik-wergeland-orchestral-version
+performers:
+- name: Håkan Hagegård
+  role: performer
+- name: Gothenburg Symphony Orchestra
+  role: orchestra
+  artist_id: gothenburg-symphony-orchestra
+- name: Neeme Järvi
+  role: conductor
+  artist_id: neeme-jarvi
+links:
+  tidal:
+    url: https://tidal.com/track/4360548
+release:
+  album_title: 'Grieg: Complete Music with Orchestra'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

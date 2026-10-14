@@ -1,0 +1,16 @@
+id: felix-mendelssohn-song-without-words-op-102-no-1-mwv-u-162-piano-p648
+work_id: felix-mendelssohn-song-without-words-op-102-no-1-mwv-u-162
+performers:
+  - name: Howard Shelley
+    role: piano
+profile: original solo piano
+links:
+  tidal:
+    url: https://tidal.com/track/338434411
+release:
+  album_title: 'Mendelssohn: The Complete Solo Piano Music 6'
+source:
+  file: reports/curator-decisions/original-arrangement-2026-10-04.json
+  url: https://tidal.com/playlist/82853f8e-4fd6-42b6-b0a7-230da5ee86a1
+  unit_id: P648
+  curator_decision: https://github.com/LuHoo/classical_music/issues/292#issuecomment-5984119196

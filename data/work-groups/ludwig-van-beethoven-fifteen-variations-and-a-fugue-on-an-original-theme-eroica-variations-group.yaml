@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-fifteen-variations-and-a-fugue-on-an-original-theme-eroica-variations-group"
+composer_id: "ludwig-van-beethoven"
+title: "Fifteen variations and a fugue on an original theme, (\"Eroica Variations\") E♭"
+source:
+  file: "docs/beethoven.md"
+  line: "404"
+catalogue:
+  opus: "Op. 35"

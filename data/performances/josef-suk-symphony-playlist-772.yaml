@@ -1,0 +1,15 @@
+id: josef-suk-symphony-playlist-772
+work_id: josef-suk-symphony
+performers:
+- name: Czech Philharmonic
+  role: performer
+- name: Václav Neumann
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/90492653
+release:
+  album_title: 'Suk: Symphony in E Major - Ostrčil: Calvary'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

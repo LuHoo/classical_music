@@ -1,0 +1,19 @@
+id: 6c5134f402834625853af9d751d0ec0d
+work_id: 8cc53829bd5c4c57933de3e4e4c12c59
+performers:
+- name: Il Giardino Armonico
+  role: orchestra
+- name: Giovanni Antonini
+  role: conductor
+release:
+  label: Alpha Classics
+  catalogue_number: ALPHA1101
+  album_title: 'Haydn 2032, Vol. 19: Trauer'
+source:
+  url: https://www.prestomusic.com/classical/products/9856776--haydn2032-vol-19-trauer
+  file: reports/haydn-2032/catalogue.json
+links:
+  tidal:
+    url: https://tidal.com/album/504485309
+notes: Haydn 2032, volume 19. Sources and Tidal album metadata checked 2026-09-30. Album link covers this
+  work; it is not a work-specific track link.

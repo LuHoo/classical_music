@@ -1,0 +1,9 @@
+id: max-reger-sinfonietta-op-90
+work_group_id: max-reger-sinfonietta-op-90-group
+composer_id: max-reger
+title: Sinfonietta, Op. 90
+source:
+  file: docs/reger.md
+  url: https://en.wikipedia.org/wiki/List_of_compositions_by_Max_Reger
+catalogue:
+  op: '90'

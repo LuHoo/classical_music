@@ -1,0 +1,15 @@
+id: richard-wagner-siegfried-idyll-playlist-1216
+work_id: richard-wagner-siegfried-idyll
+performers:
+- name: Orchester der Deutschen Oper Berlin
+  role: performer
+- name: Christian Thielemann
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/4636628
+release:
+  album_title: 'Schoenberg: Pelleas & Melisande / Wagner: Siegfried-Idyll'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

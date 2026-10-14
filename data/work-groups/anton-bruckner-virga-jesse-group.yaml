@@ -1,0 +1,8 @@
+id: "anton-bruckner-virga-jesse-group"
+composer_id: "anton-bruckner"
+title: "Virga Jesse"
+source:
+  file: "docs/bruckner.md"
+  line: "92"
+catalogue:
+  wab: "WAB 52"

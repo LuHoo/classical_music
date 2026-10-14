@@ -1,0 +1,9 @@
+id: albert-roussel-evocations-op-15
+work_group_id: albert-roussel-evocations-op-15-group
+composer_id: albert-roussel
+title: Évocations, Op. 15
+source:
+  file: docs/roussel.md
+  url: https://en.wikipedia.org/wiki/Albert_Roussel#Works
+catalogue:
+  op: '15'

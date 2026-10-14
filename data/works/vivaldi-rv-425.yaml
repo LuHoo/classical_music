@@ -1,0 +1,9 @@
+id: b064aa2b390f4e1fa0abb881833ae4ec
+work_group_id: 0fd3cd89a96d47f6b3ab83d2b80986bf
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Mandolin Concerto, RV 425
+catalogue:
+  rv: RV 425
+source:
+  url: https://vivaldiedition.net/portfolio/vol-26-musica-per-mandolin-e-liuto-2006/
+  file: reports/vivaldi-naive-edition/catalogue.json

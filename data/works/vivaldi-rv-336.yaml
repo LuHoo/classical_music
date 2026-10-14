@@ -1,0 +1,10 @@
+id: 220979b6993a4047b8c26a7ef519a19d
+work_group_id: 23ac8a30cbd64ada8859db4b00845642
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 336
+catalogue:
+  rv: RV 336
+  opus: Op. 11
+source:
+  file: docs/vivaldi.md
+  line: '32'

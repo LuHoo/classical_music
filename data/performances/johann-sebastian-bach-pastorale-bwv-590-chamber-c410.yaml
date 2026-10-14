@@ -1,0 +1,14 @@
+id: johann-sebastian-bach-pastorale-bwv-590-chamber-c410
+work_id: johann-sebastian-bach-pastorale-bwv-590
+performers:
+  - name: Martin Fröst
+  - name: Jonas Nordberg
+links:
+  tidal:
+    url: https://tidal.com/track/448367334
+release:
+  album_title: B.A.C.H.
+source:
+  file: reports/playlist-import/chamber/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/a2327106-07fd-4433-8bd3-d8a5c251c69a
+excerpt: Third movement only (clarinet and theorbo)

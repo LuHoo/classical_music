@@ -1,0 +1,9 @@
+id: dd9bbfb12d144c96bf108811858d8c00
+work_group_id: 86158b2a5ad943158fcb8e2d2c272815
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Concerto for strings, RV 115
+catalogue:
+  rv: RV 115
+source:
+  url: https://vivaldiedition.net/portfolio/vol-13-concerti-per-archi-2004/
+  file: reports/vivaldi-naive-edition/catalogue.json

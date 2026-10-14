@@ -1,0 +1,15 @@
+id: benjamin-britten-passacaglia-from-peter-grimes-playlist-565
+work_id: benjamin-britten-passacaglia-from-peter-grimes
+performers:
+- name: Andrew Davis
+  role: conductor
+  artist_id: andrew-davis
+links:
+  tidal:
+    url: https://tidal.com/track/19804302
+release:
+  album_title: "Britten: Four Sea Interludes and Passacaglia from Peter Grimes, Variations on a Theme
+    of Frank Bridge & The Young Person's Guide to the Orchestra"
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

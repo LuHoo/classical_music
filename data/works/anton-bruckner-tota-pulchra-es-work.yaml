@@ -1,0 +1,11 @@
+id: "anton-bruckner-tota-pulchra-es-work"
+work_group_id: "anton-bruckner-tota-pulchra-es-group"
+composer_id: "anton-bruckner"
+title: "Tota pulchra es"
+source:
+  file: "docs/bruckner.md"
+  line: "90"
+catalogue:
+  wab: "WAB 46"
+date_text: "1878"
+category: "Vocal"

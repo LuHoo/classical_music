@@ -1,0 +1,16 @@
+id: alexander-von-zemlinsky-die-seejungfrau-playlist-1121
+work_id: alexander-von-zemlinsky-die-seejungfrau
+performers:
+- name: James Conlon
+  role: performer
+- name: Gürzenich-Orchester Köln
+  role: orchestra
+  artist_id: gurzenich-orchester-koln
+links:
+  tidal:
+    url: https://tidal.com/track/198567847
+release:
+  album_title: 'Zemlinsky: Die Seejungfrau & Sinfonietta, Op. 23'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

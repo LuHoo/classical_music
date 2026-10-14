@@ -1,0 +1,11 @@
+id: "igor-stravinsky-orpheus-k-076-work"
+work_group_id: "igor-stravinsky-orpheus-k-076-group"
+composer_id: "igor-stravinsky"
+title: "Orpheus"
+source:
+  file: "docs/stravinsky.md"
+  line: "53"
+catalogue:
+  k: "K 076"
+date_text: "1947"
+category: "Ballet"

@@ -1,0 +1,13 @@
+id: wolfgang-amadeus-mozart-piano-sonata-no-14-in-c-minor-k-457-piano-p098
+work_id: wolfgang-amadeus-mozart-piano-sonata-no-14-in-c-minor-k-457
+performers:
+  - name: Víkingur Ólafsson
+    role: piano
+links:
+  tidal:
+    url: https://tidal.com/track/195406393
+release:
+  album_title: Mozart & Contemporaries
+source:
+  file: reports/playlist-import/piano/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/82853f8e-4fd6-42b6-b0a7-230da5ee86a1

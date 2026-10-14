@@ -1,0 +1,18 @@
+id: sergei-prokofiev-lieutenant-kije-work-playlist-4533
+work_id: sergei-prokofiev-lieutenant-kije-work
+performers:
+- name: WDR Sinfonieorchester Köln
+  artist_id: wdr-sinfonieorchester-koln
+  role: orchestra
+- name: Michail Jurowski
+  artist_id: michail-jurowski
+  role: conductor
+links:
+  tidal:
+    url: https://tidal.com/track/284169974
+release:
+  album_title: 'Prokofiev: On the Dnieper, Semyon Kotko Suite & Lieutenant Kijé Suite'
+source:
+  file: reports/playlist-import/best-classical/window-4001-5518.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+excerpt: The Birth of Kijé.

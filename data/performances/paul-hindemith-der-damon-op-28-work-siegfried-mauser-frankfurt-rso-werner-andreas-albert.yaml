@@ -1,0 +1,15 @@
+id: "paul-hindemith-der-damon-op-28-work-siegfried-mauser-frankfurt-rso-werner-andreas-albert"
+work_id: "paul-hindemith-der-damon-op-28-work"
+performers:
+  - name: "Siegfried Mauser"
+    role: "performer"
+  - name: "Frankfurt RSO"
+    role: "orchestra"
+  - name: "Werner Andreas Albert"
+    role: "conductor"
+links:
+  tidal:
+    url: "http://www.tidal.com/track/74080286"
+source:
+  file: "docs/hindemith.md"
+  line: "43"

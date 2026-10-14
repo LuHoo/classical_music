@@ -1,0 +1,12 @@
+id: antonin-dvorak-string-quartet-b-18-in-d-major-string-quartet-no-3-in-d-major-b-18-chamber-c198
+work_id: antonin-dvorak-string-quartet-b-18-in-d-major-string-quartet-no-3-in-d-major-b-18
+performers:
+  - name: Vogler Quartett
+links:
+  tidal:
+    url: https://tidal.com/track/117094058
+release:
+  album_title: 'Dvořák: String Quartets, Vol. 3'
+source:
+  file: reports/playlist-import/chamber/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/a2327106-07fd-4433-8bd3-d8a5c251c69a

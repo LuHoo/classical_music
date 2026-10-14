@@ -1,0 +1,10 @@
+id: boris-blacher-variations-on-a-theme-by-paganini
+work_group_id: boris-blacher-variations-on-a-theme-by-paganini-group
+composer_id: boris-blacher
+title: Variations on a Theme by Paganini
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url:
+    https://www.universalmusic.it/musica-classica/album/elgar-enigma-variations-kodaly-peacock-variations-blacher-variations-on-a-theme-of-paganini_20012565418/
+catalogue:
+  opus: Op. 26

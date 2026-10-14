@@ -1,0 +1,17 @@
+id: 388053797e01483593f1e62c6dd407ab-cantata-profana-sz-94-playlist-3174
+work_id: 388053797e01483593f1e62c6dd407ab-cantata-profana-sz-94
+performers:
+- name: Chicago Symphony Orchestra
+- name: Pierre Boulez
+- name: Chicago Symphony Chorus
+- name: John Aler
+- name: John Tomlinson
+- name: Chicago SO
+links:
+  tidal:
+    url: https://tidal.com/track/4486543
+release:
+  album_title: 'Bartók: The Wooden Prince; Cantata Profana'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-violin-sonata-no-9-in-a-major-kreutzer-op-47-group"
+composer_id: "ludwig-van-beethoven"
+title: "Violin Sonata No. 9 in A major, \"Kreutzer\""
+source:
+  file: "docs/beethoven.md"
+  line: "216"
+catalogue:
+  opus: "Op. 47"

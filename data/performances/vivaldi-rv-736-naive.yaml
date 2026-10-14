@@ -1,0 +1,18 @@
+id: 5a18a063aa3c4d65b7efc8d639a66332
+work_id: f1c86695f33e4aff8c3eacde778ce90b
+performers:
+- name: Le Concert des Nations
+  role: ensemble
+- name: Jordi Savall
+  role: conductor
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP30513
+  album_title: Teuzzone
+source:
+  url: https://vivaldiedition.net/portfolio/vol-43-teuzzone-2011/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: 'The Vivaldi Edition, volume 43. Album page verified 2026-09-28. '
+links:
+  tidal:
+    url: https://tidal.com/album/92207656

@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-waltz-e-flat-woo-84-work"
+work_group_id: "ludwig-van-beethoven-waltz-e-flat-woo-84-group"
+composer_id: "ludwig-van-beethoven"
+title: "Waltz, E♭"
+source:
+  file: "docs/beethoven.md"
+  line: "468"
+catalogue:
+  woo: "WoO 84"
+date_text: "1824"
+category: "Piano"

@@ -1,0 +1,12 @@
+id: "igor-stravinsky-piano-concerto-no-1-in-e-flat-major-op-6-k-010-work"
+work_group_id: "igor-stravinsky-piano-concerto-no-1-in-e-flat-major-op-6-k-010-group"
+composer_id: "igor-stravinsky"
+title: "Piano Concerto No. 1 in E-flat major"
+source:
+  file: "docs/stravinsky.md"
+  line: "109"
+catalogue:
+  opus: "Op. 6"
+  k: "K 010"
+date_text: "1911–12"
+category: "Concertante"

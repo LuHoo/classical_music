@@ -1,0 +1,13 @@
+id: franz-liszt-mephisto-waltz-no-2-s-111-playlist-2124
+work_id: franz-liszt-mephisto-waltz-no-2-s-111
+performers:
+- name: Kurt Masur
+- name: Gewandhausorchester
+links:
+  tidal:
+    url: https://tidal.com/track/7593955
+release:
+  album_title: 'Liszt: Orchesterwerke & Werke für Klavier und Orchester'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

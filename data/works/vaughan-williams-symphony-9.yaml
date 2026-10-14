@@ -1,0 +1,7 @@
+composer_id: ralph-vaughan-williams
+id: vaughan-williams-symphony-9
+source:
+  file: reports/playlist-import/best-classical/prepared-120.json
+  url: https://www.hyperion-records.co.uk/dc.asp?dc=D_CDA68405
+title: Symphony No. 9 in E minor
+work_group_id: vaughan-williams-symphony-9-group

@@ -1,0 +1,18 @@
+id: pyotr-ilyich-tchaikovsky-variations-on-a-rococo-theme-fitzenhagen-version-playlist-982
+work_id: pyotr-ilyich-tchaikovsky-variations-on-a-rococo-theme-fitzenhagen-version
+performers:
+- name: Gautier Capuçon
+  role: performer
+  artist_id: gautier-capucon
+- name: Mariinsky Theatre Orchestra, St Petersburg
+  role: performer
+- name: Valery Gergiev
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/3277946
+release:
+  album_title: "Tchaikovsky: Rococo's Variations - Prokofiev: Sinfonia Concertante"
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

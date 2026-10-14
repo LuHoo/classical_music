@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-schone-minka-ich-muss-scheidem-air-cosaque-woo-158a-work"
+work_group_id: "ludwig-van-beethoven-schone-minka-ich-muss-scheidem-air-cosaque-woo-158a-group"
+composer_id: "ludwig-van-beethoven"
+title: "Schöne Minka, ich muss scheidem ('Air cosaque')"
+source:
+  file: "docs/beethoven.md"
+  line: "294"
+catalogue:
+  woo: "WoO 158a"
+category: "Chamber"
+notes: "Pilot migration: source text suggests a version, arrangement, revision, suite, or completion boundary that should be reviewed."

@@ -1,0 +1,20 @@
+id: martinu-violin-concerto-1-zimmermann-bamberg-hrusa
+links:
+  tidal:
+    url: https://tidal.com/track/283474096
+performers:
+- name: Frank Peter Zimmermann
+  role: violin
+- name: Bamberg Symphony Orchestra
+  role: orchestra
+- name: Jakub Hrůša
+  role: conductor
+release:
+  album_title: 'Martinů: Violin Concertos Nos. 1 & 2 - Bartók: Sonata for Solo Violin'
+  catalogue_number: BIS-2457
+  label: BIS
+source:
+  file: reports/playlist-import/best-classical/prepared-120.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+work_id: martinu-violin-concerto-1
+year: 2018

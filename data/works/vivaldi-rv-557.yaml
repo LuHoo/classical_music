@@ -1,0 +1,9 @@
+id: ab06eaafbc1b40939ea8c2102a7ab7a0
+work_group_id: 10f13bfda6d04d27afb105fa6ed2699c
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Concerto for two violins, two oboes, two recorders and bassoon, RV 557
+catalogue:
+  rv: RV 557
+source:
+  url: https://vivaldiedition.net/portfolio/concerti-per-vari-strumenti-ii/
+  file: reports/vivaldi-naive-edition/catalogue.json

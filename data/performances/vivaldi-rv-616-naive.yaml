@@ -1,0 +1,19 @@
+id: 10a4f455605c47e7a42ba47061b070c1
+work_id: f6777bb067c2416596cf5456962c1eb7
+performers:
+- name: Concerto Italiano
+  role: ensemble
+- name: Rinaldo Alessandrini
+  role: conductor
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP30383
+  album_title: Vespri solenni per l'Assunzione di Maria Vergine
+source:
+  url: https://vivaldiedition.net/portfolio/vol-11-vespri-per-lassun%e2%80%90-zione-di-maria-vergine-2003/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: The Vivaldi Edition, volume 11. Album page verified 2026-09-28. RV 581 is included with all three
+  movements. RV 584 is used in the reconstructed vesper programme. Gregorian chant has no RV number.
+links:
+  tidal:
+    url: https://tidal.com/album/73972217

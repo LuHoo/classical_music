@@ -1,0 +1,8 @@
+id: wolfgang-amadeus-mozart-symphony-no-33-in-b-group
+composer_id: wolfgang-amadeus-mozart
+title: Symphony No. 33 in B♭
+source:
+  file: docs/mozart.md
+  line: '69'
+catalogue:
+  k: K. 319

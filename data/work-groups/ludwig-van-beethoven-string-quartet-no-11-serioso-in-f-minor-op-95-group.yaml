@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-string-quartet-no-11-serioso-in-f-minor-op-95-group"
+composer_id: "ludwig-van-beethoven"
+title: "String Quartet No. 11 \"Serioso\" in F minor"
+source:
+  file: "docs/beethoven.md"
+  line: "246"
+catalogue:
+  opus: "Op. 95"

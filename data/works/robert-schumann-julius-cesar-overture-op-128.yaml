@@ -1,0 +1,10 @@
+id: robert-schumann-julius-cesar-overture-op-128
+work_group_id: robert-schumann-julius-cesar-overture-op-128-group
+composer_id: robert-schumann
+title: Julius Cesar Overture, Op. 128
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url:
+    https://bis.eclassical.com/conductors/dausgaard-thomas/schumann-the-symphonies-and-overtures.html
+catalogue:
+  op: '128'

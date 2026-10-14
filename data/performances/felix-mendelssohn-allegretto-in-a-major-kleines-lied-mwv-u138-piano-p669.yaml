@@ -1,0 +1,13 @@
+id: felix-mendelssohn-allegretto-in-a-major-kleines-lied-mwv-u138-piano-p669
+work_id: felix-mendelssohn-allegretto-in-a-major-kleines-lied-mwv-u138
+performers:
+  - name: Howard Shelley
+    role: piano
+links:
+  tidal:
+    url: https://tidal.com/track/338436248
+release:
+  album_title: 'Mendelssohn: The Complete Solo Piano Music 4'
+source:
+  file: reports/playlist-import/piano/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/82853f8e-4fd6-42b6-b0a7-230da5ee86a1

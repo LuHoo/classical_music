@@ -1,0 +1,9 @@
+id: ec5171ed13274bb385b4a786d47bfa9c
+work_group_id: 3e96b2dbb1fa49d8b39525dc63bfab11
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 243
+catalogue:
+  rv: RV 243
+source:
+  url: https://vivaldiedition.net/portfolio/vol-28-concerti-per-violin-ii-di-sfida-2006/
+  file: reports/vivaldi-naive-edition/catalogue.json

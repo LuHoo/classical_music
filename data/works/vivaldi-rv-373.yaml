@@ -1,0 +1,10 @@
+id: f0a28cd2c8b74fc4bdb47a90f44741c9
+work_group_id: 6d0794e6b8a9480296424661121c4d61
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 373
+catalogue:
+  rv: RV 373
+  opus: Op. 7
+source:
+  file: docs/vivaldi.md
+  line: '24'

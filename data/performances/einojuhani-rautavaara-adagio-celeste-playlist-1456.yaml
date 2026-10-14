@@ -1,0 +1,15 @@
+id: einojuhani-rautavaara-adagio-celeste-playlist-1456
+work_id: einojuhani-rautavaara-adagio-celeste
+performers:
+- name: Orchestre National de Belgique
+  role: performer
+- name: Mikko Franck
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/284293106
+release:
+  album_title: 'Rautavaara: Book of Visions, Symphony No. 1 & Adagio celeste'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

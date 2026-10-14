@@ -1,0 +1,8 @@
+id: dmitri-shostakovich-piano-sonata-no-2-in-b-minor-group
+composer_id: dmitri-shostakovich
+title: Piano Sonata No. 2 in B minor
+source:
+  file: docs/shostakovich.md
+  line: '169'
+catalogue:
+  op: Op. 61

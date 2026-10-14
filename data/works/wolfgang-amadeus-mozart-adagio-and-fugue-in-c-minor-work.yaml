@@ -1,0 +1,11 @@
+id: wolfgang-amadeus-mozart-adagio-and-fugue-in-c-minor-work
+work_group_id: wolfgang-amadeus-mozart-adagio-and-fugue-in-c-minor-group
+composer_id: wolfgang-amadeus-mozart
+title: Adagio and Fugue in C minor
+source:
+  file: docs/mozart.md
+  line: '111'
+catalogue:
+  k: K. 546
+date_text: http://www.tidal.com/track/313466208
+category: Piano concertos

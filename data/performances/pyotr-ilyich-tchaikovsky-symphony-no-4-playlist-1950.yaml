@@ -1,0 +1,17 @@
+id: pyotr-ilyich-tchaikovsky-symphony-no-4-playlist-1950
+work_id: pyotr-ilyich-tchaikovsky-symphony-no-4
+performers:
+- name: Gianandrea Noseda
+  role: conductor
+  artist_id: gianandrea-noseda
+- name: London Symphony Orchestra
+  role: orchestra
+  artist_id: london-symphony-orchestra
+links:
+  tidal:
+    url: https://tidal.com/track/101846003
+release:
+  album_title: 'Tchaikovsky: Symphony No. 4 - Mussorgsky: Pictures at an Exhibition'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

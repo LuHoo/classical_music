@@ -1,0 +1,9 @@
+id: albert-roussel-pour-une-fete-de-printemps-op-22
+work_group_id: albert-roussel-pour-une-fete-de-printemps-op-22-group
+composer_id: albert-roussel
+title: Pour une fête de printemps, Op. 22
+source:
+  file: docs/roussel.md
+  url: https://en.wikipedia.org/wiki/Albert_Roussel#Works
+catalogue:
+  op: '22'

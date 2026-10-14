@@ -1,0 +1,8 @@
+id: alexander-scriabin-le-poeme-de-l-extase-op-54
+work_group_id: alexander-scriabin-le-poeme-de-l-extase-op-54-group
+composer_id: alexander-scriabin
+title: Le poème de l'extase, Op. 54
+source:
+  file: docs/scriabin.md
+catalogue:
+  op: '54'

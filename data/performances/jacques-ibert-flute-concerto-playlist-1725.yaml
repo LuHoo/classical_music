@@ -1,0 +1,13 @@
+id: jacques-ibert-flute-concerto-playlist-1725
+work_id: jacques-ibert-flute-concerto
+performers:
+- name: Emmanuel Pahud
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/2963082
+release:
+  album_title: 'Ibert: Divertissement, Escales & Flute Concerto'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

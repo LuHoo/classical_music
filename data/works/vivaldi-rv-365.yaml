@@ -1,0 +1,9 @@
+id: 677937452d6e4cdeb704af2dd4630fb3
+work_group_id: b43a51870f634825af7db96a6fe89f41
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 365
+catalogue:
+  rv: RV 365
+source:
+  url: https://vivaldiedition.net/portfolio/vol-67-concerti-per-violino-ix-le-nuove-vie/
+  file: reports/vivaldi-naive-edition/catalogue.json

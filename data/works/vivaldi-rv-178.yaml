@@ -1,0 +1,11 @@
+id: eb67ffd43a4d47dc9c54c9553ca181fe
+work_group_id: a75363d71a914dfea229f8bbc51e9e6e
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 178
+catalogue:
+  rv: RV 178
+  opus: Op. 8
+source:
+  file: docs/vivaldi.md
+  line: '26'
+gem: true

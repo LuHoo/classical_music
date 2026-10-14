@@ -1,0 +1,20 @@
+id: part-tabula-rasa-capucon-lausanne
+links:
+  tidal:
+    url: https://tidal.com/track/190541071
+performers:
+- name: Renaud Capuçon
+  role: violin
+- name: François Sochard
+  role: violin
+- name: Guillaume Bellom
+  role: piano
+- name: Orchestre de chambre de Lausanne
+  role: orchestra
+release:
+  album_title: 'Pärt: Tabula Rasa'
+  label: Erato
+source:
+  file: reports/playlist-import/best-classical/prepared-120.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+work_id: part-tabula-rasa

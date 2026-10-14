@@ -1,0 +1,9 @@
+id: "paul-hindemith-pittsburgh-symphony-work"
+work_group_id: "paul-hindemith-pittsburgh-symphony-group"
+composer_id: "paul-hindemith"
+title: "Pittsburgh Symphony"
+source:
+  file: "docs/hindemith.md"
+  line: "92"
+date_text: "1958"
+category: "Orchestral"

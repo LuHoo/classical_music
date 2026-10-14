@@ -1,0 +1,14 @@
+id: frank-martin-symphony-playlist-4796
+work_id: frank-martin-symphony
+performers:
+- name: Matthias Bamert
+- name: London Philharmonic Orchestra
+links:
+  tidal:
+    url: https://tidal.com/track/376434381
+release:
+  album_title: 'Martin: Symphony, Symphonie Conceertante & Passacaglia'
+source:
+  file: reports/playlist-import/best-classical/window-4001-5518.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+version_assignment: unspecified

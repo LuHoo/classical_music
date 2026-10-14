@@ -1,0 +1,11 @@
+id: "johann-sebastian-bach-concerto-for-harpsichord-and-orchestra-no-4-in-a-maj-work"
+work_group_id: "johann-sebastian-bach-concerto-for-harpsichord-and-orchestra-no-4-in-a-maj-group"
+composer_id: "johann-sebastian-bach"
+title: "Concerto for harpsichord and orchestra No. 4 in A maj."
+source:
+  file: "docs/bachJS.md"
+  line: "46"
+catalogue:
+  bwv: "BWV 1055"
+date_text: "c.1738"
+category: "Orchestral"

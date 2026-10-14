@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-quintet-for-piano-and-winds-in-e-flat-major-op-16-group"
+composer_id: "ludwig-van-beethoven"
+title: "Quintet for piano and winds in E♭ major"
+source:
+  file: "docs/beethoven.md"
+  line: "166"
+catalogue:
+  opus: "Op. 16"

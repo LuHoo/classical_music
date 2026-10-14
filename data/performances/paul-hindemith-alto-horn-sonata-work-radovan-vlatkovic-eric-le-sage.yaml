@@ -1,0 +1,13 @@
+id: "paul-hindemith-alto-horn-sonata-work-radovan-vlatkovic-eric-le-sage"
+work_id: "paul-hindemith-alto-horn-sonata-work"
+performers:
+  - name: "Radovan Vlatkovic"
+    role: "performer"
+  - name: "Eric Le Sage"
+    role: "conductor"
+links:
+  tidal:
+    url: "https://tidal.com/album/179722104"
+source:
+  file: "docs/hindemith.md"
+  line: "318"

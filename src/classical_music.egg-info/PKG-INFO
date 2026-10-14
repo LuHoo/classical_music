@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: classical-music
+Version: 0.1.0
+Summary: Canonical data validation and migration tooling for the classical music repository
+Requires-Python: >=3.13
+License-File: LICENSE
+Requires-Dist: pydantic<3,>=2.8
+Requires-Dist: rich<14,>=13.7
+Requires-Dist: ruamel.yaml<1,>=0.18
+Requires-Dist: typer<1,>=0.16
+Provides-Extra: dev
+Requires-Dist: pytest<9,>=8.3; extra == "dev"
+Requires-Dist: pytest-cov<6,>=5; extra == "dev"
+Requires-Dist: mypy<2,>=1.11; extra == "dev"
+Dynamic: license-file

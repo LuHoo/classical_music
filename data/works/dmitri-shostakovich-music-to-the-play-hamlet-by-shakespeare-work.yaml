@@ -1,0 +1,11 @@
+id: dmitri-shostakovich-music-to-the-play-hamlet-by-shakespeare-work
+work_group_id: dmitri-shostakovich-music-to-the-play-hamlet-by-shakespeare-group
+composer_id: dmitri-shostakovich
+title: Music to the play Hamlet by Shakespeare
+source:
+  file: docs/shostakovich.md
+  line: '48'
+catalogue:
+  op: Op. 32
+date_text: 1931–1932
+category: Orchestral

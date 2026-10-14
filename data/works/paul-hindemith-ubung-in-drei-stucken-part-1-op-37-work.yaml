@@ -1,0 +1,11 @@
+id: "paul-hindemith-ubung-in-drei-stucken-part-1-op-37-work"
+work_group_id: "paul-hindemith-ubung-in-drei-stucken-part-1-op-37-group"
+composer_id: "paul-hindemith"
+title: "Übung in drei Stücken, Part 1"
+source:
+  file: "docs/hindemith.md"
+  line: "341"
+catalogue:
+  opus: "Op. 37"
+date_text: "1924–25"
+category: "Piano"

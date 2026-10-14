@@ -1,0 +1,10 @@
+id: dc3cce454aca4e27bd7203d237e91a20
+work_group_id: 9c76e8af950a4f6691cb5f763502b449
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Concerto for strings, RV 124
+catalogue:
+  rv: RV 124
+  opus: Op. 12
+source:
+  file: docs/vivaldi.md
+  line: '34'

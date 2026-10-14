@@ -1,0 +1,9 @@
+id: "gustav-mahler-lieder-und-gesange-vol-ii-work"
+work_group_id: "gustav-mahler-lieder-und-gesange-vol-ii-group"
+composer_id: "gustav-mahler"
+title: "Lieder und Gesänge Vol. II"
+source:
+  file: "docs/mahler.md"
+  line: "28"
+date_text: "1887–90"
+category: "Wunderhorn period"

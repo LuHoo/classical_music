@@ -1,0 +1,13 @@
+id: sergei-rachmaninoff-cello-sonata-in-g-minor-op-19-chamber-c048
+work_id: sergei-rachmaninoff-cello-sonata-in-g-minor-op-19
+performers:
+  - name: Gautier Capuçon
+  - name: Yuja Wang
+links:
+  tidal:
+    url: https://tidal.com/track/245035798
+release:
+  album_title: Rachmaninoff & Brahms
+source:
+  file: reports/playlist-import/chamber/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/a2327106-07fd-4433-8bd3-d8a5c251c69a

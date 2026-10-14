@@ -1,0 +1,11 @@
+id: sergei-prokofiev-zdravitsa-work
+work_group_id: sergei-prokofiev-zdravitsa-group
+composer_id: sergei-prokofiev
+title: Zdravitsa
+source:
+  file: docs/prokofiev.md
+  line: '156'
+catalogue:
+  op: Op. 85
+date_text: '1939'
+category: Orchestral

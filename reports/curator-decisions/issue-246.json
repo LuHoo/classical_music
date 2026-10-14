@@ -1,0 +1,17 @@
+{
+  "issue_url": "https://github.com/LuHoo/classical_music/issues/246",
+  "decision_source": "curator_cli",
+  "curator": "LAH",
+  "recorded_at": "2026-10-08T14:07:11.917278+00:00",
+  "requested_choice": "C372",
+  "choice": "C372",
+  "selected_units": [
+    "C372"
+  ],
+  "not_selected_units": [
+    "C093"
+  ],
+  "performance_id": "jacques-ibert-trois-pieces-breves-chamber-c372",
+  "implementation_pr": null,
+  "replaced_performances": []
+}

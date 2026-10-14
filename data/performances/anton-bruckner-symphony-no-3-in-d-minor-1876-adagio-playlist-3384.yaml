@@ -1,0 +1,19 @@
+id: anton-bruckner-symphony-no-3-in-d-minor-1876-adagio-playlist-3384
+work_id: anton-bruckner-symphony-no-3-in-d-minor-1876-adagio
+performers:
+- name: Bruckner Orchester Linz
+  artist_id: bruckner-orchester-linz
+  role: orchestra
+- name: Markus Poschner
+  artist_id: markus-poschner
+  role: conductor
+- name: ORF Vienna RSO
+links:
+  tidal:
+    url: https://tidal.com/track/384348615
+release:
+  album_title: 'Bruckner: The Symphonies'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+excerpt: Adagio from the 1876 revision.

@@ -1,0 +1,17 @@
+id: sergei-prokofiev-war-and-peace-christopher-palmer-orchestral-suite-playlist-3855
+work_id: sergei-prokofiev-war-and-peace-christopher-palmer-orchestral-suite
+performers:
+- name: Neeme Järvi
+  artist_id: neeme-jarvi
+  role: conductor
+- name: Philharmonia Orchestra
+  artist_id: philharmonia-orchestra
+  role: orchestra
+links:
+  tidal:
+    url: https://tidal.com/track/376440235
+release:
+  album_title: 'Prokofiev: War & Peace Suite, Summer Night Suite & Russian Overture'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

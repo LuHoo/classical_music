@@ -1,0 +1,375 @@
+{
+  "schema_version": 1,
+  "curator_acceptance": "The curator explicitly identified this playlist as their own accepted curation before supplying its URL.",
+  "source": {
+    "playlist_url": "https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3",
+    "playlist_name": "Best Classical",
+    "playlist_modified_at": "2026-10-02T12:06:31.897Z",
+    "playlist_total_items": 5518,
+    "snapshot_run_url": "https://github.com/LuHoo/classical_music/actions/runs/37006035570",
+    "snapshot_sha256": "74cc0230788bf1199768a0bb30ac2b83757d769f11c6f2e34658d7d93de77856",
+    "independent_export": "side materials/Music collection/Best Classical.csv"
+  },
+  "batch": {
+    "number": 1,
+    "work_count": 10,
+    "positions": [
+      1,
+      33
+    ],
+    "add_count": 3,
+    "reuse_count": 7,
+    "competing_recommendations": 0,
+    "next_position": 34,
+    "next_track_id": "190541071",
+    "next_work": "Arvo Pärt: Tabula Rasa"
+  },
+  "entries": [
+    {
+      "positions": [
+        1,
+        3
+      ],
+      "title": "Symphony No. 38 in D major \"Prague\"",
+      "composer_id": "wolfgang-amadeus-mozart",
+      "work_id": "wolfgang-amadeus-mozart-symphony-no-38-in-d-major-prague-work",
+      "performance_id": "wolfgang-amadeus-mozart-symphony-no-38-in-d-major-prague-work-scottish-chamber-orchestra-sir-charles-mackerras",
+      "action": "reuse",
+      "catalogue": {
+        "k": "K. 504"
+      },
+      "source_performers": [
+        "Scottish Chamber Orchestra",
+        "Sir Charles Mackerras"
+      ],
+      "tracks": [
+        {
+          "id": "156570988",
+          "isrc": "GBASH0830801"
+        },
+        {
+          "id": "156570990",
+          "isrc": "GBASH0830802"
+        },
+        {
+          "id": "156570992",
+          "isrc": "GBASH0830803"
+        }
+      ]
+    },
+    {
+      "positions": [
+        4,
+        7
+      ],
+      "title": "Symphony No. 39 in E♭ major",
+      "composer_id": "wolfgang-amadeus-mozart",
+      "work_id": "wolfgang-amadeus-mozart-symphony-no-39-in-e-major-work",
+      "performance_id": "wolfgang-amadeus-mozart-symphony-no-39-in-e-major-work-scottish-chamber-orchestra-sir-charles-mackerras",
+      "action": "reuse",
+      "catalogue": {
+        "k": "K. 543"
+      },
+      "source_performers": [
+        "Scottish Chamber Orchestra",
+        "Sir Charles Mackerras"
+      ],
+      "tracks": [
+        {
+          "id": "156570989",
+          "isrc": "GBASH0830804"
+        },
+        {
+          "id": "156570991",
+          "isrc": "GBASH0830805"
+        },
+        {
+          "id": "156570993",
+          "isrc": "GBASH0830806"
+        },
+        {
+          "id": "156570994",
+          "isrc": "GBASH0830807"
+        }
+      ]
+    },
+    {
+      "positions": [
+        8,
+        11
+      ],
+      "title": "Symphony No. 40 in G minor",
+      "composer_id": "wolfgang-amadeus-mozart",
+      "work_id": "wolfgang-amadeus-mozart-symphony-no-40-in-g-minor-work",
+      "performance_id": "wolfgang-amadeus-mozart-symphony-no-40-in-g-minor-work-scottish-chamber-orchestra-sir-charles-mackerras",
+      "action": "reuse",
+      "catalogue": {
+        "k": "K. 550"
+      },
+      "source_performers": [
+        "Scottish Chamber Orchestra",
+        "Sir Charles Mackerras"
+      ],
+      "tracks": [
+        {
+          "id": "156570995",
+          "isrc": "GBASH0830808"
+        },
+        {
+          "id": "156570997",
+          "isrc": "GBASH0830809"
+        },
+        {
+          "id": "156570999",
+          "isrc": "GBASH0830810"
+        },
+        {
+          "id": "156571001",
+          "isrc": "GBASH0830811"
+        }
+      ]
+    },
+    {
+      "positions": [
+        12,
+        15
+      ],
+      "title": "Symphony No. 41 in C major \"Jupiter\"",
+      "composer_id": "wolfgang-amadeus-mozart",
+      "work_id": "wolfgang-amadeus-mozart-symphony-no-41-in-c-major-jupiter-work",
+      "performance_id": "wolfgang-amadeus-mozart-symphony-no-41-in-c-major-jupiter-work-scottish-chamber-orchestra-sir-charles-mackerras",
+      "action": "reuse",
+      "catalogue": {
+        "k": "K. 551"
+      },
+      "source_performers": [
+        "Scottish Chamber Orchestra",
+        "Sir Charles Mackerras"
+      ],
+      "tracks": [
+        {
+          "id": "156570996",
+          "isrc": "GBASH0830812"
+        },
+        {
+          "id": "156570998",
+          "isrc": "GBASH0830813"
+        },
+        {
+          "id": "156571000",
+          "isrc": "GBASH0830814"
+        },
+        {
+          "id": "156571002",
+          "isrc": "GBASH0830815"
+        }
+      ]
+    },
+    {
+      "positions": [
+        16,
+        20
+      ],
+      "title": "Concerto for Orchestra",
+      "composer_id": "388053797e01483593f1e62c6dd407ab",
+      "work_id": "bartok-concerto-for-orchestra",
+      "performance_id": "bartok-concerto-for-orchestra-lille-bloch",
+      "action": "add",
+      "catalogue": {
+        "bb": "BB 123",
+        "sz": "Sz. 116"
+      },
+      "source_performers": [
+        "Orchestre National de Lille",
+        "Alexandre Bloch"
+      ],
+      "tracks": [
+        {
+          "id": "309518268",
+          "isrc": "FR50X2201301"
+        },
+        {
+          "id": "309518269",
+          "isrc": "FR50X2201302"
+        },
+        {
+          "id": "309518270",
+          "isrc": "FR50X2201303"
+        },
+        {
+          "id": "309518271",
+          "isrc": "FR50X2201304"
+        },
+        {
+          "id": "309518272",
+          "isrc": "FR50X2201305"
+        }
+      ]
+    },
+    {
+      "positions": [
+        21,
+        23
+      ],
+      "title": "Viola Concerto (Tibor Serly completion)",
+      "composer_id": "388053797e01483593f1e62c6dd407ab",
+      "work_id": "bartok-viola-concerto-serly",
+      "performance_id": "bartok-viola-concerto-serly-grosz-lille-bloch",
+      "action": "add",
+      "catalogue": {
+        "bb": "BB 128",
+        "sz": "Sz. 120"
+      },
+      "source_performers": [
+        "Orchestre National de Lille",
+        "Alexandre Bloch",
+        "Amihai Grosz"
+      ],
+      "tracks": [
+        {
+          "id": "309518273",
+          "isrc": "FR50X2201306"
+        },
+        {
+          "id": "309518274",
+          "isrc": "FR50X2201307"
+        },
+        {
+          "id": "309518275",
+          "isrc": "FR50X2201308"
+        }
+      ]
+    },
+    {
+      "positions": [
+        24,
+        26
+      ],
+      "title": "Piano Concerto No. 20 in D minor",
+      "composer_id": "wolfgang-amadeus-mozart",
+      "work_id": "wolfgang-amadeus-mozart-piano-concerto-no-20-in-d-minor-work",
+      "performance_id": "wolfgang-amadeus-mozart-piano-concerto-no-20-in-d-minor-work-charles-richard-hamelin-les-violons-du-roi-jonathan-cohen",
+      "action": "reuse",
+      "catalogue": {
+        "k": "K. 466"
+      },
+      "source_performers": [
+        "Charles Richard-Hamelin",
+        "Les Violons du Roy",
+        "Jonathan Cohen"
+      ],
+      "tracks": [
+        {
+          "id": "313466200",
+          "isrc": "CALC42309021"
+        },
+        {
+          "id": "313466202",
+          "isrc": "CALC42309022"
+        },
+        {
+          "id": "313466204",
+          "isrc": "CALC42309023"
+        }
+      ]
+    },
+    {
+      "positions": [
+        27,
+        29
+      ],
+      "title": "Piano Concerto No. 23 in A major",
+      "composer_id": "wolfgang-amadeus-mozart",
+      "work_id": "wolfgang-amadeus-mozart-piano-concerto-no-23-in-a-major-work",
+      "performance_id": "wolfgang-amadeus-mozart-piano-concerto-no-23-in-a-major-work-charles-richard-hamelin-les-violons-du-roi-jonathan-cohen",
+      "action": "reuse",
+      "catalogue": {
+        "k": "K. 488"
+      },
+      "source_performers": [
+        "Charles Richard-Hamelin",
+        "Les Violons du Roy",
+        "Jonathan Cohen"
+      ],
+      "tracks": [
+        {
+          "id": "313466205",
+          "isrc": "CALC42309024"
+        },
+        {
+          "id": "313466206",
+          "isrc": "CALC42309025"
+        },
+        {
+          "id": "313466207",
+          "isrc": "CALC42309026"
+        }
+      ]
+    },
+    {
+      "positions": [
+        30,
+        30
+      ],
+      "title": "Adagio and Fugue in C minor",
+      "composer_id": "wolfgang-amadeus-mozart",
+      "work_id": "wolfgang-amadeus-mozart-adagio-and-fugue-in-c-minor-work",
+      "performance_id": "wolfgang-amadeus-mozart-adagio-and-fugue-in-c-minor-work-charles-richard-hamelin-les-violons-du-roi-jonathan-cohen",
+      "action": "reuse",
+      "catalogue": {
+        "k": "K. 546"
+      },
+      "source_performers": [
+        "Les Violons du Roy",
+        "Jonathan Cohen"
+      ],
+      "tracks": [
+        {
+          "id": "313466208",
+          "isrc": "CALC42309027"
+        }
+      ]
+    },
+    {
+      "positions": [
+        31,
+        33
+      ],
+      "title": "Symphony No. 3 “Symphony of Sorrowful Songs”",
+      "composer_id": "henryk-gorecki",
+      "work_id": "gorecki-symphony-3",
+      "performance_id": "gorecki-symphony-3-upshaw-london-sinfonietta-zinman",
+      "action": "add",
+      "catalogue": {
+        "opus": "Op. 36"
+      },
+      "source_performers": [
+        "Dawn Upshaw",
+        "London Sinfonietta",
+        "David Zinman"
+      ],
+      "tracks": [
+        {
+          "id": "256721",
+          "isrc": "USN019228201"
+        },
+        {
+          "id": "256722",
+          "isrc": "USN019228202"
+        },
+        {
+          "id": "256723",
+          "isrc": "USN019228203"
+        }
+      ]
+    }
+  ],
+  "authority_evidence": {
+    "bartok_composer": "data/persons/bela-bartok.yaml",
+    "bartok_general_composition": "docs/bartok.md:80; live Sz. 116 track titles",
+    "bartok_viola_serly_assignment": "https://musicwebinternational.com/2023/11/review-of-concertos-by-bartok-on-alpha-classics/",
+    "bartok_viola_completion_identity": "https://www.boosey.com/cr/music/Bela-Bartok-Viola-Concerto-op-posth-ed-Serly/7423",
+    "gorecki_composition_identity": "https://www.boosey.com/cr/music/Henryk-Mikolaj-Gorecki-Symphony-No-3-Symphony-of-Sorrowful-Songs/5629",
+    "gorecki_interpretation_identity": "https://www.nonesuch.com/albums/g-recki-symphony-no-3-lp"
+  }
+}

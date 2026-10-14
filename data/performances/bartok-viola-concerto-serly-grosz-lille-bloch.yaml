@@ -1,0 +1,19 @@
+id: bartok-viola-concerto-serly-grosz-lille-bloch
+work_id: bartok-viola-concerto-serly
+performers:
+  - name: Amihai Grosz
+    role: viola
+  - name: Orchestre National de Lille
+    role: orchestra
+  - name: Alexandre Bloch
+    role: conductor
+year: 2022
+release:
+  label: Alpha Classics
+  catalogue_number: ALPHA1013
+links:
+  tidal:
+    url: https://tidal.com/track/309518273
+source:
+  file: reports/playlist-import/best-classical/batch-001.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

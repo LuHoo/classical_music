@@ -1,0 +1,12 @@
+id: ferruccio-busoni-violin-sonata-no-1-in-e-minor-op-29-bv-234-chamber-c146
+work_id: ferruccio-busoni-violin-sonata-no-1-in-e-minor-op-29-bv-234
+performers:
+  - name: Ingolf Turban
+links:
+  tidal:
+    url: https://tidal.com/track/149378794
+release:
+  album_title: 'Busoni: Violin Sonatas Nos. 1 & 2'
+source:
+  file: reports/playlist-import/chamber/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/a2327106-07fd-4433-8bd3-d8a5c251c69a

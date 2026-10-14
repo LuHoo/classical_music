@@ -1,0 +1,13 @@
+id: boris-blacher-konzert-fur-klavier-und-orchester-nr-1-playlist-4858
+work_id: boris-blacher-konzert-fur-klavier-und-orchester-nr-1
+performers:
+- name: Symphonie-Orchester des Bayerischen Rundfunks
+- name: Rudolf Alberth
+links:
+  tidal:
+    url: https://tidal.com/track/2307398
+release:
+  album_title: 'Boris Blacher: Die drei Klavierkonzert'
+source:
+  file: reports/playlist-import/best-classical/window-4001-5518.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

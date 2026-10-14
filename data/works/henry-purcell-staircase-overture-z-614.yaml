@@ -1,0 +1,9 @@
+id: henry-purcell-staircase-overture-z-614
+work_group_id: henry-purcell-staircase-overture-z-614-group
+composer_id: henry-purcell
+title: Staircase Overture, Z. 614
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://catalogue.bnf.fr/ark:/12148/cb38315848m
+catalogue:
+  z: '614'

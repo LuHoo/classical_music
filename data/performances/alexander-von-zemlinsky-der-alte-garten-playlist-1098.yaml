@@ -1,0 +1,15 @@
+id: alexander-von-zemlinsky-der-alte-garten-playlist-1098
+work_id: alexander-von-zemlinsky-der-alte-garten
+performers:
+- name: James Conlon
+  role: performer
+- name: Andreas Schmidt
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/1444241
+release:
+  album_title: 'Zemlinsky: Sämtliche Orchesterlieder'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-violin-sonata-no-4-in-a-minor-op-23-group"
+composer_id: "ludwig-van-beethoven"
+title: "Violin Sonata No. 4 in A minor"
+source:
+  file: "docs/beethoven.md"
+  line: "186"
+catalogue:
+  opus: "Op. 23"

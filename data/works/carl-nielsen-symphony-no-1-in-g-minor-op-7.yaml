@@ -1,0 +1,9 @@
+id: carl-nielsen-symphony-no-1-in-g-minor-op-7
+work_group_id: carl-nielsen-symphony-no-1-in-g-minor-op-7-group
+composer_id: carl-nielsen
+title: Symphony No. 1 in G Minor, Op. 7
+source:
+  file: docs/nielsen.md
+  url: https://en.wikipedia.org/wiki/List_of_compositions_by_Carl_Nielsen
+catalogue:
+  op: '7'

@@ -1,0 +1,20 @@
+id: 802b12f8bd1a46deab7f40481e7c09ba
+work_id: 2d6dd5e0a7e64914b803824a0cb4e053
+performers:
+- name: I Barocchisti
+  role: ensemble
+- name: Diego Fasolis
+  role: conductor
+- name: Duilio Galfetti
+  role: violin
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP30474
+  album_title: Concerti per violino III — Il ballo
+source:
+  url: https://vivaldiedition.net/portfolio/vol-33-concerti-per-violin-iii-il-ballo-2008/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: 'The Vivaldi Edition, volume 33. Album page verified 2026-09-28. '
+links:
+  tidal:
+    url: https://tidal.com/album/92207252

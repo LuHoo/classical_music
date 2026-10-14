@@ -1,0 +1,9 @@
+id: 60f2bf01501942f288bdc9d2359346d1
+work_group_id: ac85ac81063a423488999c403151bdab
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Viola d’amore Concerto, RV 395
+catalogue:
+  rv: RV 395
+source:
+  url: https://vivaldiedition.net/portfolio/vol-56-concerti-per-archi-iii-e-concerti-per-viola-damore-2018/
+  file: reports/vivaldi-naive-edition/catalogue.json

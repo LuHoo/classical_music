@@ -1,0 +1,18 @@
+id: 16924a1ff9934b53b646c2ab3ba622ae
+work_id: 9019b7acbc4241d5966e8105f8719190
+performers:
+- name: Academia Montis Regalis
+  role: ensemble
+- name: Alessandro de Marchi
+  role: conductor
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP30314
+  album_title: Juditha triumphans
+source:
+  url: https://vivaldiedition.net/portfolio/vol-2-juditha-triumphans-2001/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: 'The Vivaldi Edition, volume 2. Album page verified 2026-09-28. '
+links:
+  tidal:
+    url: https://tidal.com/album/91797497

@@ -1,0 +1,9 @@
+id: 3e0283dc4d6a4b4488d74492ebda6618
+work_group_id: bb516c8308ce45399d00c3c891b585c8
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Chamber Concerto, RV 108
+catalogue:
+  rv: RV 108
+source:
+  url: https://vivaldiedition.net/portfolio/vol-16-concerti-e-cantata-da-camera-ii-2004/
+  file: reports/vivaldi-naive-edition/catalogue.json

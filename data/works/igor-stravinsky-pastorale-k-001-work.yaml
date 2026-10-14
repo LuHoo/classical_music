@@ -1,0 +1,11 @@
+id: "igor-stravinsky-pastorale-k-001-work"
+work_group_id: "igor-stravinsky-pastorale-k-001-group"
+composer_id: "igor-stravinsky"
+title: "Pastorale"
+source:
+  file: "docs/stravinsky.md"
+  line: "180"
+catalogue:
+  k: "K 001"
+date_text: "1907"
+category: "Vocal"

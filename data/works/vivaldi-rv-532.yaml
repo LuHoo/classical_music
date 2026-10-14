@@ -1,0 +1,9 @@
+id: e0c547dff0084631936ef2b0191cb47f
+work_group_id: 83b7913c2df54e189f67bdabe9d8dbe2
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Concerto for two mandolins, RV 532
+catalogue:
+  rv: RV 532
+source:
+  url: https://vivaldiedition.net/portfolio/vol-26-musica-per-mandolin-e-liuto-2006/
+  file: reports/vivaldi-naive-edition/catalogue.json

@@ -1,0 +1,14 @@
+id: baldassare-galuppi-piano-sonata-no-9-in-f-minor-piano-p086
+work_id: baldassare-galuppi-piano-sonata-no-9-in-f-minor
+performers:
+  - name: Víkingur Ólafsson
+    role: piano
+links:
+  tidal:
+    url: https://tidal.com/track/195406376
+release:
+  album_title: Mozart & Contemporaries
+source:
+  file: reports/playlist-import/piano/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/82853f8e-4fd6-42b6-b0a7-230da5ee86a1
+excerpt: 'First movement: Andante spiritoso'

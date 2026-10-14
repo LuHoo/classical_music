@@ -1,0 +1,8 @@
+id: "igor-stravinsky-the-rite-of-spring-k-015-group"
+composer_id: "igor-stravinsky"
+title: "The Rite of Spring"
+source:
+  file: "docs/stravinsky.md"
+  line: "35"
+catalogue:
+  k: "K 015"

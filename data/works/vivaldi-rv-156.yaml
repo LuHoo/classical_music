@@ -1,0 +1,9 @@
+id: 60723d5cd3d84ab6a2a57fe2ff8b98cd
+work_group_id: 39d051525ec14f66b12e212c500aacb3
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Concerto for strings, RV 156
+catalogue:
+  rv: RV 156
+source:
+  url: https://vivaldiedition.net/portfolio/vol-13-concerti-per-archi-2004/
+  file: reports/vivaldi-naive-edition/catalogue.json

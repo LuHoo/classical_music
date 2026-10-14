@@ -1,0 +1,10 @@
+id: benjamin-britten-sinfonia-da-requiem
+work_group_id: benjamin-britten-sinfonia-da-requiem-group
+composer_id: benjamin-britten
+title: Sinfonia da Requiem
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url:
+    https://www.deutschegrammophon.com/en/catalogue/products/britten-sinfonia-da-requiem-grazinyte-tyla-12139
+catalogue:
+  opus: Op. 20

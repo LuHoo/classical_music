@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-allegro-and-minuet-for-two-flutes-in-g-major-woo-26-work"
+work_group_id: "ludwig-van-beethoven-allegro-and-minuet-for-two-flutes-in-g-major-woo-26-group"
+composer_id: "ludwig-van-beethoven"
+title: "Allegro and Minuet for two flutes in G major"
+source:
+  file: "docs/beethoven.md"
+  line: "112"
+catalogue:
+  woo: "WoO 26"
+date_text: "August 1792"
+category: "Chamber"

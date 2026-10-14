@@ -1,0 +1,9 @@
+id: f2e6812cafd441a1bc0c1908e0e4851e
+work_group_id: daec343bbdc845aba6c7c7ad368d6f7d
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 369
+catalogue:
+  rv: RV 369
+source:
+  url: https://vivaldiedition.net/portfolio/vol-30-arie-ritrovate-2007/
+  file: reports/vivaldi-naive-edition/catalogue.json

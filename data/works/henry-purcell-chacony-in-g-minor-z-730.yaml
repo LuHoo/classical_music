@@ -1,0 +1,9 @@
+id: henry-purcell-chacony-in-g-minor-z-730
+work_group_id: henry-purcell-chacony-in-g-minor-z-730-group
+composer_id: henry-purcell
+title: Chacony in G minor, Z. 730
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://catalogue.bnf.fr/ark:/12148/cb38315848m
+catalogue:
+  z: '730'

@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-allegretto-quasi-andante-g-minor-woo-61a-work"
+work_group_id: "ludwig-van-beethoven-allegretto-quasi-andante-g-minor-woo-61a-group"
+composer_id: "ludwig-van-beethoven"
+title: "Allegretto quasi andante, G minor"
+source:
+  file: "docs/beethoven.md"
+  line: "470"
+catalogue:
+  woo: "WoO 61a"
+date_text: "1825"
+category: "Piano"

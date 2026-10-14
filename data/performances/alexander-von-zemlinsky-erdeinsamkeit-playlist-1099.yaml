@@ -1,0 +1,13 @@
+id: alexander-von-zemlinsky-erdeinsamkeit-playlist-1099
+work_id: alexander-von-zemlinsky-erdeinsamkeit
+performers:
+- name: Andreas Schmidt/Gürzenich-Orchester Kölner Philharmoniker
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/1444242
+release:
+  album_title: 'Zemlinsky: Sämtliche Orchesterlieder'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

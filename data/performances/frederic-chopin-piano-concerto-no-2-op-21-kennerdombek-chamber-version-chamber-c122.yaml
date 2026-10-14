@@ -1,0 +1,14 @@
+id: frederic-chopin-piano-concerto-no-2-op-21-kennerdombek-chamber-version-chamber-c122
+work_id: frederic-chopin-piano-concerto-no-2-op-21-kennerdombek-chamber-version
+performers:
+  - name: Kevin Kenner
+  - name: Apollon Musagete Quartett
+  - name: Sławomir Rozlach
+links:
+  tidal:
+    url: https://tidal.com/track/148906214
+release:
+  album_title: 'Fryderyk Chopin: Piano Concertos'
+source:
+  file: reports/playlist-import/chamber/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/a2327106-07fd-4433-8bd3-d8a5c251c69a

@@ -1,0 +1,8 @@
+id: "anton-bruckner-locus-iste-group"
+composer_id: "anton-bruckner"
+title: "Locus iste"
+source:
+  file: "docs/bruckner.md"
+  line: "74"
+catalogue:
+  wab: "WAB 23"

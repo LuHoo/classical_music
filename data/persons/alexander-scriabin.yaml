@@ -1,0 +1,6 @@
+id: alexander-scriabin
+name: Alexander Scriabin
+roles:
+- composer
+source:
+  file: docs/scriabin.md

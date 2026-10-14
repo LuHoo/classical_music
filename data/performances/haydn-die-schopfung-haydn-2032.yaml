@@ -1,0 +1,30 @@
+id: d9a56012f16a4f2280712fe9639c8472
+work_id: 277b20d26821493dab40d227e27ea899
+performers:
+- name: Il Giardino Armonico
+  role: orchestra
+- name: Chor des Bayerischen Rundfunks
+  role: choir
+- name: Giovanni Antonini
+  role: conductor
+- name: Anna Lucia Richter
+  role: soprano
+- name: Maximilian Schmitt
+  role: tenor
+- name: Florian Boesch
+  role: baritone
+- name: Gabriele Weinfurter
+  role: mezzo-soprano
+release:
+  label: Alpha Classics
+  catalogue_number: ALPHA567
+  album_title: 'Haydn: Die Schöpfung'
+source:
+  url: https://www.prestomusic.com/classical/products/8820488--haydn-die-schopfung
+  file: reports/haydn-2032/companion-releases.json
+links:
+  tidal:
+    url: https://tidal.com/album/187429062
+notes: Unnumbered Haydn 2032 companion release, 2 CDs; complete oratorio in German. Recorded in 2019;
+  released in 2020. Sources and Tidal album identity checked 2026-09-30. Gabriele Weinfurter is additionally
+  credited by the Bavarian Radio Chorus release page.

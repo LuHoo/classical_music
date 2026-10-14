@@ -1,0 +1,9 @@
+id: c3f4f99ad5c64f6d819b942b6bd09a16
+work_group_id: 382e8168bd8e4085b087fe4fe37523d1
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 817
+catalogue:
+  rv: RV 817
+source:
+  url: https://vivaldiedition.net/portfolio/vol-46-new-discoveries-ii-2011/
+  file: reports/vivaldi-naive-edition/catalogue.json

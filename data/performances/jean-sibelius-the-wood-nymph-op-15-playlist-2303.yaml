@@ -1,0 +1,16 @@
+id: jean-sibelius-the-wood-nymph-op-15-playlist-2303
+work_id: jean-sibelius-the-wood-nymph-op-15
+performers:
+- name: Gothenburg Symphony Orchestra
+  artist_id: gothenburg-symphony-orchestra
+  role: orchestra
+- name: Santtu-Matias Rouvali
+- name: Gothenburg SO
+links:
+  tidal:
+    url: https://tidal.com/track/330312068
+release:
+  album_title: 'Sibelius: Symphony No. 4 - The Wood Nymph - Valse Triste'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

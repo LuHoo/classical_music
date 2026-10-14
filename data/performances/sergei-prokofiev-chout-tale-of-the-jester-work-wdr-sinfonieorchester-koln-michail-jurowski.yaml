@@ -1,0 +1,16 @@
+id: sergei-prokofiev-chout-tale-of-the-jester-work-wdr-sinfonieorchester-koln-michail-jurowski
+work_id: sergei-prokofiev-chout-tale-of-the-jester-work
+performers:
+- artist_id: wdr-sinfonieorchester-koln
+  name: WDR Sinfonieorchester Köln
+  role: performer
+- artist_id: michail-jurowski
+  name: Michail Jurowski
+  role: conductor
+source_performer_text: WDR Sinfonieorchester Köln, Michail Jurowski
+links:
+  tidal:
+    url: https://tidal.com/album/104727564
+source:
+  file: /Users/Lucas_new/.codex/.chatgpt-projects/g-p-6a500123ac548191ab37db95c0d285a2/classical_music/docs/prokofiev.md
+  line: '37'

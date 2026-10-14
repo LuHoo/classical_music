@@ -1,0 +1,11 @@
+id: "igor-stravinsky-sonata-k-072-work"
+work_group_id: "igor-stravinsky-sonata-k-072-group"
+composer_id: "igor-stravinsky"
+title: "Sonata"
+source:
+  file: "docs/stravinsky.md"
+  line: "230"
+catalogue:
+  k: "K 072"
+date_text: "1943–44"
+category: "Keyboard"

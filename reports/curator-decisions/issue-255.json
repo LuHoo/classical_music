@@ -1,0 +1,17 @@
+{
+  "issue_url": "https://github.com/LuHoo/classical_music/issues/255",
+  "decision_source": "curator_cli",
+  "curator": "LAH",
+  "recorded_at": "2026-10-08T14:06:21.854652+00:00",
+  "requested_choice": "C339",
+  "choice": "C339",
+  "selected_units": [
+    "C339"
+  ],
+  "not_selected_units": [
+    "C284"
+  ],
+  "performance_id": "bohuslav-martinu-cello-sonata-no-2-h-286-chamber-c339",
+  "implementation_pr": null,
+  "replaced_performances": []
+}

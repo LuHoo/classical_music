@@ -1,0 +1,9 @@
+id: 82f2be9fa1344c8ea622c528838e8b29
+work_group_id: acfdeba5c6894af0bd06ba7a24e21089
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Concerto for four violins, RV 553
+catalogue:
+  rv: RV 553
+source:
+  url: https://vivaldiedition.net/portfolio/concerti-per-vari-strumenti-ii/
+  file: reports/vivaldi-naive-edition/catalogue.json

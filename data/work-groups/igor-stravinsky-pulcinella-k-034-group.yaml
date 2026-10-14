@@ -1,0 +1,8 @@
+id: "igor-stravinsky-pulcinella-k-034-group"
+composer_id: "igor-stravinsky"
+title: "Pulcinella"
+source:
+  file: "docs/stravinsky.md"
+  line: "39"
+catalogue:
+  k: "K 034"

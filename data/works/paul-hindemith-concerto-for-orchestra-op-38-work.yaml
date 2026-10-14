@@ -1,0 +1,11 @@
+id: "paul-hindemith-concerto-for-orchestra-op-38-work"
+work_group_id: "paul-hindemith-concerto-for-orchestra-op-38-group"
+composer_id: "paul-hindemith"
+title: "Concerto for Orchestra"
+source:
+  file: "docs/hindemith.md"
+  line: "62"
+catalogue:
+  opus: "Op. 38"
+date_text: "1925"
+category: "Orchestral"

@@ -1,0 +1,21 @@
+id: 1fb9cc9dbc9241b680eb9a75915bc410
+work_id: 3679464b85104ebc89805e6540032f8d
+performers:
+- name: Concerto Italiano
+  role: ensemble
+- name: Rinaldo Alessandrini
+  role: conductor
+- name: Sara Mingardo
+  role: contralto
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP30367
+  album_title: Stabat Mater
+source:
+  url: https://vivaldiedition.net/portfolio/vol-6-stabat-mater-2002/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: 'The Vivaldi Edition, volume 6. Album page verified 2026-09-28. Gecorrigeerd: OP30367 en RV 554a; niet OP30387
+  en RV 544a.'
+links:
+  tidal:
+    url: https://tidal.com/album/73947224

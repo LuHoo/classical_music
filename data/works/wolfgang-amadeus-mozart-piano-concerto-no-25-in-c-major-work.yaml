@@ -1,0 +1,11 @@
+id: wolfgang-amadeus-mozart-piano-concerto-no-25-in-c-major-work
+work_group_id: wolfgang-amadeus-mozart-piano-concerto-no-25-in-c-major-group
+composer_id: wolfgang-amadeus-mozart
+title: Piano Concerto No. 25 in C Major
+source:
+  file: docs/mozart.md
+  line: '109'
+catalogue:
+  k: K. 503
+date_text: https://tidal.com/browse/track/325069892?u
+category: Piano concertos

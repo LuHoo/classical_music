@@ -1,0 +1,9 @@
+id: c56d72a409db4f168ead5d94e5a50a95
+work_group_id: f6b3bb1b885e45308bacf75f6bd5dedb
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Concerto, RV 576
+catalogue:
+  rv: RV 576
+source:
+  url: https://vivaldiedition.net/portfolio/vol-7-concerti-di-dresda-2003/
+  file: reports/vivaldi-naive-edition/catalogue.json

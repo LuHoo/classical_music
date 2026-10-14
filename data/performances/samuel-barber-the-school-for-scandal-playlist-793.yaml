@@ -1,0 +1,15 @@
+id: samuel-barber-the-school-for-scandal-playlist-793
+work_id: samuel-barber-the-school-for-scandal
+performers:
+- name: New Zealand Symphony Orchestra
+  role: performer
+- name: Andrew Schenck
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/313229003
+release:
+  album_title: 'Barber: Works for Orchestra'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

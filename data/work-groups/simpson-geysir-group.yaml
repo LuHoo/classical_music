@@ -1,0 +1,6 @@
+composer_id: mark-simpson
+id: simpson-geysir-group
+source:
+  file: reports/playlist-import/best-classical/prepared-120.json
+  url: https://www.orchidclassics.com/releases/orc100150-mark-simpson/
+title: Geysir

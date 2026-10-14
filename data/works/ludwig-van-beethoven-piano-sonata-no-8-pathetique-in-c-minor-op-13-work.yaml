@@ -1,0 +1,12 @@
+id: "ludwig-van-beethoven-piano-sonata-no-8-pathetique-in-c-minor-op-13-work"
+work_group_id: "ludwig-van-beethoven-piano-sonata-no-8-pathetique-in-c-minor-op-13-group"
+composer_id: "ludwig-van-beethoven"
+title: "Piano Sonata No. 8 \"Pathétique\" in C minor"
+source:
+  file: "docs/beethoven.md"
+  line: "328"
+catalogue:
+  opus: "Op. 13"
+date_text: "1797–1798"
+category: "Piano"
+gem: true

@@ -1,0 +1,17 @@
+id: boris-blacher-variations-on-a-theme-by-paganini-playlist-749
+work_id: boris-blacher-variations-on-a-theme-by-paganini
+performers:
+- name: Wiener Philharmoniker
+  role: orchestra
+  artist_id: wiener-philharmoniker
+- name: Sir Georg Solti
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/57692280
+release:
+  album_title: 'Elgar: Enigma Variations / Kodály: Peacock Variations / Blacher: Variations On A Theme
+    Of Paganini'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

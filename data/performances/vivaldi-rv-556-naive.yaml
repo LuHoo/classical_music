@@ -1,0 +1,18 @@
+id: 4c9bf3f8f9794d6181e44f4fa8c0c55e
+work_id: 5cc74cd8bae24f008216890d98663e42
+performers:
+- name: Concerto Italiano
+  role: ensemble
+- name: Rinaldo Alessandrini
+  role: conductor
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP30367
+  album_title: Stabat Mater
+source:
+  url: https://vivaldiedition.net/portfolio/vol-6-stabat-mater-2002/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: 'The Vivaldi Edition, volume 6. Album page verified 2026-09-28. Gecorrigeerd: OP30367 en RV 554a; niet OP30387 en RV 544a.'
+links:
+  tidal:
+    url: https://tidal.com/album/73947224

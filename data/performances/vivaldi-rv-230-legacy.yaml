@@ -1,0 +1,22 @@
+id: e8a22d8399244c0bad21e027d0a35f18
+work_id: 453a31e3d5204976996f37a213fa4842
+performers:
+- name: Brecon Baroque
+  role: performer
+- name: Rachel Podger
+  role: performer
+- name: Bojan Čičić
+  role: performer
+- name: Johannes Pramsohler
+  role: performer
+- name: Sabine Stoffer
+  role: performer
+- name: Alison McGillivray
+  role: performer
+links:
+  tidal:
+    url: http://www.tidal.com/track/269505340
+source:
+  file: docs/vivaldi.md
+  line: '16'
+notes: Existing curator recommendation retained pending comparison with the Naïve Edition where applicable.

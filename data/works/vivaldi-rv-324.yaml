@@ -1,0 +1,10 @@
+id: 003331402cda4f069fddfaeb5e7d1c59
+work_group_id: a6bce22b24f84f218f92748fa37155f6
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 324
+catalogue:
+  rv: RV 324
+  opus: Op. 6
+source:
+  file: docs/vivaldi.md
+  line: '22'

@@ -1,0 +1,9 @@
+id: a30e233a1385431d9a75e4b2c6c05322
+work_group_id: 02f2c531081e40269256e90b562716d1
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 208
+catalogue:
+  rv: RV 208
+source:
+  url: https://vivaldiedition.net/portfolio/vol-23-concerti-per-violin-i-la-caccia-2005/
+  file: reports/vivaldi-naive-edition/catalogue.json

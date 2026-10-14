@@ -1,0 +1,11 @@
+id: "igor-stravinsky-symphony-in-c-k-061-work"
+work_group_id: "igor-stravinsky-symphony-in-c-k-061-group"
+composer_id: "igor-stravinsky"
+title: "Symphony in C"
+source:
+  file: "docs/stravinsky.md"
+  line: "85"
+catalogue:
+  k: "K 061"
+date_text: "1940"
+category: "Orchestral"

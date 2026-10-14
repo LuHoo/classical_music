@@ -1,0 +1,13 @@
+id: karol-szymanowski-sonata-no-2-in-a-major-op-21-piano-p292
+work_id: karol-szymanowski-sonata-no-2-in-a-major-op-21
+performers:
+  - name: Martin Jones
+    role: piano
+links:
+  tidal:
+    url: https://tidal.com/track/53997740
+release:
+  album_title: 'Szymanowski: Complete Piano Music'
+source:
+  file: reports/playlist-import/piano/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/82853f8e-4fd6-42b6-b0a7-230da5ee86a1

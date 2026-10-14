@@ -1,0 +1,13 @@
+id: bohuslav-martinu-rhapsody-concerto-playlist-1358
+work_id: bohuslav-martinu-rhapsody-concerto
+performers:
+- name: Nobuko Imai
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/12107353
+release:
+  album_title: 'Martinu: Fresques De Piero Della Francesca (Les) / Viola Rhapsody-Concerto / Double Concerto'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

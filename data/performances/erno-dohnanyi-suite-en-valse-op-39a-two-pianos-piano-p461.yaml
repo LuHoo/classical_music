@@ -1,0 +1,16 @@
+id: erno-dohnanyi-suite-en-valse-op-39a-two-pianos-piano-p461
+work_id: erno-dohnanyi-suite-en-valse-op-39a-two-pianos
+performers:
+  - name: Monika Egri
+    role: piano
+  - name: Attila Pertis
+    role: piano
+links:
+  tidal:
+    url: https://tidal.com/track/32144617
+release:
+  album_title: 'Dohnanyi: Suite En Valse / Waltz in F-Sharp Minor / Bartok: The Miraculous Mandarin'
+source:
+  file: reports/playlist-import/piano/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/82853f8e-4fd6-42b6-b0a7-230da5ee86a1
+excerpt: Through Valse de fête, Valse No. 2; the final Valse No. 3 is not selected

@@ -1,0 +1,10 @@
+catalogue:
+  op: Op. 45
+composer_id: sergei-rachmaninoff
+id: rachmaninoff-symphonic-dances
+source:
+  file: reports/playlist-import/best-classical/prepared-120.json
+  url:
+    https://www.deutschegrammophon.com/en/catalogue/products/rachmaninoff-symphony-no-1-symphonic-dances-nezet-seguin-12192
+title: Symphonic Dances
+work_group_id: rachmaninoff-symphonic-dances-group

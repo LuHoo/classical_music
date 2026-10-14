@@ -1,0 +1,9 @@
+id: a7e320b6ee2046d3af1c407c1768b4fe
+work_group_id: b7aaad030f224a4ab06421e278684cc4
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Concerto for two violins, RV 517
+catalogue:
+  rv: RV 517
+source:
+  url: https://vivaldiedition.net/portfolio/vol-51-concerti-per-due-violini-e-archi-i-2013/
+  file: reports/vivaldi-naive-edition/catalogue.json

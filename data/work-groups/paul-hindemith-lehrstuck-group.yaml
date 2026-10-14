@@ -1,0 +1,6 @@
+id: "paul-hindemith-lehrstuck-group"
+composer_id: "paul-hindemith"
+title: "Lehrstück"
+source:
+  file: "docs/hindemith.md"
+  line: "24"

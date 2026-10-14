@@ -1,0 +1,13 @@
+id: john-adams-el-dorado-playlist-3122
+work_id: john-adams-el-dorado
+performers:
+- name: Kent Nagano
+- name: The Hallé Orchestra
+links:
+  tidal:
+    url: https://tidal.com/track/211997
+release:
+  album_title: EL DORADO; ADAMS ARRANGEMENTS OF LISZT "BLACK GONDOLA" & BUSONI "BERCEUSE ELEGIAQUE"
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

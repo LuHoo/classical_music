@@ -1,0 +1,7 @@
+id: "anton-bruckner"
+name: "Anton Bruckner"
+sort_name: "Bruckner, Anton"
+roles:
+  - "composer"
+source:
+  file: "docs/bruckner.md"

@@ -1,0 +1,14 @@
+id: 
+  wolfgang-amadeus-mozart-violin-concerto-no-1-work-gidon-kremer-kremerata-baltica
+work_id: wolfgang-amadeus-mozart-violin-concerto-no-1-work
+source:
+  file: docs/mozart.md
+  line: '116'
+links:
+  tidal:
+    url: http://www.tidal.com/track/3042937
+performers:
+- name: Gidon Kremer
+  role: performer
+- name: Kremerata Baltica
+  role: performer

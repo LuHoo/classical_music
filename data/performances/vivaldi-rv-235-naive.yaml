@@ -1,0 +1,18 @@
+id: 475f61df81904d2c85e1de35f2020a90
+work_id: c4e2ec2b232740b8acc6e57155c62ecf
+performers:
+- name: Le Concert de la Loge
+  role: ensemble
+- name: Julien Chauvin
+  role: violin
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP30585
+  album_title: Concerti per violino VIII — Il teatro
+source:
+  url: https://vivaldiedition.net/portfolio/vol-63-concerti-per-violino-viii-il-teatro/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: 'The Vivaldi Edition, volume 63. Album page verified 2026-09-28. '
+links:
+  tidal:
+    url: https://tidal.com/album/131385910

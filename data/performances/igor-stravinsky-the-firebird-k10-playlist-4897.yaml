@@ -1,0 +1,13 @@
+id: igor-stravinsky-the-firebird-k10-playlist-4897
+work_id: igor-stravinsky-the-firebird-k10
+performers:
+- name: Orchestre de Paris
+- name: Klaus Mäkelä
+links:
+  tidal:
+    url: https://tidal.com/track/282335390
+release:
+  album_title: 'Stravinsky: The Rite of Spring & The Firebird'
+source:
+  file: reports/playlist-import/best-classical/window-4001-5518.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

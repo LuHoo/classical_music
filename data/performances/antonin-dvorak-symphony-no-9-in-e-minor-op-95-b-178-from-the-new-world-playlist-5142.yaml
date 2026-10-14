@@ -1,0 +1,17 @@
+id: 
+  antonin-dvorak-symphony-no-9-in-e-minor-op-95-b-178-from-the-new-world-playlist-5142
+work_id: antonin-dvorak-symphony-no-9-in-e-minor-op-95-b-178-from-the-new-world
+performers:
+- name: Los Angeles Philharmonic
+  artist_id: los-angeles-philharmonic
+  role: orchestra
+- name: Gustavo Dudamel
+links:
+  tidal:
+    url: https://tidal.com/track/239092576
+release:
+  album_title: 'Dvořák: Symphonies Nos. 7-9'
+source:
+  file: reports/playlist-import/best-classical/window-4001-5518.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+version_assignment: unspecified

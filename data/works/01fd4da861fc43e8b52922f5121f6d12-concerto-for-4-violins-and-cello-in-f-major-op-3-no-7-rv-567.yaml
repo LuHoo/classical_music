@@ -1,0 +1,11 @@
+id: 01fd4da861fc43e8b52922f5121f6d12-concerto-for-4-violins-and-cello-in-f-major-op-3-no-7-rv-567
+work_group_id:
+  01fd4da861fc43e8b52922f5121f6d12-concerto-for-4-violins-and-cello-in-f-major-op-3-no-7-rv-567-group
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Concerto for 4 Violins and Cello in F Major, Op. 3 No. 7, RV 567
+source:
+  file: docs/vivaldi.md
+  url: https://en.wikipedia.org/wiki/List_of_compositions_by_Antonio_Vivaldi
+catalogue:
+  rv: '567'
+  op: 3n

@@ -1,0 +1,8 @@
+id: "paul-hindemith-kammermusik-no-1-op-24-1-group"
+composer_id: "paul-hindemith"
+title: "Kammermusik No. 1"
+source:
+  file: "docs/hindemith.md"
+  line: "100"
+catalogue:
+  opus: "Op. 24/1"

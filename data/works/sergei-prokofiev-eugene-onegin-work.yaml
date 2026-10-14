@@ -1,0 +1,11 @@
+id: sergei-prokofiev-eugene-onegin-work
+work_group_id: sergei-prokofiev-eugene-onegin-group
+composer_id: sergei-prokofiev
+title: Eugene Onegin
+source:
+  file: docs/prokofiev.md
+  line: '128'
+catalogue:
+  op: Op. 71
+date_text: '1936'
+category: Orchestral

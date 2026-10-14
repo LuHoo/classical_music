@@ -1,0 +1,14 @@
+id: 
+  dmitri-shostakovich-scherzo-in-e-flat-major-work-orchestre-philharmonique-du-luxembourg-gustavo-gimeno
+work_id: dmitri-shostakovich-scherzo-in-e-flat-major-work
+source:
+  file: docs/shostakovich.md
+  line: '16'
+links:
+  tidal:
+    url: https://tidal.com/browse/album/366812312
+performers:
+- name: Orchestre Philharmonique du Luxembourg
+  role: performer
+- name: Gustavo Gimeno
+  role: performer

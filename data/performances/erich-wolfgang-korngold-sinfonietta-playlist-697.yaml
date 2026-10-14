@@ -1,0 +1,13 @@
+id: erich-wolfgang-korngold-sinfonietta-playlist-697
+work_id: erich-wolfgang-korngold-sinfonietta
+performers:
+- name: Helsinki Philharmonic Orchestra
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/22820337
+release:
+  album_title: 'Korngold: Much Ado About Nothing & Sinfonietta'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

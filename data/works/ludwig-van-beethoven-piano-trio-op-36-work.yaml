@@ -1,0 +1,10 @@
+id: "ludwig-van-beethoven-piano-trio-op-36-work"
+work_group_id: "ludwig-van-beethoven-piano-trio-op-36-group"
+composer_id: "ludwig-van-beethoven"
+title: "Piano Trio"
+source:
+  file: "docs/beethoven.md"
+  line: "204"
+catalogue:
+  opus: "Op. 36"
+category: "Chamber"

@@ -1,0 +1,8 @@
+id: dmitri-shostakovich-suite-from-zoya-group
+composer_id: dmitri-shostakovich
+title: Suite from Zoya
+source:
+  file: docs/shostakovich.md
+  line: '86'
+catalogue:
+  op: Op. 64a

@@ -1,0 +1,12 @@
+id: samuel-barber-summer-music-op-31-chamber-c245
+work_id: samuel-barber-summer-music-op-31
+performers:
+  - name: Bergen Wind Quintet
+links:
+  tidal:
+    url: https://tidal.com/track/12103255
+release:
+  album_title: 'Barber: Summer Music / Jolivet: Serenade / Hindemith: Kleine Kammermusik'
+source:
+  file: reports/playlist-import/chamber/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/a2327106-07fd-4433-8bd3-d8a5c251c69a

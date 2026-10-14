@@ -1,0 +1,9 @@
+id: erno-dohnanyi-the-veil-of-pierrette
+work_group_id: erno-dohnanyi-the-veil-of-pierrette-group
+composer_id: erno-dohnanyi
+title: The Veil of Pierrette
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://www.naxos.com/CatalogueDetail/?id=C5388
+catalogue:
+  opus: Op. 18

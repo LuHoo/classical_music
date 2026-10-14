@@ -1,0 +1,6 @@
+id: "paul-hindemith-mass-group"
+composer_id: "paul-hindemith"
+title: "Mass"
+source:
+  file: "docs/hindemith.md"
+  line: "192"

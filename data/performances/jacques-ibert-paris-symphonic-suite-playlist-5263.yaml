@@ -1,0 +1,16 @@
+id: jacques-ibert-paris-symphonic-suite-playlist-5263
+work_id: jacques-ibert-paris-symphonic-suite
+performers:
+- name: Neeme Järvi
+  artist_id: neeme-jarvi
+  role: conductor
+- name: Orchestre de la Suisse Romande
+links:
+  tidal:
+    url: https://tidal.com/track/376410359
+release:
+  album_title: 'Ibert: Orchestral Works'
+source:
+  file: reports/playlist-import/best-classical/window-4001-5518.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+excerpt: One selected movement only.

@@ -1,0 +1,8 @@
+id: dmitri-shostakovich-symphony-no-1-in-f-minor-group
+composer_id: dmitri-shostakovich
+title: Symphony No. 1 in F minor
+source:
+  file: docs/shostakovich.md
+  line: '18'
+catalogue:
+  op: Op. 10

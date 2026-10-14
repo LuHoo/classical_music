@@ -1,0 +1,9 @@
+id: sergei-prokofiev-the-tale-of-the-buffoon-suite-op-21a-chout
+work_group_id: sergei-prokofiev-the-tale-of-the-buffoon-suite-op-21a-chout-group
+composer_id: sergei-prokofiev
+title: The Tale of the Buffoon Suite, Op. 21a, "Chout"
+source:
+  file: docs/prokofiev.md
+  url: https://en.wikipedia.org/wiki/List_of_compositions_by_Sergei_Prokofiev
+catalogue:
+  op: 21a

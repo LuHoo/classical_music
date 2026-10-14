@@ -1,0 +1,9 @@
+id: 0b9e6ce6d54f4f31a027ba030cd89fde
+work_group_id: 925189e3563a41848799350c419dd4b0
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Chamber Concerto, RV 100
+catalogue:
+  rv: RV 100
+source:
+  url: https://vivaldiedition.net/portfolio/vol-16-concerti-e-cantata-da-camera-ii-2004/
+  file: reports/vivaldi-naive-edition/catalogue.json

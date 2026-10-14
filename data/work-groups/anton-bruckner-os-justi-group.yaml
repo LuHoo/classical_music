@@ -1,0 +1,8 @@
+id: "anton-bruckner-os-justi-group"
+composer_id: "anton-bruckner"
+title: "Os justi"
+source:
+  file: "docs/bruckner.md"
+  line: "76"
+catalogue:
+  wab: "WAB 30"

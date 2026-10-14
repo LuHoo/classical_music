@@ -1,0 +1,17 @@
+id: john-adams-slonimsky-s-earbox-playlist-3124
+work_id: john-adams-slonimsky-s-earbox
+performers:
+- name: Tonhalle-Orchester Zürich
+- name: Paavo Järvi
+  artist_id: paavo-jarvi
+  role: conductor
+- name: Paavo
+- name: Järvi
+links:
+  tidal:
+    url: https://tidal.com/track/237378744
+release:
+  album_title: John Adams
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

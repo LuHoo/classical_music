@@ -1,0 +1,8 @@
+id: "igor-stravinsky-four-songs-k-004-group"
+composer_id: "igor-stravinsky"
+title: "Four Songs"
+source:
+  file: "docs/stravinsky.md"
+  line: "186"
+catalogue:
+  k: "K 004"

@@ -1,0 +1,20 @@
+id: 9228e2fe435549939d39d16cbe36dbf6
+work_id: cfc9a520fc594435ab1bc58020e5a0a3
+performers:
+- name: Il Giardino Armonico
+  role: ensemble
+- name: Giovanni Antonini
+  role: conductor
+- name: Christophe Coin
+  role: cello
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP30426
+  album_title: Concerti per violoncello I
+source:
+  url: https://vivaldiedition.net/portfolio/vol-27-concerti-per-violon%e2%80%90-cello-i-2006/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: 'The Vivaldi Edition, volume 27. Album page verified 2026-09-28. '
+links:
+  tidal:
+    url: https://tidal.com/album/91802676

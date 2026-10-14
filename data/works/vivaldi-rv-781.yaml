@@ -1,0 +1,9 @@
+id: bccf77feee0c4eec88251f2077bce175
+work_group_id: 9af49202561a457eb53f860db8aa166c
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Concerto in D major, RV 781
+catalogue:
+  rv: RV 781
+source:
+  url: https://vivaldiedition.net/portfolio/vol-47-orlando-1714-2012/
+  file: reports/vivaldi-naive-edition/catalogue.json

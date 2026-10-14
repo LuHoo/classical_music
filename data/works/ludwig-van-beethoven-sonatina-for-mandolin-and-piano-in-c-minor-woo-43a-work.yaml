@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-sonatina-for-mandolin-and-piano-in-c-minor-woo-43a-work"
+work_group_id: "ludwig-van-beethoven-sonatina-for-mandolin-and-piano-in-c-minor-woo-43a-group"
+composer_id: "ludwig-van-beethoven"
+title: "Sonatina for mandolin and piano in C minor"
+source:
+  file: "docs/beethoven.md"
+  line: "138"
+catalogue:
+  woo: "WoO 43a"
+date_text: "1796"
+category: "Chamber"

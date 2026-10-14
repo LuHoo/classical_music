@@ -1,0 +1,12 @@
+id: william-walton-violin-sonata-chamber-c106
+work_id: william-walton-violin-sonata
+performers:
+  - name: Matthew Jones
+links:
+  tidal:
+    url: https://tidal.com/track/161031027
+release:
+  album_title: 'Walton: Chamber Works'
+source:
+  file: reports/playlist-import/chamber/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/a2327106-07fd-4433-8bd3-d8a5c251c69a

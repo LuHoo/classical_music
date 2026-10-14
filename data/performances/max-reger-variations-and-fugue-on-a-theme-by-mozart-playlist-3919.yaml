@@ -1,0 +1,15 @@
+id: max-reger-variations-and-fugue-on-a-theme-by-mozart-playlist-3919
+work_id: max-reger-variations-and-fugue-on-a-theme-by-mozart
+performers:
+- name: Valeri Kuzmich Polyansky
+- name: USSR State Symphony Orchestra
+  artist_id: ussr-state-so
+  role: orchestra
+links:
+  tidal:
+    url: https://tidal.com/track/377165607
+release:
+  album_title: 'Reger: Psalm 100 & Variations and Fugue on a Theme of Mozart'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

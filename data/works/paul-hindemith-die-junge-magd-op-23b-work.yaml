@@ -1,0 +1,11 @@
+id: "paul-hindemith-die-junge-magd-op-23b-work"
+work_group_id: "paul-hindemith-die-junge-magd-op-23b-group"
+composer_id: "paul-hindemith"
+title: "Die junge Magd"
+source:
+  file: "docs/hindemith.md"
+  line: "158"
+catalogue:
+  opus: "Op. 23b"
+date_text: "1922"
+category: "Vocal -- selection"

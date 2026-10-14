@@ -1,0 +1,15 @@
+id: "igor-stravinsky-rag-time-k-030-work-juilliard-school-ensemble-royal-academy-of-music-barbara-hannigan"
+work_id: "igor-stravinsky-rag-time-k-030-work"
+performers:
+  - name: "Juilliard School Ensemble"
+    role: "ensemble"
+  - name: "Royal Academy of Music"
+    role: "ensemble"
+  - name: "Barbara Hannigan"
+    role: "conductor"
+links:
+  tidal:
+    url: "https://tidal.com/browse/track/378000329?u"
+source:
+  file: "docs/stravinsky.md"
+  line: "129"

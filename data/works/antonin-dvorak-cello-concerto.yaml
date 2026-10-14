@@ -1,0 +1,11 @@
+id: antonin-dvorak-cello-concerto
+work_group_id: antonin-dvorak-cello-concerto-group
+composer_id: antonin-dvorak
+title: Cello Concerto
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url:
+    https://www.deutschegrammophon.com/en/catalogue/products/dvoak-cello-concerto-soltani-barenboim-12023
+catalogue:
+  opus: Op. 104
+  b: B. 191

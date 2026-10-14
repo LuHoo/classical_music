@@ -1,0 +1,19 @@
+id: 1873c9d83c794b12a7355dad8431a3b9
+work_id: 1f85c6b0027944db8272bb8f19dca49a
+performers:
+- name: Il Giardino Armonico
+  role: orchestra
+- name: Giovanni Antonini
+  role: conductor
+release:
+  label: Alpha Classics
+  catalogue_number: ALPHA692
+  album_title: 'Haydn 2032, Vol. 13: Horn Signal'
+source:
+  url: https://www.prestomusic.com/classical/products/9408525--haydn-2032-vol-13-horn-signal
+  file: reports/haydn-2032/catalogue.json
+links:
+  tidal:
+    url: https://tidal.com/album/267861472
+notes: Haydn 2032, volume 13. Sources and Tidal album metadata checked 2026-09-30. Album link covers this
+  work; it is not a work-specific track link.

@@ -1,0 +1,9 @@
+id: cbc65c3b5fa7402a9d873127b1f525ef
+work_group_id: 00bf18a45a7341e8af8814d1e52aa099
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Cello Concerto, RV 411
+catalogue:
+  rv: RV 411
+source:
+  url: https://vivaldiedition.net/portfolio/vol-31-concerti-per-violon%e2%80%90-cello-ii-2008/
+  file: reports/vivaldi-naive-edition/catalogue.json

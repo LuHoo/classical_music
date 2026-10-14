@@ -1,0 +1,12 @@
+id: dmitri-shostakovich-symphony-no-5-in-d-minor-work
+work_group_id: dmitri-shostakovich-symphony-no-5-in-d-minor-group
+composer_id: dmitri-shostakovich
+title: Symphony No. 5 in D minor
+source:
+  file: docs/shostakovich.md
+  line: '70'
+catalogue:
+  op: Op. 47
+date_text: '1937'
+category: Orchestral
+gem: true

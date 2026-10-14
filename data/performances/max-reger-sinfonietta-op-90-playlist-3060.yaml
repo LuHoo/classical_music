@@ -1,0 +1,13 @@
+id: max-reger-sinfonietta-op-90-playlist-3060
+work_id: max-reger-sinfonietta-op-90
+performers:
+- name: Bamberger Symphoniker
+- name: Horst Stein
+links:
+  tidal:
+    url: https://tidal.com/track/90819810
+release:
+  album_title: Max Reger - Orchestral Edition - Concertos, Sinfonietta
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

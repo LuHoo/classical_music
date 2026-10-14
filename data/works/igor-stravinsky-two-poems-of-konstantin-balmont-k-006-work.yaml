@@ -1,0 +1,11 @@
+id: "igor-stravinsky-two-poems-of-konstantin-balmont-k-006-work"
+work_group_id: "igor-stravinsky-two-poems-of-konstantin-balmont-k-006-group"
+composer_id: "igor-stravinsky"
+title: "Two Poems of Konstantin Balmont"
+source:
+  file: "docs/stravinsky.md"
+  line: "188"
+catalogue:
+  k: "K 006"
+date_text: "1908"
+category: "Vocal"

@@ -1,0 +1,16 @@
+id: bohuslav-martinu-symphony-no-3-h-299-playlist-4248
+work_id: bohuslav-martinu-symphony-no-3-h-299
+performers:
+- name: Bamberger Symphoniker
+- name: Neeme Järvi
+  artist_id: neeme-jarvi
+  role: conductor
+links:
+  tidal:
+    url: https://tidal.com/track/341729419
+release:
+  album_title: 'Martinů: Symphonies Nos. 3 & 4'
+source:
+  file: reports/playlist-import/best-classical/window-4001-5518.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+version_assignment: unspecified

@@ -1,0 +1,9 @@
+id: samuel-barber-the-school-for-scandal
+work_group_id: samuel-barber-the-school-for-scandal-group
+composer_id: samuel-barber
+title: The School for Scandal
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://www.naxos.com/CatalogueDetail/?id=VOX-NX-2213
+catalogue:
+  opus: Op. 5

@@ -1,0 +1,17 @@
+id: benjamin-britten-symphony-for-cello-orchestra-op-68-playlist-4693
+work_id: benjamin-britten-symphony-for-cello-orchestra-op-68
+performers:
+- name: Daniel Müller-Schott
+- name: WDR Sinfonieorchester Köln
+  artist_id: wdr-sinfonieorchester-koln
+  role: orchestra
+- name: Jukka-Pekka Saraste
+links:
+  tidal:
+    url: https://tidal.com/track/282958181
+release:
+  album_title: 'Prokofiev: Symphony concertante - Britten: Symphony for Cello & Orchestra'
+source:
+  file: reports/playlist-import/best-classical/window-4001-5518.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+version_assignment: unspecified

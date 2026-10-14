@@ -1,0 +1,11 @@
+id: sergei-prokofiev-songs-of-our-days-work
+work_group_id: sergei-prokofiev-songs-of-our-days-group
+composer_id: sergei-prokofiev
+title: Songs of Our Days
+source:
+  file: docs/prokofiev.md
+  line: '134'
+catalogue:
+  op: Op. 76
+date_text: '1937'
+category: Orchestral

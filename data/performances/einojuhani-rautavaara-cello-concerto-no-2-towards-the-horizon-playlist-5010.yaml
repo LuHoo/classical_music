@@ -1,0 +1,15 @@
+id: einojuhani-rautavaara-cello-concerto-no-2-towards-the-horizon-playlist-5010
+work_id: einojuhani-rautavaara-cello-concerto-no-2-towards-the-horizon
+performers:
+- name: Truls Mørk
+- name: Helsinki Philharmonic Orchestra
+- name: John Storgårds
+links:
+  tidal:
+    url: https://tidal.com/track/284434617
+release:
+  album_title: 'Rautavaara: Modificata, Incantations & Towards the Horizon'
+source:
+  file: reports/playlist-import/best-classical/window-4001-5518.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+version_assignment: unspecified

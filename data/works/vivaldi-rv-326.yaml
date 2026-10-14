@@ -1,0 +1,10 @@
+id: b5c130c8d9d94b8a868e31492ccb7715
+work_group_id: 280099ad176c45d3b30e9526b26a3afd
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 326
+catalogue:
+  rv: RV 326
+  opus: Op. 7
+source:
+  file: docs/vivaldi.md
+  line: '24'

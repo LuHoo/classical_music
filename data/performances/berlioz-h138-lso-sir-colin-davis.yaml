@@ -1,0 +1,16 @@
+id: berlioz-h138-lso-sir-colin-davis
+work_id: berlioz-h138
+performers:
+- artist_id: london-symphony-orchestra
+  name: LSO
+  role: performer
+- artist_id: colin-davis
+  name: Sir Colin Davis
+  role: conductor
+source_performer_text: LSO, Sir Colin Davis
+links:
+  tidal:
+    url: http://www.tidal.com/track/4505552
+source:
+  file: /Users/Lucas_new/.codex/.chatgpt-projects/g-p-6a500123ac548191ab37db95c0d285a2/classical_music/docs/berlioz.md
+  line: '40'

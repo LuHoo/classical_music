@@ -1,0 +1,12 @@
+id: "ludwig-van-beethoven-symphony-no-6-pastoral-in-f-major-op-68-work-2"
+work_group_id: "ludwig-van-beethoven-symphony-no-6-pastoral-in-f-major-op-68-group-2"
+composer_id: "ludwig-van-beethoven"
+title: "Symphony No. 6 \"Pastoral\" in F major"
+source:
+  file: "docs/beethoven.md"
+  line: "494"
+catalogue:
+  opus: "Op. 68"
+date_text: "arr piano-4h Scharwenka"
+category: "Piano"
+notes: "Pilot migration: source text suggests a version, arrangement, revision, suite, or completion boundary that should be reviewed."

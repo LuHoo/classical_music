@@ -1,0 +1,15 @@
+id: john-adams-shaker-loops-1983-string-orchestra-version-playlist-466
+work_id: john-adams-shaker-loops-1983-string-orchestra-version
+performers:
+- person_id: john-adams
+  role: conductor
+- name: Orchestra Of St Luke's
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/235588762
+release:
+  album_title: Collected Works
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

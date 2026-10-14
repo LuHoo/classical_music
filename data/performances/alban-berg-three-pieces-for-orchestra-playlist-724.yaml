@@ -1,0 +1,14 @@
+id: alban-berg-three-pieces-for-orchestra-playlist-724
+work_id: alban-berg-three-pieces-for-orchestra
+performers:
+- name: San Francisco Symphony
+  role: orchestra
+  artist_id: san-francisco-symphony
+links:
+  tidal:
+    url: https://tidal.com/track/169503532
+release:
+  album_title: 'Berg: Violin Concerto, Seven Early Songs & Three Pieces for Orchestra'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

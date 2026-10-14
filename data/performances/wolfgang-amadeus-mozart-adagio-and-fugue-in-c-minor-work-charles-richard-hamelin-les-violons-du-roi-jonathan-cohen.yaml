@@ -1,0 +1,16 @@
+id: 
+  wolfgang-amadeus-mozart-adagio-and-fugue-in-c-minor-work-charles-richard-hamelin-les-violons-du-roi-jonathan-cohen
+work_id: wolfgang-amadeus-mozart-adagio-and-fugue-in-c-minor-work
+source:
+  file: docs/mozart.md
+  line: '111'
+links:
+  tidal:
+    url: http://www.tidal.com/track/313466208
+performers:
+- name: Charles Richard-Hamelin
+  role: performer
+- name: Les Violons du Roi
+  role: performer
+- name: Jonathan Cohen
+  role: performer

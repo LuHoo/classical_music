@@ -1,0 +1,22 @@
+id: brahms-piano-quartet-no-2-in-a-major-1861-op-26-work-maria-nowak-katarzyna-budnik-yuya-okamoto-krystian-zimerman
+work_id: brahms-piano-quartet-no-2-in-a-major-1861-op-26-work
+performers:
+- artist_id: maria-nowak
+  name: Maria Nowak
+  role: performer
+- artist_id: katarzyna-budnik
+  name: Katarzyna Budnik
+  role: performer
+- artist_id: yuya-okamoto
+  name: Yuya Okamoto
+  role: performer
+- artist_id: krystian-zimerman
+  name: Krystian Zimerman
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/426702633
+source:
+  file: /Users/Lucas_new/.codex/.chatgpt-projects/g-p-6a500123ac548191ab37db95c0d285a2/classical_music/docs/brahms.md
+  line: '63'
+source_performer_text: Maria Nowak, Katarzyna Budnik, Yuya Okamoto, Krystian Zimerman

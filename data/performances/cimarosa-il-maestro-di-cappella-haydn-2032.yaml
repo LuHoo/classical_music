@@ -1,0 +1,21 @@
+id: 00f73315f02c477b808763820c9ce333
+work_id: 6ed71ea406824c0db4c83b26ac07f942
+performers:
+- name: Il Giardino Armonico
+  role: orchestra
+- name: Giovanni Antonini
+  role: conductor
+- name: Riccardo Novaro
+  role: baritone
+release:
+  label: Alpha Classics
+  catalogue_number: ALPHA674
+  album_title: 'Haydn 2032, Vol. 4: Il distratto'
+source:
+  url: https://www.prestomusic.com/classical/products/8271111--haydn-2032-volume-4-il-distratto
+  file: reports/haydn-2032/catalogue.json
+links:
+  tidal:
+    url: https://tidal.com/album/187334728
+notes: Haydn 2032, volume 4. Sources and Tidal album metadata checked 2026-09-30. Album link covers this
+  work; it is not a work-specific track link.

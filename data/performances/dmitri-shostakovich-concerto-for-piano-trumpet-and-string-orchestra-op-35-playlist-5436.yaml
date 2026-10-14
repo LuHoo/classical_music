@@ -1,0 +1,17 @@
+id: 
+  dmitri-shostakovich-concerto-for-piano-trumpet-and-string-orchestra-op-35-playlist-5436
+work_id: 
+  dmitri-shostakovich-concerto-for-piano-trumpet-and-string-orchestra-op-35
+performers:
+- name: Saskia Giorgini
+- name: Per Ivarsson
+- name: Trondheim Soloists
+links:
+  tidal:
+    url: https://tidal.com/track/476120345
+release:
+  album_title: 'Mozart & Shostakovich: Concertos for Piano and Strings & Piano Sonata'
+source:
+  file: reports/playlist-import/best-classical/window-4001-5518.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+version_assignment: unspecified

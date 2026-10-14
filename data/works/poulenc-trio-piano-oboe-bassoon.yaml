@@ -1,0 +1,10 @@
+catalogue:
+  fp: FP 43
+composer_id: francis-poulenc
+id: poulenc-trio-piano-oboe-bassoon
+source:
+  file: reports/playlist-import/best-classical/prepared-120.json
+  url:
+    https://www.resonusclassics.com/products/poulenc-piano-concerto-concert-champetre-mark-bebbington-royal-philharmonic-orchestra-res10256
+title: Trio for Piano, Oboe and Bassoon
+work_group_id: poulenc-trio-piano-oboe-bassoon-group

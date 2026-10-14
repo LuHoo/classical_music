@@ -1,0 +1,9 @@
+id: "paul-hindemith-das-nusch-nuschi-work"
+work_group_id: "paul-hindemith-das-nusch-nuschi-group"
+composer_id: "paul-hindemith"
+title: "Das Nusch-Nuschi"
+source:
+  file: "docs/hindemith.md"
+  line: "14"
+date_text: "1920; premiered 1921"
+category: "Opera"

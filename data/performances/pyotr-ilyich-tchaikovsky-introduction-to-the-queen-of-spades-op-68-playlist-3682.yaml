@@ -1,0 +1,14 @@
+id: pyotr-ilyich-tchaikovsky-introduction-to-the-queen-of-spades-op-68-playlist-3682
+work_id: pyotr-ilyich-tchaikovsky-introduction-to-the-queen-of-spades-op-68
+performers:
+- name: BBC Scottish Symphony Orchestra
+- name: Alpesh Chauhan
+links:
+  tidal:
+    url: https://tidal.com/track/376334049
+release:
+  album_title: Tchaikovsky Orchestral Works Vol. 2
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+excerpt: Introduction.

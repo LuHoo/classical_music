@@ -1,0 +1,16 @@
+id: arnold-schoenberg-pelleas-und-melisande-op-5-playlist-3350
+work_id: arnold-schoenberg-pelleas-und-melisande-op-5
+performers:
+- name: Frankfurt Radio Symphony
+- name: Paavo Järvi
+  artist_id: paavo-jarvi
+  role: conductor
+- name: Frankfurt Radio Sinfonie Orchester
+links:
+  tidal:
+    url: https://tidal.com/track/362832445
+release:
+  album_title: 'Schoenberg & Fauré: Pelléas et Mélisande'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

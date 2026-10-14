@@ -1,0 +1,13 @@
+id: bohuslav-martinu-symphony-no-2-playlist-1328
+work_id: bohuslav-martinu-symphony-no-2
+performers:
+- name: Bamberger Symphoniker
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/12123315
+release:
+  album_title: 'Martinů: The Symphonies'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

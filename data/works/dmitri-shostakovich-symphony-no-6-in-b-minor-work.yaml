@@ -1,0 +1,11 @@
+id: dmitri-shostakovich-symphony-no-6-in-b-minor-work
+work_group_id: dmitri-shostakovich-symphony-no-6-in-b-minor-group
+composer_id: dmitri-shostakovich
+title: Symphony No. 6 in B minor
+source:
+  file: docs/shostakovich.md
+  line: '76'
+catalogue:
+  op: Op. 54
+date_text: '1939'
+category: Orchestral

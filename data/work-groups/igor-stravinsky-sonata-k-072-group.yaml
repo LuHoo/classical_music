@@ -1,0 +1,8 @@
+id: "igor-stravinsky-sonata-k-072-group"
+composer_id: "igor-stravinsky"
+title: "Sonata"
+source:
+  file: "docs/stravinsky.md"
+  line: "230"
+catalogue:
+  k: "K 072"

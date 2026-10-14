@@ -1,0 +1,11 @@
+id: "anton-bruckner-vexilla-regis-work"
+work_group_id: "anton-bruckner-vexilla-regis-group"
+composer_id: "anton-bruckner"
+title: "Vexilla regis"
+source:
+  file: "docs/bruckner.md"
+  line: "94"
+catalogue:
+  wab: "WAB 51"
+date_text: "1892"
+category: "Vocal"

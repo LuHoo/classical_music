@@ -1,0 +1,9 @@
+id: 4b2e530a06db4481935a42b626f59796
+work_group_id: 59c72d58ce5149b6963a281be80f52f1
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Chamber Concerto, RV 106
+catalogue:
+  rv: RV 106
+source:
+  url: https://vivaldiedition.net/portfolio/vol-1-concerti-da-camera-2001/
+  file: reports/vivaldi-naive-edition/catalogue.json

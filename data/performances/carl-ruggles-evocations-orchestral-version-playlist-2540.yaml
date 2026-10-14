@@ -1,0 +1,13 @@
+id: carl-ruggles-evocations-orchestral-version-playlist-2540
+work_id: carl-ruggles-evocations-orchestral-version
+performers:
+- name: Basque National Orchestra
+- name: Robert Trevino
+links:
+  tidal:
+    url: https://tidal.com/track/284019019
+release:
+  album_title: Americascapes
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

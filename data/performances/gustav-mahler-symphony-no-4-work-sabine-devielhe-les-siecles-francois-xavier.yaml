@@ -1,0 +1,10 @@
+id: "gustav-mahler-symphony-no-4-work-sabine-devielhe-les-siecles-francois-xavier"
+work_id: "gustav-mahler-symphony-no-4-work"
+source:
+  file: "docs/mahler.md"
+  line: "42"
+links:
+- platform: "tidal"
+  url: "http://www.tidal.com/track/244178345"
+performers:
+- name: "Sabine Devielhe, Les Siècles, François-Xavier Roth"

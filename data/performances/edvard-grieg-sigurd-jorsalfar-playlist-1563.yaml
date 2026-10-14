@@ -1,0 +1,31 @@
+id: edvard-grieg-sigurd-jorsalfar-playlist-1563
+work_id: edvard-grieg-sigurd-jorsalfar
+performers:
+- name: Per Göran
+  role: performer
+- name: Malcolm Page
+  role: performer
+- name: Sören Hermans
+  role: performer
+- name: Vivika Alm
+  role: performer
+- name: Gothenburg Symphony Orchestra
+  role: orchestra
+  artist_id: gothenburg-symphony-orchestra
+- name: Neeme Järvi
+  role: conductor
+  artist_id: neeme-jarvi
+- name: Kjell Magnus Sandve
+  role: performer
+- name: Gösta Ohlin's Vocal Ensemble & Pro Musica Chamber Choir
+  role: performer
+- name: Gösta Ohlin
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/4360503
+release:
+  album_title: 'Grieg: Complete Music with Orchestra'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

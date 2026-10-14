@@ -1,0 +1,9 @@
+id: 4afde3025a4b485d9eb7665372d5409b
+work_group_id: ec759652c05544dd91007db72463cb97
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Sonata, RV 810
+catalogue:
+  rv: RV 810
+source:
+  url: https://vivaldiedition.net/portfolio/vol-34-new-discoveries-i-2008/
+  file: reports/vivaldi-naive-edition/catalogue.json

@@ -1,0 +1,7 @@
+id: wolfgang-amadeus-mozart
+name: Wolfgang Amadeus Mozart
+sort_name: Mozart, Wolfgang Amadeus
+roles:
+- composer
+source:
+  file: docs/mozart.md

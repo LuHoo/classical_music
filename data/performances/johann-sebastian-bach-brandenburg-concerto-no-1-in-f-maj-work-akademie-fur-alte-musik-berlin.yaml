@@ -1,0 +1,10 @@
+id: "johann-sebastian-bach-brandenburg-concerto-no-1-in-f-maj-work-akademie-fur-alte-musik-berlin"
+work_id: "johann-sebastian-bach-brandenburg-concerto-no-1-in-f-maj-work"
+source:
+  file: "docs/bachJS.md"
+  line: "22"
+links:
+- platform: "tidal"
+  url: "http://www.tidal.com/track/197388363"
+performers:
+- name: "Akademie für Alte Musik Berlin"

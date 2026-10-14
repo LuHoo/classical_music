@@ -1,0 +1,11 @@
+id: sergei-prokofiev-piano-concerto-no-4-in-b-flat-work
+work_group_id: sergei-prokofiev-piano-concerto-no-4-in-b-flat-group
+composer_id: sergei-prokofiev
+title: Piano Concerto No. 4 in B-flat
+source:
+  file: docs/prokofiev.md
+  line: '94'
+catalogue:
+  op: Op. 53
+date_text: '1931'
+category: Orchestral

@@ -1,0 +1,19 @@
+id: sergei-prokofiev-piano-concerto-no-2-in-g-minor-work-jean-efflam-bavouzet-bbc-po-gianandrea-noseda
+work_id: sergei-prokofiev-piano-concerto-no-2-in-g-minor-work
+performers:
+- artist_id: jean-efflam-bavouzet
+  name: Jean-Efflam Bavouzet
+  role: performer
+- artist_id: bbc-po
+  name: BBC PO
+  role: performer
+- artist_id: gianandrea-noseda
+  name: Gianandrea Noseda
+  role: conductor
+source_performer_text: Jean-Efflam Bavouzet, BBC PO, Gianandrea Noseda
+links:
+  tidal:
+    url: https://tidal.com/album/376307111
+source:
+  file: /Users/Lucas_new/.codex/.chatgpt-projects/g-p-6a500123ac548191ab37db95c0d285a2/classical_music/docs/prokofiev.md
+  line: '28'

@@ -1,0 +1,7 @@
+id: sergei-prokofiev
+name: Sergei Prokofiev
+sort_name: Prokofiev, Sergei
+roles:
+- composer
+source:
+  file: docs/prokofiev.md

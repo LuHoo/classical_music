@@ -1,0 +1,17 @@
+id: alphons-diepenbrock-hymn-for-violin-and-orchestra-playlist-1087
+work_id: alphons-diepenbrock-hymn-for-violin-and-orchestra
+performers:
+- name: Hans Vonk
+  role: performer
+- name: Residentie Orchestra The Hague
+  role: performer
+- name: Emmy Verhey
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/376279946
+release:
+  album_title: 'Diepenbrock: Orchestral Works and Symphonic Songs'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

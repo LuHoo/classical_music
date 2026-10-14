@@ -1,0 +1,17 @@
+id: leos-janacek-mladi-youth-for-wind-sextet-chamber-c015
+work_id: leos-janacek-mladi-youth-for-wind-sextet
+performers:
+  - name: Sebastian Bell
+  - name: Janet Craxton
+  - name: Antony Pay
+  - name: Michael Harris
+  - name: Martin Gatt
+  - name: Pip Eastop
+links:
+  tidal:
+    url: https://tidal.com/track/4471583
+release:
+  album_title: 'Janácek: Sinfonietta/Taras Bulba/Mládi etc.'
+source:
+  file: reports/playlist-import/chamber/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/a2327106-07fd-4433-8bd3-d8a5c251c69a

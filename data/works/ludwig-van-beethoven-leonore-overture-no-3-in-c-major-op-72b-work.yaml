@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-leonore-overture-no-3-in-c-major-op-72b-work"
+work_group_id: "ludwig-van-beethoven-leonore-overture-no-3-in-c-major-op-72b-group"
+composer_id: "ludwig-van-beethoven"
+title: "\"Leonore\" Overture No. 3 in C major"
+source:
+  file: "docs/beethoven.md"
+  line: "62"
+catalogue:
+  opus: "Op. 72b"
+date_text: "1805–1806"
+category: "Orchestral"

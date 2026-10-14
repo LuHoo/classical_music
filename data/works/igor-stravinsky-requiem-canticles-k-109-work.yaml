@@ -1,0 +1,11 @@
+id: "igor-stravinsky-requiem-canticles-k-109-work"
+work_group_id: "igor-stravinsky-requiem-canticles-k-109-group"
+composer_id: "igor-stravinsky"
+title: "Requiem Canticles"
+source:
+  file: "docs/stravinsky.md"
+  line: "176"
+catalogue:
+  k: "K 109"
+date_text: "1966"
+category: "Choral"

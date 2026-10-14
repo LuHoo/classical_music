@@ -1,0 +1,17 @@
+id: arcangelo-corelli-concerto-grosso-no-7-playlist-1163
+work_id: arcangelo-corelli-concerto-grosso-no-7
+performers:
+- name: Accademia Bizantina
+  role: performer
+- name: Ottavio Dantone
+  role: performer
+- name: Alessandro Tampieri
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/320018771
+release:
+  album_title: 'Corelli: Concerti Grossi, Op. 6'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

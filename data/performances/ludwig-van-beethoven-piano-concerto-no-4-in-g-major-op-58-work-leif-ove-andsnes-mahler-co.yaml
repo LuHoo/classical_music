@@ -1,0 +1,17 @@
+id: "ludwig-van-beethoven-piano-concerto-no-4-in-g-major-op-58-work-leif-ove-andsnes-mahler-co"
+work_id: "ludwig-van-beethoven-piano-concerto-no-4-in-g-major-op-58-work"
+performers:
+  - name: "Leif Ove Andsnes"
+    role: "performer"
+  - name: "Mahler CO"
+    role: "orchestra"
+links:
+  tidal:
+    url: "http://www.tidal.com/track/36274149"
+source:
+  file: "docs/beethoven.md"
+  line: "44"
+reviews:
+  gramophone:
+    issue: "2012-11"
+notes: "Pilot migration: multiple Gramophone issue references in source: 2012-11, 2014-06."

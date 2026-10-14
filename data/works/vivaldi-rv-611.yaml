@@ -1,0 +1,9 @@
+id: a71d8700c94f466ebc47e9c4a7f7fbaa
+work_group_id: 17f04626170f44b9bd7dc74840dc26f8
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Magnificat, RV 611
+catalogue:
+  rv: RV 611
+source:
+  url: https://vivaldiedition.net/portfolio/vol-72-musica-sacra-per-coro-e-orchestra/
+  file: reports/vivaldi-naive-edition/catalogue.json

@@ -1,0 +1,8 @@
+id: dmitri-shostakovich-music-to-the-spectacle-russian-river-group
+composer_id: dmitri-shostakovich
+title: Music to the spectacle Russian River
+source:
+  file: docs/shostakovich.md
+  line: '90'
+catalogue:
+  op: Op. 66

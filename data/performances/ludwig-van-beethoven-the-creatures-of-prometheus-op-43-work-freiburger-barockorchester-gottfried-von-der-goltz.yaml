@@ -1,0 +1,16 @@
+id: "ludwig-van-beethoven-the-creatures-of-prometheus-op-43-work-freiburger-barockorchester-gottfried-von-der-goltz"
+work_id: "ludwig-van-beethoven-the-creatures-of-prometheus-op-43-work"
+performers:
+  - name: "Freiburger Barockorchester"
+    role: "orchestra"
+  - name: "Gottfried von der Goltz"
+    role: "conductor"
+links:
+  tidal:
+    url: "http://www.tidal.com/track/222700331"
+source:
+  file: "docs/beethoven.md"
+  line: "36"
+reviews:
+  gramophone:
+    issue: "2021-05"

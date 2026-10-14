@@ -1,0 +1,12 @@
+id: "ludwig-van-beethoven-presto-bagatelle-c-minor-woo-52-work"
+work_group_id: "ludwig-van-beethoven-presto-bagatelle-c-minor-woo-52-group"
+composer_id: "ludwig-van-beethoven"
+title: "Presto (Bagatelle), C minor"
+source:
+  file: "docs/beethoven.md"
+  line: "430"
+catalogue:
+  woo: "WoO 52"
+date_text: "c. 1795, rev. 1798 and 1822"
+category: "Piano"
+notes: "Pilot migration: source text suggests a version, arrangement, revision, suite, or completion boundary that should be reviewed."

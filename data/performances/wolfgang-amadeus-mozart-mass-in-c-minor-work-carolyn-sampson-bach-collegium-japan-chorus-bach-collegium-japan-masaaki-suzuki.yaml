@@ -1,0 +1,22 @@
+id: wolfgang-amadeus-mozart-mass-in-c-minor-work-carolyn-sampson-bach-collegium-japan-chorus-bach-collegium-japan-masaaki-suzuki
+work_id: wolfgang-amadeus-mozart-mass-in-c-minor-work
+performers:
+- artist_id: carolyn-sampson
+  name: Carolyn Sampson
+  role: performer
+- artist_id: bach-collegium-japan-chorus
+  name: Bach Collegium Japan Chorus
+  role: performer
+- artist_id: bach-collegium-japan
+  name: Bach Collegium Japan
+  role: performer
+- artist_id: masaaki-suzuki
+  name: Masaaki Suzuki
+  role: conductor
+source_performer_text: Carolyn Sampson, Bach Collegium Japan Chorus, Bach Collegium Japan, Masaaki Suzuki
+links:
+  tidal:
+    url: http://www.tidal.com/track/338592074
+source:
+  file: /Users/Lucas_new/.codex/.chatgpt-projects/g-p-6a500123ac548191ab37db95c0d285a2/classical_music/docs/mozart.md
+  line: '17'

@@ -1,0 +1,17 @@
+id: alphons-diepenbrock-hymne-an-die-nacht-no-2-playlist-1083
+work_id: alphons-diepenbrock-hymne-an-die-nacht-no-2
+performers:
+- name: Hans Vonk
+  role: performer
+- name: Residentie Orchestra The Hague
+  role: performer
+- name: Linda Finnie
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/300408445
+release:
+  album_title: 'Diepenbrock: Orchestral Works, Vol. 2'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

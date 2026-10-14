@@ -1,0 +1,12 @@
+id: "igor-stravinsky-apollo-k-048-work"
+work_group_id: "igor-stravinsky-apollo-k-048-group"
+composer_id: "igor-stravinsky"
+title: "Apollo"
+source:
+  file: "docs/stravinsky.md"
+  line: "41"
+catalogue:
+  k: "K 048"
+date_text: "1928; rev. 1947"
+category: "Ballet"
+notes: "Pilot migration: source text suggests a version, arrangement, revision, suite, or completion boundary that should be reviewed."

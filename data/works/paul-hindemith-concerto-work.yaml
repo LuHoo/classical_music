@@ -1,0 +1,9 @@
+id: "paul-hindemith-concerto-work"
+work_group_id: "paul-hindemith-concerto-group"
+composer_id: "paul-hindemith"
+title: "Concerto"
+source:
+  file: "docs/hindemith.md"
+  line: "136"
+date_text: "1949"
+category: "Concertante"

@@ -1,0 +1,14 @@
+id: charles-ives-the-unanswered-question-playlist-2202
+work_id: charles-ives-the-unanswered-question
+performers:
+- name: The Gulbenkian Orchestra
+- name: Michel Swierczewski
+links:
+  tidal:
+    url: https://tidal.com/track/57432499
+release:
+  album_title: 'Ives: Orchestral Works'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+version_assignment: unspecified

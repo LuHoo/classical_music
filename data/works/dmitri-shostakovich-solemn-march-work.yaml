@@ -1,0 +1,9 @@
+id: dmitri-shostakovich-solemn-march-work
+work_group_id: dmitri-shostakovich-solemn-march-group
+composer_id: dmitri-shostakovich
+title: Solemn March
+source:
+  file: docs/shostakovich.md
+  line: '82'
+date_text: '1942'
+category: Orchestral

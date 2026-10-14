@@ -1,0 +1,15 @@
+id: frank-martin-concerto-for-harpsichord-and-small-orchestra-playlist-4777
+work_id: frank-martin-concerto-for-harpsichord-and-small-orchestra
+performers:
+- name: Isabelle Nef
+- name: Louis de Froment
+- name: L'Ensemble Orchestral De L'Oiseau-Lyre
+links:
+  tidal:
+    url: https://tidal.com/track/92370302
+release:
+  album_title: Martin Concerto For Harpsichord & Small Orchestra
+source:
+  file: reports/playlist-import/best-classical/window-4001-5518.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+version_assignment: unspecified

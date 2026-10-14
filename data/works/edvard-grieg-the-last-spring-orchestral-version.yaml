@@ -1,0 +1,11 @@
+id: edvard-grieg-the-last-spring-orchestral-version
+work_group_id: edvard-grieg-the-last-spring-orchestral-version-group
+composer_id: edvard-grieg
+title: The Last Spring (orchestral version)
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url:
+    https://www.deutschegrammophon.com/en/catalogue/products/grieg-complete-music-with-orchestra-jaervi-11417
+catalogue:
+  opus: Op. 33 No. 2
+version: Orchestral version

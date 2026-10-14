@@ -1,0 +1,17 @@
+{
+  "issue_url": "https://github.com/LuHoo/classical_music/issues/243",
+  "decision_source": "curator_cli",
+  "curator": "LAH",
+  "recorded_at": "2026-10-08T14:07:59.543101+00:00",
+  "requested_choice": "C401",
+  "choice": "C401",
+  "selected_units": [
+    "C401"
+  ],
+  "not_selected_units": [
+    "C036"
+  ],
+  "performance_id": "brahms-piano-quartet-no-2-in-a-major-1861-op-26-work-maria-nowak-katarzyna-budnik-yuya-okamoto-krystian-zimerman",
+  "implementation_pr": null,
+  "replaced_performances": []
+}

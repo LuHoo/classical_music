@@ -1,0 +1,11 @@
+id: "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-2-partita-no-1-in-b-min-work"
+work_group_id: "johann-sebastian-bach-sonatas-and-partitas-for-solo-violin-no-2-partita-no-1-in-b-min-group"
+composer_id: "johann-sebastian-bach"
+title: "Sonatas and partitas for solo violin No. 2: Partita No. 1 in B min."
+source:
+  file: "docs/bachJS.md"
+  line: "100"
+catalogue:
+  bwv: "BWV 1002"
+date_text: "1720"
+category: "Chamber"

@@ -1,0 +1,12 @@
+id: sergei-prokofiev-alexander-nevsky-work
+work_group_id: sergei-prokofiev-alexander-nevsky-group
+composer_id: sergei-prokofiev
+title: Alexander Nevsky
+source:
+  file: docs/prokofiev.md
+  line: '138'
+catalogue:
+  op: Op. 78
+date_text: '1939'
+category: Orchestral
+gem: true

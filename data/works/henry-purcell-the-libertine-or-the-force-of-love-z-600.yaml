@@ -1,0 +1,9 @@
+id: henry-purcell-the-libertine-or-the-force-of-love-z-600
+work_group_id: henry-purcell-the-libertine-or-the-force-of-love-z-600-group
+composer_id: henry-purcell
+title: The Libertine, or The Force of Love, Z.600
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://catalogue.bnf.fr/ark:/12148/cb38315848m
+catalogue:
+  z: '600'

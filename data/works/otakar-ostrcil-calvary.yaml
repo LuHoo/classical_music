@@ -1,0 +1,9 @@
+id: otakar-ostrcil-calvary
+work_group_id: otakar-ostrcil-calvary-group
+composer_id: otakar-ostrcil
+title: Calvary
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://www.supraphonline.cz/album/465-suk-ostrcil-symfonie-e-dur-krizova-cesta
+catalogue:
+  opus: Op. 24

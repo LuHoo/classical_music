@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-waltz-d-woo-85-work"
+work_group_id: "ludwig-van-beethoven-waltz-d-woo-85-group"
+composer_id: "ludwig-van-beethoven"
+title: "Waltz, D"
+source:
+  file: "docs/beethoven.md"
+  line: "472"
+catalogue:
+  woo: "WoO 85"
+date_text: "1825"
+category: "Piano"

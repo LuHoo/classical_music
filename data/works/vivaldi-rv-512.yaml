@@ -1,0 +1,9 @@
+id: c233e181274f44dcaf2a1486ba285a9d
+work_group_id: fc118171de4547f897577b72fb9b10e8
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Concerto for two violins, RV 512
+catalogue:
+  rv: RV 512
+source:
+  file: docs/vivaldi.md
+  line: '54'

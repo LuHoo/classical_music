@@ -1,0 +1,9 @@
+id: george-frideric-handel-coronation-anthem-no-4-hwv-261-my-heart-is-inditing
+work_group_id: george-frideric-handel-coronation-anthem-no-4-hwv-261-my-heart-is-inditing-group
+composer_id: george-frideric-handel
+title: Coronation Anthem No. 4, HWV 261 "My Heart Is Inditing"
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://catalogue.bnf.fr/rechercher.do?index=TIT3&numNotice=13913661
+catalogue:
+  hwv: '261'

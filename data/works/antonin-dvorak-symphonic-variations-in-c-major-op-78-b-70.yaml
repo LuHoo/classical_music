@@ -1,0 +1,8 @@
+id: antonin-dvorak-symphonic-variations-in-c-major-op-78-b-70
+work_group_id: antonin-dvorak-symphonic-variations-in-c-major-op-78-b-70-group
+composer_id: antonin-dvorak
+title: Symphonic Variations in C Major, Op. 78, B. 70
+source:
+  file: docs/dvorak.md
+catalogue:
+  op: '78'

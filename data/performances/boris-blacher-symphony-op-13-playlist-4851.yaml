@@ -1,0 +1,14 @@
+id: boris-blacher-symphony-op-13-playlist-4851
+work_id: boris-blacher-symphony-op-13
+performers:
+- name: Frankfurt Philharmonic Orchestra (Oder)
+- name: Nikos Athinäos
+links:
+  tidal:
+    url: https://tidal.com/track/284662002
+release:
+  album_title: 'Blacher: Orchestral Works'
+source:
+  file: reports/playlist-import/best-classical/window-4001-5518.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+version_assignment: unspecified

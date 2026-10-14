@@ -1,0 +1,11 @@
+id: dmitri-shostakovich-suite-from-five-days-five-nights-work
+work_group_id: dmitri-shostakovich-suite-from-five-days-five-nights-group
+composer_id: dmitri-shostakovich
+title: Suite from Five Days, Five Nights
+source:
+  file: docs/shostakovich.md
+  line: '130'
+catalogue:
+  op: Op. 111a
+date_text: '1961'
+category: Orchestral

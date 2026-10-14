@@ -1,0 +1,11 @@
+id: 8122afdf29dd47f09f8c910ce0f6acf3
+work_group_id: b11789c72a7042c9a79cc1694a9f014f
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 315
+catalogue:
+  rv: RV 315
+  opus: Op. 8
+source:
+  file: docs/vivaldi.md
+  line: '26'
+gem: true

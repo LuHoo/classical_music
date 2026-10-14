@@ -1,0 +1,11 @@
+id: "paul-hindemith-kammermusik-no-2-op-36-1-work"
+work_group_id: "paul-hindemith-kammermusik-no-2-op-36-1-group"
+composer_id: "paul-hindemith"
+title: "Kammermusik No. 2"
+source:
+  file: "docs/hindemith.md"
+  line: "102"
+catalogue:
+  opus: "Op. 36/1"
+date_text: "1925"
+category: "Concertante"

@@ -1,0 +1,18 @@
+{
+  "checks": [
+    "All numbered CD volumes 1\u201319 and confirmed unnumbered Creation release present",
+    "78 CD occurrences and one excluded digital bonus",
+    "59 distinct Haydn symphonies",
+    "20 album identities match public Tidal metadata",
+    "76 selected performances present; two comparison candidates absent from canonical performances",
+    "Existing canonical entities and legacy repertoire documents unchanged",
+    "No validation findings on newly imported entities"
+  ],
+  "canonical_validation": {
+    "error_count": 0,
+    "warning_count": 118,
+    "action_required_count": 0
+  },
+  "publication_validation": "passed",
+  "generated_publication_pages": 1506
+}

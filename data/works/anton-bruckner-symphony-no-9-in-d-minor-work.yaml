@@ -1,0 +1,12 @@
+id: "anton-bruckner-symphony-no-9-in-d-minor-work"
+work_group_id: "anton-bruckner-symphony-no-9-in-d-minor-group"
+composer_id: "anton-bruckner"
+title: "Symphony No. 9 in D minor"
+source:
+  file: "docs/bruckner.md"
+  line: "64"
+catalogue:
+  wab: "WAB 109"
+date_text: "1894 first three movements, 1896 finale unfinished"
+category: "Orchestral"
+gem: true

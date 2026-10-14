@@ -1,0 +1,9 @@
+id: 4a61c2bb13d54c0096bc4decd6984f48
+work_group_id: a008222c0179412281c01e45ce98f4c4
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Concerto, RV 559
+catalogue:
+  rv: RV 559
+source:
+  url: https://vivaldiedition.net/portfolio/vol-18-concerti-per-vari-strumenti-2004/
+  file: reports/vivaldi-naive-edition/catalogue.json

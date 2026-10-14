@@ -1,0 +1,19 @@
+id: 42fdea65b9394226be755ee56c12e715
+work_id: 2db41b7f63ad47a9b5855ec9909ae2d7
+performers:
+- name: Kammerorchester Basel
+  role: orchestra
+- name: Giovanni Antonini
+  role: conductor
+release:
+  label: Alpha Classics
+  catalogue_number: ALPHA680
+  album_title: 'Haydn 2032, Vol. 7: Gli Impresari'
+source:
+  url: https://www.prestomusic.com/classical/products/8539820--haydn-2032-volume-7-gli-impresari
+  file: reports/haydn-2032/catalogue.json
+links:
+  tidal:
+    url: https://tidal.com/album/187335148
+notes: Haydn 2032, volume 7. Sources and Tidal album metadata checked 2026-09-30. Album link covers this
+  work; it is not a work-specific track link.

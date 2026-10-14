@@ -1,0 +1,7 @@
+id: karol-szymanowski
+name: Karol Szymanowski
+roles:
+- composer
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://www.warnerclassics.com/release/szymanowski

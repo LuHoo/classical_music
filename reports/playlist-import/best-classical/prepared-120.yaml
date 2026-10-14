@@ -1,0 +1,1246 @@
+performances:
+- id: part-tabula-rasa-capucon-lausanne
+  links:
+    tidal:
+      url: https://tidal.com/track/190541071
+  performers:
+  - name: Renaud Capuçon
+    role: violin
+  - name: François Sochard
+    role: violin
+  - name: Guillaume Bellom
+    role: piano
+  - name: Orchestre de chambre de Lausanne
+    role: orchestra
+  release:
+    album_title: 'Pärt: Tabula Rasa'
+    label: Erato
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+  work_id: part-tabula-rasa
+- id: zemlinsky-lyric-symphony-chailly
+  links:
+    tidal:
+      url: https://tidal.com/track/50609999
+  performers:
+  - name: Alessandra Marc
+    role: soprano
+  - name: Håkan Hagegård
+    role: baritone
+  - artist_id: royal-concertgebouw-orchestra
+    name: Royal Concertgebouw Orchestra
+    role: orchestra
+  - name: Riccardo Chailly
+    role: conductor
+  release:
+    album_title: 'Zemlinsky: Lyric Symphony'
+    label: Decca
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+  work_id: zemlinsky-lyric-symphony
+- id: zemlinsky-symphonic-songs-chailly
+  links:
+    tidal:
+      url: https://tidal.com/track/50610006
+  performers:
+  - artist_id: willard-white
+    name: Willard White
+    role: bass-baritone
+  - artist_id: royal-concertgebouw-orchestra
+    name: Royal Concertgebouw Orchestra
+    role: orchestra
+  - name: Riccardo Chailly
+    role: conductor
+  release:
+    album_title: 'Zemlinsky: Lyric Symphony'
+    label: Decca
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+  work_id: zemlinsky-symphonic-songs
+- id: zemlinsky-psalm-83-chailly
+  links:
+    tidal:
+      url: https://tidal.com/track/50610013
+  performers:
+  - name: Slovak Philharmonic Chorus
+    role: choir
+  - artist_id: wiener-philharmoniker
+    name: Wiener Philharmoniker
+    role: orchestra
+  - name: Riccardo Chailly
+    role: conductor
+  release:
+    album_title: 'Zemlinsky: Lyric Symphony'
+    label: Decca
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+  work_id: zemlinsky-psalm-83
+- id: bartok-wooden-prince-wdr-macelaru
+  links:
+    tidal:
+      url: https://tidal.com/track/267871131
+  performers:
+  - name: WDR Sinfonieorchester
+    role: orchestra
+  - name: Cristian Măcelaru
+    role: conductor
+  release:
+    album_title: 'Bartók: The Wooden Prince & Dance Suite'
+    catalogue_number: CKD714
+    label: Linn
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+  version_assignment: unspecified
+  work_id: bartok-wooden-prince
+- id: bartok-dance-suite-wdr-macelaru
+  links:
+    tidal:
+      url: https://tidal.com/track/267871144
+  performers:
+  - name: WDR Sinfonieorchester
+    role: orchestra
+  - name: Cristian Măcelaru
+    role: conductor
+  release:
+    album_title: 'Bartók: The Wooden Prince & Dance Suite'
+    catalogue_number: CKD714
+    label: Linn
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+  work_id: bartok-dance-suite
+- id: sibelius-symphony-1-oslo-makela
+  links:
+    tidal:
+      url: https://tidal.com/track/221536041
+  performers:
+  - name: Oslo Philharmonic Orchestra
+    role: orchestra
+  - name: Klaus Mäkelä
+    role: conductor
+  release:
+    album_title: 'Sibelius: Symphonies 1-7; Tapiola; 3 Late Fragments'
+    label: Decca
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+  version_assignment: unspecified
+  work_id: sibelius-symphony-1
+- id: sibelius-symphony-2-oslo-makela
+  links:
+    tidal:
+      url: https://tidal.com/track/221536045
+  performers:
+  - name: Oslo Philharmonic Orchestra
+    role: orchestra
+  - name: Klaus Mäkelä
+    role: conductor
+  release:
+    album_title: 'Sibelius: Symphonies 1-7; Tapiola; 3 Late Fragments'
+    label: Decca
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+  work_id: sibelius-symphony-2
+- excerpt: First movement only
+  id: sibelius-symphony-3-oslo-makela
+  links:
+    tidal:
+      url: https://tidal.com/track/221536049
+  performers:
+  - name: Oslo Philharmonic Orchestra
+    role: orchestra
+  - name: Klaus Mäkelä
+    role: conductor
+  release:
+    album_title: 'Sibelius: Symphonies 1-7; Tapiola; 3 Late Fragments'
+    label: Decca
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+  work_id: sibelius-symphony-3
+- id: sibelius-symphony-5-oslo-makela
+  links:
+    tidal:
+      url: https://tidal.com/track/221536056
+  performers:
+  - name: Oslo Philharmonic Orchestra
+    role: orchestra
+  - name: Klaus Mäkelä
+    role: conductor
+  release:
+    album_title: 'Sibelius: Symphonies 1-7; Tapiola; 3 Late Fragments'
+    label: Decca
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+  version_assignment: unspecified
+  work_id: sibelius-symphony-5
+- id: sibelius-symphony-6-oslo-makela
+  links:
+    tidal:
+      url: https://tidal.com/track/221536059
+  performers:
+  - name: Oslo Philharmonic Orchestra
+    role: orchestra
+  - name: Klaus Mäkelä
+    role: conductor
+  release:
+    album_title: 'Sibelius: Symphonies 1-7; Tapiola; 3 Late Fragments'
+    label: Decca
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+  work_id: sibelius-symphony-6
+- id: sibelius-symphony-7-oslo-makela
+  links:
+    tidal:
+      url: https://tidal.com/track/221536063
+  performers:
+  - name: Oslo Philharmonic Orchestra
+    role: orchestra
+  - name: Klaus Mäkelä
+    role: conductor
+  release:
+    album_title: 'Sibelius: Symphonies 1-7; Tapiola; 3 Late Fragments'
+    label: Decca
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+  work_id: sibelius-symphony-7
+- id: sibelius-tapiola-oslo-makela
+  links:
+    tidal:
+      url: https://tidal.com/track/221536067
+  performers:
+  - name: Oslo Philharmonic Orchestra
+    role: orchestra
+  - name: Klaus Mäkelä
+    role: conductor
+  release:
+    album_title: 'Sibelius: Symphonies 1-7; Tapiola; 3 Late Fragments'
+    label: Decca
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+  work_id: sibelius-tapiola
+- id: sibelius-three-late-fragments-virtanen-oslo-makela
+  links:
+    tidal:
+      url: https://tidal.com/track/221536068
+  performers:
+  - name: Oslo Philharmonic Orchestra
+    role: orchestra
+  - name: Klaus Mäkelä
+    role: conductor
+  release:
+    album_title: 'Sibelius: Symphonies 1-7; Tapiola; 3 Late Fragments'
+    label: Decca
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+  work_id: sibelius-three-late-fragments-virtanen
+- id: schubert-symphony-8-unfinished-savall
+  links:
+    tidal:
+      url: https://tidal.com/track/250180588
+  performers:
+  - name: Le Concert des Nations
+    role: orchestra
+  - name: Jordi Savall
+    role: conductor
+  release:
+    album_title: 'Schubert: Symphonies Nos. 8 & 9'
+    catalogue_number: AVSA9950
+    label: Alia Vox
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+  work_id: schubert-symphony-8-unfinished
+  year: 2021
+- id: schubert-symphony-9-great-savall
+  links:
+    tidal:
+      url: https://tidal.com/track/250180590
+  performers:
+  - name: Le Concert des Nations
+    role: orchestra
+  - name: Jordi Savall
+    role: conductor
+  release:
+    album_title: 'Schubert: Symphonies Nos. 8 & 9'
+    catalogue_number: AVSA9950
+    label: Alia Vox
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+  work_id: schubert-symphony-9-great
+  year: 2021
+- id: martinu-violin-concerto-2-zimmermann-bamberg-hrusa
+  links:
+    tidal:
+      url: https://tidal.com/track/283474093
+  performers:
+  - name: Frank Peter Zimmermann
+    role: violin
+  - name: Bamberg Symphony Orchestra
+    role: orchestra
+  - name: Jakub Hrůša
+    role: conductor
+  release:
+    album_title: 'Martinů: Violin Concertos Nos. 1 & 2 - Bartók: Sonata for Solo Violin'
+    catalogue_number: BIS-2457
+    label: BIS
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+  work_id: martinu-violin-concerto-2
+  year: 2019
+- id: martinu-violin-concerto-1-zimmermann-bamberg-hrusa
+  links:
+    tidal:
+      url: https://tidal.com/track/283474096
+  performers:
+  - name: Frank Peter Zimmermann
+    role: violin
+  - name: Bamberg Symphony Orchestra
+    role: orchestra
+  - name: Jakub Hrůša
+    role: conductor
+  release:
+    album_title: 'Martinů: Violin Concertos Nos. 1 & 2 - Bartók: Sonata for Solo Violin'
+    catalogue_number: BIS-2457
+    label: BIS
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+  work_id: martinu-violin-concerto-1
+  year: 2018
+- id: rachmaninoff-symphony-1-philadelphia-nezet-seguin
+  links:
+    tidal:
+      url: https://tidal.com/track/170507523
+  performers:
+  - name: The Philadelphia Orchestra
+    role: orchestra
+  - name: Yannick Nézet-Séguin
+    role: conductor
+  release:
+    album_title: 'Rachmaninoff: Symphony 1 + Symphonic Dances'
+    label: Deutsche Grammophon
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+  version_assignment: unspecified
+  work_id: rachmaninoff-symphony-1
+- id: rachmaninoff-symphonic-dances-philadelphia-nezet-seguin
+  links:
+    tidal:
+      url: https://tidal.com/track/170507527
+  performers:
+  - name: The Philadelphia Orchestra
+    role: orchestra
+  - name: Yannick Nézet-Séguin
+    role: conductor
+  release:
+    album_title: 'Rachmaninoff: Symphony 1 + Symphonic Dances'
+    label: Deutsche Grammophon
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+  work_id: rachmaninoff-symphonic-dances
+- id: simpson-geysir-simpson-ensemble
+  links:
+    tidal:
+      url: https://tidal.com/track/160324010
+  performers:
+  - person_id: mark-simpson
+    role: clarinet
+  - name: Fraser Langton
+    role: clarinet
+  - name: Nicholas Daniel
+    role: oboe
+  - name: Emma Feilding
+    role: oboe
+  - name: Amy Harman
+    role: bassoon
+  - name: Dom Tyler
+    role: bassoon
+  - name: Oliver Pashley
+    role: basset horn
+  - name: Ausiàs Garrigós Morant
+    role: basset horn
+  - name: Ben Goldscheider
+    role: horn
+  - name: Angela Barnes
+    role: horn
+  - name: James Pillai
+    role: horn
+  - name: Fabian van de Geest
+    role: horn
+  - name: David Stark
+    role: double bass
+  release:
+    album_title: 'Mark Simpson: Geysir - Mozart: Serenade No. 10 in B-Flat Major,
+      K. 361 "Gran partita"'
+    catalogue_number: ORC100150
+    label: Orchid Classics
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+  work_id: simpson-geysir
+- id: 
+    dmitri-shostakovich-violin-concerto-no-2-in-c-sharp-minor-work-ibragimova-jurowski
+  links:
+    tidal:
+      url: https://tidal.com/track/306149652
+  performers:
+  - name: Alina Ibragimova
+    role: violin
+  - name: State Academic Symphony Orchestra of Russia "Evgeny Svetlanov"
+    role: orchestra
+  - name: Vladimir Jurowski
+    role: conductor
+  release:
+    album_title: 'Shostakovich: Violin Concertos 1 & 2'
+    catalogue_number: CDA68313
+    label: Hyperion
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+  work_id: dmitri-shostakovich-violin-concerto-no-2-in-c-sharp-minor-work
+- id: schmidt-symphony-1-frankfurt-jarvi
+  links:
+    tidal:
+      url: https://tidal.com/track/154158527
+  performers:
+  - name: Frankfurt Radio Symphony
+    role: orchestra
+  - artist_id: paavo-jarvi
+    name: Paavo Järvi
+    role: conductor
+  release:
+    album_title: 'Franz Schmidt: Complete Symphonies'
+    label: Deutsche Grammophon
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+  work_id: schmidt-symphony-1
+- id: schmidt-symphony-2-frankfurt-jarvi
+  links:
+    tidal:
+      url: https://tidal.com/track/154158531
+  performers:
+  - name: Frankfurt Radio Symphony
+    role: orchestra
+  - artist_id: paavo-jarvi
+    name: Paavo Järvi
+    role: conductor
+  release:
+    album_title: 'Franz Schmidt: Complete Symphonies'
+    label: Deutsche Grammophon
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+  work_id: schmidt-symphony-2
+- excerpt: Intermezzo only
+  id: schmidt-notre-dame-frankfurt-jarvi
+  links:
+    tidal:
+      url: https://tidal.com/track/154158534
+  performers:
+  - name: Frankfurt Radio Symphony
+    role: orchestra
+  - artist_id: paavo-jarvi
+    name: Paavo Järvi
+    role: conductor
+  release:
+    album_title: 'Franz Schmidt: Complete Symphonies'
+    label: Deutsche Grammophon
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+  work_id: schmidt-notre-dame
+- id: schmidt-symphony-3-frankfurt-jarvi
+  links:
+    tidal:
+      url: https://tidal.com/track/154158535
+  performers:
+  - name: Frankfurt Radio Symphony
+    role: orchestra
+  - artist_id: paavo-jarvi
+    name: Paavo Järvi
+    role: conductor
+  release:
+    album_title: 'Franz Schmidt: Complete Symphonies'
+    label: Deutsche Grammophon
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+  work_id: schmidt-symphony-3
+- id: schmidt-symphony-4-frankfurt-jarvi
+  links:
+    tidal:
+      url: https://tidal.com/track/154158539
+  performers:
+  - name: Frankfurt Radio Symphony
+    role: orchestra
+  - artist_id: paavo-jarvi
+    name: Paavo Järvi
+    role: conductor
+  release:
+    album_title: 'Franz Schmidt: Complete Symphonies'
+    label: Deutsche Grammophon
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+  work_id: schmidt-symphony-4
+- id: vaughan-williams-symphony-7-antartica-bbc-brabbins
+  links:
+    tidal:
+      url: https://tidal.com/track/306142152
+  performers:
+  - name: Elizabeth Watts
+    role: soprano
+  - name: BBC Symphony Chorus
+    role: choir
+  - name: BBC Symphony Orchestra
+    role: orchestra
+  - name: Martyn Brabbins
+    role: conductor
+  release:
+    album_title: 'Vaughan Williams: Sinfonia antartica (Symphony No. 7) & Symphony
+      No. 9'
+    catalogue_number: CDA68405
+    label: Hyperion
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+  work_id: vaughan-williams-symphony-7-antartica
+  year: 2022
+- id: vaughan-williams-symphony-9-bbc-brabbins
+  links:
+    tidal:
+      url: https://tidal.com/track/306142157
+  performers:
+  - name: BBC Symphony Orchestra
+    role: orchestra
+  - name: Martyn Brabbins
+    role: conductor
+  release:
+    album_title: 'Vaughan Williams: Sinfonia antartica (Symphony No. 7) & Symphony
+      No. 9'
+    catalogue_number: CDA68405
+    label: Hyperion
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+  work_id: vaughan-williams-symphony-9
+  year: 2022
+- id: poulenc-piano-concerto-bebbington
+  links:
+    tidal:
+      url: https://tidal.com/track/139837485
+  performers:
+  - name: Mark Bebbington
+    role: piano
+  - name: Royal Philharmonic Orchestra
+    role: orchestra
+  - name: Jan Latham-Koenig
+    role: conductor
+  release:
+    album_title: 'Francis Poulenc: Piano Concerto & Concert Champêtre'
+    catalogue_number: RES10256
+    label: Resonus Classics
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+  work_id: poulenc-piano-concerto
+- id: poulenc-trio-piano-oboe-bassoon-bebbington
+  links:
+    tidal:
+      url: https://tidal.com/track/139837488
+  performers:
+  - name: Mark Bebbington
+    role: piano
+  - name: John Roberts
+    role: oboe
+  - name: Jonathan Davies
+    role: bassoon
+  release:
+    album_title: 'Francis Poulenc: Piano Concerto & Concert Champêtre'
+    catalogue_number: RES10256
+    label: Resonus Classics
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+  work_id: poulenc-trio-piano-oboe-bassoon
+- id: poulenc-concert-champetre-bebbington
+  links:
+    tidal:
+      url: https://tidal.com/track/139837491
+  performers:
+  - name: Mark Bebbington
+    role: piano
+  - name: Royal Philharmonic Orchestra
+    role: orchestra
+  - name: Jan Latham-Koenig
+    role: conductor
+  profile: piano
+  release:
+    album_title: 'Francis Poulenc: Piano Concerto & Concert Champêtre'
+    catalogue_number: RES10256
+    label: Resonus Classics
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+  work_id: poulenc-concert-champetre
+- id: poulenc-oboe-sonata-bebbington
+  links:
+    tidal:
+      url: https://tidal.com/track/139837494
+  performers:
+  - name: John Roberts
+    role: oboe
+  - name: Mark Bebbington
+    role: piano
+  release:
+    album_title: 'Francis Poulenc: Piano Concerto & Concert Champêtre'
+    catalogue_number: RES10256
+    label: Resonus Classics
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+  work_id: poulenc-oboe-sonata
+persons:
+- id: alexander-von-zemlinsky
+  name: Alexander von Zemlinsky
+  roles:
+  - composer
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: 
+      https://www.deccaclassics.com/en/catalogue/products/zemlinsky-lyrische-symphonie-7275
+- id: jean-sibelius
+  name: Jean Sibelius
+  roles:
+  - composer
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: 
+      https://www.deccaclassics.com/en/catalogue/products/sibelius-klaus-maekelae-12615
+- id: franz-schubert
+  name: Franz Schubert
+  roles:
+  - composer
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: https://www.alia-vox.com/en/producte/franz-schubert-transfiguracio/
+- id: bohuslav-martinu
+  name: Bohuslav Martinů
+  roles:
+  - composer
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: 
+      https://eclassical.textalk.se/shop/17115/art19/5059519-b620d1-BIS-2457_booklet.pdf
+- id: sergei-rachmaninoff
+  name: Sergei Rachmaninoff
+  roles:
+  - composer
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: 
+      https://www.deutschegrammophon.com/en/catalogue/products/rachmaninoff-symphony-no-1-symphonic-dances-nezet-seguin-12192
+- id: mark-simpson
+  name: Mark Simpson
+  roles:
+  - composer
+  - performer
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: https://www.orchidclassics.com/releases/orc100150-mark-simpson/
+- id: franz-schmidt
+  name: Franz Schmidt
+  roles:
+  - composer
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: 
+      https://www.deutschegrammophon.com/en/catalogue/products/franz-schmidt-complete-symphonies-paavo-jaervi-12080
+- id: ralph-vaughan-williams
+  name: Ralph Vaughan Williams
+  roles:
+  - composer
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: https://www.hyperion-records.co.uk/dc.asp?dc=D_CDA68405
+- id: francis-poulenc
+  name: Francis Poulenc
+  roles:
+  - composer
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: 
+      https://www.resonusclassics.com/products/poulenc-piano-concerto-concert-champetre-mark-bebbington-royal-philharmonic-orchestra-res10256
+work-groups:
+- composer_id: 3933294105514c1885644d1099a7006b
+  id: part-tabula-rasa-group
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: https://www.warnerclassics.com/release/tabula-rasa
+  title: Tabula Rasa
+- catalogue:
+    op: Op. 18
+  composer_id: alexander-von-zemlinsky
+  id: zemlinsky-lyric-symphony-group
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: 
+      https://www.deccaclassics.com/en/catalogue/products/zemlinsky-lyrische-symphonie-7275
+  title: Lyric Symphony
+- catalogue:
+    op: Op. 20
+  composer_id: alexander-von-zemlinsky
+  id: zemlinsky-symphonic-songs-group
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: 
+      https://www.deccaclassics.com/en/catalogue/products/zemlinsky-lyrische-symphonie-7275
+  title: Symphonic Songs
+- composer_id: alexander-von-zemlinsky
+  id: zemlinsky-psalm-83-group
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: 
+      https://www.deccaclassics.com/en/catalogue/products/zemlinsky-lyrische-symphonie-7275
+  title: Psalm 83
+- catalogue:
+    sz: Sz. 60
+  composer_id: 388053797e01483593f1e62c6dd407ab
+  id: bartok-wooden-prince-group
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: https://outhere-music.com/en/albums/bartok-wooden-prince-dance-suite
+  title: The Wooden Prince
+- catalogue:
+    sz: Sz. 77
+  composer_id: 388053797e01483593f1e62c6dd407ab
+  id: bartok-dance-suite-group
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: https://outhere-music.com/en/albums/bartok-wooden-prince-dance-suite
+  title: Dance Suite
+- catalogue:
+    op: Op. 39
+  composer_id: jean-sibelius
+  id: sibelius-symphony-1-group
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: 
+      https://www.deccaclassics.com/en/catalogue/products/sibelius-klaus-maekelae-12615
+  title: Symphony No. 1 in E minor
+- catalogue:
+    op: Op. 43
+  composer_id: jean-sibelius
+  id: sibelius-symphony-2-group
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: 
+      https://www.deccaclassics.com/en/catalogue/products/sibelius-klaus-maekelae-12615
+  title: Symphony No. 2 in D major
+- catalogue:
+    op: Op. 52
+  composer_id: jean-sibelius
+  id: sibelius-symphony-3-group
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: 
+      https://www.deccaclassics.com/en/catalogue/products/sibelius-klaus-maekelae-12615
+  title: Symphony No. 3 in C major
+- catalogue:
+    op: Op. 82
+  composer_id: jean-sibelius
+  id: sibelius-symphony-5-group
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: 
+      https://www.deccaclassics.com/en/catalogue/products/sibelius-klaus-maekelae-12615
+  title: Symphony No. 5 in E-flat major
+- catalogue:
+    op: Op. 104
+  composer_id: jean-sibelius
+  id: sibelius-symphony-6-group
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: 
+      https://www.deccaclassics.com/en/catalogue/products/sibelius-klaus-maekelae-12615
+  title: Symphony No. 6 in D minor
+- catalogue:
+    op: Op. 105
+  composer_id: jean-sibelius
+  id: sibelius-symphony-7-group
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: 
+      https://www.deccaclassics.com/en/catalogue/products/sibelius-klaus-maekelae-12615
+  title: Symphony No. 7 in C major
+- catalogue:
+    op: Op. 112
+  composer_id: jean-sibelius
+  id: sibelius-tapiola-group
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: 
+      https://www.deccaclassics.com/en/catalogue/products/sibelius-klaus-maekelae-12615
+  title: Tapiola
+- composer_id: jean-sibelius
+  id: sibelius-three-late-fragments-virtanen-group
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: 
+      https://www.deccaclassics.com/en/catalogue/products/sibelius-klaus-maekelae-12615
+  title: Three Late Fragments
+- catalogue:
+    d: D. 759
+  composer_id: franz-schubert
+  id: schubert-symphony-8-unfinished-group
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: https://www.alia-vox.com/en/producte/franz-schubert-transfiguracio/
+  title: Symphony No. 8 in B minor "Unfinished"
+- catalogue:
+    d: D. 944
+  composer_id: franz-schubert
+  id: schubert-symphony-9-great-group
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: https://www.alia-vox.com/en/producte/franz-schubert-transfiguracio/
+  title: Symphony No. 9 in C major "Great"
+- catalogue:
+    h: H. 293
+  composer_id: bohuslav-martinu
+  id: martinu-violin-concerto-2-group
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: 
+      https://eclassical.textalk.se/shop/17115/art19/5059519-b620d1-BIS-2457_booklet.pdf
+  title: Violin Concerto No. 2
+- catalogue:
+    h: H. 226
+  composer_id: bohuslav-martinu
+  id: martinu-violin-concerto-1-group
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: 
+      https://eclassical.textalk.se/shop/17115/art19/5059519-b620d1-BIS-2457_booklet.pdf
+  title: Violin Concerto No. 1
+- catalogue:
+    op: Op. 13
+  composer_id: sergei-rachmaninoff
+  id: rachmaninoff-symphony-1-group
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: 
+      https://www.deutschegrammophon.com/en/catalogue/products/rachmaninoff-symphony-no-1-symphonic-dances-nezet-seguin-12192
+  title: Symphony No. 1 in D minor
+- catalogue:
+    op: Op. 45
+  composer_id: sergei-rachmaninoff
+  id: rachmaninoff-symphonic-dances-group
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: 
+      https://www.deutschegrammophon.com/en/catalogue/products/rachmaninoff-symphony-no-1-symphonic-dances-nezet-seguin-12192
+  title: Symphonic Dances
+- composer_id: mark-simpson
+  id: simpson-geysir-group
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: https://www.orchidclassics.com/releases/orc100150-mark-simpson/
+  title: Geysir
+- composer_id: franz-schmidt
+  id: schmidt-symphony-1-group
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: 
+      https://www.deutschegrammophon.com/en/catalogue/products/franz-schmidt-complete-symphonies-paavo-jaervi-12080
+  title: Symphony No. 1 in E major
+- composer_id: franz-schmidt
+  id: schmidt-symphony-2-group
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: 
+      https://www.deutschegrammophon.com/en/catalogue/products/franz-schmidt-complete-symphonies-paavo-jaervi-12080
+  title: Symphony No. 2 in E-flat major
+- composer_id: franz-schmidt
+  id: schmidt-notre-dame-group
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: 
+      https://www.deutschegrammophon.com/en/catalogue/products/franz-schmidt-complete-symphonies-paavo-jaervi-12080
+  title: Notre Dame
+- composer_id: franz-schmidt
+  id: schmidt-symphony-3-group
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: 
+      https://www.deutschegrammophon.com/en/catalogue/products/franz-schmidt-complete-symphonies-paavo-jaervi-12080
+  title: Symphony No. 3 in A major
+- composer_id: franz-schmidt
+  id: schmidt-symphony-4-group
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: 
+      https://www.deutschegrammophon.com/en/catalogue/products/franz-schmidt-complete-symphonies-paavo-jaervi-12080
+  title: Symphony No. 4 in C major
+- composer_id: ralph-vaughan-williams
+  id: vaughan-williams-symphony-7-antartica-group
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: https://www.hyperion-records.co.uk/dc.asp?dc=D_CDA68405
+  title: Sinfonia antartica (Symphony No. 7)
+- composer_id: ralph-vaughan-williams
+  id: vaughan-williams-symphony-9-group
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: https://www.hyperion-records.co.uk/dc.asp?dc=D_CDA68405
+  title: Symphony No. 9 in E minor
+- catalogue:
+    fp: FP 146
+  composer_id: francis-poulenc
+  id: poulenc-piano-concerto-group
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: 
+      https://www.resonusclassics.com/products/poulenc-piano-concerto-concert-champetre-mark-bebbington-royal-philharmonic-orchestra-res10256
+  title: Piano Concerto
+- catalogue:
+    fp: FP 43
+  composer_id: francis-poulenc
+  id: poulenc-trio-piano-oboe-bassoon-group
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: 
+      https://www.resonusclassics.com/products/poulenc-piano-concerto-concert-champetre-mark-bebbington-royal-philharmonic-orchestra-res10256
+  title: Trio for Piano, Oboe and Bassoon
+- catalogue:
+    fp: FP 49
+  composer_id: francis-poulenc
+  id: poulenc-concert-champetre-group
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: 
+      https://www.resonusclassics.com/products/poulenc-piano-concerto-concert-champetre-mark-bebbington-royal-philharmonic-orchestra-res10256
+  title: Concert champêtre
+- catalogue:
+    fp: FP 185
+  composer_id: francis-poulenc
+  id: poulenc-oboe-sonata-group
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: 
+      https://www.resonusclassics.com/products/poulenc-piano-concerto-concert-champetre-mark-bebbington-royal-philharmonic-orchestra-res10256
+  title: Sonata for Oboe and Piano
+works:
+- composer_id: 3933294105514c1885644d1099a7006b
+  id: part-tabula-rasa
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: https://www.warnerclassics.com/release/tabula-rasa
+  title: Tabula Rasa
+  work_group_id: part-tabula-rasa-group
+- catalogue:
+    op: Op. 18
+  composer_id: alexander-von-zemlinsky
+  id: zemlinsky-lyric-symphony
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: 
+      https://www.deccaclassics.com/en/catalogue/products/zemlinsky-lyrische-symphonie-7275
+  title: Lyric Symphony
+  work_group_id: zemlinsky-lyric-symphony-group
+- catalogue:
+    op: Op. 20
+  composer_id: alexander-von-zemlinsky
+  id: zemlinsky-symphonic-songs
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: 
+      https://www.deccaclassics.com/en/catalogue/products/zemlinsky-lyrische-symphonie-7275
+  title: Symphonic Songs
+  work_group_id: zemlinsky-symphonic-songs-group
+- composer_id: alexander-von-zemlinsky
+  id: zemlinsky-psalm-83
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: 
+      https://www.deccaclassics.com/en/catalogue/products/zemlinsky-lyrische-symphonie-7275
+  title: Psalm 83
+  work_group_id: zemlinsky-psalm-83-group
+- catalogue:
+    sz: Sz. 60
+  composer_id: 388053797e01483593f1e62c6dd407ab
+  id: bartok-wooden-prince
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: https://outhere-music.com/en/albums/bartok-wooden-prince-dance-suite
+  title: The Wooden Prince
+  work_group_id: bartok-wooden-prince-group
+- catalogue:
+    sz: Sz. 77
+  composer_id: 388053797e01483593f1e62c6dd407ab
+  id: bartok-dance-suite
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: https://outhere-music.com/en/albums/bartok-wooden-prince-dance-suite
+  title: Dance Suite
+  work_group_id: bartok-dance-suite-group
+- catalogue:
+    op: Op. 39
+  composer_id: jean-sibelius
+  id: sibelius-symphony-1
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: 
+      https://www.deccaclassics.com/en/catalogue/products/sibelius-klaus-maekelae-12615
+  title: Symphony No. 1 in E minor
+  work_group_id: sibelius-symphony-1-group
+- catalogue:
+    op: Op. 43
+  composer_id: jean-sibelius
+  id: sibelius-symphony-2
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: 
+      https://www.deccaclassics.com/en/catalogue/products/sibelius-klaus-maekelae-12615
+  title: Symphony No. 2 in D major
+  work_group_id: sibelius-symphony-2-group
+- catalogue:
+    op: Op. 52
+  composer_id: jean-sibelius
+  id: sibelius-symphony-3
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: 
+      https://www.deccaclassics.com/en/catalogue/products/sibelius-klaus-maekelae-12615
+  title: Symphony No. 3 in C major
+  work_group_id: sibelius-symphony-3-group
+- catalogue:
+    op: Op. 82
+  composer_id: jean-sibelius
+  id: sibelius-symphony-5
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: 
+      https://www.deccaclassics.com/en/catalogue/products/sibelius-klaus-maekelae-12615
+  title: Symphony No. 5 in E-flat major
+  work_group_id: sibelius-symphony-5-group
+- catalogue:
+    op: Op. 104
+  composer_id: jean-sibelius
+  id: sibelius-symphony-6
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: 
+      https://www.deccaclassics.com/en/catalogue/products/sibelius-klaus-maekelae-12615
+  title: Symphony No. 6 in D minor
+  work_group_id: sibelius-symphony-6-group
+- catalogue:
+    op: Op. 105
+  composer_id: jean-sibelius
+  id: sibelius-symphony-7
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: 
+      https://www.deccaclassics.com/en/catalogue/products/sibelius-klaus-maekelae-12615
+  title: Symphony No. 7 in C major
+  work_group_id: sibelius-symphony-7-group
+- catalogue:
+    op: Op. 112
+  composer_id: jean-sibelius
+  id: sibelius-tapiola
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: 
+      https://www.deccaclassics.com/en/catalogue/products/sibelius-klaus-maekelae-12615
+  title: Tapiola
+  work_group_id: sibelius-tapiola-group
+- catalogue:
+    hul: HUL 1325; HUL 1326/9; HUL 1327/2
+  composer_id: jean-sibelius
+  id: sibelius-three-late-fragments-virtanen
+  notes: The recorded set of three realised orchestral fragments; not a complete
+    Symphony No. 8. The sketches' connection with that symphony is uncertain.
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: 
+      https://www.deccaclassics.com/en/catalogue/products/sibelius-klaus-maekelae-12615
+  title: Three Late Fragments (Timo Virtanen realisation)
+  version: Timo Virtanen realisation
+  work_group_id: sibelius-three-late-fragments-virtanen-group
+- catalogue:
+    d: D. 759
+  composer_id: franz-schubert
+  id: schubert-symphony-8-unfinished
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: https://www.alia-vox.com/en/producte/franz-schubert-transfiguracio/
+  title: Symphony No. 8 in B minor "Unfinished"
+  work_group_id: schubert-symphony-8-unfinished-group
+- catalogue:
+    d: D. 944
+  composer_id: franz-schubert
+  id: schubert-symphony-9-great
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: https://www.alia-vox.com/en/producte/franz-schubert-transfiguracio/
+  title: Symphony No. 9 in C major "Great"
+  work_group_id: schubert-symphony-9-great-group
+- catalogue:
+    h: H. 293
+  composer_id: bohuslav-martinu
+  id: martinu-violin-concerto-2
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: 
+      https://eclassical.textalk.se/shop/17115/art19/5059519-b620d1-BIS-2457_booklet.pdf
+  title: Violin Concerto No. 2
+  work_group_id: martinu-violin-concerto-2-group
+- catalogue:
+    h: H. 226
+  composer_id: bohuslav-martinu
+  id: martinu-violin-concerto-1
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: 
+      https://eclassical.textalk.se/shop/17115/art19/5059519-b620d1-BIS-2457_booklet.pdf
+  title: Violin Concerto No. 1
+  work_group_id: martinu-violin-concerto-1-group
+- catalogue:
+    op: Op. 13
+  composer_id: sergei-rachmaninoff
+  id: rachmaninoff-symphony-1
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: 
+      https://www.deutschegrammophon.com/en/catalogue/products/rachmaninoff-symphony-no-1-symphonic-dances-nezet-seguin-12192
+  title: Symphony No. 1 in D minor
+  work_group_id: rachmaninoff-symphony-1-group
+- catalogue:
+    op: Op. 45
+  composer_id: sergei-rachmaninoff
+  id: rachmaninoff-symphonic-dances
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: 
+      https://www.deutschegrammophon.com/en/catalogue/products/rachmaninoff-symphony-no-1-symphonic-dances-nezet-seguin-12192
+  title: Symphonic Dances
+  work_group_id: rachmaninoff-symphonic-dances-group
+- composer_id: mark-simpson
+  id: simpson-geysir
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: https://www.orchidclassics.com/releases/orc100150-mark-simpson/
+  title: Geysir
+  work_group_id: simpson-geysir-group
+  year: 2014
+- composer_id: franz-schmidt
+  id: schmidt-symphony-1
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: 
+      https://www.deutschegrammophon.com/en/catalogue/products/franz-schmidt-complete-symphonies-paavo-jaervi-12080
+  title: Symphony No. 1 in E major
+  work_group_id: schmidt-symphony-1-group
+- composer_id: franz-schmidt
+  id: schmidt-symphony-2
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: 
+      https://www.deutschegrammophon.com/en/catalogue/products/franz-schmidt-complete-symphonies-paavo-jaervi-12080
+  title: Symphony No. 2 in E-flat major
+  work_group_id: schmidt-symphony-2-group
+- composer_id: franz-schmidt
+  id: schmidt-notre-dame
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: 
+      https://www.deutschegrammophon.com/en/catalogue/products/franz-schmidt-complete-symphonies-paavo-jaervi-12080
+  title: Notre Dame
+  work_group_id: schmidt-notre-dame-group
+- composer_id: franz-schmidt
+  id: schmidt-symphony-3
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: 
+      https://www.deutschegrammophon.com/en/catalogue/products/franz-schmidt-complete-symphonies-paavo-jaervi-12080
+  title: Symphony No. 3 in A major
+  work_group_id: schmidt-symphony-3-group
+- composer_id: franz-schmidt
+  id: schmidt-symphony-4
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: 
+      https://www.deutschegrammophon.com/en/catalogue/products/franz-schmidt-complete-symphonies-paavo-jaervi-12080
+  title: Symphony No. 4 in C major
+  work_group_id: schmidt-symphony-4-group
+- composer_id: ralph-vaughan-williams
+  id: vaughan-williams-symphony-7-antartica
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: https://www.hyperion-records.co.uk/dc.asp?dc=D_CDA68405
+  title: Sinfonia antartica (Symphony No. 7)
+  work_group_id: vaughan-williams-symphony-7-antartica-group
+- composer_id: ralph-vaughan-williams
+  id: vaughan-williams-symphony-9
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: https://www.hyperion-records.co.uk/dc.asp?dc=D_CDA68405
+  title: Symphony No. 9 in E minor
+  work_group_id: vaughan-williams-symphony-9-group
+- catalogue:
+    fp: FP 146
+  composer_id: francis-poulenc
+  id: poulenc-piano-concerto
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: 
+      https://www.resonusclassics.com/products/poulenc-piano-concerto-concert-champetre-mark-bebbington-royal-philharmonic-orchestra-res10256
+  title: Piano Concerto
+  work_group_id: poulenc-piano-concerto-group
+- catalogue:
+    fp: FP 43
+  composer_id: francis-poulenc
+  id: poulenc-trio-piano-oboe-bassoon
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: 
+      https://www.resonusclassics.com/products/poulenc-piano-concerto-concert-champetre-mark-bebbington-royal-philharmonic-orchestra-res10256
+  title: Trio for Piano, Oboe and Bassoon
+  work_group_id: poulenc-trio-piano-oboe-bassoon-group
+- catalogue:
+    fp: FP 49
+  composer_id: francis-poulenc
+  id: poulenc-concert-champetre
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: 
+      https://www.resonusclassics.com/products/poulenc-piano-concerto-concert-champetre-mark-bebbington-royal-philharmonic-orchestra-res10256
+  title: Concert champêtre
+  work_group_id: poulenc-concert-champetre-group
+- catalogue:
+    fp: FP 185
+  composer_id: francis-poulenc
+  id: poulenc-oboe-sonata
+  source:
+    file: reports/playlist-import/best-classical/prepared-120.json
+    url: 
+      https://www.resonusclassics.com/products/poulenc-piano-concerto-concert-champetre-mark-bebbington-royal-philharmonic-orchestra-res10256
+  title: Sonata for Oboe and Piano
+  work_group_id: poulenc-oboe-sonata-group

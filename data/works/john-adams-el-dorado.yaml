@@ -1,0 +1,7 @@
+id: john-adams-el-dorado
+work_group_id: john-adams-el-dorado-group
+composer_id: john-adams
+title: El Dorado
+source:
+  file: docs/adams.md
+  url: https://en.wikipedia.org/wiki/John_Adams_(composer

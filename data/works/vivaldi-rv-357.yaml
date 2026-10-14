@@ -1,0 +1,11 @@
+id: 3623d80c45ca47bab5684738a5bf17b7
+work_group_id: ef8b8b8b745b4d32913acf5eea55f54b
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 357
+catalogue:
+  rv: RV 357
+  opus: Op. 4
+source:
+  file: docs/vivaldi.md
+  line: '18'
+gem: true

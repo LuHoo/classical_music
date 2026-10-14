@@ -1,0 +1,10 @@
+id: antonin-dvorak-czech-suite
+work_group_id: antonin-dvorak-czech-suite-group
+composer_id: antonin-dvorak
+title: Czech Suite
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://www.antonin-dvorak.cz/en/work/czech-suite/
+catalogue:
+  opus: Op. 39
+  b: B. 93

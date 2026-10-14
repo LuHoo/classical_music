@@ -1,0 +1,16 @@
+id: kurt-weill-kleine-dreigroschenmusik-playlist-1384
+work_id: kurt-weill-kleine-dreigroschenmusik
+performers:
+- name: London Sinfonietta
+  role: performer
+- name: David Atherton
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/4428088
+release:
+  album_title: 'Weill: Kleine Dreigroschenmusik; Mahagonny Songspiel; Happy End; Berliner Requiem; Violin
+    Concerto'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

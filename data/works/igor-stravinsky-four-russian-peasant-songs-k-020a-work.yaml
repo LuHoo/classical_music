@@ -1,0 +1,11 @@
+id: "igor-stravinsky-four-russian-peasant-songs-k-020a-work"
+work_group_id: "igor-stravinsky-four-russian-peasant-songs-k-020a-group"
+composer_id: "igor-stravinsky"
+title: "Four Russian Peasant Songs"
+source:
+  file: "docs/stravinsky.md"
+  line: "202"
+catalogue:
+  k: "K 020a"
+date_text: "1917"
+category: "Vocal"

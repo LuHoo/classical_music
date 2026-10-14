@@ -1,0 +1,11 @@
+id: sergei-prokofiev-thirty-years-work
+work_group_id: sergei-prokofiev-thirty-years-group
+composer_id: sergei-prokofiev
+title: Thirty Years
+source:
+  file: docs/prokofiev.md
+  line: '194'
+catalogue:
+  op: Op. 113
+date_text: '1947'
+category: Orchestral

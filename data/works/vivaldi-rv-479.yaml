@@ -1,0 +1,9 @@
+id: 87bf02afbb6c4d7f899dff8849e6c02d
+work_group_id: b19435b982ec4ff095771b8433ca8eb5
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Bassoon Concerto, RV 479
+catalogue:
+  rv: RV 479
+source:
+  url: https://vivaldiedition.net/portfolio/vol-66-concerti-per-fagotto-v/
+  file: reports/vivaldi-naive-edition/catalogue.json

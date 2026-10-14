@@ -1,0 +1,11 @@
+id: wolfgang-amadeus-mozart-violin-concerto-no-2-work
+work_group_id: wolfgang-amadeus-mozart-violin-concerto-no-2-group
+composer_id: wolfgang-amadeus-mozart
+title: Violin Concerto No. 2
+source:
+  file: docs/mozart.md
+  line: '118'
+catalogue:
+  k: K. 211
+date_text: http://www.tidal.com/track/3042940
+category: Violin concertos

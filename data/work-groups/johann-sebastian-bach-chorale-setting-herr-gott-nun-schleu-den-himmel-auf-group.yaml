@@ -1,0 +1,8 @@
+id: "johann-sebastian-bach-chorale-setting-herr-gott-nun-schleu-den-himmel-auf-group"
+composer_id: "johann-sebastian-bach"
+title: "Chorale setting \"Herr Gott, nun schleuß den Himmel auf\""
+source:
+  file: "docs/bachJS.md"
+  line: "90"
+catalogue:
+  bwv: "BWV 617"

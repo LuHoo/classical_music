@@ -1,0 +1,9 @@
+id: 294b12f9edbb4c83867eb9cab256a01e
+work_group_id: a9a1ad907ffd40d186300a98a6036940
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 229
+catalogue:
+  rv: RV 229
+source:
+  url: https://vivaldiedition.net/portfolio/vol-71-concerti-per-violino-xi-per-anna-mariavol-71/
+  file: reports/vivaldi-naive-edition/catalogue.json

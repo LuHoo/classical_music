@@ -1,0 +1,15 @@
+id: luciano-berio-rendering-playlist-1415
+work_id: luciano-berio-rendering
+performers:
+- name: Riccardo Chailly
+  role: performer
+- name: Orchestra Sinfonica di Milano Giuseppe Verdi
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/5008815
+release:
+  album_title: Luciano Berio / Trascrizioni orchestrali
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

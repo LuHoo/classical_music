@@ -1,0 +1,12 @@
+id: dmitri-shostakovich-piano-trio-no-1-in-c-minor-op-8-poeme-chamber-c183
+work_id: dmitri-shostakovich-piano-trio-no-1-in-c-minor-op-8-poeme
+performers:
+  - name: Trio Con Brio Copenhagen
+links:
+  tidal:
+    url: https://tidal.com/track/202603097
+release:
+  album_title: 'Shostakovich & Arensky: Piano Trios'
+source:
+  file: reports/playlist-import/chamber/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/a2327106-07fd-4433-8bd3-d8a5c251c69a

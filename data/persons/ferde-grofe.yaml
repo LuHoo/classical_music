@@ -1,0 +1,7 @@
+id: ferde-grofe
+name: Ferde Grofé
+roles:
+- composer
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://www.classical.net/music/recs/reviews/e/evc03044a.php

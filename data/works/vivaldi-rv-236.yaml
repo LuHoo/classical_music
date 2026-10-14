@@ -1,0 +1,10 @@
+id: dfa1f0ab7c1746bf92d62e05751cb84f
+work_group_id: 324ccbc859104361b56a704ab20c5942
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 236
+catalogue:
+  rv: RV 236
+  opus: Op. 8
+source:
+  file: docs/vivaldi.md
+  line: '26'

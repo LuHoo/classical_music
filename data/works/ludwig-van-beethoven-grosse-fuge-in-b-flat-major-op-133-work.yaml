@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-grosse-fuge-in-b-flat-major-op-133-work"
+work_group_id: "ludwig-van-beethoven-grosse-fuge-in-b-flat-major-op-133-group"
+composer_id: "ludwig-van-beethoven"
+title: "Große Fuge in B♭ major"
+source:
+  file: "docs/beethoven.md"
+  line: "284"
+catalogue:
+  opus: "Op. 133"
+date_text: "1825–21 March 1826"
+category: "Chamber"

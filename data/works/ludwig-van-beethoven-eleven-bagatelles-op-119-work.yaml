@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-eleven-bagatelles-op-119-work"
+work_group_id: "ludwig-van-beethoven-eleven-bagatelles-op-119-group"
+composer_id: "ludwig-van-beethoven"
+title: "Eleven Bagatelles"
+source:
+  file: "docs/beethoven.md"
+  line: "464"
+catalogue:
+  opus: "Op. 119"
+date_text: "1820–2[17]"
+category: "Piano"

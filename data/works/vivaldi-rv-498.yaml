@@ -1,0 +1,9 @@
+id: 65e2d7bfbc774b35aef7c5aabfa94ee2
+work_group_id: 6b7d3b01e76643e8bf672a29760c32a1
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Bassoon Concerto, RV 498
+catalogue:
+  rv: RV 498
+source:
+  url: https://vivaldiedition.net/portfolio/vol-15-concerti-per-fagotto-e-oboe-2004/
+  file: reports/vivaldi-naive-edition/catalogue.json

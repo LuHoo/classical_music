@@ -1,0 +1,19 @@
+id: ferruccio-busoni-indianische-fantasie-op-44-bv-264-playlist-3202
+work_id: ferruccio-busoni-indianische-fantasie-op-44-bv-264
+performers:
+- name: Neeme Järvi
+  artist_id: neeme-jarvi
+  role: conductor
+- name: Nelson Goerner
+- name: BBC Philharmonic
+  artist_id: bbc-po
+  role: orchestra
+- name: BBC PO
+links:
+  tidal:
+    url: https://tidal.com/track/376415119
+release:
+  album_title: 'Busoni: Orchestral Works, Vol. 2'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

@@ -1,0 +1,9 @@
+id: "paul-hindemith-mass-work"
+work_group_id: "paul-hindemith-mass-group"
+composer_id: "paul-hindemith"
+title: "Mass"
+source:
+  file: "docs/hindemith.md"
+  line: "192"
+date_text: "1963"
+category: "Vocal -- selection"

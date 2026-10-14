@@ -1,0 +1,11 @@
+id: "igor-stravinsky-mass-k-077-work"
+work_group_id: "igor-stravinsky-mass-k-077-group"
+composer_id: "igor-stravinsky"
+title: "Mass"
+source:
+  file: "docs/stravinsky.md"
+  line: "168"
+catalogue:
+  k: "K 077"
+date_text: "1944–48"
+category: "Choral"

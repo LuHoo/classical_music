@@ -1,0 +1,9 @@
+id: dde1f01f49294f33848e6fae378f401e
+work_group_id: b3c9a647578b4910b7a2a06c6705bcbf
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Chamber Concerto, RV 107
+catalogue:
+  rv: RV 107
+source:
+  url: https://vivaldiedition.net/portfolio/vol-1-concerti-da-camera-2001/
+  file: reports/vivaldi-naive-edition/catalogue.json

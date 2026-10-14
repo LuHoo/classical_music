@@ -1,0 +1,9 @@
+id: karol-szymanowski-romance-for-violin-and-piano
+work_group_id: karol-szymanowski-romance-for-violin-and-piano-group
+composer_id: karol-szymanowski
+title: Romance for violin and piano
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://www.warnerclassics.com/release/szymanowski
+catalogue:
+  opus: Op. 23

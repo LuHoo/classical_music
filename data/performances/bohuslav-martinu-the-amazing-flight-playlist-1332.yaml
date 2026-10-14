@@ -1,0 +1,15 @@
+id: bohuslav-martinu-the-amazing-flight-playlist-1332
+work_id: bohuslav-martinu-the-amazing-flight
+performers:
+- name: Czech Philharmonic
+  role: performer
+- name: Christopher Hogwood
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/95281095
+release:
+  album_title: 'Martinů: Le raid merveilleux, La revue de cuisine, On tourne!'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

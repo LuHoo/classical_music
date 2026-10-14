@@ -1,0 +1,7 @@
+id: john-adams-lollapalooza
+work_group_id: john-adams-lollapalooza-group
+composer_id: john-adams
+title: Lollapalooza
+source:
+  file: reports/playlist-import/best-classical/window-4001-5518.json
+  url: https://paavojarvi.com/portfolio-items/john-adams/

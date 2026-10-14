@@ -1,0 +1,9 @@
+id: 2c300a6057d841c7b77069dcff943890
+work_group_id: e24ae6ea18f74baca8e00bb0044a256d
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Chamber Concerto, RV 93
+catalogue:
+  rv: RV 93
+source:
+  url: https://vivaldiedition.net/portfolio/vol-26-musica-per-mandolin-e-liuto-2006/
+  file: reports/vivaldi-naive-edition/catalogue.json

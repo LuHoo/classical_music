@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-piano-sonata-no-4-grand-sonata-in-e-flat-major-op-7-group"
+composer_id: "ludwig-van-beethoven"
+title: "Piano Sonata No. 4 \"Grand Sonata\" in E♭major"
+source:
+  file: "docs/beethoven.md"
+  line: "318"
+catalogue:
+  opus: "Op. 7"

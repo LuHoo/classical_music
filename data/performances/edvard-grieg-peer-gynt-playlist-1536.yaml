@@ -1,0 +1,50 @@
+id: edvard-grieg-peer-gynt-playlist-1536
+work_id: edvard-grieg-peer-gynt
+performers:
+- name: Paul Cortese
+  role: performer
+- name: Gothenburg Symphony Orchestra
+  role: orchestra
+  artist_id: gothenburg-symphony-orchestra
+- name: Neeme Järvi
+  role: conductor
+  artist_id: neeme-jarvi
+- name: Knut Buen
+  role: performer
+- name: Maria Andersson
+  role: performer
+- name: Monica Einarson
+  role: performer
+- name: Charlotte Forsberg
+  role: performer
+- name: Toralv Maurstad
+  role: performer
+- name: Gösta Ohlin's Vocal Ensemble
+  role: performer
+- name: Pro Musica Chamber Choir
+  role: performer
+- name: Gösta Ohlin
+  role: performer
+- name: Tor Stokke
+  role: performer
+- name: Gösta Ohlin's Vocal Ensemble & Pro Musica Chamber Choir
+  role: performer
+- name: Wenche Foss
+  role: performer
+- name: Urban Malmberg
+  role: performer
+- name: Carl Gustaf Holmgren
+  role: performer
+- name: Marianne Eklöf
+  role: performer
+- name: Barbara Bonney
+  role: performer
+  artist_id: barbara-bonney
+links:
+  tidal:
+    url: https://tidal.com/track/4360476
+release:
+  album_title: 'Grieg: Complete Music with Orchestra'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

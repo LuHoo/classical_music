@@ -1,0 +1,8 @@
+id: alexander-scriabin-promethee-le-poeme-du-feu-op-60
+work_group_id: alexander-scriabin-promethee-le-poeme-du-feu-op-60-group
+composer_id: alexander-scriabin
+title: Promethée, le poème du feu, Op. 60
+source:
+  file: docs/scriabin.md
+catalogue:
+  op: '60'

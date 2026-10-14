@@ -1,0 +1,18 @@
+id: 15aadc5e38fa42b5bdc75b5e5762928e
+work_id: 2733485fd9174dccba759ef14d182bcc
+performers:
+- name: L’Aura Soave Cremona
+  role: ensemble
+- name: Sergio Azzolini
+  role: bassoon
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP30518
+  album_title: Concerti per fagotto II
+source:
+  url: https://vivaldiedition.net/portfolio/vol-42-concerti-per-fagot%e2%80%90-to-ii-2010/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: 'The Vivaldi Edition, volume 42. Album page verified 2026-09-28. '
+links:
+  tidal:
+    url: https://tidal.com/album/65305986

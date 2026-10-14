@@ -1,0 +1,10 @@
+id: henryk-gorecki-concerto-for-harpsichord-and-string-orchestra-op-40
+work_group_id: henryk-gorecki-concerto-for-harpsichord-and-string-orchestra-op-40-group
+composer_id: henryk-gorecki
+title: Concerto for Harpsichord and String Orchestra, Op. 40
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url:
+    https://www.nonesuch.com/albums/g-recki-kleines-requiem-f-r-eine-polka-harpsichord-concerto-good-night
+catalogue:
+  op: '40'

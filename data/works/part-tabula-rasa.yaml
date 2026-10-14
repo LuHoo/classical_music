@@ -1,0 +1,7 @@
+composer_id: 3933294105514c1885644d1099a7006b
+id: part-tabula-rasa
+source:
+  file: reports/playlist-import/best-classical/prepared-120.json
+  url: https://www.warnerclassics.com/release/tabula-rasa
+title: Tabula Rasa
+work_group_id: part-tabula-rasa-group

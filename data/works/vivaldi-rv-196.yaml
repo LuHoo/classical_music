@@ -1,0 +1,11 @@
+id: 452e0256354c47328b33ca8a57c28d1f
+work_group_id: 6f172d9ad6494a3ea698408e70063fde
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 196
+catalogue:
+  rv: RV 196
+  opus: Op. 4
+source:
+  file: docs/vivaldi.md
+  line: '18'
+gem: true

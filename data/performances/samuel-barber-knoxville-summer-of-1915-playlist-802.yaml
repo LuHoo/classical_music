@@ -1,0 +1,18 @@
+id: samuel-barber-knoxville-summer-of-1915-playlist-802
+work_id: samuel-barber-knoxville-summer-of-1915
+performers:
+- name: Karina Gauvin
+  role: performer
+- name: Royal Scottish National Orchestra
+  role: orchestra
+  artist_id: royal-scottish-national-orchestra
+- name: Marin Alsop
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/284715596
+release:
+  album_title: 'Barber: Adagio for Strings'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

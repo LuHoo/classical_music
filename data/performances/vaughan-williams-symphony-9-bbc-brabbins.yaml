@@ -1,0 +1,19 @@
+id: vaughan-williams-symphony-9-bbc-brabbins
+links:
+  tidal:
+    url: https://tidal.com/track/306142157
+performers:
+- name: BBC Symphony Orchestra
+  role: orchestra
+- name: Martyn Brabbins
+  role: conductor
+release:
+  album_title: 'Vaughan Williams: Sinfonia antartica (Symphony No. 7) & Symphony No.
+    9'
+  catalogue_number: CDA68405
+  label: Hyperion
+source:
+  file: reports/playlist-import/best-classical/prepared-120.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+work_id: vaughan-williams-symphony-9
+year: 2022

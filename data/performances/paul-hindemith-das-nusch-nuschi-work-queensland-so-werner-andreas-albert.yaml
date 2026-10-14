@@ -1,0 +1,13 @@
+id: "paul-hindemith-das-nusch-nuschi-work-queensland-so-werner-andreas-albert"
+work_id: "paul-hindemith-das-nusch-nuschi-work"
+performers:
+  - name: "Queensland SO"
+    role: "orchestra"
+  - name: "Werner Andreas Albert"
+    role: "conductor"
+links:
+  tidal:
+    url: "https://tidal.com/album/19318109/track/19318110"
+source:
+  file: "docs/hindemith.md"
+  line: "14"

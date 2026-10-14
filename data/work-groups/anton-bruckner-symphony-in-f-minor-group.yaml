@@ -1,0 +1,8 @@
+id: "anton-bruckner-symphony-in-f-minor-group"
+composer_id: "anton-bruckner"
+title: "Symphony in F minor"
+source:
+  file: "docs/bruckner.md"
+  line: "20"
+catalogue:
+  wab: "WAB 99"

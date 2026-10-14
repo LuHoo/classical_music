@@ -1,0 +1,8 @@
+id: "paul-hindemith-melancholie-op-13-group"
+composer_id: "paul-hindemith"
+title: "Melancholie"
+source:
+  file: "docs/hindemith.md"
+  line: "150"
+catalogue:
+  opus: "Op. 13"

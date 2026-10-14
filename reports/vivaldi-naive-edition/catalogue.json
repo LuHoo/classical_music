@@ -1,0 +1,2275 @@
+{
+  "schema_version": "1.0",
+  "collection": "Naïve — The Vivaldi Edition",
+  "scope": "Volumes 1–76",
+  "verified_date": "2026-09-28",
+  "language": "nl",
+  "summary": {
+    "volumes": 76,
+    "verified_tidal_album_pages": 75,
+    "full_album_not_found": 1
+  },
+  "methodology": "Officiële volume-indeling, albumteksten en waar nodig boekjes vergeleken met openbare TIDAL-albumpagina’s en aanvullende catalogusbronnen. TIDAL-koppelingen gecontroleerd op albumtitel, uitvoerenden en tracklijst. Geen URL’s geraden. Geen controle van afspeelrechten per land of account.",
+  "rv_semantics": "Unieke RV-aanduidingen per albumprogramma, in programmavolgorde waar mogelijk. Bij aria’s kan het RV-nummer naar de bronopera verwijzen; vermelding betekent niet dat het gehele werk is opgenomen. Versies, bijlagen en samengestelde reconstructies blijven tekstwaarden.",
+  "status_definitions": {
+    "verified_album_page": "Openbare pagina van het volledige album rechtstreeks bekeken en inhoudelijk gekoppeld aan het volume.",
+    "not_found_full_album": "Tijdens deze controle geen openbare pagina van het volledige album gevonden; geen bewijs van wereldwijde afwezigheid."
+  },
+  "records": [
+    {
+      "volume": 1,
+      "title": "Concerti da camera",
+      "naive_catalogue_number": "OP30394",
+      "rv_numbers": [
+        "99",
+        "91",
+        "101",
+        "90",
+        "106",
+        "95",
+        "88",
+        "94",
+        "107"
+      ],
+      "tidal_album_url": "https://tidal.com/album/66768093",
+      "tidal_album_id": "66768093",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-1-concerti-da-camera-2001/",
+      "additional_source_urls": [],
+      "notes": "",
+      "performers": [
+        {
+          "name": "L’Astrée",
+          "role": "ensemble"
+        }
+      ]
+    },
+    {
+      "volume": 2,
+      "title": "Juditha triumphans",
+      "naive_catalogue_number": "OP30314",
+      "rv_numbers": [
+        "644"
+      ],
+      "tidal_album_url": "https://tidal.com/album/91797497",
+      "tidal_album_id": "91797497",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-2-juditha-triumphans-2001/",
+      "additional_source_urls": [],
+      "notes": "",
+      "performers": [
+        {
+          "name": "Academia Montis Regalis",
+          "role": "ensemble"
+        },
+        {
+          "name": "Alessandro de Marchi",
+          "role": "conductor"
+        }
+      ]
+    },
+    {
+      "volume": 3,
+      "title": "Concerti per flauto traversiere",
+      "naive_catalogue_number": "OP30298",
+      "rv_numbers": [
+        "432",
+        "436",
+        "429",
+        "440",
+        "533",
+        "438",
+        "438bis",
+        "427",
+        "431"
+      ],
+      "tidal_album_url": "https://tidal.com/album/92206603",
+      "tidal_album_id": "92206603",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-3-concerti-per-flauto-2002/",
+      "additional_source_urls": [
+        "https://www.prestomusic.com/classical/products/7927223--vivaldi-concerti-per-flauto-traversiere"
+      ],
+      "notes": "RV 438bis staat bij TIDAL als RV 438b. Van RV 432, 438bis en 431 zijn afzonderlijke delen opgenomen.",
+      "performers": [
+        {
+          "name": "Academia Montis Regalis",
+          "role": "ensemble"
+        },
+        {
+          "name": "Barthold Kuijken",
+          "role": "flute"
+        }
+      ]
+    },
+    {
+      "volume": 4,
+      "title": "La Senna festeggiante",
+      "naive_catalogue_number": "OP30339",
+      "rv_numbers": [
+        "693"
+      ],
+      "tidal_album_url": "https://tidal.com/album/91800664",
+      "tidal_album_id": "91800664",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-4-la-senna-festeggiante-2002/",
+      "additional_source_urls": [],
+      "notes": "",
+      "performers": [
+        {
+          "name": "Concerto Italiano",
+          "role": "ensemble"
+        },
+        {
+          "name": "Rinaldo Alessandrini",
+          "role": "conductor"
+        }
+      ]
+    },
+    {
+      "volume": 5,
+      "title": "Concerti e cantate da camera I",
+      "naive_catalogue_number": "OP30358",
+      "rv_numbers": [
+        "97",
+        "671",
+        "104",
+        "654",
+        "105",
+        "670"
+      ],
+      "tidal_album_url": "https://tidal.com/album/92928923",
+      "tidal_album_id": "92928923",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-5-concerti-e-cantata-da-camera-2002/",
+      "additional_source_urls": [],
+      "notes": "",
+      "performers": [
+        {
+          "name": "L’Astrée",
+          "role": "ensemble"
+        }
+      ]
+    },
+    {
+      "volume": 6,
+      "title": "Stabat Mater",
+      "naive_catalogue_number": "OP30367",
+      "rv_numbers": [
+        "556",
+        "625",
+        "554a",
+        "579",
+        "621",
+        "130"
+      ],
+      "tidal_album_url": "https://tidal.com/album/73947224",
+      "tidal_album_id": "73947224",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-6-stabat-mater-2002/",
+      "additional_source_urls": [
+        "https://www.prestomusic.com/classical/products/7927233--vivaldi-stabat-mater-rv621-etc",
+        "https://www.finna.fi/Record/uniarts_print.993671784206249"
+      ],
+      "notes": "Gecorrigeerd: OP30367 en RV 554a; niet OP30387 en RV 544a.",
+      "performers": [
+        {
+          "name": "Concerto Italiano",
+          "role": "ensemble"
+        },
+        {
+          "name": "Rinaldo Alessandrini",
+          "role": "conductor"
+        },
+        {
+          "name": "Sara Mingardo",
+          "role": "contralto"
+        }
+      ]
+    },
+    {
+      "volume": 7,
+      "title": "Concerti di Dresda",
+      "naive_catalogue_number": "OP30283",
+      "rv_numbers": [
+        "577",
+        "569",
+        "576",
+        "192",
+        "574"
+      ],
+      "tidal_album_url": "https://tidal.com/album/65271994",
+      "tidal_album_id": "65271994",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-7-concerti-di-dresda-2003/",
+      "additional_source_urls": [],
+      "notes": "",
+      "performers": [
+        {
+          "name": "Freiburger Barockorchester",
+          "role": "ensemble"
+        },
+        {
+          "name": "Gottfried von der Goltz",
+          "role": "violin"
+        }
+      ]
+    },
+    {
+      "volume": 8,
+      "title": "L'Olimpiade",
+      "naive_catalogue_number": "OP30316",
+      "rv_numbers": [
+        "725"
+      ],
+      "tidal_album_url": "https://tidal.com/album/91800556",
+      "tidal_album_id": "91800556",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-8-lolimpiade-2003/",
+      "additional_source_urls": [],
+      "notes": "",
+      "performers": [
+        {
+          "name": "Concerto Italiano",
+          "role": "ensemble"
+        },
+        {
+          "name": "Rinaldo Alessandrini",
+          "role": "conductor"
+        }
+      ]
+    },
+    {
+      "volume": 9,
+      "title": "La verità in cimento",
+      "naive_catalogue_number": "OP30365",
+      "rv_numbers": [
+        "739"
+      ],
+      "tidal_album_url": "https://tidal.com/album/91800729",
+      "tidal_album_id": "91800729",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-9-la-verita-in-cimento-2003/",
+      "additional_source_urls": [],
+      "notes": "",
+      "performers": [
+        {
+          "name": "Ensemble Matheus",
+          "role": "ensemble"
+        },
+        {
+          "name": "Jean-Christophe Spinosi",
+          "role": "conductor"
+        }
+      ]
+    },
+    {
+      "volume": 10,
+      "title": "Mottetti",
+      "naive_catalogue_number": "OP30340",
+      "rv_numbers": [
+        "629",
+        "631",
+        "633",
+        "623",
+        "628",
+        "630"
+      ],
+      "tidal_album_url": "https://tidal.com/album/73947162",
+      "tidal_album_id": "73947162",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-11-vespri-per-lassunzione-di-maria-vergine-2003/",
+      "additional_source_urls": [],
+      "notes": "RV-nummers volgens de officiële albumomschrijving; de TIDAL-tags van afzonderlijke delen bevatten afwijkingen.",
+      "performers": [
+        {
+          "name": "Academia Montis Regalis",
+          "role": "ensemble"
+        },
+        {
+          "name": "Alessandro de Marchi",
+          "role": "conductor"
+        }
+      ]
+    },
+    {
+      "volume": 11,
+      "title": "Vespri solenni per l'Assunzione di Maria Vergine",
+      "naive_catalogue_number": "OP30383",
+      "rv_numbers": [
+        "584",
+        "593",
+        "635",
+        "594",
+        "600",
+        "607",
+        "608",
+        "609",
+        "610a",
+        "581",
+        "616"
+      ],
+      "tidal_album_url": "https://tidal.com/album/73972217",
+      "tidal_album_id": "73972217",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-11-vespri-per-lassun%e2%80%90-zione-di-maria-vergine-2003/",
+      "additional_source_urls": [
+        "https://www.prestomusic.com/classical/products/7927237--vivaldi-vespri-solenni-per-la-festa-dell-assunzione-di-maria-vergine"
+      ],
+      "notes": "RV 581 is included with all three movements. RV 584 is used in the reconstructed vesper programme. Gregorian chant has no RV number.",
+      "performers": [
+        {
+          "name": "Concerto Italiano",
+          "role": "ensemble"
+        },
+        {
+          "name": "Rinaldo Alessandrini",
+          "role": "conductor"
+        }
+      ]
+    },
+    {
+      "volume": 12,
+      "title": "Sonate da camera",
+      "naive_catalogue_number": "OP30252",
+      "rv_numbers": [
+        "68",
+        "86",
+        "77",
+        "70",
+        "83",
+        "71"
+      ],
+      "tidal_album_url": "https://tidal.com/album/92214962",
+      "tidal_album_id": "92214962",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-12-sonate-da-camera-2003/",
+      "additional_source_urls": [],
+      "notes": "",
+      "performers": [
+        {
+          "name": "L’Astrée",
+          "role": "ensemble"
+        },
+        {
+          "name": "Giorgio Tabacco",
+          "role": "harpsichord"
+        }
+      ]
+    },
+    {
+      "volume": 13,
+      "title": "Concerti per archi I",
+      "naive_catalogue_number": "OP30377",
+      "rv_numbers": [
+        "159",
+        "153",
+        "121",
+        "129",
+        "154",
+        "115",
+        "143",
+        "141",
+        "120",
+        "156",
+        "158",
+        "123"
+      ],
+      "tidal_album_url": "https://tidal.com/album/91193915",
+      "tidal_album_id": "91193915",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-13-concerti-per-archi-2004/",
+      "additional_source_urls": [],
+      "notes": "RV 143 volgens de tracklijst; de officiële korte albumtekst vermeldt hier ten onrechte RV 146.",
+      "performers": [
+        {
+          "name": "Concerto Italiano",
+          "role": "ensemble"
+        },
+        {
+          "name": "Rinaldo Alessandrini",
+          "role": "conductor"
+        }
+      ]
+    },
+    {
+      "volume": 14,
+      "title": "Orlando finto pazzo",
+      "naive_catalogue_number": "OP30392",
+      "rv_numbers": [
+        "727"
+      ],
+      "tidal_album_url": "https://tidal.com/album/92206658",
+      "tidal_album_id": "92206658",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-14-orlando-finto-paz%e2%80%90-zo-2004/",
+      "additional_source_urls": [],
+      "notes": "",
+      "performers": [
+        {
+          "name": "Academia Montis Regalis",
+          "role": "ensemble"
+        },
+        {
+          "name": "Alessandro de Marchi",
+          "role": "conductor"
+        }
+      ]
+    },
+    {
+      "volume": 15,
+      "title": "Concerti per fagotto e oboe",
+      "naive_catalogue_number": "OP30379",
+      "rv_numbers": [
+        "481",
+        "461",
+        "545",
+        "498",
+        "451",
+        "501"
+      ],
+      "tidal_album_url": "https://tidal.com/album/65272162",
+      "tidal_album_id": "65272162",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-15-concerti-per-fagotto-e-oboe-2004/",
+      "additional_source_urls": [],
+      "notes": "",
+      "performers": [
+        {
+          "name": "Sonatori de la Gioiosa Marca",
+          "role": "ensemble"
+        }
+      ]
+    },
+    {
+      "volume": 16,
+      "title": "Concerti e cantate da camera II",
+      "naive_catalogue_number": "OP30404",
+      "rv_numbers": [
+        "108",
+        "651",
+        "92",
+        "656",
+        "100",
+        "657"
+      ],
+      "tidal_album_url": "https://tidal.com/album/92214991",
+      "tidal_album_id": "92214991",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-16-concerti-e-cantata-da-camera-ii-2004/",
+      "additional_source_urls": [],
+      "notes": "",
+      "performers": [
+        {
+          "name": "L’Astrée",
+          "role": "ensemble"
+        },
+        {
+          "name": "Giorgio Tabacco",
+          "role": "harpsichord"
+        }
+      ]
+    },
+    {
+      "volume": 17,
+      "title": "Orlando furioso",
+      "naive_catalogue_number": "OP30393",
+      "rv_numbers": [
+        "728"
+      ],
+      "tidal_album_url": "https://tidal.com/album/78145897",
+      "tidal_album_id": "78145897",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-17-orlando-furioso-2004/",
+      "additional_source_urls": [],
+      "notes": "",
+      "performers": [
+        {
+          "name": "Ensemble Matheus",
+          "role": "ensemble"
+        },
+        {
+          "name": "Jean-Christophe Spinosi",
+          "role": "conductor"
+        }
+      ]
+    },
+    {
+      "volume": 18,
+      "title": "Concerti per vari strumenti",
+      "naive_catalogue_number": "OP30409",
+      "rv_numbers": [
+        "559",
+        "497",
+        "566",
+        "534",
+        "548",
+        "454",
+        "560"
+      ],
+      "tidal_album_url": "https://tidal.com/album/92206835",
+      "tidal_album_id": "92206835",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-18-concerti-per-vari-strumenti-2004/",
+      "additional_source_urls": [],
+      "notes": "",
+      "performers": [
+        {
+          "name": "Zefiro",
+          "role": "ensemble"
+        },
+        {
+          "name": "Alfredo Bernardini",
+          "role": "director"
+        }
+      ]
+    },
+    {
+      "volume": 19,
+      "title": "Concerti e cantate da camera III",
+      "naive_catalogue_number": "OP30381",
+      "rv_numbers": [
+        "87",
+        "683",
+        "98",
+        "680",
+        "103",
+        "682"
+      ],
+      "tidal_album_url": "https://tidal.com/album/92795810",
+      "tidal_album_id": "92795810",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-19-concerti-e-cantata-iii-2005/",
+      "additional_source_urls": [],
+      "notes": "",
+      "performers": [
+        {
+          "name": "L’Astrée",
+          "role": "ensemble"
+        },
+        {
+          "name": "Giorgio Tabacco",
+          "role": "harpsichord"
+        }
+      ]
+    },
+    {
+      "volume": 20,
+      "title": "Arie d'opera",
+      "naive_catalogue_number": "OP30411",
+      "rv_numbers": [
+        "704",
+        "734",
+        "739",
+        "749.21",
+        "738",
+        "737",
+        "749.13"
+      ],
+      "tidal_album_url": "https://tidal.com/album/92930094",
+      "tidal_album_id": "92930094",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-20-arie-dopera-2005/",
+      "additional_source_urls": [],
+      "notes": "Opera-RV-nummers verwijzen naar de herkomst van de aria’s. RV 749.21 en 749.13 zijn afzonderlijke aria-aanduidingen.",
+      "performers": [
+        {
+          "name": "Modo Antiquo",
+          "role": "ensemble"
+        },
+        {
+          "name": "Federico Maria Sardelli",
+          "role": "conductor"
+        }
+      ]
+    },
+    {
+      "volume": 21,
+      "title": "Tito Manlio",
+      "naive_catalogue_number": "OP30413",
+      "rv_numbers": [
+        "146",
+        "738"
+      ],
+      "tidal_album_url": "https://tidal.com/album/92206875",
+      "tidal_album_id": "92206875",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-21-tito-manlio-2005/",
+      "additional_source_urls": [],
+      "notes": "Naast de opera RV 738 ook de als ouverture gebruikte sinfonia RV 146.",
+      "performers": [
+        {
+          "name": "Accademia Bizantina",
+          "role": "ensemble"
+        },
+        {
+          "name": "Ottavio Dantone",
+          "role": "conductor"
+        }
+      ]
+    },
+    {
+      "volume": 22,
+      "title": "Arie per basso",
+      "naive_catalogue_number": "OP30415",
+      "rv_numbers": [
+        "699",
+        "738",
+        "728",
+        "733",
+        "711",
+        "734",
+        "162",
+        "695",
+        "725"
+      ],
+      "tidal_album_url": "https://tidal.com/album/92797025",
+      "tidal_album_id": "92797025",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-22-arie-per-basso-2005/",
+      "additional_source_urls": [],
+      "notes": "Inclusief de instrumentale sinfonia’s RV 699, 711 en 162; de overige nummers verwijzen naar aria’s uit opera’s.",
+      "performers": [
+        {
+          "name": "Concerto Italiano",
+          "role": "ensemble"
+        },
+        {
+          "name": "Rinaldo Alessandrini",
+          "role": "conductor"
+        }
+      ]
+    },
+    {
+      "volume": 23,
+      "title": "Concerti per violino I — La caccia",
+      "naive_catalogue_number": "OP30417",
+      "rv_numbers": [
+        "208",
+        "332",
+        "234",
+        "199",
+        "362",
+        "270"
+      ],
+      "tidal_album_url": "https://tidal.com/album/92207007",
+      "tidal_album_id": "92207007",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-23-concerti-per-violin-i-la-caccia-2005/",
+      "additional_source_urls": [],
+      "notes": "RV 199 is aanwezig in de tracklijst, maar ontbreekt in de korte officiële albumomschrijving.",
+      "performers": [
+        {
+          "name": "Academia Montis Regalis",
+          "role": "ensemble"
+        },
+        {
+          "name": "Enrico Onofri",
+          "role": "violin"
+        }
+      ]
+    },
+    {
+      "volume": 24,
+      "title": "In furore — Laudate pueri e concerti sacri",
+      "naive_catalogue_number": "OP30416",
+      "rv_numbers": [
+        "626",
+        "169",
+        "601",
+        "541",
+        "286"
+      ],
+      "tidal_album_url": "https://tidal.com/album/73947302",
+      "tidal_album_id": "73947302",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-25-griselda-2006-2/",
+      "additional_source_urls": [],
+      "notes": "RV 541 is aangevuld vanuit de officiële albumomschrijving.",
+      "performers": [
+        {
+          "name": "Accademia Bizantina",
+          "role": "ensemble"
+        }
+      ]
+    },
+    {
+      "volume": 25,
+      "title": "Griselda",
+      "naive_catalogue_number": "OP30419",
+      "rv_numbers": [
+        "718"
+      ],
+      "tidal_album_url": "https://tidal.com/album/91800793",
+      "tidal_album_id": "91800793",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-25-griselda-2006/",
+      "additional_source_urls": [],
+      "notes": "",
+      "performers": [
+        {
+          "name": "Ensemble Matheus",
+          "role": "ensemble"
+        },
+        {
+          "name": "Jean-Christophe Spinosi",
+          "role": "conductor"
+        }
+      ]
+    },
+    {
+      "volume": 26,
+      "title": "Musica per mandolino e liuto",
+      "naive_catalogue_number": "OP30429",
+      "rv_numbers": [
+        "532",
+        "85",
+        "425",
+        "540",
+        "82",
+        "93"
+      ],
+      "tidal_album_url": "https://tidal.com/album/92222513",
+      "tidal_album_id": "92222513",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-26-musica-per-mandolin-e-liuto-2006/",
+      "additional_source_urls": [],
+      "notes": "",
+      "performers": [
+        {
+          "name": "Rolf Lislevand",
+          "role": "performer"
+        }
+      ]
+    },
+    {
+      "volume": 27,
+      "title": "Concerti per violoncello I",
+      "naive_catalogue_number": "OP30426",
+      "rv_numbers": [
+        "419",
+        "410",
+        "409",
+        "414",
+        "406",
+        "398",
+        "421"
+      ],
+      "tidal_album_url": "https://tidal.com/album/91802676",
+      "tidal_album_id": "91802676",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-27-concerti-per-violon%e2%80%90-cello-i-2006/",
+      "additional_source_urls": [],
+      "notes": "",
+      "performers": [
+        {
+          "name": "Il Giardino Armonico",
+          "role": "ensemble"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        },
+        {
+          "name": "Christophe Coin",
+          "role": "cello"
+        }
+      ]
+    },
+    {
+      "volume": 28,
+      "title": "Concerti per violino II — Di sfida",
+      "naive_catalogue_number": "OP30427",
+      "rv_numbers": [
+        "232",
+        "264",
+        "325",
+        "353",
+        "243",
+        "368"
+      ],
+      "tidal_album_url": "https://tidal.com/album/92207034",
+      "tidal_album_id": "92207034",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-28-concerti-per-violin-ii-di-sfida-2006/",
+      "additional_source_urls": [],
+      "notes": "",
+      "performers": [
+        {
+          "name": "Modo Antiquo",
+          "role": "ensemble"
+        },
+        {
+          "name": "Anton Steck",
+          "role": "violin"
+        }
+      ]
+    },
+    {
+      "volume": 29,
+      "title": "Atenaide",
+      "naive_catalogue_number": "OP30438",
+      "rv_numbers": [
+        "702-B"
+      ],
+      "tidal_album_url": "https://tidal.com/album/91194048",
+      "tidal_album_id": "91194048",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-29-atenaide-2007/",
+      "additional_source_urls": [],
+      "notes": "Versie-aanduiding RV 702-B volgens de officiële uitgave.",
+      "performers": [
+        {
+          "name": "Modo Antiquo",
+          "role": "ensemble"
+        },
+        {
+          "name": "Federico Maria Sardelli",
+          "role": "conductor"
+        }
+      ]
+    },
+    {
+      "volume": 30,
+      "title": "Arie ritrovate",
+      "naive_catalogue_number": "OP30443",
+      "rv_numbers": [
+        "714",
+        "739",
+        "736",
+        "136",
+        "734",
+        "706",
+        "738",
+        "369",
+        "732",
+        "819"
+      ],
+      "tidal_album_url": "https://tidal.com/album/91195549",
+      "tidal_album_id": "91195549",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-30-arie-ritrovate-2007/",
+      "additional_source_urls": [],
+      "notes": "Catalogusnummer OP30443. Inclusief de instrumentale werken RV 136 en 369; opera-RV-nummers verwijzen naar aria’s. RV 819 volgt de huidige trackmetadata voor Orlando 1714.",
+      "performers": [
+        {
+          "name": "Accademia Bizantina",
+          "role": "ensemble"
+        }
+      ]
+    },
+    {
+      "volume": 31,
+      "title": "Concerti per violoncello II",
+      "naive_catalogue_number": "OP30457",
+      "rv_numbers": [
+        "411",
+        "401",
+        "408",
+        "417",
+        "399",
+        "403",
+        "422"
+      ],
+      "tidal_album_url": "https://tidal.com/album/92207197",
+      "tidal_album_id": "92207197",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-31-concerti-per-violon%e2%80%90-cello-ii-2008/",
+      "additional_source_urls": [],
+      "notes": "",
+      "performers": [
+        {
+          "name": "Il Giardino Armonico",
+          "role": "ensemble"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        },
+        {
+          "name": "Christophe Coin",
+          "role": "cello"
+        }
+      ]
+    },
+    {
+      "volume": 32,
+      "title": "La fida ninfa",
+      "naive_catalogue_number": "OP30410",
+      "rv_numbers": [
+        "714"
+      ],
+      "tidal_album_url": "https://tidal.com/album/78146023",
+      "tidal_album_id": "78146023",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-32-la-fida-ninfa-2008/",
+      "additional_source_urls": [],
+      "notes": "Catalogusnummer gecorrigeerd naar OP30410.",
+      "performers": [
+        {
+          "name": "Ensemble Matheus",
+          "role": "ensemble"
+        },
+        {
+          "name": "Jean-Christophe Spinosi",
+          "role": "conductor"
+        }
+      ]
+    },
+    {
+      "volume": 33,
+      "title": "Concerti per violino III — Il ballo",
+      "naive_catalogue_number": "OP30474",
+      "rv_numbers": [
+        "352",
+        "307",
+        "268",
+        "333",
+        "210",
+        "312",
+        "350"
+      ],
+      "tidal_album_url": "https://tidal.com/album/92207252",
+      "tidal_album_id": "92207252",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-33-concerti-per-violin-iii-il-ballo-2008/",
+      "additional_source_urls": [],
+      "notes": "",
+      "performers": [
+        {
+          "name": "I Barocchisti",
+          "role": "ensemble"
+        },
+        {
+          "name": "Diego Fasolis",
+          "role": "conductor"
+        },
+        {
+          "name": "Duilio Galfetti",
+          "role": "violin"
+        }
+      ]
+    },
+    {
+      "volume": 34,
+      "title": "New Discoveries I",
+      "naive_catalogue_number": "OP30480",
+      "rv_numbers": [
+        "697",
+        "578a",
+        "806",
+        "811",
+        "798",
+        "812",
+        "749.32",
+        "810"
+      ],
+      "tidal_album_url": "https://tidal.com/album/91800957",
+      "tidal_album_id": "91800957",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-34-new-discoveries-i-2008/",
+      "additional_source_urls": [
+        "https://vivaldiedition.net/wp-content/uploads/2021/06/34-OP30480-LIV-Vivaldi-New-discoveries.pdf",
+        "https://www.prestomusic.com/classical/products/7979906--vivaldi-new-discoveries-i"
+      ],
+      "notes": "RV 578a volgens de officiële uitgave; TIDAL laat de a weg. RV 697 betreft een aria uit Argippo, niet het pasticcio op volume 64.",
+      "performers": [
+        {
+          "name": "Modo Antiquo",
+          "role": "ensemble"
+        },
+        {
+          "name": "Federico Maria Sardelli",
+          "role": "conductor"
+        }
+      ]
+    },
+    {
+      "volume": 35,
+      "title": "Concerti per oboe",
+      "naive_catalogue_number": "OP30478",
+      "rv_numbers": [
+        "447",
+        "455",
+        "451",
+        "463",
+        "457",
+        "453",
+        "450"
+      ],
+      "tidal_album_url": "https://tidal.com/album/78146110",
+      "tidal_album_id": "78146110",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-35-concerti-per-oboe-2008/",
+      "additional_source_urls": [],
+      "notes": "",
+      "performers": [
+        {
+          "name": "Zefiro",
+          "role": "ensemble"
+        },
+        {
+          "name": "Alfredo Bernardini",
+          "role": "oboe"
+        }
+      ]
+    },
+    {
+      "volume": 36,
+      "title": "Gloria",
+      "naive_catalogue_number": "OP30485",
+      "rv_numbers": [
+        "642",
+        "589",
+        "588"
+      ],
+      "tidal_album_url": "https://tidal.com/album/73947359",
+      "tidal_album_id": "73947359",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-36-gloria-2009/",
+      "additional_source_urls": [],
+      "notes": "",
+      "performers": [
+        {
+          "name": "Concerto Italiano",
+          "role": "ensemble"
+        },
+        {
+          "name": "Rinaldo Alessandrini",
+          "role": "conductor"
+        }
+      ]
+    },
+    {
+      "volume": 37,
+      "title": "Farnace",
+      "naive_catalogue_number": "OP30471",
+      "rv_numbers": [
+        "711-D"
+      ],
+      "tidal_album_url": "https://tidal.com/album/91797655",
+      "tidal_album_id": "91797655",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-37-farnace-2009/",
+      "additional_source_urls": [],
+      "notes": "Versie-aanduiding RV 711-D volgens de officiële uitgave.",
+      "performers": [
+        {
+          "name": "Le Concert des Nations",
+          "role": "ensemble"
+        },
+        {
+          "name": "Jordi Savall",
+          "role": "conductor"
+        }
+      ]
+    },
+    {
+      "volume": 38,
+      "title": "Armida al campo d'Egitto",
+      "naive_catalogue_number": "OP30492",
+      "rv_numbers": [
+        "699"
+      ],
+      "tidal_album_url": "https://tidal.com/album/92795990",
+      "tidal_album_id": "92795990",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-38-armida-2009/",
+      "additional_source_urls": [],
+      "notes": "Reconstructie van de tweede akte; geen complete overgeleverde opera.",
+      "performers": [
+        {
+          "name": "Concerto Italiano",
+          "role": "ensemble"
+        },
+        {
+          "name": "Rinaldo Alessandrini",
+          "role": "conductor"
+        }
+      ]
+    },
+    {
+      "volume": 39,
+      "title": "Concerti per fagotto I",
+      "naive_catalogue_number": "OP30496",
+      "rv_numbers": [
+        "493",
+        "495",
+        "477",
+        "488",
+        "503",
+        "471",
+        "484"
+      ],
+      "tidal_album_url": "https://tidal.com/album/65305766",
+      "tidal_album_id": "65305766",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-39-concerti-per-fagotto-i-2009/",
+      "additional_source_urls": [],
+      "notes": "",
+      "performers": [
+        {
+          "name": "L’Aura Soave Cremona",
+          "role": "ensemble"
+        },
+        {
+          "name": "Sergio Azzolini",
+          "role": "bassoon"
+        }
+      ]
+    },
+    {
+      "volume": 40,
+      "title": "Arie per tenore",
+      "naive_catalogue_number": "OP30504",
+      "rv_numbers": [
+        "738",
+        "700",
+        "706",
+        "740",
+        "110",
+        "719",
+        "706-B",
+        "739",
+        "709",
+        "711",
+        "703"
+      ],
+      "tidal_album_url": "https://tidal.com/album/91194278",
+      "tidal_album_id": "91194278",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-40-arie-per-tenore-2010/",
+      "additional_source_urls": [
+        "https://tower.jp/item/2785341",
+        "https://www.prestomusic.com/classical/works/170522--vivaldi-vinta-a-pie-d-un-dolce-affetto-version-b-from-la-verita-in-cimento/browse"
+      ],
+      "notes": "Inclusief het instrumentale RV 110. De overige RV-nummers verwijzen naar de bronopera’s; RV 739 is aangevuld voor Vinta a piè d’un dolce affetto. RV 706 en 706-B blijven afzonderlijk genoteerd conform de trackmetadata.",
+      "performers": [
+        {
+          "name": "I Barocchisti",
+          "role": "ensemble"
+        },
+        {
+          "name": "Diego Fasolis",
+          "role": "conductor"
+        }
+      ]
+    },
+    {
+      "volume": 41,
+      "title": "Ottone in villa",
+      "naive_catalogue_number": "OP30493",
+      "rv_numbers": [
+        "729"
+      ],
+      "tidal_album_url": "https://tidal.com/album/91194330",
+      "tidal_album_id": "91194330",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-41-ottone-in-villa-2010/",
+      "additional_source_urls": [],
+      "notes": "",
+      "performers": [
+        {
+          "name": "Il Giardino Armonico",
+          "role": "ensemble"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ]
+    },
+    {
+      "volume": 42,
+      "title": "Concerti per fagotto II",
+      "naive_catalogue_number": "OP30518",
+      "rv_numbers": [
+        "499",
+        "472",
+        "490",
+        "496",
+        "504",
+        "483",
+        "470"
+      ],
+      "tidal_album_url": "https://tidal.com/album/65305986",
+      "tidal_album_id": "65305986",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-42-concerti-per-fagot%e2%80%90-to-ii-2010/",
+      "additional_source_urls": [],
+      "notes": "",
+      "performers": [
+        {
+          "name": "L’Aura Soave Cremona",
+          "role": "ensemble"
+        },
+        {
+          "name": "Sergio Azzolini",
+          "role": "bassoon"
+        }
+      ]
+    },
+    {
+      "volume": 43,
+      "title": "Teuzzone",
+      "naive_catalogue_number": "OP30513",
+      "rv_numbers": [
+        "736"
+      ],
+      "tidal_album_url": "https://tidal.com/album/92207656",
+      "tidal_album_id": "92207656",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-43-teuzzone-2011/",
+      "additional_source_urls": [],
+      "notes": "",
+      "performers": [
+        {
+          "name": "Le Concert des Nations",
+          "role": "ensemble"
+        },
+        {
+          "name": "Jordi Savall",
+          "role": "conductor"
+        }
+      ]
+    },
+    {
+      "volume": 44,
+      "title": "Sonate da camera a tre, op. 1",
+      "naive_catalogue_number": "OP30535",
+      "rv_numbers": [
+        "63",
+        "75",
+        "73",
+        "79",
+        "64",
+        "66",
+        "61",
+        "65",
+        "78"
+      ],
+      "tidal_album_url": "https://tidal.com/album/91797772",
+      "tidal_album_id": "91797772",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-44-sonate-da-camera-a-tre-opus-1-2011/",
+      "additional_source_urls": [],
+      "notes": "Deze uitgave bevat negen sonates, niet alle twaalf sonates van opus 1.",
+      "performers": [
+        {
+          "name": "L’Estravagante",
+          "role": "ensemble"
+        }
+      ]
+    },
+    {
+      "volume": 45,
+      "title": "Concerti per violino IV — L'imperatore",
+      "naive_catalogue_number": "OP30533",
+      "rv_numbers": [
+        "331",
+        "171",
+        "391",
+        "271",
+        "327",
+        "263a",
+        "181",
+        "181a"
+      ],
+      "tidal_album_url": "https://tidal.com/album/92929122",
+      "tidal_album_id": "92929122",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-45-concerti-per-violin-iv-limperatore-2011/",
+      "additional_source_urls": [
+        "https://www.musicweb-international.com/classrev/2015/Aug/Vivaldi_Minasi_OP30533.htm"
+      ],
+      "notes": "RV 181a betreft het extra opgenomen eerste deel in een alternatieve versie.",
+      "performers": [
+        {
+          "name": "Il Pomo d’Oro",
+          "role": "ensemble"
+        },
+        {
+          "name": "Riccardo Minasi",
+          "role": "violin"
+        }
+      ]
+    },
+    {
+      "volume": 46,
+      "title": "New Discoveries II",
+      "naive_catalogue_number": "OP30534",
+      "rv_numbers": [
+        "431a",
+        "721",
+        "817",
+        "816",
+        "722",
+        "815"
+      ],
+      "tidal_album_url": "https://tidal.com/album/91801069",
+      "tidal_album_id": "91801069",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-46-new-discoveries-ii-2011/",
+      "additional_source_urls": [
+        "https://vivaldiedition.net/wp-content/uploads/2021/06/46-OP-30534-new-discoveries-2-LIVBDEF.pdf"
+      ],
+      "notes": "RV 431a, niet RV 431. RV 721 en 722 verwijzen naar opera-aria’s.",
+      "performers": [
+        {
+          "name": "Modo Antiquo",
+          "role": "ensemble"
+        },
+        {
+          "name": "Federico Maria Sardelli",
+          "role": "conductor"
+        }
+      ]
+    },
+    {
+      "volume": 47,
+      "title": "Orlando 1714",
+      "naive_catalogue_number": "OP30540",
+      "rv_numbers": [
+        "781",
+        "819"
+      ],
+      "tidal_album_url": "https://tidal.com/album/65306104",
+      "tidal_album_id": "65306104",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-47-orlando-1714-2012/",
+      "additional_source_urls": [],
+      "notes": "Orlando 1714 is RV 819; daarnaast staat de openingssinfonia RV 781 op de opname.",
+      "performers": [
+        {
+          "name": "Modo Antiquo",
+          "role": "ensemble"
+        },
+        {
+          "name": "Federico Maria Sardelli",
+          "role": "conductor"
+        }
+      ]
+    },
+    {
+      "volume": 48,
+      "title": "Concerti per fagotto III",
+      "naive_catalogue_number": "OP30539",
+      "rv_numbers": [
+        "485",
+        "502",
+        "474",
+        "480",
+        "494",
+        "475"
+      ],
+      "tidal_album_url": "https://tidal.com/album/65273521",
+      "tidal_album_id": "65273521",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-48-concerti-per-fagot%e2%80%90-to-iii-2012-2/",
+      "additional_source_urls": [],
+      "notes": "Deze uitgave bevat zes fagotconcerten.",
+      "performers": [
+        {
+          "name": "L’Aura Soave Cremona",
+          "role": "ensemble"
+        },
+        {
+          "name": "Sergio Azzolini",
+          "role": "bassoon"
+        }
+      ]
+    },
+    {
+      "volume": 49,
+      "title": "Concerti per violino V — Per Pisendel",
+      "naive_catalogue_number": "OP30538",
+      "rv_numbers": [
+        "177",
+        "212a",
+        "246",
+        "370",
+        "242",
+        "379",
+        "328"
+      ],
+      "tidal_album_url": "https://tidal.com/album/92205621",
+      "tidal_album_id": "92205621",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-49-concerti-per-violino-v-per-pisendel-2012/",
+      "additional_source_urls": [],
+      "notes": "",
+      "performers": [
+        {
+          "name": "Il Pomo d’Oro",
+          "role": "ensemble"
+        },
+        {
+          "name": "Dmitry Sinkovsky",
+          "role": "violin"
+        }
+      ]
+    },
+    {
+      "volume": 50,
+      "title": "Catone in Utica",
+      "naive_catalogue_number": "OP30545",
+      "rv_numbers": [
+        "725",
+        "705"
+      ],
+      "tidal_album_url": "https://tidal.com/album/91194446",
+      "tidal_album_id": "91194446",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-50-catone-in-utica-2012/",
+      "additional_source_urls": [],
+      "notes": "Inclusief de openingssinfonia uit RV 725; Catone in Utica is RV 705, met gereconstrueerde eerste akte.",
+      "performers": [
+        {
+          "name": "Il Complesso Barocco",
+          "role": "ensemble"
+        },
+        {
+          "name": "Alan Curtis",
+          "role": "conductor"
+        }
+      ]
+    },
+    {
+      "volume": 51,
+      "title": "Concerti per due violini e archi I",
+      "naive_catalogue_number": "OP30550",
+      "rv_numbers": [
+        "523",
+        "510",
+        "509",
+        "517",
+        "515",
+        "508"
+      ],
+      "tidal_album_url": "https://tidal.com/album/91801130",
+      "tidal_album_id": "91801130",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-51-concerti-per-due-violini-e-archi-i-2013/",
+      "additional_source_urls": [],
+      "notes": "OP30550 volgens het officiële boekje en de albumtekst; de voettekst van de webpagina noemt ten onrechte OP30554.",
+      "performers": [
+        {
+          "name": "Il Pomo d’Oro",
+          "role": "ensemble"
+        },
+        {
+          "name": "Dmitry Sinkovsky",
+          "role": "violin"
+        },
+        {
+          "name": "Riccardo Minasi",
+          "role": "violin"
+        }
+      ]
+    },
+    {
+      "volume": 52,
+      "title": "Concerti per archi II",
+      "naive_catalogue_number": "OP30554",
+      "rv_numbers": [
+        "150",
+        "134",
+        "151",
+        "119",
+        "110",
+        "160",
+        "128",
+        "164",
+        "127",
+        "166",
+        "157"
+      ],
+      "tidal_album_url": "https://tidal.com/album/91194501",
+      "tidal_album_id": "91194501",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-68-concerti-per-archi-ii-2013/",
+      "additional_source_urls": [],
+      "notes": "",
+      "performers": [
+        {
+          "name": "Concerto Italiano",
+          "role": "ensemble"
+        },
+        {
+          "name": "Rinaldo Alessandrini",
+          "role": "conductor"
+        }
+      ]
+    },
+    {
+      "volume": 53,
+      "title": "L'incoronazione di Dario",
+      "naive_catalogue_number": "OP30553",
+      "rv_numbers": [
+        "719"
+      ],
+      "tidal_album_url": "https://tidal.com/album/91801343",
+      "tidal_album_id": "91801343",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-53-lincoronazione-di-dario-2013/",
+      "additional_source_urls": [],
+      "notes": "",
+      "performers": [
+        {
+          "name": "Ottavio Dantone",
+          "role": "conductor"
+        }
+      ]
+    },
+    {
+      "volume": 54,
+      "title": "Concerti per fagotto IV",
+      "naive_catalogue_number": "OP30551",
+      "rv_numbers": [
+        "469",
+        "491",
+        "498",
+        "492",
+        "500",
+        "473"
+      ],
+      "tidal_album_url": "https://tidal.com/album/65305033",
+      "tidal_album_id": "65305033",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-54-concerti-per-fagotto-iv-2015/",
+      "additional_source_urls": [],
+      "notes": "",
+      "performers": [
+        {
+          "name": "L’Onda Armonica",
+          "role": "ensemble"
+        },
+        {
+          "name": "Sergio Azzolini",
+          "role": "bassoon"
+        }
+      ]
+    },
+    {
+      "volume": 55,
+      "title": "Dorilla in Tempe",
+      "naive_catalogue_number": "OP30560",
+      "rv_numbers": [
+        "709"
+      ],
+      "tidal_album_url": "https://tidal.com/album/81199775",
+      "tidal_album_id": "81199775",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-55-dorilla-in-tempe-2017/",
+      "additional_source_urls": [],
+      "notes": "",
+      "performers": [
+        {
+          "name": "I Barocchisti",
+          "role": "ensemble"
+        },
+        {
+          "name": "Diego Fasolis",
+          "role": "conductor"
+        }
+      ]
+    },
+    {
+      "volume": 56,
+      "title": "Concerti per archi III e concerti per viola d'amore",
+      "naive_catalogue_number": "OP30570",
+      "rv_numbers": [
+        "167",
+        "118",
+        "161",
+        "138",
+        "145",
+        "109",
+        "152",
+        "126",
+        "155",
+        "165",
+        "117",
+        "142",
+        "163",
+        "394",
+        "397",
+        "393",
+        "396",
+        "395"
+      ],
+      "tidal_album_url": "https://tidal.com/album/87860696",
+      "tidal_album_id": "87860696",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-56-concerti-per-archi-iii-e-concerti-per-viola-damore-2018/",
+      "additional_source_urls": [],
+      "notes": "RV 744 wordt in trackmetadata alleen als verwant werk bij RV 396 genoemd en is daarom niet als zelfstandig opgenomen werk toegevoegd.",
+      "performers": [
+        {
+          "name": "Accademia Bizantina",
+          "role": "ensemble"
+        },
+        {
+          "name": "Ottavio Dantone",
+          "role": "conductor"
+        }
+      ]
+    },
+    {
+      "volume": 57,
+      "title": "Concerti per violino VI — La boemia",
+      "naive_catalogue_number": "OP30572",
+      "rv_numbers": [
+        "282",
+        "278",
+        "380",
+        "186",
+        "288",
+        "330"
+      ],
+      "tidal_album_url": "https://tidal.com/album/94258645",
+      "tidal_album_id": "94258645",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-57-concerti-per-violino-vi-la-boemia-2018/",
+      "additional_source_urls": [
+        "https://www.prestomusic.com/classical/products/8506342--vivaldi-concerti-per-violino-vol-vi-la-boemia"
+      ],
+      "notes": "OP30572; de officiële pagina heeft een onjuiste voettekst en boekjeslink. Catalogusnummer ook gecontroleerd bij Presto Music.",
+      "performers": [
+        {
+          "name": "Europa Galante",
+          "role": "ensemble"
+        },
+        {
+          "name": "Fabio Biondi",
+          "role": "violin"
+        }
+      ]
+    },
+    {
+      "volume": 58,
+      "title": "Il Giustino",
+      "naive_catalogue_number": "OP30571",
+      "rv_numbers": [
+        "717"
+      ],
+      "tidal_album_url": "https://tidal.com/album/97762130",
+      "tidal_album_id": "97762130",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-58-il-giustino-2018/",
+      "additional_source_urls": [],
+      "notes": "",
+      "performers": [
+        {
+          "name": "Accademia Bizantina",
+          "role": "ensemble"
+        },
+        {
+          "name": "Ottavio Dantone",
+          "role": "conductor"
+        }
+      ]
+    },
+    {
+      "volume": 59,
+      "title": "Musica sacra per alto",
+      "naive_catalogue_number": "OP30569",
+      "rv_numbers": [
+        "638",
+        "612",
+        "582",
+        "618",
+        "641",
+        "615"
+      ],
+      "tidal_album_url": "https://tidal.com/album/107519620",
+      "tidal_album_id": "107519620",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-59-musica-sacra-per-alto-2019/",
+      "additional_source_urls": [],
+      "notes": "RV 641 is aangevuld vanuit de officiële albumomschrijving.",
+      "performers": [
+        {
+          "name": "Accademia Bizantina",
+          "role": "ensemble"
+        },
+        {
+          "name": "Ottavio Dantone",
+          "role": "conductor"
+        }
+      ]
+    },
+    {
+      "volume": 60,
+      "title": "Arie e cantate per contralto",
+      "naive_catalogue_number": "OP30584",
+      "rv_numbers": [
+        "684",
+        "738",
+        "737",
+        "704",
+        "685",
+        "739",
+        "686",
+        "717"
+      ],
+      "tidal_album_url": "https://tidal.com/album/107519638",
+      "tidal_album_id": "107519638",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-60-arie-e-cantate-per-contralto-2019/",
+      "additional_source_urls": [],
+      "notes": "RV 684, 685 en 686 zijn cantates; de overige RV-nummers verwijzen naar de bronopera’s van de aria’s.",
+      "performers": [
+        {
+          "name": "Accademia Bizantina",
+          "role": "ensemble"
+        },
+        {
+          "name": "Ottavio Dantone",
+          "role": "conductor"
+        },
+        {
+          "name": "Delphine Galou",
+          "role": "contralto"
+        }
+      ]
+    },
+    {
+      "volume": 61,
+      "title": "Concerti per violoncello III",
+      "naive_catalogue_number": "OP30574",
+      "rv_numbers": [
+        "400",
+        "420",
+        "404",
+        "423",
+        "407",
+        "415"
+      ],
+      "tidal_album_url": "https://tidal.com/album/117652293",
+      "tidal_album_id": "117652293",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-61-concerti-per-violoncello-iii-2019/",
+      "additional_source_urls": [],
+      "notes": "",
+      "performers": [
+        {
+          "name": "L’Onda Armonica",
+          "role": "ensemble"
+        },
+        {
+          "name": "Christophe Coin",
+          "role": "cello"
+        }
+      ]
+    },
+    {
+      "volume": 62,
+      "title": "Concerti per violino VII — Per il castello",
+      "naive_catalogue_number": "OP7078",
+      "rv_numbers": [
+        "389",
+        "257",
+        "371",
+        "273",
+        "367",
+        "390"
+      ],
+      "tidal_album_url": "https://tidal.com/album/119018912",
+      "tidal_album_id": "119018912",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-62-concerti-per-violino-vii-per-il-castello-2019/",
+      "additional_source_urls": [],
+      "notes": "",
+      "performers": [
+        {
+          "name": "Accademia Bizantina",
+          "role": "ensemble"
+        },
+        {
+          "name": "Ottavio Dantone",
+          "role": "conductor"
+        },
+        {
+          "name": "Alessandro Tampieri",
+          "role": "violin"
+        }
+      ]
+    },
+    {
+      "volume": 63,
+      "title": "Concerti per violino VIII — Il teatro",
+      "naive_catalogue_number": "OP30585",
+      "rv_numbers": [
+        "187",
+        "387",
+        "235",
+        "217",
+        "321",
+        "366"
+      ],
+      "tidal_album_url": "https://tidal.com/album/131385910",
+      "tidal_album_id": "131385910",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-63-concerti-per-violino-viii-il-teatro/",
+      "additional_source_urls": [],
+      "notes": "",
+      "performers": [
+        {
+          "name": "Le Concert de la Loge",
+          "role": "ensemble"
+        },
+        {
+          "name": "Julien Chauvin",
+          "role": "violin"
+        }
+      ]
+    },
+    {
+      "volume": 64,
+      "title": "Argippo",
+      "naive_catalogue_number": "OP7079",
+      "rv_numbers": [
+        "112",
+        "Anh. 137"
+      ],
+      "tidal_album_url": "https://tidal.com/album/159927017",
+      "tidal_album_id": "159927017",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-64-argippo/",
+      "additional_source_urls": [],
+      "notes": "Het opgenomen Argippo is het pasticcio RV Anh. 137, niet RV 697. De openingssinfonia is RV 112.",
+      "performers": [
+        {
+          "name": "Europa Galante",
+          "role": "ensemble"
+        },
+        {
+          "name": "Fabio Biondi",
+          "role": "director"
+        }
+      ]
+    },
+    {
+      "volume": 65,
+      "title": "Il Tamerlano (Il Bajazet)",
+      "naive_catalogue_number": "OP7080",
+      "rv_numbers": [
+        "703"
+      ],
+      "tidal_album_url": "https://tidal.com/album/153965807",
+      "tidal_album_id": "153965807",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-65-il-tamerlano-il-bajazet/",
+      "additional_source_urls": [],
+      "notes": "",
+      "performers": [
+        {
+          "name": "Accademia Bizantina",
+          "role": "ensemble"
+        },
+        {
+          "name": "Ottavio Dantone",
+          "role": "conductor"
+        }
+      ]
+    },
+    {
+      "volume": 66,
+      "title": "Concerti per fagotto V",
+      "naive_catalogue_number": "OP30573",
+      "rv_numbers": [
+        "497",
+        "476",
+        "486",
+        "481",
+        "467",
+        "489",
+        "479"
+      ],
+      "tidal_album_url": "https://tidal.com/album/179330143",
+      "tidal_album_id": "179330143",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-66-concerti-per-fagotto-v/",
+      "additional_source_urls": [],
+      "notes": "",
+      "performers": [
+        {
+          "name": "L’Onda Armonica",
+          "role": "ensemble"
+        },
+        {
+          "name": "Sergio Azzolini",
+          "role": "bassoon"
+        }
+      ]
+    },
+    {
+      "volume": 67,
+      "title": "Concerti per violino IX — Le nuove vie",
+      "naive_catalogue_number": "OP7258",
+      "rv_numbers": [
+        "194",
+        "211",
+        "281",
+        "283",
+        "346",
+        "365"
+      ],
+      "tidal_album_url": null,
+      "tidal_album_id": null,
+      "tidal_status": "not_found_full_album",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-67-concerti-per-violino-ix-le-nuove-vie/",
+      "additional_source_urls": [
+        "https://bfan.link/vivaldi-concerti-per-violino-ix-%22le-nuove-vie%22",
+        "https://tidal.com/album/187261613"
+      ],
+      "notes": "Volledig album niet gevonden op TIDAL. De TIDAL-knop op de label-smartlink leidt naar een single met alleen het eerste deel van RV 283: https://tidal.com/album/187261613. Deze single is niet als albumkoppeling opgenomen.",
+      "performers": [
+        {
+          "name": "Concerto Italiano",
+          "role": "ensemble"
+        },
+        {
+          "name": "Rinaldo Alessandrini",
+          "role": "conductor"
+        },
+        {
+          "name": "Boris Begelman",
+          "role": "violin"
+        }
+      ]
+    },
+    {
+      "volume": 68,
+      "title": "Cantate per soprano I",
+      "naive_catalogue_number": "OP7257",
+      "rv_numbers": [
+        "650",
+        "652",
+        "669",
+        "667",
+        "660",
+        "665"
+      ],
+      "tidal_album_url": "https://tidal.com/album/202223956",
+      "tidal_album_id": "202223956",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-68-cantate-per-soprano-i/",
+      "additional_source_urls": [],
+      "notes": "",
+      "performers": [
+        {
+          "name": "Abchordis Ensemble",
+          "role": "ensemble"
+        },
+        {
+          "name": "Andrea Buccarella",
+          "role": "director"
+        },
+        {
+          "name": "Arianna Vendittelli",
+          "role": "soprano"
+        }
+      ]
+    },
+    {
+      "volume": 69,
+      "title": "Concerti per violino X — Intorno a Pisendel",
+      "naive_catalogue_number": "OP7546",
+      "rv_numbers": [
+        "314",
+        "226",
+        "369",
+        "237",
+        "225",
+        "340"
+      ],
+      "tidal_album_url": "https://tidal.com/album/238630839",
+      "tidal_album_id": "238630839",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vivaldi-edition/",
+      "additional_source_urls": [
+        "https://vivaldiedition.net/wp-content/uploads/2022/09/OP7546-LIV-Concerti-per-violino-X-Julien-Chauvin.pdf",
+        "https://www.crescendo-magazine.be/vivaldi-concertos-pour-violon-autour-du-virtuose-pisendel/"
+      ],
+      "notes": "RV 314 is het concerto als geheel; het Adagio gebruikt een variant aangeduid als RV 314a.",
+      "performers": [
+        {
+          "name": "Le Concert de la Loge",
+          "role": "ensemble"
+        },
+        {
+          "name": "Julien Chauvin",
+          "role": "violin"
+        }
+      ]
+    },
+    {
+      "volume": 70,
+      "title": "Serenata a tre",
+      "naive_catalogue_number": "OP7901",
+      "rv_numbers": [
+        "690"
+      ],
+      "tidal_album_url": "https://tidal.com/album/276512507",
+      "tidal_album_id": "276512507",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-70-serenata-a-tre/",
+      "additional_source_urls": [],
+      "notes": "",
+      "performers": [
+        {
+          "name": "Abchordis Ensemble",
+          "role": "ensemble"
+        },
+        {
+          "name": "Andrea Buccarella",
+          "role": "director"
+        }
+      ]
+    },
+    {
+      "volume": 71,
+      "title": "Concerti per violino XI — Per Anna Maria",
+      "naive_catalogue_number": "OP7368",
+      "rv_numbers": [
+        "229",
+        "363",
+        "207",
+        "260",
+        "179a",
+        "261"
+      ],
+      "tidal_album_url": "https://tidal.com/album/304319777",
+      "tidal_album_id": "304319777",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-71-concerti-per-violino-xi-per-anna-mariavol-71/",
+      "additional_source_urls": [],
+      "notes": "De extra track is een versierde versie van het Largo uit RV 179a met materiaal uit RV 581; RV 581 is daarom niet als apart volledig werk vermeld.",
+      "performers": [
+        {
+          "name": "Europa Galante",
+          "role": "ensemble"
+        },
+        {
+          "name": "Fabio Biondi",
+          "role": "violin"
+        }
+      ]
+    },
+    {
+      "volume": 72,
+      "title": "Musica sacra per coro e orchestra I",
+      "naive_catalogue_number": "OP8564",
+      "rv_numbers": [
+        "807",
+        "596",
+        "620",
+        "811",
+        "611"
+      ],
+      "tidal_album_url": "https://tidal.com/album/382776448",
+      "tidal_album_id": "382776448",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-72-musica-sacra-per-coro-e-orchestra/",
+      "additional_source_urls": [],
+      "notes": "",
+      "performers": [
+        {
+          "name": "Coro e Orchestra Ghislieri",
+          "role": "ensemble"
+        },
+        {
+          "name": "Giulio Prandi",
+          "role": "conductor"
+        }
+      ]
+    },
+    {
+      "volume": 73,
+      "title": "La Gloria e Imeneo",
+      "naive_catalogue_number": "OP8877",
+      "rv_numbers": [
+        "138",
+        "687"
+      ],
+      "tidal_album_url": "https://tidal.com/album/444026485",
+      "tidal_album_id": "444026485",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-73-la-gloria-e-imeneo/",
+      "additional_source_urls": [],
+      "notes": "Inclusief de openingssinfonia RV 138 naast de serenata RV 687.",
+      "performers": [
+        {
+          "name": "Abchordis Ensemble",
+          "role": "ensemble"
+        },
+        {
+          "name": "Andrea Buccarella",
+          "role": "director"
+        }
+      ]
+    },
+    {
+      "volume": 74,
+      "title": "Arsilda, regina di Ponto",
+      "naive_catalogue_number": "OP8676",
+      "rv_numbers": [
+        "700"
+      ],
+      "tidal_album_url": "https://tidal.com/album/401308324",
+      "tidal_album_id": "401308324",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/vol-73-arsilda/",
+      "additional_source_urls": [],
+      "notes": "",
+      "performers": [
+        {
+          "name": "La Cetra Barockorchester Basel",
+          "role": "ensemble"
+        },
+        {
+          "name": "Andrea Marcon",
+          "role": "conductor"
+        }
+      ]
+    },
+    {
+      "volume": 75,
+      "title": "Concerti per vari strumenti II",
+      "naive_catalogue_number": "OP9025",
+      "rv_numbers": [
+        "570",
+        "557",
+        "543",
+        "553",
+        "535",
+        "555"
+      ],
+      "tidal_album_url": "https://tidal.com/album/502817806",
+      "tidal_album_id": "502817806",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/concerti-per-vari-strumenti-ii/",
+      "additional_source_urls": [],
+      "notes": "",
+      "performers": [
+        {
+          "name": "Les Musiciens du Prince-Monaco",
+          "role": "ensemble"
+        },
+        {
+          "name": "Gianluca Capuano",
+          "role": "conductor"
+        }
+      ]
+    },
+    {
+      "volume": 76,
+      "title": "Concerti per fagotto VI",
+      "naive_catalogue_number": "OP7956",
+      "rv_numbers": [
+        "501",
+        "478",
+        "487",
+        "468/399",
+        "482/406",
+        "466",
+        "402"
+      ],
+      "tidal_album_url": "https://tidal.com/album/518903747",
+      "tidal_album_id": "518903747",
+      "tidal_status": "verified_album_page",
+      "verified_date": "2026-09-28",
+      "official_source_url": "https://vivaldiedition.net/portfolio/concerti-per-vari-strumenti-ii-2/",
+      "additional_source_urls": [],
+      "notes": "RV 468/399 en 482/406 duiden de op dit album gebruikte reconstructies/combinaties aan; niet vier afzonderlijke complete concerten.",
+      "performers": [
+        {
+          "name": "L’Onda Armonica",
+          "role": "ensemble"
+        },
+        {
+          "name": "Sergio Azzolini",
+          "role": "bassoon"
+        }
+      ]
+    }
+  ],
+  "scope_note": "All 76 albums retained as provenance; canonical data contains works and one selected recommendation per work. Existing legacy recommendations retained. Excerpt coverage is explicit."
+}

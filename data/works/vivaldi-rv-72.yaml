@@ -1,0 +1,10 @@
+id: 2ec2a178e5504daf8bf60a7470913859
+work_group_id: 176128c23df14868a648bf1fc0872392
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Chamber Sonata, RV 72
+catalogue:
+  rv: RV 72
+  opus: Op. 5
+source:
+  file: docs/vivaldi.md
+  line: '20'

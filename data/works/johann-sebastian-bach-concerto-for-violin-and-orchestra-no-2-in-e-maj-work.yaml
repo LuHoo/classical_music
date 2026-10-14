@@ -1,0 +1,11 @@
+id: "johann-sebastian-bach-concerto-for-violin-and-orchestra-no-2-in-e-maj-work"
+work_group_id: "johann-sebastian-bach-concerto-for-violin-and-orchestra-no-2-in-e-maj-group"
+composer_id: "johann-sebastian-bach"
+title: "Concerto for violin and orchestra No. 2 in E maj."
+source:
+  file: "docs/bachJS.md"
+  line: "14"
+catalogue:
+  bwv: "BWV 1042"
+date_text: "http://www.tidal.com/track/95609830"
+category: "Orchestral"

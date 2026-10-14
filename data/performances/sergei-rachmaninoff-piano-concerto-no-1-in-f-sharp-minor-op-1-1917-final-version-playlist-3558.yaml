@@ -1,0 +1,20 @@
+id: sergei-rachmaninoff-piano-concerto-no-1-in-f-sharp-minor-op-1-1917-final-version-playlist-3558
+work_id: sergei-rachmaninoff-piano-concerto-no-1-in-f-sharp-minor-op-1-1917-final-version
+performers:
+- name: Yuja Wang
+  artist_id: yuja-wang
+  role: soloist
+- name: Los Angeles Philharmonic
+  artist_id: los-angeles-philharmonic
+  role: orchestra
+- name: Gustavo Dudamel
+- name: LA Philharmonic
+- name: Gustavo Dudaumel
+links:
+  tidal:
+    url: https://tidal.com/track/312767874
+release:
+  album_title: 'Rachmaninoff: The Piano Concertos & Paganini Rhapsody'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

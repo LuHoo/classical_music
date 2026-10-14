@@ -1,0 +1,15 @@
+id: john-adams-common-tones-in-simple-time-playlist-3117
+work_id: john-adams-common-tones-in-simple-time
+performers:
+- name: Edo de Waart
+- name: San Francisco Symphony
+  artist_id: san-francisco-symphony
+  role: orchestra
+links:
+  tidal:
+    url: https://tidal.com/track/10903443
+release:
+  album_title: The Chairman Dances
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

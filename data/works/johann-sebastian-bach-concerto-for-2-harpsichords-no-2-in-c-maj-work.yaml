@@ -1,0 +1,11 @@
+id: "johann-sebastian-bach-concerto-for-2-harpsichords-no-2-in-c-maj-work"
+work_group_id: "johann-sebastian-bach-concerto-for-2-harpsichords-no-2-in-c-maj-group"
+composer_id: "johann-sebastian-bach"
+title: "Concerto for 2 harpsichords (No. 2) in C maj."
+source:
+  file: "docs/bachJS.md"
+  line: "62"
+catalogue:
+  bwv: "BWV 1061.1"
+date_text: "1732–1733 or earlier"
+category: "Orchestral"

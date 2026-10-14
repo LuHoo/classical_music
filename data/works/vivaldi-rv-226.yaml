@@ -1,0 +1,9 @@
+id: 8667c97f7dff437d8055fa99ed0fef90
+work_group_id: 3facba622e5f40bb98c237e0ca9ea7e0
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 226
+catalogue:
+  rv: RV 226
+source:
+  url: https://vivaldiedition.net/portfolio/vivaldi-edition/
+  file: reports/vivaldi-naive-edition/catalogue.json

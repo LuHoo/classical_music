@@ -1,0 +1,10 @@
+id: bf455ebdcf40429ea1eb70e0727669bf
+work_group_id: 3176c0ca37f04c6a8fa12e25eaceb5ae
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 188
+catalogue:
+  rv: RV 188
+  opus: Op. 7
+source:
+  file: docs/vivaldi.md
+  line: '24'

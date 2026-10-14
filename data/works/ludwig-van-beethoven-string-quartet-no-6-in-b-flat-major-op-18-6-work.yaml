@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-string-quartet-no-6-in-b-flat-major-op-18-6-work"
+work_group_id: "ludwig-van-beethoven-string-quartet-no-6-in-b-flat-major-op-18-6-group"
+composer_id: "ludwig-van-beethoven"
+title: "String Quartet No. 6 in B♭ major"
+source:
+  file: "docs/beethoven.md"
+  line: "182"
+catalogue:
+  opus: "Op. 18/6"
+date_text: "1800"
+category: "Chamber"

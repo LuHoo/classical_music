@@ -1,0 +1,14 @@
+id: 
+  dmitri-shostakovich-october-work-orchestre-philharmonique-de-radio-france-mikko-franck
+work_id: dmitri-shostakovich-october-work
+source:
+  file: docs/shostakovich.md
+  line: '153'
+links:
+  tidal:
+    url: https://tidal.com/browse/album/409492660
+performers:
+- name: Orchestre Philharmonique de Radio France
+  role: performer
+- name: Mikko Franck
+  role: performer

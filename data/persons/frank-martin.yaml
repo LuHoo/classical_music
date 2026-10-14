@@ -1,0 +1,7 @@
+id: frank-martin
+name: Frank Martin
+roles:
+- composer
+source:
+  file: docs/martin.md
+  url: https://www.frankmartin.org/works/

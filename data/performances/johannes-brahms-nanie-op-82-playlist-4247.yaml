@@ -1,0 +1,16 @@
+id: johannes-brahms-nanie-op-82-playlist-4247
+work_id: johannes-brahms-nanie-op-82
+performers:
+- name: James Gaffigan
+- name: Zürcher Sing-Akademie
+- name: Luzerner Sinfonieorchester
+  artist_id: luzerner-sinfonieorchester
+  role: orchestra
+links:
+  tidal:
+    url: https://tidal.com/track/96399250
+release:
+  album_title: 'Beethoven: Symphony No. 9 & Brahms: Nänie'
+source:
+  file: reports/playlist-import/best-classical/window-4001-5518.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

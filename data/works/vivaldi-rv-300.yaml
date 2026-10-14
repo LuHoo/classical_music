@@ -1,0 +1,10 @@
+id: acdf06b6628e47e991aa8c72d514d21e
+work_group_id: 3e07541e118c4ef3b314167b2eda3e57
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 300
+catalogue:
+  rv: RV 300
+  opus: Op. 9
+source:
+  file: docs/vivaldi.md
+  line: '28'

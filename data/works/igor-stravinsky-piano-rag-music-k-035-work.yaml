@@ -1,0 +1,11 @@
+id: "igor-stravinsky-piano-rag-music-k-035-work"
+work_group_id: "igor-stravinsky-piano-rag-music-k-035-group"
+composer_id: "igor-stravinsky"
+title: "Piano-Rag-Music"
+source:
+  file: "docs/stravinsky.md"
+  line: "222"
+catalogue:
+  k: "K 035"
+date_text: "1919"
+category: "Keyboard"

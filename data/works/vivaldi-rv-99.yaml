@@ -1,0 +1,9 @@
+id: 97da4c0777964c2b9dc008f6e876eadc
+work_group_id: c9941b661f944d2ea7f0d78db466d646
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Chamber Concerto, RV 99
+catalogue:
+  rv: RV 99
+source:
+  url: https://vivaldiedition.net/portfolio/vol-1-concerti-da-camera-2001/
+  file: reports/vivaldi-naive-edition/catalogue.json

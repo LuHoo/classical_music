@@ -1,0 +1,17 @@
+id: erno-dohnanyi-variations-on-a-nursery-song-playlist-819
+work_id: erno-dohnanyi-variations-on-a-nursery-song
+performers:
+- name: Sofja Gülbadamova
+  role: performer
+- name: Deutsche Staatsphilharmonie Rheinland-Pfalz
+  role: performer
+- name: Modestas Pitrenas
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/212233625
+release:
+  album_title: 'Dohnányi: Concertos'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

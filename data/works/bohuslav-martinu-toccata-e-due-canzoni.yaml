@@ -1,0 +1,10 @@
+id: bohuslav-martinu-toccata-e-due-canzoni
+work_group_id: bohuslav-martinu-toccata-e-due-canzoni-group
+composer_id: bohuslav-martinu
+title: Toccata e due canzoni
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url:
+    https://www.supraphonline.cz/album/271750-martinu-toccata-e-due-canzoni-sinfonietta-la-jolla/flac
+catalogue:
+  h: H. 311

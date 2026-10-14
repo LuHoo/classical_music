@@ -1,0 +1,16 @@
+id: wolfgang-amadeus-mozart-sonata-for-2-pianos-in-d-major-k-448-375a-piano-p383
+work_id: wolfgang-amadeus-mozart-sonata-for-2-pianos-in-d-major-k-448-375a
+performers:
+  - name: Murray Perahia
+    role: piano
+  - name: Radu Lupu
+    role: piano
+links:
+  tidal:
+    url: https://tidal.com/track/75254184
+release:
+  album_title: 'Mozart: Sonata for 2 Pianos in D Major, K. 448 & Schubert: Fantasie in F Minor for 2 Pianos, D.
+    940'
+source:
+  file: reports/playlist-import/piano/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/82853f8e-4fd6-42b6-b0a7-230da5ee86a1

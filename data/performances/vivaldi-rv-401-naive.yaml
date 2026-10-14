@@ -1,0 +1,20 @@
+id: 5428a6e0607449c7b7b081b17627d1ef
+work_id: faceedb1c40947fca33b263b2bf0b9d1
+performers:
+- name: Il Giardino Armonico
+  role: ensemble
+- name: Giovanni Antonini
+  role: conductor
+- name: Christophe Coin
+  role: cello
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP30457
+  album_title: Concerti per violoncello II
+source:
+  url: https://vivaldiedition.net/portfolio/vol-31-concerti-per-violon%e2%80%90-cello-ii-2008/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: 'The Vivaldi Edition, volume 31. Album page verified 2026-09-28. '
+links:
+  tidal:
+    url: https://tidal.com/album/92207197

@@ -1,0 +1,28 @@
+id: berlioz-op5-h75-robert-murray-gabrieli-consort-and-players-wroclaw-philharmonic-choir-orchestra-chetham-s-school-of-music-brass-ensemble-paull-mccreesh
+work_id: berlioz-op5-h75
+performers:
+- artist_id: robert-murray
+  name: Robert Murray
+  role: performer
+- artist_id: gabrieli-consort-and-players
+  name: Gabrieli Consort and Players
+  role: performer
+- artist_id: wroclaw-philharmonic-choir-orchestra
+  name: Wroclaw Philharmonic Choir \& Orchestra
+  role: performer
+- artist_id: chetham-s-school-of-music-brass-ensemble
+  name: Chetham's School of Music Brass Ensemble
+  role: performer
+- artist_id: paull-mccreesh
+  name: Paull McCreesh
+  role: conductor
+source_performer_text: Robert Murray, Gabrieli Consort and Players, Wroclaw Philharmonic Choir \& Orchestra, Chetham's School of Music Brass Ensemble, Paull McCreesh
+links:
+  tidal:
+    url: http://www.tidal.com/track/16921409
+reviews:
+  gramophone:
+    issue: 2011-11
+source:
+  file: /Users/Lucas_new/.codex/.chatgpt-projects/g-p-6a500123ac548191ab37db95c0d285a2/classical_music/docs/berlioz.md
+  line: '16'

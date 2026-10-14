@@ -1,0 +1,13 @@
+id: "paul-hindemith-philharmonic-concerto-work-queensland-so-werner-andreas-albert"
+work_id: "paul-hindemith-philharmonic-concerto-work"
+performers:
+  - name: "Queensland SO"
+    role: "orchestra"
+  - name: "Werner Andreas Albert"
+    role: "conductor"
+links:
+  tidal:
+    url: "https://tidal.com/album/284466409"
+source:
+  file: "docs/hindemith.md"
+  line: "70"
