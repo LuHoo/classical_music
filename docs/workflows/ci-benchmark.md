@@ -449,6 +449,7 @@ aggregation, by construction: there is no dependency to skip.
 
 ### Concurrency
 
+{% raw %}
 ```yaml
 concurrency:
   group: >-
@@ -457,6 +458,7 @@ concurrency:
         || format('validate-run-{0}-{1}', github.run_id, github.run_attempt) }}
   cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 ```
+{% endraw %}
 
 For `pull_request` events the group key is the PR number, stable across every
 commit pushed to that PR, so a new push cancels that PR's own superseded run.
