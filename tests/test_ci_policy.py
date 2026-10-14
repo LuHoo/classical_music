@@ -14,6 +14,7 @@ from classical_music.ci_policy import (
     Classification,
     FileChange,
     classify,
+    concurrency_group,
     pytest_targets,
 )
 
@@ -213,3 +214,136 @@ class TestClassificationSerialization:
         assert payload["changed_files"] == [
             {"status": "renamed", "path": "data/works/b.yaml", "previous_path": "data/works/a.yaml"}
         ]
+
+
+class TestIncompleteFileRecordsAreRejected:
+    """Reproductions from the PR #314 review: a record must not vacuously pass
+    because its missing path is filtered out of the evidence used."""
+
+    def test_empty_path_is_rejected(self):
+        result = classify([FileChange(status="modified", path="")], diff_complete=True)
+        assert result.route == "full"
+        assert "invalid file path" in result.reason
+
+    def test_whitespace_only_path_is_rejected(self):
+        result = classify([FileChange(status="modified", path="   ")], diff_complete=True)
+        assert result.route == "full"
+
+    def test_path_with_surrounding_whitespace_is_rejected(self):
+        result = classify([FileChange(status="modified", path=" data/persons/bach.yaml")], diff_complete=True)
+        assert result.route == "full"
+
+    def test_null_path_is_rejected(self):
+        result = classify([FileChange(status="modified", path=None)], diff_complete=True)  # type: ignore[arg-type]
+        assert result.route == "full"
+
+    def test_absolute_path_is_rejected(self):
+        result = classify([FileChange(status="modified", path="/data/persons/bach.yaml")], diff_complete=True)
+        assert result.route == "full"
+
+    def test_dot_dot_segment_is_rejected(self):
+        result = classify([FileChange(status="modified", path="data/../secrets.yaml")], diff_complete=True)
+        assert result.route == "full"
+
+    def test_renamed_without_previous_path_is_rejected(self):
+        result = classify([FileChange(status="renamed", path="data/a.yaml")], diff_complete=True)
+        assert result.route == "full"
+        assert "missing a valid previous path" in result.reason
+
+    def test_renamed_with_empty_previous_path_is_rejected(self):
+        result = classify(
+            [FileChange(status="renamed", path="data/a.yaml", previous_path="")], diff_complete=True
+        )
+        assert result.route == "full"
+
+    def test_renamed_with_whitespace_previous_path_is_rejected(self):
+        result = classify(
+            [FileChange(status="renamed", path="data/a.yaml", previous_path="   ")], diff_complete=True
+        )
+        assert result.route == "full"
+
+    def test_copied_without_previous_path_is_rejected(self):
+        result = classify([FileChange(status="copied", path="data/a.yaml")], diff_complete=True)
+        assert result.route == "full"
+
+    def test_valid_rename_within_allowlist_still_passes(self):
+        result = classify(
+            [FileChange(status="renamed", path="data/works/new.yaml", previous_path="data/works/old.yaml")],
+            diff_complete=True,
+        )
+        assert result.route == "data-only"
+
+    def test_rename_across_boundary_data_to_code_still_rejected(self):
+        result = classify(
+            [FileChange(status="renamed", path="src/classical_music/x.py", previous_path="data/works/old.yaml")],
+            diff_complete=True,
+        )
+        assert result.route == "full"
+
+    def test_rename_across_boundary_code_to_data_still_rejected(self):
+        result = classify(
+            [FileChange(status="renamed", path="data/works/new.yaml", previous_path="src/classical_music/x.py")],
+            diff_complete=True,
+        )
+        assert result.route == "full"
+
+    def test_invalid_record_alongside_otherwise_valid_records_still_fails_closed(self):
+        result = classify(
+            [
+                modified("data/persons/bach.yaml"),
+                FileChange(status="modified", path=""),
+                modified("data/performances/new.yaml"),
+            ],
+            diff_complete=True,
+        )
+        assert result.route == "full"
+
+    def test_invalid_record_is_preserved_in_the_evidence_list(self):
+        """An invalid record must not disappear from changed_files/to_dict()."""
+        change = FileChange(status="modified", path="")
+        result = classify([change], diff_complete=True)
+        assert change in result.changed_files
+        assert result.to_dict()["changed_files"] == [
+            {"status": "modified", "path": "", "previous_path": None}
+        ]
+
+
+class TestConcurrencyGroup:
+    """PR #314 review finding 4: non-PR events must never share a group.
+
+    This is a static mirror of ``validate.yml``'s ``concurrency.group``
+    expression (see that module-level docstring), not proof of GitHub's
+    actual scheduling behaviour. It proves the *invariant* the expression is
+    meant to encode: same PR shares one group; every other run gets a group
+    unique to that run attempt.
+    """
+
+    def test_repeated_pushes_to_the_same_pr_share_one_group(self):
+        first = concurrency_group(pr_number=350, run_id="1001", run_attempt="1")
+        second = concurrency_group(pr_number=350, run_id="1002", run_attempt="1")
+        assert first == second
+
+    def test_two_different_pull_requests_get_different_groups(self):
+        pr_350 = concurrency_group(pr_number=350, run_id="1001", run_attempt="1")
+        pr_351 = concurrency_group(pr_number=351, run_id="1001", run_attempt="1")
+        assert pr_350 != pr_351
+
+    def test_three_non_pr_runs_on_the_same_ref_all_get_distinct_groups(self):
+        run_a = concurrency_group(pr_number=None, run_id="5001", run_attempt="1")
+        run_b = concurrency_group(pr_number=None, run_id="5002", run_attempt="1")
+        run_c = concurrency_group(pr_number=None, run_id="5003", run_attempt="1")
+        assert len({run_a, run_b, run_c}) == 3
+
+    def test_a_rerun_attempt_of_the_same_non_pr_run_gets_a_distinct_group(self):
+        attempt_1 = concurrency_group(pr_number=None, run_id="5001", run_attempt="1")
+        attempt_2 = concurrency_group(pr_number=None, run_id="5001", run_attempt="2")
+        assert attempt_1 != attempt_2
+
+    def test_non_pr_groups_cannot_collide_with_pr_groups(self):
+        # A PR number and a run_id can coincide numerically; the prefixes must
+        # still make the two namespaces disjoint.
+        pr_group = concurrency_group(pr_number=5001, run_id="irrelevant", run_attempt="1")
+        run_group = concurrency_group(pr_number=None, run_id="5001", run_attempt="1")
+        assert pr_group != run_group
+
+

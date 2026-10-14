@@ -16,10 +16,14 @@ routes for ``.github/workflows/validate.yml``:
 Fail-safe invariant
 --------------------
 ``classify()`` returns ``data-only`` only when ``diff_is_complete`` is true,
-at least one file changed, and every changed path (including both sides of a
-rename) is explicitly allowlisted. Any ambiguity, unknown git status, empty
-or missing diff, or non-allowlisted path defaults to ``full``. This module
-contains no logic that can silently widen the allowlist.
+at least one file changed, every changed path (including both sides of a
+rename or copy) is a structurally valid, explicitly allowlisted repository
+path, and every git status is recognized. A record with a missing, empty, or
+structurally invalid path — including a ``renamed``/``copied`` record missing
+its previous path — is treated as incomplete evidence, not as a vacuously
+passing empty path list. Any ambiguity, unknown git status, empty or missing
+diff, or non-allowlisted path defaults to ``full``. This module contains no
+logic that can silently widen the allowlist.
 """
 
 from __future__ import annotations
@@ -52,6 +56,33 @@ def _is_allowlisted(path: str) -> bool:
     )
 
 
+#: Statuses that represent a move between two paths. GitHub's Diff Entry
+#: schema marks ``previous_filename`` optional for all statuses, but only
+#: documents it as meaningful for these two; treat a missing previous path on
+#: either as an incomplete record rather than assuming the move is safe.
+_REQUIRES_PREVIOUS_PATH = frozenset({"renamed", "copied"})
+
+
+def _is_valid_relative_path(path: object) -> bool:
+    """Whether ``path`` is a structurally trustworthy repository-relative path.
+
+    Rejects ``None``, non-strings, empty/whitespace-only strings, strings with
+    leading/trailing whitespace, absolute paths, and ``.``/``..`` segments.
+    This is the minimum needed to classify reliably; it is not a general
+    path-sanitization routine.
+    """
+    if not isinstance(path, str):
+        return False
+    if path != path.strip() or not path:
+        return False
+    if path.startswith("/") or path in (".", ".."):
+        return False
+    parts = path.split("/")
+    if "" in parts or "." in parts or ".." in parts:
+        return False
+    return True
+
+
 @dataclass(frozen=True)
 class FileChange:
     """One changed path, in GitHub's own change-status vocabulary.
@@ -66,6 +97,7 @@ class FileChange:
 
     def paths(self) -> tuple[str, ...]:
         return tuple(p for p in (self.path, self.previous_path) if p)
+
 
 
 @dataclass(frozen=True)
@@ -130,6 +162,17 @@ def classify(
                 "full", f"unrecognized git change status {change.status!r} for {change.path!r}",
                 changed_files, diff_complete,
             )
+        if not _is_valid_relative_path(change.path):
+            return Classification(
+                "full", f"missing or structurally invalid file path in a {change.status!r} record",
+                changed_files, diff_complete,
+            )
+        if change.status in _REQUIRES_PREVIOUS_PATH and not _is_valid_relative_path(change.previous_path):
+            return Classification(
+                "full",
+                f"{change.status!r} record for {change.path!r} is missing a valid previous path",
+                changed_files, diff_complete,
+            )
         for path in change.paths():
             if not _is_allowlisted(path):
                 return Classification(
@@ -182,3 +225,28 @@ def pytest_targets(classification: Classification) -> tuple[str, ...]:
     if classification.route == "data-only":
         return CURATOR_REGRESSION_TESTS
     return ()
+
+
+def concurrency_group(
+    *, pr_number: int | None, run_id: str | int, run_attempt: str | int,
+) -> str:
+    """Mirror of ``validate.yml``'s ``concurrency.group`` expression.
+
+    This is a static policy check, not proof of GitHub's actual scheduling
+    behaviour: GitHub Actions expressions are evaluated by GitHub itself, not
+    by this function. Keep this in sync with the workflow's ``group:`` value
+    whenever one changes; it exists so the grouping invariant (same PR shares
+    one group; every other run gets a group no other run can ever share) is
+    testable without a real Actions run.
+
+    PR events (``pr_number`` set) share one group per PR number, so a new
+    push to the same PR can supersede the previous run. Every other case
+    (push to main, workflow_dispatch, or any run without a PR context) gets a
+    group keyed on ``run_id``/``run_attempt``, which GitHub guarantees is
+    unique per workflow run attempt — it can never collide with a PR group
+    (distinct ``pr-``/``run-`` prefixes) or with another non-PR run.
+    """
+    if pr_number is not None:
+        return f"validate-pr-{pr_number}"
+    return f"validate-run-{run_id}-{run_attempt}"
+

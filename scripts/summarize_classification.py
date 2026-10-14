@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-"""Render the CI validation-policy decision for a GitHub job summary (issue #308)."""
+"""Render the CI validation-route decision for a GitHub job summary (issue #308).
+
+This describes the selected route only, not what actually executed: it runs
+before the pytest step, so it must never claim pytest ran or finished. See
+``summarize_execution.py`` for the post-execution report, which is the only
+place that may describe what the test suite actually did.
+"""
 from __future__ import annotations
 
 import argparse
@@ -12,6 +18,7 @@ def render(classification: dict) -> str:
     reason = classification.get("reason", "")
     changed = classification.get("changed_files", [])
     diff_complete = classification.get("diff_complete", False)
+    evidence = classification.get("evidence", {})
 
     lines = [
         "## Validation policy",
@@ -23,6 +30,16 @@ def render(classification: dict) -> str:
         f"- Changed files: {len(changed)}",
     ]
 
+    if evidence.get("expected_head_sha"):
+        lines += [
+            f"- Expected head/base revision: `{evidence.get('expected_head_sha')}` / `{evidence.get('expected_base_sha')}`",
+        ]
+    if evidence.get("changed_files_reported") is not None:
+        lines += [
+            f"- Changed files reported by PR metadata: {evidence.get('changed_files_reported')}",
+            f"- Changed files actually fetched: {evidence.get('changed_files_fetched')}",
+        ]
+
     if changed:
         lines += ["", "| Status | Path | Previous path |", "|---|---|---|"]
         for entry in changed[:200]:
@@ -31,14 +48,28 @@ def render(classification: dict) -> str:
         if len(changed) > 200:
             lines.append(f"\n... and {len(changed) - 200} more changed file(s).")
 
+    lines += ["", "### Controls this route will select"]
     if route == "data-only":
         lines += [
-            "", "Full canonical and publication validation still ran against the complete "
-            "current dataset. Only the selected pytest targets were narrowed to the "
-            "curator/data regression subset; the broader software test suite was not executed.",
+            "",
+            "- Canonical catalog validation (`DataValidator`): will run once, against the complete current dataset.",
+            "- The curator/data regression test subset (chamber, piano, best-classical, curator decisions, "
+            "publication validation, cross-intake checks): selected for the pytest step below.",
+            "- The broader software test suite: **not selected** for this route.",
+            "",
+            "This section describes what is *planned*. Whether each control actually completed is reported "
+            "separately, after the relevant steps have run, in the execution summary below.",
         ]
     else:
-        lines += ["", "The full relevant software regression suite ran."]
+        lines += [
+            "",
+            "- Canonical catalog validation (`DataValidator`): will run once, against the complete current dataset.",
+            "- The full relevant software test suite is selected for the pytest step below, which includes "
+            "publication validation and cross-intake checks.",
+            "",
+            "This section describes what is *planned*. Whether each control actually completed is reported "
+            "separately, after the relevant steps have run, in the execution summary below.",
+        ]
 
     return "\n".join(lines) + "\n"
 
@@ -59,3 +90,4 @@ def main(argv: list[str] | None = None) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+

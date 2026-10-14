@@ -128,3 +128,29 @@ Geef een beknopt eindverslag met:
 - Status tegenover de acceptatiecriteria van #308 en een onderbouwd advies over mergegereedheid.
 
 Laat alle wijzigingen lokaal en ongecommit voor Lucas' review. Sluit issue #308 niet, merge niets en wijzig de PR-status niet zelf.
+
+## PR #314 review fixes (issue #308)
+
+Fixes five correctness gaps identified in review of c8441c53:
+
+1. **Completeness proof**: file-list pagination now verified against the PR's
+   reported `changed_files` count and GitHub's documented 3000-file cap, with
+   duplicate detection — a short/empty page alone no longer proves completeness.
+2. **Revision binding**: classification is now bound to this run's expected
+   head/base SHA (from `github.event.pull_request.head/base.sha`, not
+   `github.sha`), checked before and after pagination.
+3. **Incomplete records rejected**: empty/null/whitespace paths and
+   renames/copies missing a previous path now fail closed instead of
+   vacuously passing.
+4. **Concurrency**: non-PR runs now get a unique group per run attempt, so a
+   queued run can no longer be silently replaced.
+5. **Planned vs. executed**: the job summary now separates the selected route
+   (before execution) from real step outcomes and JUnit counts (after), and
+   no longer misattributes PublicationValidator to the validator step.
+
+115 new/rewritten tests (54 policy + 36 script + 19 reporting + 6 validator).
+Full suite: 517 passed. Data-only route: 250 passed (unchanged from before
+these fixes). Coverage of validation+migration unchanged (82.87%/79.07%).
+
+Not yet measured: real GitHub Actions concurrency behavior, CI wall-clock
+comparison (requires 3 runs/route per issue #308).
