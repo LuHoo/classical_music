@@ -238,10 +238,13 @@ gegenereerde `publication/` vernieuwen. Zij voeren geen Git-opdrachten uit.
 | `check_chamber_import.py` | Geen parameters | Volledige Chamber-broncontrole, curatorrecords en publicatiegeneratie |
 | `check_piano_import.py` | Geen parameters | Piano-controle inclusief ruwe metadatafingerprint, luisterankers, versieonderzoek en curatorrecords |
 | `check_tidal_window_import.py` | `--manifest PATH`, standaard `reports/playlist-import/best-classical/window-333-1998.json` | Controle van één Best Classical-venster, canonieke verwijzingen, geregistreerde keuzes en publicatie |
-| `validate_data.py` | `--json`; herhaalbaar `--identity-gate-id ID` | Brede canonieke validatie; JSON naar stdout of leesbare tabel. Exit 1 bij fouten |
+| `validate_data.py` | `--json`; `--json-output PATH`; herhaalbaar `--identity-gate-id ID` | Brede canonieke validatie; JSON naar stdout, leesbare tabel, en/of JSON naar een bestand uit dezelfde run. Exit 1 bij fouten |
 | `generate_publication_site.py` | Geen parameters | Valideert en bouwt `publication/` opnieuw; vervangt de bestaande gegenereerde inhoud |
 | `check_publication_links.py` | `--site-dir _site`; `--config _config.yml` | Controleert lokale links in een eerder gebouwde Jekyll-site |
 | `summarize_validation_report.py` | `REPORT`; `--limit 10` | Vat opgeslagen validatie-JSON samen |
+| `classify_pr_changes.py` | `--event-name`; `--repository`; `--pr-number`; `--expected-head-sha`; `--expected-base-sha`; `--force-full`; `--output PATH` | CI-only: classificeert gewijzigde PR-bestanden (issue #308) met bewezen volledigheid (PR-metadata `changed_files` vs. werkelijk opgehaalde records, 3000-bestandslimiet, duplicaatdetectie) en gebonden aan de verwachte head/base-revisie van deze run. Schrijft `data-only`/`full` plus reden en bewijs naar JSON en GitHub Actions outputs. Faalt nooit; elke onzekerheid valt terug op `full` |
+| `summarize_classification.py` | `PATH` | Rendert alleen de **geplande** route (vóór validator/pytest); claimt nooit uitvoering |
+| `summarize_execution.py` | `--classification PATH`; `--validator-outcome`; `--pytest-outcome`; `--validation-report PATH`; `--junit PATH` | Rendert de **werkelijke** uitvoering na de validator- en pytest-stappen (`if: always()`): echte stapstatus (geslaagd/gefaald/overgeslagen/geannuleerd/onbekend) en echte JUnit-tellingen; een ontbrekend rapport telt nooit als succes |
 
 ```bash
 .venv/bin/python scripts/fetch_tidal_playlist.py <playlist-id> --limit 100 --country NL --output reports/tidal-playlist/source.json

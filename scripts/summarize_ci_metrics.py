@@ -9,7 +9,7 @@ from pathlib import Path
 def summarize(directory):
     lines = ['## CI measurements', '', 'Command durations exclude queue, setup and artifact upload.', '',
              '| Command | Seconds | Exit |', '|---|---:|---:|']
-    for name in ('validator-human', 'validator-json', 'pytest'):
+    for name in ('classify', 'validator', 'validator-human', 'validator-json', 'pytest'):
         path = directory / (name + '.json')
         if path.exists():
             data = json.loads(path.read_text())

@@ -292,3 +292,274 @@ Not yet measured. CI figures must come from an actual GitHub Actions run after
 Lucas pushes this branch; see "Reproduceerbare baseline op GitHub" above for the
 three-run comparison protocol. Local before/after figures in this section are not
 substitutes for CI wall-clock numbers.
+
+## Validation routing policy — issue #308
+
+Issue #308 reduces unnecessary full-suite runs by classifying a pull request's
+changed files and selecting a narrower pytest scope for curator/data-only
+changes. It reuses the #305–#307 infrastructure unchanged; it does not
+introduce a second measurement system. A PR #314 review identified five
+correctness gaps in the first implementation; this section documents the
+fixed design. The gaps and fixes are listed explicitly in "Review fixes"
+below.
+
+### Why
+
+Before #308, `validate.yml` ran `scripts/validate_data.py` **twice** per job —
+once for console output, once with `--json` — each a fresh, independent full
+catalog parse, and always ran the complete pytest suite regardless of what
+changed. A pure curator-decision change (a new performance, a resolved
+recommendation choice) paid the same cost as a code change.
+
+### Classification
+
+`src/classical_music/ci_policy.py` classifies every changed file using a
+fixed allowlist of prefixes and extensions:
+
+| Prefix | Allowed extensions |
+|---|---|
+| `data/` | `.yaml` |
+| `reports/playlist-import/` | `.json`, `.md` |
+| `reports/curator-decisions/` | `.json` |
+
+A change set is **data-only** only when every changed path (both sides of a
+rename or copy) is a structurally valid, non-empty, repository-relative path
+on the allowlist, the change-status list is complete and every status is
+recognized, and at least one file changed. A record with a missing, empty, or
+whitespace-only path, or a `renamed`/`copied` record missing its previous
+path, is treated as incomplete evidence — not silently ignored. Anything else
+— unknown paths, mixed changes, unrecognized git statuses, an empty or
+incomplete diff, or an explicit `force_full` request — selects **full**.
+`docs/`, `side materials/` and `generated/legacy/` are deliberately **not**
+allowlisted even though they are not Python: they are prose/reference
+material, but excluding them costs nothing and keeps the allowlist minimal
+and auditable.
+
+### Fetching the changed-file list, with proof of completeness
+
+Changed files for a pull request are fetched via
+`GET /repos/{owner}/{repo}/pulls/{number}/files` (`scripts/classify_pr_changes.py`,
+using the `gh` CLI already available on GitHub-hosted runners), not a local
+`git diff`. This avoids every shallow-checkout and multi-commit edge case
+entirely: GitHub itself computes the add/remove/modify/rename/copy status and
+the correct base/head diff for the PR, independent of how many commits or
+force-pushes it contains.
+
+GitHub's documentation for this endpoint states: "Responses include a maximum
+of 3000 files." A page shorter than the requested `per_page` is the usual
+pagination-termination signal, but it does **not** by itself prove the
+fetched list is the complete diff — a flaky response, a silently truncated
+page, or exceeding the 3000-file cap could all look identical to a normal
+last page. `_fetch_pr_evidence()` therefore proves completeness independently:
+
+1. Fetch the PR resource (`GET /pulls/{number}`) and read its `changed_files`
+   count. A missing or non-integer count is treated as unreliable.
+2. If `changed_files` exceeds 3000, the files-list endpoint can never return
+   the complete diff; classification selects `full` without even attempting
+   to paginate.
+3. Paginate the files endpoint, accumulating entries until a short page.
+4. Reject duplicate filenames across pages (a sign of unreliable pagination).
+5. Require the number of **fetched** entries to exactly equal the
+   **reported** `changed_files` count. Any mismatch — including the
+   previously-accepted "30 full pages then an empty page" case where the
+   metadata under- or over-reports the true count — selects `full`.
+
+Any failure to retrieve or verify this list (network error, rate limit,
+malformed response, missing PR number, an unprovable count) degrades to
+**full** and never raises — classification failure is not a workflow failure,
+because full validation is always sufficient on its own.
+
+### Binding classification to this run's revisions
+
+The files-list endpoint is keyed on the **PR number**, which always reflects
+the PR's *current* state — not necessarily the revision this particular
+workflow run is validating. A re-run of an older run reuses its original,
+now-stale, triggering event; a push arriving mid-pagination could change the
+diff out from under the fetch. Neither case is detectable from the PR number
+alone.
+
+`classify_pr_changes.py` is given this run's expected revisions explicitly,
+from the triggering event context —
+`github.event.pull_request.head.sha` and `github.event.pull_request.base.sha`
+— **not** `github.sha`, which for `pull_request` events is the synthetic
+merge commit `actions/checkout` checks out, not the PR's actual head commit.
+
+Before paginating, the fetched PR metadata's `head.sha`/`base.sha` must match
+the expected values exactly; after paginating, the PR is re-fetched and its
+`head.sha`/`base.sha`/`changed_files` must still match both the expected
+values and the pre-pagination reading. Any mismatch at either point — wrong
+revision, a revision that changed between pages, or a missing expected
+revision entirely — selects `full` without reporting a false `data-only`.
+Both the expected and observed revisions are recorded in the classification
+JSON's `evidence` block for auditability.
+
+### Routes
+
+Both routes always run, in one job, unconditionally:
+
+1. One canonical `DataValidator` execution (`scripts/validate_data.py --json-output ...`),
+   producing console, JSON and job-summary output from a single `ValidationReport`.
+2. The curator/data regression test subset described below, which is where
+   publication validation (`PublicationValidator`) and cross-intake checks
+   are actually exercised — **not** the validator step: `DataValidator.run()`
+   does not invoke `PublicationValidator`.
+
+Only the **pytest scope** differs:
+
+- **data-only** — `classical_music.ci_policy.CURATOR_REGRESSION_TESTS`: a
+  fixed list of test files covering the #307 guarantee matrix (chamber/piano/
+  best-classical ingestion, curator decision/rollback/lock semantics, source
+  preservation, the shared catalog snapshot and its consumers, parser and
+  entity-matcher identity resolution, fail-closed migration gates, and
+  canonical validation rules). `tests/test_ci_policy.py::TestPytestTargets::test_curator_regression_tests_are_real_files`
+  fails the suite if this list ever drifts from the actual files on disk.
+- **full** — pytest's configured default discovery (`testpaths = tests/` in
+  `pyproject.toml`), i.e. the complete suite.
+
+Because the curator regression subset is a strict subset of the full suite,
+the data-only route never skips a canonical or publication control; it only
+narrows which additional software tests run. Cross-intake references remain
+checked on every PR regardless of route, because the chamber/piano/best-
+classical regression tests load and assert against the complete real catalog.
+
+### Not part of this job
+
+`.github/workflows/pages.yml` already builds the actual Jekyll site and runs
+`scripts/check_publication_links.py` unconditionally on every PR, with no
+path filter, as a separate required check (`build`, workflow "Build and
+Deploy Jekyll site to GitHub Pages"). This is the "actual publication
+workflow" the epic requires; it is an independent check, and its result is
+never folded into `validate`'s own summary.
+
+### Required status check
+
+Empirically confirmed via `gh pr view <number> --json statusCheckRollup`: the
+check name is `validate` (job id in `validate.yml`), workflow "Validate
+Canonical Data". No GitHub branch-protection rule or ruleset is currently
+configured on this repository (`gh api repos/.../branches/main/protection`
+returns 404; `gh api repos/.../rulesets` returns `[]`) — "required" is
+currently Lucas's own manual practice, not a technical GitHub enforcement. The
+job id and workflow name are unchanged by #308.
+
+`validate.yml` remains a **single job**. Classification only changes which
+pytest paths one unconditional `pytest` step receives; it is never split into
+a job that a dependent job could skip or misinterpret as success. This
+avoids the entire class of risk in multi-job `needs:`/`if: always()`
+aggregation, by construction: there is no dependency to skip.
+
+### Concurrency
+
+{% raw %}
+```yaml
+concurrency:
+  group: >-
+    ${{ github.event.pull_request.number
+        && format('validate-pr-{0}', github.event.pull_request.number)
+        || format('validate-run-{0}-{1}', github.run_id, github.run_attempt) }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+```
+{% endraw %}
+
+For `pull_request` events the group key is the PR number, stable across every
+commit pushed to that PR, so a new push cancels that PR's own superseded run.
+Different PRs have different numbers and never share a group.
+
+For `push`/`workflow_dispatch`, the group key is `run_id`/`run_attempt`, which
+GitHub guarantees is unique to that run attempt — no two runs (of any event
+type) ever share that group. This matters independently of
+`cancel-in-progress: false`: GitHub's queueing behaviour can replace a
+*pending* run sharing a group even when the *running* one is protected from
+cancellation, so `cancel-in-progress` alone does not establish the "never
+cancels an unrelated run" guarantee for non-PR events — giving every non-PR
+run its own, never-shared group does. `classical_music.ci_policy.concurrency_group`
+mirrors this expression for a static, testable proxy
+(`tests/test_ci_policy.py::TestConcurrencyGroup`); it is not proof of GitHub's
+actual scheduling behaviour. That requires a real Actions run with at least
+two pushes to the same PR, two different PRs running concurrently, and three
+overlapping non-PR runs on the same ref — not yet performed; see "Remaining
+CI verification."
+
+### Manual full validation
+
+`workflow_dispatch` accepts a `force_full` boolean input. When true, the
+classifier returns `full` unconditionally without even attempting to read the
+change set. Push and manual runs already default to `full` regardless of this
+flag; the input exists to let Lucas force the full route when re-running a
+dispatch is otherwise unnecessary (e.g. re-validating after an unrelated
+infrastructure change).
+
+### Curator `finish` — a documented, not expanded, scope
+
+`classical_music.curator_batch.finish()` already provides a coherent,
+offline check of source data, decision records, canonical consistency and
+publication consistency for a batch of local curator decisions: it stages a
+full temporary copy, checks canonical IDs for collisions, builds the
+publication site once (which runs `PublicationValidator`), and runs every
+registered intake's audit (chamber/piano/best-classical) against that build.
+It intentionally runs only `tests/test_curator_batch.py` as its regression
+check — a deliberate, pre-existing design choice to keep `finish` fast and
+offline, documented at `curator_batch.TESTS`. Issue #308 is a CI-workflow
+change; it does not expand `finish`'s test selection, since that is local
+tooling behaviour Lucas already chose deliberately, not part of the GitHub
+Actions pipeline. This is recorded here as an explicit, deliberate scope
+boundary, not an oversight.
+
+### Reporting: selected route vs. actual execution
+
+The job summary has two, deliberately separate, sections:
+
+- **Validation policy** (`scripts/summarize_classification.py`), rendered
+  right after classification, before the validator or pytest steps run. It
+  describes only what is *planned* — the selected route, reason, changed
+  files, and which controls will be selected — using "will run"/"selected"
+  language, never "ran" or "passed".
+- **Execution summary** (`scripts/summarize_execution.py`), rendered with
+  `if: always()` at the very end, after the validator and pytest steps. It
+  reports each step's real outcome (`success`/`failure`/`cancelled`/`skipped`/
+  unknown) from `steps.<id>.outcome`, plus real counts parsed from
+  `validation-report.json` and `junit.xml` when those steps actually
+  succeeded or failed. A validator failure followed by a skipped pytest step
+  is reported as exactly that — skipped, not executed — never as if the full
+  suite had run. A missing artifact is reported as "not treated as success",
+  never inferred as success.
+
+This directly fixes a defect in the first implementation: the policy summary
+used to run with `if: always()` *before* the pytest step and claimed "the
+full relevant software regression suite ran" / "only the selected pytest
+targets were narrowed" regardless of whether pytest had actually executed —
+including after a validator failure that caused pytest to be skipped
+entirely.
+
+### Testing
+
+`tests/test_ci_policy.py` (54 tests) covers the full scenario table from
+issue #308 (allowlisted add/modify/delete/rename, cross-boundary renames,
+code/schema/dependency/workflow changes, mixed changes, unknown paths, new
+directories, empty/incomplete/missing diffs, unknown git status, and forced
+full validation), incomplete/invalid file records (empty/null/whitespace
+paths, renames/copies missing a previous path, absolute paths, `..`
+segments), and the concurrency-group invariant — purely against pure
+functions, with no GitHub Actions dependency.
+
+`tests/test_classify_pr_changes.py` (36 tests) covers the script layer:
+event-type branching, completeness proof (exact page-size boundaries, the
+3000-file cap, duplicate filenames across pages, count mismatches, missing/
+invalid `changed_files` metadata), revision binding (matching/mismatched
+head/base, revision drift during pagination, missing expected revisions, a
+stale re-run after the PR moved), `gh api` failure modes (non-zero exit,
+malformed JSON, unexpected shape, timeout), pagination, rename reporting, and
+that `main()` never raises and always exits 0.
+
+`tests/test_summarize_classification_and_execution.py` (19 tests) and
+`tests/test_validate_data.py` (6 tests) cover the reporting split: the policy
+summary never claims execution; the execution summary correctly distinguishes
+success/failure/skipped/cancelled/unknown and never infers success from a
+missing artifact; `validate_data.py --json-output` preserves the JSON report
+and nonzero exit code on a validation failure, and the pre-existing `--json`
+flag stays compatible.
+
+These are local unit tests; GitHub's actual required-check behaviour (branch
+protection interaction, concurrency cancellation in practice) still requires
+verification in a real Actions run — see "Remaining CI verification" in the
+PR description.
+

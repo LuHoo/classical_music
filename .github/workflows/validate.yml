@@ -5,6 +5,37 @@ on:
     branches: [main]
   pull_request:
   workflow_dispatch:
+    inputs:
+      force_full:
+        description: >-
+          Force the full validation route regardless of file classification.
+          Push and manual runs always use the full route independent of this flag.
+        type: boolean
+        default: false
+
+# Only the same pull request's own superseded runs are cancelled.
+#
+# PR events share a group keyed on the PR number, so a new push to that PR
+# supersedes its own previous run. Every other case (push to main, manual
+# dispatch, or any run without a PR context) gets a group keyed on
+# run_id/run_attempt, which GitHub guarantees is unique per run attempt: it
+# can never collide with a PR group (distinct "pr-"/"run-" prefixes) or with
+# another non-PR run. cancel-in-progress alone does not prevent GitHub from
+# replacing a *queued* run that shares a group; giving every non-PR run its
+# own group is what actually prevents that. See
+# classical_music.ci_policy.concurrency_group, which mirrors this expression
+# and is covered by tests/test_ci_policy.py::TestConcurrencyGroup (a static
+# check, not proof of GitHub's actual scheduling behaviour).
+concurrency:
+  group: >-
+    ${{ github.event.pull_request.number
+        && format('validate-pr-{0}', github.event.pull_request.number)
+        || format('validate-run-{0}-{1}', github.run_id, github.run_attempt) }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+permissions:
+  contents: read
+  pull-requests: read
 
 jobs:
   validate:
@@ -24,27 +55,42 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install -e '.[dev]'
 
-      - name: Run validator (human-readable)
-        run: python scripts/measure_ci.py --label validator-human -- python scripts/validate_data.py
+      - name: Classify changed files
+        id: classify
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: >-
+          python scripts/measure_ci.py --label classify --
+          python scripts/classify_pr_changes.py
+          --event-name "${{ github.event_name }}"
+          --repository "${{ github.repository }}"
+          --pr-number "${{ github.event.pull_request.number }}"
+          --expected-head-sha "${{ github.event.pull_request.head.sha }}"
+          --expected-base-sha "${{ github.event.pull_request.base.sha }}"
+          --force-full "${{ github.event.inputs.force_full }}"
+          --output ci-metrics/classification.json
+        # Deliberately github.event.pull_request.head.sha, not github.sha: for
+        # pull_request events github.sha is the synthetic merge commit Actions
+        # checks out, not the PR's actual head commit. Never fails this step:
+        # an unreliable classification degrades to the full route, which is
+        # always sufficient on its own.
 
-      - name: Run validator (JSON artifact)
-        if: always()
-        run: |
-          python scripts/measure_ci.py --label validator-json -- python scripts/validate_data.py --json
-        # The measured log contains the unchanged JSON stdout of the validator.
-
-      - name: Preserve JSON report
-        if: always()
-        run: |
-          if [ -f ci-metrics/validator-json.log ]; then
-            cp ci-metrics/validator-json.log validation-report.json
-          fi
+      - name: Run validator (single pass; console and JSON)
+        id: validator
+        run: >-
+          python scripts/measure_ci.py --label validator --
+          python scripts/validate_data.py --json-output validation-report.json
 
       - name: Add validation summary
         if: always()
         run: python scripts/summarize_validation_report.py validation-report.json >> "$GITHUB_STEP_SUMMARY"
 
+      - name: Add validation-policy summary (planned route, not execution)
+        if: always()
+        run: python scripts/summarize_classification.py ci-metrics/classification.json >> "$GITHUB_STEP_SUMMARY"
+
       - name: Run tests
+        id: run_tests
         env:
           CI_METRICS_DIR: ci-metrics
         run: >-
@@ -52,6 +98,28 @@ jobs:
           python -m pytest -p classical_music.pytest_metrics
           --durations=30 --junitxml=ci-metrics/junit.xml
           --cov-report=xml:ci-metrics/coverage.xml
+          ${{ steps.classify.outputs.pytest_targets }}
+        # steps.classify.outputs.pytest_targets is empty on the full route,
+        # which runs pytest's configured default (testpaths = tests/).
+        # Canonical validation (the step above) always runs once in full,
+        # regardless of route. Publication validation and cross-intake checks
+        # are established by this pytest step, not by the validator step:
+        # DataValidator.run() does not invoke PublicationValidator. Only the
+        # pytest scope narrows on the data-only route.
+
+      - name: Add execution summary
+        if: always()
+        run: >-
+          python scripts/summarize_execution.py
+          --classification ci-metrics/classification.json
+          --validator-outcome "${{ steps.validator.outcome }}"
+          --pytest-outcome "${{ steps.run_tests.outcome }}"
+          --validation-report validation-report.json
+          --junit ci-metrics/junit.xml
+          >> "$GITHUB_STEP_SUMMARY"
+        # Reports what actually ran, using the real step outcomes and, where
+        # available, real JUnit counts. This step itself never fails the job
+        # and never presents a skipped or failed step as a success.
 
       - name: Upload validation report
         if: always()
