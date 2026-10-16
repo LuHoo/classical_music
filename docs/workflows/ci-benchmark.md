@@ -14,8 +14,9 @@ CI-runidentiteit. Alleen geselecteerde niet-geheime omgevingsvelden worden opges
 Environment-verzameling valt buiten de gemeten commandoduur; GitHub-jobduur bevat
 wel deze overhead, installatie en artifactverwerking. Er is geen dependencycache.
 
-Pytest gebruikt in CI expliciet twee workers met `--dist load`. De optionele plugin
-`classical_music.pytest_metrics` levert:
+Normale pull-requestvalidatie blijft serieel. Een handmatige workflow-dispatch kan
+voor de #309-benchmark expliciet `serial` of `parallel` (twee `--dist load` workers)
+kiezen. De optionele plugin `classical_music.pytest_metrics` levert:
 
 - `test-phases.jsonl`: na iedere afgeronde setup/call/teardown een regel met node-ID,
   duur, uitkomst, xfail en YAML-load/publicatiebuildtellers;
@@ -191,7 +192,7 @@ herhaalde loads; hoeveel dat van de volledige jobtijd bespaart is nog niet gemet
 #305 blijft open zolang de drie runs en hun analyse ontbreken. De draft PR benoemt
 expliciet wat al is geïmplementeerd/getest en wat nog niet is gemeten.
 
-## Twee-worker pilot en besluit — issue #309
+## Twee-worker pilot en vervolgmeting — issue #309
 
 Dezelfde revision `f4c769169a9465b164dd45f18a06403ca2a63163` is lokaal zes keer
 volledig gemeten: drie seriële runs en drie runs met `-n 2 --dist load`. De omgeving
@@ -210,12 +211,74 @@ tests, slaagden volledig en bouwden 32 publicaties. Elke coverage-XML rapporteer
 (320180 tegenover 294267), omdat sessiefixtures per proces worden opgebouwd; dat
 extra werk verhinderde de gemeten winst niet. Peak memory is niet gemeten.
 
-Besluit: CI gebruikt voortaan twee expliciete xdist-workers. `-n auto` en opgesplitste
-jobs zijn niet ingevoerd: de twee-worker run behoudt één check, één JUnit/coverage-
-rapport en fail-closed worker-metrics, terwijl de metingen een reproduceerbare
-medianewinst boven de lokale spreiding laten zien. GitHub-hosted CI-tijden moeten
-nog met dezelfde drie-runmethode op de workflow worden verzameld; de lokale cijfers
-zijn geen gesimuleerde CI-metingen.
+Dit is geen besluit voor GitHub Actions: de metingen zijn lokaal en zeggen niets over
+de Ubuntu/Python-3.13-runner, volledige jobduur, runner-minuten of runnergeheugen.
+Normale CI blijft daarom serieel totdat onderstaande GitHub-meting drie vergelijkbare
+runs per conditie oplevert. `-n auto` en opgesplitste jobs zijn niet ingevoerd.
+
+### Versterkte parallelle bewijsvoering
+
+Elke worker schrijft uitsluitend naar `workers/gwN/`. De controller weigert een
+succesvol eindresultaat bij ontbrekende/onverwachte workers, missende of onleesbare
+artifacts, ongeldige sessiemetadata, ongeldige tellers, foute workerattributie,
+dubbele fasen, ontbrekende node-IDs of een onvolledige pytest-levenscyclus. Geldige
+levenscycli zijn `setup, call, teardown` en, na een mislukte of overgeslagen setup,
+`setup, teardown`; xfail blijft een overgeslagen call. Een fout in die controles zet
+de pytest-exitstatus op internal error en bewaart de diagnostische artifacts.
+
+Kleine echte xdist-suites verifiëren daarnaast een volledige tweeworker-samenvoeging,
+een gecombineerde coverage-XML met verschillende paden per worker, setup/call/
+teardown-fouten, skip en xfail, plus een gecontroleerde workercrash. pytest-cov
+combineert de workercoverage; de plugin implementeert geen tweede coveragemechanisme.
+Een mislukte test blijft een mislukte pytest-run, terwijl een ontbrekende workerreport
+ook fail-closed wordt behandeld.
+
+`measure_ci.py` rapporteert op Linux bovendien gesamplede RSS voor het gemeten proces
+en zijn afstammelingen. Dit is een ondergrens met 0,2-seconde sampling, geen
+runner-brede peak-memorymeting; macOS en ontbrekende `/proc` rapporteren expliciet
+`unavailable`.
+
+### Vereiste GitHub Actions-meting
+
+Na een commit en push van deze voorbereiding voert Lucas vanaf dezelfde commit in
+Actions zes handmatige runs uit, bij voorkeur in de volgorde S1, P1, S2, P2, S3, P3:
+
+1. Kies workflow **Validate Canonical Data**, branch `309-new` en `pytest_mode`
+  `serial` voor S-runs of `parallel` voor P-runs. Handmatige runs gebruiken altijd
+  de volle suite; verander geen data, dependencies of workflow tussen de zes runs.
+2. Download voor iedere run het `ci-metrics-RUN_ID-ATTEMPT` artifact en de run/job
+  metadata zoals in de reproduceerbare baselineprocedure hierboven. Bewaar de URL,
+  run-ID, commit, runnerimage, Python/dependencyprovenance, pytest-route en
+  `pytest.json`, JUnit, coverage en `test-session.json`.
+3. Gebruik `scripts/compare_ci_baseline.py` afzonderlijk voor de drie S- en de drie
+  P-artifacts: het hulpmiddel weigert terecht een mix van workerconfiguraties.
+  Vergelijk daarna de twee rapporten handmatig op pytestduur, jobduur, wachttijd,
+  resultaat, coverage en sampled RSS.
+
+| Maatstaf | Serieel | Twee workers | Verschil |
+|---|---:|---:|---:|
+| Totale CI-job zonder wachttijd | Niet gemeten | Niet gemeten | Niet gemeten |
+| Pytestduur op GitHub Actions | Niet gemeten | Niet gemeten | Niet gemeten |
+| Runner-minuten (enkele job) | Niet gemeten | Niet gemeten | Niet gemeten |
+| Peak RSS procesboom | Niet gemeten | Niet gemeten | Niet gemeten |
+| Runners / pytest-workers | 1 / 1 | 1 / 2 | Niet van toepassing |
+
+Twee pytest-workers binnen één job verbruiken niet automatisch twee GitHub-runners;
+voor deze architectuur zijn runner-minuten de gemeten jobduur gedeeld door 60, geen
+vermenigvuldiging met het aantal workers. Installeer-, validator-, artifact- en
+opstarttijd moeten in de jobduur worden meegenomen, niet bij de pytestduur worden
+opgeteld.
+
+### Afweging aparte jobs
+
+De suite heeft geen veilige, evenwichtige partitie zonder nieuwe route- en
+artifactcontracten: de langste curatorintegratietests verschillen sterk in duur en
+testen volledige tijdelijke kopieën met locks. Aparte jobs zouden setup en dependency-
+installatie dupliceren, coverage/JUnit daarna moeten samenvoegen en meer runner-minuten
+kunnen gebruiken. Twee workers houden één required check, één volledige validator,
+één JUnit/coverage-rapport en dezelfde testselectie. Een multi-job experiment is pas
+zinvol als de GitHub-metingen aantonen dat twee workers onvoldoende voordeel geven;
+zonder die aanwijzing is extra workflowcomplexiteit niet gerechtvaardigd.
 
 ## Deterministic fixtures and shared real-catalog reads — issue #307
 

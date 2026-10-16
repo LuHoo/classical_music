@@ -83,15 +83,60 @@ class ParallelControllerMetrics:
         self.directory = directory
         self.expected_workers = expected_workers
 
+    @staticmethod
+    def validate_rows(worker, rows):
+        """Return evidence errors for the pytest report lifecycle of one worker."""
+        errors = []
+        reports = {}
+        for index, row in enumerate(rows, start=1):
+            if not isinstance(row, dict):
+                errors.append(f'{worker} record {index} is not an object')
+                continue
+            nodeid = row.get('nodeid')
+            phase = row.get('phase')
+            outcome = row.get('outcome')
+            if not isinstance(nodeid, str) or not nodeid:
+                errors.append(f'{worker} record {index} has invalid nodeid')
+                continue
+            if phase not in {'setup', 'call', 'teardown'}:
+                errors.append(f'{worker} record {index} has invalid phase')
+                continue
+            if outcome not in {'passed', 'failed', 'skipped'}:
+                errors.append(f'{worker} record {index} has invalid outcome')
+            if row.get('worker') != worker:
+                errors.append(f'{worker} record {index} has wrong worker identity')
+            if not isinstance(row.get('seconds'), (int, float)) or row['seconds'] < 0:
+                errors.append(f'{worker} record {index} has invalid duration')
+            for counter in ('yaml_loads', 'publication_builds'):
+                if not isinstance(row.get(counter), int) or row[counter] < 0:
+                    errors.append(f'{worker} record {index} has invalid {counter}')
+            reports.setdefault(nodeid, []).append((phase, outcome))
+
+        for nodeid, reports_for_nodeid in reports.items():
+            phases = [phase for phase, _ in reports_for_nodeid]
+            if len(phases) != len(set(phases)):
+                errors.append(f'{worker} has duplicate phase records for {nodeid}')
+                continue
+            if not phases or phases[0] != 'setup' or phases[-1] != 'teardown':
+                errors.append(f'{worker} has incomplete lifecycle for {nodeid}')
+                continue
+            setup_outcome = reports_for_nodeid[0][1]
+            expected = ['setup', 'call', 'teardown'] if setup_outcome == 'passed' else ['setup', 'teardown']
+            if phases != expected:
+                errors.append(f'{worker} has invalid phase order for {nodeid}')
+        return errors
+
     def pytest_sessionfinish(self, session, exitstatus):
         workers_dir = self.directory / 'workers'
-        worker_dirs = sorted(path for path in workers_dir.glob('gw*') if path.is_dir())
+        worker_dirs = sorted(path for path in workers_dir.iterdir() if path.is_dir()) if workers_dir.exists() else []
         rows = []
         sessions = []
         errors = []
+        expected_names = {f'gw{index}' for index in range(self.expected_workers)}
+        actual_names = {path.name for path in worker_dirs}
 
-        if len(worker_dirs) != self.expected_workers:
-            errors.append(f'expected {self.expected_workers} worker directories, found {len(worker_dirs)}')
+        if actual_names != expected_names:
+            errors.append(f'expected workers {sorted(expected_names)}, found {sorted(actual_names)}')
 
         for worker_dir in worker_dirs:
             phases_path = worker_dir / 'test-phases.jsonl'
@@ -105,15 +150,30 @@ class ParallelControllerMetrics:
             except (OSError, json.JSONDecodeError) as exc:
                 errors.append(f'unreadable metrics artifact for {worker_dir.name}: {exc}')
                 continue
+            if not isinstance(worker_session, dict):
+                errors.append(f'invalid session metadata for {worker_dir.name}')
+                continue
             if worker_session.get('worker') != worker_dir.name:
                 errors.append(f'worker identity mismatch for {worker_dir.name}')
+            if not isinstance(worker_session.get('collected'), int) or worker_session['collected'] < 0:
+                errors.append(f'invalid collected count for {worker_dir.name}')
+            if worker_session.get('exit_code') not in range(6):
+                errors.append(f'invalid exit code for {worker_dir.name}')
+            if not isinstance(worker_session.get('counts'), dict):
+                errors.append(f'invalid counters for {worker_dir.name}')
+            elif any(not isinstance(value, int) or value < 0 for value in worker_session['counts'].values()):
+                errors.append(f'invalid counter value for {worker_dir.name}')
+            if exitstatus == 0 and worker_session.get('exit_code') != 0:
+                errors.append(f'completed controller has failed worker {worker_dir.name}')
+            errors.extend(self.validate_rows(worker_dir.name, worker_rows))
             rows.extend(worker_rows)
             sessions.append(worker_session)
 
-        keys = [(row.get('nodeid'), row.get('phase')) for row in rows]
+        valid_rows = [row for row in rows if isinstance(row, dict)]
+        keys = [(row.get('nodeid'), row.get('phase')) for row in valid_rows]
         if len(keys) != len(set(keys)):
             errors.append('duplicate nodeid/phase records across workers')
-        nodeids = {row.get('nodeid') for row in rows if row.get('nodeid')}
+        nodeids = {row.get('nodeid') for row in valid_rows if row.get('nodeid')}
         if session.testscollected != len(nodeids):
             errors.append(f'collected {session.testscollected} nodeids but merged artifacts contain {len(nodeids)}')
 
