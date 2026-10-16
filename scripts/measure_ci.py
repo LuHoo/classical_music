@@ -16,7 +16,30 @@ def capture(command):
     return result.stdout.strip() if result.returncode == 0 else None
 
 
-def environment():
+def requested_workers(command):
+    """Return the explicit pytest-xdist worker count, or 1 for serial commands.
+
+    The CI experiment deliberately uses ``-n 2`` rather than ``auto``. An
+    unparseable worker value remains provenance rather than being guessed, so
+    comparison tooling cannot silently treat it as serial.
+    """
+    for index, argument in enumerate(command):
+        if argument in ('-n', '--numprocesses') and index + 1 < len(command):
+            value = command[index + 1]
+        elif argument.startswith('-n') and argument != '-n':
+            value = argument[2:]
+        elif argument.startswith('--numprocesses='):
+            value = argument.split('=', 1)[1]
+        else:
+            continue
+        try:
+            return int(value)
+        except ValueError:
+            return value
+    return 1
+
+
+def environment(command=()):
     cpu = Path('/proc/cpuinfo')
     model = next((line.split(':', 1)[1].strip() for line in cpu.read_text().splitlines()
                   if line.startswith('model name')), None) if cpu.exists() else platform.processor()
@@ -31,12 +54,12 @@ def environment():
                 ci={name: os.environ.get(name) for name in (
                     'GITHUB_RUN_ID', 'GITHUB_RUN_ATTEMPT', 'GITHUB_SHA', 'GITHUB_EVENT_NAME',
                     'RUNNER_OS', 'RUNNER_ARCH', 'ImageOS', 'ImageVersion')},
-                workers=1, dependency_cache='disabled in validate.yml')
+                workers=requested_workers(command), dependency_cache='disabled in validate.yml')
 
 
 def measure(command, output, label):
     output.mkdir(parents=True, exist_ok=True)
-    info = dict(label=label, command=command, environment=environment(),
+    info = dict(label=label, command=command, environment=environment(command),
                 started_at=datetime.now(timezone.utc).isoformat(), status='running')
     report = output / (label + '.json')
     report.write_text(json.dumps(info, indent=2) + '\n')

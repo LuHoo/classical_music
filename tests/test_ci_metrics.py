@@ -28,6 +28,18 @@ def test_command_preserves_output_exit_and_metadata(tmp_path, code):
     assert (tmp_path / 'pytest.log').read_text().strip() == 'evidence'
 
 
+@pytest.mark.parametrize(('command', 'workers'), [
+    (['pytest'], 1),
+    (['pytest', '-n', '2'], 2),
+    (['pytest', '-n2'], 2),
+    (['pytest', '--numprocesses=2'], 2),
+    (['pytest', '--numprocesses', '2'], 2),
+    (['pytest', '-n', 'auto'], 'auto'),
+])
+def test_measurement_records_requested_worker_configuration(command, workers):
+    assert load_script('measure_ci').requested_workers(command) == workers
+
+
 def test_failed_setup_call_skip_and_counters_are_reported(tmp_path):
     suite = tmp_path / 'test_sample.py'
     suite.write_text('''import pytest
@@ -85,6 +97,86 @@ def test_counter_wrappers_preserve_failures_and_restore(tmp_path):
     assert Builder.generate is original
 
 
+class FakeSession:
+    def __init__(self, collected, exitstatus=0):
+        self.testscollected = collected
+        self.exitstatus = exitstatus
+
+
+def write_worker_metrics(root, worker, rows, *, collected=None, counts=None):
+    directory = root / 'workers' / worker
+    directory.mkdir(parents=True)
+    (directory / 'test-phases.jsonl').write_text(
+        ''.join(json.dumps(row) + '\n' for row in rows)
+    )
+    (directory / 'test-session.json').write_text(json.dumps(dict(
+        worker=worker, collected=collected if collected is not None else len({r['nodeid'] for r in rows}),
+        counts=counts or {}, exit_code=0,
+    )))
+
+
+def test_parallel_metrics_merges_complete_worker_artifacts(tmp_path):
+    from classical_music.pytest_metrics import ParallelControllerMetrics
+    write_worker_metrics(tmp_path, 'gw0', [dict(nodeid='test_a', phase='call', outcome='passed', yaml_loads=2,
+                                                publication_builds=0, worker='gw0')], counts={'yaml_loads': 2})
+    write_worker_metrics(tmp_path, 'gw1', [dict(nodeid='test_b', phase='call', outcome='passed', yaml_loads=3,
+                                                publication_builds=1, worker='gw1')], counts={'yaml_loads': 3,
+                                                                                               'publication_builds': 1})
+    session = FakeSession(collected=2)
+
+    ParallelControllerMetrics(tmp_path, expected_workers=2).pytest_sessionfinish(session, 0)
+
+    merged = json.loads((tmp_path / 'test-session.json').read_text())
+    assert session.exitstatus == 0
+    assert merged['complete'] is True and merged['errors'] == []
+    assert merged['workers'] == ['gw0', 'gw1']
+    assert merged['counts'] == {'yaml_loads': 5, 'publication_builds': 1}
+    assert len((tmp_path / 'test-phases.jsonl').read_text().splitlines()) == 2
+
+
+def test_parallel_metrics_missing_worker_is_fail_closed(tmp_path):
+    from classical_music.pytest_metrics import ParallelControllerMetrics
+    write_worker_metrics(tmp_path, 'gw0', [dict(nodeid='test_a', phase='call', outcome='passed', yaml_loads=0,
+                                                publication_builds=0, worker='gw0')])
+    session = FakeSession(collected=1)
+
+    ParallelControllerMetrics(tmp_path, expected_workers=2).pytest_sessionfinish(session, 0)
+
+    merged = json.loads((tmp_path / 'test-session.json').read_text())
+    assert session.exitstatus == pytest.ExitCode.INTERNAL_ERROR
+    assert merged['complete'] is False
+    assert 'expected 2 worker directories, found 1' in merged['errors']
+
+
+def test_parallel_metrics_duplicate_phase_is_fail_closed(tmp_path):
+    from classical_music.pytest_metrics import ParallelControllerMetrics
+    row = dict(nodeid='test_a', phase='call', outcome='passed', yaml_loads=0, publication_builds=0)
+    write_worker_metrics(tmp_path, 'gw0', [dict(row, worker='gw0')])
+    write_worker_metrics(tmp_path, 'gw1', [dict(row, worker='gw1')])
+    session = FakeSession(collected=1)
+
+    ParallelControllerMetrics(tmp_path, expected_workers=2).pytest_sessionfinish(session, 0)
+
+    merged = json.loads((tmp_path / 'test-session.json').read_text())
+    assert session.exitstatus == pytest.ExitCode.INTERNAL_ERROR
+    assert any('duplicate nodeid/phase' in error for error in merged['errors'])
+
+
+def test_parallel_metrics_missing_nodeid_is_fail_closed(tmp_path):
+    from classical_music.pytest_metrics import ParallelControllerMetrics
+    write_worker_metrics(tmp_path, 'gw0', [dict(nodeid='test_a', phase='call', outcome='passed', yaml_loads=0,
+                                                publication_builds=0, worker='gw0')])
+    write_worker_metrics(tmp_path, 'gw1', [dict(nodeid='test_b', phase='call', outcome='passed', yaml_loads=0,
+                                                publication_builds=0, worker='gw1')])
+    session = FakeSession(collected=3)
+
+    ParallelControllerMetrics(tmp_path, expected_workers=2).pytest_sessionfinish(session, 0)
+
+    merged = json.loads((tmp_path / 'test-session.json').read_text())
+    assert session.exitstatus == pytest.ExitCode.INTERNAL_ERROR
+    assert any('collected 3 nodeids but merged artifacts contain 2' in error for error in merged['errors'])
+
+
 def test_baseline_refuses_small_sample():
     with pytest.raises(ValueError, match='three'):
         load_script('compare_ci_baseline').compare([])
@@ -95,6 +187,7 @@ def test_workflow_keeps_full_suite_and_failure_artifacts():
     workflow = YAML(typ='safe').load((ROOT/'.github/workflows/validate.yml').read_text())
     steps = workflow['jobs']['validate']['steps']
     tests = next(s for s in steps if s['name']=='Run tests')
+    assert '-n 2 --dist load' in tests['run']
     assert '--durations=30' in tests['run'] and '--junitxml=' in tests['run']
     assert '|| true' not in tests['run'] and 'continue-on-error' not in tests
     assert '--cov-report=xml:' in tests['run']

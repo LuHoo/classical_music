@@ -95,7 +95,7 @@ jobs:
           CI_METRICS_DIR: ci-metrics
         run: >-
           python scripts/measure_ci.py --label pytest --
-          python -m pytest -p classical_music.pytest_metrics
+          python -m pytest -p classical_music.pytest_metrics -n 2 --dist load
           --durations=30 --junitxml=ci-metrics/junit.xml
           --cov-report=xml:ci-metrics/coverage.xml
           ${{ steps.classify.outputs.pytest_targets }}
