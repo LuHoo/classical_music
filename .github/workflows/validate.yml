@@ -12,6 +12,11 @@ on:
           Push and manual runs always use the full route independent of this flag.
         type: boolean
         default: false
+      pytest_mode:
+        description: Benchmark mode; normal pull-request validation remains serial.
+        type: choice
+        options: [serial, parallel]
+        default: serial
 
 # Only the same pull request's own superseded runs are cancelled.
 #
@@ -93,9 +98,13 @@ jobs:
         id: run_tests
         env:
           CI_METRICS_DIR: ci-metrics
+          PYTEST_XDIST_ARGS: >-
+            ${{ github.event_name == 'workflow_dispatch'
+                && github.event.inputs.pytest_mode == 'parallel'
+                && '-n 2 --dist load' || '' }}
         run: >-
           python scripts/measure_ci.py --label pytest --
-          python -m pytest -p classical_music.pytest_metrics
+          python -m pytest -p classical_music.pytest_metrics ${PYTEST_XDIST_ARGS}
           --durations=30 --junitxml=ci-metrics/junit.xml
           --cov-report=xml:ci-metrics/coverage.xml
           ${{ steps.classify.outputs.pytest_targets }}
