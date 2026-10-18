@@ -7,6 +7,14 @@ works that already have a recommendation, creates a TIDAL comparison playlist
 preview the full YAML and playlist plan without writing anything. The script
 never edits GitHub issues and performs no mutating TIDAL calls other than
 playlist creation, and only in apply mode.
+
+Matching evidence per track (never guessing): canonical work title or alias
+contained in title/version text, or a shared catalogue token (D, BWV, RV, Op,
+Hob, Sz, K, ...) with composer evidence from album artists, track artists or
+composer credits. Existing recommendations are read from the published
+``docs/*.md`` pages (via their TIDAL track anchors), from performances marked
+``recommended: true`` and from ``data/recordings/`` entries with status
+``recommended``.
 """
 from __future__ import annotations
 
@@ -25,10 +33,17 @@ from ruamel.yaml import YAML
 from classical_music.tidal_auth import access_token, user_access_token
 from classical_music.tidal_user import Client as UserClient
 
-ALBUM_URL = re.compile(r'https://tidal\.com/browse/album/([0-9]+)$')
+ALBUM_URL = re.compile(
+    r'https://(?:listen\.)?tidal\.com/(?:browse/)?album/([0-9]+)(/u)?$')
 COUNTRY = 'NL'
 BATCH_SIZE = 50
-TRACK_URL = re.compile(r'https://tidal\.com/track/([0-9]+)$')
+TRACK_URL = re.compile(r'(?:https?://)?(?:www\.)?tidal\.com/track/([0-9]+)/?$')
+DOC_TRACK_LINK = re.compile(
+    r'\[[^\]]*\]\(\s*(?:https?://)?(?:www\.)?tidal\.com/track/([0-9]+)/?[^\)]*\)')
+CATALOGUE = re.compile(
+    r'\b(D|Op|BWV|RV|Hob|KV|K|Sz|AV|TrV|L|S|WWV|MWV|Anh)\.?\s*'
+    r'([IVXLC]+[a-z]?)?\s*([0-9]+[a-z]?)(?:\s*:\s*([0-9]+[a-z]?))?',
+    re.IGNORECASE)
 
 yaml = YAML()
 yaml.default_flow_style = False
@@ -54,9 +69,27 @@ def slugify(value, max_length=64):
 
 
 def album_id(url):
+    """Accept the exact TIDAL album URL forms; fail closed on anything else."""
     match = ALBUM_URL.fullmatch(url.strip()) if isinstance(url, str) else None
-    require(match, 'Expected exactly one TIDAL album URL: https://tidal.com/browse/album/<id>')
+    require(match, 'Expected a TIDAL album URL: https://tidal.com/browse/album/<id> '
+                   '(or https://tidal.com/album/<id>, optionally with the /u share suffix)')
     return match.group(1)
+
+
+def album_url(identifier):
+    return f'https://tidal.com/browse/album/{identifier}'
+
+
+def catalogue_tokens(text):
+    """Stable catalogue identifiers in a text: D. 940 -> d940, Hob. Ia:7 -> hobia7."""
+    tokens = set()
+    for match in CATALOGUE.finditer(text or ''):
+        prefix, section, number, sub = match.groups()
+        token = prefix.casefold() + (section or '').casefold() + number.casefold()
+        if sub:
+            token += ':' + sub.casefold()
+        tokens.add(token)
+    return tokens
 
 
 class CatalogClient(UserClient):
@@ -100,10 +133,40 @@ def album_document(client, identifier):
             'label': attributes.get('copyright') or None, 'artists': names}
 
 
+def _track_row(row, included):
+    """Collect title, version, artist names and credit names (role -> names) for one item."""
+    track_id = row.get('id')
+    merged = included.get(('tracks', track_id)) or {}
+    attributes = dict(row.get('attributes') or {})
+    attributes.update(merged.get('attributes') or {})
+    title = attributes.get('title')
+    require(isinstance(title, str) and title.strip(), f'Album item {track_id} has no title')
+    version = attributes.get('version')
+    names = []
+    for link in ((row.get('relationships') or {}).get('artists', {}).get('data') or
+                 (merged.get('relationships') or {}).get('artists', {}).get('data') or []):
+        resource = included.get(('artists', link.get('id')))
+        name = (resource or {}).get('attributes', {}).get('name')
+        if isinstance(name, str) and name.strip():
+            names.append(name.strip())
+    credits = {}
+    for link in ((row.get('relationships') or {}).get('credits', {}).get('data') or
+                 (merged.get('relationships') or {}).get('credits', {}).get('data') or []):
+        resource = included.get(('credits', link.get('id'))) or {}
+        credit = resource.get('attributes') or {}
+        role = credit.get('type') or credit.get('role')
+        name = credit.get('name') or credit.get('artist')
+        if isinstance(role, str) and isinstance(name, str) and name.strip():
+            credits.setdefault(role.strip(), []).append(name.strip())
+    return {'id': str(track_id), 'title': title.strip(),
+            'version': version.strip() if isinstance(version, str) and version.strip() else None,
+            'artists': names, 'credits': credits}
+
+
 def album_tracks(client, identifier):
-    """Follow bounded album item pages; collect track resources with their artist names."""
+    """Follow bounded album item pages; collect track resources with artists and credits."""
     base = f'/v2/albums/{identifier}/relationships/items'
-    path = f'{base}?countryCode={COUNTRY}&include=items,items.artists'
+    path = f'{base}?countryCode={COUNTRY}&include=items,items.artists,items.credits'
     tracks, seen = [], set()
     for _ in range(50):
         document = client.request(path)
@@ -112,22 +175,12 @@ def album_tracks(client, identifier):
         included = {(r.get('type'), r.get('id')): r for r in document.get('included', []) if isinstance(r, dict)}
         for row in page:
             require(isinstance(row, dict) and row.get('type') == 'tracks', 'Unexpected non-track album item')
-            attributes = (included.get(('tracks', row.get('id'))) or {}).get('attributes') or row.get('attributes')
-            title = attributes.get('title')
-            require(isinstance(title, str) and title.strip(), f'Album item {row.get("id")} has no title')
-            names = []
-            for link in (row.get('relationships', {}).get('artists', {}).get('data') or
-                         (included.get(('tracks', row.get('id'))) or {}).get('relationships', {}).get('artists', {}).get('data') or []):
-                resource = included.get(('artists', link.get('id')))
-                name = (resource or {}).get('attributes', {}).get('name')
-                if isinstance(name, str) and name.strip():
-                    names.append(name.strip())
-            tracks.append({'id': str(row['id']), 'title': title.strip(), 'artists': names})
+            tracks.append(_track_row(row, included))
         following = document.get('links', {}).get('next')
         if isinstance(following, dict):
             following = following.get('href')
         if not following:
-            require(len(tracks) > 0, 'Album has no tracks')
+            require(tracks, 'Album has no tracks')
             return tracks
         require(following not in seen, 'Repeated album pagination link')
         seen.add(following)
@@ -187,55 +240,46 @@ def role_for(artist_type):
             'soloist': 'soloists', 'singer': 'soloists', 'ensemble': 'orchestra'}.get(artist_type, 'artists')
 
 
-def track_ids_from_url(url):
+def track_id_from_url(url):
     match = TRACK_URL.fullmatch((url or '').strip())
     return match.group(1) if match else None
 
 
-def existing_recommendations(root):
-    """work_id -> {'track_ids': [...], 'source': description} for the current recommendation."""
-    found = {}
-    for path in sorted((Path(root) / 'data/performances').glob('*.yaml')):
-        data = read_yaml(path)
-        if not isinstance(data, dict) or data.get('recommended') is not True:
-            continue
-        wid = data.get('work_id')
-        require(wid, f'{path.name} is recommended without a work_id')
-        track = track_ids_from_url((data.get('links', {}) or {}).get('tidal', {}).get('url', ''))
-        found.setdefault(wid, {'track_ids': [], 'sources': []})
-        found[wid]['sources'].append(path.name)
-        if track:
-            found[wid]['track_ids'].append(track)
-    for path in sorted((Path(root) / 'data/recordings').glob('*.y*ml')):
-        if path.name == 'README.md':
-            continue
-        data = read_yaml(path)
-        if not isinstance(data, dict):
-            continue
-        for entry in data.get('works') or []:
-            if not isinstance(entry, dict) or entry.get('status') != 'recommended':
-                continue
-            wid = entry.get('work_id')
-            require(wid, f'{path.name} has a recommended work entry without work_id')
-            link = (entry.get('links', {}) or {}).get('tidal', {}) or (data.get('links', {}) or {}).get('tidal', {})
-            track = track_ids_from_url((link or {}).get('url', ''))
-            found.setdefault(wid, {'track_ids': [], 'sources': []})
-            found[wid]['sources'].append(path.name)
-            if track:
-                found[wid]['track_ids'].append(track)
-    return found
+def tidal_track_of(data):
+    """Safely read links.tidal.url from a hand-maintained document."""
+    links = data.get('links') if isinstance(data, dict) else None
+    tidal = links.get('tidal') if isinstance(links, dict) else None
+    url = tidal.get('url') if isinstance(tidal, dict) else None
+    return track_id_from_url(url)
+
+
+def composer_evidence(track, album_artists, persons):
+    """Canonical composer IDs suggested by names around the track."""
+    names = list(album_artists) + list(track['artists'])
+    for role_names in track.get('credits', {}).values():
+        names.extend(role_names)
+    normalized = {norm(name) for name in names}
+    return {pid for pid, name in persons.items() if norm(name) in normalized}
+
+
+def work_matches(track, work, composers):
+    """Match evidence: title/alias containment, or a shared catalogue token."""
+    if work['composer_id'] not in composers:
+        return False
+    text = ' '.join(filter(None, [track['title'], track['version']]))
+    normalized = norm(text)
+    if norm(work['title']) in normalized or any(norm(a) in normalized for a in work['aliases']):
+        return True
+    return bool(catalogue_tokens(text) & (catalogue_tokens(work['title']) |
+                                          {token for alias in work['aliases'] for token in catalogue_tokens(alias)}))
 
 
 def match_works(tracks, works, persons, album_artists):
     """Map every track to exactly one canonical work, or mark it ambiguous/unknown."""
     matches = []
     for position, track in enumerate(tracks, 1):
-        names = {norm(name) for name in track['artists'] + album_artists}
-        composers = {pid for pid, name in persons.items() if norm(name) in names}
-        text = norm(track['title'])
-        hits = [w for w in works
-                if w['composer_id'] in composers
-                and (norm(w['title']) in text or any(norm(a) in text for a in w['aliases']))]
+        composers = composer_evidence(track, album_artists, persons)
+        hits = [w for w in works if work_matches(track, w, composers)]
         entry = {'track': track, 'position': position, 'work': None, 'state': 'unknown'}
         if len(hits) == 1:
             entry.update(work=hits[0], state='matched')
@@ -249,11 +293,8 @@ def assign_artists(tracks, album_artists, performers):
     """Map performer names to canonical IDs by exact normalized name; keep the rest as raw text."""
     roles = {}
     unmatched = []
-    names = list(album_artists)
-    for track in tracks:
-        names.extend(track['artists'])
     seen = set()
-    for name in names:
+    for name in list(album_artists) + [n for track in tracks for n in track['artists']]:
         if name in seen:
             continue
         seen.add(name)
@@ -298,7 +339,7 @@ def build_recording(root, album, matches, roles, unmatched_artists, today, recor
     recording = {'id': recording_id or slugify(album['title']),
                  'title': album['title'], 'label': album['label'], 'year': album['year'],
                  'artists': roles or None, 'works': entries,
-                 'links': {'tidal': {'url': f"https://tidal.com/browse/album/{album['id']}",
+                 'links': {'tidal': {'url': album_url(album['id']),
                                      'status': 'active', 'last_checked': today}}}
     notes = []
     if unmatched_artists:
@@ -311,6 +352,83 @@ def build_recording(root, album, matches, roles, unmatched_artists, today, recor
     unmatched = [{'track': e['track'], 'state': e['state'], 'candidates': e.get('candidates', [])}
                  for e in ambiguous + unknown]
     return recording, unmatched
+
+
+def performance_track_index(root):
+    """TIDAL track ID -> work_id from canonical performances."""
+    index = {}
+    for path in sorted((Path(root) / 'data/performances').glob('*.yaml')):
+        data = read_yaml(path)
+        if not isinstance(data, dict):
+            continue
+        track = tidal_track_of(data)
+        wid = data.get('work_id')
+        if track and wid:
+            index[track] = wid
+    return index
+
+
+def doc_recommendations(root, works, performance_index):
+    """Published recommendations from docs/*.md: TIDAL track anchors with work attribution."""
+    recommendations, unattributed = {}, []
+    for path in sorted((Path(root) / 'docs').glob('*.md')):
+        for number, line in enumerate(path.read_text(encoding='utf-8').splitlines(), 1):
+            for track in DOC_TRACK_LINK.findall(line):
+                wid = performance_index.get(track)
+                if not wid:
+                    hits = [w['id'] for w in works if catalogue_tokens(line) & (
+                        catalogue_tokens(w['title']) | {t for a in w['aliases'] for t in catalogue_tokens(a)})]
+                    wid = hits[0] if len(hits) == 1 else None
+                if not wid:
+                    unattributed.append(f'{path.name}:{number} (track {track})')
+                    continue
+                entry = recommendations.setdefault(wid, {'track_ids': [], 'sources': []})
+                if track not in entry['track_ids']:
+                    entry['track_ids'].append(track)
+                entry['sources'].append(f'{path.name}:{number}')
+    return recommendations, unattributed
+
+
+def existing_recommendations(root, works=None):
+    """work_id -> {'track_ids': [...], 'sources': [...]} for every current recommendation."""
+    found = {}
+    works = works if works is not None else load_works(root)
+
+    def add(wid, track, source):
+        require(wid, f'{source} is recommended without a work_id')
+        entry = found.setdefault(wid, {'track_ids': [], 'sources': []})
+        if track and track not in entry['track_ids']:
+            entry['track_ids'].append(track)
+        entry['sources'].append(source)
+
+    for path in sorted((Path(root) / 'data/performances').glob('*.yaml')):
+        data = read_yaml(path)
+        if not isinstance(data, dict) or data.get('recommended') is not True:
+            continue
+        track = tidal_track_of(data)
+        add(data.get('work_id'), track, path.name)
+    for path in sorted((Path(root) / 'data/recordings').glob('*.y*ml')):
+        if path.name == 'README.md':
+            continue
+        data = read_yaml(path)
+        if not isinstance(data, dict):
+            continue
+        for entry in data.get('works') or []:
+            if not isinstance(entry, dict) or entry.get('status') != 'recommended':
+                continue
+            link = (entry.get('links') or {}).get('tidal') if isinstance(entry.get('links'), dict) else None
+            if not isinstance(link, dict):
+                link = (data.get('links') or {}).get('tidal') if isinstance(data.get('links'), dict) else None
+            add(entry.get('work_id'),
+                track_id_from_url(link.get('url') if isinstance(link, dict) else None), path.name)
+    doc_found, unattributed = doc_recommendations(root, works, performance_track_index(root))
+    for wid, entry in doc_found.items():
+        target = found.setdefault(wid, {'track_ids': [], 'sources': []})
+        for track in entry['track_ids']:
+            if track not in target['track_ids']:
+                target['track_ids'].append(track)
+        target['sources'].extend(entry['sources'])
+    return found, unattributed
 
 
 def playlist_plan(root, album, recording, matches, recommendations, today):
@@ -326,7 +444,7 @@ def playlist_plan(root, album, recording, matches, recommendations, today):
         require(candidate_ids, f'Work {wid} matched without candidate tracks')
         name = f"Earmarked {today} — {wid} — {album['title']}"[:100]
         plans.append({'work_id': wid, 'name': name,
-                      'description': f"Candidate comparison for https://tidal.com/browse/album/{album['id']} "
+                      'description': f"Candidate comparison for {album_url(album['id'])} "
                                       f"(current recommendation: {', '.join(current['sources'])})",
                       'current_track_ids': current['track_ids'], 'candidate_track_ids': candidate_ids,
                       'current_sources': current['sources']})
@@ -395,7 +513,7 @@ def run(root, url, *, dry_run=False, recording_id=None, update_existing=False,
     roles, unmatched_artists = assign_artists(tracks, album['artists'], performers)
     recording, unmatched_tracks = build_recording(root, album, matches, roles, unmatched_artists, today, recording_id)
     require(recording['works'], 'No track could be related to canonical works; refusing to write anything')
-    recommendations = existing_recommendations(root)
+    recommendations, unattributed = existing_recommendations(root, works)
     plans = [p for p in playlist_plan(root, album, recording, matches, recommendations, today)
              if p['current_track_ids']]
     work_lines = []
@@ -404,7 +522,7 @@ def run(root, url, *, dry_run=False, recording_id=None, update_existing=False,
             if entry['work_id'] in {p['work_id'] for p in plans}:
                 action = ('candidate; comparison playlist planned (existing recommendation: '
                           + ', '.join(next(p['current_sources'] for p in plans
-                                           if p['work_id'] == entry['work_id'])))
+                                           if p['work_id'] == entry['work_id'])) + ')')
             elif entry['work_id'] in recommendations:
                 action = ('candidate; existing recommendation has no TIDAL track anchor, '
                           'no comparison playlist')
@@ -413,7 +531,7 @@ def run(root, url, *, dry_run=False, recording_id=None, update_existing=False,
         else:
             action = 'unevaluated work entry (no status); see notes'
         work_lines.append({'work_id': entry['work_id'], 'action': action})
-    report = {'album': f"{album['title']} (https://tidal.com/browse/album/{identifier})",
+    report = {'album': f"{album['title']} ({album_url(identifier)})",
               'recording_id': recording['id'],
               'works': work_lines,
               'playlist_plans': [{'work_id': p['work_id'], 'name': p['name'],
@@ -421,7 +539,8 @@ def run(root, url, *, dry_run=False, recording_id=None, update_existing=False,
                                   'candidate_tracks': p['candidate_track_ids']} for p in plans],
               'unmatched_tracks': [{'title': u['track']['title'], 'state': u['state'],
                                     'candidates': u.get('candidates', [])} for u in unmatched_tracks],
-              'unmatched_artists': unmatched_artists}
+              'unmatched_artists': unmatched_artists,
+              'unattributed_recommendation_lines': unattributed}
     output = {'recording': recording, 'report': report, 'dry_run': dry_run}
     if dry_run:
         output['note'] = ('Dry run: nothing written, no playlist created. '
@@ -452,7 +571,8 @@ def dump_yaml(recording):
 
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('album_url', help='Exactly one TIDAL album URL: https://tidal.com/browse/album/<id>')
+    parser.add_argument('album_url', help='TIDAL album URL, e.g. https://tidal.com/browse/album/<id> '
+                                          '(or tidal.com/album/<id>, optionally with /u)')
     parser.add_argument('--dry-run', action='store_true',
                         help='Show the proposed recording YAML and playlist plan without writing anything')
     parser.add_argument('--recording-id', help='Override the derived recording ID slug')
@@ -474,8 +594,6 @@ def main(argv=None):
         line = f"  {entry['work_id']}: comparison playlist"
         if entry.get('playlist_url'):
             line += f" {entry['playlist_url']}"
-        elif 'playlist_url' in entry:
-            line += f" — {entry['playlist_url']}"
         else:
             line += (f" planned (current {len(entry['current_tracks'])} track(s), "
                      f"candidate {len(entry['candidate_tracks'])} track(s))")
@@ -485,6 +603,9 @@ def main(argv=None):
         print(f"  UNMATCHED ({entry['state']}): {entry['title']}{detail}")
     if report['unmatched_artists']:
         print('  Unmatched artists (raw text in notes): ' + ', '.join(report['unmatched_artists']))
+    if report['unattributed_recommendation_lines']:
+        print('  Recommendation lines without a canonical work attribution: '
+              + ', '.join(report['unattributed_recommendation_lines']))
     if result['dry_run']:
         print('--- Proposed data/recordings YAML ---')
         print(dump_yaml(result['recording']), end='')

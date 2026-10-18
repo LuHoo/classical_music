@@ -229,27 +229,52 @@ bestaande workflow.
 .venv/bin/python scripts/register_earmarked_recording.py "https://tidal.com/browse/album/<id>"
 ```
 
+Geaccepteerde URL-vormen (fail-closed op alles anders): `https://tidal.com/browse/album/<id>`,
+`https://tidal.com/album/<id>` en `https://listen.tidal.com/album/<id>`, elk optioneel met de
+`/u`-share-suffix. Het album-URL wordt in het YAML-bestand altijd canoniek als
+`https://tidal.com/browse/album/<id>` opgeslagen.
+
 | Parameter | Effect |
 |---|---|
 | `--dry-run` | Toont het volledige voorgestelde YAML-document en het playlistplan; schrijft geen bestand en maakt geen playlist aan |
 | `--recording-id SLUG` | Overschrijft de van de albumtitel afgeleide opname-ID (lowercase slug) |
 | `--update-existing` | Staat toe een bestaand `data/recordings/`-bestand met hetzelfde album-URL expliciet uit te breiden; een bestaande ID zonder deze vlag is een fout |
 
+Matching per track (nooit gokken): een track wordt aan exact één canoniek werk
+toegewezen als de werkstitel of een alias in de titel- **of versie**-tekst van de
+track voorkomt, óf als track en werk een gedeeld catalogusnummer delen
+(`D. 940`, `Op. 103`, `BWV 1052`, `RV 565`, e.d.) — steeds mét componist-bewijs
+uit album-artiesten, track-artiesten of de composer-credits. Meerdere kandidaten
+→ ambigue; geen kandidaat → onbekend. Consecutieve tracks van hetzelfde werk
+worden samengevoegd tot één werk-regel.
+
 Gedrag per werk:
 
 - Bestaande aanbeveling gevonden → werk-regel `status: candidate` plus
-  vergelijkingsplaylist; de huidige aanbeveling moet een TIDAL-track-URL
-  (`https://tidal.com/track/<id>`) hebben in `data/performances/` of
-  `data/recordings/`, anders wordt de playlist overgeslagen en staat dit in het rapport.
+  vergelijkingsplaylist; de huidige aanbeveling moet een TIDAL-track-anker
+  (`https://tidal.com/track/<id>`) hebben, anders wordt de playlist overgeslagen
+  en staat dit in het rapport. Aanbevelingen worden gelezen uit de gepubliceerde
+  `docs/*.md`-pagina's (via hun TIDAL-track-ankers, geattribueerd via
+  `data/performances/` of een uniek catalogusnummer), uit performances met
+  `recommended: true` en uit `data/recordings/`-regels met `status: recommended`.
 - Geen bestaande aanbeveling → `status: candidate`, geen playlist; het rapport zegt dit expliciet.
 - Ambigue of onbekende tracks → fail-closed: ambigue tracks landen als werk-item
   **zonder** `status` (met vermelding in `notes`), onbekende tracks worden als ruwe
   tekst in de `notes` van de opname vastgelegd. Er worden nooit canonieke IDs verzonnen.
 
 Het rapport op stdout vermeldt per werk de bestaande status, de uitgevoerde actie en
-de playlist-URL, plus de lijst van ongematchte/ambigue tracks en artiesten. Lees het
-YAML-bestand na met de gebruikelijke reviewworkflow; playlists zijn UNLISTED en
-kunnen daarna handmatig worden beheerd (hernoemen/verwijderen in TIDAL).
+de playlist-URL, plus de lijst van ongematchte/ambigue tracks en artiesten, en
+eventuele aanbevelingsregels uit `docs/*.md` die niet aan een canoniek werk
+konden worden toegewezen. Lees het YAML-bestand na met de gebruikelijke
+reviewworkflow; playlists zijn UNLISTED en kunnen daarna handmatig worden
+beheerd (hernoemen/verwijderen in TIDAL).
+
+Voorbeeld (Chamayou/Andsnes, *Schubert: Four Hands*): de vier delen van de
+Fantasie in F mineur, D. 940 matchen via het `D. 940`-catalogusnummer in de
+track-versie en de composer-credits; de gepubliceerde Perahia/Lupu-aanbeveling
+uit `docs/schubert.md` levert de vergelijkingsplaylist (huidige track eerst, dan
+de vier kandidaat-delen); de drie andere vierhandige werken (D. 947, D. 952,
+D. 951) bestaan nog niet canoniek en blijven als ruwe tekst in `notes` staan.
 
 Voor cataloguslezingen gebruikt het script `TIDAL_ACCESS_TOKEN` of
 `TIDAL_CLIENT_ID`/`TIDAL_CLIENT_SECRET`; alleen in apply-modus wordt voor
