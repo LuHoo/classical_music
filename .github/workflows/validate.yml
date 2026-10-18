@@ -12,6 +12,11 @@ on:
           Push and manual runs always use the full route independent of this flag.
         type: boolean
         default: false
+      pytest_mode:
+        description: Two workers by default; choose serial for fallback or benchmarking.
+        type: choice
+        options: [parallel, serial]
+        default: parallel
 
 # Only the same pull request's own superseded runs are cancelled.
 #
@@ -50,10 +55,16 @@ jobs:
         with:
           python-version: "3.13"
 
+      - name: Record clean installation baseline
+        run: python scripts/installation_provenance.py --before
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           python -m pip install -e '.[dev]'
+
+      - name: Audit installation metadata
+        run: python scripts/installation_provenance.py
 
       - name: Classify changed files
         id: classify
@@ -93,9 +104,13 @@ jobs:
         id: run_tests
         env:
           CI_METRICS_DIR: ci-metrics
+          PYTEST_XDIST_ARGS: >-
+            ${{ !(github.event_name == 'workflow_dispatch'
+                  && github.event.inputs.pytest_mode == 'serial')
+                && '-n 2 --dist load' || '' }}
         run: >-
           python scripts/measure_ci.py --label pytest --
-          python -m pytest -p classical_music.pytest_metrics
+          python -m pytest -p classical_music.pytest_metrics ${PYTEST_XDIST_ARGS}
           --durations=30 --junitxml=ci-metrics/junit.xml
           --cov-report=xml:ci-metrics/coverage.xml
           ${{ steps.classify.outputs.pytest_targets }}

@@ -8,12 +8,15 @@ from pathlib import Path
 
 def summarize(directory):
     lines = ['## CI measurements', '', 'Command durations exclude queue, setup and artifact upload.', '',
-             '| Command | Seconds | Exit |', '|---|---:|---:|']
+             '| Command | Seconds | Peak RSS (KiB) | Exit |', '|---|---:|---:|---:|']
     for name in ('classify', 'validator', 'validator-human', 'validator-json', 'pytest'):
         path = directory / (name + '.json')
         if path.exists():
             data = json.loads(path.read_text())
-            lines.append(f"| {name} | {data.get('seconds', 'incomplete')} | {data.get('exit_code', 'incomplete')} |")
+            memory = data.get('memory') or {}
+            lines.append(f"| {name} | {data.get('seconds', 'incomplete')} | "
+                         f"{memory.get('peak_rss_kib', 'unavailable')} | "
+                         f"{data.get('exit_code', 'incomplete')} |")
     path = directory / 'test-phases.jsonl'
     rows = []
     if path.exists():
@@ -33,7 +36,8 @@ def summarize(directory):
         for row in sorted((r for r in rows if r['phase'] == phase), key=lambda r: r['seconds'], reverse=True)[:30]:
             name = row['nodeid'].replace('|', '\\|').replace('\n', ' ')
             lines.append(f"| `{name}` | {row['seconds']:.4f} | {row['yaml_loads']} | {row['publication_builds']} |")
-    lines += ['', 'Counts are current-process calls, including failed calls; child-process and mocked calls are not fully attributed.',
+    lines += ['', 'Peak RSS is sampled Linux process-tree RSS and is a lower bound, not runner-wide memory.',
+              'Counts are current-process calls, including failed calls; child-process and mocked calls are not fully attributed.',
               'Full logs, JUnit, coverage, environment and phase records are in the ci-metrics artifact.']
     return '\n'.join(lines) + '\n'
 
