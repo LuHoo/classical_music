@@ -1,9 +1,49 @@
 # CI-nulmeting — issue #305
 
-Deze stap voegt metingen toe; hij claimt geen versnelling. De volledige pytest-suite,
+Dit document bewaart de geschiedenis van #305–#309. De oorspronkelijke #305-stap
+voegt metingen toe; hij claimt geen versnelling. De volledige pytest-suite,
 standaard coverage-instellingen en beide canonieke validatorpasses blijven behouden.
 De JSON-validator verbergt een fout niet meer achter `|| true`; artifacts blijven
 beschikbaar via `if: always()`. Stap #308 behandelt pas het samenvoegen van validatorpasses.
+
+## Eindinventaris #310 — 18 oktober 2026
+
+Zie het [CI-eindrapport](../../reports/completion/issue-310-ci-final-report.md) en de
+[compacte artifactextractie](../../reports/completion/issue-310-ci-evidence.json)
+voor elf opnieuw gedownloade runs, originele hashes, revisies, individuele waarden,
+route-tabellen, stapmatrix en de nog open eindmetingen. Het bestaande
+[User Manual](scripts-user-manual.md#ci-tijden-onderzoeken) beschrijft de bediening
+en onderhoudsafspraken. Productiecode, testselectie en tweeworkerstandaard zijn niet
+gewijzigd voor #310.
+
+PR #315 is door Lucas gemerged als `caaa5ccc637c36748a481081604032ae648864fb`.
+De finale PR-run 236 (geteste merge `8c6a2bbbb2d01b5c49552cbd1f6e4c9f147f8645`,
+verwachte/waargenomen head `c8e3e2518d01e6c8a6a2c21f5674a33d07653ddf`) en main-run
+237 slagen met 554 tests, geaudite installatie-evidence, complete workerreports en
+985/1170 geraakte regels. Dit zijn verschillende CPU's en geen drie-run-eindgroep.
+De afzonderlijke Pages-builds op die revisies zijn groen. Zie het eindrapport voor
+de runlinks; oudere of andere revisies bewijzen niet de nog te pushen #310-versie.
+
+De mogelijke #305-baseline 203–205 op `ea36428a46d61e6993cb8f043484e78200944220`
+is rechtstreeks getoetst met de **ongewijzigde** comparator. Deze weigert de dirty
+checkout zonder inhoudelijke installatie-audit. Bovendien gebruikt 203 een andere
+CPU dan 204–205. Er is dus nog geen geldige drie-runbaseline, geen actuele
+data-only-eindgroep en geen cumulatieve voor/na-claim. De oorspronkelijke 372 tests,
+historische #309-suite met 537 en finale suite met 554 worden niet als identiek
+voorgesteld. Het oude beleid was full voor beide wijzigingstypen, niet data-only.
+
+Een oorspronkelijk numeriek epic-streefdoel is in het onderzochte #304/#305-bewijs
+niet gevonden. Doelbeoordeling: **niet beoordeelbaar**. Lucas legt vóór verdere
+eindmetingen de referentiegroep, grenzen en een onderbouwd doel vast. Tot die tijd
+blijven de volledige eindvergelijkingen **nog niet gemeten**. #310/#304 worden
+niet als voltooid gerapporteerd op grond van gesloten eerdere issues.
+
+De lokale volledige correctheidsrun voor #310 slaagt met 554 tests, nul
+JUnit-failures/errors/skips, complete tweeworker-evidence, 32 publicatiebuilds en
+985/1170 coverage-regels. De canonieke validator heeft nul fouten en 115
+waarschuwingen. Gemeten lokaal: pytest 2113,39 s, validator 55,23 s op Python
+3.14.3/macOS; geen GitHub-benchmark en geen onderdeel van de eindmeetgroepen.
+Een lokale Jekyll-build blijft geblokkeerd door ontbrekende Bundler 2.5.9.
 
 ## Wat wordt gemeten?
 
@@ -597,11 +637,12 @@ never folded into `validate`'s own summary.
 
 Empirically confirmed via `gh pr view <number> --json statusCheckRollup`: the
 check name is `validate` (job id in `validate.yml`), workflow "Validate
-Canonical Data". No GitHub branch-protection rule or ruleset is currently
-configured on this repository (`gh api repos/.../branches/main/protection`
-returns 404; `gh api repos/.../rulesets` returns `[]`) — "required" is
-currently Lucas's own manual practice, not a technical GitHub enforcement. The
-job id and workflow name are unchanged by #308.
+Canonical Data". The original #308 inspection reported no configured protection.
+On 18 October, the branch API instead reports `protected: true`; the protection
+endpoint returns 404 with the current access and the repository ruleset list is
+empty. These responses do not establish which checks are technically enforced.
+Lucas must verify the effective branch/ruleset settings; do not infer absence of
+protection from that 404. The job id and workflow name are unchanged by #308.
 
 `validate.yml` remains a **single job**. Classification only changes which
 pytest paths one unconditional `pytest` step receives; it is never split into

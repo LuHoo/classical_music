@@ -387,3 +387,113 @@ hebben hun eigen, hierboven beschreven effecten.
 
 Zie [de reproduceerbare CI-nulmeting](ci-benchmark.md) voor testtimings, artifacts,
 YAML/buildtellers, foutafhandeling en het vergelijken van drie CI-runs (issue #305).
+
+### Welke controle wanneer?
+
+| Moment | Controle en grens |
+|---|---|
+| Individuele keuze | Invoer, vervangingsbevoegdheid, bronconflicten en veilig schrijven; nog geen zware eindcontrole |
+| `./curator finish` | Actuele gezamenlijke intake-, beslisrecord- en publicatiecontrole, één publicatiebouw en gerichte batchtests; geen volledige softwaretests of Jekyll-bouw |
+| Data-only PR | Eén volledige canonieke validatorpass plus `CURATOR_REGRESSION_TESTS`, inclusief publicatie- en cross-intakecontroles |
+| Full CI | Dezelfde canonieke controle plus de volledige pytest-suite, inclusief publicatiecontroles |
+| Echte sitebouw | Afzonderlijke `build` in **Build and Deploy Jekyll site to GitHub Pages**: publicatiegeneratie, Jekyll, publicatie-index en interne links |
+
+`DataValidator.run()` roept `PublicationValidator` niet aan. Een groene canonieke
+validator of `validate` vervangt dus niet de afzonderlijke sitecontrole. Ook de
+workflow **CI**, met eveneens een job `build`, vervangt deze publicatieketen niet.
+
+Data-only vereist een volledige diff voor precies de verwachte PR-head en -base.
+Alle paden moeten toegestaan zijn: `.yaml` onder `data/`, `.json`/`.md` onder
+`reports/playlist-import/` of `.json` onder `reports/curator-decisions/`.
+Bij renames/copies tellen beide paden mee. Code, schema, dependencies, workflows,
+documentatie, onbekende of gemengde paden en onvolledig bewijs leiden tot `full`.
+Pushes naar main en handmatige runs zijn altijd full. Een kleiner testaantal is
+geen snelheidsbewijs zonder controle van de geselecteerde garanties.
+
+### Handmatig volledig controleren
+
+1. Commit en push zelf de gecontroleerde branch; kies geen andere ref dan de versie
+  die je wilt valideren. Bewaar de commit-SHA.
+2. Open GitHub **Actions**, kies **Validate Canonical Data**, daarna **Run workflow**.
+3. Selecteer bij **Use workflow from** je gepushte werkbranch en zet `force_full`
+  op `true`. Dit bepaalt de scope, niet het aantal workers. Ook zonder deze flag
+  gebruikt een handmatige run al full.
+4. Kies `pytest_mode=parallel` (standaard, exact twee workers met `--dist load`).
+  Kies `serial` alleen voor terugval of een afzonderlijke vergelijkingsgroep.
+  PR- en main-runs gebruiken standaard twee workers.
+5. Controleer na afloop zowel de stapuitkomsten als de artifacts en de gemeten SHA.
+  Een rerun test de oude runrevisie, niet automatisch je nieuwste wijzigingen.
+6. Start voor siteverificatie afzonderlijk **Build and Deploy Jekyll site to GitHub
+  Pages** via **Run workflow** op dezelfde ref. Deze handmatige run bouwt en
+  controleert de site; deployment gebeurt alleen bij een push op main.
+
+Als de webinterface het nieuwe invoerveld niet toont, controleer de workflow op de
+gekozen remote ref. Ga niet uit van een mislukte push alleen omdat de UI een veld
+niet toont. Met een passend geautoriseerde `gh`-login kun je zelf expliciet dispatchen:
+
+```bash
+gh workflow run validate.yml --repo LuHoo/classical_music --ref JOUW-BRANCH \
+  -f force_full=true -f pytest_mode=parallel
+gh workflow run pages.yml --repo LuHoo/classical_music --ref JOUW-BRANCH
+```
+
+Voor een benchmark: houd de ref ongewijzigd, draai minimaal drie vergelijkbare runs
+per conditie en wissel indien mogelijk serial/parallel af. Rond iedere run af voordat
+je de volgende begint voor een eenvoudige gecontroleerde volgorde; dit bewijst niet
+dat verschillende GitHub-runners fysieke resources delen. Pool geen verschillende
+CPU-modellen, Python-/dependencyversies, images of selecties.
+
+### Resultaten en artifacts lezen
+
+Open de run en lees **Validation policy** als het plan, **Execution summary** als
+de werkelijk waargenomen uitvoering en **CI measurements** voor commandoduren en
+faseprofielen. `skipped`, `cancelled`, onbekend of ontbrekend bewijs is geen succes.
+De stabiele checknaam is `validate`; kijk bij beide `build`-checks ook naar de
+workflownaam. Technische branch protection moet afzonderlijk worden geverifieerd;
+een projectafspraak alleen dwingt geen mergeblokkade af.
+
+Download onder **Artifacts** zowel `validation-report` als
+`ci-metrics-RUN_ID-ATTEMPT`. Bewaar voor iedere attempt apart:
+
+| Bestand | Wat het bewijst |
+|---|---|
+| `classification.json` | Gekozen route, reden, volledigheid en verwachte/waargenomen revisies |
+| `validator.json` / `validator.log` | Canonieke commandoduur, omgeving en exitstatus |
+| `pytest.json` / `pytest.log` | Exacte selectie, workers, dependencyversies, timings en exitstatus |
+| `junit.xml` | Testgevallen, failures, errors en skips; geen dekking van muziekdata |
+| `coverage.xml` | Geraakte bronregels in validation/migration; 84% is geen percentage gecontroleerde catalogus |
+| `test-session.json` / `test-phases.jsonl` | Collectie, effectieve exitstatus, volledigheid, setup/call/teardown en YAML-/buildtellers |
+| `workers/gw0/`, `workers/gw1/` | Gescheiden workerbewijs bij parallelle runs |
+| `installation.json` | Schone voorstatus, hashes en volledige installatiediff; alleen drie gecontroleerde egg-info-bestanden mogen afwijken |
+
+De commandoduur sluit installatie en artifactupload uit. Volledige jobduur komt uit
+job-start/einde; wachtrij apart rapporteren. Runner-minuten zijn de som van relevante
+jobduren gedeeld door 60, niet maal twee voor twee pytest-workers op één runner.
+RSS is een gesamplede som van procesboom-RSS, kan gedeelde pagina's dubbeltellen en
+korte pieken missen; het is geen runnerbreed fysiek piekgeheugen. Een afzonderlijke
+totale publicatieduur is niet beschikbaar wanneer publicatiecontroles in pytest zitten.
+
+### Regressies onderzoeken en onderhouden
+
+1. Vergelijk eerst SHA, data-tree, installatie-audit, OS/image/CPU, Python,
+  dependencies, route, commando en worker-aantal. Een oud groen rapport geldt niet
+  voor nieuwe data. Vergelijk groepen met `compare_ci_baseline.py`, nooit verschillende
+  revisies of serial/parallel als één homogene groep.
+2. Bij onverwacht full: lees de classificatiereden en head/base-binding. Los het
+  bewijsprobleem op; verruim de allowlist niet om de run sneller te maken.
+3. Bij afwijkende testaantallen of coverage: vergelijk node-IDs, JUnit en dezelfde
+  bronregels. Controleer ontbrekende worker-/coverage-overdracht en incomplete sessies.
+4. Bij installatie-auditfouten: inspecteer `installation.json` en de diff. Omzeil de
+  audit of comparator niet; andere wijzigingen dan de gecontroleerde metadata falen.
+5. Onderzoek daarna de traagste setup/call/teardown-fasen en YAML-/buildtellers.
+  Behoud volledige tijdelijke curatorcataloguskopieën en locks; maak ze niet sneller
+  met hardlinks naar mutabele echte data of door garanties weg te laten.
+
+Lucas blijft reviewer en mergebeslisser. Controleer bij wijzigingen aan workflows,
+dependencies, parser, testselectie of coverage opnieuw de controlematrix en het
+meetprotocol. Bij pytest-cov-upgrades blijft de echte worker-coverageverliesregressie
+verplicht: de huidige overdrachtscontrole steunt op pytest-cov 5. Leg besluiten vast
+met commit, dataversie, individuele runlinks, attempts, uitsluitingsredenen en compacte
+bewijsbestanden voordat artifacts verlopen. Verander geen streefdoel achteraf om een
+meting als geslaagd te presenteren. Open meetgaten en de cumulatieve beoordeling staan
+in het [eindrapport voor #310](../../reports/completion/issue-310-ci-final-report.md).
