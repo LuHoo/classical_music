@@ -13,10 +13,10 @@ on:
         type: boolean
         default: false
       pytest_mode:
-        description: Benchmark mode; normal pull-request validation remains serial.
+        description: Two workers by default; choose serial for fallback or benchmarking.
         type: choice
-        options: [serial, parallel]
-        default: serial
+        options: [parallel, serial]
+        default: parallel
 
 # Only the same pull request's own superseded runs are cancelled.
 #
@@ -55,10 +55,16 @@ jobs:
         with:
           python-version: "3.13"
 
+      - name: Record clean installation baseline
+        run: python scripts/installation_provenance.py --before
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           python -m pip install -e '.[dev]'
+
+      - name: Audit installation metadata
+        run: python scripts/installation_provenance.py
 
       - name: Classify changed files
         id: classify
@@ -99,8 +105,8 @@ jobs:
         env:
           CI_METRICS_DIR: ci-metrics
           PYTEST_XDIST_ARGS: >-
-            ${{ github.event_name == 'workflow_dispatch'
-                && github.event.inputs.pytest_mode == 'parallel'
+            ${{ !(github.event_name == 'workflow_dispatch'
+                  && github.event.inputs.pytest_mode == 'serial')
                 && '-n 2 --dist load' || '' }}
         run: >-
           python scripts/measure_ci.py --label pytest --

@@ -9,6 +9,7 @@ observed them, not child processes or replaced/mocked methods.
 from collections import Counter
 import functools
 import json
+import math
 import os
 from pathlib import Path
 
@@ -82,6 +83,16 @@ class ParallelControllerMetrics:
     def __init__(self, directory, expected_workers):
         self.directory = directory
         self.expected_workers = expected_workers
+        self.coverage_errors = []
+
+    @pytest.hookimpl(optionalhook=True, trylast=True)
+    def pytest_testnodedown(self, node, error):
+        # pytest-cov 5 signals successful worker coverage delivery with this
+        # marker. Without it pytest-cov warns, but does not fail pytest itself.
+        if (getattr(node.config.option, 'cov_source', None)
+                and not getattr(node.config.option, 'no_cov', False)):
+            if not getattr(node, 'workeroutput', {}).get('cov_worker_node_id'):
+                self.coverage_errors.append(f'missing worker coverage: {node.gateway.id}')
 
     @staticmethod
     def validate_rows(worker, rows):
@@ -98,17 +109,18 @@ class ParallelControllerMetrics:
             if not isinstance(nodeid, str) or not nodeid:
                 errors.append(f'{worker} record {index} has invalid nodeid')
                 continue
-            if phase not in {'setup', 'call', 'teardown'}:
+            if not isinstance(phase, str) or phase not in {'setup', 'call', 'teardown'}:
                 errors.append(f'{worker} record {index} has invalid phase')
                 continue
-            if outcome not in {'passed', 'failed', 'skipped'}:
+            if not isinstance(outcome, str) or outcome not in {'passed', 'failed', 'skipped'}:
                 errors.append(f'{worker} record {index} has invalid outcome')
             if row.get('worker') != worker:
                 errors.append(f'{worker} record {index} has wrong worker identity')
-            if not isinstance(row.get('seconds'), (int, float)) or row['seconds'] < 0:
+            if (type(row.get('seconds')) not in (int, float)
+                    or not math.isfinite(row['seconds']) or row['seconds'] < 0):
                 errors.append(f'{worker} record {index} has invalid duration')
             for counter in ('yaml_loads', 'publication_builds'):
-                if not isinstance(row.get(counter), int) or row[counter] < 0:
+                if type(row.get(counter)) is not int or row[counter] < 0:
                     errors.append(f'{worker} record {index} has invalid {counter}')
             reports.setdefault(nodeid, []).append((phase, outcome))
 
@@ -131,7 +143,7 @@ class ParallelControllerMetrics:
         worker_dirs = sorted(path for path in workers_dir.iterdir() if path.is_dir()) if workers_dir.exists() else []
         rows = []
         sessions = []
-        errors = []
+        errors = list(self.coverage_errors)
         expected_names = {f'gw{index}' for index in range(self.expected_workers)}
         actual_names = {path.name for path in worker_dirs}
 
@@ -155,13 +167,13 @@ class ParallelControllerMetrics:
                 continue
             if worker_session.get('worker') != worker_dir.name:
                 errors.append(f'worker identity mismatch for {worker_dir.name}')
-            if not isinstance(worker_session.get('collected'), int) or worker_session['collected'] < 0:
+            if type(worker_session.get('collected')) is not int or worker_session['collected'] < 0:
                 errors.append(f'invalid collected count for {worker_dir.name}')
-            if worker_session.get('exit_code') not in range(6):
+            if type(worker_session.get('exit_code')) is not int or worker_session['exit_code'] not in range(6):
                 errors.append(f'invalid exit code for {worker_dir.name}')
             if not isinstance(worker_session.get('counts'), dict):
                 errors.append(f'invalid counters for {worker_dir.name}')
-            elif any(not isinstance(value, int) or value < 0 for value in worker_session['counts'].values()):
+            elif any(type(value) is not int or value < 0 for value in worker_session['counts'].values()):
                 errors.append(f'invalid counter value for {worker_dir.name}')
             if exitstatus == 0 and worker_session.get('exit_code') != 0:
                 errors.append(f'completed controller has failed worker {worker_dir.name}')
@@ -169,7 +181,9 @@ class ParallelControllerMetrics:
             rows.extend(worker_rows)
             sessions.append(worker_session)
 
-        valid_rows = [row for row in rows if isinstance(row, dict)]
+        valid_rows = [row for row in rows if isinstance(row, dict)
+                      and isinstance(row.get('nodeid'), str)
+                      and isinstance(row.get('phase'), str)]
         keys = [(row.get('nodeid'), row.get('phase')) for row in valid_rows]
         if len(keys) != len(set(keys)):
             errors.append('duplicate nodeid/phase records across workers')
@@ -179,10 +193,13 @@ class ParallelControllerMetrics:
 
         merged_counts = Counter()
         for worker_session in sessions:
-            merged_counts.update(worker_session.get('counts', {}))
+            counts = worker_session.get('counts')
+            if isinstance(counts, dict) and all(type(v) is int and v >= 0 for v in counts.values()):
+                merged_counts.update(counts)
         complete = not errors
+        effective_exit = pytest.ExitCode.INTERNAL_ERROR if errors else exitstatus
         merged = dict(
-            exit_code=int(exitstatus), collected=session.testscollected,
+            exit_code=int(effective_exit), collected=session.testscollected,
             counts=dict(merged_counts), workers=[worker.get('worker') for worker in sessions],
             complete=complete, errors=errors,
             counts_scope='merged worker processes; includes worker collection and setup',

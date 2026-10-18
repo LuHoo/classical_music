@@ -263,7 +263,11 @@ def test_workflow_keeps_full_suite_and_failure_artifacts():
     steps = workflow['jobs']['validate']['steps']
     tests = next(s for s in steps if s['name']=='Run tests')
     assert '${PYTEST_XDIST_ARGS}' in tests['run']
-    assert "pytest_mode == 'parallel'" in tests['env']['PYTEST_XDIST_ARGS']
+    assert workflow['on']['workflow_dispatch']['inputs']['pytest_mode']['default'] == 'parallel'
+    expression = ' '.join(tests['env']['PYTEST_XDIST_ARGS'].split())
+    assert expression == ("${{ !(github.event_name == 'workflow_dispatch' "
+                          "&& github.event.inputs.pytest_mode == 'serial') "
+                          "&& '-n 2 --dist load' || '' }}")
     assert '--durations=30' in tests['run'] and '--junitxml=' in tests['run']
     assert '|| true' not in tests['run'] and 'continue-on-error' not in tests
     assert '--cov-report=xml:' in tests['run']
@@ -292,8 +296,77 @@ def test_baseline_compares_three_matching_runs_and_rejects_drift(tmp_path):
     assert report['summary']['pytest_seconds'] == dict(median=20, minimum=10, maximum=30)
     assert report['summary']['job_seconds']['median'] == 60
     assert report['summary']['queue_seconds']['median'] == 2
+    session_path = directories[2] / 'test-session.json'
+    session_path.write_text(json.dumps(dict(exit_code=0, collected=1, complete=False)))
+    with pytest.raises(ValueError, match='Failed runs'):
+        module.compare(directories)
+    session_path.write_text(json.dumps(dict(exit_code=0, collected=1)))
+    metadata = {name: 'a' * 64 for name in (
+        'src/classical_music.egg-info/PKG-INFO',
+        'src/classical_music.egg-info/SOURCES.txt',
+        'src/classical_music.egg-info/requires.txt')}
+    for directory in directories:
+        file = directory / 'pytest.json'
+        measured = json.loads(file.read_text())
+        measured['environment']['commit'] = 'same'
+        measured['environment']['worktree_status'] = 'M src/classical_music.egg-info/PKG-INFO'
+        file.write_text(json.dumps(measured))
+    with pytest.raises(ValueError, match='Dirty checkout'):
+        module.compare(directories)
+    for directory in directories:
+        file = directory / 'pytest.json'
+        measured = json.loads(file.read_text())
+        measured['environment']['installation_provenance'] = dict(
+            verified=True, commit='same', before_status='', before=metadata, after=metadata,
+            after_status=measured['environment']['worktree_status'], diff='metadata changes')
+        file.write_text(json.dumps(measured))
+    assert module.compare(directories)['summary']['job_seconds']['median'] == 60
+    file = directories[2] / 'pytest.json'
+    measured = json.loads(file.read_text())
+    measured['environment']['worktree_status'] += '\n M data/changed.yaml'
+    measured['environment']['installation_provenance']['after_status'] = measured['environment']['worktree_status']
+    file.write_text(json.dumps(measured))
+    with pytest.raises(ValueError, match='Dirty checkout'):
+        module.compare(directories)
+    measured['environment']['worktree_status'] = 'M src/classical_music.egg-info/PKG-INFO'
+    measured['environment']['installation_provenance']['after_status'] = measured['environment']['worktree_status']
+    file.write_text(json.dumps(measured))
     data = json.loads((directories[2]/'pytest.json').read_text())
     data['environment']['data_tree'] = 'changed'
     (directories[2]/'pytest.json').write_text(json.dumps(data))
     with pytest.raises(ValueError, match='differ'):
         module.compare(directories)
+
+
+@pytest.mark.parametrize('counts', [None, 17, ['bad'], {'yaml_loads': 'bad'}, {'yaml_loads': -1}])
+def test_invalid_counters_preserve_diagnostics_and_effective_exit(tmp_path, counts):
+    from classical_music.pytest_metrics import ParallelControllerMetrics
+    write_worker_metrics(tmp_path, 'gw0', complete_rows('test_a', 'gw0'))
+    write_worker_metrics(tmp_path, 'gw1', complete_rows('test_b', 'gw1'))
+    path = tmp_path / 'workers/gw0/test-session.json'
+    data = json.loads(path.read_text())
+    data['counts'] = counts
+    path.write_text(json.dumps(data))
+    session = FakeSession(collected=2)
+    ParallelControllerMetrics(tmp_path, 2).pytest_sessionfinish(session, 0)
+    merged = json.loads((tmp_path / 'test-session.json').read_text())
+    assert merged['exit_code'] == session.exitstatus == pytest.ExitCode.INTERNAL_ERROR
+    assert merged['complete'] is False and merged['errors']
+    assert len((tmp_path / 'test-phases.jsonl').read_text().splitlines()) == 6
+
+
+@pytest.mark.parametrize(('field', 'value'), [('nodeid', []), ('phase', {}),
+                                            ('seconds', float('nan'))])
+def test_invalid_phase_values_preserve_diagnostics(tmp_path, field, value):
+    from classical_music.pytest_metrics import ParallelControllerMetrics
+    write_worker_metrics(tmp_path, 'gw0', complete_rows('test_a', 'gw0'))
+    write_worker_metrics(tmp_path, 'gw1', complete_rows('test_b', 'gw1'))
+    path = tmp_path / 'workers/gw0/test-phases.jsonl'
+    rows = [json.loads(line) for line in path.read_text().splitlines()]
+    rows[0][field] = value
+    path.write_text(''.join(json.dumps(row) + '\n' for row in rows))
+    session = FakeSession(collected=2)
+    ParallelControllerMetrics(tmp_path, 2).pytest_sessionfinish(session, 0)
+    merged = json.loads((tmp_path / 'test-session.json').read_text())
+    assert merged['exit_code'] == session.exitstatus == pytest.ExitCode.INTERNAL_ERROR
+    assert merged['complete'] is False and merged['errors']

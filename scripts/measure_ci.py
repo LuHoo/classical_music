@@ -41,10 +41,18 @@ def requested_workers(command):
 
 
 def environment(command=()):
+    import importlib.util
+    spec = importlib.util.spec_from_file_location(
+        'installation_provenance', Path(__file__).with_name('installation_provenance.py'))
+    audit = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(audit)
+    current_evidence = audit.current_evidence
+    installation = current_evidence(Path('ci-metrics/installation.json'))
     cpu = Path('/proc/cpuinfo')
     model = next((line.split(':', 1)[1].strip() for line in cpu.read_text().splitlines()
                   if line.startswith('model name')), None) if cpu.exists() else platform.processor()
     return dict(python=sys.version, platform=platform.platform(), cpu_count=os.cpu_count(), cpu_model=model,
+                installation_provenance=installation,
                 commit=capture(['git', 'rev-parse', 'HEAD']),
                 repository_tree=capture(['git', 'rev-parse', 'HEAD^{tree}']),
                 worktree_status=capture(['git', 'status', '--porcelain']),

@@ -30,12 +30,27 @@ def compare(paths):
         if not all(identity) or identity in identities:
             raise ValueError('Missing or duplicated CI run identity.')
         identities.add(identity)
+        installation = env.get('installation_provenance')
         if env['worktree_status']:
-            raise ValueError('Dirty checkout: committed tree IDs do not describe the measured files.')
-        if measured['exit_code'] or session['exit_code']:
+            allowed = {'src/classical_music.egg-info/' + name
+                       for name in ('PKG-INFO', 'SOURCES.txt', 'requires.txt')}
+            if (not installation or installation.get('verified') is not True
+                    or installation.get('before_status') != ''
+                    or installation.get('commit') != env.get('commit')
+                    or installation.get('after_status') != env['worktree_status']
+                    or set(installation.get('before', {})) != allowed
+                    or set(installation.get('after', {})) != allowed
+                    or not installation.get('diff')
+                    or any(line not in {' M ' + p for p in allowed} | {'M ' + p for p in allowed}
+                           for line in env['worktree_status'].splitlines())):
+                raise ValueError('Dirty checkout without verified installation-only metadata evidence.')
+        if (measured['exit_code'] or session['exit_code']
+                or session.get('complete') is False
+                or (isinstance(env['workers'], int) and env['workers'] > 1
+                    and session.get('complete') is not True)):
             raise ValueError('Failed runs are diagnostic evidence, not a successful baseline.')
         phases = [json.loads(line) for line in (path / 'test-phases.jsonl').read_text().splitlines()]
-        signature = dict(environment={key: env[key] for key in (
+        signature = dict(installation=installation, environment={key: env[key] for key in (
             'python', 'platform', 'cpu_count', 'cpu_model', 'data_tree', 'source_tree',
             'tests_tree', 'repository_tree', 'dependencies', 'workers', 'dependency_cache')},
             image={key: env['ci'][key] for key in ('RUNNER_OS', 'RUNNER_ARCH', 'ImageOS', 'ImageVersion')},

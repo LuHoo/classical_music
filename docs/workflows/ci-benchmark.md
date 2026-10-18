@@ -14,9 +14,9 @@ CI-runidentiteit. Alleen geselecteerde niet-geheime omgevingsvelden worden opges
 Environment-verzameling valt buiten de gemeten commandoduur; GitHub-jobduur bevat
 wel deze overhead, installatie en artifactverwerking. Er is geen dependencycache.
 
-Normale pull-requestvalidatie blijft serieel. Een handmatige workflow-dispatch kan
-voor de #309-benchmark expliciet `serial` of `parallel` (twee `--dist load` workers)
-kiezen. De optionele plugin `classical_music.pytest_metrics` levert:
+PR-, main- en handmatige validatie gebruiken standaard twee `--dist load` workers.
+Een handmatige workflow-dispatch kan expliciet `serial` kiezen als terugval- of
+benchmarkoptie; `parallel` is de standaardkeuze. De optionele plugin `classical_music.pytest_metrics` levert:
 
 - `test-phases.jsonl`: na iedere afgeronde setup/call/teardown een regel met node-ID,
   duur, uitkomst, xfail en YAML-load/publicatiebuildtellers;
@@ -213,8 +213,7 @@ extra werk verhinderde de gemeten winst niet. Peak memory is niet gemeten.
 
 Dit is geen besluit voor GitHub Actions: de metingen zijn lokaal en zeggen niets over
 de Ubuntu/Python-3.13-runner, volledige jobduur, runner-minuten of runnergeheugen.
-Normale CI blijft daarom serieel totdat onderstaande GitHub-meting drie vergelijkbare
-runs per conditie oplevert. `-n auto` en opgesplitste jobs zijn niet ingevoerd.
+De GitHub-meting en het besluit voor normale CI staan hieronder. `-n auto` en opgesplitste jobs zijn niet ingevoerd.
 
 ### Versterkte parallelle bewijsvoering
 
@@ -238,36 +237,107 @@ en zijn afstammelingen. Dit is een ondergrens met 0,2-seconde sampling, geen
 runner-brede peak-memorymeting; macOS en ontbrekende `/proc` rapporteren expliciet
 `unavailable`.
 
-### Vereiste GitHub Actions-meting
+### GitHub Actions-resultaat en besluit — 17 oktober 2026
 
-Na een commit en push van deze voorbereiding voert Lucas vanaf dezelfde commit in
-Actions zes handmatige runs uit, bij voorkeur in de volgorde S1, P1, S2, P2, S3, P3:
+Gemeten commit: `8a8574fab7cbe4b22953a3469a4c8eaea79cb595`.
+Data-tree: `615af8804456a950a478406d8e13564878ca6ee3`.
+De vergelijkbare groep gebruikt AMD EPYC 7763 (4 zichtbare CPU's), Python 3.13.16,
+Ubuntu 24 image `20261012.334.1`, Linux `6.17.0-1022-azure`, identieke dependencies
+(pytest 8.4.2, pytest-cov 5.0.0, pytest-xdist 3.8.0) en geen dependencycache.
 
-1. Kies workflow **Validate Canonical Data**, branch `309-new` en `pytest_mode`
-  `serial` voor S-runs of `parallel` voor P-runs. Handmatige runs gebruiken altijd
-  de volle suite; verander geen data, dependencies of workflow tussen de zes runs.
-2. Download voor iedere run het `ci-metrics-RUN_ID-ATTEMPT` artifact en de run/job
-  metadata zoals in de reproduceerbare baselineprocedure hierboven. Bewaar de URL,
-  run-ID, commit, runnerimage, Python/dependencyprovenance, pytest-route en
-  `pytest.json`, JUnit, coverage en `test-session.json`.
-3. Gebruik `scripts/compare_ci_baseline.py` afzonderlijk voor de drie S- en de drie
-  P-artifacts: het hulpmiddel weigert terecht een mix van workerconfiguraties.
-  Vergelijk daarna de twee rapporten handmatig op pytestduur, jobduur, wachttijd,
-  resultaat, coverage en sampled RSS.
+| Conditie | Runs | Pytest mediaan [min–max] | Job mediaan [min–max], zonder wachtrij |
+|---|---|---:|---:|
+| Serieel | 226, 229, 232 | 1243.93 s [1243.61–1261.00] | 1280 s [1278–1294] |
+| Twee workers | 221, 223, 224, 225, 227 | 932.93 s [929.02–936.81] | 965 s [961–970] |
 
-| Maatstaf | Serieel | Twee workers | Verschil |
+| Maatstaf | Serieel | Twee workers | Verschil medianen |
 |---|---:|---:|---:|
-| Totale CI-job zonder wachttijd | Niet gemeten | Niet gemeten | Niet gemeten |
-| Pytestduur op GitHub Actions | Niet gemeten | Niet gemeten | Niet gemeten |
-| Runner-minuten (enkele job) | Niet gemeten | Niet gemeten | Niet gemeten |
-| Peak RSS procesboom | Niet gemeten | Niet gemeten | Niet gemeten |
-| Runners / pytest-workers | 1 / 1 | 1 / 2 | Niet van toepassing |
+| Totale CI-job zonder wachtrij | 21:20 | 16:05 | -315 s / -24.6% |
+| Gemeten pytestopdracht | 1243.93 s | 932.93 s | -311.01 s / -25.0% |
+| Canonieke validator | 11.91 s | 11.93 s | +0.02 s |
+| Tests / failures / skips | 537 / 0 / 0 | 537 / 0 / 0 | gelijk |
+| Coverage validation + migration | 985/1170 (84.19%) | 985/1170 (84.19%) | identieke regels/hits |
+| Runner-minuten (1 runner) | 21.33 | 16.08 | -5.25 / -24.6% |
+| Gesamplede procesboom-RSS | 466852 KiB | 574880 KiB | +23.1% |
+| YAML-loads | 294267 | 330224 | +12.2% |
+| Publicatiebuilds | 32 | 32 | gelijk |
 
-Twee pytest-workers binnen één job verbruiken niet automatisch twee GitHub-runners;
-voor deze architectuur zijn runner-minuten de gemeten jobduur gedeeld door 60, geen
-vermenigvuldiging met het aantal workers. Installeer-, validator-, artifact- en
-opstarttijd moeten in de jobduur worden meegenomen, niet bij de pytestduur worden
-opgeteld.
+RSS min–max: serieel 463220–470096 KiB, parallel 573080–684316 KiB. Dit is een
+gesamplede som van proces-RSS: korte pieken kunnen ontbreken en gedeelde pagina's
+kunnen meermaals meetellen. Het is geen runnerbrede of unieke fysieke geheugentelling.
+Publicatievalidatie zit in pytest en heeft geen aparte totale timing; de canonieke
+validator hierboven dekt niet alle publicatiecontroles. Extra fixturewerk is zichtbaar
+in YAML-loads en setupduur. Workerstart/IPC/scheduling zijn niet afzonderlijk gemeten.
+Twee workers draaien op één runner, dus runner-minuten zijn jobseconden / 60.
+
+Alle 14 handmatige runs 220–233 slagen met dezelfde 537 tests, fase-uitkomsten en
+coverage per bronregel. Alleen de 7763-groep wordt voor de effectschatting gebruikt:
+220/222 draaien op 9V45, 228/231 op Intel 8370C en 230/233 op 9V74. Andere hardware
+wordt niet op basis van looptijd weggelaten, maar vooraf op CPU-model gescheiden.
+Run 217 heeft 527 tests op een eerdere commit; 216 is geannuleerd. PR-run 219,
+poging 2, slaagt op mergecommit `7de71eb188bee04d6c3ca4a876295447b29a69ea` en
+9V45; deze is geen onderdeel van de handmatige benchmark.
+
+**Besluit voor deze PR (bijgesteld op 18 oktober 2026):** gebruik twee workers
+als standaard voor PR-validatie, pushes naar main en handmatige runs. Behoud
+`pytest_mode=serial` als expliciete handmatige terugval- en benchmarkoptie.
+Drie seriële en vijf parallelle runs op dezelfde 7763-omgeving onderbouwen circa
+25% tijdwinst bij identieke tests en coverage. De circa 23% hogere gesamplede RSS
+is een afweging, zonder gemeten geheugenuitval. Andere CPU-modellen kunnen een
+ander voordeel geven; dat beperkt de snelheidsclaim, niet het besluit.
+
+De eerdere keuze om serieel te blijven was te voorzichtig na voltooiing van deze
+meetserie. De historische installatieprovenance-beperking blijft hieronder expliciet
+staan; nieuwe runs krijgen een installatie-audit. De nieuwe standaard en reviewfixes
+moeten na commit/push samen een volledige groene PR-validatie opleveren vóór merge.
+De tabel beschrijft de benchmarkcommit, niet een reeds gemeten run van deze fixes.
+
+### Installatieprovenance en foutdiagnostiek
+
+De historische artifacts melden uitsluitend wijzigingen aan drie bijgehouden bestanden:
+`src/classical_music.egg-info/PKG-INFO`, `SOURCES.txt` en `requires.txt`. Dit past bij
+`pip install -e '.[dev]'`, maar de oude artifacts bevatten geen inhoudelijk voor/na-bewijs.
+De oude runs blijven daarom handmatig beoordeeld bewijs met deze expliciete beperking;
+de strikte comparator blijft ze weigeren. Er wordt geen bewijs achteraf verzonnen.
+
+Nieuwe CI-runs bewaren `ci-metrics/installation.json`: een schone status en SHA-256's
+vóór installatie, de status/hashes en volledige diff na installatie. Alleen ongestagede
+wijzigingen aan exact deze drie packagingbestanden zijn toegestaan. Een andere wijziging
+faalt de audit. Iedere gemeten opdracht controleert dat checkout en metadata nog met de
+audit overeenkomen. De comparator accepteert uitsluitend deze gecontroleerde uitzondering
+en vereist identieke installatie-evidence binnen een meetgroep; gewone dirty checkouts
+blijven verboden. De audit bewijst de installatieovergang, niet een ongewijzigde checkout
+na alle tests.
+
+Aggregatiefouten worden nu ook als effectieve nonzero `exit_code` in `test-session.json`
+opgeslagen. Ongeldige counters/velden worden diagnostisch bewaard en niet onveilig verwerkt.
+De comparator weigert incomplete parallelle sessies, ook bij een foutieve nul-exitstatus.
+Een echte xdist-regressie verwijdert de coverage-overdracht van één worker terwijl beide
+tests slagen: de controller maakt de suite rood en bewaart het rapport. Hiervoor controleren
+we de overdrachtsmarker van de ondersteunde pytest-cov 5-versie; dependency-upgrades moeten
+deze integratietest blijven doorstaan. Pytest-cov blijft verantwoordelijk voor het combineren
+van coverage. Dit is geen tweede coverage-implementatie of nieuwe dekkingsdrempel.
+
+### Run- en artifactverwijzingen
+
+Elke runlink bevat het artifact `ci-metrics-RUN_ID-1` met `pytest.json`, JUnit,
+coverage, sessie- en fasegegevens. Alle onderstaande runs gebruiken dezelfde genoemde
+headcommit. Ruwe jobseconden zijn uit GitHub started_at/completed_at bepaald.
+
+- [Run 220](https://github.com/LuHoo/classical_music/actions/runs/38927433126): 1 worker(s), AMD EPYC 9V45 96-Core Processor, pytest 679.73 s, job 705 s.
+- [Run 221](https://github.com/LuHoo/classical_music/actions/runs/38931354299): 2 worker(s), AMD EPYC 7763 64-Core Processor, pytest 931.35 s, job 970 s.
+- [Run 222](https://github.com/LuHoo/classical_music/actions/runs/38973917642): 1 worker(s), AMD EPYC 9V45 96-Core Processor, pytest 620.95 s, job 644 s.
+- [Run 223](https://github.com/LuHoo/classical_music/actions/runs/38975140693): 2 worker(s), AMD EPYC 7763 64-Core Processor, pytest 929.02 s, job 961 s.
+- [Run 224](https://github.com/LuHoo/classical_music/actions/runs/39007085566): 2 worker(s), AMD EPYC 7763 64-Core Processor, pytest 936.81 s, job 967 s.
+- [Run 225](https://github.com/LuHoo/classical_music/actions/runs/39010598475): 2 worker(s), AMD EPYC 7763 64-Core Processor, pytest 934.01 s, job 965 s.
+- [Run 226](https://github.com/LuHoo/classical_music/actions/runs/39045057201): 1 worker(s), AMD EPYC 7763 64-Core Processor, pytest 1243.93 s, job 1280 s.
+- [Run 227](https://github.com/LuHoo/classical_music/actions/runs/39046685532): 2 worker(s), AMD EPYC 7763 64-Core Processor, pytest 932.93 s, job 964 s.
+- [Run 228](https://github.com/LuHoo/classical_music/actions/runs/39056860717): 1 worker(s), Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz, pytest 1104.71 s, job 1139 s.
+- [Run 229](https://github.com/LuHoo/classical_music/actions/runs/39059827039): 1 worker(s), AMD EPYC 7763 64-Core Processor, pytest 1261.00 s, job 1294 s.
+- [Run 230](https://github.com/LuHoo/classical_music/actions/runs/39064862055): 1 worker(s), AMD EPYC 9V74 80-Core Processor, pytest 869.41 s, job 900 s.
+- [Run 231](https://github.com/LuHoo/classical_music/actions/runs/39064909111): 1 worker(s), Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz, pytest 1113.02 s, job 1149 s.
+- [Run 232](https://github.com/LuHoo/classical_music/actions/runs/39064939302): 1 worker(s), AMD EPYC 7763 64-Core Processor, pytest 1243.61 s, job 1278 s.
+- [Run 233](https://github.com/LuHoo/classical_music/actions/runs/39064968577): 1 worker(s), AMD EPYC 9V74 80-Core Processor, pytest 868.12 s, job 896 s.
 
 ### Afweging aparte jobs
 
@@ -655,3 +725,12 @@ protection interaction, concurrency cancellation in practice) still requires
 verification in a real Actions run — see "Remaining CI verification" in the
 PR description.
 
+
+## Lokale verificatie van de reviewfixes — 18 oktober 2026
+
+153 gerichte regressies geslaagd op Python 3.13/macOS: `test_ci_metrics`,
+`test_parallel_metrics_integration`, `test_installation_provenance`, `test_ci_policy`,
+`test_classify_pr_changes` en `test_summarize_classification_and_execution`.
+Dit is correctheidsvalidatie, geen nieuwe performancebaseline. De volledige catalogussuite
+is niet lokaal herhaald. Na Lucas’ commit/push moet de bijgewerkte PR-check groen zijn;
+de historische groene check bewijst niet de nieuwe installatie-audit op GitHub.

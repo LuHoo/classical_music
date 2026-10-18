@@ -87,3 +87,24 @@ def test_real_xdist_worker_crash_is_fail_closed(tmp_path):
     session = json.loads((metrics / 'test-session.json').read_text())
     assert session['complete'] is False
     assert session['errors']
+
+
+def test_missing_worker_coverage_fails_even_when_all_tests_pass(tmp_path):
+    result, metrics = run_parallel_suite(tmp_path, {
+        'conftest.py': """import pytest
+@pytest.hookimpl(hookwrapper=True)
+def pytest_sessionfinish(session, exitstatus):
+    yield
+    config = session.config
+    if hasattr(config, 'workerinput') and config.workerinput['workerid'] == 'gw0':
+        config.workeroutput.pop('cov_worker_node_id', None)
+""",
+        'sample.py': 'def value(): return 1\n',
+        'test_sample.py': 'from sample import value\ndef test_a(): assert value() == 1\ndef test_b(): assert value() == 1\n',
+    }, '--cov=sample', '--cov-report=xml:coverage.xml')
+    assert '2 passed' in result.stdout, result.stdout + result.stderr
+    assert result.returncode == pytest.ExitCode.INTERNAL_ERROR, result.stdout + result.stderr
+    session = json.loads((metrics / 'test-session.json').read_text())
+    assert session['exit_code'] == result.returncode
+    assert session['complete'] is False
+    assert any('missing worker coverage: gw0' in error for error in session['errors'])
