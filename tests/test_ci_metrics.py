@@ -21,13 +21,26 @@ def load_script(name):
 @pytest.mark.parametrize('code', [0, 7])
 def test_command_preserves_output_exit_and_metadata(tmp_path, code):
     module = load_script('measure_ci')
-    assert module.measure([sys.executable, '-c', f'print("evidence"); raise SystemExit({code})'], tmp_path, 'pytest') == code
+    # Pass an isolated evidence_path: without it, measure() consults the real
+    # checkout's ci-metrics/installation.json, which only exists in CI, and its
+    # fail-closed audit legitimately drifts while the measured suite runs.
+    assert module.measure([sys.executable, '-c', f'print("evidence"); raise SystemExit({code})'],
+                          tmp_path, 'pytest', evidence_path=tmp_path / 'installation.json') == code
     data = json.loads((tmp_path / 'pytest.json').read_text())
     assert data['exit_code'] == code and data['seconds'] >= 0
     assert data['environment']['data_tree']
+    assert data['environment']['installation_provenance'] is None
     assert data['memory']['samples'] >= 0
     assert data['memory']['peak_rss_kib'] is None or data['memory']['peak_rss_kib'] >= 0
     assert (tmp_path / 'pytest.log').read_text().strip() == 'evidence'
+
+
+def test_measurement_with_unverified_evidence_is_fail_closed(tmp_path):
+    module = load_script('measure_ci')
+    stale = tmp_path / 'installation.json'
+    stale.write_text(json.dumps(dict(verified=False)))
+    with pytest.raises(ValueError, match='no longer matches'):
+        module.measure([sys.executable, '-c', 'pass'], tmp_path, 'pytest', evidence_path=stale)
 
 
 @pytest.mark.parametrize(('command', 'workers'), [
@@ -109,7 +122,8 @@ def write_worker_metrics(root, worker, rows, *, collected=None, counts=None, exi
     directory = root / 'workers' / worker
     directory.mkdir(parents=True)
     (directory / 'test-phases.jsonl').write_text(
-        ''.join(json.dumps(row) + '\n' for row in rows)
+        ''.join(json.dumps(row) + '
+' for row in rows)
     )
     (directory / 'test-session.json').write_text(json.dumps(dict(
         worker=worker, collected=collected if collected is not None else len({r['nodeid'] for r in rows}),
@@ -289,7 +303,8 @@ def test_baseline_compares_three_matching_runs_and_rejects_drift(tmp_path):
                          RUNNER_OS='Linux', RUNNER_ARCH='X64', ImageOS='ubuntu24', ImageVersion='same')
         (path/'pytest.json').write_text(json.dumps(dict(environment=env, exit_code=0, seconds=duration, command=['pytest'])))
         (path/'test-session.json').write_text(json.dumps(dict(exit_code=0, collected=1)))
-        (path/'test-phases.jsonl').write_text(json.dumps(dict(nodeid='test_a', phase='call',outcome='passed',xfail=None))+'\n')
+        (path/'test-phases.jsonl').write_text(json.dumps(dict(nodeid='test_a', phase='call',outcome='passed',xfail=None))+'
+')
         (path/'run.json').write_text(json.dumps(dict(createdAt='2026-10-11T00:00:00Z', jobs=[dict(
             name='validate', conclusion='success', startedAt='2026-10-11T00:00:02Z', completedAt='2026-10-11T00:01:02Z')])))
     report = module.compare(directories)
@@ -323,7 +338,8 @@ def test_baseline_compares_three_matching_runs_and_rejects_drift(tmp_path):
     assert module.compare(directories)['summary']['job_seconds']['median'] == 60
     file = directories[2] / 'pytest.json'
     measured = json.loads(file.read_text())
-    measured['environment']['worktree_status'] += '\n M data/changed.yaml'
+    measured['environment']['worktree_status'] += '
+ M data/changed.yaml'
     measured['environment']['installation_provenance']['after_status'] = measured['environment']['worktree_status']
     file.write_text(json.dumps(measured))
     with pytest.raises(ValueError, match='Dirty checkout'):
@@ -364,7 +380,8 @@ def test_invalid_phase_values_preserve_diagnostics(tmp_path, field, value):
     path = tmp_path / 'workers/gw0/test-phases.jsonl'
     rows = [json.loads(line) for line in path.read_text().splitlines()]
     rows[0][field] = value
-    path.write_text(''.join(json.dumps(row) + '\n' for row in rows))
+    path.write_text(''.join(json.dumps(row) + '
+' for row in rows))
     session = FakeSession(collected=2)
     ParallelControllerMetrics(tmp_path, 2).pytest_sessionfinish(session, 0)
     merged = json.loads((tmp_path / 'test-session.json').read_text())
