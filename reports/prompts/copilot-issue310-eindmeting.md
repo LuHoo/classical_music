@@ -75,7 +75,7 @@ The earlier steps of epic #304 delivered (see their merged PRs and `docs/workflo
 
 - CI test selection per change type (data-only vs. full validation) with preserved fail-closed controls.
 - A single catalog snapshot per validation and publication build.
-- Evidence-based parallelization assessment (#309): the serial route remains the standard PR/main route; a manual two-worker mode exists, with measured ~25% pytest-time and ~24.6% job-time reduction on the same EPYC 7763 environment, at 23.1% more sampled RSS.
+- Evidence-based parallelization assessment (#309): two workers with `--dist load` are the standard route for PR, main and manual runs; `pytest_mode=serial` exists only as an explicit manual fallback or as a separate benchmark condition. The #309 measurements (~25% pytest-time and ~24.6% job-time reduction on the same EPYC 7763 environment, at 23.1% more sampled RSS) motivated this two-worker default.
 - Installation provenance auditing (before/after pip, hashes, diff) and a fail-closed evidence check.
 - Measurement infrastructure: `scripts/measure_ci.py`, `scripts/summarize_ci_metrics.py`, `scripts/compare_ci_baseline.py`, `scripts/installation_provenance.py`, and `src/classical_music/pytest_metrics.py`.
 
@@ -163,7 +163,7 @@ Update `docs/workflows/scripts-user-manual.md` so a maintainer can operate the o
    - When the baseline must be re-established (dependency changes, runner image changes, structural test changes, dataset revision changes).
    - Who/what keeps `ci-benchmark.md` current, and what every future measurement must record (SHAs, data-tree, run links, medians, spread, cache conditions).
    - The rule that claims of speedup require measurement, and that local pilots stay separate from GitHub CI results.
-   - The boundary of the parallel experiment: manual-only two-worker mode, serial standard route, and what would justify revisiting that decision.
+   - The boundary of the parallel experiment: two workers with `--dist load` are the standard route for PR, main and manual runs; `pytest_mode=serial` is a manual fallback and separate benchmark condition; `force_full` governs test scope, not worker count; pushes to main and manual dispatch always run full. Record what would justify revisiting that decision.
 
 Keep the manual concise and factual. Do not duplicate the workflow file verbatim; reference it. Where behavior differs per route, use a table.
 

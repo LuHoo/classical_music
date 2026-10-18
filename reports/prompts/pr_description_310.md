@@ -4,9 +4,17 @@ CI-eindinventaris, User Manual en onderhoudsafspraken (#310)
 
 # Draft-PR-beschrijving tegen main
 
-Closes #310
+Refs #310
 
 Part of #304
+
+> Zolang de acceptatiecriteria van #310 open zijn, staat hier bewust `Refs #310`,
+> zodat het samenvoegen van deze PR #310 niet automatisch sluit. Pas bij de
+> uiteindelijke merge, na afronding van de open meetpunten en Lucas’ review, kan
+> Lucas dit veranderen in een sluitende verwijzing.
+
+**Draft houden: de acceptatiecriteria voor eindmetingen zijn nog niet volledig bewezen.**
+De epic wordt niet automatisch gesloten.
 
 ## Probleem en verandering
 
@@ -15,14 +23,10 @@ Deze PR scheidt historische lokale/CI-resultaten van een geldige cumulatieve
 eindmeting, bewaart compacte artifactevidence en werkt het bestaande User Manual
 in het Nederlands bij. Er is geen nieuwe optimalisatie, route- of datawijziging.
 
-**Draft houden: de acceptatiecriteria voor eindmetingen zijn nog niet volledig bewezen.**
-`Closes #310` geldt pas bij uiteindelijke merge na afhandeling van de open punten.
-De epic wordt niet automatisch gesloten.
-
 ## Behouden controles
 
 Eén actuele canonieke pass, publicatie-/cross-intakecontroles in pytest, stabiele
-`validate`, twee workers standaard en handmatige seriële terugval. Full bij
+`validate`, twee workers met `--dist load` als standaard voor PR-, main- en handmatige runs; `pytest_mode=serial` alleen als expliciete handmatige terugval of afzonderlijke benchmarkconditie; `force_full` bepaalt de testscope, niet het aantal workers. Full bij
 code/schema/dependencies/workflows/onzekerheid; data-only alleen met volledige,
 revisiegebonden allowlist-evidence. `finish` blijft een gerichte lokale batchgrens.
 De echte Pages-build en linkcontrole blijven een afzonderlijke controle.
