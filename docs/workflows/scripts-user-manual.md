@@ -212,6 +212,50 @@ heeft geen live playlist aangemaakt of autorisatie uitgevoerd. Een bestaande
 opname buiten de snapshot vereist voor de vergelijking een gecontroleerde complete
 tracklijst in `existing_performance_tracks`; één canonieke luisterlink is onvoldoende.
 
+### Earmarked opname registreren (`register_earmarked_recording.py`)
+
+Registreert een nieuw aangelengde ("earmarked") opname die op TIDAL beschikbaar is
+in één aanroep als `candidate`, en maakt per werk dat al een `recommended`-opname
+heeft een TIDAL-vergelijkingsplaylist (huidige aanbeveling eerst, dan de kandidaat).
+Het script opent of bewerkt geen GitHub-issues; YAML, playlist en stdout-rapport zijn
+het product. De beslissing `candidate` → `recommended` blijft bij de curator via de
+bestaande workflow.
+
+```bash
+# Preview: volledig voorgestelde YAML-rapport en playlistplan, schrijft niets
+.venv/bin/python scripts/register_earmarked_recording.py "https://tidal.com/browse/album/<id>" --dry-run
+
+# Apply: schrijft data/recordings/<id>.yml en maakt vergelijkingsplaylists aan
+.venv/bin/python scripts/register_earmarked_recording.py "https://tidal.com/browse/album/<id>"
+```
+
+| Parameter | Effect |
+|---|---|
+| `--dry-run` | Toont het volledige voorgestelde YAML-document en het playlistplan; schrijft geen bestand en maakt geen playlist aan |
+| `--recording-id SLUG` | Overschrijft de van de albumtitel afgeleide opname-ID (lowercase slug) |
+| `--update-existing` | Staat toe een bestaand `data/recordings/`-bestand met hetzelfde album-URL expliciet uit te breiden; een bestaande ID zonder deze vlag is een fout |
+
+Gedrag per werk:
+
+- Bestaande aanbeveling gevonden → werk-regel `status: candidate` plus
+  vergelijkingsplaylist; de huidige aanbeveling moet een TIDAL-track-URL
+  (`https://tidal.com/track/<id>`) hebben in `data/performances/` of
+  `data/recordings/`, anders wordt de playlist overgeslagen en staat dit in het rapport.
+- Geen bestaande aanbeveling → `status: candidate`, geen playlist; het rapport zegt dit expliciet.
+- Ambigue of onbekende tracks → fail-closed: ambigue tracks landen als werk-item
+  **zonder** `status` (met vermelding in `notes`), onbekende tracks worden als ruwe
+  tekst in de `notes` van de opname vastgelegd. Er worden nooit canonieke IDs verzonnen.
+
+Het rapport op stdout vermeldt per werk de bestaande status, de uitgevoerde actie en
+de playlist-URL, plus de lijst van ongematchte/ambigue tracks en artiesten. Lees het
+YAML-bestand na met de gebruikelijke reviewworkflow; playlists zijn UNLISTED en
+kunnen daarna handmatig worden beheerd (hernoemen/verwijderen in TIDAL).
+
+Voor cataloguslezingen gebruikt het script `TIDAL_ACCESS_TOKEN` of
+`TIDAL_CLIENT_ID`/`TIDAL_CLIENT_SECRET`; alleen in apply-modus wordt voor
+playlist-creatie `TIDAL_USER_ACCESS_TOKEN` gebruikt. Er zijn geen muterende
+TIDAL-calls behalve playlist-creatie, en uitsluitend in apply-modus.
+
 ### Omgevingsvariabelen voor TIDAL
 
 | Variabele | Gebruikt voor |
