@@ -450,6 +450,88 @@ class SchubertCase(unittest.TestCase):
         self.assertEqual(reg.catalogue_tokens('Sinfonie Nr. 4 op. 120'), {'op120'})
 
 
+class ZeroMatchCase(unittest.TestCase):
+    """Album whose works are not canonical yet: dry-run reports per track, apply stays fail-closed."""
+
+    def setUp(self):
+        import tempfile
+        self.root = Path(tempfile.mkdtemp())
+        for name in ('works', 'persons', 'artists', 'performances', 'recordings'):
+            (self.root / 'data' / name).mkdir(parents=True)
+        (self.root / 'docs').mkdir()
+        for name in ('data/works/w1.yaml', 'data/persons/p1.yaml', 'data/persons/p2.yaml',
+                     'data/artists/performers.yaml', 'docs/composer.md'):
+            Path(self.root, name).touch()
+        self.documents = {
+            # The only canonical work is by a composer absent from this album.
+            str(self.root / 'data/works/w1.yaml'): {
+                'id': 'work-a', 'title': 'Symphonie fantastique', 'composer_id': 'hector-berlioz'},
+            str(self.root / 'data/persons/p1.yaml'): {'id': 'franz-schubert', 'name': 'Franz Schubert'},
+            str(self.root / 'data/persons/p2.yaml'): {'id': 'maurice-ravel', 'name': 'Maurice Ravel'},
+            str(self.root / 'data/artists/performers.yaml'): {'artists': []},
+        }
+        self._read_yaml = reg.read_yaml
+
+        def read(path):
+            path = str(path)
+            return self.documents[path] if path in self.documents else self._read_yaml(path)
+
+        reg.read_yaml = read
+        # The album title carries the Schubert family name; none of its works is canonical yet.
+        self.client = FakeCatalogClient(
+            album_doc(title='Schubert: Piano Works', artists=('Jean-Yves Thibaudet',)),
+            [item_page([
+                ('501', 'Lebensstürme, D. 947', ('Jean-Yves Thibaudet',)),
+                ('502', 'II. Largo', ('Jean-Yves Thibaudet', 'Maurice Ravel'),
+                 'Fantasia in F Minor, D. 940, Op. 103'),
+                ('503', 'Sonatine', ('Jean-Yves Thibaudet',)),
+            ])])
+
+    def tearDown(self):
+        reg.read_yaml = self._read_yaml
+
+    def run_script(self, **kwargs):
+        self.client.reset()
+        kwargs.setdefault('read_client', self.client)
+        return reg.run(self.root, ALBUM_URL, today='2026-10-18', **kwargs)
+
+    def test_dry_run_reports_per_track_without_writing(self):
+        result = self.run_script(dry_run=True)
+        self.assertEqual(result['recording']['works'], [])
+        details = result['report']['unmatched_track_details']
+        self.assertEqual([d['position'] for d in details], [1, 2, 3])
+        self.assertEqual(details[0]['title'], 'Lebensstürme, D. 947')
+        self.assertIsNone(details[0]['version'])
+        self.assertEqual(details[0]['catalogue_tokens'], ['d947'])
+        self.assertEqual(details[0]['composers'], ['Franz Schubert'])
+        self.assertEqual(details[1]['version'], 'Fantasia in F Minor, D. 940, Op. 103')
+        self.assertEqual(details[1]['catalogue_tokens'], ['d940', 'op103'])
+        self.assertEqual(details[1]['composers'], ['Franz Schubert', 'Maurice Ravel'])
+        self.assertEqual(details[2]['catalogue_tokens'], [])
+        self.assertIn('nothing to register', result['note'])
+        self.assertIn('re-run', result['note'])
+        self.assertEqual(list((self.root / 'data/recordings').glob('*.y*ml')), [])
+
+    def test_dry_run_invents_no_work_ids(self):
+        result = self.run_script(dry_run=True)
+        self.assertEqual(result['report']['works'], [])
+        self.assertEqual(result['recording']['works'], [])
+        for entry in result['report']['unmatched_track_details']:
+            self.assertEqual(entry['candidates'], [])
+            self.assertEqual(entry['state'], 'unknown')
+
+    def test_dry_run_creates_no_user_client(self):
+        def factory():
+            raise AssertionError('Dry run must not create a user client')
+
+        self.run_script(dry_run=True, user_client_factory=factory)
+
+    def test_apply_stays_fail_closed(self):
+        with self.assertRaises(ValueError):
+            self.run_script(user_client_factory=lambda: FakeUserClient())
+        self.assertEqual(list((self.root / 'data/recordings').glob('*.y*ml')), [])
+
+
 class ReportCase(unittest.TestCase):
     def test_slugify(self):
         self.assertEqual(reg.slugify('Berlioz: Symphonie fantastique'), 'berlioz-symphonie-fantastique')

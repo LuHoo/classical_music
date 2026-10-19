@@ -236,7 +236,7 @@ Geaccepteerde URL-vormen (fail-closed op alles anders): `https://tidal.com/brows
 
 | Parameter | Effect |
 |---|---|
-| `--dry-run` | Toont het volledige voorgestelde YAML-document en het playlistplan; schrijft geen bestand en maakt geen playlist aan |
+| `--dry-run` | Toont het volledige voorgestelde YAML-document en het playlistplan; schrijft geen bestand en maakt geen playlist aan. Bij nul canonieke matches print het bovendien een per-track rapport van ontbrekende werkdefinities |
 | `--recording-id SLUG` | Overschrijft de van de albumtitel afgeleide opname-ID (lowercase slug) |
 | `--update-existing` | Staat toe een bestaand `data/recordings/`-bestand met hetzelfde album-URL expliciet uit te breiden; een bestaande ID zonder deze vlag is een fout |
 
@@ -262,11 +262,21 @@ Gedrag per werk:
 - Ambigue of onbekende tracks → fail-closed: ambigue tracks landen als werk-item
   **zonder** `status` (met vermelding in `notes`), onbekende tracks worden als ruwe
   tekst in de `notes` van de opname vastgelegd. Er worden nooit canonieke IDs verzonnen.
+- Nul canonieke matches op het hele album → droogloop-rapport i.p.v. kale refusal:
+  `--dry-run` print per track de titel, versie, gevonden catalogustokens en
+  componist-bewijs (of het ontbreken daarvan), zodat zichtbaar is welke
+  `data/works/`-definities ontbreken. Nog steeds fail-closed: er wordt niets
+  geschreven en geen enkel canoniek ID verzonnen; apply zonder matches blijft een
+  fout (met de verwijzing naar de droogloop). Route: nieuw album → droogloop-rapport
+  → ontbrekende werken canoniek maken in `data/works/` → script her-runnen (eerst
+  eventueel opnieuw met `--dry-run` ter controle).
 
 Het rapport op stdout vermeldt per werk de bestaande status, de uitgevoerde actie en
 de playlist-URL, plus de lijst van ongematchte/ambigue tracks en artiesten, en
 eventuele aanbevelingsregels uit `docs/*.md` die niet aan een canoniek werk
-konden worden toegewezen. Lees het YAML-bestand na met de gebruikelijke
+konden worden toegewezen; bij nul canonieke matches volgt bovendien per track de
+titel, versie, de gevonden catalogustokens en het componist-bewijs (of het
+ontbreken daarvan). Lees het YAML-bestand na met de gebruikelijke
 reviewworkflow; playlists zijn UNLISTED en kunnen daarna handmatig worden
 beheerd (hernoemen/verwijderen in TIDAL).
 

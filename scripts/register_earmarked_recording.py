@@ -332,7 +332,8 @@ def match_works(tracks, works, persons, album_artists, album_title=''):
     for position, track in enumerate(tracks, 1):
         composers = composer_evidence(track, album_artists, persons, album_title)
         hits = [w for w in works if work_matches(track, w, composers)]
-        entry = {'track': track, 'position': position, 'work': None, 'state': 'unknown'}
+        entry = {'track': track, 'position': position, 'work': None, 'state': 'unknown',
+                 'composers': composers}
         if len(hits) == 1:
             entry.update(work=hits[0], state='matched')
         elif hits:
@@ -404,6 +405,28 @@ def build_recording(root, album, matches, roles, unmatched_artists, today, recor
     unmatched = [{'track': e['track'], 'state': e['state'], 'candidates': e.get('candidates', [])}
                  for e in ambiguous + unknown]
     return recording, unmatched
+
+
+def unmatched_track_details(matches, persons):
+    """Per unmatched track: title, version, catalogue tokens and composer evidence.
+
+    This is evidence for the curator, not a match: the tokens and composer names
+    show which ``data/works/`` definitions are missing; no canonical IDs are
+    invented here.
+    """
+    details = []
+    for entry in matches:
+        if entry['state'] == 'matched':
+            continue
+        track = entry['track']
+        text = ' '.join(filter(None, [track['title'], track['version']]))
+        details.append({'position': entry['position'], 'title': track['title'],
+                        'version': track['version'],
+                        'catalogue_tokens': sorted(catalogue_tokens(text)),
+                        'composers': sorted(persons.get(pid, pid) for pid in entry['composers']),
+                        'state': entry['state'],
+                        'candidates': entry.get('candidates', [])})
+    return details
 
 
 def performance_track_index(root):
@@ -564,7 +587,9 @@ def run(root, url, *, dry_run=False, recording_id=None, update_existing=False,
     matches = match_works(tracks, works, persons, album['artists'], album.get('title', ''))
     roles, unmatched_artists = assign_artists(tracks, album['artists'], performers)
     recording, unmatched_tracks = build_recording(root, album, matches, roles, unmatched_artists, today, recording_id)
-    require(recording['works'], 'No track could be related to canonical works; refusing to write anything')
+    if not recording['works'] and not dry_run:
+        raise ValueError('No track could be related to canonical works; refusing to write anything. '
+                         'Re-run with --dry-run for the per-track report of missing work definitions.')
     recommendations, unattributed = existing_recommendations(root, works)
     plans = [p for p in playlist_plan(root, album, recording, matches, recommendations, today)
              if p['current_track_ids']]
@@ -591,12 +616,17 @@ def run(root, url, *, dry_run=False, recording_id=None, update_existing=False,
                                   'candidate_tracks': p['candidate_track_ids']} for p in plans],
               'unmatched_tracks': [{'title': u['track']['title'], 'state': u['state'],
                                     'candidates': u.get('candidates', [])} for u in unmatched_tracks],
+              'unmatched_track_details': unmatched_track_details(matches, persons),
               'unmatched_artists': unmatched_artists,
               'unattributed_recommendation_lines': unattributed}
     output = {'recording': recording, 'report': report, 'dry_run': dry_run}
     if dry_run:
         output['note'] = ('Dry run: nothing written, no playlist created. '
                           'Re-run without --dry-run to apply.')
+        if not recording['works']:
+            output['note'] = ('Dry run: no track could be related to canonical works; nothing to '
+                              'register yet. See the per-track report above for the missing work '
+                              'definitions; add the works under data/works/, then re-run.')
         return output
     written = write_recording(root, recording, update_existing=update_existing)
     created = []
@@ -655,6 +685,14 @@ def main(argv=None):
         print(f"  UNMATCHED ({entry['state']}): {entry['title']}{detail}")
     if report['unmatched_artists']:
         print('  Unmatched artists (raw text in notes): ' + ', '.join(report['unmatched_artists']))
+    if not report['works'] and report.get('unmatched_track_details'):
+        print('  No track could be related to canonical works; per-track report:')
+        for entry in report['unmatched_track_details']:
+            version = f" (version: {entry['version']})" if entry['version'] else ''
+            tokens = ', '.join(entry['catalogue_tokens']) or 'none'
+            composers = ', '.join(entry['composers']) or 'no composer evidence found'
+            print(f"    {entry['position']}. {entry['title']}{version}")
+            print(f"       catalogue tokens: {tokens}; composer evidence: {composers}")
     if report['unattributed_recommendation_lines']:
         print('  Recommendation lines without a canonical work attribution: '
               + ', '.join(report['unattributed_recommendation_lines']))
@@ -670,4 +708,5 @@ def main(argv=None):
 
 if __name__ == '__main__':
     sys.exit(main())
+
 
