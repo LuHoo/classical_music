@@ -1,0 +1,16 @@
+id: franz-schubert-fantasie-in-f-minor-d-940-earmarked-cha
+work_id: franz-schubert-fantasie-in-f-minor-d-940
+performers:
+  - name: Bertrand Chamayou
+    role: piano
+  - name: Leif Ove Andsnes
+    role: piano
+links:
+  tidal:
+    url: https://tidal.com/track/461772236
+release:
+  album_title: 'Schubert: Four Hands'
+source:
+  file: data/recordings/schubert-four-hands.yml
+  url: https://github.com/LuHoo/classical_music/issues/319
+  curator_decision: reports/curator-decisions/issue-319.json

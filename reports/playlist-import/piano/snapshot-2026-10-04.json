@@ -826,9 +826,9 @@
   "base_commit": "6139470",
   "summary": {
     "import_new": {
-      "units": 669,
-      "track_occurrences": 1688,
-      "distinct_performances": 669
+      "units": 668,
+      "track_occurrences": 1687,
+      "distinct_performances": 668
     },
     "reuse_existing": {
       "units": 53,
@@ -846,8 +846,8 @@
       "distinct_performances": 0
     },
     "not_selected": {
-      "units": 22,
-      "track_occurrences": 22,
+      "units": 23,
+      "track_occurrences": 23,
       "distinct_performances": 0
     }
   },
@@ -5761,11 +5761,6 @@
       "id": "franz-schubert-fantasie-in-f-minor-d-940",
       "entity": "works",
       "path": "data/works/franz-schubert-fantasie-in-f-minor-d-940.yaml"
-    },
-    {
-      "id": "franz-schubert-fantasie-in-f-minor-d-940-piano-p384",
-      "entity": "performances",
-      "path": "data/performances/franz-schubert-fantasie-in-f-minor-d-940-piano-p384.yaml"
     },
     {
       "id": "francis-poulenc-sonata-for-2-pianos-fp-156-group",
@@ -10992,6 +10987,13 @@
         }
       },
       "reason": "Correct erroneous legacy miniature title to the complete opus set documented by the original opus field, selected recording and harmonia mundi track list. No recommendation change."
+    },
+    {
+      "id": "franz-schubert-fantasie-in-f-minor-d-940-piano-p384",
+      "entity": "performances",
+      "path": "data/performances/franz-schubert-fantasie-in-f-minor-d-940-piano-p384.yaml",
+      "action": "removed_by_curator",
+      "decision_record": "reports/curator-decisions/issue-319.json"
     }
   ],
   "recommendation_choices": [
@@ -62371,9 +62373,8 @@
       "positions": [
         1344
       ],
-      "disposition": "import_new",
+      "disposition": "not_selected",
       "work_id": "franz-schubert-fantasie-in-f-minor-d-940",
-      "performance_id": "franz-schubert-fantasie-in-f-minor-d-940-piano-p384",
       "performers": [
         {
           "name": "Murray Perahia",
@@ -62425,7 +62426,10 @@
           "export_position": 1356,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "review_classification": "curator_not_selected",
+      "curator_decision": "reports/curator-decisions/issue-319.json",
+      "reason": "Earmarked curator decision #319: the reviewed candidate replaces this recommendation; retained as historical source evidence."
     },
     {
       "unit_id": "P385",
@@ -97360,6 +97364,35 @@
         ],
         "implementation_report": "reports/playlist-import/piano/snapshot-2026-10-04.json",
         "implementation_record": "reports/curator-decisions/goerner-2026-10-04.json"
+      }
+    },
+    {
+      "work_id": "franz-schubert-fantasie-in-f-minor-d-940",
+      "title": "Fantasie in F Minor, D. 940",
+      "units": [
+        "P384"
+      ],
+      "existing_performances": [
+        "franz-schubert-fantasie-in-f-minor-d-940-piano-p384"
+      ],
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/319",
+      "decision": {
+        "choice": "selected_performance",
+        "selected_units": [],
+        "not_selected_units": [
+          "P384"
+        ],
+        "performances": [
+          {
+            "performance_id": "franz-schubert-fantasie-in-f-minor-d-940-earmarked-cha",
+            "profile": null,
+            "unit_id": null,
+            "tidal_url": "https://tidal.com/track/461772236"
+          }
+        ],
+        "implementation_report": "reports/playlist-import/piano/snapshot-2026-10-04.json",
+        "implementation_record": "reports/curator-decisions/issue-319.json",
+        "decision_record": "reports/curator-decisions/issue-319.json"
       }
     }
   ]

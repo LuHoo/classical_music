@@ -266,7 +266,7 @@ D 823, Divertissement sur des motifs originaux français in E minor for piano du
 
 D 908, Eight Variations on a theme from Hérold's Opera Marie for piano duet (1827, first published as Op. 82 No. 1)
 
-D 940, Fantasy in F minor for piano duet (1828, first published as Op. 103) [*Murray Perahia, Radu Lupu*](http://www.tidal.com/track/75254187)
+D 940, Fantasy in F minor for piano duet (1828, first published as Op. 103) [*Bertrand Chamayou, Leif Ove Andsnes*](http://www.tidal.com/track/461772236)
 
 D 947, Allegro in A minor for piano duet, Lebensstürme (1828, first published as Op. posth. 144)
 
