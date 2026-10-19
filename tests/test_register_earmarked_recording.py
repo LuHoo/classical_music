@@ -33,7 +33,7 @@ def item_page(tracks):
     for position, spec in enumerate(tracks, 1):
         tid, title, artists = spec[0], spec[1], spec[2]
         version = spec[3] if len(spec) > 3 else None
-        credits = spec[4] if len(spec) > 4 else {}
+        credits = (spec[4] if len(spec) > 4 else {}) or {}
         attributes = {'title': title}
         if version:
             attributes['version'] = version
@@ -54,10 +54,13 @@ def item_page(tracks):
 class FakeCatalogClient:
     """Read-only catalogue double: rejects unexpected requests like the real wrapper."""
 
-    def __init__(self, album_document, pages, album=ALBUM):
+    def __init__(self, album_document, pages, album=ALBUM, *, artists_route='relationship',
+                 items_include='items,items.artists,items.credits'):
         self.album = album
         self.album_document = album_document
         self._pages = list(pages)
+        self.artists_route = artists_route
+        self.items_include = items_include
         self.reset()
 
     def reset(self):
@@ -68,13 +71,34 @@ class FakeCatalogClient:
         self.calls.append((method, path))
         if method != 'GET' or body is not None:
             raise ValueError('The album fetcher cannot make write requests')
-        if path == f'/v2/albums/{self.album}?countryCode=NL&include=artists':
+        if path == f'/v2/albums/{self.album}?countryCode=NL':
             return self.album_document
+        if path == f'/v2/albums/{self.album}/relationships/artists?countryCode=NL&include=artists':
+            if self.artists_route == 'filter':
+                raise ValueError('HTTP 404')
+            if self.artists_route == 'both':
+                raise ValueError('HTTP 404')
+            return {'data': [], 'included': self.album_document.get('included', [])}
+        if path.startswith('/v2/artists?') and ('filter[id]=' in path or 'filter%5Bid%5D=' in path):
+            if self.artists_route not in ('filter', 'both'):
+                raise ValueError('Unexpected artists filter request: ' + path)
+            return {'data': self.album_document.get('included', [])}
         if path.startswith(f'/v2/albums/{self.album}/relationships/items?'):
-            if not self.pages:
-                raise ValueError('Unexpected extra album page request')
-            return self.pages.pop(0)
+            include = path.rsplit('include=', 1)[-1]
+            if 'next' in path or include == self.items_include:
+                if not self.pages:
+                    raise ValueError('Unexpected extra album page request')
+                return self.pages.pop(0)
+            raise ValueError('HTTP 404')
         raise ValueError('Unexpected album request path: ' + path)
+
+    def try_request(self, path):
+        try:
+            return self.request(path)
+        except ValueError as exc:
+            if 'HTTP 404' in str(exc):
+                return None
+            raise
 
 
 class FakeUserClient:
@@ -290,7 +314,8 @@ class FixtureCase(unittest.TestCase):
 
 class SchubertCase(unittest.TestCase):
     """The real Schubert: Four Hands album structure: bare movement titles, work in the
-    version attribute, composer only in credits, performers not in canonical data."""
+    version attribute, no composer credits (title carries the composer family name),
+    performers not in canonical data."""
 
     def setUp(self):
         import tempfile
@@ -325,25 +350,26 @@ class SchubertCase(unittest.TestCase):
             return self.documents[path] if path in self.documents else self._read_yaml(path)
 
         reg.read_yaml = read
-        credits = {'Composer': 'Franz Schubert'}
         album = album_doc(title='Schubert: Four Hands',
                          artists=('Bertrand Chamayou', 'Leif Ove Andsnes'))
         album['data']['id'] = '461772235'
         self.album_id = '461772235'
+        # TIDAL does not return composer credits on the real album, so this
+        # case matches works purely through the album title ("Schubert").
         self.client = FakeCatalogClient(album, [item_page([
-            ('461772236', 'I. Allegro molto moderato', ('Bertrand Chamayou', 'Leif Ove Andsnes'),             'Fantasia in F Minor, D. 940, Op. 103', credits),
+            ('461772236', 'I. Allegro molto moderato', ('Bertrand Chamayou', 'Leif Ove Andsnes'),             'Fantasia in F Minor, D. 940, Op. 103', None),
             ('461772237', 'II. Largo', ('Bertrand Chamayou', 'Leif Ove Andsnes'),
-             'Fantasia in F Minor, D. 940, Op. 103', credits),
+             'Fantasia in F Minor, D. 940, Op. 103', None),
             ('461772238', 'III. Allegro vivace', ('Bertrand Chamayou', 'Leif Ove Andsnes'),
-             'Fantasia in F Minor, D. 940, Op. 103', credits),
+             'Fantasia in F Minor, D. 940, Op. 103', None),
             ('461772239', 'IV. Finale. Allegro molto moderato', ('Bertrand Chamayou', 'Leif Ove Andsnes'),
-             'Fantasia in F Minor, D. 940, Op. 103', credits),
+             'Fantasia in F Minor, D. 940, Op. 103', None),
             ('461772240', 'Allegro in A Minor, D. 947, Op. posth. 144 "Lebensstürme"',
-             ('Bertrand Chamayou', 'Leif Ove Andsnes'), None, credits),
+             ('Bertrand Chamayou', 'Leif Ove Andsnes'), None, None),
             ('461772241', 'Fugue in E Minor, D. 952, Op. posth. 152',
-             ('Bertrand Chamayou', 'Leif Ove Andsnes'), None, credits),
+             ('Bertrand Chamayou', 'Leif Ove Andsnes'), None, None),
             ('461772242', 'Rondo in A Major, D. 951, Op. 107',
-             ('Bertrand Chamayou', 'Leif Ove Andsnes'), None, credits),
+             ('Bertrand Chamayou', 'Leif Ove Andsnes'), None, None),
         ])], album='461772235')
 
     def tearDown(self):
@@ -392,6 +418,30 @@ class SchubertCase(unittest.TestCase):
         self.assertIn('Unmatched artists: Bertrand Chamayou, Leif Ove Andsnes',
                       self._read_yaml(self.root / 'data/recordings/schubert-four-hands.yml')['notes'])
         self.assertIn('Earmarked 2026-10-18', playlist['name'])
+
+    def test_items_fallback_without_credits_include(self):
+        self.client.items_include = 'items,items.artists'
+        result = self.run_script(dry_run=True)
+        candidates = [e for e in result['recording']['works'] if e.get('status') == 'candidate']
+        self.assertEqual(len(candidates), 1)
+        self.assertEqual(candidates[0]['work_id'], 'franz-schubert-fantasie-in-f-minor-d-940')
+
+    def test_artists_filter_fallback(self):
+        self.client.artists_route = 'filter'
+        result = self.run_script(dry_run=True)
+        self.assertEqual(result['recording']['title'], 'Schubert: Four Hands')
+
+    def test_title_evidence_only_for_family_name(self):
+        persons = {'p-schubert': 'Franz Schubert', 'p-other': 'Johann Schubert junior'}
+        track = {'id': 'x', 'title': 'Anything', 'version': None, 'artists': [], 'credits': {}}
+        # "Schubert junior" is not itself a canonical name, but its family name
+        # matches; a name whose family token is not in the title is excluded.
+        evidence = reg.composer_evidence(track, [], persons, 'Schubert: Four Hands')
+        self.assertIn('p-schubert', evidence)
+        self.assertNotIn('p-other', evidence)
+        short = reg.composer_evidence(track, [], {'p-bach': 'Johann Bach'}, 'Bach: Works')
+        self.assertIn('p-bach', short)
+        self.assertEqual(reg.composer_evidence(track, [], {'p-x': 'Anna Al'}, 'Al: Works'), set())
 
     def test_catalogue_tokens(self):
         self.assertEqual(reg.catalogue_tokens('Fantasia in F Minor, D. 940, Op. 103'),

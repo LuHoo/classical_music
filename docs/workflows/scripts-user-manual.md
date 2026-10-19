@@ -244,7 +244,8 @@ Matching per track (nooit gokken): een track wordt aan exact één canoniek werk
 toegewezen als de werkstitel of een alias in de titel- **of versie**-tekst van de
 track voorkomt, óf als track en werk een gedeeld catalogusnummer delen
 (`D. 940`, `Op. 103`, `BWV 1052`, `RV 565`, e.d.) — steeds mét componist-bewijs
-uit album-artiesten, track-artiesten of de composer-credits. Meerdere kandidaten
+uit album-artiesten, track-artiesten, de composer-credits óf de albumtitel
+(familienaam, bv. "Schubert" in *Schubert: Four Hands*). Meerdere kandidaten
 → ambigue; geen kandidaat → onbekend. Consecutieve tracks van hetzelfde werk
 worden samengevoegd tot één werk-regel.
 
@@ -271,13 +272,18 @@ beheerd (hernoemen/verwijderen in TIDAL).
 
 Voorbeeld (Chamayou/Andsnes, *Schubert: Four Hands*): de vier delen van de
 Fantasie in F mineur, D. 940 matchen via het `D. 940`-catalogusnummer in de
-track-versie en de composer-credits; de gepubliceerde Perahia/Lupu-aanbeveling
+track-versie en de familienaam in de albumtitel (TIDAL levert voor dit album
+geen composer-credits); de gepubliceerde Perahia/Lupu-aanbeveling
 uit `docs/schubert.md` levert de vergelijkingsplaylist (huidige track eerst, dan
 de vier kandidaat-delen); de drie andere vierhandige werken (D. 947, D. 952,
 D. 951) bestaan nog niet canoniek en blijven als ruwe tekst in `notes` staan.
 
 Voor cataloguslezingen gebruikt het script `TIDAL_ACCESS_TOKEN` of
-`TIDAL_CLIENT_ID`/`TIDAL_CLIENT_SECRET`; alleen in apply-modus wordt voor
+`TIDAL_CLIENT_ID`/`TIDAL_CLIENT_SECRET`; het leest het album zonder
+include-parameter, de album-artiesten via het artists-relationship-endpoint
+(met fallback op `/v2/artists?filter[id]=`) en de tracks via
+`include=items,items.artists,items.credits` (met fallback zonder credits).
+Alleen in apply-modus wordt voor
 playlist-creatie `TIDAL_USER_ACCESS_TOKEN` gebruikt. Er zijn geen muterende
 TIDAL-calls behalve playlist-creatie, en uitsluitend in apply-modus.
 

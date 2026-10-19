@@ -93,7 +93,7 @@ def catalogue_tokens(text):
 
 
 class CatalogClient(UserClient):
-    """GET-only catalogue client restricted to the album endpoints of one album."""
+    """GET-only catalogue client restricted to one album and its related catalogue reads."""
 
     def __init__(self, token, album):
         super().__init__(token)
@@ -106,13 +106,25 @@ class CatalogClient(UserClient):
             parsed = urlsplit(path)
             require(parsed.scheme == 'https' and parsed.netloc == 'openapi.tidal.com', 'Unexpected album URL host')
             path = parsed.path
-        require(path.startswith('/v2/albums/' + self.album), 'Unexpected album request path')
+        require(path.startswith('/v2/albums/' + self.album) or
+                (path.startswith('/v2/artists?') and 'filter[id]' in path),
+                'Unexpected catalogue request path')
         return super().request(path, 'GET')
+
+    def try_request(self, path):
+        """Return the document, or None when the endpoint answers HTTP 404."""
+        try:
+            return self.request(path)
+        except ValueError as exc:
+            if 'HTTP 404' in str(exc):
+                return None
+            raise
 
 
 def album_document(client, identifier):
-    path = f'/v2/albums/{identifier}?countryCode={COUNTRY}&include=artists'
-    document = client.request(path)
+    # The album document itself accepts no include parameter; artists are read
+    # separately via the documented artists relationship endpoint.
+    document = client.request(f'/v2/albums/{identifier}?countryCode={COUNTRY}')
     data = document.get('data')
     require(isinstance(data, dict) and data.get('id') == identifier and data.get('type') == 'albums',
             'Album response does not identify the requested album')
@@ -121,16 +133,37 @@ def album_document(client, identifier):
     require(isinstance(title, str) and title.strip(), 'Album response has no title')
     release = attributes.get('releaseDate')
     year = int(str(release)[:4]) if re.match(r'\d{4}', str(release or '')) else None
-    included = {(r.get('type'), r.get('id')): r for r in document.get('included', []) if isinstance(r, dict)}
     artist_ids = [row.get('id') for row in (data.get('relationships', {}).get('artists', {}).get('data') or [])]
-    names = []
-    for aid in artist_ids:
-        resource = included.get(('artists', aid))
-        name = (resource or {}).get('attributes', {}).get('name')
-        if isinstance(name, str) and name.strip():
-            names.append(name.strip())
     return {'id': identifier, 'title': title.strip(), 'year': year,
-            'label': attributes.get('copyright') or None, 'artists': names}
+            'label': attributes.get('copyright') or None, 'artists': artist_names(client, identifier, artist_ids)}
+
+
+def artist_names(client, identifier, artist_ids):
+    """Album artists via the artists relationship, with a catalogue filter fallback."""
+    artist_ids = [aid for aid in artist_ids if isinstance(aid, str) and aid]
+    if not artist_ids:
+        return []
+    document = client.try_request(
+        f'/v2/albums/{identifier}/relationships/artists?countryCode={COUNTRY}&include=artists')
+    if document is not None:
+        included = {(r.get('type'), r.get('id')): r for r in document.get('included', []) if isinstance(r, dict)}
+        names = []
+        for aid in artist_ids:
+            name = (included.get(('artists', aid)) or {}).get('attributes', {}).get('name')
+            if isinstance(name, str) and name.strip():
+                names.append(name.strip())
+        if names:
+            return names
+    document = client.try_request('/v2/artists?' +
+                                  urlencode({'countryCode': COUNTRY, 'filter[id]': ','.join(artist_ids)}))
+    require(document is not None, 'Album artists are unavailable through both catalogue routes')
+    names = {}
+    for row in document.get('data') or []:
+        if isinstance(row, dict) and row.get('type') == 'artists':
+            name = (row.get('attributes') or {}).get('name')
+            if isinstance(name, str) and name.strip():
+                names[str(row.get('id'))] = name.strip()
+    return [names[aid] for aid in artist_ids if aid in names]
 
 
 def _track_row(row, included):
@@ -163,13 +196,22 @@ def _track_row(row, included):
             'artists': names, 'credits': credits}
 
 
+ITEMS_INCLUDES = ('items,items.artists,items.credits', 'items,items.artists')
+
+
 def album_tracks(client, identifier):
     """Follow bounded album item pages; collect track resources with artists and credits."""
     base = f'/v2/albums/{identifier}/relationships/items'
-    path = f'{base}?countryCode={COUNTRY}&include=items,items.artists,items.credits'
+    for include in ITEMS_INCLUDES:
+        document = client.try_request(f'{base}?countryCode={COUNTRY}&include={include}')
+        if document is not None:
+            return _collect_items(client, base, document, include)
+    raise ValueError('Album items are unavailable with the documented include combinations')
+
+
+def _collect_items(client, base, document, include):
     tracks, seen = [], set()
     for _ in range(50):
-        document = client.request(path)
         page = document.get('data')
         require(isinstance(page, list), 'Invalid album items response')
         included = {(r.get('type'), r.get('id')): r for r in document.get('included', []) if isinstance(r, dict)}
@@ -190,7 +232,8 @@ def album_tracks(client, identifier):
                 'Unexpected album pagination target')
         query = dict(parse_qsl(following_path.query))
         query.setdefault('countryCode', COUNTRY)
-        path = f'{base}?{urlencode(query)}'
+        query['include'] = include
+        document = client.request(f'{base}?{urlencode(query)}')
     raise ValueError('Album pagination limit exceeded')
 
 
@@ -253,13 +296,20 @@ def tidal_track_of(data):
     return track_id_from_url(url)
 
 
-def composer_evidence(track, album_artists, persons):
-    """Canonical composer IDs suggested by names around the track."""
+def composer_evidence(track, album_artists, persons, album_title=''):
+    """Canonical composer IDs suggested by names around the track, or by the
+    album title (family-name token, e.g. "Schubert: Four Hands")."""
     names = list(album_artists) + list(track['artists'])
     for role_names in track.get('credits', {}).values():
         names.extend(role_names)
     normalized = {norm(name) for name in names}
-    return {pid for pid, name in persons.items() if norm(name) in normalized}
+    evidence = {pid for pid, name in persons.items() if norm(name) in normalized}
+    title_tokens = set(norm(album_title or '').split())
+    for pid, name in persons.items():
+        family = norm(name).split()[-1] if norm(name).split() else ''
+        if family and len(family) > 3 and family in title_tokens:
+            evidence.add(pid)
+    return evidence
 
 
 def work_matches(track, work, composers):
@@ -274,11 +324,11 @@ def work_matches(track, work, composers):
                                           {token for alias in work['aliases'] for token in catalogue_tokens(alias)}))
 
 
-def match_works(tracks, works, persons, album_artists):
+def match_works(tracks, works, persons, album_artists, album_title=''):
     """Map every track to exactly one canonical work, or mark it ambiguous/unknown."""
     matches = []
     for position, track in enumerate(tracks, 1):
-        composers = composer_evidence(track, album_artists, persons)
+        composers = composer_evidence(track, album_artists, persons, album_title)
         hits = [w for w in works if work_matches(track, w, composers)]
         entry = {'track': track, 'position': position, 'work': None, 'state': 'unknown'}
         if len(hits) == 1:
@@ -509,7 +559,7 @@ def run(root, url, *, dry_run=False, recording_id=None, update_existing=False,
     client = read_client or CatalogClient(access_token(), identifier)
     album = album_document(client, identifier)
     tracks = album_tracks(client, identifier)
-    matches = match_works(tracks, works, persons, album['artists'])
+    matches = match_works(tracks, works, persons, album['artists'], album.get('title', ''))
     roles, unmatched_artists = assign_artists(tracks, album['artists'], performers)
     recording, unmatched_tracks = build_recording(root, album, matches, roles, unmatched_artists, today, recording_id)
     require(recording['works'], 'No track could be related to canonical works; refusing to write anything')
