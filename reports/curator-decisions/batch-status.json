@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "status": "pending",
+  "status": "validated",
   "issues": [
     242,
     243,
@@ -9,9 +9,9 @@
     255,
     319
   ],
-  "updated_at": "2026-10-19T21:11:08.397131+00:00",
-  "validated_at": "2026-10-08T14:09:54.645858+00:00",
-  "inputs_sha256": "cc68ee52da4713623d45341fcea282dad48c78a99c76b86105027e041d605b94",
+  "updated_at": "2026-10-19T21:16:18.206499+00:00",
+  "validated_at": "2026-10-19T21:16:50.797132+00:00",
+  "inputs_sha256": "3c7f035210127bacd3ea2d746114914f730a176b77105d65d8f3bf3b93e834a9",
   "manifests": [
     "reports/playlist-import/chamber/snapshot-2026-10-04.json",
     "reports/playlist-import/piano/snapshot-2026-10-04.json",
