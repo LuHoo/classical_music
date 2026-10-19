@@ -109,7 +109,9 @@ class CatalogClient(UserClient):
         require(path.startswith('/v2/albums/' + self.album) or
                 (path.startswith('/v2/artists?') and 'filter[id]' in path),
                 'Unexpected catalogue request path')
-        return super().request(path, 'GET')
+        # The shared wrapper already prefixes its base URL with /v2, so the
+        # /v2-prefixed catalogue path must not be passed through verbatim.
+        return super().request(path.removeprefix('/v2'), 'GET')
 
     def try_request(self, path):
         """Return the document, or None when the endpoint answers HTTP 404."""
@@ -668,3 +670,4 @@ def main(argv=None):
 
 if __name__ == '__main__':
     sys.exit(main())
+
