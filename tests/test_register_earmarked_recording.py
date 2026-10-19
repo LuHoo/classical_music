@@ -612,7 +612,38 @@ class ZeroMatchCase(unittest.TestCase):
         self.assertEqual(reg.suggestion_search_text(''), '')
 
 
+class CannedMusicBrainzClient(reg.SuggestionClient):
+    """SuggestionClient with canned fetch responses; never touches the network."""
+
+    def __init__(self, search_response, detail_responses):
+        super().__init__()
+        self.search_response = search_response
+        self.detail_responses = list(detail_responses)
+
+    def fetch(self, url, **kwargs):
+        if 'query=' in url:
+            return self.search_response
+        return self.detail_responses.pop(0)
+
+
 class ReportCase(unittest.TestCase):
+    def test_work_suggestions_drop_movement_duplicates(self):
+        # MusicBrainz returns the work and its movement parts; the parts add no
+        # new evidence and must not crowd out the limit (live album 518875626).
+        client = CannedMusicBrainzClient(
+            {'works': [
+                {'id': 'w-parent', 'title': 'Prelude, Aria & Finale, Op. 25'},
+                {'id': 'w-mov', 'title': 'Prelude, Aria & Finale, Op. 25: III. Finale. Poco allegro'},
+                {'id': 'w-other', 'title': 'Something Else Entirely'},
+            ]},
+            [{'relations': [{'type': 'composer',
+                             'artist': {'id': 'a1', 'name': 'William Mathias'}}]},
+             {'relations': []}])
+        hits = client.work_suggestions('Prelude, Aria & Finale, Op. 25')
+        self.assertEqual([h['musicbrainz_work_id'] for h in hits], ['w-parent', 'w-other'])
+        self.assertEqual(hits[0]['composers'][0]['name'], 'William Mathias')
+        self.assertEqual(hits[1]['composers'], [])
+
     def test_slugify(self):
         self.assertEqual(reg.slugify('Berlioz: Symphonie fantastique'), 'berlioz-symphonie-fantastique')
         with self.assertRaises(ValueError):

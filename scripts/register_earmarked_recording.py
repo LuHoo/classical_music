@@ -66,7 +66,7 @@ def require(condition, message):
 
 class NoSuggestionRedirects(HTTPRedirectHandler):
     def redirect_request(self, req, fp, code, msg, headers, newurl):
-        raise ValueError('Wikidata endpoint redirected; request refused')
+        raise ValueError('MusicBrainz endpoint redirected; request refused')
 
 
 def suggestion_search_text(title):
@@ -79,7 +79,7 @@ def suggestion_search_text(title):
 
 
 def attach_external_suggestions(report, *, suggest_client=None):
-    """Fill advisory Wikidata suggestions into the per-track report of a
+    """Fill advisory MusicBrainz suggestions into the per-track report of a
     zero-match album. Fail-open: lookups never block the dry-run, and the
     suggestions never touch the recording document."""
     suggest = suggest_client if suggest_client is not None else SuggestionClient()
@@ -112,7 +112,7 @@ class SuggestionClient:
         self.min_interval = min_interval
         self._last_request = None
 
-    def fetch(self, url, _retried=False):
+    def fetch(self, url, _attempt=0, _max_attempts=3):
         if self._last_request is not None:
             waited = time.monotonic() - self._last_request
             if waited < self.min_interval:
@@ -124,11 +124,12 @@ class SuggestionClient:
                 if len(raw) > MAX_SUGGESTION_BYTES:
                     raise ValueError('Oversized MusicBrainz response')
         except HTTPError as exc:
-            # MusicBrainz answers 429/503 under load; one paced retry, then fail
-            # (fail-open: the dry-run report simply continues without suggestions).
-            if exc.code in (429, 503) and not _retried:
-                time.sleep(2)
-                return self.fetch(url, _retried=True)
+            # MusicBrainz answers 429/503 under load; paced exponential backoff,
+            # then fail (fail-open: the dry-run report simply continues without
+            # suggestions for this search text).
+            if exc.code in (429, 503) and _attempt + 1 < _max_attempts:
+                time.sleep(2 * (2 ** _attempt))
+                return self.fetch(url, _attempt=_attempt + 1, _max_attempts=_max_attempts)
             raise ValueError(f'MusicBrainz lookup failed (HTTP {exc.code})') from None
         finally:
             self._last_request = time.monotonic()
@@ -156,6 +157,13 @@ class SuggestionClient:
 
         suggestions = []
         for work in sorted(candidates, key=rank)[:limit]:
+            # Drop movement-level duplicates: MusicBrainz lists both the work
+            # ("Prelude, Aria and Finale, op. 25") and its movement parts
+            # ("... op. 25: III. Finale"); the parts add no new evidence.
+            prefix = norm(work['title'].split(':')[0]).strip()
+            if any(prefix and (norm(kept['title']) == prefix or norm(kept['title']) in prefix)
+                   for kept in suggestions):
+                continue
             detail = self.fetch(
                 f"{MUSICBRAINZ_WORK}/{work['id']}?inc=artist-rels&fmt=json")
             composers = [{'name': (rel.get('artist') or {}).get('name'),
@@ -792,7 +800,7 @@ def main(argv=None):
     parser.add_argument('--update-existing', action='store_true',
                         help='Allow extending an existing recording file for the same album URL')
     parser.add_argument('--no-external-lookups', action='store_true',
-                        help='Skip the advisory Wikidata suggestions in the zero-match dry-run report')
+                        help='Skip the advisory MusicBrainz suggestions in the zero-match dry-run report')
     args = parser.parse_args(argv)
     try:
         result = run(ROOT, args.album_url, dry_run=args.dry_run,
