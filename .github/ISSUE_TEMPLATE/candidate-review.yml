@@ -44,6 +44,15 @@ body:
     validations:
       required: true
 
+  - type: input
+    id: comparison_playlist
+    attributes:
+      label: Comparison Playlist
+      description: Unlisted TIDAL playlist created by register_earmarked_recording.py (current recommendation first, then the candidate). Paste the URL from the apply report; leave empty if there is no playlist.
+      placeholder: https://tidal.com/playlist/<uuid>
+    validations:
+      required: false
+
   - type: textarea
     id: evidence
     attributes:
@@ -75,6 +84,21 @@ body:
         - needs_more_evidence
     validations:
       required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        **Kort antwoord volstaat.** Het besluit wordt vastgelegd als één regel in
+        een reactie op deze issue; alleen bij twijfel, uitzonderingen of aparte
+        profielen per deel is een korte toelichting nodig. Kopieer en pas aan:
+
+        ```bash
+        # vervang <nummer> door dit issuenummer; kies exact één optie
+        echo "candidate-review #<nummer>: accepted / rejected / superseded / needs_more_evidence"
+        ```
+
+        Een besluit uit de chat wordt hier overgenomen. Pas na een expliciet
+        besluit verwerkt een aparte wijziging het in de collectie.
 
   - type: textarea
     id: rationale
