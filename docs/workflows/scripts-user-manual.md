@@ -311,6 +311,46 @@ daarna de grant zonder die te tonen: `export TIDAL_USER_REFRESH_TOKEN="$(cat PAD
 Het GitHub Actions-secret werkt alleen in workflows en is lokaal niet uitleesbaar.
 Er zijn geen muterende TIDAL-calls behalve playlist-creatie, en uitsluitend in apply-modus.
 
+### Earmarked besluit verwerken (`apply_earmarked_decision.py`)
+
+Sluit de beslissingsroute van de earmarked-workflow (#316/#318): na
+`register_earmarked_recording.py` en de luistervergelijking verwerkt dit script de
+curatorbeslissing op het candidate-review-issue rechtstreeks in de canonieke data,
+met dezelfde recordvocabulaire als `./curator` (issue #319 was het eerste besluit).
+Het script is volledig offline: geen GitHub-, TIDAL- of playlist-acties, en Git
+blijft handmatig. Werkt alleen als de werk-regel in `data/recordings/` nog
+`status: candidate` is en er al een decision-record bestaat is een fout.
+
+```bash
+# Promote: kandidaat wordt de nieuwe aanbeveling en vervangt de bestaande performance
+.venv/bin/python scripts/apply_earmarked_decision.py <issue> --choice <CODE> --work <work_id> \
+  --performer "Naam (rol)" [--performer "Naam (rol)" ...] \
+  --track-url "https://tidal.com/track/<id>" [--album-title "Album"] [--curator LAH]
+
+# Reject: kandidaat blijft liggen, bestaande aanbeveling blijft ongewijzigd
+.venv/bin/python scripts/apply_earmarked_decision.py <issue> --choice existing --work <work_id>
+
+# Plan zonder schrijven
+.venv/bin/python scripts/apply_earmarked_decision.py <issue> ... --dry-run
+```
+
+Promote voert in één atomische run (met `.curator.lock`) uit: nieuwe performance
+`data/performances/<work_id>-earmarked-<code>.yaml`; de bestaande performance van
+het werk wordt verwijderd en elk intake-manifest dat haar importeerde krijgt de
+standaard verwijdervocabulaire (unit `not_selected`, resolved choice met
+`selected_performance`, gesnoeide `new_records`, `changed_existing` met
+`removed_by_curator`, opnieuw berekende `summary`); het `docs/*.md`-anker van de
+vervangen track wordt herschreven naar de nieuwe performers en track-URL; de
+`data/recordings/`-werk-regel wordt `status: recommended` met de luistertrack;
+beslissingsrecord `reports/curator-decisions/issue-<n>.json`
+(`decision_source: curator_cli`) en `batch-status.json` terug naar `status: pending`.
+
+Faalt fail-closed op: geen/meerdere performances, een performance zonder
+manifest-verwijzing, een niet-kandidaatstatus, een niet-ondersteund manifestformaat
+of ontbrekend docs-anker. Eén performance per werk blijft de regel: promoven
+vervangt, reject behoudt. Sluit altijd af met `./curator finish` en review zelf de
+wijzigingen vóór het committen.
+
 ### Omgevingsvariabelen voor TIDAL
 
 | Variabele | Gebruikt voor |
