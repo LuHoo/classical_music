@@ -128,6 +128,23 @@ class FakeUserClient:
                 'items': [{'id': tid, 'type': 'tracks'} for tid in self.playlists[pid]['items']]}
 
 
+class FakeSuggestionClient:
+    """Canned MusicBrainz double: never touches the network."""
+
+    def __init__(self, suggestions=None, fail=False):
+        self.suggestions = suggestions if suggestions is not None else [
+            {'title': 'Lebensstürme', 'musicbrainz_work_id': 'w1', 'source': 'musicbrainz',
+             'composers': [{'name': 'Franz Schubert', 'musicbrainz_artist_id': 'a1'}]}]
+        self.fail = fail
+        self.queries = []
+
+    def work_suggestions(self, text, limit=3):
+        self.queries.append(text)
+        if self.fail:
+            raise OSError('External lookups unavailable')
+        return self.suggestions
+
+
 class FixtureCase(unittest.TestCase):
     """Canonical data is injected through read_yaml; no ruamel parsing of fixture files."""
 
@@ -311,6 +328,16 @@ class FixtureCase(unittest.TestCase):
         with self.assertRaises(ValueError):
             client.request('/v2/albums/' + '1' * 20 + '?countryCode=NL')
 
+    def test_album_label_flattens_copyright_object(self):
+        # TIDAL returns the copyright as an object; the recording schema stores
+        # a plain label string (live album 518875626 rendered 'label: {text: CPO}').
+        doc = album_doc()
+        doc['data']['attributes']['copyright'] = {'text': ' CPO '}
+        client = FakeCatalogClient(doc, [item_page([
+            ('222', 'Symphonie fantastique: I. Rêveries',
+             ('Hector Berlioz', 'Royal Concertgebouw Orchestra'))])])
+        self.assertEqual(reg.album_document(client, ALBUM)['label'], 'CPO')
+
 
 class SchubertCase(unittest.TestCase):
     """The real Schubert: Four Hands album structure: bare movement titles, work in the
@@ -450,7 +477,173 @@ class SchubertCase(unittest.TestCase):
         self.assertEqual(reg.catalogue_tokens('Sinfonie Nr. 4 op. 120'), {'op120'})
 
 
+class ZeroMatchCase(unittest.TestCase):
+    """Album whose works are not canonical yet: dry-run reports per track, apply stays fail-closed."""
+
+    def setUp(self):
+        import tempfile
+        self.root = Path(tempfile.mkdtemp())
+        for name in ('works', 'persons', 'artists', 'performances', 'recordings'):
+            (self.root / 'data' / name).mkdir(parents=True)
+        (self.root / 'docs').mkdir()
+        for name in ('data/works/w1.yaml', 'data/persons/p1.yaml', 'data/persons/p2.yaml',
+                     'data/artists/performers.yaml', 'docs/composer.md'):
+            Path(self.root, name).touch()
+        self.documents = {
+            # The only canonical work is by a composer absent from this album.
+            str(self.root / 'data/works/w1.yaml'): {
+                'id': 'work-a', 'title': 'Symphonie fantastique', 'composer_id': 'hector-berlioz'},
+            str(self.root / 'data/persons/p1.yaml'): {'id': 'franz-schubert', 'name': 'Franz Schubert'},
+            str(self.root / 'data/persons/p2.yaml'): {'id': 'maurice-ravel', 'name': 'Maurice Ravel'},
+            str(self.root / 'data/artists/performers.yaml'): {'artists': []},
+        }
+        self._read_yaml = reg.read_yaml
+
+        def read(path):
+            path = str(path)
+            return self.documents[path] if path in self.documents else self._read_yaml(path)
+
+        reg.read_yaml = read
+        # The album title carries the Schubert family name; none of its works is canonical yet.
+        self.client = FakeCatalogClient(
+            album_doc(title='Schubert: Piano Works', artists=('Jean-Yves Thibaudet',)),
+            [item_page([
+                ('501', 'Lebensstürme, D. 947', ('Jean-Yves Thibaudet',)),
+                ('502', 'II. Largo', ('Jean-Yves Thibaudet', 'Maurice Ravel'),
+                 'Fantasia in F Minor, D. 940, Op. 103'),
+                ('503', 'Sonatine', ('Jean-Yves Thibaudet',)),
+            ])])
+
+    def tearDown(self):
+        reg.read_yaml = self._read_yaml
+
+    def run_script(self, **kwargs):
+        self.client.reset()
+        kwargs.setdefault('read_client', self.client)
+        kwargs.setdefault('suggest_client', FakeSuggestionClient())
+        return reg.run(self.root, ALBUM_URL, today='2026-10-18', **kwargs)
+
+    def test_dry_run_reports_per_track_without_writing(self):
+        result = self.run_script(dry_run=True)
+        self.assertEqual(result['recording']['works'], [])
+        details = result['report']['unmatched_track_details']
+        self.assertEqual([d['position'] for d in details], [1, 2, 3])
+        self.assertEqual(details[0]['title'], 'Lebensstürme, D. 947')
+        self.assertIsNone(details[0]['version'])
+        self.assertEqual(details[0]['catalogue_tokens'], ['d947'])
+        self.assertEqual(details[0]['composers'], ['Franz Schubert'])
+        self.assertEqual(details[1]['version'], 'Fantasia in F Minor, D. 940, Op. 103')
+        self.assertEqual(details[1]['catalogue_tokens'], ['d940', 'op103'])
+        self.assertEqual(details[1]['composers'], ['Franz Schubert', 'Maurice Ravel'])
+        self.assertEqual(details[2]['catalogue_tokens'], [])
+        self.assertIn('nothing to register', result['note'])
+        self.assertIn('re-run', result['note'])
+        self.assertEqual(list((self.root / 'data/recordings').glob('*.y*ml')), [])
+
+    def test_dry_run_invents_no_work_ids(self):
+        result = self.run_script(dry_run=True)
+        self.assertEqual(result['report']['works'], [])
+        self.assertEqual(result['recording']['works'], [])
+        for entry in result['report']['unmatched_track_details']:
+            self.assertEqual(entry['candidates'], [])
+            self.assertEqual(entry['state'], 'unknown')
+
+    def test_dry_run_creates_no_user_client(self):
+        def factory():
+            raise AssertionError('Dry run must not create a user client')
+
+        self.run_script(dry_run=True, user_client_factory=factory)
+
+    def test_apply_stays_fail_closed(self):
+        with self.assertRaises(ValueError):
+            self.run_script(user_client_factory=lambda: FakeUserClient())
+        self.assertEqual(list((self.root / 'data/recordings').glob('*.y*ml')), [])
+
+    def test_dry_run_adds_advisory_external_suggestions(self):
+        fake = FakeSuggestionClient()
+        result = self.run_script(dry_run=True, suggest_client=fake)
+        details = result['report']['unmatched_track_details']
+        for entry in details:
+            self.assertEqual(entry['external_suggestions'][0]['composers'][0]['name'],
+                             'Franz Schubert')
+        # Version text is searched when present (it carries the work title);
+        # identical search texts are looked up once.
+        self.assertEqual(fake.queries, ['Lebensstürme, D. 947',
+                                         'Fantasia in F Minor, D. 940, Op. 103',
+                                         'Sonatine'])
+        self.assertFalse(result['report']['external_suggestions_unavailable'])
+        # Advisory only: suggestions never enter the recording document.
+        self.assertEqual(result['recording']['works'], [])
+        notes = result['recording'].get('notes') or ''
+        self.assertNotIn('w1', notes)
+        self.assertNotIn('Franz Schubert', notes)
+
+    def test_external_suggestions_fail_open(self):
+        fake = FakeSuggestionClient(fail=True)
+        result = self.run_script(dry_run=True, suggest_client=fake)
+        details = result['report']['unmatched_track_details']
+        self.assertTrue(details)
+        self.assertTrue(all(entry['external_suggestions'] is None for entry in details))
+        self.assertTrue(result['report']['external_suggestions_unavailable'])
+        self.assertIn('nothing to register', result['note'])
+        self.assertEqual(list((self.root / 'data/recordings').glob('*.y*ml')), [])
+
+    def test_external_suggestions_not_fetched_in_apply_mode(self):
+        class Probing:
+            def work_suggestions(self, text, limit=3):
+                raise AssertionError('Suggestions are only consulted on zero-match dry runs')
+
+        with self.assertRaises(ValueError):
+            self.run_script(suggest_client=Probing())
+
+    def test_suggestion_search_text_drops_movements_and_arrangements(self):
+        self.assertEqual(
+            reg.suggestion_search_text('The Unfortunate Traveller: I. Introduction. Allegro moderato'),
+            'The Unfortunate Traveller')
+        self.assertEqual(
+            reg.suggestion_search_text('Movement for Strings in C Minor '
+                                       '(Arr. for Chamber Orchestra by Percy Grainger)'),
+            'Movement for Strings in C Minor')
+        self.assertEqual(
+            reg.suggestion_search_text('Prelude, Aria & Finale, Op. 25: III. Finale. Poco allegro'),
+            'Prelude, Aria & Finale, Op. 25')
+        self.assertEqual(reg.suggestion_search_text('Variations on an Air of Henry Purcell'),
+                         'Variations on an Air of Henry Purcell')
+        self.assertEqual(reg.suggestion_search_text(''), '')
+
+
+class CannedMusicBrainzClient(reg.SuggestionClient):
+    """SuggestionClient with canned fetch responses; never touches the network."""
+
+    def __init__(self, search_response, detail_responses):
+        super().__init__()
+        self.search_response = search_response
+        self.detail_responses = list(detail_responses)
+
+    def fetch(self, url, **kwargs):
+        if 'query=' in url:
+            return self.search_response
+        return self.detail_responses.pop(0)
+
+
 class ReportCase(unittest.TestCase):
+    def test_work_suggestions_drop_movement_duplicates(self):
+        # MusicBrainz returns the work and its movement parts; the parts add no
+        # new evidence and must not crowd out the limit (live album 518875626).
+        client = CannedMusicBrainzClient(
+            {'works': [
+                {'id': 'w-parent', 'title': 'Prelude, Aria & Finale, Op. 25'},
+                {'id': 'w-mov', 'title': 'Prelude, Aria & Finale, Op. 25: III. Finale. Poco allegro'},
+                {'id': 'w-other', 'title': 'Something Else Entirely'},
+            ]},
+            [{'relations': [{'type': 'composer',
+                             'artist': {'id': 'a1', 'name': 'William Mathias'}}]},
+             {'relations': []}])
+        hits = client.work_suggestions('Prelude, Aria & Finale, Op. 25')
+        self.assertEqual([h['musicbrainz_work_id'] for h in hits], ['w-parent', 'w-other'])
+        self.assertEqual(hits[0]['composers'][0]['name'], 'William Mathias')
+        self.assertEqual(hits[1]['composers'], [])
+
     def test_slugify(self):
         self.assertEqual(reg.slugify('Berlioz: Symphonie fantastique'), 'berlioz-symphonie-fantastique')
         with self.assertRaises(ValueError):
