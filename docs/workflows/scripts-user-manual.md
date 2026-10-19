@@ -191,7 +191,7 @@ activatie, rechten, issue-events en herstelprocedure.
 | Script | Parameters | Effect |
 |---|---|---|
 | `create_curator_listening_playlist.py` | `ISSUE`; `--apply`; `--recover-playlist-id UUID`; `--discover` | Standaard leest het GitHub en previewt een plan. `--apply` maakt/vult een aparte TIDAL-vergelijkingsplaylist en schrijft een GitHub-issuecomment als journaal |
-| `tidal_playlist_login.py` | `--client-id ID` (anders `TIDAL_CLIENT_ID`); één van `--setup-curator-playlists`, `--repair-spartacus`, `--repair-one-second`, `--repair-confirmed` | Interactieve browserlogin. Setup bewaart een refreshgrant als repositorysecret; reparatiemodi wijzigen de bronplaylist. Zonder modus start een schrijfproef met een tijdelijke playlist |
+| `tidal_playlist_login.py` | `--client-id ID` (anders `TIDAL_CLIENT_ID`); één van `--setup-curator-playlists`, `--setup-local PAD`, `--repair-spartacus`, `--repair-one-second`, `--repair-confirmed` | Interactieve browserlogin. Setup bewaart een refreshgrant als repositorysecret; `--setup-local PAD` schrijft de grant naar een bestand met alleen-eigenaarrechten (0600) voor lokale apply-runs; reparatiemodi wijzigen de bronplaylist. Zonder modus start een schrijfproef met een tijdelijke playlist |
 
 `--recover-playlist-id` is uitsluitend voor de geïdentificeerde vergelijkingsplaylist
 na een onzeker antwoord, nooit een bronplaylist-ID. `--discover` is een workflowhulp
@@ -283,9 +283,13 @@ Voor cataloguslezingen gebruikt het script `TIDAL_ACCESS_TOKEN` of
 include-parameter, de album-artiesten via het artists-relationship-endpoint
 (met fallback op `/v2/artists?filter[id]=`) en de tracks via
 `include=items,items.artists,items.credits` (met fallback zonder credits).
-Alleen in apply-modus wordt voor
-playlist-creatie `TIDAL_USER_ACCESS_TOKEN` gebruikt. Er zijn geen muterende
-TIDAL-calls behalve playlist-creatie, en uitsluitend in apply-modus.
+Alleen in apply-modus is een gebruikersgrant met `playlists.read playlists.write`
+nodig: een bestaande `TIDAL_USER_ACCESS_TOKEN`, of een `TIDAL_USER_REFRESH_TOKEN`-grant.
+Voor lokale runs autoriseer je eenmalig met
+`tidal_playlist_login.py --setup-local PAD --client-id "$TIDAL_CLIENT_ID"` en exporteer je
+daarna de grant zonder die te tonen: `export TIDAL_USER_REFRESH_TOKEN="$(cat PAD)"`.
+Het GitHub Actions-secret werkt alleen in workflows en is lokaal niet uitleesbaar.
+Er zijn geen muterende TIDAL-calls behalve playlist-creatie, en uitsluitend in apply-modus.
 
 ### Omgevingsvariabelen voor TIDAL
 
