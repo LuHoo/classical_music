@@ -102,9 +102,27 @@ def test_nonadjacent_movements_keep_selected_opening_anchor(inventory):
 
 def test_rejected_alternative_cannot_reappear_as_recommendation(inventory):
     manifest, data = deepcopy(inventory)
-    unit = next(u for u in manifest['units'] if u['disposition'] == 'not_selected')
+    # Issue #319 added a resolved not_selected unit (removed_by_curator), whose
+    # work is guarded by the resolved-decision checks instead. The competing-
+    # recommendation gate applies to rejected alternatives of non-resolved works.
+    resolved_works = {c['work_id'] for c in manifest['resolved_choices']}
+    unit = next(u for u in manifest['units']
+                if u['disposition'] == 'not_selected' and u['work_id'] not in resolved_works)
     data['performances']['unapproved-alternative'] = {'id': 'unapproved-alternative', 'work_id': unit['work_id']}
     with pytest.raises(AssertionError, match='Competing recommendation'):
+        audit.check_inventory(manifest, data)
+
+
+def test_rejected_alternative_of_resolved_decision_cannot_reappear(inventory):
+    manifest, data = deepcopy(inventory)
+    # Regression for #319: a work whose recommendation was replaced by a
+    # resolved curator decision (unit not_selected via removed_by_curator)
+    # must also reject a smuggled-in competing performance.
+    resolved_works = {c['work_id'] for c in manifest['resolved_choices']}
+    unit = next(u for u in manifest['units']
+                if u['disposition'] == 'not_selected' and u['work_id'] in resolved_works)
+    data['performances']['unapproved-alternative'] = {'id': 'unapproved-alternative', 'work_id': unit['work_id']}
+    with pytest.raises(AssertionError, match='Decision and recommendations differ'):
         audit.check_inventory(manifest, data)
 
 
