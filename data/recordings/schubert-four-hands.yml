@@ -1,0 +1,22 @@
+id: schubert-four-hands
+title: 'Schubert: Four Hands'
+label:
+  text: A Warner Classics/Erato release, © 2025 Parlophone Records Limited
+year: 2025
+works:
+- work_id: franz-schubert-fantasie-in-f-minor-d-940
+  status: candidate
+  track:
+    number: 1
+    title: 'Fantasia for Piano Four-Hands in F Minor, Op. Posth. 103, D. 940: I. Allegro
+      molto moderato'
+  notes: Spans album tracks 1, 2, 3, 4.
+links:
+  tidal:
+    url: https://tidal.com/browse/album/461772235
+    status: active
+    last_checked: '2026-10-19'
+notes: 'Unmatched artists: Bertrand Chamayou, Leif Ove Andsnes | Unmatched tracks
+  without canonical work: 5. Allegro for Piano Four-Hands in A Minor, Op. Posth. 144,
+  D. 947 "Lebensstürme", 6. Fugue for Piano Four-Hands in E Minor, Op. Posth. 152,
+  D. 952, 7. Rondo for Piano Four-Hands in A Major, Op. 107, D. 951'
