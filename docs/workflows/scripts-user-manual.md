@@ -239,6 +239,7 @@ Geaccepteerde URL-vormen (fail-closed op alles anders): `https://tidal.com/brows
 | `--dry-run` | Toont het volledige voorgestelde YAML-document en het playlistplan; schrijft geen bestand en maakt geen playlist aan. Bij nul canonieke matches print het bovendien een per-track rapport van ontbrekende werkdefinities |
 | `--recording-id SLUG` | Overschrijft de van de albumtitel afgeleide opname-ID (lowercase slug) |
 | `--update-existing` | Staat toe een bestaand `data/recordings/`-bestand met hetzelfde album-URL expliciet uit te breiden; een bestaande ID zonder deze vlag is een fout |
+| `--no-external-lookups` | Schakelt de adviserende MusicBrainz-suggesties in het nul-match-drooglooprapport uit (volledig offline droogloop) |
 
 Matching per track (nooit gokken): een track wordt aan exact één canoniek werk
 toegewezen als de werkstitel of een alias in de titel- **of versie**-tekst van de
@@ -270,6 +271,15 @@ Gedrag per werk:
   fout (met de verwijzing naar de droogloop). Route: nieuw album → droogloop-rapport
   → ontbrekende werken canoniek maken in `data/works/` → script her-runnen (eerst
   eventueel opnieuw met `--dry-run` ter controle).
+- **Adviserende externe suggesties** in datzelfde droogloop-rapport: bij nul matches
+  zoekt het script per unmatched track (read-only, via de openbare MusicBrainz-API,
+  maximaal één verzoek per seconde) naar het werk en de daar genoemde componist
+  (composer-relatie). Suggesties zijn uitsluitend bewijs voor de curator — volgens
+  de identifier-policy bepalen externe bronnen nooit de interne identiteit: er wordt
+  niets weggeschreven, geen enkel canoniek ID verzonnen en de suggesties komen niet
+  in het YAML-bestand. Netwerkfouten zijn fail-open: het rapport verschijnt dan
+  zonder suggesties met een korte melding. Gebruik `--no-external-lookups` om de
+  suggesties volledig uit te schakelen.
 
 Het rapport op stdout vermeldt per werk de bestaande status, de uitgevoerde actie en
 de playlist-URL, plus de lijst van ongematchte/ambigue tracks en artiesten, en

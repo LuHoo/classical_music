@@ -19,11 +19,15 @@ composer credits. Existing recommendations are read from the published
 from __future__ import annotations
 
 import argparse
+import json
 import re
 import sys
+import time
 import unicodedata
 from pathlib import Path
+from urllib.error import HTTPError
 from urllib.parse import parse_qsl, urlencode, urlsplit
+from urllib.request import HTTPRedirectHandler, Request, build_opener
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'src'))
@@ -45,6 +49,12 @@ CATALOGUE = re.compile(
     r'([IVXLC]+[a-z]?)?\s*([0-9]+[a-z]?)(?:\s*:\s*([0-9]+[a-z]?))?',
     re.IGNORECASE)
 
+MUSICBRAINZ_WORK = 'https://musicbrainz.org/ws/2/work'
+MAX_SUGGESTION_BYTES = 400_000
+SUGGESTION_HEADERS = {
+    'User-Agent': 'LuHoo/classical_music register_earmarked_recording (curator tool; '
+                  'read-only MusicBrainz work lookups)'}
+
 yaml = YAML()
 yaml.default_flow_style = False
 
@@ -52,6 +62,117 @@ yaml.default_flow_style = False
 def require(condition, message):
     if not condition:
         raise ValueError(message)
+
+
+class NoSuggestionRedirects(HTTPRedirectHandler):
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        raise ValueError('Wikidata endpoint redirected; request refused')
+
+
+def suggestion_search_text(title):
+    """Work-level search text for external lookups: drop movement numbers and
+    parenthesized arrangement notes, keep the work title itself."""
+    text = re.sub(r'\([^)]*\)', ' ', title or '')
+    text = text.split(':')[0]
+    text = re.sub(r'\s+', ' ', text).strip(' ,.-')
+    return text or (title or '').strip()
+
+
+def attach_external_suggestions(report, *, suggest_client=None):
+    """Fill advisory Wikidata suggestions into the per-track report of a
+    zero-match album. Fail-open: lookups never block the dry-run, and the
+    suggestions never touch the recording document."""
+    suggest = suggest_client if suggest_client is not None else SuggestionClient()
+    seen = {}
+    for entry in report['unmatched_track_details']:
+        # The version attribute usually carries the work title when the track
+        # title is a bare movement; search the work-level text.
+        text = suggestion_search_text(entry['version'] or entry['title'])
+        if text not in seen:
+            try:
+                seen[text] = suggest.work_suggestions(text)
+            except (ValueError, OSError):
+                seen[text] = None
+        entry['external_suggestions'] = seen[text]
+    report['external_suggestions_unavailable'] = any(value is None for value in seen.values())
+    return report
+
+
+class SuggestionClient:
+    """Read-only MusicBrainz work lookups for the zero-match dry-run report.
+
+    Advisory evidence only: suggestions appear in the report and never in the
+    recording document, and they never create or determine canonical identities
+    (identifier policy: external identifiers are evidence, not identity).
+    Anonymous MusicBrainz access is paced to one request per second.
+    """
+
+    def __init__(self, timeout=20, min_interval=1.0):
+        self.timeout = timeout
+        self.min_interval = min_interval
+        self._last_request = None
+
+    def fetch(self, url, _retried=False):
+        if self._last_request is not None:
+            waited = time.monotonic() - self._last_request
+            if waited < self.min_interval:
+                time.sleep(self.min_interval - waited)
+        request = Request(url, headers=dict(SUGGESTION_HEADERS))
+        try:
+            with build_opener(NoSuggestionRedirects()).open(request, timeout=self.timeout) as response:
+                raw = response.read(MAX_SUGGESTION_BYTES + 1)
+                if len(raw) > MAX_SUGGESTION_BYTES:
+                    raise ValueError('Oversized MusicBrainz response')
+        except HTTPError as exc:
+            # MusicBrainz answers 429/503 under load; one paced retry, then fail
+            # (fail-open: the dry-run report simply continues without suggestions).
+            if exc.code in (429, 503) and not _retried:
+                time.sleep(2)
+                return self.fetch(url, _retried=True)
+            raise ValueError(f'MusicBrainz lookup failed (HTTP {exc.code})') from None
+        finally:
+            self._last_request = time.monotonic()
+        try:
+            return json.loads(raw)
+        except (UnicodeError, json.JSONDecodeError):
+            raise ValueError('Invalid MusicBrainz response') from None
+
+    def work_suggestions(self, text, limit=3):
+        """Up to `limit` MusicBrainz works matching the work text, with composer
+        relations where the work states them. Exact title matches rank first."""
+        query = urlencode({'query': f'work:"{text}"', 'fmt': 'json', 'limit': 5})
+        document = self.fetch(f'{MUSICBRAINZ_WORK}?{query}')
+        candidates = [work for work in (document.get('works') or [])
+                      if isinstance(work, dict) and work.get('id') and work.get('title')]
+        target = norm(text)
+
+        def rank(work):
+            title = norm(work['title'])
+            if title == target:
+                return (0, len(title))
+            if title in target or target in title:
+                return (1, len(title))
+            return (2, len(title))
+
+        suggestions = []
+        for work in sorted(candidates, key=rank)[:limit]:
+            detail = self.fetch(
+                f"{MUSICBRAINZ_WORK}/{work['id']}?inc=artist-rels&fmt=json")
+            composers = [{'name': (rel.get('artist') or {}).get('name'),
+                          'musicbrainz_artist_id': (rel.get('artist') or {}).get('id')}
+                         for rel in (detail.get('relations') or [])
+                         if rel.get('type') == 'composer' and (rel.get('artist') or {}).get('name')]
+            suggestions.append({'title': work['title'],
+                                'musicbrainz_work_id': work['id'],
+                                'composers': composers, 'source': 'musicbrainz'})
+        return suggestions
+
+
+class NullSuggestionClient:
+    """Explicit opt-out: --no-external-lookups keeps the dry-run fully offline."""
+
+    def work_suggestions(self, text, limit=3):
+        raise OSError('External lookups disabled')
 
 
 def norm(value):
@@ -136,8 +257,16 @@ def album_document(client, identifier):
     release = attributes.get('releaseDate')
     year = int(str(release)[:4]) if re.match(r'\d{4}', str(release or '')) else None
     artist_ids = [row.get('id') for row in (data.get('relationships', {}).get('artists', {}).get('data') or [])]
+    copyright = attributes.get('copyright')
+    # TIDAL may return the copyright as an object ({'text': ...}); the recording
+    # schema stores a plain label string.
+    if isinstance(copyright, dict):
+        copyright = copyright.get('text')
+    if not isinstance(copyright, str):
+        copyright = None
     return {'id': identifier, 'title': title.strip(), 'year': year,
-            'label': attributes.get('copyright') or None, 'artists': artist_names(client, identifier, artist_ids)}
+            'label': copyright.strip() if copyright and copyright.strip() else None,
+            'artists': artist_names(client, identifier, artist_ids)}
 
 
 def artist_names(client, identifier, artist_ids):
@@ -574,7 +703,7 @@ def write_recording(root, recording, *, update_existing=False):
 
 
 def run(root, url, *, dry_run=False, recording_id=None, update_existing=False,
-        read_client=None, user_client_factory=None, today=None):
+        read_client=None, user_client_factory=None, today=None, suggest_client=None):
     from datetime import date
     today = today or date.today().isoformat()
     identifier = album_id(url)
@@ -620,6 +749,8 @@ def run(root, url, *, dry_run=False, recording_id=None, update_existing=False,
               'unmatched_artists': unmatched_artists,
               'unattributed_recommendation_lines': unattributed}
     output = {'recording': recording, 'report': report, 'dry_run': dry_run}
+    if dry_run and not recording['works'] and report['unmatched_track_details']:
+        attach_external_suggestions(report, suggest_client=suggest_client)
     if dry_run:
         output['note'] = ('Dry run: nothing written, no playlist created. '
                           'Re-run without --dry-run to apply.')
@@ -660,10 +791,13 @@ def main(argv=None):
     parser.add_argument('--recording-id', help='Override the derived recording ID slug')
     parser.add_argument('--update-existing', action='store_true',
                         help='Allow extending an existing recording file for the same album URL')
+    parser.add_argument('--no-external-lookups', action='store_true',
+                        help='Skip the advisory Wikidata suggestions in the zero-match dry-run report')
     args = parser.parse_args(argv)
     try:
         result = run(ROOT, args.album_url, dry_run=args.dry_run,
-                     recording_id=args.recording_id, update_existing=args.update_existing)
+                     recording_id=args.recording_id, update_existing=args.update_existing,
+                     suggest_client=NullSuggestionClient() if args.no_external_lookups else None)
     except ValueError as exc:
         print(f'ERROR: {exc}', file=sys.stderr)
         return 1
@@ -693,6 +827,15 @@ def main(argv=None):
             composers = ', '.join(entry['composers']) or 'no composer evidence found'
             print(f"    {entry['position']}. {entry['title']}{version}")
             print(f"       catalogue tokens: {tokens}; composer evidence: {composers}")
+            suggestions = entry.get('external_suggestions')
+            if suggestions:
+                print('       external suggestions (advisory, MusicBrainz — never canonical):')
+                for hit in suggestions:
+                    composers = ', '.join(c['name'] for c in hit['composers'])
+                    print(f"         - {hit['title']} (musicbrainz work {hit['musicbrainz_work_id']})"
+                          f" — composer: {composers or 'not stated on the work'}")
+            elif suggestions is None:
+                print('       external suggestions: unavailable (lookup failed or disabled)')
     if report['unattributed_recommendation_lines']:
         print('  Recommendation lines without a canonical work attribution: '
               + ', '.join(report['unattributed_recommendation_lines']))
