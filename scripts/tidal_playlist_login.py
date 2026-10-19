@@ -35,11 +35,36 @@ def save_curator_grant(doc):
     print('TIDAL_USER_REFRESH_TOKEN saved. Automatic issue playlists can run after the workflow is merged.')
 
 
+def save_local_grant(doc, path):
+    """Write the grant to a user-chosen file with owner-only permissions.
+
+    The grant is never printed, logged or placed in argv. The file is the
+    curator's explicit local choice; delete it when local apply runs are no
+    longer needed, and never commit it to the repository.
+    """
+    refresh = doc.get('refresh_token')
+    if not isinstance(refresh, str) or not refresh or any(c.isspace() for c in refresh):
+        raise ValueError('TIDAL did not return a usable refresh grant; no file written')
+    if not path or path.strip() != path or os.path.isdir(path):
+        raise ValueError('Provide a plain file path for --setup-local')
+    fd = os.open(path, os.O_WRONLY | os.O_CREAT | os.O_TRUNC, 0o600)
+    try:
+        os.write(fd, refresh.encode())
+        os.fsync(fd)
+    finally:
+        os.close(fd)
+    print(f'Refresh grant written to {path} with owner-only permissions.')
+    print('For local apply runs, export it without echoing it to the screen:')
+    print(f'  export TIDAL_USER_REFRESH_TOKEN="$(cat {path})"')
+    print('Delete the file once it is no longer needed; never commit or share it.')
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--client-id', default=os.environ.get('TIDAL_CLIENT_ID', ''))
     modes = parser.add_mutually_exclusive_group()
     modes.add_argument('--setup-curator-playlists', action='store_true', help='Authorize comparison playlists and save the refresh grant as a GitHub repository secret')
+    modes.add_argument('--setup-local', metavar='PATH', help='Authorize comparison playlists and write the refresh grant to PATH with owner-only permissions for local apply runs')
     modes.add_argument('--repair-spartacus', action='store_true', help='Apply the 29 approved Spartacus replacements')
     modes.add_argument('--repair-one-second', action='store_true', help='Apply the 108 approved one-second duration differences')
     modes.add_argument('--repair-confirmed', action='store_true', help='Apply the 609 approved occurrences to Best Classical')
@@ -79,6 +104,8 @@ def main():
         print('Opening TIDAL login. Required registered redirect URI: ' + REDIRECT_URI)
         if args.setup_curator_playlists:
             print('Authorizing automatic curator comparison playlists; the refresh grant will be stored in the LuHoo/classical_music GitHub secret.')
+        elif args.setup_local:
+            print('Authorizing curator comparison playlists for local apply runs; the refresh grant will be written to the file you provided.')
         elif args.repair_spartacus:
             print('Applying the 29 approved Spartacus replacements to Best Classical after fresh validation.')
         elif args.repair_one_second:
@@ -106,7 +133,7 @@ def main():
             raw = response.read(64001)
     except HTTPError as exc:
         raise ValueError(f'OAuth token exchange failed (HTTP {exc.code})') from None
-    except (URLError,OSError):
+    except (URLError, OSError):
         raise ValueError('OAuth token exchange failed (network error)') from None
     if len(raw)>64000:
         raise ValueError('Invalid OAuth token response')
@@ -119,6 +146,9 @@ def main():
         raise ValueError('TIDAL did not grant playlists.write')
     if args.setup_curator_playlists:
         save_curator_grant(doc)
+        return 0
+    if args.setup_local:
+        save_local_grant(doc, args.setup_local)
         return 0
     prior = os.environ.get('TIDAL_USER_ACCESS_TOKEN')
     os.environ['TIDAL_USER_ACCESS_TOKEN']=token

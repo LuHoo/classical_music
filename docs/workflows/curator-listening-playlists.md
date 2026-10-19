@@ -29,6 +29,13 @@ log in. The refresh grant is piped directly to `gh secret set` as
 written to a local file. This setup does not run the existing disposable pilot
 or any repair operation.
 
+For **local** apply runs of `register_earmarked_recording.py`, the same login
+script offers `--setup-local PATH`: the grant is written to a file with
+owner-only permissions (0600), never printed. Export it for the session with
+`export TIDAL_USER_REFRESH_TOKEN="$(cat PATH)"` and delete the file when it is
+no longer needed. This local grant never replaces the repository secret used
+by the workflows; both are separate authorizations of the same app.
+
 The workflow refreshes a user access token for each run. An expired/revoked grant,
 missing write scope or unexpected refresh-token rotation stops before playlist
 creation and asks for renewed setup. It never substitutes an app-only token.
