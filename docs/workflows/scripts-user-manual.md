@@ -240,6 +240,14 @@ Geaccepteerde URL-vormen (fail-closed op alles anders): `https://tidal.com/brows
 | `--recording-id SLUG` | Overschrijft de van de albumtitel afgeleide opname-ID (lowercase slug) |
 | `--update-existing` | Staat toe een bestaand `data/recordings/`-bestand met hetzelfde album-URL expliciet uit te breiden; een bestaande ID zonder deze vlag is een fout |
 | `--no-external-lookups` | Schakelt de adviserende MusicBrainz-suggesties in het nul-match-drooglooprapport uit (volledig offline droogloop) |
+| `--verbose-unattributed` | Print bij het rapport van niet-toegeschreven docs-regels de volledige lijst in plaats van het standaardoverzicht |
+
+Standaard print het script bij niet-toegeschreven docs-aanbevelingsregels alleen
+het totaal plus een per-categorie uitsplitsing (`no-canonical-work`,
+`ambiguous-match`) met maximaal drie voorbeelden per categorie; het rapport bevat
+de volledige lijst in `unattributed_recommendation_lines` en de uitsplitsing in
+`unattributed_breakdown`. Met `--verbose-unattributed` staat de volledige lijst
+ook op stdout (#323).
 
 Matching per track (nooit gokken): een track wordt aan exact één canoniek werk
 toegewezen als de werkstitel of een alias in de titel- **of versie**-tekst van de
@@ -259,6 +267,13 @@ Gedrag per werk:
   `docs/*.md`-pagina's (via hun TIDAL-track-ankers, geattribueerd via
   `data/performances/` of een uniek catalogusnummer), uit performances met
   `recommended: true` en uit `data/recordings/`-regels met `status: recommended`.
+  Voor regels die nog niet via `data/performances/` zijn toegeschreven (#323)
+  probeert het script aanvullend attributie: de componist wordt afgeleid uit de
+  paginakop (`# Naam`) van de docs-pagina en de composer-credits, waarna de regel
+  wordt toegeschreven bij één uniek catalogusnummer of één unieke
+  titel/alias-containment binnen de werken van die componist. Meerdere kandidaten
+  → `ambiguous-match`; geen kandidaat → `no-canonical-work` (het werk bestaat
+  nog niet canoniek). Beide categorieën blijven fail-closed on toegeeschreven.
 - Geen bestaande aanbeveling → `status: candidate`, geen playlist; het rapport zegt dit expliciet.
 - Ambigue of onbekende tracks → fail-closed: ambigue tracks landen als werk-item
   **zonder** `status` (met vermelding in `notes`), onbekende tracks worden als ruwe

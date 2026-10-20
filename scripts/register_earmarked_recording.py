@@ -381,7 +381,12 @@ def read_yaml(path):
 
 
 def load_works(root):
-    """Canonical works: id, title, aliases and composer_id."""
+    """Canonical works: id, title, aliases, composer_id and catalogue values.
+
+    The catalogue map (e.g. ``bwv: BWV 1046.2``) is carried as string values:
+    published docs lines carry catalogue numbers that often live only in this
+    field, not in the work title (#323).
+    """
     works = []
     for path in sorted((Path(root) / 'data/works').glob('*.yaml')):
         data = read_yaml(path)
@@ -391,8 +396,60 @@ def load_works(root):
         if not wid or not title:
             continue
         aliases = [a for a in (data.get('aliases') or []) if isinstance(a, str)]
-        works.append({'id': wid, 'title': title, 'aliases': aliases, 'composer_id': data.get('composer_id')})
+        catalogue = data.get('catalogue')
+        if isinstance(catalogue, dict):
+            catalogue_values = [str(v) for v in catalogue.values() if v is not None]
+        elif catalogue:
+            catalogue_values = [str(catalogue)]
+        else:
+            catalogue_values = []
+        works.append({'id': wid, 'title': title, 'aliases': aliases,
+                      'composer_id': data.get('composer_id'),
+                      'catalogue_values': catalogue_values})
     return works
+
+
+def page_composer_index(docs_dir, persons):
+    """docs page name -> canonical person IDs implied by its '# Name' heading.
+
+    Every docs/*.md page is a composer page; the heading is the composer
+    evidence for its recommendation lines (#323). Pages whose heading
+    matches no canonical person yield an empty set: fail-closed, the
+    attribution then only accepts unambiguous catalogue-token matches.
+    """
+    index = {}
+    for path in sorted(Path(docs_dir).glob('*.md')):
+        heading = ''
+        for line in path.read_text(encoding='utf-8').splitlines():
+            if line.startswith('# '):
+                heading = line[2:].strip()
+                break
+        composers = set()
+        if heading:
+            normalized = norm(heading).lower()
+            for pid, name in persons.items():
+                candidate = norm(name).lower()
+                if candidate and (candidate in normalized or normalized in candidate):
+                    composers.add(pid)
+        index[path.name] = composers
+    return index
+
+
+def work_match_pool(works, composers):
+    """Works narrowed by composer evidence; without evidence all works."""
+    if not composers:
+        return list(works)
+    return [w for w in works if w.get('composer_id') in composers]
+
+
+def work_catalogue_tokens(work):
+    """Catalogue tokens of a work: title, aliases and catalogue-field values."""
+    tokens = catalogue_tokens(work['title'])
+    tokens |= {token for alias in work['aliases'] for token in catalogue_tokens(alias)}
+    for value in work.get('catalogue_values') or []:
+        tokens |= catalogue_tokens(value)
+    return tokens
+
 
 
 def load_persons(root):
@@ -580,29 +637,58 @@ def performance_track_index(root):
     return index
 
 
-def doc_recommendations(root, works, performance_index):
-    """Published recommendations from docs/*.md: TIDAL track anchors with work attribution."""
+def doc_recommendations(root, works, performance_index, page_composers=None):
+    """Published recommendations from docs/*.md: TIDAL track anchors with work
+    attribution, with a per-category breakdown for unattributed lines (#323).
+
+    Attribution order: (1) canonical performance with the track; (2) a unique
+    catalogue-token match (title, aliases and the work's catalogue field) among
+    the composer's works implied by the page heading; (3) a unique title/alias
+    containment match in the same pool. Anything else is unattributed and
+    classified as 'no-canonical-work' (no candidate at all) or 'ambiguous-match'
+    (several candidates remain).
+    """
     recommendations, unattributed = {}, []
+    breakdown = {}
     for path in sorted((Path(root) / 'docs').glob('*.md')):
+        composers = (page_composers or {}).get(path.name, set())
+        pool = work_match_pool(works, composers)
         for number, line in enumerate(path.read_text(encoding='utf-8').splitlines(), 1):
             for track in DOC_TRACK_LINK.findall(line):
                 wid = performance_index.get(track)
                 if not wid:
-                    hits = [w['id'] for w in works if catalogue_tokens(line) & (
-                        catalogue_tokens(w['title']) | {t for a in w['aliases'] for t in catalogue_tokens(a)})]
-                    wid = hits[0] if len(hits) == 1 else None
-                if not wid:
-                    unattributed.append(f'{path.name}:{number} (track {track})')
-                    continue
+                    line_tokens = catalogue_tokens(line)
+                    hits = [w['id'] for w in pool if line_tokens & work_catalogue_tokens(w)]
+                    if len(hits) != 1:
+                        normalized = norm(line)
+                        containment = [w for w in pool
+                                       if norm(w['title']) in normalized
+                                       or any(norm(a) in normalized for a in w['aliases'])]
+                        if len(containment) == 1:
+                            hits = [containment[0]['id']]
+                        elif len(hits) == 0 and len(containment) == 0:
+                            category = 'no-canonical-work'
+                        else:
+                            hits = []
+                            category = 'ambiguous-match'
+                    if len(hits) != 1:
+                        entry = breakdown.setdefault(category, [])
+                        entry.append(f'{path.name}:{number} (track {track})')
+                        unattributed.append(f'{path.name}:{number} (track {track})')
+                        continue
+                    wid = hits[0]
                 entry = recommendations.setdefault(wid, {'track_ids': [], 'sources': []})
                 if track not in entry['track_ids']:
                     entry['track_ids'].append(track)
                 entry['sources'].append(f'{path.name}:{number}')
-    return recommendations, unattributed
+    ordered = [{'category': category, 'count': len(lines), 'examples': lines[:3]}
+               for category, lines in sorted(breakdown.items())]
+    return recommendations, unattributed, ordered
 
 
 def existing_recommendations(root, works=None):
-    """work_id -> {'track_ids': [...], 'sources': [...]} for every current recommendation."""
+    """work_id -> {'track_ids': [...], 'sources': [...]} for every current
+    recommendation; plus unattributed docs lines and their category breakdown."""
     found = {}
     works = works if works is not None else load_works(root)
 
@@ -633,14 +719,16 @@ def existing_recommendations(root, works=None):
                 link = (data.get('links') or {}).get('tidal') if isinstance(data.get('links'), dict) else None
             add(entry.get('work_id'),
                 track_id_from_url(link.get('url') if isinstance(link, dict) else None), path.name)
-    doc_found, unattributed = doc_recommendations(root, works, performance_track_index(root))
+    doc_found, unattributed, breakdown = doc_recommendations(
+        root, works, performance_track_index(root),
+        page_composer_index(Path(root) / 'docs', load_persons(root)))
     for wid, entry in doc_found.items():
         target = found.setdefault(wid, {'track_ids': [], 'sources': []})
         for track in entry['track_ids']:
             if track not in target['track_ids']:
                 target['track_ids'].append(track)
         target['sources'].extend(entry['sources'])
-    return found, unattributed
+    return found, unattributed, breakdown
 
 
 def playlist_plan(root, album, recording, matches, recommendations, today):
@@ -727,7 +815,7 @@ def run(root, url, *, dry_run=False, recording_id=None, update_existing=False,
     if not recording['works'] and not dry_run:
         raise ValueError('No track could be related to canonical works; refusing to write anything. '
                          'Re-run with --dry-run for the per-track report of missing work definitions.')
-    recommendations, unattributed = existing_recommendations(root, works)
+    recommendations, unattributed, breakdown = existing_recommendations(root, works)
     plans = [p for p in playlist_plan(root, album, recording, matches, recommendations, today)
              if p['current_track_ids']]
     work_lines = []
@@ -755,7 +843,8 @@ def run(root, url, *, dry_run=False, recording_id=None, update_existing=False,
                                     'candidates': u.get('candidates', [])} for u in unmatched_tracks],
               'unmatched_track_details': unmatched_track_details(matches, persons),
               'unmatched_artists': unmatched_artists,
-              'unattributed_recommendation_lines': unattributed}
+              'unattributed_recommendation_lines': unattributed,
+              'unattributed_breakdown': breakdown}
     output = {'recording': recording, 'report': report, 'dry_run': dry_run}
     if dry_run and not recording['works'] and report['unmatched_track_details']:
         attach_external_suggestions(report, suggest_client=suggest_client)
@@ -801,6 +890,8 @@ def main(argv=None):
                         help='Allow extending an existing recording file for the same album URL')
     parser.add_argument('--no-external-lookups', action='store_true',
                         help='Skip the advisory MusicBrainz suggestions in the zero-match dry-run report')
+    parser.add_argument('--verbose-unattributed', action='store_true',
+                        help='Print every unattributed docs recommendation line instead of a summary')
     args = parser.parse_args(argv)
     try:
         result = run(ROOT, args.album_url, dry_run=args.dry_run,
@@ -845,8 +936,16 @@ def main(argv=None):
             elif suggestions is None:
                 print('       external suggestions: unavailable (lookup failed or disabled)')
     if report['unattributed_recommendation_lines']:
-        print('  Recommendation lines without a canonical work attribution: '
-              + ', '.join(report['unattributed_recommendation_lines']))
+        if args.verbose_unattributed:
+            print('  Recommendation lines without a canonical work attribution: '
+                  + ', '.join(report['unattributed_recommendation_lines']))
+        else:
+            print(f"  Unattributed docs recommendation lines: {len(report['unattributed_recommendation_lines'])}"
+                  ' (re-run with --verbose-unattributed for the full list)')
+            for entry in report['unattributed_breakdown']:
+                examples = '; '.join(entry['examples'])
+                print(f"    {entry['category']}: {entry['count']}"
+                      + (f' — e.g. {examples}' if examples else ''))
     if result['dry_run']:
         print('--- Proposed data/recordings YAML ---')
         print(dump_yaml(result['recording']), end='')
