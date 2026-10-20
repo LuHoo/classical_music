@@ -77,7 +77,7 @@ def test_reuse_must_match_the_work_not_just_a_track(inventory):
 
 
 def test_raw_metadata_cannot_be_silently_rewritten(inventory):
-    manifest, data = inventory
+    manifest, data = deepcopy(inventory)
     manifest['units'][0]['tracks'][0]['title'] = 'Another composition'
     with pytest.raises(AssertionError, match='Raw source metadata changed'):
         audit.check_inventory(manifest, data)
