@@ -102,12 +102,17 @@ def test_nonadjacent_movements_keep_selected_opening_anchor(inventory):
 
 def test_rejected_alternative_cannot_reappear_as_recommendation(inventory):
     manifest, data = deepcopy(inventory)
-    # Issue #319 added a resolved not_selected unit (removed_by_curator), whose
-    # work is guarded by the resolved-decision checks instead. The competing-
-    # recommendation gate applies to rejected alternatives of non-resolved works.
-    resolved_works = {c['work_id'] for c in manifest['resolved_choices']}
+    # The competing-recommendation gate fires from a work's active imported
+    # unit, so the rejected alternative must share its work with an
+    # import_new unit (e.g. the nocturne alternatives). Issue #319 created
+    # the first not_selected unit whose work has no active unit anymore
+    # (removed_by_curator); that scenario is covered by the test below.
+    dispositions = {}
+    for u in manifest['units']:
+        dispositions.setdefault(u['work_id'], set()).add(u['disposition'])
     unit = next(u for u in manifest['units']
-                if u['disposition'] == 'not_selected' and u['work_id'] not in resolved_works)
+                if u['disposition'] == 'not_selected'
+                and 'import_new' in dispositions[u['work_id']])
     data['performances']['unapproved-alternative'] = {'id': 'unapproved-alternative', 'work_id': unit['work_id']}
     with pytest.raises(AssertionError, match='Competing recommendation'):
         audit.check_inventory(manifest, data)
@@ -116,11 +121,17 @@ def test_rejected_alternative_cannot_reappear_as_recommendation(inventory):
 def test_rejected_alternative_of_resolved_decision_cannot_reappear(inventory):
     manifest, data = deepcopy(inventory)
     # Regression for #319: a work whose recommendation was replaced by a
-    # resolved curator decision (unit not_selected via removed_by_curator)
-    # must also reject a smuggled-in competing performance.
+    # resolved curator decision (unit not_selected via removed_by_curator,
+    # no active unit left) must also reject a smuggled-in competing
+    # performance — via the resolved-decision check.
+    dispositions = {}
+    for u in manifest['units']:
+        dispositions.setdefault(u['work_id'], set()).add(u['disposition'])
     resolved_works = {c['work_id'] for c in manifest['resolved_choices']}
     unit = next(u for u in manifest['units']
-                if u['disposition'] == 'not_selected' and u['work_id'] in resolved_works)
+                if u['disposition'] == 'not_selected'
+                and u['work_id'] in resolved_works
+                and not (dispositions[u['work_id']] & {'import_new', 'reuse_existing'}))
     data['performances']['unapproved-alternative'] = {'id': 'unapproved-alternative', 'work_id': unit['work_id']}
     with pytest.raises(AssertionError, match='Decision and recommendations differ'):
         audit.check_inventory(manifest, data)
