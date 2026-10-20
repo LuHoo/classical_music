@@ -5,12 +5,17 @@ label:
 year: 2025
 works:
 - work_id: franz-schubert-fantasie-in-f-minor-d-940
-  status: candidate
+  status: recommended
   track:
     number: 1
     title: 'Fantasia for Piano Four-Hands in F Minor, Op. Posth. 103, D. 940: I. Allegro
       molto moderato'
-  notes: Spans album tracks 1, 2, 3, 4.
+  links:
+    tidal:
+      url: https://tidal.com/track/461772236
+      status: active
+      last_checked: 2026-10-19
+  notes: 'Spans album tracks 1, 2, 3, 4. Curator decision #319: CHA — Bertrand Chamayou, Leif Ove Andsnes; replaces franz-schubert-fantasie-in-f-minor-d-940-piano-p384.'
 links:
   tidal:
     url: https://tidal.com/browse/album/461772235
