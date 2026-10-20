@@ -706,6 +706,144 @@ class ZeroMatchCase(unittest.TestCase):
         self.assertEqual(reg.suggestion_search_text(''), '')
 
 
+class AttributionCase(unittest.TestCase):
+    """Per-anchor docs attribution (#329): heading given-name evidence, the M
+    catalogue prefix, most-specific titles, version-qualifier consistency and
+    per-anchor segments. All fail-closed."""
+
+    def setUp(self):
+        import tempfile
+        self.root = Path(tempfile.mkdtemp())
+        for name in ('works', 'persons', 'artists', 'performances', 'recordings'):
+            (self.root / 'data' / name).mkdir(parents=True)
+        (self.root / 'docs').mkdir()
+        (self.root / 'docs/page.md').touch()
+        self.documents = {}
+        self._read_yaml = reg.read_yaml
+
+        def read(path):
+            path = str(path)
+            return self.documents[path] if path in self.documents else self._read_yaml(path)
+
+        reg.read_yaml = read
+
+    def tearDown(self):
+        reg.read_yaml = self._read_yaml
+
+    def add_person(self, person_id, name):
+        path = self.root / f'data/persons/{person_id}.yaml'
+        path.touch()
+        self.documents[str(path)] = {'id': person_id, 'name': name}
+
+    def add_work(self, work_id, title, composer_id, **extra):
+        path = self.root / f'data/works/{work_id}.yaml'
+        path.touch()
+        document = {'id': work_id, 'title': title, 'composer_id': composer_id}
+        document.update(extra)
+        self.documents[str(path)] = document
+
+    def set_page(self, heading, lines):
+        body = heading + '\n\n' + '\n'.join(lines) + '\n'
+        (self.root / 'docs/page.md').write_text(body, encoding='utf-8')
+
+    def attribute(self):
+        return reg.existing_recommendations(self.root)
+
+    def test_heading_given_name_short_form_matches(self):
+        self.add_person('niels-wilhelm-gade', 'Niels Wilhelm Gade')
+        self.add_person('carl-nielsen', 'Carl Nielsen')
+        self.add_work('gade-symphony-4', 'Symphony No. 4 in E major, Op. 20', 'niels-wilhelm-gade')
+        self.add_work('nielsen-quintet', 'Wind Quintet, Op. 20', 'carl-nielsen')
+        self.set_page('# Niels Gade', [
+            '**Symphony No. 4 in E major**, Op. 20 [*DNRSO*](http://www.tidal.com/track/400)'])
+        found, unattributed, _ = self.attribute()
+        self.assertEqual(found['gade-symphony-4']['track_ids'], ['400'])
+        self.assertEqual(unattributed, [])
+
+    def test_heading_transliteration_stays_fail_closed(self):
+        self.add_person('sergei-rachmaninoff', 'Sergei Rachmaninoff')
+        self.add_person('johannes-brahms', 'Johannes Brahms')
+        self.add_work('rach-vocalise', 'Vocalise, Op. 34 No. 14', 'sergei-rachmaninoff')
+        self.add_work('brahms-quintet', 'Piano Quintet in F minor, Op. 34', 'johannes-brahms')
+        self.set_page('# Sergej Rachmaninov', [
+            '**Vocalise** Op. 34/14 [*Murphy*](http://www.tidal.com/track/900)'])
+        found, unattributed, breakdown = self.attribute()
+        self.assertEqual(found, {})
+        self.assertEqual(unattributed, ['page.md:3 (track 900)'])
+        self.assertEqual(breakdown[0]['category'], 'ambiguous-match')
+
+    def test_catalogue_m_prefix_distinguishes_ravel_versions(self):
+        self.assertEqual(reg.catalogue_tokens('Le Tombeau de Couperin, M. 68a'), {'m68a'})
+        self.add_person('maurice-ravel', 'Maurice Ravel')
+        self.add_work('ravel-tombeau-piano', 'Le Tombeau de Couperin, M. 68', 'maurice-ravel')
+        self.add_work('ravel-tombeau-orchestral', 'Le tombeau de Couperin, M. 68a', 'maurice-ravel')
+        self.set_page('# Maurice Ravel', [
+            '**Le Tombeau de Couperin**, M. 68a (1919) [*RSPO, Oramo*](http://www.tidal.com/track/500)'])
+        found, unattributed, _ = self.attribute()
+        self.assertEqual(found['ravel-tombeau-orchestral']['track_ids'], ['500'])
+        self.assertEqual(unattributed, [])
+
+    def test_most_specific_title_beats_generic_titles(self):
+        self.add_person('paul-hindemith', 'Paul Hindemith')
+        self.add_work('hindemith-piano-concerto', 'Piano Concerto', 'paul-hindemith')
+        self.add_work('hindemith-concerto-flute', 'Concerto', 'paul-hindemith')
+        self.add_work('hindemith-concerto-trumpet', 'Concerto', 'paul-hindemith')
+        self.set_page('# Paul Hindemith', [
+            '**Piano Concerto** (1945) [*Mauser, Frankfurt RSO*](http://www.tidal.com/track/600)'])
+        found, unattributed, _ = self.attribute()
+        self.assertEqual(found['hindemith-piano-concerto']['track_ids'], ['600'])
+        self.assertEqual(unattributed, [])
+
+    def test_version_qualifier_evidence_decides_between_versions(self):
+        self.add_person('camille-saint-saens', 'Camille Saint-Saëns')
+        self.add_work('romance-cello-orchestra', 'Romance in F major, Op. 36 (version for cello and orchestra)',
+                      'camille-saint-saens')
+        self.add_work('romance-horn-piano', 'Romance, Op. 36 (horn and piano version)', 'camille-saint-saens')
+        self.set_page('# Camille Saint-Saëns', [
+            '**Romance in F major**, Op. 36, R. 195 for horn (or cello) and orchestra (1874) '
+            '[*Müller-Schott, DSO Berlin*](http://www.tidal.com/track/700)'])
+        found, unattributed, _ = self.attribute()
+        self.assertEqual(found['romance-cello-orchestra']['track_ids'], ['700'])
+        self.assertEqual(unattributed, [])
+
+    def test_multi_anchor_line_attributes_each_anchor_to_its_segment(self):
+        self.add_person('arnold-schoenberg', 'Arnold Schoenberg')
+        self.add_work('verklarte-nacht-sextet', 'Verklärte Nacht, Op. 4 (string sextet)', 'arnold-schoenberg')
+        self.add_work('verklarte-nacht-trio', 'Verklärte Nacht, Op. 4 (Steuermann piano trio arrangement)',
+                      'arnold-schoenberg')
+        self.set_page('# Arnold Schoenberg', [
+            '💎 **Verklärte Nacht**, Op. 4 (1899) [string sextet: *Janine Jansen*]'
+            '(http://www.tidal.com/track/800) [piano trio: *Linos Piano Trio*]'
+            '(http://www.tidal.com/track/801) [chamber ensemble: *Het Collectief*]'
+            '(http://www.tidal.com/track/802)'])
+        found, unattributed, breakdown = self.attribute()
+        self.assertEqual(found['verklarte-nacht-sextet']['track_ids'], ['800'])
+        self.assertEqual(found['verklarte-nacht-trio']['track_ids'], ['801'])
+        self.assertEqual(unattributed, ['page.md:3 (track 802)'])
+        self.assertEqual(breakdown[0]['category'], 'ambiguous-match')
+
+    def test_multi_anchor_line_with_one_work_attributes_all_anchors(self):
+        self.add_person('hector-berlioz', 'Hector Berlioz')
+        self.add_work('harold', 'Harold en Italie', 'hector-berlioz')
+        self.set_page('# Hector Berlioz', [
+            '**Harold en Italie** [*Haitink*](http://www.tidal.com/track/100) '
+            '[*Dohnányi*](http://www.tidal.com/track/101)'])
+        found, unattributed, _ = self.attribute()
+        self.assertEqual(found['harold']['track_ids'], ['100', '101'])
+        self.assertEqual(unattributed, [])
+
+    def test_qualifier_exclusion_of_all_candidates_stays_ambiguous(self):
+        self.add_person('maurice-ravel', 'Maurice Ravel')
+        self.add_work('ravel-piano', 'Le Tombeau de Couperin, M. 68 (piano original)', 'maurice-ravel')
+        self.add_work('ravel-orchestral', 'Le Tombeau de Couperin, M. 68 (orchestral version)', 'maurice-ravel')
+        self.set_page('# Maurice Ravel', [
+            '**Le Tombeau de Couperin**, M. 68 [*Unknown Quartet*](http://www.tidal.com/track/501)'])
+        found, unattributed, breakdown = self.attribute()
+        self.assertEqual(found, {})
+        self.assertEqual(unattributed, ['page.md:3 (track 501)'])
+        self.assertEqual(breakdown[0]['category'], 'ambiguous-match')
+
+
 class CannedMusicBrainzClient(reg.SuggestionClient):
     """SuggestionClient with canned fetch responses; never touches the network."""
 

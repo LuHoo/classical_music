@@ -45,7 +45,7 @@ TRACK_URL = re.compile(r'(?:https?://)?(?:www\.)?tidal\.com/track/([0-9]+)/?$')
 DOC_TRACK_LINK = re.compile(
     r'\[[^\]]*\]\(\s*(?:https?://)?(?:www\.)?tidal\.com/track/([0-9]+)/?[^\)]*\)')
 CATALOGUE = re.compile(
-    r'\b(D|Op|BWV|RV|Hob|KV|K|Sz|AV|TrV|L|S|WWV|MWV|Anh)\.?\s*'
+    r'\b(D|Op|BWV|RV|Hob|KV|K|Sz|AV|TrV|L|S|M|WWV|MWV|Anh)\.?\s*'
     r'([IVXLC]+[a-z]?)?\s*([0-9]+[a-z]?)(?:\s*:\s*([0-9]+[a-z]?))?',
     re.IGNORECASE)
 
@@ -413,8 +413,12 @@ def page_composer_index(docs_dir, persons):
     """docs page name -> canonical person IDs implied by its '# Name' heading.
 
     Every docs/*.md page is a composer page; the heading is the composer
-    evidence for its recommendation lines (#323). Pages whose heading
-    matches no canonical person yield an empty set: fail-closed, the
+    evidence for its recommendation lines (#323). Heading matching (#329): the
+    heading's family name (last name token) must equal the person's family
+    name and, when the heading states given names, at least one given-name
+    token must be shared ('Niels Gade' -> 'Niels Wilhelm Gade'). Headings that
+    match nobody this strictly fall back to full-name containment. Pages whose
+    heading matches no canonical person yield an empty set: fail-closed, the
     attribution then only accepts unambiguous catalogue-token matches.
     """
     index = {}
@@ -426,11 +430,21 @@ def page_composer_index(docs_dir, persons):
                 break
         composers = set()
         if heading:
-            normalized = norm(heading).lower()
+            heading_tokens = norm(heading).lower().split()
             for pid, name in persons.items():
-                candidate = norm(name).lower()
-                if candidate and (candidate in normalized or normalized in candidate):
+                person_tokens = norm(name).lower().split()
+                if not heading_tokens or not person_tokens:
+                    continue
+                given = set(heading_tokens[:-1]) & set(person_tokens[:-1])
+                if heading_tokens[-1] == person_tokens[-1] and (
+                        len(heading_tokens) == 1 or given):
                     composers.add(pid)
+            if not composers:
+                normalized = norm(heading).lower()
+                for pid, name in persons.items():
+                    candidate = norm(name).lower()
+                    if candidate and (candidate in normalized or normalized in candidate):
+                        composers.add(pid)
         index[path.name] = composers
     return index
 
@@ -637,14 +651,75 @@ def performance_track_index(root):
     return index
 
 
+def containment_hits(pool, text):
+    """Works whose title or an alias is contained in the text."""
+    normalized = norm(text)
+    return [w for w in pool
+            if norm(w['title']) in normalized
+            or any(norm(alias) in normalized for alias in w['aliases'])]
+
+
+def most_specific(hits):
+    """Drop works whose title lies fully inside another hit's title (#329):
+    a generic title contained in a more specific candidate is not evidence
+    ('Concerto' inside 'Piano Concerto'). Fail-closed: if every hit would be
+    dropped, the original set is returned."""
+    if len(hits) > 1:
+        specific = [w for w in hits
+                    if not any(other is not w
+                                and norm(other['title']) != norm(w['title'])
+                                and norm(w['title']) in norm(other['title'])
+                                for other in hits)]
+        if specific:
+            return specific
+    return hits
+
+
+VERSION_STOPWORDS = {'version', 'arrangement', 'original', 'revised', 'edition',
+                     'for', 'and', 'or', 'the', 'in', 'of', 'with', 'a', 'no'}
+
+
+def version_qualifier_words(title):
+    """Content words a docs line must contain to support a titled version.
+
+    Parenthetical qualifiers in a work title name the version, arrangement or
+    instrumentation ('version for cello and orchestra', 'Steuermann piano
+    trio arrangement', 'string sextet'). Lowercase content words are required
+    evidence; capitalized proper names and generic version words are not."""
+    required = set()
+    for qualifier in re.findall(r'\(([^()]*)\)', title or ''):
+        for word in qualifier.split():
+            if word.islower() and word not in VERSION_STOPWORDS:
+                required.add(norm(word))
+    return required
+
+
+def qualifier_consistent(hits, text):
+    """Version-qualifier consistency (#329): versions are separate canonical
+    works and not interchangeable, so among remaining candidates a work is
+    dropped when its titled version is contradicted: every required qualifier
+    word must appear in the line (or the anchor's own segment). Fail-closed:
+    if every candidate is excluded, the original set is returned."""
+    if len(hits) <= 1:
+        return hits
+    words = set(norm(text).split())
+    consistent = [w for w in hits if version_qualifier_words(w['title']) <= words]
+    return consistent or hits
+
+
 def doc_recommendations(root, works, performance_index, page_composers=None):
     """Published recommendations from docs/*.md: TIDAL track anchors with work
     attribution, with a per-category breakdown for unattributed lines (#323).
 
-    Attribution order: (1) canonical performance with the track; (2) a unique
-    catalogue-token match (title, aliases and the work's catalogue field) among
-    the composer's works implied by the page heading; (3) a unique title/alias
-    containment match in the same pool. Anything else is unattributed and
+    Attribution order, per anchor (#329): (1) canonical performance with the
+    track; (2) a unique catalogue-token match (title, aliases and the work's
+    catalogue field) among the composer's works implied by the page heading;
+    (3) a unique title/alias containment match in the anchor's own segment of
+    the line, then in the whole line. Candidates left ambiguous by (2)/(3) are
+    narrowed by most-specific-title and version-qualifier consistency. Lines
+    with several anchors attribute each anchor against the text segment that
+    introduces it, so versioned recordings on one line (original first, then
+    arrangements) get their own evidence. Anything else is unattributed and
     classified as 'no-canonical-work' (no candidate at all) or 'ambiguous-match'
     (several candidates remain).
     """
@@ -654,24 +729,38 @@ def doc_recommendations(root, works, performance_index, page_composers=None):
         composers = (page_composers or {}).get(path.name, set())
         pool = work_match_pool(works, composers)
         for number, line in enumerate(path.read_text(encoding='utf-8').splitlines(), 1):
-            for track in DOC_TRACK_LINK.findall(line):
+            anchors = list(DOC_TRACK_LINK.finditer(line))
+            line_tokens = catalogue_tokens(line)
+            token_hits = [w for w in pool if line_tokens & work_catalogue_tokens(w)]
+            line_containment = qualifier_consistent(
+                most_specific(containment_hits(pool, line)), line)
+            segment_start = 0
+            for anchor in anchors:
+                track = anchor.group(1)
+                # The anchor's evidence segment runs up to and including its
+                # own markdown label: '[string sextet: …](url)' carries the
+                # version label inside the anchor itself.
+                segment = line[segment_start:anchor.end()]
+                segment_start = anchor.end()
                 wid = performance_index.get(track)
                 if not wid:
-                    line_tokens = catalogue_tokens(line)
-                    hits = [w['id'] for w in pool if line_tokens & work_catalogue_tokens(w)]
+                    hits = [w['id'] for w in token_hits]
                     if len(hits) != 1:
-                        normalized = norm(line)
-                        containment = [w for w in pool
-                                       if norm(w['title']) in normalized
-                                       or any(norm(a) in normalized for a in w['aliases'])]
-                        if len(containment) == 1:
-                            hits = [containment[0]['id']]
-                        elif len(hits) == 0 and len(containment) == 0:
-                            category = 'no-canonical-work'
-                        else:
-                            hits = []
-                            category = 'ambiguous-match'
+                        narrowed = qualifier_consistent(token_hits, segment)
+                        if len(narrowed) == 1:
+                            hits = [narrowed[0]['id']]
                     if len(hits) != 1:
+                        segment_hits = qualifier_consistent(
+                            most_specific(containment_hits(pool, segment)), segment)
+                        if len(segment_hits) == 1:
+                            hits = [segment_hits[0]['id']]
+                        elif len(hits) != 1:
+                            if len(line_containment) == 1:
+                                hits = [line_containment[0]['id']]
+                    if len(hits) != 1:
+                        any_candidate = (token_hits or line_containment
+                                        or containment_hits(pool, segment))
+                        category = 'no-canonical-work' if not any_candidate else 'ambiguous-match'
                         entry = breakdown.setdefault(category, [])
                         entry.append(f'{path.name}:{number} (track {track})')
                         unattributed.append(f'{path.name}:{number} (track {track})')
