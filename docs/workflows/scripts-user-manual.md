@@ -326,6 +326,56 @@ daarna de grant zonder die te tonen: `export TIDAL_USER_REFRESH_TOKEN="$(cat PAD
 Het GitHub Actions-secret werkt alleen in workflows en is lokaal niet uitleesbaar.
 Er zijn geen muterende TIDAL-calls behalve playlist-creatie, en uitsluitend in apply-modus.
 
+### Nieuw canoniek werk aanmaken of verrijken (`create_work.py`)
+
+Vult de earmarked-route aan (#331): wanneer de droogloop tracks rapporteert waarvan
+het werk nog niet canoniek is, zet dit script de feitelijke bewijsstukken (titel,
+catalogusnummers, componist) om in een voorgestelde werkdefinitie met automatisch
+afgeleid ID, adviserend MusicBrainz-versiebewijs en een expliciete apply-stap.
+Het script verzint niets: de componist moet op precies één canonieke Person
+uitkomen (naam of ID), een bron is verplicht, en een gedeeld catalogustoken met
+een bestaand werk van dezelfde componist blokkeert het aanmaken ten gunste van
+verrijking van dat bestaande werk. Titel-overlap met een bestaand werk van dezelfde
+componist wordt als waarschuwing gerapporteerd, nooit stilzwijgend opgelost.
+
+Identificatie volgt de bestaande repositorypraktijk: `work_id` is
+`<composer_id>-<slug>` en een nieuwe groep `<composer_id>-<slug>-group`.
+MusicBrainz-suggesties zijn uitsluitend adviserend bewijs (identifier-policy:
+externe bronnen bepalen nooit de interne identiteit); een expliciet bevestigde
+MBID wordt pas met `--musicbrainz-work-id` als `external_ids`-bewijs opgeslagen.
+Het script raakt geen docs-pagina's, GitHub-issues of TIDAL aan; Git blijft handmatig.
+
+```bash
+# Preview (standaard): voorgestelde data/works- en data/work-groups-YAML; schrijft niets
+.venv/bin/python scripts/create_work.py "Violin Concerto in D Minor, Op. 8" \
+  --composer "Richard Strauss" --catalogue "Op. 8" --catalogue "TrV 110" \
+  --source-url "https://tidal.com/browse/album/557059316"
+
+# Apply: schrijft data/works/<id>.yaml en (indien nieuw) data/work-groups/<id>.yaml
+.venv/bin/python scripts/create_work.py "..." --apply
+
+# Bestaand werk verrijken met een ontbrekend catalogusnummer, i.p.v. een duplicaat minten
+.venv/bin/python scripts/create_work.py --enrich <work-id> --catalogue "Sz. 87"
+```
+
+| Parameter | Effect |
+|---|---|
+| `TITLE` + `--composer` | Verplicht bij minten; componist als canoniek persoon-ID of volledige naam, precies één match |
+| `--catalogue NUM` | Herhaalbaar catalogusnummer (`"Op. 8"`, `"TrV 110"`, `"Sz. 87"`, `"BWV 1052"`, `"D. 940"`); slechts één nummer per prefix |
+| `--alias ALIAS` | Herhaalbaar alias, helpt toekomstige matching |
+| `--version`, `--year`, `--key`, `--slug`, `--group-title` | Optionele velden; `--slug` overschrijft de van de titel afgeleide slug |
+| `--work-group-id ID` | Hangt het werk aan een bestaande groep i.p.v. een nieuwe groep aan te maken |
+| `--source-url URL`, `--source-file PAD` | Bronverantwoording (verplicht); URL verplicht, bestand optioneel |
+| `--musicbrainz-work-id MBID` | Bewijs voor `external_ids`; nooit identiteitsbepalend |
+| `--enrich WORK_ID` | Verrijkmodus: alleen `--catalogue` en/of `--alias`; een bestaande sleutel met een andere waarde wordt geweigerd |
+| `--no-external-lookups` | Slaat de adviserende MusicBrainz-suggesties over (volledig offline) |
+| `--apply` | Schrijft de voorgestelde bestanden; zonder de vlag wordt niets geschreven |
+
+Werken waarvan de componist nog niet canoniek is, worden geweigerd: maak eerst de
+Person aan onder `data/persons/`. Na apply: valideer met `validate_data.py` en
+her-run daarna de earmarked-droogloop om te bevestigen dat de tracks nu als
+`candidate` matchen.
+
 ### Earmarked besluit verwerken (`apply_earmarked_decision.py`)
 
 Sluit de beslissingsroute van de earmarked-workflow (#316/#318): na
