@@ -260,24 +260,118 @@ class FixtureCase(unittest.TestCase):
         self.assertEqual(saved['links']['tidal']['last_checked'], '2026-10-18')
 
     def test_published_doc_recommendation_is_detected_with_track_anchor(self):
-        recommendations, unattributed = reg.existing_recommendations(
+        recommendations, unattributed, breakdown = reg.existing_recommendations(
             self.root, reg.load_works(self.root))
         self.assertEqual(recommendations['work-a']['track_ids'], ['111'])
         self.assertEqual(recommendations['work-a']['sources'],
                          ['perf1.yaml', 'composer.md:1'])
         self.assertEqual(unattributed, [])
+        self.assertEqual(breakdown, [])
         self.assertIn('work-b', recommendations)
 
     def test_doc_recommendation_line_without_attribution_is_reported(self):
         (self.root / 'docs/composer.md').write_text(
             'Some vague recommendation line [*Names*](http://www.tidal.com/track/999)\n',
             encoding='utf-8')
-        recommendations, unattributed = reg.existing_recommendations(
+        recommendations, unattributed, breakdown = reg.existing_recommendations(
             self.root, reg.load_works(self.root))
         doc_only = {w for w in recommendations
                     if any(s.startswith('docs/') for s in recommendations[w]['sources'])}
         self.assertEqual(doc_only, set())
         self.assertEqual(unattributed, ['composer.md:1 (track 999)'])
+        self.assertEqual(breakdown, [{'category': 'no-canonical-work', 'count': 1,
+                                      'examples': ['composer.md:1 (track 999)']}])
+
+    def test_catalogue_field_matches_doc_line_without_title_tokens(self):
+        """The catalogue map (not the title) carries the docs line's number (#323)."""
+        self.documents[str(self.root / 'data/works/w1.yaml')] = {
+            'id': 'work-a', 'title': 'Symphonie fantastique', 'composer_id': 'hector-berlioz',
+            'catalogue': {'bwv': 'BWV 1046.2'}}
+        (self.root / 'docs/composer.md').write_text(
+            '# Hector Berlioz\n\nConcert [*Names*](http://www.tidal.com/track/555), BWV 1046.2\n',
+            encoding='utf-8')
+        recommendations, unattributed, _ = reg.existing_recommendations(
+            self.root, reg.load_works(self.root))
+        self.assertIn('work-a', recommendations)
+        self.assertEqual(recommendations['work-a']['sources'], ['perf1.yaml', 'composer.md:3'])
+        self.assertEqual(unattributed, [])
+
+    def test_page_heading_composer_evidence_disambiguates_tokens(self):
+        """A token shared across composers resolves via the page heading (#323)."""
+        self.documents[str(self.root / 'data/works/w2.yaml')] = {
+            'id': 'work-b', 'title': 'Harold en Italie', 'composer_id': 'hector-berlioz',
+            'catalogue': {'opus': 'Op. 21'}}
+        (self.root / 'data/works/w3.yaml').touch()
+        (self.root / 'data/persons/p2.yaml').touch()
+        self.documents[str(self.root / 'data/works/w3.yaml')] = {
+            'id': 'work-c', 'title': 'Diversions', 'composer_id': 'benjamin-britten',
+            'catalogue': {'opus': 'Op. 21'}}
+        self.documents[str(self.root / 'data/persons/p2.yaml')] = {
+            'id': 'benjamin-britten', 'name': 'Benjamin Britten'}
+        (self.root / 'docs/composer.md').write_text(
+            '# Benjamin Britten\n\nDiversions [*Names*](http://www.tidal.com/track/555), Op. 21\n',
+            encoding='utf-8')
+        recommendations, unattributed, _ = reg.existing_recommendations(
+            self.root, reg.load_works(self.root))
+        self.assertIn('work-c', recommendations)
+        self.assertEqual(recommendations['work-c']['sources'], ['composer.md:3'])
+        self.assertNotIn('composer.md:3', recommendations['work-b']['sources'])
+        self.assertEqual(unattributed, [])
+
+    def test_title_containment_matches_doc_line_with_composer_evidence(self):
+        """Without any catalogue tokens, a unique title containment match in the
+        composer's pool attributes the line (#323)."""
+        (self.root / 'docs/composer.md').write_text(
+            '# Hector Berlioz\n\nSomething about Harold en Italie for viola '
+            '[*Names*](http://www.tidal.com/track/555)\n', encoding='utf-8')
+        recommendations, unattributed, _ = reg.existing_recommendations(
+            self.root, reg.load_works(self.root))
+        self.assertIn('work-b', recommendations)
+        self.assertEqual(unattributed, [])
+
+    def test_ambiguous_doc_line_is_classified_not_attributed(self):
+        """Several candidates after composer narrowing stay unattributed, as
+        'ambiguous-match' (#323)."""
+        self.documents[str(self.root / 'data/works/w2.yaml')] = {
+            'id': 'work-b', 'title': 'Harold en Italie', 'composer_id': 'hector-berlioz',
+            'aliases': ['Symphonie']}
+        self.documents[str(self.root / 'data/works/w1.yaml')] = {
+            'id': 'work-a', 'title': 'Symphonie fantastique', 'composer_id': 'hector-berlioz',
+            'aliases': ['Symphonie']}
+        (self.root / 'docs/composer.md').write_text(
+            '# Hector Berlioz\n\nSymphonie on one line '
+            '[*Names*](http://www.tidal.com/track/555)\n', encoding='utf-8')
+        recommendations, unattributed, breakdown = reg.existing_recommendations(
+            self.root, reg.load_works(self.root))
+        self.assertEqual(unattributed, ['composer.md:3 (track 555)'])
+        self.assertEqual(breakdown, [{'category': 'ambiguous-match', 'count': 1,
+                                      'examples': ['composer.md:3 (track 555)']}])
+        # only the performance source, never the ambiguous docs line
+        self.assertEqual(recommendations['work-a']['sources'], ['perf1.yaml'])
+        self.assertEqual(recommendations['work-b']['sources'], ['perf2.yaml'])
+
+    def test_page_without_composer_heading_fails_closed_on_ambiguity(self):
+        """No heading evidence: a shared token across composers stays unattributed."""
+        self.documents[str(self.root / 'data/works/w2.yaml')] = {
+            'id': 'work-b', 'title': 'Harold en Italie', 'composer_id': 'hector-berlioz',
+            'catalogue': {'opus': 'Op. 21'}}
+        (self.root / 'data/works/w3.yaml').touch()
+        (self.root / 'data/persons/p2.yaml').touch()
+        self.documents[str(self.root / 'data/works/w3.yaml')] = {
+            'id': 'work-c', 'title': 'Diversions', 'composer_id': 'benjamin-britten',
+            'catalogue': {'opus': 'Op. 21'}}
+        self.documents[str(self.root / 'data/persons/p2.yaml')] = {
+            'id': 'benjamin-britten', 'name': 'Benjamin Britten'}
+        (self.root / 'docs/composer.md').write_text(
+            'No heading here\n\nSomething, Op. 21 [*Names*](http://www.tidal.com/track/555)\n',
+            encoding='utf-8')
+        recommendations, unattributed, breakdown = reg.existing_recommendations(
+            self.root, reg.load_works(self.root))
+        self.assertEqual(unattributed, ['composer.md:3 (track 555)'])
+        self.assertEqual(breakdown[0]['category'], 'ambiguous-match')
+        self.assertNotIn('composer.md:3', recommendations['work-b']['sources'])
+        # Without heading evidence neither work receives the line as a recommendation.
+        self.assertNotIn('work-c', recommendations)
 
     def test_recommendation_without_track_anchor_gets_no_playlist(self):
         result = self.run_script(dry_run=True)
