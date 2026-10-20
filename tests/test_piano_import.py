@@ -23,6 +23,16 @@ def inventory(canonical_records):
     return manifest, {kind: dict(records) for kind, records in canonical_records.items()}
 
 
+def _work_dispositions(manifest):
+    """work_id -> set of dispositions; units without a work_id are skipped,
+    matching the audit's u.get('work_id') access pattern."""
+    dispositions = {}
+    for u in manifest['units']:
+        if u.get('work_id'):
+            dispositions.setdefault(u['work_id'], set()).add(u['disposition'])
+    return dispositions
+
+
 def test_complete_snapshot_and_curator_gates(inventory):
     audit.check_inventory(*inventory)
 
@@ -67,7 +77,7 @@ def test_reuse_must_match_the_work_not_just_a_track(inventory):
 
 
 def test_raw_metadata_cannot_be_silently_rewritten(inventory):
-    manifest, data = deepcopy(inventory)
+    manifest, data = inventory
     manifest['units'][0]['tracks'][0]['title'] = 'Another composition'
     with pytest.raises(AssertionError, match='Raw source metadata changed'):
         audit.check_inventory(manifest, data)
@@ -107,11 +117,10 @@ def test_rejected_alternative_cannot_reappear_as_recommendation(inventory):
     # import_new unit (e.g. the nocturne alternatives). Issue #319 created
     # the first not_selected unit whose work has no active unit anymore
     # (removed_by_curator); that scenario is covered by the test below.
-    dispositions = {}
-    for u in manifest['units']:
-        dispositions.setdefault(u['work_id'], set()).add(u['disposition'])
+    dispositions = _work_dispositions(manifest)
     unit = next(u for u in manifest['units']
-                if u['disposition'] == 'not_selected'
+                if u.get('work_id')
+                and u['disposition'] == 'not_selected'
                 and 'import_new' in dispositions[u['work_id']])
     data['performances']['unapproved-alternative'] = {'id': 'unapproved-alternative', 'work_id': unit['work_id']}
     with pytest.raises(AssertionError, match='Competing recommendation'):
@@ -124,12 +133,11 @@ def test_rejected_alternative_of_resolved_decision_cannot_reappear(inventory):
     # resolved curator decision (unit not_selected via removed_by_curator,
     # no active unit left) must also reject a smuggled-in competing
     # performance — via the resolved-decision check.
-    dispositions = {}
-    for u in manifest['units']:
-        dispositions.setdefault(u['work_id'], set()).add(u['disposition'])
+    dispositions = _work_dispositions(manifest)
     resolved_works = {c['work_id'] for c in manifest['resolved_choices']}
     unit = next(u for u in manifest['units']
-                if u['disposition'] == 'not_selected'
+                if u.get('work_id')
+                and u['disposition'] == 'not_selected'
                 and u['work_id'] in resolved_works
                 and not (dispositions[u['work_id']] & {'import_new', 'reuse_existing'}))
     data['performances']['unapproved-alternative'] = {'id': 'unapproved-alternative', 'work_id': unit['work_id']}
