@@ -241,6 +241,7 @@ Geaccepteerde URL-vormen (fail-closed op alles anders): `https://tidal.com/brows
 | `--update-existing` | Staat toe een bestaand `data/recordings/`-bestand met hetzelfde album-URL expliciet uit te breiden; een bestaande ID zonder deze vlag is een fout |
 | `--no-external-lookups` | Schakelt de adviserende MusicBrainz-suggesties in het nul-match-drooglooprapport uit (volledig offline droogloop) |
 | `--verbose-unattributed` | Print bij het rapport van niet-toegeschreven docs-regels de volledige lijst in plaats van het standaardoverzicht |
+| `--canonize` | Canoniseert voorgestelde nieuwe werken als onderdeel van deze registratie (#327): bij een track zonder canoniek werk schrijft het script een nieuwe `data/works/`-definitie als de ISRC-keten exact één MusicBrainz-werk oplevert waarvan de componist de unieke canonieke persoon uit het track-bewijs is. Zonder deze vlag blijven voorstellen adviserend in het rapport |
 
 Standaard print het script bij niet-toegeschreven docs-aanbevelingsregels alleen
 het totaal plus een per-categorie uitsplitsing (`no-canonical-work`,
@@ -248,6 +249,23 @@ het totaal plus een per-categorie uitsplitsing (`no-canonical-work`,
 de volledige lijst in `unattributed_recommendation_lines` en de uitsplitsing in
 `unattributed_breakdown`. Met `--verbose-unattributed` staat de volledige lijst
 ook op stdout (#323).
+
+Canonisatie bij het toevoegen van nieuwe albums (#327): nieuwe werken worden
+geen aparte handmatige stap meer, maar onderdeel van de registratie. Voor elke
+track zonder canoniek werk bouwt het script de ISRC-keten op: ISRC (uit de
+TIDAL-trackmetadata) → MusicBrainz-opname → werk-relatie, aangevuld met de
+Wikidata-entiteit van dat werk en het label van het album. Oplevert die keten
+exact één werk waarvan de componist de unieke canonieke persoon is uit het
+bewijs rond de track (album-/trackartiesten, credits of albumtitel), dan
+proponeert het script een volledige `data/works/`-definitie (id, titel,
+componist, catalogusnummers uit de tracktekst). Fail-closed geldt onverkort:
+geen voorstel bij een niet-canonieke componist (personen worden nooit verzonnen),
+bij meerdere kandidaten of zonder ISRC, en een bestaand werkbestand wordt nooit
+overgeschreven. Met `--canonize --dry-run` zie je de voorgestelde YAML; met
+`--canonize` (apply) worden de werkbestanden geschreven en de tracks in
+dezelfde run als `candidate` geregistreerd. De externe identifiers (ISRC,
+MusicBrainz, Wikidata) blijven bewijs, nooit identiteit: ze staan in het
+rapport als `proposed_works`-evidence en gaan niet in de werkdefinitie zelf.
 
 Matching per track (nooit gokken): een track wordt aan exact één canoniek werk
 toegewezen als de werkstitel of een alias in de titel- **of versie**-tekst van de
