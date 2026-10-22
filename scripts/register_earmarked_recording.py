@@ -8,6 +8,12 @@ preview the full YAML and playlist plan without writing anything. The script
 never edits GitHub issues and performs no mutating TIDAL calls other than
 playlist creation, and only in apply mode.
 
+With --canonize, tracks without a canonical work are canonized as part of the
+registration (#327): a new ``data/works/`` definition is written when the ISRC
+chain (ISRC -> MusicBrainz recording -> work, advisory) yields exactly one
+work whose composer is the unique canonical person evidenced around the track.
+Without --canonize such proposals stay advisory in the report.
+
 Matching evidence per track (never guessing): canonical work title or alias
 contained in title/version text, or a shared catalogue token (D, BWV, RV, Op,
 Hob, Sz, K, ...) with composer evidence from album artists, track artists or
@@ -50,6 +56,7 @@ CATALOGUE = re.compile(
     re.IGNORECASE)
 
 MUSICBRAINZ_WORK = 'https://musicbrainz.org/ws/2/work'
+MUSICBRAINZ_RECORDING = 'https://musicbrainz.org/ws/2/recording'
 MAX_SUGGESTION_BYTES = 400_000
 SUGGESTION_HEADERS = {
     'User-Agent': 'LuHoo/classical_music register_earmarked_recording (curator tool; '
@@ -94,6 +101,12 @@ def attach_external_suggestions(report, *, suggest_client=None):
             except (ValueError, OSError):
                 seen[text] = None
         entry['external_suggestions'] = seen[text]
+        # ISRC-chain work evidence (#327): advisory, per track, fail-open.
+        if entry.get('isrc'):
+            try:
+                entry['isrc_work_suggestions'] = suggest.recording_work_suggestions(entry['isrc'])
+            except (ValueError, OSError):
+                entry['isrc_work_suggestions'] = None
     report['external_suggestions_unavailable'] = any(value is None for value in seen.values())
     return report
 
@@ -138,6 +151,24 @@ class SuggestionClient:
         except (UnicodeError, json.JSONDecodeError):
             raise ValueError('Invalid MusicBrainz response') from None
 
+    def work_detail(self, work_id):
+        """Composer and Wikidata relations of one MusicBrainz work (advisory
+        evidence; external identifiers are evidence, not identity)."""
+        detail = self.fetch(
+            f'{MUSICBRAINZ_WORK}/{work_id}?inc=artist-rels+url-rels&fmt=json')
+        composers = [{'name': (rel.get('artist') or {}).get('name'),
+                      'musicbrainz_artist_id': (rel.get('artist') or {}).get('id')}
+                     for rel in (detail.get('relations') or [])
+                     if rel.get('type') == 'composer' and (rel.get('artist') or {}).get('name')]
+        wikidata = None
+        for rel in detail.get('relations') or []:
+            if rel.get('type') == 'wikidata':
+                resource = ((rel.get('url') or {}).get('resource') or '')
+                if resource.startswith(('http://www.wikidata.org/entity/',
+                                         'https://www.wikidata.org/entity/')):
+                    wikidata = resource
+        return {'composers': composers, 'wikidata_url': wikidata}
+
     def work_suggestions(self, text, limit=3):
         """Up to `limit` MusicBrainz works matching the work text, with composer
         relations where the work states them. Exact title matches rank first."""
@@ -164,22 +195,53 @@ class SuggestionClient:
             if any(prefix and (norm(kept['title']) == prefix or norm(kept['title']) in prefix)
                    for kept in suggestions):
                 continue
-            detail = self.fetch(
-                f"{MUSICBRAINZ_WORK}/{work['id']}?inc=artist-rels&fmt=json")
-            composers = [{'name': (rel.get('artist') or {}).get('name'),
-                          'musicbrainz_artist_id': (rel.get('artist') or {}).get('id')}
-                         for rel in (detail.get('relations') or [])
-                         if rel.get('type') == 'composer' and (rel.get('artist') or {}).get('name')]
+            detail = self.work_detail(work['id'])
             suggestions.append({'title': work['title'],
                                 'musicbrainz_work_id': work['id'],
-                                'composers': composers, 'source': 'musicbrainz'})
+                                'composers': detail['composers'],
+                                'wikidata_url': detail['wikidata_url'],
+                                'source': 'musicbrainz'})
         return suggestions
+
+    def recording_work_suggestions(self, isrc, limit=3):
+        """Work evidence via the ISRC chain (#327): ISRC -> MusicBrainz
+        recording -> works. Advisory only; the ISRC identifies a recording,
+        never a work — the chain provides evidence, not identity."""
+        require(isinstance(isrc, str) and isrc.strip(), 'Expected a non-empty ISRC')
+        query = urlencode({'query': f'isrc:{isrc.strip()}', 'fmt': 'json', 'limit': 5})
+        document = self.fetch(f'{MUSICBRAINZ_RECORDING}?{query}')
+        recording_ids = [rec.get('id') for rec in (document.get('recordings') or [])
+                         if isinstance(rec, dict) and rec.get('id')]
+        works, seen = [], set()
+        for recording_id in recording_ids:
+            detail = self.fetch(
+                f'{MUSICBRAINZ_RECORDING}/{recording_id}?inc=work-rels&fmt=json')
+            for rel in detail.get('relations') or []:
+                work = rel.get('work') or {}
+                if rel.get('type') != 'work' or not work.get('id') or not work.get('title'):
+                    continue
+                if work['id'] in seen:
+                    continue
+                seen.add(work['id'])
+                info = self.work_detail(work['id'])
+                works.append({'title': work['title'],
+                              'musicbrainz_work_id': work['id'],
+                              'musicbrainz_recording_id': recording_id,
+                              'composers': info['composers'],
+                              'wikidata_url': info['wikidata_url'],
+                              'source': 'musicbrainz-isrc'})
+            if len(works) >= limit:
+                break
+        return works[:limit]
 
 
 class NullSuggestionClient:
     """Explicit opt-out: --no-external-lookups keeps the dry-run fully offline."""
 
     def work_suggestions(self, text, limit=3):
+        raise OSError('External lookups disabled')
+
+    def recording_work_suggestions(self, isrc, limit=3):
         raise OSError('External lookups disabled')
 
 
@@ -330,8 +392,10 @@ def _track_row(row, included):
         name = credit.get('name') or credit.get('artist')
         if isinstance(role, str) and isinstance(name, str) and name.strip():
             credits.setdefault(role.strip(), []).append(name.strip())
+    isrc = attributes.get('isrc')
     return {'id': str(track_id), 'title': title.strip(),
             'version': version.strip() if isinstance(version, str) and version.strip() else None,
+            'isrc': isrc.strip() if isinstance(isrc, str) and isrc.strip() else None,
             'artists': names, 'credits': credits}
 
 
@@ -629,12 +693,84 @@ def unmatched_track_details(matches, persons):
         track = entry['track']
         text = ' '.join(filter(None, [track['title'], track['version']]))
         details.append({'position': entry['position'], 'title': track['title'],
-                        'version': track['version'],
+                        'version': track['version'], 'isrc': track.get('isrc'),
                         'catalogue_tokens': sorted(catalogue_tokens(text)),
                         'composers': sorted(persons.get(pid, pid) for pid in entry['composers']),
                         'state': entry['state'],
                         'candidates': entry.get('candidates', [])})
     return details
+
+
+def catalogue_labels(text):
+    """Catalogue map for a proposed work: raw numbers from the track text,
+    keyed by normalized prefix (D. 940 -> {'d': 'D. 940'}, BWV 1046.2 -> ...)."""
+    labels = {}
+    for match in CATALOGUE.finditer(text or ''):
+        prefix, section, number, sub = match.groups()
+        key = prefix.casefold().rstrip('.')
+        labels.setdefault(key, match.group(0).strip())
+    return labels
+
+
+def build_work_proposals(matches, persons, album, suggest_client):
+    """Fail-closed canonization proposals for tracks without a canonical work
+    (#327): one MusicBrainz work from the ISRC chain, whose composer is the
+    unique canonical person evidenced around the track. No proposal when the
+    composer is not canonical yet (persons are never invented), when several
+    composers remain, or when the chain yields no single-matching work.
+    Proposals are drafts for curator approval via --canonize; nothing is
+    written without it, and canonical work IDs are always derived slugs."""
+    proposals = []
+    for entry in matches:
+        if entry['state'] != 'unknown':
+            continue
+        track = entry['track']
+        isrc = track.get('isrc')
+        composer_ids = entry['composers']
+        if not isrc or len(composer_ids) != 1:
+            continue
+        pid = next(iter(composer_ids))
+        name = persons.get(pid)
+        if not name:
+            continue
+        try:
+            suggestions = suggest_client.recording_work_suggestions(isrc)
+        except (ValueError, OSError):
+            continue
+        matching = [s for s in suggestions
+                    if s.get('composers')
+                    and {norm(c['name']) for c in s['composers']} == {norm(name)}]
+        if len(matching) != 1:
+            continue
+        suggestion = matching[0]
+        text = ' '.join(filter(None, [track['title'], track['version']]))
+        proposal = {'work_id': slugify(f'{name} {suggestion["title"]}', max_length=96),
+                    'title': suggestion['title'],
+                    'composer_id': pid,
+                    'catalogue': catalogue_labels(text) or None,
+                    'aliases': [],
+                    'evidence': {'isrc': isrc,
+                                 'musicbrainz_work_id': suggestion['musicbrainz_work_id'],
+                                 'musicbrainz_recording_id': suggestion.get('musicbrainz_recording_id'),
+                                 'wikidata_url': suggestion.get('wikidata_url'),
+                                 'track_title': track['title'],
+                                 'label': album.get('label')}}
+        proposals.append(proposal)
+    return proposals
+
+
+def write_work(root, proposal):
+    """Write one proposed work definition; refuse to overwrite anything."""
+    path = Path(root) / 'data/works' / (proposal['work_id'] + '.yaml')
+    require(not path.exists(),
+            f'Work file already exists: {path.name}; refusing to overwrite it')
+    document = {'id': proposal['work_id']}
+    document.update({key: value for key, value in proposal.items()
+                     if key not in ('work_id', 'evidence') and value is not None})
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open('w', encoding='utf-8') as handle:
+        yaml.dump(document, handle)
+    return path
 
 
 def performance_track_index(root):
@@ -888,7 +1024,8 @@ def write_recording(root, recording, *, update_existing=False):
 
 
 def run(root, url, *, dry_run=False, recording_id=None, update_existing=False,
-        read_client=None, user_client_factory=None, today=None, suggest_client=None):
+        read_client=None, user_client_factory=None, today=None, suggest_client=None,
+        canonize=False):
     from datetime import date
     today = today or date.today().isoformat()
     identifier = album_id(url)
@@ -901,9 +1038,26 @@ def run(root, url, *, dry_run=False, recording_id=None, update_existing=False,
     matches = match_works(tracks, works, persons, album['artists'], album.get('title', ''))
     roles, unmatched_artists = assign_artists(tracks, album['artists'], performers)
     recording, unmatched_tracks = build_recording(root, album, matches, roles, unmatched_artists, today, recording_id)
+    # Canonization proposals (#327): new works are canonized as part of
+    # registering the album, not as a separate manual step. Proposals are
+    # fail-closed (unique ISRC-chain work + canonical composer evidence) and
+    # are only written with --canonize.
+    proposals, canonized = [], []
+    if (canonize or dry_run) and any(m['state'] != 'matched' for m in matches):
+        suggest = suggest_client if suggest_client is not None else SuggestionClient()
+        proposals = build_work_proposals(matches, persons, album, suggest)
+        if canonize and not dry_run and proposals:
+            written_paths = [write_work(root, proposal) for proposal in proposals]
+            canonized = [str(path.relative_to(root)) for path in written_paths]
+            works = load_works(root)
+            matches = match_works(tracks, works, persons, album['artists'], album.get('title', ''))
+            recording, unmatched_tracks = build_recording(
+                root, album, matches, roles, unmatched_artists, today, recording_id)
     if not recording['works'] and not dry_run:
         raise ValueError('No track could be related to canonical works; refusing to write anything. '
-                         'Re-run with --dry-run for the per-track report of missing work definitions.')
+                         'Re-run with --dry-run for the per-track report of missing work definitions.'
+                         + (' Canonization (--canonize) found no safe work proposal for the '
+                            'remaining tracks.' if canonize else ''))
     recommendations, unattributed, breakdown = existing_recommendations(root, works)
     plans = [p for p in playlist_plan(root, album, recording, matches, recommendations, today)
              if p['current_track_ids']]
@@ -933,7 +1087,9 @@ def run(root, url, *, dry_run=False, recording_id=None, update_existing=False,
               'unmatched_track_details': unmatched_track_details(matches, persons),
               'unmatched_artists': unmatched_artists,
               'unattributed_recommendation_lines': unattributed,
-              'unattributed_breakdown': breakdown}
+              'unattributed_breakdown': breakdown,
+              'proposed_works': proposals,
+              'canonized_works': canonized}
     output = {'recording': recording, 'report': report, 'dry_run': dry_run}
     if dry_run and not recording['works'] and report['unmatched_track_details']:
         attach_external_suggestions(report, suggest_client=suggest_client)
@@ -944,6 +1100,11 @@ def run(root, url, *, dry_run=False, recording_id=None, update_existing=False,
             output['note'] = ('Dry run: no track could be related to canonical works; nothing to '
                               'register yet. See the per-track report above for the missing work '
                               'definitions; add the works under data/works/, then re-run.')
+            if proposals:
+                output['note'] = ('Dry run: no track could be related to canonical works yet; '
+                                  'see the proposed work definitions above (advisory). Apply with '
+                                  '--canonize to canonize them as part of the registration and '
+                                  're-run.')
         return output
     written = write_recording(root, recording, update_existing=update_existing)
     created = []
@@ -981,11 +1142,16 @@ def main(argv=None):
                         help='Skip the advisory MusicBrainz suggestions in the zero-match dry-run report')
     parser.add_argument('--verbose-unattributed', action='store_true',
                         help='Print every unattributed docs recommendation line instead of a summary')
+    parser.add_argument('--canonize', action='store_true',
+                        help='Canonize proposed new works (unique ISRC-chain MusicBrainz work with '
+                             'canonical composer evidence) as part of this registration; without '
+                             'this flag proposals are advisory only')
     args = parser.parse_args(argv)
     try:
         result = run(ROOT, args.album_url, dry_run=args.dry_run,
                      recording_id=args.recording_id, update_existing=args.update_existing,
-                     suggest_client=NullSuggestionClient() if args.no_external_lookups else None)
+                     suggest_client=NullSuggestionClient() if args.no_external_lookups else None,
+                     canonize=args.canonize)
     except ValueError as exc:
         print(f'ERROR: {exc}', file=sys.stderr)
         return 1
@@ -1035,6 +1201,23 @@ def main(argv=None):
                 examples = '; '.join(entry['examples'])
                 print(f"    {entry['category']}: {entry['count']}"
                       + (f' — e.g. {examples}' if examples else ''))
+    for proposal in report.get('proposed_works') or []:
+        print(f"  Proposed new work (advisory): {proposal['work_id']}")
+        print(f"    evidence: ISRC {proposal['evidence']['isrc']}"
+              f" (musicbrainz work {proposal['evidence']['musicbrainz_work_id']}"
+              + (f", recording {proposal['evidence']['musicbrainz_recording_id']}"
+                 if proposal['evidence'].get('musicbrainz_recording_id') else '')
+              + (f", wikidata {proposal['evidence']['wikidata_url']}"
+                 if proposal['evidence'].get('wikidata_url') else '')
+              + f", label: {proposal['evidence'].get('label') or 'unknown'})")
+    if result['dry_run'] and report.get('proposed_works'):
+        for proposal in report['proposed_works']:
+            print(f"--- Proposed data/works/{proposal['work_id']}.yaml (apply with --canonize) ---")
+            print(dump_yaml({key: value for key, value in proposal.items()
+                             if key != 'evidence' and value is not None}), end='')
+            print('--- End of proposed work ---')
+    if report.get('canonized_works'):
+        print('  Canonized new works: ' + ', '.join(report['canonized_works']))
     if result['dry_run']:
         print('--- Proposed data/recordings YAML ---')
         print(dump_yaml(result['recording']), end='')

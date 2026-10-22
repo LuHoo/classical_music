@@ -28,15 +28,20 @@ def album_doc(title='Test Album', artists=('Hector Berlioz', 'Royal Concertgebou
 
 
 def item_page(tracks):
-    """tracks: (id, title, artists) or (id, title, artists, version, credits)."""
+    """tracks: (id, title, artists), (id, title, artists, version) or
+    (id, title, artists, version, credits) or (id, title, artists, version,
+    credits, isrc)."""
     data, included = [], []
     for position, spec in enumerate(tracks, 1):
         tid, title, artists = spec[0], spec[1], spec[2]
         version = spec[3] if len(spec) > 3 else None
         credits = (spec[4] if len(spec) > 4 else {}) or {}
+        isrc = spec[5] if len(spec) > 5 else None
         attributes = {'title': title}
         if version:
             attributes['version'] = version
+        if isrc:
+            attributes['isrc'] = isrc
         data.append({'id': tid, 'type': 'tracks'})
         included.append({'type': 'tracks', 'id': tid, 'attributes': attributes,
                          'relationships': {'artists': {'data': [{'type': 'artists', 'id': f't{tid}{n}'}
@@ -131,18 +136,26 @@ class FakeUserClient:
 class FakeSuggestionClient:
     """Canned MusicBrainz double: never touches the network."""
 
-    def __init__(self, suggestions=None, fail=False):
+    def __init__(self, suggestions=None, fail=False, isrc_suggestions=None):
         self.suggestions = suggestions if suggestions is not None else [
             {'title': 'Lebensstürme', 'musicbrainz_work_id': 'w1', 'source': 'musicbrainz',
              'composers': [{'name': 'Franz Schubert', 'musicbrainz_artist_id': 'a1'}]}]
         self.fail = fail
+        self.isrc_suggestions = isrc_suggestions if isrc_suggestions is not None else []
         self.queries = []
+        self.isrc_queries = []
 
     def work_suggestions(self, text, limit=3):
         self.queries.append(text)
         if self.fail:
             raise OSError('External lookups unavailable')
         return self.suggestions
+
+    def recording_work_suggestions(self, isrc, limit=3):
+        self.isrc_queries.append(isrc)
+        if self.fail:
+            raise OSError('External lookups unavailable')
+        return self.isrc_suggestions
 
 
 class FixtureCase(unittest.TestCase):
@@ -842,6 +855,158 @@ class AttributionCase(unittest.TestCase):
         self.assertEqual(found, {})
         self.assertEqual(unattributed, ['page.md:3 (track 501)'])
         self.assertEqual(breakdown[0]['category'], 'ambiguous-match')
+
+
+class CanonizeCase(unittest.TestCase):
+    """Canonization as part of album registration (#327): unique ISRC-chain
+    work + canonical composer evidence -> proposed work; --canonize writes it
+    and promotes the track in the same run. Fail-closed otherwise."""
+
+    ISRC = 'NLB341600123'
+
+    def setUp(self):
+        import tempfile
+        self.root = Path(tempfile.mkdtemp())
+        for name in ('works', 'persons', 'artists', 'performances', 'recordings'):
+            (self.root / 'data' / name).mkdir(parents=True)
+        (self.root / 'docs').mkdir()
+        for name in ('data/works/w1.yaml', 'data/persons/p1.yaml',
+                     'data/artists/performers.yaml', 'docs/composer.md'):
+            Path(self.root, name).touch()
+        self.documents = {
+            str(self.root / 'data/works/w1.yaml'): {
+                'id': 'work-a', 'title': 'Symphonie fantastique', 'composer_id': 'hector-berlioz'},
+            str(self.root / 'data/persons/p1.yaml'): {'id': 'franz-schubert', 'name': 'Franz Schubert'},
+            str(self.root / 'data/artists/performers.yaml'): {'artists': []},
+        }
+        self._read_yaml = reg.read_yaml
+
+        def read(path):
+            path = str(path)
+            return self.documents[path] if path in self.documents else self._read_yaml(path)
+
+        reg.read_yaml = read
+        self.client = FakeCatalogClient(
+            album_doc(title='Schubert: Piano Works', artists=('Jean-Yves Thibaudet',)),
+            [item_page([('501', 'Lebensstürme, D. 947',
+                         ('Jean-Yves Thibaudet',), None, None, self.ISRC)])])
+        self.suggest = FakeSuggestionClient(isrc_suggestions=[{
+            'title': 'Lebensstürme, D. 947', 'musicbrainz_work_id': 'mbw-947',
+            'musicbrainz_recording_id': 'mbr-1',
+            'composers': [{'name': 'Franz Schubert', 'musicbrainz_artist_id': 'mba-1'}],
+            'wikidata_url': 'https://www.wikidata.org/entity/Q123456',
+            'source': 'musicbrainz-isrc'}])
+
+    def tearDown(self):
+        reg.read_yaml = self._read_yaml
+
+    def run_script(self, **kwargs):
+        self.client.reset()
+        kwargs.setdefault('read_client', self.client)
+        kwargs.setdefault('suggest_client', self.suggest)
+        return reg.run(self.root, ALBUM_URL, today='2026-10-18', **kwargs)
+
+    def works_dir(self):
+        return list((self.root / 'data/works').glob('franz-schubert-lebenssturme*.yaml'))
+
+    def test_dry_run_proposes_new_work_from_isrc_chain(self):
+        result = self.run_script(dry_run=True)
+        proposals = result['report']['proposed_works']
+        self.assertEqual(len(proposals), 1)
+        proposal = proposals[0]
+        self.assertEqual(proposal['work_id'], 'franz-schubert-lebenssturme-d-947')
+        self.assertEqual(proposal['composer_id'], 'franz-schubert')
+        self.assertEqual(proposal['catalogue'], {'d': 'D. 947'})
+        self.assertEqual(proposal['evidence']['isrc'], self.ISRC)
+        self.assertEqual(proposal['evidence']['musicbrainz_work_id'], 'mbw-947')
+        self.assertEqual(proposal['evidence']['musicbrainz_recording_id'], 'mbr-1')
+        self.assertEqual(proposal['evidence']['wikidata_url'],
+                         'https://www.wikidata.org/entity/Q123456')
+        self.assertEqual(proposal['evidence']['label'], 'Philips')
+        # Advisory only: nothing written on a dry run.
+        self.assertEqual(self.works_dir(), [])
+        self.assertEqual(list((self.root / 'data/recordings').glob('*.y*ml')), [])
+        self.assertIn('--canonize', result['note'])
+
+    def test_dry_run_canonize_writes_nothing(self):
+        result = self.run_script(dry_run=True, canonize=True)
+        self.assertEqual(self.works_dir(), [])
+        self.assertEqual(result['report']['canonized_works'], [])
+        self.assertTrue(result['report']['proposed_works'])
+
+    def test_apply_without_canonize_stays_fail_closed(self):
+        with self.assertRaises(ValueError):
+            self.run_script(user_client_factory=lambda: FakeUserClient())
+        self.assertEqual(self.works_dir(), [])
+
+    def test_canonize_writes_work_and_promotes_track(self):
+        user = FakeUserClient()
+        result = self.run_script(canonize=True, user_client_factory=lambda: user)
+        work_path = self.root / 'data/works/franz-schubert-lebenssturme-d-947.yaml'
+        self.assertTrue(work_path.exists())
+        saved_work = self._read_yaml(work_path)
+        self.assertEqual(saved_work['id'], 'franz-schubert-lebenssturme-d-947')
+        self.assertEqual(saved_work['title'], 'Lebensstürme, D. 947')
+        self.assertEqual(saved_work['composer_id'], 'franz-schubert')
+        self.assertEqual(saved_work['catalogue'], {'d': 'D. 947'})
+        self.assertNotIn('evidence', saved_work)
+        self.assertEqual(result['report']['canonized_works'],
+                         ['data/works/franz-schubert-lebenssturme-d-947.yaml'])
+        candidates = [e for e in result['recording']['works'] if e.get('status') == 'candidate']
+        self.assertEqual([c['work_id'] for c in candidates], ['franz-schubert-lebenssturme-d-947'])
+        self.assertEqual(result['report']['unmatched_track_details'], [])
+        self.assertTrue((self.root / 'data/recordings/schubert-piano-works.yml').exists())
+
+    def test_canonize_refuses_to_overwrite_an_existing_work(self):
+        # The work file exists on disk but is not canonical data (no title):
+        # the proposal is generated anyway and must refuse to overwrite it.
+        path = self.root / 'data/works/franz-schubert-lebenssturme-d-947.yaml'
+        path.write_text('id: existing\n')
+        with self.assertRaises(ValueError):
+            self.run_script(canonize=True, user_client_factory=lambda: FakeUserClient())
+        self.assertEqual(list((self.root / 'data/recordings').glob('*.y*ml')), [])
+        self.assertEqual(path.read_text(), 'id: existing\n')
+
+    def test_no_proposal_when_composer_is_not_canonical(self):
+        self.suggest.isrc_suggestions = [{
+            'title': 'Lebensstürme, D. 947', 'musicbrainz_work_id': 'mbw-947',
+            'musicbrainz_recording_id': 'mbr-1',
+            'composers': [{'name': 'Anton Webern', 'musicbrainz_artist_id': 'mba-2'}],
+            'source': 'musicbrainz-isrc'}]
+        result = self.run_script(dry_run=True)
+        self.assertEqual(result['report']['proposed_works'], [])
+        with self.assertRaises(ValueError) as ctx:
+            self.run_script(canonize=True, user_client_factory=lambda: FakeUserClient())
+        self.assertIn('no safe work proposal', str(ctx.exception))
+
+    def test_no_proposal_without_isrc_or_with_several_matching_works(self):
+        # Track without an ISRC: no chain, no proposal.
+        self.client = FakeCatalogClient(
+            album_doc(title='Schubert: Piano Works', artists=('Jean-Yves Thibaudet',)),
+            [item_page([('501', 'Lebensstürme, D. 947', ('Jean-Yves Thibaudet',))])])
+        result = self.run_script(dry_run=True)
+        self.assertEqual(result['report']['proposed_works'], [])
+        self.assertEqual(self.suggest.isrc_queries, [])
+        # Two ISRC-chain works with the same composer: ambiguous, no proposal.
+        self.client = FakeCatalogClient(
+            album_doc(title='Schubert: Piano Works', artists=('Jean-Yves Thibaudet',)),
+            [item_page([('501', 'Lebensstürme, D. 947',
+                         ('Jean-Yves Thibaudet',), None, None, self.ISRC)])])
+        self.suggest.isrc_suggestions = [
+            {'title': 'Lebensstürme, D. 947', 'musicbrainz_work_id': 'mbw-1',
+             'musicbrainz_recording_id': 'mbr-1',
+             'composers': [{'name': 'Franz Schubert'}], 'source': 'musicbrainz-isrc'},
+            {'title': 'Lebensstürme, D. 947', 'musicbrainz_work_id': 'mbw-2',
+             'musicbrainz_recording_id': 'mbr-2',
+             'composers': [{'name': 'Franz Schubert'}], 'source': 'musicbrainz-isrc'}]
+        result = self.run_script(dry_run=True)
+        self.assertEqual(result['report']['proposed_works'], [])
+
+    def test_null_suggestion_client_fails_open_for_isrc_chain(self):
+        result = self.run_script(dry_run=True,
+                                 suggest_client=reg.NullSuggestionClient())
+        self.assertEqual(result['report']['proposed_works'], [])
+        self.assertIn('nothing to register', result['note'])
 
 
 class CannedMusicBrainzClient(reg.SuggestionClient):
