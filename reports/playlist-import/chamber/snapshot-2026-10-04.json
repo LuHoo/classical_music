@@ -1423,9 +1423,9 @@
   "base_commit": "f03bf06",
   "summary": {
     "import_new": {
-      "units": 299,
-      "track_occurrences": 954,
-      "distinct_performances": 299
+      "units": 300,
+      "track_occurrences": 959,
+      "distinct_performances": 300
     },
     "reuse_existing": {
       "units": 91,
@@ -1433,8 +1433,8 @@
       "distinct_performances": 90
     },
     "recommendation_choice": {
-      "units": 7,
-      "track_occurrences": 19,
+      "units": 5,
+      "track_occurrences": 9,
       "distinct_performances": 0
     },
     "identity_unresolved": {
@@ -1443,8 +1443,8 @@
       "distinct_performances": 0
     },
     "not_selected": {
-      "units": 10,
-      "track_occurrences": 34,
+      "units": 11,
+      "track_occurrences": 39,
       "distinct_performances": 0
     }
   },
@@ -5928,6 +5928,11 @@
       "id": "wolfgang-amadeus-mozart-serenade-in-c-minor-k-388-chamber-c298",
       "path": "data/performances/wolfgang-amadeus-mozart-serenade-in-c-minor-k-388-chamber-c298.yaml",
       "entity": "performances"
+    },
+    {
+      "id": "arnold-schoenberg-verklarte-nacht-op-4-steuermann-piano-trio-arrangement-chamber-c170",
+      "path": "data/performances/arnold-schoenberg-verklarte-nacht-op-4-steuermann-piano-trio-arrangement-chamber-c170.yaml",
+      "entity": "performances"
     }
   ],
   "changed_existing": [
@@ -5951,18 +5956,6 @@
       ],
       "existing_performances": [],
       "issue_url": "https://github.com/LuHoo/classical_music/issues/247",
-      "decision": null
-    },
-    {
-      "work_id": "arnold-schoenberg-verklarte-nacht-op-4-steuermann-piano-trio-arrangement",
-      "title": "Verklärte Nacht, Op. 4 (Steuermann piano trio arrangement)",
-      "composer": "Arnold Schoenberg",
-      "units": [
-        "C170",
-        "C278"
-      ],
-      "existing_performances": [],
-      "issue_url": "https://github.com/LuHoo/classical_music/issues/248",
       "decision": null
     },
     {
@@ -22517,7 +22510,7 @@
         548,
         549
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "import_new",
       "work_id": "arnold-schoenberg-verklarte-nacht-op-4-steuermann-piano-trio-arrangement",
       "performers": [
         {
@@ -22534,8 +22527,8 @@
           "url": "https://www.avi-music.de/e_net/booklets/2021/CAvI_8553035_Booklet_online.pdf"
         }
       ],
-      "reason": "Alternative interpretation of this Work; explicit curator choice required before any recommendation is added or replaced.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected C170; all source movements included.",
+      "review_classification": "curator_accepted",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/248",
       "tracks": [
         {
@@ -22633,7 +22626,9 @@
           "export_position": 549,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "curator_decision": "reports/curator-decisions/issue-248.json",
+      "performance_id": "arnold-schoenberg-verklarte-nacht-op-4-steuermann-piano-trio-arrangement-chamber-c170"
     },
     {
       "unit_id": "C171",
@@ -32976,7 +32971,7 @@
         891,
         892
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "not_selected",
       "work_id": "arnold-schoenberg-verklarte-nacht-op-4-steuermann-piano-trio-arrangement",
       "performers": [
         {
@@ -32990,8 +32985,8 @@
           "locator": "Chamber sheet; join by exact track ID or unique ISRC, never by live position."
         }
       ],
-      "reason": "Alternative interpretation of this Work; explicit curator choice required before any recommendation is added or replaced.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected C170; retained as historical source evidence.",
+      "review_classification": "curator_not_selected",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/248",
       "tracks": [
         {
@@ -33089,7 +33084,8 @@
           "export_position": 905,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "curator_decision": "reports/curator-decisions/issue-248.json"
     },
     {
       "unit_id": "C279",
@@ -47791,6 +47787,37 @@
       "choice_aliases": {
         "A": "C210",
         "B": "C298"
+      }
+    },
+    {
+      "work_id": "arnold-schoenberg-verklarte-nacht-op-4-steuermann-piano-trio-arrangement",
+      "title": "Verklärte Nacht, Op. 4 (Steuermann piano trio arrangement)",
+      "composer": "Arnold Schoenberg",
+      "units": [
+        "C170",
+        "C278"
+      ],
+      "existing_performances": [],
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/248",
+      "decision": {
+        "choice": "selected_performance",
+        "selected_units": [
+          "C170"
+        ],
+        "not_selected_units": [
+          "C278"
+        ],
+        "performances": [
+          {
+            "performance_id": "arnold-schoenberg-verklarte-nacht-op-4-steuermann-piano-trio-arrangement-chamber-c170",
+            "profile": null,
+            "unit_id": "C170",
+            "tidal_url": "https://tidal.com/track/280629653"
+          }
+        ],
+        "implementation_report": "reports/playlist-import/chamber/snapshot-2026-10-04.json",
+        "implementation_record": "reports/curator-decisions/issue-248.json",
+        "decision_record": "reports/curator-decisions/issue-248.json"
       }
     }
   ]
