@@ -6,6 +6,7 @@ performers:
 - name: Scottish National Orchestra
   role: orchestra
 - name: Neeme Järvi
+  artist_id: neeme-jarvi
   role: conductor
 links:
   tidal:
