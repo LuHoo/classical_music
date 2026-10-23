@@ -1,0 +1,17 @@
+{
+  "issue_url": "https://github.com/LuHoo/classical_music/issues/241",
+  "decision_source": "curator_cli",
+  "curator": "LAH",
+  "recorded_at": "2026-10-23T09:49:46.153938+00:00",
+  "requested_choice": "B",
+  "choice": "C298",
+  "selected_units": [
+    "C298"
+  ],
+  "not_selected_units": [
+    "C210"
+  ],
+  "performance_id": "wolfgang-amadeus-mozart-serenade-in-c-minor-k-388-chamber-c298",
+  "implementation_pr": null,
+  "replaced_performances": []
+}

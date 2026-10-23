@@ -2,6 +2,7 @@
   "schema_version": 1,
   "status": "validated",
   "issues": [
+    241,
     242,
     243,
     246,
@@ -9,9 +10,9 @@
     255,
     319
   ],
-  "updated_at": "2026-10-19T21:16:18.206499+00:00",
-  "validated_at": "2026-10-19T21:16:50.797132+00:00",
-  "inputs_sha256": "3c7f035210127bacd3ea2d746114914f730a176b77105d65d8f3bf3b93e834a9",
+  "updated_at": "2026-10-23T09:50:25.192664+00:00",
+  "validated_at": "2026-10-23T09:50:57.589949+00:00",
+  "inputs_sha256": "69d6dc6efbc6a46b61406a66bf59763a0d81fdb2e348528ac6abab05a1b45c36",
   "manifests": [
     "reports/playlist-import/chamber/snapshot-2026-10-04.json",
     "reports/playlist-import/piano/snapshot-2026-10-04.json",
