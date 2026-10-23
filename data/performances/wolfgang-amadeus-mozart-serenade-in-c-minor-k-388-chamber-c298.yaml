@@ -1,0 +1,14 @@
+id: wolfgang-amadeus-mozart-serenade-in-c-minor-k-388-chamber-c298
+work_id: wolfgang-amadeus-mozart-serenade-in-c-minor-k-388
+performers:
+  - name: Oslo kammerakademi
+links:
+  tidal:
+    url: https://tidal.com/track/123223275
+release:
+  album_title: Mozart for Wind Octet
+source:
+  file: reports/playlist-import/chamber/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/a2327106-07fd-4433-8bd3-d8a5c251c69a
+  unit_id: C298
+  curator_decision: reports/curator-decisions/issue-241.json
