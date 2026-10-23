@@ -287,11 +287,22 @@ Gedrag per werk:
   `recommended: true` en uit `data/recordings/`-regels met `status: recommended`.
   Voor regels die nog niet via `data/performances/` zijn toegeschreven (#323)
   probeert het script aanvullend attributie: de componist wordt afgeleid uit de
-  paginakop (`# Naam`) van de docs-pagina en de composer-credits, waarna de regel
-  wordt toegeschreven bij één uniek catalogusnummer of één unieke
-  titel/alias-containment binnen de werken van die componist. Meerdere kandidaten
-  → `ambiguous-match`; geen kandidaat → `no-canonical-work` (het werk bestaat
-  nog niet canoniek). Beide categorieën blijven fail-closed on toegeeschreven.
+  paginakop (`# Naam`) van de docs-pagina en de composer-credits — de kop-match
+  vereist dezelfde familienaam plus minstens één gedeelde voornaam ("Niels Gade"
+  → "Niels Wilhelm Gade"); koppen die niemand matchen blijven fail-closed op de
+  volle werkpool. Binnen de werken van die componist wordt de regel toegeschreven
+  bij één uniek catalogusnummer (inclusief de `M`-prefix voor Ravels Minkler-nummers,
+  bv. `M. 68a`) of één unieke titel/alias-containment, waarbij een generieke titel
+  die volledig in de titel van een andere kandidaat ligt afvalt ("Concerto" ⊂
+  "Piano Concerto"). Regels met meerdere TIDAL-ankers worden per anker
+  toegeschreven op het tekstsegment tot en met het eigen ankerlabel, zodat
+  versiereeksen op één regel (origineel eerst, daarna bewerkingen) hun eigen
+  bewijs meenemen. Resterende kandidaten worden nog verscherpt met
+  versie-kwalificatiebewijs: de inhoudswoorden tussen haakjes in de werkstitel
+  ("cello and orchestra", "horn and piano") moeten in de regel voorkomen —
+  versies zijn aparte canonieke werken en niet uitwisselbaar (#329). Meerdere
+  kandidaten → `ambiguous-match`; geen kandidaat → `no-canonical-work` (het werk
+  bestaat nog niet canoniek). Beide categorieën blijven fail-closed on toegeeschreven.
 - Geen bestaande aanbeveling → `status: candidate`, geen playlist; het rapport zegt dit expliciet.
 - Ambigue of onbekende tracks → fail-closed: ambigue tracks landen als werk-item
   **zonder** `status` (met vermelding in `notes`), onbekende tracks worden als ruwe
