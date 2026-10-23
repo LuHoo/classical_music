@@ -202,7 +202,8 @@ def verify_target(snapshot, plan, pid):
     require(resource['id'] == pid and attrs.get('name') == plan['name'] and
             attrs.get('description') == plan['description'], 'Comparison playlist identity/plan marker mismatch')
     items = snapshot['items']
-    require(attrs.get('numberOfItems') == len(items), 'Incomplete comparison playlist snapshot')
+    declared = attrs.get('numberOfItems')
+    require(declared is None or int(declared) == len(items), 'Incomplete comparison playlist snapshot')
     require(all(item['type'] == 'tracks' for item in items), 'Unexpected non-track in comparison playlist')
     return [str(item['id']) for item in items]
 
@@ -261,3 +262,4 @@ def provision(client, plan, state, save, *, recover_playlist_id=None):
     state.pop('notice', None)
     save(state)
     return state
+

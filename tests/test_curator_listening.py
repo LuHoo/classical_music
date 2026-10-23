@@ -351,6 +351,15 @@ def test_incomplete_snapshot_and_wrong_plan_marker_fail():
         listening.verify_target(snapshot, plan, PID)
 
 
+
+def test_snapshot_without_number_of_items_attribute_is_accepted():
+    """TIDAL v2 no longer returns numberOfItems; verification must not depend on it."""
+    plan = listening.build_plan(ROOT, issue())
+    snapshot = {'playlist': {'id': PID, 'attributes': {'name': plan['name'],
+                'description': plan['description']}}, 'items': [{'type': 'tracks', 'id': '42'}]}
+    assert listening.verify_target(snapshot, plan, PID) == ['42']
+
+
 @pytest.mark.parametrize('response', [
     {'access_token': 'private-access', 'token_type': 'Bearer', 'scope': 'playlists.read'},
     {'access_token': 'private-access', 'token_type': 'Bearer', 'scope': 'playlists.read playlists.write', 'refresh_token': 'new-private-refresh'},
@@ -391,3 +400,4 @@ def fixed_pending_choices(pending_curator_repository):
     with pytest.MonkeyPatch.context() as patch:
         patch.setattr(sys.modules[__name__], 'ROOT', pending_curator_repository)
         yield
+
