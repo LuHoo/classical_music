@@ -1,0 +1,15 @@
+id: cesar-franck-franck-piano-quintet-in-f-minor-fwv-7-chamber-c364
+work_id: cesar-franck-franck-piano-quintet-in-f-minor-fwv-7
+performers:
+  - name: Marc-André Hamelin
+  - name: Takács Quartet
+links:
+  tidal:
+    url: https://tidal.com/track/326440742
+release:
+  album_title: 'Franck: Piano Quintet – Debussy: String Quartet'
+source:
+  file: reports/playlist-import/chamber/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/a2327106-07fd-4433-8bd3-d8a5c251c69a
+  unit_id: C364
+  curator_decision: reports/curator-decisions/issue-253.json

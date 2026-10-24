@@ -4,17 +4,17 @@ All **1,368 source occurrences** from the complete 4 October 2026 [snapshot](htt
 
 | Result | Work/recording groups | Source occurrences |
 |---|---:|---:|
-| import_new | 300 | 959 |
+| import_new | 301 | 962 |
 | reuse_existing | 91 | 315 |
-| recommendation_choice | 5 | 9 |
-| not_selected | 11 | 39 |
+| recommendation_choice | 3 | 3 |
+| not_selected | 12 | 42 |
 | identity_unresolved | 18 | 46 |
 
-New canonical records: {'persons': 27, 'work-groups': 279, 'works': 291, 'performances': 300}. Reuse covers 90 existing Performances. Groups are not unique Work counts: separate versions, alternative readings and two reused Brahms song excerpts are counted separately.
+New canonical records: {'persons': 27, 'work-groups': 279, 'works': 291, 'performances': 301}. Reuse covers 90 existing Performances. Groups are not unique Work counts: separate versions, alternative readings and two reused Brahms song excerpts are counted separately.
 
 ## Curator choices
 
-**2 pending Work-level decisions**; eight original/arrangement decisions have been implemented with explicit profiles. Respond in an issue or the import chat with the issue number plus a C-code (or `existing`, `geen`, `unresolved` where offered). One answer covers all movements. A short explanation is needed only for doubt, exceptions or an additional comparison profile.
+**1 pending Work-level decisions**; eight original/arrangement decisions have been implemented with explicit profiles. Respond in an issue or the import chat with the issue number plus a C-code (or `existing`, `geen`, `unresolved` where offered). One answer covers all movements. A short explanation is needed only for doubt, exceptions or an additional comparison profile.
 
 Undecided alternatives are excluded from canonical Performance data. Accepted originals and arrangements occupy distinct explicit profiles; existing listening links remain unchanged. Neither playlist order nor ISRC similarity selects a preferred interpretation. An issue is not permission to apply a choice automatically.
 
@@ -33,7 +33,7 @@ Undecided alternatives are excluded from canonical Performance data. Accepted or
 | [#251](https://github.com/LuHoo/classical_music/issues/251) | Johann Sebastian Bach — Violin Partita No. 2 in D Minor, BWV 1004 | C208, C363; existing  **Resolved: both, distinct profiles** |
 | [#241](https://github.com/LuHoo/classical_music/issues/241) | Wolfgang Amadeus Mozart — Serenade in C Minor, K. 388 | C210, C298 **Resolved: C298** |
 | [#252](https://github.com/LuHoo/classical_music/issues/252) | Igor Stravinsky — Octet | C230, C307; existing **Resolved: C230** |
-| [#253](https://github.com/LuHoo/classical_music/issues/253) | César Franck — Piano Quintet in F Minor, FWV 7 | C276, C364 |
+| [#253](https://github.com/LuHoo/classical_music/issues/253) | César Franck — Piano Quintet in F Minor, FWV 7 | C276, C364 **Resolved: C364** |
 | [#254](https://github.com/LuHoo/classical_music/issues/254) | Bohuslav Martinů — Cello Sonata No. 1, H. 277 | C282, C337 **Resolved: C337** |
 | [#255](https://github.com/LuHoo/classical_music/issues/255) | Bohuslav Martinů — Cello Sonata No. 2, H. 286 | C284, C339 **Resolved: C339** |
 | [#256](https://github.com/LuHoo/classical_music/issues/256) | Bohuslav Martinů — Cello Sonata No. 3, H. 340 | C286, C340 **Resolved: C340** |
