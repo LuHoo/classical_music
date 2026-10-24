@@ -1,0 +1,16 @@
+id: 
+  arnold-schoenberg-verklarte-nacht-op-4-steuermann-piano-trio-arrangement-chamber-c170
+work_id: 
+  arnold-schoenberg-verklarte-nacht-op-4-steuermann-piano-trio-arrangement
+performers:
+  - name: Linos Piano Trio
+links:
+  tidal:
+    url: https://tidal.com/track/280629653
+release:
+  album_title: Stolen Music
+source:
+  file: reports/playlist-import/chamber/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/a2327106-07fd-4433-8bd3-d8a5c251c69a
+  unit_id: C170
+  curator_decision: reports/curator-decisions/issue-248.json
