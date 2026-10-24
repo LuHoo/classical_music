@@ -80,6 +80,26 @@ action or a verification note fails. Retrying the same decision or completion
 is a no-op; a conflicting decision fails. A retry cannot silently add a playlist
 action to a decision made without one.
 
+## Earmarked comparison issues
+
+The CLI also resolves **earmarked comparison issues** (#342-volg). When an issue is
+not in an intake manifest but `register_earmarked_recording.py --issue <nr>
+--work <work-id>` has bound it to a candidate work entry in `data/recordings/`,
+the binding supplies the work, the listening track and the registered performers:
+
+```bash
+./curator 211 naive --dry-run          # preview
+./curator 211 naive --apply            # promote the candidate
+./curator 211 existing --apply         # reject: keep the existing recommendation
+./curator finish
+```
+
+No `--replace-existing` or `--playlist-remove-unselected` in this route: promote
+always replaces the existing recommendation, reject always keeps it. Missing
+bindings, bindings without registered performers (re-run registration with
+`--update-existing`) and ambiguous bindings fail closed. See the
+[detailed User Manual](scripts-user-manual.md) earmarked decision section.
+
 ## Validation and limits
 
 Preview and apply build a scratch copy and reuse the selected intake inventory audit,

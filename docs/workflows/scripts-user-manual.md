@@ -220,7 +220,13 @@ heeft een TIDAL-vergelijkingsplaylist: de **volledige** huidige opname eerst (el
 track van het anker-album die op hetzelfde werk matcht — één anker staat niet
 standaard voor een meerdelig werk), dan de volledige kandidaat. Playlists worden
 alleen aangemaakt met `--issue <nr> --work <work-id>` (één run per
-curator-vergelijkingsissue) en heten `Curator <datum> Issue #<nr>`.
+curator-vergelijkingsissue) en heten `Curator <datum> Issue #<nr>`. Met
+`--issue <nr> --work <work-id>` schrijft het script bovendien een **binding** op de
+kandidaat-werk-regel in `data/recordings/`: `issue: <nr>`, `track_ids:` (de
+kandidaat-tracks in albumvolgorde) en `performers:` (afgeleid uit het canonieke
+performers-register; onbekende artiesten blijven weg — fail-closed). Daardoor kan
+het besluit daarna simpelweg via `./curator <nr> <keuze>` (#342-volg); bij
+`--update-existing` vervangt de issue-gebonden entry de oudere ongebinde entry.
 Het script opent of bewerkt geen GitHub-issues; YAML, playlist en stdout-rapport zijn
 het product. De beslissing `candidate` → `recommended` blijft bij de curator via de
 bestaande workflow.
@@ -378,15 +384,37 @@ Het GitHub Actions-secret werkt alleen in workflows en is lokaal niet uitleesbaa
 Er zijn geen muterende TIDAL-calls behalve playlist-creatie, en uitsluitend in
 apply-modus met `--issue`/`--work`.
 
-### Earmarked besluit verwerken (`apply_earmarked_decision.py`)
+### Earmarked besluit verwerken (`./curator` of `apply_earmarked_decision.py`)
 
 Sluit de beslissingsroute van de earmarked-workflow (#316/#318): na
-`register_earmarked_recording.py` en de luistervergelijking verwerkt dit script de
-curatorbeslissing op het candidate-review-issue rechtstreeks in de canonieke data,
-met dezelfde recordvocabulaire als `./curator` (issue #319 was het eerste besluit).
-Het script is volledig offline: geen GitHub-, TIDAL- of playlist-acties, en Git
-blijft handmatig. Werkt alleen als de werk-regel in `data/recordings/` nog
-`status: candidate` is en er al een decision-record bestaat is een fout.
+`register_earmarked_recording.py` (met `--issue`/`--work`, dus mét binding) en de
+luistervergelijking verwerkt de curator de beslissing op het candidate-review-issue
+rechtstreeks in de canonieke data, met hetzelfde recordvocabulaire als `./curator`
+(issue #319 was het eerste besluit).
+
+De gewone route is simpelweg de curator-CLI (#342-volg): de binding levert het werk,
+de luistertrack (`track_ids[0]`) en de geregistreerde performers, dus zijn geen
+expliciete argumenten meer nodig:
+
+```bash
+./curator <issue> naive|<code> --dry-run   # preview (plan zonder te schrijven)
+./curator <issue> naive|<code> --apply     # promote: kandidaat wordt de aanbeveling
+./curator <issue> existing --apply         # reject: bestaande aanbeveling blijft
+./curator finish                           # daarna, zoals altijd
+```
+
+Faalt fail-closed als het issue geen binding heeft (her-run
+`register_earmarked_recording.py ... --issue <nr> --work <work-id>
+--update-existing`), de binding geen geregistreerde performers bevat (idem), of
+er meerdere gebonden kandidaten zijn. `--replace-existing` en
+`--playlist-remove-unselected` worden in deze route geweigerd.
+
+`apply_earmarked_decision.py` blijft beschikbaar als het expliciete alternatief,
+bijvoorbeeld als de binding ontbreekt maar alle argumenten handmatig gegeven
+worden — hetzelfde plan, dezelfde controles. Beide routes zijn volledig offline:
+geen GitHub-, TIDAL- of playlist-acties, en Git blijft handmatig. Ze werken alleen
+als de werk-regel in `data/recordings/` nog `status: candidate` is; een reeds
+bestaand decision-record is een fout.
 
 ```bash
 # Promote: kandidaat wordt de nieuwe aanbeveling en vervangt de bestaande performance

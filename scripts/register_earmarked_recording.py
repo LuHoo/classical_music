@@ -1013,6 +1013,46 @@ def expand_current_tracks(read_client, catalog_factory, anchor_ids, work, person
     return expanded
 
 
+def bind_issue(recording, matches, roles, performers, issue, work):
+    """Bind one curator comparison issue to its candidate work entry (#342-volg).
+
+    ``./curator <issue> <choice>`` needs the binding that this run established:
+    the issue number on the candidate entry, the candidate track IDs in album
+    order, and reviewed performers derived from the canonical performers
+    registry (registry name + registry role; unknown artists stay raw).
+    """
+    entries = [e for e in recording['works'] if e.get('work_id') == work]
+    require(entries, f'--work {work} is not a candidate on this recording')
+    require(len(entries) == 1 and entries[0].get('status') == 'candidate',
+            f'--work {work} is not a single candidate work entry on this recording')
+    track_ids = [m['track']['id'] for m in matches
+                 if m['state'] == 'matched' and m['work']['id'] == work]
+    require(track_ids, f'--work {work} has no matched candidate tracks')
+    names = []
+    for m in matches:
+        if m['state'] == 'matched' and m['work']['id'] == work:
+            for name in m['track']['artists']:
+                if name not in names:
+                    names.append(name)
+    reviewed = []
+    for name in names:
+        hits = [pid for pid, (canonical, _role) in performers.items()
+                if norm(canonical) == norm(name)]
+        if len(hits) == 1:
+            pid = hits[0]
+            category = next((cat for cat, ids in roles.items() if pid in ids), None)
+            reviewed.append(f"{performers[pid][0]} ({category})" if category
+                            else performers[pid][0])
+        else:
+            reviewed.append(name)
+    require(reviewed, f'--work {work} has no candidate performers to review')
+    entry = entries[0]
+    entry['issue'] = issue
+    entry['track_ids'] = track_ids
+    entry['performers'] = reviewed
+    return entry
+
+
 def playlist_plan(root, album, recording, matches, recommendations, today, *,
                   issue=None, work=None, read_client=None, catalog_factory=None,
                   works=None, persons=None):
@@ -1107,6 +1147,13 @@ def write_recording(root, recording, *, update_existing=False):
         for entry in document['works']:
             if entry['work_id'] not in known:
                 existing['works'].append(entry)
+            elif entry.get('issue'):
+                # Issue-bound entries carry the reviewed binding (issue,
+                # track_ids, performers): a re-run with --issue/--work replaces
+                # the older entry instead of leaving it unbound.
+                for index, old in enumerate(existing['works']):
+                    if old.get('work_id') == entry['work_id']:
+                        existing['works'][index] = entry
         existing['links'] = recording['links']
         document = existing
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -1150,6 +1197,8 @@ def run(root, url, *, dry_run=False, recording_id=None, update_existing=False,
                          'Re-run with --dry-run for the per-track report of missing work definitions.'
                          + (' Canonization (--canonize) found no safe work proposal for the '
                             'remaining tracks.' if canonize else ''))
+    if issue is not None:
+        bind_issue(recording, matches, roles, performers, issue, work)
     recommendations, unattributed, breakdown = existing_recommendations(root, works)
     require((issue is None) == (work is None),
             '--issue and --work are supplied together: the issue number names the '
