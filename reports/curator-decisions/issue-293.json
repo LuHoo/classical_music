@@ -1,0 +1,48 @@
+{
+  "issue_url": "https://github.com/LuHoo/classical_music/issues/293",
+  "decision_source": "curator",
+  "curator": "LAH",
+  "recorded_at": "2026-10-24T06:34:17.545Z",
+  "category": "version-comparison",
+  "requested_choice": "beide, versies",
+  "choice": "beide, versies",
+  "work": {
+    "title": "Fantasia in D minor, K. 397/385g",
+    "composer_id": "wolfgang-amadeus-mozart",
+    "status": "single canonical work; fragment ending at bar 97",
+    "chosen_work_id": null
+  },
+  "decisions": [
+    {
+      "choice_code": "P090",
+      "performer": "Víkingur Ólafsson",
+      "track_id": "195406380",
+      "tidal_url": "https://tidal.com/track/195406380",
+      "release": "Mozart & Contemporaries",
+      "recommended": false,
+      "version": "Fragment, no completion: ends with the minor section via an own transition, linked on the album to the Rondo in D major K. 485; recorded on two pianos.",
+      "evidence": [
+        "https://music.apple.com/us/album/mozart-contemporaries/1572873864",
+        "https://shop.decca.com/products/mozart-contemporaries-vinyl-2lp"
+      ]
+    },
+    {
+      "choice_code": "P379",
+      "performer": "Angela Hewitt",
+      "track_id": "319064900",
+      "tidal_url": "https://tidal.com/track/319064900",
+      "release": "Mozart: Piano Sonatas K310-311 & 330-333",
+      "recommended": false,
+      "version": "Traditional completion: the ten closing bars from the 1806 Leipzig edition, attributed to August Eberhard Müller.",
+      "evidence": [
+        "https://www.hyperion-records.co.uk/dc.asp?dc=D_CDA68421%2F2"
+      ]
+    }
+  ],
+  "conclusion": "Both recordings are performances of the same incomplete work (Mozart K. 397 fragment); no separate Works. Version annotation per recording as recorded above. Both remain outside the recommendations; no docs or Tidal playlist changes.",
+  "implementation_pr": null,
+  "source": {
+    "file": "reports/playlist-import/piano/snapshot-2026-10-04.json",
+    "identity_research": "reports/playlist-import/piano/identity-research.md"
+  }
+}
