@@ -253,7 +253,7 @@ Geaccepteerde URL-vormen (fail-closed op alles anders): `https://tidal.com/brows
 | `--no-external-lookups` | Schakelt de adviserende MusicBrainz-suggesties in het nul-match-drooglooprapport uit (volledig offline droogloop) |
 | `--verbose-unattributed` | Print bij het rapport van niet-toegeschreven docs-regels de volledige lijst in plaats van het standaardoverzicht |
 | `--canonize` | Canoniseert voorgestelde nieuwe werken als onderdeel van deze registratie (#327): bij een track zonder canoniek werk schrijft het script een nieuwe `data/works/`-definitie als de ISRC-keten exact één MusicBrainz-werk oplevert waarvan de componist de unieke canonieke persoon uit het track-bewijs is. Zonder deze vlag blijven voorstellen adviserend in het rapport |
-| `--issue NRDERS` | Issue-nummer van het curator-vergelijkingsissue: noemt de playlist `Curator <datum> Issue #<nr>` en maakt haar alleen aan voor het werk van `--work`. `--issue` en `--work` worden samen gegeven; zonder beiden wordt geen playlist aangemaakt |
+| `--issue NR` | Issue-nummer van het curator-vergelijkingsissue: noemt de playlist `Curator <datum> Issue #<nr>` en maakt haar alleen aan voor het werk van `--work`. `--issue` en `--work` worden samen gegeven; zonder beiden wordt geen playlist aangemaakt |
 | `--work WORK_ID` | Canoniek work-ID dat aan het issue gebonden is; de vergelijkingsplaylist wordt alleen voor dit werk aangemaakt. Faalt expliciet als dat werk op dit album geen kandidaat met bestaande TIDAL-verankerende aanbeveling is |
 
 Standaard print het script bij niet-toegeschreven docs-aanbevelingsregels alleen

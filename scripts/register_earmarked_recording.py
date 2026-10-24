@@ -1288,3 +1288,71 @@ def main(argv=None):
                      f"candidate {len(entry['candidate_tracks'])} track(s))")
         if entry.get('name'):
             line += f" — {entry['name']}"
+        print(line)
+    for entry in report.get('playlist_errors') or []:
+        print(f"  PLAYLIST SKIPPED ({entry['work_id']}): {entry['error']}")
+    notice = report.get('playlist_notice')
+    if notice:
+        print(f"  {notice}")
+    for entry in report['unmatched_tracks']:
+        detail = f" [{', '.join(entry['candidates'])}]" if entry['candidates'] else ''
+        print(f"  UNMATCHED ({entry['state']}): {entry['title']}{detail}")
+    if report['unmatched_artists']:
+        print('  Unmatched artists (raw text in notes): ' + ', '.join(report['unmatched_artists']))
+    if not report['works'] and report.get('unmatched_track_details'):
+        print('  No track could be related to canonical works; per-track report:')
+        for entry in report['unmatched_track_details']:
+            version = f" (version: {entry['version']})" if entry['version'] else ''
+            tokens = ', '.join(entry['catalogue_tokens']) or 'none'
+            composers = ', '.join(entry['composers']) or 'no composer evidence found'
+            print(f"    {entry['position']}. {entry['title']}{version}")
+            print(f"       catalogue tokens: {tokens}; composer evidence: {composers}")
+            suggestions = entry.get('external_suggestions')
+            if suggestions:
+                print('       external suggestions (advisory, MusicBrainz — never canonical):')
+                for hit in suggestions:
+                    composers = ', '.join(c['name'] for c in hit['composers'])
+                    print(f"         - {hit['title']} (musicbrainz work {hit['musicbrainz_work_id']})"
+                          f" — composer: {composers or 'not stated on the work'}")
+            elif suggestions is None:
+                print('       external suggestions: unavailable (lookup failed or disabled)')
+    if report['unattributed_recommendation_lines']:
+        if args.verbose_unattributed:
+            print('  Recommendation lines without a canonical work attribution: '
+                  + ', '.join(report['unattributed_recommendation_lines']))
+        else:
+            print(f"  Unattributed docs recommendation lines: {len(report['unattributed_recommendation_lines'])}"
+                  ' (re-run with --verbose-unattributed for the full list)')
+            for entry in report['unattributed_breakdown']:
+                examples = '; '.join(entry['examples'])
+                print(f"    {entry['category']}: {entry['count']}"
+                      + (f' — e.g. {examples}' if examples else ''))
+    for proposal in report.get('proposed_works') or []:
+        print(f"  Proposed new work (advisory): {proposal['work_id']}")
+        print(f"    evidence: ISRC {proposal['evidence']['isrc']}"
+              f" (musicbrainz work {proposal['evidence']['musicbrainz_work_id']}"
+              + (f", recording {proposal['evidence']['musicbrainz_recording_id']}"
+                 if proposal['evidence'].get('musicbrainz_recording_id') else '')
+              + (f", wikidata {proposal['evidence']['wikidata_url']}"
+                 if proposal['evidence'].get('wikidata_url') else '')
+              + f", label: {proposal['evidence'].get('label') or 'unknown'})")
+    if result['dry_run'] and report.get('proposed_works'):
+        for proposal in report['proposed_works']:
+            print(f"--- Proposed data/works/{proposal['work_id']}.yaml (apply with --canonize) ---")
+            print(dump_yaml({key: value for key, value in proposal.items()
+                             if key != 'evidence' and value is not None}), end='')
+            print('--- End of proposed work ---')
+    if report.get('canonized_works'):
+        print('  Canonized new works: ' + ', '.join(report['canonized_works']))
+    if result['dry_run']:
+        print('--- Proposed data/recordings YAML ---')
+        print(dump_yaml(result['recording']), end='')
+        print('--- End of proposed YAML ---')
+        print(result['note'])
+    if result.get('written'):
+        print(f"Written: {result['written']}")
+    return 0
+
+
+if __name__ == '__main__':
+    sys.exit(main())
