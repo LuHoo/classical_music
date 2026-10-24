@@ -1,0 +1,21 @@
+{
+  "issue_url": "https://github.com/LuHoo/classical_music/issues/203",
+  "decision_source": "curator",
+  "curator": "LAH",
+  "recorded_at": "2026-10-24T06:58:14.903Z",
+  "work_id": "ed7224cb27a44d37a18ff94400a50359",
+  "rv": "64",
+  "choice": "naive",
+  "rationale": "Empty recommendation slot; the Vivaldi Edition performance is adopted directly as the recommendation.",
+  "decision_comment": "https://github.com/LuHoo/classical_music/issues/203#issuecomment-6381169484",
+  "docs_updates": [
+    "docs/vivaldi.md:12"
+  ],
+  "performance_file": "data/performances/vivaldi-rv-64-naive.yaml",
+  "replaced_performances": [],
+  "evidence": [
+    "https://vivaldiedition.net/portfolio/vol-44-sonate-da-camera-a-tre-opus-1-2011/",
+    "https://tidal.com/album/91797772"
+  ],
+  "implementation_pr": 339
+}

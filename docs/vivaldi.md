@@ -23,15 +23,15 @@ nav_order: 1
 
 **12 concertos (two for oboe and 10 for violin), of which three are considered inauthentic: Nos. 1 and 7 (both in B-flat major) for oboe, and No. 9 (in the same key) for violin**, Op. 7 (1716–1717) RV465, 188, 326, 354, 285a, 374, 464, 299, 373, 294a, 208a, 214
 
-💎 **Il cimento dell'armonia e dell'inventione (The Contest between Harmony and Invention), 12 violin concertos, which include the first four concertos known as Le quattro stagioni (The Four Seasons)**, Op. 8 (1723) RV269, 315, 293, 297 [Four Seasons: *Anne-Sophie Mutter, Trondheim Soloists*](http://www.tidal.com/track/77697108), 253, 180 [*La Serenissima, Adrian Chandler*](https://tidal.com/track/401810398), 242, 332, 236/454, 362, 210, 178/449 [*La Serenissima, Adrian Chandler*](https://tidal.com/track/458197178) (12/2025)
+💎 **Il cimento dell'armonia e dell'inventione (The Contest between Harmony and Invention), 12 violin concertos, which include the first four concertos known as Le quattro stagioni (The Four Seasons)**, Op. 8 (1723) RV269, 315, 293, 297 [Four Seasons: *Anne-Sophie Mutter, Trondheim Soloists*](http://www.tidal.com/track/77697108), 253, 180 [*La Serenissima, Adrian Chandler*](https://tidal.com/track/401810398), 242 [RV242: *Il Pomo d'Oro, Dmitry Sinkovsky*](https://tidal.com/album/92205621), 332 [RV332: *Academia Montis Regalis, Enrico Onofri*](https://tidal.com/album/92207007), 236/454 [RV454: *Zefiro, Alfredo Bernardini*](https://tidal.com/album/92206835), 362 [RV362: *Academia Montis Regalis, Enrico Onofri*](https://tidal.com/album/92207007), 210 [RV210: *I Barocchisti, Diego Fasolis, Duilio Galfetti*](https://tidal.com/album/92207252), 178/449 [*La Serenissima, Adrian Chandler*](https://tidal.com/track/458197178) (12/2025)
 
-**La cetra (The Lyre), 12 violin concertos, all for solo violin except for No. 9 in B-flat major which is for two violins**, Op. 9 (1727) RV181a, 345, 334, 263a, 358, 348, 359, 238, 530, 300, 198a, 391
+**La cetra (The Lyre), 12 violin concertos, all for solo violin except for No. 9 in B-flat major which is for two violins**, Op. 9 (1727) RV181a, 345, 334, 263a [RV263a: *Il Pomo d'Oro, Riccardo Minasi*](https://tidal.com/album/92929122), 358, 348, 359, 238, 530, 300, 198a, 391 [RV391: *Il Pomo d'Oro, Riccardo Minasi*](https://tidal.com/album/92929122)
 
 **Six flute concertos (a second version for recorder was printed in Venice)**, Op. 10 (c. 1728) RV433, 439, 428, 435, 434, 437
 
 **Five violin concertos, one oboe concerto, the second in E minor, RV 277, being known as Il favorito (The Favorite)**, Op. 11 (1729) RV207, 277, 336, 308, 202, 460 [RV207: *Fabio Biondi, Europa Galante*](http://www.tidal.com/track/304319788)
 
-**Five violin concertos and one without solo**, Op. 12 (1729) RV317, 244, 124, 173, 379, 361
+**Five violin concertos and one without solo**, Op. 12 (1729) RV317, 244, 124, 173, 379 [RV379: *Il Pomo d'Oro, Dmitry Sinkovsky*](https://tidal.com/album/92205621), 361
 
 ## Works without opus number (selection)
 

@@ -1,0 +1,16 @@
+id: 9a3fc899c5aa407083fa1fdf241b6803
+work_id: 9bccd374d4304c22b5004b8963a4d074
+performers:
+- name: L'Estravagante
+  role: ensemble
+release:
+  label: Naive / Opus 111
+  catalogue_number: OP30535
+  album_title: Sonate da camera a tre, op. 1
+source:
+  url: https://vivaldiedition.net/portfolio/vol-44-sonate-da-camera-a-tre-opus-1-2011/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: The Vivaldi Edition, volume 44. Album page verified 2026-09-28. RV 65 = Sonata No. 7 in E-flat major (Op. 1).
+links:
+  tidal:
+    url: https://tidal.com/album/91797772

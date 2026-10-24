@@ -1,0 +1,16 @@
+id: 431c999d5ffe42bf8c78fa6623770fdc
+work_id: ed7224cb27a44d37a18ff94400a50359
+performers:
+- name: L'Estravagante
+  role: ensemble
+release:
+  label: Naive / Opus 111
+  catalogue_number: OP30535
+  album_title: Sonate da camera a tre, op. 1
+source:
+  url: https://vivaldiedition.net/portfolio/vol-44-sonate-da-camera-a-tre-opus-1-2011/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: The Vivaldi Edition, volume 44. Album page verified 2026-09-28. RV 64 = Sonata No. 8 in D minor (Op. 1).
+links:
+  tidal:
+    url: https://tidal.com/album/91797772
