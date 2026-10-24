@@ -3,10 +3,14 @@
 
 Default is apply: it writes the proposed ``data/recordings/`` YAML file and, for
 works that already have a recommendation, creates a TIDAL comparison playlist
-(current recommendation first, then the new candidate). Use ``--dry-run`` to
-preview the full YAML and playlist plan without writing anything. The script
+(current recommendation first — as its complete recording, every track of the
+anchor album matched to the same work — then the new candidate). Use ``--dry-run``
+to preview the full YAML and playlist plan without writing anything. The script
 never edits GitHub issues and performs no mutating TIDAL calls other than
 playlist creation, and only in apply mode.
+
+Playlists are only created with ``--issue <nr> --work <work-id>`` (one run per
+curator comparison issue); they are named ``Curator <date> Issue #<nr>``.
 
 With --canonize, tracks without a canonical work are canonized as part of the
 registration (#327): a new ``data/works/`` definition is written when the ISRC
@@ -298,6 +302,7 @@ class CatalogClient(UserClient):
             require(parsed.scheme == 'https' and parsed.netloc == 'openapi.tidal.com', 'Unexpected album URL host')
             path = parsed.path
         require(path.startswith('/v2/albums/' + self.album) or
+                path.startswith('/v2/tracks/') or
                 (path.startswith('/v2/artists?') and 'filter[id]' in path),
                 'Unexpected catalogue request path')
         # The shared wrapper already prefixes its base URL with /v2, so the
@@ -959,29 +964,113 @@ def existing_recommendations(root, works=None):
     return found, unattributed, breakdown
 
 
-def playlist_plan(root, album, recording, matches, recommendations, today):
-    """One comparison playlist per matched work that already has a recommendation."""
-    plans = []
+def track_album_id(client, track_id):
+    """The unique album behind an existing recommendation's anchor track; fail-closed."""
+    document = client.try_request(f'/v2/tracks/{track_id}?countryCode={COUNTRY}&include=albums')
+    require(document is not None, f'Track {track_id} is unavailable through the catalogue')
+    data = document.get('data')
+    require(isinstance(data, dict) and data.get('type') == 'tracks'
+            and str(data.get('id')) == str(track_id),
+            f'Track response does not identify track {track_id}')
+    related = (data.get('relationships') or {}).get('albums', {}).get('data') or []
+    ids = [row.get('id') for row in related if isinstance(row, dict) and row.get('id')]
+    if not ids:
+        ids = [row.get('id') for row in document.get('included', [])
+               if isinstance(row, dict) and row.get('type') == 'albums' and row.get('id')]
+    require(len(ids) == 1,
+            f'Track {track_id} has no unique album; refusing a fragmentary comparison playlist')
+    return str(ids[0])
+
+
+def expand_current_tracks(read_client, catalog_factory, anchor_ids, work, persons):
+    """The complete current recording(s) behind the recommendation anchors.
+
+    A docs or performance anchor is a single track; a multi-movement work
+    needs its complete recording in a comparison playlist (the issue-bound
+    listening playlists already refuse to let one anchor stand in for a
+    complete work). The anchor track's album is fetched and every track
+    matched to the same canonical work is included, in album order.
+    Fail-closed: the anchor itself must match again on its own album,
+    otherwise the comparison would silently present a fragment.
+    """
+    expanded, seen = [], set()
+    for anchor in anchor_ids:
+        album = track_album_id(read_client, anchor)
+        client = catalog_factory(album)
+        document = album_document(client, album)
+        tracks = album_tracks(client, album)
+        matches = match_works(tracks, [work], persons, document['artists'],
+                              document.get('title', ''))
+        ids = [m['track']['id'] for m in matches
+               if m['state'] == 'matched' and m['work']['id'] == work['id']]
+        require(anchor in ids,
+                f"Anchor track {anchor} does not match {work['id']} on its own album; "
+                'refusing a fragmentary comparison playlist')
+        for tid in ids:
+            if tid not in seen:
+                seen.add(tid)
+                expanded.append(tid)
+    return expanded
+
+
+def playlist_plan(root, album, recording, matches, recommendations, today, *,
+                  issue=None, work=None, read_client=None, catalog_factory=None,
+                  works=None, persons=None):
+    """One comparison playlist per matched work that already has a recommendation.
+
+    The current recommendation enters the playlist as its complete recording
+    (the anchor track's album, every track matched to the same work), not as
+    the single anchored track. With issue/work only the issue's work is
+    planned, named "Curator <date> Issue #<nr>"; without an issue the plans
+    are report-only and the caller is told how to create the playlist.
+    Expansion failures are reported per work (playlist_errors) and never
+    silently produce a fragmentary playlist.
+    """
+    works = works if works is not None else load_works(root)
+    persons = persons if persons is not None else load_persons(root)
+    by_id = {w['id']: w for w in works}
+    plans, errors = [], []
     for entry in recording['works']:
         wid = entry['work_id']
         if wid not in recommendations or entry.get('status') != 'candidate':
+            continue
+        if issue is not None and wid != work:
             continue
         current = recommendations[wid]
         candidate_ids = [m['track']['id'] for m in matches
                          if m['state'] == 'matched' and m['work']['id'] == wid]
         require(candidate_ids, f'Work {wid} matched without candidate tracks')
-        name = f"Earmarked {today} — {wid} — {album['title']}"[:100]
-        plans.append({'work_id': wid, 'name': name,
-                      'description': f"Candidate comparison for {album_url(album['id'])} "
-                                      f"(current recommendation: {', '.join(current['sources'])})",
-                      'current_track_ids': current['track_ids'], 'candidate_track_ids': candidate_ids,
+        current_ids = list(current['track_ids'])
+        if current_ids and read_client is not None:
+            try:
+                current_ids = expand_current_tracks(read_client, catalog_factory,
+                                                    current_ids, by_id[wid], persons)
+            except ValueError as exc:
+                errors.append({'work_id': wid, 'error': str(exc)})
+                continue
+        description = (f"Candidate comparison for {album_url(album['id'])} "
+                       f"(current recommendation: {', '.join(current['sources'])})")
+        if issue is not None:
+            description = f'https://github.com/LuHoo/classical_music/issues/{issue}\n' + description
+        plans.append({'work_id': wid, 'issue': issue,
+                      'name': f"Curator {today} Issue #{issue}" if issue is not None else None,
+                      'description': description,
+                      'current_track_ids': current_ids, 'candidate_track_ids': candidate_ids,
                       'current_sources': current['sources']})
-    return plans
+    return plans, errors
 
 
 def provision_playlist(client, plan):
-    """Create one comparison playlist: current recommendation first, then the candidate."""
-    expected = plan['current_track_ids'] + plan['candidate_track_ids']
+    """Create one comparison playlist: current recommendation first, then the candidate.
+
+    Duplicate track IDs are kept once, in first-seen order: when the existing
+    anchor already sits on the candidate's own album (consolidation), the
+    recording must not appear twice in its own comparison.
+    """
+    expected = []
+    for tid in plan['current_track_ids'] + plan['candidate_track_ids']:
+        if tid not in expected:
+            expected.append(tid)
     created = client.request('/playlists', 'POST', {'data': {'type': 'playlists', 'attributes': {
         'name': plan['name'], 'description': plan['description'], 'accessType': 'UNLISTED'}}})
     pid = created['data']['id']
@@ -1028,7 +1117,7 @@ def write_recording(root, recording, *, update_existing=False):
 
 def run(root, url, *, dry_run=False, recording_id=None, update_existing=False,
         read_client=None, user_client_factory=None, today=None, suggest_client=None,
-        canonize=False):
+        canonize=False, issue=None, work=None, catalog_factory=None):
     from datetime import date
     today = today or date.today().isoformat()
     identifier = album_id(url)
@@ -1062,8 +1151,22 @@ def run(root, url, *, dry_run=False, recording_id=None, update_existing=False,
                          + (' Canonization (--canonize) found no safe work proposal for the '
                             'remaining tracks.' if canonize else ''))
     recommendations, unattributed, breakdown = existing_recommendations(root, works)
-    plans = [p for p in playlist_plan(root, album, recording, matches, recommendations, today)
-             if p['current_track_ids']]
+    require((issue is None) == (work is None),
+            '--issue and --work are supplied together: the issue number names the '
+            'comparison playlist, the work ID binds it to this issue')
+    if issue is not None:
+        require(isinstance(issue, int) and issue > 0, 'Issue number must be positive')
+    plans, playlist_errors = playlist_plan(
+        root, album, recording, matches, recommendations, today,
+        issue=issue, work=work, read_client=client,
+        catalog_factory=catalog_factory
+        or (lambda album_id: CatalogClient(access_token(), album_id)),
+        works=works, persons=persons)
+    plans = [p for p in plans if p['current_track_ids']]
+    if issue is not None and not plans and not any(e['work_id'] == work for e in playlist_errors):
+        raise ValueError(f'Issue #{issue} work {work} has no comparison playlist on this album: '
+                         'the work must be a matched candidate with an existing recommendation '
+                         'carrying a TIDAL track anchor')
     work_lines = []
     for entry in recording['works']:
         if entry.get('status') == 'candidate':
@@ -1082,9 +1185,10 @@ def run(root, url, *, dry_run=False, recording_id=None, update_existing=False,
     report = {'album': f"{album['title']} ({album_url(identifier)})",
               'recording_id': recording['id'],
               'works': work_lines,
-              'playlist_plans': [{'work_id': p['work_id'], 'name': p['name'],
+              'playlist_plans': [{'work_id': p['work_id'], 'issue': p['issue'], 'name': p['name'],
                                   'current_tracks': p['current_track_ids'],
                                   'candidate_tracks': p['candidate_track_ids']} for p in plans],
+              'playlist_errors': playlist_errors,
               'unmatched_tracks': [{'title': u['track']['title'], 'state': u['state'],
                                     'candidates': u.get('candidates', [])} for u in unmatched_tracks],
               'unmatched_track_details': unmatched_track_details(matches, persons),
@@ -1111,15 +1215,21 @@ def run(root, url, *, dry_run=False, recording_id=None, update_existing=False,
         return output
     written = write_recording(root, recording, update_existing=update_existing)
     created = []
-    if plans:
+    if plans and issue is not None:
         factory = user_client_factory or (lambda: UserClient(user_access_token()))
         user_client = factory()
         for plan in plans:
             created.append({'work_id': plan['work_id'], 'url': provision_playlist(user_client, plan)})
     output['written'] = str(written.relative_to(root))
     output['playlists'] = created
+    if plans and issue is None:
+        report['playlist_notice'] = ('Comparison playlist(s) planned but not created: re-run with '
+                                     '--issue <nr> --work <work-id> to create the playlist for one issue')
     for entry in output['report']['playlist_plans']:
-        entry['playlist_url'] = next(p['url'] for p in created if p['work_id'] == entry['work_id'])
+        if created:
+            entry['playlist_url'] = next(p['url'] for p in created if p['work_id'] == entry['work_id'])
+        else:
+            entry['playlist_url'] = None
     return output
 
 
@@ -1149,12 +1259,18 @@ def main(argv=None):
                         help='Canonize proposed new works (unique ISRC-chain MusicBrainz work with '
                              'canonical composer evidence) as part of this registration; without '
                              'this flag proposals are advisory only')
+    parser.add_argument('--issue', type=int,
+                        help='Issue number of the curator comparison issue; names the playlist '
+                             '"Curator <date> Issue #<nr>" and creates it only for --work')
+    parser.add_argument('--work',
+                        help='Canonical work ID bound to the issue; with --issue the comparison '
+                             'playlist is created only for this work')
     args = parser.parse_args(argv)
     try:
         result = run(ROOT, args.album_url, dry_run=args.dry_run,
                      recording_id=args.recording_id, update_existing=args.update_existing,
                      suggest_client=NullSuggestionClient() if args.no_external_lookups else None,
-                     canonize=args.canonize)
+                     canonize=args.canonize, issue=args.issue, work=args.work)
     except ValueError as exc:
         print(f'ERROR: {exc}', file=sys.stderr)
         return 1
@@ -1170,68 +1286,5 @@ def main(argv=None):
         else:
             line += (f" planned (current {len(entry['current_tracks'])} track(s), "
                      f"candidate {len(entry['candidate_tracks'])} track(s))")
-        print(line)
-    for entry in report['unmatched_tracks']:
-        detail = f" [{', '.join(entry['candidates'])}]" if entry['candidates'] else ''
-        print(f"  UNMATCHED ({entry['state']}): {entry['title']}{detail}")
-    if report['unmatched_artists']:
-        print('  Unmatched artists (raw text in notes): ' + ', '.join(report['unmatched_artists']))
-    if not report['works'] and report.get('unmatched_track_details'):
-        print('  No track could be related to canonical works; per-track report:')
-        for entry in report['unmatched_track_details']:
-            version = f" (version: {entry['version']})" if entry['version'] else ''
-            tokens = ', '.join(entry['catalogue_tokens']) or 'none'
-            composers = ', '.join(entry['composers']) or 'no composer evidence found'
-            print(f"    {entry['position']}. {entry['title']}{version}")
-            print(f"       catalogue tokens: {tokens}; composer evidence: {composers}")
-            suggestions = entry.get('external_suggestions')
-            if suggestions:
-                print('       external suggestions (advisory, MusicBrainz — never canonical):')
-                for hit in suggestions:
-                    composers = ', '.join(c['name'] for c in hit['composers'])
-                    print(f"         - {hit['title']} (musicbrainz work {hit['musicbrainz_work_id']})"
-                          f" — composer: {composers or 'not stated on the work'}")
-            elif suggestions is None:
-                print('       external suggestions: unavailable (lookup failed or disabled)')
-    if report['unattributed_recommendation_lines']:
-        if args.verbose_unattributed:
-            print('  Recommendation lines without a canonical work attribution: '
-                  + ', '.join(report['unattributed_recommendation_lines']))
-        else:
-            print(f"  Unattributed docs recommendation lines: {len(report['unattributed_recommendation_lines'])}"
-                  ' (re-run with --verbose-unattributed for the full list)')
-            for entry in report['unattributed_breakdown']:
-                examples = '; '.join(entry['examples'])
-                print(f"    {entry['category']}: {entry['count']}"
-                      + (f' — e.g. {examples}' if examples else ''))
-    for proposal in report.get('proposed_works') or []:
-        print(f"  Proposed new work (advisory): {proposal['work_id']}")
-        print(f"    evidence: ISRC {proposal['evidence']['isrc']}"
-              f" (musicbrainz work {proposal['evidence']['musicbrainz_work_id']}"
-              + (f", recording {proposal['evidence']['musicbrainz_recording_id']}"
-                 if proposal['evidence'].get('musicbrainz_recording_id') else '')
-              + (f", wikidata {proposal['evidence']['wikidata_url']}"
-                 if proposal['evidence'].get('wikidata_url') else '')
-              + f", label: {proposal['evidence'].get('label') or 'unknown'})")
-    if result['dry_run'] and report.get('proposed_works'):
-        for proposal in report['proposed_works']:
-            print(f"--- Proposed data/works/{proposal['work_id']}.yaml (apply with --canonize) ---")
-            print(dump_yaml({key: value for key, value in proposal.items()
-                             if key != 'evidence' and value is not None}), end='')
-            print('--- End of proposed work ---')
-    if report.get('canonized_works'):
-        print('  Canonized new works: ' + ', '.join(report['canonized_works']))
-    if result['dry_run']:
-        print('--- Proposed data/recordings YAML ---')
-        print(dump_yaml(result['recording']), end='')
-        print('--- End of proposed YAML ---')
-        print(result['note'])
-    if result.get('written'):
-        print(f"Written: {result['written']}")
-    return 0
-
-
-if __name__ == '__main__':
-    sys.exit(main())
-
-
+        if entry.get('name'):
+            line += f" — {entry['name']}"

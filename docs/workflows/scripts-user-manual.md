@@ -216,7 +216,11 @@ tracklijst in `existing_performance_tracks`; één canonieke luisterlink is onvo
 
 Registreert een nieuw aangelengde ("earmarked") opname die op TIDAL beschikbaar is
 in één aanroep als `candidate`, en maakt per werk dat al een `recommended`-opname
-heeft een TIDAL-vergelijkingsplaylist (huidige aanbeveling eerst, dan de kandidaat).
+heeft een TIDAL-vergelijkingsplaylist: de **volledige** huidige opname eerst (elke
+track van het anker-album die op hetzelfde werk matcht — één anker staat niet
+standaard voor een meerdelig werk), dan de volledige kandidaat. Playlists worden
+alleen aangemaakt met `--issue <nr> --work <work-id>` (één run per
+curator-vergelijkingsissue) en heten `Curator <datum> Issue #<nr>`.
 Het script opent of bewerkt geen GitHub-issues; YAML, playlist en stdout-rapport zijn
 het product. De beslissing `candidate` → `recommended` blijft bij de curator via de
 bestaande workflow.
@@ -225,8 +229,15 @@ bestaande workflow.
 # Preview: volledig voorgestelde YAML-rapport en playlistplan, schrijft niets
 .venv/bin/python scripts/register_earmarked_recording.py "https://tidal.com/browse/album/<id>" --dry-run
 
-# Apply: schrijft data/recordings/<id>.yml en maakt vergelijkingsplaylists aan
+# Apply zonder issue: schrijft data/recordings/<id>.yml; het rapport toont de
+# geplande playlists, maar er wordt er geen aangemaakt
 .venv/bin/python scripts/register_earmarked_recording.py "https://tidal.com/browse/album/<id>"
+
+# Apply met issue: schrijft het YAML-bestand en maakt alleen de vergelijkingsplaylist
+# voor het werk van dit issue, met naam "Curator <datum> Issue #<nr>".
+# Eén run per issue; bij een reeds geregistreerd album gebruik je --update-existing.
+.venv/bin/python scripts/register_earmarked_recording.py "https://tidal.com/browse/album/<id>" \
+  --issue <nr> --work <work-id> --update-existing
 ```
 
 Geaccepteerde URL-vormen (fail-closed op alles anders): `https://tidal.com/browse/album/<id>`,
@@ -242,6 +253,8 @@ Geaccepteerde URL-vormen (fail-closed op alles anders): `https://tidal.com/brows
 | `--no-external-lookups` | Schakelt de adviserende MusicBrainz-suggesties in het nul-match-drooglooprapport uit (volledig offline droogloop) |
 | `--verbose-unattributed` | Print bij het rapport van niet-toegeschreven docs-regels de volledige lijst in plaats van het standaardoverzicht |
 | `--canonize` | Canoniseert voorgestelde nieuwe werken als onderdeel van deze registratie (#327): bij een track zonder canoniek werk schrijft het script een nieuwe `data/works/`-definitie als de ISRC-keten exact één MusicBrainz-werk oplevert waarvan de componist de unieke canonieke persoon uit het track-bewijs is. Zonder deze vlag blijven voorstellen adviserend in het rapport |
+| `--issue NRDERS` | Issue-nummer van het curator-vergelijkingsissue: noemt de playlist `Curator <datum> Issue #<nr>` en maakt haar alleen aan voor het werk van `--work`. `--issue` en `--work` worden samen gegeven; zonder beiden wordt geen playlist aangemaakt |
+| `--work WORK_ID` | Canoniek work-ID dat aan het issue gebonden is; de vergelijkingsplaylist wordt alleen voor dit werk aangemaakt. Faalt expliciet als dat werk op dit album geen kandidaat met bestaande TIDAL-verankerende aanbeveling is |
 
 Standaard print het script bij niet-toegeschreven docs-aanbevelingsregels alleen
 het totaal plus een per-categorie uitsplitsing (`no-canonical-work`,
@@ -281,7 +294,15 @@ Gedrag per werk:
 - Bestaande aanbeveling gevonden → werk-regel `status: candidate` plus
   vergelijkingsplaylist; de huidige aanbeveling moet een TIDAL-track-anker
   (`https://tidal.com/track/<id>`) hebben, anders wordt de playlist overgeslagen
-  en staat dit in het rapport. Aanbevelingen worden gelezen uit de gepubliceerde
+  en staat dit in het rapport. De playlist bevat de **volledige** huidige
+  opname: het script haalt via TIDAL het album van de ankertrack op en neemt
+  elke track die (met dezelfde matching-regels als de kandidaatzijde) op het
+ zelfde werk matcht, in albumvolgorde. Lukt dat niet — bijvoorbeeld omdat de
+  anker op zijn eigen album niet opnieuw matcht — dan wordt de playlist voor
+  dat werk overgeslagen met een `PLAYLIST SKIPPED`-melding in het rapport in
+  plaats van een fragmentaire vergelijking. Zit de anker al op het album van
+  de kandidaat (consolidatie), dan staat de opname maar één keer in de
+  playlist. Aanbevelingen worden gelezen uit de gepubliceerde
   `docs/*.md`-pagina's (via hun TIDAL-track-ankers, geattribueerd via
   `data/performances/` of een uniek catalogusnummer), uit performances met
   `recommended: true` en uit `data/recordings/`-regels met `status: recommended`.
@@ -338,8 +359,9 @@ Voorbeeld (Chamayou/Andsnes, *Schubert: Four Hands*): de vier delen van de
 Fantasie in F mineur, D. 940 matchen via het `D. 940`-catalogusnummer in de
 track-versie en de familienaam in de albumtitel (TIDAL levert voor dit album
 geen composer-credits); de gepubliceerde Perahia/Lupu-aanbeveling
-uit `docs/schubert.md` levert de vergelijkingsplaylist (huidige track eerst, dan
-de vier kandidaat-delen); de drie andere vierhandige werken (D. 947, D. 952,
+uit `docs/schubert.md` levert de vergelijkingsplaylist met eerst de volledige
+huidige opname (alle delen van het Perahia/Lupu-album), dan de vier
+kandidaat-delen; de drie andere vierhandige werken (D. 947, D. 952,
 D. 951) bestaan nog niet canoniek en blijven als ruwe tekst in `notes` staan.
 
 Voor cataloguslezingen gebruikt het script `TIDAL_ACCESS_TOKEN` of
@@ -353,7 +375,8 @@ Voor lokale runs autoriseer je eenmalig met
 `tidal_playlist_login.py --setup-local PAD --client-id "$TIDAL_CLIENT_ID"` en exporteer je
 daarna de grant zonder die te tonen: `export TIDAL_USER_REFRESH_TOKEN="$(cat PAD)"`.
 Het GitHub Actions-secret werkt alleen in workflows en is lokaal niet uitleesbaar.
-Er zijn geen muterende TIDAL-calls behalve playlist-creatie, en uitsluitend in apply-modus.
+Er zijn geen muterende TIDAL-calls behalve playlist-creatie, en uitsluitend in
+apply-modus met `--issue`/`--work`.
 
 ### Earmarked besluit verwerken (`apply_earmarked_decision.py`)
 
