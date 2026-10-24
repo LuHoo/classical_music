@@ -1,0 +1,16 @@
+id: 
+  viktor-kalabis-concerto-for-harpsichord-and-string-orchestra-op-42-playlist-4273
+work_id: viktor-kalabis-concerto-for-harpsichord-and-string-orchestra-op-42
+performers:
+- name: Prague Radio Symphony Orchestra
+- name: Alexander Liebreich
+- name: Mahan Esfahani
+links:
+  tidal:
+    url: https://tidal.com/track/315171682
+release:
+  album_title: 'Martinů, Krása & Kalabis: Harpsichord Concertos'
+source:
+  file: reports/playlist-import/best-classical/window-4001-5518.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+version_assignment: unspecified

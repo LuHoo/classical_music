@@ -1,0 +1,16 @@
+id: christian-sinding-violin-concerto-in-a-minor-op-45-playlist-2990
+work_id: christian-sinding-violin-concerto-in-a-minor-op-45
+performers:
+- name: Lea Birringer
+- name: Hofer Symphoniker
+- name: Hermann Bäumers
+links:
+  tidal:
+    url: https://tidal.com/track/225274176
+release:
+  album_title: 'Sinding: Violin Concerto in A Minor, Op. 45, Romance in D Major Op. 100 - Mendelssohn:
+    Violin Concerto in E Minor, Op. 64'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+version_assignment: unspecified

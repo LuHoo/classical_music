@@ -1,0 +1,13 @@
+id: 44a840a122cf4bd6925734bc23207a64
+work_group_id: 3fdef038598445aea64a94d42604067d
+composer_id: 811828a12f974329907a88348b6a0422
+title: Sinfonia in C major “Berchtoldsgadner” (Toy Symphony; attribution uncertain)
+category: Symphonies
+source:
+  url: https://www.prestomusic.com/classical/products/9334463--haydn-2032-vol-12-les-jeux-et-les-plaisirs
+  file: reports/haydn-2032/catalogue.json
+catalogue:
+  hoboken: Hob. II:47
+notes: 'Official project attribution: Johann Michael Haydn et al., attributed; Urtext edition by Sonja
+  Gerlach. Hob. II:47 is a historical catalogue reference, not proof of Joseph Haydn authorship. Kept
+  separate from authenticated Joseph Haydn symphonies.'

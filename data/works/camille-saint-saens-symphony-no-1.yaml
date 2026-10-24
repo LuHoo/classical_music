@@ -1,0 +1,10 @@
+id: camille-saint-saens-symphony-no-1
+work_group_id: camille-saint-saens-symphony-no-1-group
+composer_id: camille-saint-saens
+title: Symphony No. 1
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://www.naxos.com/CatalogueDetail/?id=BIS-2460
+catalogue:
+  opus: Op. 2
+  r: R. 161

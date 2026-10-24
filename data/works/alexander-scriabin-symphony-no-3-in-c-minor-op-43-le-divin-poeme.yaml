@@ -1,0 +1,9 @@
+id: alexander-scriabin-symphony-no-3-in-c-minor-op-43-le-divin-poeme
+work_group_id: 
+  alexander-scriabin-symphony-no-3-in-c-minor-op-43-le-divin-poeme-group
+composer_id: alexander-scriabin
+title: Symphony No. 3 in C Minor, Op. 43 "Le divin poème"
+source:
+  file: docs/scriabin.md
+catalogue:
+  op: '43'

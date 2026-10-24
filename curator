@@ -1,0 +1,12 @@
+#!/bin/sh
+# Prefer the repository environment, while allowing an explicit interpreter.
+ROOT=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+if [ -z "${CURATOR_PYTHON:-}" ]; then
+    if [ -x "$ROOT/.venv/bin/python" ]; then
+        CURATOR_PYTHON="$ROOT/.venv/bin/python"
+    else
+        CURATOR_PYTHON=python3
+    fi
+fi
+export PYTHONPATH="$ROOT/src${PYTHONPATH:+:$PYTHONPATH}"
+exec "$CURATOR_PYTHON" "$ROOT/scripts/apply_curator_decision.py" "$@"

@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-violin-sonata-no-2-in-a-major-op-12-2-group"
+composer_id: "ludwig-van-beethoven"
+title: "Violin Sonata No. 2 in A major"
+source:
+  file: "docs/beethoven.md"
+  line: "160"
+catalogue:
+  opus: "Op. 12/2"

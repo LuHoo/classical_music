@@ -1,0 +1,11 @@
+id: sergei-prokofiev-symphony-no-4-in-c-original-version-work
+work_group_id: sergei-prokofiev-symphony-no-4-in-c-original-version-group
+composer_id: sergei-prokofiev
+title: Symphony No. 4 in C (original version)
+source:
+  file: docs/prokofiev.md
+  line: '81'
+catalogue:
+  op: Op. 47
+date_text: 1929–30
+category: Orchestral

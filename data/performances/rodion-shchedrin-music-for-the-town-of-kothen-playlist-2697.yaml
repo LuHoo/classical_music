@@ -1,0 +1,13 @@
+id: rodion-shchedrin-music-for-the-town-of-kothen-playlist-2697
+work_id: rodion-shchedrin-music-for-the-town-of-kothen
+performers:
+- name: Vladimir Spivakov
+- name: Moscow Virtuosi
+links:
+  tidal:
+    url: https://tidal.com/track/141388605
+release:
+  album_title: 'Shchedrin: The Lady with the Lapdog & Music for the Town of Kothen'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

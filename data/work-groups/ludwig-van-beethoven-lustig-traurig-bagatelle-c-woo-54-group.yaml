@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-lustig-traurig-bagatelle-c-woo-54-group"
+composer_id: "ludwig-van-beethoven"
+title: "Lustig-Traurig (Bagatelle), C"
+source:
+  file: "docs/beethoven.md"
+  line: "442"
+catalogue:
+  woo: "WoO 54"

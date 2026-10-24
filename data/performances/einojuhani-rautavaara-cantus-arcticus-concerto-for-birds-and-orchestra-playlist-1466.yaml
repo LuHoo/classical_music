@@ -1,0 +1,13 @@
+id: einojuhani-rautavaara-cantus-arcticus-concerto-for-birds-and-orchestra-playlist-1466
+work_id: einojuhani-rautavaara-cantus-arcticus-concerto-for-birds-and-orchestra
+performers:
+- name: Helsinki Philharmonic Orchestra
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/282802781
+release:
+  album_title: 'Rautavaara: Angels and Visitations'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

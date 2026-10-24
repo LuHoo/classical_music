@@ -1,0 +1,9 @@
+id: dmitri-shostakovich-the-green-company-work
+work_group_id: dmitri-shostakovich-the-green-company-group
+composer_id: dmitri-shostakovich
+title: The Green Company
+source:
+  file: docs/shostakovich.md
+  line: '44'
+date_text: '1931'
+category: Orchestral

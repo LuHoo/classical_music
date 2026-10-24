@@ -1,0 +1,12 @@
+id: "ludwig-van-beethoven-piano-sonata-no-30-in-e-op-109-work"
+work_group_id: "ludwig-van-beethoven-piano-sonata-no-30-in-e-op-109-group"
+composer_id: "ludwig-van-beethoven"
+title: "Piano Sonata No. 30, in E"
+source:
+  file: "docs/beethoven.md"
+  line: "368"
+catalogue:
+  opus: "Op. 109"
+date_text: "1820"
+category: "Piano"
+gem: true

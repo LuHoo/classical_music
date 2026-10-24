@@ -1,0 +1,16 @@
+id: benjamin-britten-suite-on-english-folk-tunes-a-time-there-was-playlist-1862
+work_id: benjamin-britten-suite-on-english-folk-tunes-a-time-there-was
+performers:
+- name: English Symphony Orchestra
+  role: performer
+- name: William Boughton
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/57251296
+release:
+  album_title: "Britten: The Young Person's Guide to the Orchesta, Sea Interludes, Courtly Dances & Suite
+    on English Folk Tunes"
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

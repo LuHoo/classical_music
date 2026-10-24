@@ -1,0 +1,15 @@
+id: albert-roussel-concert-for-small-orchestra-op-34-playlist-2110
+work_id: albert-roussel-concert-for-small-orchestra-op-34
+performers:
+- name: Royal Scottish National Orchestra
+  artist_id: royal-scottish-national-orchestra
+  role: orchestra
+- name: Stéphane Denève
+links:
+  tidal:
+    url: https://tidal.com/track/284367869
+release:
+  album_title: 'Roussel: Symphony No. 4'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

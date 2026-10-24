@@ -1,0 +1,8 @@
+id: "johann-sebastian-bach-fantasy-fugue-in-c-min-group"
+composer_id: "johann-sebastian-bach"
+title: "Fantasy & Fugue in C min."
+source:
+  file: "docs/bachJS.md"
+  line: "82"
+catalogue:
+  bwv: "BWV 537"

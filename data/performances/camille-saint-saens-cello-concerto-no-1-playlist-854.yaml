@@ -1,0 +1,17 @@
+id: camille-saint-saens-cello-concerto-no-1-playlist-854
+work_id: camille-saint-saens-cello-concerto-no-1
+performers:
+- name: Bruno Philippe
+  role: performer
+- name: Frankfurt Radio Symphony Orchestra
+  role: performer
+- name: Christoph Eschenbach
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/327003708
+release:
+  album_title: 'Saint-Saëns: Cello Concerto No. 1 - Franck, Fauré & Poulenc (Bonus Track Version)'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

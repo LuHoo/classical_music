@@ -1,0 +1,9 @@
+id: jean-sibelius-the-bard-symphonic-poem-op-64
+work_group_id: jean-sibelius-the-bard-symphonic-poem-op-64-group
+composer_id: jean-sibelius
+title: The Bard - Symphonic Poem, Op. 64
+source:
+  file: docs/sibelius.md
+  url: https://en.wikipedia.org/wiki/List_of_compositions_by_Jean_Sibelius#Table_of_compositions
+catalogue:
+  op: '64'

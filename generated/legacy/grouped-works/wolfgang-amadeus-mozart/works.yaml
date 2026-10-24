@@ -1,0 +1,181 @@
+composer_id: wolfgang-amadeus-mozart
+source_note: >-
+  Representative pilot set based on the existing docs/mozart.md page. It tests K/KV
+  identifiers, opera title translations, nicknames, sacred works and concertos.
+works:
+  - id: mozart-k47d
+    composer_id: wolfgang-amadeus-mozart
+    canonical_title: Missa brevis in G major
+    localized_titles: { en: Missa brevis in G major, de: Missa brevis G-Dur, nl: Missa brevis in G groot }
+    category: sacred-choral
+    catalogue: { k: K. 47d }
+    aliases: [Missa brevis in G, Missa brevis in G major, K. 47d, KV 47d]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: mozart-k427
+    composer_id: wolfgang-amadeus-mozart
+    canonical_title: Mass in C minor
+    localized_titles: { en: Mass in C minor, de: Messe c-Moll, nl: Mis in c klein }
+    category: sacred-choral
+    catalogue: { k: K. 427 }
+    aliases: [Great Mass, Große Messe c-Moll, Mass in C Minor, K. 427, KV 427]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: mozart-k626
+    composer_id: wolfgang-amadeus-mozart
+    canonical_title: Requiem in D minor
+    localized_titles: { en: Requiem in D minor, de: Requiem d-Moll, nl: Requiem in d klein }
+    category: sacred-choral
+    catalogue: { k: K. 626 }
+    aliases: [Requiem, Requiem Mass in D minor, Requiem in D minor, K. 626, KV 626]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: mozart-k165-158a
+    composer_id: wolfgang-amadeus-mozart
+    canonical_title: Exsultate, jubilate
+    localized_titles: { en: Exsultate, jubilate, nl: Exsultate, jubilate }
+    category: sacred-choral
+    catalogue: { k: K. 165/158a }
+    aliases: [Exsultate jubilate, Exsultate, jubilate, K. 165, K. 158a, KV 165]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: mozart-k126
+    composer_id: wolfgang-amadeus-mozart
+    canonical_title: Il sogno di Scipione
+    localized_titles: { it: Il sogno di Scipione, en: Scipio's Dream, nl: Il sogno di Scipione }
+    category: opera
+    catalogue: { k: K. 126 }
+    aliases: [Il sogno di Scipione, Scipio's Dream, K. 126, KV 126]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: mozart-k135
+    composer_id: wolfgang-amadeus-mozart
+    canonical_title: Lucio Silla
+    localized_titles: { it: Lucio Silla, en: Lucio Silla, nl: Lucio Silla }
+    category: opera
+    catalogue: { k: K. 135 }
+    aliases: [Lucio Silla, K. 135, KV 135]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: mozart-k196
+    composer_id: wolfgang-amadeus-mozart
+    canonical_title: La finta giardiniera
+    localized_titles: { it: La finta giardiniera, en: The Pretend Garden-Girl, nl: La finta giardiniera }
+    category: opera
+    catalogue: { k: K. 196 }
+    aliases: [La finta giardiniera, The Pretend Garden-Girl, K. 196, KV 196]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: mozart-k384
+    composer_id: wolfgang-amadeus-mozart
+    canonical_title: Die Entführung aus dem Serail
+    localized_titles: { de: Die Entführung aus dem Serail, en: The Abduction from the Seraglio, nl: De ontvoering uit de harem }
+    category: opera
+    catalogue: { k: K. 384 }
+    aliases: [Die Entführung aus dem Serail, The Abduction from the Seraglio, Entführung, K. 384, KV 384]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: mozart-k486
+    composer_id: wolfgang-amadeus-mozart
+    canonical_title: Der Schauspieldirektor
+    localized_titles: { de: Der Schauspieldirektor, en: The Impresario, nl: Der Schauspieldirektor }
+    category: opera
+    catalogue: { k: K. 486 }
+    aliases: [Der Schauspieldirektor, The Impresario, K. 486, KV 486]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: mozart-k527
+    composer_id: wolfgang-amadeus-mozart
+    canonical_title: Don Giovanni
+    localized_titles: { it: Don Giovanni, en: Don Giovanni, nl: Don Giovanni }
+    category: opera
+    catalogue: { k: K. 527 }
+    aliases: [Don Giovanni, Il dissoluto punito, K. 527, KV 527]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: mozart-k504
+    composer_id: wolfgang-amadeus-mozart
+    canonical_title: Symphony No. 38 in D major, Prague
+    localized_titles: { en: Symphony No. 38 in D major, Prague, nl: Symfonie nr. 38 in D groot, Praag }
+    category: orchestral
+    catalogue: { k: K. 504 }
+    aliases: [Symphony No. 38, Prague Symphony, Praagse symfonie, K. 504, KV 504]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: mozart-k543
+    composer_id: wolfgang-amadeus-mozart
+    canonical_title: Symphony No. 39 in E-flat major
+    localized_titles: { en: Symphony No. 39 in E-flat major, nl: Symfonie nr. 39 in Es groot }
+    category: orchestral
+    catalogue: { k: K. 543 }
+    aliases: [Symphony No. 39, K. 543, KV 543]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: mozart-k550
+    composer_id: wolfgang-amadeus-mozart
+    canonical_title: Symphony No. 40 in G minor
+    localized_titles: { en: Symphony No. 40 in G minor, nl: Symfonie nr. 40 in g klein }
+    category: orchestral
+    catalogue: { k: K. 550 }
+    aliases: [Symphony No. 40, K. 550, KV 550]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: mozart-k551
+    composer_id: wolfgang-amadeus-mozart
+    canonical_title: Symphony No. 41 in C major, Jupiter
+    localized_titles: { en: Symphony No. 41 in C major, Jupiter, nl: Symfonie nr. 41 in C groot, Jupiter }
+    category: orchestral
+    catalogue: { k: K. 551 }
+    aliases: [Symphony No. 41, Jupiter Symphony, Jupiter, K. 551, KV 551]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: mozart-k271
+    composer_id: wolfgang-amadeus-mozart
+    canonical_title: Piano Concerto No. 9 in E-flat major, Jenamy
+    localized_titles: { en: Piano Concerto No. 9 in E-flat major, Jenamy, nl: Pianoconcert nr. 9 in Es groot, Jenamy }
+    category: piano-concerto
+    catalogue: { k: K. 271 }
+    aliases: [Piano Concerto No. 9, Jenamy, Jeunehomme, K. 271, KV 271]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: mozart-k466
+    composer_id: wolfgang-amadeus-mozart
+    canonical_title: Piano Concerto No. 20 in D minor
+    localized_titles: { en: Piano Concerto No. 20 in D minor, nl: Pianoconcert nr. 20 in d klein }
+    category: piano-concerto
+    catalogue: { k: K. 466 }
+    aliases: [Piano Concerto No. 20, K. 466, KV 466]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: mozart-k467
+    composer_id: wolfgang-amadeus-mozart
+    canonical_title: Piano Concerto No. 21 in C major
+    localized_titles: { en: Piano Concerto No. 21 in C major, nl: Pianoconcert nr. 21 in C groot }
+    category: piano-concerto
+    catalogue: { k: K. 467 }
+    aliases: [Piano Concerto No. 21, Elvira Madigan, K. 467, KV 467]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: mozart-k488
+    composer_id: wolfgang-amadeus-mozart
+    canonical_title: Piano Concerto No. 23 in A major
+    localized_titles: { en: Piano Concerto No. 23 in A major, nl: Pianoconcert nr. 23 in A groot }
+    category: piano-concerto
+    catalogue: { k: K. 488 }
+    aliases: [Piano Concerto No. 23, K. 488, KV 488]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: mozart-k491
+    composer_id: wolfgang-amadeus-mozart
+    canonical_title: Piano Concerto No. 24 in C minor
+    localized_titles: { en: Piano Concerto No. 24 in C minor, nl: Pianoconcert nr. 24 in c klein }
+    category: piano-concerto
+    catalogue: { k: K. 491 }
+    aliases: [Piano Concerto No. 24, K. 491, KV 491]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: mozart-k622
+    composer_id: wolfgang-amadeus-mozart
+    canonical_title: Clarinet Concerto in A major
+    localized_titles: { en: Clarinet Concerto in A major, nl: Klarinetconcert in A groot }
+    category: woodwind-concerto
+    catalogue: { k: K. 622 }
+    aliases: [Clarinet Concerto, Klarinettenkonzert, K. 622, KV 622]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: mozart-k361
+    composer_id: wolfgang-amadeus-mozart
+    canonical_title: Serenade No. 10 in B-flat major, Gran Partita
+    localized_titles: { en: Serenade No. 10 in B-flat major, Gran Partita, nl: Gran Partita }
+    category: serenades
+    catalogue: { k: K. 361 }
+    aliases: [Gran Partita, Serenade No. 10, K. 361, KV 361]
+    authorities: { musicbrainz_work_id:, wikidata: }
+  - id: mozart-k525
+    composer_id: wolfgang-amadeus-mozart
+    canonical_title: Serenade No. 13 in G major, Eine kleine Nachtmusik
+    localized_titles: { de: Eine kleine Nachtmusik, en: Eine kleine Nachtmusik, nl: Eine kleine Nachtmusik }
+    category: serenades
+    catalogue: { k: K. 525 }
+    aliases: [Eine kleine Nachtmusik, Serenade No. 13, K. 525, KV 525]
+    authorities: { musicbrainz_work_id:, wikidata: }

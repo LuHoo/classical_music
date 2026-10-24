@@ -1,0 +1,17 @@
+id: ralph-vaughan-williams-symphony-no-3-pastoral-playlist-1915
+work_id: ralph-vaughan-williams-symphony-no-3-pastoral
+performers:
+- name: BBC Symphony Orchestra
+  role: performer
+- name: Martyn Brabbins
+  role: performer
+- name: Elizabeth Watts
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/340802968
+release:
+  album_title: 'Vaughan Williams: Symphonies Nos. 3 "Pastoral" & 4'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

@@ -1,0 +1,21 @@
+id: sergei-rachmaninoff-the-bells-playlist-1642
+work_id: sergei-rachmaninoff-the-bells
+performers:
+- name: Sir Simon Rattle
+  role: performer
+- name: Dmytro Popov
+  role: performer
+- name: Rundfunkchor Berlin
+  role: performer
+- name: L'uba Orgonášová
+  role: performer
+- name: Mikhail Petrenko
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/74881167
+release:
+  album_title: 'Rachmaninov: Symphonic Dances, The Bells'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

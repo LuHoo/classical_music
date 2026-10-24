@@ -1,0 +1,13 @@
+id: brahms-piano-quintet-in-f-minor-1864-op-34-work-chamber-c043
+work_id: brahms-piano-quintet-in-f-minor-1864-op-34-work
+performers:
+  - name: Leif Ove Andsnes
+  - name: Artemis Quartet
+links:
+  tidal:
+    url: https://tidal.com/track/2473429
+release:
+  album_title: 'Schumann & Brahms: Piano Quintets'
+source:
+  file: reports/playlist-import/chamber/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/a2327106-07fd-4433-8bd3-d8a5c251c69a

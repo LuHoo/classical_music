@@ -1,0 +1,11 @@
+id: 8652baec51024e279e33b775120274a0
+work_group_id: 2a8d56e9ff324e5aa4a5684af754d528
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 297
+catalogue:
+  rv: RV 297
+  opus: Op. 8
+source:
+  file: docs/vivaldi.md
+  line: '26'
+gem: true

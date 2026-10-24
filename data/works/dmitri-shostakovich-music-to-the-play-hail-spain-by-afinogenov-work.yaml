@@ -1,0 +1,11 @@
+id: dmitri-shostakovich-music-to-the-play-hail-spain-by-afinogenov-work
+work_group_id: dmitri-shostakovich-music-to-the-play-hail-spain-by-afinogenov-group
+composer_id: dmitri-shostakovich
+title: Music to the play Hail, Spain by Afinogenov
+source:
+  file: docs/shostakovich.md
+  line: '68'
+catalogue:
+  op: Op. 44
+date_text: '1936'
+category: Orchestral

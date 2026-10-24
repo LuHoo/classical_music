@@ -1,0 +1,11 @@
+id: dmitri-shostakovich-love-and-hate-work
+work_group_id: dmitri-shostakovich-love-and-hate-group
+composer_id: dmitri-shostakovich
+title: Love and Hate
+source:
+  file: docs/shostakovich.md
+  line: '60'
+catalogue:
+  op: Op. 38
+date_text: https://tidal.com/browse/album/283832994
+category: Orchestral

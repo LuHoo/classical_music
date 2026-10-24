@@ -1,0 +1,10 @@
+id: bb3b29fd760b4374ba383b0b753e876a
+work_group_id: 0abbad7701404d8cbabfa7e5e97e4bcd
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 244
+catalogue:
+  rv: RV 244
+  opus: Op. 12
+source:
+  file: docs/vivaldi.md
+  line: '34'

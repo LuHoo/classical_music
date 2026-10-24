@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-string-quartet-no-5-in-a-major-op-18-5-group"
+composer_id: "ludwig-van-beethoven"
+title: "String Quartet No. 5 in A major"
+source:
+  file: "docs/beethoven.md"
+  line: "180"
+catalogue:
+  opus: "Op. 18/5"

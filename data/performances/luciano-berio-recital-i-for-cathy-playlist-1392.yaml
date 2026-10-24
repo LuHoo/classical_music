@@ -1,0 +1,18 @@
+id: luciano-berio-recital-i-for-cathy-playlist-1392
+work_id: luciano-berio-recital-i-for-cathy
+performers:
+- person_id: luciano-berio
+  role: conductor
+- name: Cathy Berberian
+  role: performer
+  artist_id: cathy-berberian
+- name: London Sinfonietta
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/43365175
+release:
+  album_title: 'Berio: Recital I For Cathy & Folk Songs'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

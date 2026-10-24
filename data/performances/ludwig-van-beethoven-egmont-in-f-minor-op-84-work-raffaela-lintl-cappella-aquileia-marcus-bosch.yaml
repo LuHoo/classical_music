@@ -1,0 +1,18 @@
+id: "ludwig-van-beethoven-egmont-in-f-minor-op-84-work-raffaela-lintl-cappella-aquileia-marcus-bosch"
+work_id: "ludwig-van-beethoven-egmont-in-f-minor-op-84-work"
+performers:
+  - name: "Raffaela Lintl"
+    role: "performer"
+  - name: "Cappella Aquileia"
+    role: "performer"
+  - name: "Marcus Bosch"
+    role: "conductor"
+links:
+  tidal:
+    url: "http://www.tidal.com/track/191149807"
+source:
+  file: "docs/beethoven.md"
+  line: "68"
+reviews:
+  gramophone:
+    issue: "2021-10"

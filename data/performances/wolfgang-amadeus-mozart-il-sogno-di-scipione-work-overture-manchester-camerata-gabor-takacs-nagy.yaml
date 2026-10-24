@@ -1,0 +1,14 @@
+id: 
+  wolfgang-amadeus-mozart-il-sogno-di-scipione-work-overture-manchester-camerata-gabor-takacs-nagy
+work_id: wolfgang-amadeus-mozart-il-sogno-di-scipione-work
+source:
+  file: docs/mozart.md
+  line: '34'
+links:
+  tidal:
+    url: http://www.tidal.com/track/376332013
+performers:
+- name: 'Overture: Manchester Camerata'
+  role: performer
+- name: Gábor Takács-Nagy
+  role: performer

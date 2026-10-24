@@ -1,0 +1,11 @@
+id: 50db9fa555494a1bb4f0c87fba4e5af5
+work_group_id: ff173736ae48411d84b7353b5b5fd36c
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 298
+catalogue:
+  rv: RV 298
+  opus: Op. 4
+source:
+  file: docs/vivaldi.md
+  line: '18'
+gem: true

@@ -1,0 +1,11 @@
+id: "anton-bruckner-pange-lingua-work"
+work_group_id: "anton-bruckner-pange-lingua-group"
+composer_id: "anton-bruckner"
+title: "Pange lingua"
+source:
+  file: "docs/bruckner.md"
+  line: "80"
+catalogue:
+  wab: "WAB 33"
+date_text: "1868"
+category: "Vocal"

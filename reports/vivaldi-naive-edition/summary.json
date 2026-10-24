@@ -1,0 +1,14 @@
+{
+  "edition_volumes": 76,
+  "edition_unique_rv_entries": 365,
+  "edition_occurrences": 401,
+  "legacy_works": 127,
+  "overlap_works": 27,
+  "canonical_works": 465,
+  "canonical_work_groups": 458,
+  "canonical_performances": 380,
+  "pending_occurrences": 63,
+  "created_issues": 27,
+  "retained_legacy_performances": 42,
+  "accepted_edition_performances": 338
+}

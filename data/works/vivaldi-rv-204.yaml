@@ -1,0 +1,11 @@
+id: 873e0140377d4248ae67995de2974e6e
+work_group_id: 7824ed0a2f984ec19c1dbeedfb613b92
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 204
+catalogue:
+  rv: RV 204
+  opus: Op. 4
+source:
+  file: docs/vivaldi.md
+  line: '18'
+gem: true

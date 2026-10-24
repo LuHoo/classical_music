@@ -1,0 +1,9 @@
+id: f31bdf1e9db44a7e9e5058813164cf3a
+work_group_id: 6da13517de4c46d9aac5130fca100388
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 380
+catalogue:
+  rv: RV 380
+source:
+  url: https://vivaldiedition.net/portfolio/vol-57-concerti-per-violino-vi-la-boemia-2018/
+  file: reports/vivaldi-naive-edition/catalogue.json

@@ -1,0 +1,19 @@
+id: e8b0f02f06254b2cb0d94bf9623a2015
+work_id: 21469bb2fe0740d19202e382b6ef3464
+performers:
+- name: Il Giardino Armonico
+  role: orchestra
+- name: Giovanni Antonini
+  role: conductor
+release:
+  label: Alpha Classics
+  catalogue_number: ALPHA671
+  album_title: 'Haydn 2032, Vol. 2: Il filosofo'
+source:
+  url: https://www.prestomusic.com/classical/products/8061501--haydn-2032-volume-2-il-filosofo
+  file: reports/haydn-2032/catalogue.json
+links:
+  tidal:
+    url: https://tidal.com/album/187335290
+notes: Haydn 2032, volume 2. Sources and Tidal album metadata checked 2026-09-30. Album link covers this
+  work; it is not a work-specific track link.

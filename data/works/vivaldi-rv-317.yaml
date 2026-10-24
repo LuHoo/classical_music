@@ -1,0 +1,10 @@
+id: b5b9c50e7aa647f38c3138e18b545365
+work_group_id: eaa44c44061e4780a83afaf0906e7162
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 317
+catalogue:
+  rv: RV 317
+  opus: Op. 12
+source:
+  file: docs/vivaldi.md
+  line: '34'

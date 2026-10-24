@@ -1,0 +1,15 @@
+id: arthur-bliss-music-for-strings-f-123-playlist-3470
+work_id: arthur-bliss-music-for-strings-f-123
+performers:
+- name: John Wilson
+- name: Sinfonia Of London
+- name: Northern Sinfonia
+- name: Vernon Handley
+links:
+  tidal:
+    url: https://tidal.com/track/376371176
+release:
+  album_title: English Music for Strings
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

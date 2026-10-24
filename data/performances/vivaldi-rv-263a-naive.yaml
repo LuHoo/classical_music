@@ -1,0 +1,18 @@
+id: 7573d44c45564dd988394d644c32b589
+work_id: e967bd3dbabc4726b62ae4f6a5a72b43
+performers:
+- name: Il Pomo d'Oro
+  role: ensemble
+- name: Riccardo Minasi
+  role: violin
+release:
+  label: Naive / Opus 111
+  catalogue_number: OP30533
+  album_title: Concerti per violino IV — L'imperatore
+source:
+  url: https://vivaldiedition.net/portfolio/vol-45-concerti-per-violin-iv-limperatore-2011/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: The Vivaldi Edition, volume 45. Album page verified 2026-09-28. RV 263a = Violin Concerto, alternative version of Op. 9 No. 4 (La cetra), recorded in full.
+links:
+  tidal:
+    url: https://tidal.com/album/92929122

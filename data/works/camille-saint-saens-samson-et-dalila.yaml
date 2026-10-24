@@ -1,0 +1,9 @@
+id: camille-saint-saens-samson-et-dalila
+work_group_id: camille-saint-saens-samson-et-dalila-group
+composer_id: camille-saint-saens
+title: Samson et Dalila
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://www.harmoniamundi.com/en/albums/saint-saens-symphonic-poems/
+catalogue:
+  opus: Op. 47

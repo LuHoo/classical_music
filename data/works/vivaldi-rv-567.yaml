@@ -1,0 +1,10 @@
+id: fc7b01f6bfa9452ab746ac7a334d4bd0
+work_group_id: 22389cdac51b495ca6aa4fb89a083e94
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Concerto, RV 567
+catalogue:
+  rv: RV 567
+  opus: Op. 3
+source:
+  file: docs/vivaldi.md
+  line: '16'

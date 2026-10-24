@@ -1,0 +1,9 @@
+id: "paul-hindemith-triosatz-work"
+work_group_id: "paul-hindemith-triosatz-group"
+composer_id: "paul-hindemith"
+title: "Triosatz"
+source:
+  file: "docs/hindemith.md"
+  line: "233"
+date_text: "1925 or 1930"
+category: "Chamber"

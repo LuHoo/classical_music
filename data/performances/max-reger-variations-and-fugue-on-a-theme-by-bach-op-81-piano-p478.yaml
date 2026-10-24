@@ -1,0 +1,13 @@
+id: max-reger-variations-and-fugue-on-a-theme-by-bach-op-81-piano-p478
+work_id: max-reger-variations-and-fugue-on-a-theme-by-bach-op-81
+performers:
+  - name: Eden Walker
+    role: piano
+links:
+  tidal:
+    url: https://tidal.com/track/356374472
+release:
+  album_title: 'Reger: Bach Variations, Op. 81, Träume am Kamin'
+source:
+  file: reports/playlist-import/piano/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/82853f8e-4fd6-42b6-b0a7-230da5ee86a1

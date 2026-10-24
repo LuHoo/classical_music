@@ -1,0 +1,8 @@
+id: dmitri-shostakovich-chamber-symphony-in-c-minor-group
+composer_id: dmitri-shostakovich
+title: Chamber Symphony in C minor
+source:
+  file: docs/shostakovich.md
+  line: '128'
+catalogue:
+  op: Op. 110a

@@ -1,0 +1,8 @@
+id: "igor-stravinsky-suite-italienne-k-048-group"
+composer_id: "igor-stravinsky"
+title: "Suite Italienne"
+source:
+  file: "docs/stravinsky.md"
+  line: "133"
+catalogue:
+  k: "K 048"

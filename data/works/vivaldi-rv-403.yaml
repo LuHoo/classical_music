@@ -1,0 +1,9 @@
+id: 31a677f770814d5b91200d140b66c5c3
+work_group_id: f3ede93cfadb4ddf8931e255c5cd5378
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Cello Concerto, RV 403
+catalogue:
+  rv: RV 403
+source:
+  url: https://vivaldiedition.net/portfolio/vol-31-concerti-per-violon%e2%80%90-cello-ii-2008/
+  file: reports/vivaldi-naive-edition/catalogue.json

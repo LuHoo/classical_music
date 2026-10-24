@@ -1,0 +1,22 @@
+id: anton-bruckner-symphony-no-4-in-eb-major-die-romantische-3-work-orf-vienna-rso-markus-poschner
+work_id: anton-bruckner-symphony-no-4-in-eb-major-die-romantische-2-work
+excerpt: Volksfest finale only
+performers:
+- artist_id: orf-vienna-rso
+  name: ORF Vienna RSO
+  role: performer
+- artist_id: markus-poschner
+  name: Markus Poschner
+  role: conductor
+source_performer_text: ORF Vienna RSO, Markus Poschner
+links:
+  tidal:
+    url: https://tidal.com/browse/track/384348628?u
+source:
+  file: docs/bruckner.md
+  line: '42'
+  url: https://capriccio.at/bruckner24-4-the-complete-versions-edition
+notes: >
+  Separately recorded 1878 Volksfest finale, edition Benjamin Korstvedt.
+  The historical Performance ID is retained after correcting its Work assignment.
+  This recommendation covers the finale, not a complete 1878 symphony recording.

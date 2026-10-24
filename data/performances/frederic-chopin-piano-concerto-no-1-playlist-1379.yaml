@@ -1,0 +1,14 @@
+id: frederic-chopin-piano-concerto-no-1-playlist-1379
+work_id: frederic-chopin-piano-concerto-no-1
+performers:
+- name: Claudio Arrau & Frederic Chopin & WDR Symphony Orchestra
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/29345542
+release:
+  album_title: 'Chopin: Piano Concerto No. 1, The 4 Ballades'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+excerpt: Movements I and II only

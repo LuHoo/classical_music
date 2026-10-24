@@ -1,0 +1,11 @@
+id: "igor-stravinsky-pater-noster-k-039-work"
+work_group_id: "igor-stravinsky-pater-noster-k-039-group"
+composer_id: "igor-stravinsky"
+title: "Pater Noster"
+source:
+  file: "docs/stravinsky.md"
+  line: "158"
+catalogue:
+  k: "K 039"
+date_text: "1926"
+category: "Choral"

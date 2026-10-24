@@ -1,0 +1,9 @@
+id: carl-maria-von-weber-piano-concerto-no-1-in-c-major-op-11-j-98
+work_group_id: 
+  carl-maria-von-weber-piano-concerto-no-1-in-c-major-op-11-j-98-group
+composer_id: carl-maria-von-weber
+title: Piano Concerto No. 1 in C Major, Op. 11, J. 98
+source:
+  file: docs/weber.md
+catalogue:
+  op: '11'

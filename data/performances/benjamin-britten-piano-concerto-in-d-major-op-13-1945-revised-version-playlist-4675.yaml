@@ -1,0 +1,16 @@
+id: 
+  benjamin-britten-piano-concerto-in-d-major-op-13-1945-revised-version-playlist-4675
+work_id: benjamin-britten-piano-concerto-in-d-major-op-13-1945-revised-version
+performers:
+- name: Ilan Volkov
+- name: BBC Scottish Symphony Orchestra
+- name: Steven Osborne
+- name: Scott Dickinson
+links:
+  tidal:
+    url: https://tidal.com/track/306149861
+release:
+  album_title: 'Britten: Piano Concerto; Diversions; Young Apollo'
+source:
+  file: reports/playlist-import/best-classical/window-4001-5518.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

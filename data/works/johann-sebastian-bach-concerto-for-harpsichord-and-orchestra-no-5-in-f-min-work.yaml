@@ -1,0 +1,11 @@
+id: "johann-sebastian-bach-concerto-for-harpsichord-and-orchestra-no-5-in-f-min-work"
+work_group_id: "johann-sebastian-bach-concerto-for-harpsichord-and-orchestra-no-5-in-f-min-group"
+composer_id: "johann-sebastian-bach"
+title: "Concerto for harpsichord and orchestra No. 5 in F min."
+source:
+  file: "docs/bachJS.md"
+  line: "48"
+catalogue:
+  bwv: "BWV 1056"
+date_text: "c.1738"
+category: "Orchestral"

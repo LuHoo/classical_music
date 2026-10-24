@@ -1,0 +1,18 @@
+id: johann-sebastian-bach-orchestral-suite-no-3-in-d-maj-work-chamber-c406
+work_id: johann-sebastian-bach-orchestral-suite-no-3-in-d-maj-work
+performers:
+  - name: Martin Fröst
+  - name: Sébastien Dubé
+  - name: Jonas Nordberg
+profile: clarinet, double bass and theorbo arrangement
+links:
+  tidal:
+    url: https://tidal.com/track/448367330
+release:
+  album_title: B.A.C.H.
+source:
+  file: reports/playlist-import/chamber/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/a2327106-07fd-4433-8bd3-d8a5c251c69a
+  unit_id: C406
+  curator_decision: https://github.com/LuHoo/classical_music/issues/259#issuecomment-5984118360
+excerpt: Air only (clarinet, double bass and theorbo)

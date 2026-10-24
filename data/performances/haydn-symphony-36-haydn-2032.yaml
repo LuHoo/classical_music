@@ -1,0 +1,19 @@
+id: eed9c13a2bf34c918640d9bc4bbcc445
+work_id: 77c0d585f9884e08a938dba4876a5347
+performers:
+- name: Kammerorchester Basel
+  role: orchestra
+- name: Giovanni Antonini
+  role: conductor
+release:
+  label: Alpha Classics
+  catalogue_number: ALPHA1146
+  album_title: 'Haydn 2032, Vol. 17: Per il Luigi'
+source:
+  url: https://www.prestomusic.com/classical/products/9769890--haydn-2032-vol-17-per-il-luigi
+  file: reports/haydn-2032/catalogue.json
+links:
+  tidal:
+    url: https://tidal.com/album/432606500
+notes: Haydn 2032, volume 17. Sources and Tidal album metadata checked 2026-09-30. Album link covers this
+  work; it is not a work-specific track link.

@@ -1,0 +1,13 @@
+id: einojuhani-rautavaara-modificata-playlist-5013
+work_id: einojuhani-rautavaara-modificata
+performers:
+- name: Helsinki Philharmonic Orchestra
+- name: John Storgårds
+links:
+  tidal:
+    url: https://tidal.com/track/284434620
+release:
+  album_title: 'Rautavaara: Modificata, Incantations & Towards the Horizon'
+source:
+  file: reports/playlist-import/best-classical/window-4001-5518.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

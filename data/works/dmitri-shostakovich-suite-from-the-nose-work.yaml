@@ -1,0 +1,11 @@
+id: dmitri-shostakovich-suite-from-the-nose-work
+work_group_id: dmitri-shostakovich-suite-from-the-nose-group
+composer_id: dmitri-shostakovich
+title: Suite from The Nose
+source:
+  file: docs/shostakovich.md
+  line: '22'
+catalogue:
+  op: Op. 15a
+date_text: 1927–1928
+category: Orchestral

@@ -1,0 +1,13 @@
+id: claude-debussy-le-martyre-de-saint-sebastien-fragments-symphoniques-cd-130-playlist-2834
+work_id: claude-debussy-le-martyre-de-saint-sebastien-fragments-symphoniques-cd-130
+performers:
+- name: Orchestre philharmonique de Radio France
+- name: Mikko Franck
+links:
+  tidal:
+    url: https://tidal.com/track/215749044
+release:
+  album_title: 'Debussy: La Damoiselle élue, Le martyre de Saint Sébastien & Nocturnes'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

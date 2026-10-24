@@ -1,0 +1,10 @@
+id: fanny-hensel
+name: Fanny Hensel
+roles:
+- composer
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://www.opusklassiek.nl/cd-recensies/cd-aw/mendelssohn21.htm
+aliases:
+- Fanny Mendelssohn
+- Fanny Mendelssohn Hensel

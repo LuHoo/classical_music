@@ -1,0 +1,8 @@
+id: "igor-stravinsky-concerto-in-e-flat-dumbarton-oaks-k-060-group"
+composer_id: "igor-stravinsky"
+title: "Concerto in E-flat Dumbarton Oaks"
+source:
+  file: "docs/stravinsky.md"
+  line: "83"
+catalogue:
+  k: "K 060"

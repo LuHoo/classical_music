@@ -1,0 +1,11 @@
+id: "paul-hindemith-acht-gesange-op-18-work"
+work_group_id: "paul-hindemith-acht-gesange-op-18-group"
+composer_id: "paul-hindemith"
+title: "Acht Gesänge"
+source:
+  file: "docs/hindemith.md"
+  line: "154"
+catalogue:
+  opus: "Op. 18"
+date_text: "1920"
+category: "Vocal -- selection"

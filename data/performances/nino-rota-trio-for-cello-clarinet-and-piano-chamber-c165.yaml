@@ -1,0 +1,14 @@
+id: nino-rota-trio-for-cello-clarinet-and-piano-chamber-c165
+work_id: nino-rota-trio-for-cello-clarinet-and-piano
+performers:
+  - name: Aurélien Pascal
+  - name: Paul Meyer
+  - name: Eric Le Sage
+links:
+  tidal:
+    url: https://tidal.com/track/183220047
+release:
+  album_title: 'Nino Rota: Chamber Music'
+source:
+  file: reports/playlist-import/chamber/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/a2327106-07fd-4433-8bd3-d8a5c251c69a

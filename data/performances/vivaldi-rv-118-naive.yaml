@@ -1,0 +1,19 @@
+id: 89092f4893b84b619e23fe5c47b22225
+work_id: 13ddacaafe4046e18b5e518fdd2f7b3d
+performers:
+- name: Accademia Bizantina
+  role: ensemble
+- name: Ottavio Dantone
+  role: conductor
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP30570
+  album_title: Concerti per archi III e concerti per viola d'amore
+source:
+  url: https://vivaldiedition.net/portfolio/vol-56-concerti-per-archi-iii-e-concerti-per-viola-damore-2018/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: The Vivaldi Edition, volume 56. Album page verified 2026-09-28. RV 744 wordt in trackmetadata alleen
+  als verwant werk bij RV 396 genoemd en is daarom niet als zelfstandig opgenomen werk toegevoegd.
+links:
+  tidal:
+    url: https://tidal.com/album/87860696

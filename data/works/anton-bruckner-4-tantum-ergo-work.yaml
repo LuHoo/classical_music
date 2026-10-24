@@ -1,0 +1,11 @@
+id: "anton-bruckner-4-tantum-ergo-work"
+work_group_id: "anton-bruckner-4-tantum-ergo-group"
+composer_id: "anton-bruckner"
+title: "4 Tantum ergo"
+source:
+  file: "docs/bruckner.md"
+  line: "84"
+catalogue:
+  wab: "WAB 41"
+date_text: "1888"
+category: "Vocal"

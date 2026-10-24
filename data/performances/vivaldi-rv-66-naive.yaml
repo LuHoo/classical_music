@@ -1,0 +1,16 @@
+id: 61d3777a9c7342379bc075f9229cccd6
+work_id: 24c513f0c1d34ef38ce655fccf84ac7d
+performers:
+- name: L'Estravagante
+  role: ensemble
+release:
+  label: Naive / Opus 111
+  catalogue_number: OP30535
+  album_title: Sonate da camera a tre, op. 1
+source:
+  url: https://vivaldiedition.net/portfolio/vol-44-sonate-da-camera-a-tre-opus-1-2011/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: The Vivaldi Edition, volume 44. Album page verified 2026-09-28. RV 66 = Sonata No. 4 in E major (Op. 1).
+links:
+  tidal:
+    url: https://tidal.com/album/91797772

@@ -1,0 +1,12 @@
+id: "igor-stravinsky-quatre-etudes-for-orchestra-k-051-work"
+work_group_id: "igor-stravinsky-quatre-etudes-for-orchestra-k-051-group"
+composer_id: "igor-stravinsky"
+title: "Quatre études for orchestra"
+source:
+  file: "docs/stravinsky.md"
+  line: "81"
+catalogue:
+  k: "K 051"
+date_text: "1928, arrangement of Three Pieces for String Quartet and Étude pour pianola"
+category: "Orchestral"
+notes: "Pilot migration: source text suggests a version, arrangement, revision, suite, or completion boundary that should be reviewed."

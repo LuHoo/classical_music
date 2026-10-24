@@ -1,0 +1,11 @@
+id: sergei-prokofiev-the-ugly-duckling-work
+work_group_id: sergei-prokofiev-the-ugly-duckling-group
+composer_id: sergei-prokofiev
+title: The Ugly Duckling
+source:
+  file: docs/prokofiev.md
+  line: '30'
+catalogue:
+  op: Op. 18
+date_text: '1914'
+category: Orchestral

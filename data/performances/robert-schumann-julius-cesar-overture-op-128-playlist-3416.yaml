@@ -1,0 +1,13 @@
+id: robert-schumann-julius-cesar-overture-op-128-playlist-3416
+work_id: robert-schumann-julius-cesar-overture-op-128
+performers:
+- name: Swedish Chamber Orchestra
+- name: Thomas Dausgaard
+links:
+  tidal:
+    url: https://tidal.com/track/341644187
+release:
+  album_title: 'Schumann: The Symphonies & Overtures'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

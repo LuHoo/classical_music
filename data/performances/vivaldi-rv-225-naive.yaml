@@ -1,0 +1,19 @@
+id: 228a62738cf84fc9a7fb1ad945af0741
+work_id: 3c0b6ff4235c4a5686a1ec0db379e964
+performers:
+- name: Le Concert de la Loge
+  role: ensemble
+- name: Julien Chauvin
+  role: violin
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP7546
+  album_title: Concerti per violino X — Intorno a Pisendel
+source:
+  url: https://vivaldiedition.net/portfolio/vivaldi-edition/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: The Vivaldi Edition, volume 69. Album page verified 2026-09-28. RV 314 is het concerto als geheel; het
+  Adagio gebruikt een variant aangeduid als RV 314a.
+links:
+  tidal:
+    url: https://tidal.com/album/238630839

@@ -1,0 +1,19 @@
+id: ed5ac16ef4dc489d8fbed2a394665e3e
+work_id: 09ade39d93ce4a6f9f72324c8ca49939
+performers:
+- name: Le Concert des Nations
+  role: ensemble
+- name: Jordi Savall
+  role: conductor
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP30471
+  album_title: Farnace
+source:
+  url: https://vivaldiedition.net/portfolio/vol-37-farnace-2009/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: The Vivaldi Edition, volume 37. Album page verified 2026-09-28. Versie-aanduiding RV 711-D volgens de
+  officiële uitgave.
+links:
+  tidal:
+    url: https://tidal.com/album/91797655

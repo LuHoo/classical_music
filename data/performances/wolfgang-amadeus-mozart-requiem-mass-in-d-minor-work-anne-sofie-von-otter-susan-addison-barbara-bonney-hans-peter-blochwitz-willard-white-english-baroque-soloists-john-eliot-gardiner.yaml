@@ -1,0 +1,31 @@
+id: wolfgang-amadeus-mozart-requiem-mass-in-d-minor-work-anne-sofie-von-otter-susan-addison-barbara-bonney-hans-peter-blochwitz-willard-white-english-baroque-soloists-john-eliot-gardiner
+work_id: wolfgang-amadeus-mozart-requiem-mass-in-d-minor-work
+performers:
+- artist_id: anne-sofie-von-otter
+  name: Anne Sofie von Otter
+  role: performer
+- artist_id: susan-addison
+  name: Susan Addison
+  role: performer
+- artist_id: barbara-bonney
+  name: Barbara Bonney
+  role: performer
+- artist_id: hans-peter-blochwitz
+  name: Hans Peter Blochwitz
+  role: performer
+- artist_id: willard-white
+  name: Willard White
+  role: performer
+- artist_id: english-baroque-soloists
+  name: English Baroque Soloists
+  role: performer
+- artist_id: john-eliot-gardiner
+  name: John Eliot Gardiner
+  role: performer
+source_performer_text: Anne Sofie von Otter, Susan Addison, Barbara Bonney, Hans Peter Blochwitz, Willard White, English Baroque Soloists, John Eliot Gardiner
+links:
+  tidal:
+    url: http://www.tidal.com/track/4322229
+source:
+  file: /Users/Lucas_new/.codex/.chatgpt-projects/g-p-6a500123ac548191ab37db95c0d285a2/classical_music/docs/mozart.md
+  line: '19'

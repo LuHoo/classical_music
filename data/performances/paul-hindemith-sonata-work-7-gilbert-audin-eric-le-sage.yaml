@@ -1,0 +1,13 @@
+id: "paul-hindemith-sonata-work-7-gilbert-audin-eric-le-sage"
+work_id: "paul-hindemith-sonata-work-7"
+performers:
+  - name: "Gilbert Audin"
+    role: "performer"
+  - name: "Eric Le Sage"
+    role: "conductor"
+links:
+  tidal:
+    url: "https://tidal.com/album/179722104"
+source:
+  file: "docs/hindemith.md"
+  line: "312"

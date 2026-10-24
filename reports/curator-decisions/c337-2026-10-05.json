@@ -1,0 +1,12 @@
+{
+  "issue_url": "https://github.com/LuHoo/classical_music/issues/254",
+  "comment_url": "https://github.com/LuHoo/classical_music/issues/254#issuecomment-5989259705",
+  "selected_units": [
+    "C337"
+  ],
+  "not_selected_units": [
+    "C282"
+  ],
+  "performance_id": "bohuslav-martinu-cello-sonata-no-1-h-277-chamber-c337",
+  "implementation_pr": "https://github.com/LuHoo/classical_music/pull/299"
+}

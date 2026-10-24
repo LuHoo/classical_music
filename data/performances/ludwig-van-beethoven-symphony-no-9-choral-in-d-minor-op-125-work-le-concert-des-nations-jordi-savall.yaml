@@ -1,0 +1,13 @@
+id: "ludwig-van-beethoven-symphony-no-9-choral-in-d-minor-op-125-work-le-concert-des-nations-jordi-savall"
+work_id: "ludwig-van-beethoven-symphony-no-9-choral-in-d-minor-op-125-work"
+performers:
+  - name: "Le Concert des Nations"
+    role: "orchestra"
+  - name: "Jordi Savall"
+    role: "conductor"
+links:
+  tidal:
+    url: "http://www.tidal.com/track/213891370"
+source:
+  file: "docs/beethoven.md"
+  line: "92"

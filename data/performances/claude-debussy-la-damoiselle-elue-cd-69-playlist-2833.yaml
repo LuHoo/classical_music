@@ -1,0 +1,16 @@
+id: claude-debussy-la-damoiselle-elue-cd-69-playlist-2833
+work_id: claude-debussy-la-damoiselle-elue-cd-69
+performers:
+- name: Orchestre philharmonique de Radio France
+- name: Maîtrise de Radio France
+- name: Mikko Franck
+- name: Melody Louledjian
+- name: Emanuela Pascu
+links:
+  tidal:
+    url: https://tidal.com/track/215749043
+release:
+  album_title: 'Debussy: La Damoiselle élue, Le martyre de Saint Sébastien & Nocturnes'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

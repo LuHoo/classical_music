@@ -1,0 +1,14 @@
+id: "johann-sebastian-bach-orchestral-suite-no-1-in-c-maj-work"
+work_group_id: "johann-sebastian-bach-orchestral-suite-no-1-in-c-maj-group"
+composer_id: "johann-sebastian-bach"
+title: "Orchestral Suite No. 1 in C maj."
+source:
+  file: "docs/bachJS.md"
+  line: "72"
+catalogue:
+  bwv: "BWV 1066"
+date_text: "May 1724–End 1725"
+category: "Orchestral"
+external_ids:
+  musicbrainz: "1ef8a483-50f5-45a3-8463-c86263654d2c"
+notes: "MusicBrainz supports this as an ordinary parent Work; the open migration item is a performance-candidate decision, not a Work Group ambiguity."

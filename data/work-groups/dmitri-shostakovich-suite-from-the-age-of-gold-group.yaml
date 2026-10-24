@@ -1,0 +1,8 @@
+id: dmitri-shostakovich-suite-from-the-age-of-gold-group
+composer_id: dmitri-shostakovich
+title: Suite from The Age of Gold
+source:
+  file: docs/shostakovich.md
+  line: '28'
+catalogue:
+  op: Op. 22a

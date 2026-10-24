@@ -1,0 +1,9 @@
+id: vincent-d-indy-souvenirs-op-62
+work_group_id: vincent-d-indy-souvenirs-op-62-group
+composer_id: vincent-d-indy
+title: Souvenirs, Op. 62
+source:
+  file: docs/dindy.md
+  url: https://en.wikipedia.org/wiki/List_of_compositions_by_Vincent_d%27Indy
+catalogue:
+  op: '62'

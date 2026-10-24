@@ -1,0 +1,9 @@
+id: 0f4b79fa86114cfe93e1c0e9c484f5d5
+work_group_id: 1e17425a4dd74427a9932bdcefaf4158
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 187
+catalogue:
+  rv: RV 187
+source:
+  url: https://vivaldiedition.net/portfolio/vol-63-concerti-per-violino-viii-il-teatro/
+  file: reports/vivaldi-naive-edition/catalogue.json

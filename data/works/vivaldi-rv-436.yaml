@@ -1,0 +1,9 @@
+id: bcb4715e512a4af994890495b40c73c3
+work_group_id: 8abf9bf800d3491390985bce04e533dd
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Flute Concerto, RV 436
+catalogue:
+  rv: RV 436
+source:
+  url: https://vivaldiedition.net/portfolio/vol-3-concerti-per-flauto-2002/
+  file: reports/vivaldi-naive-edition/catalogue.json

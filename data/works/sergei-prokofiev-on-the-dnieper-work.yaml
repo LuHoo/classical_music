@@ -1,0 +1,11 @@
+id: sergei-prokofiev-on-the-dnieper-work
+work_group_id: sergei-prokofiev-on-the-dnieper-group
+composer_id: sergei-prokofiev
+title: On the Dnieper
+source:
+  file: docs/prokofiev.md
+  line: '90'
+catalogue:
+  op: Op. 51
+date_text: '1931'
+category: Orchestral

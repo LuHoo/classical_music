@@ -1,0 +1,17 @@
+id: einojuhani-rautavaara-angel-of-dusk-playlist-1460
+work_id: einojuhani-rautavaara-angel-of-dusk
+performers:
+- name: Esko Laine
+  role: performer
+- name: Tapiola Sinfonietta
+  role: performer
+- name: Jean-Jacques Kantorow
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/341706512
+release:
+  album_title: 'Rautavaara: Angel of Dusk / Symphony No. 2 / Suomalainen Myytti / Pelimannit'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

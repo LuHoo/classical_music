@@ -1,0 +1,25 @@
+id: 
+  frank-martin-concerto-for-7-wind-instruments-percussion-strings-playlist-4726
+work_id: frank-martin-concerto-for-7-wind-instruments-percussion-strings
+performers:
+- name: Jacques Zoon
+- name: Jan Spronk
+- name: George Pieterson
+- name: Joep Terwey
+- name: Jakob Slagter
+- name: Peter Masseurs
+- name: Cees Blokker
+- name: Marinus Komst
+- name: Royal Concertgebouw Orchestra
+  artist_id: royal-concertgebouw-orchestra
+  role: orchestra
+- name: Riccardo Chailly
+links:
+  tidal:
+    url: https://tidal.com/track/50610128
+release:
+  album_title: 'Martin: Ballades; Concerto For Winds'
+source:
+  file: reports/playlist-import/best-classical/window-4001-5518.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+version_assignment: unspecified

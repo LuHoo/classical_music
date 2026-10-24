@@ -1,0 +1,16 @@
+id: 6fbeeb04f7284365b9137eebdf641119
+work_id: ff669f7a227344459925a3a4db41e54e
+performers:
+- name: L'Estravagante
+  role: ensemble
+release:
+  label: Naive / Opus 111
+  catalogue_number: OP30535
+  album_title: Sonate da camera a tre, op. 1
+source:
+  url: https://vivaldiedition.net/portfolio/vol-44-sonate-da-camera-a-tre-opus-1-2011/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: The Vivaldi Edition, volume 44. Album page verified 2026-09-28. RV 79 = Sonata No. 11 in B minor (Op. 1).
+links:
+  tidal:
+    url: https://tidal.com/album/91797772

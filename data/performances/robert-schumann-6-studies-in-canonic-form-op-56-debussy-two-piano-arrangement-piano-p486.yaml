@@ -1,0 +1,15 @@
+id: robert-schumann-6-studies-in-canonic-form-op-56-debussy-two-piano-arrangement-piano-p486
+work_id: robert-schumann-6-studies-in-canonic-form-op-56-debussy-two-piano-arrangement
+performers:
+  - name: Tessa Uys
+    role: piano
+  - name: Ben Schoeman
+    role: piano
+links:
+  tidal:
+    url: https://tidal.com/track/187231876
+release:
+  album_title: Beethoven Symphonies, Vol. 1
+source:
+  file: reports/playlist-import/piano/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/82853f8e-4fd6-42b6-b0a7-230da5ee86a1

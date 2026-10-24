@@ -1,0 +1,19 @@
+id: 73d5dc5222b94f6c83af994c29256cca
+work_id: a9d6c3f8a9ca468a85869261c15ef863
+performers:
+- name: Kammerorchester Basel
+  role: orchestra
+- name: Giovanni Antonini
+  role: conductor
+release:
+  label: Alpha Classics
+  catalogue_number: ALPHA696
+  album_title: 'Haydn 2032, Vol. 15: La Reine'
+source:
+  url: https://www.prestomusic.com/classical/products/9609348--haydn-2032-vol-15-la-reine
+  file: reports/haydn-2032/catalogue.json
+links:
+  tidal:
+    url: https://tidal.com/album/347594506
+notes: Haydn 2032, volume 15. Sources and Tidal album metadata checked 2026-09-30. Album link covers this
+  work; it is not a work-specific track link.

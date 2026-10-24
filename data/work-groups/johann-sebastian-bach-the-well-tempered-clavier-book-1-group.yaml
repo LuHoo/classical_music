@@ -1,0 +1,8 @@
+id: "johann-sebastian-bach-the-well-tempered-clavier-book-1-group"
+composer_id: "johann-sebastian-bach"
+title: "The Well-Tempered Clavier, Book 1"
+source:
+  file: "docs/bachJS.md"
+  line: "114"
+catalogue:
+  bwv: "BWV 846"

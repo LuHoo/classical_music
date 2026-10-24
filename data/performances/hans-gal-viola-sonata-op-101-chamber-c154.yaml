@@ -1,0 +1,13 @@
+id: hans-gal-viola-sonata-op-101-chamber-c154
+work_id: hans-gal-viola-sonata-op-101
+performers:
+  - name: Emma Wernig
+  - name: Albert Cano Smit
+links:
+  tidal:
+    url: https://tidal.com/track/188807991
+release:
+  album_title: The Viennese Viola
+source:
+  file: reports/playlist-import/chamber/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/a2327106-07fd-4433-8bd3-d8a5c251c69a

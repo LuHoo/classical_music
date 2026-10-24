@@ -1,0 +1,12 @@
+id: dmitri-shostakovich-symphony-no-11-in-g-minor-the-year-1905-work
+work_group_id: dmitri-shostakovich-symphony-no-11-in-g-minor-the-year-1905-group
+composer_id: dmitri-shostakovich
+title: Symphony No. 11 in G minor, The Year 1905
+source:
+  file: docs/shostakovich.md
+  line: '124'
+catalogue:
+  op: Op. 103
+date_text: '1957'
+category: Orchestral
+gem: true

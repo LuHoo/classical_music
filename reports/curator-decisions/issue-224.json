@@ -1,0 +1,21 @@
+{
+  "issue_url": "https://github.com/LuHoo/classical_music/issues/224",
+  "decision_source": "curator",
+  "curator": "LAH",
+  "recorded_at": "2026-10-24T06:58:14.903Z",
+  "work_id": "2e53351f651a4a918673980080d22345",
+  "rv": "379",
+  "choice": "naive",
+  "rationale": "Empty recommendation slot; the Vivaldi Edition performance is adopted directly as the recommendation.",
+  "decision_comment": "https://github.com/LuHoo/classical_music/issues/224#issuecomment-6381171325",
+  "docs_updates": [
+    "docs/vivaldi.md:34"
+  ],
+  "performance_file": "data/performances/vivaldi-rv-379-naive.yaml",
+  "replaced_performances": [],
+  "evidence": [
+    "https://vivaldiedition.net/portfolio/vol-49-concerti-per-violino-v-per-pisendel-2012/",
+    "https://tidal.com/album/92205621"
+  ],
+  "implementation_pr": 339
+}

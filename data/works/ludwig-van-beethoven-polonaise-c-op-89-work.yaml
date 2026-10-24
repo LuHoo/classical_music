@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-polonaise-c-op-89-work"
+work_group_id: "ludwig-van-beethoven-polonaise-c-op-89-group"
+composer_id: "ludwig-van-beethoven"
+title: "Polonaise, C"
+source:
+  file: "docs/beethoven.md"
+  line: "456"
+catalogue:
+  opus: "Op. 89"
+date_text: "1814"
+category: "Piano"

@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-piano-quartet-no-2-in-d-major-woo-36-2-work"
+work_group_id: "ludwig-van-beethoven-piano-quartet-no-2-in-d-major-woo-36-2-group"
+composer_id: "ludwig-van-beethoven"
+title: "Piano Quartet No. 2 in D major"
+source:
+  file: "docs/beethoven.md"
+  line: "98"
+catalogue:
+  woo: "WoO 36/2"
+date_text: "1785"
+category: "Chamber"

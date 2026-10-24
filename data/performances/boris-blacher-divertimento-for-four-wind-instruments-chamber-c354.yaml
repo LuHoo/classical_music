@@ -1,0 +1,12 @@
+id: boris-blacher-divertimento-for-four-wind-instruments-chamber-c354
+work_id: boris-blacher-divertimento-for-four-wind-instruments
+performers:
+  - name: Orchester-Akademie des Berliner Philharmonischen Orchesters
+links:
+  tidal:
+    url: https://tidal.com/track/2075060
+release:
+  album_title: 'Boris Blacher: Kammermusik'
+source:
+  file: reports/playlist-import/chamber/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/a2327106-07fd-4433-8bd3-d8a5c251c69a

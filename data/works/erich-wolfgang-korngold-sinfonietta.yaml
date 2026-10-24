@@ -1,0 +1,9 @@
+id: erich-wolfgang-korngold-sinfonietta
+work_group_id: erich-wolfgang-korngold-sinfonietta-group
+composer_id: erich-wolfgang-korngold
+title: Sinfonietta
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://www.ondine.net/index.php?cid=2.2&lid=en&oid=4918
+catalogue:
+  opus: Op. 5

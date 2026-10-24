@@ -1,0 +1,12 @@
+id: ferruccio-busoni-solo-dramatique-op-13-chamber-c054
+work_id: ferruccio-busoni-solo-dramatique-op-13
+performers:
+  - name: Dieter Klöcker
+links:
+  tidal:
+    url: https://tidal.com/track/104596293
+release:
+  album_title: 'Busoni: Clarinet Chamber Music'
+source:
+  file: reports/playlist-import/chamber/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/a2327106-07fd-4433-8bd3-d8a5c251c69a

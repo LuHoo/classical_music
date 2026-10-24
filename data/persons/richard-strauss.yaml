@@ -1,0 +1,7 @@
+id: richard-strauss
+name: Richard Strauss
+roles:
+- composer
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://www.pentatonemusic.com/product/strauss-eine-alpensinfonie/

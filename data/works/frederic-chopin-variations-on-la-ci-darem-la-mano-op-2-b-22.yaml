@@ -1,0 +1,9 @@
+id: frederic-chopin-variations-on-la-ci-darem-la-mano-op-2-b-22
+work_group_id: frederic-chopin-variations-on-la-ci-darem-la-mano-op-2-b-22-group
+composer_id: frederic-chopin
+title: Variations on "Là ci darem la mano", Op. 2, B. 22
+source:
+  file: reports/playlist-import/best-classical/window-4001-5518.json
+  url: https://bridgerecords.com/products/9547
+catalogue:
+  op: '2'

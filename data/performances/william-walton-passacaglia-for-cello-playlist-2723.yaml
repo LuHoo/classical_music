@@ -1,0 +1,15 @@
+id: william-walton-passacaglia-for-cello-playlist-2723
+work_id: william-walton-passacaglia-for-cello
+performers:
+- name: Raphael Wallfisch
+  artist_id: raphael-wallfisch
+  role: soloist
+links:
+  tidal:
+    url: https://tidal.com/track/376251367
+release:
+  album_title: 'Walton: Cello Concerto / Partita / Improvisations On an Impromptu of Benjamin Britten
+    / Passacaglia'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

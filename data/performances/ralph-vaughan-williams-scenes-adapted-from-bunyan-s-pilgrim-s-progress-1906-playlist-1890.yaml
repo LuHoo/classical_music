@@ -1,0 +1,33 @@
+id: ralph-vaughan-williams-scenes-adapted-from-bunyan-s-pilgrim-s-progress-1906-playlist-1890
+work_id: ralph-vaughan-williams-scenes-adapted-from-bunyan-s-pilgrim-s-progress-1906
+performers:
+- name: BBC Symphony Orchestra
+  role: performer
+- name: Martyn Brabbins
+  role: performer
+- name: Emily Portman
+  role: performer
+- name: BBC Symphony Chorus
+  role: performer
+- name: Kitty Whately
+  role: performer
+- name: Christopher Bowen
+  role: performer
+- name: Andrew Rupp
+  role: performer
+- name: Tom Raskin
+  role: performer
+- name: Jamie W. Hall
+  role: performer
+- name: Marcus Farnsworth
+  role: performer
+- name: Georgina Wheatley
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/340821956
+release:
+  album_title: "Vaughan Williams: Symphony No. 5 & Scenes from Pilgrim's Progress"
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

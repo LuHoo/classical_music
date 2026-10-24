@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-string-quartet-no-12-in-e-flat-major-op-127-work"
+work_group_id: "ludwig-van-beethoven-string-quartet-no-12-in-e-flat-major-op-127-group"
+composer_id: "ludwig-van-beethoven"
+title: "String Quartet No. 12 in E♭ major"
+source:
+  file: "docs/beethoven.md"
+  line: "274"
+catalogue:
+  opus: "Op. 127"
+date_text: "1824–6 March 1825"
+category: "Chamber"

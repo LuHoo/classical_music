@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-symphony-no-8-in-f-major-op-93-group-2"
+composer_id: "ludwig-van-beethoven"
+title: "Symphony No. 8 in F major"
+source:
+  file: "docs/beethoven.md"
+  line: "498"
+catalogue:
+  opus: "Op. 93"

@@ -1,0 +1,9 @@
+id: 74a691dfc98c45dfaf5136cfcf9b6b84
+work_group_id: bc785cde2fe24d1f9f5b247a48bdb0aa
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 283
+catalogue:
+  rv: RV 283
+source:
+  url: https://vivaldiedition.net/portfolio/vol-67-concerti-per-violino-ix-le-nuove-vie/
+  file: reports/vivaldi-naive-edition/catalogue.json

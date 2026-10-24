@@ -1,0 +1,20 @@
+id: edvard-grieg-a-swan-playlist-1606
+work_id: edvard-grieg-a-swan
+performers:
+- name: Barbara Bonney
+  role: performer
+  artist_id: barbara-bonney
+- name: Gothenburg Symphony Orchestra
+  role: orchestra
+  artist_id: gothenburg-symphony-orchestra
+- name: Neeme Järvi
+  role: conductor
+  artist_id: neeme-jarvi
+links:
+  tidal:
+    url: https://tidal.com/track/4360546
+release:
+  album_title: 'Grieg: Complete Music with Orchestra'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

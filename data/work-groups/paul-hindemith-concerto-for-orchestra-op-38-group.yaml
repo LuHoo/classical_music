@@ -1,0 +1,8 @@
+id: "paul-hindemith-concerto-for-orchestra-op-38-group"
+composer_id: "paul-hindemith"
+title: "Concerto for Orchestra"
+source:
+  file: "docs/hindemith.md"
+  line: "62"
+catalogue:
+  opus: "Op. 38"

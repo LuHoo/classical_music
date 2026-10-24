@@ -1,0 +1,14 @@
+id: henryk-gorecki-concerto-for-harpsichord-and-string-orchestra-op-40-playlist-2172
+work_id: henryk-gorecki-concerto-for-harpsichord-and-string-orchestra-op-40
+performers:
+- name: London Sinfonietta
+- name: Markus Stenz
+- name: Elżbieta Chojnacka
+links:
+  tidal:
+    url: https://tidal.com/track/2110748
+release:
+  album_title: 'Górecki, Henryk: Kleines Requiem Für Eine Polka/Harpsichord Concerto/Good Night'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

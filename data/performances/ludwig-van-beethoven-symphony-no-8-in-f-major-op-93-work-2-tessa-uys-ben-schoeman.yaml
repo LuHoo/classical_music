@@ -1,0 +1,13 @@
+id: "ludwig-van-beethoven-symphony-no-8-in-f-major-op-93-work-2-tessa-uys-ben-schoeman"
+work_id: "ludwig-van-beethoven-symphony-no-8-in-f-major-op-93-work-2"
+performers:
+  - name: "Tessa Uys"
+    role: "performer"
+  - name: "Ben Schoeman"
+    role: "conductor"
+links:
+  tidal:
+    url: "https://tidal.com/browse/track/359255115?u"
+source:
+  file: "docs/beethoven.md"
+  line: "498"

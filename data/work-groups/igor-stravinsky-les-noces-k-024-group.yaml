@@ -1,0 +1,8 @@
+id: "igor-stravinsky-les-noces-k-024-group"
+composer_id: "igor-stravinsky"
+title: "Les Noces"
+source:
+  file: "docs/stravinsky.md"
+  line: "156"
+catalogue:
+  k: "K 024"

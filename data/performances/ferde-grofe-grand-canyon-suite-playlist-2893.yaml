@@ -1,0 +1,12 @@
+id: ferde-grofe-grand-canyon-suite-playlist-2893
+work_id: ferde-grofe-grand-canyon-suite
+performers:
+- name: Rochester Philharmonic Orchestra
+links:
+  tidal:
+    url: https://tidal.com/track/65178260
+release:
+  album_title: Grand Canyon Suite & Concerto for Piano and Orchestra
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

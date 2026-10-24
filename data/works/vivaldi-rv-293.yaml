@@ -1,0 +1,11 @@
+id: f5a80f20fc1b4c93b8601ea10d04df24
+work_group_id: 07a59003bfb646b78c7788ccace51316
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 293
+catalogue:
+  rv: RV 293
+  opus: Op. 8
+source:
+  file: docs/vivaldi.md
+  line: '26'
+gem: true

@@ -1,0 +1,8 @@
+id: "johann-sebastian-bach-concerto-for-harpsichord-and-orchestra-no-1-early-version-in-d-min-group"
+composer_id: "johann-sebastian-bach"
+title: "Concerto for harpsichord and orchestra No. 1(early version) in D min."
+source:
+  file: "docs/bachJS.md"
+  line: "40"
+catalogue:
+  bwv: "BWV 1052.1"

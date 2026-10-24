@@ -1,0 +1,10 @@
+id: 05540ad140ed4f1599050c86c6e1deca
+work_group_id: c7dfd2b790a7475cb3f2327053e8fdc7
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Chamber Sonata, RV 78
+catalogue:
+  rv: RV 78
+  opus: Op. 1
+source:
+  url: https://vivaldiedition.net/portfolio/vol-44-sonate-da-camera-a-tre-opus-1-2011/
+  file: reports/vivaldi-naive-edition/catalogue.json

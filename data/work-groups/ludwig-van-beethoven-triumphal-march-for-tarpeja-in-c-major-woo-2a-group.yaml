@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-triumphal-march-for-tarpeja-in-c-major-woo-2a-group"
+composer_id: "ludwig-van-beethoven"
+title: "Triumphal March for \"Tarpeja\" in C major"
+source:
+  file: "docs/beethoven.md"
+  line: "80"
+catalogue:
+  woo: "WoO 2a"

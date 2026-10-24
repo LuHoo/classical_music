@@ -1,0 +1,12 @@
+id: dmitri-shostakovich-six-verses-of-marina-tsvetayeva-op-143a-orchestral-version
+work_group_id: dmitri-shostakovich-six-verses-of-marina-tsvetayeva-group
+composer_id: dmitri-shostakovich
+title: Six Verses of Marina Tsvetayeva, Op. 143a (orchestral version)
+source:
+  file: docs/shostakovich.md
+  url: https://en.wikipedia.org/wiki/List_of_compositions_by_Dmitri_Shostakovich
+catalogue:
+  op: 143a
+relationships:
+- type: version_of
+  work_id: dmitri-shostakovich-six-verses-of-marina-tsvetayeva-work

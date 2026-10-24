@@ -1,0 +1,13 @@
+id: "paul-hindemith-konzertmusik-for-brass-and-string-orchestra-op-50-work-bbc-scottish-so-martyn-brabbins"
+work_id: "paul-hindemith-konzertmusik-for-brass-and-string-orchestra-op-50-work"
+performers:
+  - name: "BBC Scottish SO"
+    role: "orchestra"
+  - name: "Martyn Brabbins"
+    role: "conductor"
+links:
+  tidal:
+    url: "https://tidal.com/album/340823857"
+source:
+  file: "docs/hindemith.md"
+  line: "68"

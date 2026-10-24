@@ -1,0 +1,12 @@
+id: franz-schubert-octet-in-f-major-d-803-chamber-c014
+work_id: franz-schubert-octet-in-f-major-d-803
+performers:
+  - name: Nash Ensemble
+links:
+  tidal:
+    url: https://tidal.com/track/1565656
+release:
+  album_title: Beethoven - Septet; Clarinet Trio / Schubert - Octet
+source:
+  file: reports/playlist-import/chamber/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/a2327106-07fd-4433-8bd3-d8a5c251c69a

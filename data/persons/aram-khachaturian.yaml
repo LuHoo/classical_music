@@ -1,0 +1,7 @@
+id: aram-khachaturian
+name: Aram Khachaturian
+roles:
+- composer
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://www.naxos.com/CatalogueDetail/?id=C5112

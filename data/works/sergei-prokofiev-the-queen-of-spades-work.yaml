@@ -1,0 +1,11 @@
+id: sergei-prokofiev-the-queen-of-spades-work
+work_group_id: sergei-prokofiev-the-queen-of-spades-group
+composer_id: sergei-prokofiev
+title: The Queen of Spades
+source:
+  file: docs/prokofiev.md
+  line: '124'
+catalogue:
+  op: Op. 70a
+date_text: '1936'
+category: Orchestral

@@ -1,0 +1,17 @@
+id: 6bbd326300934f61b324eeaefe69195b-la-clemenza-di-tito-playlist-2881
+work_id: 6bbd326300934f61b324eeaefe69195b-la-clemenza-di-tito
+performers:
+- name: Cecilia Bartoli
+- name: Akademie für Alte Musik Berlin
+  artist_id: akademie-fuer-alte-musik-berlin
+  role: ensemble
+- name: Bernhard Forck
+links:
+  tidal:
+    url: https://tidal.com/track/4712195
+release:
+  album_title: 'Cecilia Bartoli - Gluck: Italian Arias'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+excerpt: 'Selected arias: Tremo fra dubbi miei; Ah! taci barbaro; Se mai senti spirarti sul volto.'

@@ -1,0 +1,17 @@
+{
+  "issue_url": "https://github.com/LuHoo/classical_music/issues/256",
+  "decision_source": "curator_cli",
+  "curator": "LAH",
+  "recorded_at": "2026-10-08T13:48:51.843461+00:00",
+  "requested_choice": "C340",
+  "choice": "C340",
+  "selected_units": [
+    "C340"
+  ],
+  "not_selected_units": [
+    "C286"
+  ],
+  "performance_id": "bohuslav-martinu-cello-sonata-no-3-h-340-chamber-c340",
+  "implementation_pr": null,
+  "replaced_performances": []
+}

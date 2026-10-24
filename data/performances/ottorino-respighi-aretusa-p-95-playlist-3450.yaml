@@ -1,0 +1,14 @@
+id: ottorino-respighi-aretusa-p-95-playlist-3450
+work_id: ottorino-respighi-aretusa-p-95
+performers:
+- name: Richard Hickox
+- name: BBC Philharmonic Orchestra
+- name: Linda Finnie
+links:
+  tidal:
+    url: https://tidal.com/track/376253150
+release:
+  album_title: 'Respighi: Deità silvane, La sensitiva, Nebbie & Aretusa'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

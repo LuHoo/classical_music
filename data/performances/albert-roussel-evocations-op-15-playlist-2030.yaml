@@ -1,0 +1,18 @@
+id: albert-roussel-evocations-op-15-playlist-2030
+work_id: albert-roussel-evocations-op-15
+performers:
+- name: Yan Pascal Tortelier
+- name: BBC Philharmonic Orchestra
+- name: Kathryn Rudge
+- name: Alessandro Fisher
+- name: François Le Roux
+- name: CBSO Chorus
+- name: Simon Halsey
+links:
+  tidal:
+    url: https://tidal.com/track/376443868
+release:
+  album_title: 'Roussel: Évocations, Pour une Fête de Printemps & Suite in F'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

@@ -1,0 +1,8 @@
+id: "igor-stravinsky-tango-for-chamber-orchestra-k-062-group"
+composer_id: "igor-stravinsky"
+title: "Tango for chamber orchestra"
+source:
+  file: "docs/stravinsky.md"
+  line: "87"
+catalogue:
+  k: "K 062"

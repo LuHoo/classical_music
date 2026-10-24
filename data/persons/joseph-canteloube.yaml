@@ -1,0 +1,7 @@
+id: joseph-canteloube
+name: Joseph Canteloube
+roles:
+- composer
+source:
+  file: docs/canteloube.md
+  url: https://en.wikipedia.org/wiki/Joseph_Canteloube

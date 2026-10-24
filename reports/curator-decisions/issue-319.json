@@ -1,0 +1,50 @@
+{
+  "issue_url": "https://github.com/LuHoo/classical_music/issues/319",
+  "decision_source": "curator_cli",
+  "curator": "LAH",
+  "recorded_at": "2026-10-19T21:11:08.397131+00:00",
+  "requested_choice": "CHA",
+  "choice": "CHA",
+  "selected_units": [],
+  "not_selected_units": [
+    "P384"
+  ],
+  "performance_id": "franz-schubert-fantasie-in-f-minor-d-940-earmarked-cha",
+  "implementation_pr": null,
+  "replaced_performances": [
+    {
+      "id": "franz-schubert-fantasie-in-f-minor-d-940-piano-p384",
+      "work_id": "franz-schubert-fantasie-in-f-minor-d-940",
+      "performers": [
+        {
+          "name": "Murray Perahia",
+          "role": "piano"
+        },
+        {
+          "name": "Radu Lupu",
+          "role": "piano"
+        }
+      ],
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/track/75254187"
+        }
+      },
+      "release": {
+        "album_title": "Mozart: Sonata for 2 Pianos in D Major, K. 448 & Schubert: Fantasie in F Minor for 2 Pianos, D. 940"
+      },
+      "source": {
+        "file": "reports/playlist-import/piano/snapshot-2026-10-04.json",
+        "url": "https://tidal.com/playlist/82853f8e-4fd6-42b6-b0a7-230da5ee86a1"
+      }
+    }
+  ],
+  "recording": "data/recordings/schubert-four-hands.yml",
+  "work_id": "franz-schubert-fantasie-in-f-minor-d-940",
+  "docs_updates": [
+    "docs/schubert.md:269"
+  ],
+  "manifest_updates": [
+    "reports/playlist-import/piano/snapshot-2026-10-04.json"
+  ]
+}

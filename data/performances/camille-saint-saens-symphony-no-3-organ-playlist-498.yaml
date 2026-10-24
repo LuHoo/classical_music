@@ -1,0 +1,19 @@
+id: camille-saint-saens-symphony-no-3-organ-playlist-498
+work_id: camille-saint-saens-symphony-no-3-organ
+performers:
+- name: Daniel Roth
+  role: performer
+- name: Les Siècles
+  role: orchestra
+  artist_id: les-siecles
+- name: François-Xavier Roth
+  role: conductor
+  artist_id: francois-xavier-roth
+links:
+  tidal:
+    url: https://tidal.com/track/205116160
+release:
+  album_title: 'Saint-Saëns: Symphony No. 3 "avec orgue" & Piano Concerto No. 4 (Remastered Edition)'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

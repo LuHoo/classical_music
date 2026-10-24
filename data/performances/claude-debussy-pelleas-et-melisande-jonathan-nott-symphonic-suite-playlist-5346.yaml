@@ -1,0 +1,14 @@
+id: 
+  claude-debussy-pelleas-et-melisande-jonathan-nott-symphonic-suite-playlist-5346
+work_id: claude-debussy-pelleas-et-melisande-jonathan-nott-symphonic-suite
+performers:
+- name: Orchestre de la Suisse Romande
+- name: Jonathan Nott
+links:
+  tidal:
+    url: https://tidal.com/track/305344409
+release:
+  album_title: 'Debussy & Schoenberg: Pelléas & Mélisande'
+source:
+  file: reports/playlist-import/best-classical/window-4001-5518.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

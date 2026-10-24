@@ -1,0 +1,11 @@
+id: "igor-stravinsky-introitus-k-106-work"
+work_group_id: "igor-stravinsky-introitus-k-106-group"
+composer_id: "igor-stravinsky"
+title: "Introitus"
+source:
+  file: "docs/stravinsky.md"
+  line: "149"
+catalogue:
+  k: "K 106"
+date_text: "1965"
+category: "Chamber"

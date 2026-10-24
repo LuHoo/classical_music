@@ -1,0 +1,10 @@
+id: 5490c975c6a34af5b98eb15e0d488d8a
+work_group_id: e0497f37f5c2495a8cfc2feecd54f819
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 318
+catalogue:
+  rv: RV 318
+  opus: Op. 6
+source:
+  file: docs/vivaldi.md
+  line: '22'

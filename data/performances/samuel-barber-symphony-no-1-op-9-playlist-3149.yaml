@@ -1,0 +1,15 @@
+id: samuel-barber-symphony-no-1-op-9-playlist-3149
+work_id: samuel-barber-symphony-no-1-op-9
+performers:
+- name: Baltimore Symphony Orchestra
+- name: David Zinman
+- name: Baltimore SO
+links:
+  tidal:
+    url: https://tidal.com/track/4358823
+release:
+  album_title: 'Barber: Adagio; Symphony No.1 etc.'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+version_assignment: unspecified

@@ -1,0 +1,10 @@
+id: 02828713f9f04284bf00d349d0136cc2
+work_group_id: 9dacd76e368846f99c0d41d6bba04612
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 332
+catalogue:
+  rv: RV 332
+  opus: Op. 8
+source:
+  url: https://vivaldiedition.net/portfolio/vol-23-concerti-per-violin-i-la-caccia-2005/
+  file: reports/vivaldi-naive-edition/catalogue.json

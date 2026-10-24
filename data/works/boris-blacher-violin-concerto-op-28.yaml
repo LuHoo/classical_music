@@ -1,0 +1,8 @@
+id: boris-blacher-violin-concerto-op-28
+work_group_id: boris-blacher-violin-concerto-op-28-group
+composer_id: boris-blacher
+title: Violin Concerto, Op. 28
+source:
+  file: docs/blacher.md
+catalogue:
+  op: '28'

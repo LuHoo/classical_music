@@ -1,0 +1,9 @@
+id: henry-purcell-cupid-the-slyest-rogue-alive-z-367
+work_group_id: henry-purcell-cupid-the-slyest-rogue-alive-z-367-group
+composer_id: henry-purcell
+title: Cupid, the Slyest Rogue Alive, Z. 367
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://catalogue.bnf.fr/ark:/12148/cb38315848m
+catalogue:
+  z: '367'

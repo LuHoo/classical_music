@@ -1,0 +1,13 @@
+id: frederic-mompou-canco-i-dansa-no-5-piano-p064
+work_id: frederic-mompou-canco-i-dansa-no-5
+performers:
+  - role: piano
+    person_id: frederic-mompou
+links:
+  tidal:
+    url: https://tidal.com/track/31352985
+release:
+  album_title: 'Mompou: Complete Works for Piano'
+source:
+  file: reports/playlist-import/piano/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/82853f8e-4fd6-42b6-b0a7-230da5ee86a1

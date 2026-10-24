@@ -1,0 +1,13 @@
+id: "igor-stravinsky-concerto-in-d-basle-k-075-work-nieuw-sinfonietta-amsterdam-lev-markiz"
+work_id: "igor-stravinsky-concerto-in-d-basle-k-075-work"
+performers:
+  - name: "Nieuw Sinfonietta Amsterdam"
+    role: "orchestra"
+  - name: "Lev Markiz"
+    role: "conductor"
+links:
+  tidal:
+    url: "http://www.tidal.com/track/45280442"
+source:
+  file: "docs/stravinsky.md"
+  line: "97"

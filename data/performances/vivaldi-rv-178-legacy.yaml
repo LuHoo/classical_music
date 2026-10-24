@@ -1,0 +1,14 @@
+id: a9b0cc0c5c9f40d38ceba1472cbdecd0
+work_id: eb67ffd43a4d47dc9c54c9553ca181fe
+performers:
+- name: La Serenissima
+  role: performer
+- name: Adrian Chandler
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/458197178
+source:
+  file: docs/vivaldi.md
+  line: '26'
+notes: Existing curator recommendation retained pending comparison with the Naïve Edition where applicable.

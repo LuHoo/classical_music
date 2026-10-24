@@ -1,0 +1,9 @@
+id: albert-roussel-symphony-no-2-in-b-flat-major-op-23
+work_group_id: albert-roussel-symphony-no-2-in-b-flat-major-op-23-group
+composer_id: albert-roussel
+title: Symphony No.2 in B flat major Op.23
+source:
+  file: docs/roussel.md
+  url: https://en.wikipedia.org/wiki/Albert_Roussel#Works
+catalogue:
+  op: '23'

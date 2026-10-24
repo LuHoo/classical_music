@@ -1,0 +1,17 @@
+id: camille-saint-saens-le-carnaval-des-animaux-chamber-c073
+work_id: camille-saint-saens-le-carnaval-des-animaux
+performers:
+  - name: Bruno Philippe
+  - name: Tanguy de Williencourt
+profile: cello and piano arrangement
+links:
+  tidal:
+    url: https://tidal.com/track/327003719
+release:
+  album_title: 'Saint-Saëns: Cello Concerto No. 1 - Franck, Fauré & Poulenc (Bonus Track Version)'
+source:
+  file: reports/playlist-import/chamber/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/a2327106-07fd-4433-8bd3-d8a5c251c69a
+  unit_id: C073
+  curator_decision: https://github.com/LuHoo/classical_music/issues/245#issuecomment-5984117830
+excerpt: Le Cygne only (cello and piano)

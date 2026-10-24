@@ -1,0 +1,9 @@
+id: "gustav-mahler-das-klagende-lied-work"
+work_group_id: "gustav-mahler-das-klagende-lied-group"
+composer_id: "gustav-mahler"
+title: "Das klagende Lied"
+source:
+  file: "docs/mahler.md"
+  line: "14"
+date_text: "1878–80"
+category: "Early works"

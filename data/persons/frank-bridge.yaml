@@ -1,0 +1,7 @@
+id: frank-bridge
+name: Frank Bridge
+roles:
+- composer
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://www.naxos.com/catalogue/item.asp?item_code=8.574320

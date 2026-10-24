@@ -1,0 +1,8 @@
+id: wolfgang-amadeus-mozart-zaide-group
+composer_id: wolfgang-amadeus-mozart
+title: Zaide
+source:
+  file: docs/mozart.md
+  line: '42'
+catalogue:
+  k: K. 344

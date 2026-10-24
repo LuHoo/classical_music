@@ -1,0 +1,19 @@
+id: e2ae2826ccd1415e9656b34bbe4cb9c7
+work_id: 77f673a853cb4ecba4e41e38b52ef014
+performers:
+- name: Il Giardino Armonico
+  role: orchestra
+- name: Giovanni Antonini
+  role: conductor
+release:
+  label: Alpha Classics
+  catalogue_number: ALPHA672
+  album_title: 'Haydn 2032, Vol. 3: Solo e pensoso'
+source:
+  url: https://www.prestomusic.com/classical/products/8161187--haydn-2032-volume-3-solo-e-pensoso
+  file: reports/haydn-2032/catalogue.json
+links:
+  tidal:
+    url: https://tidal.com/album/187335264
+notes: Haydn 2032, volume 3. Sources and Tidal album metadata checked 2026-09-30. Album link covers this
+  work; it is not a work-specific track link.

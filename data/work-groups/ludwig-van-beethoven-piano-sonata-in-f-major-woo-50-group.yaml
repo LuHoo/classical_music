@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-piano-sonata-in-f-major-woo-50-group"
+composer_id: "ludwig-van-beethoven"
+title: "Piano Sonata in F major"
+source:
+  file: "docs/beethoven.md"
+  line: "306"
+catalogue:
+  woo: "WoO 50"

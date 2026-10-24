@@ -1,0 +1,8 @@
+id: "igor-stravinsky-tango-k-062-group"
+composer_id: "igor-stravinsky"
+title: "Tango"
+source:
+  file: "docs/stravinsky.md"
+  line: "228"
+catalogue:
+  k: "K 062"

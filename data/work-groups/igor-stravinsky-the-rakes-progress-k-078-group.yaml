@@ -1,0 +1,8 @@
+id: "igor-stravinsky-the-rakes-progress-k-078-group"
+composer_id: "igor-stravinsky"
+title: "The Rake's Progress"
+source:
+  file: "docs/stravinsky.md"
+  line: "25"
+catalogue:
+  k: "K 078"

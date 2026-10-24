@@ -1,0 +1,10 @@
+id: leon-boellmann-symphony-in-f-major-op-24
+work_group_id: leon-boellmann-symphony-in-f-major-op-24-group
+composer_id: leon-boellmann
+title: Symphony in F Major, Op. 24
+source:
+  file: reports/playlist-import/best-classical/window-4001-5518.json
+  url: 
+    https://outhere-music.com/en/albums/boellmann-symphonie-en-fa-majeur-variations-symphoniques-quatre-pieces-breves
+catalogue:
+  op: '24'

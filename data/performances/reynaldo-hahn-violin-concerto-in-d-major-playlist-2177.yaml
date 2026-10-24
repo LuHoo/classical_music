@@ -1,0 +1,15 @@
+id: reynaldo-hahn-violin-concerto-in-d-major-playlist-2177
+work_id: reynaldo-hahn-violin-concerto-in-d-major
+performers:
+- name: Denis Clavier
+- name: Orchestre National De Lorraine
+- name: Fernand Quattrocchi
+links:
+  tidal:
+    url: https://tidal.com/track/282871441
+release:
+  album_title: 'Hahn: Violin Concerto in D Major & Violin Sonata in C Major'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+version_assignment: unspecified

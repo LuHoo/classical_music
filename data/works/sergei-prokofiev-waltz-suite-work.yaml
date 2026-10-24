@@ -1,0 +1,11 @@
+id: sergei-prokofiev-waltz-suite-work
+work_group_id: sergei-prokofiev-waltz-suite-group
+composer_id: sergei-prokofiev
+title: Waltz Suite
+source:
+  file: docs/prokofiev.md
+  line: '188'
+catalogue:
+  op: Op. 110
+date_text: '1946'
+category: Orchestral

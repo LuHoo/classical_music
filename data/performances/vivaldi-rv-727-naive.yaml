@@ -1,0 +1,18 @@
+id: 369a17d1de16401dab43dec91956e177
+work_id: 65b7a0288c564834b61796184d132225
+performers:
+- name: Academia Montis Regalis
+  role: ensemble
+- name: Alessandro de Marchi
+  role: conductor
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP30392
+  album_title: Orlando finto pazzo
+source:
+  url: https://vivaldiedition.net/portfolio/vol-14-orlando-finto-paz%e2%80%90-zo-2004/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: 'The Vivaldi Edition, volume 14. Album page verified 2026-09-28. '
+links:
+  tidal:
+    url: https://tidal.com/album/92206658

@@ -1,0 +1,11 @@
+id: sergei-prokofiev-summer-day-work
+work_group_id: sergei-prokofiev-summer-day-group
+composer_id: sergei-prokofiev
+title: Summer Day
+source:
+  file: docs/prokofiev.md
+  line: '118'
+catalogue:
+  op: Op. 65a
+date_text: https://tidal.com/browse/album/340800600
+category: Orchestral

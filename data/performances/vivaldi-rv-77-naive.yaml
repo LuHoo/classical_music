@@ -1,0 +1,18 @@
+id: d25daff9084c4962b3fb693bddc8abeb
+work_id: 7e49a6c08ad547e5af9db76462fb645e
+performers:
+- name: L’Astrée
+  role: ensemble
+- name: Giorgio Tabacco
+  role: harpsichord
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP30252
+  album_title: Sonate da camera
+source:
+  url: https://vivaldiedition.net/portfolio/vol-12-sonate-da-camera-2003/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: 'The Vivaldi Edition, volume 12. Album page verified 2026-09-28. '
+links:
+  tidal:
+    url: https://tidal.com/album/92214962

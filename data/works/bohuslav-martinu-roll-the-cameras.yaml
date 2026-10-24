@@ -1,0 +1,9 @@
+id: bohuslav-martinu-roll-the-cameras
+work_group_id: bohuslav-martinu-roll-the-cameras-group
+composer_id: bohuslav-martinu
+title: Roll the Cameras!
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://hogwood.org/recordings.htm
+catalogue:
+  h: H. 163

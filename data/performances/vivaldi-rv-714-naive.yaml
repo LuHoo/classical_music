@@ -1,0 +1,19 @@
+id: ae72a32d8de04c798728961b8421a31a
+work_id: a7b20b57d99a4ffa8f11d25eee958116
+performers:
+- name: Ensemble Matheus
+  role: ensemble
+- name: Jean-Christophe Spinosi
+  role: conductor
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP30410
+  album_title: La fida ninfa
+source:
+  url: https://vivaldiedition.net/portfolio/vol-32-la-fida-ninfa-2008/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: The Vivaldi Edition, volume 32. Album page verified 2026-09-28. Catalogusnummer gecorrigeerd naar
+  OP30410.
+links:
+  tidal:
+    url: https://tidal.com/album/78146023

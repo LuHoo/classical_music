@@ -1,0 +1,17 @@
+id: bohuslav-martinu-sinfonietta-la-jolla-playlist-1373
+work_id: bohuslav-martinu-sinfonietta-la-jolla
+performers:
+- name: Prague Chamber Orchestra
+  role: performer
+- name: Libor Hlaváček
+  role: performer
+- name: Zdeněk Hnát
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/92549060
+release:
+  album_title: 'Martinů: Toccata E Due Canzoni, Sinfonietta La Jolla'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

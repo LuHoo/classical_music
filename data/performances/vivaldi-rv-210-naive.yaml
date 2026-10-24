@@ -1,0 +1,20 @@
+id: 32884dbefa0640c9b8f5c91df05d691f
+work_id: 8a3c2459f0f14a658ccca0a7c120d85b
+performers:
+- name: I Barocchisti
+  role: ensemble
+- name: Diego Fasolis
+  role: conductor
+- name: Duilio Galfetti
+  role: violin
+release:
+  label: Naive / Opus 111
+  catalogue_number: OP30474
+  album_title: Concerti per violino III — Il ballo
+source:
+  url: https://vivaldiedition.net/portfolio/vol-33-concerti-per-violin-iii-il-ballo-2008/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: The Vivaldi Edition, volume 33. Album page verified 2026-09-28. RV 210 = Violin Concerto, Op. 8 No. 11 (Il cimento).
+links:
+  tidal:
+    url: https://tidal.com/album/92207252

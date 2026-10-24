@@ -1,0 +1,11 @@
+id: "johann-sebastian-bach-concerto-for-2-harpsichords-and-orchestra-no-3-in-c-min-work"
+work_group_id: "johann-sebastian-bach-concerto-for-2-harpsichords-and-orchestra-no-3-in-c-min-group"
+composer_id: "johann-sebastian-bach"
+title: "Concerto for 2 harpsichords and orchestra No. 3 in C min."
+source:
+  file: "docs/bachJS.md"
+  line: "64"
+catalogue:
+  bwv: "BWV 1062"
+date_text: "1736"
+category: "Orchestral"

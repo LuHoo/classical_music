@@ -1,0 +1,45 @@
+{
+  "issue_url": "https://github.com/LuHoo/classical_music/issues/252",
+  "decision_source": "curator_cli",
+  "curator": "LAH",
+  "recorded_at": "2026-10-08T14:07:38.366270+00:00",
+  "requested_choice": "C230",
+  "choice": "C230",
+  "selected_units": [
+    "C230"
+  ],
+  "not_selected_units": [
+    "C307"
+  ],
+  "performance_id": "igor-stravinsky-octet-k-041-work-chamber-c230",
+  "implementation_pr": null,
+  "replaced_performances": [
+    {
+      "id": "igor-stravinsky-octet-k-041-work-juilliard-school-ensemble-royal-academy-of-music-barbara-hannigan",
+      "work_id": "igor-stravinsky-octet-k-041-work",
+      "performers": [
+        {
+          "name": "Juilliard School Ensemble",
+          "role": "ensemble"
+        },
+        {
+          "name": "Royal Academy of Music",
+          "role": "ensemble"
+        },
+        {
+          "name": "Barbara Hannigan",
+          "role": "conductor"
+        }
+      ],
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/browse/track/378000325?u"
+        }
+      },
+      "source": {
+        "file": "docs/stravinsky.md",
+        "line": "131"
+      }
+    }
+  ]
+}

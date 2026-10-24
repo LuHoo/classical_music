@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-rondos-c-op-51-1-work"
+work_group_id: "ludwig-van-beethoven-rondos-c-op-51-1-group"
+composer_id: "ludwig-van-beethoven"
+title: "Rondos, C,"
+source:
+  file: "docs/beethoven.md"
+  line: "436"
+catalogue:
+  opus: "Op. 51/1"
+date_text: "c. 1796–97"
+category: "Piano"

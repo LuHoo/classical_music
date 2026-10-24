@@ -1,0 +1,13 @@
+id: felix-mendelssohn-string-quintet-no-1-in-a-major-op-18-mwv-r-21-chamber-c211
+work_id: felix-mendelssohn-string-quintet-no-1-in-a-major-op-18-mwv-r-21
+performers:
+  - name: Doric String Quartet
+  - name: Timothy Ridout
+links:
+  tidal:
+    url: https://tidal.com/track/217483553
+release:
+  album_title: 'Mendelssohn: The String Quintets'
+source:
+  file: reports/playlist-import/chamber/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/a2327106-07fd-4433-8bd3-d8a5c251c69a

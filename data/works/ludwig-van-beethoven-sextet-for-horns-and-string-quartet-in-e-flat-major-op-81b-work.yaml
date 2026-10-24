@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-sextet-for-horns-and-string-quartet-in-e-flat-major-op-81b-work"
+work_group_id: "ludwig-van-beethoven-sextet-for-horns-and-string-quartet-in-e-flat-major-op-81b-group"
+composer_id: "ludwig-van-beethoven"
+title: "Sextet for Horns and String Quartet in E♭ major"
+source:
+  file: "docs/beethoven.md"
+  line: "240"
+catalogue:
+  opus: "Op. 81b"
+date_text: "1795"
+category: "Chamber"

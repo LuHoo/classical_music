@@ -1,0 +1,18 @@
+id: 902bd951647243b4bea5d0b5134ca021
+work_id: 43b37a49748b44eab86a887d2a1a371d
+performers:
+- name: L’Onda Armonica
+  role: ensemble
+- name: Sergio Azzolini
+  role: bassoon
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP30573
+  album_title: Concerti per fagotto V
+source:
+  url: https://vivaldiedition.net/portfolio/vol-66-concerti-per-fagotto-v/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: 'The Vivaldi Edition, volume 66. Album page verified 2026-09-28. '
+links:
+  tidal:
+    url: https://tidal.com/album/179330143

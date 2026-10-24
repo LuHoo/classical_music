@@ -1,0 +1,18 @@
+id: 65428e706a2243ebafbfd328abdb75e6
+work_id: ccef96e23b2b420daf8e57cd98eede33
+performers:
+- name: Les Musiciens du Prince-Monaco
+  role: ensemble
+- name: Gianluca Capuano
+  role: conductor
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP9025
+  album_title: Concerti per vari strumenti II
+source:
+  url: https://vivaldiedition.net/portfolio/concerti-per-vari-strumenti-ii/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: 'The Vivaldi Edition, volume 75. Album page verified 2026-09-28. '
+links:
+  tidal:
+    url: https://tidal.com/album/502817806

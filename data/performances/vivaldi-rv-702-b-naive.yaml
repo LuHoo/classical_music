@@ -1,0 +1,19 @@
+id: 9c2a0f62a1a5463da2e9f1cc76ca5aa3
+work_id: 97cd66a5ee064fe0b5eb238ef349a141
+performers:
+- name: Modo Antiquo
+  role: ensemble
+- name: Federico Maria Sardelli
+  role: conductor
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP30438
+  album_title: Atenaide
+source:
+  url: https://vivaldiedition.net/portfolio/vol-29-atenaide-2007/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: The Vivaldi Edition, volume 29. Album page verified 2026-09-28. Versie-aanduiding RV 702-B volgens de
+  officiële uitgave.
+links:
+  tidal:
+    url: https://tidal.com/album/91194048

@@ -1,0 +1,20 @@
+id: 388053797e01483593f1e62c6dd407ab-violin-concerto-no-1-playlist-632
+work_id: 388053797e01483593f1e62c6dd407ab-violin-concerto-no-1
+performers:
+- name: Janine Jansen
+  role: performer
+  artist_id: janine-jansen
+- name: London Symphony Orchestra
+  role: orchestra
+  artist_id: london-symphony-orchestra
+- name: Antonio Pappano
+  role: conductor
+  artist_id: antonio-pappano
+links:
+  tidal:
+    url: https://tidal.com/track/77609393
+release:
+  album_title: 'Brahms: Violin Concerto; Bartók: Violin Concerto No.1'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

@@ -1,0 +1,17 @@
+excerpt: First movement only
+id: sibelius-symphony-3-oslo-makela
+links:
+  tidal:
+    url: https://tidal.com/track/221536049
+performers:
+- name: Oslo Philharmonic Orchestra
+  role: orchestra
+- name: Klaus Mäkelä
+  role: conductor
+release:
+  album_title: 'Sibelius: Symphonies 1-7; Tapiola; 3 Late Fragments'
+  label: Decca
+source:
+  file: reports/playlist-import/best-classical/prepared-120.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+work_id: sibelius-symphony-3

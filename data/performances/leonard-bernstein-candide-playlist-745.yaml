@@ -1,0 +1,17 @@
+id: leonard-bernstein-candide-playlist-745
+work_id: leonard-bernstein-candide
+performers:
+- name: Los Angeles Philharmonic
+  role: orchestra
+  artist_id: los-angeles-philharmonic
+- person_id: leonard-bernstein
+  role: conductor
+links:
+  tidal:
+    url: https://tidal.com/track/231431859
+release:
+  album_title: Leonard Bernstein - Legendary Recordings
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+excerpt: Overture only

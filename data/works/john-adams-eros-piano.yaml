@@ -1,0 +1,7 @@
+id: john-adams-eros-piano
+work_group_id: john-adams-eros-piano-group
+composer_id: john-adams
+title: Eros Piano
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://www.nonesuch.com/albums/american-elegies

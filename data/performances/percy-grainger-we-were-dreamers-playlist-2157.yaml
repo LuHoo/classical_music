@@ -1,0 +1,13 @@
+id: percy-grainger-we-were-dreamers-playlist-2157
+work_id: percy-grainger-we-were-dreamers
+performers:
+- name: Richard Hickox
+- name: BBC Philharmonic Orchestra
+links:
+  tidal:
+    url: https://tidal.com/track/376391405
+release:
+  album_title: The Grainger Edition, Vol. 1 - Orchestral Works
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

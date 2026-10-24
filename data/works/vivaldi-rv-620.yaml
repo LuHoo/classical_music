@@ -1,0 +1,9 @@
+id: 3daf554e0d5645c2af498f803f1dbe64
+work_group_id: 79102a38dd6e4ff4a6ab789d9d5aa587
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Sanctorum meritis, RV 620
+catalogue:
+  rv: RV 620
+source:
+  url: https://vivaldiedition.net/portfolio/vol-72-musica-sacra-per-coro-e-orchestra/
+  file: reports/vivaldi-naive-edition/catalogue.json

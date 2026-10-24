@@ -1,0 +1,8 @@
+id: "anton-bruckner-ave-maria-group"
+composer_id: "anton-bruckner"
+title: "Ave Maria"
+source:
+  file: "docs/bruckner.md"
+  line: "68"
+catalogue:
+  wab: "WAB 6"

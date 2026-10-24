@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-coriolan-overture-in-c-minor-op-62-group"
+composer_id: "ludwig-van-beethoven"
+title: "\"Coriolan\" Overture in C minor"
+source:
+  file: "docs/beethoven.md"
+  line: "54"
+catalogue:
+  opus: "Op. 62"

@@ -1,0 +1,8 @@
+id: "igor-stravinsky-apollo-k-048-group"
+composer_id: "igor-stravinsky"
+title: "Apollo"
+source:
+  file: "docs/stravinsky.md"
+  line: "41"
+catalogue:
+  k: "K 048"

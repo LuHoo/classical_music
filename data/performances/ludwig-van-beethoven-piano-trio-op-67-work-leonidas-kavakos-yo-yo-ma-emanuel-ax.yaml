@@ -1,0 +1,15 @@
+id: "ludwig-van-beethoven-piano-trio-op-67-work-leonidas-kavakos-yo-yo-ma-emanuel-ax"
+work_id: "ludwig-van-beethoven-piano-trio-op-67-work"
+performers:
+  - name: "Leonidas Kavakos"
+    role: "performer"
+  - name: "Yo-Yo Ma"
+    role: "performer"
+  - name: "Emanuel Ax"
+    role: "conductor"
+links:
+  tidal:
+    url: "http://www.tidal.com/track/216601865"
+source:
+  file: "docs/beethoven.md"
+  line: "228"

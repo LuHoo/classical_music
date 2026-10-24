@@ -1,0 +1,9 @@
+id: ff9a3d43a0ef46fe85ce6996e56b1957
+work_group_id: 6df45dd8140a4dd9907581079f6fdc68
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 268
+catalogue:
+  rv: RV 268
+source:
+  url: https://vivaldiedition.net/portfolio/vol-33-concerti-per-violin-iii-il-ballo-2008/
+  file: reports/vivaldi-naive-edition/catalogue.json

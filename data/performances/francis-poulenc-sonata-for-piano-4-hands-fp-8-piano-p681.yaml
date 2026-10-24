@@ -1,0 +1,15 @@
+id: francis-poulenc-sonata-for-piano-4-hands-fp-8-piano-p681
+work_id: francis-poulenc-sonata-for-piano-4-hands-fp-8
+performers:
+  - name: Pascal Rogé
+    role: piano
+  - name: Jean-Philippe Collard
+    role: piano
+links:
+  tidal:
+    url: https://tidal.com/track/4442463
+release:
+  album_title: 'Poulenc:  Piano Music & Chamber Works'
+source:
+  file: reports/playlist-import/piano/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/82853f8e-4fd6-42b6-b0a7-230da5ee86a1

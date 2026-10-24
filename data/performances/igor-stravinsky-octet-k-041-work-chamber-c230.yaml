@@ -1,0 +1,17 @@
+id: igor-stravinsky-octet-k-041-work-chamber-c230
+work_id: igor-stravinsky-octet-k-041-work
+performers:
+  - name: Thierry Fischer
+  - name: Netherlands Wind Ensemble
+links:
+  tidal:
+    url: https://tidal.com/track/245886114
+release:
+  album_title: 'Stravinsky: Mavra, Concertino, Symphonies of Wind Instruments & Octet
+    for Wind Instruments'
+source:
+  file: reports/playlist-import/chamber/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/a2327106-07fd-4433-8bd3-d8a5c251c69a
+  unit_id: C230
+  curator_decision: reports/curator-decisions/issue-252.json
+excerpt: Movements I and II only

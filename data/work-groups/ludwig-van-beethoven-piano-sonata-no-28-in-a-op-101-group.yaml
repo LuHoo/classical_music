@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-piano-sonata-no-28-in-a-op-101-group"
+composer_id: "ludwig-van-beethoven"
+title: "Piano Sonata No. 28, in A"
+source:
+  file: "docs/beethoven.md"
+  line: "364"
+catalogue:
+  opus: "Op. 101"

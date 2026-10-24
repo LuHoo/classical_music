@@ -1,0 +1,13 @@
+id: enrique-granados-el-crepusculo-crepusculo-piano-p409
+work_id: enrique-granados-el-crepusculo-crepusculo
+performers:
+  - name: José Menor
+    role: piano
+links:
+  tidal:
+    url: https://tidal.com/track/74897345
+release:
+  album_title: 'Granados: Goyescas'
+source:
+  file: reports/playlist-import/piano/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/82853f8e-4fd6-42b6-b0a7-230da5ee86a1

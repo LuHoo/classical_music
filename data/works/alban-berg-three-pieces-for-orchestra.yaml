@@ -1,0 +1,9 @@
+id: alban-berg-three-pieces-for-orchestra
+work_group_id: alban-berg-three-pieces-for-orchestra-group
+composer_id: alban-berg
+title: Three Pieces for Orchestra
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://www.warnerclassics.com/release/sfs-berg
+catalogue:
+  opus: Op. 6

@@ -1,0 +1,9 @@
+id: c5b8b86ba01a4c7d80f1232b98271e9d
+work_group_id: 273ca1cc25e849fe88c33cc1336eac2e
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 270
+catalogue:
+  rv: RV 270
+source:
+  url: https://vivaldiedition.net/portfolio/vol-23-concerti-per-violin-i-la-caccia-2005/
+  file: reports/vivaldi-naive-edition/catalogue.json

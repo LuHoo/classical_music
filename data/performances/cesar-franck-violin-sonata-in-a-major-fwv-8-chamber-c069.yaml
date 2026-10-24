@@ -1,0 +1,16 @@
+id: cesar-franck-violin-sonata-in-a-major-fwv-8-chamber-c069
+work_id: cesar-franck-violin-sonata-in-a-major-fwv-8
+performers:
+  - name: Bruno Philippe
+  - name: Tanguy de Williencourt
+profile: cello and piano arrangement (Delsart)
+links:
+  tidal:
+    url: https://tidal.com/track/327003704
+release:
+  album_title: 'Saint-Saëns: Cello Concerto No. 1 - Franck, Fauré & Poulenc (Bonus Track Version)'
+source:
+  file: reports/playlist-import/chamber/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/a2327106-07fd-4433-8bd3-d8a5c251c69a
+  unit_id: C069
+  curator_decision: https://github.com/LuHoo/classical_music/issues/244#issuecomment-5984117672

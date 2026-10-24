@@ -1,0 +1,9 @@
+id: 6c3a0c18f01e4ab0ab5ccee90b7b855d
+work_group_id: 2b163c104bd44b5291964d45f2ae241d
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Cello Concerto, RV 410
+catalogue:
+  rv: RV 410
+source:
+  url: https://vivaldiedition.net/portfolio/vol-27-concerti-per-violon%e2%80%90-cello-i-2006/
+  file: reports/vivaldi-naive-edition/catalogue.json

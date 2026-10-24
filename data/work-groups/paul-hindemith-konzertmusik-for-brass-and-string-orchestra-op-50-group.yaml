@@ -1,0 +1,8 @@
+id: "paul-hindemith-konzertmusik-for-brass-and-string-orchestra-op-50-group"
+composer_id: "paul-hindemith"
+title: "Konzertmusik for brass and string orchestra"
+source:
+  file: "docs/hindemith.md"
+  line: "68"
+catalogue:
+  opus: "Op. 50"

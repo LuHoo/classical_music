@@ -1,0 +1,19 @@
+id: 8328a922a4984c26bd835254e53ae6ea
+work_id: 102c2ab223b041d0996b1a378a00a788
+performers:
+- name: Kammerorchester Basel
+  role: orchestra
+- name: Giovanni Antonini
+  role: conductor
+release:
+  label: Alpha Classics
+  catalogue_number: ALPHA678
+  album_title: 'Haydn 2032, Vol. 6: Lamentatione'
+source:
+  url: https://www.prestomusic.com/classical/products/8438801--haydn-2032-volume-6-lamentatione
+  file: reports/haydn-2032/catalogue.json
+links:
+  tidal:
+    url: https://tidal.com/album/187335083
+notes: Haydn 2032, volume 6. Sources and Tidal album metadata checked 2026-09-30. Album link covers this
+  work; it is not a work-specific track link.

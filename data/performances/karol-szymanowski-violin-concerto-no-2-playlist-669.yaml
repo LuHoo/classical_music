@@ -1,0 +1,17 @@
+id: karol-szymanowski-violin-concerto-no-2-playlist-669
+work_id: karol-szymanowski-violin-concerto-no-2
+performers:
+- name: Thomas Zehetmair
+  role: performer
+- name: City of Birmingham Symphony Orchestra
+  role: performer
+- name: Sir Simon Rattle
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/1354530
+release:
+  album_title: Szymanowski - Violin Concertos Nos. 1 & 2
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

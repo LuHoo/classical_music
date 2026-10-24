@@ -1,0 +1,10 @@
+id: 3cd63571e4774a5cb41a41ee0733b1c4
+work_group_id: ec82214d7cff439fb802774d96e6086f
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Sonata, RV 21
+catalogue:
+  rv: RV 21
+  opus: Op. 2
+source:
+  file: docs/vivaldi.md
+  line: '14'

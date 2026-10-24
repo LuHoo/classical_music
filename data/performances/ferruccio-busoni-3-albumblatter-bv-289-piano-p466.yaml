@@ -1,0 +1,13 @@
+id: ferruccio-busoni-3-albumblatter-bv-289-piano-p466
+work_id: ferruccio-busoni-3-albumblatter-bv-289
+performers:
+  - role: piano
+    person_id: victor-nicoara
+links:
+  tidal:
+    url: https://tidal.com/track/188084025
+release:
+  album_title: 'Busoni: Piano Works'
+source:
+  file: reports/playlist-import/piano/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/82853f8e-4fd6-42b6-b0a7-230da5ee86a1

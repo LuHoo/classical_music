@@ -1,0 +1,11 @@
+id: "anton-bruckner-symphony-no-5-in-bb-major-work"
+work_group_id: "anton-bruckner-symphony-no-5-in-bb-major-group"
+composer_id: "anton-bruckner"
+title: "Symphony No. 5 in B♭ major"
+source:
+  file: "docs/bruckner.md"
+  line: "48"
+catalogue:
+  wab: "WAB 105"
+date_text: "1876 first concept"
+category: "Orchestral"

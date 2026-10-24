@@ -1,0 +1,9 @@
+id: karol-szymanowski-symphony-no-4-op-60-m70-sinfonia-concertante
+work_group_id: 
+  karol-szymanowski-symphony-no-4-op-60-m70-sinfonia-concertante-group
+composer_id: karol-szymanowski
+title: Symphony No. 4, Op. 60, M70 "Sinfonia Concertante"
+source:
+  file: docs/szymanowski.md
+catalogue:
+  op: '60'

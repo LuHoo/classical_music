@@ -1,0 +1,10 @@
+id: 97cd66a5ee064fe0b5eb238ef349a141
+work_group_id: 3003c398876646d597f6bd6e8577974b
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Atenaide, RV 702-B
+catalogue:
+  rv: RV 702-B
+source:
+  url: https://vivaldiedition.net/portfolio/vol-29-atenaide-2007/
+  file: reports/vivaldi-naive-edition/catalogue.json
+version: RV 702-B

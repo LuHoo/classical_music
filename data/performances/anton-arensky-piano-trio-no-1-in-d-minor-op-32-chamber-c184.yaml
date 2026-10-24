@@ -1,0 +1,12 @@
+id: anton-arensky-piano-trio-no-1-in-d-minor-op-32-chamber-c184
+work_id: anton-arensky-piano-trio-no-1-in-d-minor-op-32
+performers:
+  - name: Trio Con Brio Copenhagen
+links:
+  tidal:
+    url: https://tidal.com/track/202603098
+release:
+  album_title: 'Shostakovich & Arensky: Piano Trios'
+source:
+  file: reports/playlist-import/chamber/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/a2327106-07fd-4433-8bd3-d8a5c251c69a

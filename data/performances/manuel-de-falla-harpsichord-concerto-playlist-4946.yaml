@@ -1,0 +1,16 @@
+id: manuel-de-falla-harpsichord-concerto-playlist-4946
+work_id: manuel-de-falla-harpsichord-concerto
+performers:
+- name: Benjamin Alard
+- name: Pablo Heras-Casado
+- name: Mahler Chamber Orchestra
+links:
+  tidal:
+    url: https://tidal.com/track/346134370
+release:
+  album_title: 'Stravinsky: Pulcinella Suite - Falla: El Retablo de Maese Pedro &
+    Harpsichord Concerto'
+source:
+  file: reports/playlist-import/best-classical/window-4001-5518.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+version_assignment: unspecified

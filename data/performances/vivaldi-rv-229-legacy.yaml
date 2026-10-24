@@ -1,0 +1,14 @@
+id: 1b2d12121c4b4fc39b58169eaeb265de
+work_id: 294b12f9edbb4c83867eb9cab256a01e
+performers:
+- name: Fabio Biondi
+  role: performer
+- name: Europa Galante
+  role: performer
+links:
+  tidal:
+    url: http://www.tidal.com/track/304319781
+source:
+  file: docs/vivaldi.md
+  line: '46'
+notes: Existing curator recommendation retained pending comparison with the Naïve Edition where applicable.

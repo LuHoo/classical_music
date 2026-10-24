@@ -1,0 +1,10 @@
+id: 5066cd7d0ccb44589022e5b665da2d18
+work_group_id: 8d1523ef98c447d18490ec6c8896d3c2
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 198a
+catalogue:
+  rv: RV 198a
+  opus: Op. 9
+source:
+  file: docs/vivaldi.md
+  line: '28'

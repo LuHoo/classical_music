@@ -1,0 +1,12 @@
+id: "igor-stravinsky-the-flood-k-099-work"
+work_group_id: "igor-stravinsky-the-flood-k-099-group"
+composer_id: "igor-stravinsky"
+title: "The Flood"
+source:
+  file: "docs/stravinsky.md"
+  line: "174"
+catalogue:
+  k: "K 099"
+date_text: "1962"
+category: "Choral"
+notes: "Pilot migration: source text suggests a version, arrangement, revision, suite, or completion boundary that should be reviewed."

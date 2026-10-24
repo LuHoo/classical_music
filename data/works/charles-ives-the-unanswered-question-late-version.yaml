@@ -1,0 +1,10 @@
+id: charles-ives-the-unanswered-question-late-version
+work_group_id: charles-ives-the-unanswered-question-group
+composer_id: charles-ives
+title: The Unanswered Question (Late Version)
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://www.nonesuch.com/albums/american-elegies
+relationships:
+- type: version_of
+  work_id: charles-ives-the-unanswered-question

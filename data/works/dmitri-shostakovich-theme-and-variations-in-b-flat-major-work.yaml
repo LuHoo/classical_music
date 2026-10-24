@@ -1,0 +1,11 @@
+id: dmitri-shostakovich-theme-and-variations-in-b-flat-major-work
+work_group_id: dmitri-shostakovich-theme-and-variations-in-b-flat-major-group
+composer_id: dmitri-shostakovich
+title: Theme and Variations in B-flat major
+source:
+  file: docs/shostakovich.md
+  line: '14'
+catalogue:
+  op: Op. 3
+date_text: 1921–1922
+category: Orchestral

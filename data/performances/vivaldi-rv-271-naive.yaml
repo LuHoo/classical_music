@@ -1,0 +1,19 @@
+id: f01e8f96209342d1abaad69b39355d49
+work_id: 8fbd642a00994baebe32bcf40b82c4e3
+performers:
+- name: Il Pomo d’Oro
+  role: ensemble
+- name: Riccardo Minasi
+  role: violin
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP30533
+  album_title: Concerti per violino IV — L'imperatore
+source:
+  url: https://vivaldiedition.net/portfolio/vol-45-concerti-per-violin-iv-limperatore-2011/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: The Vivaldi Edition, volume 45. Album page verified 2026-09-28. RV 181a betreft het extra opgenomen
+  eerste deel in een alternatieve versie.
+links:
+  tidal:
+    url: https://tidal.com/album/92929122

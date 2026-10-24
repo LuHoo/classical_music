@@ -1,0 +1,18 @@
+id: 
+  sergei-prokofiev-alexander-nevsky-work-olga-borodina-kirov-chorus-st-petersburg-mariinsky-orchestra-valery-gergiev
+work_id: sergei-prokofiev-alexander-nevsky-work
+source:
+  file: docs/prokofiev.md
+  line: '138'
+links:
+  tidal:
+    url: https://tidal.com/album/7232589
+performers:
+- name: Olga Borodina
+  role: performer
+- name: Kirov Chorus St Petersburg
+  role: performer
+- name: Mariinsky Orchestra
+  role: performer
+- name: Valery Gergiev
+  role: performer

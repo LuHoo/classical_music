@@ -1,0 +1,27 @@
+id: edvard-grieg-olav-trygvason-playlist-1582
+work_id: edvard-grieg-olav-trygvason
+performers:
+- name: Håkan Hagegård
+  role: performer
+- name: Randi Stene
+  role: performer
+- name: Gothenburg Symphony Orchestra
+  role: orchestra
+  artist_id: gothenburg-symphony-orchestra
+- name: Neeme Järvi
+  role: conductor
+  artist_id: neeme-jarvi
+- name: Gothenburg Symphony Choir
+  role: performer
+- name: Mats Nilsson
+  role: performer
+- name: Anne Gjevang
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/4360522
+release:
+  album_title: 'Grieg: Complete Music with Orchestra'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

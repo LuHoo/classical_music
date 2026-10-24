@@ -1,0 +1,9 @@
+id: 2d5e3f067c644ca0b481c5c7a9b5b8d2
+work_group_id: 546e79fa6c0f4b43980d5997a99f97e2
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 212a
+catalogue:
+  rv: RV 212a
+source:
+  url: https://vivaldiedition.net/portfolio/vol-49-concerti-per-violino-v-per-pisendel-2012/
+  file: reports/vivaldi-naive-edition/catalogue.json

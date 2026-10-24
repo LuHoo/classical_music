@@ -1,0 +1,8 @@
+id: "anton-bruckner-three-orchestral-pieces-group"
+composer_id: "anton-bruckner"
+title: "Three Orchestral Pieces"
+source:
+  file: "docs/bruckner.md"
+  line: "14"
+catalogue:
+  wab: "WAB 97"

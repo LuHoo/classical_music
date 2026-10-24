@@ -1,0 +1,16 @@
+id: b70b1355a73d4b69ae02edd6c25c57e1
+work_id: 1dcfcdf8a350463698876d78ed8d228c
+performers:
+- name: Sonatori de la Gioiosa Marca
+  role: ensemble
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP30379
+  album_title: Concerti per fagotto e oboe
+source:
+  url: https://vivaldiedition.net/portfolio/vol-15-concerti-per-fagotto-e-oboe-2004/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: 'The Vivaldi Edition, volume 15. Album page verified 2026-09-28. '
+links:
+  tidal:
+    url: https://tidal.com/album/65272162

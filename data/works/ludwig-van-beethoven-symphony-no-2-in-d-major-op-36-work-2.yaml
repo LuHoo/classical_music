@@ -1,0 +1,12 @@
+id: "ludwig-van-beethoven-symphony-no-2-in-d-major-op-36-work-2"
+work_group_id: "ludwig-van-beethoven-symphony-no-2-in-d-major-op-36-group-2"
+composer_id: "ludwig-van-beethoven"
+title: "Symphony No. 2 in D major"
+source:
+  file: "docs/beethoven.md"
+  line: "486"
+catalogue:
+  opus: "Op. 36"
+date_text: "arr piano-4h Scharwenka"
+category: "Piano"
+notes: "Pilot migration: source text suggests a version, arrangement, revision, suite, or completion boundary that should be reviewed."

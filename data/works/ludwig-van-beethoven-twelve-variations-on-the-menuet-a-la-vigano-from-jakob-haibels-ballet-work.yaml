@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-twelve-variations-on-the-menuet-a-la-vigano-from-jakob-haibels-ballet-work"
+work_group_id: "ludwig-van-beethoven-twelve-variations-on-the-menuet-a-la-vigano-from-jakob-haibels-ballet-group"
+composer_id: "ludwig-van-beethoven"
+title: "Twelve variations on the \"Menuet a la Viganò\" from Jakob Haibel's ballet Le nozze disturbate, C"
+source:
+  file: "docs/beethoven.md"
+  line: "384"
+catalogue:
+  woo: "WoO 68"
+date_text: "1795"
+category: "Piano"

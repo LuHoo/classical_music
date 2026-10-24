@@ -1,0 +1,15 @@
+id: ottorino-respighi-impressioni-brasiliane-p-153-playlist-2691
+work_id: ottorino-respighi-impressioni-brasiliane-p-153
+performers:
+- name: Philharmonia Orchestra
+  artist_id: philharmonia-orchestra
+  role: orchestra
+- name: Geoffrey Simon
+links:
+  tidal:
+    url: https://tidal.com/track/376379180
+release:
+  album_title: 'Respighi: Church Windows / Brazilian Impressions'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

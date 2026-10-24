@@ -1,0 +1,19 @@
+id: brahms-clarinet-trio-in-a-minor-1891-op-114-work-andreas-ottensamer-gautier-capucon-yuja-wang
+work_id: brahms-clarinet-trio-in-a-minor-1891-op-114-work
+performers:
+- artist_id: andreas-ottensamer
+  name: Andreas Ottensamer
+  role: clarinet
+- artist_id: gautier-capucon
+  name: Gautier Capuçon
+  role: cello
+- artist_id: yuja-wang
+  name: Yuja Wang
+  role: piano
+links:
+  tidal:
+    url: http://www.tidal.com/track/245035802
+source:
+  file: /Users/Lucas_new/.codex/.chatgpt-projects/g-p-6a500123ac548191ab37db95c0d285a2/classical_music/docs/brahms.md
+  line: '107'
+source_performer_text: Andreas Ottensamer, Gautier Capuçon, Yuja Wang

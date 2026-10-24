@@ -1,0 +1,16 @@
+id: 0d763a8d8ae74634bd527346c6a61831
+work_id: 6fe2cead181e4fceab5f50812f893fc9
+performers:
+- name: Ottavio Dantone
+  role: conductor
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP30553
+  album_title: L'incoronazione di Dario
+source:
+  url: https://vivaldiedition.net/portfolio/vol-53-lincoronazione-di-dario-2013/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: 'The Vivaldi Edition, volume 53. Album page verified 2026-09-28. '
+links:
+  tidal:
+    url: https://tidal.com/album/91801343

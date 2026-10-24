@@ -1,0 +1,19 @@
+id: 0c763f32bd0d437cb105bcf41f2b6699
+work_id: 7cff2d6a402049a289ade2e507d0f59a
+performers:
+- name: Academia Montis Regalis
+  role: ensemble
+- name: Barthold Kuijken
+  role: flute
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP30298
+  album_title: Concerti per flauto traversiere
+source:
+  url: https://vivaldiedition.net/portfolio/vol-3-concerti-per-flauto-2002/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: The Vivaldi Edition, volume 3. Album page verified 2026-09-28. RV 438bis staat bij TIDAL als RV 438b.
+  Van RV 432, 438bis en 431 zijn afzonderlijke delen opgenomen.
+links:
+  tidal:
+    url: https://tidal.com/album/92206603

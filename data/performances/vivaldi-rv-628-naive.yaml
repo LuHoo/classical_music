@@ -1,0 +1,19 @@
+id: 69990e87704545909be3428b138ecf5a
+work_id: 523976cdaea747519fb1ab555dfe177c
+performers:
+- name: Academia Montis Regalis
+  role: ensemble
+- name: Alessandro de Marchi
+  role: conductor
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP30340
+  album_title: Mottetti
+source:
+  url: https://vivaldiedition.net/portfolio/vol-11-vespri-per-lassunzione-di-maria-vergine-2003/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: The Vivaldi Edition, volume 10. Album page verified 2026-09-28. RV-nummers volgens de officiële
+  albumomschrijving; de TIDAL-tags van afzonderlijke delen bevatten afwijkingen.
+links:
+  tidal:
+    url: https://tidal.com/album/73947162

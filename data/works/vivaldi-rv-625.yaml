@@ -1,0 +1,9 @@
+id: 3679464b85104ebc89805e6540032f8d
+work_group_id: 7e77f7bcf34b44b0b2bfe6d2b4bc6154
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Clarae stellae, scintillate, RV 625
+catalogue:
+  rv: RV 625
+source:
+  url: https://vivaldiedition.net/portfolio/vol-6-stabat-mater-2002/
+  file: reports/vivaldi-naive-edition/catalogue.json

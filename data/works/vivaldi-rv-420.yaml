@@ -1,0 +1,9 @@
+id: 28a39c0095af4c52bb4c6c686ebb4636
+work_group_id: 1679eee2a8d347ea82ef815a10afbb25
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Cello Concerto, RV 420
+catalogue:
+  rv: RV 420
+source:
+  url: https://vivaldiedition.net/portfolio/vol-61-concerti-per-violoncello-iii-2019/
+  file: reports/vivaldi-naive-edition/catalogue.json

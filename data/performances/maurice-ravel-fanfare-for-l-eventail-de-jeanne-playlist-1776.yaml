@@ -1,0 +1,15 @@
+id: maurice-ravel-fanfare-for-l-eventail-de-jeanne-playlist-1776
+work_id: maurice-ravel-fanfare-for-l-eventail-de-jeanne
+performers:
+- name: Orchestre Symphonique de Montréal
+  role: performer
+- name: Charles Dutoit
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/63466479
+release:
+  album_title: "Ravel: Piano Concertos; Une barque sur l'océan; Fanfare; Menuet antique"
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

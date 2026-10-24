@@ -1,0 +1,17 @@
+id: arthur-honegger-cello-concerto-in-c-major-h-72-playlist-2506
+work_id: arthur-honegger-cello-concerto-in-c-major-h-72
+performers:
+- name: Daniel Müller-Schott
+- name: Deutsches Symphonie-Orchester Berlin
+  artist_id: deutsches-symphonie-orchester-berlin
+  role: orchestra
+- name: Alexandre Bloch
+links:
+  tidal:
+    url: https://tidal.com/track/282935972
+release:
+  album_title: Four Visions of France
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+version_assignment: unspecified

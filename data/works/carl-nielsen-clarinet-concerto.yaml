@@ -1,0 +1,9 @@
+id: carl-nielsen-clarinet-concerto
+work_group_id: carl-nielsen-clarinet-concerto-group
+composer_id: carl-nielsen
+title: Clarinet Concerto
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://www.chandos.net/products/catalogue/CHAN%208618
+catalogue:
+  op: '57'

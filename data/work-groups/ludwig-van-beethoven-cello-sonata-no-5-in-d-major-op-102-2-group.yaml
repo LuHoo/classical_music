@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-cello-sonata-no-5-in-d-major-op-102-2-group"
+composer_id: "ludwig-van-beethoven"
+title: "Cello Sonata No. 5 in D major"
+source:
+  file: "docs/beethoven.md"
+  line: "258"
+catalogue:
+  opus: "Op. 102/2"

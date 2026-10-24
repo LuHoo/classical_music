@@ -1,0 +1,11 @@
+id: dmitri-shostakovich-piano-concerto-no-2-in-f-major-work
+work_group_id: dmitri-shostakovich-piano-concerto-no-2-in-f-major-group
+composer_id: dmitri-shostakovich
+title: Piano Concerto No. 2 in F major
+source:
+  file: docs/shostakovich.md
+  line: '122'
+catalogue:
+  op: Op. 102
+date_text: '1957'
+category: Orchestral

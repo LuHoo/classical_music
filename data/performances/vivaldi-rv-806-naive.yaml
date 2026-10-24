@@ -1,0 +1,19 @@
+id: ce3a4cf2b1d04b7fa1fa3fe1ba00be47
+work_id: cf5ff38c9c8c4450949818ec5c5ece09
+performers:
+- name: Modo Antiquo
+  role: ensemble
+- name: Federico Maria Sardelli
+  role: conductor
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP30480
+  album_title: New Discoveries I
+source:
+  url: https://vivaldiedition.net/portfolio/vol-34-new-discoveries-i-2008/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: The Vivaldi Edition, volume 34. Album page verified 2026-09-28. RV 578a volgens de officiële uitgave;
+  TIDAL laat de a weg. RV 697 betreft een aria uit Argippo, niet het pasticcio op volume 64.
+links:
+  tidal:
+    url: https://tidal.com/album/91800957

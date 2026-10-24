@@ -1,0 +1,9 @@
+id: niels-wilhelm-gade-symphony-no-7-in-f-major-op-45
+work_group_id: niels-wilhelm-gade-symphony-no-7-in-f-major-op-45-group
+composer_id: niels-wilhelm-gade
+title: Symphony No. 7 in F Major, Op. 45
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://www.chandos.net/products/catalogue/CHAN%209957
+catalogue:
+  op: '45'

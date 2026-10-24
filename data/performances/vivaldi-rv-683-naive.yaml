@@ -1,0 +1,18 @@
+id: 9889d00ce1ff453f8bc506b275a8345d
+work_id: 3662a3eef2284a259c5d22a5aec28125
+performers:
+- name: L’Astrée
+  role: ensemble
+- name: Giorgio Tabacco
+  role: harpsichord
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP30381
+  album_title: Concerti e cantate da camera III
+source:
+  url: https://vivaldiedition.net/portfolio/vol-19-concerti-e-cantata-iii-2005/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: 'The Vivaldi Edition, volume 19. Album page verified 2026-09-28. '
+links:
+  tidal:
+    url: https://tidal.com/album/92795810

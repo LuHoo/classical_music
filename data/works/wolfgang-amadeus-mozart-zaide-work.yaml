@@ -1,0 +1,11 @@
+id: wolfgang-amadeus-mozart-zaide-work
+work_group_id: wolfgang-amadeus-mozart-zaide-group
+composer_id: wolfgang-amadeus-mozart
+title: Zaide
+source:
+  file: docs/mozart.md
+  line: '42'
+catalogue:
+  k: K. 344
+date_text: 1779-1780
+category: Operas

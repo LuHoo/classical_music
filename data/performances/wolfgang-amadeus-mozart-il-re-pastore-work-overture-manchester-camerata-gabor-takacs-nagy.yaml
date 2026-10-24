@@ -1,0 +1,14 @@
+id: 
+  wolfgang-amadeus-mozart-il-re-pastore-work-overture-manchester-camerata-gabor-takacs-nagy
+work_id: wolfgang-amadeus-mozart-il-re-pastore-work
+source:
+  file: docs/mozart.md
+  line: '40'
+links:
+  tidal:
+    url: http://www.tidal.com/track/376332022
+performers:
+- name: 'Overture: Manchester Camerata'
+  role: performer
+- name: Gábor Takács-Nagy
+  role: performer

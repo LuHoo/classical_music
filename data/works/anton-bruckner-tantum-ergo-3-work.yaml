@@ -1,0 +1,11 @@
+id: "anton-bruckner-tantum-ergo-3-work"
+work_group_id: "anton-bruckner-tantum-ergo-3-group"
+composer_id: "anton-bruckner"
+title: "Tantum ergo"
+source:
+  file: "docs/bruckner.md"
+  line: "88"
+catalogue:
+  wab: "WAB 43"
+date_text: "c. 1845"
+category: "Vocal"

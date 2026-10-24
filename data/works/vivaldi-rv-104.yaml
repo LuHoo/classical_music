@@ -1,0 +1,9 @@
+id: 6bd554b0a7674bb68f5d9c2e7e1e24d5
+work_group_id: 378d5beb71ad427094109e29132a1886
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Chamber Concerto, RV 104
+catalogue:
+  rv: RV 104
+source:
+  url: https://vivaldiedition.net/portfolio/vol-5-concerti-e-cantata-da-camera-2002/
+  file: reports/vivaldi-naive-edition/catalogue.json

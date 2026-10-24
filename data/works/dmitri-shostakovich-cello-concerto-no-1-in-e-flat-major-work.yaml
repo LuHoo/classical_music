@@ -1,0 +1,11 @@
+id: dmitri-shostakovich-cello-concerto-no-1-in-e-flat-major-work
+work_group_id: dmitri-shostakovich-cello-concerto-no-1-in-e-flat-major-group
+composer_id: dmitri-shostakovich
+title: Cello Concerto No. 1 in E-flat major
+source:
+  file: docs/shostakovich.md
+  line: '126'
+catalogue:
+  op: Op. 107
+date_text: '1959'
+category: Orchestral

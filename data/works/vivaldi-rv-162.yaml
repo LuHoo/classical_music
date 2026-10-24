@@ -1,0 +1,9 @@
+id: 0fcb9d1635b64188b46afa25bc4c7f99
+work_group_id: 7653c7c24dcf47d2b25d2d2e7bf629b6
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Sinfonia, RV 162
+catalogue:
+  rv: RV 162
+source:
+  url: https://vivaldiedition.net/portfolio/vol-22-arie-per-basso-2005/
+  file: reports/vivaldi-naive-edition/catalogue.json

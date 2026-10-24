@@ -1,0 +1,8 @@
+id: bohuslav-martinu-harpsichord-concerto-h-246
+work_group_id: bohuslav-martinu-harpsichord-concerto-h-246-group
+composer_id: bohuslav-martinu
+title: Harpsichord Concerto, H. 246
+source:
+  file: docs/martinu.md
+catalogue:
+  h: '246'

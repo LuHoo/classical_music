@@ -1,0 +1,10 @@
+id: 7f3fc450363f45f1bc7ab07d4d24b438
+work_group_id: defa386621244847aa3ec4aeaef0ed11
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Chamber Sonata, RV 75
+catalogue:
+  rv: RV 75
+  opus: Op. 1
+source:
+  url: https://vivaldiedition.net/portfolio/vol-44-sonate-da-camera-a-tre-opus-1-2011/
+  file: reports/vivaldi-naive-edition/catalogue.json

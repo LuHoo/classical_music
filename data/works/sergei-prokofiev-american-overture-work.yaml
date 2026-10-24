@@ -1,0 +1,11 @@
+id: sergei-prokofiev-american-overture-work
+work_group_id: sergei-prokofiev-american-overture-group
+composer_id: sergei-prokofiev
+title: American Overture
+source:
+  file: docs/prokofiev.md
+  line: '69'
+catalogue:
+  op: Op. 42
+date_text: '1926'
+category: Orchestral

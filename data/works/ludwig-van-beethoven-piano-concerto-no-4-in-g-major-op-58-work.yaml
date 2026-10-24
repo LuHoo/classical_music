@@ -1,0 +1,12 @@
+id: "ludwig-van-beethoven-piano-concerto-no-4-in-g-major-op-58-work"
+work_group_id: "ludwig-van-beethoven-piano-concerto-no-4-in-g-major-op-58-group"
+composer_id: "ludwig-van-beethoven"
+title: "Piano Concerto No. 4 in G major"
+source:
+  file: "docs/beethoven.md"
+  line: "44"
+catalogue:
+  opus: "Op. 58"
+date_text: "1804-1808"
+category: "Orchestral"
+gem: true

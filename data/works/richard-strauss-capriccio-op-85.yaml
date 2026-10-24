@@ -1,0 +1,9 @@
+id: richard-strauss-capriccio-op-85
+work_group_id: richard-strauss-capriccio-op-85-group
+composer_id: richard-strauss
+title: Capriccio, Op. 85
+source:
+  file: docs/strauss.md
+  url: https://en.wikipedia.org/wiki/List_of_compositions_by_Richard_Strauss
+catalogue:
+  op: '85'

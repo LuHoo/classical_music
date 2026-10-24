@@ -1,0 +1,16 @@
+id: gabriel-faure-elegie-op-24-orchestral-version-playlist-2505
+work_id: gabriel-faure-elegie-op-24-orchestral-version
+performers:
+- name: Daniel Müller-Schott
+- name: Deutsches Symphonie-Orchester Berlin
+  artist_id: deutsches-symphonie-orchester-berlin
+  role: orchestra
+- name: Alexandre Bloch
+links:
+  tidal:
+    url: https://tidal.com/track/282935979
+release:
+  album_title: Four Visions of France
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

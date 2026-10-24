@@ -1,0 +1,17 @@
+id: wolfgang-amadeus-mozart-piano-concerto-no-7-for-3-pianos-in-f-major-lodron-work-playlist-3338
+work_id: wolfgang-amadeus-mozart-piano-concerto-no-7-for-3-pianos-in-f-major-lodron-work
+performers:
+- name: Karin Kei Nagano
+- name: Mari Kodama
+- name: Momo Kodama
+- name: Orchestre de la Suisse Romande
+- name: Kent Nagano
+links:
+  tidal:
+    url: https://tidal.com/track/362759023
+release:
+  album_title: 'Mozart & Poulenc: Double & Triple Piano Concertos'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+version_assignment: unspecified

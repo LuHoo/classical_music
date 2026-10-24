@@ -1,0 +1,11 @@
+id: "paul-hindemith-sonata-for-solo-violin-no-1-op-11-no-6-work"
+work_group_id: "paul-hindemith-sonata-for-solo-violin-no-1-op-11-no-6-group"
+composer_id: "paul-hindemith"
+title: "Sonata for Solo Violin No. 1"
+source:
+  file: "docs/hindemith.md"
+  line: "260"
+catalogue:
+  opus: "Op. 11, No. 6"
+date_text: "1917"
+category: "Instrumental"

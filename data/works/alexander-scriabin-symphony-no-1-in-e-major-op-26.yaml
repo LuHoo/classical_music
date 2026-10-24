@@ -1,0 +1,8 @@
+id: alexander-scriabin-symphony-no-1-in-e-major-op-26
+work_group_id: alexander-scriabin-symphony-no-1-in-e-major-op-26-group
+composer_id: alexander-scriabin
+title: Symphony No. 1 in E Major, Op. 26
+source:
+  file: docs/scriabin.md
+catalogue:
+  op: '26'

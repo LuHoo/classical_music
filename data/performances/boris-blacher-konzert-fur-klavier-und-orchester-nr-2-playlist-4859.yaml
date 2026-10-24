@@ -1,0 +1,14 @@
+id: boris-blacher-konzert-fur-klavier-und-orchester-nr-2-playlist-4859
+work_id: boris-blacher-konzert-fur-klavier-und-orchester-nr-2
+performers:
+- name: Filharmonia Pomorska
+- name: Horst Göbel
+- name: Takao Ukigayah
+links:
+  tidal:
+    url: https://tidal.com/track/2307400
+release:
+  album_title: 'Boris Blacher: Die drei Klavierkonzert'
+source:
+  file: reports/playlist-import/best-classical/window-4001-5518.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

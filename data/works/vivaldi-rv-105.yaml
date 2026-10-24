@@ -1,0 +1,9 @@
+id: 160ed31952f043bd92698a23ea086f86
+work_group_id: c7d3d2bdb66f4dd5a886357f83fda5c7
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Chamber Concerto, RV 105
+catalogue:
+  rv: RV 105
+source:
+  url: https://vivaldiedition.net/portfolio/vol-5-concerti-e-cantata-da-camera-2002/
+  file: reports/vivaldi-naive-edition/catalogue.json

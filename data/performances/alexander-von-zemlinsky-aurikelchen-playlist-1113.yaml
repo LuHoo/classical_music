@@ -1,0 +1,13 @@
+id: alexander-von-zemlinsky-aurikelchen-playlist-1113
+work_id: alexander-von-zemlinsky-aurikelchen
+performers:
+- name: Mülheimer Kantorei/Gürzenich-Orchester Kölner Philharmoniker/James Conlon
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/1443935
+release:
+  album_title: 'Zemlinsky: Psalmen/Complete Choral Works'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

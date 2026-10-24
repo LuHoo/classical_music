@@ -1,0 +1,8 @@
+id: "igor-stravinsky-concerto-in-d-basle-k-075-group"
+composer_id: "igor-stravinsky"
+title: "Concerto in D \"Basle\""
+source:
+  file: "docs/stravinsky.md"
+  line: "97"
+catalogue:
+  k: "K 075"

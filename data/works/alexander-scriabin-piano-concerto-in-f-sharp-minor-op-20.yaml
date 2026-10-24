@@ -1,0 +1,8 @@
+id: alexander-scriabin-piano-concerto-in-f-sharp-minor-op-20
+work_group_id: alexander-scriabin-piano-concerto-in-f-sharp-minor-op-20-group
+composer_id: alexander-scriabin
+title: Piano Concerto in F-Sharp Minor, Op. 20
+source:
+  file: docs/scriabin.md
+catalogue:
+  op: '20'

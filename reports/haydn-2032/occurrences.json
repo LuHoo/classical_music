@@ -1,0 +1,2953 @@
+[
+  {
+    "volume": 1,
+    "slug": "haydn-symphony-39",
+    "work_id": "8ea341584c704527bbce0f5933056fe4",
+    "work_group_id": "ed9784e5b8d64d84a371255290d76185",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "fb497c89e2d540a6ac4378ca87d5d96f",
+      "work_id": "8ea341584c704527bbce0f5933056fe4",
+      "performers": [
+        {
+          "name": "Il Giardino Armonico",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA670",
+        "album_title": "Haydn 2032, Vol. 1: La Passione"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/8047516--haydn-2032-volume-1-la-passione",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/187335404"
+        }
+      },
+      "notes": "Haydn 2032, volume 1. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 1,
+    "slug": "haydn-symphony-49",
+    "work_id": "779d2f55d66f4e4ba10568ff885cec35",
+    "work_group_id": "63fec7bbd5634f42a10a805bf4d74d7e",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "21e1bb41f77d40b8b2ded970e86bcdd6",
+      "work_id": "779d2f55d66f4e4ba10568ff885cec35",
+      "performers": [
+        {
+          "name": "Il Giardino Armonico",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA670",
+        "album_title": "Haydn 2032, Vol. 1: La Passione"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/8047516--haydn-2032-volume-1-la-passione",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/187335404"
+        }
+      },
+      "notes": "Haydn 2032, volume 1. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 1,
+    "slug": "haydn-symphony-1",
+    "work_id": "3534419385254cefa6fe2ee0bc771da7",
+    "work_group_id": "9de730e1d3234f1f9b825bdc7e03f690",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "6e59ecd7c5104aeea8c8173f433e8daa",
+      "work_id": "3534419385254cefa6fe2ee0bc771da7",
+      "performers": [
+        {
+          "name": "Il Giardino Armonico",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA670",
+        "album_title": "Haydn 2032, Vol. 1: La Passione"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/8047516--haydn-2032-volume-1-la-passione",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/187335404"
+        }
+      },
+      "notes": "Haydn 2032, volume 1. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 1,
+    "slug": "gluck-don-juan-original",
+    "work_id": "ef574321bdba42ee90f41e19eafdd732",
+    "work_group_id": "c8e0f7f2672c41a6a9bea0b26e31909a",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "81ddc1095fd040fb907cfbe36abd8a1a",
+      "work_id": "ef574321bdba42ee90f41e19eafdd732",
+      "performers": [
+        {
+          "name": "Il Giardino Armonico",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA670",
+        "album_title": "Haydn 2032, Vol. 1: La Passione"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/8047516--haydn-2032-volume-1-la-passione",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/187335404"
+        }
+      },
+      "notes": "Haydn 2032, volume 1. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 2,
+    "slug": "haydn-symphony-46",
+    "work_id": "6098f80a33474b3eadea7db3b813bd22",
+    "work_group_id": "d32e84040f264eadb2979a1aa042a172",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "370b439105d94e37b89d24af849e021b",
+      "work_id": "6098f80a33474b3eadea7db3b813bd22",
+      "performers": [
+        {
+          "name": "Il Giardino Armonico",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA671",
+        "album_title": "Haydn 2032, Vol. 2: Il filosofo"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/8061501--haydn-2032-volume-2-il-filosofo",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/187335290"
+        }
+      },
+      "notes": "Haydn 2032, volume 2. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 2,
+    "slug": "haydn-symphony-22",
+    "work_id": "21469bb2fe0740d19202e382b6ef3464",
+    "work_group_id": "48a3e75dba394088809254142c15072a",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "e8b0f02f06254b2cb0d94bf9623a2015",
+      "work_id": "21469bb2fe0740d19202e382b6ef3464",
+      "performers": [
+        {
+          "name": "Il Giardino Armonico",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA671",
+        "album_title": "Haydn 2032, Vol. 2: Il filosofo"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/8061501--haydn-2032-volume-2-il-filosofo",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/187335290"
+        }
+      },
+      "notes": "Haydn 2032, volume 2. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 2,
+    "slug": "haydn-symphony-47",
+    "work_id": "622267dfbea5458fb2527ce8f3aad1c6",
+    "work_group_id": "710ca77717db471fa47faac8c8f01eb0",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "0d929d6093954630bf97f41238bf8e83",
+      "work_id": "622267dfbea5458fb2527ce8f3aad1c6",
+      "performers": [
+        {
+          "name": "Il Giardino Armonico",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA671",
+        "album_title": "Haydn 2032, Vol. 2: Il filosofo"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/8061501--haydn-2032-volume-2-il-filosofo",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/187335290"
+        }
+      },
+      "notes": "Haydn 2032, volume 2. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 2,
+    "slug": "wf-bach-symphony-f-major",
+    "work_id": "dc50d363dbae41408c9b1086abd34265",
+    "work_group_id": "54165552d74b4580947efbed6629c7bf",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "773c46cb723d455e9242c4682d193dba",
+      "work_id": "dc50d363dbae41408c9b1086abd34265",
+      "performers": [
+        {
+          "name": "Il Giardino Armonico",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA671",
+        "album_title": "Haydn 2032, Vol. 2: Il filosofo"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/8061501--haydn-2032-volume-2-il-filosofo",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/187335290"
+        }
+      },
+      "notes": "Haydn 2032, volume 2. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 3,
+    "slug": "haydn-symphony-42",
+    "work_id": "77f673a853cb4ecba4e41e38b52ef014",
+    "work_group_id": "307dfdc752554c258d8cbfd34b9dcb1f",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "e2ae2826ccd1415e9656b34bbe4cb9c7",
+      "work_id": "77f673a853cb4ecba4e41e38b52ef014",
+      "performers": [
+        {
+          "name": "Il Giardino Armonico",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA672",
+        "album_title": "Haydn 2032, Vol. 3: Solo e pensoso"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/8161187--haydn-2032-volume-3-solo-e-pensoso",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/187335264"
+        }
+      },
+      "notes": "Haydn 2032, volume 3. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 3,
+    "slug": "haydn-symphony-64",
+    "work_id": "a21e0cbc5e694745a1aa926610aa9b71",
+    "work_group_id": "088b370c905c4864b1c4202dea49befe",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "386f50670ca4433b82ad20e75913beb8",
+      "work_id": "a21e0cbc5e694745a1aa926610aa9b71",
+      "performers": [
+        {
+          "name": "Il Giardino Armonico",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA672",
+        "album_title": "Haydn 2032, Vol. 3: Solo e pensoso"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/8161187--haydn-2032-volume-3-solo-e-pensoso",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/187335264"
+        }
+      },
+      "notes": "Haydn 2032, volume 3. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 3,
+    "slug": "haydn-symphony-4",
+    "work_id": "c1e3f75afb97451da9bd7fb9d67ec18e",
+    "work_group_id": "cb3a7ac00d094ef9bf70a696437ff7b5",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "b0c65f51c3094f0e9bfa6be687618e1a",
+      "work_id": "c1e3f75afb97451da9bd7fb9d67ec18e",
+      "performers": [
+        {
+          "name": "Il Giardino Armonico",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA672",
+        "album_title": "Haydn 2032, Vol. 3: Solo e pensoso"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/8161187--haydn-2032-volume-3-solo-e-pensoso",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/187335264"
+        }
+      },
+      "notes": "Haydn 2032, volume 3. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 3,
+    "slug": "haydn-isola-disabitata-overture",
+    "work_id": "b2ab205437174bcdb869e79e328997dd",
+    "work_group_id": "c2fb323bf8db471eaa598295603d0a5a",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "05d068e63b2e4a0b9e6ae55da54ef4d9",
+      "work_id": "b2ab205437174bcdb869e79e328997dd",
+      "performers": [
+        {
+          "name": "Il Giardino Armonico",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA672",
+        "album_title": "Haydn 2032, Vol. 3: Solo e pensoso"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/8161187--haydn-2032-volume-3-solo-e-pensoso",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/187335264"
+        }
+      },
+      "notes": "Haydn 2032, volume 3. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 3,
+    "slug": "haydn-solo-e-pensoso",
+    "work_id": "22e7f31db6e348fb97929687163f26e7",
+    "work_group_id": "b87279b90d974104bbc539da84b27ad7",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "7373005cb9104f57a0d437adbda341a4",
+      "work_id": "22e7f31db6e348fb97929687163f26e7",
+      "performers": [
+        {
+          "name": "Il Giardino Armonico",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        },
+        {
+          "name": "Francesca Aspromonte",
+          "role": "soprano"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA672",
+        "album_title": "Haydn 2032, Vol. 3: Solo e pensoso"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/8161187--haydn-2032-volume-3-solo-e-pensoso",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/187335264"
+        }
+      },
+      "notes": "Haydn 2032, volume 3. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 4,
+    "slug": "haydn-symphony-60",
+    "work_id": "95a93f9d87d04ca2b66e0f880aa58398",
+    "work_group_id": "15ff496398844f5b8bef3c6a5bb594ea",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "73c4ffba315f431ea580b75fc9e454f3",
+      "work_id": "95a93f9d87d04ca2b66e0f880aa58398",
+      "performers": [
+        {
+          "name": "Il Giardino Armonico",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA674",
+        "album_title": "Haydn 2032, Vol. 4: Il distratto"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/8271111--haydn-2032-volume-4-il-distratto",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/187334728"
+        }
+      },
+      "notes": "Haydn 2032, volume 4. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 4,
+    "slug": "haydn-symphony-70",
+    "work_id": "e645afdabf3e4d188388e04667f7930a",
+    "work_group_id": "4d3c061ee400416da6d13bfaafb2c3d1",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "3376c9d843fa4a46abcb3e6554578d97",
+      "work_id": "e645afdabf3e4d188388e04667f7930a",
+      "performers": [
+        {
+          "name": "Il Giardino Armonico",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA674",
+        "album_title": "Haydn 2032, Vol. 4: Il distratto"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/8271111--haydn-2032-volume-4-il-distratto",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/187334728"
+        }
+      },
+      "notes": "Haydn 2032, volume 4. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 4,
+    "slug": "haydn-symphony-12",
+    "work_id": "d6402de061d5471689db547ced73b12e",
+    "work_group_id": "3ca4fed612dc42f889a619f7b8be7f36",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "ae4a2be4bcc34b10bceba21b931989c3",
+      "work_id": "d6402de061d5471689db547ced73b12e",
+      "performers": [
+        {
+          "name": "Il Giardino Armonico",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA674",
+        "album_title": "Haydn 2032, Vol. 4: Il distratto"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/8271111--haydn-2032-volume-4-il-distratto",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/187334728"
+        }
+      },
+      "notes": "Haydn 2032, volume 4. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 4,
+    "slug": "cimarosa-il-maestro-di-cappella",
+    "work_id": "6ed71ea406824c0db4c83b26ac07f942",
+    "work_group_id": "94b27eb9942b4b8aace2ed6a3a3f359a",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "00f73315f02c477b808763820c9ce333",
+      "work_id": "6ed71ea406824c0db4c83b26ac07f942",
+      "performers": [
+        {
+          "name": "Il Giardino Armonico",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        },
+        {
+          "name": "Riccardo Novaro",
+          "role": "baritone"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA674",
+        "album_title": "Haydn 2032, Vol. 4: Il distratto"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/8271111--haydn-2032-volume-4-il-distratto",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/187334728"
+        }
+      },
+      "notes": "Haydn 2032, volume 4. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 5,
+    "slug": "haydn-symphony-80",
+    "work_id": "bb44c58f8ec44024b7c16434129d3ffb",
+    "work_group_id": "dbf3d8b1946d48ebb3e8633f3368860a",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "a19ef1ce80514a038eb0035346ac7f5f",
+      "work_id": "bb44c58f8ec44024b7c16434129d3ffb",
+      "performers": [
+        {
+          "name": "Kammerorchester Basel",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA676",
+        "album_title": "Haydn 2032, Vol. 5: L'homme de génie"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/8366613--haydn-2032-volume-5-l-homme-de-genie",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/187335064"
+        }
+      },
+      "notes": "Haydn 2032, volume 5. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 5,
+    "slug": "haydn-symphony-81",
+    "work_id": "7da307eebbe54e71accf316aa3fb990c",
+    "work_group_id": "8760cfd33b4e4883ab6b73cf57874e22",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "f5565d97887842a4a2a2a7d07e8234c5",
+      "work_id": "7da307eebbe54e71accf316aa3fb990c",
+      "performers": [
+        {
+          "name": "Kammerorchester Basel",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA676",
+        "album_title": "Haydn 2032, Vol. 5: L'homme de génie"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/8366613--haydn-2032-volume-5-l-homme-de-genie",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/187335064"
+        }
+      },
+      "notes": "Haydn 2032, volume 5. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 5,
+    "slug": "haydn-symphony-19",
+    "work_id": "457ac5502e86429e9634b3323801473c",
+    "work_group_id": "53213985ad2c4fb48f4abba0efbcc343",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "74a091989a5a45229ae0adc5a7ca42c0",
+      "work_id": "457ac5502e86429e9634b3323801473c",
+      "performers": [
+        {
+          "name": "Kammerorchester Basel",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA676",
+        "album_title": "Haydn 2032, Vol. 5: L'homme de génie"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/8366613--haydn-2032-volume-5-l-homme-de-genie",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/187335064"
+        }
+      },
+      "notes": "Haydn 2032, volume 5. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 5,
+    "slug": "kraus-symphony-c-minor",
+    "work_id": "a941b4b130a846baaee962ff005aacc4",
+    "work_group_id": "f0137f4b62e24c04906af035a859bcbb",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "966f7bff21c0408ea4228194eff72243",
+      "work_id": "a941b4b130a846baaee962ff005aacc4",
+      "performers": [
+        {
+          "name": "Kammerorchester Basel",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA676",
+        "album_title": "Haydn 2032, Vol. 5: L'homme de génie"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/8366613--haydn-2032-volume-5-l-homme-de-genie",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/187335064"
+        }
+      },
+      "notes": "Haydn 2032, volume 5. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 6,
+    "slug": "haydn-symphony-3",
+    "work_id": "7d52a4fbba6c469c958b508d649d9dcc",
+    "work_group_id": "a6a51cec0e5b42db8abac6554d6dcd90",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "28de3b4a2823416bbb26756b5e0c3d56",
+      "work_id": "7d52a4fbba6c469c958b508d649d9dcc",
+      "performers": [
+        {
+          "name": "Kammerorchester Basel",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA678",
+        "album_title": "Haydn 2032, Vol. 6: Lamentatione"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/8438801--haydn-2032-volume-6-lamentatione",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/187335083"
+        }
+      },
+      "notes": "Haydn 2032, volume 6. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 6,
+    "slug": "haydn-symphony-26",
+    "work_id": "f693bfe462f241e0b997241e3fe94779",
+    "work_group_id": "124dc93f6c3f4603acbe7c49362efca0",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "a427c97a8a7d499b93af2d88580ad4b0",
+      "work_id": "f693bfe462f241e0b997241e3fe94779",
+      "performers": [
+        {
+          "name": "Kammerorchester Basel",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA678",
+        "album_title": "Haydn 2032, Vol. 6: Lamentatione"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/8438801--haydn-2032-volume-6-lamentatione",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/187335083"
+        }
+      },
+      "notes": "Haydn 2032, volume 6. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 6,
+    "slug": "haydn-symphony-79",
+    "work_id": "102c2ab223b041d0996b1a378a00a788",
+    "work_group_id": "e0a60510f20a42ec831302aa14c067a3",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "8328a922a4984c26bd835254e53ae6ea",
+      "work_id": "102c2ab223b041d0996b1a378a00a788",
+      "performers": [
+        {
+          "name": "Kammerorchester Basel",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA678",
+        "album_title": "Haydn 2032, Vol. 6: Lamentatione"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/8438801--haydn-2032-volume-6-lamentatione",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/187335083"
+        }
+      },
+      "notes": "Haydn 2032, volume 6. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 6,
+    "slug": "haydn-symphony-30",
+    "work_id": "225280e036444ef0a6bedc4373b8e87c",
+    "work_group_id": "953cbb4b2f6846529630f054bada2afd",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "e9edd828010b4e808c78e8d7dcd17a7e",
+      "work_id": "225280e036444ef0a6bedc4373b8e87c",
+      "performers": [
+        {
+          "name": "Kammerorchester Basel",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA678",
+        "album_title": "Haydn 2032, Vol. 6: Lamentatione"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/8438801--haydn-2032-volume-6-lamentatione",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/187335083"
+        }
+      },
+      "notes": "Haydn 2032, volume 6. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 7,
+    "slug": "haydn-symphony-67",
+    "work_id": "6055e0d8784a4f45abefaa7e5f705f9f",
+    "work_group_id": "e6ba7a39231841e0b35e9b829176613e",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "d94630f6e3704029b3ccd4f9243d1b79",
+      "work_id": "6055e0d8784a4f45abefaa7e5f705f9f",
+      "performers": [
+        {
+          "name": "Kammerorchester Basel",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA680",
+        "album_title": "Haydn 2032, Vol. 7: Gli Impresari"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/8539820--haydn-2032-volume-7-gli-impresari",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/187335148"
+        }
+      },
+      "notes": "Haydn 2032, volume 7. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 7,
+    "slug": "haydn-symphony-65",
+    "work_id": "a1247c97b1c046949221fdc324d9aab5",
+    "work_group_id": "fb5fab8beb094bf98886aaf520c2e202",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "9920aa18d1ac4aa0baad14bb5840a370",
+      "work_id": "a1247c97b1c046949221fdc324d9aab5",
+      "performers": [
+        {
+          "name": "Kammerorchester Basel",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA680",
+        "album_title": "Haydn 2032, Vol. 7: Gli Impresari"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/8539820--haydn-2032-volume-7-gli-impresari",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/187335148"
+        }
+      },
+      "notes": "Haydn 2032, volume 7. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 7,
+    "slug": "haydn-symphony-9",
+    "work_id": "2db41b7f63ad47a9b5855ec9909ae2d7",
+    "work_group_id": "98a4b937f123493a96583840009f72d4",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "42fdea65b9394226be755ee56c12e715",
+      "work_id": "2db41b7f63ad47a9b5855ec9909ae2d7",
+      "performers": [
+        {
+          "name": "Kammerorchester Basel",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA680",
+        "album_title": "Haydn 2032, Vol. 7: Gli Impresari"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/8539820--haydn-2032-volume-7-gli-impresari",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/187335148"
+        }
+      },
+      "notes": "Haydn 2032, volume 7. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 7,
+    "slug": "mozart-thamos",
+    "work_id": "08c28b81249647bb9ccd25979f3a1112",
+    "work_group_id": "17e47dda24494e51a1f8e2fc38df8e8d",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "9c269950c9c54925864959cd663d6af8",
+      "work_id": "08c28b81249647bb9ccd25979f3a1112",
+      "performers": [
+        {
+          "name": "Kammerorchester Basel",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA680",
+        "album_title": "Haydn 2032, Vol. 7: Gli Impresari"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/8539820--haydn-2032-volume-7-gli-impresari",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/187335148"
+        }
+      },
+      "notes": "Haydn 2032, volume 7. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link.",
+      "excerpt": "Instrumental excerpts: I–IV and VIIa; this album does not contain the complete incidental music."
+    }
+  },
+  {
+    "volume": 8,
+    "slug": "haydn-symphony-63",
+    "work_id": "22bec8a3532643c78feb0992fc7175ed",
+    "work_group_id": "509fa9f12b8a4888820909f43450d825",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "c57c6a1939c44ce78cbaf8504e0c0f04",
+      "work_id": "22bec8a3532643c78feb0992fc7175ed",
+      "performers": [
+        {
+          "name": "Il Giardino Armonico",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA682",
+        "album_title": "Haydn 2032, Vol. 8: La Roxolana"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/8711985--haydn-2032-volume-8-la-roxolana",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/187335103"
+        }
+      },
+      "notes": "Haydn 2032, volume 8. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 8,
+    "slug": "haydn-symphony-43",
+    "work_id": "f45453737b2b4b63852e694673901b5c",
+    "work_group_id": "a84c1261a14146ecb2199d4ed0ae5e32",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "ae4d60380f5b48fb95c9cea6bf02f7cb",
+      "work_id": "f45453737b2b4b63852e694673901b5c",
+      "performers": [
+        {
+          "name": "Il Giardino Armonico",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA682",
+        "album_title": "Haydn 2032, Vol. 8: La Roxolana"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/8711985--haydn-2032-volume-8-la-roxolana",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/187335103"
+        }
+      },
+      "notes": "Haydn 2032, volume 8. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 8,
+    "slug": "haydn-symphony-28",
+    "work_id": "28f276d5911c465fbf3dc809cf562e72",
+    "work_group_id": "9cd8bd7c63ae4ee898a33f986a305a15",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "cef1ba752df8409cb116f838fce71cce",
+      "work_id": "28f276d5911c465fbf3dc809cf562e72",
+      "performers": [
+        {
+          "name": "Il Giardino Armonico",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA682",
+        "album_title": "Haydn 2032, Vol. 8: La Roxolana"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/8711985--haydn-2032-volume-8-la-roxolana",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/187335103"
+        }
+      },
+      "notes": "Haydn 2032, volume 8. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 8,
+    "slug": "bartok-romanian-folk-dances-orchestra",
+    "work_id": "fe381927faa84bf3994d70003188669e",
+    "work_group_id": "cd5b0c14d6f04f11b7b5274d7537bfc1",
+    "status": "open",
+    "reason": "existing_work_comparison",
+    "performance": {
+      "id": "7e5c0df4f704434ebbba88f8b707517c",
+      "work_id": "fe381927faa84bf3994d70003188669e",
+      "performers": [
+        {
+          "name": "Il Giardino Armonico",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA682",
+        "album_title": "Haydn 2032, Vol. 8: La Roxolana"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/8711985--haydn-2032-volume-8-la-roxolana",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/187335103"
+        }
+      },
+      "notes": "Haydn 2032, volume 8. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    },
+    "comparison_issue": "https://github.com/LuHoo/classical_music/issues/230"
+  },
+  {
+    "volume": 8,
+    "slug": "anonymous-sonata-jucunda",
+    "work_id": "9e9e44965f154f48afe1e2154b72eb46",
+    "work_group_id": "1b79826827de41129387c2cc78490c29",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "b6a6a50319344e53979502c6032df9de",
+      "work_id": "9e9e44965f154f48afe1e2154b72eb46",
+      "performers": [
+        {
+          "name": "Il Giardino Armonico",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA682",
+        "album_title": "Haydn 2032, Vol. 8: La Roxolana"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/8711985--haydn-2032-volume-8-la-roxolana",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/187335103"
+        }
+      },
+      "notes": "Haydn 2032, volume 8. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 9,
+    "slug": "haydn-symphony-35",
+    "work_id": "6aa5ea29796645cd90f3b960115f03dd",
+    "work_group_id": "0f3e89bbe991493fa771ef35e25708e8",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "f120239050424186927ef817abf903fd",
+      "work_id": "6aa5ea29796645cd90f3b960115f03dd",
+      "performers": [
+        {
+          "name": "Il Giardino Armonico",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA684",
+        "album_title": "Haydn 2032, Vol. 9: L'Addio"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/8864913--haydn-2032-vol-9-laddio",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/187296904"
+        }
+      },
+      "notes": "Haydn 2032, volume 9. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 9,
+    "slug": "haydn-symphony-45",
+    "work_id": "d04ac01cef90414685a5698d64863ef2",
+    "work_group_id": "4457f0319e044cdb97032b79143c0771",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "71831b5c1f264e94b5ae7e0dc0d49a0f",
+      "work_id": "d04ac01cef90414685a5698d64863ef2",
+      "performers": [
+        {
+          "name": "Il Giardino Armonico",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA684",
+        "album_title": "Haydn 2032, Vol. 9: L'Addio"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/8864913--haydn-2032-vol-9-laddio",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/187296904"
+        }
+      },
+      "notes": "Haydn 2032, volume 9. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 9,
+    "slug": "haydn-symphony-15",
+    "work_id": "3261307c834249a1b49de636472722c8",
+    "work_group_id": "b677a38d40b54690934d92bb75078380",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "77de2f200a784b439416b7edb7e893f2",
+      "work_id": "3261307c834249a1b49de636472722c8",
+      "performers": [
+        {
+          "name": "Il Giardino Armonico",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA684",
+        "album_title": "Haydn 2032, Vol. 9: L'Addio"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/8864913--haydn-2032-vol-9-laddio",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/187296904"
+        }
+      },
+      "notes": "Haydn 2032, volume 9. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 9,
+    "slug": "haydn-berenice-che-fai",
+    "work_id": "e8cfb77813be4bc68346568a741324d7",
+    "work_group_id": "3adb293f804741489bf58886e1218251",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "662e19a1ad2e4cd3b766dac1ef672464",
+      "work_id": "e8cfb77813be4bc68346568a741324d7",
+      "performers": [
+        {
+          "name": "Il Giardino Armonico",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        },
+        {
+          "name": "Sandrine Piau",
+          "role": "soprano"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA684",
+        "album_title": "Haydn 2032, Vol. 9: L'Addio"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/8864913--haydn-2032-vol-9-laddio",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/187296904"
+        }
+      },
+      "notes": "Haydn 2032, volume 9. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 10,
+    "slug": "haydn-symphony-6",
+    "work_id": "a181b536f3ff4fc39f87f33b1d63a5fd",
+    "work_group_id": "b8d655005c874dc99ff9aeacb7f795c1",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "7e013621abf4454c9685db8652a40507",
+      "work_id": "a181b536f3ff4fc39f87f33b1d63a5fd",
+      "performers": [
+        {
+          "name": "Il Giardino Armonico",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA686",
+        "album_title": "Haydn 2032, Vol. 10: Les heures du jour"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/8917718--haydn-2032-vol-10-les-heures-du-jour",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/183220000"
+        }
+      },
+      "notes": "Haydn 2032, volume 10. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 10,
+    "slug": "haydn-symphony-7",
+    "work_id": "4c1716bd38af4b288a338f209b99f7f7",
+    "work_group_id": "9c882b2388d1479ca10f9d7817e954bb",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "69708bd6ccd6400a919040511bf3ece8",
+      "work_id": "4c1716bd38af4b288a338f209b99f7f7",
+      "performers": [
+        {
+          "name": "Il Giardino Armonico",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA686",
+        "album_title": "Haydn 2032, Vol. 10: Les heures du jour"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/8917718--haydn-2032-vol-10-les-heures-du-jour",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/183220000"
+        }
+      },
+      "notes": "Haydn 2032, volume 10. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 10,
+    "slug": "haydn-symphony-8",
+    "work_id": "f55b4bbd5eb04f33b6c83b9cbfc343ee",
+    "work_group_id": "9a741acf2e8a494f8641eae81cef7960",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "dd912c20cebe4452af2222238a09ecd4",
+      "work_id": "f55b4bbd5eb04f33b6c83b9cbfc343ee",
+      "performers": [
+        {
+          "name": "Il Giardino Armonico",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA686",
+        "album_title": "Haydn 2032, Vol. 10: Les heures du jour"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/8917718--haydn-2032-vol-10-les-heures-du-jour",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/183220000"
+        }
+      },
+      "notes": "Haydn 2032, volume 10. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 10,
+    "slug": "mozart-serenata-notturna",
+    "work_id": "wolfgang-amadeus-mozart-serenade-notturna-work",
+    "work_group_id": "wolfgang-amadeus-mozart-serenade-notturna-group",
+    "status": "open",
+    "reason": "existing_work_comparison",
+    "performance": {
+      "id": "4ddd6fab4fd54f78b69475e29af50eb8",
+      "work_id": "wolfgang-amadeus-mozart-serenade-notturna-work",
+      "performers": [
+        {
+          "name": "Il Giardino Armonico",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA686",
+        "album_title": "Haydn 2032, Vol. 10: Les heures du jour"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/8917718--haydn-2032-vol-10-les-heures-du-jour",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/183220000"
+        }
+      },
+      "notes": "Haydn 2032, volume 10. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    },
+    "comparison_issue": "https://github.com/LuHoo/classical_music/issues/229"
+  },
+  {
+    "volume": 11,
+    "slug": "haydn-symphony-82",
+    "work_id": "4494551b69e84f689fd15ae6888b7e7e",
+    "work_group_id": "bacf9d1054724ad290500c770c4251e6",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "6e00958d93da43cb8cc69c7c61a12f6a",
+      "work_id": "4494551b69e84f689fd15ae6888b7e7e",
+      "performers": [
+        {
+          "name": "Kammerorchester Basel",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA688",
+        "album_title": "Haydn 2032, Vol. 11: Au goût parisien"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/9268519--haydn-2032-vol-11-au-gout-parisien",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/214310882"
+        }
+      },
+      "notes": "Haydn 2032, volume 11. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 11,
+    "slug": "haydn-symphony-87",
+    "work_id": "6c71cb94f35e4f888a20856591667be2",
+    "work_group_id": "f1f562bb36344e45ad35ecbcf516c1cb",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "8621c03050b64c448935188ea73396fa",
+      "work_id": "6c71cb94f35e4f888a20856591667be2",
+      "performers": [
+        {
+          "name": "Kammerorchester Basel",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA688",
+        "album_title": "Haydn 2032, Vol. 11: Au goût parisien"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/9268519--haydn-2032-vol-11-au-gout-parisien",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/214310882"
+        }
+      },
+      "notes": "Haydn 2032, volume 11. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 11,
+    "slug": "haydn-symphony-24",
+    "work_id": "d3abdc88a2994ca4b31cbba0db79e1de",
+    "work_group_id": "4391fdc33cc04ea392ad53b90430b3d9",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "b49a8b2b40f642d38ef5b473f49e1b40",
+      "work_id": "d3abdc88a2994ca4b31cbba0db79e1de",
+      "performers": [
+        {
+          "name": "Kammerorchester Basel",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA688",
+        "album_title": "Haydn 2032, Vol. 11: Au goût parisien"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/9268519--haydn-2032-vol-11-au-gout-parisien",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/214310882"
+        }
+      },
+      "notes": "Haydn 2032, volume 11. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 11,
+    "slug": "haydn-symphony-2",
+    "work_id": "d19a95357c4b4630a8849aae05606790",
+    "work_group_id": "f70935389a1747b784c2a4652dc7339d",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "9d86a13cfd81417ca3e7d68ddf2a6248",
+      "work_id": "d19a95357c4b4630a8849aae05606790",
+      "performers": [
+        {
+          "name": "Kammerorchester Basel",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA688",
+        "album_title": "Haydn 2032, Vol. 11: Au goût parisien"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/9268519--haydn-2032-vol-11-au-gout-parisien",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/214310882"
+        }
+      },
+      "notes": "Haydn 2032, volume 11. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 12,
+    "slug": "haydn-symphony-61",
+    "work_id": "839285ea1db54a3685b65de7126fef01",
+    "work_group_id": "fa86abf1b1e6413dab84dcb2675b4994",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "600ef895c9944f39be625b1ca0217da9",
+      "work_id": "839285ea1db54a3685b65de7126fef01",
+      "performers": [
+        {
+          "name": "Kammerorchester Basel",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA690",
+        "album_title": "Haydn 2032, Vol. 12: Les jeux et les plaisirs"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/9334463--haydn-2032-vol-12-les-jeux-et-les-plaisirs",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/230784321"
+        }
+      },
+      "notes": "Haydn 2032, volume 12. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 12,
+    "slug": "haydn-symphony-66",
+    "work_id": "1f8e9ea46ee04a81b64f62e80faea95f",
+    "work_group_id": "a2abbc538870443c81af019ceea250df",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "789d3625ef014946aa11266be3d5f770",
+      "work_id": "1f8e9ea46ee04a81b64f62e80faea95f",
+      "performers": [
+        {
+          "name": "Kammerorchester Basel",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA690",
+        "album_title": "Haydn 2032, Vol. 12: Les jeux et les plaisirs"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/9334463--haydn-2032-vol-12-les-jeux-et-les-plaisirs",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/230784321"
+        }
+      },
+      "notes": "Haydn 2032, volume 12. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 12,
+    "slug": "haydn-symphony-69",
+    "work_id": "d5e8b9ddce104be2853afc37a5133c8f",
+    "work_group_id": "fa11fd0b67b0442ea25c6f36b4973c69",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "7eae968edfbe4ec1b4505ad3d61c7880",
+      "work_id": "d5e8b9ddce104be2853afc37a5133c8f",
+      "performers": [
+        {
+          "name": "Kammerorchester Basel",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA690",
+        "album_title": "Haydn 2032, Vol. 12: Les jeux et les plaisirs"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/9334463--haydn-2032-vol-12-les-jeux-et-les-plaisirs",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/230784321"
+        }
+      },
+      "notes": "Haydn 2032, volume 12. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 12,
+    "slug": "anonymous-toy-symphony",
+    "work_id": "44a840a122cf4bd6925734bc23207a64",
+    "work_group_id": "3fdef038598445aea64a94d42604067d",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "27738ed2a9de4991a0a3b512e2927e2b",
+      "work_id": "44a840a122cf4bd6925734bc23207a64",
+      "performers": [
+        {
+          "name": "Kammerorchester Basel",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA690",
+        "album_title": "Haydn 2032, Vol. 12: Les jeux et les plaisirs"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/9334463--haydn-2032-vol-12-les-jeux-et-les-plaisirs",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/230784321"
+        }
+      },
+      "notes": "Haydn 2032, volume 12. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 13,
+    "slug": "haydn-symphony-31",
+    "work_id": "bbdb075ec270433da8f4e2f635d81e00",
+    "work_group_id": "4af6c690bdc5498798f844b5e3987776",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "82b98ba8f23b45ada4bb95eecdbb7fc0",
+      "work_id": "bbdb075ec270433da8f4e2f635d81e00",
+      "performers": [
+        {
+          "name": "Il Giardino Armonico",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA692",
+        "album_title": "Haydn 2032, Vol. 13: Horn Signal"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/9408525--haydn-2032-vol-13-horn-signal",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/267861472"
+        }
+      },
+      "notes": "Haydn 2032, volume 13. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 13,
+    "slug": "haydn-symphony-59",
+    "work_id": "1f85c6b0027944db8272bb8f19dca49a",
+    "work_group_id": "5a3d5053a8644b289940c4ad3256c576",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "1873c9d83c794b12a7355dad8431a3b9",
+      "work_id": "1f85c6b0027944db8272bb8f19dca49a",
+      "performers": [
+        {
+          "name": "Il Giardino Armonico",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA692",
+        "album_title": "Haydn 2032, Vol. 13: Horn Signal"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/9408525--haydn-2032-vol-13-horn-signal",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/267861472"
+        }
+      },
+      "notes": "Haydn 2032, volume 13. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 13,
+    "slug": "haydn-symphony-48",
+    "work_id": "eee20205bd7f448590c484f7c66b2594",
+    "work_group_id": "2f9591aa74024ad8ae48a8b21acc10c3",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "d55beabdb4044de381009c1f0c5d002d",
+      "work_id": "eee20205bd7f448590c484f7c66b2594",
+      "performers": [
+        {
+          "name": "Il Giardino Armonico",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA692",
+        "album_title": "Haydn 2032, Vol. 13: Horn Signal"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/9408525--haydn-2032-vol-13-horn-signal",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/267861472"
+        }
+      },
+      "notes": "Haydn 2032, volume 13. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 13,
+    "slug": "telemann-concerto-recorder-horn",
+    "status": "inventory_only",
+    "reason": "digital_bonus_outside_cd_scope",
+    "tidal_url": "https://tidal.com/album/267861472"
+  },
+  {
+    "volume": 14,
+    "slug": "haydn-symphony-53",
+    "work_id": "24564a0c55ea4f71acd5a365cdb9098d",
+    "work_group_id": "26bad31a319a461f86516e4239c4d5c6",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "365533bed92b426cb134949d184b02d5",
+      "work_id": "24564a0c55ea4f71acd5a365cdb9098d",
+      "performers": [
+        {
+          "name": "Kammerorchester Basel",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA694",
+        "album_title": "Haydn 2032, Vol. 14: L'impériale"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/9512111--haydn-2032-vol-14-limperiale",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/304074965"
+        }
+      },
+      "notes": "Haydn 2032, volume 14. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 14,
+    "slug": "haydn-symphony-54",
+    "work_id": "9cc808fc01624e1686c50fcb23689e27",
+    "work_group_id": "a907832156314af7aaa2b262b5948024",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "af8336321e564522b68a646167520507",
+      "work_id": "9cc808fc01624e1686c50fcb23689e27",
+      "performers": [
+        {
+          "name": "Kammerorchester Basel",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA694",
+        "album_title": "Haydn 2032, Vol. 14: L'impériale"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/9512111--haydn-2032-vol-14-limperiale",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/304074965"
+        }
+      },
+      "notes": "Haydn 2032, volume 14. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 14,
+    "slug": "haydn-symphony-33",
+    "work_id": "509af85689b7424293cbd4e40c1cd3ed",
+    "work_group_id": "c867ee39f4eb4665aed717e4e3cb32b0",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "1fbaea10e3da49bb8c44fc2f379e2645",
+      "work_id": "509af85689b7424293cbd4e40c1cd3ed",
+      "performers": [
+        {
+          "name": "Kammerorchester Basel",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA694",
+        "album_title": "Haydn 2032, Vol. 14: L'impériale"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/9512111--haydn-2032-vol-14-limperiale",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/304074965"
+        }
+      },
+      "notes": "Haydn 2032, volume 14. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 14,
+    "slug": "haydn-sinfonia-d-ia7",
+    "work_id": "f2b9de32e66f4142b144fec2f99c8102",
+    "work_group_id": "c67054b48b9849d5aa7753e18c8f2063",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "8ec24590665441d9a402cd3d758ff118",
+      "work_id": "f2b9de32e66f4142b144fec2f99c8102",
+      "performers": [
+        {
+          "name": "Kammerorchester Basel",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA694",
+        "album_title": "Haydn 2032, Vol. 14: L'impériale"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/9512111--haydn-2032-vol-14-limperiale",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/304074965"
+        }
+      },
+      "notes": "Haydn 2032, volume 14. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 15,
+    "slug": "haydn-symphony-85",
+    "work_id": "da6e704c6cf142a79426f7f299a21a2e",
+    "work_group_id": "ce129243f088428e8b1d0ff9ae95d764",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "902a44e08f8647d7aaabb4e35dbffa6b",
+      "work_id": "da6e704c6cf142a79426f7f299a21a2e",
+      "performers": [
+        {
+          "name": "Kammerorchester Basel",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA696",
+        "album_title": "Haydn 2032, Vol. 15: La Reine"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/9609348--haydn-2032-vol-15-la-reine",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/347594506"
+        }
+      },
+      "notes": "Haydn 2032, volume 15. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 15,
+    "slug": "haydn-symphony-62",
+    "work_id": "fa5dcc1877304aa6b2152066eb8d7563",
+    "work_group_id": "ef47610f28984369a39644f1d4f2fc1f",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "760a0e7408f64b63a560539bcd4f5164",
+      "work_id": "fa5dcc1877304aa6b2152066eb8d7563",
+      "performers": [
+        {
+          "name": "Kammerorchester Basel",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA696",
+        "album_title": "Haydn 2032, Vol. 15: La Reine"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/9609348--haydn-2032-vol-15-la-reine",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/347594506"
+        }
+      },
+      "notes": "Haydn 2032, volume 15. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 15,
+    "slug": "haydn-symphony-50",
+    "work_id": "a9d6c3f8a9ca468a85869261c15ef863",
+    "work_group_id": "f423047e2deb4de3b7d53b8d7bd9d546",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "73d5dc5222b94f6c83af994c29256cca",
+      "work_id": "a9d6c3f8a9ca468a85869261c15ef863",
+      "performers": [
+        {
+          "name": "Kammerorchester Basel",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA696",
+        "album_title": "Haydn 2032, Vol. 15: La Reine"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/9609348--haydn-2032-vol-15-la-reine",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/347594506"
+        }
+      },
+      "notes": "Haydn 2032, volume 15. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 16,
+    "slug": "haydn-symphony-98",
+    "work_id": "f3edc0337c9648239b7f6144421efe9f",
+    "work_group_id": "7cb667035a0143d5941343552fecff4b",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "39a8082e93644f3b99ccab7f282e87f2",
+      "work_id": "f3edc0337c9648239b7f6144421efe9f",
+      "performers": [
+        {
+          "name": "Il Giardino Armonico",
+          "role": "orchestra"
+        },
+        {
+          "name": "Kammerorchester Basel",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA698",
+        "album_title": "Haydn 2032, Vol. 16: The Surprise"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/9719694--haydn-2032-vol-16-the-surprise",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/386182541"
+        }
+      },
+      "notes": "Haydn 2032, volume 16. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 16,
+    "slug": "haydn-symphony-94",
+    "work_id": "f69de43016684d32b131cee140be2363",
+    "work_group_id": "66445883bc964e31bce82f9b1eb613dd",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "9d35b80a9af14311a779a1ea937b9681",
+      "work_id": "f69de43016684d32b131cee140be2363",
+      "performers": [
+        {
+          "name": "Il Giardino Armonico",
+          "role": "orchestra"
+        },
+        {
+          "name": "Kammerorchester Basel",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA698",
+        "album_title": "Haydn 2032, Vol. 16: The Surprise"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/9719694--haydn-2032-vol-16-the-surprise",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/386182541"
+        }
+      },
+      "notes": "Haydn 2032, volume 16. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 16,
+    "slug": "haydn-symphony-90",
+    "work_id": "085419e3ef8a48e5bbe2c2658f42e63e",
+    "work_group_id": "a8688b5746b54f09a5757e08ed231b9a",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "05538069d2b440f4ab08f243c8a1c696",
+      "work_id": "085419e3ef8a48e5bbe2c2658f42e63e",
+      "performers": [
+        {
+          "name": "Il Giardino Armonico",
+          "role": "orchestra"
+        },
+        {
+          "name": "Kammerorchester Basel",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA698",
+        "album_title": "Haydn 2032, Vol. 16: The Surprise"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/9719694--haydn-2032-vol-16-the-surprise",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/386182541"
+        }
+      },
+      "notes": "Haydn 2032, volume 16. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 16,
+    "slug": "rossini-la-scala-di-seta",
+    "work_id": "6bba977d1e4a4e86912e16e827fd006d",
+    "work_group_id": "524f8f45cfa540a994d7b15a3511fb61",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "98afcc5ef39c45228d87a8edfb6a16ec",
+      "work_id": "6bba977d1e4a4e86912e16e827fd006d",
+      "performers": [
+        {
+          "name": "Il Giardino Armonico",
+          "role": "orchestra"
+        },
+        {
+          "name": "Kammerorchester Basel",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA698",
+        "album_title": "Haydn 2032, Vol. 16: The Surprise"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/9719694--haydn-2032-vol-16-the-surprise",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/386182541"
+        }
+      },
+      "notes": "Haydn 2032, volume 16. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link.",
+      "excerpt": "Overture only; this album does not contain the complete opera."
+    }
+  },
+  {
+    "volume": 17,
+    "slug": "haydn-symphony-36",
+    "work_id": "77c0d585f9884e08a938dba4876a5347",
+    "work_group_id": "34eea6a42f3146acae7938f6678d3ba6",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "eed9c13a2bf34c918640d9bc4bbcc445",
+      "work_id": "77c0d585f9884e08a938dba4876a5347",
+      "performers": [
+        {
+          "name": "Kammerorchester Basel",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA1146",
+        "album_title": "Haydn 2032, Vol. 17: Per il Luigi"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/9769890--haydn-2032-vol-17-per-il-luigi",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/432606500"
+        }
+      },
+      "notes": "Haydn 2032, volume 17. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 17,
+    "slug": "haydn-symphony-16",
+    "work_id": "ead83b86546a461b95e513f0dd235f33",
+    "work_group_id": "5f20d07cef404ea2b5f56178b1124f07",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "2518363994dd4ab2bf0dcd0287b6b48e",
+      "work_id": "ead83b86546a461b95e513f0dd235f33",
+      "performers": [
+        {
+          "name": "Kammerorchester Basel",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA1146",
+        "album_title": "Haydn 2032, Vol. 17: Per il Luigi"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/9769890--haydn-2032-vol-17-per-il-luigi",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/432606500"
+        }
+      },
+      "notes": "Haydn 2032, volume 17. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 17,
+    "slug": "haydn-symphony-13",
+    "work_id": "fe49d096a5b142cb8b66e608b1cbbf6b",
+    "work_group_id": "3aeb437f96724478922bf4ae402f8dc8",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "a782237744ca406f8c46ece4ee50293b",
+      "work_id": "fe49d096a5b142cb8b66e608b1cbbf6b",
+      "performers": [
+        {
+          "name": "Kammerorchester Basel",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA1146",
+        "album_title": "Haydn 2032, Vol. 17: Per il Luigi"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/9769890--haydn-2032-vol-17-per-il-luigi",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/432606500"
+        }
+      },
+      "notes": "Haydn 2032, volume 17. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 17,
+    "slug": "haydn-violin-concerto-1",
+    "work_id": "f0201ecee6cd488a8a4aaea64068d74b",
+    "work_group_id": "f657e4037a8a40eb8f8d4f621a13c7ef",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "9ee507e5ae014c529d6dca7421082d9a",
+      "work_id": "f0201ecee6cd488a8a4aaea64068d74b",
+      "performers": [
+        {
+          "name": "Kammerorchester Basel",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        },
+        {
+          "name": "Dmitry Smirnov",
+          "role": "violin"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA1146",
+        "album_title": "Haydn 2032, Vol. 17: Per il Luigi"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/9769890--haydn-2032-vol-17-per-il-luigi",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/432606500"
+        }
+      },
+      "notes": "Haydn 2032, volume 17. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 18,
+    "slug": "haydn-symphony-56",
+    "work_id": "035e2730957443529825fb10ce99a423",
+    "work_group_id": "3155b09b30104a4fbde468fc539a6d74",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "9c2de0bf8cb540e18c5d6ce7b1af23f9",
+      "work_id": "035e2730957443529825fb10ce99a423",
+      "performers": [
+        {
+          "name": "Kammerorchester Basel",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA1092",
+        "album_title": "Haydn 2032, Vol. 18: Il maestro di scuola"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/9827138--haydn-2032-vol-18-il-maestro-di-scuola",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/467075961"
+        }
+      },
+      "notes": "Haydn 2032, volume 18. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 18,
+    "slug": "haydn-symphony-29",
+    "work_id": "77c251c67d9c4a519bb74f992d240f73",
+    "work_group_id": "9248cc619ef646088825df5cc37f9a78",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "af0bd2e666254fad9e77c5a090438ead",
+      "work_id": "77c251c67d9c4a519bb74f992d240f73",
+      "performers": [
+        {
+          "name": "Kammerorchester Basel",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA1092",
+        "album_title": "Haydn 2032, Vol. 18: Il maestro di scuola"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/9827138--haydn-2032-vol-18-il-maestro-di-scuola",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/467075961"
+        }
+      },
+      "notes": "Haydn 2032, volume 18. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 18,
+    "slug": "haydn-symphony-55",
+    "work_id": "cd843111f92246168fedcebc65eaaabc",
+    "work_group_id": "cee93a9c67854b4c88eb302e4a01065c",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "5b90dbff215947a18e17e7dddf0d8252",
+      "work_id": "cd843111f92246168fedcebc65eaaabc",
+      "performers": [
+        {
+          "name": "Kammerorchester Basel",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA1092",
+        "album_title": "Haydn 2032, Vol. 18: Il maestro di scuola"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/9827138--haydn-2032-vol-18-il-maestro-di-scuola",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/467075961"
+        }
+      },
+      "notes": "Haydn 2032, volume 18. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 18,
+    "slug": "lessel-symphony-5",
+    "work_id": "45d27541c318486eb9076f1ac8a6d6d4",
+    "work_group_id": "c9ae31ae5a0e4c88a0ff2bf5c10c9f83",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "15bff7dbd19c478a865499223c0a7174",
+      "work_id": "45d27541c318486eb9076f1ac8a6d6d4",
+      "performers": [
+        {
+          "name": "Kammerorchester Basel",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA1092",
+        "album_title": "Haydn 2032, Vol. 18: Il maestro di scuola"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/9827138--haydn-2032-vol-18-il-maestro-di-scuola",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/467075961"
+        }
+      },
+      "notes": "Haydn 2032, volume 18. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link.",
+      "excerpt": "Finale only: Molto presto."
+    }
+  },
+  {
+    "volume": 19,
+    "slug": "haydn-symphony-52",
+    "work_id": "8cc53829bd5c4c57933de3e4e4c12c59",
+    "work_group_id": "e95d023ff4514e3d9d877ad9dd8afb62",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "6c5134f402834625853af9d751d0ec0d",
+      "work_id": "8cc53829bd5c4c57933de3e4e4c12c59",
+      "performers": [
+        {
+          "name": "Il Giardino Armonico",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA1101",
+        "album_title": "Haydn 2032, Vol. 19: Trauer"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/9856776--haydn2032-vol-19-trauer",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/504485309"
+        }
+      },
+      "notes": "Haydn 2032, volume 19. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 19,
+    "slug": "haydn-symphony-44",
+    "work_id": "48f228c0183440af83bb860a719413ab",
+    "work_group_id": "74f7cfd5a0fa491f9a6f51336f05ed44",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "a84f72f44da34b6d8dac3b766f1bb0bc",
+      "work_id": "48f228c0183440af83bb860a719413ab",
+      "performers": [
+        {
+          "name": "Il Giardino Armonico",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA1101",
+        "album_title": "Haydn 2032, Vol. 19: Trauer"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/9856776--haydn2032-vol-19-trauer",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/504485309"
+        }
+      },
+      "notes": "Haydn 2032, volume 19. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 19,
+    "slug": "haydn-symphony-108",
+    "work_id": "6771bf6257134417b609a964ca196ed9",
+    "work_group_id": "2abd377b39024e5d854275dc62ad6f0d",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "5817fe20744e4c369f93018cdd337a91",
+      "work_id": "6771bf6257134417b609a964ca196ed9",
+      "performers": [
+        {
+          "name": "Il Giardino Armonico",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA1101",
+        "album_title": "Haydn 2032, Vol. 19: Trauer"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/9856776--haydn2032-vol-19-trauer",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/504485309"
+        }
+      },
+      "notes": "Haydn 2032, volume 19. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 19,
+    "slug": "part-da-pacem-domine-strings",
+    "work_id": "302d58b642ab4afa93bbf26313410e31",
+    "work_group_id": "31a3aea303cf4134ba890e21125580d6",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "2e115e32675846aea6554b2dcf73fbae",
+      "work_id": "302d58b642ab4afa93bbf26313410e31",
+      "performers": [
+        {
+          "name": "Il Giardino Armonico",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA1101",
+        "album_title": "Haydn 2032, Vol. 19: Trauer"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/9856776--haydn2032-vol-19-trauer",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/504485309"
+        }
+      },
+      "notes": "Haydn 2032, volume 19. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": 19,
+    "slug": "scheidt-paduan-a4",
+    "work_id": "cdaec1a1e54a4a5b9beccdb1b117c9a3",
+    "work_group_id": "6d7845b2ee1b4f629b81f89c55a5a4ff",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "7361be0794714355888fbf7d28cbbb5e",
+      "work_id": "cdaec1a1e54a4a5b9beccdb1b117c9a3",
+      "performers": [
+        {
+          "name": "Il Giardino Armonico",
+          "role": "orchestra"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA1101",
+        "album_title": "Haydn 2032, Vol. 19: Trauer"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/9856776--haydn2032-vol-19-trauer",
+        "file": "reports/haydn-2032/catalogue.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/504485309"
+        }
+      },
+      "notes": "Haydn 2032, volume 19. Sources and Tidal album metadata checked 2026-09-30. Album link covers this work; it is not a work-specific track link."
+    }
+  },
+  {
+    "volume": null,
+    "catalogue_number": "ALPHA567",
+    "slug": "haydn-die-schopfung",
+    "work_id": "277b20d26821493dab40d227e27ea899",
+    "work_group_id": "29948c6a4e56499ab63cf0925c62a826",
+    "status": "selected",
+    "reason": "new_work_from_requested_collection",
+    "performance": {
+      "id": "d9a56012f16a4f2280712fe9639c8472",
+      "work_id": "277b20d26821493dab40d227e27ea899",
+      "performers": [
+        {
+          "name": "Il Giardino Armonico",
+          "role": "orchestra"
+        },
+        {
+          "name": "Chor des Bayerischen Rundfunks",
+          "role": "choir"
+        },
+        {
+          "name": "Giovanni Antonini",
+          "role": "conductor"
+        },
+        {
+          "name": "Anna Lucia Richter",
+          "role": "soprano"
+        },
+        {
+          "name": "Maximilian Schmitt",
+          "role": "tenor"
+        },
+        {
+          "name": "Florian Boesch",
+          "role": "baritone"
+        },
+        {
+          "name": "Gabriele Weinfurter",
+          "role": "mezzo-soprano"
+        }
+      ],
+      "release": {
+        "label": "Alpha Classics",
+        "catalogue_number": "ALPHA567",
+        "album_title": "Haydn: Die Schöpfung"
+      },
+      "source": {
+        "url": "https://www.prestomusic.com/classical/products/8820488--haydn-die-schopfung",
+        "file": "reports/haydn-2032/companion-releases.json"
+      },
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/album/187429062"
+        }
+      },
+      "notes": "Unnumbered Haydn 2032 companion release, 2 CDs; complete oratorio in German. Recorded in 2019; released in 2020. Sources and Tidal album identity checked 2026-09-30. Gabriele Weinfurter is additionally credited by the Bavarian Radio Chorus release page."
+    }
+  }
+]

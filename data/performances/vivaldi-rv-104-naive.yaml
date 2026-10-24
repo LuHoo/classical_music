@@ -1,0 +1,16 @@
+id: be9fba14162b4674846143952e0a2cce
+work_id: 6bd554b0a7674bb68f5d9c2e7e1e24d5
+performers:
+- name: L’Astrée
+  role: ensemble
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP30358
+  album_title: Concerti e cantate da camera I
+source:
+  url: https://vivaldiedition.net/portfolio/vol-5-concerti-e-cantata-da-camera-2002/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: 'The Vivaldi Edition, volume 5. Album page verified 2026-09-28. '
+links:
+  tidal:
+    url: https://tidal.com/album/92928923

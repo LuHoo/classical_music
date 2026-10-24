@@ -1,0 +1,13 @@
+id: charles-ives-3-places-in-new-england-playlist-2199
+work_id: charles-ives-3-places-in-new-england
+performers:
+- name: The Cleveland Orchestra
+- name: Christoph von Dohnányi
+links:
+  tidal:
+    url: https://tidal.com/track/4630315
+release:
+  album_title: 'Ives: Symphonies Nos 1-4; Orchestral Sets Nos.1-2'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

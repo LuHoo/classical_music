@@ -1,0 +1,11 @@
+id: "igor-stravinsky-circus-polka-k-066-work"
+work_group_id: "igor-stravinsky-circus-polka-k-066-group"
+composer_id: "igor-stravinsky"
+title: "Circus Polka"
+source:
+  file: "docs/stravinsky.md"
+  line: "232"
+catalogue:
+  k: "K 066"
+date_text: "1942"
+category: "Keyboard"

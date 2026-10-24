@@ -1,0 +1,11 @@
+id: "igor-stravinsky-renard-k-023-work"
+work_group_id: "igor-stravinsky-renard-k-023-group"
+composer_id: "igor-stravinsky"
+title: "Renard"
+source:
+  file: "docs/stravinsky.md"
+  line: "15"
+catalogue:
+  k: "K 023"
+date_text: "1916"
+category: "Opera/Theatre"

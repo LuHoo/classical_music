@@ -1,0 +1,21 @@
+id: ralph-vaughan-williams-sound-sleep-playlist-1907
+work_id: ralph-vaughan-williams-sound-sleep
+performers:
+- name: Mary Bevan
+  role: performer
+- name: Kitty Whately
+  role: performer
+- name: Elizabeth Watts
+  role: performer
+- name: BBC Symphony Orchestra
+  role: performer
+- name: Martyn Brabbins
+  role: performer
+links:
+  tidal:
+    url: https://tidal.com/track/340801035
+release:
+  album_title: 'Vaughan Williams: A London Symphony (Symphony No. 2)'
+source:
+  file: reports/playlist-import/best-classical/window-333-1998.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

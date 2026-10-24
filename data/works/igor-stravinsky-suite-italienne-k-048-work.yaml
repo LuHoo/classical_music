@@ -1,0 +1,11 @@
+id: "igor-stravinsky-suite-italienne-k-048-work"
+work_group_id: "igor-stravinsky-suite-italienne-k-048-group"
+composer_id: "igor-stravinsky"
+title: "Suite Italienne"
+source:
+  file: "docs/stravinsky.md"
+  line: "133"
+catalogue:
+  k: "K 048"
+date_text: "1932–33"
+category: "Chamber"

@@ -1,0 +1,19 @@
+id: felix-mendelssohn-octet-in-e-flat-op-20-chamber-c074
+work_id: felix-mendelssohn-octet-in-e-flat-op-20
+performers:
+  - name: James Ehnes
+  - name: Erin Keefe
+  - name: Andrew Wan
+  - name: Augustin Hadelich
+  - name: Cynthia Phelps
+  - name: Richard O'Neill
+  - name: Robert deMaine
+  - name: Edward Arron
+links:
+  tidal:
+    url: https://tidal.com/track/6162615
+release:
+  album_title: 'Mendelssohn: Violin Concerto & Octet in E-Flat'
+source:
+  file: reports/playlist-import/chamber/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/a2327106-07fd-4433-8bd3-d8a5c251c69a

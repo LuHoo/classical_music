@@ -1,0 +1,8 @@
+id: "ludwig-van-beethoven-piano-concerto-no-2-in-b-flat-major-op-19-group"
+composer_id: "ludwig-van-beethoven"
+title: "Piano Concerto No. 2 in B♭ major"
+source:
+  file: "docs/beethoven.md"
+  line: "24"
+catalogue:
+  opus: "Op. 19"

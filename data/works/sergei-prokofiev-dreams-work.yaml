@@ -1,0 +1,11 @@
+id: sergei-prokofiev-dreams-work
+work_group_id: sergei-prokofiev-dreams-group
+composer_id: sergei-prokofiev
+title: Dreams
+source:
+  file: docs/prokofiev.md
+  line: '18'
+catalogue:
+  op: Op. 6
+date_text: '1910'
+category: Orchestral

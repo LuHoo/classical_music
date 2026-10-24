@@ -1,0 +1,10 @@
+id: 4d02318bc2bd4acea9a90ae7d6e70592
+work_group_id: 7a4bd3bb27594a7d975744c637d437d7
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Sonata, RV 20
+catalogue:
+  rv: RV 20
+  opus: Op. 2
+source:
+  file: docs/vivaldi.md
+  line: '14'

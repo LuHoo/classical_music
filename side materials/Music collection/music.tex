@@ -1,0 +1,254 @@
+\documentclass[marginals=raggedright]{tufte-book}
+
+% Build with LaTeX - Basic Builder - PdfLaTeX
+
+\hypersetup{colorlinks}% uncomment this line if you prefer colored hyperlinks (e.g., for onscreen viewing)
+
+%%
+% Book metadata
+\title{Music Library}
+\author{Lucas Hoogduin}
+% \publisher{Boom}
+
+%%
+% \setcounter{secnumdepth}{0}
+\setcounter{tocdepth}{2}
+
+%% Use different font
+
+% %% Build with LaTeX
+% \usepackage[T1]{fontenc}
+% \usepackage{librefranklin}
+% \renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+\usepackage[T1]{fontenc}
+%%
+% For nicely typeset tabular material
+\usepackage{booktabs}
+
+%%
+% To embed flowcharts
+\usepackage{tikz} 
+  \usetikzlibrary{shapes, arrows, positioning, calc, math, arrows.meta}
+% Define block styles
+\tikzstyle{decision} = [diamond, draw, fill=KPMG_blue!20, 
+    text width=4.5 em, text badly centered, node distance=3 cm, inner sep = 0 pt]
+\tikzstyle{whiteblock} = [rectangle, draw, node distance=2.5 cm,
+    text width=7.2 em, text centered, rounded corners, minimum height=4 em]
+\tikzstyle{widewhiteblock} = [rectangle, draw, node distance=2.5 cm,
+    text width=15.4 em, text centered, rounded corners, minimum height=4 em]
+\tikzstyle{blueblock} = [rectangle, draw, fill=KPMG_blue!20, 
+    text width=7.2 em, text centered, rounded corners, minimum height=4 em,
+  node distance=3 cm]  
+\tikzstyle{wideblueblock} = [rectangle, draw, fill=KPMG_blue!20, 
+    text width=15.4 em, text centered, rounded corners, minimum height=4 em,
+  node distance=3 cm]  
+\tikzstyle{line} = [draw, -latex']
+\tikzstyle{cloud} = [draw, circle, fill=red!20, node distance=3 cm,
+    minimum height=2 em]
+
+
+%%
+% Allows background color to paragraphs
+\usepackage[framemethod=tikz]{mdframed} 
+
+%%
+% For graphics / images
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+\graphicspath{{graphics/}}
+
+% The fancyvrb package lets us customize the formatting of verbatim
+% environments.  We use a slightly smaller font.
+\usepackage{fancyvrb}
+\fvset{fontsize=\small}
+
+\usepackage{hyphenat}
+
+%%
+% Allows flats and sharps
+\usepackage{amssymb}
+
+%%
+% Allow clickable links to web pages
+\usepackage{hyperref}
+
+%%
+% create lists with abc..., ABC... etc
+\usepackage[inline]{enumitem} 
+
+
+% Prints the month name (e.g., January) and the year (e.g., 2008)
+\newcommand{\monthyear}{%
+  \ifcase\month\or January\or February\or March\or April\or May\or June\or
+  July\or August\or September\or October\or November\or
+  December\fi\space\number\year
+}
+
+\usepackage[refpage]{nomencl}
+\def\pagedeclaration#1{, \hyperlink{page.#1}{\nobreakspace#1}}
+\makenomenclature
+
+% Specify today's date as DD MMM YYYY
+\makeatletter
+\def\today{%
+  \two@digits{\the\day}~%
+  \ifcase\month\or%
+  JAN\or FEB\or MAR\or APR\or MAY\or JUN\or%
+  JUL\or AUG\or SEP\or OCT\or NOV\or DEC\fi~%
+  \number\year%
+}
+
+\newcommand{\closenomencl}{%
+  \closeout\@nomenclaturefile%
+}
+
+\makeatother
+
+\newcommand{\writenomencl}[1]{%
+  \closenomencl%
+  \IfFileExists{#1.nlo}{%
+    \write18{%
+      makeindex -s nomencl.ist -o #1.nls -t #1.nlg #1.nlo%
+    }% 
+  }{\typeout{Nothing there}}%
+}
+
+% Generates the index
+\usepackage{imakeidx}
+\makeindex[columns=2, intoc=true]
+\makeindex[name=FSaudit, title=Index of R commands in FSaudit, columns=2, intoc=true]
+
+\AtEndDocument{\writenomencl{\jobname}}
+
+\begin{document}
+
+% Front matter
+\frontmatter
+
+% full title page
+\maketitle
+
+% copyrights
+% \newpage
+\begin{fullwidth}
+\vfill
+\thispagestyle{empty}
+\setlength{\parindent}{0 pt}
+\setlength{\parskip}{\baselineskip}
+Copyright \copyright\ \the\year\ Lucas Hoogduin 
+\par\textit{First printing, \monthyear}
+\end{fullwidth}
+
+% r.5 contents
+\tableofcontents
+
+\listoffigures
+
+\listoftables
+
+% r.7 dedication
+\cleardoublepage
+~\vfill
+\begin{doublespace}
+\noindent\fontsize{18}{22}\selectfont\itshape
+% \nohyphenation
+Dedicated to 
+\end{doublespace}
+\vfill
+\vfill
+
+
+% r.9 introduction
+\cleardoublepage
+\chapter*{Preface}
+
+
+%%
+% Start the main matter (normal chapters)
+\mainmatter
+
+\input{adams}
+\input{barber}
+\input{bartok}
+\input{beethoven}
+\input{berg} % incomplete
+\input{berlioz}
+% \input{bernstein} % incomplete
+\input{blacher} 
+\input{bliss}
+\input{bloch}
+\input{brahms} % incomplete
+\input{britten} % incomplete
+\input{bruch}
+\input{bruckner}
+% \input{bryars}
+\input{busoni}
+% \input{chopin}
+\input{debussy}
+% \input{diepenbrock} % incomplete
+\input{dohnanyi}
+% \input{dvorak} % incomplete
+\input{enescu}
+% \input{escher} % incomplete
+\input{faure}
+\input{ferguson}
+% \input{gershwin} % incomplete
+\input{gorecki}
+% \input{grieg}
+% \input{haydn} % incomplete
+\input{hindemith}
+\input{holloway}
+% \input{holst}
+% \input{honegger}
+% \input{ibert}
+% \input{dindy}
+% \input{ives}
+% \input{janacek} % incomplete
+% \input{korngold} % incomplete
+\input{kalabis}
+\input{krasa}
+% \input{mahler} % incomplete
+% \input{martin}
+\input{martinu}
+% \input{mendelssohn} % incomplete
+\input{monteverdi}
+\input{mozart} % incomplete
+\input{part}
+\input{poulenc} % incomplete
+\input{prokofiev}
+\input{rachmaninov}
+% \input{rautavaara}
+\input{reger}
+\input{roussel}
+\input{saintsaens} % incomplete: piano concertos
+\input{schoenberg}
+\input{schmidt}
+\input{schmitt}
+\input{schreker}
+\input{schubert}
+\input{schumann}
+\input{shostakovich}
+\input{sibelius}
+\input{smetana}
+\input{stravinsky}
+% \input{suk} % incomplete
+% \input{szymanowski} % incomplete
+% \input{tchaikovsky} % incomplete
+\input{vaughanwilliams}
+% \input{walton} % incomplete
+\input{weill}
+\input{zemlinsky} % incomplete
+
+
+\printnomenclature
+\addcontentsline{toc}{chapter}{\nomname}
+
+\backmatter
+
+\begin{fullwidth}
+  \printindex
+\end{fullwidth}
+
+% \printglossary
+
+\end{document}

@@ -1,0 +1,13 @@
+id: olivier-messiaen-quatuor-pour-la-fin-du-temps-chamber-c044
+work_id: olivier-messiaen-quatuor-pour-la-fin-du-temps
+performers:
+  - name: Martin Fröst
+  - name: Lucas Debargue
+links:
+  tidal:
+    url: https://tidal.com/track/80058230
+release:
+  album_title: 'Messiaen: Quatuor pour la fin du temps (Quartet for the End of Time)'
+source:
+  file: reports/playlist-import/chamber/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/a2327106-07fd-4433-8bd3-d8a5c251c69a

@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-seven-bagatelles-op-33-work"
+work_group_id: "ludwig-van-beethoven-seven-bagatelles-op-33-group"
+composer_id: "ludwig-van-beethoven"
+title: "Seven Bagatelles"
+source:
+  file: "docs/beethoven.md"
+  line: "440"
+catalogue:
+  opus: "Op. 33"
+date_text: "1801–02"
+category: "Piano"

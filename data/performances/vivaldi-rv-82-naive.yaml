@@ -1,0 +1,16 @@
+id: 5067812a9a74481fb5b222d49308da8a
+work_id: 32bb0885dbf74f44a591a804f9d4e583
+performers:
+- name: Rolf Lislevand
+  role: performer
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP30429
+  album_title: Musica per mandolino e liuto
+source:
+  url: https://vivaldiedition.net/portfolio/vol-26-musica-per-mandolin-e-liuto-2006/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: 'The Vivaldi Edition, volume 26. Album page verified 2026-09-28. '
+links:
+  tidal:
+    url: https://tidal.com/album/92222513

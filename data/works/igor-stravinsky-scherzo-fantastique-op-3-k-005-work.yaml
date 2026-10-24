@@ -1,0 +1,12 @@
+id: "igor-stravinsky-scherzo-fantastique-op-3-k-005-work"
+work_group_id: "igor-stravinsky-scherzo-fantastique-op-3-k-005-group"
+composer_id: "igor-stravinsky"
+title: "Scherzo fantastique"
+source:
+  file: "docs/stravinsky.md"
+  line: "61"
+catalogue:
+  opus: "Op. 3"
+  k: "K 005"
+date_text: "1908"
+category: "Orchestral"

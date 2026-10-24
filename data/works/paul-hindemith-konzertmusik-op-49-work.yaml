@@ -1,0 +1,11 @@
+id: "paul-hindemith-konzertmusik-op-49-work"
+work_group_id: "paul-hindemith-konzertmusik-op-49-group"
+composer_id: "paul-hindemith"
+title: "Konzertmusik"
+source:
+  file: "docs/hindemith.md"
+  line: "118"
+catalogue:
+  opus: "Op. 49"
+date_text: "1930"
+category: "Concertante"

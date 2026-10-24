@@ -1,0 +1,9 @@
+id: 333327adfcb74d07aa705fb6adb92b08
+work_group_id: 81b4f2affb544cb6a5fc63be16eecfdc
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 366
+catalogue:
+  rv: RV 366
+source:
+  url: https://vivaldiedition.net/portfolio/vol-63-concerti-per-violino-viii-il-teatro/
+  file: reports/vivaldi-naive-edition/catalogue.json

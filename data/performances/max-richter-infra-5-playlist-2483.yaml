@@ -1,0 +1,13 @@
+id: max-richter-infra-5-playlist-2483
+work_id: max-richter-infra-5
+performers:
+- name: Baltic Sea Philharmonic
+- name: Kristjan Järvi
+links:
+  tidal:
+    url: https://tidal.com/track/192633964
+release:
+  album_title: Exiles
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

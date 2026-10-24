@@ -1,0 +1,18 @@
+id: b66c2befa327495c80e4e1ee73c4e185
+work_id: ac8b2649b6824255be3bfacf77ecd75f
+performers:
+- name: Concerto Italiano
+  role: ensemble
+- name: Rinaldo Alessandrini
+  role: conductor
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP30554
+  album_title: Concerti per archi II
+source:
+  url: https://vivaldiedition.net/portfolio/vol-68-concerti-per-archi-ii-2013/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: 'The Vivaldi Edition, volume 52. Album page verified 2026-09-28. '
+links:
+  tidal:
+    url: https://tidal.com/album/91194501

@@ -1,0 +1,14 @@
+id: pyotr-ilyich-tchaikovsky-the-voyevoda-playlist-3666
+work_id: pyotr-ilyich-tchaikovsky-the-voyevoda
+performers:
+- name: BBC Scottish Symphony Orchestra
+- name: Alpesh Chauhan
+links:
+  tidal:
+    url: https://tidal.com/track/376382639
+release:
+  album_title: 'Tchaikovsky: The Tempest, Francesca da Rimini, The Voyevoda, Overture and Polonaise from
+    "Cherevichki"'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

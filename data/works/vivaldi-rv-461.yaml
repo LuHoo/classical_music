@@ -1,0 +1,9 @@
+id: b9aff8efabf04e72a775e8ad95b6fe93
+work_group_id: f22c86d49f334bf186cb6e13ce79e821
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Oboe Concerto, RV 461
+catalogue:
+  rv: RV 461
+source:
+  url: https://vivaldiedition.net/portfolio/vol-15-concerti-per-fagotto-e-oboe-2004/
+  file: reports/vivaldi-naive-edition/catalogue.json

@@ -1,0 +1,9 @@
+id: "igor-stravinsky-symphony-in-e-flat-major-op-1-k-003-group"
+composer_id: "igor-stravinsky"
+title: "Symphony in E-flat major"
+source:
+  file: "docs/stravinsky.md"
+  line: "59"
+catalogue:
+  opus: "Op. 1"
+  k: "K 003"

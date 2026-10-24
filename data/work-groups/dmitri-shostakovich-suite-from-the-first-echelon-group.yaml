@@ -1,0 +1,8 @@
+id: dmitri-shostakovich-suite-from-the-first-echelon-group
+composer_id: dmitri-shostakovich
+title: Suite from The First Echelon
+source:
+  file: docs/shostakovich.md
+  line: '118'
+catalogue:
+  op: Op. 99a

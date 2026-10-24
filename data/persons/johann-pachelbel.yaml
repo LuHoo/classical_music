@@ -1,0 +1,7 @@
+id: johann-pachelbel
+name: Johann Pachelbel
+roles:
+- composer
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://imslp.org/wiki/Canon_and_Gigue_in_D_major,_P.37_(Pachelbel,_Johann)

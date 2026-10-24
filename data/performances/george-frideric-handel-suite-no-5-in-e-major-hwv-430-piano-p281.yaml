@@ -1,0 +1,13 @@
+id: george-frideric-handel-suite-no-5-in-e-major-hwv-430-piano-p281
+work_id: george-frideric-handel-suite-no-5-in-e-major-hwv-430
+performers:
+  - name: Seong-Jin Cho
+    role: piano
+links:
+  tidal:
+    url: https://tidal.com/track/273661949
+release:
+  album_title: 'The Handel Project: Handel-Suites & Brahms-Variations'
+source:
+  file: reports/playlist-import/piano/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/82853f8e-4fd6-42b6-b0a7-230da5ee86a1

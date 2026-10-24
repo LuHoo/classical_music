@@ -1,0 +1,13 @@
+id: cb25dd190f9643b7a9dfdb60f14ad8b3-piano-sonata-no-41-in-a-major-hob-xvi-26-piano-p225
+work_id: cb25dd190f9643b7a9dfdb60f14ad8b3-piano-sonata-no-41-in-a-major-hob-xvi-26
+performers:
+  - name: Jean-Efflam Bavouzet
+    role: piano
+links:
+  tidal:
+    url: https://tidal.com/track/196680284
+release:
+  album_title: 'Haydn: Piano Sonatas, Vol. 9'
+source:
+  file: reports/playlist-import/piano/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/82853f8e-4fd6-42b6-b0a7-230da5ee86a1

@@ -1,0 +1,40 @@
+id: simpson-geysir-simpson-ensemble
+links:
+  tidal:
+    url: https://tidal.com/track/160324010
+performers:
+- person_id: mark-simpson
+  role: clarinet
+- name: Fraser Langton
+  role: clarinet
+- name: Nicholas Daniel
+  role: oboe
+- name: Emma Feilding
+  role: oboe
+- name: Amy Harman
+  role: bassoon
+- name: Dom Tyler
+  role: bassoon
+- name: Oliver Pashley
+  role: basset horn
+- name: Ausiàs Garrigós Morant
+  role: basset horn
+- name: Ben Goldscheider
+  role: horn
+- name: Angela Barnes
+  role: horn
+- name: James Pillai
+  role: horn
+- name: Fabian van de Geest
+  role: horn
+- name: David Stark
+  role: double bass
+release:
+  album_title: 'Mark Simpson: Geysir - Mozart: Serenade No. 10 in B-Flat Major, K.
+    361 "Gran partita"'
+  catalogue_number: ORC100150
+  label: Orchid Classics
+source:
+  file: reports/playlist-import/best-classical/prepared-120.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
+work_id: simpson-geysir

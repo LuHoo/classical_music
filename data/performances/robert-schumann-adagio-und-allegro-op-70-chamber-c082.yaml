@@ -1,0 +1,13 @@
+id: robert-schumann-adagio-und-allegro-op-70-chamber-c082
+work_id: robert-schumann-adagio-und-allegro-op-70
+performers:
+  - name: Sol Gabetta
+  - name: Bertrand Chamayou
+links:
+  tidal:
+    url: https://tidal.com/track/98132219
+release:
+  album_title: Schumann
+source:
+  file: reports/playlist-import/chamber/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/a2327106-07fd-4433-8bd3-d8a5c251c69a

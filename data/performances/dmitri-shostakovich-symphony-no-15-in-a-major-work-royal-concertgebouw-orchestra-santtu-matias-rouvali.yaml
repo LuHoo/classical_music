@@ -1,0 +1,14 @@
+id: 
+  dmitri-shostakovich-symphony-no-15-in-a-major-work-royal-concertgebouw-orchestra-santtu-matias-rouvali
+work_id: dmitri-shostakovich-symphony-no-15-in-a-major-work
+source:
+  file: docs/shostakovich.md
+  line: '159'
+links:
+  tidal:
+    url: https://tidal.com/browse/album/427364233
+performers:
+- name: Royal Concertgebouw Orchestra
+  role: performer
+- name: Santtu-Matias Rouvali
+  role: performer

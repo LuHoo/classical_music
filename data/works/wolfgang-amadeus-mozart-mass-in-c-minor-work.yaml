@@ -1,0 +1,13 @@
+id: wolfgang-amadeus-mozart-mass-in-c-minor-work
+work_group_id: wolfgang-amadeus-mozart-mass-in-c-minor-group
+composer_id: wolfgang-amadeus-mozart
+title: Mass in C minor (Franz Beyer completion)
+source:
+  file: docs/mozart.md
+  line: '17'
+  url: https://bis.eclassical.com/conductors/suzuki-masaaki/mozart-c-minor-mass.html
+catalogue:
+  k: K. 427
+date_text: Completed by F. Beyer
+category: Masses
+version: 1989 completion by Franz Beyer

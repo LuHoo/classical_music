@@ -1,0 +1,15 @@
+id: vincent-d-indy-wallenstein-op-12-playlist-2960
+work_id: vincent-d-indy-wallenstein-op-12
+performers:
+- name: BBC National Orchestra of Wales
+- name: Thierry Fischer
+- name: Iceland Symphony Orchestra
+- name: Rumon Gamba
+links:
+  tidal:
+    url: https://tidal.com/track/340803013
+release:
+  album_title: "Vincent d'Indy: Wallenstein & Other Orchestral Works"
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3

@@ -1,0 +1,18 @@
+id: 04f6beea5ce543bd878d8fbe7066161e
+work_id: 7b372d1ce79c46ecb90317186e5068c0
+performers:
+- name: Il Pomo d'Oro
+  role: ensemble
+- name: Dmitry Sinkovsky
+  role: violin
+release:
+  label: Naive / Opus 111
+  catalogue_number: OP30538
+  album_title: Concerti per violino V — Per Pisendel
+source:
+  url: https://vivaldiedition.net/portfolio/vol-49-concerti-per-violino-v-per-pisendel-2012/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: The Vivaldi Edition, volume 49. Album page verified 2026-09-28. RV 242 = Violin Concerto, Op. 8 No. 7 (Il cimento).
+links:
+  tidal:
+    url: https://tidal.com/album/92205621

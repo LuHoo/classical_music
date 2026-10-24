@@ -1,0 +1,9 @@
+id: 6cd16668b23b4569b7aa6cce540216d1
+work_group_id: 9b6e482ef20c46eea02fb3e01457dac6
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Concerto for strings, RV 117
+catalogue:
+  rv: RV 117
+source:
+  url: https://vivaldiedition.net/portfolio/vol-56-concerti-per-archi-iii-e-concerti-per-viola-damore-2018/
+  file: reports/vivaldi-naive-edition/catalogue.json

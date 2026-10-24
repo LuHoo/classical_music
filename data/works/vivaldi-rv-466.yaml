@@ -1,0 +1,9 @@
+id: e3fead53c2394789985c083cf6cddec0
+work_group_id: 093d6ad17088456aaa5ec6c144994afb
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Bassoon Concerto, RV 466
+catalogue:
+  rv: RV 466
+source:
+  url: https://vivaldiedition.net/portfolio/concerti-per-vari-strumenti-ii-2/
+  file: reports/vivaldi-naive-edition/catalogue.json

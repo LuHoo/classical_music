@@ -1,0 +1,18 @@
+id: e735929f6d0d4724bbc99a23615ee121
+work_id: 71ef1d870c924d83a532500b7e632bd9
+performers:
+- name: Il Giardino Armonico
+  role: ensemble
+- name: Giovanni Antonini
+  role: conductor
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP30493
+  album_title: Ottone in villa
+source:
+  url: https://vivaldiedition.net/portfolio/vol-41-ottone-in-villa-2010/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: 'The Vivaldi Edition, volume 41. Album page verified 2026-09-28. '
+links:
+  tidal:
+    url: https://tidal.com/album/91194330

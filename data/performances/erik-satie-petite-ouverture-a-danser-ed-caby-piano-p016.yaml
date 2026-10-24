@@ -1,0 +1,13 @@
+id: erik-satie-petite-ouverture-a-danser-ed-caby-piano-p016
+work_id: erik-satie-petite-ouverture-a-danser-ed-caby
+performers:
+  - name: Reinbert de Leeuw
+    role: piano
+links:
+  tidal:
+    url: https://tidal.com/track/4531940
+release:
+  album_title: 'Satie: The Early Piano Works'
+source:
+  file: reports/playlist-import/piano/snapshot-2026-10-04.json
+  url: https://tidal.com/playlist/82853f8e-4fd6-42b6-b0a7-230da5ee86a1

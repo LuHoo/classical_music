@@ -1,0 +1,8 @@
+id: "johann-sebastian-bach-concerto-for-2-harpsichords-and-orchestra-no-2-in-c-maj-group"
+composer_id: "johann-sebastian-bach"
+title: "Concerto for 2 harpsichords and orchestra No. 2 in C maj."
+source:
+  file: "docs/bachJS.md"
+  line: "60"
+catalogue:
+  bwv: "BWV 1061.2"

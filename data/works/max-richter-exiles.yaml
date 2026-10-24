@@ -1,0 +1,7 @@
+id: max-richter-exiles
+work_group_id: max-richter-exiles-group
+composer_id: max-richter
+title: Exiles
+source:
+  file: docs/richter.md
+  url: https://en.wikipedia.org/wiki/Max_Richter

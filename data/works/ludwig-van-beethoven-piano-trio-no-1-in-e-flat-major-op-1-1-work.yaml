@@ -1,0 +1,11 @@
+id: "ludwig-van-beethoven-piano-trio-no-1-in-e-flat-major-op-1-1-work"
+work_group_id: "ludwig-van-beethoven-piano-trio-no-1-in-e-flat-major-op-1-1-group"
+composer_id: "ludwig-van-beethoven"
+title: "Piano Trio No. 1 in E♭ major"
+source:
+  file: "docs/beethoven.md"
+  line: "122"
+catalogue:
+  opus: "Op. 1/1"
+date_text: "?1794–1795"
+category: "Chamber"

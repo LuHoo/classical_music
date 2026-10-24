@@ -1,0 +1,9 @@
+id: 4d62ab87e34848c9854916d3703cde7f
+work_group_id: 24f2c9b29ab74a6aa495ae889602b062
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Chamber Concerto, RV 103
+catalogue:
+  rv: RV 103
+source:
+  url: https://vivaldiedition.net/portfolio/vol-19-concerti-e-cantata-iii-2005/
+  file: reports/vivaldi-naive-edition/catalogue.json

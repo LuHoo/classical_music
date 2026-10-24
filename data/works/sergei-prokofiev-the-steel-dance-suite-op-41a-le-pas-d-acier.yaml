@@ -1,0 +1,9 @@
+id: sergei-prokofiev-the-steel-dance-suite-op-41a-le-pas-d-acier
+work_group_id: sergei-prokofiev-the-steel-dance-suite-op-41a-le-pas-d-acier-group
+composer_id: sergei-prokofiev
+title: The Steel Dance Suite, Op. 41a "Le Pas d'acier"
+source:
+  file: docs/prokofiev.md
+  url: https://en.wikipedia.org/wiki/List_of_compositions_by_Sergei_Prokofiev
+catalogue:
+  op: 41a

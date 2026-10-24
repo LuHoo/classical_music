@@ -1,0 +1,18 @@
+id: 86a6a1ae2996472a8b30cfd910c4d44c
+work_id: 1e44c08d248b49eab1392a9847feacd6
+performers:
+- name: Concerto Italiano
+  role: ensemble
+- name: Rinaldo Alessandrini
+  role: conductor
+release:
+  label: Naïve / Opus 111
+  catalogue_number: OP30316
+  album_title: L'Olimpiade
+source:
+  url: https://vivaldiedition.net/portfolio/vol-8-lolimpiade-2003/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: 'The Vivaldi Edition, volume 8. Album page verified 2026-09-28. '
+links:
+  tidal:
+    url: https://tidal.com/album/91800556

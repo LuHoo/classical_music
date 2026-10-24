@@ -1,0 +1,10 @@
+id: "gustav-mahler-lieder-eines-fahrenden-gesellen-work-brigitte-fassbaender-deutsches-symphonie-orc"
+work_id: "gustav-mahler-lieder-eines-fahrenden-gesellen-work"
+source:
+  file: "docs/mahler.md"
+  line: "20"
+links:
+- platform: "tidal"
+  url: "http://www.tidal.com/track/64136743"
+performers:
+- name: "Brigitte Fassbaender, Deutsches Symphonie-Orchester Berlin, Riccardo Chailly"

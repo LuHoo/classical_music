@@ -1,0 +1,11 @@
+id: sergei-prokofiev-symphonic-march-work
+work_group_id: sergei-prokofiev-symphonic-march-group
+composer_id: sergei-prokofiev
+title: Symphonic March
+source:
+  file: docs/prokofiev.md
+  line: '160'
+catalogue:
+  op: Op. 88
+date_text: '1941'
+category: Orchestral

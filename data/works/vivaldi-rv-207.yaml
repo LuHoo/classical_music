@@ -1,0 +1,10 @@
+id: 1d478f76e4014c44a40ea93b5fb9caa6
+work_group_id: ced7df7869f64faf915dec08939775c8
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 207
+catalogue:
+  rv: RV 207
+  opus: Op. 11
+source:
+  url: https://vivaldiedition.net/portfolio/vol-71-concerti-per-violino-xi-per-anna-mariavol-71/
+  file: reports/vivaldi-naive-edition/catalogue.json

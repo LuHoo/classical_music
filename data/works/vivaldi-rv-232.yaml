@@ -1,0 +1,9 @@
+id: ee073d596703440c9b9f1a658a079b97
+work_group_id: b74ea01f0ec5481c8743989125023852
+composer_id: 01fd4da861fc43e8b52922f5121f6d12
+title: Violin Concerto, RV 232
+catalogue:
+  rv: RV 232
+source:
+  url: https://vivaldiedition.net/portfolio/vol-28-concerti-per-violin-ii-di-sfida-2006/
+  file: reports/vivaldi-naive-edition/catalogue.json

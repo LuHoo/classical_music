@@ -1,0 +1,11 @@
+id: "igor-stravinsky-octet-k-041-work"
+work_group_id: "igor-stravinsky-octet-k-041-group"
+composer_id: "igor-stravinsky"
+title: "Octet"
+source:
+  file: "docs/stravinsky.md"
+  line: "131"
+catalogue:
+  k: "K 041"
+category: "Chamber"
+gem: true

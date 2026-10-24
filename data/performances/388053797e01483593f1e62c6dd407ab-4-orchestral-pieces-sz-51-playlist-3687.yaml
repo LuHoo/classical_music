@@ -1,0 +1,13 @@
+id: 388053797e01483593f1e62c6dd407ab-4-orchestral-pieces-sz-51-playlist-3687
+work_id: 388053797e01483593f1e62c6dd407ab-4-orchestral-pieces-sz-51
+performers:
+- name: Karina Canellakis
+- name: Netherlands Radio Philharmonic Orchestra
+links:
+  tidal:
+    url: https://tidal.com/track/290890382
+release:
+  album_title: 'Bartók: Concerto for Orchestra'
+source:
+  file: reports/playlist-import/best-classical/window-1999-4000.json
+  url: https://tidal.com/playlist/c11f614b-c011-43b2-be10-639f5cf7e5e3
