@@ -430,7 +430,10 @@ def _collect_items(client, base, document, include):
         require(following not in seen, 'Repeated album pagination link')
         seen.add(following)
         following_path = urlsplit(following)
-        require(following_path.netloc == 'openapi.tidal.com' and
+        # TIDAL v2 returns the next href either absolute on openapi.tidal.com
+        # or relative without scheme, host and /v2 prefix (#340); either form
+        # must still point at this album's own items endpoint.
+        require(following_path.netloc in ('', 'openapi.tidal.com') and
                 (following_path.path == base or following_path.path == base.removeprefix('/v2')),
                 'Unexpected album pagination target')
         query = dict(parse_qsl(following_path.query))

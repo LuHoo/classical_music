@@ -1047,5 +1047,62 @@ class ReportCase(unittest.TestCase):
             reg.slugify('???')
 
 
+class CursorCatalogClient(FakeCatalogClient):
+    """FakeCatalogClient that also serves the cursor-based follow-up page (#340)."""
+
+    def request(self, path, method='GET', body=None, *, idempotency_key=None):
+        if path.startswith(f'/v2/albums/{self.album}/relationships/items?') \
+                and 'page%5Bcursor%5D' in path:
+            if not self.pages:
+                raise ValueError('Unexpected extra album page request')
+            return self.pages.pop(0)
+        return super().request(path, method, body, idempotency_key=idempotency_key)
+
+
+class PaginationCase(FixtureCase):
+    """TIDAL v2 returns relative next hrefs (no scheme, no host, no /v2);
+    pagination follows them while staying fail-closed (#340)."""
+
+    def cursor_pages(self, next_href):
+        page1 = item_page([
+            ('222', 'Symphonie fantastique: I. Rêveries',
+             ('Hector Berlioz', 'Royal Concertgebouw Orchestra')),
+        ])
+        page1['links'] = {'next': next_href}
+        page2 = item_page([
+            ('223', 'Symphonie fantastique: II. Un bal',
+             ('Hector Berlioz', 'Royal Concertgebouw Orchestra')),
+        ])
+        return CursorCatalogClient(album_doc(), [page1, page2])
+
+    def test_relative_next_link_is_followed(self):
+        # Live form observed 2026-10-24 on album 87860696: relative next href
+        # without scheme, host and /v2 prefix, cursor-based.
+        self.client = self.cursor_pages(
+            f'/albums/{ALBUM}/relationships/items?countryCode=NL&page%5Bcursor%5D=abc')
+        result = self.run_script(dry_run=True)
+        candidates = {e['work_id']: e for e in result['recording']['works']
+                      if e.get('status') == 'candidate'}
+        self.assertIn('work-a', candidates)
+        self.assertEqual(candidates['work-a']['notes'], 'Spans album tracks 1, 2.')
+
+    def test_absolute_next_link_still_followed(self):
+        self.client = self.cursor_pages(
+            f'https://openapi.tidal.com/v2/albums/{ALBUM}/relationships/items?page%5Bcursor%5D=abc')
+        result = self.run_script(dry_run=True)
+        self.assertIn('work-a', {e['work_id'] for e in result['recording']['works']})
+
+    def test_foreign_album_pagination_target_stays_fail_closed(self):
+        page1 = item_page([
+            ('222', 'Symphonie fantastique: I. Rêveries',
+             ('Hector Berlioz', 'Royal Concertgebouw Orchestra')),
+        ])
+        page1['links'] = {'next': '/albums/111111/relationships/items?page%5Bcursor%5D=abc'}
+        client = FakeCatalogClient(album_doc(), [page1])
+        with self.assertRaises(ValueError) as ctx:
+            reg.run(self.root, ALBUM_URL, dry_run=True, read_client=client, today='2026-10-24')
+        self.assertIn('pagination', str(ctx.exception))
+
+
 if __name__ == '__main__':
     unittest.main()
