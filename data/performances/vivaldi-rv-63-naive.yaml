@@ -1,0 +1,16 @@
+id: a4c6bb9bc2fb4381a791010923a66a32
+work_id: f02124d8ad884ee296fb95fa05ab486c
+performers:
+- name: L'Estravagante
+  role: ensemble
+release:
+  label: Naive / Opus 111
+  catalogue_number: OP30535
+  album_title: Sonate da camera a tre, op. 1
+source:
+  url: https://vivaldiedition.net/portfolio/vol-44-sonate-da-camera-a-tre-opus-1-2011/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: The Vivaldi Edition, volume 44. Album page verified 2026-09-28. RV 63 = Sonata No. 12 in D minor "La Follia" (Op. 1).
+links:
+  tidal:
+    url: https://tidal.com/album/91797772

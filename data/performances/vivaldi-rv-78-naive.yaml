@@ -1,0 +1,16 @@
+id: 1e6666a455aa42dd85b2e440ac4d38af
+work_id: 05540ad140ed4f1599050c86c6e1deca
+performers:
+- name: L'Estravagante
+  role: ensemble
+release:
+  label: Naive / Opus 111
+  catalogue_number: OP30535
+  album_title: Sonate da camera a tre, op. 1
+source:
+  url: https://vivaldiedition.net/portfolio/vol-44-sonate-da-camera-a-tre-opus-1-2011/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: The Vivaldi Edition, volume 44. Album page verified 2026-09-28. RV 78 = Sonata No. 10 in B-flat major (Op. 1).
+links:
+  tidal:
+    url: https://tidal.com/album/91797772

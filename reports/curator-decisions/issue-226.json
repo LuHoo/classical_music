@@ -1,0 +1,21 @@
+{
+  "issue_url": "https://github.com/LuHoo/classical_music/issues/226",
+  "decision_source": "curator",
+  "curator": "LAH",
+  "recorded_at": "2026-10-24T06:58:14.903Z",
+  "work_id": "3f64f09e70a1451caeae1a28e0afe252",
+  "rv": "454",
+  "choice": "naive",
+  "rationale": "Empty recommendation slot; the Vivaldi Edition performance is adopted directly as the recommendation.",
+  "decision_comment": "https://github.com/LuHoo/classical_music/issues/226#issuecomment-6381172238",
+  "docs_updates": [
+    "docs/vivaldi.md:26"
+  ],
+  "performance_file": "data/performances/vivaldi-rv-454-naive.yaml",
+  "replaced_performances": [],
+  "evidence": [
+    "https://vivaldiedition.net/portfolio/vol-18-concerti-per-vari-strumenti-2004/",
+    "https://tidal.com/album/92206835"
+  ],
+  "implementation_pr": 339
+}

@@ -1,0 +1,21 @@
+{
+  "issue_url": "https://github.com/LuHoo/classical_music/issues/215",
+  "decision_source": "curator",
+  "curator": "LAH",
+  "recorded_at": "2026-10-24T06:58:14.903Z",
+  "work_id": "8a3c2459f0f14a658ccca0a7c120d85b",
+  "rv": "210",
+  "choice": "naive",
+  "rationale": "Empty recommendation slot; the Vivaldi Edition performance is adopted directly as the recommendation.",
+  "decision_comment": "https://github.com/LuHoo/classical_music/issues/215#issuecomment-6381168982",
+  "docs_updates": [
+    "docs/vivaldi.md:26"
+  ],
+  "performance_file": "data/performances/vivaldi-rv-210-naive.yaml",
+  "replaced_performances": [],
+  "evidence": [
+    "https://vivaldiedition.net/portfolio/vol-33-concerti-per-violin-iii-il-ballo-2008/",
+    "https://tidal.com/album/92207252"
+  ],
+  "implementation_pr": 339
+}

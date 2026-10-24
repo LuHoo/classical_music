@@ -1,0 +1,18 @@
+id: 20b48e17a2114b34b0e7503013959ff6
+work_id: 2e53351f651a4a918673980080d22345
+performers:
+- name: Il Pomo d'Oro
+  role: ensemble
+- name: Dmitry Sinkovsky
+  role: violin
+release:
+  label: Naive / Opus 111
+  catalogue_number: OP30538
+  album_title: Concerti per violino V — Per Pisendel
+source:
+  url: https://vivaldiedition.net/portfolio/vol-49-concerti-per-violino-v-per-pisendel-2012/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: The Vivaldi Edition, volume 49. Album page verified 2026-09-28. RV 379 = Violin Concerto, Op. 12 No. 5.
+links:
+  tidal:
+    url: https://tidal.com/album/92205621
