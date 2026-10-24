@@ -1176,4 +1176,65 @@ class PlaylistIssueCase(FixtureCase):
     def test_without_issue_no_playlist_is_created(self):
         def factory():
             raise AssertionError('A run without --issue must not create a user client')
+        result = self.run_script(user_client_factory=factory)
+        self.assertEqual(result['playlists'], [])
+        self.assertIn('re-run with --issue', result['report']['playlist_notice'])
 
+    def test_issue_and_work_are_supplied_together(self):
+        with self.assertRaises(ValueError):
+            self.run_script(issue=316, user_client_factory=lambda: FakeUserClient())
+        with self.assertRaises(ValueError):
+            self.run_script(work='work-a', user_client_factory=lambda: FakeUserClient())
+
+    def test_issue_work_without_playlist_on_this_album_fails_closed(self):
+        # work-b is recommended without a TIDAL track anchor: binding an issue
+        # to it must fail instead of silently creating nothing.
+        with self.assertRaises(ValueError) as ctx:
+            self.run_script(issue=316, work='work-b', user_client_factory=lambda: FakeUserClient())
+        self.assertIn('no comparison playlist', str(ctx.exception))
+
+    def test_fragmentary_anchor_skips_playlist_with_report(self):
+        # The anchor's album serves tracks that match nothing: expansion must
+        # refuse a fragment and skip the playlist, without failing the run.
+        broken = FakeCatalogClient(album_doc_for('777'), [item_page([
+            ('111', 'Something Else Entirely', ('Murray Perahia',))])], album='777')
+        result = self.run_script(dry_run=True, catalog_factory=lambda album: broken)
+        self.assertEqual(result['report']['playlist_plans'], [])
+        self.assertEqual(len(result['report']['playlist_errors']), 1)
+        self.assertIn('fragmentary', result['report']['playlist_errors'][0]['error'])
+        self.assertEqual(result['report']['playlist_errors'][0]['work_id'], 'work-a')
+
+    def test_consolidation_anchor_on_candidate_album_lists_tracks_once(self):
+        # The existing anchor sits on the candidate's own album (Biondi-style
+        # consolidation): the comparison lists the recording once.
+        self.documents[str(self.root / 'data/performances/perf1.yaml')] = {
+            'id': 'perf1', 'work_id': 'work-a', 'recommended': True,
+            'performers': [{'name': 'Hector Berlioz'}],
+            'links': {'tidal': {'url': 'https://tidal.com/track/222'}}}
+        (self.root / 'docs/composer.md').write_text('', encoding='utf-8')
+        self.client.track_albums = {'222': ALBUM}
+        candidate_album = FakeCatalogClient(album_doc(), [item_page([
+            ('222', 'Symphonie fantastique: I. Rêveries',
+             ('Hector Berlioz', 'Royal Concertgebouw Orchestra')),
+            ('223', 'Symphonie fantastique: II. Un bal',
+             ('Hector Berlioz', 'Royal Concertgebouw Orchestra')),
+        ])])
+        user = FakeUserClient()
+        result = self.run_script(issue=212, work='work-a', catalog_factory=lambda album: candidate_album,
+                                user_client_factory=lambda: user)
+        url = result['report']['playlist_plans'][0]['playlist_url']
+        self.assertEqual(user.playlists[url.rsplit('/', 1)[-1]]['items'], ['222', '223'])
+        self.assertEqual(user.playlists[url.rsplit('/', 1)[-1]]['name'],
+                         'Curator 2026-10-18 Issue #212')
+
+    def test_script_tail_is_intact(self):
+        # Hotfix-regressie (#342): een afgebroken push verwijderde ooit de
+        # entry-point van het script; het bestand moet eindigen op de guard.
+        source = (Path(__file__).resolve().parents[1]
+                  / 'scripts/register_earmarked_recording.py').read_text(encoding='utf-8')
+        self.assertIn("if __name__ == '__main__':", source)
+        self.assertTrue(source.rstrip().endswith('sys.exit(main())'))
+
+
+if __name__ == '__main__':
+    unittest.main()
