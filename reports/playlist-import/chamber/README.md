@@ -4,17 +4,17 @@ All **1,368 source occurrences** from the complete 4 October 2026 [snapshot](htt
 
 | Result | Work/recording groups | Source occurrences |
 |---|---:|---:|
-| import_new | 301 | 962 |
+| import_new | 302 | 963 |
 | reuse_existing | 91 | 315 |
-| recommendation_choice | 3 | 3 |
-| not_selected | 12 | 42 |
+| recommendation_choice | 0 | 0 |
+| not_selected | 14 | 44 |
 | identity_unresolved | 18 | 46 |
 
-New canonical records: {'persons': 27, 'work-groups': 279, 'works': 291, 'performances': 301}. Reuse covers 90 existing Performances. Groups are not unique Work counts: separate versions, alternative readings and two reused Brahms song excerpts are counted separately.
+New canonical records: {'persons': 27, 'work-groups': 279, 'works': 291, 'performances': 302}. Reuse covers 90 existing Performances. Groups are not unique Work counts: separate versions, alternative readings and two reused Brahms song excerpts are counted separately.
 
 ## Curator choices
 
-**1 pending Work-level decisions**; eight original/arrangement decisions have been implemented with explicit profiles. Respond in an issue or the import chat with the issue number plus a C-code (or `existing`, `geen`, `unresolved` where offered). One answer covers all movements. A short explanation is needed only for doubt, exceptions or an additional comparison profile.
+**0 pending Work-level decisions**; eight original/arrangement decisions have been implemented with explicit profiles. Respond in an issue or the import chat with the issue number plus a C-code (or `existing`, `geen`, `unresolved` where offered). One answer covers all movements. A short explanation is needed only for doubt, exceptions or an additional comparison profile.
 
 Undecided alternatives are excluded from canonical Performance data. Accepted originals and arrangements occupy distinct explicit profiles; existing listening links remain unchanged. Neither playlist order nor ISRC similarity selects a preferred interpretation. An issue is not permission to apply a choice automatically.
 
@@ -26,7 +26,7 @@ Undecided alternatives are excluded from canonical Performance data. Accepted or
 | [#244](https://github.com/LuHoo/classical_music/issues/244) | César Franck — Violin Sonata in A Major, FWV 8 | C069, C098  **Resolved: both, distinct profiles** |
 | [#245](https://github.com/LuHoo/classical_music/issues/245) | Camille Saint-Saëns — Le Carnaval des Animaux, R. 125 | C073; existing  **Resolved: both, distinct profiles** |
 | [#246](https://github.com/LuHoo/classical_music/issues/246) | Jacques Ibert — Trois pièces brèves | C093, C372 **Resolved: C372** |
-| [#247](https://github.com/LuHoo/classical_music/issues/247) | Albert Roussel — Divertissement, Op. 6 | C108, C325, C331 |
+| [#247](https://github.com/LuHoo/classical_music/issues/247) | Albert Roussel — Divertissement, Op. 6 | C108, C325, C331 **Resolved: C331** |
 | [#248](https://github.com/LuHoo/classical_music/issues/248) | Arnold Schoenberg — Verklärte Nacht, Op. 4 (Steuermann piano trio arrangement) | C170, C278 **Resolved: C170** |
 | [#249](https://github.com/LuHoo/classical_music/issues/249) | Johann Sebastian Bach — Violin Sonata No. 3 in C Major, BWV 1005 (Excerpts Arr. J. Lindberg for Lute) | C204, C359; existing  **Resolved: both, distinct profiles** |
 | [#250](https://github.com/LuHoo/classical_music/issues/250) | Johann Sebastian Bach — Violin Sonata No. 1 in G Minor, BWV 1001 (Arr. J. Lindberg for Lute) | C207, C361; existing  **Resolved: both, distinct profiles** |
