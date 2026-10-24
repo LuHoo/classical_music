@@ -32,6 +32,7 @@ from __future__ import annotations
 
 import argparse
 import json
+from collections import Counter
 import os
 import re
 import sys
@@ -47,6 +48,8 @@ ID_PATTERN = re.compile(r'^[a-z0-9]+(?:-[a-z0-9]+)*$')
 TRACK_URL = re.compile(r'^(?:https?://)?(?:www\.)?tidal\.com/(?:browse/)?track/([0-9]+)(?:[/?].*)?$')
 MANIFEST_VOCABULARY = {'schema_version', 'source', 'summary', 'units', 'new_records',
                        'changed_existing', 'recommendation_choices', 'resolved_choices'}
+WINDOW_VOCABULARY = {'schema_version', 'source', 'window', 'units', 'new_records',
+                     'changed_existing', 'counts'}
 
 
 def require(condition, message):
@@ -230,8 +233,8 @@ def referencing_manifests(root, performance_id):
 
 
 def manifest_is_supported(manifest):
-    """The chamber/piano snapshot vocabulary; window manifests need manual review."""
-    return MANIFEST_VOCABULARY <= set(manifest)
+    """The chamber/piano snapshot vocabulary or the Best Classical window format."""
+    return MANIFEST_VOCABULARY <= set(manifest) or WINDOW_VOCABULARY <= set(manifest)
 
 
 def recompute_summary(manifest):
@@ -241,6 +244,87 @@ def recompute_summary(manifest):
         summary['track_occurrences'] = sum(len(u['positions']) for u in selected)
         summary['distinct_performances'] = len(
             {u['performance_id'] for u in selected if u.get('performance_id')})
+
+
+def recompute_window_counts(manifest):
+    """Window counts are exact Counters over units/tracks plus reuse uniqueness."""
+    counts = manifest['counts']
+    counts['unit_dispositions'] = dict(Counter(u['disposition'] for u in manifest['units']))
+    counts['track_dispositions'] = dict(
+        Counter(u['disposition'] for u in manifest['units'] for _ in u['tracks']))
+    reused = {u['performance_id'] for u in manifest['units']
+              if u['disposition'] == 'reuse_existing' and u.get('performance_id')}
+    if 'existing_performances_unique' in counts:
+        counts['existing_performances_unique'] = len(reused)
+    counts['changed_existing'] = len(manifest.get('changed_existing') or [])
+
+
+def plan_window_manifest_update(manifest_path, manifest, removed_pid,
+                                work_id, new_pid, tidal_url, issue, record_relative):
+    """Update one legacy Best Classical window manifest; return (bytes, unit_ids).
+
+    Window units have no unit_id and reuse_existing imports are not in
+    new_records, so the unit is identified by its performance_id. The unit gets
+    a deterministic unit_id (first source position is unique inside a window)
+    plus curator_issue/curator_decision so playlist_choices.validate_choices and
+    best_classical_import.audit_decisions accept the resolved choice.
+    """
+    units = [u for u in manifest['units'] if u.get('performance_id') == removed_pid]
+    require(units, f'{manifest_path} references {removed_pid} without a unit; '
+            'manual review required')
+    require(len(units) == 1, f'{manifest_path} references {removed_pid} from '
+            f'{len(units)} units; a profiled decision is required')
+    unit = units[0]
+    require(unit.get('disposition') == 'reuse_existing',
+            f'Unit for {removed_pid} in {manifest_path} is '
+            f'{unit.get("disposition")!r}; removing its performance requires manual review')
+    require(unit.get('work_id') == work_id,
+            f'Unit for {removed_pid} in {manifest_path} names work '
+            f'{unit.get("work_id")!r}, not {work_id!r}; manual review required')
+    unit_id = unit.get('unit_id') or f"BC-{unit['positions'][0]}"
+    unit['unit_id'] = unit_id
+    require(sum(1 for u in manifest['units'] if u.get('unit_id') == unit_id) == 1,
+            f'{manifest_path} already has a duplicate unit id {unit_id!r}')
+    unit['curator_issue'] = ISSUES + str(issue)
+    unit['disposition'] = 'not_selected'
+    unit['curator_decision'] = record_relative
+    unit['reason'] = (f'Earmarked curator decision #{issue}: the reviewed candidate '
+                      'replaces this recommendation; retained as historical source evidence.')
+    unit.pop('performance_id', None)
+    unit.pop('recording_match', None)
+
+    new_records = [r for r in manifest.get('new_records') or []
+                  if not (r.get('id') == removed_pid and r.get('entity') == 'performances')]
+    if len(new_records) != len(manifest.get('new_records') or []):
+        manifest['counts']['new_records']['performances'] = max(
+            0, manifest['counts']['new_records'].get('performances', 0)
+            - (len(manifest['new_records']) - len(new_records)))
+    manifest['new_records'] = new_records
+
+    require(not any(c.get('work_id') == work_id
+                    for c in manifest.get('resolved_choices') or []),
+            f'{manifest_path} already has a resolved choice for {work_id}')
+    manifest.setdefault('resolved_choices', []).append({
+        'work_id': work_id, 'title': unit.get('title') or work_id,
+        'units': [unit_id], 'existing_performances': [removed_pid],
+        'issue_url': ISSUES + str(issue),
+        'decision': {
+            'choice': 'selected_performance', 'selected_units': [],
+            'not_selected_units': [unit_id],
+            'performances': [{'performance_id': new_pid, 'profile': None,
+                              'unit_id': None, 'tidal_url': tidal_url}],
+            'comment_url': None,
+            'implementation_report': str(manifest_path),
+            'implementation_record': record_relative,
+            'decision_record': record_relative}})
+    changed = manifest.setdefault('changed_existing', [])
+    require(not any(c.get('id') == removed_pid and c.get('action') == 'removed_by_curator'
+                    for c in changed), f'{manifest_path} already records the removal')
+    changed.append({'id': removed_pid, 'entity': 'performances',
+                     'path': f'data/performances/{removed_pid}.yaml',
+                     'action': 'removed_by_curator', 'decision_record': record_relative})
+    recompute_window_counts(manifest)
+    return json_bytes(manifest), [unit_id]
 
 
 def plan_manifest_update(manifest_path, manifest, unit_ids, removed_pid,
@@ -347,6 +431,15 @@ def plan(root, args, curator):
         for manifest_path, manifest in referencing_manifests(root, replaced_pid):
             require(manifest_is_supported(manifest),
                     f'{manifest_path} uses an unsupported manifest format; manual review required')
+            if WINDOW_VOCABULARY <= set(manifest):
+                updated = json.loads(json.dumps(manifest))
+                manifest_bytes, unit_ids = plan_window_manifest_update(
+                    manifest_path, updated, replaced_pid, args.work, pid,
+                    tidal_url, issue, record_relative)
+                changes[str(manifest_path)] = manifest_bytes
+                manifest_updates.append(str(manifest_path))
+                not_selected_units.extend(sorted(unit_ids))
+                continue
             unit_ids = [u.get('unit_id') for u in manifest['units']
                         if u.get('performance_id') == replaced_pid]
             require(unit_ids, f'{manifest_path} references {replaced_pid} without a unit; manual review required')
