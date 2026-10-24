@@ -27,6 +27,13 @@ def album_doc(title='Test Album', artists=('Hector Berlioz', 'Royal Concertgebou
             'included': included}
 
 
+def album_doc_for(album, title='Test Album', artists=('Hector Berlioz', 'Royal Concertgebouw Orchestra')):
+    """album_doc with a chosen album ID (for an existing recommendation's album)."""
+    document = album_doc(title, artists)
+    document['data']['id'] = album
+    return document
+
+
 def item_page(tracks):
     """tracks: (id, title, artists), (id, title, artists, version) or
     (id, title, artists, version, credits) or (id, title, artists, version,
@@ -60,12 +67,13 @@ class FakeCatalogClient:
     """Read-only catalogue double: rejects unexpected requests like the real wrapper."""
 
     def __init__(self, album_document, pages, album=ALBUM, *, artists_route='relationship',
-                 items_include='items,items.artists,items.credits'):
+                 items_include='items,items.artists,items.credits', track_albums=None):
         self.album = album
         self.album_document = album_document
         self._pages = list(pages)
         self.artists_route = artists_route
         self.items_include = items_include
+        self.track_albums = track_albums or {}
         self.reset()
 
     def reset(self):
@@ -76,6 +84,14 @@ class FakeCatalogClient:
         self.calls.append((method, path))
         if method != 'GET' or body is not None:
             raise ValueError('The album fetcher cannot make write requests')
+        if path.startswith('/v2/tracks/') and 'include=albums' in path:
+            track = path.split('/v2/tracks/', 1)[1].split('?', 1)[0]
+            if track not in self.track_albums:
+                raise ValueError('Unexpected track request: ' + path)
+            return {'data': {'id': track, 'type': 'tracks',
+                            'relationships': {'albums': {'data': [{'type': 'albums',
+                                                                   'id': self.track_albums[track]}]}}},
+                    'included': []}
         if path == f'/v2/albums/{self.album}?countryCode=NL':
             return self.album_document
         if path == f'/v2/albums/{self.album}/relationships/artists?countryCode=NL&include=artists':
@@ -200,18 +216,28 @@ class FixtureCase(unittest.TestCase):
             return self._read_yaml(path)
 
         reg.read_yaml = read
+        # The existing recommendation (anchor track 111) lives on its own album
+        # '777' with two movements; the comparison playlist needs both.
+        self.recommendation_client = FakeCatalogClient(album_doc_for('777'), [item_page([
+            ('111', 'Symphonie fantastique: I. Rêveries',
+             ('Hector Berlioz', 'Royal Concertgebouw Orchestra')),
+            ('112', 'Symphonie fantastique: II. Un bal',
+             ('Hector Berlioz', 'Royal Concertgebouw Orchestra')),
+        ])], album='777')
         self.client = FakeCatalogClient(album_doc(), [item_page([
             ('222', 'Symphonie fantastique: I. Rêveries', ('Hector Berlioz', 'Royal Concertgebouw Orchestra')),
             ('223', 'Symphonie fantastique: II. Un bal', ('Hector Berlioz', 'Royal Concertgebouw Orchestra')),
             ('224', 'Harold en Italie', ('Hector Berlioz', 'Unknown Soprano')),
-        ])])
+        ])], track_albums={'111': '777'})
 
     def tearDown(self):
         reg.read_yaml = self._read_yaml
 
     def run_script(self, **kwargs):
         self.client.reset()
+        self.recommendation_client.reset()
         kwargs.setdefault('read_client', self.client)
+        kwargs.setdefault('catalog_factory', lambda album: self.recommendation_client)
         return reg.run(self.root, ALBUM_URL, today='2026-10-18', **kwargs)
 
     def test_album_url_validation_is_fail_closed(self):
@@ -257,20 +283,34 @@ class FixtureCase(unittest.TestCase):
         self.assertNotIn('written', result)
         self.assertEqual(list((self.root / 'data/recordings').glob('*.y*ml')), [])
 
-    def test_apply_writes_candidate_and_comparison_playlist(self):
+    def test_apply_writes_candidate_and_reports_playlist_plan(self):
         user = FakeUserClient()
         result = self.run_script(user_client_factory=lambda: user)
         self.assertEqual(result['written'], 'data/recordings/test-album.yml')
+        self.assertEqual(result['playlists'], [])
         plan = result['report']['playlist_plans'][0]
         self.assertEqual(plan['work_id'], 'work-a')
-        self.assertTrue(plan['playlist_url'].startswith('https://tidal.com/playlist/'))
-        playlist = user.playlists[plan['playlist_url'].rsplit('/', 1)[-1]]
-        self.assertEqual(playlist['items'], ['111', '222', '223'])
+        self.assertIsNone(plan['playlist_url'])
+        self.assertIsNone(plan['name'])
+        self.assertIn('re-run with --issue', result['report']['playlist_notice'])
         saved = self._read_yaml(self.root / 'data/recordings/test-album.yml')
         self.assertEqual(saved['id'], 'test-album')
         self.assertEqual(saved['links']['tidal']['url'], ALBUM_URL)
         self.assertEqual(saved['links']['tidal']['status'], 'active')
         self.assertEqual(saved['links']['tidal']['last_checked'], '2026-10-18')
+
+    def test_issue_work_creates_named_playlist_with_complete_recordings(self):
+        user = FakeUserClient()
+        result = self.run_script(issue=316, work='work-a', user_client_factory=lambda: user)
+        plan = result['report']['playlist_plans'][0]
+        self.assertEqual(plan['work_id'], 'work-a')
+        url = plan['playlist_url']
+        playlist = user.playlists[url.rsplit('/', 1)[-1]]
+        # Current recommendation as its complete recording (both movements of
+        # album 777), then the complete candidate recording (#316 feedback).
+        self.assertEqual(playlist['items'], ['111', '112', '222', '223'])
+        self.assertEqual(playlist['name'], 'Curator 2026-10-18 Issue #316')
+        self.assertIn('issues/316', playlist['description'])
 
     def test_published_doc_recommendation_is_detected_with_track_anchor(self):
         recommendations, unattributed, breakdown = reg.existing_recommendations(
@@ -391,7 +431,8 @@ class FixtureCase(unittest.TestCase):
         plans = result['report']['playlist_plans']
         # work-b is recommended without a TIDAL track anchor: no plan is produced for it.
         self.assertNotIn('work-b', [p['work_id'] for p in plans])
-        self.assertEqual(plans[0]['current_tracks'], ['111'])
+        # work-a's single anchor expands to its complete recording on album 777.
+        self.assertEqual(plans[0]['current_tracks'], ['111', '112'])
 
     def test_ambiguous_track_is_unevaluated_and_reported(self):
         self.documents[str(self.root / 'data/works/w1.yaml')] = {
@@ -505,13 +546,31 @@ class SchubertCase(unittest.TestCase):
             ('461772242', 'Rondo in A Major, D. 951, Op. 107',
              ('Bertrand Chamayou', 'Leif Ove Andsnes'), None, None),
         ])], album='461772235')
+        # The Perahia/Lupu recommendation (anchor 75254187) is a complete
+        # four-movement recording on its own album '888'.
+        self.recommendation_client = FakeCatalogClient(
+            album_doc_for('888', title='Schubert: Fantasie in F minor',
+                          artists=('Murray Perahia', 'Radu Lupu')),
+            [item_page([
+                ('75254187', 'I. Allegro molto moderato', ('Murray Perahia', 'Radu Lupu'),
+                 'Fantasia in F Minor, D. 940, Op. 103', None),
+                ('75254188', 'II. Largo', ('Murray Perahia', 'Radu Lupu'),
+                 'Fantasia in F Minor, D. 940, Op. 103', None),
+                ('75254189', 'III. Allegro vivace', ('Murray Perahia', 'Radu Lupu'),
+                 'Fantasia in F Minor, D. 940, Op. 103', None),
+                ('75254190', 'IV. Finale. Allegro molto moderato', ('Murray Perahia', 'Radu Lupu'),
+                 'Fantasia in F Minor, D. 940, Op. 103', None),
+            ])], album='888')
+        self.client.track_albums = {'75254187': '888'}
 
     def tearDown(self):
         reg.read_yaml = self._read_yaml
 
     def run_script(self, **kwargs):
         self.client.reset()
+        self.recommendation_client.reset()
         kwargs.setdefault('read_client', self.client)
+        kwargs.setdefault('catalog_factory', lambda album: self.recommendation_client)
         return reg.run(self.root, 'https://tidal.com/album/461772235/u',
                        today='2026-10-18', **kwargs)
 
@@ -537,21 +596,25 @@ class SchubertCase(unittest.TestCase):
         plans = result['report']['playlist_plans']
         self.assertEqual(len(plans), 1)
         self.assertEqual(plans[0]['work_id'], 'franz-schubert-fantasie-in-f-minor-d-940')
-        self.assertEqual(plans[0]['current_tracks'], ['75254187'])
+        # The single anchor expands to the complete current recording.
+        self.assertEqual(plans[0]['current_tracks'],
+                         ['75254187', '75254188', '75254189', '75254190'])
         self.assertEqual(plans[0]['candidate_tracks'],
                          ['461772236', '461772237', '461772238', '461772239'])
 
     def test_apply_creates_playlist_and_yaml(self):
         user = FakeUserClient()
-        result = self.run_script(user_client_factory=lambda: user)
+        result = self.run_script(issue=246, work='franz-schubert-fantasie-in-f-minor-d-940',
+                                 user_client_factory=lambda: user)
         self.assertEqual(result['written'], 'data/recordings/schubert-four-hands.yml')
         url = result['report']['playlist_plans'][0]['playlist_url']
         playlist = user.playlists[url.rsplit('/', 1)[-1]]
         self.assertEqual(playlist['items'],
-                         ['75254187', '461772236', '461772237', '461772238', '461772239'])
+                         ['75254187', '75254188', '75254189', '75254190',
+                          '461772236', '461772237', '461772238', '461772239'])
+        self.assertEqual(playlist['name'], 'Curator 2026-10-18 Issue #246')
         self.assertIn('Unmatched artists: Bertrand Chamayou, Leif Ove Andsnes',
                       self._read_yaml(self.root / 'data/recordings/schubert-four-hands.yml')['notes'])
-        self.assertIn('Earmarked 2026-10-18', playlist['name'])
 
     def test_items_fallback_without_credits_include(self):
         self.client.items_include = 'items,items.artists'
@@ -1104,5 +1167,13 @@ class PaginationCase(FixtureCase):
         self.assertIn('pagination', str(ctx.exception))
 
 
-if __name__ == '__main__':
-    unittest.main()
+class PlaylistIssueCase(FixtureCase):
+    """Comparison playlists are created per issue (--issue + --work), named
+    "Curator <date> Issue #<nr>", with the current recommendation as its
+    complete recording. Fail-closed on half flags, unbound works and
+    fragmentary anchors (#316 feedback)."""
+
+    def test_without_issue_no_playlist_is_created(self):
+        def factory():
+            raise AssertionError('A run without --issue must not create a user client')
+
