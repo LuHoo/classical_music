@@ -1423,9 +1423,9 @@
   "base_commit": "f03bf06",
   "summary": {
     "import_new": {
-      "units": 300,
-      "track_occurrences": 959,
-      "distinct_performances": 300
+      "units": 301,
+      "track_occurrences": 962,
+      "distinct_performances": 301
     },
     "reuse_existing": {
       "units": 91,
@@ -1433,8 +1433,8 @@
       "distinct_performances": 90
     },
     "recommendation_choice": {
-      "units": 5,
-      "track_occurrences": 9,
+      "units": 3,
+      "track_occurrences": 3,
       "distinct_performances": 0
     },
     "identity_unresolved": {
@@ -1443,8 +1443,8 @@
       "distinct_performances": 0
     },
     "not_selected": {
-      "units": 11,
-      "track_occurrences": 39,
+      "units": 12,
+      "track_occurrences": 42,
       "distinct_performances": 0
     }
   },
@@ -5933,6 +5933,11 @@
       "id": "arnold-schoenberg-verklarte-nacht-op-4-steuermann-piano-trio-arrangement-chamber-c170",
       "path": "data/performances/arnold-schoenberg-verklarte-nacht-op-4-steuermann-piano-trio-arrangement-chamber-c170.yaml",
       "entity": "performances"
+    },
+    {
+      "id": "cesar-franck-franck-piano-quintet-in-f-minor-fwv-7-chamber-c364",
+      "path": "data/performances/cesar-franck-franck-piano-quintet-in-f-minor-fwv-7-chamber-c364.yaml",
+      "entity": "performances"
     }
   ],
   "changed_existing": [
@@ -5956,18 +5961,6 @@
       ],
       "existing_performances": [],
       "issue_url": "https://github.com/LuHoo/classical_music/issues/247",
-      "decision": null
-    },
-    {
-      "work_id": "cesar-franck-franck-piano-quintet-in-f-minor-fwv-7",
-      "title": "Piano Quintet in F Minor, FWV 7",
-      "composer": "César Franck",
-      "units": [
-        "C276",
-        "C364"
-      ],
-      "existing_performances": [],
-      "issue_url": "https://github.com/LuHoo/classical_music/issues/253",
       "decision": null
     }
   ],
@@ -32773,7 +32766,7 @@
         882,
         883
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "not_selected",
       "work_id": "cesar-franck-franck-piano-quintet-in-f-minor-fwv-7",
       "performers": [
         {
@@ -32789,8 +32782,8 @@
           "locator": "Chamber sheet; join by exact track ID or unique ISRC, never by live position."
         }
       ],
-      "reason": "Alternative interpretation of this Work; explicit curator choice required before any recommendation is added or replaced.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected C364; retained as historical source evidence.",
+      "review_classification": "curator_not_selected",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/253",
       "tracks": [
         {
@@ -32853,7 +32846,8 @@
           "export_position": 896,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "curator_decision": "reports/curator-decisions/issue-253.json"
     },
     {
       "unit_id": "C277",
@@ -41631,7 +41625,7 @@
         1182,
         1183
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "import_new",
       "work_id": "cesar-franck-franck-piano-quintet-in-f-minor-fwv-7",
       "performers": [
         {
@@ -41647,8 +41641,8 @@
           "locator": "Chamber sheet; join by exact track ID or unique ISRC, never by live position."
         }
       ],
-      "reason": "Alternative interpretation of this Work; explicit curator choice required before any recommendation is added or replaced.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected C364; all source movements included.",
+      "review_classification": "curator_accepted",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/253",
       "tracks": [
         {
@@ -41711,7 +41705,9 @@
           "export_position": null,
           "archive_match": null
         }
-      ]
+      ],
+      "curator_decision": "reports/curator-decisions/issue-253.json",
+      "performance_id": "cesar-franck-franck-piano-quintet-in-f-minor-fwv-7-chamber-c364"
     },
     {
       "unit_id": "C365",
@@ -47818,6 +47814,37 @@
         "implementation_report": "reports/playlist-import/chamber/snapshot-2026-10-04.json",
         "implementation_record": "reports/curator-decisions/issue-248.json",
         "decision_record": "reports/curator-decisions/issue-248.json"
+      }
+    },
+    {
+      "work_id": "cesar-franck-franck-piano-quintet-in-f-minor-fwv-7",
+      "title": "Piano Quintet in F Minor, FWV 7",
+      "composer": "César Franck",
+      "units": [
+        "C276",
+        "C364"
+      ],
+      "existing_performances": [],
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/253",
+      "decision": {
+        "choice": "selected_performance",
+        "selected_units": [
+          "C364"
+        ],
+        "not_selected_units": [
+          "C276"
+        ],
+        "performances": [
+          {
+            "performance_id": "cesar-franck-franck-piano-quintet-in-f-minor-fwv-7-chamber-c364",
+            "profile": null,
+            "unit_id": "C364",
+            "tidal_url": "https://tidal.com/track/326440742"
+          }
+        ],
+        "implementation_report": "reports/playlist-import/chamber/snapshot-2026-10-04.json",
+        "implementation_record": "reports/curator-decisions/issue-253.json",
+        "decision_record": "reports/curator-decisions/issue-253.json"
       }
     }
   ]

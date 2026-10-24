@@ -1,0 +1,119 @@
+id: vivaldi-concerti-per-archi-iii-e-concerti-per-viola-d-amore
+title: "Vivaldi: Concerti per archi III e concerti per viola d'amore"
+label: 2018 Naïve, a Label of Believe Group
+year: 2018
+works:
+- work_id: f9e8e9cd002540d28de96d479cfad6e5
+  status: candidate
+  track:
+    number: 1
+    title: 'Concerto for Strings in B-Flat Major, RV 167: I. Allegro'
+  notes: Spans album tracks 1, 2, 3.
+- work_id: 13ddacaafe4046e18b5e518fdd2f7b3d
+  status: candidate
+  track:
+    number: 4
+    title: 'Concerto for Strings in C Minor, RV 118: I. Allegro'
+  notes: Spans album tracks 4, 5, 6.
+- work_id: ac8199e41cc746a792d7f390219658ad
+  status: candidate
+  track:
+    number: 7
+    title: 'Concerto for Strings in A Minor, RV 161: I. Allegro'
+  notes: Spans album tracks 7, 8, 9.
+- work_id: b7d82e3aa1ed453f8481a7803855d2cc
+  status: candidate
+  track:
+    number: 10
+    title: 'Concerto for Strings in F Major, RV 138: I. Allegro'
+  notes: Spans album tracks 10, 11, 12.
+- work_id: ecb7fbaa508040b6b079b40d103c10bb
+  status: candidate
+  track:
+    number: 13
+    title: 'Concerto for Strings in G Major, RV 145: I. Allegro molto'
+  notes: Spans album tracks 13, 14, 15.
+- work_id: 0ef4152561de457eafb2cbc62080f6cc
+  status: candidate
+  track:
+    number: 16
+    title: 'Concerto for Strings in A Major, RV 109: I. Allegro'
+  notes: Spans album tracks 16, 17, 18.
+- work_id: 0fc8e79a534e4076bacd43ede313ce2c
+  status: candidate
+  track:
+    number: 19
+    title: 'Concerto for Strings in G Minor, RV 152: I. Allegro molto'
+  notes: Spans album tracks 19, 20, 21.
+- work_id: 9c7a6c2d19a84ab093e1750da2ed3d07
+  status: candidate
+  track:
+    number: 22
+    title: 'Concerto for Strings in D Major, RV 126: I. Allegro'
+  notes: Spans album tracks 22, 23, 24.
+- work_id: b9cfc9d921a74ec39c86e9e51f7c1583
+  status: candidate
+  track:
+    number: 25
+    title: 'Concerto for Strings in G Minor, RV 155: I. Adagio'
+  notes: Spans album tracks 25, 26, 27, 28.
+- work_id: 7f88184782254e728d4fdc5e537ad7e9
+  status: candidate
+  track:
+    number: 29
+    title: 'Concerto for Strings in B-Flat Major, RV 165: I. Allegro'
+  notes: Spans album tracks 29, 30, 31.
+- work_id: 6cd16668b23b4569b7aa6cce540216d1
+  status: candidate
+  track:
+    number: 32
+    title: 'Concerto for Strings in C Major, RV 117: I. Allegro alla Francese'
+  notes: Spans album tracks 32, 33, 34.
+- work_id: bd5864c0dc01446b9847c26636c53852
+  status: candidate
+  track:
+    number: 35
+    title: 'Concerto for Strings in F Major, RV 142: I. Allegro molto'
+  notes: Spans album tracks 35, 36, 37.
+- work_id: 436391bc13b64412a43d803f30baa499
+  status: candidate
+  track:
+    number: 38
+    title: 'Concerto Conca for Strings in B-Flat Major, RV 163: I. Allegro molto'
+  notes: Spans album tracks 38, 39, 40.
+- work_id: cde9989ece8741acb48276b71dcae62d
+  status: candidate
+  track:
+    number: 41
+    title: "Concerto for Viola d'amore in D Minor, RV 394: I. Allegro"
+  notes: Spans album tracks 41, 42, 43.
+- work_id: 770036ff00694c28a7d1ba7564cb5641
+  status: candidate
+  track:
+    number: 44
+    title: "Concerto for Viola d'amore in A Minor, RV 397: I. —"
+  notes: Spans album tracks 44, 45, 46.
+- work_id: 2ae0692b7bad4c519cf26990d43c8771
+  status: candidate
+  track:
+    number: 47
+    title: "Concerto for Viola d'amore in D Minor, RV 393: I. Allegro"
+  notes: Spans album tracks 47, 48, 49.
+- work_id: 3232cbda59684ce9a042e9d31c02742b
+  status: candidate
+  track:
+    number: 50
+    title: "Concerto for Viola d'amore in A Major, RV 396: I. Allegro"
+  notes: Spans album tracks 50, 51.
+- work_id: 60f2bf01501942f288bdc9d2359346d1
+  status: candidate
+  track:
+    number: 52
+    title: "Concerto for Viola d'amore in D Minor, RV 395: I. Allegro"
+  notes: Spans album tracks 52, 53, 54.
+links:
+  tidal:
+    url: https://tidal.com/browse/album/87860696
+    status: active
+    last_checked: '2026-10-24'
+notes: 'Unmatched artists: Accademia Bizantina, Alessandro Tampieri, Ottavio Dantone'

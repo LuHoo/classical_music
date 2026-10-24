@@ -1,0 +1,17 @@
+{
+  "issue_url": "https://github.com/LuHoo/classical_music/issues/253",
+  "decision_source": "curator_cli",
+  "curator": "LAH",
+  "recorded_at": "2026-10-24T20:28:18.508753+00:00",
+  "requested_choice": "C364",
+  "choice": "C364",
+  "selected_units": [
+    "C364"
+  ],
+  "not_selected_units": [
+    "C276"
+  ],
+  "performance_id": "cesar-franck-franck-piano-quintet-in-f-minor-fwv-7-chamber-c364",
+  "implementation_pr": null,
+  "replaced_performances": []
+}

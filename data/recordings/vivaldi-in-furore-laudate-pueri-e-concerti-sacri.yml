@@ -1,0 +1,46 @@
+id: vivaldi-in-furore-laudate-pueri-e-concerti-sacri
+title: 'Vivaldi: In furore (Laudate pueri e concerti sacri)'
+label: 2006 naïve
+year: 2006
+works:
+- work_id: 9edc1f17d6cf4f4cb325e3cda82a8dc4
+  status: candidate
+  track:
+    number: 1
+    title: 'In furore iustissimae irae, RV 626: I. Allegro'
+  notes: Spans album tracks 1, 2, 3, 4.
+- work_id: a2b12f17df4b4dbc9bb3f5bef7a6488f
+  status: candidate
+  track:
+    number: 5
+    title: 'Sinfonia in B Minor, RV 169 "Al Santo Sepolcro": I. Adagio molto'
+  notes: Spans album tracks 5, 6.
+  issue: 211
+  track_ids:
+  - '73947307'
+  - '73947308'
+  performers:
+  - Ottavio Dantone
+  - Accademia Bizantina
+- work_id: 470da6bbcaa2424ea8e134bb8cf569e2
+  status: candidate
+  track:
+    number: 7
+    title: 'Laudate pueri, RV 601: I. Allegro non molto'
+  notes: Spans album tracks 7, 8, 9, 10, 11, 12, 13, 14, 15.
+- work_id: 59353f5ca65547598d887a242aa3ac2c
+  status: candidate
+  track:
+    number: 19
+    title: 'Violin Concerto in F Major, RV 286 "Per la solennità di San Lorenzo":
+      I. Largo molto e spiccato, Andante molto'
+  notes: Spans album tracks 19, 20, 21.
+links:
+  tidal:
+    url: https://tidal.com/browse/album/73947302
+    status: active
+    last_checked: '2026-10-24'
+notes: 'Unmatched artists: Sandrine Piau, Ottavio Dantone, Accademia Bizantina, Stefano
+  Montanari | Unmatched tracks without canonical work: 16. Concerto for Violin and
+  Organ in D Minor: I. Allegro, 17. Concerto for Violin and Organ in D Minor: II.
+  Grave, 18. Concerto for Violin and Organ in D Minor: III. Allegro molto'
