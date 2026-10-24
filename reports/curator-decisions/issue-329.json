@@ -1,0 +1,21 @@
+{
+  "issue_url": "https://github.com/LuHoo/classical_music/issues/329",
+  "decision_source": "curator",
+  "curator": "LAH",
+  "recorded_at": "2026-10-23T07:14:31.631Z",
+  "category": "ambiguous-match",
+  "decisions": [
+    {
+      "docs_line": "rachmaninov.md:43",
+      "track_id": "12416511",
+      "chosen_work_id": "sergei-rachmaninoff-vocalise-op-34-no-14-orchestral-version",
+      "evidence": "Curator comment 2026-10-23: Vocalise is originally for soprano or tenor and piano; Rachmaninov made the orchestral version himself. The docs/rachmaninov.md:43 performance (Suzanne Murphy, Scottish National Orchestra, Neeme Järvi, TIDAL track 12416511) is the orchestral version. Applied as canonical performance sergei-rachmaninoff-vocalise-op-34-no-14-orchestral-version-murphy-sno-jarvi (attribution order 1: performance index). Data fix: the base work sergei-rachmaninoff-vocalise now represents the original song (voice and piano) instead of 'version for voice and orchestra', keeping the orchestral version a separate work (arrangement_of by the composer himself)."
+    },
+    {
+      "docs_line": "schoenberg.md:84",
+      "track_id": "266496924",
+      "chosen_work_id": null,
+      "evidence": "Curator comment 2026-10-23: the Steuermann (1932) version is for piano trio — the same work as the Linos Piano Trio performance (track 280629653, already attributed to arnold-schoenberg-verklarte-nacht-op-4-steuermann-piano-trio-arrangement by PR #330). The chamber-ensemble anchor (Het Collectief, track 266496924) is a candidate performance of that same work; the choice runs via the already registered Chamber curator issue #248 (candidates C170 Linos Piano Trio, source positions 545-549, and C278 Het Collectief, source positions 888-892; listening playlist via the curator-listening-playlist workflow). A separately opened issue #332 was closed as a duplicate of #248."
+    }
+  ]
+}
