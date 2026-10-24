@@ -440,6 +440,13 @@ vervangen track wordt herschreven naar de nieuwe performers en track-URL; de
 beslissingsrecord `reports/curator-decisions/issue-<n>.json`
 (`decision_source: curator_cli`) en `batch-status.json` terug naar `status: pending`.
 
+Promote werkt via de intake-manifesten van de te vervangen performance: zowel de
+chamber/piano-snapshotvorm als de legacy Best Classical window-vorm
+(`window-*.json`) krijgen de verwijdervocabulaire (unit `not_selected` met
+`unit_id`/`curator_issue`/`curator_decision`, resolved choice, `changed_existing`
+met `removed_by_curator`, hertelde `counts`/`summary`). Andere manifestvormen
+blijven fail-closed.
+
 Faalt fail-closed op: geen/meerdere performances, een performance zonder
 manifest-verwijzing, een niet-kandidaatstatus, een niet-ondersteund manifestformaat
 of ontbrekend docs-anker. Eén performance per werk blijft de regel: promoven

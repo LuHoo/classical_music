@@ -20,6 +20,7 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parents[1]
 SCRIPT = REPO / 'scripts' / 'apply_earmarked_decision.py'
 FIXTURE_MANIFEST = 'reports/playlist-import/chamber/snapshot-2026-10-04.json'
+WINDOW_MANIFEST = 'reports/playlist-import/best-classical/window-101-101.json'
 
 WORK = 'test-composer-fantasy-in-f-minor'
 OTHER = 'test-composer-rondo-in-a-major'
@@ -266,6 +267,137 @@ class PromoteTest(unittest.TestCase):
                             '--track-url', 'https://tidal.com/track/461772236')
         self.assertNotEqual(result.returncode, 0)
         self.assertIn('unsupported manifest format', result.stderr + result.stdout)
+
+
+def build_window_fixture(root: Path):
+    """Legacy Best Classical window manifest that imported the P384 performance."""
+    (root / FIXTURE_MANIFEST).unlink()
+    (root / 'reports/playlist-import/best-classical').mkdir(parents=True)
+    performance = root / f'data/performances/{P384}.yaml'
+    performance.write_text(
+        performance.read_text().replace(FIXTURE_MANIFEST, WINDOW_MANIFEST))
+    unit = {
+        'positions': [101],
+        'composer': 'Test Composer',
+        'title': 'Fantasy in F Minor',
+        'tracks': [track(101, '75254187', 'Fantasy in F Minor')],
+        'candidate_performers': [{'name': 'Murray Perahia'}],
+        'work_id': WORK,
+        'resolved_work_title': 'Fantasy in F Minor',
+        'evidence': [{'type': 'reviewed_work_identity',
+                      'source': {'file': 'docs/test.md'}, 'note': 'Reviewed.'}],
+        'disposition': 'reuse_existing',
+        'performance_id': P384,
+        'recording_match': {'match': 'exact_recording_isrc', 'selected_positions': [101],
+                            'reference_isrc': 'ISRC75254187'},
+    }
+    manifest = {
+        'schema_version': 1,
+        'status': 'imported_to_canonical_branch',
+        'window': {'start': 101, 'end': 101, 'selected_tracks': 1},
+        'source': {'playlist_id': 'w', 'run_id': 1, 'run_url': 'u', 'sha256': 'x',
+                   'playlist_modified_at': '2026-01-01T00:00:00Z', 'snapshot_tracks': 1,
+                   'playlist_tracks': 1, 'source_complete': False},
+        'policy': {},
+        'units': [unit],
+        'new_records': [],
+        'changed_existing': [],
+        'counts': {
+            'track_dispositions': {'reuse_existing': 1},
+            'unit_dispositions': {'reuse_existing': 1},
+            'new_records': {'work-groups': 0, 'works': 0, 'persons': 0, 'performances': 0},
+            'changed_existing': 0,
+            'existing_performances_unique': 1,
+        },
+        'next_boundary': {'position': 102, 'status': 'not_in_bounded_snapshot',
+                          'note': 'window test'},
+    }
+    (root / WINDOW_MANIFEST).write_text(json.dumps(manifest, indent=2) + '\n')
+    return manifest
+
+
+class WindowPromoteTest(unittest.TestCase):
+    """Promote through a legacy Best Classical window manifest (#227 route)."""
+
+    def setUp(self):
+        self.tmp = Path(tempfile.mkdtemp())
+        self.root = self.tmp / 'repo'
+        self.root.mkdir()
+        build_fixture(self.root)
+        self.manifest = build_window_fixture(self.root)
+
+    def tearDown(self):
+        import shutil
+        shutil.rmtree(self.tmp, ignore_errors=True)
+
+    def test_window_promote_and_audit_pass(self):
+        result = run_script(self.root, '--choice', 'CHA',
+                            '--performer', 'Bertrand Chamayou (piano)',
+                            '--track-url', 'https://tidal.com/track/461772236',
+                            '--album-title', 'Schubert: Four Hands')
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertTrue((self.root / f'data/performances/{NEW_PID}.yaml').is_file())
+        self.assertFalse((self.root / f'data/performances/{P384}.yaml').exists())
+
+        manifest = json.loads((self.root / WINDOW_MANIFEST).read_text())
+        unit = manifest['units'][0]
+        self.assertEqual(unit['disposition'], 'not_selected')
+        self.assertEqual(unit['unit_id'], 'BC-101')
+        self.assertEqual(unit['curator_issue'],
+                         'https://github.com/LuHoo/classical_music/issues/319')
+        self.assertEqual(unit['curator_decision'],
+                         'reports/curator-decisions/issue-319.json')
+        self.assertNotIn('performance_id', unit)
+        self.assertNotIn('recording_match', unit)
+        self.assertEqual(manifest['counts']['unit_dispositions'], {'not_selected': 1})
+        self.assertEqual(manifest['counts']['track_dispositions'], {'not_selected': 1})
+        self.assertEqual(manifest['counts']['existing_performances_unique'], 0)
+        self.assertEqual(manifest['counts']['changed_existing'], 1)
+        removed = manifest['changed_existing'][0]
+        self.assertEqual(removed['action'], 'removed_by_curator')
+        self.assertEqual(removed['id'], P384)
+        choice = manifest['resolved_choices'][0]
+        self.assertEqual(choice['work_id'], WORK)
+        self.assertEqual(choice['units'], ['BC-101'])
+        decision = choice['decision']
+        self.assertEqual(decision['not_selected_units'], ['BC-101'])
+        self.assertEqual(decision['implementation_record'],
+                         'reports/curator-decisions/issue-319.json')
+        self.assertEqual(decision['performances'][0]['performance_id'], NEW_PID)
+
+        record = json.loads((self.root /
+                             'reports/curator-decisions/issue-319.json').read_text())
+        self.assertEqual(record['not_selected_units'], ['BC-101'])
+        self.assertEqual(record['manifest_updates'], [WINDOW_MANIFEST])
+
+        # The real window audit that ./curator finish runs must accept the update.
+        sys.path.insert(0, str(REPO / 'src'))
+        from classical_music import best_classical_import
+        best_classical_import.audit_decisions(self.root / WINDOW_MANIFEST, self.root)
+
+    def test_window_refuses_import_new_unit(self):
+        manifest = json.loads((self.root / WINDOW_MANIFEST).read_text())
+        manifest['units'][0]['disposition'] = 'import_new'
+        (self.root / WINDOW_MANIFEST).write_text(json.dumps(manifest, indent=2) + '\n')
+        result = run_script(self.root, '--choice', 'CHA', '--performer', 'X (piano)',
+                            '--track-url', 'https://tidal.com/track/461772236')
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn('requires manual review', result.stderr + result.stdout)
+
+    def test_window_refuses_two_units_for_one_performance(self):
+        manifest = json.loads((self.root / WINDOW_MANIFEST).read_text())
+        manifest['units'].append(json.loads(json.dumps(manifest['units'][0])))
+        for unit in manifest['units']:
+            unit['positions'] = [101] if unit is manifest['units'][0] else [102]
+            unit['tracks'] = [track(unit['positions'][0], '75254187', 'Fantasy')]
+        manifest['window'].update(end=102, selected_tracks=2)
+        manifest['counts']['track_dispositions'] = {'reuse_existing': 2}
+        manifest['counts']['unit_dispositions'] = {'reuse_existing': 2}
+        (self.root / WINDOW_MANIFEST).write_text(json.dumps(manifest, indent=2) + '\n')
+        result = run_script(self.root, '--choice', 'CHA', '--performer', 'X (piano)',
+                            '--track-url', 'https://tidal.com/track/461772236')
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn('profiled decision', result.stderr + result.stdout)
 
 
 class RejectTest(unittest.TestCase):
