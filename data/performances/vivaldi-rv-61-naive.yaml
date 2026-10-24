@@ -1,0 +1,17 @@
+id: ac978d23109b4ddba613aed8e9307c11
+work_id: 082cf5adfdfd4edda700b7cad0f6e952
+performers:
+- name: L'Estravagante
+  role: ensemble
+release:
+  label: Naive / Opus 111
+  catalogue_number: OP30535
+  album_title: Vivaldi: Sonate da camera a tre, Op. 1
+source:
+  url: https://vivaldiedition.net/portfolio/vol-44-sonate-da-camera-a-tre-opus-1-2011/
+  file: reports/vivaldi-naive-edition/catalogue.json
+notes: The Vivaldi Edition, volume 44. Album page verified 2026-09-28. RV 61 = Sonata No. 3 in C major
+  (Op. 1); het album bevat negen van de twaalf Op. 1-sonates (nrs. 1, 3, 4, 7, 8, 9, 10, 11, 12).
+links:
+  tidal:
+    url: https://tidal.com/album/91797772

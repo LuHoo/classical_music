@@ -9,7 +9,7 @@ nav_order: 1
 
 ## Works with opus number
 
-**12 sonatas for two violins and basso continuo**, Op. 1 (1705) RV73, 67, 61, 66, 69, 62, 65, 64, 75, 78, 79, 63
+**12 sonatas for two violins and basso continuo**, Op. 1 (1705) RV73, 67, 61, 66, 69, 62, 65, 64, 75, 78, 79, 63 [*L'Estravagante*](https://tidal.com/album/91797772)
 
 **12 sonatas for violin and basso continuo**, Op. 2 (1709) RV27, 31, 14, 20, 36, 1, 8, 23, 16, 21, 9, 32
 
