@@ -1173,6 +1173,34 @@ class PlaylistIssueCase(FixtureCase):
     complete recording. Fail-closed on half flags, unbound works and
     fragmentary anchors (#316 feedback)."""
 
+    def test_issue_binding_is_written_to_the_recording(self):
+        # --issue/--work binds the candidate for ./curator <issue> <choice>:
+        # issue number, candidate track IDs in album order, reviewed performers.
+        self.run_script(issue=316, work='work-a', user_client_factory=lambda: FakeUserClient())
+        saved = self._read_yaml(self.root / 'data/recordings/test-album.yml')
+        entry = next(e for e in saved['works'] if e['work_id'] == 'work-a')
+        self.assertEqual(entry['issue'], 316)
+        self.assertEqual(entry['track_ids'], ['222', '223'])
+        self.assertIn('Royal Concertgebouw Orchestra (orchestra)', entry['performers'])
+        self.assertIn('Hector Berlioz', entry['performers'])
+        # Other candidates stay untouched.
+        other = next(e for e in saved['works'] if e['work_id'] == 'work-b')
+        self.assertNotIn('issue', other)
+
+    def test_update_existing_replaces_the_bound_entry(self):
+        # First run without --issue leaves the entry unbound; a re-run with
+        # --issue/--work --update-existing replaces it with the bound entry.
+        self.run_script(user_client_factory=lambda: FakeUserClient())
+        self.run_script(issue=316, work='work-a', update_existing=True,
+                        user_client_factory=lambda: FakeUserClient())
+        saved = self._read_yaml(self.root / 'data/recordings/test-album.yml')
+        bound = [e for e in saved['works'] if e.get('issue')]
+        self.assertEqual(len(bound), 1)
+        self.assertEqual(bound[0]['work_id'], 'work-a')
+        self.assertEqual(bound[0]['track_ids'], ['222', '223'])
+        self.assertEqual([e['work_id'] for e in saved['works'] if e['work_id'] == 'work-b'],
+                         ['work-b'])
+
     def test_without_issue_no_playlist_is_created(self):
         def factory():
             raise AssertionError('A run without --issue must not create a user client')

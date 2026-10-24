@@ -71,6 +71,82 @@ def read_status(content):
     return state
 
 
+def _apply_earmarked_module(root):
+    """Load scripts/apply_earmarked_decision.py so ./curator can delegate to it."""
+    path = root / 'scripts' / 'apply_earmarked_decision.py'
+    core.require(path.is_file(), 'apply_earmarked_decision.py not found in this repository')
+    import importlib.util
+    spec = importlib.util.spec_from_file_location('apply_earmarked_decision', path)
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
+def find_earmarked_binding(root, issue):
+    """The single data/recordings/ candidate entry bound to this issue number.
+
+    register_earmarked_recording.py --issue <nr> --work <work-id> writes the
+    binding (issue, track_ids, performers) on the candidate work entry; that is
+    what lets ./curator <issue> <choice> work without retyping the candidate.
+    """
+    hits = []
+    for path in sorted((root / 'data/recordings').glob('*.y*ml')):
+        data = batch_yaml_load(path)
+        if not isinstance(data, dict):
+            continue
+        for entry in data.get('works') or []:
+            if (isinstance(entry, dict) and entry.get('issue') == issue
+                    and entry.get('status') == 'candidate'):
+                hits.append((path, data, entry))
+    core.require(hits, f'Issue #{issue} is not registered in an intake manifest and has no '
+                       'earmarked candidate binding (no data/recordings/ work entry carries this '
+                       'issue number with status candidate); run register_earmarked_recording.py '
+                       'with --issue and --work, or use apply_earmarked_decision.py directly')
+    core.require(len(hits) == 1, f'Issue #{issue} is bound to multiple earmarked candidates; '
+                                 'manual review required')
+    path, data, entry = hits[0]
+    return {'path': path, 'recording': data, 'entry': entry,
+            'album_title': data.get('title') if isinstance(data.get('title'), str) else None}
+
+
+def batch_yaml_load(path):
+    return YAML(typ='safe').load(path.read_text())
+
+
+def plan_earmarked_decision(root, issue, token, *, curator='LAH', decision_url=None):
+    """Earmarked fallback for ./curator <issue> <choice>: derive the candidate
+    from the recording binding, delegate to apply_earmarked_decision.plan."""
+    core.require(token and token.strip(), 'Supply a choice')
+    binding = find_earmarked_binding(root, issue)
+    entry = binding['entry']
+    code = token.strip()
+    reject = code.lower() in ('existing', 'geen', 'unresolved')
+    import argparse
+    args = argparse.Namespace(issue=issue, choice=code, work=entry['work_id'],
+                              performer=[], track_url=None,
+                              album_title=binding.get('album_title'), curator=curator)
+    if not reject:
+        performers = entry.get('performers')
+        track_ids = entry.get('track_ids')
+        core.require(isinstance(performers, list) and performers,
+                     f'Candidate for issue #{issue} lacks reviewed performers in its recording '
+                     'entry; re-run register_earmarked_recording.py with --issue and --work '
+                     '(add --update-existing for an already registered album)')
+        core.require(isinstance(track_ids, list) and track_ids,
+                     f'Candidate for issue #{issue} lacks candidate track IDs; re-run '
+                     'register_earmarked_recording.py with --issue and --work')
+        args.performer = [str(person) for person in performers]
+        args.track_url = f'https://tidal.com/track/{track_ids[0]}'
+    module = _apply_earmarked_module(root)
+    changes, record, message = module.plan(root, args, (curator or 'LAH').strip() or 'LAH')
+    if decision_url:
+        record['evidence'] = list(record.get('evidence', [])) + [decision_url]
+        relative = f'reports/curator-decisions/issue-{issue}.json'
+        core.require(relative in changes, 'Earmarked decision record was not part of the plan')
+        changes[relative] = core.json_bytes(record)
+    return changes, record, message
+
+
 def record_decision(root, issue, token, *, apply=True, curator='LAH', decision_url=None,
                     replace_existing=False, playlist_remove=False, note=None, progress=None):
     core.require(__debug__, 'Run without Python -O; audit assertions must remain enabled.')
@@ -89,8 +165,23 @@ def record_decision(root, issue, token, *, apply=True, curator='LAH', decision_u
             changes, record, message = core.plan_playlist_done(root, issue, curator=curator, note=note)
         else:
             core.require(not note, '--note is only for playlist-done.')
-            changes, record, message = core.plan_decision(root, issue, token, curator=curator,
-                decision_url=decision_url, replace_existing=replace_existing, playlist_remove=playlist_remove)
+            registered = True
+            try:
+                core.locate(root, issue)
+            except (ValueError, AssertionError):
+                # Not bound to an intake manifest: the earmarked registration
+                # binding may still resolve ./curator <issue> <choice>.
+                registered = False
+            if registered:
+                changes, record, message = core.plan_decision(root, issue, token, curator=curator,
+                    decision_url=decision_url, replace_existing=replace_existing,
+                    playlist_remove=playlist_remove)
+            else:
+                core.require(not (replace_existing or playlist_remove),
+                             '--replace-existing/--playlist-remove-unselected apply to '
+                             'manifest-registered choices, not to earmarked candidates')
+                changes, record, message = plan_earmarked_decision(
+                    root, issue, token, curator=curator, decision_url=decision_url)
         if not changes:
             return message + '\n' + core.manual_instructions(record) + '\nNa je laatste wijziging: ./curator finish'
         files = list(changes)

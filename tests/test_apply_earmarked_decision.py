@@ -294,5 +294,88 @@ class RejectTest(unittest.TestCase):
         self.assertEqual(manifest['summary']['import_new']['units'], 2)
 
 
+BOUND_RECORDING = (
+    "id: test-recording\ntitle: 'Test: Recording'\nlabel: Test Label\nyear: 2026\n"
+    "works:\n"
+    f"- work_id: {{WORK}}\n  status: candidate\n  issue: 319\n"
+    "  track:\n    number: 1\n    title: 'Fantasy in F Minor: I. Allegro'\n"
+    "  track_ids:\n  - '22222222'\n  - '22222223'\n"
+    "  performers:\n  - Murray Perahia (piano)\n"
+    "  notes: Spans album tracks 1, 2, 3, 4.\n"
+    f"- work_id: {{OTHER}}\n  status: candidate\n  track:\n    number: 5\n"
+    "    title: 'Rondo in A Major'\n"
+)
+
+
+class CuratorCliEarmarkedTest(unittest.TestCase):
+    """./curator <issue> <choice> resolves the earmarked binding (#342-volg):
+    register_earmarked_recording.py --issue/--work writes issue, track_ids and
+    reviewed performers on the candidate entry; record_decision derives the
+    candidate from that binding and delegates to apply_earmarked_decision."""
+
+    def setUp(self):
+        self.tmp = Path(tempfile.mkdtemp())
+        self.root = self.tmp / 'repo'
+        self.root.mkdir()
+        build_fixture(self.root)
+        (self.root / 'data/recordings' / 'test-recording.yml').write_text(
+            BOUND_RECORDING.replace('{WORK}', WORK).replace('{OTHER}', OTHER))
+        import shutil
+        (self.root / 'scripts').mkdir(exist_ok=True)
+        shutil.copy(SCRIPT, self.root / 'scripts' / 'apply_earmarked_decision.py')
+
+    def tearDown(self):
+        import shutil
+        shutil.rmtree(self.tmp, ignore_errors=True)
+
+    def record(self, issue, token, **kwargs):
+        sys.path.insert(0, str(REPO / 'src'))
+        from classical_music import curator_batch as batch
+        return batch.record_decision(self.root, issue, token, **kwargs)
+
+    def decision_record(self):
+        return json.loads((self.root / 'reports/curator-decisions/issue-319.json').read_text())
+
+    def test_promote_via_curator_cli(self):
+        message = self.record(319, 'naive', apply=True)
+        self.assertIn('Opgeslagen', message)
+        performance = load_yaml(self.root, f'data/performances/{WORK}-earmarked-naive.yaml')
+        self.assertEqual(performance['links']['tidal']['url'],
+                         'https://tidal.com/track/22222222')
+        self.assertEqual(performance['performers'],
+                         [{'name': 'Murray Perahia', 'role': 'piano'}])
+        self.assertEqual(self.decision_record()['decision_source'], 'curator_cli')
+        status = json.loads(
+            (self.root / 'reports/curator-decisions/batch-status.json').read_text())
+        self.assertEqual(status['status'], 'pending')
+        self.assertIn(319, status['issues'])
+
+    def test_reject_via_curator_cli_keeps_existing(self):
+        self.record(319, 'existing', apply=True)
+        record = self.decision_record()
+        self.assertEqual(record['requested_choice'], 'existing')
+        self.assertFalse((self.root / f'data/performances/{WORK}-earmarked-existing.yaml').exists())
+
+    def test_decision_url_becomes_evidence(self):
+        url = 'https://github.com/LuHoo/classical_music/issues/319#issuecomment-1'
+        self.record(319, 'naive', apply=True, decision_url=url)
+        self.assertIn(url, self.decision_record()['evidence'])
+
+    def test_unbound_issue_fails_closed(self):
+        with self.assertRaises((ValueError, AssertionError)) as ctx:
+            self.record(320, 'naive', apply=True)
+        self.assertIn('no earmarked candidate binding', str(ctx.exception))
+        self.assertIn('register_earmarked_recording.py', str(ctx.exception))
+
+    def test_binding_without_reviewed_performers_fails_closed(self):
+        (self.root / 'data/recordings' / 'test-recording.yml').write_text(
+            BOUND_RECORDING.replace('{WORK}', WORK).replace('{OTHER}', OTHER)
+            .replace("  performers:\n  - Murray Perahia (piano)\n", ""))
+        with self.assertRaises((ValueError, AssertionError)) as ctx:
+            self.record(319, 'naive', apply=True)
+        self.assertIn('lacks reviewed performers', str(ctx.exception))
+        self.assertIn('--update-existing', str(ctx.exception))
+
+
 if __name__ == '__main__':
     unittest.main()
