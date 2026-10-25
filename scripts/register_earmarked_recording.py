@@ -1183,10 +1183,19 @@ def write_recording(root, recording, *, update_existing=False):
             elif entry.get('issue'):
                 # Issue-bound entries carry the reviewed binding (issue,
                 # track_ids, performers): a re-run with --issue/--work replaces
-                # the older entry instead of leaving it unbound.
-                for index, old in enumerate(existing['works']):
-                    if old.get('work_id') == entry['work_id']:
-                        existing['works'][index] = entry
+                # the older entry instead of leaving it unbound (#355). An
+                # older file can carry the same work more than once (pre-#351
+                # matching artifacts: one candidate plus one unevaluated entry
+                # from an ambiguous track); assigning the new entry to every
+                # occurrence would plant the same dict at two positions, which
+                # ruamel dumps as an anchor/alias pair and the curator then
+                # correctly refuses as a double binding. Replace the first
+                # occurrence and drop the duplicates.
+                indices = [index for index, old in enumerate(existing['works'])
+                           if old.get('work_id') == entry['work_id']]
+                existing['works'][indices[0]] = entry
+                for index in reversed(indices[1:]):
+                    del existing['works'][index]
         existing['links'] = recording['links']
         document = existing
     path.parent.mkdir(parents=True, exist_ok=True)
