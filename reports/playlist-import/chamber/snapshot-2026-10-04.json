@@ -1423,9 +1423,9 @@
   "base_commit": "f03bf06",
   "summary": {
     "import_new": {
-      "units": 301,
-      "track_occurrences": 962,
-      "distinct_performances": 301
+      "units": 302,
+      "track_occurrences": 963,
+      "distinct_performances": 302
     },
     "reuse_existing": {
       "units": 91,
@@ -1433,8 +1433,8 @@
       "distinct_performances": 90
     },
     "recommendation_choice": {
-      "units": 3,
-      "track_occurrences": 3,
+      "units": 0,
+      "track_occurrences": 0,
       "distinct_performances": 0
     },
     "identity_unresolved": {
@@ -1443,8 +1443,8 @@
       "distinct_performances": 0
     },
     "not_selected": {
-      "units": 12,
-      "track_occurrences": 42,
+      "units": 14,
+      "track_occurrences": 44,
       "distinct_performances": 0
     }
   },
@@ -5938,6 +5938,11 @@
       "id": "cesar-franck-franck-piano-quintet-in-f-minor-fwv-7-chamber-c364",
       "path": "data/performances/cesar-franck-franck-piano-quintet-in-f-minor-fwv-7-chamber-c364.yaml",
       "entity": "performances"
+    },
+    {
+      "id": "albert-roussel-divertissement-op-6-chamber-c331",
+      "path": "data/performances/albert-roussel-divertissement-op-6-chamber-c331.yaml",
+      "entity": "performances"
     }
   ],
   "changed_existing": [
@@ -5949,21 +5954,7 @@
       "decision_record": "reports/curator-decisions/issue-252.json"
     }
   ],
-  "recommendation_choices": [
-    {
-      "work_id": "albert-roussel-divertissement-op-6",
-      "title": "Divertissement, Op. 6",
-      "composer": "Albert Roussel",
-      "units": [
-        "C108",
-        "C325",
-        "C331"
-      ],
-      "existing_performances": [],
-      "issue_url": "https://github.com/LuHoo/classical_music/issues/247",
-      "decision": null
-    }
-  ],
+  "recommendation_choices": [],
   "units": [
     {
       "unit_id": "C001",
@@ -17039,7 +17030,7 @@
       "positions": [
         368
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "not_selected",
       "work_id": "albert-roussel-divertissement-op-6",
       "performers": [
         {
@@ -17058,8 +17049,8 @@
           "url": "https://eclassical.textalk.se/shop/17115/art98/5067398-62ea49-095115528228.pdf"
         }
       ],
-      "reason": "Alternative interpretation of this Work; explicit curator choice required before any recommendation is added or replaced.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected C331; retained as historical source evidence.",
+      "review_classification": "curator_not_selected",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/247",
       "tracks": [
         {
@@ -17082,7 +17073,8 @@
           "export_position": 368,
           "archive_match": "exact_track_id"
         }
-      ]
+      ],
+      "curator_decision": "reports/curator-decisions/issue-247.json"
     },
     {
       "unit_id": "C109",
@@ -37878,7 +37870,7 @@
       "positions": [
         1049
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "not_selected",
       "work_id": "albert-roussel-divertissement-op-6",
       "performers": [
         {
@@ -37905,8 +37897,8 @@
           "url": "https://eclassical.textalk.se/shop/17115/art98/5067398-62ea49-095115528228.pdf"
         }
       ],
-      "reason": "Alternative interpretation of this Work; explicit curator choice required before any recommendation is added or replaced.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected C331; retained as historical source evidence.",
+      "review_classification": "curator_not_selected",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/247",
       "tracks": [
         {
@@ -37934,7 +37926,8 @@
           "export_position": null,
           "archive_match": null
         }
-      ]
+      ],
+      "curator_decision": "reports/curator-decisions/issue-247.json"
     },
     {
       "unit_id": "C326",
@@ -38260,7 +38253,7 @@
       "positions": [
         1060
       ],
-      "disposition": "recommendation_choice",
+      "disposition": "import_new",
       "work_id": "albert-roussel-divertissement-op-6",
       "performers": [
         {
@@ -38272,8 +38265,8 @@
           "url": "https://eclassical.textalk.se/shop/17115/art98/5067398-62ea49-095115528228.pdf"
         }
       ],
-      "reason": "Alternative interpretation of this Work; explicit curator choice required before any recommendation is added or replaced.",
-      "review_classification": "curator_required",
+      "reason": "Curator selected C331; all source movements included.",
+      "review_classification": "curator_accepted",
       "curator_issue": "https://github.com/LuHoo/classical_music/issues/247",
       "tracks": [
         {
@@ -38295,7 +38288,9 @@
           "export_position": null,
           "archive_match": null
         }
-      ]
+      ],
+      "curator_decision": "reports/curator-decisions/issue-247.json",
+      "performance_id": "albert-roussel-divertissement-op-6-chamber-c331"
     },
     {
       "unit_id": "C332",
@@ -47845,6 +47840,39 @@
         "implementation_report": "reports/playlist-import/chamber/snapshot-2026-10-04.json",
         "implementation_record": "reports/curator-decisions/issue-253.json",
         "decision_record": "reports/curator-decisions/issue-253.json"
+      }
+    },
+    {
+      "work_id": "albert-roussel-divertissement-op-6",
+      "title": "Divertissement, Op. 6",
+      "composer": "Albert Roussel",
+      "units": [
+        "C108",
+        "C325",
+        "C331"
+      ],
+      "existing_performances": [],
+      "issue_url": "https://github.com/LuHoo/classical_music/issues/247",
+      "decision": {
+        "choice": "selected_performance",
+        "selected_units": [
+          "C331"
+        ],
+        "not_selected_units": [
+          "C108",
+          "C325"
+        ],
+        "performances": [
+          {
+            "performance_id": "albert-roussel-divertissement-op-6-chamber-c331",
+            "profile": null,
+            "unit_id": "C331",
+            "tidal_url": "https://tidal.com/track/12733657"
+          }
+        ],
+        "implementation_report": "reports/playlist-import/chamber/snapshot-2026-10-04.json",
+        "implementation_record": "reports/curator-decisions/issue-247.json",
+        "decision_record": "reports/curator-decisions/issue-247.json"
       }
     }
   ]

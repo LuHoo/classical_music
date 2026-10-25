@@ -6,15 +6,16 @@
     242,
     243,
     246,
+    247,
     248,
     252,
     253,
     255,
     319
   ],
-  "updated_at": "2026-10-24T20:28:28.610094+00:00",
-  "validated_at": "2026-10-24T20:29:02.756382+00:00",
-  "inputs_sha256": "837dadcc28631f1e70627e8a77782f2184c965296a2acde03e385f8ade51f945",
+  "updated_at": "2026-10-24T21:52:49.523212+00:00",
+  "validated_at": "2026-10-24T21:53:25.079872+00:00",
+  "inputs_sha256": "46d1ed292d94840af0575350ef02f003beb736ef0eaa55cf2eb8b5bcb95c63de",
   "manifests": [
     "reports/playlist-import/chamber/snapshot-2026-10-04.json",
     "reports/playlist-import/piano/snapshot-2026-10-04.json",
@@ -25,5 +26,5 @@
   "tests": [
     "tests/test_curator_batch.py"
   ],
-  "test_result": "................                                                         [100%]\n16 passed in 0.21s"
+  "test_result": "................                                                         [100%]\n16 passed in 0.20s"
 }

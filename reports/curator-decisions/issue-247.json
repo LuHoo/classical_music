@@ -1,0 +1,18 @@
+{
+  "issue_url": "https://github.com/LuHoo/classical_music/issues/247",
+  "decision_source": "curator_cli",
+  "curator": "LAH",
+  "recorded_at": "2026-10-24T21:52:46.180713+00:00",
+  "requested_choice": "C331",
+  "choice": "C331",
+  "selected_units": [
+    "C331"
+  ],
+  "not_selected_units": [
+    "C108",
+    "C325"
+  ],
+  "performance_id": "albert-roussel-divertissement-op-6-chamber-c331",
+  "implementation_pr": null,
+  "replaced_performances": []
+}

@@ -50,9 +50,50 @@ def test_changed_track_identity_fails_even_with_same_position(inventory):
         audit.check_inventory(manifest, data)
 
 
+def _revert_one_resolved_choice_to_pending(manifest, data):
+    """Rewind one resolved `selected_performance` choice to its pending state.
+
+    The manifest on main no longer carries pending recommendation choices, so
+    this regression builds the pending state synthetically from a choice that
+    was resolved with exactly one imported performance: the choice moves back
+    to `recommendation_choices` (decision None), its units become
+    `recommendation_choice` units again, the selected performance disappears
+    from the catalog and from `new_records`, and the summary is recomputed.
+    """
+    choice = next(
+        c for c in manifest['resolved_choices']
+        if c['decision']['choice'] == 'selected_performance'
+        and len(c['decision']['selected_units']) == 1
+        and next(u for u in manifest['units']
+                 if u['unit_id'] == c['decision']['selected_units'][0])['disposition'] == 'import_new'
+    )
+    manifest['resolved_choices'].remove(choice)
+    for unit_id in choice['units']:
+        unit = next(u for u in manifest['units'] if u['unit_id'] == unit_id)
+        unit['disposition'] = 'recommendation_choice'
+        unit['review_classification'] = 'curator_required'
+        unit.setdefault('reason', 'Pending curator choice restored by the regression test.')
+        unit.pop('performance_id', None)
+        unit.pop('curator_decision', None)
+    for performance in choice['decision']['performances']:
+        data['performances'].pop(performance['performance_id'], None)
+        manifest['new_records'] = [r for r in manifest['new_records']
+                                   if r['id'] != performance['performance_id']]
+    choice['decision'] = None
+    manifest['recommendation_choices'].append(choice)
+    for status, summary in manifest['summary'].items():
+        selected = [u for u in manifest['units'] if u['disposition'] == status]
+        summary['units'] = len(selected)
+        summary['track_occurrences'] = sum(len(u['positions']) for u in selected)
+        summary['distinct_performances'] = len({u['performance_id'] for u in selected if u.get('performance_id')})
+    return choice
+
+
 def test_pending_choice_cannot_become_a_recommendation(inventory):
     manifest, data = deepcopy(inventory)
-    unit = next(u for u in manifest['units'] if u['disposition'] == 'recommendation_choice')
+    choice = _revert_one_resolved_choice_to_pending(manifest, data)
+    unit = next(u for u in manifest['units'] if u['unit_id'] in choice['units'])
+    audit.check_inventory(manifest, data)  # the restored pending state itself is consistent
     data['performances']['unapproved'] = {'id': 'unapproved', 'work_id': unit['work_id']}
     manifest['new_records'].append({'id': 'unapproved', 'entity': 'performances'})
     with pytest.raises(AssertionError, match='Pending curator choice leaked'):
