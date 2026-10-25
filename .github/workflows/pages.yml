@@ -9,6 +9,20 @@ on:
 permissions:
   contents: write
 
+# One build+deploy at a time; the newest push to main wins. Without this,
+# concurrent merges to main race on the force-push to gh-pages and the
+# losing run fails in the deploy step (see issue #380, Actions run 468).
+# PR runs never deploy (the deploy step is gated on push to main) and get
+# their own group so they cannot cancel an in-progress main deploy — the
+# same per-PR/non-PR split as validate.yml
+# (classical_music.ci_policy.concurrency_group).
+concurrency:
+  group: >-
+    ${{ github.event_name == 'pull_request'
+        && format('pages-pr-{0}', github.event.pull_request.number)
+        || 'pages-deploy' }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
 jobs:
   build:
     runs-on: ubuntu-latest
