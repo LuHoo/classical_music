@@ -16,12 +16,19 @@ def test_pages_workflow_builds_on_pull_request_without_deploying_from_pr():
 
 
 def test_pages_workflow_deploys_one_at_a_time_and_latest_push_wins():
-    """Concurrent merges to main race on the gh-pages force-push (issue #380)."""
+    """Concurrent merges to main race on the gh-pages force-push (issue #380).
+
+    Main pushes share one group so only the newest build+deploy runs; PR runs
+    get their own group (they never deploy) so they cannot cancel an
+    in-progress main deploy — the same per-PR/non-PR split as validate.yml.
+    """
     workflow = Path(".github/workflows/pages.yml").read_text(encoding="utf-8")
 
     assert "concurrency:" in workflow
-    assert "group: pages-deploy" in workflow
-    assert "cancel-in-progress: true" in workflow
+    assert "github.event_name == 'pull_request'" in workflow
+    assert "format('pages-pr-{0}', github.event.pull_request.number)" in workflow
+    assert "|| 'pages-deploy'" in workflow
+    assert "cancel-in-progress: ${{ github.event_name == 'pull_request' }}" in workflow
 
 
 def test_just_the_docs_head_custom_is_include_only():
