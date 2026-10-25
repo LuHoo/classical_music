@@ -1272,7 +1272,8 @@ def run(root, url, *, dry_run=False, recording_id=None, update_existing=False,
                                   'candidate_tracks': p['candidate_track_ids']} for p in plans],
               'playlist_errors': playlist_errors,
               'unmatched_tracks': [{'title': u['track']['title'], 'state': u['state'],
-                                    'candidates': u.get('candidates', [])} for u in unmatched_tracks],
+                                    'candidates': u.get('candidates', []),
+                                    'variant': u.get('variant')} for u in unmatched_tracks],
               'unmatched_track_details': unmatched_track_details(matches, persons),
               'unmatched_artists': unmatched_artists,
               'unattributed_recommendation_lines': unattributed,
@@ -1356,6 +1357,17 @@ def main(argv=None):
     except ValueError as exc:
         print(f'ERROR: {exc}', file=sys.stderr)
         return 1
+    print_report(result, verbose_unattributed=args.verbose_unattributed)
+    return 0
+
+
+def print_report(result, *, verbose_unattributed=False):
+    """Print the human-readable report of a run() result (CLI stdout).
+
+    Standalone function (#352): the print path is exercised by the tests with
+    fake results, so a report key mismatch crashes in CI instead of in the
+    curator's terminal.
+    """
     report = result['report']
     print(f"Album: {report['album']}")
     print(f"Recording ID: {report['recording_id']}")
@@ -1402,7 +1414,7 @@ def main(argv=None):
             elif suggestions is None:
                 print('       external suggestions: unavailable (lookup failed or disabled)')
     if report['unattributed_recommendation_lines']:
-        if args.verbose_unattributed:
+        if verbose_unattributed:
             print('  Recommendation lines without a canonical work attribution: '
                   + ', '.join(report['unattributed_recommendation_lines']))
         else:
@@ -1436,7 +1448,6 @@ def main(argv=None):
         print(result['note'])
     if result.get('written'):
         print(f"Written: {result['written']}")
-    return 0
 
 
 if __name__ == '__main__':

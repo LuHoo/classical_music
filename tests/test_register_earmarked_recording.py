@@ -240,6 +240,21 @@ class FixtureCase(unittest.TestCase):
         kwargs.setdefault('catalog_factory', lambda album: self.recommendation_client)
         return reg.run(self.root, ALBUM_URL, today='2026-10-18', **kwargs)
 
+    def test_report_printing_handles_a_standard_dry_run(self):
+        # #352: the CLI print path runs over fake results in CI, not first in
+        # the curator's terminal.
+        import contextlib
+        import io
+        result = self.run_script(dry_run=True)
+        buffer = io.StringIO()
+        with contextlib.redirect_stdout(buffer):
+            reg.print_report(result)
+        output = buffer.getvalue()
+        self.assertIn('Album: Test Album', output)
+        self.assertIn('Recording ID: test-album', output)
+        self.assertIn('work-a: candidate; comparison playlist planned', output)
+        self.assertIn('Dry run: nothing written, no playlist created.', output)
+
     def test_album_url_validation_is_fail_closed(self):
         for bad in ['', 'https://tidal.com/browse/album/', 'https://tidal.com/browse/album/12/x',
                     'http://tidal.com/browse/album/12', 'https://open.tidal.com/albums/12',
@@ -709,6 +724,19 @@ class ZeroMatchCase(unittest.TestCase):
         self.assertIn('nothing to register', result['note'])
         self.assertIn('re-run', result['note'])
         self.assertEqual(list((self.root / 'data/recordings').glob('*.y*ml')), [])
+
+    def test_report_printing_handles_a_zero_match_dry_run(self):
+        # #352: same coverage for the per-track evidence report path.
+        import contextlib
+        import io
+        result = self.run_script(dry_run=True)
+        buffer = io.StringIO()
+        with contextlib.redirect_stdout(buffer):
+            reg.print_report(result)
+        output = buffer.getvalue()
+        self.assertIn('No track could be related to canonical works', output)
+        self.assertIn('catalogue tokens: d947', output)
+        self.assertIn('nothing to register', output)
 
     def test_dry_run_invents_no_work_ids(self):
         result = self.run_script(dry_run=True)
@@ -1369,6 +1397,24 @@ class VariantCase(unittest.TestCase):
         plan = result['report']['playlist_plans'][0]
         self.assertEqual(plan['current_tracks'], ['301', '302', '304'])
         self.assertEqual(plan['candidate_tracks'], ['301', '302', '304'])
+
+    def test_report_printing_survives_a_skipped_variant(self):
+        # #352 regression: the CLI report printing read entry['variant'] on a
+        # report entry that lacked the field -- a crash after a successful run.
+        import contextlib
+        import io
+        result = self.run_script(dry_run=True)
+        variants = [u for u in result['report']['unmatched_tracks']
+                    if u['state'] == 'variant']
+        self.assertEqual(variants[0]['variant'],
+                         'with original ornementation from RV 581')
+        buffer = io.StringIO()
+        with contextlib.redirect_stdout(buffer):
+            reg.print_report(result)
+        output = buffer.getvalue()
+        self.assertIn('SKIPPED VARIANT: Violin Concerto in C Major, RV 179a: II. Largo '
+                      '(with original ornementation from RV 581) '
+                      '(with original ornementation from RV 581)', output)
 
     def test_variant_stays_out_of_binding_and_consolidation_playlist(self):
         user = FakeUserClient()
