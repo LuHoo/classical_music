@@ -1,0 +1,16 @@
+{
+  "issue_url": "https://github.com/LuHoo/classical_music/issues/223",
+  "decision_source": "curator_cli",
+  "curator": "LAH",
+  "recorded_at": "2026-10-25T09:17:46.302757+00:00",
+  "requested_choice": "existing",
+  "choice": "existing",
+  "selected_units": [],
+  "not_selected_units": [],
+  "performance_id": "cf688fb7ba2b41d7bc5c5f93418a816d",
+  "implementation_pr": null,
+  "replaced_performances": [],
+  "recording": "data/recordings/vivaldi-concerti-per-violino-xi-per-anna-maria.yml",
+  "work_id": "307b96947c3f404dbb8001785b65ae4f",
+  "docs_updates": []
+}
