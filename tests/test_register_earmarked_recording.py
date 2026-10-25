@@ -1176,7 +1176,7 @@ class PlaylistIssueCase(FixtureCase):
     def test_issue_binding_is_written_to_the_recording(self):
         # --issue/--work binds the candidate for ./curator <issue> <choice>:
         # issue number, candidate track IDs in album order, reviewed performers.
-        self.run_script(issue=316, work='work-a', user_client_factory=lambda: FakeUserClient())
+        result = self.run_script(issue=316, work='work-a', user_client_factory=lambda: FakeUserClient())
         saved = self._read_yaml(self.root / 'data/recordings/test-album.yml')
         entry = next(e for e in saved['works'] if e['work_id'] == 'work-a')
         self.assertEqual(entry['issue'], 316)
@@ -1263,6 +1263,127 @@ class PlaylistIssueCase(FixtureCase):
         self.assertIn("if __name__ == '__main__':", source)
         self.assertTrue(source.rstrip().endswith('sys.exit(main())'))
 
+
+
+class VariantCase(unittest.TestCase):
+    """Movement variants with a parenthetical 'with ... from <catalogue>' marker
+    (#350, Biondi RV 179a on Vol. 71): the variant take is skipped -- no
+    ambiguous second work, one clean candidate, bindings and comparison
+    playlists without the variant, on both the candidate and the current side."""
+
+    def setUp(self):
+        import tempfile
+        self.root = Path(tempfile.mkdtemp())
+        for name in ('works', 'persons', 'artists', 'performances', 'recordings'):
+            (self.root / 'data' / name).mkdir(parents=True)
+        (self.root / 'docs').mkdir()
+        for name in ('data/works/w1.yaml', 'data/works/w2.yaml', 'data/persons/p1.yaml',
+                     'data/artists/performers.yaml', 'data/performances/perf1.yaml',
+                     'docs/composer.md'):
+            Path(self.root, name).touch()
+        self.documents = {
+            str(self.root / 'data/works/w1.yaml'): {
+                'id': 'work-a', 'title': 'Violin Concerto, RV 179a',
+                'composer_id': 'antonio-vivaldi', 'catalogue': {'rv': 'RV 179a'}},
+            str(self.root / 'data/works/w2.yaml'): {
+                'id': 'work-b',
+                'title': 'Concerto for violin and double string orchestra, RV 581',
+                'composer_id': 'antonio-vivaldi', 'catalogue': {'rv': 'RV 581'}},
+            str(self.root / 'data/persons/p1.yaml'): {
+                'id': 'antonio-vivaldi', 'name': 'Antonio Vivaldi'},
+            str(self.root / 'data/artists/performers.yaml'): {'artists': []},
+            str(self.root / 'data/performances/perf1.yaml'): {
+                'id': 'perf1', 'work_id': 'work-a', 'recommended': True,
+                'performers': [{'name': 'Fabio Biondi'}],
+                'links': {'tidal': {'url': 'https://tidal.com/track/301'}}},
+        }
+        (self.root / 'docs/composer.md').write_text('', encoding='utf-8')
+        self._read_yaml = reg.read_yaml
+
+        def read(path):
+            path = str(path)
+            if path in self.documents:
+                return self.documents[path]
+            return self._read_yaml(path)
+
+        reg.read_yaml = read
+        tracks = [
+            ('301', 'Violin Concerto in C Major, RV 179a: I. Allegro ma poco',
+             ('Fabio Biondi',)),
+            ('302', 'Violin Concerto in C Major, RV 179a: II. Largo',
+             ('Fabio Biondi',)),
+            ('303', 'Violin Concerto in C Major, RV 179a: II. Largo '
+                    '(with original ornementation from RV 581)', ('Fabio Biondi',)),
+            ('304', 'Violin Concerto in C Major, RV 179a: III. Allegro',
+             ('Fabio Biondi',)),
+        ]
+        album = album_doc(title='Vivaldi: Concerti per violino XI',
+                          artists=('Fabio Biondi', 'Europa Galante'))
+        # The anchor (track 301) sits on the candidate's own album
+        # (Biondi-style consolidation): both clients serve the same album --
+        # the read client for the candidate side, the catalog factory for the
+        # anchor expansion, which refetches the album as a separate client.
+        def client_for_album():
+            return FakeCatalogClient(album, [item_page(tracks)],
+                                     track_albums={'301': ALBUM})
+        self.client = client_for_album()
+        self.recommendation_client = client_for_album()
+
+    def tearDown(self):
+        reg.read_yaml = self._read_yaml
+
+    def run_script(self, **kwargs):
+        self.client.reset()
+        self.recommendation_client.reset()
+        kwargs.setdefault('read_client', self.client)
+        kwargs.setdefault('catalog_factory', lambda album: self.recommendation_client)
+        return reg.run(self.root, ALBUM_URL, today='2026-10-18', **kwargs)
+
+    def test_variant_marker_detection_is_explicit(self):
+        self.assertEqual(reg.variant_provenance(
+            'Violin Concerto in C Major, RV 179a: II. Largo '
+            '(with original ornementation from RV 581)'),
+            'with original ornementation from RV 581')
+        # Arrangement and version qualifiers are not variant markers.
+        self.assertIsNone(reg.variant_provenance(
+            'II. Largo (Arr. for Chamber Orchestra by Percy Grainger)'))
+        self.assertIsNone(reg.variant_provenance('Romance (version for cello and orchestra)'))
+        self.assertIsNone(reg.variant_provenance('II. Largo (with notes from the editor)'))
+        self.assertIsNone(reg.variant_provenance('II. Largo with piano'))
+
+    def test_variant_take_is_skipped_and_reported(self):
+        result = self.run_script(dry_run=True)
+        candidates = {e['work_id']: e for e in result['recording']['works']
+                      if e.get('status') == 'candidate'}
+        self.assertEqual(set(candidates), {'work-a'})
+        self.assertEqual(candidates['work-a']['notes'], 'Spans album tracks 1, 2, 4.')
+        # No unevaluated entry: RV 581 never entered the recording.
+        self.assertFalse([e for e in result['recording']['works'] if 'status' not in e])
+        self.assertNotIn('work-b', {e['work_id'] for e in result['recording']['works']})
+        self.assertIn('Skipped variant tracks: 3.', result['recording']['notes'])
+        variants = [u for u in result['report']['unmatched_tracks']
+                    if u['state'] == 'variant']
+        self.assertEqual(len(variants), 1)
+        self.assertIn('ornementation', variants[0]['title'])
+        # The comparison plan keeps the variant out of both sides.
+        plan = result['report']['playlist_plans'][0]
+        self.assertEqual(plan['current_tracks'], ['301', '302', '304'])
+        self.assertEqual(plan['candidate_tracks'], ['301', '302', '304'])
+
+    def test_variant_stays_out_of_binding_and_consolidation_playlist(self):
+        user = FakeUserClient()
+        result = self.run_script(issue=212, work='work-a',
+                                 user_client_factory=lambda: user)
+        self.assertEqual(result['written'], 'data/recordings/vivaldi-concerti-per-violino-xi.yml')
+        saved = self._read_yaml(self.root / 'data/recordings/vivaldi-concerti-per-violino-xi.yml')
+        entry = next(e for e in saved['works'] if e['work_id'] == 'work-a')
+        self.assertEqual(entry['track_ids'], ['301', '302', '304'])
+        url = result['report']['playlist_plans'][0]['playlist_url']
+        playlist = user.playlists[url.rsplit('/', 1)[-1]]
+        # The anchor sits on the candidate's own album (Biondi-style
+        # consolidation): the recording is listed once, without the variant.
+        self.assertEqual(playlist['items'], ['301', '302', '304'])
+        self.assertEqual(playlist['name'], 'Curator 2026-10-18 Issue #212')
 
 if __name__ == '__main__':
     unittest.main()

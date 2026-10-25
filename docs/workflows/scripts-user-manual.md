@@ -295,6 +295,17 @@ uit album-artiesten, track-artiesten, de composer-credits óf de albumtitel
 → ambigue; geen kandidaat → onbekend. Consecutieve tracks van hetzelfde werk
 worden samengevoegd tot één werk-regel.
 
+Bewegingsvarianten met een expliciete herkomstmarkering — een haakjessegment met
+"with", "from" én een catalogusnummer, bv. *"II. Largo (with original ornementation
+from RV 581)"* op Vivaldi Vol. 71 (#350, curatorbesluit 2026-10-25) — worden als
+**variant-take overgeslagen**: nooit een kandidaat, nooit in de binding
+(`track_ids`) en nooit in een vergelijkingsplaylist, ook niet aan de kant van de
+huidige aanbeveling (dezelfde matching draait op het album van de ankertrack). Het
+rapport vermeldt ze als `SKIPPED VARIANT` en de recording-notities als "Skipped
+variant tracks". Zonder deze expliciete markering verandert er niets: arrangement-
+en versiekwalificaties blijven gewoon in de matching meegenomen zoals hiervoor
+beschreven (#329).
+
 Gedrag per werk:
 
 - Bestaande aanbeveling gevonden → werk-regel `status: candidate` plus

@@ -21,7 +21,10 @@ Without --canonize such proposals stay advisory in the report.
 Matching evidence per track (never guessing): canonical work title or alias
 contained in title/version text, or a shared catalogue token (D, BWV, RV, Op,
 Hob, Sz, K, ...) with composer evidence from album artists, track artists or
-composer credits. Existing recommendations are read from the published
+composer credits. Variant takes marked 'with ... from <catalogue>' in a parenthetical
+(e.g. 'II. Largo (with original ornamentation from RV 581)', #350) are skipped
+entirely: never a candidate, binding or playlist track; they are reported as
+SKIPPED VARIANT. Existing recommendations are read from the published
 ``docs/*.md`` pages (via their TIDAL track anchors), from performances marked
 ``recommended: true`` and from ``data/recordings/`` entries with status
 ``recommended``.
@@ -606,10 +609,34 @@ def work_matches(track, work, composers):
                                           {token for alias in work['aliases'] for token in catalogue_tokens(alias)}))
 
 
+def variant_provenance(text):
+    """A parenthetical variant marker naming another work's catalogue number,
+    e.g. 'II. Largo (with original ornementation from RV 581)': the track is a
+    variant take of one movement carrying material from another work (#350).
+    Curator-approved skip: a variant take is not part of the work's canonical
+    track sequence. Detection is explicit and conservative -- the parenthesis
+    must contain the words 'with' and 'from' plus a catalogue number; movement
+    numbers, arrangements and version qualifiers are never guessed at."""
+    for paren in re.findall(r'\(([^()]*)\)', text or ''):
+        lowered = paren.casefold()
+        if (re.search(r'\bwith\b', lowered) and re.search(r'\bfrom\b', lowered)
+                and catalogue_tokens(paren)):
+            return paren
+    return None
+
+
 def match_works(tracks, works, persons, album_artists, album_title=''):
-    """Map every track to exactly one canonical work, or mark it ambiguous/unknown."""
+    """Map every track to exactly one canonical work, or mark it ambiguous/unknown.
+    Variant takes (a parenthetical 'with ... from <catalogue>' marker, #350) are
+    skipped: state 'variant', never a candidate, binding or playlist track."""
     matches = []
     for position, track in enumerate(tracks, 1):
+        variant_text = ' '.join(filter(None, [track['title'], track.get('version')]))
+        marker = variant_provenance(variant_text)
+        if marker:
+            matches.append({'track': track, 'position': position, 'work': None,
+                            'state': 'variant', 'variant': marker, 'composers': set()})
+            continue
         composers = composer_evidence(track, album_artists, persons, album_title)
         hits = [w for w in works if work_matches(track, w, composers)]
         entry = {'track': track, 'position': position, 'work': None, 'state': 'unknown',
@@ -659,7 +686,7 @@ def build_recording(root, album, matches, roles, unmatched_artists, today, recor
             entry['notes'] = ('Spans album tracks ' +
                               ', '.join(str(t['position']) for t in work['tracks']) + '.')
         entries.append(entry)
-    ambiguous, unknown = [], []
+    ambiguous, unknown, variants = [], [], []
     for entry in matches:
         if entry['state'] == 'ambiguous':
             for wid in entry['candidates']:
@@ -667,6 +694,8 @@ def build_recording(root, album, matches, roles, unmatched_artists, today, recor
                                 'track': {'number': entry['position'], 'title': entry['track']['title']},
                                 'notes': 'Unmatched (ambiguous track): no status assigned.'})
             ambiguous.append(entry)
+        elif entry['state'] == 'variant':
+            variants.append(entry)
         elif entry['state'] == 'unknown':
             unknown.append(entry)
     recording = {'id': recording_id or slugify(album['title']),
@@ -680,10 +709,14 @@ def build_recording(root, album, matches, roles, unmatched_artists, today, recor
     if unknown:
         notes.append('Unmatched tracks without canonical work: ' +
                      ', '.join(f"{e['position']}. {e['track']['title']}" for e in unknown))
+    if variants:
+        notes.append('Skipped variant tracks: ' +
+                     ', '.join(f"{e['position']}. {e['track']['title']}" for e in variants))
     if notes:
         recording['notes'] = ' | '.join(notes)
-    unmatched = [{'track': e['track'], 'state': e['state'], 'candidates': e.get('candidates', [])}
-                 for e in ambiguous + unknown]
+    unmatched = [{'track': e['track'], 'state': e['state'], 'candidates': e.get('candidates', []),
+                  'variant': e.get('variant')}
+                 for e in ambiguous + unknown + variants]
     return recording, unmatched
 
 
@@ -1344,6 +1377,9 @@ def main(argv=None):
     if notice:
         print(f"  {notice}")
     for entry in report['unmatched_tracks']:
+        if entry['state'] == 'variant':
+            print(f"  SKIPPED VARIANT: {entry['title']} ({entry['variant']})")
+            continue
         detail = f" [{', '.join(entry['candidates'])}]" if entry['candidates'] else ''
         print(f"  UNMATCHED ({entry['state']}): {entry['title']}{detail}")
     if report['unmatched_artists']:
