@@ -15,6 +15,15 @@ def test_pages_workflow_builds_on_pull_request_without_deploying_from_pr():
     assert "if: github.event_name == 'push' && github.ref == 'refs/heads/main'" in workflow
 
 
+def test_pages_workflow_deploys_one_at_a_time_and_latest_push_wins():
+    """Concurrent merges to main race on the gh-pages force-push (issue #380)."""
+    workflow = Path(".github/workflows/pages.yml").read_text(encoding="utf-8")
+
+    assert "concurrency:" in workflow
+    assert "group: pages-deploy" in workflow
+    assert "cancel-in-progress: true" in workflow
+
+
 def test_just_the_docs_head_custom_is_include_only():
     config = Path("_config.yml").read_text(encoding="utf-8")
     head_custom = Path("_includes/head_custom.html").read_text(encoding="utf-8")

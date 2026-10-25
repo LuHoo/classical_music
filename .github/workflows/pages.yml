@@ -9,6 +9,15 @@ on:
 permissions:
   contents: write
 
+# One build+deploy at a time; the newest push to main wins. Without this,
+# concurrent merges to main race on the force-push to gh-pages and the
+# losing run fails in the deploy step (see issue #380, Actions run 468).
+# Mirrors the explicit concurrency groups in validate.yml / tidal-link-check.yml
+# / tidal-playlist-scan.yml.
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
