@@ -1,0 +1,100 @@
+{
+  "issue_url": "https://github.com/LuHoo/classical_music/issues/294",
+  "decision_source": "curator",
+  "curator": "LAH",
+  "recorded_at": "2026-10-25T21:39:03.000Z",
+  "category": "identity-resolution",
+  "requested_choice": "vaststelling identiteit/versie per geval, daarna hervergelijking met de bestaande collectie",
+  "choice": "identiteit vastgesteld voor alle vijf gevallen; geen van de vijf eenheden treedt nu toe tot canonieke data",
+  "decisions": [
+    {
+      "choice_code": "P011",
+      "work_title": "Erik Satie — Nocturnes",
+      "performer": "Alessandro Simonetto",
+      "track_id": "267153815",
+      "tidal_url": "https://tidal.com/track/267153815",
+      "release": "Satie: Piano Works (1913-20), Vol. 2 – Children's Pieces, Sport et divertissements, Nocturnes, Late Pieces",
+      "identity": "Nos. 1–5 are Satie's own published set (Rouart, Lerolle & Cie 1919; E. Demets 1920). No. 6 is posthumous: a virtually complete draft found by Robert Orledge in Satie's notebooks, missing two bars of the left hand; Orledge completed it and it was published by Salabert in 1994.",
+      "resolution": "Boundary: Nos. 1–5 = one Work (the set); No. 6 = a separate Work (Orledge completion) in the same Work Group, when imported. Single performance of both; no recording choice required.",
+      "recommended": false,
+      "evidence": [
+        "https://en.wikipedia.org/wiki/Nocturnes_(Satie)",
+        "https://thefrogweb.wordpress.com/2010/04/18/satie1/"
+      ]
+    },
+    {
+      "choice_code": "P049",
+      "work_title": "Franz Schubert — Piano Sonata No. 3 in E Major, D. 459",
+      "performer": "William Youn",
+      "track_id": "251519235",
+      "tidal_url": "https://tidal.com/track/251519235",
+      "release": "Schubert: Piano Sonatas III",
+      "identity": "One five-movement work as recorded (Allegro moderato, Scherzo, Adagio, Scherzo – Trio, Allegro patetico). D. 459A is a catalogue split (Deutsch 2nd edition) of the same 1843 Fünf Klavierstücke publication, not a separate composition; the only separate D. 459A recording (Oppitz, fourth movement) is note-identical to the D. 459 sonata movement.",
+      "resolution": "One canonical Work with all five movements; the D. 459/459A boundary is a catalogue artefact and does not create a second Work. Youn's recording covers the whole work; no recording choice required.",
+      "recommended": false,
+      "evidence": [
+        "https://en.wikipedia.org/wiki/Piano_Sonata_in_E_major,_D_459_(Schubert)",
+        "curator source: Apple Classical (issue comment)"
+      ]
+    },
+    {
+      "choice_code": "P198",
+      "work_title": "Joseph Haydn — Andante and Variations, Hob. XVII.6 (unpublished finale)",
+      "performer": "Jean-Efflam Bavouzet",
+      "track_id": "210410961",
+      "tidal_url": "https://tidal.com/track/210410961",
+      "release": "Haydn: Piano Sonatas, Vol. 4",
+      "identity": "The unpublished finale is Haydn's original early ending of Hob. XVII.6: a short coda closing directly after the F-major variation, struck through in the manuscript and replaced by Haydn with the extended, turbulent final coda. Bavouzet recorded the original ending as a separate bonus track (Chandos CHAN 10736).",
+      "resolution": "Composer revision: the early ending is a separate Work in the existing Hob. XVII.6 Work Group when imported; the canonical final version (already imported as P196, same performer/album) is unaffected. P198 stays outside canonical data as an excerpt of the early version, not part of the P196 performance.",
+      "chosen_work_id": null,
+      "related_canonical_work_id": "cb25dd190f9643b7a9dfdb60f14ad8b3-andante-variations-in-f-minor-hob-xvii-6",
+      "recommended": false,
+      "evidence": [
+        "https://www.opusklassiek.nl/cd-recensies/cd-ac/achaydn05.htm",
+        "https://www.chandos.net/products/catalogue/CHAN%2010736"
+      ]
+    },
+    {
+      "choice_code": "P205",
+      "work_title": "Joseph Haydn — Piano Sonata No. 12 in A Major, Hob. XVI.12 (ornamented finale)",
+      "performer": "Jean-Efflam Bavouzet",
+      "track_id": "196735459",
+      "tidal_url": "https://tidal.com/track/196735459",
+      "release": "Haydn: Piano Sonatas, Vol. 5",
+      "identity": "The track ('Epilogue') is not a different version of the work: it is the pianist's own ornamented reprise of the chromatic minor-key Trio from the sonata's Menuet, played as a separate supplementary track at slowed tempo. Same Work as the complete sonata on the same album; same interpretation family, alternative take.",
+      "resolution": "One Work (Hob. XVI.12, already imported as P200, same performer/album); no separate Work. The alternative take stays outside canonical Performance data, following the same treatment as Hough's embellished Nocturne Op. 9 No. 2 (not_selected).",
+      "chosen_work_id": null,
+      "related_canonical_work_id": "cb25dd190f9643b7a9dfdb60f14ad8b3-piano-sonata-no-12-in-a-major-hob-xvi-12",
+      "recommended": false,
+      "evidence": [
+        "https://www.opusklassiek.nl/cd-recensies/cd-ac/achaydn06.htm",
+        "https://www.hifinews.com/content/jean-efflam-bavouzet-haydn-piano-sonatas-vol-5"
+      ]
+    },
+    {
+      "choice_code": "P585",
+      "work_title": "Frédéric Chopin — Larghetto in C-Sharp Minor 'Nocturne oublié', KK Anh.Ia/6 (Doubtful)",
+      "performer": "Stephen Hough",
+      "track_id": "306170435",
+      "tidal_url": "https://tidal.com/track/306170435",
+      "release": "Chopin: Nocturnes (Complete)",
+      "identity": "Spurious: not by Chopin; true composer unknown. Published around 1870 in Russia under Chopin's name (A. Gutheil et al.); Kobylańska places it in the Anhang, Klasse Ia (doubtful/spurious). Hough's Hyperion recording credits it to 'Anonymous', with Chopin attribution only as cross-reference.",
+      "resolution": "Repository treatment: never a canonical Chopin Work; the archive misfiling is corrected by exclusion. If the piece is ever imported, it can only be as an anonymous work with an explicit attribution note, outside the Chopin catalogue and outside recommendations. Remains outside canonical data.",
+      "chosen_work_id": null,
+      "recommended": false,
+      "evidence": [
+        "https://imslp.org/wiki/Nocturne_oubli%C3%A9e_(Chopin,_Fr%C3%A9d%C3%A9ric)",
+        "https://www.gramophone.co.uk/reviews/chopin-complete-nocturnes-stephen-hough",
+        "https://www.hyperion-records.co.uk/dw.asp?dc=W22367_GBAJY2135210"
+      ]
+    }
+  ],
+  "collection_recheck": "None of the five works had a canonical recommendation before this resolution. The two Haydn works exist canonically with Bavouzet performances from the same albums (P196/P200); those performances stay as they are. No existing attribution, recommendation or playlist line changes; no recording choices were needed (each case has a single performance per work).",
+  "conclusion": "Identity established for all five cases with independent sources. No canonical changes: the five units remain outside canonical data. A later import of the resolved units (Satie Nocturnes Nos. 1–5 + Orledge completion, Schubert D. 459, Haydn XVII.6 early ending) requires its own explicit reviewed change; the Nocturne oublié stays excluded.",
+  "implementation_pr": null,
+  "source": {
+    "file": "reports/playlist-import/piano/snapshot-2026-10-04.json",
+    "identity_research": "reports/playlist-import/piano/identity-research.md",
+    "curator_comment": "https://github.com/LuHoo/classical_music/issues/294#issuecomment-6403614834"
+  }
+}
