@@ -1,4 +1,3 @@
-successfully downloaded text file (SHA: 30cfb70cee02ba051ccbbe3a58d608cd23fa0b77)
 # User Manual — playlist-ingestion en curator scripts
 
 Dit handboek beschrijft de scripts in PR #301 en de uitbreiding naar Chamber,

@@ -1,4 +1,3 @@
-successfully downloaded text file (SHA: 4d79f2eb4cf9aeec2b327d9951fdb24d3fbdcd02)
 #!/usr/bin/env python3
 """Register one earmarked TIDAL album as candidate recording; comparison playlist per already-recommended work.
 

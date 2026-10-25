@@ -1,4 +1,3 @@
-successfully downloaded text file (SHA: 1c6335946bdb14ffc3a6aeb5c0ffbd2a3c6256cc)
 import sys
 import unittest
 from pathlib import Path
