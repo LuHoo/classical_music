@@ -9,7 +9,7 @@ on:
         default: "5"
         type: string
       run_round:
-        description: "Run one scheduled maintenance round (5 least recently checked URLs)"
+        description: "Run one scheduled maintenance round (20 least recently checked URLs)"
         required: false
         default: "false"
         type: boolean
@@ -121,13 +121,13 @@ jobs:
           key: tidal-maintenance-state-v1
           restore-keys: |
             tidal-maintenance-state-v1
-      - name: Check 5 least recently checked Tidal URLs
+      - name: Check 20 least recently checked Tidal URLs
         env:
           TIDAL_CLIENT_ID: ${{ secrets.TIDAL_CLIENT_ID }}
           TIDAL_CLIENT_SECRET: ${{ secrets.TIDAL_CLIENT_SECRET }}
         run: |
           python scripts/check_tidal_links.py --use-api --country NL \
-            --state reports/tidal-maintenance/state.json --limit 5
+            --state reports/tidal-maintenance/state.json --limit 20
       - name: Escalate problematic URLs to GitHub issues
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

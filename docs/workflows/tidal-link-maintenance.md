@@ -15,7 +15,7 @@ confirmed-dead links (approved in issue #64, 2026-10-25); they change nothing.
 3. Smallest scope: a local command, one JSON/Markdown report, optional verified
    URL updates, plus a bounded authenticated GitHub Actions pilot. The
    curator-approved extension of 2026-10-25 (issue #64) adds an hourly
-   report-only rotation round of 5 URLs and curator-review issue escalation;
+   report-only rotation round of 20 URLs and curator-review issue escalation;
    still no new canonical entity.
 4. Identity: no Person or Work identity changes; preserve trusted legacy input.
 5. Curator load: group shared URLs, separate technical uncertainty from confirmed
@@ -167,11 +167,11 @@ problem status.
 
 ```bash
 python scripts/check_tidal_links.py --use-api --country NL \
-  --state reports/tidal-maintenance/state.json --limit 5
+  --state reports/tidal-maintenance/state.json --limit 20
 ```
 
-With a few thousand unique URLs, an hourly round of 5 URLs covers the whole
-collection in roughly four to five weeks.
+With a few thousand unique URLs, an hourly round of 20 URLs covers the whole
+collection in roughly one week.
 
 ## Escalation to curator-review issues
 
@@ -227,7 +227,7 @@ workflow reaches the default branch; GitHub only schedules from there. Use
 **Actions -> Tidal link check -> Run workflow** with the `run_round` input to
 test a round manually before merging. Each round:
 
-1. checks the 5 least recently checked URLs (`--state` rotation, `--use-api`
+1. checks the 20 least recently checked URLs (`--state` rotation, `--use-api`
    with the repository secrets `TIDAL_CLIENT_ID`/`TIDAL_CLIENT_SECRET`);
 2. persists the rotation ledger and the latest report through `actions/cache`
    (`tidal-maintenance-state-v1`), so a cache miss only resets rotation order,
@@ -256,7 +256,7 @@ client-credentials request, explicit-token precedence, redaction of provider
 errors, runner masking, refusal of authentication/Bearer redirects, an
 independent ISRC mismatch, exact-search pre-flight, environment cleanup,
 read-only permissions, bounded branch triggers, and the bounded hourly round
-contract (five URLs, issue-write only, no `--apply`). The rotation ledger and
+contract (twenty URLs, issue-write only, no `--apply`). The rotation ledger and
 escalation behaviour - never-checked-first ordering, strike counting,
 threshold-gated uncertainty, marker deduplication, and the explicit
 no-promotion wording - are covered in `tests/test_tidal_maintenance.py`,
