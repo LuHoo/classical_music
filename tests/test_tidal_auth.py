@@ -138,7 +138,7 @@ def test_report_only_workflow_has_bounded_branch_trigger():
         if s["name"] == "Authenticated report-only pilot"
     )
     assert step["run"] == 'python scripts/run_tidal_api_check.py --limit "$PILOT_LIMIT"'
-    # The scheduled hourly round stays bounded: five least recently checked
+    # The scheduled hourly round stays bounded: twenty least recently checked
     # URLs, issue escalation only, and never a write to repository contents.
     assert workflow["on"]["schedule"] == [{"cron": "0 * * * *"}]
     round_job = workflow["jobs"]["round"]
@@ -147,10 +147,10 @@ def test_report_only_workflow_has_bounded_branch_trigger():
     round_step = next(
         s
         for s in round_job["steps"]
-        if s["name"] == "Check 5 least recently checked Tidal URLs"
+        if s["name"] == "Check 20 least recently checked Tidal URLs"
     )
     assert "--state reports/tidal-maintenance/state.json" in round_step["run"]
-    assert "--limit 5" in round_step["run"]
+    assert "--limit 20" in round_step["run"]
     assert "apply" not in round_step["run"]
     assert "--apply" not in step["run"]
     assert step["env"]["TIDAL_CLIENT_SECRET"] == "${{ secrets.TIDAL_CLIENT_SECRET }}"
