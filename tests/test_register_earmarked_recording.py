@@ -1229,6 +1229,34 @@ class PlaylistIssueCase(FixtureCase):
         self.assertEqual([e['work_id'] for e in saved['works'] if e['work_id'] == 'work-b'],
                          ['work-b'])
 
+    def test_update_existing_collapses_a_duplicated_work_entry(self):
+        # Pre-#351 artifact (#355): an ambiguous track left the same work in the
+        # file twice (one candidate plus one unevaluated entry). A re-run with
+        # --issue/--work --update-existing must leave exactly one bound entry:
+        # assigning the new entry to every occurrence planted the same dict at
+        # two positions, which ruamel dumped as an anchor/alias pair and
+        # ./curator then correctly refused as a double binding.
+        self.run_script(user_client_factory=lambda: FakeUserClient())
+        path = self.root / 'data/recordings/test-album.yml'
+        saved = self._read_yaml(path)
+        saved['works'].append({'work_id': 'work-a',
+                               'track': {'number': 2, 'title': 'Symphonie fantastique: II. Un bal'},
+                               'notes': 'Unmatched (ambiguous track): no status assigned.'})
+        with path.open('w', encoding='utf-8') as handle:
+            reg.yaml.dump(saved, handle)
+        self.run_script(issue=316, work='work-a', update_existing=True,
+                        user_client_factory=lambda: FakeUserClient())
+        saved = self._read_yaml(path)
+        entries = [e for e in saved['works'] if e['work_id'] == 'work-a']
+        self.assertEqual(len(entries), 1)
+        self.assertEqual(entries[0].get('issue'), 316)
+        self.assertEqual(entries[0]['track_ids'], ['222', '223'])
+        text = path.read_text(encoding='utf-8')
+        self.assertNotIn('*id', text)
+        self.assertNotIn('&id', text)
+        self.assertEqual([e['work_id'] for e in saved['works'] if e['work_id'] == 'work-b'],
+                         ['work-b'])
+
     def test_without_issue_no_playlist_is_created(self):
         def factory():
             raise AssertionError('A run without --issue must not create a user client')
