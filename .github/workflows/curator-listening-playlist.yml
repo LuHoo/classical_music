@@ -24,6 +24,12 @@ permissions:
 
 jobs:
   discover:
+    # Issue events only start for curator issues; push and dispatch are unaffected.
+    # The script-level trust checks (author, state, label, manifest binding)
+    # remain the deeper fail-closed layer.
+    if: >-
+      github.event_name != 'issues' ||
+      contains(github.event.issue.labels.*.name, 'phase-2-curator-workflow')
     permissions:
       contents: read
       issues: read

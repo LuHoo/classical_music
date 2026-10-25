@@ -48,6 +48,9 @@ for the user authorization and refresh flows.
   repository owner, member or collaborator (or the GitHub Actions bot).
 - Events: issue opened, reopened, labeled or edited. Other issues and PRs are
   skipped, and secrets are not needed for the discovery job.
+- Issue events without the `phase-2-curator-workflow` label do not start the
+  workflow at all (job-level guard on `github.event.issue.labels`), so
+  maintenance issues cannot trigger discovery runs or journal comments.
 - The issue number resolves to exactly one pending `recommendation_choices`
   entry in an existing JSON manifest under `reports/playlist-import/`.
 - If the issue is created before its binding reaches `main`, the comment records

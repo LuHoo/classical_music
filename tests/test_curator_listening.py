@@ -386,6 +386,9 @@ def test_workflow_uses_trusted_default_branch_and_serializes_per_issue():
     assert workflow['on']['issues']['types'] == ['opened', 'reopened', 'labeled', 'edited']
     assert 'pull_request_target' not in workflow['on']
     assert workflow['jobs']['discover']['permissions']['issues'] == 'read'
+    discover = workflow['jobs']['discover']
+    assert 'phase-2-curator-workflow' in discover['if']
+    assert "github.event_name != 'issues'" in discover['if']
     job = workflow['jobs']['playlist']
     assert job['concurrency']['cancel-in-progress'] is False
     assert 'matrix.issue' in job['concurrency']['group']
