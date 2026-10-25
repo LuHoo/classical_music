@@ -625,3 +625,29 @@ artists:
   canonical_name: Netherlands Wind Ensemble
   source:
     file: docs/mozart.md
+- id: fabio-biondi
+  type: soloist
+  canonical_name: Fabio Biondi
+  source:
+    file: data/recordings/vivaldi-concerti-per-violino-xi-per-anna-maria.yml
+  instruments:
+  - violin
+- id: europa-galante
+  type: ensemble
+  canonical_name: Europa Galante
+  source:
+    file: data/recordings/vivaldi-concerti-per-violino-xi-per-anna-maria.yml
+- id: riccardo-minasi
+  type: soloist
+  canonical_name: Riccardo Minasi
+  source:
+    file: data/recordings/vivaldi-concerti-per-violino-iv-l-imperatore.yml
+  instruments:
+  - violin
+- id: dmitry-sinkovsky
+  type: soloist
+  canonical_name: Dmitry Sinkovsky
+  source:
+    file: data/recordings/vivaldi-concerti-per-due-violini-e-archi-i.yml
+  instruments:
+  - violin
