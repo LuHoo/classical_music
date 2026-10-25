@@ -1,0 +1,16 @@
+{
+  "issue_url": "https://github.com/LuHoo/classical_music/issues/227",
+  "decision_source": "curator_cli",
+  "curator": "LAH",
+  "recorded_at": "2026-10-25T09:17:58.966872+00:00",
+  "requested_choice": "existing",
+  "choice": "existing",
+  "selected_units": [],
+  "not_selected_units": [],
+  "performance_id": "9afc87abf7654c87b1d7c9ed246e51a9",
+  "implementation_pr": null,
+  "replaced_performances": [],
+  "recording": "data/recordings/vivaldi-concerti-per-due-violini-e-archi-i.yml",
+  "work_id": "5ab62dcb30ca45788247a2b4ebf5b188",
+  "docs_updates": []
+}

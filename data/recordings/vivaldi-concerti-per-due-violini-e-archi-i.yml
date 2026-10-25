@@ -1,0 +1,59 @@
+id: vivaldi-concerti-per-due-violini-e-archi-i
+title: 'Vivaldi: Concerti per due violini e archi I'
+label: 2013 naïve
+year: 2013
+artists:
+  orchestra:
+  - il-pomo-d-oro
+works:
+- work_id: 6c6c017054ab47f9b9790aa277191f0b
+  status: candidate
+  track:
+    number: 1
+    title: 'Violin Concerto in A Minor, RV 523: I. Allegro molto'
+  notes: Spans album tracks 1, 2, 3.
+- work_id: 278fa07489c8469fb24a29aeee8a7b83
+  status: candidate
+  track:
+    number: 4
+    title: 'Violin Concerto in C Minor, RV 510: I. Allegro'
+  notes: Spans album tracks 4, 5, 6.
+- work_id: c75e61bb68b64dc6b6651b5dcd171713
+  status: candidate
+  track:
+    number: 7
+    title: 'Concerto in C Minor, RV 509: I. Allegro ma poco e cantabile'
+  notes: Spans album tracks 7, 8, 9.
+- work_id: a7e320b6ee2046d3af1c407c1768b4fe
+  status: candidate
+  track:
+    number: 10
+    title: 'Violin Concerto in G Minor, RV 517: I. Allegro'
+  notes: Spans album tracks 10, 11, 12.
+- work_id: 5ab62dcb30ca45788247a2b4ebf5b188
+  status: not_selected
+  track:
+    number: 13
+    title: 'Violin Concerto in E-Flat Major, RV 515: I. Allegro'
+  notes: 'Spans album tracks 13, 14, 15. Curator decision #227: keep existing performance 9afc87abf7654c87b1d7c9ed246e51a9.'
+  issue: 227
+  track_ids:
+  - '91801143'
+  - '91801144'
+  - '91801145'
+  performers:
+  - Dmitry Sinkovsky
+  - Riccardo Minasi
+  - Il Pomo d'Oro (orchestra)
+- work_id: 53a7d188c2a24cc5a85545d308227e6f
+  status: candidate
+  track:
+    number: 16
+    title: 'Violin Concerto in C Major, RV 508: I. Allegro'
+  notes: Spans album tracks 16, 17, 18.
+links:
+  tidal:
+    url: https://tidal.com/browse/album/91801130
+    status: active
+    last_checked: '2026-10-25'
+notes: 'Unmatched artists: Dmitry Sinkovsky, Riccardo Minasi'

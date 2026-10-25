@@ -1,0 +1,63 @@
+id: vivaldi-concerti-per-violino-iv-l-imperatore
+title: "Vivaldi: Concerti per violino IV \"L'imperatore\""
+label: naïve
+year: 2012
+artists:
+  orchestra:
+  - il-pomo-d-oro
+works:
+- work_id: bc6d00b1e55e486694df64998a697bc2
+  status: candidate
+  track:
+    number: 1
+    title: 'Concerto for Violin and Strings in G Minor, RV 331: I. Allegro'
+  notes: Spans album tracks 1, 2, 3.
+- work_id: 756db62243e5457f8e946690ba5ce951
+  status: candidate
+  track:
+    number: 4
+    title: 'Concerto for Violin and Strings in C Major, RV 171: I. Allegro'
+  notes: Spans album tracks 4, 5, 6.
+- work_id: 35480a8bf3294ef69f2509ddc348a1f3
+  status: candidate
+  track:
+    number: 7
+    title: 'Concerto for Violin and Strings in B Minor, RV 391 "La cetra": I. Allegro
+      non molto'
+  notes: Spans album tracks 7, 8, 9.
+- work_id: 8fbd642a00994baebe32bcf40b82c4e3
+  status: candidate
+  track:
+    number: 10
+    title: "Concerto for Violin and Strings in E Major, RV 271 \"L'amoroso\": I. Allegro"
+  notes: Spans album tracks 10, 11, 12.
+- work_id: 08b5314795bb48fa81d3fa395d59806a
+  status: candidate
+  track:
+    number: 13
+    title: 'Concerto for Violin and Strings in G Minor, RV 327: I. Allegro mà non
+      molto'
+  notes: Spans album tracks 13, 14, 15.
+- work_id: e967bd3dbabc4726b62ae4f6a5a72b43
+  status: candidate
+  track:
+    number: 16
+    title: 'Concerto for Violin and Strings in E Major, RV 263a: I. Allegro'
+  notes: Spans album tracks 16, 17, 18.
+- work_id: 32f43389380e4402b3b39a9b04a34025
+  status: candidate
+  track:
+    number: 19
+    title: 'Concerto for Violin and Strings in C Major, RV 181: I. Allegro'
+  notes: Spans album tracks 19, 20, 21.
+- work_id: 36996db395e3495e88f86c7bb77225d4
+  status: candidate
+  track:
+    number: 22
+    title: 'Violin Concerto in C Major, RV 181a: I. Allegro'
+links:
+  tidal:
+    url: https://tidal.com/browse/album/92929122
+    status: active
+    last_checked: '2026-10-25'
+notes: 'Unmatched artists: Riccardo Minasi'

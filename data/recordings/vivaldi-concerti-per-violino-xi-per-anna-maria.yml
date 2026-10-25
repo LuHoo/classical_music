@@ -1,0 +1,103 @@
+id: vivaldi-concerti-per-violino-xi-per-anna-maria
+title: "Vivaldi: Concerti per violino XI 'Per Anna Maria'"
+label: naïve, a label of Believe Group
+year: 2018
+works:
+- work_id: 294b12f9edbb4c83867eb9cab256a01e
+  status: not_selected
+  track:
+    number: 1
+    title: 'Violin Concerto in D Major, RV 229: I. Allegro'
+  notes: 'Spans album tracks 1, 2, 3. Curator decision #216: keep existing performance 1b2d12121c4b4fc39b58169eaeb265de.'
+  issue: 216
+  track_ids:
+  - '304319781'
+  - '304319782'
+  - '304319783'
+  performers:
+  - Fabio Biondi
+  - Europa Galante
+- work_id: 307b96947c3f404dbb8001785b65ae4f
+  status: not_selected
+  track:
+    number: 4
+    title: 'Violin Concerto in B-Flat Major, RV 363 "Il corneto da posta": I. Allegro'
+  notes: 'Spans album tracks 4, 5, 6. Curator decision #223: keep existing performance cf688fb7ba2b41d7bc5c5f93418a816d.'
+  issue: 223
+  track_ids:
+  - '304319784'
+  - '304319785'
+  - '304319787'
+  performers:
+  - Fabio Biondi
+  - Europa Galante
+- work_id: 1d478f76e4014c44a40ea93b5fb9caa6
+  status: not_selected
+  track:
+    number: 7
+    title: 'Violin Concerto in D Major, RV 207: I. Allegro'
+  notes: 'Spans album tracks 7, 8, 9. Curator decision #214: keep existing performance 0f316346815449099a068e0d76e6aaeb.'
+  issue: 214
+  track_ids:
+  - '304319788'
+  - '304319789'
+  - '304319790'
+  performers:
+  - Fabio Biondi
+  - Europa Galante
+- work_id: a7d26160da4d494cba89dd9df082889e
+  status: not_selected
+  track:
+    number: 10
+    title: 'Violin Concerto in E-Flat Major, RV 260: I. Allegro'
+  notes: 'Spans album tracks 10, 11, 12. Curator decision #218: keep existing performance cbe684448582446f8610d867601c7df8.'
+  issue: 218
+  track_ids:
+  - '304319792'
+  - '304319793'
+  - '304319794'
+  performers:
+  - Fabio Biondi
+  - Europa Galante
+- &id001
+  work_id: beab23ca501c41e6b981ffdfea09f98c
+  status: candidate
+  track:
+    number: 13
+    title: 'Violin Concerto in C Major, RV 179a: I. Allegro ma poco'
+  notes: Spans album tracks 13, 14, 15.
+  issue: 212
+  track_ids:
+  - '304319795'
+  - '304319796'
+  - '304319797'
+  performers:
+  - Fabio Biondi (soloists)
+  - Europa Galante (orchestra)
+- work_id: cf49e57b52bc4162adf66d2c77371d4e
+  status: not_selected
+  track:
+    number: 16
+    title: 'Violin Concerto in E-Flat Major, RV 261: I. Allegro'
+  notes: 'Spans album tracks 16, 17, 18. Curator decision #219: keep existing performance 20e176f6e6d04d7db74623673593f5c2.'
+  issue: 219
+  track_ids:
+  - '304319798'
+  - '304319799'
+  - '304319800'
+  performers:
+  - Fabio Biondi
+  - Europa Galante
+- work_id: b9d43029fc8046edad937bd61c895d7d
+  track:
+    number: 19
+    title: 'Violin Concerto in C Major, RV 179a: II. Largo (with original ornementation
+      from RV 581)'
+  notes: 'Unmatched (ambiguous track): no status assigned.'
+- *id001
+links:
+  tidal:
+    url: https://tidal.com/browse/album/304319777
+    status: active
+    last_checked: '2026-10-25'
+notes: 'Unmatched artists: Fabio Biondi, Europa Galante'
