@@ -103,13 +103,13 @@ nav_order: 1
 
 **Kammermusik No. 3** for cello and 10 instruments, Op. 36/2 (1925) [*Kronberg Academy Soloists, Schleswig-Holstein Festival Orchestra, Christoph Eschenbach*](http://www.tidal.com/track/284454595)
 
-**Kammermusik No. 4** for violin and large chamber orchestra, Op. 36/3 (1925) [*Kronberg Academy Soloists, Schleswig-Holstein Festival Orchestra, Christoph Eschenbach*](http://www.tidal.com/track/151740135)
+**Kammermusik No. 4** for violin and large chamber orchestra, Op. 36/3 (1925) [*Kronberg Academy Soloists, Schleswig-Holstein Festival Orchestra, Christoph Eschenbach*](https://tidal.com/track/282819593)
 
-**Kammermusik No. 5** for viola and large chamber orchestra, Op. 36/4 (1927) [*Kronberg Academy Soloists, Schleswig-Holstein Festival Orchestra, Christoph Eschenbach*](http://www.tidal.com/track/151740135)
+**Kammermusik No. 5** for viola and large chamber orchestra, Op. 36/4 (1927) [*Kronberg Academy Soloists, Schleswig-Holstein Festival Orchestra, Christoph Eschenbach*](https://tidal.com/track/282819598)
 
-**Kammermusik No. 6** for viola d'amore and 13 instruments, Op. 46/1 (1927) [*Kronberg Academy Soloists, Schleswig-Holstein Festival Orchestra, Christoph Eschenbach*](http://www.tidal.com/track/151740135)
+**Kammermusik No. 6** for viola d'amore and 13 instruments, Op. 46/1 (1927) [*Kronberg Academy Soloists, Schleswig-Holstein Festival Orchestra, Christoph Eschenbach*](https://tidal.com/track/282819602)
 
-**Kammermusik No. 7** for organ and 15 instruments, Op. 46/2 (1927) [*Kronberg Academy Soloists, Schleswig-Holstein Festival Orchestra, Christoph Eschenbach*](http://www.tidal.com/track/151740135)
+**Kammermusik No. 7** for organ and 15 instruments, Op. 46/2 (1927) [*Kronberg Academy Soloists, Schleswig-Holstein Festival Orchestra, Christoph Eschenbach*](https://tidal.com/track/282819605)
 
 **Klaviermusik mit Orchester** for left-hand piano and orchestra, Op. 29 (1923)
 
