@@ -427,6 +427,163 @@ def apply_updates(
     return len(edits)
 
 
+STATE_VERSION = 1
+PROBLEM_STATUSES = {"unavailable", "uncertain"}
+ESCALATION_LABEL = "tidal-link-broken"
+
+
+def marker(url: str) -> str:
+    """Stable HTML comment identifying one URL across GitHub issues."""
+    return f"<!-- tidal-link: {url} -->"
+
+
+def issue_body(action: dict) -> str:
+    """Dutch curator-review request; states explicitly that nothing is promoted."""
+    lines = [
+        marker(action["url"]),
+        "",
+        "## Tidal-URL niet langer beschikbaar",
+        "",
+        f"- Performance: `{action['performance_id']}`",
+        f"- Werk: `{action['work_id']}`",
+        f"- Bestand: `{action['path']}`",
+        f"- URL: {action['url']}",
+        f"- Status: {action['status']}",
+        f"- Reden: {action['reason']}",
+    ]
+    if action.get("profile"):
+        lines.append(f"- Profiel: {action['profile']}")
+    if action.get("replacement_url"):
+        lines.append(f"- Voorgestelde vervangende URL: {action['replacement_url']}")
+    candidates = action.get("previous_candidates") or []
+    lines += [
+        "- Eerdere kandidaten (context, niet automatisch gepromoveerd): "
+        + (json.dumps(candidates, ensure_ascii=False) if candidates else "geen"),
+        "",
+        "De aanbeveling blijft ongewijzigd. Dit issue vraagt uitsluitend om",
+        "curatoreview van de link (vervangende URL of handmatige beslissing);",
+        "geen enkele kandidaat wordt automatisch gepromoveerd.",
+        "",
+        f"Laatst gecontroleerd: {action['last_checked']}",
+    ]
+    return "\n".join(lines) + "\n"
+
+
+def comment_body(action: dict) -> str:
+    lines = [
+        marker(action["url"]),
+        "",
+        f"Nieuwe check op {action['last_checked']}: **{action['status']}** "
+        f"(opeenvolgende problemen: {action['strikes']}).",
+        f"Reden: {action['reason']}",
+    ]
+    if action.get("replacement_url"):
+        lines.append(f"Voorgestelde vervangende URL: {action['replacement_url']}")
+    lines.append("De aanbeveling blijft ongewijzigd; curator beslist over de link.")
+    return "\n".join(lines) + "\n"
+
+
+def load_state(path: Path) -> dict:
+    """Load the rotation ledger; an absent file starts a fresh ledger."""
+    if not path.exists():
+        return {"version": STATE_VERSION, "urls": {}}
+    try:
+        state = json.loads(path.read_text())
+    except ValueError:
+        raise ValueError("State file is not valid JSON") from None
+    if not isinstance(state, dict) or not isinstance(state.get("urls"), dict):
+        raise ValueError("State file must be a JSON object with a urls mapping")
+    for url, entry in state["urls"].items():
+        if (
+            not isinstance(url, str)
+            or not isinstance(entry, dict)
+            or not isinstance(entry.get("last_checked"), str)
+            or not isinstance(entry.get("status"), str)
+            or not isinstance(entry.get("strikes"), int)
+            or entry["strikes"] < 0
+        ):
+            raise ValueError("State file has a malformed URL entry")
+    return state
+
+
+def select_due(urls: list[str], state: dict, limit: int) -> list[str]:
+    """Least recently checked first; never-checked URLs first; ties by URL."""
+    if limit < 1:
+        raise ValueError("Selection limit must be at least 1")
+    known = state["urls"]
+    return sorted(
+        urls,
+        key=lambda url: (
+            0 if url not in known else 1,
+            (known.get(url) or {}).get("last_checked", ""),
+            url,
+        ),
+    )[:limit]
+
+
+def merge_state(state: dict, report: dict) -> dict:
+    """Record check results and consecutive-problem counters per URL."""
+    urls = state["urls"]
+    for check in report["checks"]:
+        url = check["url"]
+        prior = urls.get(url) or {}
+        status = check["status"]
+        strikes = prior.get("strikes", 0) if prior.get("status") == status else 0
+        if status in PROBLEM_STATUSES:
+            strikes += 1
+        entry = {
+            "last_checked": check["last_checked"],
+            "status": status,
+            "strikes": strikes,
+        }
+        urls[url] = entry
+        if check.get("replacement_url"):
+            urls[check["replacement_url"]] = dict(entry)
+    return {"version": STATE_VERSION, "urls": urls}
+
+
+def escalation_actions(
+    report: dict, state: dict, *, uncertain_after: int = 3
+) -> list[dict]:
+    """Escalate confirmed-missing URLs now and stubborn uncertainty later.
+
+    Availability evidence is operational only: an action asks a curator to
+    review a locator; it never changes or suggests a recommendation.
+    """
+    if uncertain_after < 1:
+        raise ValueError("uncertain_after must be at least 1")
+    by_url = {c["url"]: c for c in report["checks"]}
+    entries = state.get("urls", {})
+    actions = []
+    for row in report["performances"]:
+        check = by_url.get(row["url"])
+        if check is None:
+            continue
+        status = check["status"]
+        strikes = (entries.get(row["url"]) or {}).get("strikes", 0)
+        if not (
+            status == "unavailable"
+            or (status == "uncertain" and strikes >= uncertain_after)
+        ):
+            continue
+        actions.append(
+            {
+                "url": row["url"],
+                "performance_id": row["performance_id"],
+                "work_id": row["work_id"],
+                "profile": row.get("profile"),
+                "path": row["path"],
+                "status": status,
+                "strikes": strikes,
+                "reason": check["reason"],
+                "replacement_url": check.get("replacement_url", ""),
+                "previous_candidates": row.get("previous_candidates", []),
+                "last_checked": check["last_checked"],
+            }
+        )
+    return actions
+
+
 def run(
     root: Path,
     transport: Transport,
@@ -437,6 +594,7 @@ def run(
     candidates: list[dict] | None = None,
     limit: int | None = None,
     apply: bool = False,
+    only: list[str] | None = None,
 ) -> dict:
     if previous is not None and not isinstance(previous, dict):
         raise ValueError("Previous report must be a JSON object")
@@ -463,6 +621,11 @@ def run(
             if entry.get("url")
         }
     )
+    if only is not None:
+        unknown = sorted(set(only) - set(urls))
+        if unknown:
+            raise ValueError(f"Selection contains unknown Tidal URLs: {unknown[:3]}")
+        urls = sorted(set(only))
     if limit is not None:
         urls = urls[:limit]
     now = datetime.now(UTC).isoformat()
@@ -623,6 +786,14 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--delay", type=float, default=0.5)
     p.add_argument("--limit", type=int, help="Check only the first N unique URLs")
     p.add_argument(
+        "--state",
+        type=Path,
+        help=(
+            "Rotation ledger JSON; with --limit, check the least recently"
+            " checked URLs instead of the first N"
+        ),
+    )
+    p.add_argument(
         "--apply", action="store_true", help="Write verified URL replacements only"
     )
     a = p.parse_args(argv)
@@ -630,6 +801,13 @@ def main(argv: list[str] | None = None) -> int:
         (a.repo_root / "data").resolve()
     ):
         p.error("Output must be a .json report outside canonical data/")
+    if a.state is not None and (
+        a.state.suffix != ".json"
+        or a.state.resolve().is_relative_to((a.repo_root / "data").resolve())
+    ):
+        p.error("State must be a .json ledger outside canonical data/")
+    if a.state is not None and a.limit is None:
+        p.error("State rotation requires --limit")
     if (
         a.timeout <= 0
         or a.delay < 0
@@ -647,6 +825,19 @@ def main(argv: list[str] | None = None) -> int:
 
     try:
         transport = Transport(a.timeout, a.delay)
+        selected = None
+        state = None
+        if a.state is not None:
+            state = load_state(a.state)
+            known_urls = sorted(
+                {
+                    entry["url"]
+                    for _, record in inventory(a.repo_root)
+                    for entry in link_entries(record)
+                    if entry.get("url")
+                }
+            )
+            selected = select_due(known_urls, state, a.limit)
         report = run(
             a.repo_root,
             transport,
@@ -654,12 +845,17 @@ def main(argv: list[str] | None = None) -> int:
             recovery_urls=read(a.recovery_urls),
             candidates=read(a.previous_candidates),
             api=TidalAPI(transport, token, a.country) if a.use_api else None,
-            limit=a.limit,
+            limit=None if selected is not None else a.limit,
             apply=a.apply,
+            only=selected,
         )
         a.output.parent.mkdir(parents=True, exist_ok=True)
         a.output.write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n")
         a.output.with_suffix(".md").write_text(markdown(report))
+        if state is not None:
+            state = merge_state(state, report)
+            a.state.parent.mkdir(parents=True, exist_ok=True)
+            a.state.write_text(json.dumps(state, indent=2, ensure_ascii=False) + "\n")
     except (ValueError, OSError) as e:
         p.exit(2, f"Link maintenance failed: {e}\n")
     print(

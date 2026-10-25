@@ -41,7 +41,11 @@ produced by Jekyll, including on the repository's configured base URL.
 
 Run `python scripts/check_tidal_links.py` for an operational JSON/Markdown report.
 Verified URL repairs require explicit `--apply`; musical recommendations never
-change. See [the local workflow and recovery rules](docs/workflows/tidal-link-maintenance.md).
+change. With `--state reports/tidal-maintenance/state.json --limit 5` the check
+rotates over the least recently checked URLs; the workflow runs this hourly on
+GitHub Actions and escalates confirmed-dead links to one curator-review issue
+per URL (`scripts/escalate_tidal_failures.py`). See [the local workflow and
+recovery rules](docs/workflows/tidal-link-maintenance.md).
 
 ## Curator decisions
 

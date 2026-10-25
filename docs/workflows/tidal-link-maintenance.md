@@ -1,8 +1,9 @@
 # Tidal link maintenance — issue #64, local implementation
 
 This workflow maintains locators on accepted canonical Performances. It never
-creates a Performance, promotes a candidate, modifies `keep_looking`, creates
-GitHub issues, or deploys the website.
+creates a Performance, promotes a candidate, modifies `keep_looking`, or deploys
+the website. The only automated GitHub issues are curator-review requests for
+confirmed-dead links (approved in issue #64, 2026-10-25); they change nothing.
 
 ## Architecture pre-flight
 
@@ -12,8 +13,10 @@ GitHub issues, or deploys the website.
    `docs/architecture/`. ADR 0004 is superseded and is not normative.
 2. Purpose: keep listening links useful without changing musical recommendations.
 3. Smallest scope: a local command, one JSON/Markdown report, optional verified
-   URL updates, plus a bounded authenticated GitHub Actions pilot. No monthly
-   scheduler or new canonical entity.
+   URL updates, plus a bounded authenticated GitHub Actions pilot. The
+   curator-approved extension of 2026-10-25 (issue #64) adds an hourly
+   report-only rotation round of 5 URLs and curator-review issue escalation;
+   still no new canonical entity.
 4. Identity: no Person or Work identity changes; preserve trusted legacy input.
 5. Curator load: group shared URLs, separate technical uncertainty from confirmed
    missing pages, and make no automatic curator queue.
@@ -152,6 +155,47 @@ issues, or search for other Performances. An unavailable URL remains attached to
 its accepted recommendation and is labelled `no longer available at this Tidal
 URL`; this does not claim the Performance has vanished from all of Tidal.
 
+## Hourly rotation ledger
+
+`--state reports/tidal-maintenance/state.json` (with `--limit N`) changes the
+selection from "first N URLs" to a rotation: the N least recently checked URLs,
+never-checked URLs first, ties broken deterministically by URL. The ledger is
+an operational artifact outside `data/`, never canonical metadata. It records
+`last_checked`, `status`, and a consecutive-problem counter (`strikes`) per
+URL. The counter resets on any healthy check and restarts on a different
+problem status.
+
+```bash
+python scripts/check_tidal_links.py --use-api --country NL \
+  --state reports/tidal-maintenance/state.json --limit 5
+```
+
+With a few thousand unique URLs, an hourly round of 5 URLs covers the whole
+collection in roughly four to five weeks.
+
+## Escalation to curator-review issues
+
+`scripts/escalate_tidal_failures.py` turns problem findings into exactly one
+open issue per URL (label `tidal-link-broken`, deduplicated by a stable HTML
+marker containing the URL):
+
+- a confirmed `unavailable` URL escalates immediately;
+- an `uncertain` URL escalates only after `--uncertain-after` (default 3)
+  consecutive problem rounds, to avoid issue floods on transient throttling
+  or network blocks;
+- `ok`/`redirect` URLs never escalate;
+- an existing open issue receives one comment per new check result instead of
+  a duplicate issue.
+
+An issue body lists the Performance, Work, file, URL, reason, and supplied
+previous candidates as context, and states explicitly that nothing is promoted
+and the recommendation stays unchanged. The script requires `GITHUB_TOKEN`
+(or `--dry-run` to inspect planned actions without any API call). The
+recovery search itself runs inside the check (exact ISRC/barcode identity
+only); if it finds no safe replacement, the issue is the call for curator
+review. Safe URL repairs remain a local `--apply` decision; the workflow never
+writes to repository contents.
+
 ## Authenticated GitHub Actions pilot
 
 Set repository Actions secrets `TIDAL_CLIENT_ID` and `TIDAL_CLIENT_SECRET`.
@@ -176,11 +220,26 @@ this draft without merging, a narrow bootstrap trigger also runs on pushes to
 It is not a recurring schedule and does not run on other feature branches or
 pull requests from forks.
 
-No monthly schedule is activated. A later periodic rollout must persist the
-previous JSON report/fingerprints between runs; these disposable pilot runners
-do not automatically restore historical fingerprints. The downloadable JSON
-can be reused locally with `--previous`. Any future URL repairs should be
-prepared in a maintenance PR using `--apply`, never published automatically.
+## Scheduled hourly maintenance round
+
+The `round` job in the same workflow runs hourly (`cron: "0 * * * *"`) once the
+workflow reaches the default branch; GitHub only schedules from there. Use
+**Actions -> Tidal link check -> Run workflow** with the `run_round` input to
+test a round manually before merging. Each round:
+
+1. checks the 5 least recently checked URLs (`--state` rotation, `--use-api`
+   with the repository secrets `TIDAL_CLIENT_ID`/`TIDAL_CLIENT_SECRET`);
+2. persists the rotation ledger and the latest report through `actions/cache`
+   (`tidal-maintenance-state-v1`), so a cache miss only resets rotation order,
+   never correctness;
+3. escalates problem URLs with `scripts/escalate_tidal_failures.py` and the
+   ephemeral `GITHUB_TOKEN`, under `permissions: issues: write` - it can open
+   or comment on issues and nothing else;
+4. uploads the round report as a 14-day artifact and writes a job summary.
+
+The round never writes repository contents, never applies URL repairs, and
+never changes recommendations. Safe repairs found during a round appear in the
+report; apply them locally with `--apply` and a maintenance PR.
 
 ## Validation and adversarial evidence
 
@@ -196,5 +255,10 @@ Authentication and workflow tests in `tests/test_tidal_auth.py` verify the
 client-credentials request, explicit-token precedence, redaction of provider
 errors, runner masking, refusal of authentication/Bearer redirects, an
 independent ISRC mismatch, exact-search pre-flight, environment cleanup,
-read-only permissions and bounded branch triggers. Tests contain only
+read-only permissions, bounded branch triggers, and the bounded hourly round
+contract (five URLs, issue-write only, no `--apply`). The rotation ledger and
+escalation behaviour - never-checked-first ordering, strike counting,
+threshold-gated uncertainty, marker deduplication, and the explicit
+no-promotion wording - are covered in `tests/test_tidal_maintenance.py`,
+including a token-free `--dry-run` subprocess test. Tests contain only
 synthetic credentials.

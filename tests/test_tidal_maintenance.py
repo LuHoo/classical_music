@@ -1,6 +1,8 @@
 """Try to falsify availability and identity decisions, without network access."""
 
 import json
+import os
+from pathlib import Path
 
 import pytest
 from ruamel.yaml import YAML
@@ -399,3 +401,259 @@ def test_url_update_preserves_comments_and_quoted_editorial_fields(tmp_path):
     assert r["updated_files"] == 1
     assert "# curator header" in path.read_text()
     assert '"Trusted editorial meaning" # retained explanation' in path.read_text()
+
+
+# --- Hourly rotation ledger and escalation (issue #64) ---
+
+import subprocess
+import sys
+
+from classical_music.tidal_maintenance import (
+    comment_body,
+    escalation_actions,
+    issue_body,
+    load_state,
+    marker,
+    merge_state,
+    select_due,
+)
+
+SECOND = "https://tidal.com/track/999"
+
+
+def _ledger(
+    url=OLD,
+    status="unavailable",
+    strikes=1,
+    checked="2026-10-01T00:00:00+00:00",
+):
+    return {
+        "version": 1,
+        "urls": {
+            url: {"last_checked": checked, "status": status, "strikes": strikes}
+        },
+    }
+
+
+def _round_report(url=OLD, status="unavailable", reason="HTTP 404", now=NOW):
+    return {
+        "checks": [
+            {
+                "url": url,
+                "status": status,
+                "reason": reason,
+                "last_checked": now,
+                "final_url": "",
+                "replacement_url": "",
+                "evidence": "",
+                "identity": {},
+            }
+        ],
+        "performances": [
+            {
+                "performance_id": "one",
+                "work_id": "work1",
+                "profile": None,
+                "path": "data/performances/one.yaml",
+                "url": url,
+                "status": status,
+                "last_checked": now,
+            }
+        ],
+    }
+
+
+def test_select_due_prefers_never_checked_then_least_recent():
+    state = _ledger(url=SECOND, status="ok", strikes=0)
+    state["urls"][OLD] = {
+        "last_checked": "2026-09-01T00:00:00+00:00",
+        "status": "ok",
+        "strikes": 0,
+    }
+    fresh = "https://tidal.com/track/777"
+    assert select_due([SECOND, OLD, fresh], state, 3) == [fresh, OLD, SECOND]
+    with pytest.raises(ValueError, match="at least 1"):
+        select_due([OLD], state, 0)
+
+
+def test_merge_state_counts_consecutive_problems_and_resets_on_status_change():
+    merged = merge_state(_ledger(url=OLD, status="unavailable", strikes=2), _round_report(status="unavailable"))
+    assert merged["urls"][OLD]["strikes"] == 3
+    merged = merge_state(merged, _round_report(status="ok"))
+    assert merged["urls"][OLD]["strikes"] == 0
+    assert merged["urls"][OLD]["status"] == "ok"
+    report = _round_report(status="redirect")
+    report["checks"][0]["replacement_url"] = NEW
+    merged = merge_state(_ledger(url=OLD, status="ok", strikes=0), report)
+    assert merged["urls"][NEW] == merged["urls"][OLD]
+
+
+def test_load_state_rejects_malformed_ledgers(tmp_path):
+    absent = tmp_path / "absent.json"
+    assert load_state(absent) == {"version": 1, "urls": {}}
+    bad = tmp_path / "bad.json"
+    bad.write_text("not json")
+    with pytest.raises(ValueError, match="not valid JSON"):
+        load_state(bad)
+    bad.write_text("[]")
+    with pytest.raises(ValueError, match="urls mapping"):
+        load_state(bad)
+    bad.write_text(
+        json.dumps(
+            {
+                "version": 1,
+                "urls": {
+                    OLD: {"last_checked": NOW, "status": "ok"},
+                },
+            }
+        )
+    )
+    with pytest.raises(ValueError, match="malformed URL entry"):
+        load_state(bad)
+    bad.write_text(
+        json.dumps(
+            {
+                "version": 1,
+                "urls": {
+                    OLD: {"last_checked": NOW, "status": "ok", "strikes": -1},
+                },
+            }
+        )
+    )
+    with pytest.raises(ValueError, match="malformed URL entry"):
+        load_state(bad)
+
+
+def test_run_only_checks_requested_urls_and_rejects_unknown(tmp_path):
+    fixture(tmp_path)
+    fixture(tmp_path, name="two", url=NEW)
+    t = Fake({OLD: Response(200, OLD, page())})
+    r = run(tmp_path, t, only=[OLD])
+    assert t.calls == [OLD]
+    assert r["checked_unique_urls"] == 1
+    with pytest.raises(ValueError, match="unknown Tidal URLs"):
+        run(tmp_path, Fake({}), only=["https://tidal.com/track/404404"])
+
+
+def test_cli_rotation_checks_least_recently_checked(tmp_path, monkeypatch):
+    fixture(tmp_path)
+    fixture(tmp_path, name="two", url=NEW)
+    state = tmp_path / "state.json"
+    state.write_text(
+        json.dumps(_ledger(url=NEW, status="ok", strikes=0))
+    )
+    t = Fake({OLD: Response(200, OLD, page())})
+    monkeypatch.setattr(
+        "classical_music.tidal_maintenance.Transport", lambda *a, **k: t
+    )
+    code = main(
+        [
+            "--repo-root", str(tmp_path),
+            "--output", str(tmp_path / "latest.json"),
+            "--state", str(state),
+            "--limit", "1",
+        ]
+    )
+    assert code == 0
+    assert t.calls == [OLD]
+    merged = load_state(state)
+    assert merged["urls"][OLD]["status"] == "ok"
+    assert merged["urls"][NEW]["status"] == "ok"
+
+
+def test_cli_state_requires_limit_and_stays_outside_canonical_data(tmp_path):
+    fixture(tmp_path)
+    for argv in (
+        [
+            "--repo-root", str(tmp_path),
+            "--output", str(tmp_path / "o.json"),
+            "--state", str(tmp_path / "s.json"),
+        ],
+        [
+            "--repo-root", str(tmp_path),
+            "--output", str(tmp_path / "o.json"),
+            "--state", str(tmp_path / "data" / "s.json"),
+            "--limit", "1",
+        ],
+        [
+            "--repo-root", str(tmp_path),
+            "--output", str(tmp_path / "o.json"),
+            "--state", str(tmp_path / "s.txt"),
+            "--limit", "1",
+        ],
+    ):
+        with pytest.raises(SystemExit) as e:
+            main(argv)
+        assert e.value.code == 2
+
+
+def test_escalation_thresholds_separate_missing_from_stubborn_uncertainty():
+    assert len(
+        escalation_actions(
+            _round_report(status="unavailable"), _ledger(url=OLD, status="unavailable", strikes=1)
+        )
+    ) == 1
+    assert len(
+        escalation_actions(
+            _round_report(status="uncertain"), _ledger(url=OLD, status="uncertain", strikes=3)
+        )
+    ) == 1
+    assert (
+        escalation_actions(
+            _round_report(status="uncertain"), _ledger(url=OLD, status="uncertain", strikes=2)
+        )
+        == []
+    )
+    assert (
+        escalation_actions(
+            _round_report(status="ok"), _ledger(url=OLD, status="ok", strikes=9)
+        )
+        == []
+    )
+    with pytest.raises(ValueError, match="uncertain_after"):
+        escalation_actions(_round_report(), _ledger(url=OLD), uncertain_after=0)
+
+
+def test_issue_and_comment_bodies_are_dutch_curator_reviews():
+    state = _ledger(url=OLD, status="unavailable", strikes=2)
+    action = escalation_actions(_round_report(), state)[0]
+    assert marker(OLD) == "<!-- tidal-link: " + OLD + " -->"
+    body = issue_body(action)
+    assert body.startswith(marker(OLD))
+    assert "`one`" in body
+    assert "data/performances/one.yaml" in body
+    assert "geen enkele kandidaat wordt automatisch gepromoveerd" in body
+    comment = comment_body(action)
+    assert comment.startswith(marker(OLD))
+    assert "opeenvolgende problemen: 2" in comment
+
+
+def test_escalate_script_dry_run_needs_no_token_and_reports_actions(tmp_path):
+    root = Path(__file__).resolve().parents[1]
+    report = tmp_path / "latest.json"
+    report.write_text(json.dumps(_round_report()))
+    state = tmp_path / "state.json"
+    state.write_text(json.dumps(_ledger()))
+    env = dict(os.environ)
+    env.pop("GITHUB_TOKEN", None)
+    env["PYTHONPATH"] = str(root / "src") + os.pathsep + env.get("PYTHONPATH", "")
+    script = root / "scripts" / "escalate_tidal_failures.py"
+    out = subprocess.run(
+        [sys.executable, str(script), "--report", str(report), "--state", str(state), "--dry-run"],
+        capture_output=True,
+        text=True,
+        env=env,
+    )
+    assert out.returncode == 0, out.stderr
+    payload = json.loads(out.stdout)
+    assert payload["actions"] == 1
+    assert payload["urls"] == [OLD]
+    assert payload["dry_run"] is True
+    denied = subprocess.run(
+        [sys.executable, str(script), "--report", str(report), "--state", str(state)],
+        capture_output=True,
+        text=True,
+        env=env,
+    )
+    assert denied.returncode == 2
+    assert "GITHUB_TOKEN" in denied.stderr
