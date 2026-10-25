@@ -1,0 +1,44 @@
+{
+  "issue_url": "https://github.com/LuHoo/classical_music/issues/210",
+  "decision_source": "curator_cli",
+  "curator": "LAH",
+  "recorded_at": "2026-10-25T10:11:50.641927+00:00",
+  "requested_choice": "naive",
+  "choice": "naive",
+  "selected_units": [],
+  "not_selected_units": [],
+  "performance_id": "b9cfc9d921a74ec39c86e9e51f7c1583-earmarked-naive",
+  "implementation_pr": null,
+  "replaced_performances": [
+    {
+      "id": "58239b29d661458c9e0e0df017aa0e88",
+      "work_id": "b9cfc9d921a74ec39c86e9e51f7c1583",
+      "performers": [
+        {
+          "name": "La Serenissima",
+          "role": "performer"
+        },
+        {
+          "name": "Adrian Chandler",
+          "role": "performer"
+        }
+      ],
+      "links": {
+        "tidal": {
+          "url": "https://tidal.com/track/458197196"
+        }
+      },
+      "source": {
+        "file": "docs/vivaldi.md",
+        "line": "38"
+      },
+      "notes": "Existing curator recommendation retained pending comparison with the Naïve Edition where applicable."
+    }
+  ],
+  "recording": "data/recordings/vivaldi-concerti-per-archi-iii-e-concerti-per-viola-d-amore.yml",
+  "work_id": "b9cfc9d921a74ec39c86e9e51f7c1583",
+  "docs_updates": [
+    "docs/vivaldi.md:38"
+  ],
+  "manifest_updates": []
+}

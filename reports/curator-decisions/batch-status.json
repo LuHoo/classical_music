@@ -2,6 +2,7 @@
   "schema_version": 1,
   "status": "validated",
   "issues": [
+    210,
     214,
     216,
     218,
@@ -19,9 +20,9 @@
     255,
     319
   ],
-  "updated_at": "2026-10-25T09:18:22.242748+00:00",
-  "validated_at": "2026-10-25T09:19:02.124597+00:00",
-  "inputs_sha256": "b18a4e7bc954525e7b8e524bb11bff41c8a30482708e48320a37ab96f82a4787",
+  "updated_at": "2026-10-25T10:12:10.334530+00:00",
+  "validated_at": "2026-10-25T10:12:44.472081+00:00",
+  "inputs_sha256": "a8e3f87d679095ff56d512abe797c3133d75d5d2bf2e1a5ccefb95fc601474e0",
   "manifests": [
     "reports/playlist-import/chamber/snapshot-2026-10-04.json",
     "reports/playlist-import/piano/snapshot-2026-10-04.json",
@@ -32,5 +33,5 @@
   "tests": [
     "tests/test_curator_batch.py"
   ],
-  "test_result": "................                                                         [100%]\n16 passed in 0.21s"
+  "test_result": "................                                                         [100%]\n16 passed in 0.20s"
 }

@@ -52,11 +52,26 @@ works:
     title: 'Concerto for Strings in D Major, RV 126: I. Allegro'
   notes: Spans album tracks 22, 23, 24.
 - work_id: b9cfc9d921a74ec39c86e9e51f7c1583
-  status: candidate
+  status: recommended
   track:
     number: 25
     title: 'Concerto for Strings in G Minor, RV 155: I. Adagio'
-  notes: Spans album tracks 25, 26, 27, 28.
+  links:
+    tidal:
+      url: https://tidal.com/track/87860721
+      status: active
+      last_checked: 2026-10-25
+  notes: 'Spans album tracks 25, 26, 27, 28. Curator decision #210: naive — Accademia Bizantina, Alessandro Tampieri, Ottavio Dantone; replaces 58239b29d661458c9e0e0df017aa0e88.'
+  issue: 210
+  track_ids:
+  - '87860721'
+  - '87860722'
+  - '87860723'
+  - '87860724'
+  performers:
+  - Accademia Bizantina
+  - Alessandro Tampieri
+  - Ottavio Dantone
 - work_id: 7f88184782254e728d4fdc5e537ad7e9
   status: candidate
   track:
@@ -115,5 +130,5 @@ links:
   tidal:
     url: https://tidal.com/browse/album/87860696
     status: active
-    last_checked: '2026-10-24'
+    last_checked: '2026-10-25'
 notes: 'Unmatched artists: Accademia Bizantina, Alessandro Tampieri, Ottavio Dantone'

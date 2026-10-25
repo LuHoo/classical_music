@@ -1,0 +1,15 @@
+id: b9cfc9d921a74ec39c86e9e51f7c1583-earmarked-naive
+work_id: b9cfc9d921a74ec39c86e9e51f7c1583
+performers:
+  - name: Accademia Bizantina
+  - name: Alessandro Tampieri
+  - name: Ottavio Dantone
+links:
+  tidal:
+    url: https://tidal.com/track/87860721
+release:
+  album_title: 'Vivaldi: Concerti per archi III e concerti per viola d''amore'
+source:
+  file: data/recordings/vivaldi-concerti-per-archi-iii-e-concerti-per-viola-d-amore.yml
+  url: https://github.com/LuHoo/classical_music/issues/210
+  curator_decision: reports/curator-decisions/issue-210.json

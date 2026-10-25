@@ -35,7 +35,7 @@ nav_order: 1
 
 ## Works without opus number (selection)
 
-**Concerto in G Minor** for strings, RV 155 [*La Serenissima, Adrian Chandler*](https://tidal.com/track/458197196) (12/2025)
+**Concerto in G Minor** for strings, RV 155 [*Accademia Bizantina, Alessandro Tampieri, Ottavio Dantone*](https://tidal.com/track/87860721) (12/2025)
 
 **Sinfonia in B minor** for 2 violins, viola, double bass, RV 169 [*Concerto Köln, Shunske Sato*](http://www.tidal.com/track/64126591)
 
