@@ -94,7 +94,7 @@ nav_order: 1
 
 **Violin Sonata No. 2 in A major**, Op. 100 (1886) [*Leonidas Kavakos, Yuja Wang*](http://www.tidal.com/track/27201201)
 
-**Violin Sonata No. 2 in A major**, Op. 100 (1886) (arr. M. Collins cl/pf) [*Michael Collins, Stephen Hough*](http://www.tidal.com/track/204477508)
+**Violin Sonata No. 2 in A major**, Op. 100 (1886) (arr. M. Collins cl/pf) [*Michael Collins, Stephen Hough*](http://www.tidal.com/track/339835429)
 
 **Piano Trio No. 3 in C minor**, Op. 101 (1886)
 
@@ -112,9 +112,9 @@ nav_order: 1
 
 **6 Klavierstücke**, Op. 118/5 (str-qrt) [*Quatuor Agate*](http://www.tidal.com/track/362513742)
 
-**Clarinet Sonata No. 1 in F minor**, Op. 120/1 (1894) [*Michael Collins, Stephen Hough*](http://www.tidal.com/track/204477511)
+**Clarinet Sonata No. 1 in F minor**, Op. 120/1 (1894) [*Michael Collins, Stephen Hough*](http://www.tidal.com/track/339835432)
 
-**Clarinet Sonata No. 2 in E♭ major**, Op. 120/2 (1894) [*Michael Collins, Stephen Hough*](http://www.tidal.com/track/204477518)
+**Clarinet Sonata No. 2 in E♭ major**, Op. 120/2 (1894) [*Michael Collins, Stephen Hough*](http://www.tidal.com/track/339835436)
 
 ## Piano
 
