@@ -12,7 +12,7 @@ nav_order: 1
 
 **Serenade No. 1 in D major**, Op. 11 (1857-1858) [*London Symphony Orchestra, István Kertész*](https://tidal.com/browse/track/26469235?u)
 
-**Serenade No. 1 in D major**, Op. 11 (1857-1858) (original version for chamber orchestra) [*Linos Ensemble*](http://www.tidal.com/track/230183268)
+**Serenade No. 1 in D major**, Op. 11 (1857-1858) (original version for chamber orchestra) [*Linos Ensemble*](http://www.tidal.com/track/538371530)
 
 **Piano Concerto No. 1 in D minor**, Op. 15 (1854-1858) [*András Schiff, Orchestra of the Age of Enlightenment*](http://www.tidal.com/track/185728418) (07/2021)
 
@@ -20,7 +20,7 @@ nav_order: 1
 
 **Serenade No. 2 in A major**, Op. 16 (1858-1859) [*London Symphony Orchestra, István Kertész*](https://tidal.com/browse/track/26469241?u)
 
-**Serenade No. 2 in A major**, Op. 16 (1858-1859) (original version for chamber orchestra) [*Linos Ensemble*](http://www.tidal.com/track/230183278)
+**Serenade No. 2 in A major**, Op. 16 (1858-1859) (original version for chamber orchestra) [*Linos Ensemble*](http://www.tidal.com/track/538371536)
 
 **Concerto for Piano Four Hands and String Orchestra in G minor**, after the Piano Quartet No. 1, Op. 25, arr. by Richard Dünser [*Gil Garburg, Sivan Silver, Wiener Symphoniker, Florian Krumpöck*](http://www.tidal.com/track/151961690)
 
