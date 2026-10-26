@@ -262,3 +262,46 @@ threshold-gated uncertainty, marker deduplication, and the explicit
 no-promotion wording - are covered in `tests/test_tidal_maintenance.py`,
 including a token-free `--dry-run` subprocess test. Tests contain only
 synthetic credentials.
+
+## Fingerprint backfill (issue #396)
+
+Recovery of a removed URL is only possible when the original URL's identity
+fingerprint (ISRC for tracks, barcode for albums) was captured while the URL
+was still alive. If an anchor dies before the hourly rotation ever checked
+it, the round can only report "original identity fingerprint unavailable;
+no replacement search" (the #392/#393 pattern).
+
+`scripts/backfill_tidal_fingerprints.py` closes that gap systematically:
+
+- it selects canonical Tidal URLs that do not have a fingerprint yet —
+  never-attempted first, then least recently attempted, deterministically;
+- for up to 20 URLs per run (default) it queries the authenticated Tidal
+  API for the identifier, with an unauthenticated JSON-LD page fallback;
+- a failed attempt (dead or blocked URL) is recorded and retried only after
+  all unknown URLs have been attempted once;
+- it persists the ledger in
+  `reports/tidal-maintenance/fingerprints.json` (shared Actions cache entry
+  with `state.json` and `latest.json`) and adopts fingerprints recorded by
+  check rounds from `latest.json`, so both sides converge.
+
+The workflow `.github/workflows/tidal-fingerprint-backfill.yml` runs this
+six times per hour (minutes 5, 15, 25, 35, 45 and 55 — offset from the
+hourly round at minute 17) under `permissions: contents: read` only.
+
+The hourly round passes `--previous reports/tidal-maintenance/fingerprints.json`
+so `recover()` sees the full backfill ledger as its fingerprint source; the
+ledger shape (`{"version": 1, "fingerprints": {...}}`) is intentionally the
+same `fingerprints` mapping that `check_tidal_links.py --previous` reads.
+
+Run locally:
+
+```bash
+source ~/.tidal/env  # or export TIDAL_CLIENT_ID / TIDAL_CLIENT_SECRET
+python scripts/backfill_tidal_fingerprints.py --use-api --country NL \
+  --state reports/tidal-maintenance/fingerprints.json --limit 20
+```
+
+The backfill is operational only: it reads canonical data and never writes
+it, never selects or creates a recommendation, and never promotes a
+replacement URL. Behaviour is covered in
+`tests/test_fingerprint_backfill.py`.
