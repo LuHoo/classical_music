@@ -275,7 +275,7 @@ no replacement search" (the #392/#393 pattern).
 
 - it selects canonical Tidal URLs that do not have a fingerprint yet —
   never-attempted first, then least recently attempted, deterministically;
-- for up to 20 URLs per run (default) it queries the authenticated Tidal
+- for up to 60 URLs per run (default) it queries the authenticated Tidal
   API for the identifier, with an unauthenticated JSON-LD page fallback;
 - a failed attempt (dead or blocked URL) is recorded and retried only after
   all unknown URLs have been attempted once;
@@ -285,8 +285,14 @@ no replacement search" (the #392/#393 pattern).
   check rounds from `latest.json`, so both sides converge.
 
 The workflow `.github/workflows/tidal-fingerprint-backfill.yml` runs this
-six times per hour (minutes 5, 15, 25, 35, 45 and 55 — offset from the
-hourly round at minute 17) under `permissions: contents: read` only.
+twice per hour (minutes 13 and 43 — quiet minutes offset from the hourly
+round at minute 17) under `permissions: contents: read` only. The cadence
+is deliberately few-but-large: GitHub's scheduler is best-effort, throttles
+high-frequency schedules and silently drops queued runs under load, so a
+declared 6x20 schedule delivered no runs at all in practice (issue #401).
+Two 60-URL runs keep the same declared throughput with fewer ticks to
+lose; the job timeout (20 minutes) covers the worst case of 60 sequential
+15-second timeouts.
 
 The hourly round passes `--previous reports/tidal-maintenance/fingerprints.json`
 so `recover()` sees the full backfill ledger as its fingerprint source; the
@@ -298,7 +304,7 @@ Run locally:
 ```bash
 source ~/.tidal/env  # or export TIDAL_CLIENT_ID / TIDAL_CLIENT_SECRET
 python scripts/backfill_tidal_fingerprints.py --use-api --country NL \
-  --state reports/tidal-maintenance/fingerprints.json --limit 20
+  --state reports/tidal-maintenance/fingerprints.json --limit 60
 ```
 
 The backfill is operational only: it reads canonical data and never writes

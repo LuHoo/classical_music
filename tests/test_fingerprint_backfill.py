@@ -187,11 +187,12 @@ class WorkflowContractTest(unittest.TestCase):
             (REPOSITORY_ROOT / ".github/workflows/tidal-fingerprint-backfill.yml").read_text()
         )
         self.assertEqual(workflow["permissions"], {"contents": "read"})
+        self.assertEqual(workflow["on"]["schedule"], [{"cron": "13,43 * * * *"}])
         self.assertEqual(
-            workflow["on"]["schedule"], [{"cron": "5,15,25,35,45,55 * * * *"}]
+            workflow["on"]["workflow_dispatch"]["inputs"]["limit"]["default"], "60"
         )
         job = workflow["jobs"]["backfill"]
-        self.assertEqual(job["timeout-minutes"], 10)
+        self.assertEqual(job["timeout-minutes"], 20)
         step = next(
             s for s in job["steps"] if s["name"].startswith("Capture fingerprints")
         )
