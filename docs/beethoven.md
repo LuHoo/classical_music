@@ -51,7 +51,7 @@ nav_order: 1
 
 **Beethoven's arrangement of Opus 61 for Piano in D major**, Op. 61a (1807) [*Gianluca Cascioli, Ensemble Resonanz, Riccardo Minasi*](http://www.tidal.com/track/203081198)
 
-**"Coriolan" Overture in C minor**, Op. 62 (1807) [*Cappella Aquileia, Marcus Bosch*](http://www.tidal.com/track/191149827) (10/2021)
+**"Coriolan" Overture in C minor**, Op. 62 (1807) [*Cappella Aquileia, Marcus Bosch*](http://www.tidal.com/track/284310701) (10/2021)
 
 **Symphony No. 5 "Fate" in C minor**, Op. 67 (1807–1808) [*Le Concert des Nations, Jordi Savall*](http://www.tidal.com/track/147062218)
 
@@ -65,13 +65,13 @@ nav_order: 1
 
 **Choral Fantasy in C minor**, Op. 80 (1808, rev. 1809) [*Leif Ove Andsnes, Mahler Chamber Orchestra*](http://www.tidal.com/track/36274164)
 
-**"Egmont" in F minor**, Op. 84 (1809–1810) [*Raffaela Lintl, Cappella Aquileia, Marcus Bosch*](http://www.tidal.com/track/191149807) (10/2021)
+**"Egmont" in F minor**, Op. 84 (1809–1810) [*Raffaela Lintl, Cappella Aquileia, Marcus Bosch*](http://www.tidal.com/track/284310681) (10/2021)
 
 **Symphony No. 7 in A major**, Op. 92 (1811–1813) [*Le Concert des Nations, Jordi Savall*](http://www.tidal.com/track/213891370)
 
 **Symphony No. 8 in F major**, Op. 93 (1812–1814) [*Le Concert des Nations, Jordi Savall*](http://www.tidal.com/track/213891370)
 
-**Wellington's Victory "Battle Symphony"**, Op. 91 (1813) [*Cappella Aquileia, Marcus Bosch*](http://www.tidal.com/track/191149830) (10/2021)
+**Wellington's Victory "Battle Symphony"**, Op. 91 (1813) [*Cappella Aquileia, Marcus Bosch*](http://www.tidal.com/track/284310688) (10/2021)
 
 **"The Ruins of Athens" (Die Ruinen von Athen) in G major**, Op. 113 (1811–1812)
 
@@ -79,13 +79,13 @@ nav_order: 1
 
 **Triumphal March for "Tarpeja" in C major**, WoO 2a (1813)
 
-**"Zur Namensfeier" (Feastday) in C major**, Op. 115 (1814–1815) [*Cappella Aquileia, Marcus Bosch*](http://www.tidal.com/track/191149829) (10/2021)
+**"Zur Namensfeier" (Feastday) in C major**, Op. 115 (1814–1815) [*Cappella Aquileia, Marcus Bosch*](http://www.tidal.com/track/284310703) (10/2021)
 
 **"Leonore Prohaska"**, WoO 96 (1815)
 
 **Gratulations-Minuet in E♭**, WoO 3 (1822)
 
-**"The Consecration of the House" (Die Weihe des Hauses) in C**, Op. 124 (1822) [*Cappella Aquileia, Marcus Bosch*](http://www.tidal.com/track/191149828) (10/2021)
+**"The Consecration of the House" (Die Weihe des Hauses) in C**, Op. 124 (1822) [*Cappella Aquileia, Marcus Bosch*](http://www.tidal.com/track/284310702) (10/2021)
 
 **"Wo sich die Pulse" chorus for "The Consecration of the House"**, WoO 98 (1822)
 
