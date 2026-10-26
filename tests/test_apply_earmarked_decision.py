@@ -511,3 +511,141 @@ class CuratorCliEarmarkedTest(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+BOTH_PID = WORK + '-earmarked-both'
+BOTH_TRACK = '280629653'
+CANDIDATE_PROFILE = 'piano four hands arrangement'
+KEPT_PROFILE = 'original solo piano'
+THIRD = 'test-composer-bagatelle-in-c-minor'
+
+
+def run_both(root: Path, *args, work=WORK, issue='319'):
+    return subprocess.run(
+        [sys.executable, str(SCRIPT), issue, '--work', work,
+         '--choice', 'both',
+         '--profile', CANDIDATE_PROFILE,
+         '--performer', 'Linos Piano Trio (piano trio)',
+         '--track-url', 'https://tidal.com/track/' + BOTH_TRACK, *args],
+        cwd=root, capture_output=True, text=True,
+        env=dict(os.environ, PYTHONPATH=os.pathsep.join(
+            p for p in [os.environ.get('PYTHONPATH'), str(REPO / 'src')] if p)))
+
+
+def add_binding(root: Path):
+    """Give the WORK recording entry an earmarked issue binding like register_*."""
+    path = root / 'data/recordings/test-recording.yml'
+    text = path.read_text()
+    old = "works:\n- work_id: " + WORK + "\n  status: candidate\n"
+    assert text.count(old) == 1
+    path.write_text(text.replace(old, (
+        'works:\n'
+        '- work_id: ' + WORK + '\n'
+        '  status: candidate\n'
+        '  issue: 319\n'
+        "  track_ids: ['" + BOTH_TRACK + "']\n"
+        "  performers: ['Linos Piano Trio (piano trio)']\n")))
+
+
+def add_third_work(root: Path):
+    (root / 'data/works' / (THIRD + '.yaml')).write_text(
+        'id: ' + THIRD + '\nwork_group_id: ' + WORK + '-group\ncomposer_id: test-composer\n'
+        "title: Bagatelle in C Minor\nsource:\n  file: docs/test.md\n  line: '3'\n")
+    path = root / 'data/recordings/test-recording.yml'
+    text = path.read_text()
+    text += ('- work_id: ' + THIRD + '\n  status: candidate\n  track:\n'
+             "    number: 9\n    title: 'Bagatelle in C Minor'\n")
+    path.write_text(text)
+
+
+class BothChoiceTest(unittest.TestCase):
+    def setUp(self):
+        self.tmp = Path(tempfile.mkdtemp())
+        self.root = self.tmp / 'repo'
+        self.root.mkdir()
+        build_fixture(self.root)
+        self.manifest_bytes = (self.root / FIXTURE_MANIFEST).read_bytes()
+
+    def tearDown(self):
+        import shutil
+        shutil.rmtree(self.tmp, ignore_errors=True)
+
+    def test_both_adds_second_profile_and_keeps_existing(self):
+        result = run_both(self.root, '--existing-profile', KEPT_PROFILE)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        perf = load_yaml(self.root, 'data/performances/' + BOTH_PID + '.yaml')
+        self.assertEqual(perf['profile'], CANDIDATE_PROFILE)
+        self.assertEqual(perf['work_id'], WORK)
+        self.assertEqual(perf['links']['tidal']['url'],
+                         'https://tidal.com/track/' + BOTH_TRACK)
+        self.assertEqual(perf['performers'][0]['name'], 'Linos Piano Trio')
+        self.assertEqual(perf['performers'][0]['role'], 'piano trio')
+        kept = (self.root / ('data/performances/' + P384 + '.yaml')).read_text()
+        self.assertIn('profile: ' + KEPT_PROFILE, kept)
+        self.assertIn('Murray Perahia', kept)
+        docs = (self.root / 'docs/test.md').read_text()
+        self.assertIn('[*Murray Perahia, Radu Lupu*](http://www.tidal.com/track/75254187)', docs)
+        self.assertIn('[' + CANDIDATE_PROFILE + ': *Linos Piano Trio*]'
+                      '(http://www.tidal.com/track/' + BOTH_TRACK + ')', docs)
+        recording = load_yaml(self.root, 'data/recordings/test-recording.yml')
+        entry = next(w for w in recording['works'] if w['work_id'] == WORK)
+        self.assertEqual(entry['status'], 'recommended')
+        self.assertIn('both distinct profiles', entry['notes'])
+        record = json.loads(
+            (self.root / 'reports/curator-decisions/issue-319.json').read_text())
+        self.assertEqual(record['choice'], 'both')
+        self.assertEqual(record['profile_decision'], 'both_distinct_profiles')
+        self.assertEqual(record['replaced_performances'], [])
+        self.assertEqual({p['profile'] for p in record['performances']},
+                         {CANDIDATE_PROFILE, KEPT_PROFILE})
+        self.assertEqual(record['docs_updates'], ['docs/test.md:3'])
+        self.assertEqual((self.root / FIXTURE_MANIFEST).read_bytes(), self.manifest_bytes)
+        status = json.loads(
+            (self.root / 'reports/curator-decisions/batch-status.json').read_text())
+        self.assertEqual(status['status'], 'pending')
+        self.assertIn(319, status['issues'])
+
+    def test_both_dry_run_writes_nothing(self):
+        result = run_both(self.root, '--existing-profile', KEPT_PROFILE, '--dry-run')
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertFalse((self.root / ('data/performances/' + BOTH_PID + '.yaml')).exists())
+        self.assertIn(b'Murray Perahia',
+                      (self.root / ('data/performances/' + P384 + '.yaml')).read_bytes())
+        self.assertNotIn(CANDIDATE_PROFILE, (self.root / 'docs/test.md').read_text())
+
+    def test_both_requires_existing_profile_when_kept_has_none(self):
+        result = run_both(self.root)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn('--existing-profile', result.stderr)
+
+    def test_both_refuses_identical_profiles(self):
+        result = run_both(self.root, '--profile', KEPT_PROFILE,
+                          '--existing-profile', KEPT_PROFILE)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn('one recommendation', result.stderr.lower())
+
+    def test_both_requires_an_existing_performance_to_keep(self):
+        add_third_work(self.root)
+        result = run_both(self.root, '--existing-profile', KEPT_PROFILE, work=THIRD)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn('existing performance', result.stderr)
+
+    def test_both_reuses_the_kept_profile_without_flag(self):
+        kept = self.root / ('data/performances/' + P384 + '.yaml')
+        kept.write_text(kept.read_text().replace(
+            'role: piano\n', 'role: piano\nprofile: ' + KEPT_PROFILE + '\n'))
+        result = run_both(self.root)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        record = json.loads(
+            (self.root / 'reports/curator-decisions/issue-319.json').read_text())
+        profiles = {p['performance_id']: p['profile'] for p in record['performances']}
+        self.assertEqual(profiles[P384], KEPT_PROFILE)
+        self.assertEqual(profiles[BOTH_PID], CANDIDATE_PROFILE)
+
+    def test_curator_cli_both_fails_closed_towards_explicit_script(self):
+        add_binding(self.root)
+        sys.path.insert(0, str(REPO / 'src'))
+        from classical_music import curator_batch
+        with self.assertRaises(ValueError) as caught:
+            curator_batch.plan_earmarked_decision(self.root, 319, 'both')
+        self.assertIn('apply_earmarked_decision.py', str(caught.exception))

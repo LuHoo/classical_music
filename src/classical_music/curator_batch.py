@@ -121,6 +121,11 @@ def plan_earmarked_decision(root, issue, token, *, curator='LAH', decision_url=N
     entry = binding['entry']
     code = token.strip()
     reject = code.lower() in ('existing', 'geen', 'unresolved')
+    core.require(code.lower() != 'both', 'Choice "both" needs explicit comparison profiles that '
+                 'the earmarked binding does not carry; run scripts/apply_earmarked_decision.py '
+                 'directly with --choice both --work <work-id> --profile "<candidate profile>" '
+                 '[--existing-profile "<kept profile>"] --performer "Name (role)" --track-url <url>; '
+                 './curator finish validates the result as usual')
     import argparse
     args = argparse.Namespace(issue=issue, choice=code, work=entry['work_id'],
                               performer=[], track_url=None,
