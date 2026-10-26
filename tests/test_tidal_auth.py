@@ -140,7 +140,7 @@ def test_report_only_workflow_has_bounded_branch_trigger():
     assert step["run"] == 'python scripts/run_tidal_api_check.py --limit "$PILOT_LIMIT"'
     # The scheduled hourly round stays bounded: twenty least recently checked
     # URLs, issue escalation only, and never a write to repository contents.
-    assert workflow["on"]["schedule"] == [{"cron": "0 * * * *"}]
+    assert workflow["on"]["schedule"] == [{"cron": "17 * * * *"}]
     round_job = workflow["jobs"]["round"]
     assert round_job["timeout-minutes"] == 10
     assert round_job["permissions"] == {"contents": "read", "issues": "write"}
