@@ -4,14 +4,16 @@ on:
   workflow_dispatch:
     inputs:
       limit:
-        description: "Maximum URLs to attempt this run (default 20)"
+        description: "Maximum URLs to attempt this run (default 60)"
         required: false
-        default: "20"
+        default: "60"
         type: string
-  # Six bounded runs per hour, offset from the hourly link-check round at
-  # minute 17. GitHub only schedules workflows from the default branch.
+  # Two bounded runs per hour at quiet minutes (GitHub throttles high-frequency
+  # schedules and drops queued runs under load, so throughput lives in --limit,
+  # not in the tick count — issue #401). Offset from the hourly link-check
+  # round at minute 17. GitHub only schedules workflows from the default branch.
   schedule:
-    - cron: "5,15,25,35,45,55 * * * *"
+    - cron: "13,43 * * * *"
 
 permissions:
   contents: read
@@ -23,7 +25,7 @@ concurrency:
 jobs:
   backfill:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 20
     steps:
       - name: Checkout
         uses: actions/checkout@v7
@@ -45,11 +47,11 @@ jobs:
           key: tidal-maintenance-state-v1
           restore-keys: |
             tidal-maintenance-state-v1
-      - name: Capture fingerprints for up to 20 unknown URLs
+      - name: Capture fingerprints for up to 60 unknown URLs
         env:
           TIDAL_CLIENT_ID: ${{ secrets.TIDAL_CLIENT_ID }}
           TIDAL_CLIENT_SECRET: ${{ secrets.TIDAL_CLIENT_SECRET }}
-          BACKFILL_LIMIT: ${{ inputs.limit || '20' }}
+          BACKFILL_LIMIT: ${{ inputs.limit || '60' }}
         run: |
           python scripts/backfill_tidal_fingerprints.py --use-api --country NL \
             --state reports/tidal-maintenance/fingerprints.json \

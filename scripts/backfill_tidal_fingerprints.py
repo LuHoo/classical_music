@@ -128,7 +128,7 @@ def run(
     ledger_path: Path,
     report_path: Path | None = None,
     api: TidalAPI | None = None,
-    limit: int = 20,
+    limit: int = 60,
 ) -> dict:
     ledger = load_ledger(ledger_path)
     adopted = adopt_round_fingerprints(ledger, report_path) if report_path else 0
@@ -193,7 +193,7 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--use-api", action="store_true", help="Query the official API for identifiers")
     parser.add_argument("--timeout", type=float, default=15)
     parser.add_argument("--delay", type=float, default=0.5)
-    parser.add_argument("--limit", type=int, default=20, help="Maximum URLs to attempt per run")
+    parser.add_argument("--limit", type=int, default=60, help="Maximum URLs to attempt per run")
     args = parser.parse_args(argv)
     if args.state.suffix != ".json" or args.state.resolve().is_relative_to(
         (args.repo_root / "data").resolve()
