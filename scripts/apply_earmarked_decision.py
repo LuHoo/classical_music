@@ -27,6 +27,14 @@ Promote (--choice CODE, not "existing"):
 
 Reject (--choice existing): decision record + recording work entry status
 "not_selected"; canonical data is untouched.
+
+Both (--choice both, #399): the work keeps its existing recommendation AND the
+candidate is added as a second performance with its own sparse performance
+profile (comparison category Work + profile, architecture-principles 11/12;
+mirrors the intake vocabulary "both_distinct_profiles"). Requires --profile for
+the candidate and --existing-profile when the kept performance has no profile
+yet; the docs line of the kept recommendation gains a second labeled inline
+anchor. Nothing is replaced and no manifest is rewritten.
 """
 from __future__ import annotations
 
@@ -80,6 +88,8 @@ def emit_performance(perf):
         lines.append(f'  - name: {emit_scalar(person["name"])}')
         if person.get('role'):
             lines.append(f'    role: {emit_scalar(person["role"])}')
+    if perf.get('profile'):
+        lines.append(f'profile: {emit_scalar(perf["profile"])}')
     lines.append('links:')
     lines.append('  tidal:')
     lines.append(f'    url: {emit_scalar(perf["links"]["tidal"]["url"])}')
@@ -90,6 +100,28 @@ def emit_performance(perf):
     for key, value in perf['source'].items():
         lines.append(f'  {key}: {emit_scalar(value)}')
     return '\n'.join(lines) + '\n'
+
+
+def add_profile(text, profile):
+    """Surgically add a sparse profile line after the performers block."""
+    require(not re.search(r'(?m)^profile:', text), 'Performance already has a profile')
+    lines = text.split('\n')
+    start = None
+    for index, line in enumerate(lines):
+        if re.match(r'^performers:\s*$', line):
+            start = index + 1
+            break
+    if start is None:
+        for index, line in enumerate(lines):
+            if re.match(r'^work_id:\s*$', line):
+                start = index + 1
+                break
+    require(start is not None, 'Performance file has no performers block to anchor the profile')
+    end = start
+    while end < len(lines) and (not lines[end].strip() or lines[end].startswith(' ')):
+        end += 1
+    lines.insert(end, 'profile: ' + emit_scalar(profile))
+    return '\n'.join(lines)
 
 
 def json_bytes(value):
@@ -406,6 +438,100 @@ def plan(root, args, curator):
                    record_relative: json_bytes(record)}
         return changes, record, f'Issue #{issue}: keep existing performance {replaced_pid}.'
 
+    if args.choice.strip().lower() == 'both':
+        candidate_profile = (args.profile or '').strip()
+        kept_profile = (args.existing_profile or '').strip()
+        require(candidate_profile, 'Choice "both" needs --profile: the candidate comparison category')
+        require(replaced_pid, 'Choice "both" requires an existing performance to keep; '
+                'promote the candidate directly or reject it with "existing"')
+        kept = performances[replaced_pid]
+        if str(kept.get('profile') or '').strip():
+            require(not kept_profile or kept_profile == str(kept['profile']).strip(),
+                    f'Kept performance {replaced_pid} already has profile '
+                    f'{str(kept["profile"]).strip()!r}; --existing-profile disagrees')
+            kept_profile = str(kept['profile']).strip()
+        else:
+            require(kept_profile, f'Kept performance {replaced_pid} has no profile; supply '
+                    '--existing-profile to assign its comparison category')
+        require(candidate_profile.lower() != kept_profile.lower(),
+                'Candidate profile equals the kept performance profile; one recommendation '
+                'per comparison category (Work + profile) requires a real choice')
+        track_id = track_id_of(args.track_url)
+        tidal_url = f'https://tidal.com/track/{track_id}'
+        pid = f'{args.work}-earmarked-both'
+        require(ID_PATTERN.match(pid), f'Unsafe performance ID: {pid}')
+        require(pid not in performances, f'Performance already exists: {pid}')
+        require(track_id not in {tidal_track_id(p) for p in performances.values()},
+                f'Track {track_id} is already a canonical performance')
+        require(not docs_anchor_lines(root, track_id),
+                f'Track {track_id} already appears in docs; manual review required')
+        performers = [parse_performer(p) for p in args.performer]
+
+        perf = {'id': pid, 'work_id': args.work, 'performers': performers,
+                'profile': candidate_profile, 'links': {'tidal': {'url': tidal_url}}}
+        if args.album_title:
+            perf['release'] = {'album_title': args.album_title}
+        perf['source'] = {'file': str(recording_relative), 'url': issue_url,
+                          'curator_decision': record_relative}
+        changes = {f'data/performances/{pid}.yaml': emit_performance(perf).encode('utf-8')}
+
+        if not str(kept.get('profile') or '').strip():
+            kept_path = str(performance_paths[replaced_pid])
+            changes[kept_path] = add_profile(
+                (root / kept_path).read_text(encoding='utf-8'), kept_profile).encode('utf-8')
+
+        anchors = docs_anchor_lines(root, tidal_track_id(kept))
+        require(anchors, f'No docs/*.md anchor for the kept track {tidal_track_id(kept)}; '
+                'add or rewrite the recommendation line manually')
+        require(len(anchors) == 1, 'Multiple docs lines reference the kept track: '
+                + ', '.join(f'{p}:{n}' for p, n, _, _ in anchors) + '; manual review required')
+        doc_path, doc_number, doc_line, _ = anchors[0]
+        scheme_match = re.search(r'\(\s*((?:https?://)?(?:www\.)?)tidal\.com', doc_line)
+        prefix = scheme_match.group(1) if scheme_match else 'https://'
+        names = ', '.join(p['name'] for p in performers)
+        new_line = (doc_line.rstrip()
+                    + f' [{candidate_profile}: *{names}*]({prefix}tidal.com/track/{track_id})')
+        doc_text = (root / doc_path).read_text(encoding='utf-8').splitlines(True)
+        doc_text[doc_number - 1] = new_line + '\n'
+        changes[str(doc_path)] = ''.join(doc_text).encode('utf-8')
+        docs_updates = [f'{doc_path}:{doc_number}']
+
+        links_block = ('links:\n  tidal:\n    url: ' + tidal_url
+                       + '\n    status: active\n    last_checked: ' + today.date().isoformat())
+        note = (f'Curator decision #{issue}: both distinct profiles — ' + names
+                + f' ({candidate_profile}); keeps {replaced_pid} ({kept_profile}).')
+        updated_text = update_recording(
+            (root / recording_relative).read_text(encoding='utf-8'),
+            args.work, 'recommended', note, links_block)
+        changes[str(recording_relative)] = updated_text.encode('utf-8')
+
+        record = {'issue_url': issue_url, 'decision_source': 'curator_cli', 'curator': curator,
+                  'recorded_at': today.isoformat(), 'requested_choice': args.choice,
+                  'choice': 'both', 'profile_decision': 'both_distinct_profiles',
+                  'profile': candidate_profile,
+                  'performances': [
+                      {'performance_id': replaced_pid, 'profile': kept_profile},
+                      {'performance_id': pid, 'profile': candidate_profile,
+                       'tidal_url': tidal_url}],
+                  'selected_units': [], 'not_selected_units': [],
+                  'performance_id': pid, 'implementation_pr': None,
+                  'replaced_performances': [], 'recording': str(recording_relative),
+                  'work_id': args.work, 'docs_updates': docs_updates,
+                  'manifest_updates': []}
+        changes[record_relative] = json_bytes(record)
+
+        status_path = root / BATCH_STATUS
+        if status_path.exists():
+            state = json.loads(status_path.read_text(encoding='utf-8'))
+            require(state.get('schema_version') == 1 and isinstance(state.get('issues'), list),
+                    'Unsupported batch-status schema; review manually')
+            state = dict(state, status='pending',
+                         issues=sorted(set(state['issues']) | {issue}),
+                         updated_at=today.isoformat())
+            changes[str(BATCH_STATUS)] = json_bytes(state)
+        return changes, record, (f'Issue #{issue}: both distinct profiles — keep {replaced_pid} '
+                                 f'({kept_profile}) and add {pid} ({candidate_profile}).')
+
     track_id = track_id_of(args.track_url)
     tidal_url = f'https://tidal.com/track/{track_id}'
     pid = f'{args.work}-earmarked-{args.choice.strip().lower()}'
@@ -544,6 +670,10 @@ def main(argv=None):
                         help='reviewed performer: "Name" or "Name (role)"; repeatable')
     parser.add_argument('--track-url', help='reviewed TIDAL listening track of the candidate')
     parser.add_argument('--album-title', help='release album title of the candidate recording')
+    parser.add_argument('--profile',
+                        help='comparison category of the candidate (required for --choice both)')
+    parser.add_argument('--existing-profile',
+                        help='comparison category of the kept performance (required when it has none)')
     parser.add_argument('--curator', default='LAH', help='curator identity for the decision record')
     parser.add_argument('--dry-run', action='store_true', help='plan only; write nothing')
     args = parser.parse_args(argv)
@@ -553,6 +683,8 @@ def main(argv=None):
     if not reject:
         require(args.performer, 'Candidate needs reviewed performers (repeat --performer "Name (role)")')
         require(args.track_url, 'Candidate needs its reviewed listening track (--track-url)')
+    if args.choice.strip().lower() == 'both':
+        require(args.profile and args.profile.strip(), 'Choice "both" needs --profile')
     cwd = Path.cwd().resolve()
     root = cwd if (cwd / 'data').is_dir() else Path(__file__).resolve().parents[1]
     lock = root / '.curator.lock'

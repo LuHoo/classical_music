@@ -414,6 +414,10 @@ expliciete argumenten meer nodig:
 ./curator finish                           # daarna, zoals altijd
 ```
 
+`./curator <issue> both` is bewust fail-closed: de vergelijkingsprofielen zijn
+curatoroordeel en zitten niet in de binding, dus draait `both` via het expliciete
+script hierboven; het besluit valt daarna gewoon onder `./curator finish`.
+
 Faalt fail-closed als het issue geen binding heeft (her-run
 `register_earmarked_recording.py ... --issue <nr> --work <work-id>
 --update-existing`), de binding geen geregistreerde performers bevat (idem), of
@@ -435,6 +439,17 @@ bestaand decision-record is een fout.
 
 # Reject: kandidaat blijft liggen, bestaande aanbeveling blijft ongewijzigd
 .venv/bin/python scripts/apply_earmarked_decision.py <issue> --choice existing --work <work_id>
+
+# Both (#399): kandidaat komt er náást de bestaande aanbeveling bij, als tweede
+# performance met een eigen vergelijkingsprofiel (categorie Werk + profiel,
+# architectuurprincipe 11/12 — zoals de intake-vocabulair both_distinct_profiles).
+# De bestaande performance blijft; zij krijgt een profiel als ze er nog geen heeft
+# (--existing-profile is dan verplicht). De docs-regel van de bestaande aanbeveling
+# krijgt een tweede gelabeld inline-anker: [<profiel>: *performers*](track-url).
+.venv/bin/python scripts/apply_earmarked_decision.py <issue> --choice both --work <work_id> \
+  --profile "<vergelijkingsprofiel kandidaat>" [--existing-profile "<profiel bestaande uitvoering>"] \
+  --performer "Naam (rol)" [--performer "Naam (rol)" ...] \
+  --track-url "https://tidal.com/track/<id>" [--album-title "Album"] [--dry-run]
 
 # Plan zonder schrijven
 .venv/bin/python scripts/apply_earmarked_decision.py <issue> ... --dry-run

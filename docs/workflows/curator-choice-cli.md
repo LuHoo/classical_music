@@ -95,7 +95,12 @@ the binding supplies the work, the listening track and the registered performers
 ```
 
 No `--replace-existing` or `--playlist-remove-unselected` in this route: promote
-always replaces the existing recommendation, reject always keeps it. Missing
+always replaces the existing recommendation, reject always keeps it. A third
+outcome, `both` (#399), keeps the existing recommendation and adds the candidate
+as a second performance with its own sparse performance profile; it needs
+explicit `--profile`/`--existing-profile` arguments, so it runs through
+`apply_earmarked_decision.py --choice both ...` rather than the shorthand
+binding route (`./curator <issue> both` fails closed with that instruction). Missing
 bindings, bindings without registered performers (re-run registration with
 `--update-existing`) and ambiguous bindings fail closed. See the
 [detailed User Manual](scripts-user-manual.md) earmarked decision section.
