@@ -222,7 +222,7 @@ pull requests from forks.
 
 ## Scheduled hourly maintenance round
 
-The `round` job in the same workflow runs hourly (`cron: "0 * * * *"`) once the
+The `round` job in the same workflow runs hourly (`cron: "17 * * * *"`, an off-peak minute because GitHub drops delayed runs during peak load at :00) once the
 workflow reaches the default branch; GitHub only schedules from there. Use
 **Actions -> Tidal link check -> Run workflow** with the `run_round` input to
 test a round manually before merging. Each round:

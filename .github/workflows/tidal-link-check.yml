@@ -16,7 +16,7 @@ on:
   # Hourly production rotation. GitHub only schedules workflows from the
   # default branch, so this activates after the issue-64 PR merges to main.
   schedule:
-    - cron: "0 * * * *"
+    - cron: "17 * * * *"
   # Bootstrap the live pilot before this draft is merged. This trigger only
   # covers the dedicated issue-64 branch and maintenance-specific edits.
   push:
