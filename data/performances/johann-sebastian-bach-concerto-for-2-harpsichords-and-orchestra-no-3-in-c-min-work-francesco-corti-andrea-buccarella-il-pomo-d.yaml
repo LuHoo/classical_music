@@ -4,7 +4,7 @@ source:
   file: "docs/bachJS.md"
   line: "64"
 links:
-- platform: "tidal"
-  url: "https://tidal.com/browse/track/305311219?u"
+  tidal:
+    url: "https://tidal.com/browse/track/305311219?u"
 performers:
 - name: "Francesco Corti, Andrea Buccarella, Il Pomo d'Oro"

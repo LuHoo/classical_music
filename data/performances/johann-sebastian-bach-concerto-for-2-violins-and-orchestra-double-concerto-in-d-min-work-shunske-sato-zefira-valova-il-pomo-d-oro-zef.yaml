@@ -4,7 +4,7 @@ source:
   file: "docs/bachJS.md"
   line: "16"
 links:
-- platform: "tidal"
-  url: "http://www.tidal.com/track/95609833"
+  tidal:
+    url: "http://www.tidal.com/track/95609833"
 performers:
 - name: "Shunske Sato, Zefira Valova, Il Pomo d'Oro, Zefira Valova"

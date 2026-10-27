@@ -4,7 +4,7 @@ source:
   file: "docs/bachJS.md"
   line: "116"
 links:
-- platform: "tidal"
-  url: "http://www.tidal.com/track/77689950"
+  tidal:
+    url: "http://www.tidal.com/track/77689950"
 performers:
 - name: "András Schiff"

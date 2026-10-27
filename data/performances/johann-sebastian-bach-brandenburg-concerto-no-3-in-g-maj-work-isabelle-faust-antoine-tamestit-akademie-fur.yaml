@@ -4,7 +4,7 @@ source:
   file: "docs/bachJS.md"
   line: "28"
 links:
-- platform: "tidal"
-  url: "http://www.tidal.com/track/197388370"
+  tidal:
+    url: "http://www.tidal.com/track/197388370"
 performers:
 - name: "Isabelle Faust, Antoine Tamestit, Akademie für Alte Musik Berlin"

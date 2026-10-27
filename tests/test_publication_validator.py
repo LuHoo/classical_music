@@ -463,3 +463,69 @@ class TestValidationIntegration:
         assert error.field
         assert error.message
         assert error.source_file  # Should have path to the file
+
+
+class TestPerformanceLinksShape:
+    """DOM-047: Performance links must use the canonical mapping form."""
+
+    def test_legacy_platform_url_list_fails_closed(self, temp_repo):
+        """The legacy list form is silently dropped by the adapter; reject it."""
+        _create_person(temp_repo, "mahler", "Gustav Mahler")
+        _create_work_group(temp_repo, "symphonies", "mahler")
+        _create_work(temp_repo, "mahler-symphony-2", "symphonies", "mahler")
+
+        _write_yaml(
+            temp_repo / "data" / "performances" / "mahler-symphony-2-chailly.yaml",
+            {
+                "id": "mahler-symphony-2-chailly",
+                "work_id": "mahler-symphony-2",
+                "links": [{"platform": "tidal", "url": "http://www.tidal.com/track/65806801"}],
+                "performers": [{"name": "Riccardo Chailly"}],
+            },
+        )
+
+        result = PublicationValidator(temp_repo).validate()
+
+        assert not result.passed
+        dom_047_errors = [e for e in result.errors if e.rule_id == "DOM-047"]
+        assert len(dom_047_errors) == 1
+        assert "legacy" in dom_047_errors[0].message
+
+    def test_mapping_form_with_url_passes(self, temp_repo):
+        _create_person(temp_repo, "mahler", "Gustav Mahler")
+        _create_work_group(temp_repo, "symphonies", "mahler")
+        _create_work(temp_repo, "mahler-symphony-2", "symphonies", "mahler")
+
+        _write_yaml(
+            temp_repo / "data" / "performances" / "mahler-symphony-2-chailly.yaml",
+            {
+                "id": "mahler-symphony-2-chailly",
+                "work_id": "mahler-symphony-2",
+                "links": {"tidal": {"url": "https://tidal.com/track/65806801"}},
+                "performers": [{"name": "Riccardo Chailly"}],
+            },
+        )
+
+        result = PublicationValidator(temp_repo).validate()
+
+        assert [e for e in result.errors if e.rule_id == "DOM-047"] == []
+        assert result.passed
+
+    def test_mapping_form_without_url_token_fails_closed(self, temp_repo):
+        _create_person(temp_repo, "mahler", "Gustav Mahler")
+        _create_work_group(temp_repo, "symphonies", "mahler")
+        _create_work(temp_repo, "mahler-symphony-2", "symphonies", "mahler")
+
+        _write_yaml(
+            temp_repo / "data" / "performances" / "mahler-symphony-2-chailly.yaml",
+            {
+                "id": "mahler-symphony-2-chailly",
+                "work_id": "mahler-symphony-2",
+                "links": {"tidal": {"href": "https://tidal.com/track/65806801"}},
+                "performers": [{"name": "Riccardo Chailly"}],
+            },
+        )
+
+        result = PublicationValidator(temp_repo).validate()
+
+        assert [e for e in result.errors if e.rule_id == "DOM-047"]

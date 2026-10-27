@@ -10,6 +10,7 @@ Validation follows architecture-principles.md and validation-rules.md:
 - REF-003: Work.work_group_id → existing WorkGroup
 - REF-004: Performance.work_id → existing Work
 - REF-005: Performance MUST NOT reference WorkGroup directly
+- DOM-047: Performance links MUST use the canonical mapping form
 
 Background suspicions and duplicate warnings remain non-blocking (they do not
 prevent publication).
@@ -160,6 +161,7 @@ class PublicationValidator:
         self._validate_performance_work_references(snapshot)  # REF-004
         self._validate_no_direct_wg_performance_references(snapshot)  # REF-005
         self._validate_performance_has_performers(snapshot)  # DOM-044
+        self._validate_performance_links_shape(snapshot)  # DOM-047
 
         # Determine if validation passed
         # Passed only if no blocking errors (warnings don't block)
@@ -329,6 +331,41 @@ class PublicationValidator:
                     perf_id,
                     "work_id",
                     f"Performance references WorkGroup {work_id}, must reference Work",
+                    str(record.path),
+                )
+
+    def _validate_performance_links_shape(self, snapshot: CatalogSnapshot):
+        """DOM-047: Performance links MUST use the canonical mapping form.
+
+        The publication adapter publishes only ``links.tidal.url``. The
+        legacy ``- platform: tidal`` list form is silently dropped there,
+        which published performers without their Tidal link (issue #406).
+        Fail closed on it instead.
+        """
+        if snapshot.missing_directory("Performance") is not None:
+            return
+
+        for record in snapshot.mappings("Performance"):
+            perf = record.mapping
+            perf_id = perf.get("id")
+            links = perf.get("links")
+            if links is None:
+                # A Performance without any link is legitimate (for example
+                # a kept performance whose recording is not on Tidal).
+                continue
+            valid = (
+                isinstance(links, dict)
+                and all(isinstance(value, dict) for value in links.values())
+                and ("tidal" not in links or "url" in links["tidal"])
+            )
+            if not valid:
+                self._add_error(
+                    "DOM-047",
+                    "performance",
+                    perf_id,
+                    "links",
+                    "Performance links must use the canonical mapping form "
+                    "(links.tidal.url), not the legacy platform/url list",
                     str(record.path),
                 )
 
