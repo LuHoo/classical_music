@@ -4,7 +4,7 @@ source:
   file: "docs/bachJS.md"
   line: "122"
 links:
-- platform: "tidal"
-  url: "http://www.tidal.com/track/47053697"
+  tidal:
+    url: "http://www.tidal.com/track/47053697"
 performers:
 - name: "Collegium Vocale Gent, Philippe Herreweghe"

@@ -4,7 +4,7 @@ source:
   file: "docs/mahler.md"
   line: "50"
 links:
-- platform: "tidal"
-  url: "http://www.tidal.com/track/229400428"
+  tidal:
+    url: "http://www.tidal.com/track/229400428"
 performers:
 - name: "Berliner Philharmoniker, Gustavo Dudamel"

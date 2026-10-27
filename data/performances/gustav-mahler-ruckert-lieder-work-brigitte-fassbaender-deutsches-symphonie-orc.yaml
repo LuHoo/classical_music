@@ -4,7 +4,7 @@ source:
   file: "docs/mahler.md"
   line: "46"
 links:
-- platform: "tidal"
-  url: "http://www.tidal.com/track/64136735"
+  tidal:
+    url: "http://www.tidal.com/track/64136735"
 performers:
 - name: "Brigitte Fassbaender, Deutsches Symphonie-Orchester Berlin, Riccardo Chailly"

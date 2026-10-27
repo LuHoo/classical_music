@@ -4,7 +4,7 @@ source:
   file: "docs/bachJS.md"
   line: "100"
 links:
-- platform: "tidal"
-  url: "http://www.tidal.com/track/203860892"
+  tidal:
+    url: "http://www.tidal.com/track/203860892"
 performers:
 - name: "Leonidas Kavakos"

@@ -207,6 +207,7 @@ The key migration-blocking rules are:
 | DOM-044 | At least one performer MUST be present. | error | repository | yes |
 | DOM-045 | Duplicate-looking Performances SHOULD be reported for manual review, not merged automatically. | warning | repository | partial |
 | DOM-046 | Release-related fields on Performance MUST remain limited metadata and MUST NOT imply a canonical Release entity. | error | repository | partial |
+| DOM-047 | Performance `links` MUST use the canonical mapping form (`links.tidal.url`); the legacy `platform`/`url` list form MUST be rejected, because the publication adapter silently drops it and publishes performers without their Tidal link. | error | repository | yes |
 
 ## Recommendation semantics
 

@@ -4,7 +4,7 @@ source:
   file: "docs/bruckner.md"
   line: "22"
 links:
-- platform: "tidal"
-  url: "https://tidal.com/browse/track/384348586?u"
+  tidal:
+    url: "https://tidal.com/browse/track/384348586?u"
 performers:
 - name: "Bruckner Orchester Linz, Markus Poschner"

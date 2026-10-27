@@ -4,7 +4,7 @@ source:
   file: "docs/mahler.md"
   line: "34"
 links:
-- platform: "tidal"
-  url: "http://www.tidal.com/track/286816485"
+  tidal:
+    url: "http://www.tidal.com/track/286816485"
 performers:
 - name: "Czech Philharmonic, Semyon Bychkov"

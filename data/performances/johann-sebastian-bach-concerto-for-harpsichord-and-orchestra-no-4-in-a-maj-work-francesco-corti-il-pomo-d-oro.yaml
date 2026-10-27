@@ -4,7 +4,7 @@ source:
   file: "docs/bachJS.md"
   line: "46"
 links:
-- platform: "tidal"
-  url: "https://tidal.com/browse/track/306156147?u"
+  tidal:
+    url: "https://tidal.com/browse/track/306156147?u"
 performers:
 - name: "Francesco Corti, Il Pomo d'Oro"

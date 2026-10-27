@@ -4,7 +4,7 @@ source:
   file: "docs/bachJS.md"
   line: "22"
 links:
-- platform: "tidal"
-  url: "http://www.tidal.com/track/197388363"
+  tidal:
+    url: "http://www.tidal.com/track/197388363"
 performers:
 - name: "Akademie für Alte Musik Berlin"

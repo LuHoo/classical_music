@@ -4,8 +4,8 @@ source:
   file: "docs/mahler.md"
   line: "38"
 links:
-- platform: "tidal"
-  url: "http://www.tidal.com/track/4413124"
+  tidal:
+    url: "http://www.tidal.com/track/4413124"
 performers:
 - name: "Thomas Quasthoff, Anne Sofie von Otter, Berliner Philharmoniker, Claudio
     Abbado"
