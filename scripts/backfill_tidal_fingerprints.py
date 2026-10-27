@@ -226,7 +226,14 @@ def run(
         ledger["fingerprints"][url] = entry
         if has_identifier(entry):
             captured += 1
-    known = sum(1 for e in ledger["fingerprints"].values() if has_identifier(e))
+    # Count only canonical URLs: the ledger also keeps fingerprints for
+    # replaced or otherwise retired URLs, which must not inflate coverage
+    # beyond the size of the canonical set (issue #413).
+    known = sum(
+        1
+        for url in urls
+        if has_identifier(ledger["fingerprints"].get(url) or {})
+    )
 
     def pending_entry(url: str) -> dict:
         return ledger["fingerprints"].get(url) or {}
