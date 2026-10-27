@@ -8,6 +8,7 @@ baseurl: "/classical_music"      # the repository name
 # Enable navigation
 nav_sort: case_insensitive
 
-# Generated during the Pages build and intentionally ignored by Git.
-include:
-  - publication
+# The Jekyll site source is the generated publication/ directory (produced by
+# scripts/generate_publication_site.py and intentionally not committed). Builds
+# run with `--source publication` (issue #358), so the site root is the
+# canonical collection and no internal repository material is built or deployed.

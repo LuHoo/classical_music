@@ -14,4 +14,13 @@ jobs:
         with:
           ruby-version: '3.3'
           bundler-cache: true
-      - run: bundle exec jekyll build
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.13"
+      - run: python -m pip install --upgrade pip
+      - run: python -m pip install -e '.[dev]'
+      - run: python scripts/generate_publication_site.py
+      # Build only the generated collection (issue #358): a repository-root
+      # build would publish internal docs and would collide on "/" between
+      # the legacy docs landing page and the collection landing page.
+      - run: bundle exec jekyll build --config _config.yml --source publication --destination _site

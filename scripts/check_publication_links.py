@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fail a site build when a publication link has no generated HTML target."""
+"""Fail a site build when an internal site link has no generated HTML target."""
 
 from __future__ import annotations
 
@@ -22,10 +22,16 @@ class LinkParser(HTMLParser):
 
 
 def check_links(site_dir: Path, baseurl: str) -> tuple[int, list[str]]:
-    """Check collection navigation against actual Jekyll output, not source pages."""
+    """Check collection navigation against actual Jekyll output, not source pages.
+
+    The collection is the whole site (issue #358), so every internal link on
+    every generated page must resolve to a file Jekyll actually produced. A
+    link into repository material that is not part of the collection fails
+    fail-closed instead of silently passing.
+    """
     baseurl = baseurl.rstrip("/")
-    prefix = baseurl + "/publication/"
-    pages = sorted((site_dir / "publication").rglob("*.html"))
+    prefix = baseurl + "/"
+    pages = sorted(site_dir.rglob("*.html"))
     if not pages:
         return 0, ["No generated publication HTML pages found."]
     failures: list[str] = []

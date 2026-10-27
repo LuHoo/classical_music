@@ -25,13 +25,20 @@ gem install bundler
 bundle install
 python -m classical_music.cli_validator
 python scripts/generate_publication_site.py
-bundle exec jekyll build
+bundle exec jekyll build --config _config.yml --source publication --destination _site
 python scripts/check_publication_links.py
 ```
 
+Jekyll builds only the generated `publication/` directory as its source, so the
+published site contains only the canonical collection: the site root is the
+collection landing page, and internal repository material (docs, reports, data,
+tests) is never built or deployed. A fail-closed check in the build workflow
+verifies that no internal directory appears in the output.
+
 On pull requests, GitHub Actions runs the same validation, generation, and
-Jekyll build path without deploying. Deployment to `gh-pages` only runs after a
-push to `main`.
+Jekyll build path without deploying, and uploads the built site as a
+`site-preview` artifact so the site can be reviewed before merging. Deployment
+to `gh-pages` only runs after a push to `main`.
 
 Generated collection pages have explicit directory permalinks. The post-build
 link check verifies that collection navigation points to HTML files actually
