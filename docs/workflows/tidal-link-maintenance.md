@@ -307,6 +307,32 @@ python scripts/backfill_tidal_fingerprints.py --use-api --country NL \
   --state reports/tidal-maintenance/fingerprints.json --limit 60
 ```
 
+### Report transparency (issue #402)
+
+The run report (`fingerprints.md`, shown in the job summary and uploaded as a
+workflow artifact) does not only show aggregate counts. It renders, from the
+ledger after the run:
+
+- **Pending URLs by status** — the full pending pool split over the
+  `status` values the capture path records (`unavailable`, `uncertain`, …)
+  plus `never-attempted`, so a run's `attempted 60, captured 20` can be read
+  back as "40 attempts landed, this is how the remainder is distributed";
+- **Confirmed unavailable** — every pending canonical URL with
+  `status: unavailable`, together with the referencing performance ids,
+  work ids and YAML files, so a dead anchor can be repaired immediately
+  instead of waiting for the hourly rotation to reach it;
+- **Next up** — the next ten pending URLs in the exact `select_due`
+  order, so the otherwise implicit queue (never-attempted first, then
+  least recently attempted, ties by URL) is inspectable.
+
+The backfill deliberately does not open issues for the URLs it finds dead.
+The job runs under `permissions: contents: read` only; issue escalation with
+strike thresholds is the role of the hourly round
+(`escalate_tidal_failures.py`), which is rate-limited by design. Adding
+`issues: write` to a twice-per-hour backfill job would bypass that bound —
+if backfill-driven escalation is wanted later, it is an explicit curator
+decision, not a default.
+
 The backfill is operational only: it reads canonical data and never writes
 it, never selects or creates a recommendation, and never promotes a
 replacement URL. Behaviour is covered in
