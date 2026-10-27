@@ -282,7 +282,9 @@ no replacement search" (the #392/#393 pattern).
 - it persists the ledger in
   `reports/tidal-maintenance/fingerprints.json` (shared Actions cache entry
   with `state.json` and `latest.json`) and adopts fingerprints recorded by
-  check rounds from `latest.json`, so both sides converge.
+  check rounds from `latest.json`, so both sides converge;
+- it adopts ISRC fingerprints from the raw playlist-import snapshots under
+  `reports/playlist-import/` (see below).
 
 The workflow `.github/workflows/tidal-fingerprint-backfill.yml` runs this
 twice per hour (minutes 13 and 43 — quiet minutes offset from the hourly
@@ -306,6 +308,29 @@ source ~/.tidal/env  # or export TIDAL_CLIENT_ID / TIDAL_CLIENT_SECRET
 python scripts/backfill_tidal_fingerprints.py --use-api --country NL \
   --state reports/tidal-maintenance/fingerprints.json --limit 60
 ```
+
+### Import adoption (issue #410)
+
+The playlist-import snapshots (`snapshot-*.json`, `window-*.json` under
+`reports/playlist-import/`) are raw Tidal API artifacts captured while every
+URL was still alive: their `units[].tracks[]` entries carry the original track
+IDs and ISRCs. They are therefore earlier Tidal evidence than the ledger
+itself. The backfill adopts these ISRCs into the ledger on every run:
+
+- only `snapshot-*.json` and `window-*.json` files are read; other intake
+  files are ignored;
+- tracks are matched to canonical URLs by Tidal resource identity, so
+  `http://www.tidal.com/track/1` in a performance file and
+  `https://tidal.com/track/1` in a snapshot are the same anchor, and the
+  fingerprint is stored under the exact canonical URL string;
+- an existing identifier is never overwritten; a `source` field records the
+  snapshot the ISRC came from;
+- a malformed recognized snapshot fails closed.
+
+Measured on 2026-10-27: this closes the evidence gap for 2,196 of the 2,461
+canonical URLs. Of the 358 dead anchors found in a full page scan, 346
+recovered their ISRC from the imports and are repairable by the existing
+`recover()` without any curator action; only 12 remained without evidence.
 
 ### Report transparency (issue #402)
 

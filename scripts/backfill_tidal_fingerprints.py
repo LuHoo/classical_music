@@ -79,6 +79,72 @@ def adopt_round_fingerprints(ledger: dict, report_path: Path) -> int:
     return adopted
 
 
+def adopt_import_fingerprints(ledger: dict, imports_root: Path, canonical: list[str]) -> int:
+    """Adopt ISRC fingerprints archived by playlist imports (issue #410).
+
+    The playlist-import snapshots are raw Tidal API artifacts captured while
+    every URL was alive. Their `units[].tracks[]` entries carry the original
+    track IDs and ISRCs, so they are earlier Tidal evidence than the ledger
+    itself: a URL that died before the rotation ever saw it alive (the
+    #392/#393 pattern) still recovers its identity from the archive. Only
+    `snapshot-*.json` and `window-*.json` files are read; tracks are matched
+    to canonical URLs by Tidal resource identity (not URL string), so
+    `http://www.tidal.com/track/1` and `https://tidal.com/track/1` are the
+    same anchor.
+    """
+    from classical_music.tidal_maintenance import resource
+
+    fingerprints = ledger["fingerprints"]
+    canonical_keys: dict[tuple[str, str], list[str]] = {}
+    for url in canonical:
+        key = resource(url)
+        if key:
+            canonical_keys.setdefault(key, []).append(url)
+    adopted = 0
+    for path in sorted(imports_root.glob("**/*.json")):
+        if not (path.name.startswith("snapshot-") or path.name.startswith("window-")):
+            continue
+        try:
+            doc = json.loads(path.read_text())
+        except ValueError:
+            raise ValueError(f"Playlist import snapshot is not valid JSON: {path.name}") from None
+        units = doc.get("units") if isinstance(doc, dict) else None
+        if units is None:
+            continue
+        if not isinstance(units, list):
+            raise ValueError(f"Playlist import snapshot has a malformed units field: {path.name}")
+        for unit in units:
+            if not isinstance(unit, dict):
+                raise ValueError(f"Playlist import snapshot has a malformed unit: {path.name}")
+            tracks = unit.get("tracks")
+            if tracks is None:
+                continue
+            if not isinstance(tracks, list):
+                raise ValueError(f"Playlist import snapshot has a malformed tracks field: {path.name}")
+            for track in tracks:
+                if not isinstance(track, dict):
+                    raise ValueError(f"Playlist import snapshot has a malformed track: {path.name}")
+                track_id = track.get("id")
+                isrc = track.get("isrc")
+                if not isinstance(track_id, str) or not track_id.isdigit():
+                    continue
+                if not isinstance(isrc, str) or not re.fullmatch(
+                    r"[A-Z]{2}[A-Z0-9]{3}\d{7}", isrc
+                ):
+                    continue
+                for url in canonical_keys.get(("track", track_id), []):
+                    known = fingerprints.get(url) or {}
+                    if has_identifier(known):
+                        continue
+                    fingerprints[url] = {
+                        **known,
+                        "isrc": isrc,
+                        "source": f"playlist-import/{path.parent.name}/{path.name}",
+                    }
+                    adopted += 1
+    return adopted
+
+
 def canonical_urls(root: Path) -> list[str]:
     records = inventory(root)
     return sorted({url for url, _ in url_references(records).items()})
@@ -145,6 +211,11 @@ def run(
     ledger = load_ledger(ledger_path)
     adopted = adopt_round_fingerprints(ledger, report_path) if report_path else 0
     records = inventory(root)
+    adopted_imports = adopt_import_fingerprints(
+        ledger,
+        root / "reports" / "playlist-import",
+        sorted(url_references(records)),
+    )
     refs = url_references(records)
     urls = sorted(refs)
     now = datetime.now(UTC).isoformat()
@@ -185,6 +256,7 @@ def run(
         "total_unique_urls": len(urls),
         "known_fingerprints": known,
         "adopted_from_round": adopted,
+        "adopted_from_imports": adopted_imports,
         "attempted": len(selected),
         "captured": captured,
         "remaining": len(urls) - known,
@@ -207,7 +279,8 @@ def markdown(summary: dict) -> str:
         f"Checked: {summary['checked_at']}",
         f"Known fingerprints: {summary['known_fingerprints']} / {summary['total_unique_urls']}",
         f"This run: attempted {summary['attempted']}, captured {summary['captured']},"
-        f" adopted from round report {summary['adopted_from_round']}",
+        f" adopted from round report {summary['adopted_from_round']},"
+        f" adopted from playlist imports {summary['adopted_from_imports']}",
         f"Remaining without fingerprint: {summary['remaining']}",
         "",
         "Operational only: fingerprints enable recovery; nothing is promoted automatically.",
