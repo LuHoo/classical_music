@@ -179,6 +179,137 @@ class RunTest(unittest.TestCase):
         self.assertEqual(err.exception.code, 2)
 
 
+def synthetic_import(root: Path, tracks: list[dict], name: str = "snapshot-test.json") -> Path:
+    """Write a playlist-import snapshot with the units[].tracks[] shape."""
+    imports = root / "reports" / "playlist-import" / "piano"
+    imports.mkdir(parents=True, exist_ok=True)
+    path = imports / name
+    path.write_text(json.dumps({"schema_version": 1, "units": [{"tracks": tracks}]}))
+    return path
+
+
+class ImportAdoptionTest(unittest.TestCase):
+    """Import snapshots are raw Tidal evidence: adopt their ISRCs (#410)."""
+
+    def _ledger(self):
+        return {"version": 1, "fingerprints": {}}
+
+    def test_adopts_isrc_for_recognized_snapshot_shapes(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = synthetic_repo(Path(tmp), ["https://tidal.com/track/1"])
+            synthetic_import(
+                root,
+                [
+                    {"id": "1", "isrc": "DKECA2295701", "title": "January"},
+                    {"id": "2", "isrc": "NOT-A-ISRC"},  # invalid ISRC is skipped
+                    {"isrc": "GBLLH2588619"},  # missing id is skipped
+                ],
+            )
+            ledger = self._ledger()
+            adopted = backfill.adopt_import_fingerprints(
+                ledger, root / "reports" / "playlist-import", ["https://tidal.com/track/1"]
+            )
+            self.assertEqual(adopted, 1)
+            self.assertEqual(
+                ledger["fingerprints"]["https://tidal.com/track/1"]["isrc"],
+                "DKECA2295701",
+            )
+            self.assertIn("playlist-import/piano/", ledger["fingerprints"]["https://tidal.com/track/1"]["source"])
+
+    def test_never_overwrites_an_existing_identifier(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = synthetic_repo(Path(tmp), ["https://tidal.com/track/1"])
+            synthetic_import(root, [{"id": "1", "isrc": "DKECA2295701"}])
+            ledger = {
+                "version": 1,
+                "fingerprints": {"https://tidal.com/track/1": {"isrc": "GBLLH2588619"}},
+            }
+            self.assertEqual(
+                backfill.adopt_import_fingerprints(
+                    ledger, root / "reports" / "playlist-import", ["https://tidal.com/track/1"]
+                ),
+                0,
+            )
+            self.assertEqual(
+                ledger["fingerprints"]["https://tidal.com/track/1"]["isrc"],
+                "GBLLH2588619",
+            )
+
+    def test_ignores_files_without_units_and_only_reads_known_names(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = synthetic_repo(Path(tmp), ["https://tidal.com/track/1"])
+            synthetic_import(root, [{"id": "1", "isrc": "DKECA2295701"}])
+            other = root / "reports" / "playlist-import" / "piano" / "prepared-120.json"
+            other.write_text(json.dumps({"entries": [{"id": "9", "isrc": "DKECA2295701"}]}))
+            empty = root / "reports" / "playlist-import" / "piano" / "window-empty.json"
+            empty.write_text(json.dumps({"schema_version": 1}))
+            ledger = self._ledger()
+            adopted = backfill.adopt_import_fingerprints(
+                ledger, root / "reports" / "playlist-import", ["https://tidal.com/track/1"]
+            )
+            self.assertEqual(adopted, 1)
+            self.assertNotIn("https://tidal.com/track/9", ledger["fingerprints"])
+
+    def test_snapshot_tracks_outside_canonical_set_are_not_adopted(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = synthetic_repo(Path(tmp), ["https://tidal.com/track/1"])
+            synthetic_import(
+                root,
+                [
+                    {"id": "1", "isrc": "DKECA2295701"},
+                    {"id": "2", "isrc": "GBLLH2588619"},  # live track, not canonical
+                ],
+            )
+            ledger = self._ledger()
+            adopted = backfill.adopt_import_fingerprints(
+                ledger, root / "reports" / "playlist-import", ["https://tidal.com/track/1"]
+            )
+            self.assertEqual(adopted, 1)
+            self.assertNotIn("https://tidal.com/track/2", ledger["fingerprints"])
+
+    def test_adoption_matches_url_variants_by_resource_identity(self):
+        # Canonical YAML may carry http://www.tidal.com forms; the import
+        # snapshot only knows the resource. The fingerprint must land under
+        # the exact canonical URL string the checker looks up.
+        with tempfile.TemporaryDirectory() as tmp:
+            root = synthetic_repo(Path(tmp), ["http://www.tidal.com/track/1"])
+            synthetic_import(root, [{"id": "1", "isrc": "DKECA2295701"}])
+            ledger = self._ledger()
+            adopted = backfill.adopt_import_fingerprints(
+                ledger, root / "reports" / "playlist-import", ["http://www.tidal.com/track/1"]
+            )
+            self.assertEqual(adopted, 1)
+            self.assertEqual(
+                ledger["fingerprints"]["http://www.tidal.com/track/1"]["isrc"],
+                "DKECA2295701",
+            )
+            self.assertNotIn("https://tidal.com/track/1", ledger["fingerprints"])
+
+    def test_malformed_snapshot_fails_closed(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = synthetic_repo(Path(tmp), [])
+            bad = synthetic_import(root, [{"id": "1", "isrc": "DKECA2295701"}])
+            bad.write_text(json.dumps({"units": [{"tracks": "not-a-list"}]}))
+            with self.assertRaisesRegex(ValueError, r"malformed tracks"):
+                backfill.adopt_import_fingerprints(
+                    self._ledger(), root / "reports" / "playlist-import", []
+                )
+
+    def test_run_reports_import_adoption_in_summary_and_markdown(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = synthetic_repo(Path(tmp), ["https://tidal.com/track/1"])
+            synthetic_import(root, [{"id": "1", "isrc": "DKECA2295701"}])
+            ledger_path = root / "reports" / "tidal-maintenance" / "fingerprints.json"
+            summary = backfill.run(
+                root, FakeTransport(), ledger_path=ledger_path, api=None, limit=5
+            )
+            self.assertEqual(summary["adopted_from_imports"], 1)
+            self.assertEqual(summary["attempted"], 0, "adopted URLs leave the pending pool")
+            self.assertEqual(summary["remaining"], 0)
+            report = ledger_path.with_suffix(".md").read_text()
+            self.assertIn("adopted from playlist imports 1", report)
+
+
 class ReportTransparencyTest(unittest.TestCase):
     """The report must show pending statuses, dead anchors, and queue order (#402)."""
 
