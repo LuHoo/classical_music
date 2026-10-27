@@ -7,6 +7,7 @@ from html import escape as html_escape
 from itertools import groupby
 from pathlib import Path
 import re
+import shutil
 
 from ruamel.yaml import YAML
 from typing import Any
@@ -60,6 +61,7 @@ class PublicationSiteGenerator:
             self.adapter.snapshot = None
 
         self._reset_output_dir()
+        self._copy_theme_overrides()
 
         persons = self._sorted_values(self.adapter.persons)
         work_groups = self._sorted_values(self.adapter.work_groups)
@@ -104,6 +106,23 @@ class PublicationSiteGenerator:
         (self.output_dir / "composers").mkdir()
         (self.output_dir / "works").mkdir()
 
+    def _copy_theme_overrides(self) -> None:
+        """Carry repo-level theme overrides into the generated site source.
+
+        Jekyll builds with ``--source publication`` (issue #358), so the
+        collection is the whole site and repo-level theme overrides must be
+        part of the generated source. Missing overrides are skipped: a
+        repository without overrides simply builds an unstyled collection.
+        """
+        head_custom = self.repo_root / "_includes" / "head_custom.html"
+        if head_custom.is_file():
+            destination = self.output_dir / "_includes" / "head_custom.html"
+            destination.parent.mkdir(parents=True, exist_ok=True)
+            destination.write_bytes(head_custom.read_bytes())
+        assets = self.repo_root / "assets"
+        if assets.is_dir():
+            shutil.copytree(assets, self.output_dir / "assets", dirs_exist_ok=True)
+
     def _write_home(
         self,
         persons: list[dict[str, Any]],
@@ -114,7 +133,7 @@ class PublicationSiteGenerator:
         body = [
             "---",
             'title: "Collection"',
-            "permalink: /publication/",
+            "permalink: /",
             "nav_order: 1",
             "---",
             "",
@@ -130,7 +149,7 @@ class PublicationSiteGenerator:
             "</div>",
             "",
             '<p class="publication-actions">'
-            '<a href="{{ site.baseurl }}/publication/composers/">Browse composers</a>'
+            '<a href="{{ site.baseurl }}/composers/">Browse composers</a>'
             "</p>",
             "",
         ]
@@ -144,7 +163,7 @@ class PublicationSiteGenerator:
         body = [
             "---",
             'title: "Composers"',
-            "permalink: /publication/composers/",
+            "permalink: /composers/",
             "parent: Collection",
             "nav_order: 1",
             "---",
@@ -156,7 +175,7 @@ class PublicationSiteGenerator:
         for person in persons:
             count = len(works_by_composer.get(person["id"], []))
             body.append(
-                f'<li><a href="{{{{ site.baseurl }}}}/publication/composers/{person["id"]}/">'
+                f'<li><a href="{{{{ site.baseurl }}}}/composers/{person["id"]}/">'
                 f"{self._html(person['name'])}</a> "
                 f'<span class="publication-note">{count} works</span></li>'
             )
@@ -176,7 +195,7 @@ class PublicationSiteGenerator:
         body = [
             "---",
             f'title: "{self._front_matter(person["name"])}"',
-            f"permalink: /publication/composers/{person['id']}/",
+            f"permalink: /composers/{person['id']}/",
             "parent: Composers",
             "grand_parent: Collection",
             "---",
@@ -280,7 +299,7 @@ class PublicationSiteGenerator:
         entry = ('<span class="gem-mark" aria-label="Gem">💎</span> ' if work.get("gem") else "")
         title = f'<strong>{self._html(label)}</strong>'
         if performances:
-            entry += (f'<a class="work-title" href="{{{{ site.baseurl }}}}/publication/works/{work["id"]}/">'
+            entry += (f'<a class="work-title" href="{{{{ site.baseurl }}}}/works/{work["id"]}/">'
                       f'{title}</a>')
         else:
             entry += title
@@ -319,7 +338,7 @@ class PublicationSiteGenerator:
         body = [
             "---",
             f'title: "{self._front_matter(work["title"])}"',
-            f"permalink: /publication/works/{work['id']}/",
+            f"permalink: /works/{work['id']}/",
             "nav_exclude: true",
             "---",
             "",

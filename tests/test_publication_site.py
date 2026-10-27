@@ -86,8 +86,9 @@ def test_publication_links_match_explicit_directory_permalinks(tmp_path):
         front_matter = yaml.load(page.read_text().split("---", 2)[1])
         routes.add(front_matter["permalink"])
     assert len(routes) == len(pages)
-    assert "/publication/composers/bach/" in routes
-    assert "/publication/works/bach-cantata-1/" in routes
+    assert "/" in routes
+    assert "/composers/bach/" in routes
+    assert "/works/bach-cantata-1/" in routes
     for page in pages:
         for href in re.findall(r'href="\{\{ site.baseurl \}\}([^\"]+)"', page.read_text()):
             assert href in routes, f"{page.name} links to undeclared route {href}"
@@ -120,7 +121,7 @@ def test_generated_pages_show_works_without_performances(tmp_path):
     assert '<p class="recommendation-empty">No recommendation yet.</p>' in work_page
     assert "Cantata No. 2" in composer_page
     assert '<strong>Cantata No. 2</strong>' in composer_page
-    assert "/publication/works/bach-cantata-2/" not in composer_page
+    assert "/works/bach-cantata-2/" not in composer_page
 
 
 def test_work_groups_are_navigation_only_not_recommendations(tmp_path):
@@ -188,7 +189,7 @@ def test_work_pages_are_reachable_but_excluded_from_global_navigation(tmp_path):
     composer_page = (tmp_path / "publication" / "composers" / "bach.md").read_text(encoding="utf-8")
     work_page = (tmp_path / "publication" / "works" / "bach-cantata-1.md").read_text(encoding="utf-8")
 
-    assert "/publication/works/bach-cantata-1/" in composer_page
+    assert "/works/bach-cantata-1/" in composer_page
     assert "nav_exclude: true" in work_page
     assert "parent: Collection" not in work_page
 
@@ -213,8 +214,8 @@ def test_editorial_collection_order_and_work_specific_recommendations(tmp_path):
     assert '<a href="https://tidal.com/browse/track/123"><em>Monteverdi Choir, English Baroque Soloists</em></a>' in page
     assert "chamber version" in page and "choir and orchestra" in page
     assert "💎" in page
-    assert page.count('/publication/works/bach-cantata-1/') == 1
-    assert '/publication/works/bach-cantata-2/' not in page
+    assert page.count('/works/bach-cantata-1/') == 1
+    assert '/works/bach-cantata-2/' not in page
 
 
 def test_singleton_is_compact_with_dates_catalogue_and_partial_coverage(tmp_path):
@@ -283,7 +284,31 @@ def test_landing_page_contains_summary_and_browse_without_work_queue(tmp_path):
     page = (tmp_path / "publication" / "index.md").read_text()
     assert "Works Without Recommendations" not in page
     assert "no recommendation yet" not in page
-    assert "/publication/works/" not in page
-    assert "/publication/composers/" in page
+    assert "/works/" not in page
+    assert "/composers/" in page
     assert "<strong>2</strong><span>works</span>" in page
     assert "<strong>1</strong><span>works with recommendations</span>" in page
+
+
+def test_landing_page_is_the_site_root(tmp_path):
+    """The collection landing page must be the site root (issue #358)."""
+    _seed_repo(tmp_path)
+    PublicationSiteGenerator(tmp_path).generate()
+
+    front_matter = YAML(typ="safe").load((tmp_path / "publication" / "index.md").read_text().split("---", 2)[1])
+    assert front_matter["permalink"] == "/"
+
+
+def test_generated_source_carries_theme_overrides(tmp_path):
+    """Jekyll builds with --source publication, so theme overrides must travel along (issue #358)."""
+    _seed_repo(tmp_path)
+    (tmp_path / "_includes").mkdir()
+    (tmp_path / "_includes" / "head_custom.html").write_text("<link rel=stylesheet>", encoding="utf-8")
+    css = tmp_path / "assets" / "css" / "publication.css"
+    css.parent.mkdir(parents=True)
+    css.write_text("body {}", encoding="utf-8")
+
+    PublicationSiteGenerator(tmp_path).generate()
+
+    assert (tmp_path / "publication" / "_includes" / "head_custom.html").read_text(encoding="utf-8") == "<link rel=stylesheet>"
+    assert (tmp_path / "publication" / "assets" / "css" / "publication.css").read_text(encoding="utf-8") == "body {}"

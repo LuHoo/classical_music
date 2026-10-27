@@ -40,9 +40,21 @@ jobs:
       - run: python scripts/generate_publication_site.py
       - run: gem install bundler
       - run: bundle install
-      - run: bundle exec jekyll build
-      - run: test -f _site/publication/index.html
+      # Build only the generated collection (issue #358): the site root is
+      # the canonical collection, and internal repository material (docs/,
+      # reports/, data/, tests/) never enters the build, so it cannot deploy.
+      - run: bundle exec jekyll build --config _config.yml --source publication --destination _site
+      - run: test -f _site/index.html
+      # Fail-closed leak guard: the build output must contain only the collection.
+      - run: test ! -e _site/docs && test ! -e _site/report && test ! -e _site/reports && test ! -e _site/data && test ! -e _site/sources && test ! -e _site/tests && test ! -e _site/scripts && test ! -e _site/src
       - run: python scripts/check_publication_links.py
+      # Site preview for review: download the "site-preview" artifact from
+      # this run to evaluate the renewed site locally before merging (issue #358).
+      - uses: actions/upload-artifact@v7
+        if: github.event_name == 'pull_request'
+        with:
+          name: site-preview
+          path: _site
       - uses: peaceiris/actions-gh-pages@v4
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         with:
