@@ -312,3 +312,36 @@ def test_generated_source_carries_theme_overrides(tmp_path):
 
     assert (tmp_path / "publication" / "_includes" / "head_custom.html").read_text(encoding="utf-8") == "<link rel=stylesheet>"
     assert (tmp_path / "publication" / "assets" / "css" / "publication.css").read_text(encoding="utf-8") == "body {}"
+
+
+def test_theme_navigation_and_toc_do_not_duplicate_the_composer_index(tmp_path):
+    """Each composer appears exactly once on the Composers page (issue #404).
+
+    just-the-docs renders parent pages with a sidebar of nav children and an
+    automatic bottom "Table of Contents" of children; with 188 composer pages
+    that triples the index. The index is the navigation, so the theme extras
+    are switched off.
+    """
+    _seed_repo(tmp_path)
+    PublicationSiteGenerator(tmp_path).generate()
+
+    home = (tmp_path / "publication" / "index.md").read_text(encoding="utf-8")
+    composer_index = (tmp_path / "publication" / "composers" / "index.md").read_text(encoding="utf-8")
+    composer_page = (tmp_path / "publication" / "composers" / "bach.md").read_text(encoding="utf-8")
+
+    assert "has_toc: false" in home
+    assert "has_toc: false" in composer_index
+    assert "nav_exclude: true" in composer_page
+
+
+def test_composers_are_indexed_by_family_name(tmp_path):
+    """The composers index sorts by family name, not given name (issue #404)."""
+    _seed_repo(tmp_path)
+    _write_yaml(tmp_path / "data" / "persons" / "z-aaa.yaml", {"id": "z-aaa", "name": "Aaron Zz"})
+    _write_yaml(tmp_path / "data" / "persons" / "a-zzz.yaml", {"id": "a-zzz", "name": "Zed Aa"})
+
+    PublicationSiteGenerator(tmp_path).generate()
+
+    index = (tmp_path / "publication" / "composers" / "index.md").read_text(encoding="utf-8")
+    # Family names: Aa (Zed Aa) < Bach < Zz (Aaron Zz).
+    assert index.index("Zed Aa") < index.index("Johann Sebastian Bach") < index.index("Aaron Zz")

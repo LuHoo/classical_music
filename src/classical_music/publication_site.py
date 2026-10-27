@@ -135,6 +135,7 @@ class PublicationSiteGenerator:
             'title: "Collection"',
             "permalink: /",
             "nav_order: 1",
+            "has_toc: false",
             "---",
             "",
             "# Classical Music Collection",
@@ -166,6 +167,7 @@ class PublicationSiteGenerator:
             "permalink: /composers/",
             "parent: Collection",
             "nav_order: 1",
+            "has_toc: false",
             "---",
             "",
             "# Composers",
@@ -198,6 +200,7 @@ class PublicationSiteGenerator:
             f"permalink: /composers/{person['id']}/",
             "parent: Composers",
             "grand_parent: Collection",
+            "nav_exclude: true",
             "---",
             "",
             f"# {self._escape(person['name'])}",
@@ -426,8 +429,19 @@ class PublicationSiteGenerator:
 
     @staticmethod
     def _sorted_values(items: dict[str, Any] | list[dict[str, Any]]) -> list[dict[str, Any]]:
+        def sort_key(item: dict[str, Any]) -> tuple[str, ...]:
+            name = item.get("name")
+            if name:
+                # Persons are indexed by family name: the last token of the
+                # canonical name (the same convention as the page-pool family
+                # name match in the attribution pipeline). The full name
+                # breaks ties; Works keep their natural title order.
+                tokens = str(name).split()
+                return (tokens[-1].casefold(), str(name).casefold(), str(item.get("id") or ""))
+            return (str(item.get("title") or ""), str(item.get("id") or ""))
+
         values = list(items.values()) if isinstance(items, dict) else list(items)
-        return sorted(values, key=lambda item: (str(item.get("title") or item.get("name") or ""), str(item.get("id") or "")))
+        return sorted(values, key=sort_key)
 
     @staticmethod
     def _group_by(items: list[dict[str, Any]], key: str) -> dict[str, list[dict[str, Any]]]:

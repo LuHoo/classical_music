@@ -13,6 +13,15 @@ without recommendations.
 Categories form sections. Work Group headings appear only when a section has
 multiple Works in the same artistic family; singleton titles are not repeated.
 
+Composers are ordered by family name: the last token of the canonical Person
+name, with the full name as tiebreaker — the same family-name convention the
+attribution pipeline uses for its page pool. The composers index is the single
+navigation for composers (issue #404): composer pages are excluded from the
+theme's sidebar navigation (`nav_exclude: true`), and the Collection and
+Composers pages disable the theme's automatic child "Table of Contents"
+(`has_toc: false`), so a composer appears exactly once per page. The theme's
+search keeps indexing every page.
+
 ## Editorial collections
 
 Optional `data/publication/<composer-id>.yaml` files preserve curated collection
