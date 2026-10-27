@@ -310,6 +310,37 @@ class ImportAdoptionTest(unittest.TestCase):
             self.assertIn("adopted from playlist imports 1", report)
 
 
+    def test_stale_ledger_entries_do_not_inflate_coverage(self):
+        # Replaced or retired URLs keep their fingerprint in the ledger, but
+        # only canonical URLs count toward coverage (issue #412): known must
+        # never exceed total_unique_urls.
+        with tempfile.TemporaryDirectory() as tmp:
+            root = synthetic_repo(Path(tmp), ["https://tidal.com/track/1"])
+            ledger_path = root / "reports" / "tidal-maintenance" / "fingerprints.json"
+            ledger_path.parent.mkdir(parents=True)
+            ledger_path.write_text(
+                json.dumps(
+                    {
+                        "version": 1,
+                        "fingerprints": {
+                            "https://tidal.com/track/1": {"isrc": "DKECA2295701"},
+                            "https://tidal.com/track/999": {"isrc": "GBLLH2588619"},
+                            "https://tidal.com/track/12128399": {"isrc": "NLV912300001"},
+                        },
+                    }
+                )
+            )
+            summary = backfill.run(
+                root, FakeTransport(), ledger_path=ledger_path, api=None, limit=5
+            )
+            self.assertEqual(summary["total_unique_urls"], 1)
+            self.assertEqual(summary["known_fingerprints"], 1)
+            self.assertEqual(summary["remaining"], 0)
+            self.assertTrue(summary["known_fingerprints"] <= summary["total_unique_urls"])
+            report = ledger_path.with_suffix(".md").read_text()
+            self.assertIn("Known fingerprints: 1 / 1", report)
+
+
 class ReportTransparencyTest(unittest.TestCase):
     """The report must show pending statuses, dead anchors, and queue order (#402)."""
 
