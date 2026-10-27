@@ -312,7 +312,7 @@ class ImportAdoptionTest(unittest.TestCase):
 
     def test_stale_ledger_entries_do_not_inflate_coverage(self):
         # Replaced or retired URLs keep their fingerprint in the ledger, but
-        # only canonical URLs count toward coverage (issue #412): known must
+        # only canonical URLs count toward coverage (issue #413): known must
         # never exceed total_unique_urls.
         with tempfile.TemporaryDirectory() as tmp:
             root = synthetic_repo(Path(tmp), ["https://tidal.com/track/1"])
