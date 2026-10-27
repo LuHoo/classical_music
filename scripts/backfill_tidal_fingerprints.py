@@ -29,6 +29,7 @@ from classical_music.tidal_maintenance import (
 )
 
 LEDGER_VERSION = 1
+QUEUE_PREVIEW = 10
 
 
 def has_identifier(entry: dict) -> bool:
@@ -80,14 +81,25 @@ def adopt_round_fingerprints(ledger: dict, report_path: Path) -> int:
 
 def canonical_urls(root: Path) -> list[str]:
     records = inventory(root)
-    return sorted(
-        {
-            entry["url"]
-            for _, record in records
-            for entry in link_entries(record)
-            if entry.get("url")
-        }
-    )
+    return sorted({url for url, _ in url_references(records).items()})
+
+
+def url_references(records: list[tuple[Path, dict]]) -> dict[str, list[dict]]:
+    """Map each canonical Tidal URL to the performances that reference it."""
+    refs: dict[str, list[dict]] = {}
+    for path, record in records:
+        for entry in link_entries(record):
+            url = entry.get("url")
+            if not url:
+                continue
+            refs.setdefault(url, []).append(
+                {
+                    "performance": record.get("id"),
+                    "work": record.get("work_id"),
+                    "file": path.name,
+                }
+            )
+    return dict(sorted(refs.items()))
 
 
 def select_due(urls: list[str], ledger: dict, limit: int) -> list[str]:
@@ -132,7 +144,9 @@ def run(
 ) -> dict:
     ledger = load_ledger(ledger_path)
     adopted = adopt_round_fingerprints(ledger, report_path) if report_path else 0
-    urls = canonical_urls(root)
+    records = inventory(root)
+    refs = url_references(records)
+    urls = sorted(refs)
     now = datetime.now(UTC).isoformat()
     selected = select_due(urls, ledger, limit)
     captured = 0
@@ -142,6 +156,30 @@ def run(
         if has_identifier(entry):
             captured += 1
     known = sum(1 for e in ledger["fingerprints"].values() if has_identifier(e))
+
+    def pending_entry(url: str) -> dict:
+        return ledger["fingerprints"].get(url) or {}
+
+    status_counts: dict[str, int] = {}
+    for url in urls:
+        entry = pending_entry(url)
+        if has_identifier(entry):
+            continue
+        status = entry.get("status") or "never-attempted"
+        status_counts[status] = status_counts.get(status, 0) + 1
+    unavailable = [
+        {"url": url, "performances": refs[url]}
+        for url in urls
+        if pending_entry(url).get("status") == "unavailable" and not has_identifier(pending_entry(url))
+    ]
+    next_up = [
+        {
+            "url": url,
+            "status": pending_entry(url).get("status") or "never-attempted",
+            "last_checked": pending_entry(url).get("last_checked") or "-",
+        }
+        for url in select_due(urls, ledger, QUEUE_PREVIEW)
+    ]
     summary = {
         "checked_at": now,
         "total_unique_urls": len(urls),
@@ -150,6 +188,9 @@ def run(
         "attempted": len(selected),
         "captured": captured,
         "remaining": len(urls) - known,
+        "pending_status_counts": status_counts,
+        "unavailable": unavailable,
+        "next_up": next_up,
     }
     if ledger_path.resolve().is_relative_to((root / "data").resolve()):
         raise ValueError("Fingerprint ledger must live outside canonical data/")
@@ -170,7 +211,32 @@ def markdown(summary: dict) -> str:
         f"Remaining without fingerprint: {summary['remaining']}",
         "",
         "Operational only: fingerprints enable recovery; nothing is promoted automatically.",
+        "",
+        "## Pending URLs by status",
+        "",
     ]
+    for status, count in sorted(summary["pending_status_counts"].items()):
+        lines.append(f"- {status}: {count}")
+    lines += ["", f"## Confirmed unavailable ({len(summary['unavailable'])})", ""]
+    if summary["unavailable"]:
+        lines.append(
+            "Dead anchors without a fingerprint. Fix candidates: check these"
+            " performances and repair or replace the URL."
+        )
+        for item in summary["unavailable"]:
+            lines.append(f"- {item['url']}")
+            for ref in item["performances"]:
+                lines.append(
+                    f"  - performance `{ref['performance']}`"
+                    f" (work `{ref['work']}`, file `{ref['file']}`)"
+                )
+    else:
+        lines.append("None: no pending canonical URL has status `unavailable`.")
+    lines += ["", f"## Next up ({len(summary['next_up'])})", ""]
+    for item in summary["next_up"]:
+        lines.append(
+            f"- {item['url']} — {item['status']}, last checked {item['last_checked']}"
+        )
     return "\n".join(lines) + "\n"
 
 

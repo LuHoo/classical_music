@@ -179,6 +179,78 @@ class RunTest(unittest.TestCase):
         self.assertEqual(err.exception.code, 2)
 
 
+class ReportTransparencyTest(unittest.TestCase):
+    """The report must show pending statuses, dead anchors, and queue order (#402)."""
+
+    def _run(self, tmp, urls, pages=None):
+        root = synthetic_repo(Path(tmp), urls)
+        ledger_path = root / "reports" / "tidal-maintenance" / "fingerprints.json"
+        summary = backfill.run(
+            root, FakeTransport(pages), ledger_path=ledger_path, api=None, limit=5
+        )
+        return summary, ledger_path
+
+    def test_unavailable_list_names_only_canonical_dead_pending_urls(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            summary, _ = self._run(tmp, ["https://tidal.com/track/1", "https://tidal.com/track/2"])
+            self.assertEqual(len(summary["unavailable"]), 2)
+            item = summary["unavailable"][0]
+            self.assertEqual(item["url"], "https://tidal.com/track/1")
+            self.assertEqual(
+                item["performances"],
+                [
+                    {
+                        "performance": "performance-0",
+                        "work": "work-0",
+                        "file": "performance-0.yaml",
+                    }
+                ],
+                "every dead anchor must name the performance to repair",
+            )
+
+    def test_status_counts_and_next_up_reflect_select_due_order(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            summary, _ = self._run(tmp, [f"https://tidal.com/track/{n}" for n in range(1, 4)])
+            self.assertEqual(
+                summary["pending_status_counts"], {"unavailable": 3}
+            )
+            self.assertEqual(
+                [item["url"] for item in summary["next_up"]],
+                [f"https://tidal.com/track/{n}" for n in range(1, 4)],
+            )
+            self.assertTrue(all(item["last_checked"] != "-" for item in summary["next_up"]))
+
+    def test_next_up_is_empty_when_everything_has_a_fingerprint(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            summary, _ = self._run(tmp, ["https://tidal.com/track/1"])
+            root = Path(tmp)
+            ledger = json.loads(
+                (root / "reports/tidal-maintenance/fingerprints.json").read_text()
+            )
+            ledger["fingerprints"]["https://tidal.com/track/1"] = {
+                "isrc": "GBLLH2588619"
+            }
+            ledger_path = root / "reports/tidal-maintenance/fingerprints.json"
+            ledger_path.write_text(json.dumps(ledger))
+            summary = backfill.run(
+                root, FakeTransport(), ledger_path=ledger_path, api=None, limit=5
+            )
+            self.assertEqual(summary["next_up"], [])
+            self.assertEqual(summary["unavailable"], [])
+            self.assertEqual(summary["pending_status_counts"], {})
+
+    def test_markdown_renders_the_new_sections(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            summary, ledger_path = self._run(tmp, ["https://tidal.com/track/1"])
+            report = ledger_path.with_suffix(".md").read_text()
+            self.assertIn("## Pending URLs by status", report)
+            self.assertIn("- unavailable: 1", report)
+            self.assertIn("## Confirmed unavailable (1)", report)
+            self.assertIn("https://tidal.com/track/1", report)
+            self.assertIn("performance-0.yaml", report)
+            self.assertIn("## Next up (1)", report)
+
+
 class WorkflowContractTest(unittest.TestCase):
     def test_backfill_workflow_is_bounded_and_read_only(self):
         from ruamel.yaml import YAML as _YAML
