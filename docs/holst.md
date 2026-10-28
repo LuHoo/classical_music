@@ -27,11 +27,11 @@ nav_order: 1
 
 **Songs of the West**,  Op. 21/1, H. 86 (1906, 1907)
 
-**A Somerset Rhapsody**,  Op. 21/2, H. 87 (1906, 1907) [*Royal Scottish National Orchestra, David Lloyd-Jones*](https://tidal.com/browse/track/73941588)
+**A Somerset Rhapsody**,  Op. 21/2, H. 87 (1906, 1907) [*Royal Scottish National Orchestra, David Lloyd-Jones*](https://tidal.com/track/73941588)
 
 **2 Songs without Words**, for chamber orchestra,  Op. 22, H. 88 (1906) [*Royal Liverpool Philharmonic Orchestra, Andrew Manze*](https://tidal.com/track/456881053)
 
-**Beni Mora: Oriental Suite**,  Op. 29/1, H. 107 (1909–1910) [*Royal Scottish National Orchestra, David Lloyd-Jones*](https://tidal.com/browse/track/73941589)
+**Beni Mora: Oriental Suite**,  Op. 29/1, H. 107 (1909–1910) [*Royal Scottish National Orchestra, David Lloyd-Jones*](https://tidal.com/track/73941589)
 
 **Morris Dance Tunes** (1910)
 
@@ -39,11 +39,11 @@ nav_order: 1
 
 **St Paul's Suite**, for string orchestra,  Op. 29/2, H. 118 (1912–1913) [*Royal Liverpool Philharmonic Orchestra, Andrew Manze*](https://tidal.com/track/456881058/u)
 
-**The Planets**, for orchestra and female chorus,  Op. 32, H. 125 (1914–1916) [*Melbourne Sypmphony Orchestra, Jaime Martin*](https://tidal.com/browse/track/439102722/u)
+**The Planets**, for orchestra and female chorus,  Op. 32, H. 125 (1914–1916) [*Melbourne Sypmphony Orchestra, Jaime Martin*](https://tidal.com/track/439102722/u)
 
 **Japanese Suite**,  Op. 33, H. 126 (1915)
 
-**A Fugal Overture**,  Op. 40/1, H. 151 (1922)  [*Royal Scottish National Orchestra, David Lloyd-Jones*](https://tidal.com/browse/track/73941591/u)
+**A Fugal Overture**,  Op. 40/1, H. 151 (1922)  [*Royal Scottish National Orchestra, David Lloyd-Jones*](https://tidal.com/track/73941591/u)
 
 💎**Egdon Heath (A Homage to Thomas Hardy)**,  Op. 47, H. 172 (1927) [*Royal Liverpool Philharmonic Orchestra, Andrew Manze*](https://tidal.com/track/456881052/u)
 
@@ -51,7 +51,7 @@ nav_order: 1
 
 **Fugue à la Gigue** (1928)
 
-**Hammersmith**,  Op. 52, H. 178 (1930, 1931) [*Royal Scottish National Orchestra, David Lloyd-Jones*](https://tidal.com/browse/track/73941593/u)
+**Hammersmith**,  Op. 52, H. 178 (1930, 1931) [*Royal Scottish National Orchestra, David Lloyd-Jones*](https://tidal.com/track/73941593/u)
 
 **Jazz-Band Piece (Mr Shilkret's Maggot)**, H. 185 (1932)
 
@@ -65,7 +65,7 @@ nav_order: 1
 
 **A Song of the Night**, for violin and orchestra,  Op. 19/1, H. 74 (1905)
 
-**Invocation**, for cello and orchestra,  Op. 19/2, H. 75 (1911) [*Tim Hugh, Royal Scottish National Orchestra, David Lloyd-Jones*](https://tidal.com/browse/track/73941590/u)
+**Invocation**, for cello and orchestra,  Op. 19/2, H. 75 (1911) [*Tim Hugh, Royal Scottish National Orchestra, David Lloyd-Jones*](https://tidal.com/track/73941590/u)
 
 **A Fugal Concerto**, for flute, oboe (or 2 violins) and string orchestra,  Op. 40/2, H. 152 (1923) [*Royal Liverpool Philharmonic Orchestra, Andrew Manze*](https://tidal.com/track/456881055/u)
 

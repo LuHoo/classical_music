@@ -9,37 +9,37 @@ nav_order: 1
 
 ## Symphonies
 
-**Symphony No. 1 in C minor (The Bells of Zlonice)**, B. 9 (1865) [*Czech Philharmonic, Jiri Behlohlavek*](https://tidal.com/browse/track/77552640/u)
+**Symphony No. 1 in C minor (The Bells of Zlonice)**, B. 9 (1865) [*Czech Philharmonic, Jiri Behlohlavek*](https://tidal.com/track/77552640/u)
 
-**Symphony No. 2 in B♭ major**, B. 12 (1865) [*Czech Philharmonic, Jiri Behlohlavek*](https://tidal.com/browse/track/77552647/u)
+**Symphony No. 2 in B♭ major**, B. 12 (1865) [*Czech Philharmonic, Jiri Behlohlavek*](https://tidal.com/track/77552647/u)
 
-**Symphony No. 3 in E♭ major**, B. 34 (1873) [*Czech Philharmonic, Jiri Behlohlavek*](https://tidal.com/browse/track/77552654/u)
+**Symphony No. 3 in E♭ major**, B. 34 (1873) [*Czech Philharmonic, Jiri Behlohlavek*](https://tidal.com/track/77552654/u)
 
-**Symphony No. 4 in D minor**, B. 41 (1874) [*Czech Philharmonic, Jiri Behlohlavek*](https://tidal.com/browse/track/77552660/u)
+**Symphony No. 4 in D minor**, B. 41 (1874) [*Czech Philharmonic, Jiri Behlohlavek*](https://tidal.com/track/77552660/u)
 
-**Symphony No. 5 in F major**, B. 54 (1875) [*Czech Philharmonic, Jiri Behlohlavek*](https://tidal.com/browse/track/77552664/u)
+**Symphony No. 5 in F major**, B. 54 (1875) [*Czech Philharmonic, Jiri Behlohlavek*](https://tidal.com/track/77552664/u)
 
-**Symphony No. 6 in D major**, B. 112 (1880) [*Bamberg Symphony Orchestra, Jakob Hrusa*](https://tidal.com/browse/track/248897106/u)
+**Symphony No. 6 in D major**, B. 112 (1880) [*Bamberg Symphony Orchestra, Jakob Hrusa*](https://tidal.com/track/248897106/u)
 
-**Symphony No. 7 in D minor**, B. 141 (1884-1885) [*Los Angeles Philharmonic, Gustavo Dudaumel*](https://tidal.com/browse/track/239092567/u)
+**Symphony No. 7 in D minor**, B. 141 (1884-1885) [*Los Angeles Philharmonic, Gustavo Dudaumel*](https://tidal.com/track/239092567/u)
 
-**Symphony No. 8 in G major**, B. 163 (1889) [*Los Angeles Philharmonic, Gustavo Dudaumel*](https://tidal.com/browse/track/239092572/u)
+**Symphony No. 8 in G major**, B. 163 (1889) [*Los Angeles Philharmonic, Gustavo Dudaumel*](https://tidal.com/track/239092572/u)
 
-**Symphony No. 9 in E minor (From the New World)**, B. 178 (1893) [*Los Angeles Philharmonic, Gustavo Dudaumel*](https://tidal.com/browse/track/239092576/u)
+**Symphony No. 9 in E minor (From the New World)**, B. 178 (1893) [*Los Angeles Philharmonic, Gustavo Dudaumel*](https://tidal.com/track/239092576/u)
 
 ## Orchestral works
 
 **7 Interludes**, B. 15 (1867)
 
-**Nocturne in B**, B. 47 (1875) [*Baltimore Symphony Orchestra, Marin Alsop*](https://tidal.com/browse/track/12611548/u)
+**Nocturne in B**, B. 47 (1875) [*Baltimore Symphony Orchestra, Marin Alsop*](https://tidal.com/track/12611548/u)
 
 **Serenade for Strings in E major**, B. 52 (1875) [*Orpheus Chamber Orchestra*](http://www.tidal.com/track/4849433)
 
-**Symphonic Variations**, B. 70 (1877) [*Budapest Festival Orchestra, Iván Fischer*](https://tidal.com/browse/track/269506328/u)
+**Symphonic Variations**, B. 70 (1877) [*Budapest Festival Orchestra, Iván Fischer*](https://tidal.com/track/269506328/u)
 
-**Slavonic Dances Series I** B. 83 (1878) [*Czech Philharmonic, Jiri Behlohlavek*](https://tidal.com/browse/track/77610824/u)
+**Slavonic Dances Series I** B. 83 (1878) [*Czech Philharmonic, Jiri Behlohlavek*](https://tidal.com/track/77610824/u)
 
-**Slavonic Dances Series II** B. 147 (1887) [*Czech Philharmonic, Jiri Behlohlavek*](https://tidal.com/browse/track/77610832/u)
+**Slavonic Dances Series II** B. 147 (1887) [*Czech Philharmonic, Jiri Behlohlavek*](https://tidal.com/track/77610832/u)
 
 **3 Slavonic Rhapsodies**, B. 86 (1878)
 
@@ -55,7 +55,7 @@ nav_order: 1
 
 **Legends**, B. 122 (1881) [*WDR Sinfonieorchester, Cristian Măcelaru*](http://www.tidal.com/track/237899997)
 
-**Scherzo capriccioso**, B. 131 (1883) [*Baltimore Symphony Orchestra, Marin Alsop*](https://tidal.com/browse/track/12611549/u)
+**Scherzo capriccioso**, B. 131 (1883) [*Baltimore Symphony Orchestra, Marin Alsop*](https://tidal.com/track/12611549/u)
 
 ## Overtures
 
@@ -81,15 +81,15 @@ nav_order: 1
 
 **Symphonic Poem (Rhapsody) in A minor**, B. 44 (1874)
 
-**The Water Goblin**, B. 195 (1896) [*Berliner Philharmoniker, Sir Simon Rattle*](https://tidal.com/browse/track/68735941/u)
+**The Water Goblin**, B. 195 (1896) [*Berliner Philharmoniker, Sir Simon Rattle*](https://tidal.com/track/68735941/u)
 
-**The Noon Witch**, B. 196 (1896) [*Berliner Philharmoniker, Sir Simon Rattle*](https://tidal.com/browse/track/68735938/u)
+**The Noon Witch**, B. 196 (1896) [*Berliner Philharmoniker, Sir Simon Rattle*](https://tidal.com/track/68735938/u)
 
-**The Golden Spinning Wheel**, B. 197 (1896) [*Berliner Philharmoniker, Sir Simon Rattle*](https://tidal.com/browse/track/68735930/u)
+**The Golden Spinning Wheel**, B. 197 (1896) [*Berliner Philharmoniker, Sir Simon Rattle*](https://tidal.com/track/68735930/u)
 
-**The Wild Dove**, B. 198 (1896) [*Berliner Philharmoniker, Sir Simon Rattle*](https://tidal.com/browse/track/68735934/u)
+**The Wild Dove**, B. 198 (1896) [*Berliner Philharmoniker, Sir Simon Rattle*](https://tidal.com/track/68735934/u)
 
-**A Hero's Song**, B. 199 (1897) [*Prague Radio Symphony Orchestra, Alois Klima*](https://tidal.com/browse/track/224394192/u)
+**A Hero's Song**, B. 199 (1897) [*Prague Radio Symphony Orchestra, Alois Klima*](https://tidal.com/track/224394192/u)
 
 ## Concertante works
 
@@ -99,9 +99,9 @@ nav_order: 1
 
 **Cello Concerto in B minor**, B. 191 (1894-1895) [*Kian Soltani, Staatskapelle Berlin, Daniel Barenboim*](http://www.tidal.com/track/150529953)
 
-**Rondo in G minor**, B. 181 (1893) [*Daniel Müller-Schott, NDR Sinfonieorchester, Michael Sanderling*](https://tidal.com/browse/track/64473233/u)
+**Rondo in G minor**, B. 181 (1893) [*Daniel Müller-Schott, NDR Sinfonieorchester, Michael Sanderling*](https://tidal.com/track/64473233/u)
 
-**Silent Woods**, B. 182 (1893) [*Daniel Müller-Schott, NDR Sinfonieorchester, Michael Sanderling*](https://tidal.com/browse/track/64473232/u)
+**Silent Woods**, B. 182 (1893) [*Daniel Müller-Schott, NDR Sinfonieorchester, Michael Sanderling*](https://tidal.com/track/64473232/u)
 
 ## Piano and orchestra
 
@@ -109,11 +109,11 @@ nav_order: 1
 
 ### Violin and orchestra
 
-**Romance in F minor for violin and orchestra**, B. 39 (1873) [vn, str-orch *Niek Baar, Concertgebouw Chamber Orchestra*](http://www.tidal.com/track/269514317) [vn, orch *Jan Mrácek, Czech National Symphony Orchestra, James Judd*](https://tidal.com/browse/track/61944299/u)
+**Romance in F minor for violin and orchestra**, B. 39 (1873) [vn, str-orch *Niek Baar, Concertgebouw Chamber Orchestra*](http://www.tidal.com/track/269514317) [vn, orch *Jan Mrácek, Czech National Symphony Orchestra, James Judd*](https://tidal.com/track/61944299/u)
 
-**Mazurka in E minor**, B. 90 (1879) [*Jan Mrácek, Czech National Symphony Orchestra, James Judd*](https://tidal.com/browse/track/61944300/u)
+**Mazurka in E minor**, B. 90 (1879) [*Jan Mrácek, Czech National Symphony Orchestra, James Judd*](https://tidal.com/track/61944300/u)
 
-**Violin Concerto in A minor**, B. 96/108 (1879/1880) [*Jan Mrácek, Czech National Symphony Orchestra, James Judd*](https://tidal.com/browse/track/61944296/u)
+**Violin Concerto in A minor**, B. 96/108 (1879/1880) [*Jan Mrácek, Czech National Symphony Orchestra, James Judd*](https://tidal.com/track/61944296/u)
 
 ## Chamber music
 
@@ -201,7 +201,7 @@ Sonata in F major, B. 106 (1880)
 
 Ballade in D minor, B. 139 (1884)
 
-Romantic Pieces, B. 150 (1887) [*Jan Mrácek, Lukás Klánsky*](https://tidal.com/browse/track/61944301/u)
+Romantic Pieces, B. 150 (1887) [*Jan Mrácek, Lukás Klánsky*](https://tidal.com/track/61944301/u)
 
 Sonatina in G major, B. 183 (1893)
 

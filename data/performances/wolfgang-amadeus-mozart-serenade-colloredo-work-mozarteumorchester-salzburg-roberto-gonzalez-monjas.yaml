@@ -6,7 +6,7 @@ source:
   line: '150'
 links:
   tidal:
-    url: https://tidal.com/browse/track/294065326?u
+    url: https://tidal.com/track/294065326
 performers:
 - name: Mozarteumorchester Salzburg
   role: performer

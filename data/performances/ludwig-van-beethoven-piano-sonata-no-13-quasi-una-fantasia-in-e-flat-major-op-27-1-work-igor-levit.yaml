@@ -5,7 +5,7 @@ performers:
     role: "performer"
 links:
   tidal:
-    url: "https://tidal.com/browse/track/113297817"
+    url: "https://tidal.com/track/113297817"
 source:
   file: "docs/beethoven.md"
   line: "338"

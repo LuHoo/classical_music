@@ -9,7 +9,7 @@ nav_order: 1
 
 **Vanessa**, Op. 32 (1956-57, 1964)
 
-**A Hand of Bridge**, Op. 35 (1959) [*Lesley Craigie, Royal SNO, Marin Alsop*](https://tidal.com/browse/track/55841797)
+**A Hand of Bridge**, Op. 35 (1959) [*Lesley Craigie, Royal SNO, Marin Alsop*](https://tidal.com/track/55841797)
 
 **Antony and Cleopatra**, Op. 40 (1966, 1975) 
 
@@ -23,19 +23,19 @@ nav_order: 1
 
 ## Orchestral
 
-**Serenade (str-orch)**, Op. 1 (1944) [*Royal SNO, Marin Alsop*](https://tidal.com/browse/track/12017674)
+**Serenade (str-orch)**, Op. 1 (1944) [*Royal SNO, Marin Alsop*](https://tidal.com/track/12017674)
 
 **Overture to "The School for Scandal"**, Op. 5 (1931) [*New Zealand SO, Andrew Schenck*](https://tidal.com/album/313229002)
 
 💎 **Music for a Scene from Shelley**, Op. 7 (1933) [*New Zealand SO, Andrew Schenck*](https://tidal.com/album/313229002)
 
-**First Symphony (in One Movement)**, Op. 9 (1935-1936, 1942-1943) [*Baltimore SO, David Zinman*](https://tidal.com/browse/track/4358823)
+**First Symphony (in One Movement)**, Op. 9 (1935-1936, 1942-1943) [*Baltimore SO, David Zinman*](https://tidal.com/track/4358823)
 
 **Adagio for Strings**, Op. 11a (1936) [*New Zealand SO, Andrew Schenck*](https://tidal.com/album/313229002)
 
 **(First) Essay for Orchestra**, Op. 12 (1938) [*New Zealand SO, Andrew Schenck*](https://tidal.com/album/313229002)
 
-**Second Essay for Orchestra**, Op. 17 (1942) [*Royal SNO, Marin Alsop*](https://tidal.com/browse/track/284715592)
+**Second Essay for Orchestra**, Op. 17 (1942) [*Royal SNO, Marin Alsop*](https://tidal.com/track/284715592)
 
 **Symphony No. 2**, Op. 19 (1944, 1947) [*New Zealand SO, Andrew Schenck*](https://tidal.com/album/313229002)
 
@@ -43,37 +43,37 @@ nav_order: 1
 
 **Horizon (Chamber orchestra)** (1945) 
 
-**Medea, Suite**, Op. 23 (1947) [*Royal SNO, Marin Alsop*](https://tidal.com/browse/track/12020006)
+**Medea, Suite**, Op. 23 (1947) [*Royal SNO, Marin Alsop*](https://tidal.com/track/12020006)
 
-**Medea's Dance of Vengeance**, Op. 23a (1955) [*Royal SNO, Marin Alsop*](https://tidal.com/browse/track/12020251)
+**Medea's Dance of Vengeance**, Op. 23a (1955) [*Royal SNO, Marin Alsop*](https://tidal.com/track/12020251)
 
 **Intermezzo from the Opera Vanessa** (1958)	
 
-**Die Natali, Chorale Preludes for Christmas**, Op. 37 (1960) [*Royal SNO, Marin Alsop*](https://tidal.com/browse/track/12020247)
+**Die Natali, Chorale Preludes for Christmas**, Op. 37 (1960) [*Royal SNO, Marin Alsop*](https://tidal.com/track/12020247)
 
-**A Fadograph of a Yestern Scene**, Op. 44 (1971) [*Royal SNO, Marin Alsop*](https://tidal.com/browse/track/55841797)
+**A Fadograph of a Yestern Scene**, Op. 44 (1971) [*Royal SNO, Marin Alsop*](https://tidal.com/track/55841797)
 
-**Third Essay for Orchestra**, Op. 47 (1978) [*Royal SNO, Marin Alsop*](https://tidal.com/browse/track/284715592)
+**Third Essay for Orchestra**, Op. 47 (1978) [*Royal SNO, Marin Alsop*](https://tidal.com/track/284715592)
 
 ## Concert Band
 
-**Commando March** (1943) [*Royal SNO, Marin Alsop*](https://tidal.com/browse/track/284715592)
+**Commando March** (1943) [*Royal SNO, Marin Alsop*](https://tidal.com/track/284715592)
 
 **Funeral March** (1943) 
 
 ## Concertante
 
-💎 **Violin Concerto**, Op. 14 (1939-1940) [*Esther Yoo, Royal Philharmonic Orchestra, Vasily Petrenko*](https://tidal.com/browse/track/272245795?u)
+💎 **Violin Concerto**, Op. 14 (1939-1940) [*Esther Yoo, Royal Philharmonic Orchestra, Vasily Petrenko*](https://tidal.com/track/272245795)
 
-**Capricorn Concerto**, Op. 21 (1944) [*Stephane Rancourt, Royal SNO, Marin Alsop*](https://tidal.com/browse/track/55841797)
+**Capricorn Concerto**, Op. 21 (1944) [*Stephane Rancourt, Royal SNO, Marin Alsop*](https://tidal.com/track/55841797)
 
-**Cello Concerto**, Op. 22 (1945) [*Wendy Warner, Royal SNO, Marin Alsop*](https://tidal.com/browse/track/12020006)
+**Cello Concerto**, Op. 22 (1945) [*Wendy Warner, Royal SNO, Marin Alsop*](https://tidal.com/track/12020006)
 
 **Toccata Festiva**, Op. 36  (1960)
 
-**Piano Concerto**, Op. 38 (1961-1962) [*Stephen Prutsman, Royal SNO, Marin Alsop*](https://tidal.com/browse/track/12020247)
+**Piano Concerto**, Op. 38 (1961-1962) [*Stephen Prutsman, Royal SNO, Marin Alsop*](https://tidal.com/track/12020247)
 
-**Oboe Concerto**, Op. 48 (1977-1978) [*Stephane Rancourt, Royal SNO, Marin Alsop*](https://tidal.com/browse/track/55841803)
+**Oboe Concerto**, Op. 48 (1977-1978) [*Stephane Rancourt, Royal SNO, Marin Alsop*](https://tidal.com/track/55841803)
 
 ## Chamber
 
@@ -85,7 +85,7 @@ nav_order: 1
 
 **Cello Sonata**, Op. 6 (1932) 
 
-**String Quartet**, Op. 11 (1936) [*Escher String Quartet*](https://tidal.com/browse/track/190698277)
+**String Quartet**, Op. 11 (1936) [*Escher String Quartet*](https://tidal.com/track/190698277)
 
 **Commemorative March**, vn/vc/pf (1941) 
 
@@ -93,13 +93,13 @@ nav_order: 1
 
 **Adventure** (1954) 
 
-**Summer Music for Wind Quintet**, Op. 31 (1956) [*Bergen Wind Quintet*](https://tidal.com/browse/track/12103255)
+**Summer Music for Wind Quintet**, Op. 31 (1956) [*Bergen Wind Quintet*](https://tidal.com/track/12103255)
 
 **Chorale for Washington Cathedral** (1960s) 
 
 **Canzone, fl or vn/pf**, Op. 38a (1961) 
 
-**Mutations from Bach** (1967) [*Royal SNO, Marin Alsop*](https://tidal.com/browse/track/284715592)
+**Mutations from Bach** (1967) [*Royal SNO, Marin Alsop*](https://tidal.com/track/284715592)
 
 ## Carillon
 
@@ -151,5 +151,5 @@ nav_order: 1
 
 ## Vocal (selection)
 
-💎 **Knoxville: Summer of 1915** (1947), Op. 24 [*Karina Gauvin, Royal SNO, Marin Alsop*](https://tidal.com/browse/track/284715592)
+💎 **Knoxville: Summer of 1915** (1947), Op. 24 [*Karina Gauvin, Royal SNO, Marin Alsop*](https://tidal.com/track/284715592)
 

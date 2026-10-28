@@ -15,7 +15,7 @@ nav_order: 1
 
 **Concerto for 2 violins and orchestra – Double Concerto in D min.**, BWV 1043 (1730–1731 or earlier) [*Shunske Sato, Zefira Valova, Il Pomo d'Oro, Zefira Valova*](http://www.tidal.com/track/95609833)
 
-**Concerto for flute, violin, harpsichord and orchestra – Triple Concerto in A min.**, BWV 1044 (1727 or later) [*Francesco Corti, Il Pomo d'Oro*](https://tidal.com/browse/track/305308966?u)
+**Concerto for flute, violin, harpsichord and orchestra – Triple Concerto in A min.**, BWV 1044 (1727 or later) [*Francesco Corti, Il Pomo d'Oro*](https://tidal.com/track/305308966)
 
 **Cantata opening: "Concerto" (Symphonic movement for violin and orchestra) in D maj.**, BWV 1045 (1743–1746)
 
@@ -35,33 +35,33 @@ nav_order: 1
 
 **Brandenburg Concerto No. 6 in B♭ maj.**, BWV 1051 (1721-03-24) [*Antoine Tamestit, Akademie für Alte Musik Berlin*](http://www.tidal.com/track/197388379)
 
-**Concerto for harpsichord and orchestra No. 1(revised version) in D min.**, BWV 1052.2 (c.1738) [*Francesco Corti, Il Pomo d'Oro*](https://tidal.com/browse/track/306156138?u)
+**Concerto for harpsichord and orchestra No. 1(revised version) in D min.**, BWV 1052.2 (c.1738) [*Francesco Corti, Il Pomo d'Oro*](https://tidal.com/track/306156138)
 
 **Concerto for harpsichord and orchestra No. 1(early version) in D min.**, BWV 1052.1 (before 1726)
 
-**Concerto for harpsichord and orchestra No. 2 in E maj.**, BWV 1053 (c.1738) [*Francesco Corti, Il Pomo d'Oro*](https://tidal.com/browse/track/306156141?u)
+**Concerto for harpsichord and orchestra No. 2 in E maj.**, BWV 1053 (c.1738) [*Francesco Corti, Il Pomo d'Oro*](https://tidal.com/track/306156141)
 
-**Concerto for harpsichord and orchestra No. 3 in D maj.**, BWV 1054 (c.1738) [*Francesco Corti, Il Pomo d'Oro*](https://tidal.com/browse/track/305308956?u)
+**Concerto for harpsichord and orchestra No. 3 in D maj.**, BWV 1054 (c.1738) [*Francesco Corti, Il Pomo d'Oro*](https://tidal.com/track/305308956)
 
-**Concerto for harpsichord and orchestra No. 4 in A maj.**, BWV 1055 (c.1738) [*Francesco Corti, Il Pomo d'Oro*](https://tidal.com/browse/track/306156147?u)
+**Concerto for harpsichord and orchestra No. 4 in A maj.**, BWV 1055 (c.1738) [*Francesco Corti, Il Pomo d'Oro*](https://tidal.com/track/306156147)
 
-**Concerto for harpsichord and orchestra No. 5 in F min.**, BWV 1056 (c.1738) [*Francesco Corti, Il Pomo d'Oro*](https://tidal.com/browse/track/305308959?u)
+**Concerto for harpsichord and orchestra No. 5 in F min.**, BWV 1056 (c.1738) [*Francesco Corti, Il Pomo d'Oro*](https://tidal.com/track/305308959)
 
 **Violin Concerto No. 5 in G minor**, BWV 1056R (arr. Johann Nikolaus Forkel) [*Shunske Sato, Il Pomo d'Oro, Zefira Valova*](http://www.tidal.com/track/95609836)
 
-**Concerto for harpsichord and orchestra No. 6 in F maj.**, BWV 1057 (c.1738) [*Francesco Corti, Il Pomo d'Oro*](https://tidal.com/browse/track/305308963?u)
+**Concerto for harpsichord and orchestra No. 6 in F maj.**, BWV 1057 (c.1738) [*Francesco Corti, Il Pomo d'Oro*](https://tidal.com/track/305308963)
 
-**Concerto for harpsichord and orchestra No. 7 in G min.**, BWV 1058 (c.1738) [*Francesco Corti, Il Pomo d'Oro*](https://tidal.com/browse/track/306156144?u)
+**Concerto for harpsichord and orchestra No. 7 in G min.**, BWV 1058 (c.1738) [*Francesco Corti, Il Pomo d'Oro*](https://tidal.com/track/306156144)
 
 **Concerto for harpsichord and orchestra No. 8(abandoned fragment of 1st movement) in D min.**, BWV 1059 (c.1738) [Reconstr. F. Corti:*Francesco Corti, Emmanuel Laporte, Il Pomo d'Oro*]
 
-**Concerto for 2 harpsichords and orchestra No. 1 in C min.**, BWV 1060 (c.1736) [*Francesco Corti, Andrea Buccarella, Il Pomo d'Oro*](https://tidal.com/browse/track/305311228?u)
+**Concerto for 2 harpsichords and orchestra No. 1 in C min.**, BWV 1060 (c.1736) [*Francesco Corti, Andrea Buccarella, Il Pomo d'Oro*](https://tidal.com/track/305311228)
 
-**Concerto for 2 harpsichords and orchestra No. 2 in C maj.**, BWV 1061.2 (after 1732–1733) [*Francesco Corti, Andrea Buccarella, Il Pomo d'Oro*](https://tidal.com/browse/track/305311222?u)
+**Concerto for 2 harpsichords and orchestra No. 2 in C maj.**, BWV 1061.2 (after 1732–1733) [*Francesco Corti, Andrea Buccarella, Il Pomo d'Oro*](https://tidal.com/track/305311222)
 
 **Concerto for 2 harpsichords (No. 2) in C maj.**, BWV 1061.1 (1732–1733 or earlier)
 
-**Concerto for 2 harpsichords and orchestra No. 3 in C min.**, BWV 1062 (1736) [*Francesco Corti, Andrea Buccarella, Il Pomo d'Oro*](https://tidal.com/browse/track/305311219?u)
+**Concerto for 2 harpsichords and orchestra No. 3 in C min.**, BWV 1062 (1736) [*Francesco Corti, Andrea Buccarella, Il Pomo d'Oro*](https://tidal.com/track/305311219)
 
 **Concerto for 3 harpsichords and orchestra No. 1 in D min.**, BWV 1063 (c.1730)
 
@@ -69,13 +69,13 @@ nav_order: 1
 
 **Concerto for 4 harpsichords and orchestra in A min.**, BWV 1065 (c.1730)
 
-**Orchestral Suite No. 1 in C maj.**, BWV 1066 (May 1724–End 1725) [*Akademie für Alte Musik Berlin*](https://tidal.com/browse/track/47622471?u)
+**Orchestral Suite No. 1 in C maj.**, BWV 1066 (May 1724–End 1725) [*Akademie für Alte Musik Berlin*](https://tidal.com/track/47622471)
 
-**Orchestral Suite No. 2 in B min.**, BWV 1067 (1738–1739) [*Akademie für Alte Musik Berlin*](https://tidal.com/browse/track/47622483?u)
+**Orchestral Suite No. 2 in B min.**, BWV 1067 (1738–1739) [*Akademie für Alte Musik Berlin*](https://tidal.com/track/47622483)
 
-**Orchestral Suite No. 3 in D maj.**, BWV 1068 (c.1730) [*Akademie für Alte Musik Berlin*](https://tidal.com/browse/track/47622466?u)
+**Orchestral Suite No. 3 in D maj.**, BWV 1068 (c.1730) [*Akademie für Alte Musik Berlin*](https://tidal.com/track/47622466)
 
-**Orchestral Suite No. 4 in D maj.**, BWV 1069 (before late 1727) [*Akademie für Alte Musik Berlin*](https://tidal.com/browse/track/47622478?u)
+**Orchestral Suite No. 4 in D maj.**, BWV 1069 (before late 1727) [*Akademie für Alte Musik Berlin*](https://tidal.com/track/47622478)
 
 ## Orchestral arrangements
 
@@ -87,7 +87,7 @@ nav_order: 1
 
 **Fugue in G Minor**, BWV 578 [*Los Angeles Philharmonic, Esa-Pekka Salonen*](http://www.tidal.com/track/2924759)
 
-**Chorale setting "Herr Gott, nun schleuß den Himmel auf"**, BWV 617 (Orgelbüchlein No. 19) (c.1714–1716) [*Simone Dinnerstein, Baroklyn*](https://tidal.com/browse/track/430679524?u)
+**Chorale setting "Herr Gott, nun schleuß den Himmel auf"**, BWV 617 (Orgelbüchlein No. 19) (c.1714–1716) [*Simone Dinnerstein, Baroklyn*](https://tidal.com/track/430679524)
 
 **Suite for Organ, Harpsichord & Orchestra** (Selections from Bach's Orchestral Suites, BWV 1067 & BWV 1068) [*Los Angeles Philharmonic, Esa-Pekka Salonen*](http://www.tidal.com/track/2924761)
 

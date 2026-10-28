@@ -10,7 +10,7 @@ nav_order: 1
 
 ## Orchestral
 
-**Serenade No. 1 in D major**, Op. 11 (1857-1858) [*London Symphony Orchestra, István Kertész*](https://tidal.com/browse/track/26469235?u)
+**Serenade No. 1 in D major**, Op. 11 (1857-1858) [*London Symphony Orchestra, István Kertész*](https://tidal.com/track/26469235)
 
 **Serenade No. 1 in D major**, Op. 11 (1857-1858) (original version for chamber orchestra) [*Linos Ensemble*](http://www.tidal.com/track/538371530)
 
@@ -18,7 +18,7 @@ nav_order: 1
 
 **Hungarian Dances**, W. 1 (1858-68, 1879) [*Wiener Philharmoniker, Claudio Abbado*](http://www.tidal.com/track/4708013)
 
-**Serenade No. 2 in A major**, Op. 16 (1858-1859) [*London Symphony Orchestra, István Kertész*](https://tidal.com/browse/track/26469241?u)
+**Serenade No. 2 in A major**, Op. 16 (1858-1859) [*London Symphony Orchestra, István Kertész*](https://tidal.com/track/26469241)
 
 **Serenade No. 2 in A major**, Op. 16 (1858-1859) (original version for chamber orchestra) [*Linos Ensemble*](http://www.tidal.com/track/538371536)
 
@@ -28,9 +28,9 @@ nav_order: 1
 
 **Variations on a Theme by Haydn ("Saint Anthony Variations")**, Op. 56a (1873)
 
-**Symphony No. 1 in C minor**, Op. 68 (1854-1876) [*Chamber Orchestra of Europe, Paavo Berglund*](https://tidal.com/browse/track/284016473?u) (08/2001)
+**Symphony No. 1 in C minor**, Op. 68 (1854-1876) [*Chamber Orchestra of Europe, Paavo Berglund*](https://tidal.com/track/284016473) (08/2001)
 
-**Symphony No. 2 in D major**, Op. 73 (1877) [*Chamber Orchestra of Europe, Paavo Berglund*](https://tidal.com/browse/track/284016477?u) (08/2001)
+**Symphony No. 2 in D major**, Op. 73 (1877) [*Chamber Orchestra of Europe, Paavo Berglund*](https://tidal.com/track/284016477) (08/2001)
 
 **Violin Concerto in D major**, Op. 77 (1878) [*Janine Jansen, Orchestra dell'Accademia Nazionale di Santa Cecilia, Antonio Pappano*](http://www.tidal.com/track/77609390)
 
@@ -40,9 +40,9 @@ nav_order: 1
 
 **Piano Concerto No. 2 in B♭ major**, Op. 83 (1878-1881) [*András Schiff, Orchestra of the Age of Enlightenment*](http://www.tidal.com/track/185728421) (07/2021)
 
-**Symphony No. 3 in F major**, Op. 90 (1883) [*Chamber Orchestra of Europe, Paavo Berglund*](https://tidal.com/browse/track/284016481?u) (08/2001)
+**Symphony No. 3 in F major**, Op. 90 (1883) [*Chamber Orchestra of Europe, Paavo Berglund*](https://tidal.com/track/284016481) (08/2001)
 
-**Symphony No. 4 in E minor**, Op. 98 (1884-1885) [*Chamber Orchestra of Europe, Paavo Berglund*](https://tidal.com/browse/track/284016485?u) (08/2001)
+**Symphony No. 4 in E minor**, Op. 98 (1884-1885) [*Chamber Orchestra of Europe, Paavo Berglund*](https://tidal.com/track/284016485) (08/2001)
 
 **Double Concerto in A minor**, Op. 102 (1887) [*Christian Tetzlaff, Tanja Tetzlaff, Deutsches Symphonie-Orchester Berlin, Paavo Järvi*](http://www.tidal.com/track/313629848) 
 
@@ -70,7 +70,7 @@ nav_order: 1
 
 **Horn Trio in E♭ major**, Op. 40 (1865)
 
-**4 Songs**, Op. 43/2 (vc/pf) [*Amy Norrington, Piet Kuijken*](https://tidal.com/browse/track/392902643?u)
+**4 Songs**, Op. 43/2 (vc/pf) [*Amy Norrington, Piet Kuijken*](https://tidal.com/track/392902643)
 
 **Wiegenlied**, Op. 49/4 (vn/pf) [*Leonidas Kavakos, Yuja Wang*](http://www.tidal.com/track/27201221)
 
@@ -124,7 +124,7 @@ nav_order: 1
 
 **Etudes for Piano: Variations on a Theme of Paganini**, Op. 35 (1863) [*Jonathan Plowright*](http://www.tidal.com/track/341663057)
 
-**Variations on a Theme by Haydn ("Saint Anthony Variations")**, Op. 56b (1873) [*Gil Garburg, Sivan Silver*](https://tidal.com/browse/track/151961696?u) 
+**Variations on a Theme by Haydn ("Saint Anthony Variations")**, Op. 56b (1873) [*Gil Garburg, Sivan Silver*](https://tidal.com/track/151961696) 
 
 **2 Rhapsodies**, Op. 79 (1879) [*Jonathan Plowright*](http://www.tidal.com/track/341663082)
 
@@ -144,7 +144,7 @@ nav_order: 1
 
 **Franz Schubert: Große Messe (Mass No. 6), D. 950**, A. 1a/19	(orchestral part transcribed by JB) SATB chorus, piano (1865)
 
-**Ein deutsches Requiem**, Op. 45 soprano, baritone, mixed chorus, orchestra, organ ad lib (1865–68) [*Wiener Philharmoniker, Nikolaus Harnoncourt*](https://tidal.com/browse/album/4691140?u)
+**Ein deutsches Requiem**, Op. 45 soprano, baritone, mixed chorus, orchestra, organ ad lib (1865–68) [*Wiener Philharmoniker, Nikolaus Harnoncourt*](https://tidal.com/album/4691140)
 
-**Alto Rhapsody**, Op. 53 for contralto, male chorus, orchestra (1869) [*Nathalie Stutzmann, Monteverdi Choir, Orchestre Révolutionnaire et Romantique, John Eliot Gardiner*](http://www.tidal.com/track/79497950)
+**Alto Rhapsody**, Op. 53 for contralto, male chorus, orchestra (1869) [*Nathalie Stutzmann, Monteverdi Choir, Orchestre Révolutionnaire et Romantique, John Eliot Gardiner*](https://tidal.com/track/282828901)
 

@@ -9,7 +9,7 @@ nav_order: 1
 
 ## Stage
 
-**Le marchand de sable qui passe, Op. 13** (The Sandman), incidental music for a verse play by Jean-Aubry, Le Havre (1908),  [*Royal Scottish National Orchestra, Stéphane Denève*](https://tidal.com/browse/track/12602666)
+**Le marchand de sable qui passe, Op. 13** (The Sandman), incidental music for a verse play by Jean-Aubry, Le Havre (1908),  [*Royal Scottish National Orchestra, Stéphane Denève*](https://tidal.com/track/12602666)
 
 💎 **Le festin de l'araignée,Op. 17** ballet in one act (1913), [*BBC PO, Yan Pascal Tortelier*](https://tidal.com/album/377163547)
 
@@ -31,9 +31,9 @@ nav_order: 1
 
 ## Orchestral
 
-💎 **Résurrection, Op. 4**, Prelude for orchestra (1903) [*Royal Scottish National Orchestra, Stéphane Denève*](https://tidal.com/browse/track/12602666)
+💎 **Résurrection, Op. 4**, Prelude for orchestra (1903) [*Royal Scottish National Orchestra, Stéphane Denève*](https://tidal.com/track/12602666)
 
-**Symphony No. 1 in D minor 'The Poem of the Forest', Op. 7** (1904–1906) [*Royal Scottish National Orchestra, Stéphane Denève*](https://tidal.com/browse/track/12602666)
+**Symphony No. 1 in D minor 'The Poem of the Forest', Op. 7** (1904–1906) [*Royal Scottish National Orchestra, Stéphane Denève*](https://tidal.com/track/12602666)
 
 **Evocations, for orchestra, mezzo-soprano, tenor, baritone, and chorus, Op. 15** (1910–11) [*BBC PO, Yan Pascal Tortelier*](https://tidal.com/album/376443862)
 

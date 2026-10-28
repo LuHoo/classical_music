@@ -11,7 +11,7 @@ nav_order: 1
 
 **Plymouth Town** ballet for small orchestra (1931)
 
-**The Prince of the Pagodas**, Op. 57 (1956) [*The Hallé Orchestra, Kahchun Wong*](https://tidal.com/browse/album/382063728/u)
+**The Prince of the Pagodas**, Op. 57 (1956) [*The Hallé Orchestra, Kahchun Wong*](https://tidal.com/album/382063728/u)
 
 **Les Sylphides** after Chopin (1940)
 
@@ -19,7 +19,7 @@ nav_order: 1
 
 **Two Portraits** for string orchestra (1930) [*BBC Symphony Orchestra, Edward Gardner*](http://www.tidal.com/track/215060741)
 
-**Sinfonietta**, Op. 1, for five winds and five strings, revised for chamber orchestra (1932, rev 1936) [*Lahti Symphony Orchestra, Dima Slobodeniuk*](https://tidal.com/browse/album/242294528) (02/2022)
+**Sinfonietta**, Op. 1, for five winds and five strings, revised for chamber orchestra (1932, rev 1936) [*Lahti Symphony Orchestra, Dima Slobodeniuk*](https://tidal.com/album/242294528) (02/2022)
 
 **Simple Symphony**, Op. 4 for string orchestra (1934)
 
@@ -63,11 +63,11 @@ nav_order: 1
 
 **Double Concerto** for Violin, Viola and Orchestra (1932) [*Baiba Skride, Ivan Vukčević, ORF Vienna Radio Symphony Orchestra, Marin Alsop*](http://www.tidal.com/track/332426185) 
 
-**Piano Concerto**, Op. 13 (1938; rev. 1945, the original third movement – Recitative and Aria – replaced by an Impromptu) [*Steven Osborne, BBC Scottish Symphony Orchestra, Ilan Volkov*](https://tidal.com/browse/album/306149858) 
+**Piano Concerto**, Op. 13 (1938; rev. 1945, the original third movement – Recitative and Aria – replaced by an Impromptu) [*Steven Osborne, BBC Scottish Symphony Orchestra, Ilan Volkov*](https://tidal.com/album/306149858) 
 
 **Violin Concerto**, Op. 15 (1939; rev. 1958) [*Isabelle Faust, SO des Bayerischen Rundfunks, Jakob Hrsa*](http://www.tidal.com/track/355908976) (05/2024)
 
-**Young Apollo**, Op. 16, for piano, string quartet and string orchestra (1939)  [*Steven Osborne, BBC Scottish Symphony Orchestra, Ilan Volkov*](https://tidal.com/browse/album/306149858)
+**Young Apollo**, Op. 16, for piano, string quartet and string orchestra (1939)  [*Steven Osborne, BBC Scottish Symphony Orchestra, Ilan Volkov*](https://tidal.com/album/306149858)
 
 **Diversions for Piano Left Hand and Orchestra**, Op. 21 (1940; rev. 1954)  [*Clare Hammond, BBC Symphony Orchestra, George Vass*](https://tidal.com/track/448411645)
 
@@ -77,7 +77,7 @@ nav_order: 1
 
 **In memoriam Dennis Brain** (c. 1958), unfinished sketch for four horns and orchestra
 
-**Cello Symphony**, Op. 68, (1963) [*Daniël Müller-Schott, WDR Sinfonieorchester Köln, Jukka-Pekka Sarasta*](https://tidal.com/browse/album/282958176)
+**Cello Symphony**, Op. 68, (1963) [*Daniël Müller-Schott, WDR Sinfonieorchester Köln, Jukka-Pekka Sarasta*](https://tidal.com/album/282958176)
 
 ## Vocal/choral Orchestral
 

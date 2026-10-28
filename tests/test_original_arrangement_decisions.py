@@ -1,8 +1,10 @@
 """Curator decisions retain originals, arrangements and explicit excerpt coverage."""
 import json
+import re
 from pathlib import Path
 
 from classical_music.publication_site import PublicationSiteGenerator
+from classical_music.tidal_maintenance import resource
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -25,7 +27,15 @@ def test_decisions_match_recommendations_and_publication(tmp_path, canonical_rec
             perf = performances[selection['performance_id']]
             assert perf['profile'] == selection['profile']
             assert perf['source']['curator_decision'] == decision['decision_comment']
-            assert selection['tidal_url'].replace('http://', 'https://') in page or selection['tidal_url'] in page
+            # Decision records keep the historical URL form (legacy http/www
+            # and browse/...?u variants); the publication pages carry the
+            # canonical form. Match on Tidal resource identity, not string.
+            target = resource(selection['tidal_url'])
+            assert target is not None
+            hrefs = re.findall(r'href="(https?://[^"]+)"', page)
+            assert any(
+                resource(href) == target for href in hrefs
+            ), f"{selection['tidal_url']} not anchored canonically on the page"
             assert perf['profile'] in page
         for unit in decision['source_units']:
             perf = performances[unit['performance_id']]

@@ -28,29 +28,29 @@ nav_order: 1
 
 ## Ballet
 
-**The Firebird** (L'oiseau de feu) (1910; rev. 1919, 1945), K010 [*Orchestre de Paris, Klaus Mäkelä*](https://tidal.com/browse/track/282335390?u)
+**The Firebird** (L'oiseau de feu) (1910; rev. 1919, 1945), K010 [*Orchestre de Paris, Klaus Mäkelä*](https://tidal.com/track/282335390)
 
-**Petrushka** (1911, rev. 1947), K012 [1911 version: *London Philharmonic Orchestra, Vladimir Jurowski*](https://tidal.com/browse/track/205310046?u) [1947 version: *Orchestre de Paris, Klaus Mäkelä*](http://www.tidal.com/track/348355808) (01/2001)
+**Petrushka** (1911, rev. 1947), K012 [1911 version: *London Philharmonic Orchestra, Vladimir Jurowski*](https://tidal.com/track/205310046) [1947 version: *Orchestre de Paris, Klaus Mäkelä*](http://www.tidal.com/track/348355808) (01/2001)
 
-💎 **The Rite of Spring** (Le sacre du printemps) (1913; rev. 1947, 1967), K015 [*Orchestre de Paris, Klaus Mäkelä*](https://tidal.com/browse/track/282335376?u)
+💎 **The Rite of Spring** (Le sacre du printemps) (1913; rev. 1947, 1967), K015 [*Orchestre de Paris, Klaus Mäkelä*](https://tidal.com/track/282335376)
 
 **Les Noces** (The Wedding), for soloists, choir, four pianos and percussion (1914–17 and 1919–23), K040
 
-**Pulcinella**, for chamber orchestra and soloists (1920), K034 [*Toronto Symphony Orchestra, Gustavo Gimeno*](https://tidal.com/browse/track/416839903?u)
+**Pulcinella**, for chamber orchestra and soloists (1920), K034 [*Toronto Symphony Orchestra, Gustavo Gimeno*](https://tidal.com/track/416839903)
 
 **Apollo** (Apollon musagète), for string orchestra (1928; rev. 1947), K048 [*Nieuw Sinfonietta Amsterdam, Lev Markiz*](http://www.tidal.com/track/45280429)
 
 **Le Baiser de la fée** (The Fairy's Kiss) (1928; rev. 1950), K049 [*London PO, Vladimir Jurowski*](http://www.tidal.com/track/290901291)
 
-**Jeu de cartes** (Card Game) (1936), K059 [*Orchestre Philharmonique du Luxembourg, Gustavo Gimeno*](https://tidal.com/browse/track/366820119?u)
+**Jeu de cartes** (Card Game) (1936), K059 [*Orchestre Philharmonique du Luxembourg, Gustavo Gimeno*](https://tidal.com/track/366820119)
 
-**Danses concertantes** for chamber orchestra (1941–42), K063 [*Orpheus Chamber Orchestra*](https://tidal.com/browse/track/4838824?u)
+**Danses concertantes** for chamber orchestra (1941–42), K063 [*Orpheus Chamber Orchestra*](https://tidal.com/track/4838824)
 
-**Ode** (1943), K066 [*London Philharmonic Orchestra, Vladimir Jurowski*](https://tidal.com/browse/track/358563358?u)
+**Ode** (1943), K066 [*London Philharmonic Orchestra, Vladimir Jurowski*](https://tidal.com/track/358563358)
 
 **Scènes de ballet** (1944), K069
 
-**Orpheus**, for chamber orchestra (1947), K076 [*London Philharmonic Orchestra, Vladimir Jurowski*](https://tidal.com/browse/track/205310051?u)
+**Orpheus**, for chamber orchestra (1947), K076 [*London Philharmonic Orchestra, Vladimir Jurowski*](https://tidal.com/track/205310051)
 
 **Agon** (1957), K088
 
@@ -62,19 +62,19 @@ nav_order: 1
 
 **Feu d'artifice** (Fireworks), Op. 4 (1908), K007
 
-**Funeral Song** (Chant funèbre), Op. 5 (1908), K008 [*Orchestre Philharmonique du Luxembourg, Gustavo Gimeno*](https://tidal.com/browse/track/366820118?u)
+**Funeral Song** (Chant funèbre), Op. 5 (1908), K008 [*Orchestre Philharmonique du Luxembourg, Gustavo Gimeno*](https://tidal.com/track/366820118)
 
 **Le chant du rossignol** (Song of the Nightingale) (1917), K026
 
-**Suite from Pulcinella** (1920; rev. 1947), K034 [*Mahler Chamber Orchestra, Pablo Heras-Casado*](https://tidal.com/browse/track/346134373?u)
+**Suite from Pulcinella** (1920; rev. 1947), K034 [*Mahler Chamber Orchestra, Pablo Heras-Casado*](https://tidal.com/track/346134373)
 
-**Symphonies of Wind Instruments** (1920), K036 [*London Philharmonic Orchestra, Vladimir Jurowski*](https://tidal.com/browse/track/205310050?u)
+**Symphonies of Wind Instruments** (1920), K036 [*London Philharmonic Orchestra, Vladimir Jurowski*](https://tidal.com/track/205310050)
 
-**8 Instrumental Miniatures for 15 Players** (1963, orchestration of Les cinq doigts), K037 [*Orpheus Chamber Orchestra*](https://tidal.com/browse/track/194072570?u)
+**8 Instrumental Miniatures for 15 Players** (1963, orchestration of Les cinq doigts), K037 [*Orpheus Chamber Orchestra*](https://tidal.com/track/194072570)
 
-**Suite No. 2 for chamber orchestra** (1921, arrangement of Trois pièces faciles and Cinq pièces faciles No. 5), K038 [*BBC Philharmonic, Andrew Davis*](https://tidal.com/browse/track/376355668?u)
+**Suite No. 2 for chamber orchestra** (1921, arrangement of Trois pièces faciles and Cinq pièces faciles No. 5), K038 [*BBC Philharmonic, Andrew Davis*](https://tidal.com/track/376355668)
 
-**Suite No. 1 for chamber orchestra** (1925, arrangement of Cinq pièces faciles Nos. 1–4), K045 [*BBC Philharmonic, Andrew Davis*](https://tidal.com/browse/track/376355658?u)
+**Suite No. 1 for chamber orchestra** (1925, arrangement of Cinq pièces faciles Nos. 1–4), K045 [*BBC Philharmonic, Andrew Davis*](https://tidal.com/track/376355658)
 
 **Divertimento** (Suite from Le Baiser de la fée, 1934), K049 [*BBC PO, Andrew Davis*](http://www.tidal.com/track/376259023)
 
@@ -90,7 +90,7 @@ nav_order: 1
 
 **Four Norwegian Moods** (1942), K065
 
-**Scherzo à la russe** for orchestra (1944, also a version for Paul Whiteman's band), K070 [*BBC Philharmonic, Andrew Davis*](https://tidal.com/browse/track/376355656?u)
+**Scherzo à la russe** for orchestra (1944, also a version for Paul Whiteman's band), K070 [*BBC Philharmonic, Andrew Davis*](https://tidal.com/track/376355656)
 
 💎 **Symphony in Three Movements** (1945), K073 [*BBC PO, Andrew Davis*](http://www.tidal.com/track/376259028)
 
@@ -114,7 +114,7 @@ nav_order: 1
 
 **Concerto for Two Solo Pianos** (1935), K057
 
-💎 **Ebony Concerto** for Clarinet and Jazz Band (1945), K072 [*Chris Richards, London Symphony Orchestra, Sir Simon Rattle*](https://tidal.com/browse/track/227961775?u)
+💎 **Ebony Concerto** for Clarinet and Jazz Band (1945), K072 [*Chris Richards, London Symphony Orchestra, Sir Simon Rattle*](https://tidal.com/track/227961775)
 
 **Canticum Sacrum ad honorem Sancti Marci Nominis** (1955), K088
 
@@ -126,9 +126,9 @@ nav_order: 1
 
 **Three Pieces** for String Quartet (1914), K019
 
-**Rag-time** for eleven instruments, K030 [*Juilliard School Ensemble, Royal Academy of Music, Barbara Hannigan*](https://tidal.com/browse/track/378000329?u)
+**Rag-time** for eleven instruments, K030 [*Juilliard School Ensemble, Royal Academy of Music, Barbara Hannigan*](https://tidal.com/track/378000329)
 
-💎 **Octet**, K041 [*Juilliard School Ensemble, Royal Academy of Music, Barbara Hannigan*](https://tidal.com/browse/track/378000325?u)
+💎 **Octet**, K041 [*Juilliard School Ensemble, Royal Academy of Music, Barbara Hannigan*](https://tidal.com/track/378000325)
 
 **Suite Italienne** for Violin and Piano (1932–33), K048
 
@@ -138,11 +138,11 @@ nav_order: 1
 
 **Elegy** for Solo Viola (1944), K067
 
-**Concertino** for Twelve Instruments (1952), K035 [*Juilliard School Ensemble, Royal Academy of Music, Barbara Hannigan*](https://tidal.com/browse/track/378000328?u)
+**Concertino** for Twelve Instruments (1952), K035 [*Juilliard School Ensemble, Royal Academy of Music, Barbara Hannigan*](https://tidal.com/track/378000328)
 
 **Double Canon** for String Quartet (1959), K096
 
-**Septet** for Mixed Instruments (1953), K080 [*Juilliard School Ensemble, Royal Academy of Music, Barbara Hannigan*](https://tidal.com/browse/track/378000319?u)
+**Septet** for Mixed Instruments (1953), K080 [*Juilliard School Ensemble, Royal Academy of Music, Barbara Hannigan*](https://tidal.com/track/378000319)
 
 **Epitaphium** for Flute, Clarinet, and Harp (1959), K095
 
@@ -187,7 +187,7 @@ nav_order: 1
 
 **Two Poems of Konstantin Balmont**, for Voice and Piano (1908), K006
 
-**Three Japanese Lyrics**, for Voice and Chamber Orchestra (1912–13), K014 [*Alexandra Heath, Juilliard School Ensemble, Royal Academy of Music, Barbara Hannigan*](https://tidal.com/browse/track/378000314?u)
+**Three Japanese Lyrics**, for Voice and Chamber Orchestra (1912–13), K014 [*Alexandra Heath, Juilliard School Ensemble, Royal Academy of Music, Barbara Hannigan*](https://tidal.com/track/378000314)
 
 **Pribaoutki**, for Voice and 8 Instruments (1914), K019
 
@@ -195,7 +195,7 @@ nav_order: 1
 
 **Four Russian Songs**, for Voice and Piano (1918–19), K030
 
-**Three Little Songs**, for Voice and Piano (1919), K017 [*Alexandra Heath, Juilliard School Ensemble, Royal Academy of Music, Barbara Hannigan*](https://tidal.com/browse/track/378000322?u)
+**Three Little Songs**, for Voice and Piano (1919), K017 [*Alexandra Heath, Juilliard School Ensemble, Royal Academy of Music, Barbara Hannigan*](https://tidal.com/track/378000322)
 
 **Two Balmont Songs**, for Voice and Piano (1911), K015
 

@@ -5,7 +5,7 @@ performers:
     role: "orchestra"
 links:
   tidal:
-    url: "https://tidal.com/browse/track/4838824?u"
+    url: "https://tidal.com/track/4838824"
 source:
   file: "docs/stravinsky.md"
   line: "47"

@@ -31,7 +31,7 @@ nav_order: 1
 
 **La Mer, Trois esquisses symphoniques**, L 109 (1903–05) [*Orchestre philharmonique de Radio France, Mikko Franck*](http://www.tidal.com/track/288989779)
 
-**Images, Set 3**, L 122 (1905–12) [*SWR Sinfonieorchester Badeb-Baden und Freiburg, Sylvain Cambreling*](https://tidal.com/browse/track/284398298?u)
+**Images, Set 3**, L 122 (1905–12) [*SWR Sinfonieorchester Badeb-Baden und Freiburg, Sylvain Cambreling*](https://tidal.com/track/284398298)
 
 **Children's Corner**, L – (1910) [Arr. Caplet *Orchestre National des Pays de la Loire, Pascal Rophé*](http://www.tidal.com/track/214768970)
 
@@ -51,7 +51,7 @@ nav_order: 1
 
 **Rhapsodie**, L 98b (1919)
 
-**Danse sacrée et danse profane**, L. 103a (1904) [*Ursula Eisert, SWR Sinfonieorchester Badeb-Baden und Freiburg, Sylvain Cambreling*](https://tidal.com/browse/track/284398303?u)
+**Danse sacrée et danse profane**, L. 103a (1904) [*Ursula Eisert, SWR Sinfonieorchester Badeb-Baden und Freiburg, Sylvain Cambreling*](https://tidal.com/track/284398303)
 
 **Première Rhapsodie**, L 116b (1911)
 

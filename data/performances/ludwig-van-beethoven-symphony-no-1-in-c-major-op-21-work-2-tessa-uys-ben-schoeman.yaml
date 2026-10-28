@@ -7,7 +7,7 @@ performers:
     role: "conductor"
 links:
   tidal:
-    url: "https://tidal.com/browse/track/313838730"
+    url: "https://tidal.com/track/313838730"
 source:
   file: "docs/beethoven.md"
   line: "484"

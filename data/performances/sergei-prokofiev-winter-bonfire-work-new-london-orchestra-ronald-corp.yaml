@@ -5,7 +5,7 @@ source:
   line: '208'
 links:
   tidal:
-    url: https://tidal.com/browse/album/340800600
+    url: https://tidal.com/album/340800600
 performers:
 - name: New London Orchestra
   role: performer

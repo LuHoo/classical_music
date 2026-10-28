@@ -6,7 +6,7 @@ source:
   line: '151'
 links:
   tidal:
-    url: https://tidal.com/browse/album/5217343?u
+    url: https://tidal.com/album/5217343
 performers:
 - name: Royal Philharmonic Orchestra
   role: performer

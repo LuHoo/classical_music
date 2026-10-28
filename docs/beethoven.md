@@ -305,71 +305,71 @@ nav_order: 1
 
 **Piano Sonata in F major**, WoO 50 (c. 1790–1792)
 
-**Piano Sonata No. 1 in F minor**, Op. 2/1 (1793–1795) [*Igor Levit*](https://tidal.com/browse/track/113297817)
+**Piano Sonata No. 1 in F minor**, Op. 2/1 (1793–1795) [*Igor Levit*](https://tidal.com/track/113297817)
 
-**Piano Sonata No. 2 in A major**, Op. 2/2 (1794–1795) [*Igor Levit*](https://tidal.com/browse/track/113297817)
+**Piano Sonata No. 2 in A major**, Op. 2/2 (1794–1795) [*Igor Levit*](https://tidal.com/track/113297817)
 
-**Piano Sonata No. 3 in C major**, Op. 2/3 (1794–1795) [*Igor Levit*](https://tidal.com/browse/track/113297817)
+**Piano Sonata No. 3 in C major**, Op. 2/3 (1794–1795) [*Igor Levit*](https://tidal.com/track/113297817)
 
-**Piano Sonata No. 19 in G minor**, Op. 49/1 (1797) [*Igor Levit*](https://tidal.com/browse/track/113297817)
+**Piano Sonata No. 19 in G minor**, Op. 49/1 (1797) [*Igor Levit*](https://tidal.com/track/113297817)
 
-**Piano Sonata No. 20 in G major**, Op. 49/2 (1795–1796) [*Igor Levit*](https://tidal.com/browse/track/113297817)
+**Piano Sonata No. 20 in G major**, Op. 49/2 (1795–1796) [*Igor Levit*](https://tidal.com/track/113297817)
 
-**Piano Sonata No. 4 "Grand Sonata" in E♭major**, Op. 7 (1797–1798) [*Igor Levit*](https://tidal.com/browse/track/113297817)
+**Piano Sonata No. 4 "Grand Sonata" in E♭major**, Op. 7 (1797–1798) [*Igor Levit*](https://tidal.com/track/113297817)
 
-**Piano Sonata No. 5 in C minor "Little Pathétique"**, Op. 10/1 (1795–1797) [*Igor Levit*](https://tidal.com/browse/track/113297817)
+**Piano Sonata No. 5 in C minor "Little Pathétique"**, Op. 10/1 (1795–1797) [*Igor Levit*](https://tidal.com/track/113297817)
 
-**Piano Sonata No. 6 in F major**, Op. 10/2 (1796–1797) [*Igor Levit*](https://tidal.com/browse/track/113297817)
+**Piano Sonata No. 6 in F major**, Op. 10/2 (1796–1797) [*Igor Levit*](https://tidal.com/track/113297817)
 
-**Piano Sonata No. 7 in D major**, Op. 10/3 (1797–1798) [*Igor Levit*](https://tidal.com/browse/track/113297817)
+**Piano Sonata No. 7 in D major**, Op. 10/3 (1797–1798) [*Igor Levit*](https://tidal.com/track/113297817)
 
 **Piano Sonata in C major, (fragment)**, WoO 51 (1797–1798)
 
-💎 **Piano Sonata No. 8 "Pathétique" in C minor**, Op. 13 (1797–1798) [*Igor Levit*](https://tidal.com/browse/track/113297817)
+💎 **Piano Sonata No. 8 "Pathétique" in C minor**, Op. 13 (1797–1798) [*Igor Levit*](https://tidal.com/track/113297817)
 
-**Piano Sonata No. 9 in E major**, Op. 14/1 (1798) [*Igor Levit*](https://tidal.com/browse/track/113297817)
+**Piano Sonata No. 9 in E major**, Op. 14/1 (1798) [*Igor Levit*](https://tidal.com/track/113297817)
 
-**Piano Sonata No. 10 in G major**, Op. 14/2 (1799) [*Igor Levit*](https://tidal.com/browse/track/113297817)
+**Piano Sonata No. 10 in G major**, Op. 14/2 (1799) [*Igor Levit*](https://tidal.com/track/113297817)
 
-**Piano Sonata No. 11 in B♭ major**, Op. 22 (1800) [*Igor Levit*](https://tidal.com/browse/track/113297817)
+**Piano Sonata No. 11 in B♭ major**, Op. 22 (1800) [*Igor Levit*](https://tidal.com/track/113297817)
 
-**Piano Sonata No. 12 in A♭ major**, Op. 26 (1800–1801) [*Igor Levit*](https://tidal.com/browse/track/113297817)
+**Piano Sonata No. 12 in A♭ major**, Op. 26 (1800–1801) [*Igor Levit*](https://tidal.com/track/113297817)
 
-💎 **Piano Sonata No. 13 "Quasi una fantasia" in E♭ major**, Op. 27/1 (1801) [*Igor Levit*](https://tidal.com/browse/track/113297817)
+💎 **Piano Sonata No. 13 "Quasi una fantasia" in E♭ major**, Op. 27/1 (1801) [*Igor Levit*](https://tidal.com/track/113297817)
 
-**Piano Sonata No. 14 "Moonlight" in C♯ minor**, Op. 27/2 (1801) [*Igor Levit*](https://tidal.com/browse/track/113297817)
+**Piano Sonata No. 14 "Moonlight" in C♯ minor**, Op. 27/2 (1801) [*Igor Levit*](https://tidal.com/track/113297817)
 
-**Piano Sonata No. 15 "Pastoral" in D major**, Op. 28 (1801) [*Igor Levit*](https://tidal.com/browse/track/113297817)
+**Piano Sonata No. 15 "Pastoral" in D major**, Op. 28 (1801) [*Igor Levit*](https://tidal.com/track/113297817)
 
-**Piano Sonata No. 16 in G major**, Op. 31/1 (1802) [*Igor Levit*](https://tidal.com/browse/track/113297817)
+**Piano Sonata No. 16 in G major**, Op. 31/1 (1802) [*Igor Levit*](https://tidal.com/track/113297817)
 
-**Piano Sonata No. 17 in D minor, "Tempest"**, Op. 31/2 (1802) [*Igor Levit*](https://tidal.com/browse/track/113297817)
+**Piano Sonata No. 17 in D minor, "Tempest"**, Op. 31/2 (1802) [*Igor Levit*](https://tidal.com/track/113297817)
 
-**Piano Sonata No. 18 ("The Hunt"), E♭**, Op. 31/3 (1802) [*Igor Levit*](https://tidal.com/browse/track/113297817)
+**Piano Sonata No. 18 ("The Hunt"), E♭**, Op. 31/3 (1802) [*Igor Levit*](https://tidal.com/track/113297817)
 
-💎 **Piano Sonata No. 21 ("Waldstein"), C**, Op. 53 (1803–04) [*Igor Levit*](https://tidal.com/browse/track/113297817)
+💎 **Piano Sonata No. 21 ("Waldstein"), C**, Op. 53 (1803–04) [*Igor Levit*](https://tidal.com/track/113297817)
 
-**Piano Sonata No. 22, F**, Op. 54 (1804) [*Igor Levit*](https://tidal.com/browse/track/113297817)
+**Piano Sonata No. 22, F**, Op. 54 (1804) [*Igor Levit*](https://tidal.com/track/113297817)
 
-**Piano Sonata No. 23 ("Appassionata"), F minor**, Op. 57 (1804–05) [*Igor Levit*](https://tidal.com/browse/track/113297817)
+**Piano Sonata No. 23 ("Appassionata"), F minor**, Op. 57 (1804–05) [*Igor Levit*](https://tidal.com/track/113297817)
 
-**Piano Sonata No. 24 ("À Thérèse"), F♯**, Op. 78 (1809) [*Igor Levit*](https://tidal.com/browse/track/113297817)
+**Piano Sonata No. 24 ("À Thérèse"), F♯**, Op. 78 (1809) [*Igor Levit*](https://tidal.com/track/113297817)
 
-💎 **Piano Sonata No. 25 in G**, Op. 79 (1809) [*Igor Levit*](https://tidal.com/browse/track/113297817)
+💎 **Piano Sonata No. 25 in G**, Op. 79 (1809) [*Igor Levit*](https://tidal.com/track/113297817)
 
-**Piano Sonata No. 26 ("Les Adieux"), E♭**, Op. 81a (1809–10) [*Igor Levit*](https://tidal.com/browse/track/113297817)
+**Piano Sonata No. 26 ("Les Adieux"), E♭**, Op. 81a (1809–10) [*Igor Levit*](https://tidal.com/track/113297817)
 
-**Piano Sonata No. 27, in E minor**, Op. 90 (1814) [*Igor Levit*](https://tidal.com/browse/track/113297817)
+**Piano Sonata No. 27, in E minor**, Op. 90 (1814) [*Igor Levit*](https://tidal.com/track/113297817)
 
-**Piano Sonata No. 28, in A**, Op. 101 (1816) [*Igor Levit*](https://tidal.com/browse/track/113297817)
+**Piano Sonata No. 28, in A**, Op. 101 (1816) [*Igor Levit*](https://tidal.com/track/113297817)
 
-**Piano Sonata No. 29 ("Hammerklavier"), B♭**, Op. 106 (1817–18) [*Igor Levit*](https://tidal.com/browse/track/113297817)
+**Piano Sonata No. 29 ("Hammerklavier"), B♭**, Op. 106 (1817–18) [*Igor Levit*](https://tidal.com/track/113297817)
 
-💎 **Piano Sonata No. 30, in E**, Op. 109 (1820) [*Igor Levit*](https://tidal.com/browse/track/113297817)
+💎 **Piano Sonata No. 30, in E**, Op. 109 (1820) [*Igor Levit*](https://tidal.com/track/113297817)
 
-**Piano Sonata No. 31, in A♭**, Op. 110 (1821–22) [*Igor Levit*](https://tidal.com/browse/track/113297817)
+**Piano Sonata No. 31, in A♭**, Op. 110 (1821–22) [*Igor Levit*](https://tidal.com/track/113297817)
 
-**Piano Sonata No. 32, in C minor**, Op. 111 (1821–22) [*Igor Levit*](https://tidal.com/browse/track/113297817)
+**Piano Sonata No. 32, in C minor**, Op. 111 (1821–22) [*Igor Levit*](https://tidal.com/track/113297817)
 
 ### Variations
 
@@ -481,21 +481,21 @@ nav_order: 1
 
 **Six Variations on Beethoven's "Ich denke dein", D**, WoO 74 (1799, 1803)
 
-**Symphony No. 1 in C major**, Op. 21 (1799–1800) (arr piano-4h Scharwenka) [*Tessa Uys, Ben Schoeman*](https://tidal.com/browse/track/313838730)
+**Symphony No. 1 in C major**, Op. 21 (1799–1800) (arr piano-4h Scharwenka) [*Tessa Uys, Ben Schoeman*](https://tidal.com/track/313838730)
 
-**Symphony No. 2 in D major**, Op. 36 (1801–1803) (arr piano-4h Scharwenka) [*Tessa Uys, Ben Schoeman*](https://tidal.com/browse/track/278632220)
+**Symphony No. 2 in D major**, Op. 36 (1801–1803) (arr piano-4h Scharwenka) [*Tessa Uys, Ben Schoeman*](https://tidal.com/track/278632220)
 
 **Three marches**, Op. 45 (1803)
 
-**Symphony No. 3 "Eroica" in E♭ major**, Op. 55 (1803–1805) (arr piano-4h Scharwenka) [*Tessa Uys, Ben Schoeman*](https://tidal.com/browse/track/187231872?u)
+**Symphony No. 3 "Eroica" in E♭ major**, Op. 55 (1803–1805) (arr piano-4h Scharwenka) [*Tessa Uys, Ben Schoeman*](https://tidal.com/track/187231872)
 
-**Symphony No. 4 in B♭ major**, Op. 60 (1806–1807) (arr piano-4h Scharwenka) [*Tessa Uys, Ben Schoeman*](https://tidal.com/browse/track/359255111?u)
+**Symphony No. 4 in B♭ major**, Op. 60 (1806–1807) (arr piano-4h Scharwenka) [*Tessa Uys, Ben Schoeman*](https://tidal.com/track/359255111)
 
-**Symphony No. 6 "Pastoral" in F major**, Op. 68 (1808) (arr piano-4h Scharwenka) [*Tessa Uys, Ben Schoeman*](https://tidal.com/browse/track/313838730)
+**Symphony No. 6 "Pastoral" in F major**, Op. 68 (1808) (arr piano-4h Scharwenka) [*Tessa Uys, Ben Schoeman*](https://tidal.com/track/313838730)
 
-**Symphony No. 7 in A major**, Op. 92 (1811–1813) (arr piano-4h Scharwenka) [*Tessa Uys, Ben Schoeman*](https://tidal.com/browse/track/278632224)
+**Symphony No. 7 in A major**, Op. 92 (1811–1813) (arr piano-4h Scharwenka) [*Tessa Uys, Ben Schoeman*](https://tidal.com/track/278632224)
 
-**Symphony No. 8 in F major**, Op. 93 (1812–1814) (arr piano-4h Scharwenka) [*Tessa Uys, Ben Schoeman*](https://tidal.com/browse/track/359255115?u) 
+**Symphony No. 8 in F major**, Op. 93 (1812–1814) (arr piano-4h Scharwenka) [*Tessa Uys, Ben Schoeman*](https://tidal.com/track/359255115) 
 
 **Fugue for Piano, four hands, B♭**, Op. 134 (1826)
 

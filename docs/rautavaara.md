@@ -45,7 +45,7 @@ nav_order: 1
 
 ### Symphonies
 
-**Symphony No. 1** (1956/1988/2003) [*Belgium National Orchestra, Mikko Franck*](https://tidal.com/browse/track/12668762?u)
+**Symphony No. 1** (1956/1988/2003) [*Belgium National Orchestra, Mikko Franck*](https://tidal.com/track/12668762)
 
 **Symphony No. 2, Intima** (1957/1984) [*Rundfunk-Sinfonie-Orchester Leipzig, Max Pommer*](http://www.tidal.com/track/12668765)
 
@@ -63,7 +63,7 @@ nav_order: 1
 
 ### Other orchestral
 
-**Modificata** (1957/2003) [*Helsinki Philharmonic Orchestra, John Storgårds*](https://tidal.com/browse/track/13402412?u)
+**Modificata** (1957/2003) [*Helsinki Philharmonic Orchestra, John Storgårds*](https://tidal.com/track/13402412)
 
 **Canto II** (1960)
 
@@ -93,7 +93,7 @@ nav_order: 1
 
 **Book of Visions** (2003–05) [*Belgium National Orchestra, Mikko Franck*](http://www.tidal.com/track/284293102)
 
-**Manhattan Trilogy** (2004) [*Helsinki Philharmonic Orchestra, Leif Segerstam*](https://tidal.com/browse/track/284393352?u)
+**Manhattan Trilogy** (2004) [*Helsinki Philharmonic Orchestra, Leif Segerstam*](https://tidal.com/track/284393352)
 
 **Before the Icons** (1955-56/2005)
 
@@ -127,9 +127,9 @@ nav_order: 1
 
 **Lost Landscapes**, version for violin and orchestra (2005) [*Simone Lamsma, Malmö Symphony Orchestra, Robert Trevino*](http://www.tidal.com/track/284315238)
 
-**Percussion Concerto "Incantations"** (2008) [*Colin Currie, Helsinki Philharmonic Orchestra, John Storgårds*](https://tidal.com/browse/track/13402415?u)
+**Percussion Concerto "Incantations"** (2008) [*Colin Currie, Helsinki Philharmonic Orchestra, John Storgårds*](https://tidal.com/track/13402415)
 
-**Cello Concerto No. 2 "Towards the Horizon"** (2008/2009) [*Truls Mørk, Helsinki Philharmonic Orchestra, John Storgårds*](https://tidal.com/browse/track/13402409?u)
+**Cello Concerto No. 2 "Towards the Horizon"** (2008/2009) [*Truls Mørk, Helsinki Philharmonic Orchestra, John Storgårds*](https://tidal.com/track/13402409)
 
 **Fantasia**, for solo violin and orchestra (2015) [*Simone Lamsma, Malmö Symphony Orchestra, Robert Trevino*](http://www.tidal.com/track/284315240)
 
