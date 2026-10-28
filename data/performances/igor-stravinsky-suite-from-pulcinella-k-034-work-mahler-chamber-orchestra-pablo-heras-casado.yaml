@@ -7,7 +7,7 @@ performers:
     role: "conductor"
 links:
   tidal:
-    url: "https://tidal.com/browse/track/346134373?u"
+    url: "https://tidal.com/track/346134373"
 source:
   file: "docs/stravinsky.md"
   line: "69"

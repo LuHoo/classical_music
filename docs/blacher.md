@@ -31,7 +31,7 @@ nav_order: 1
 
 **Orchester-Capriccio über ein Volkslied**, Op. 4 for orchestra (1933)
 
-**Alla Marcia for orchestra** (1934) [*Rundfunk-Sinfonieorchester Berlin, Noam Sheriff*](https://tidal.com/browse/track/244299727?u)
+**Alla Marcia for orchestra** (1934) [*Rundfunk-Sinfonieorchester Berlin, Noam Sheriff*](https://tidal.com/track/244299727)
 
 **Divertimento for string orchestra** (1935)
 
@@ -41,13 +41,13 @@ nav_order: 1
 
 **Fest im Süden** - Suite for orchestra (1935)
 
-**Divertimento for wind orchestra**, Op. 7 (1936) [*Royal Northern College of Music Wind Orchestra, Timothy Reynish*](https://tidal.com/browse/track/376445125?u)
+**Divertimento for wind orchestra**, Op. 7 (1936) [*Royal Northern College of Music Wind Orchestra, Timothy Reynish*](https://tidal.com/track/376445125)
 
-**Concertante Musik**, Op. 10 for orchestra (1937) [*Rundfunk-Sinfonieorchester Berlin, Johannes Kalitzke*](https://tidal.com/browse/track/92510055?u)
+**Concertante Musik**, Op. 10 for orchestra (1937) [*Rundfunk-Sinfonieorchester Berlin, Johannes Kalitzke*](https://tidal.com/track/92510055)
 
-**Symphony**, Op. 12 (1938) [*Frankfurt Philharmonic Orchestra (Oder), Nikos Athinäos*](https://tidal.com/browse/track/284662002?u)
+**Symphony**, Op. 12 (1938) [*Frankfurt Philharmonic Orchestra (Oder), Nikos Athinäos*](https://tidal.com/track/284662002)
 
-**Dance Scenes La Vie**, ballet in one act (1938) [*London Philharmonic Orchestra, Noam Sheriff*](https://tidal.com/browse/track/244299728?u)
+**Dance Scenes La Vie**, ballet in one act (1938) [*London Philharmonic Orchestra, Noam Sheriff*](https://tidal.com/track/244299728)
 
 **Rondo for orchestra** (1938)
 
@@ -63,7 +63,7 @@ nav_order: 1
 
 **Concerto for String Orchestra**, Op. 20 (1940)
 
-**Hamlet; Symphonic Poem**, Op. 17 for orchestra (1940) [*Rundfunk-Sinfonieorchester Berlin, Johannes Kalitzke*](https://tidal.com/browse/track/92510054?u)
+**Hamlet; Symphonic Poem**, Op. 17 for orchestra (1940) [*Rundfunk-Sinfonieorchester Berlin, Johannes Kalitzke*](https://tidal.com/track/92510054)
 
 **Two Sonatinas**, Op. 14 for piano (1940)
 
@@ -73,7 +73,7 @@ nav_order: 1
 
 **Sonatina** for Piano Four Hands (1942)
 
-**Der Großinquisitor** (The Grand Inquisitor), Op. 21 - Oratorio after Dostoyevsky by Leo Borchard (1942) [*Dredner Philharmonie, Rundfunkchor Leipzig, Herbert Kegel*](https://tidal.com/browse/album/7276803?u)
+**Der Großinquisitor** (The Grand Inquisitor), Op. 21 - Oratorio after Dostoyevsky by Leo Borchard (1942) [*Dredner Philharmonie, Rundfunkchor Leipzig, Herbert Kegel*](https://tidal.com/album/7276803)
 
 **Three Pieces for piano**, Op. 23 (1943)
 
@@ -93,7 +93,7 @@ nav_order: 1
 
 **Concerto for Jazz Orchestra** (1945)
 
-**Chiarina**, Op. 33 - ballet in one act by Paul Strecker (1946) [*Rundfunk-Sinfonieorchester Berlin, Noam Sheriff*](https://tidal.com/browse/track/244299742?u)
+**Chiarina**, Op. 33 - ballet in one act by Paul Strecker (1946) [*Rundfunk-Sinfonieorchester Berlin, Noam Sheriff*](https://tidal.com/track/244299742)
 
 **Die Flut**, Op. 24b, radio opera (1946)
 
@@ -103,13 +103,13 @@ nav_order: 1
 
 **Piano Concerto No. 1**, Op. 28 (1947)
 
-💎 **Orchestral Variations on a Theme by Paganini**, Op. 26 (1947) [*Wiener Philharmoniker, Sir Georg Solti*](https://tidal.com/browse/track/57692280?u)
+💎 **Orchestral Variations on a Theme by Paganini**, Op. 26 (1947) [*Wiener Philharmoniker, Sir Georg Solti*](https://tidal.com/track/57692280)
 
 **Die Nachtschwalbe** (The Night Swallow), Op. 27, Zeitoper in one act (1947)
 
 **Four Songs**, Op. 25 for soprano and piano. Text by Friedrich Wolf (1947)
 
-**Violin Concerto**, Op. 29 (1948) [*Kolja Blacher, Frankfurt Philharmonic Orchestra (Oder), Nikos Athinäos*](https://tidal.com/browse/track/284662003?u)
+**Violin Concerto**, Op. 29 (1948) [*Kolja Blacher, Frankfurt Philharmonic Orchestra (Oder), Nikos Athinäos*](https://tidal.com/track/284662003)
 
 **Hamlet**, Op. 35 - ballet in a prologue and three scenes after Shakespeare by Tatjana Gsovsky (1949)
 
@@ -122,7 +122,7 @@ nav_order: 1
 **Lysistrata**, Op. 34 ballet in three scenes after Aristophanes (1950)
 
 **Lysistrata - Suite**, Op. 34a from ballet for orchestra (1950) [*Rundfunk-Sinfonieorchester Berlin, Johannes 
-Kalitzke*](https://tidal.com/browse/track/92510052?u)
+Kalitzke*](https://tidal.com/track/92510052)
 
 **Concerto for Clarinet, Bassoon, Horn, Trumpet and Harp**, Op. 36 (1950)
 
@@ -142,7 +142,7 @@ Kalitzke*](https://tidal.com/browse/track/92510052?u)
 
 **Orchester-Ornament**, Op. 44 (1953)
 
-**Studie im Pianissimo**, Op. 45 for orchestra (1953) [*The Louisville Orchestra, Robert Whitney*](https://tidal.com/browse/track/9122231?u)
+**Studie im Pianissimo**, Op. 45 for orchestra (1953) [*The Louisville Orchestra, Robert Whitney*](https://tidal.com/track/9122231)
 
 **Abstrakte Oper Nr. 1**, Op. 43, experimental opera in one act (1953/57)
 
@@ -160,7 +160,7 @@ Kalitzke*](https://tidal.com/browse/track/92510052?u)
 
 **Hommage à Mozart - Metamorphoses on a group of Mozart themes**, for orchestra (1956)
 
-**Music for Cleveland**, Op. 53 for orchestra (1957) [*Cologne Radio Synphony Orchestra, George Szell*](https://tidal.com/browse/track/287016686?u)
+**Music for Cleveland**, Op. 53 for orchestra (1957) [*Cologne Radio Synphony Orchestra, George Szell*](https://tidal.com/track/287016686)
 
 **Two Poems**, Op. 55 for jazz quartet (1957)
 
@@ -191,7 +191,7 @@ Kalitzke*](https://tidal.com/browse/track/92510052?u)
 **Demeter**, ballet in four scenes by Yvonne Georgi (1963)
 
 **Demeter - Suite for orchestra** (1963) [Adagio and Var. 2, Moderato *Rundfunk-Sinfonieorchester Berlin, Johannes 
-Kalitzke*](https://tidal.com/browse/track/92510050?u)
+Kalitzke*](https://tidal.com/track/92510050)
 
 **Drei Chansons aus Shakespeare's Romeo und Juliet** for voice and Piano. (1963)
 
@@ -265,7 +265,7 @@ Kalitzke*](https://tidal.com/browse/track/92510050?u)
 
 **Pentagramm** for 16 strings (1974)
 
-**Poème** for orchestra (1974) [*Frankfurt Philharmonic Orchestra (Oder), Nikos Athinäos*](https://tidal.com/browse/track/284662007?u)
+**Poème** for orchestra (1974) [*Frankfurt Philharmonic Orchestra (Oder), Nikos Athinäos*](https://tidal.com/track/284662007)
 
 **Prelude and Concert Aria** for mezzo-soprano and orchestra (1974)
 

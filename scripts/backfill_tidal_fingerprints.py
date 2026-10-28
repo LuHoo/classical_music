@@ -33,7 +33,12 @@ QUEUE_PREVIEW = 10
 
 
 def has_identifier(entry: dict) -> bool:
-    return bool((entry or {}).get("isrc") or (entry or {}).get("barcodeId"))
+    entry = entry or {}
+    return bool(
+        entry.get("isrc")
+        or entry.get("barcodeId")
+        or entry.get("isrc_set")
+    )
 
 
 def load_ledger(path: Path) -> dict:
@@ -101,6 +106,17 @@ def adopt_import_fingerprints(ledger: dict, imports_root: Path, canonical: list[
         if key:
             canonical_keys.setdefault(key, []).append(url)
     adopted = 0
+    # Album anchors (issue #427): a track ISRC never matches an album URL
+    # directly, so `tracks[].album_ids` is the bridge. Accumulate the ISRC
+    # set of every canonical album URL across all snapshots, keyed by album
+    # id; the union is written under the exact canonical URL string below.
+    album_urls: dict[str, list[str]] = {}
+    for url in canonical:
+        key = resource(url)
+        if key and key[0] == "album":
+            album_urls.setdefault(key[1], []).append(url)
+    album_isrcs: dict[str, dict[str, set[str]]] = {}
+    album_sources: dict[tuple[str, str], set[str]] = {}
     for path in sorted(imports_root.glob("**/*.json")):
         if not (path.name.startswith("snapshot-") or path.name.startswith("window-")):
             continue
@@ -132,16 +148,36 @@ def adopt_import_fingerprints(ledger: dict, imports_root: Path, canonical: list[
                     r"[A-Z]{2}[A-Z0-9]{3}\d{7}", isrc
                 ):
                     continue
+                ref = f"playlist-import/{path.parent.name}/{path.name}"
                 for url in canonical_keys.get(("track", track_id), []):
                     known = fingerprints.get(url) or {}
                     if has_identifier(known):
                         continue
-                    fingerprints[url] = {
-                        **known,
-                        "isrc": isrc,
-                        "source": f"playlist-import/{path.parent.name}/{path.name}",
-                    }
+                    fingerprints[url] = {**known, "isrc": isrc, "source": ref}
                     adopted += 1
+                album_ids = track.get("album_ids")
+                if album_ids is not None and not isinstance(album_ids, list):
+                    raise ValueError(
+                        f"Playlist import snapshot has a malformed album_ids field: {path.name}"
+                    )
+                for album_id in album_ids or []:
+                    if not isinstance(album_id, str) or not album_id.isdigit():
+                        continue
+                    targets = album_isrcs.setdefault(album_id, {})
+                    for url in album_urls.get(album_id, []):
+                        targets.setdefault(url, set()).add(isrc)
+                        album_sources.setdefault((album_id, url), set()).add(ref)
+    for album_id, targets in sorted(album_isrcs.items()):
+        for url, isrc_set in sorted(targets.items()):
+            known = fingerprints.get(url) or {}
+            if has_identifier(known):
+                continue
+            fingerprints[url] = {
+                **known,
+                "isrc_set": sorted(isrc_set),
+                "source": "; ".join(sorted(album_sources[(album_id, url)])),
+            }
+            adopted += 1
     return adopted
 
 
@@ -250,6 +286,16 @@ def run(
         for url in urls
         if pending_entry(url).get("status") == "unavailable" and not has_identifier(pending_entry(url))
     ]
+    pending_detail = [
+        {
+            "url": url,
+            "status": pending_entry(url).get("status") or "never-attempted",
+            "last_checked": pending_entry(url).get("last_checked") or "-",
+            "performances": refs[url],
+        }
+        for url in urls
+        if not has_identifier(pending_entry(url))
+    ]
     next_up = [
         {
             "url": url,
@@ -269,6 +315,7 @@ def run(
         "remaining": len(urls) - known,
         "pending_status_counts": status_counts,
         "unavailable": unavailable,
+        "pending_detail": pending_detail,
         "next_up": next_up,
     }
     if ledger_path.resolve().is_relative_to((root / "data").resolve()):
@@ -312,7 +359,22 @@ def markdown(summary: dict) -> str:
                 )
     else:
         lines.append("None: no pending canonical URL has status `unavailable`.")
-    lines += ["", f"## Next up ({len(summary['next_up'])})", ""]
+    lines += ["", f"## Pending detail ({len(summary['pending_detail'])})", ""]
+    by_status: dict[str, list[dict]] = {}
+    for item in summary["pending_detail"]:
+        by_status.setdefault(item["status"], []).append(item)
+    for status, items in sorted(by_status.items()):
+        lines.append(f"### {status} ({len(items)})")
+        lines.append("")
+        for item in items:
+            lines.append(f"- {item['url']} — last checked {item['last_checked']}")
+            for ref in item["performances"]:
+                lines.append(
+                    f"  - performance `{ref['performance']}`"
+                    f" (work `{ref['work']}`, file `{ref['file']}`)"
+                )
+        lines.append("")
+    lines += [f"## Next up ({len(summary['next_up'])})", ""]
     for item in summary["next_up"]:
         lines.append(
             f"- {item['url']} — {item['status']}, last checked {item['last_checked']}"

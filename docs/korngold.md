@@ -16,7 +16,7 @@ nav_order: 1
 
 **Violanta**, Op. 8, opera in one act (1914–1915), libretto by Hans Müller-Einigen.
 
-**Much Ado About Nothing** (1920) incidental music to the Shakespeare production at the Palace of Schönbrunn that premiered May 20, 1920. Korngold later reworked this music into an orchestral suite Op. 11. [*Mati Turi, Helsinki Philharmonic Orchestra, John Storgards*](https://tidal.com/browse/track/22820322?u)
+**Much Ado About Nothing** (1920) incidental music to the Shakespeare production at the Palace of Schönbrunn that premiered May 20, 1920. Korngold later reworked this music into an orchestral suite Op. 11. [*Mati Turi, Helsinki Philharmonic Orchestra, John Storgards*](https://tidal.com/track/22820322)
 
 **Die tote Stadt**, Op. 12, opera in three acts (1920)
 
@@ -34,7 +34,7 @@ nav_order: 1
 
 **Schauspiel-Ouvertüre** ("Overture to a Play"), Op. 4 (1911)
 
-**Sinfonietta in B major**, Op. 5 (1911–1912) [*Helsinki Philharmonic Orchestra, John Storgards*](https://tidal.com/browse/track/22820337?u)
+**Sinfonietta in B major**, Op. 5 (1911–1912) [*Helsinki Philharmonic Orchestra, John Storgards*](https://tidal.com/track/22820337)
 
 **Militär-Marsch in B** ("Military March in B major") (1917)
 
@@ -90,7 +90,7 @@ nav_order: 1
 
 **String Quartet No. 2 in E-flat major**, Op. 26 (1933) [*Eusebius Quartet, Beatrice Philips, Venetia Jollands, Hannah Shaw, Hannah Sloane*](http://www.tidal.com/track/198596110)
 
-**String Quartet No. 3 in D major**, Op. 34 (1944–1945), dedicated to Bruno Walter, premiered by Roth Quartet in Los Angeles in 1946. [*Tippett Quartet*]https://tidal.com/browse/track/279537714?u
+**String Quartet No. 3 in D major**, Op. 34 (1944–1945), dedicated to Bruno Walter, premiered by Roth Quartet in Los Angeles in 1946. [*Tippett Quartet*]https://tidal.com/track/279537714
 
 **Romance-Impromptu**, for cello and piano (1946)
 

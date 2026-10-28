@@ -6,7 +6,7 @@ source:
   line: '14'
 links:
   tidal:
-    url: https://tidal.com/browse/album/366812312
+    url: https://tidal.com/album/366812312
 performers:
 - name: Orchestre Philharmonique du Luxembourg
   role: performer

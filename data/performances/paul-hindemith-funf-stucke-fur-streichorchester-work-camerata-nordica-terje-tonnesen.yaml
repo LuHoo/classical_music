@@ -7,7 +7,7 @@ performers:
     role: "conductor"
 links:
   tidal:
-    url: "https://tidal.com/browse/track/51625299?u"
+    url: "https://tidal.com/track/341883243"
 source:
   file: "docs/hindemith.md"
   line: "66"

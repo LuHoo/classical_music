@@ -325,6 +325,14 @@ itself. The backfill adopts these ISRCs into the ledger on every run:
   fingerprint is stored under the exact canonical URL string;
 - an existing identifier is never overwritten; a `source` field records the
   snapshot the ISRC came from;
+- **album anchors adopt the ISRC set of the snapshot tracks on them** (issue
+  #427): an album URL never matches a snapshot track directly, so the
+  `tracks[].album_ids` entries are the bridge. The album's fingerprint is the
+  merged, sorted `isrc_set` of all tracks on that album across all snapshots —
+  an album anchor that dies is recoverable through *any* surviving track
+  ISRC, not just a barcode. The set is stored under the exact canonical URL
+  string, an existing identifier (ISRC, barcode or earlier set) is never
+  overwritten, and the `source` field lists every contributing snapshot;
 - a malformed recognized snapshot fails closed.
 
 Measured on 2026-10-27: this closes the evidence gap for 2,196 of the 2,461
@@ -346,6 +354,10 @@ ledger after the run:
   `status: unavailable`, together with the referencing performance ids,
   work ids and YAML files, so a dead anchor can be repaired immediately
   instead of waiting for the hourly rotation to reach it;
+- **Pending detail** — every pending canonical URL, grouped by status, each
+  with its referencing performance ids, work ids and YAML files (issue #427).
+  "Next up" remains only a queue preview; the complete pool is inspectable
+  here, so no pending anchor hides outside the preview;
 - **Next up** — the next ten pending URLs in the exact `select_due`
   order, so the otherwise implicit queue (never-attempted first, then
   least recently attempted, ties by URL) is inspectable.

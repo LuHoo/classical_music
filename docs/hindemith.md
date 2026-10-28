@@ -11,7 +11,7 @@ nav_order: 1
 
 **Mörder, Hoffnung der Frauen**, in one act, on a libretto by Oskar Kokoschka (1919; premiered 1921)
 
-**Das Nusch-Nuschi**, in one act, on a libretto by Franz Blei (1920; premiered 1921) [*Queensland SO, Werner Andreas Albert*](https://tidal.com/album/19318109/track/19318110)
+**Das Nusch-Nuschi**, in one act, on a libretto by Franz Blei (1920; premiered 1921) [*Melbourne Symphony Orchestra, Werner Andreas Albert*](https://tidal.com/track/282915722)
 
 **Sancta Susanna**, in one act, on a libretto by August Stramm (1921; premiered 1922)
 
@@ -40,7 +40,7 @@ nav_order: 1
 
 ## Ballet
 
-**Der Dämon**, Op. 28 (1922) [*Siegfried Mauser, Frankfurt RSO, Werner Andreas Albert*](http://www.tidal.com/track/74080286)
+**Der Dämon**, Op. 28 (1922) [*Siegfried Mauser, Frankfurt RSO, Werner Andreas Albert*](https://tidal.com/track/284342132)
 
 **Triadisches Ballett**, with Oskar Schlemmer (1923) 
 
@@ -48,9 +48,9 @@ nav_order: 1
 
 **The Four Temperaments** (scored for piano and strings) (1940) [*Emanuel Ax, Los Angeles Philharmonic, Esa-Pekka Salonen*](http://www.tidal.com/track/87478092)
 
-**Hérodiade**, with Martha Graham (1944) (version without words) [*Frankfurt RSO, Werner Andreas Albert*](http://www.tidal.com/track/74080286)
+**Hérodiade**, with Martha Graham (1944) (version without words) [*Frankfurt RSO, Werner Andreas Albert*](https://tidal.com/track/284342139)
 
-**Hérodiade**, with Martha Graham (1944) (version with recitation of the text) [*Annie Gicquel, Frankfurt RSO, Werner Andreas Albert*](http://www.tidal.com/track/74080286)
+**Hérodiade**, with Martha Graham (1944) (version with recitation of the text) [*Annie Gicquel, Frankfurt RSO, Werner Andreas Albert*](https://tidal.com/track/284342136)
 
 
 ## Orchestral
@@ -63,7 +63,7 @@ nav_order: 1
 
 **Konzertmusik for wind orchestra** (1926), Op. 41
 
-**Fünf Stücke für Streichorchester** (Five Pieces for String Orchestra) (1927) [*Camerata Nordica, Terje Tønnesen*](https://tidal.com/browse/track/51625299?u)
+**Fünf Stücke für Streichorchester** (Five Pieces for String Orchestra) (1927) [*Camerata Nordica, Terje Tønnesen*](https://tidal.com/track/341883243)
 
 **Konzertmusik for brass and string orchestra** (1930), Op. 50 [*BBC Scottish SO, Martyn Brabbins*](https://tidal.com/album/340823857)
 
@@ -85,7 +85,7 @@ nav_order: 1
 
 **Sinfonietta in E major** (1946) [*Queensland SO, Werner Andreas Albert*](http://www.tidal.com/track/284340870)
 
-**Die Harmonie der Welt Symphony** (1951) [*Queensland SO, Werner Andreas Albert*](https://tidal.com/album/19318109/track/19318110)
+**Die Harmonie der Welt Symphony** (1951) [*Melbourne Symphony Orchestra, Werner Andreas Albert*](https://tidal.com/track/282915727)
 
 **Symphony in B-flat** for concert band (1951)
 
@@ -119,7 +119,7 @@ nav_order: 1
 
 **Konzert für Trautonium in Begleitung des Streichorchesters** (1931)
 
-**Der Schwanendreher** for viola and small orchestra (1935) [*Lucas Ranieri, Orchestra Ico Suoni del Sud, Marco MOresco*](https://tidal.com/browse/track/441869689?u) (09/2025)
+**Der Schwanendreher** for viola and small orchestra (1935) [*Lucas Ranieri, Orchestra Ico Suoni del Sud, Marco MOresco*](https://tidal.com/track/441869689) (09/2025)
 
 **Trauermusik** for viola and string orchestra (1936) [*Geraldine Walther, San Francisco Symphnoy, Herbert Blomstedt*](https://tidal.com/album/4328135/track/4328139)
 

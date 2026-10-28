@@ -94,7 +94,7 @@ Romande**, Kent Nagano*](http://www.tidal.com/track/362759023) (09/2024)
 
 **Piano Concerto No. 12 in A major**, K. 414 [*Saskia Giorgini, Trondheim Soloists, Per Ivarsson*](https://tidal.com/track/476120341) (12/2025)
 
-**Piano Concerto No. 18 in B♭ major**, K. 456 [*Kristian Bezuidenhout, Freiburger Barockorchester*](https://tidal.com/browse/track/245362672?u)
+**Piano Concerto No. 18 in B♭ major**, K. 456 [*Kristian Bezuidenhout, Freiburger Barockorchester*](https://tidal.com/track/245362672)
 
 **Piano Concerto No. 20 in D minor**, K. 466 [*Charles Richard-Hamelin, Les Violons du Roi, Jonathan Cohen*](http://www.tidal.com/track/313466200) (12/2023)
 
@@ -106,7 +106,7 @@ Romande**, Kent Nagano*](http://www.tidal.com/track/362759023) (09/2024)
 
 **Piano Concerto No. 24 in C major**, K. 491 [*Lars Vogt, Orchestre de Chambre de Paris*](http://www.tidal.com/track/307469361)
 
-**Piano Concerto No. 25 in C Major**, K. 503 [*Kristian Bezuidenhout, Freiburger Barockorchester*](https://tidal.com/browse/track/325069892?u)
+**Piano Concerto No. 25 in C Major**, K. 503 [*Kristian Bezuidenhout, Freiburger Barockorchester*](https://tidal.com/track/325069892)
 
 **Adagio and Fugue in C minor**, K. 546 [*Charles Richard-Hamelin, Les Violons du Roi, Jonathan Cohen*](http://www.tidal.com/track/313466208)
 
@@ -147,11 +147,11 @@ Romande**, Kent Nagano*](http://www.tidal.com/track/362759023) (09/2024)
 
 ### Serenades
 
-**Serenade Colloredo**, K. 203 [*Mozarteumorchester Salzburg, Roberto González-Monjas*](https://tidal.com/browse/track/294065326?u) (10/2023)
+**Serenade Colloredo**, K. 203 [*Mozarteumorchester Salzburg, Roberto González-Monjas*](https://tidal.com/track/294065326) (10/2023)
 
-**Serenade Notturna**, K. 239 [*Mozarteumorchester Salzburg, Roberto González-Monjas*](https://tidal.com/browse/track/294065322?u) (10/2023)
+**Serenade Notturna**, K. 239 [*Mozarteumorchester Salzburg, Roberto González-Monjas*](https://tidal.com/track/294065322) (10/2023)
 
-**Serenade No. 10 'Gran Partita'**, K. 361 [*Mark Simpson, Fraser Langton (cl), Nicholas Daniel, Emma Feilding (ob), Amy Harman, Dom Tyler (bn), Oliver Pashley, Ausiàs Garrigós Morant (basset hn), Ben Goldscheider, Angela Barnes, James Pillai, Fabian van de Geest (hn), David Stark (db)*](https://tidal.com/browse/track/160324011?u) 
+**Serenade No. 10 'Gran Partita'**, K. 361 [*Mark Simpson, Fraser Langton (cl), Nicholas Daniel, Emma Feilding (ob), Amy Harman, Dom Tyler (bn), Oliver Pashley, Ausiàs Garrigós Morant (basset hn), Ben Goldscheider, Angela Barnes, James Pillai, Fabian van de Geest (hn), David Stark (db)*](https://tidal.com/track/160324011) 
 
 **Serenade No. 13 for string quartet and double bass in G major, "Eine kleine Nachtmusik"**, K. 525 (1787) [*Berliner Philharmoniker, Herbert von Karajan*](http://www.tidal.com/track/171967223)
 
@@ -163,5 +163,5 @@ Romande**, Kent Nagano*](http://www.tidal.com/track/362759023) (09/2024)
 
 ### Marches
 
-**March in D major**, K. 237 [*Mozarteumorchester Salzburg, Roberto González-Monjas*](https://tidal.com/browse/track/294065325?u) (10/2023)
+**March in D major**, K. 237 [*Mozarteumorchester Salzburg, Roberto González-Monjas*](https://tidal.com/track/294065325) (10/2023)
 

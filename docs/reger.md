@@ -21,9 +21,9 @@ nav_order: 1
 
 **Konzert im alten Stil**, Op. 123 (1912) [*Bamberger Symphoniker, Horst Stein*](http://www.tidal.com/track/90819807)
 
-💎 **Eine romantische Suite**, Op. 125 (1912) [*Gävle Symphony Orchestra, Jaime Martin*](https://tidal.com/browse/track/434001526?u)
+💎 **Eine romantische Suite**, Op. 125 (1912) [*Gävle Symphony Orchestra, Jaime Martin*](https://tidal.com/track/434001526)
 
-💎 **Vier Tondichtungen nach A. Böcklin**, Op. 128 (1913) [*Gävle Symphony Orchestra, Jaime Martin*](https://tidal.com/browse/track/434001522?u)
+💎 **Vier Tondichtungen nach A. Böcklin**, Op. 128 (1913) [*Gävle Symphony Orchestra, Jaime Martin*](https://tidal.com/track/434001522)
 
 **Eine Ballett-Suite**, Op. 130 (1913)
 

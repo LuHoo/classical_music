@@ -6,7 +6,7 @@ source:
   line: '90'
 links:
   tidal:
-    url: https://tidal.com/browse/album/284169959
+    url: https://tidal.com/album/284169959
 performers:
 - name: WDR Sinfonieorchester Köln
   role: performer

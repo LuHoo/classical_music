@@ -455,5 +455,109 @@ class WorkflowContractTest(unittest.TestCase):
         self.assertNotIn("--apply", round_step["run"])
 
 
+
+class AlbumAdoptionTest(unittest.TestCase):
+    """Album anchors adopt the ISRC set of snapshot tracks on them (#427)."""
+
+    def _ledger(self):
+        return {"version": 1, "fingerprints": {}}
+
+    def test_album_anchor_adopts_sorted_isrc_set(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = synthetic_repo(Path(tmp), ["https://tidal.com/album/500"])
+            synthetic_import(
+                root,
+                [
+                    {"id": "1", "isrc": "GBLLH2588619", "album_ids": ["500"]},
+                    {"id": "2", "isrc": "DKECA2295701", "album_ids": ["500"]},
+                    {"id": "3", "isrc": "SEAEW1426160", "album_ids": ["999"]},
+                ],
+            )
+            ledger = self._ledger()
+            adopted = backfill.adopt_import_fingerprints(
+                ledger, root / "reports" / "playlist-import", ["https://tidal.com/album/500"]
+            )
+            self.assertEqual(adopted, 1)
+            entry = ledger["fingerprints"]["https://tidal.com/album/500"]
+            self.assertEqual(entry["isrc_set"], ["DKECA2295701", "GBLLH2588619"])
+            self.assertIn("playlist-import/piano/", entry["source"])
+
+    def test_album_adoption_matches_browse_variants_by_resource_identity(self):
+        # Legacy canonical browse forms are the same album resource; the
+        # set must land under the exact canonical URL string.
+        with tempfile.TemporaryDirectory() as tmp:
+            root = synthetic_repo(Path(tmp), ["https://tidal.com/browse/album/500?u"])
+            synthetic_import(
+                root, [{"id": "1", "isrc": "GBLLH2588619", "album_ids": ["500"]}]
+            )
+            ledger = self._ledger()
+            adopted = backfill.adopt_import_fingerprints(
+                ledger,
+                root / "reports" / "playlist-import",
+                ["https://tidal.com/browse/album/500?u"],
+            )
+            self.assertEqual(adopted, 1)
+            self.assertEqual(
+                ledger["fingerprints"]["https://tidal.com/browse/album/500?u"]["isrc_set"],
+                ["GBLLH2588619"],
+            )
+
+    def test_album_adoption_never_overwrites_an_existing_identifier(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = synthetic_repo(Path(tmp), ["https://tidal.com/album/500"])
+            synthetic_import(
+                root, [{"id": "1", "isrc": "GBLLH2588619", "album_ids": ["500"]}]
+            )
+            ledger = {
+                "version": 1,
+                "fingerprints": {"https://tidal.com/album/500": {"barcodeId": "001"}},
+            }
+            self.assertEqual(
+                backfill.adopt_import_fingerprints(
+                    ledger, root / "reports" / "playlist-import", ["https://tidal.com/album/500"]
+                ),
+                0,
+            )
+            self.assertEqual(
+                ledger["fingerprints"]["https://tidal.com/album/500"],
+                {"barcodeId": "001"},
+            )
+
+
+class PendingDetailTest(unittest.TestCase):
+    """The summary shows every pending URL, not just the queue preview (#427)."""
+
+    def test_pending_detail_lists_all_pending_urls_with_performances(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = synthetic_repo(Path(tmp), ["https://tidal.com/track/1", "https://tidal.com/track/2"])
+            ledger_path = Path(tmp) / "ledger.json"
+            summary = backfill.run(
+                root,
+                FakeTransport(),
+                ledger_path=ledger_path,
+                limit=1,
+            )
+            detail = {item["url"]: item for item in summary["pending_detail"]}
+            self.assertEqual(set(detail), {"https://tidal.com/track/1", "https://tidal.com/track/2"})
+            # The attempted URL is unavailable (FakeTransport 404s); the other
+            # one is still never-attempted. Both must appear in the detail.
+            self.assertEqual(detail["https://tidal.com/track/1"]["status"], "unavailable")
+            self.assertEqual(detail["https://tidal.com/track/2"]["status"], "never-attempted")
+            self.assertEqual(len(detail["https://tidal.com/track/1"]["performances"]), 1)
+            self.assertLess(len(summary["next_up"]), len(summary["pending_detail"]) + 1)
+
+    def test_markdown_renders_pending_detail_grouped_by_status(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = synthetic_repo(Path(tmp), ["https://tidal.com/track/1", "https://tidal.com/track/2"])
+            ledger_path = Path(tmp) / "ledger.json"
+            backfill.run(root, FakeTransport(), ledger_path=ledger_path, limit=1)
+            text = ledger_path.with_suffix(".md").read_text()
+            self.assertIn("## Pending detail (2)", text)
+            self.assertIn("### unavailable (1)", text)
+            self.assertIn("### never-attempted (1)", text)
+            self.assertIn("https://tidal.com/track/1", text)
+            self.assertIn("performance `performance-0`", text)
+
+
 if __name__ == "__main__":
     unittest.main()

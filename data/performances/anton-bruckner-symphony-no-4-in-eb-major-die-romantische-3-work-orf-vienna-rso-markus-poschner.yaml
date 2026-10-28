@@ -11,7 +11,7 @@ performers:
 source_performer_text: ORF Vienna RSO, Markus Poschner
 links:
   tidal:
-    url: https://tidal.com/browse/track/384348628?u
+    url: https://tidal.com/track/384348628
 source:
   file: docs/bruckner.md
   line: '42'

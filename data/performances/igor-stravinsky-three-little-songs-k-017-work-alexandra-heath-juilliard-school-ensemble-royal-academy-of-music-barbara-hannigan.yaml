@@ -11,7 +11,7 @@ performers:
     role: "conductor"
 links:
   tidal:
-    url: "https://tidal.com/browse/track/378000322?u"
+    url: "https://tidal.com/track/378000322"
 source:
   file: "docs/stravinsky.md"
   line: "198"

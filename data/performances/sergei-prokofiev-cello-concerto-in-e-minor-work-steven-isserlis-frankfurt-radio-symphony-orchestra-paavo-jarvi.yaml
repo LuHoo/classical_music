@@ -6,7 +6,7 @@ source:
   line: '100'
 links:
   tidal:
-    url: https://tidal.com/browse/album/306164901?u
+    url: https://tidal.com/album/306164901
 performers:
 - name: Steven Isserlis
   role: performer

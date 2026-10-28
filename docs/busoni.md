@@ -67,32 +67,32 @@ nav_order: 1
 
 ## Piano
 
-**Elegien. 6 neue Klavierstücke.** (1907), BV 249 [*Peter Donohoe*](https://tidal.com/browse/track/376338269?u)
+**Elegien. 6 neue Klavierstücke.** (1907), BV 249 [*Peter Donohoe*](https://tidal.com/track/376338269)
 
-**Nuit de Noël. Esquisse [Christmas. Sketch]**, for piano (1908), BV 251 [*Victor Nicoara*](https://tidal.com/browse/track/188084028?u)
+**Nuit de Noël. Esquisse [Christmas. Sketch]**, for piano (1908), BV 251 [*Victor Nicoara*](https://tidal.com/track/188084028)
 
-**Berceuse (Lullaby)**, for piano (1909), BV 252 [*Peter Donohoe*](https://tidal.com/browse/track/376338280?u)
+**Berceuse (Lullaby)**, for piano (1909), BV 252 [*Peter Donohoe*](https://tidal.com/track/376338280)
 
-**Fantasia nach Johann Sebastian Bach**, for piano (1909), BV 253 [*Alexander Sonderegger*](https://tidal.com/browse/track/346733342?u)
+**Fantasia nach Johann Sebastian Bach**, for piano (1909), BV 253 [*Alexander Sonderegger*](https://tidal.com/track/346733342)
 
-**Fantasia Contrappuntistica. Edizione definitiva, for piano (1910)**, Op. 256 [*Steven Vanhauwaert*](https://tidal.com/browse/track/155438783?u)
+**Fantasia Contrappuntistica. Edizione definitiva, for piano (1910)**, Op. 256 [*Steven Vanhauwaert*](https://tidal.com/track/155438783)
 
-**Sonatina (No. 1), for piano (1910)**, Op. 257 [*Victor Nicoara*](https://tidal.com/browse/track/188084026?u)
+**Sonatina (No. 1), for piano (1910)**, Op. 257 [*Victor Nicoara*](https://tidal.com/track/188084026)
 
-**Sonatina seconda, for piano (1912)**, Op. 259 [*Victor Nicoara*](https://tidal.com/browse/track/188084029?u)
+**Sonatina seconda, for piano (1912)**, Op. 259 [*Victor Nicoara*](https://tidal.com/track/188084029)
 
-**Indianisches Tagebuch. Erstes Buch.** [Indian Diary. First Book], for piano (1915), BV 267 [*Steven Vanhauwaert*](https://tidal.com/browse/track/155438778?u)
+**Indianisches Tagebuch. Erstes Buch.** [Indian Diary. First Book], for piano (1915), BV 267 [*Steven Vanhauwaert*](https://tidal.com/track/155438778)
 
-**Sonatina (no. 3) "ad usum infantis,"** for piano (1915), BV 268 [*Victor Nicoara*](https://tidal.com/browse/track/188084021?u)
+**Sonatina (no. 3) "ad usum infantis,"** for piano (1915), BV 268 [*Victor Nicoara*](https://tidal.com/track/188084021)
 
-**Sonatina (no. 4) "in diem nativitatis Christi MCMXVII"** for piano (1917), BV 274 [*Victor Nicoara*](https://tidal.com/browse/track/188084023?u)
+**Sonatina (no. 4) "in diem nativitatis Christi MCMXVII"** for piano (1917), BV 274 [*Victor Nicoara*](https://tidal.com/track/188084023)
 
-**Sonatina quasi Sonata** for piano (1917), BV 275 [*Victor Nicoara*](https://tidal.com/browse/track/188084030?u)
+**Sonatina quasi Sonata** for piano (1917), BV 275 [*Victor Nicoara*](https://tidal.com/track/188084030)
 
-**Sonatina brevis (no. 5), "In Signo Joannis Sebastiani Magni,"** for piano (1918), BV 280 [*Victor Nicoara*](https://tidal.com/browse/track/188084022?u)
+**Sonatina brevis (no. 5), "In Signo Joannis Sebastiani Magni,"** for piano (1918), BV 280 [*Victor Nicoara*](https://tidal.com/track/188084022)
 
-**Kammer-Fantasie über Carmen** [Chamber Fantasy after Carmen] (Sonatina no. 6), for piano (1920), BV 284 [*Victor Nicoara*](https://tidal.com/browse/track/188084024?u)
+**Kammer-Fantasie über Carmen** [Chamber Fantasy after Carmen] (Sonatina no. 6), for piano (1920), BV 284 [*Victor Nicoara*](https://tidal.com/track/188084024)
 
-**Toccata: Preludio, Fantasia, and Ciaccona**, for piano (1920), BV 287 [*Peter Donohoe*](https://tidal.com/browse/track/376338263?u)
+**Toccata: Preludio, Fantasia, and Ciaccona**, for piano (1920), BV 287 [*Peter Donohoe*](https://tidal.com/track/376338263)
 
-**Drei Albumblätter** [Three Albumleaves], for piano (1921), BV 289 [*Victor Nicoara*](https://tidal.com/browse/track/188084020?u)
+**Drei Albumblätter** [Three Albumleaves], for piano (1921), BV 289 [*Victor Nicoara*](https://tidal.com/track/188084020)

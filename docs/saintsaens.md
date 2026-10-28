@@ -11,9 +11,9 @@ nav_order: 1
 
 **Comic Opera Overture in E minor** (c. 1850)
 
-**Scherzo in A major** (c. 1850) [*Orchestre Philharmonique Royal de Liège, Jean-Jacques Kantorow*](https://tidal.com/browse/track/338562780?u) 
+**Scherzo in A major** (c. 1850) [*Orchestre Philharmonique Royal de Liège, Jean-Jacques Kantorow*](https://tidal.com/track/338562780) 
 
-**Symphony No. 1 in E♭ major**, Op. 2, R. 161 (1853), Op. 2, R. 161 [*Orchestre Philharmonique Royal de Liège, Jean-Jacques Kantorow*](https://tidal.com/browse/track/338562784?u) (09/2021)
+**Symphony No. 1 in E♭ major**, Op. 2, R. 161 (1853), Op. 2, R. 161 [*Orchestre Philharmonique Royal de Liège, Jean-Jacques Kantorow*](https://tidal.com/track/338562784) (09/2021)
 
 **Overture to an Unfinished Comic Opera in G major**, R. 162 (1854)
 
@@ -27,7 +27,7 @@ nav_order: 1
 
 **Violin Concerto No. 1 in A major**, Op. 20, R. 186 (1859)
 
-**Symphony No. 2 in A minor**, Op. 55 (1859) [*Orchestre Philharmonique Royal de Liège, Jean-Jacques Kantorow*](https://tidal.com/browse/track/338562788?u) (09/2021)
+**Symphony No. 2 in A minor**, Op. 55 (1859) [*Orchestre Philharmonique Royal de Liège, Jean-Jacques Kantorow*](https://tidal.com/track/338562788) (09/2021)
 
 **Suite** for cello and orchestra, Op. 16b, R. 211 (1862, 1919)
 
@@ -51,7 +51,7 @@ nav_order: 1
 
 **The Spinning Wheel of Omphale in A major**, Op. 31, R. 169 (1872) [*Les Siècles, François-Xavier Roth*](http://www.tidal.com/track/328375836) (12/2023)
 
-**Cello Concerto No. 1 in A minor**, Op. 33, R. 193 (1872) [*Bruno Philippe, Frankfurt RSO, Christoph Eschenbach*](https://tidal.com/browse/track/327003708?u) (01/2001)
+**Cello Concerto No. 1 in A minor**, Op. 33, R. 193 (1872) [*Bruno Philippe, Frankfurt RSO, Christoph Eschenbach*](https://tidal.com/track/327003708) (01/2001)
 
 💎 **Phaéton in C major**, Op. 39, R. 170 (1873) [*Les Siècles, François-Xavier Roth*](http://www.tidal.com/track/328375834) (12/2023)
 
@@ -93,11 +93,11 @@ nav_order: 1
 
 **Concert Piece in F minor**, Op. 94 for horn and orchestra (1887)
 
-**Africa in G minor**, Op. 89, R. 204 for piano and orchestra (1891) [*Gabriel Tacchino, Orchestra of Radio Luxembourg, Louis de Froment*](https://tidal.com/browse/track/33354115?u) 
+**Africa in G minor**, Op. 89, R. 204 for piano and orchestra (1891) [*Gabriel Tacchino, Orchestra of Radio Luxembourg, Louis de Froment*](https://tidal.com/track/33354115) 
 
 **Sarabande and Rigaudon in E major**, Op. 93 (1892)
 
-**Piano Concerto No. 5 "Egyptian" in F major**, Op. 103, R. 205 (1896) [*Gabriel Tacchino, Orchestra of Radio Luxembourg, Louis de Froment*](https://tidal.com/browse/track/33354112?u) 
+**Piano Concerto No. 5 "Egyptian" in F major**, Op. 103, R. 205 (1896) [*Gabriel Tacchino, Orchestra of Radio Luxembourg, Louis de Froment*](https://tidal.com/track/33354112) 
 
 **Cadenzas for Beethoven's Violin Concerto** (1900)
 
@@ -137,7 +137,7 @@ nav_order: 1
 
 ## Vocal
 
-**Mélodies persanes**, Op. 26 (1870) [*Marie-Nicole Lemieux, Orchestre Philharmonique de Monte Carlo, Kazuki Yamada*](https://tidal.com/browse/track/312537540?u)
+**Mélodies persanes**, Op. 26 (1870) [*Marie-Nicole Lemieux, Orchestre Philharmonique de Monte Carlo, Kazuki Yamada*](https://tidal.com/track/312537540)
 
 ## Film
 

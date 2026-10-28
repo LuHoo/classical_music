@@ -5,6 +5,6 @@ source:
   line: "44"
 links:
   tidal:
-    url: "https://tidal.com/browse/track/305308956?u"
+    url: "https://tidal.com/track/305308956"
 performers:
 - name: "Francesco Corti, Il Pomo d'Oro"
