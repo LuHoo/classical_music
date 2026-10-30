@@ -1,0 +1,53 @@
+name: MB Recording Report
+about: Generate a complete overview of available recordings of one work, including arrangements and versions
+title: "[MB Report] <componist> - <werk>"
+labels:
+  - mb-recording-report
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template to request an automatic recording report (MusicBrainz
+        pipeline, design issue #433). Fill in composer and work only; the
+        workflow posts the report per canonical head-ID as a comment on this
+        issue, with one checkbox per performance (deduplicated, one album as
+        TIDAL handle).
+
+  - type: input
+    id: componist
+    attributes:
+      label: Componist
+      description: Canonical composer name (as used in the collection)
+      placeholder: Gustav Mahler
+    validations:
+      required: true
+
+  - type: input
+    id: werk
+    attributes:
+      label: Werk
+      description: Work title as known in MusicBrainz
+      placeholder: Das Lied von der Erde
+    validations:
+      required: true
+
+  - type: textarea
+    id: exclusies
+    attributes:
+      label: Exclusies (optioneel)
+      description: MusicBrainz work MBIDs to exclude from the report (one per
+        line), e.g. duplicate or false-positive work entities reported by a
+        previous run
+      placeholder: |
+        c6401307-...
+    validations:
+      required: false
+
+  - type: textarea
+    id: toelichting
+    attributes:
+      label: Toelichting (optioneel)
+      description: Context, e.g. which versions/arrangements matter for the
+        canonical decision
+    validations:
+      required: false
