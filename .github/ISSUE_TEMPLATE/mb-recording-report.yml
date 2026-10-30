@@ -8,8 +8,10 @@ body:
     attributes:
       value: |
         Use this template to request an automatic recording report (MusicBrainz
-        pipeline, design issue #433). Fill in composer and work only; the
-        workflow posts the report per canonical head-ID as a comment on this
+        pipeline, design issue #433). Fill in composer and work as you know
+        them - no exact MusicBrainz spelling required. The workflow first
+        posts candidate work entities for confirmation (fuzzy search incl.
+        aliases), then the report per canonical head-ID as a comment on this
         issue, with one checkbox per performance (deduplicated, one album as
         TIDAL handle).
 
@@ -26,7 +28,7 @@ body:
     id: werk
     attributes:
       label: Werk
-      description: Work title as known in MusicBrainz
+      description: Work title as you know it; the workflow searches broadly and confirms candidates before running
       placeholder: Das Lied von der Erde
     validations:
       required: true

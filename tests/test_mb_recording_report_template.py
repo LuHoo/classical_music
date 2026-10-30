@@ -27,3 +27,14 @@ def test_template_carries_its_own_guard_label_only():
 
     assert "mb-recording-report" in template
     assert "phase-2-curator-workflow" not in template
+
+
+def test_template_promises_candidate_confirmation():
+    """No exact MusicBrainz title required: the workflow fuzzy-searches and
+    first posts candidates for confirmation (validated empirically against
+    the MB search API: a typo like 'Das lied van de Erde' still scores 100
+    unquoted, but 'Lied von der Erde' quoted matches a different work first)."""
+    template = TEMPLATE_PATH.read_text(encoding="utf-8")
+
+    assert "confirms candidates" in template
+    assert "as known in MusicBrainz" not in template
