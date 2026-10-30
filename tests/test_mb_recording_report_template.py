@@ -23,8 +23,19 @@ def test_template_asks_for_composer_and_work_only():
 
 def test_template_carries_its_own_guard_label_only():
     """Issue events trigger other workflows; the template must never carry
-    the phase-2 curator-workflow label (issue #367)."""[\]HHSTUWÔUXYÝ^
-[ÛÙ[ÏH]NB\ÜÙ\X\XÛÜ[Ë\\Ü[[\]B\ÜÙ\\ÙKLXÝ\]Ü]ÛÜÙÝÈÝ[[\]BY\ÝÝ[\]WÜÛZ\Ù\×ØØ[Y]WØÛÛ\X][Û
-NÈ^XÝ]\ÚXÐZ[]H\]Z\YHÛÜÙÝÈ^K\ÙX\Ú\È[\ÝÜÝÈØ[Y]\ÈÜÛÛ\X][Û
-[Y]Y[\\XØ[HYØZ[ÝHPÙX\ÚTNH\ÈZÙH	Ñ\ÈYY[H\IÈÝ[ØÛÜ\ÈL[][ÝY]	ÓYYÛ\\IÈ][ÝYX]Ú\ÈHY\[ÛÜÈ\Ý
-K¢FV×ÆFRÒDTÕÄDUõDç&VE÷FWBVæ6öFæsÒ'WFbÓ" ¢76W'B&6öæf&×26æFFFW2"âFV×ÆFP¢76W'B&2¶æ÷vââ×W64'&ç¢"æ÷BâFV×ÆFP
+    the phase-2 curator-workflow label (issue #367)."""
+    template = TEMPLATE_PATH.read_text(encoding="utf-8")
+
+    assert "mb-recording-report" in template
+    assert "phase-2-curator-workflow" not in template
+
+
+def test_template_promises_candidate_confirmation():
+    """No exact MusicBrainz title required: the workflow fuzzy-searches and
+    first posts candidates for confirmation (validated empirically against
+    the MB search API: a typo like 'Das lied van de Erde' still scores 100
+    unquoted, but 'Lied von der Erde' quoted matches a different work first)."""
+    template = TEMPLATE_PATH.read_text(encoding="utf-8")
+
+    assert "confirms candidates" in template
+    assert "as known in MusicBrainz" not in template

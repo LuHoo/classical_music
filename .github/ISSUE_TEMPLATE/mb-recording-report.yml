@@ -39,7 +39,7 @@ body:
     id: toelichting
     attributes:
       label: Toelichting (optioneel)
-    description: Context, e.g. which versions/arrangements matter for the
+      description: Context, e.g. which versions/arrangements matter for the
         canonical decision
     validations:
       required: false
