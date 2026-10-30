@@ -13,7 +13,9 @@ body:
         posts candidate work entities for confirmation (fuzzy search incl.
         aliases), then the report per canonical head-ID as a comment on this
         issue, with one checkbox per performance (deduplicated, one album as
-        TIDAL handle).
+        TIDAL handle). If the report lists duplicate or false-positive work
+        entities, reply to that comment to have them excluded and re-run - no
+        MusicBrainz knowledge is needed to open this issue.
 
   - type: input
     id: componist
@@ -34,22 +36,10 @@ body:
       required: true
 
   - type: textarea
-    id: exclusies
-    attributes:
-      label: Exclusies (optioneel)
-      description: MusicBrainz work MBIDs to exclude from the report (one per
-        line), e.g. duplicate or false-positive work entities reported by a
-        previous run
-      placeholder: |
-        c6401307-...
-    validations:
-      required: false
-
-  - type: textarea
     id: toelichting
     attributes:
       label: Toelichting (optioneel)
-      description: Context, e.g. which versions/arrangements matter for the
+    description: Context, e.g. which versions/arrangements matter for the
         canonical decision
     validations:
       required: false
