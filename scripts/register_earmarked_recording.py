@@ -6,11 +6,19 @@ works that already have a recommendation, creates a TIDAL comparison playlist
 (current recommendation first — as its complete recording, every track of the
 anchor album matched to the same work — then the new candidate). Use ``--dry-run``
 to preview the full YAML and playlist plan without writing anything. The script
-never edits GitHub issues and performs no mutating TIDAL calls other than
-playlist creation, and only in apply mode.
+performs no mutating TIDAL calls other than playlist creation, and only in
+apply mode. GitHub is only touched behind explicit flags (#435): ``--comment``
+mirrors the report as a comment on the ``--issue`` and
+``--create-parking-issue`` opens a separate issue for tracks without a
+canonical work; both go through the local ``gh`` CLI and fall back to the
+terminal report when it is unavailable.
 
-Playlists are only created with ``--issue <nr> --work <work-id>`` (one run per
-curator comparison issue); they are named ``Curator <date> Issue #<nr>``.
+Playlists are created with ``--issue <nr>`` (one run per curator comparison
+issue) and are named ``Curator <date> Issue #<nr>``. Without ``--work`` the
+comparison work is resolved from the album itself: a unique candidate work
+with an anchored recommendation is selected automatically, several candidates
+ask the curator interactively, and works without a recommendation are reported
+as a direct-adoption route (never written by this script).
 
 With --canonize, tracks without a canonical work are canonized as part of the
 registration (#327): a new ``data/works/`` definition is written when the ISRC
@@ -1204,9 +1212,203 @@ def write_recording(root, recording, *, update_existing=False):
     return path
 
 
+def resolve_issue_work(recording, recommendations, issue, selector=None):
+    """Resolve the work a comparison issue belongs to, when --issue is given
+    without --work (#435).
+
+    Eligible works: candidate entries of works that already carry a
+    recommendation with a TIDAL track anchor — the comparison route. Exactly
+    one eligible work resolves automatically; several ask the curator through
+    ``selector`` (a callable taking the work-id options); with no selector the
+    run fails closed listing the options. No eligible work returns ``None``:
+    the run then reports direct adoption and/or parking instead of guessing.
+    Ambiguous tracks never create candidate entries, so they never resolve.
+    """
+    eligible, seen = [], set()
+    for entry in recording['works']:
+        wid = entry.get('work_id')
+        if (entry.get('status') == 'candidate' and wid not in seen
+                and recommendations.get(wid, {}).get('track_ids')):
+            seen.add(wid)
+            eligible.append(wid)
+    if len(eligible) == 1:
+        return {'work_id': eligible[0], 'prompted': False, 'options': eligible}
+    if len(eligible) > 1:
+        if selector is None:
+            raise ValueError(
+                f'Issue #{issue} has several comparison candidates on this album: '
+                + ', '.join(eligible)
+                + '. Pass --work <work-id>, or answer the interactive prompt.')
+        return {'work_id': selector(list(eligible)), 'prompted': True, 'options': eligible}
+    return {'work_id': None, 'prompted': False, 'options': []}
+
+
+class GithubCli:
+    """Local ``gh`` wrapper: the only GitHub write path from this script (#435).
+
+    Posting a comment or creating a parking issue is bookkeeping, never a
+    curator decision. Every call stays behind an explicit CLI flag, and the
+    terminal report is always the fallback when ``gh`` is unavailable.
+    """
+
+    def __init__(self, root=None):
+        self.root = str(root) if root is not None else str(ROOT)
+
+    def available(self):
+        import shutil
+        return shutil.which('gh') is not None
+
+    def _run(self, args):
+        import subprocess
+        completed = subprocess.run(['gh', *args], cwd=self.root,
+                                   capture_output=True, text=True)
+        if completed.returncode != 0:
+            raise ValueError('gh ' + args[0] + ' failed: '
+                             + (completed.stderr.strip() or completed.stdout.strip()
+                                or 'unknown error'))
+        return completed
+
+    def find_open_issues(self, query):
+        """Open issues matching `query`; a failed search raises so a possible
+        duplicate is never overwritten (fail-closed)."""
+        completed = self._run(['issue', 'list', '--state', 'open',
+                               '--search', query, '--json', 'number,title,url'])
+        try:
+            return json.loads(completed.stdout or '[]')
+        except ValueError:
+            raise ValueError('gh issue list returned invalid JSON') from None
+
+    def create_issue(self, title, body):
+        return self._gh_file(['issue', 'create', '--title', title], body)
+
+    def comment_issue(self, number, body):
+        return self._gh_file(['issue', 'comment', str(number)], body)
+
+    def _gh_file(self, args, body):
+        import os
+        import tempfile
+        handle = tempfile.NamedTemporaryFile('w', suffix='.md', delete=False,
+                                              encoding='utf-8')
+        try:
+            handle.write(body)
+            handle.close()
+            completed = self._run([*args, '--body-file', handle.name])
+        finally:
+            os.unlink(handle.name)
+        return completed.stdout.strip()
+
+
+def parking_issue_title(album):
+    return f'Parkeerissue: geen canoniek werk op album "{album["title"]}"'
+
+
+def _suggestion_lines(entry):
+    lines = []
+    suggestions = entry.get('external_suggestions')
+    if suggestions:
+        lines.append('  - advisering MusicBrainz (nooit canoniek):')
+        for hit in suggestions:
+            composers = ', '.join(c['name'] for c in hit['composers']) or 'not stated on the work'
+            lines.append(f"    - {hit['title']} (musicbrainz work {hit['musicbrainz_work_id']})"
+                         f' — composer: {composers}')
+    elif suggestions is None:
+        lines.append('  - advisering MusicBrainz: niet beschikbaar (lookup faalde of was uitgeschakeld)')
+    return lines
+
+
+def render_parking_issue_body(report):
+    """Markdown body of a parking issue: evidence for tracks without a
+    canonical work. Advisory only — canonisation is a separate curator
+    decision (#327 route; mint proposal mode #331)."""
+    album = report['album']
+    lines = ['## Parkeerissue (#435-route)', '',
+             f'Album **{album}** bevat tracks zonder canoniek werk in `data/works/`.',
+             'Het kandidaat-album is nooit het bestaansrecht van een werk: canonisatie is',
+             'een afzonderlijk curatorbesluit (route #327; mint-voorstelmodus #331).', '',
+             '## Tracks zonder canoniek werk', '']
+    for entry in report['unmatched_track_details']:
+        if entry['state'] != 'unknown':
+            continue
+        version = f" (version: {entry['version']})" if entry['version'] else ''
+        tokens = ', '.join(entry['catalogue_tokens']) or 'none'
+        composers = ', '.join(entry['composers']) or 'no composer evidence found'
+        lines.append(f"- {entry['position']}. {entry['title']}{version}")
+        lines.append(f'  - catalogue tokens: {tokens}; composer evidence: {composers}')
+        lines.extend(_suggestion_lines(entry))
+    proposals = report.get('proposed_works') or []
+    if proposals:
+        lines += ['', '## Voorgestelde werkdefinities (advisory, nooit automatisch canoniek)', '']
+        for proposal in proposals:
+            lines.append(f'--- data/works/{proposal["work_id"]}.yaml (alleen voorstel) ---')
+            lines.append(dump_yaml({key: value for key, value in proposal.items()
+                                    if key != 'evidence' and value is not None}))
+            lines.append('--- einde voorstel ---')
+    lines += ['', '## Vervolg', '',
+              '1. Canoniseer het werk via een gewone review-wijziging (mint-voorstelmodus',
+              '   #331, of een handmatige werk-YAML).',
+              '2. Her-run daarna de registratie van het album: de track matcht automatisch.']
+    return chr(10).join(lines)
+
+
+def render_issue_comment(result):
+    """Markdown mirror of the registration report for the curator issue (#435).
+
+    Works, playlist links, the direct-adoption and parking routes and the
+    exact next curator steps. The comment contains no decision: the curator
+    decides through the existing routes.
+    """
+    report = result['report']
+    issue = report.get('issue')
+    lines = [f"## Registratierapport — {report['album']}",
+             f"Recording ID: `{report['recording_id']}`", '']
+    if report['works']:
+        lines += ['### Werken', '']
+        for entry in report['works']:
+            lines.append(f"- `{entry['work_id']}`: {entry['action']}")
+        lines.append('')
+    playlist_lines = [f"- Vergelijkingsplaylist [{entry['name']}]({entry['playlist_url']})"
+                      for entry in report.get('playlist_plans') or []
+                      if entry.get('playlist_url')]
+    if playlist_lines:
+        lines += ['### Vergelijkingsplaylist(s)', ''] + playlist_lines + ['']
+    if report.get('direct_adoption_works'):
+        lines += ['### Directe adoptie mogelijk (geen bestaande aanbeveling)', '']
+        lines += [f"- `{wid}`" for wid in report['direct_adoption_works']]
+        lines += ['', 'Het album kan direct de aanbeveling worden: geen vergelijking nodig;',
+                  'besluit vastleggen via curatorrecord + PR (PR #339-patroon).', '']
+    unmatched = [e for e in report['unmatched_tracks']
+                 if e['state'] in ('unknown', 'ambiguous')]
+    if unmatched:
+        lines += ['### Niet-gematchte tracks (fail-closed, geen kandidaat)', '']
+        for entry in unmatched:
+            detail = f" [kandidaten: {', '.join(entry['candidates'])}]" if entry['candidates'] else ''
+            lines.append(f"- {entry['title']} ({entry['state']}){detail}")
+        lines.append('')
+    parking = result.get('parking_issue')
+    if parking:
+        if parking.get('url'):
+            lines += [f"Parkeerissue voor tracks zonder canoniek werk: {parking['url']}", '']
+        elif parking.get('state') == 'existing':
+            existing = parking['issue']
+            lines += ['Parkeerissue bestaat al voor dit album: '
+                      + str(existing.get('url') or existing.get('title')), '']
+    lines += ['### Vervolgstappen', '']
+    if issue is not None and (playlist_lines or report.get('issue_work_options')):
+        lines.append(f'- Vergelijkingsroute: `./curator {issue} <keuze> --apply`, '
+                     'daarna `./curator finish` (git blijft handmatig).')
+    if report.get('direct_adoption_works'):
+        lines.append('- Directe adoptie: curatorrecord + PR (PR #339-patroon); '
+                     'geen vergelijkingsplaylist nodig.')
+    if parking or unmatched:
+        lines.append('- Tracks zonder canoniek werk: canonisatie via de parkeerissue '
+                     '(#327-route), daarna de registratie her-runnen.')
+    return chr(10).join(lines)
+
+
 def run(root, url, *, dry_run=False, recording_id=None, update_existing=False,
         read_client=None, user_client_factory=None, today=None, suggest_client=None,
-        canonize=False, issue=None, work=None, catalog_factory=None):
+        canonize=False, issue=None, work=None, catalog_factory=None,
+        comment=False, create_parking_issue=False, gh_client=None, selector=None):
     from datetime import date
     today = today or date.today().isoformat()
     identifier = album_id(url)
@@ -1224,7 +1426,8 @@ def run(root, url, *, dry_run=False, recording_id=None, update_existing=False,
     # fail-closed (unique ISRC-chain work + canonical composer evidence) and
     # are only written with --canonize.
     proposals, canonized = [], []
-    if (canonize or dry_run) and any(m['state'] != 'matched' for m in matches):
+    if (canonize or dry_run or create_parking_issue) and any(m['state'] != 'matched'
+                                                            for m in matches):
         suggest = suggest_client if suggest_client is not None else SuggestionClient()
         proposals = build_work_proposals(matches, persons, album, suggest)
         if canonize and not dry_run and proposals:
@@ -1234,19 +1437,29 @@ def run(root, url, *, dry_run=False, recording_id=None, update_existing=False,
             matches = match_works(tracks, works, persons, album['artists'], album.get('title', ''))
             recording, unmatched_tracks = build_recording(
                 root, album, matches, roles, unmatched_artists, today, recording_id)
-    if not recording['works'] and not dry_run:
+    parking_details = [d for d in unmatched_track_details(matches, persons)
+                       if d['state'] == 'unknown']
+    if not recording['works'] and not dry_run and not (create_parking_issue and parking_details):
         raise ValueError('No track could be related to canonical works; refusing to write anything. '
                          'Re-run with --dry-run for the per-track report of missing work definitions.'
                          + (' Canonization (--canonize) found no safe work proposal for the '
-                            'remaining tracks.' if canonize else ''))
-    if issue is not None:
-        bind_issue(recording, matches, roles, performers, issue, work)
-    recommendations, unattributed, breakdown = existing_recommendations(root, works)
-    require((issue is None) == (work is None),
-            '--issue and --work are supplied together: the issue number names the '
-            'comparison playlist, the work ID binds it to this issue')
+                            'remaining tracks.' if canonize else '')
+                         + (' Use --create-parking-issue to open a separate issue for the '
+                            'non-canonical tracks instead.' if parking_details else ''))
     if issue is not None:
         require(isinstance(issue, int) and issue > 0, 'Issue number must be positive')
+    require(work is None or issue is not None,
+            '--work is only meaningful together with --issue: the issue number names '
+            'the comparison playlist, the work ID binds it to this issue')
+    recommendations, unattributed, breakdown = existing_recommendations(root, works)
+    resolution = None
+    if issue is not None and work is None:
+        # #435: the issue author supplies only the album URL; the comparison
+        # work is resolved from the album itself, never guessed.
+        resolution = resolve_issue_work(recording, recommendations, issue, selector)
+        work = resolution['work_id']
+    if issue is not None and work is not None:
+        bind_issue(recording, matches, roles, performers, issue, work)
     plans, playlist_errors = playlist_plan(
         root, album, recording, matches, recommendations, today,
         issue=issue, work=work, read_client=client,
@@ -1254,10 +1467,14 @@ def run(root, url, *, dry_run=False, recording_id=None, update_existing=False,
         or (lambda album_id: CatalogClient(access_token(), album_id)),
         works=works, persons=persons)
     plans = [p for p in plans if p['current_track_ids']]
-    if issue is not None and not plans and not any(e['work_id'] == work for e in playlist_errors):
+    if work is not None and issue is not None and not plans \
+            and not any(e['work_id'] == work for e in playlist_errors):
         raise ValueError(f'Issue #{issue} work {work} has no comparison playlist on this album: '
                          'the work must be a matched candidate with an existing recommendation '
                          'carrying a TIDAL track anchor')
+    direct_adoption = sorted({entry['work_id'] for entry in recording['works']
+                              if entry.get('status') == 'candidate'
+                              and entry['work_id'] not in recommendations})
     work_lines = []
     for entry in recording['works']:
         if entry.get('status') == 'candidate':
@@ -1269,7 +1486,8 @@ def run(root, url, *, dry_run=False, recording_id=None, update_existing=False,
                 action = ('candidate; existing recommendation has no TIDAL track anchor, '
                           'no comparison playlist')
             else:
-                action = 'candidate; no existing recommendation, no playlist'
+                action = ('candidate; no existing recommendation, no playlist; '
+                          'direct adoption possible (no comparison needed)')
         else:
             action = 'unevaluated work entry (no status); see notes'
         work_lines.append({'work_id': entry['work_id'], 'action': action})
@@ -1285,6 +1503,9 @@ def run(root, url, *, dry_run=False, recording_id=None, update_existing=False,
                                     'variant': u.get('variant')} for u in unmatched_tracks],
               'unmatched_track_details': unmatched_track_details(matches, persons),
               'unmatched_artists': unmatched_artists,
+              'direct_adoption_works': direct_adoption,
+              'issue': issue,
+              'issue_work_options': resolution['options'] if resolution else None,
               'unattributed_recommendation_lines': unattributed,
               'unattributed_breakdown': breakdown,
               'proposed_works': proposals,
@@ -1292,8 +1513,13 @@ def run(root, url, *, dry_run=False, recording_id=None, update_existing=False,
     output = {'recording': recording, 'report': report, 'dry_run': dry_run}
     if dry_run and not recording['works'] and report['unmatched_track_details']:
         attach_external_suggestions(report, suggest_client=suggest_client)
+    elif create_parking_issue and parking_details:
+        # Advisory MusicBrainz evidence for the parking issue body (#435);
+        # fail-open like the dry-run path, never canonical.
+        attach_external_suggestions(report, suggest_client=suggest_client)
     if dry_run:
-        output['note'] = ('Dry run: nothing written, no playlist created. '
+        output['note'] = ('Dry run: nothing written, no playlist created; no issue '
+                          'comment or parking issue is posted either. '
                           'Re-run without --dry-run to apply.')
         if not recording['works']:
             output['note'] = ('Dry run: no track could be related to canonical works; nothing to '
@@ -1305,14 +1531,15 @@ def run(root, url, *, dry_run=False, recording_id=None, update_existing=False,
                                   '--canonize to canonize them as part of the registration and '
                                   're-run.')
         return output
-    written = write_recording(root, recording, update_existing=update_existing)
+    written = (write_recording(root, recording, update_existing=update_existing)
+               if recording['works'] else None)
     created = []
     if plans and issue is not None:
         factory = user_client_factory or (lambda: UserClient(user_access_token()))
         user_client = factory()
         for plan in plans:
             created.append({'work_id': plan['work_id'], 'url': provision_playlist(user_client, plan)})
-    output['written'] = str(written.relative_to(root))
+    output['written'] = (str(written.relative_to(root)) if written is not None else None)
     output['playlists'] = created
     if plans and issue is None:
         report['playlist_notice'] = ('Comparison playlist(s) planned but not created: re-run with '
@@ -1322,6 +1549,37 @@ def run(root, url, *, dry_run=False, recording_id=None, update_existing=False,
             entry['playlist_url'] = next(p['url'] for p in created if p['work_id'] == entry['work_id'])
         else:
             entry['playlist_url'] = None
+    parking = None
+    if create_parking_issue and parking_details:
+        gh = gh_client or GithubCli(root)
+        if not gh.available():
+            parking = {'url': None, 'state': 'unavailable'}
+        else:
+            try:
+                duplicates = gh.find_open_issues(f'"{album_url(identifier)}"')
+                if duplicates:
+                    parking = {'url': None, 'state': 'existing', 'issue': duplicates[0]}
+                else:
+                    parking = {'url': gh.create_issue(parking_issue_title(album),
+                                                     render_parking_issue_body(report)),
+                              'state': 'created'}
+            except (ValueError, OSError) as exc:
+                parking = {'url': None, 'state': 'failed', 'error': str(exc)}
+    output['parking_issue'] = parking
+    comment_url, comment_notice = None, None
+    if comment and issue is not None:
+        gh = gh_client or GithubCli(root)
+        if not gh.available():
+            comment_notice = ('gh unavailable: issue comment not posted; the terminal '
+                              'report above is the fallback.')
+        else:
+            try:
+                comment_url = gh.comment_issue(issue, render_issue_comment(output))
+            except (ValueError, OSError) as exc:
+                comment_notice = (f'Issue comment not posted ({exc}); the terminal '
+                                  'report above is the fallback.')
+    output['comment_url'] = comment_url
+    output['comment_notice'] = comment_notice
     return output
 
 
@@ -1352,17 +1610,47 @@ def main(argv=None):
                              'canonical composer evidence) as part of this registration; without '
                              'this flag proposals are advisory only')
     parser.add_argument('--issue', type=int,
-                        help='Issue number of the curator comparison issue; names the playlist '
-                             '"Curator <date> Issue #<nr>" and creates it only for --work')
+                        help='Curator issue number; names the playlist "Curator <date> Issue '
+                             '#<nr>". Without --work the comparison work is resolved from the '
+                             'album: unique candidate automatically, several interactively')
     parser.add_argument('--work',
-                        help='Canonical work ID bound to the issue; with --issue the comparison '
-                             'playlist is created only for this work')
+                        help='Canonical work ID bound to the issue; optional with --issue — '
+                             'omit it to let the script resolve the comparison work')
+    parser.add_argument('--comment', action='store_true',
+                        help='Post the report as a comment on the --issue via the local gh CLI '
+                             '(bookkeeping only, never a decision); falls back to the terminal '
+                             'report when gh is unavailable')
+    parser.add_argument('--create-parking-issue', action='store_true',
+                        help='Open a separate issue for tracks without a canonical work (via gh, '
+                             'after a duplicate check on the album URL), with advisory '
+                             'MusicBrainz evidence; canonisation stays a curator decision')
     args = parser.parse_args(argv)
+    if args.comment and args.issue is None:
+        parser.error('--comment requires --issue')
+    if args.create_parking_issue and args.dry_run:
+        parser.error('--create-parking-issue writes to GitHub; run it without --dry-run')
+    selector = None
+    if args.issue is not None and args.work is None:
+        def selector(options):
+            print('Meerdere kandidaat-werken met een bestaande aanbeveling op dit album:')
+            for index, wid in enumerate(options, 1):
+                print(f'  {index}. {wid}')
+            while True:
+                raw = input(f'Voor welk werk is issue #{args.issue}? '
+                            f'[1-{len(options)}], lege regel = afbreken: ')
+                if not raw.strip():
+                    raise ValueError('No comparison work chosen; run aborted before '
+                                     'writing anything')
+                if raw.strip().isdigit() and 1 <= int(raw.strip()) <= len(options):
+                    return options[int(raw.strip()) - 1]
+                print(f'  Kies 1 t/m {len(options)}.')
     try:
         result = run(ROOT, args.album_url, dry_run=args.dry_run,
                      recording_id=args.recording_id, update_existing=args.update_existing,
                      suggest_client=NullSuggestionClient() if args.no_external_lookups else None,
-                     canonize=args.canonize, issue=args.issue, work=args.work)
+                     canonize=args.canonize, issue=args.issue, work=args.work,
+                     comment=args.comment, create_parking_issue=args.create_parking_issue,
+                     selector=selector)
     except ValueError as exc:
         print(f'ERROR: {exc}', file=sys.stderr)
         return 1
@@ -1457,6 +1745,23 @@ def print_report(result, *, verbose_unattributed=False):
         print(result['note'])
     if result.get('written'):
         print(f"Written: {result['written']}")
+    parking = result.get('parking_issue')
+    if parking:
+        if parking.get('url'):
+            print(f"Parking issue created: {parking['url']}")
+        elif parking.get('state') == 'existing':
+            existing = parking['issue']
+            print('Parking issue skipped, an open issue for this album already exists: '
+                  + str(existing.get('url') or existing.get('title')))
+        elif parking.get('state') == 'failed':
+            print(f"Parking issue not created: {parking.get('error')}")
+        else:
+            print('Parking issue not created: gh unavailable; the terminal report '
+                  'above is the fallback.')
+    if result.get('comment_url'):
+        print(f"Issue comment posted: {result['comment_url']}")
+    if result.get('comment_notice'):
+        print(f"  {result['comment_notice']}")
 
 
 if __name__ == '__main__':

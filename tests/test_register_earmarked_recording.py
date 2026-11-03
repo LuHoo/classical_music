@@ -253,7 +253,8 @@ class FixtureCase(unittest.TestCase):
         self.assertIn('Album: Test Album', output)
         self.assertIn('Recording ID: test-album', output)
         self.assertIn('work-a: candidate; comparison playlist planned', output)
-        self.assertIn('Dry run: nothing written, no playlist created.', output)
+        self.assertIn('Dry run: nothing written, no playlist created; no issue '
+                      'comment or parking issue is posted either.', output)
 
     def test_album_url_validation_is_fail_closed(self):
         for bad in ['', 'https://tidal.com/browse/album/', 'https://tidal.com/browse/album/12/x',
@@ -1264,11 +1265,12 @@ class PlaylistIssueCase(FixtureCase):
         self.assertEqual(result['playlists'], [])
         self.assertIn('re-run with --issue', result['report']['playlist_notice'])
 
-    def test_issue_and_work_are_supplied_together(self):
-        with self.assertRaises(ValueError):
-            self.run_script(issue=316, user_client_factory=lambda: FakeUserClient())
-        with self.assertRaises(ValueError):
+    def test_work_without_issue_fails_closed(self):
+        # #435: --work without --issue is meaningless; --issue alone is legal
+        # (the comparison work is then resolved from the album).
+        with self.assertRaises(ValueError) as ctx:
             self.run_script(work='work-a', user_client_factory=lambda: FakeUserClient())
+        self.assertIn('only meaningful together with --issue', str(ctx.exception))
 
     def test_issue_work_without_playlist_on_this_album_fails_closed(self):
         # work-b is recommended without a TIDAL track anchor: binding an issue
@@ -1461,3 +1463,278 @@ class VariantCase(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+class FakeGithubCli:
+    """gh double: records issue writes, never touches the network (#435)."""
+
+    def __init__(self, available=True, existing=None, fail=False):
+        self.available_flag = available
+        self.existing = existing or []
+        self.fail = fail
+        self.comments = []
+        self.created = []
+        self.queries = []
+
+    def available(self):
+        return self.available_flag
+
+    def find_open_issues(self, query):
+        self.queries.append(query)
+        if self.fail:
+            raise ValueError('gh issue list failed: network unavailable')
+        return self.existing
+
+    def create_issue(self, title, body):
+        self.created.append((title, body))
+        return 'https://github.com/LuHoo/classical_music/issues/999'
+
+    def comment_issue(self, number, body):
+        self.comments.append((number, body))
+        return f'https://github.com/LuHoo/classical_music/issues/{number}#issuecomment-1'
+
+
+class IssueWorkflowCase(unittest.TestCase):
+    """#435: --issue without --work resolves the comparison work; --comment
+    mirrors the report on the issue. Standalone case (les #351): the fixture
+    anchors a recommendation on both works, so FixtureCase is not inherited."""
+
+    def setUp(self):
+        import tempfile
+        self.root = Path(tempfile.mkdtemp())
+        for name in ('works', 'persons', 'artists', 'performances', 'recordings'):
+            (self.root / 'data' / name).mkdir(parents=True)
+        (self.root / 'docs').mkdir()
+        for name in ('data/works/w1.yaml', 'data/works/w2.yaml', 'data/persons/p1.yaml',
+                     'data/artists/performers.yaml', 'data/performances/perf1.yaml',
+                     'data/performances/perf2.yaml', 'docs/composer.md'):
+            Path(self.root, name).touch()
+        self.documents = {
+            str(self.root / 'data/works/w1.yaml'): {
+                'id': 'work-a', 'title': 'Symphonie fantastique', 'composer_id': 'hector-berlioz'},
+            str(self.root / 'data/works/w2.yaml'): {
+                'id': 'work-b', 'title': 'Harold en Italie', 'composer_id': 'hector-berlioz'},
+            str(self.root / 'data/persons/p1.yaml'): {'id': 'hector-berlioz', 'name': 'Hector Berlioz'},
+            str(self.root / 'data/artists/performers.yaml'): {'artists': [
+                {'id': 'bernard-haitink', 'canonical_name': 'Bernard Haitink', 'type': 'conductor'},
+                {'id': 'royal-concertgebouw-orchestra', 'canonical_name': 'Royal Concertgebouw Orchestra',
+                 'type': 'orchestra'}]},
+            str(self.root / 'data/performances/perf1.yaml'): {
+                'id': 'perf1', 'work_id': 'work-a', 'recommended': True,
+                'performers': [{'name': 'Bernard Haitink'}],
+                'links': {'tidal': {'url': 'https://tidal.com/track/111'}}},
+            # work-b is anchored too: two comparison candidates on this album.
+            str(self.root / 'data/performances/perf2.yaml'): {
+                'id': 'perf2', 'work_id': 'work-b', 'recommended': True,
+                'performers': [{'name': 'Someone'}],
+                'links': {'tidal': {'url': 'https://tidal.com/track/555'}}},
+        }
+        (self.root / 'docs/composer.md').write_text('', encoding='utf-8')
+        self._read_yaml = reg.read_yaml
+
+        def read(path):
+            path = str(path)
+            if path in self.documents:
+                return self.documents[path]
+            return self._read_yaml(path)
+
+        reg.read_yaml = read
+        self.recommendation_client = FakeCatalogClient(album_doc_for('777'), [item_page([
+            ('111', 'Symphonie fantastique: I. Rêveries',
+             ('Hector Berlioz', 'Royal Concertgebouw Orchestra')),
+            ('112', 'Symphonie fantastique: II. Un bal',
+             ('Hector Berlioz', 'Royal Concertgebouw Orchestra')),
+            ('555', 'Harold en Italie', ('Hector Berlioz', 'Royal Concertgebouw Orchestra')),
+        ])], album='777')
+        self.client = FakeCatalogClient(album_doc(), [item_page([
+            ('222', 'Symphonie fantastique: I. Rêveries',
+             ('Hector Berlioz', 'Royal Concertgebouw Orchestra')),
+            ('223', 'Symphonie fantastique: II. Un bal',
+             ('Hector Berlioz', 'Royal Concertgebouw Orchestra')),
+            ('224', 'Harold en Italie', ('Hector Berlioz', 'Unknown Soprano')),
+        ])], track_albums={'111': '777', '555': '777'})
+
+    def tearDown(self):
+        reg.read_yaml = self._read_yaml
+
+    def run_script(self, **kwargs):
+        self.client.reset()
+        self.recommendation_client.reset()
+        kwargs.setdefault('read_client', self.client)
+        kwargs.setdefault('catalog_factory', lambda album: self.recommendation_client)
+        return reg.run(self.root, ALBUM_URL, today='2026-10-18', **kwargs)
+        self.recommendation_client = FakeCatalogClient(album_doc_for('777'), [item_page([
+            ('111', 'Symphonie fantastique: I. Rêveries',
+             ('Hector Berlioz', 'Royal Concertgebouw Orchestra')),
+            ('112', 'Symphonie fantastique: II. Un bal',
+             ('Hector Berlioz', 'Royal Concertgebouw Orchestra')),
+            ('555', 'Harold en Italie', ('Hector Berlioz', 'Royal Concertgebouw Orchestra')),
+        ])], album='777')
+        self.client = FakeCatalogClient(album_doc(), [item_page([
+            ('222', 'Symphonie fantastique: I. Rêveries',
+             ('Hector Berlioz', 'Royal Concertgebouw Orchestra')),
+            ('223', 'Symphonie fantastique: II. Un bal',
+             ('Hector Berlioz', 'Royal Concertgebouw Orchestra')),
+            ('224', 'Harold en Italie', ('Hector Berlioz', 'Unknown Soprano')),
+        ])], track_albums={'111': '777', '555': '777'})
+
+    def test_issue_without_work_auto_selects_the_unique_comparison_candidate(self):
+        # work-b keeps its recommendation but loses its track anchor: only
+        # work-a stays eligible for the comparison route.
+        self.documents[str(self.root / 'data/performances/perf2.yaml')] = {
+            'id': 'perf2', 'work_id': 'work-b', 'recommended': True,
+            'performers': [{'name': 'Someone'}]}
+        user = FakeUserClient()
+        result = self.run_script(issue=435, user_client_factory=lambda: user)
+        plan = result['report']['playlist_plans'][0]
+        self.assertEqual(plan['work_id'], 'work-a')
+        self.assertEqual(plan['name'], 'Curator 2026-10-18 Issue #435')
+        self.assertTrue(plan['playlist_url'])
+        self.assertEqual(result['report']['issue_work_options'], ['work-a'])
+        saved = self._read_yaml(self.root / 'data/recordings/test-album.yml')
+        bound = next(e for e in saved['works'] if e['work_id'] == 'work-a')
+        self.assertEqual(bound['issue'], 435)
+
+    def test_issue_without_work_prompts_when_several_candidates_exist(self):
+        user = FakeUserClient()
+        chosen = []
+        result = self.run_script(issue=435, user_client_factory=lambda: user,
+                                 selector=lambda options: chosen.append(options) or 'work-b')
+        self.assertEqual(chosen, [['work-a', 'work-b']])
+        plan = result['report']['playlist_plans'][0]
+        self.assertEqual(plan['work_id'], 'work-b')
+        self.assertEqual(plan['name'], 'Curator 2026-10-18 Issue #435')
+        saved = self._read_yaml(self.root / 'data/recordings/test-album.yml')
+        bound = next(e for e in saved['works'] if e['work_id'] == 'work-b')
+        self.assertEqual(bound['issue'], 435)
+
+    def test_issue_without_work_fails_closed_without_selector(self):
+        with self.assertRaises(ValueError) as ctx:
+            self.run_script(issue=435, user_client_factory=lambda: FakeUserClient())
+        message = str(ctx.exception)
+        self.assertIn('work-a', message)
+        self.assertIn('work-b', message)
+        self.assertIn('--work', message)
+        self.assertEqual(list((self.root / 'data/recordings').glob('*.y*ml')), [])
+
+    def test_comment_posts_the_report_on_the_issue(self):
+        gh = FakeGithubCli()
+        result = self.run_script(issue=435, comment=True,
+                                 user_client_factory=lambda: FakeUserClient(),
+                                 gh_client=gh, selector=lambda options: 'work-a')
+        self.assertEqual(gh.comments[0][0], 435)
+        body = gh.comments[0][1]
+        self.assertIn('Test Album', body)
+        self.assertIn('./curator 435', body)
+        self.assertIn('Curator 2026-10-18 Issue #435', body)
+        self.assertTrue(result['comment_url'])
+        self.assertIsNone(result['comment_notice'])
+
+    def test_comment_falls_back_to_the_terminal_when_gh_is_unavailable(self):
+        gh = FakeGithubCli(available=False)
+        result = self.run_script(issue=435, comment=True,
+                                 user_client_factory=lambda: FakeUserClient(),
+                                 gh_client=gh, selector=lambda options: 'work-a')
+        self.assertEqual(gh.comments, [])
+        self.assertIsNone(result['comment_url'])
+        self.assertIn('fallback', result['comment_notice'])
+
+    def test_dry_run_never_comments_and_never_parks(self):
+        gh = FakeGithubCli()
+        self.run_script(dry_run=True, issue=435, comment=True,
+                        create_parking_issue=True, gh_client=gh,
+                        selector=lambda options: 'work-a')
+        self.assertEqual(gh.comments, [])
+        self.assertEqual(gh.created, [])
+
+
+class DirectAdoptionCase(FixtureCase):
+    """#435 casus 2: a canonical candidate without a recommendation is the
+    direct-adoption route, never written by the script itself."""
+
+    def test_candidate_without_any_anchored_recommendation_reports_direct_adoption(self):
+        # Neither work carries a recommendation at all: the direct-adoption
+        # route, with nothing to compare against.
+        self.documents[str(self.root / 'data/performances/perf1.yaml')] = {
+            'id': 'perf1', 'work_id': 'work-a', 'recommended': False,
+            'performers': [{'name': 'Bernard Haitink'}]}
+        self.documents[str(self.root / 'data/performances/perf2.yaml')] = {
+            'id': 'perf2', 'work_id': 'work-b', 'recommended': False,
+            'performers': [{'name': 'Someone'}]}
+        (self.root / 'docs/composer.md').write_text('', encoding='utf-8')
+        self.client.track_albums = {}
+        user = FakeUserClient()
+        result = self.run_script(issue=435, user_client_factory=lambda: user)
+        self.assertEqual(result['report']['direct_adoption_works'], ['work-a', 'work-b'])
+        self.assertEqual(result['playlists'], [])
+        self.assertIn('direct adoption possible',
+                      result['report']['works'][0]['action'])
+        saved = self._read_yaml(self.root / 'data/recordings/test-album.yml')
+        self.assertFalse(any(e.get('issue') for e in saved['works']))
+
+
+class ParkingCase(ZeroMatchCase):
+    """#435 parkeerissue: unmatched tracks get a separate issue, never an album."""
+
+    def test_parking_issue_is_created_with_advisory_evidence(self):
+        gh = FakeGithubCli()
+        result = self.run_script(create_parking_issue=True, gh_client=gh)
+        self.assertEqual(len(gh.created), 1)
+        title, body = gh.created[0]
+        self.assertIn('Parkeerissue', title)
+        self.assertIn('Schubert: Piano Works', title)
+        self.assertIn('Lebensstürme', body)
+        self.assertIn('musicbrainz work w1', body)
+        self.assertIn('#327', body)
+        self.assertEqual(result['parking_issue']['url'],
+                         'https://github.com/LuHoo/classical_music/issues/999')
+        self.assertEqual(result['parking_issue']['state'], 'created')
+        self.assertIsNone(result['written'])
+        self.assertEqual(list((self.root / 'data/recordings').glob('*.y*ml')), [])
+        # The duplicate check searched for the album URL before creating.
+        self.assertIn('https://tidal.com/browse/album/987654', gh.queries[0])
+
+    def test_parking_issue_duplicate_check_skips_creation(self):
+        gh = FakeGithubCli(existing=[{
+            'number': 300, 'title': 'older parking issue',
+            'url': 'https://github.com/LuHoo/classical_music/issues/300'}])
+        result = self.run_script(create_parking_issue=True, gh_client=gh)
+        self.assertEqual(gh.created, [])
+        self.assertEqual(result['parking_issue']['state'], 'existing')
+        self.assertEqual(result['parking_issue']['issue']['number'], 300)
+
+    def test_failed_duplicate_check_never_creates_a_second_issue(self):
+        gh = FakeGithubCli(fail=True)
+        result = self.run_script(create_parking_issue=True, gh_client=gh)
+        self.assertEqual(gh.created, [])
+        self.assertEqual(result['parking_issue']['state'], 'failed')
+        self.assertIn('network unavailable', result['parking_issue']['error'])
+
+    def test_unavailable_gh_reports_the_terminal_fallback(self):
+        gh = FakeGithubCli(available=False)
+        result = self.run_script(create_parking_issue=True, gh_client=gh)
+        self.assertEqual(gh.created, [])
+        self.assertEqual(result['parking_issue']['state'], 'unavailable')
+
+    def test_report_printing_handles_parking_and_comment_results(self):
+        # #352 pattern: the CLI print path runs over fake results in CI.
+        import contextlib
+        import io
+        result = self.run_script(create_parking_issue=True, gh_client=FakeGithubCli())
+        buffer = io.StringIO()
+        with contextlib.redirect_stdout(buffer):
+            reg.print_report(result)
+        output = buffer.getvalue()
+        self.assertIn('Parking issue created: '
+                      'https://github.com/LuHoo/classical_music/issues/999', output)
+
+    def test_comment_notice_is_printed_as_a_fallback_line(self):
+        import contextlib
+        import io
+        result = self.run_script(dry_run=True)
+        result['comment_notice'] = ('gh unavailable: issue comment not posted; the '
+                                    'terminal report above is the fallback.')
+        buffer = io.StringIO()
+        with contextlib.redirect_stdout(buffer):
+            reg.print_report(result)
+        self.assertIn('fallback', buffer.getvalue())
