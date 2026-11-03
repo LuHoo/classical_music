@@ -1,5 +1,5 @@
 name: Candidate Review
-about: Review a candidate performance before canonical acceptance
+description: Review a candidate performance before canonical acceptance
 title: "[Candidate Review] <composer> - <work>"
 labels:
   - candidate-review

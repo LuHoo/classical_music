@@ -34,6 +34,18 @@ class NewPerformanceIssueTemplateCase(unittest.TestCase):
         text = TEMPLATE.read_text(encoding='utf-8')
         self.assertNotIn('phase-2-curator-workflow', text)
 
+    def test_template_meets_github_issue_form_top_level_schema(self):
+        # GitHub laat een formulier in de kiemkeuze stilletjes vallen wanneer het
+        # top-level schema niet klopt: 'description' is verplicht, 'about' bestaat
+        # daar niet, en een lege 'labels: []'-lijst is evenmin geldig (#435).
+        template_dir = ROOT / '.github/ISSUE_TEMPLATE'
+        for template in sorted(template_dir.glob('*.yml')):
+            with self.subTest(template=template.name):
+                text = template.read_text(encoding='utf-8')
+                self.assertRegex(text, r'(?m)^description: \S')
+                self.assertNotRegex(text, r'(?m)^about:')
+                self.assertNotIn('labels: []', text)
+
 
 if __name__ == '__main__':
     unittest.main()
