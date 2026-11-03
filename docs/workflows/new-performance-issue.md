@@ -6,7 +6,7 @@ script uit het album zelf opgelost.
 
 ## Workflow
 
-1. Open een issue via het template **"Nieuwe uitvoering"** (`.github/ISSUE_TEMPLATE/new-performance.yml`); het enige verplichte veld is de TIDAL-album-URL.
+1. Open een issue via het template **"New performance"** (`.github/ISSUE_TEMPLATE/new-performance.md`, Engels). Dit is een klassiek markdown-template: de volledige template-tekst — inclusief de zichtbare "Processing (script)"-sectie met het copy-paste blok — wordt de issue-body (#440). Het enige verplichte veld is de TIDAL-album-URL.
 2. Draai lokaal (copy-paste-blok staat in de issue-body):
 
    ```bash
