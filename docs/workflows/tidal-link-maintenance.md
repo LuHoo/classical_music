@@ -187,8 +187,8 @@ marker containing the URL):
 - an existing open issue receives one comment per new check result instead of
   a duplicate issue.
 
-An issue body lists the Performance, Work, file, URL, reason, and supplied
-previous candidates as context, and states explicitly that nothing is promoted
+An issue body lists the Performance, its performers and album title, the
+Work, file, URL, reason, and supplied previous candidates as context, and states explicitly that nothing is promoted
 and the recommendation stays unchanged. The script requires `GITHUB_TOKEN`
 (or `--dry-run` to inspect planned actions without any API call). The
 recovery search itself runs inside the check (exact ISRC/barcode identity
