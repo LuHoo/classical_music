@@ -1,0 +1,52 @@
+name: Nieuwe uitvoering
+about: Registreer een nieuwe uitvoeringskandidaat (TIDAL-album) voor de curator-workflow (design issue #435)
+title: "Nieuwe uitvoering: <uitvoering / album>"
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Vul alléén de TIDAL-album-URL in — work-id's of track-id's zijn niet nodig.
+        Het registratiescript haalt componist en werken zelf op bij TIDAL en lost
+        het vergelijkingswerk op: unieke kandidaat → automatisch; meerdere →
+        interactieve prompt. Werken zonder bestaande aanbeveling worden gemeld als
+        directe adoptie; tracks zonder canoniek werk krijgen een parkeerissue.
+        Zie `docs/workflows/new-performance-issue.md`.
+
+  - type: input
+    id: album_url
+    attributes:
+      label: TIDAL-album-URL
+      description: bv. https://tidal.com/browse/album/123456
+      placeholder: https://tidal.com/browse/album/…
+    validations:
+      required: true
+
+  - type: textarea
+    id: toelichting
+    attributes:
+      label: Toelichting (optioneel)
+      description: Waarom deze kandidaat? Context voor het curatorbesluit.
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Verwerking (script)
+
+        Noteer na het aanmaken van dit issue het issuenummer `<nr>` en draai lokaal:
+
+        ```bash
+        source ~/.tidal/env
+        .venv/bin/python scripts/register_earmarked_recording.py "https://tidal.com/browse/album/<id>" --issue <nr> --comment
+        ```
+
+        - `--comment` plaatst het registratierapport als comment op dit issue (via
+          `gh`; zonder `gh` is de Terminal-uitvoer de fallback).
+        - Tracks zonder canoniek werk: voeg `--create-parking-issue` toe om een
+          aparte parkeerissue te laten aanmaken (duplicaatcheck op de album-URL;
+          adviserend MusicBrainz-bewijs; canonisatie blijft een curatorbesluit).
+        - Besluit daarna via de vergelijkingsroute `./curator <nr> <keuze> --apply`
+          (of directe adoptie via curatorrecord + PR), afsluiten met
+          `./curator finish`; git blijft handmatig.
