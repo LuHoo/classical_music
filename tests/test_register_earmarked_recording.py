@@ -662,6 +662,89 @@ class SchubertCase(unittest.TestCase):
         self.assertEqual(reg.catalogue_tokens('Hob. Ia:7'), set())
         self.assertEqual(reg.catalogue_tokens('Sinfonie Nr. 4 op. 120'), {'op120'})
 
+    def test_track_catalogue_tokens_carry_the_number_inside_the_opus(self):
+        # #442: zonder sub-nummer delen alle broertjes binnen één opus het
+        #zelfde token en wordt elke track daarin schijn-ambigu.
+        self.assertEqual(
+            reg.track_catalogue_tokens('Nocturne No. 11 in G Minor, Op. 37 No. 1'),
+            {'op37:1'})
+        self.assertEqual(
+            reg.track_catalogue_tokens('Nocturne No. 12 in G Major, Op. 37 No. 2'),
+            {'op37:2'})
+        self.assertEqual(
+            reg.track_catalogue_tokens('Nocturne, Op. 9 No. 1'), {'op9:1'})
+        # 'posth.' tussen prefix en nummer is toegestaan (#438-track nr. 19).
+        self.assertEqual(
+            reg.track_catalogue_tokens('Nocturne No. 19 in E Minor, Op. posth. 72 No. 1'),
+            {'op72:1'})
+        # Compatibiliteit met de bestaande CATALOGUE-gevallen.
+        self.assertEqual(
+            reg.track_catalogue_tokens('Fantasia in F Minor, D. 940, Op. 103'),
+            {'d940', 'op103'})
+        self.assertEqual(reg.track_catalogue_tokens('Hob. Ia:7'), set())
+        self.assertEqual(reg.track_catalogue_tokens('Sinfonie Nr. 4 op. 120'), {'op120'})
+        self.assertEqual(reg.track_catalogue_tokens('Le Tombeau de Couperin, M. 68a'),
+                         {'m68a'})
+
+
+class ChopinNocturneCase(unittest.TestCase):
+    """#442: uniquely numbered works inside one opus match their own track —
+    spurious ambiguity (every sibling sharing the bare opus token) is gone.
+    Fail-closed stays: a track whose number never reaches the canonical data
+    (Op. posth. No. 20 without a KK alias) remains unknown, never guessed."""
+
+    PERSONS = {'frederic-chopin': 'Frédéric Chopin'}
+
+    WORKS = [
+        {'id': 'frederic-chopin-nocturne-op-9-no-1', 'composer_id': 'frederic-chopin',
+         'title': 'Nocturne, Op. 9 No. 1', 'aliases': []},
+        {'id': 'frederic-chopin-nocturne-op-9-no-2', 'composer_id': 'frederic-chopin',
+         'title': 'Nocturne, Op. 9 No. 2', 'aliases': []},
+        {'id': 'frederic-chopin-nocturne-op-37-no-1', 'composer_id': 'frederic-chopin',
+         'title': 'Nocturne, Op. 37 No. 1', 'aliases': []},
+        {'id': 'frederic-chopin-nocturne-op-37-no-2', 'composer_id': 'frederic-chopin',
+         'title': 'Nocturne, Op. 37 No. 2', 'aliases': []},
+        {'id': 'frederic-chopin-nocturne-op-72-no-1', 'composer_id': 'frederic-chopin',
+         'title': 'Nocturne, Op. 72 No. 1', 'aliases': []},
+        {'id': 'frederic-chopin-nocturne-in-c-sharp-minor-kk-iva-16',
+         'composer_id': 'frederic-chopin',
+         'title': 'Nocturne in C-Sharp Minor, KK IVa/16', 'aliases': []},
+    ]
+
+    def match(self, title, version=None):
+        track = {'id': 't', 'title': title, 'version': version,
+                 'artists': [], 'credits': {}}
+        return reg.match_works([track], self.WORKS, self.PERSONS,
+                               ['Frédéric Chopin'], 'Chopin: The Nocturnes')[0]
+
+    def test_numbered_nocturnes_match_their_own_work(self):
+        for title, work_id in [
+                ('Nocturne No. 11 in G Minor, Op. 37 No. 1',
+                 'frederic-chopin-nocturne-op-37-no-1'),
+                ('Nocturne No. 12 in G Major, Op. 37 No. 2',
+                 'frederic-chopin-nocturne-op-37-no-2'),
+                ('Nocturne No. 1 in B-Flat Minor, Op. 9 No. 1',
+                 'frederic-chopin-nocturne-op-9-no-1'),
+                ('Nocturne No. 2 in E-Flat Major, Op. 9 No. 2',
+                 'frederic-chopin-nocturne-op-9-no-2')]:
+            entry = self.match(title)
+            self.assertEqual(entry['state'], 'matched', title)
+            self.assertEqual(entry['work']['id'], work_id, title)
+            self.assertNotIn('candidates', entry, title)
+
+    def test_posthumous_opus_number_matches_despite_posth_marker(self):
+        entry = self.match('Nocturne No. 19 in E Minor, Op. posth. 72 No. 1')
+        self.assertEqual(entry['state'], 'matched')
+        self.assertEqual(entry['work']['id'], 'frederic-chopin-nocturne-op-72-no-1')
+
+    def test_track_without_canonical_number_stays_unknown_not_guessed(self):
+        # 'Op. posth.' zonder nummer bereikt het canonieke KK-werk niet: geen
+        # alias, geen catalogue-overlap. Fail-closed unknown, geen kandidaat.
+        entry = self.match('Nocturne No. 20 in C-Sharp Minor, Op. posth.',
+                           version='First Version')
+        self.assertEqual(entry['state'], 'unknown')
+        self.assertNotIn('candidates', entry)
+
 
 class ZeroMatchCase(unittest.TestCase):
     """Album whose works are not canonical yet: dry-run reports per track, apply stays fail-closed."""
