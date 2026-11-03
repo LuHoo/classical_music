@@ -1,7 +1,6 @@
 name: Nieuwe uitvoering
-about: Registreer een nieuwe uitvoeringskandidaat (TIDAL-album) voor de curator-workflow (design issue #435)
+description: Registreer een nieuwe uitvoeringskandidaat (TIDAL-album) voor de curator-workflow (design issue #435)
 title: "Nieuwe uitvoering: <uitvoering / album>"
-labels: []
 body:
   - type: markdown
     attributes:

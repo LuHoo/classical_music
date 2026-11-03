@@ -1,5 +1,5 @@
 name: MB Recording Report
-about: Generate a complete overview of available recordings of one work, including arrangements and versions
+description: Generate a complete overview of available recordings of one work, including arrangements and versions
 title: "[MB Report] <componist> - <werk>"
 labels:
   - mb-recording-report
