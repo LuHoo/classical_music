@@ -298,6 +298,36 @@ def catalogue_tokens(text):
     return tokens
 
 
+NUMBERED_CATALOGUE = re.compile(
+    r'\b(D|Op|BWV|RV|Hob|KV|K|Sz|AV|TrV|L|S|M|WWV|MWV|Anh)\.?\s*'
+    r'(?:posth\.?\s*)?'
+    r'([IVXLC]+[a-z]?)?\s*([0-9]+[a-z]?)(?:\s*:\s*([0-9]+[a-z]?))?'
+    r'(?:\s*(?:No|Nr)\.?\s*([0-9]+[a-z]?))?',
+    re.IGNORECASE)
+
+
+def track_catalogue_tokens(text):
+    """Catalogue tokens for track-to-work matching (#442): the number inside
+    the opus is decisive evidence, 'Op. 37 No. 1' -> 'op37:1', and an optional
+    'posth.' between prefix and number is tolerated, 'Op. posth. 72 No. 1' ->
+    'op72:1'. Without the sub-number every sibling within one opus shares the
+    bare opus token and tracks become spuriously ambiguous. A cycle number
+    before the opus ('Nocturne No. 11 in G Minor, Op. 37 No. 1') is never
+    captured: it does not follow a catalogue prefix. Only work_matches uses
+    these finer tokens; catalogue_tokens itself stays untouched because the
+    docs attribution (existing_recommendations) relies on its opus-level
+    intersection semantics (slash forms like 'Op. 34/14', fail-closed pools)."""
+    tokens = set()
+    for match in NUMBERED_CATALOGUE.finditer(text or ''):
+        prefix, section, number, colon_sub, number_sub = match.groups()
+        token = prefix.casefold() + (section or '').casefold() + number.casefold()
+        sub = colon_sub or number_sub
+        if sub:
+            token += ':' + sub.casefold()
+        tokens.add(token)
+    return tokens
+
+
 class CatalogClient(UserClient):
     """GET-only catalogue client restricted to one album and its related catalogue reads."""
 
@@ -613,8 +643,9 @@ def work_matches(track, work, composers):
     normalized = norm(text)
     if norm(work['title']) in normalized or any(norm(a) in normalized for a in work['aliases']):
         return True
-    return bool(catalogue_tokens(text) & (catalogue_tokens(work['title']) |
-                                          {token for alias in work['aliases'] for token in catalogue_tokens(alias)}))
+    work_tokens = track_catalogue_tokens(work['title'])
+    work_tokens |= {token for alias in work['aliases'] for token in track_catalogue_tokens(alias)}
+    return bool(track_catalogue_tokens(text) & work_tokens)
 
 
 def variant_provenance(text):
