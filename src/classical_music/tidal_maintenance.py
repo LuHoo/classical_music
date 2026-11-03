@@ -451,6 +451,11 @@ def issue_body(action: dict) -> str:
         f"- Status: {action['status']}",
         f"- Reden: {action['reason']}",
     ]
+    performers = action.get("performers") or []
+    if performers:
+        lines.append(f"- Uitvoerenden: {', '.join(performers)}")
+    if action.get("album_title"):
+        lines.append(f"- Album: {action['album_title']}")
     if action.get("profile"):
         lines.append(f"- Profiel: {action['profile']}")
     if action.get("replacement_url"):
@@ -578,6 +583,8 @@ def escalation_actions(
                 "reason": check["reason"],
                 "replacement_url": check.get("replacement_url", ""),
                 "previous_candidates": row.get("previous_candidates", []),
+                "performers": row.get("performers", []),
+                "album_title": row.get("album_title"),
                 "last_checked": check["last_checked"],
             }
         )
@@ -685,6 +692,13 @@ def run(
                 "url": url,
                 "status": check.status,
                 "last_checked": now,
+                # Curator context only (#431): who performs and on which album.
+                "performers": [
+                    entry["name"]
+                    for entry in (record.get("performers") or [])
+                    if isinstance(entry, dict) and entry.get("name")
+                ],
+                "album_title": (record.get("release") or {}).get("album_title"),
             }
             if check.status == "unavailable":
                 row["availability_note"] = "no longer available at this Tidal URL"
@@ -731,8 +745,12 @@ def markdown(report: dict) -> str:
         check = by_url[row["url"]]
         if check["status"] == "ok":
             continue
+        who = ", ".join(row.get("performers") or [])
         lines += [
-            f"- {row['performance_id']} (`{row['path']}`): **{check['status']}** — {check['reason']}",
+            "- "
+            + row["performance_id"]
+            + (f" ({who})" if who else "")
+            + f" (`{row['path']}`): **{check['status']}** — {check['reason']}",
             f"  URL: {check['url']}",
         ]
         if check["replacement_url"]:
@@ -872,3 +890,4 @@ def main(argv: list[str] | None = None) -> int:
         )
     )
     return 0
+

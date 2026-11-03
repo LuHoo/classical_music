@@ -54,6 +54,7 @@ def fixture(root, *, url=OLD, profile=None, list_links=False, name="one"):
         "id": name,
         "work_id": "work1",
         "performers": [{"name": "Accepted Ensemble"}],
+        "release": {"album_title": "Accepted Album"},
         "keep_looking": True,
         "notes": "Trusted editorial meaning",
     }
@@ -205,7 +206,12 @@ def test_shared_links_inventory_and_history_do_not_promote(tmp_path):
     assert all(
         r["previous_candidates"] == candidates[:1] for r in report["performances"]
     )
+    assert all(
+        r["performers"] == ["Accepted Ensemble"] and r["album_title"] == "Accepted Album"
+        for r in report["performances"]
+    )
     assert "no recommendation changed" in markdown(report)
+    assert "Accepted Ensemble" in markdown(report)
     assert p.read_bytes() == before
     assert report["updated_files"] == 0
 
@@ -458,6 +464,8 @@ def _round_report(url=OLD, status="unavailable", reason="HTTP 404", now=NOW):
                 "url": url,
                 "status": status,
                 "last_checked": now,
+                "performers": ["Accepted Ensemble"],
+                "album_title": "Accepted Album",
             }
         ],
     }
@@ -622,10 +630,19 @@ def test_issue_and_comment_bodies_are_dutch_curator_reviews():
     assert body.startswith(marker(OLD))
     assert "`one`" in body
     assert "data/performances/one.yaml" in body
-    assert "geen enkele kandidaat wordt automatisch gepromoveerd" in body
+    assert "Uitvoerenden: Accepted Ensemble" in body
+    assert "Album: Accepted Album" in body
     comment = comment_body(action)
     assert comment.startswith(marker(OLD))
     assert "opeenvolgende problemen: 2" in comment
+
+
+def test_issue_body_omits_performer_and_album_lines_when_absent():
+    action = escalation_actions(_round_report(), _ledger())[0]
+    bare = {**action, "performers": [], "album_title": None}
+    body = issue_body(bare)
+    assert "Uitvoerenden:" not in body
+    assert "Album:" not in body
 
 
 def test_escalate_script_dry_run_needs_no_token_and_reports_actions(tmp_path):
