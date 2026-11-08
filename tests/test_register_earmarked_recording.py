@@ -687,6 +687,76 @@ class SchubertCase(unittest.TestCase):
                          {'m68a'})
 
 
+class PerformanceExistenceCase(unittest.TestCase):
+    """#444: a canonical performance is a current recommendation, in line with
+    the publication site. One performance per work -> comparison route; several
+    performances without a recommended flag stay ambiguous (fail-closed, no
+    playlist) until the curator marks the chosen one."""
+
+    def setUp(self):
+        import tempfile
+        self.root = Path(tempfile.mkdtemp())
+        for name in ('works', 'persons', 'artists', 'performances', 'recordings'):
+            (self.root / 'data' / name).mkdir(parents=True)
+        (self.root / 'docs').mkdir()
+        self.documents = {
+            str(self.root / 'data/works/w1.yaml'): {
+                'id': 'work-a', 'title': 'Symphonie fantastique',
+                'composer_id': 'hector-berlioz'},
+        }
+        self._read_yaml = reg.read_yaml
+
+        def read(path):
+            path = str(path)
+            return self.documents[path] if path in self.documents else self._read_yaml(path)
+
+        reg.read_yaml = read
+
+    def tearDown(self):
+        reg.read_yaml = self._read_yaml
+
+    def add_performance(self, name, work_id='work-a', track=None, recommended=None):
+        path = self.root / f'data/performances/{name}'
+        path.touch()
+        document = {'id': name[:-5], 'work_id': work_id,
+                    'performers': [{'name': 'Someone'}]}
+        if track:
+            document['links'] = {'tidal': {'url': f'https://tidal.com/track/{track}'}}
+        if recommended is not None:
+            document['recommended'] = recommended
+        self.documents[str(path)] = document
+
+    def test_single_performance_is_the_current_recommendation(self):
+        self.add_performance('goerner.yaml', track='187523952')
+        recommendations, _, _ = reg.existing_recommendations(self.root)
+        entry = recommendations['work-a']
+        self.assertEqual(entry['track_ids'], ['187523952'])
+        self.assertEqual(entry['sources'], ['goerner.yaml'])
+        self.assertFalse(entry.get('ambiguous'))
+
+    def test_multiple_performances_without_flag_stay_ambiguous(self):
+        self.add_performance('goerner.yaml', track='111')
+        self.add_performance('kolesnikov.yaml', track='222')
+        recommendations, _, _ = reg.existing_recommendations(self.root)
+        entry = recommendations['work-a']
+        self.assertTrue(entry.get('ambiguous'))
+        self.assertEqual(entry['track_ids'], [])
+        self.assertEqual(entry['sources'], ['goerner.yaml', 'kolesnikov.yaml'])
+
+    def test_recommended_flag_disambiguates_multiple_performances(self):
+        self.add_performance('goerner.yaml', track='111')
+        self.add_performance('kolesnikov.yaml', track='222', recommended=True)
+        recommendations, _, _ = reg.existing_recommendations(self.root)
+        entry = recommendations['work-a']
+        self.assertFalse(entry.get('ambiguous'))
+        self.assertEqual(entry['track_ids'], ['222'])
+        self.assertEqual(entry['sources'], ['kolesnikov.yaml'])
+
+    def test_work_without_performance_is_no_recommendation(self):
+        recommendations, _, _ = reg.existing_recommendations(self.root)
+        self.assertNotIn('work-a', recommendations)
+
+
 class ChopinNocturneCase(unittest.TestCase):
     """#442: uniquely numbered works inside one opus match their own track —
     spurious ambiguity (every sibling sharing the bare opus token) is gone.
@@ -1736,14 +1806,11 @@ class DirectAdoptionCase(FixtureCase):
     direct-adoption route, never written by the script itself."""
 
     def test_candidate_without_any_anchored_recommendation_reports_direct_adoption(self):
-        # Neither work carries a recommendation at all: the direct-adoption
-        # route, with nothing to compare against.
-        self.documents[str(self.root / 'data/performances/perf1.yaml')] = {
-            'id': 'perf1', 'work_id': 'work-a', 'recommended': False,
-            'performers': [{'name': 'Bernard Haitink'}]}
-        self.documents[str(self.root / 'data/performances/perf2.yaml')] = {
-            'id': 'perf2', 'work_id': 'work-b', 'recommended': False,
-            'performers': [{'name': 'Someone'}]}
+        # #444: neither work carries ANY performance anymore - a single
+        # canonical performance now counts as the current recommendation, so
+        # the direct-adoption route only remains for works without one.
+        self.documents[str(self.root / 'data/performances/perf1.yaml')] = None
+        self.documents[str(self.root / 'data/performances/perf2.yaml')] = None
         (self.root / 'docs/composer.md').write_text('', encoding='utf-8')
         self.client.track_albums = {}
         user = FakeUserClient()

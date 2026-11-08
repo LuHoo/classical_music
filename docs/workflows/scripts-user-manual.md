@@ -322,7 +322,12 @@ Gedrag per werk:
   playlist. Aanbevelingen worden gelezen uit de gepubliceerde
   `docs/*.md`-pagina's (via hun TIDAL-track-ankers, geattribueerd via
   `data/performances/` of een uniek catalogusnummer), uit performances met
-  `recommended: true` en uit `data/recordings/`-regels met `status: recommended`.
+  `recommended: true`, uit `data/recordings/`-regels met `status: recommended`
+  en uit het bestaan van een canonical performance (#444): een werk met precies
+  één performance draagt die performance als huidige aanbeveling, in lijn met
+  de publicatiesite. Een werk met méérdere performances zonder `recommended:
+  true`-vlag blijft ambigu: geen vergelijkingsplaylist (fail-closed) tot de
+  curator de gekozen performance markeert met `recommended: true`.
   Voor regels die nog niet via `data/performances/` zijn toegeschreven (#323)
   probeert het script aanvullend attributie: de componist wordt afgeleid uit de
   paginakop (`# Naam`) van de docs-pagina en de composer-credits — de kop-match
