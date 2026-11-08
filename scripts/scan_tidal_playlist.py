@@ -160,7 +160,7 @@ def scan(client, snapshot, archived):
         for n,future in enumerate(as_completed(futures),1):
             rid,resources,error=future.result()
             client.resources.update(resources)
-            if error=='API GET failed (HTTP 404)': absent.add(rid)
+            if error.startswith('API GET failed (HTTP 404)'): absent.add(rid)
             elif error: errors[rid]=error
             if n%100==0:
                 print(json.dumps({'missing_ids_checked':n,'total_missing_ids':len(missing)}),flush=True)
