@@ -94,6 +94,17 @@ the binding supplies the work, the listening track and the registered performers
 ./curator finish
 ```
 
+A **whole-recording issue** (route A, #450; registered with
+`register_earmarked_recording.py --issue <nr> --whole-recording`) binds several
+works to one issue and one combined comparison playlist; each decision names its
+work and writes its own record (`issue-<nr>-<work-id>.json`):
+
+```bash
+./curator 438 naive --work frederic-chopin-nocturne-op-9-no-1 --apply
+./curator 438 existing --work frederic-chopin-nocturne-op-9-no-2 --apply
+./curator finish
+```
+
 No `--replace-existing` or `--playlist-remove-unselected` in this route: promote
 always replaces the existing recommendation, reject always keeps it. A third
 outcome, `both` (#399), keeps the existing recommendation and adds the candidate
@@ -102,7 +113,8 @@ explicit `--profile`/`--existing-profile` arguments, so it runs through
 `apply_earmarked_decision.py --choice both ...` rather than the shorthand
 binding route (`./curator <issue> both` fails closed with that instruction). Missing
 bindings, bindings without registered performers (re-run registration with
-`--update-existing`) and ambiguous bindings fail closed. See the
+`--update-existing`) and ambiguous bindings fail closed; multi-work
+whole-recording bindings without `--work` fail closed (route A, #450). See the
 [detailed User Manual](scripts-user-manual.md) earmarked decision section.
 
 ## Validation and limits

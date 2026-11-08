@@ -82,7 +82,7 @@ def _apply_earmarked_module(root):
     return module
 
 
-def find_earmarked_binding(root, issue):
+def find_earmarked_binding(root, issue, work=None):
     """The single data/recordings/ candidate entry bound to this issue number.
 
     register_earmarked_recording.py --issue <nr> --work <work-id> writes the
@@ -101,9 +101,18 @@ def find_earmarked_binding(root, issue):
     core.require(hits, f'Issue #{issue} is not registered in an intake manifest and has no '
                        'earmarked candidate binding (no data/recordings/ work entry carries this '
                        'issue number with status candidate); run register_earmarked_recording.py '
-                       'with --issue and --work, or use apply_earmarked_decision.py directly')
-    core.require(len(hits) == 1, f'Issue #{issue} is bound to multiple earmarked candidates; '
-                                 'manual review required')
+                       'with --issue and --work (or --issue --whole-recording, route A #450), '
+                       'or use apply_earmarked_decision.py directly')
+    if len(hits) > 1:
+        bound = ', '.join(sorted(str(e.get('work_id')) for _, _, e in hits))
+        if work:
+            selected = [hit for hit in hits if hit[2].get('work_id') == work]
+            core.require(selected, f'Issue #{issue} is bound to {len(hits)} works '
+                                    f'({bound}), not to {work}')
+            hits = selected
+        core.require(len(hits) == 1, f'Issue #{issue} is bound to {len(hits)} earmarked '
+                                     f'candidate works ({bound}); a whole-recording issue '
+                                     '(#450 route A) decides per work: pass --work <work-id>')
     path, data, entry = hits[0]
     return {'path': path, 'recording': data, 'entry': entry,
             'album_title': data.get('title') if isinstance(data.get('title'), str) else None}
@@ -113,11 +122,15 @@ def batch_yaml_load(path):
     return YAML(typ='safe').load(path.read_text())
 
 
-def plan_earmarked_decision(root, issue, token, *, curator='LAH', decision_url=None):
+def plan_earmarked_decision(root, issue, token, *, curator='LAH', decision_url=None,
+                            work=None):
     """Earmarked fallback for ./curator <issue> <choice>: derive the candidate
-    from the recording binding, delegate to apply_earmarked_decision.plan."""
+    from the recording binding, delegate to apply_earmarked_decision.plan.
+    Route A (#450): with several bound works --work selects the entry this
+    invocation decides about; apply_earmarked_decision.plan writes one
+    decision record per work (issue-<n>-<work>.json)."""
     core.require(token and token.strip(), 'Supply a choice')
-    binding = find_earmarked_binding(root, issue)
+    binding = find_earmarked_binding(root, issue, work)
     entry = binding['entry']
     code = token.strip()
     reject = code.lower() in ('existing', 'geen', 'unresolved')
@@ -146,14 +159,16 @@ def plan_earmarked_decision(root, issue, token, *, curator='LAH', decision_url=N
     changes, record, message = module.plan(root, args, (curator or 'LAH').strip() or 'LAH')
     if decision_url:
         record['evidence'] = list(record.get('evidence', [])) + [decision_url]
-        relative = f'reports/curator-decisions/issue-{issue}.json'
-        core.require(relative in changes, 'Earmarked decision record was not part of the plan')
+        relative = next((name for name in changes
+                         if name.startswith(f'reports/curator-decisions/issue-{issue}')), None)
+        core.require(relative, 'Earmarked decision record was not part of the plan')
         changes[relative] = core.json_bytes(record)
     return changes, record, message
 
 
 def record_decision(root, issue, token, *, apply=True, curator='LAH', decision_url=None,
-                    replace_existing=False, playlist_remove=False, note=None, progress=None):
+                    replace_existing=False, playlist_remove=False, note=None, progress=None,
+                    work=None):
     core.require(__debug__, 'Run without Python -O; audit assertions must remain enabled.')
     core.require(curator and curator.strip(), 'Curator identity is required.')
     root = root.resolve()
@@ -178,6 +193,22 @@ def record_decision(root, issue, token, *, apply=True, curator='LAH', decision_u
                 # binding may still resolve ./curator <issue> <choice>.
                 registered = False
             if registered:
+                bound = []
+                try:
+                    bound = _apply_earmarked_module(root).issue_bound_works(root, issue)
+                except (ValueError, AssertionError):
+                    bound = []  # no apply script / recordings: no binding either
+                if len(bound) > 1:
+                    # Route A (#450): a whole-recording issue stays earmarked
+                    # even when an earlier per-work decision entered the
+                    # manifest's resolved_choices; every decision names its work.
+                    core.require(work, f'Issue #{issue} is bound to several works; '
+                                        'a whole-recording issue decides per work: '
+                                        'pass --work <work-id>')
+                    registered = False
+            if registered:
+                core.require(not work, '--work applies to earmarked whole-recording issues '
+                                       '(#450 route A), not to manifest-registered choices')
                 changes, record, message = core.plan_decision(root, issue, token, curator=curator,
                     decision_url=decision_url, replace_existing=replace_existing,
                     playlist_remove=playlist_remove)
@@ -186,7 +217,7 @@ def record_decision(root, issue, token, *, apply=True, curator='LAH', decision_u
                              '--replace-existing/--playlist-remove-unselected apply to '
                              'manifest-registered choices, not to earmarked candidates')
                 changes, record, message = plan_earmarked_decision(
-                    root, issue, token, curator=curator, decision_url=decision_url)
+                    root, issue, token, curator=curator, decision_url=decision_url, work=work)
         if not changes:
             return message + '\n' + core.manual_instructions(record) + '\nNa je laatste wijziging: ./curator finish'
         files = list(changes)

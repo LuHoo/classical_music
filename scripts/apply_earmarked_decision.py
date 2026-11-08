@@ -218,6 +218,26 @@ def load_performances(root):
     return performances, paths
 
 
+def issue_bound_works(root, issue):
+    """Work IDs of the data/recordings/ entries bound to this issue.
+
+    Route A (#450) binds a whole recording: several entries carry the same
+    issue number, and the curator decides per work. A single bound work keeps
+    the classic one-record-per-issue layout; multiple bound works get one
+    decision record per work. Decided entries keep their issue number, so the
+    multi-work shape stays stable across the per-work decisions.
+    """
+    bound = []
+    for path in sorted(Path(root, 'data/recordings').glob('*.y*ml')):
+        data = yaml_load(path)
+        if not isinstance(data, dict):
+            continue
+        for entry in data.get('works') or []:
+            if isinstance(entry, dict) and entry.get('issue') == issue:
+                bound.append(entry.get('work_id'))
+    return bound
+
+
 def find_recording_candidate(root, work_id):
     hits = []
     for path in sorted((root / 'data/recordings').glob('*.y*ml')):
@@ -406,9 +426,19 @@ def plan_manifest_update(manifest_path, manifest, unit_ids, removed_pid,
 def plan(root, args, curator):
     today = datetime.now(timezone.utc)
     issue = args.issue
-    record_relative = f'reports/curator-decisions/issue-{issue}.json'
-    issue_url = ISSUES + str(issue)
     root = root.resolve()
+    bound_works = issue_bound_works(root, issue)
+    if len(bound_works) > 1:
+        # Route A (#450): one decision record per bound work, so several
+        # per-work decisions on the same issue cannot overwrite each other.
+        require(args.work and args.work in bound_works,
+                f'Issue #{issue} is bound to {len(bound_works)} works '
+                f'({", ".join(bound_works)}); a whole-recording issue decides per work: '
+                'pass --work <work-id>')
+        record_relative = f'reports/curator-decisions/issue-{issue}-{args.work}.json'
+    else:
+        record_relative = f'reports/curator-decisions/issue-{issue}.json'
+    issue_url = ISSUES + str(issue)
     reject = args.choice.strip().lower() in ('existing', 'geen', 'unresolved')
     performances, performance_paths = load_performances(root)
     require(not (root / record_relative).exists(),

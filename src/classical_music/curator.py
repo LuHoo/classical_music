@@ -518,11 +518,14 @@ def main(argv=None):
     parser.add_argument('--replace-existing', action='store_true')
     parser.add_argument('--playlist-remove-unselected', action='store_true', help='Record manual removal instructions; never call TIDAL')
     parser.add_argument('--note', help='Required verification note for playlist-done')
+    parser.add_argument('--work', help='Work ID when a whole-recording issue (#450 route A) '
+                                       'bound several works: decide one bound work per invocation')
     args = parser.parse_args(argv)
     from classical_music.curator_batch import record_decision, finish
     if args.issue == 'finish':
         if (args.choice or args.apply or args.dry_run or args.decision_url or
-                args.replace_existing or args.playlist_remove_unselected or args.note):
+                args.replace_existing or args.playlist_remove_unselected or args.note
+                or args.work):
             parser.error('finish takes no choice or decision flags')
         issue = None
     else:
@@ -540,7 +543,7 @@ def main(argv=None):
                 result = record_decision(Path(__file__).resolve().parents[2], issue, args.choice,
                     apply=not args.dry_run, curator=args.curator, decision_url=args.decision_url,
                     replace_existing=args.replace_existing, playlist_remove=args.playlist_remove_unselected,
-                    note=args.note, progress=progress)
+                    note=args.note, progress=progress, work=args.work)
         print(result)
     except (ValueError, AssertionError, OSError, KeyError, RuntimeError) as exc:
         parser.exit(2, f'curator: {exc}\n')

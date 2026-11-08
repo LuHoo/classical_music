@@ -685,6 +685,25 @@ class SchubertCase(unittest.TestCase):
         self.assertEqual(reg.track_catalogue_tokens('Sinfonie Nr. 4 op. 120'), {'op120'})
         self.assertEqual(reg.track_catalogue_tokens('Le Tombeau de Couperin, M. 68a'),
                          {'m68a'})
+        # #446: romeinse movéntnummers achter een dubbele punt worden geconverteerd
+        # én het bare-opus-token blijft bestaan (meerdelige werken dragen geen sub).
+        self.assertEqual(
+            reg.track_catalogue_tokens('Nocturnes, Op. 9: I. Larghetto in B-Flat Minor'),
+            {'op9', 'op9:1'})
+        self.assertEqual(
+            reg.track_catalogue_tokens('Nocturnes, Op. 27: II. Nocturne in D-Flat Major'),
+            {'op27', 'op27:2'})
+        self.assertEqual(
+            reg.track_catalogue_tokens('Symphonie fantastique, Op. 14: IV. Marche au supplice'),
+            {'op14', 'op14:4'})
+        self.assertEqual(
+            reg.track_catalogue_tokens('Nocturnes, Op. 9: No. 1'), {'op9:1'})
+        # Ongeldige numerals blijven bare-only: nooit gokken.
+        self.assertEqual(reg.track_catalogue_tokens('Op. 9: Larghetto'), {'op9'})
+        self.assertEqual(reg.roman_to_int('II'), 2)
+        self.assertEqual(reg.roman_to_int('IX'), 9)
+        self.assertIsNone(reg.roman_to_int('IIII'))
+        self.assertIsNone(reg.roman_to_int('Larghetto'))
 
 
 class PerformanceExistenceCase(unittest.TestCase):
@@ -806,6 +825,35 @@ class ChopinNocturneCase(unittest.TestCase):
         entry = self.match('Nocturne No. 19 in E Minor, Op. posth. 72 No. 1')
         self.assertEqual(entry['state'], 'matched')
         self.assertEqual(entry['work']['id'], 'frederic-chopin-nocturne-op-72-no-1')
+
+    def test_roman_movement_form_matches_its_own_nocturne(self):
+        # #446: op het Goerner-album rijdt het subnummer als romeins
+        # movémentnummer achter een dubbele punt, niet als 'No. 1'.
+        for title, work_id in [
+                ('Nocturnes, Op. 9: I. Larghetto in B-Flat Minor',
+                 'frederic-chopin-nocturne-op-9-no-1'),
+                ('Nocturnes, Op. 9: II. Nocturne in E-Flat Major',
+                 'frederic-chopin-nocturne-op-9-no-2'),
+                ('Nocturnes, Op. 37: II. Nocturne in G Major',
+                 'frederic-chopin-nocturne-op-37-no-2')]:
+            entry = self.match(title)
+            self.assertEqual(entry['state'], 'matched', title)
+            self.assertEqual(entry['work']['id'], work_id, title)
+            self.assertNotIn('candidates', entry, title)
+
+    def test_roman_movement_track_still_matches_a_subless_work(self):
+        # Regressiewacht voor #446: een meerdelig werk zonder eigen sub moet
+        # op het bare-opus-token blijven matchen ondanks het movémentnummer.
+        works = [{'id': 'berlioz-symphonie-fantastique',
+                  'composer_id': 'h-berlioz',
+                  'title': 'Symphonie fantastique, Op. 14', 'aliases': []}]
+        track = {'id': 't',
+                 'title': 'Symphonie fantastique, Op. 14: I. Rêveries – Passions',
+                 'version': None, 'artists': [], 'credits': {}}
+        entry = reg.match_works([track], works, {'h-berlioz': 'Hector Berlioz'},
+                                ['Hector Berlioz'], 'Berlioz')[0]
+        self.assertEqual(entry['state'], 'matched')
+        self.assertEqual(entry['work']['id'], 'berlioz-symphonie-fantastique')
 
     def test_track_without_canonical_number_stays_unknown_not_guessed(self):
         # 'Op. posth.' zonder nummer bereikt het canonieke KK-werk niet: geen
@@ -1425,6 +1473,16 @@ class PlaylistIssueCase(FixtureCase):
             self.run_script(work='work-a', user_client_factory=lambda: FakeUserClient())
         self.assertIn('only meaningful together with --issue', str(ctx.exception))
 
+    def test_unselected_work_in_issue_mode_reports_the_binding_not_a_missing_anchor(self):
+        # #438: met --issue/--work kregen niet-gekozen werken met een bestaande
+        # aanbeveling ten onrechte 'has no TIDAL track anchor' te zien; hun
+        # anchor is prima, alleen is dit issue aan een ander werk gebonden.
+        result = self.run_script(issue=316, work='work-a',
+                                 user_client_factory=lambda: FakeUserClient())
+        actions = {e['work_id']: e['action'] for e in result['report']['works']}
+        self.assertIn('this issue is bound to work-a', actions['work-b'])
+        self.assertNotIn('no TIDAL track anchor', actions['work-b'])
+
     def test_issue_work_without_playlist_on_this_album_fails_closed(self):
         # work-b is recommended without a TIDAL track anchor: binding an issue
         # to it must fail instead of silently creating nothing.
@@ -1474,6 +1532,106 @@ class PlaylistIssueCase(FixtureCase):
         self.assertIn("if __name__ == '__main__':", source)
         self.assertTrue(source.rstrip().endswith('sys.exit(main())'))
 
+
+
+class WholeRecordingCase(FixtureCase):
+    """Route A (#450): --issue --whole-recording binds every comparison-eligible
+    work and plans ONE combined playlist; the curator decides per work."""
+
+    def setUp(self):
+        super().setUp()
+        # work-b is OPT-IN as a comparison candidate: inherited FixtureCase
+        # tests keep seeing it as a recommendation without a TIDAL anchor.
+        self.anchor_enabled = False
+        self.recommendation_client_b = FakeCatalogClient(album_doc_for('778'), [item_page([
+            ('113', 'Harold en Italie',
+             ('Hector Berlioz', 'Royal Concertgebouw Orchestra')),
+        ])], album='778')
+
+    def enable_work_b_anchor(self):
+        # Track 113 on its own album 778 turns work-b into a second
+        # comparison-eligible work, exactly like a cycle album.
+        self.anchor_enabled = True
+        self.documents[str(self.root / 'data/performances/perf2.yaml')] = {
+            'id': 'perf2', 'work_id': 'work-b', 'recommended': True,
+            'performers': [{'name': 'Someone'}],
+            'links': {'tidal': {'url': 'https://tidal.com/track/113'}},
+        }
+        self.client.track_albums = {'111': '777', '113': '778'}
+
+    def run_script(self, **kwargs):
+        self.client.reset()
+        self.recommendation_client.reset()
+        self.recommendation_client_b.reset()
+        kwargs.setdefault('read_client', self.client)
+        kwargs.setdefault(
+            'catalog_factory',
+            lambda album: self.recommendation_client_b if album == '778'
+            else self.recommendation_client)
+        return reg.run(self.root, ALBUM_URL, today='2026-10-18', **kwargs)
+
+    def test_whole_recording_binds_all_works_and_plans_one_playlist(self):
+        self.enable_work_b_anchor()
+        user = FakeUserClient()
+        result = self.run_script(issue=316, whole_recording=True,
+                                 user_client_factory=lambda: user)
+        self.assertTrue(result['report']['whole_recording'])
+        plans = result['report']['playlist_plans']
+        self.assertEqual(len(plans), 1)
+        plan = plans[0]
+        self.assertEqual(plan['work_id'], 'whole-recording')
+        self.assertEqual(plan['work_ids'], ['work-a', 'work-b'])
+        # Every current recommendation in album order, then every candidate.
+        self.assertEqual(plan['current_tracks'], ['111', '112', '113'])
+        self.assertEqual(plan['candidate_tracks'], ['222', '223', '224'])
+        playlist = user.playlists[plan['playlist_url'].rsplit('/', 1)[-1]]
+        self.assertEqual(playlist['items'], ['111', '112', '113', '222', '223', '224'])
+        self.assertEqual(playlist['name'], 'Curator 2026-10-18 Issue #316')
+        saved = self._read_yaml(self.root / 'data/recordings/test-album.yml')
+        bound = {e['work_id']: e for e in saved['works'] if e.get('issue') == 316}
+        self.assertEqual(set(bound), {'work-a', 'work-b'})
+        self.assertEqual(bound['work-a']['track_ids'], ['222', '223'])
+        self.assertEqual(bound['work-b']['track_ids'], ['224'])
+        self.assertTrue(bound['work-a']['performers'])
+
+    def test_interactive_all_option_binds_whole_recording(self):
+        self.enable_work_b_anchor()
+        user = FakeUserClient()
+        result = self.run_script(issue=316,
+                                 selector=lambda options: reg.WHOLE_RECORDING,
+                                 user_client_factory=lambda: user)
+        self.assertTrue(result['report']['whole_recording'])
+        plan = result['report']['playlist_plans'][0]
+        self.assertEqual(plan['work_ids'], ['work-a', 'work-b'])
+        self.assertEqual(user.playlists[plan['playlist_url'].rsplit('/', 1)[-1]]['items'],
+                         ['111', '112', '113', '222', '223', '224'])
+
+    def test_failing_expansion_fails_closed_without_writing(self):
+        self.enable_work_b_anchor()
+        self.client.track_albums = {'111': '777'}  # anchor 113 loses its album
+        user = FakeUserClient()
+        with self.assertRaises(ValueError) as ctx:
+            self.run_script(issue=316, whole_recording=True,
+                             user_client_factory=lambda: user)
+        self.assertIn('Whole-recording comparison is incomplete', str(ctx.exception))
+        self.assertEqual(user.playlists, {})
+        self.assertEqual(list((self.root / 'data/recordings').glob('*.y*ml')), [])
+
+    def test_whole_recording_requires_issue(self):
+        with self.assertRaises(ValueError) as ctx:
+            self.run_script(whole_recording=True)
+        self.assertIn('only meaningful together with --issue', str(ctx.exception))
+
+    def test_whole_recording_rejects_work(self):
+        with self.assertRaises(ValueError) as ctx:
+            self.run_script(issue=316, work='work-a', whole_recording=True)
+        self.assertIn('cannot be combined', str(ctx.exception))
+
+    def test_multi_eligible_without_selector_mentions_whole_recording(self):
+        self.enable_work_b_anchor()
+        with self.assertRaises(ValueError) as ctx:
+            self.run_script(issue=316)
+        self.assertIn('--whole-recording', str(ctx.exception))
 
 
 class VariantCase(unittest.TestCase):

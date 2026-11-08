@@ -439,6 +439,97 @@ BOUND_RECORDING = (
 )
 
 
+BOUND_RECORDING_MULTI = (
+    "id: test-recording\ntitle: 'Test: Recording'\nlabel: Test Label\nyear: 2026\n"
+    "works:\n"
+    f"- work_id: {{WORK}}\n  status: candidate\n  issue: 319\n"
+    "  track:\n    number: 1\n    title: 'Fantasy in F Minor: I. Allegro'\n"
+    "  track_ids:\n  - '22222222'\n  - '22222223'\n"
+    "  performers:\n  - Murray Perahia (piano)\n"
+    "  notes: Spans album tracks 1, 2, 3, 4.\n"
+    f"- work_id: {{OTHER}}\n  status: candidate\n  issue: 319\n"
+    "  track:\n    number: 5\n    title: 'Rondo in A Major'\n"
+    "  track_ids:\n  - '22222224'\n"
+    "  performers:\n  - Murray Perahia (piano)\n"
+)
+
+
+class WholeRecordingDecisionTest(unittest.TestCase):
+    """Route A (#450): a whole-recording issue binds several works; every
+    decision names its work, and each work gets its own decision record."""
+
+    def setUp(self):
+        self.tmp = Path(tempfile.mkdtemp())
+        self.root = self.tmp / 'repo'
+        self.root.mkdir()
+        build_fixture(self.root)
+        (self.root / 'data/recordings' / 'test-recording.yml').write_text(
+            BOUND_RECORDING_MULTI.replace('{WORK}', WORK).replace('{OTHER}', OTHER))
+        import shutil
+        (self.root / 'scripts').mkdir(exist_ok=True)
+        shutil.copy(SCRIPT, self.root / 'scripts' / 'apply_earmarked_decision.py')
+
+    def tearDown(self):
+        import shutil
+        shutil.rmtree(self.tmp, ignore_errors=True)
+
+    def record(self, issue, token, **kwargs):
+        sys.path.insert(0, str(REPO / 'src'))
+        from classical_music import curator_batch as batch
+        return batch.record_decision(self.root, issue, token, **kwargs)
+
+    def recording_entry(self, work):
+        return next(e for e in load_yaml(self.root, 'data/recordings/test-recording.yml')['works']
+                    if e['work_id'] == work)
+
+    def test_multi_work_binding_requires_work(self):
+        with self.assertRaises((ValueError, AssertionError)) as ctx:
+            self.record(319, 'naive', apply=True)
+        self.assertIn('pass --work', str(ctx.exception))
+
+    def test_unknown_work_fails_closed_with_bound_works(self):
+        with self.assertRaises((ValueError, AssertionError)) as ctx:
+            self.record(319, 'naive', apply=True, work='nope')
+        self.assertIn('not to nope', str(ctx.exception))
+        self.assertIn(WORK, str(ctx.exception))
+        self.assertIn(OTHER, str(ctx.exception))
+
+    def test_per_work_decisions_write_per_work_records(self):
+        self.record(319, 'naive', apply=True, work=WORK)
+        self.record(319, 'naive', apply=True, work=OTHER)
+        self.assertTrue((self.root / f'reports/curator-decisions/issue-319-{WORK}.json').is_file())
+        self.assertTrue((self.root / f'reports/curator-decisions/issue-319-{OTHER}.json').is_file())
+        self.assertFalse((self.root / 'reports/curator-decisions/issue-319.json').exists())
+        status = json.loads(
+            (self.root / 'reports/curator-decisions/batch-status.json').read_text())
+        self.assertIn(319, status['issues'])
+        self.assertEqual(self.recording_entry(WORK)['status'], 'recommended')
+        self.assertEqual(self.recording_entry(OTHER)['status'], 'recommended')
+
+    def test_reject_on_one_work_keeps_binding_stable(self):
+        self.record(319, 'existing', apply=True, work=WORK)
+        entry = self.recording_entry(WORK)
+        self.assertEqual(entry['status'], 'not_selected')
+        self.assertEqual(entry['issue'], 319)
+        other = self.recording_entry(OTHER)
+        self.assertEqual(other['status'], 'candidate')
+        self.assertEqual(other['issue'], 319)
+        # One remaining candidate: the binding route resolves it automatically
+        # (classic single-binding behaviour), but the issue keeps its multi-work
+        # shape, so the decision lands in the per-work record, not issue-319.json.
+        self.record(319, 'naive', apply=True)
+        self.assertTrue((self.root / f'reports/curator-decisions/issue-319-{OTHER}.json').is_file())
+        self.assertFalse((self.root / 'reports/curator-decisions/issue-319.json').exists())
+        self.assertEqual(self.recording_entry(OTHER)['status'], 'recommended')
+
+    def test_decision_url_lands_in_the_per_work_record(self):
+        url = 'https://github.com/LuHoo/classical_music/issues/319#issuecomment-1'
+        self.record(319, 'naive', apply=True, work=WORK, decision_url=url)
+        record = json.loads(
+            (self.root / f'reports/curator-decisions/issue-319-{WORK}.json').read_text())
+        self.assertIn(url, record['evidence'])
+
+
 class CuratorCliEarmarkedTest(unittest.TestCase):
     """./curator <issue> <choice> resolves the earmarked binding (#342-volg):
     register_earmarked_recording.py --issue/--work writes issue, track_ids and
