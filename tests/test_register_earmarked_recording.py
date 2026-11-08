@@ -685,6 +685,25 @@ class SchubertCase(unittest.TestCase):
         self.assertEqual(reg.track_catalogue_tokens('Sinfonie Nr. 4 op. 120'), {'op120'})
         self.assertEqual(reg.track_catalogue_tokens('Le Tombeau de Couperin, M. 68a'),
                          {'m68a'})
+        # #446: romeinse movéntnummers achter een dubbele punt worden geconverteerd
+        # én het bare-opus-token blijft bestaan (meerdelige werken dragen geen sub).
+        self.assertEqual(
+            reg.track_catalogue_tokens('Nocturnes, Op. 9: I. Larghetto in B-Flat Minor'),
+            {'op9', 'op9:1'})
+        self.assertEqual(
+            reg.track_catalogue_tokens('Nocturnes, Op. 27: II. Nocturne in D-Flat Major'),
+            {'op27', 'op27:2'})
+        self.assertEqual(
+            reg.track_catalogue_tokens('Symphonie fantastique, Op. 14: IV. Marche au supplice'),
+            {'op14', 'op14:4'})
+        self.assertEqual(
+            reg.track_catalogue_tokens('Nocturnes, Op. 9: No. 1'), {'op9:1'})
+        # Ongeldige numerals blijven bare-only: nooit gokken.
+        self.assertEqual(reg.track_catalogue_tokens('Op. 9: Larghetto'), {'op9'})
+        self.assertEqual(reg.roman_to_int('II'), 2)
+        self.assertEqual(reg.roman_to_int('IX'), 9)
+        self.assertIsNone(reg.roman_to_int('IIII'))
+        self.assertIsNone(reg.roman_to_int('Larghetto'))
 
 
 class PerformanceExistenceCase(unittest.TestCase):
@@ -806,6 +825,35 @@ class ChopinNocturneCase(unittest.TestCase):
         entry = self.match('Nocturne No. 19 in E Minor, Op. posth. 72 No. 1')
         self.assertEqual(entry['state'], 'matched')
         self.assertEqual(entry['work']['id'], 'frederic-chopin-nocturne-op-72-no-1')
+
+    def test_roman_movement_form_matches_its_own_nocturne(self):
+        # #446: op het Goerner-album rijdt het subnummer als romeins
+        # movémentnummer achter een dubbele punt, niet als 'No. 1'.
+        for title, work_id in [
+                ('Nocturnes, Op. 9: I. Larghetto in B-Flat Minor',
+                 'frederic-chopin-nocturne-op-9-no-1'),
+                ('Nocturnes, Op. 9: II. Nocturne in E-Flat Major',
+                 'frederic-chopin-nocturne-op-9-no-2'),
+                ('Nocturnes, Op. 37: II. Nocturne in G Major',
+                 'frederic-chopin-nocturne-op-37-no-2')]:
+            entry = self.match(title)
+            self.assertEqual(entry['state'], 'matched', title)
+            self.assertEqual(entry['work']['id'], work_id, title)
+            self.assertNotIn('candidates', entry, title)
+
+    def test_roman_movement_track_still_matches_a_subless_work(self):
+        # Regressiewacht voor #446: een meerdelig werk zonder eigen sub moet
+        # op het bare-opus-token blijven matchen ondanks het movémentnummer.
+        works = [{'id': 'berlioz-symphonie-fantastique',
+                  'composer_id': 'h-berlioz',
+                  'title': 'Symphonie fantastique, Op. 14', 'aliases': []}]
+        track = {'id': 't',
+                 'title': 'Symphonie fantastique, Op. 14: I. Rêveries – Passions',
+                 'version': None, 'artists': [], 'credits': {}}
+        entry = reg.match_works([track], works, {'h-berlioz': 'Hector Berlioz'},
+                                ['Hector Berlioz'], 'Berlioz')[0]
+        self.assertEqual(entry['state'], 'matched')
+        self.assertEqual(entry['work']['id'], 'berlioz-symphonie-fantastique')
 
     def test_track_without_canonical_number_stays_unknown_not_guessed(self):
         # 'Op. posth.' zonder nummer bereikt het canonieke KK-werk niet: geen
@@ -1424,6 +1472,16 @@ class PlaylistIssueCase(FixtureCase):
         with self.assertRaises(ValueError) as ctx:
             self.run_script(work='work-a', user_client_factory=lambda: FakeUserClient())
         self.assertIn('only meaningful together with --issue', str(ctx.exception))
+
+    def test_unselected_work_in_issue_mode_reports_the_binding_not_a_missing_anchor(self):
+        # #438: met --issue/--work kregen niet-gekozen werken met een bestaande
+        # aanbeveling ten onrechte 'has no TIDAL track anchor' te zien; hun
+        # anchor is prima, alleen is dit issue aan een ander werk gebonden.
+        result = self.run_script(issue=316, work='work-a',
+                                 user_client_factory=lambda: FakeUserClient())
+        actions = {e['work_id']: e['action'] for e in result['report']['works']}
+        self.assertIn('this issue is bound to work-a', actions['work-b'])
+        self.assertNotIn('no TIDAL track anchor', actions['work-b'])
 
     def test_issue_work_without_playlist_on_this_album_fails_closed(self):
         # work-b is recommended without a TIDAL track anchor: binding an issue

@@ -305,9 +305,32 @@ def catalogue_tokens(text):
 NUMBERED_CATALOGUE = re.compile(
     r'\b(D|Op|BWV|RV|Hob|KV|K|Sz|AV|TrV|L|S|M|WWV|MWV|Anh)\.?\s*'
     r'(?:posth\.?\s*)?'
-    r'([IVXLC]+[a-z]?)?\s*([0-9]+[a-z]?)(?:\s*:\s*([0-9]+[a-z]?))?'
-    r'(?:\s*(?:No|Nr)\.?\s*([0-9]+[a-z]?))?',
+    r'([IVXLC]+[a-z]?)?\s*([0-9]+[a-z]?)'
+    r'(?:\s*:\s*(?:(?:(?:No|Nr)\.?\s*)?([0-9]+[a-z]?)'
+    r'|(?-i:([IVXLC]{1,8}))(?=[\s.,;:)\]]|$)))?'
+    r'(?:\s*:?\s*(?:No|Nr)\.?\s*([0-9]+[a-z]?))?',
     re.IGNORECASE)
+
+_ROMAN_VALUES = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100}
+_STRICT_ROMAN = re.compile(
+    r'(?=[IVXLC])(?:C{0,3})(?:XC|XL|L?X{0,3})(?:IX|IV|V?I{0,3})\Z')
+
+
+def roman_to_int(text):
+    """Convert an uppercase Roman numeral to its integer value, or None when
+    the text is not a well-formed numeral. Fail-closed by design: a movement
+    title like 'Larghetto' is not a numeral, and a stray invalid form yields
+    None instead of a wrong movement number."""
+    if not _STRICT_ROMAN.match(text or ''):
+        return None
+    total = 0
+    for index, letter in enumerate(text):
+        value = _ROMAN_VALUES[letter]
+        if index + 1 < len(text) and _ROMAN_VALUES[text[index + 1]] > value:
+            total -= value
+        else:
+            total += value
+    return total
 
 
 def track_catalogue_tokens(text):
@@ -317,18 +340,34 @@ def track_catalogue_tokens(text):
     'op72:1'. Without the sub-number every sibling within one opus shares the
     bare opus token and tracks become spuriously ambiguous. A cycle number
     before the opus ('Nocturne No. 11 in G Minor, Op. 37 No. 1') is never
-    captured: it does not follow a catalogue prefix. Only work_matches uses
+    captured: it does not follow a catalogue prefix. Roman movement numerals
+    after a colon ('Nocturnes, Op. 9: I. Larghetto') are converted and emitted
+    as bare plus combined token (#446), because a multi-movement work can
+    carry no sub of its own. Only work_matches uses
     these finer tokens; catalogue_tokens itself stays untouched because the
     docs attribution (existing_recommendations) relies on its opus-level
     intersection semantics (slash forms like 'Op. 34/14', fail-closed pools)."""
     tokens = set()
     for match in NUMBERED_CATALOGUE.finditer(text or ''):
-        prefix, section, number, colon_sub, number_sub = match.groups()
-        token = prefix.casefold() + (section or '').casefold() + number.casefold()
+        prefix, section, number, colon_sub, roman_sub, number_sub = match.groups()
+        base = prefix.casefold() + (section or '').casefold() + number.casefold()
         sub = colon_sub or number_sub
         if sub:
-            token += ':' + sub.casefold()
-        tokens.add(token)
+            # 'Op. 37 No. 1' and 'Op. 9: No. 1' are decisive: only the combined
+            # token is emitted so siblings within one opus stay disjoint.
+            tokens.add(base + ':' + sub.casefold())
+        elif roman_sub:
+            # 'Nocturnes, Op. 9: I. Larghetto in B-Flat Minor' (#446): the Roman
+            # numeral is movement evidence, but multi-movement works such as
+            # 'Symphonie fantastique, Op. 14: I.' carry no sub in their title,
+            # so the bare opus token must survive. Emit bare plus, when the
+            # numeral is well-formed, the converted combined token.
+            value = roman_to_int(roman_sub)
+            tokens.add(base)
+            if value is not None:
+                tokens.add(base + ':' + str(value))
+        else:
+            tokens.add(base)
     return tokens
 
 
@@ -1543,8 +1582,12 @@ def run(root, url, *, dry_run=False, recording_id=None, update_existing=False,
                           + '); mark the chosen performance recommended: true '
                           '(curator decision, #444); no comparison playlist')
             elif entry['work_id'] in recommendations:
-                action = ('candidate; existing recommendation has no TIDAL track anchor, '
-                          'no comparison playlist')
+                if issue is not None and work is not None and entry['work_id'] != work:
+                    action = ('candidate; existing recommendation present; this issue '
+                              f'is bound to {work} (register this work via its own issue)')
+                else:
+                    action = ('candidate; existing recommendation has no TIDAL track anchor, '
+                              'no comparison playlist')
             else:
                 action = ('candidate; no existing recommendation, no playlist; '
                           'direct adoption possible (no comparison needed)')
