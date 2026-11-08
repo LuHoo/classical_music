@@ -34,8 +34,12 @@ composer credits. Variant takes marked 'with ... from <catalogue>' in a parenthe
 entirely: never a candidate, binding or playlist track; they are reported as
 SKIPPED VARIANT. Existing recommendations are read from the published
 ``docs/*.md`` pages (via their TIDAL track anchors), from performances marked
-``recommended: true`` and from ``data/recordings/`` entries with status
-``recommended``.
+``recommended: true``, from ``data/recordings/`` entries with status
+``recommended``, and from the existence of a canonical performance (#444): a
+work with exactly one performance carries that performance as its current
+recommendation, in line with the publication site. A work with several
+performances and no ``recommended: true`` flag stays ambiguous and gets no
+comparison playlist until the curator marks the chosen performance.
 """
 from __future__ import annotations
 
@@ -1004,12 +1008,26 @@ def existing_recommendations(root, works=None):
             entry['track_ids'].append(track)
         entry['sources'].append(source)
 
+    performances_by_work = {}
     for path in sorted((Path(root) / 'data/performances').glob('*.yaml')):
         data = read_yaml(path)
-        if not isinstance(data, dict) or data.get('recommended') is not True:
+        if not isinstance(data, dict) or not data.get('work_id'):
             continue
-        track = tidal_track_of(data)
-        add(data.get('work_id'), track, path.name)
+        performances_by_work.setdefault(data['work_id'], []).append((path.name, data))
+    for wid, items in sorted(performances_by_work.items(), key=lambda kv: str(kv[0])):
+        # #444: a canonical performance is a current recommendation, in line
+        # with the publication site (works with performances are the
+        # recommended ones). With several performances on one work the
+        # current recommendation is ambiguous: no playlist is built
+        # (fail-closed) until the curator marks the chosen performance
+        # ``recommended: true``.
+        flagged = [item for item in items if item[1].get('recommended') is True]
+        if flagged or len(items) == 1:
+            for name, data in (flagged or items):
+                add(wid, tidal_track_of(data), name)
+        elif wid not in found:
+            found[wid] = {'track_ids': [], 'sources': [name for name, _ in items],
+                          'ambiguous': True}
     for path in sorted((Path(root) / 'data/recordings').glob('*.y*ml')):
         if path.name == 'README.md':
             continue
@@ -1149,6 +1167,12 @@ def playlist_plan(root, album, recording, matches, recommendations, today, *,
         if issue is not None and wid != work:
             continue
         current = recommendations[wid]
+        if current.get('ambiguous'):
+            errors.append({'work_id': wid,
+                           'error': 'multiple current performances without a recommended '
+                                    'flag; the curator marks the chosen performance '
+                                    'recommended: true (#444); no comparison playlist'})
+            continue
         candidate_ids = [m['track']['id'] for m in matches
                          if m['state'] == 'matched' and m['work']['id'] == wid]
         require(candidate_ids, f'Work {wid} matched without candidate tracks')
@@ -1513,6 +1537,11 @@ def run(root, url, *, dry_run=False, recording_id=None, update_existing=False,
                 action = ('candidate; comparison playlist planned (existing recommendation: '
                           + ', '.join(next(p['current_sources'] for p in plans
                                            if p['work_id'] == entry['work_id'])) + ')')
+            elif recommendations.get(entry['work_id'], {}).get('ambiguous'):
+                action = ('candidate; multiple current performances ('
+                          + ', '.join(recommendations[entry['work_id']]['sources'])
+                          + '); mark the chosen performance recommended: true '
+                          '(curator decision, #444); no comparison playlist')
             elif entry['work_id'] in recommendations:
                 action = ('candidate; existing recommendation has no TIDAL track anchor, '
                           'no comparison playlist')
