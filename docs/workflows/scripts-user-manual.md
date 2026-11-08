@@ -227,6 +227,14 @@ kandidaat-tracks in albumvolgorde) en `performers:` (afgeleid uit het canonieke
 performers-register; onbekende artiesten blijven weg — fail-closed). Daardoor kan
 het besluit daarna simpelweg via `./curator <nr> <keuze>` (#342-volg); bij
 `--update-existing` vervangt de issue-gebonden entry de oudere ongebinde entry.
+Route A (#450) voor een hele opname of cyclusalbum: `--issue <nr>
+--whole-recording` bindt élk vergelijkbaar werk aan het issue en maakt ÉÉN
+gecombineerde vergelijkingsplaylist (alle huidige aanbevelingen in albumvolgorde,
+dan alle kandidaten). Daarna beslist de curator per werk via `./curator <nr>
+<keuze> --work <werk-id> --apply`, met per-werkbesluitrecords
+`reports/curator-decisions/issue-<nr>-<werk-id>.json`; één falende
+ankeruitbreiding breekt de hele run af vóór er iets geschreven wordt
+(fail-closed).
 Het script opent of bewerkt geen GitHub-issues; YAML, playlist en stdout-rapport zijn
 het product. De beslissing `candidate` → `recommended` blijft bij de curator via de
 bestaande workflow.
@@ -244,6 +252,13 @@ bestaande workflow.
 # Eén run per issue; bij een reeds geregistreerd album gebruik je --update-existing.
 .venv/bin/python scripts/register_earmarked_recording.py "https://tidal.com/browse/album/<id>" \
   --issue <nr> --work <work-id> --update-existing
+
+# Route A (#450) voor een hele opname of cyclusalbum: bindt élk vergelijkbaar werk
+# (kandidaat + bestaande aanbeveling met TIDAL-anker) aan het issue en maakt ÉÉN
+# gecombineerde vergelijkingsplaylist: eerst alle huidige aanbevelingen, dan alle
+# kandidaten. Daarna beslis je per werk via ./curator <nr> <keuze> --work <werk-id>.
+.venv/bin/python scripts/register_earmarked_recording.py "https://tidal.com/browse/album/<id>" \
+  --issue <nr> --whole-recording --update-existing
 ```
 
 Geaccepteerde URL-vormen (fail-closed op alles anders): `https://tidal.com/browse/album/<id>`,
@@ -261,6 +276,8 @@ Geaccepteerde URL-vormen (fail-closed op alles anders): `https://tidal.com/brows
 | `--canonize` | Canoniseert voorgestelde nieuwe werken als onderdeel van deze registratie (#327): bij een track zonder canoniek werk schrijft het script een nieuwe `data/works/`-definitie als de ISRC-keten exact één MusicBrainz-werk oplevert waarvan de componist de unieke canonieke persoon uit het track-bewijs is. Zonder deze vlag blijven voorstellen adviserend in het rapport |
 | `--issue NR` | Issue-nummer van het curator-vergelijkingsissue: noemt de playlist `Curator <datum> Issue #<nr>` en maakt haar alleen aan voor het werk van `--work`. `--issue` en `--work` worden samen gegeven; zonder beiden wordt geen playlist aangemaakt |
 | `--work WORK_ID` | Canoniek work-ID dat aan het issue gebonden is; de vergelijkingsplaylist wordt alleen voor dit werk aangemaakt. Faalt expliciet als dat werk op dit album geen kandidaat met bestaande TIDAL-verankerende aanbeveling is |
+| `--whole-recording` | Alleen met `--issue` (route A, #450): bindt élk vergelijkbaar werk aan het issue en plant één gecombineerde vergelijkingsplaylist (alle huidige aanbevelingen in albumvolgorde, dan alle kandidaten). Faalt fail-closed op de hele run als één ankeruitbreiding mislukt. Niet te combineren met `--work` |
+| `--work WORK_ID` (curator CLI) | Bij een whole-recording-issue verplicht per beslissing: `./curator <nr> <keuze> --work <werk-id> --apply` schrijft een per-werkbesluitrecord `reports/curator-decisions/issue-<nr>-<werk-id>.json`; meerdere gebonden kandidaten zonder `--work` failen fail-closed |
 
 Standaard print het script bij niet-toegeschreven docs-aanbevelingsregels alleen
 het totaal plus een per-categorie uitsplitsing (`no-canonical-work`,
