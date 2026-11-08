@@ -66,6 +66,9 @@ ALBUM_URL = re.compile(
     r'https://(?:listen\.)?tidal\.com/(?:browse/)?album/([0-9]+)(/u)?$')
 COUNTRY = 'NL'
 BATCH_SIZE = 50
+# The TIDAL v2 API rejects playlist descriptions over 500 chars
+# (INVALID_REQUEST_BODY, #438); comparison descriptions must stay within it.
+MAX_PLAYLIST_DESCRIPTION = 500
 TRACK_URL = re.compile(r'(?:https?://)?(?:www\.)?tidal\.com/track/([0-9]+)/?$')
 DOC_TRACK_LINK = re.compile(
     r'\[[^\]]*\]\(\s*(?:https?://)?(?:www\.)?tidal\.com/track/([0-9]+)/?[^\)]*\)')
@@ -284,6 +287,27 @@ def album_id(url):
     require(match, 'Expected a TIDAL album URL: https://tidal.com/browse/album/<id> '
                    '(or https://tidal.com/album/<id>, optionally with the /u share suffix)')
     return match.group(1)
+
+
+def comparison_description(album_identifier, sources, issue):
+    """Comparison-playlist description within the TIDAL field limit.
+
+    The v2 API rejects descriptions over 500 chars with INVALID_REQUEST_BODY
+    (#438), and a whole-recording plan (#450 route A) lists the sources of
+    every bound work, which overflows the limit quickly. A long source list
+    collapses to its count; the full provenance stays in the run report.
+    """
+    prefix = (f'https://github.com/LuHoo/classical_music/issues/{issue}\n'
+              if issue is not None else '')
+    body = (f'Candidate comparison for {album_url(album_identifier)} '
+            f'(current recommendations: {", ".join(sources)})')
+    if len(prefix + body) <= MAX_PLAYLIST_DESCRIPTION:
+        return prefix + body
+    description = (prefix + f'Candidate comparison for {album_url(album_identifier)} '
+                  f'({len(sources)} current recommendations)')
+    require(len(description) <= MAX_PLAYLIST_DESCRIPTION,
+            'Comparison description exceeds the TIDAL limit even without the source list')
+    return description
 
 
 def album_url(identifier):
@@ -1250,10 +1274,7 @@ def playlist_plan(root, album, recording, matches, recommendations, today, *,
             for tid in row['candidate_track_ids']:
                 if tid not in candidate_ids:
                     candidate_ids.append(tid)
-        description = (f"Candidate comparison for {album_url(album['id'])} "
-                       f"(current recommendations: {', '.join(sources)})")
-        if issue is not None:
-            description = f'https://github.com/LuHoo/classical_music/issues/{issue}\n' + description
+        description = comparison_description(album['id'], sources, issue)
         plans.append({'work_id': 'whole-recording', 'work_ids': wids, 'issue': issue,
                       'name': f"Curator {today} Issue #{issue}",
                       'description': description,
@@ -1261,10 +1282,7 @@ def playlist_plan(root, album, recording, matches, recommendations, today, *,
                       'current_sources': sources})
         return plans, errors
     for row in scope:
-        description = (f"Candidate comparison for {album_url(album['id'])} "
-                       f"(current recommendation: {', '.join(row['sources'])})")
-        if issue is not None:
-            description = f'https://github.com/LuHoo/classical_music/issues/{issue}\n' + description
+        description = comparison_description(album['id'], row['sources'], issue)
         plans.append({'work_id': row['work_id'], 'issue': issue,
                       'name': f"Curator {today} Issue #{issue}" if issue is not None else None,
                       'description': description,
@@ -1685,6 +1703,7 @@ def run(root, url, *, dry_run=False, recording_id=None, update_existing=False,
               'works': work_lines,
               'playlist_plans': [{'work_id': p['work_id'], 'issue': p['issue'], 'name': p['name'],
                                   'work_ids': p.get('work_ids'),
+                                  'description': p['description'],
                                   'current_tracks': p['current_track_ids'],
                                   'candidate_tracks': p['candidate_track_ids']} for p in plans],
               'playlist_errors': playlist_errors,

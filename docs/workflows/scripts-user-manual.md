@@ -234,7 +234,10 @@ dan alle kandidaten). Daarna beslist de curator per werk via `./curator <nr>
 <keuze> --work <werk-id> --apply`, met per-werkbesluitrecords
 `reports/curator-decisions/issue-<nr>-<werk-id>.json`; één falende
 ankeruitbreiding breekt de hele run af vóór er iets geschreven wordt
-(fail-closed).
+(fail-closed). De playlistbeschrijving blijft binnen de TIDAL-veldlimiet van
+500 tekens: een lange bronnenlijst vat samen tot het aantal ("N current
+recommendations"), de volledige herkomst blijft in het run-rapport; TIDAL-API-
+fouten tonen voortaan hun JSON:API-foutbody in plaats van alleen de statuscode.
 Het script opent of bewerkt geen GitHub-issues; YAML, playlist en stdout-rapport zijn
 het product. De beslissing `candidate` → `recommended` blijft bij de curator via de
 bestaande workflow.
