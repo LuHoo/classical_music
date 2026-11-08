@@ -41,7 +41,16 @@ class Client:
                 if exc.code == 429 and attempt < 2:
                     time.sleep(5)
                     continue
-                raise ValueError(f'API {method} failed (HTTP {exc.code})') from None
+                # The JSON:API error body says why TIDAL rejected the request
+                # (e.g. a field limit); surface it instead of only the code (#438).
+                try:
+                    detail = exc.read(2048).decode(errors='replace').strip()
+                except OSError:
+                    detail = ''
+                message = f'API {method} failed (HTTP {exc.code})'
+                if detail:
+                    message += ': ' + detail[:500]
+                raise ValueError(message) from None
             except (URLError, OSError):
                 raise ValueError('API network request failed') from None
 

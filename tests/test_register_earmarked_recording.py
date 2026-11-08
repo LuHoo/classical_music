@@ -1634,6 +1634,36 @@ class WholeRecordingCase(FixtureCase):
         self.assertIn('--whole-recording', str(ctx.exception))
 
 
+class DescriptionLimitCase(WholeRecordingCase):
+    """TIDAL rejects playlist descriptions over 500 chars with
+    INVALID_REQUEST_BODY (#438); long source lists collapse to their count."""
+
+    def test_short_source_list_stays_verbatim(self):
+        description = reg.comparison_description(
+            '777', ['perf1.yaml', 'composer.md:1'], 316)
+        self.assertIn('https://github.com/LuHoo/classical_music/issues/316\n', description)
+        self.assertIn('Candidate comparison for https://tidal.com/browse/album/777', description)
+        self.assertIn('current recommendations: perf1.yaml, composer.md:1', description)
+        self.assertLessEqual(len(description), reg.MAX_PLAYLIST_DESCRIPTION)
+
+    def test_long_source_list_collapses_to_the_count(self):
+        sources = [f'frederic-chopin-nocturne-op-9-no-{n}-piano-p3{n}.yaml'
+                    for n in range(1, 40)]
+        description = reg.comparison_description('570884514', sources, 438)
+        self.assertLessEqual(len(description), reg.MAX_PLAYLIST_DESCRIPTION)
+        self.assertNotIn('p313.yaml', description)
+        self.assertIn('39 current recommendations', description)
+        self.assertIn('https://github.com/LuHoo/classical_music/issues/438\n', description)
+
+    def test_whole_plan_description_stays_within_the_limit(self):
+        self.enable_work_b_anchor()
+        user = FakeUserClient()
+        result = self.run_script(issue=316, whole_recording=True,
+                                 user_client_factory=lambda: user)
+        plan = result['report']['playlist_plans'][0]
+        self.assertLessEqual(len(plan['description']), reg.MAX_PLAYLIST_DESCRIPTION)
+
+
 class VariantCase(unittest.TestCase):
     """Movement variants with a parenthetical 'with ... from <catalogue>' marker
     (#350, Biondi RV 179a on Vol. 71): the variant take is skipped -- no
