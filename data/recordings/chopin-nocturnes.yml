@@ -1,0 +1,109 @@
+id: chopin-nocturnes
+title: 'Chopin: Nocturnes'
+label: harmonia mundi
+year: 2026
+works:
+- work_id: frederic-chopin-nocturne-op-9-no-1
+  status: candidate
+  track:
+    number: 2
+    title: Nocturne No. 1 in B-Flat Minor, Op. 9 No. 1
+- work_id: frederic-chopin-nocturne-op-9-no-2
+  status: candidate
+  track:
+    number: 3
+    title: Nocturne No. 2 in E-Flat Major, Op. 9 No. 2
+- work_id: frederic-chopin-nocturne-op-9-no-3
+  status: candidate
+  track:
+    number: 4
+    title: Nocturne No. 3 in B Major, Op. 9 No. 3
+- work_id: frederic-chopin-nocturne-op-15-no-1
+  status: candidate
+  track:
+    number: 5
+    title: Nocturne No. 4 in F Major, Op. 15 No. 1
+- work_id: frederic-chopin-nocturne-op-15-no-2
+  status: candidate
+  track:
+    number: 6
+    title: Nocturne No. 5 in F-Sharp Major, Op. 15 No. 2
+- work_id: frederic-chopin-nocturne-op-15-no-3
+  status: candidate
+  track:
+    number: 7
+    title: Nocturne No. 6 in G Minor, Op. 15 No. 3
+- work_id: frederic-chopin-nocturne-op-27-no-1
+  status: candidate
+  track:
+    number: 8
+    title: Nocturne No. 7 in C-Sharp Minor, Op. 27 No. 1
+- work_id: frederic-chopin-nocturne-op-27-no-2
+  status: candidate
+  track:
+    number: 9
+    title: Nocturne No. 8 in D-Flat Major, Op. 27 No. 2
+- work_id: frederic-chopin-nocturne-op-32-no-1
+  status: candidate
+  track:
+    number: 10
+    title: Nocturne No. 9 in B Major, Op. 32 No. 1
+- work_id: frederic-chopin-nocturne-op-32-no-2
+  status: candidate
+  track:
+    number: 11
+    title: Nocturne No. 10 in A-Flat Major, Op. 32 No. 2
+- work_id: frederic-chopin-nocturne-op-37-no-1
+  status: candidate
+  track:
+    number: 12
+    title: Nocturne No. 11 in G Minor, Op. 37 No. 1
+- work_id: frederic-chopin-nocturne-op-37-no-2
+  status: candidate
+  track:
+    number: 13
+    title: Nocturne No. 12 in G Major, Op. 37 No. 2
+- work_id: frederic-chopin-nocturne-op-48-no-1
+  status: candidate
+  track:
+    number: 14
+    title: Nocturne No. 13 in C Minor, Op. 48 No. 1
+- work_id: frederic-chopin-nocturne-op-48-no-2
+  status: candidate
+  track:
+    number: 15
+    title: Nocturne No. 14 in F-Sharp Minor, Op. 48 No. 2
+- work_id: frederic-chopin-nocturne-op-55-no-1
+  status: candidate
+  track:
+    number: 16
+    title: Nocturne No. 15 in F Minor, Op. 55 No. 1
+- work_id: frederic-chopin-nocturne-op-55-no-2
+  status: candidate
+  track:
+    number: 17
+    title: Nocturne No. 16 in E-Flat Major, Op. 55 No. 2
+- work_id: frederic-chopin-nocturne-op-62-no-1
+  status: candidate
+  track:
+    number: 18
+    title: Nocturne No. 17 in B Major, Op. 62 No. 1
+- work_id: frederic-chopin-nocturne-op-62-no-2
+  status: candidate
+  track:
+    number: 19
+    title: Nocturne No. 18 in E Major, Op. 62 No. 2
+- work_id: frederic-chopin-nocturne-op-72-no-1
+  status: candidate
+  track:
+    number: 20
+    title: Nocturne No. 19 in E Minor, Op. posth. 72 No. 1
+links:
+  tidal:
+    url: https://tidal.com/browse/album/570884514
+    status: active
+    last_checked: '2026-11-03'
+notes: 'Unmatched artists: Pavel Kolesnikov | Unmatched tracks without canonical work:
+  1. Nocturne No. 20 in C-Sharp Minor, Op. posth. (First Version), 21. Nocturne No.
+  20 in C-Sharp Minor, Op. posth. (Second Version), 22. Nocturne No. 21 in C Minor,
+  Op. posth.'
