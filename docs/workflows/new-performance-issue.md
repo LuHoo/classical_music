@@ -21,7 +21,8 @@ script uit het album zelf opgelost.
 
 | Casus | Gedrag |
 |---|---|
-| ≥1 kandidaat-werk mét bestaande aanbeveling (track-anker) | Vergelijkingsroute: uniek → automatisch geselecteerd; meerdere → interactieve prompt "voor welk werk is dit issue?"; daarna binding + vergelijkingsplaylist `Curator <datum> Issue #<nr>` |
+| ≥1 kandidaat-werk mét bestaande aanbeveling (track-anker) | Vergelijkingsroute: uniek → automatisch geselecteerd; meerdere → interactieve prompt "voor welk werk is dit issue?" (antwoord `a` = alle werken, hele opname, route A #450); daarna binding + vergelijkingsplaylist `Curator <datum> Issue #<nr>` |
+| Hele opname / cyclusalbum (route A, #450) | `--issue <nr> --whole-recording`: bindt élk vergelijkbaar werk aan het issue, ÉÉN gecombineerde vergelijkingsplaylist (alle huidige aanbevelingen, dan alle kandidaten); daarna per werk `./curator <nr> <keuze> --work <werk-id> --apply` met per-werkbesluitrecords |
 | Canoniek werk zónder bestaande aanbeveling | Geen playlist; het rapport meldt "direct adoption possible" — het album kán de aanbeveling worden (besluit via curatorrecord + PR, PR #339-patroon; het script schrijft nooit zelf een aanbeveling) |
 | Track zónder canoniek werk | Parkeerissue met adviserende MusicBrainz-suggesties (#327-route: ISRC-keten; mint-voorstelmodus #331 als vervolg). Het kandidaat-album is nooit het bestaansrecht van het werk |
 | Ambigue match | Fail-closed: stoppen en de ambiguïteit tonen (geen kandidaat, geen playlist) |
@@ -36,6 +37,6 @@ script uit het album zelf opgelost.
 
 ## Besluit na de registratie
 
-- Vergelijkingsroute: `./curator <nr> <keuze> --apply`, daarna `./curator finish`; git blijft handmatig.
+- Vergelijkingsroute: `./curator <nr> <keuze> --apply`, daarna `./curator finish`; git blijft handmatig. Bij een whole-recording-run (route A, #450): per gebonden werk `./curator <nr> <keuze> --work <werk-id> --apply`.
 - Directe adoptie: curatorrecord + PR (PR #339-patroon).
 - Parkeerissue: canonisatie via gewone review-wijziging, daarna de albumregistratie her-runnen; de track matcht dan automatisch.

@@ -1183,7 +1183,7 @@ def bind_issue(recording, matches, roles, performers, issue, work):
 
 
 def playlist_plan(root, album, recording, matches, recommendations, today, *,
-                  issue=None, work=None, read_client=None, catalog_factory=None,
+                  issue=None, work=None, whole=False, read_client=None, catalog_factory=None,
                   works=None, persons=None):
     """One comparison playlist per matched work that already has a recommendation.
 
@@ -1199,12 +1199,20 @@ def playlist_plan(root, album, recording, matches, recommendations, today, *,
     persons = persons if persons is not None else load_persons(root)
     by_id = {w['id']: w for w in works}
     plans, errors = [], []
+    scope = []
     for entry in recording['works']:
         wid = entry['work_id']
         if wid not in recommendations or entry.get('status') != 'candidate':
             continue
-        if issue is not None and wid != work:
-            continue
+        if issue is not None:
+            if whole:
+                # Only the works this run actually bound (bind_issue wrote the
+                # issue number on their entries); a recommended work without a
+                # TIDAL anchor is not bound and must not enter the cycle plan.
+                if entry.get('issue') != issue:
+                    continue
+            elif wid != work:
+                continue
         current = recommendations[wid]
         if current.get('ambiguous'):
             errors.append({'work_id': wid,
@@ -1223,15 +1231,46 @@ def playlist_plan(root, album, recording, matches, recommendations, today, *,
             except ValueError as exc:
                 errors.append({'work_id': wid, 'error': str(exc)})
                 continue
+        scope.append({'work_id': wid, 'current_track_ids': current_ids,
+                      'candidate_track_ids': candidate_ids,
+                      'sources': current['sources']})
+    if whole:
+        # Route A (#450): one combined playlist — every current recommendation
+        # in album order, then every candidate. A single expansion failure
+        # suppresses the whole plan; the caller fails closed on the fragment.
+        if errors or not scope:
+            return [], errors
+        current_ids, candidate_ids, sources, wids = [], [], [], []
+        for row in scope:
+            wids.append(row['work_id'])
+            sources.extend(src for src in row['sources'] if src not in sources)
+            for tid in row['current_track_ids']:
+                if tid not in current_ids:
+                    current_ids.append(tid)
+            for tid in row['candidate_track_ids']:
+                if tid not in candidate_ids:
+                    candidate_ids.append(tid)
         description = (f"Candidate comparison for {album_url(album['id'])} "
-                       f"(current recommendation: {', '.join(current['sources'])})")
+                       f"(current recommendations: {', '.join(sources)})")
         if issue is not None:
             description = f'https://github.com/LuHoo/classical_music/issues/{issue}\n' + description
-        plans.append({'work_id': wid, 'issue': issue,
-                      'name': f"Curator {today} Issue #{issue}" if issue is not None else None,
+        plans.append({'work_id': 'whole-recording', 'work_ids': wids, 'issue': issue,
+                      'name': f"Curator {today} Issue #{issue}",
                       'description': description,
                       'current_track_ids': current_ids, 'candidate_track_ids': candidate_ids,
-                      'current_sources': current['sources']})
+                      'current_sources': sources})
+        return plans, errors
+    for row in scope:
+        description = (f"Candidate comparison for {album_url(album['id'])} "
+                       f"(current recommendation: {', '.join(row['sources'])})")
+        if issue is not None:
+            description = f'https://github.com/LuHoo/classical_music/issues/{issue}\n' + description
+        plans.append({'work_id': row['work_id'], 'issue': issue,
+                      'name': f"Curator {today} Issue #{issue}" if issue is not None else None,
+                      'description': description,
+                      'current_track_ids': row['current_track_ids'],
+                      'candidate_track_ids': row['candidate_track_ids'],
+                      'current_sources': row['sources']})
     return plans, errors
 
 
@@ -1306,7 +1345,12 @@ def write_recording(root, recording, *, update_existing=False):
     return path
 
 
-def resolve_issue_work(recording, recommendations, issue, selector=None):
+WHOLE_RECORDING = '__whole-recording__'
+"""Marker a selector returns for the 'alle werken' prompt answer (#450): the
+issue binds the whole recording instead of one work. Never a valid work ID."""
+
+
+def resolve_issue_work(recording, recommendations, issue, selector=None, whole=False):
     """Resolve the work a comparison issue belongs to, when --issue is given
     without --work (#435).
 
@@ -1325,6 +1369,13 @@ def resolve_issue_work(recording, recommendations, issue, selector=None):
                 and recommendations.get(wid, {}).get('track_ids')):
             seen.add(wid)
             eligible.append(wid)
+    if whole:
+        # Route A (#450): --whole-recording binds every eligible work; the
+        # prompt is unnecessary and the curator decides per work afterwards.
+        require(eligible,
+                f'Issue #{issue} was given --whole-recording, but this album has no '
+                'comparison candidates with an existing recommendation: nothing to compare')
+        return {'work_id': None, 'whole': True, 'prompted': False, 'options': eligible}
     if len(eligible) == 1:
         return {'work_id': eligible[0], 'prompted': False, 'options': eligible}
     if len(eligible) > 1:
@@ -1332,8 +1383,14 @@ def resolve_issue_work(recording, recommendations, issue, selector=None):
             raise ValueError(
                 f'Issue #{issue} has several comparison candidates on this album: '
                 + ', '.join(eligible)
-                + '. Pass --work <work-id>, or answer the interactive prompt.')
-        return {'work_id': selector(list(eligible)), 'prompted': True, 'options': eligible}
+                + '. Pass --work <work-id>, pass --whole-recording (route A, #450), '
+                'or answer the interactive prompt.')
+        chosen = selector(list(eligible))
+        if chosen == WHOLE_RECORDING:
+            return {'work_id': None, 'whole': True, 'prompted': True, 'options': eligible}
+        require(chosen in eligible,
+                f'The selected comparison work must be one of: {", ".join(eligible)}')
+        return {'work_id': chosen, 'prompted': True, 'options': eligible}
     return {'work_id': None, 'prompted': False, 'options': []}
 
 
@@ -1488,8 +1545,13 @@ def render_issue_comment(result):
                       + str(existing.get('url') or existing.get('title')), '']
     lines += ['### Vervolgstappen', '']
     if issue is not None and (playlist_lines or report.get('issue_work_options')):
-        lines.append(f'- Vergelijkingsroute: `./curator {issue} <keuze> --apply`, '
-                     'daarna `./curator finish` (git blijft handmatig).')
+        if report.get('whole_recording'):
+            lines.append(f'- Vergelijkingsroute (hele opname, #450 route A): per gebonden werk '
+                         f'`./curator {issue} <keuze> --work <werk-id> --apply`, '
+                         'daarna `./curator finish` (git blijft handmatig).')
+        else:
+            lines.append(f'- Vergelijkingsroute: `./curator {issue} <keuze> --apply`, '
+                         'daarna `./curator finish` (git blijft handmatig).')
     if report.get('direct_adoption_works'):
         lines.append('- Directe adoptie: curatorrecord + PR (PR #339-patroon); '
                      'geen vergelijkingsplaylist nodig.')
@@ -1501,7 +1563,7 @@ def render_issue_comment(result):
 
 def run(root, url, *, dry_run=False, recording_id=None, update_existing=False,
         read_client=None, user_client_factory=None, today=None, suggest_client=None,
-        canonize=False, issue=None, work=None, catalog_factory=None,
+        canonize=False, issue=None, work=None, whole_recording=False, catalog_factory=None,
         comment=False, create_parking_issue=False, gh_client=None, selector=None):
     from datetime import date
     today = today or date.today().isoformat()
@@ -1545,22 +1607,40 @@ def run(root, url, *, dry_run=False, recording_id=None, update_existing=False,
     require(work is None or issue is not None,
             '--work is only meaningful together with --issue: the issue number names '
             'the comparison playlist, the work ID binds it to this issue')
+    require(not (whole_recording and issue is None),
+            '--whole-recording is only meaningful together with --issue (route A, #450)')
+    require(not (whole_recording and work is not None),
+            '--whole-recording and --work cannot be combined: route A (#450) binds '
+            'every comparison-eligible work to the issue')
     recommendations, unattributed, breakdown = existing_recommendations(root, works)
     resolution = None
+    whole = False
     if issue is not None and work is None:
         # #435: the issue author supplies only the album URL; the comparison
-        # work is resolved from the album itself, never guessed.
-        resolution = resolve_issue_work(recording, recommendations, issue, selector)
+        # work is resolved from the album itself, never guessed. Route A
+        # (#450) binds the whole recording: every eligible work.
+        resolution = resolve_issue_work(recording, recommendations, issue, selector,
+                                        whole=whole_recording)
+        whole = resolution.get('whole', False)
         work = resolution['work_id']
-    if issue is not None and work is not None:
+    if issue is not None and whole:
+        for wid in resolution['options']:
+            bind_issue(recording, matches, roles, performers, issue, wid)
+    elif issue is not None and work is not None:
         bind_issue(recording, matches, roles, performers, issue, work)
     plans, playlist_errors = playlist_plan(
         root, album, recording, matches, recommendations, today,
-        issue=issue, work=work, read_client=client,
+        issue=issue, work=work, whole=whole, read_client=client,
         catalog_factory=catalog_factory
         or (lambda album_id: CatalogClient(access_token(), album_id)),
         works=works, persons=persons)
     plans = [p for p in plans if p['current_track_ids']]
+    if whole and playlist_errors:
+        # Route A (#450): a cycle comparison that is missing one work is a
+        # fragment; fail closed before writing anything, exactly like the
+        # one-work route refuses its own missing playlist.
+        raise ValueError('Whole-recording comparison is incomplete; nothing was written. '
+                         + ' | '.join(f"{e['work_id']}: {e['error']}" for e in playlist_errors))
     if work is not None and issue is not None and not plans \
             and not any(e['work_id'] == work for e in playlist_errors):
         raise ValueError(f'Issue #{issue} work {work} has no comparison playlist on this album: '
@@ -1572,10 +1652,16 @@ def run(root, url, *, dry_run=False, recording_id=None, update_existing=False,
     work_lines = []
     for entry in recording['works']:
         if entry.get('status') == 'candidate':
-            if entry['work_id'] in {p['work_id'] for p in plans}:
-                action = ('candidate; comparison playlist planned (existing recommendation: '
-                          + ', '.join(next(p['current_sources'] for p in plans
-                                           if p['work_id'] == entry['work_id'])) + ')')
+            plan_row = next((p for p in plans if entry['work_id'] == p['work_id']
+                             or entry['work_id'] in (p.get('work_ids') or [])), None)
+            if plan_row is not None:
+                if plan_row.get('work_ids'):
+                    action = ('candidate; whole-recording comparison playlist planned '
+                              '(#450 route A; current recommendations: '
+                              + ', '.join(plan_row['current_sources']) + ')')
+                else:
+                    action = ('candidate; comparison playlist planned (existing recommendation: '
+                              + ', '.join(plan_row['current_sources']) + ')')
             elif recommendations.get(entry['work_id'], {}).get('ambiguous'):
                 action = ('candidate; multiple current performances ('
                           + ', '.join(recommendations[entry['work_id']]['sources'])
@@ -1598,6 +1684,7 @@ def run(root, url, *, dry_run=False, recording_id=None, update_existing=False,
               'recording_id': recording['id'],
               'works': work_lines,
               'playlist_plans': [{'work_id': p['work_id'], 'issue': p['issue'], 'name': p['name'],
+                                  'work_ids': p.get('work_ids'),
                                   'current_tracks': p['current_track_ids'],
                                   'candidate_tracks': p['candidate_track_ids']} for p in plans],
               'playlist_errors': playlist_errors,
@@ -1608,6 +1695,7 @@ def run(root, url, *, dry_run=False, recording_id=None, update_existing=False,
               'unmatched_artists': unmatched_artists,
               'direct_adoption_works': direct_adoption,
               'issue': issue,
+              'whole_recording': whole,
               'issue_work_options': resolution['options'] if resolution else None,
               'unattributed_recommendation_lines': unattributed,
               'unattributed_breakdown': breakdown,
@@ -1719,6 +1807,10 @@ def main(argv=None):
     parser.add_argument('--work',
                         help='Canonical work ID bound to the issue; optional with --issue — '
                              'omit it to let the script resolve the comparison work')
+    parser.add_argument('--whole-recording', action='store_true',
+                        help='With --issue (route A, #450): bind every comparison-eligible '
+                             'work on this recording to the issue and plan ONE combined '
+                             'comparison playlist; the curator decides per work afterwards')
     parser.add_argument('--comment', action='store_true',
                         help='Post the report as a comment on the --issue via the local gh CLI '
                              '(bookkeeping only, never a decision); falls back to the terminal '
@@ -1730,6 +1822,11 @@ def main(argv=None):
     args = parser.parse_args(argv)
     if args.comment and args.issue is None:
         parser.error('--comment requires --issue')
+    if args.whole_recording and args.issue is None:
+        parser.error('--whole-recording is only meaningful together with --issue')
+    if args.whole_recording and args.work:
+        parser.error('--whole-recording and --work cannot be combined: route A (#450) '
+                     'binds the whole recording')
     if args.create_parking_issue and args.dry_run:
         parser.error('--create-parking-issue writes to GitHub; run it without --dry-run')
     selector = None
@@ -1738,20 +1835,24 @@ def main(argv=None):
             print('Meerdere kandidaat-werken met een bestaande aanbeveling op dit album:')
             for index, wid in enumerate(options, 1):
                 print(f'  {index}. {wid}')
+            print(f'  a. alle {len(options)} werken (hele opname, route A #450)')
             while True:
                 raw = input(f'Voor welk werk is issue #{args.issue}? '
-                            f'[1-{len(options)}], lege regel = afbreken: ')
+                            f'[1-{len(options)}], a = alles, lege regel = afbreken: ')
                 if not raw.strip():
                     raise ValueError('No comparison work chosen; run aborted before '
                                      'writing anything')
+                if raw.strip().lower() == 'a':
+                    return WHOLE_RECORDING
                 if raw.strip().isdigit() and 1 <= int(raw.strip()) <= len(options):
                     return options[int(raw.strip()) - 1]
-                print(f'  Kies 1 t/m {len(options)}.')
+                print(f'  Kies 1 t/m {len(options)} of a.')
     try:
         result = run(ROOT, args.album_url, dry_run=args.dry_run,
                      recording_id=args.recording_id, update_existing=args.update_existing,
                      suggest_client=NullSuggestionClient() if args.no_external_lookups else None,
                      canonize=args.canonize, issue=args.issue, work=args.work,
+                     whole_recording=args.whole_recording,
                      comment=args.comment, create_parking_issue=args.create_parking_issue,
                      selector=selector)
     except ValueError as exc:
@@ -1774,7 +1875,9 @@ def print_report(result, *, verbose_unattributed=False):
     for entry in report['works']:
         print(f"  {entry['work_id']}: {entry['action']}")
     for entry in report.get('playlist_plans', []):
-        line = f"  {entry['work_id']}: comparison playlist"
+        prefix = (f"  whole-recording ({len(entry['work_ids'])} works)"
+                  if entry.get('work_ids') else f"  {entry['work_id']}")
+        line = prefix + ": comparison playlist"
         if entry.get('playlist_url'):
             line += f" {entry['playlist_url']}"
         else:
