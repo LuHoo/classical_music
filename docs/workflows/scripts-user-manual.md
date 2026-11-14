@@ -433,11 +433,19 @@ de luistertrack (`track_ids[0]`) en de geregistreerde performers, dus zijn geen
 expliciete argumenten meer nodig:
 
 ```bash
-./curator <issue> naive|<code> --dry-run   # preview (plan zonder te schrijven)
-./curator <issue> naive|<code> --apply     # promote: kandidaat wordt de aanbeveling
+./curator <issue> candidate|naive|<code> --dry-run   # preview (plan zonder te schrijven)
+./curator <issue> candidate|naive|<code> --apply     # promote: kandidaat wordt de aanbeveling
 ./curator <issue> existing --apply         # reject: bestaande aanbeveling blijft
 ./curator finish                           # daarna, zoals altijd
 ```
+
+De promote-token is een vrij label dat in het besluitrecord en de nieuwe
+performance-id (`<werk-id>-earmarked-<token>`) terechtkomt; `candidate` is de
+gedocumenteerde generieke keuze, `naive` blijft werken als legacy-alias
+(Naïve Edition-import, #339). Alleen `existing`/`geen`/`unresolved` (reject)
+en `both` hebben eigen gedrag. Drie gelijktijdige kandidaten horen niet op één
+earmarked issue: daarvoor dient de intake-manifest-route met gepubliceerde
+unitcodes (precedent: #247).
 
 `./curator <issue> both` is bewust fail-closed: de vergelijkingsprofielen zijn
 curatoroordeel en zitten niet in de binding, dus draait `both` via het expliciete

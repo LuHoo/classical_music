@@ -88,11 +88,18 @@ not in an intake manifest but `register_earmarked_recording.py --issue <nr>
 the binding supplies the work, the listening track and the registered performers:
 
 ```bash
-./curator 211 naive --dry-run          # preview
-./curator 211 naive --apply            # promote the candidate
-./curator 211 existing --apply         # reject: keep the existing recommendation
+./curator 211 candidate --dry-run          # preview
+./curator 211 candidate --apply            # promote the candidate
+./curator 211 existing --apply             # reject: keep the existing recommendation
 ./curator finish
 ```
+
+The promote token is a free label recorded in the decision record and the new
+performance id (`<work-id>-earmarked-<token>`). Use `candidate`, or a
+distinguishing label when several candidate recordings share one issue's
+context. `naive` (from the Vivaldi Naïve Edition import, #339) remains accepted
+as a legacy alias and appears in earlier records. Only `existing`/`geen`/
+`unresolved` (reject) and `both` carry behaviour of their own.
 
 A **whole-recording issue** (route A, #450; registered with
 `register_earmarked_recording.py --issue <nr> --whole-recording`) binds several
@@ -100,10 +107,17 @@ works to one issue and one combined comparison playlist; each decision names its
 work and writes its own record (`issue-<nr>-<work-id>.json`):
 
 ```bash
-./curator 438 naive --work frederic-chopin-nocturne-op-9-no-1 --apply
+./curator 438 candidate --work frederic-chopin-nocturne-op-9-no-1 --apply
 ./curator 438 existing --work frederic-chopin-nocturne-op-9-no-2 --apply
 ./curator finish
 ```
+
+A **third candidate recording** is not another token on the same issue: the
+earmarked route binds one candidate album per issue. Three simultaneous
+candidates go through the intake-manifest route with published unit codes
+(three-candidate precedent: #247, `./curator 247 C093`); a later challenger for
+an already-decided work opens its own issue and compares against the then-current
+recommendation.
 
 No `--replace-existing` or `--playlist-remove-unselected` in this route: promote
 always replaces the existing recommendation, reject always keeps it. A third
