@@ -193,11 +193,26 @@ works:
   - '570884534'
   performers:
   - Pavel Kolesnikov
+- work_id: frederic-chopin-nocturne-no-20-in-c-sharp-minor-op-posth
+  status: candidate
+  track:
+    number: 1
+    title: Nocturne No. 20 in C-Sharp Minor, Op. posth. (First Version)
+- work_id: frederic-chopin-nocturne-no-20-in-c-sharp-minor-op-posth
+  status: candidate
+  track:
+    number: 21
+    title: Nocturne No. 20 in C-Sharp Minor, Op. posth. (Second Version)
+- work_id: frederic-chopin-nocturne-no-21-in-c-minor-op-posth
+  status: candidate
+  track:
+    number: 22
+    title: Nocturne No. 21 in C Minor, Op. posth.
 links:
   tidal:
     url: https://tidal.com/browse/album/570884514
     status: active
-    last_checked: '2026-11-08'
+    last_checked: '2026-11-14'
 notes: 'Unmatched artists: Pavel Kolesnikov | Unmatched tracks without canonical work:
   1. Nocturne No. 20 in C-Sharp Minor, Op. posth. (First Version), 21. Nocturne No.
   20 in C-Sharp Minor, Op. posth. (Second Version), 22. Nocturne No. 21 in C Minor,
