@@ -1,0 +1,14 @@
+id: frederic-chopin-nocturne-no-21-in-c-minor-op-posth-earmarked
+work_id: frederic-chopin-nocturne-no-21-in-c-minor-op-posth
+performers:
+  - name: Pavel Kolesnikov
+    role: piano
+links:
+  tidal:
+    url: https://tidal.com/track/570884536
+release:
+  album_title: 'Chopin: Nocturnes'
+source:
+  file: data/recordings/chopin-nocturnes.yml
+  url: https://github.com/LuHoo/classical_music/issues/438
+  curator_decision: reports/curator-decisions/issue-438-frederic-chopin-nocturne-no-21-in-c-minor-op-posth.json

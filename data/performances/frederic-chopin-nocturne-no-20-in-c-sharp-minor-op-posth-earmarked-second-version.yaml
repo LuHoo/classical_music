@@ -1,0 +1,14 @@
+id: frederic-chopin-nocturne-no-20-in-c-sharp-minor-op-posth-earmarked-second-version
+work_id: frederic-chopin-nocturne-no-20-in-c-sharp-minor-op-posth
+performers:
+  - name: Pavel Kolesnikov
+    role: piano
+links:
+  tidal:
+    url: https://tidal.com/track/570884535
+release:
+  album_title: 'Chopin: Nocturnes'
+source:
+  file: data/recordings/chopin-nocturnes.yml
+  url: https://github.com/LuHoo/classical_music/issues/438
+  curator_decision: reports/curator-decisions/issue-438-frederic-chopin-nocturne-no-20-in-c-sharp-minor-op-posth.json

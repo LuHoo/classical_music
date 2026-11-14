@@ -1,0 +1,24 @@
+{
+  "issue_url": "https://github.com/LuHoo/classical_music/issues/438",
+  "decision_source": "curator",
+  "curator": "LAH",
+  "recorded_at": "2026-11-14T00:00:00Z",
+  "requested_choice": "direct adoption",
+  "choice": "naive",
+  "selected_units": [],
+  "not_selected_units": [],
+  "work_id": "frederic-chopin-nocturne-no-21-in-c-minor-op-posth",
+  "performance_ids": [
+    "frederic-chopin-nocturne-no-21-in-c-minor-op-posth-earmarked"
+  ],
+  "implementation_pr": null,
+  "replaced_performances": [],
+  "recording": "data/recordings/chopin-nocturnes.yml",
+  "docs_updates": [],
+  "rationale": "No existing recommendation to compare against; direct adoption of the Kolesnikov performance (track 22) as the recommendation.",
+  "evidence": [
+    "https://tidal.com/browse/album/570884514",
+    "https://tidal.com/track/570884536",
+    "https://musicbrainz.org/work/a954562c-003a-33df-9e88-b001a759a01c"
+  ]
+}
