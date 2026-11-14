@@ -573,6 +573,18 @@ class CuratorCliEarmarkedTest(unittest.TestCase):
         self.assertEqual(status['status'], 'pending')
         self.assertIn(319, status['issues'])
 
+    def test_promote_with_generic_candidate_token(self):
+        # `candidate` is the documented generic promote label; `naive` is the
+        # legacy alias from the Naive Edition import (#339). Both promote, and
+        # the token lands in the decision record and the performance id.
+        message = self.record(319, 'candidate', apply=True)
+        self.assertIn('Opgeslagen', message)
+        performance = load_yaml(
+            self.root, f'data/performances/{WORK}-earmarked-candidate.yaml')
+        self.assertEqual(performance['work_id'], WORK)
+        self.assertEqual(self.decision_record()['choice'], 'candidate')
+        self.assertEqual(self.decision_record()['requested_choice'], 'candidate')
+
     def test_reject_via_curator_cli_keeps_existing(self):
         self.record(319, 'existing', apply=True)
         record = self.decision_record()
