@@ -1,0 +1,26 @@
+{
+  "issue_url": "https://github.com/LuHoo/classical_music/issues/438",
+  "decision_source": "curator",
+  "curator": "LAH",
+  "recorded_at": "2026-11-14T00:00:00Z",
+  "requested_choice": "direct adoption",
+  "choice": "naive",
+  "selected_units": [],
+  "not_selected_units": [],
+  "work_id": "frederic-chopin-nocturne-no-20-in-c-sharp-minor-op-posth",
+  "performance_ids": [
+    "frederic-chopin-nocturne-no-20-in-c-sharp-minor-op-posth-earmarked-first-version",
+    "frederic-chopin-nocturne-no-20-in-c-sharp-minor-op-posth-earmarked-second-version"
+  ],
+  "implementation_pr": null,
+  "replaced_performances": [],
+  "recording": "data/recordings/chopin-nocturnes.yml",
+  "docs_updates": [],
+  "rationale": "No existing recommendation to compare against; direct adoption. The Kolesnikov album carries the nocturne twice, as two distinct recorded interpretations of the two Ekier editions (First Version, track 1; Second Version, track 21). The curator judged both worth recommending, so both become canonical Performances of this one Work.",
+  "evidence": [
+    "https://tidal.com/browse/album/570884514",
+    "https://tidal.com/track/570884515",
+    "https://tidal.com/track/570884535",
+    "https://musicbrainz.org/work/a7619cf9-0d62-31a5-aa0c-436edd8b7dd1"
+  ]
+}
